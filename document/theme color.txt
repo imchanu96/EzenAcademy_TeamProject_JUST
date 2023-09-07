@@ -1,0 +1,75 @@
+﻿1. 배경
+(default: #fff (white))
+Header 구분선: gray50 (#b4c0d3)
+navigation 배경: gray30 (#eaedf4)
+content 배경: gray10 (#fafbfc)
+Tail 배경: gray50 (#b4c0d3)
+
+2. 폰트
+대메뉴: gray120 (#292e41)
+소메뉴: gray90 (#5c667b)
+활성화/hover 메뉴: blue90 (#2d65f2)
+
+* 사용된 색상
+ - 배경
+     gray10, gray30, gray50
+ - 폰트
+     gray90, gray120
+     blue 90
+
+ * 예비 색상
+ blue30, blue50, blue 70, blue 90
+
+
+
+ * 참고 색상표(사람인)
+    --black: #000;
+    --white: #fff;
+    --blue10: #f7fafe;
+    --blue20: #eff5ff;
+    --blue30: #deebff;
+    --blue40: #bcd1fc;
+    --blue50: #94b5fc;
+    --blue60: #6d9cfa;
+    --blue70: #5189fa;
+    --blue80: #4876ef;
+    --blue90: #2d65f2;
+    --blue100: #3157dd;
+    --blue110: #1632a6;
+    --blue120: #15276f;
+    --gray10: #f8fafc;
+    --gray20: #f4f6fa;
+    --gray30: #eaedf4;
+    --gray40: #d7dce5;
+    --gray50: #b4c0d3;
+    --gray60: #96a0b5;
+    --gray70: #8491a7;
+    --gray80: #67738e;
+    --gray90: #5c667b;
+    --gray100: #475067;
+    --gray110: #373f57;
+    --gray120: #292e41;
+    --green10: #f3fffd;
+    --green20: #ebfffc;
+    --green30: #defaf6;
+    --green40: #aff4e5;
+    --green50: #7beed8;
+    --green60: #4fe5c7;
+    --green70: #00deb3;
+    --green80: #00d3ab;
+    --green90: #11be9a;
+    --green100: #17a187;
+    --green110: #2a7c6d;
+    --green120: #286258;
+    --coral10: #fffafa;
+    --coral20: #fff5f7;
+    --coral30: #fce6e6;
+    --coral40: #fec5c5;
+    --coral50: #fea4a3;
+    --coral60: #ff837e;
+    --coral70: #ff7a72;
+    --coral80: #ff6d6a;
+    --coral90: #ff5656;
+    --coral100: #eb413f;
+    --coral110: #d63131;
+    --coral120: #b81d1d;
