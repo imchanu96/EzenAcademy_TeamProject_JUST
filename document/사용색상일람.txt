@@ -1,9 +1,9 @@
-﻿1. 배경
+1. 배경
 (default: #fff (white))
 Header 구분선: gray50 (#b4c0d3)
-navigation 배경: gray30 (#eaedf4)
+navigation 배경: blue20 (#eff5ff)
 content 배경: gray10 (#fafbfc)
-Tail 배경: gray50 (#b4c0d3)
+Tail 배경: gray30 (#eaedf4)
 
 2. 폰트
 대메뉴: gray120 (#292e41)
@@ -13,16 +13,17 @@ Tail 배경: gray50 (#b4c0d3)
 * 사용된 색상
  - 배경
      gray10, gray30, gray50
+     blue20
  - 폰트
      gray90, gray120
      blue 90
 
  * 예비 색상
- blue30, blue50, blue 70, blue 90
+     blue40, blue60, blue 80
 
 
 
- * 참고 색상표(사람인)
+ * 참고 색상표
     --black: #000;
     --white: #fff;
     --blue10: #f7fafe;
