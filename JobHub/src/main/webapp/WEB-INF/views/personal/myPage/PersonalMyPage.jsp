@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Company Info</title>
+<title>My page</title>
 	<style type="text/css">
 	
 			/* 	모든 선택자의  는 작업용입니다. */
@@ -110,10 +110,36 @@
 			font-size: 30px;
 			background-color: #f8fafc;
 		}
-		#content > div {
+		#personalInfoBox, #companyInfoBox {
 			background-color: #fff;
 			padding: 20px;
 			border-radius: 10px;
+			width: 910px;
+		    height: 300px;
+		    margin: 15px;
+		    color: #5c667b;
+		}
+		.infoTitle {
+			margin: 15px 0px 0px 35px;
+			font-size: 25px;
+		}
+		.personalInfoItemTitle, .companyInfoItemTitle {
+			line-height: 50px;
+			float: left;
+			width: 200px;
+			height: 50px;
+			margin-left: 15px;
+			font-size: 20px;
+		}
+		.personalInfoItemContent, .companyInfoItemContent {
+			line-height: 50px;
+			float: left;
+			width: 500px;
+			height: 50px;
+			font-size: 18px;
+		}
+		.arrowBox {
+			height: 50px;
 		}
 /* tail form */
 		#tailBox {
@@ -202,11 +228,86 @@
 		</div>
 		
 		<div id="content">
-			<div id="personalInfo">
-				
+			<div class="infoTitle">
+				개인 정보
 			</div>
-			<div id="companyInfo">
-				
+			<div id="personalInfoBox">
+				<div class="personalInfoItem">
+					<div class="personalInfoItemTitle">
+						닉네임
+					</div>
+					<div class="personalInfoItemContent">
+						jihoon123
+					</div>
+					<div class="arrowBox">
+						<a href="www.naver.com">></a>
+					</div>
+				</div>
+				<div class="personalInfoItem">
+					<div class="personalInfoItemTitle">
+						비밀번호
+					</div>
+					<div class="personalInfoItemContent">
+						********
+					</div>
+					<div class="arrowBox">
+						<a href="www.naver.com">></a>
+					</div>
+				</div>
+				<div class="personalInfoItem">
+					<div class="personalInfoItemTitle">
+						전화번호
+					</div>
+					<div class="personalInfoItemContent">
+						010-1234-1234
+					</div>
+					<div class="arrowBox">
+						<a href="www.naver.com">></a>
+					</div>
+				</div>
+				<div class="personalInfoItem">
+					<div class="personalInfoItemTitle">
+						이메일
+					</div>
+					<div class="personalInfoItemContent">
+						park@gmail.com
+					</div>
+					<div class="arrowBox">
+						<a href="www.naver.com">></a>
+					</div>
+				</div>
+				<div class="personalInfoItem">
+					<div class="personalInfoItemTitle">
+						키워드
+					</div>
+					<div class="personalInfoItemContent">
+						연봉 및 복지, 경영진
+					</div>
+					<div class="arrowBox">
+						<a href="www.naver.com">></a>
+					</div>
+				</div>
+			</div>
+			<div class="infoTitle">
+				회사 정보
+			</div>
+			<div id="companyInfoBox">
+				<div class="companyInfoItem">
+					<div class="companyInfoItemTitle">
+						회사 이름
+					</div>
+					<div class="companyInfoItemContent">
+						이젠 아카데미
+					</div>
+				</div>
+				<div class="companyInfoItem">
+					<div class="companyInfoItemTitle">
+						회사 주소
+					</div>
+					<div class="companyInfoItemContent">
+						서울특별시 서초구 강남대로 123 2층
+					</div>
+				</div>
 			</div>
 		</div>
 		

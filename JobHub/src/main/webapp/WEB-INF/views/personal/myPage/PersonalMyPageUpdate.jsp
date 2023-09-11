@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Company Info</title>
+<title>My page update</title>
 	<style type="text/css">
 	
 			/* 	모든 선택자의  는 작업용입니다. */
@@ -110,32 +110,39 @@
 			font-size: 30px;
 			background-color: #f8fafc;
 		}
-		#content > div {
+		#personalInfoBox, #companyInfoBox {
 			background-color: #fff;
 			padding: 20px;
 			border-radius: 10px;
-		}
-		#companyInfoBox {
 			width: 910px;
-		    height: 500px;
+		    height: 300px;
 		    margin: 15px;
 		    color: #5c667b;
 		}
-		.companyInfoRow {
-			margin-left: 30px;
-			width: 880px;
-		    height: 50px;
+		.infoTitle {
+			margin: 15px 0px 0px 35px;
+			font-size: 25px;
 		}
-		.titleBox {
+		.personalInfoItemTitle {
 			float: left;
 			width: 200px;
-			font-size: 22px;
+			height: 50px;
+			margin-left: 15px;
+			font-size: 20px;
+			line-height: 50px;
 		}
-		.contentBox {
-			float: right;
-			width: 650px;
-			font-size: 16px;
+		.personalInfoItemUpdate {
+			float: left;
+			width: 500px;
+			height: 50px;
+			font-size: 18px;
 		}
+		#buttonBox {
+			float: left;
+			width: 100px;
+			height: 50px;
+		}
+		
 /* tail form */
 		#tailBox {
 			height: 150px;
@@ -205,65 +212,39 @@
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="">리뷰 조회</a>
+					<a href="">내 프로필</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">리뷰 작성</a>
+					<a href="">내가 쓴 글</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">기업 정보</a>
+					<a href="">이력서 관리</a>
+				</div>
+				<div class="smallMenuItem">
+					<a href="">자소서 관리</a>
+				</div>
+				<div class="smallMenuItem">
+					<a href="">고객센터</a>
 				</div>
 			</div>
 		</div>
 		
 		<div id="content">
-			<div id="companyInfoBox">
-				<div class="companyInfoRow">
-					<div class="titleBox">
-						<span>홈페이지</span>
-					</div>
-					<div class="contentBox">
-						<span>www.jobhub.com</span>
-					</div>
-				</div>
-				<div class="companyInfoRow">
-					<div class="titleBox">
-						<span>업종</span>
-					</div>
-					<div class="contentBox">
-						<span>제조</span>
-					</div>
-				</div>
-				<div class="companyInfoRow">
-					<div class="titleBox">
-						<span>홈페이지</span>
-					</div>
-					<div class="contentBox">
-						<span>www.jobhub.com</span>
-					</div>
-				</div>
-				<div class="companyInfoRow">
-					<div class="titleBox">
-						<span>홈페이지</span>
-					</div>
-					<div class="contentBox">
-						<span>www.jobhub.com</span>
-					</div>
-				</div>
-				<div class="companyInfoRow">
-					<div class="titleBox">
-						<span>홈페이지</span>
-					</div>
-					<div class="contentBox">
-						<span>www.jobhub.com</span>
-					</div>
-				</div>
-				<div class="companyInfoRow">
-					<div class="titleBox">
-						<span>소개</span>
-					</div>
-					<div class="contentBox">
-						<span>우리 회사는 이런 회사입니다.</span>
+			<div class="infoTitle">
+				닉네임 수정
+			</div>
+			<div id="personalInfoBox">
+				<div class="personalInfoItem">
+					<form action="">
+						<div class="personalInfoItemTitle">
+							닉네임
+						</div>
+						<div class="personalInfoItemUpdate">
+							<input type="text">
+						</div>
+					</form>
+					<div id="buttonBox">
+						<button type="submit">변경하기</button>
 					</div>
 				</div>
 			</div>
