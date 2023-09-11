@@ -17,4 +17,8 @@ public class PersonalMemberDto {
 	private String pKeyword;
 	private String pTemporarily;
 	
+	
+	
+	
+	
 }
