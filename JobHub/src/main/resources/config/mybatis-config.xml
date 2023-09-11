@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-config.dtd">
+  
+<configuration>
+
+	<typeAliases>
+		<typeAlias type="com.jobhub.admin.dto.AdminDto" alias="AdminDto"/>
+		<typeAlias type="com.jobhub.company.dto.CompanyDto" alias="CompanyDto"/>
+		<typeAlias type="com.jobhub.personal.dto.PersonalDto" alias="PersonalDto"/>
+		<typeAlias type="com.jobhub.personal.dto.LetterDto" alias="LetterDto"/>
+		<typeAlias type="com.jobhub.personal.dto.ResumeDto" alias="ResumeDto"/>
+	</typeAliases>
+	
+</configuration>
