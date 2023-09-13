@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="com.jobhub.review">
+
+	<resultMap type="reviewDto" id="reviewResultMap">
+		<id column="REVIEW_NUMBER" property="rNo" />
+		<result column="REVIEW_TITLE" property="rTitle" />
+		<result column="REVIEW_CONTENT" property="rContent" />
+		<result column="REVIEW_SALARY" property="rSal" />
+		<result column="REVIEW_ENVIRONMENT" property="rEnv" />
+		<result column="REVIEW_BOSS" property="rBoss" />
+		<result column="REVIEW_BALANCE" property="rBal" />
+		<result column="REVIEW_GOOD" property="rGood" />
+		<result column="REVIEW_BAD" property="rBad" />
+		<result column="REVIEW_AVERAGE" property="rAvg" />
+		<result column="REVIEW_CREATE_DATE" property="rCreDate" />
+		<result column="REVIEW_MODIFY_DATE" property="rModDate" />
+
+	</resultMap>
+	
+</mapper>
