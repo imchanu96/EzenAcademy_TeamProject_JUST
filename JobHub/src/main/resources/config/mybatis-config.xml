@@ -7,6 +7,9 @@
 
 	<typeAliases>
 		<typeAlias type="com.jobhub.admin.dto.AdminDto" alias="adminDto"/>
+		
+		<typeAlias type="com.jobhub.personal.dto.PersonalMemberDto" 
+			alias="personalMemberDto"/>
 	</typeAliases>
-	
+		
 </configuration>
