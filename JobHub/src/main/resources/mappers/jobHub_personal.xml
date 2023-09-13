@@ -6,7 +6,7 @@
 
 <mapper namespace="com.jobhub.personal">
 
-	<resultMap type="PersonalMemberDto" id="personalResultMap">
+	<resultMap type="personalMemberDto" id="personalResultMap">
 		<id column="PERSONAL_NUMBER" property="pNo" />
 		<result column="PERSONAL_NAME" property="pName" />
 		<result column="PERSONAL_ID" property="pId" />

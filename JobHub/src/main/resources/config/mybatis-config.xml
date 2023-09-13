@@ -12,6 +12,8 @@
 			alias="personalMemberDto"/>
 		<typeAlias type="com.jobhub.company.dto.CompanyMemberDto" 
 			alias="companyMemberDto"/>
+		<typeAlias type="com.jobhub.review.dto.ReviewDto" 
+			alias="reviewDto"/>
 	</typeAliases>
 		
 </configuration>
