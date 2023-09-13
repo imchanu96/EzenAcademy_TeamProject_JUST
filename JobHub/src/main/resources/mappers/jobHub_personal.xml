@@ -4,9 +4,9 @@
 
 
 
-<mapper namespace="com.jobhub.admin">
+<mapper namespace="com.jobhub.personal">
 
-	<resultMap type="adminDto" id="adminResultMap">
+	<resultMap type="PersonalMemberDto" id="personalResultMap">
 		<id column="PERSONAL_NUMBER" property="pNo" />
 		<result column="PERSONAL_NAME" property="pName" />
 		<result column="PERSONAL_ID" property="pId" />
@@ -20,13 +20,7 @@
 			javaType="java.util.Date" />
 		<result column="PERSONAL_KEYWORD" property="pKeyword" />
 		<result column="PERSONAL_TEMPORARILY" property="pTemporarily" />
-		<result column="PERMISSION" property="pPermission" />
-		<result column="CONNECTION_TIME" property="pConnectionTime" 
-			javaType="java.util.Date" />
-		<result column="DISCONNECTION_TIME" property="pDisconnectionTime" 
-			javaType="java.util.Date" />
+
 	</resultMap>
-
-
-
+	
 </mapper>
