@@ -27,7 +27,7 @@
 /* 		border: 1px solid black; */
 		padding-left: 0px;
 		font-size: 20px;
-		display: none;
+ 		display: none; 
 	}
 	
 </style>

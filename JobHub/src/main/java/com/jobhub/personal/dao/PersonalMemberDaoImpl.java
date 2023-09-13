@@ -1,11 +1,14 @@
 package com.jobhub.personal.dao;
 
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.jobhub.admin.dto.AdminDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 
 @Repository
@@ -24,6 +27,14 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 		paramMap.put("pwd", password);
 		
 		return sqlSession.selectOne(namespace + "memberExist", paramMap);
+	}
+
+	@Override
+	public List<PersonalMemberDto> memberSelectList() {
+		// TODO Auto-generated method stub
+		Map<String, Object> map = new HashMap<String, Object>();
+		
+		return sqlSession.selectList(namespace + "memberSelectList", map);
 	}
 
 }

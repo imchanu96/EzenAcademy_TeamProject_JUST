@@ -1,10 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>회원 목록</title>
 <style type="text/css">
 	#tableDiv{
 		width: 70%;
@@ -13,7 +15,7 @@
 	table{
 		border: 1px solid black;
 		border-collapse: collapse;
-		font-size: 30px;
+		font-size: 23px;
 	}
 	th{
 		background: gray;
@@ -21,6 +23,7 @@
 	}
 	td{
 		border: 1px solid black;
+		font-size: 20px;
 		
 	}
 </style>
@@ -31,37 +34,48 @@
 </head>
 <body>	
 	
-	<jsp:include page="../Header.jsp"></jsp:include>
+<%-- 	<jsp:include page="../Header.jsp"></jsp:include> --%>
 	<div style="margin-top: 100px;">
 	
 	</div>
-	<jsp:include page="./SideBar.jsp"></jsp:include>
+	<jsp:include page="./util/SideBar.jsp"></jsp:include>
 	<div id="tableDiv">
 		<table>
 			<tr>
-				<th style="width: 70px;">번호</th>
-				<th style="width: 250px;">게시판 이름</th>
-				<th style="width: 100px;">유형</th>
-				<th style="width: 100px;">읽기</th>
-				<th style="width: 100px;">쓰기</th>
-				<th style="width: 140px;">게시글 수</th>
+				<th style="width: 10%;">회원 번호</th>
+				<th style="width: 20%;">회원 이름</th>
+				<th style="width: 15%;">회원 아이디</th>
+				<th style="width: 10%;">회원 닉네임</th>
+				<th style="width: 15%;">권한 레벨</th>
+				<th style="width: 15%;">생성 일</th>
+				<th style="width: 15%;">수정 일</th>
 			</tr>
-			<tr>
-				<td>닉네임</td>
-				<td>계정</td>
-				<td>아이디</td>
-				<td>회사명</td>
-				<td>분류</td>
-				<td>마지막 접속</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>게시판</td>
-				<td>일반</td>
-				<td>개인</td>
-				<td>개인</td>
-				<td>5</td>
-			</tr>
+			<c:forEach var="personalDto" items="${personalList}">
+				<tr>
+					<td>${personalDto.pNo}</td>
+					<td>${personalDto.pName}</td>
+					<td>${personalDto.pId}</td>
+					<td>${personalDto.pNickname}</td>
+					<td>
+						<c:choose>
+							<c:when test="${personalDto.pPermission == 1 
+								|| personalDto.pPermission == 2}">
+										개인 회원
+									</c:when>
+							<c:when test="${personalDto.pPermission == 5}">
+										기업 회원
+									</c:when>
+							<c:when test="${personalDto.pPermission == 10}">
+										관리자
+									</c:when>
+						</c:choose>
+					</td>
+					<td><fmt:formatDate pattern="yyyy-MM-dd" 
+						value="${personalDto.pCreateDate}" /></td>
+					<td><fmt:formatDate pattern="yyyy-MM-dd" 
+						value="${personalDto.pModifyDate}" /></td>
+				</tr>
+			</c:forEach>
 		</table>
 	</div>
 	

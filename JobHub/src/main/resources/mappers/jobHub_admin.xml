@@ -31,16 +31,11 @@
 			javaType="java.util.Date" />
 	</resultMap>
 
-<!-- 	<select id="memberSelectList"  parameterType="map" resultMap="memberResultMap"> -->
+	
+
+<!-- 	<select id="memberSelectList"  parameterType="map" resultMap="adminResultMap"> -->
 <!-- 		SELECT PERSONAL.PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_CREATE_DATE -->
-<!-- 		FROM(   SELECT ROWNUM AS RNUM, P.PERSONAL_NUMBER, P.PERSONAL_NAME -->
-<!--         , PERSONAL_ID, P.PERSONAL_CREATE_DATE -->
-<!--         		FROM(   SELECT PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_CREATE_DATE -->
-<!--                 		FROM PERSONAL -->
-<!--                 		ORDER BY PERSONAL_CREATE_DATE DESC -->
-<!--                 ) P -->
-<!-- 		) PERSONAL -->
-<!-- 		WHERE PERSONAL.RNUM BETWEEN #{start} AND #{end} -->
+<!--         FROM PERSONAL -->
 <!-- 	</select> -->
 		
 		<select id="adminExist" parameterType="map"
