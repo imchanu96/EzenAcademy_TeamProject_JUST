@@ -19,11 +19,12 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 	@Override
 	public PersonalMemberDto personalMemberExist(String id, String password) {
 		// TODO Auto-generated method stub
-		HashMap<String, Object> paramMap = new HashMap<String, Object>();
-		paramMap.put("id", id);
-		paramMap.put("pwd", password);
 		
-		return sqlSession.selectOne(namespace + "memberExist", paramMap);
+		HashMap<String, Object> paramMap = new HashMap<String, Object>();
+		paramMap.put("pId", id);
+		paramMap.put("pPwd", password);
+		
+		return sqlSession.selectOne(namespace + "personalMemberExist", paramMap);
 	}
 
 }
