@@ -17,13 +17,13 @@ public class AdminDaoImpl implements AdminDao{
 	SqlSessionTemplate sqlSession;
 	
 	@Override
-	public AdminDto adminExist(String email, String password) {
+	public AdminDto adminExist(String id, String pwd) {
 		// TODO Auto-generated method stub
 		HashMap<String, Object> paramMap = new HashMap<String, Object>();
-		paramMap.put("email", email);
-		paramMap.put("pwd", password);
+		paramMap.put("pId", id);
+		paramMap.put("pPwd", pwd);
 		
-		return sqlSession.selectOne(namespace + "memberExist", paramMap);
+		return sqlSession.selectOne(namespace + "adminExist", paramMap);
 	}
 
 }

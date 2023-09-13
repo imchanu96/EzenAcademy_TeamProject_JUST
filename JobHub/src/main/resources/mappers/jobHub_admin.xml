@@ -21,12 +21,32 @@
 		<result column="PERSONAL_KEYWORD" property="pKeyword" />
 		<result column="PERSONAL_TEMPORARILY" property="pTemporarily" />
 		<result column="PERMISSION" property="pPermission" />
+		<result column="PERSONAL_CREATE_DATE" property="pCreateDate" 
+			javaType="java.util.Date" />
+		<result column="PERSONAL_MODIFY_DATE" property="pModifyDate" 
+			javaType="java.util.Date" />
 		<result column="CONNECTION_TIME" property="pConnectionTime" 
 			javaType="java.util.Date" />
 		<result column="DISCONNECTION_TIME" property="pDisconnectionTime" 
 			javaType="java.util.Date" />
 	</resultMap>
 
-
-
+<!-- 	<select id="memberSelectList"  parameterType="map" resultMap="memberResultMap"> -->
+<!-- 		SELECT PERSONAL.PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_CREATE_DATE -->
+<!-- 		FROM(   SELECT ROWNUM AS RNUM, P.PERSONAL_NUMBER, P.PERSONAL_NAME -->
+<!--         , PERSONAL_ID, P.PERSONAL_CREATE_DATE -->
+<!--         		FROM(   SELECT PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_CREATE_DATE -->
+<!--                 		FROM PERSONAL -->
+<!--                 		ORDER BY PERSONAL_CREATE_DATE DESC -->
+<!--                 ) P -->
+<!-- 		) PERSONAL -->
+<!-- 		WHERE PERSONAL.RNUM BETWEEN #{start} AND #{end} -->
+<!-- 	</select> -->
+		
+		<select id="adminExist" parameterType="map"
+		resultMap="adminResultMap">
+		SELECT PERSONAL_NAME, PERSONAL_ID
+		FROM PERSONAL
+		WHERE PERSONAL_ID = #{pId} AND PERSONAL_PASSWORD = #{pPwd}
+	</select>
 </mapper>
