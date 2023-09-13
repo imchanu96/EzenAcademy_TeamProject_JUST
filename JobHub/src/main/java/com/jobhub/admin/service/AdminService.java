@@ -4,6 +4,6 @@ import com.jobhub.admin.dto.AdminDto;
 
 public interface AdminService {
 
-	AdminDto adminExist(String email, String password);
+	AdminDto adminExist(String id, String pwd);
 
 }

@@ -17,6 +17,8 @@ public class AdminDto {
 	private String pKeyword;
 	private String pTemporarily;
 	private int pPermission;
+	private Date pCreateDate;
+	private Date pModifyDate;
 	private Date pConnectionTime;
 	private Date pDisconnectionTime;
 	
@@ -26,9 +28,9 @@ public class AdminDto {
 
 	public AdminDto(int pNo, String pName, String pId, String pPwd
 			, String pPhoneNum, String pCom, String pNickname
-			, String pProfile, String pEmail, Date pHireDate
-			, String pKeyword, String pTemporarily, int pPermission
-			, Date pConnectionTime, Date pDisconnectionTime) {
+			, String pProfile, String pEmail, Date pHireDate, String pKeyword
+			, String pTemporarily, int pPermission, Date pCreateDate
+			, Date pModifyDate, Date pConnectionTime, Date pDisconnectionTime) {
 		super();
 		this.pNo = pNo;
 		this.pName = pName;
@@ -43,6 +45,8 @@ public class AdminDto {
 		this.pKeyword = pKeyword;
 		this.pTemporarily = pTemporarily;
 		this.pPermission = pPermission;
+		this.pCreateDate = pCreateDate;
+		this.pModifyDate = pModifyDate;
 		this.pConnectionTime = pConnectionTime;
 		this.pDisconnectionTime = pDisconnectionTime;
 	}
@@ -151,6 +155,22 @@ public class AdminDto {
 		this.pPermission = pPermission;
 	}
 
+	public Date getpCreateDate() {
+		return pCreateDate;
+	}
+
+	public void setpCreateDate(Date pCreateDate) {
+		this.pCreateDate = pCreateDate;
+	}
+
+	public Date getpModifyDate() {
+		return pModifyDate;
+	}
+
+	public void setpModifyDate(Date pModifyDate) {
+		this.pModifyDate = pModifyDate;
+	}
+
 	public Date getpConnectionTime() {
 		return pConnectionTime;
 	}
@@ -170,14 +190,18 @@ public class AdminDto {
 	@Override
 	public String toString() {
 		return "AdminDto [pNo=" + pNo + ", pName=" + pName + ", pId=" + pId
-				+ ", pPwd=" + pPwd + ", pPhoneNum=" + pPhoneNum 
-				+ ", pCom=" + pCom + ", pNickname=" + pNickname 
-				+ ", pProfile=" + pProfile + ", pEmail=" + pEmail 
+				+ ", pPwd=" + pPwd + ", pPhoneNum="	+ pPhoneNum
+				+ ", pCom=" + pCom + ", pNickname=" + pNickname
+				+ ", pProfile=" + pProfile + ", pEmail=" + pEmail
 				+ ", pHireDate=" + pHireDate + ", pKeyword=" + pKeyword
-				+ ", pTemporarily=" + pTemporarily + ", pPermission=" + pPermission 
+				+ ", pTemporarily=" + pTemporarily
+				+ ", pPermission=" + pPermission
+				+ ", pCreateDate=" + pCreateDate
+				+ ", pModifyDate=" + pModifyDate
 				+ ", pConnectionTime=" + pConnectionTime 
 				+ ", pDisconnectionTime=" + pDisconnectionTime + "]";
 	}
+
 	
 	
 	

@@ -17,9 +17,9 @@ public class AdminServiceImpl implements AdminService{
 	public AdminDao adminDao;
 	
 	@Override
-	public AdminDto adminExist(String email, String password) {
+	public AdminDto adminExist(String id, String pwd) {
 		// TODO Auto-generated method stub
-		return adminDao.adminExist(email, password);
+		return adminDao.adminExist(id, pwd);
 	}
 
 }
