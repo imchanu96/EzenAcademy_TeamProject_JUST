@@ -10,6 +10,8 @@
 		
 		<typeAlias type="com.jobhub.personal.dto.PersonalMemberDto" 
 			alias="personalMemberDto"/>
+		<typeAlias type="com.jobhub.company.dto.CompanyMemberDto" 
+			alias="companyMemberDto"/>
 	</typeAliases>
 		
 </configuration>
