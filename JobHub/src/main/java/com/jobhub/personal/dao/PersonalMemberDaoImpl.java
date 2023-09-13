@@ -17,10 +17,10 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 	SqlSessionTemplate sqlSession;
 	
 	@Override
-	public PersonalMemberDto personalMemberExist(String email, String password) {
+	public PersonalMemberDto personalMemberExist(String id, String password) {
 		// TODO Auto-generated method stub
 		HashMap<String, Object> paramMap = new HashMap<String, Object>();
-		paramMap.put("email", email);
+		paramMap.put("id", id);
 		paramMap.put("pwd", password);
 		
 		return sqlSession.selectOne(namespace + "memberExist", paramMap);
