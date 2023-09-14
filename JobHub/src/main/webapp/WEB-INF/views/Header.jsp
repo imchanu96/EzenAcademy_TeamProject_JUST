@@ -6,8 +6,6 @@
 <meta charset="UTF-8">
 <title>Header</title>
 	<style type="text/css">
-	
-			/* 	모든 선택자의 border: 1px solid red; 는 작업용입니다. */
 			
 /* 공통 */
 		a {
@@ -22,7 +20,6 @@
 			border-bottom: 1px solid #b4c0d3;
 		}
 		#headerContent {
-				border: 1px solid red;
 			margin: 0px auto;
 			width: 1280px;
 			height: 120px;
@@ -36,14 +33,12 @@
 		}
 /* main menu */
 		#mainMenuBox {
-				border: 1px solid red;
 			float: left;
 			width: 750px;
 			height: 100px;
 			margin-left: 30px;
 		}
 		.mainMenuItem {
-				border: 1px solid red;
 			float: left;
 			margin: 20px;
 			width: 200px;
@@ -55,7 +50,6 @@
 		}
 /* message */
 		#myMessageBox {
-				border: 1px solid red;
 			float: left;
 			width: 100px;
 			height: 100px;
@@ -63,7 +57,6 @@
 		}
 /* my menu */
 		#myMenuBox {
-				border: 1px solid red;
 			float: left;
 			width: 140px;
 			height: 100px;
@@ -79,7 +72,7 @@
 		<div id="headerContent">
 		
 			<a href="http://www.naver.com">
-				<img id="logo" src="./img/JobHub_logo.png">
+				<img id="logo" src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/54897384/ee8218f0-b067-48da-8bf7-d31bef40f1cf">
 			</a>
 			
 			<div id="mainMenuBox">
