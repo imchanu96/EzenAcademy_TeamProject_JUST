@@ -24,6 +24,11 @@
 		<result column="COMPANY_INCHARGE_EMAIL" property="cInChargeEmail" />
 		<result column="COMPANY_INCHARGE_PHONENUMBER" property="cInChargePhoneNum" />
 		<result column="COMPANY_PREFER" property="cPrefer" />
+		<result column="PERMISSION" property="permission" />
+<!-- 		<result column="COMPANY_CREATE_DATE" property="cCreateDate" /> -->
+<!-- 		<result column="COMPANY_MODIFY_DATE" property="cModifyDate" /> -->
+<!-- 		<result column="CONNECTION_TIME" property="cConnectionTime" /> -->
+<!-- 		<result column="DISCONNECTION_TIME" property="cDisconnectionTime" /> -->
 
 	</resultMap>
 	

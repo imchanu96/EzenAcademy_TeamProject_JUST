@@ -21,6 +21,11 @@ public class CompanyMemberDto {
 	private String cInChargeEmail;
 	private String cInChargePhoneNum;
 	private String cPrefer;
+	private int permission;
+	private Date cCreDate;
+	private Date cModDate;
+	private Date connTime;
+	private Date disconnTime;
 	
 	public CompanyMemberDto() {
 		super();
@@ -28,7 +33,8 @@ public class CompanyMemberDto {
 
 	public CompanyMemberDto(int cNo, String cName, String cAdd, String cType, Date cEstDate, String cHomepage,
 			String cBusDetail, String cId, String cPwd, String cCode, String cLicense, String cLogo, String cPrName,
-			String cInChargeName, String cInChargeEmail, String cInChargePhoneNum, String cPrefer) {
+			String cInChargeName, String cInChargeEmail, String cInChargePhoneNum, String cPrefer, int permission,
+			Date cCreDate, Date cModDate, Date connTime, Date disconnTime) {
 		super();
 		this.cNo = cNo;
 		this.cName = cName;
@@ -47,6 +53,11 @@ public class CompanyMemberDto {
 		this.cInChargeEmail = cInChargeEmail;
 		this.cInChargePhoneNum = cInChargePhoneNum;
 		this.cPrefer = cPrefer;
+		this.permission = permission;
+		this.cCreDate = cCreDate;
+		this.cModDate = cModDate;
+		this.connTime = connTime;
+		this.disconnTime = disconnTime;
 	}
 
 	public int getcNo() {
@@ -185,13 +196,54 @@ public class CompanyMemberDto {
 		this.cPrefer = cPrefer;
 	}
 
+	public int getPermission() {
+		return permission;
+	}
+
+	public void setPermission(int permission) {
+		this.permission = permission;
+	}
+
+	public Date getcCreDate() {
+		return cCreDate;
+	}
+
+	public void setcCreDate(Date cCreDate) {
+		this.cCreDate = cCreDate;
+	}
+
+	public Date getcModDate() {
+		return cModDate;
+	}
+
+	public void setcModDate(Date cModDate) {
+		this.cModDate = cModDate;
+	}
+
+	public Date getConnTime() {
+		return connTime;
+	}
+
+	public void setConnTime(Date connTime) {
+		this.connTime = connTime;
+	}
+
+	public Date getDisconnTime() {
+		return disconnTime;
+	}
+
+	public void setDisconnTime(Date disconnTime) {
+		this.disconnTime = disconnTime;
+	}
+
 	@Override
 	public String toString() {
 		return "CompanyMemberDto [cNo=" + cNo + ", cName=" + cName + ", cAdd=" + cAdd + ", cType=" + cType
 				+ ", cEstDate=" + cEstDate + ", cHomepage=" + cHomepage + ", cBusDetail=" + cBusDetail + ", cId=" + cId
 				+ ", cPwd=" + cPwd + ", cCode=" + cCode + ", cLicense=" + cLicense + ", cLogo=" + cLogo + ", cPrName="
 				+ cPrName + ", cInChargeName=" + cInChargeName + ", cInChargeEmail=" + cInChargeEmail
-				+ ", cInChargePhoneNum=" + cInChargePhoneNum + ", cPrefer=" + cPrefer + "]";
+				+ ", cInChargePhoneNum=" + cInChargePhoneNum + ", cPrefer=" + cPrefer + ", permission=" + permission
+				+ ", cCreDate=" + cCreDate + ", cModDate=" + cModDate + ", connTime=" + connTime + ", disconnTime="
+				+ disconnTime + "]";
 	}
-	
 }

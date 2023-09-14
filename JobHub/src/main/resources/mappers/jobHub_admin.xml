@@ -20,7 +20,7 @@
 			javaType="java.util.Date" />
 		<result column="PERSONAL_KEYWORD" property="pKeyword" />
 		<result column="PERSONAL_TEMPORARILY" property="pTemporarily" />
-		<result column="PERMISSION" property="pPermission" />
+<!-- 		<result column="PERMISSION" property="Permission" /> -->
 		<result column="PERSONAL_CREATE_DATE" property="pCreateDate" 
 			javaType="java.util.Date" />
 		<result column="PERSONAL_MODIFY_DATE" property="pModifyDate" 

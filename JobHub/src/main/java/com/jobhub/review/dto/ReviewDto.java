@@ -14,12 +14,30 @@ public class ReviewDto {
 	private int rBal;
 	private String rGood;
 	private String rBad;
-	private String rAvg;
+	private double rAvg;
 	private Date rCreDate;
 	private Date rModDate;
 	
 	public ReviewDto() {
 		super();
+	}
+
+	public ReviewDto(int rNo, String rTitle, String rContent, int rSal, int rWel, int rEnv, int rBoss, int rBal,
+			String rGood, String rBad, double rAvg, Date rCreDate, Date rModDate) {
+		super();
+		this.rNo = rNo;
+		this.rTitle = rTitle;
+		this.rContent = rContent;
+		this.rSal = rSal;
+		this.rWel = rWel;
+		this.rEnv = rEnv;
+		this.rBoss = rBoss;
+		this.rBal = rBal;
+		this.rGood = rGood;
+		this.rBad = rBad;
+		this.rAvg = rAvg;
+		this.rCreDate = rCreDate;
+		this.rModDate = rModDate;
 	}
 
 	public int getrNo() {
@@ -102,11 +120,11 @@ public class ReviewDto {
 		this.rBad = rBad;
 	}
 
-	public String getrAvg() {
+	public double getrAvg() {
 		return rAvg;
 	}
 
-	public void setrAvg(String rAvg) {
+	public void setrAvg(double rAvg) {
 		this.rAvg = rAvg;
 	}
 
