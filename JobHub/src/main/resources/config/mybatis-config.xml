@@ -7,13 +7,13 @@
 
 	<typeAliases>
 		<typeAlias type="com.jobhub.admin.dto.AdminDto" alias="adminDto"/>
-		
 		<typeAlias type="com.jobhub.personal.dto.PersonalMemberDto" 
 			alias="personalMemberDto"/>
 		<typeAlias type="com.jobhub.company.dto.CompanyMemberDto" 
 			alias="companyMemberDto"/>
 		<typeAlias type="com.jobhub.review.dto.ReviewDto" 
 			alias="reviewDto"/>
+		<typeAlias type="com.jobhub.board.dto.BoardDto" alias="boardDto"/>
 	</typeAliases>
 		
 </configuration>

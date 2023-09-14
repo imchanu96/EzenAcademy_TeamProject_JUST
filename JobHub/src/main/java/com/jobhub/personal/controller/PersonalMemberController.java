@@ -47,7 +47,7 @@ public class PersonalMemberController {
 //			회원이 존재하면 세션에 담는다
 			session.setAttribute("personalmemberDto", personalmemberDto);
 			
-			viewUrl = "redirect:/personal/myPage/PersonalMyPage.jsp"; 
+			viewUrl = "personal/myPage/PersonalMyPage"; 
 		}else {
 			viewUrl = "personal/auth/LoginFail";
 		}
@@ -66,15 +66,7 @@ public class PersonalMemberController {
 		return "personal/auth/PersonalLoginForm";
 	}
 	
-	//회원가입
-	@RequestMapping(value = "/personal/add.do", method = RequestMethod.GET)
-	public String MemberAdd(Model model) {
-		
-		log.debug("Welcome MemberController personalMemberAdd!");
-		
-		return "/personal/auth/JoinPersonal";
-	}
-	
+	//회원가입	
 //	일반.do는 단순 페이지 이동
 	@RequestMapping(value = "/personal/add.do", method = RequestMethod.GET)
 	public String memberAdd(Model model) {
