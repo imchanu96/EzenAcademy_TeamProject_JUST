@@ -34,13 +34,12 @@ public class PersonalMemberController {
 	
 	//로그인 클릭 시 이동
 	@RequestMapping(value = "/personal/loginCtr.do", method = RequestMethod.POST)
-	public String loginCtr(String id, String password, 
-			HttpSession session, Model model) {
+	public String loginCtr(String pId, String pPwd, HttpSession session, Model model) {
 		
-		log.info("Welcome PersonalMemberController loginCtr! " + id + ", " + password);
+		log.info("Welcome PersonalMemberController loginCtr! " + pId + ", " + pPwd);
 		
 		PersonalMemberDto personalmemberDto 
-			= PersonalMemberService.personalMemberExist(id, password);
+			= PersonalMemberService.personalMemberExist(pId, pPwd);
 		
 		String viewUrl = "";
 		if(personalmemberDto != null) {
@@ -49,10 +48,30 @@ public class PersonalMemberController {
 			
 			viewUrl = "redirect:/personal/myPage/PersonalMyPage.jsp"; 
 		}else {
-			viewUrl = "/auth/LoginFail";
+			viewUrl = "personal/auth/LoginFail";
 		}
 		
 		return viewUrl;
+	}
+	
+	//로그아웃
+	@RequestMapping(value = "/personal/logout.do", method = RequestMethod.GET)
+	public String logout(HttpSession session, Model model) {
+		
+		log.info("Welcome MemberController logout!");
+		
+		session.invalidate();
+		
+		return "personal/auth/PersonalLoginForm";
+	}
+	
+	//회원가입
+	@RequestMapping(value = "/personal/add.do", method = RequestMethod.GET)
+	public String MemberAdd(Model model) {
+		
+		log.debug("Welcome MemberController personalMemberAdd!");
+		
+		return "/personal/auth/JoinPersonal";
 	}
 	
 	

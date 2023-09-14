@@ -4,7 +4,9 @@ import com.jobhub.personal.dto.PersonalMemberDto;
 
 public interface PersonalMemberService {
 	
-	public PersonalMemberDto personalMemberExist(String id, String password);
+	public PersonalMemberDto personalMemberExist(String pId, String pPwd);
+
+
 	
 	
 }

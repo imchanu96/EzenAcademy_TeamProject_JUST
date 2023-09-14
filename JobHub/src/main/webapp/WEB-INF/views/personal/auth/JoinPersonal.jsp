@@ -581,7 +581,7 @@ img {
 		</div>
 		<!-- header 종료 -->
 
-		<form method="post">
+		<form action="./addCtr.do" method="post">
 			<div id="accountInfo" class="boxList">
 				<div id="idInput" class="infoRow">
 					<img src="../images/joinIcon_id.JPG"> <input type="text"

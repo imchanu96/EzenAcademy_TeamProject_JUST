@@ -1,41 +1,40 @@
-package com.jobhub.personal.dao;
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import org.mybatis.spring.SqlSessionTemplate;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
-
-import com.jobhub.admin.dto.AdminDto;
-import com.jobhub.personal.dto.PersonalMemberDto;
-
-@Repository
-public class PersonalMemberDaoImpl implements PersonalMemberDao {
+	package com.jobhub.personal.dao;
 	
-	String namespace = "com.jobhub.personal.";
+	import java.util.HashMap;
+	import java.util.List;
+	import java.util.Map;
 	
-	@Autowired
-	SqlSessionTemplate sqlSession;
+	import org.mybatis.spring.SqlSessionTemplate;
+	import org.springframework.beans.factory.annotation.Autowired;
+	import org.springframework.stereotype.Repository;
 	
-	@Override
-	public PersonalMemberDto personalMemberExist(String id, String password) {
-		// TODO Auto-generated method stub
+	import com.jobhub.personal.dto.PersonalMemberDto;
+	
+	@Repository
+	public class PersonalMemberDaoImpl implements PersonalMemberDao {
 		
-		HashMap<String, Object> paramMap = new HashMap<String, Object>();
-		paramMap.put("pId", id);
-		paramMap.put("pPwd", password);
+		String namespace = "com.jobhub.personal.";
 		
-		return sqlSession.selectOne(namespace + "personalMemberExist", paramMap);
+		@Autowired
+		SqlSessionTemplate sqlSession;
+		
+		@Override
+		public PersonalMemberDto personalMemberExist(String pId, String pPwd) {
+			// TODO Auto-generated method stub
+			
+			HashMap<String, Object> paramMap = new HashMap<String, Object>();
+			paramMap.put("pId", pId);
+			paramMap.put("pPwd", pPwd);
+			
+			return sqlSession.selectOne(namespace + "personalMemberExist", paramMap);
+		}
+	
+		@Override
+		public List<PersonalMemberDto> memberSelectList() {
+			// TODO Auto-generated method stub
+			Map<String, Object> map = new HashMap<String, Object>();
+			
+			return sqlSession.selectList(namespace + "memberSelectList", map);
+		}
+	
 	}
-
-	@Override
-	public List<PersonalMemberDto> memberSelectList() {
-		// TODO Auto-generated method stub
-		Map<String, Object> map = new HashMap<String, Object>();
-		
-		return sqlSession.selectList(namespace + "memberSelectList", map);
-	}
-
-}
