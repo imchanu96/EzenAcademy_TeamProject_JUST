@@ -18,9 +18,10 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 	public PersonalMemberDao personalMemberDao;
 
 	@Override
-	public PersonalMemberDto personalMemberExist(String id, String password) {
+	public PersonalMemberDto personalMemberExist(String pId, String pPwd) {
 		// TODO Auto-generated method stub
-		return personalMemberDao.personalMemberExist(id, password);
+		
+		return personalMemberDao.personalMemberExist(pId, pPwd);
 	}
 
 	@Override

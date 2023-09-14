@@ -137,18 +137,19 @@
 							<a href="./CompanyLoginForm.jsp">기업회원</a>
 						</div>
 					</div> <!-- selectButton -->
-				
+					
+				<form action="loginCtr.do" method="post">
 				<div id="IDandPwd_Box">
 					<div class="ID_Box">
-						<input type="text" placeholder="아이디">
+						<input type="text" name="pId" placeholder="아이디">
 					</div>
 					
 					<div class="Password_Box">
-						<input type="password" placeholder="비밀번호">
+						<input type="password" name="pPwd" placeholder="비밀번호">
 					</div>
 				</div> <!-- IDandPwd_Box -->
 				
-				<form action="loginCtr.do" method="post">
+				
 					<div id="Login_Button">
 						<div class="Login_Button">
 								<input type="submit" value="로그인">
