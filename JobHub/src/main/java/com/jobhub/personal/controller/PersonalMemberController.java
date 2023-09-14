@@ -65,8 +65,8 @@ public class PersonalMemberController {
 		
 		return "personal/auth/PersonalLoginForm";
 	}
-	
-	//회원가입
+		
+	//회원가입	
 //	일반.do는 단순 페이지 이동
 	@RequestMapping(value = "/personal/add.do", method = RequestMethod.GET)
 	public String memberAdd(Model model) {
