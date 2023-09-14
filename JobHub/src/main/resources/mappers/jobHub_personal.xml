@@ -45,10 +45,40 @@
 <!-- 		WHERE PERSONAL.RNUM BETWEEN #{start} AND #{end} -->
 	</select>
 	
+
 	<select id="personalMemberExist" parameterType="map" resultMap="personalResultMap">
 		SELECT PERSONAL_ID, PERSONAL_PASSWORD
 		 FROM PERSONAL
 		 WHERE PERSONAL_ID = #{pId} AND PERSONAL_PASSWORD = #{pPwd}
 	
 	</select>
+
+	<insert id="personalInsertOne" parameterType="PersonalMemberDto">
+<!-- 		useGeneratedKeys="true" keyProperty="pNo"> -->
+<!-- 		<selectKey keyProperty="pNo" resultType="int" order="BEFORE"> -->
+<!-- 			SELECT PERSONAL_NUMBER_SEQ.NEXTVAL -->
+<!-- 			FROM DUAL -->
+<!-- 		</selectKey> -->
+		INSERT INTO PERSONAL
+			VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
+			    , PERSONAL_PASSWORD, PERSONAL_PHONENUMBER
+			    , PERSONAL_COMPANY, PERSONAL_NICKNAME
+			    , PERSONAL_PROFILE, PERSONAL_EMAIL
+			    , PERSONAL_HIRE_DATE, PERSONAL_TEMPORARILY
+			    , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE)
+			VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, #{pName}, #{pId}
+				, #{pPwd}, #{pPhoneNum}
+				, #{pCom}, #{pNickname}
+				, #{pProfile}, #{pEmail}
+				, #{pHireDate}, #{pTemporarily}
+				, 1, SYSDATE, SYSDATE)
+
+<!-- 			INSERT INTO PERSONAL -->
+<!-- 			VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID -->
+<!-- 			    , PERSONAL_PASSWORD, PERSONAL_PHONENUMBER, PERSONAL_EMAIL -->
+<!-- 			    , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE -->
+<!-- 			    , CONNECTION_TIME, DISCONNECTION_TIME) -->
+<!-- 			VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, #{pName}, #{pId}, #{pPwd}, #{pPhoneNum} -->
+<!-- 			, #{pEmail} , 1, SYSDATE, SYSDATE, SYSDATE, SYSDATE) -->
+	</insert>
 </mapper>

@@ -224,49 +224,7 @@
 </head>
 <body>
 
-	<div id="headerBox">
-		<div id="headerContent">
-		
-			<a href="http://www.naver.com">
-				<img id="logo" src="./img/JobHub_logo.png">
-			</a>
-			
-			<div id="mainMenuBox">
-				<div class="mainMenuItem">
-					<a href="http://www.naver.com">
-						기업 추천
-					</a>
-				</div>
-				<div class="mainMenuItem">
-					<a href="http://www.naver.com">
-						기업 리뷰
-					</a>
-				</div>
-				<div class="mainMenuItem">
-					<a href="http://www.naver.com">
-						게시판
-					</a>
-				</div>
-			</div>
-			
-			<div id="myMessageBox">
-				<div>
-					<a href="http://www.naver.com">
-						채팅
-					</a>
-				</div>
-			</div>
-			
-			<div id="myMenuBox">
-				<div>
-					<a href="http://www.naver.com">
-						로그인 / 회원가입
-					</a>
-				</div>
-			</div>
-			
-		</div>
-	</div> <!-- Header Ends -->
+	<jsp:include page="/WEB-INF/views/Header.jsp"/>
 	
 	<div id="container">
 		<div id="navigation">
@@ -305,7 +263,11 @@
 				
 				<div class="starRateBox">
 					<div>
-						<span>급여 및 복지</span>
+						<span>급여</span>
+						<span>★ 5.0</span>
+					</div>
+					<div>
+						<span>복지</span>
 						<span>★ 5.0</span>
 					</div>
 					<div>
@@ -322,27 +284,31 @@
 					</div>
 				</div>
 				<div class="totalRate">
-					매칭률
+					매칭률 100
 				</div>
 			</div>
 			
 			<div class="reviewItem">
 				<div class="starRateBox">
 					<div>
-						<span>급여 및 복지</span>
-						<span>★ 5.0</span>
+						<span>급여</span>
+						<span>★ 5</span>
+					</div>
+					<div>
+						<span>복지</span>
+						<span>★ 5</span>
 					</div>
 					<div>
 						<span>근무환경</span>
-						<span>★ 5.0</span>
+						<span>★ 5</span>
 					</div>
 					<div>
 						<span>경영진</span>
-						<span>★ 5.0</span>
+						<span>★ 5</span>
 					</div>
 					<div>
 						<span>워라밸</span>
-						<span>★ 5.0</span>
+						<span>★ 5</span>
 					</div>
 				</div>
 				<div class="reviewTitleBox">

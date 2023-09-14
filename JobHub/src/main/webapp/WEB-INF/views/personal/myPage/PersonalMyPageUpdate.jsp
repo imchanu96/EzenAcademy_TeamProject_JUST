@@ -6,9 +6,6 @@
 <meta charset="UTF-8">
 <title>My page update</title>
 	<style type="text/css">
-	
-			/* 	모든 선택자의  는 작업용입니다. */
-			
 /* 공통 */
 		a {
 		  text-decoration: none;
@@ -22,7 +19,6 @@
 			border-bottom: 1px solid #b4c0d3;
 		}
 		#headerContent {
-				
 			margin: 0px auto;
 			width: 1280px;
 			height: 120px;
@@ -36,14 +32,12 @@
 		}
 /* main menu */
 		#mainMenuBox {
-				
 			float: left;
 			width: 750px;
 			height: 100px;
 			margin-left: 30px;
 		}
 		.mainMenuItem {
-				
 			float: left;
 			margin: 20px;
 			width: 200px;
@@ -55,7 +49,6 @@
 		}
 /* message */
 		#myMessageBox {
-				
 			float: left;
 			width: 100px;
 			height: 100px;
@@ -63,7 +56,6 @@
 		}
 /* my menu */
 		#myMenuBox {
-				
 			float: left;
 			width: 140px;
 			height: 100px;
@@ -75,7 +67,6 @@
 		#container {
 			width: 1280px;
 			height: 1000px;
-			
 			margin: 0px auto;
 		}
 /* navigation */
@@ -89,13 +80,11 @@
 			background-color: #eff5ff;
 		}
 		#smallMenuBox {
-				
 			margin: 30px auto;
 			width: 200px;
 			height: 500px;
 		}
 		.smallMenuItem {
-				
 			margin-bottom: 20px;
 		}
 		.smallMenuItem a {
@@ -150,7 +139,6 @@
 			text-align: center;
 		}
 		#tailContent {
-				
 			width: 1280px;
 			height: 130px;
 			margin: auto;

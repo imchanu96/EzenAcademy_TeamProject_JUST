@@ -2,6 +2,8 @@ package com.jobhub.personal.dto;
 
 import java.util.Date;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 public class PersonalMemberDto {
 
 	private int pNo;
@@ -13,6 +15,7 @@ public class PersonalMemberDto {
 	private String pNickname;
 	private String pProfile;
 	private String pEmail;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date pHireDate;
 	private String pKeyword;
 	private String pTemporarily;

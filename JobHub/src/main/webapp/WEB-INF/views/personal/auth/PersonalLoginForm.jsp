@@ -163,7 +163,7 @@
 						|
 						<a href="">비밀번호 찾기</a>
 						|
-						<a href="./auth/JoinPersonal">회원가입</a>
+						<a href="../personal/add.do">회원가입</a>
 					</div>
 				</div> <!-- TagNames -->
 				

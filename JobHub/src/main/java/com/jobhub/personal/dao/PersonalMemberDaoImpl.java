@@ -1,14 +1,14 @@
 	package com.jobhub.personal.dao;
 	
 	import java.util.HashMap;
-	import java.util.List;
-	import java.util.Map;
-	
-	import org.mybatis.spring.SqlSessionTemplate;
-	import org.springframework.beans.factory.annotation.Autowired;
-	import org.springframework.stereotype.Repository;
-	
-	import com.jobhub.personal.dto.PersonalMemberDto;
+import java.util.List;
+import java.util.Map;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.jobhub.personal.dto.PersonalMemberDto;
 	
 	@Repository
 	public class PersonalMemberDaoImpl implements PersonalMemberDao {
@@ -28,13 +28,21 @@
 			
 			return sqlSession.selectOne(namespace + "personalMemberExist", paramMap);
 		}
-	
-		@Override
-		public List<PersonalMemberDto> memberSelectList() {
-			// TODO Auto-generated method stub
-			Map<String, Object> map = new HashMap<String, Object>();
-			
-			return sqlSession.selectList(namespace + "memberSelectList", map);
-		}
-	
+
+
+	@Override
+	public List<PersonalMemberDto> memberSelectList() {
+		// TODO Auto-generated method stub
+		Map<String, Object> map = new HashMap<String, Object>();
+		
+		return sqlSession.selectList(namespace + "memberSelectList", map);
 	}
+
+	@Override
+	public int memberInsertOne(PersonalMemberDto personalMemberDto) {
+		// TODO Auto-generated method stub
+		return sqlSession.insert(namespace + "personalInsertOne", personalMemberDto);
+	}
+
+}
+
