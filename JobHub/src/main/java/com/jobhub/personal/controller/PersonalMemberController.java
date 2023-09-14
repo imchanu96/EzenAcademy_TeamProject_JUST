@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import com.jobhub.personal.controller.PersonalMemberController;
 import com.jobhub.personal.dto.PersonalMemberDto;
@@ -53,6 +54,27 @@ public class PersonalMemberController {
 		}
 		
 		return viewUrl;
+	}
+	
+//	일반.do는 단순 페이지 이동
+	@RequestMapping(value = "/personal/add.do", method = RequestMethod.GET)
+	public String memberAdd(Model model) {
+		log.debug("Welcome PersonalMemberController personalAdd!");
+		
+		return "/personal/auth/JoinPersonal";
+	}
+	
+	@RequestMapping(value = "/personal/addCtr.do", method = RequestMethod.POST)
+	public String memberAddCtr(PersonalMemberDto personalMemberDto, Model model) {
+		log.debug("Welcome PersonalMemberController memberAddCtr!" + personalMemberDto);
+		
+		try {
+			PersonalMemberService.personalInsertOne(personalMemberDto);
+		} catch (Exception e) {
+			System.out.println("오류 처리할거 있음 한다");
+			e.printStackTrace();
+		}
+		return "redirect:/personal/login.do";
 	}
 	
 	

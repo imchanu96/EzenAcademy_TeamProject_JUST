@@ -38,4 +38,10 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 		return sqlSession.selectList(namespace + "memberSelectList", map);
 	}
 
+	@Override
+	public int memberInsertOne(PersonalMemberDto personalMemberDto) {
+		// TODO Auto-generated method stub
+		return sqlSession.insert(namespace + "personalInsertOne", personalMemberDto);
+	}
+
 }

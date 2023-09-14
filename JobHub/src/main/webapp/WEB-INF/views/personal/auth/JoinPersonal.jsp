@@ -125,6 +125,10 @@ img {
 	border-top-right-radius: 6px;
 }
 
+#temporarilyInput{
+	height: 80px;
+}
+
 #emailInput, #phoneNumInput {
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
@@ -227,7 +231,6 @@ img {
 <script type="text/javascript">
    		
 		function submitCheckFnc(event) {
-			
 			// 에러 메시지 div들
 			var errorDivList = document.getElementsByClassName("error");
 			
@@ -581,23 +584,23 @@ img {
 		</div>
 		<!-- header 종료 -->
 
-		<form method="post">
+		<form action="./addCtr.do" method="post">
 			<div id="accountInfo" class="boxList">
 				<div id="idInput" class="infoRow">
 					<img src="../images/joinIcon_id.JPG"> <input type="text"
-						placeholder="아이디" name="id" id="idBlank" class="input"
+						placeholder="아이디" name="pId" id="idBlank" class="input"
 						onblur="idCheckFnc();" onfocus="idFocusFnc();">
 				</div>
 
 				<div id="pwdInput" class="infoRow">
 					<img src="../images/joinIcon_pwd.JPG"> <input type="password"
-						placeholder="비밀번호(8~20글자)" name="pwd" id="pwdBlank" class="input"
+						placeholder="비밀번호(8~20글자)" name="pPwd" id="pwdBlank" class="input"
 						onblur="pwdCheckFnc();" onfocus="pwdFocusFnc();">
 				</div>
 
 				<div id="emailInput" class="infoRow">
 					<img src="../images/joinIcon_email.JPG"> <input type="text"
-						placeholder="[선택] 비밀번호 분실 시 확인용 이메일" name="email" id="emailBlank"
+						placeholder="이메일" name="pEmail" id="emailBlank"
 						class="input" onblur="emailCheckFnc();" onfocus="emailFocusFnc();">
 				</div>
 			</div>
@@ -614,23 +617,55 @@ img {
 			<div id="personalInfo" class="boxList">
 				<div id="nameInput" class="infoRow">
 					<img src="../images/joinIcon_id.JPG"> <input type="text"
-						placeholder="이름" name="name" id="nameBlank" class="input"
+						placeholder="이름" name="pName" id="nameBlank" class="input"
 						onblur="nameCheckFnc();" onfocus="nameFocusFnc();">
-				</div>
-
-				<div id="birthdayInput" class="infoRow">
-					<img src="../images/joinIcon_birthday.JPG"> <input
-						type="number" placeholder="생년월일 8자리" name="birthday"
-						id="birthdayBlank" class="input" onblur="birthdayCheckFnc();"
-						onfocus="birthdayFocusFnc();">
 				</div>
 
 				<div id="phoneNumInput" class="infoRow">
 					<img src="../images/joinIcon_phoneNum.JPG"> <input
-						type="number" placeholder="휴대전화번호" name="phoneNum"
+						type="number" placeholder="휴대전화번호" name="pPhoneNum"
 						id="phoneNumBlank" class="input" onblur="phoneNumCheckFnc();"
 						onfocus="phoneNumFocusFnc();">
 				</div>
+				<div id="conpanyInput" class="infoRow">
+					<img src="../images/joinIcon_phoneNum.JPG"> <input
+						type="text" placeholder="현재 다니고 계시는 직장을 입력해주세요" name="pCom"
+						id="nameBlank" class="input" onblur="nameCheckFnc();"
+						onfocus="nameFocusFnc();">
+				</div>
+				<div id="nickNameInput" class="infoRow">
+					<img src="../images/joinIcon_phoneNum.JPG"> <input
+						type="text" placeholder="사용하실 닉네임을 입력해주세요" name="pNickname"
+						id="nameBlank" class="input" onblur="nameCheckFnc();"
+						onfocus="nameFocusFnc();">
+				</div>
+				<div id="profileInput" class="infoRow">
+					<img src="../images/joinIcon_phoneNum.JPG"> <input
+						type="text" placeholder="사진을 넣어주세요" name="pProfile"
+						value="https://www.google.com/url?sa=i&url=https%3A%2F%2Fnamu.wiki%2Fw%2F%25EB%2584%2588%25EA%25B5%25B4%25EB%25A7%25A8&psig=AOvVaw0cPKvY-7v12HpbSAXqH-9i&ust=1694758663888000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCOj4iJO6qYEDFQAAAAAdAAAAABAD"
+						id="nameBlank" class="input">
+				</div>
+				<div id="birthdayInput" class="infoRow">
+					<img src="../images/joinIcon_birthday.JPG">
+					<input type="date" placeholder='입사일을 "-"없이 입력해주세요 ' name="pHireDate"
+						id="birthdayBlank1" class="input"
+						onblur="birthdayCheckFnc();" onfocus="birthdayFocusFnc();">
+				</div>
+				<div id="temporarilyInput" class="infoRow">
+					<div>
+						<select >
+							<option value="">살았던 곳은?</option>
+							<option value="">고등학교 이름은?</option>
+							<option value="">집가고 싶다</option>
+							<option value="">ㅎ</option>
+							<option value="">몰라</option>
+						</select>
+					</div>
+					<img src="../images/joinIcon_email.JPG"> <input type="text"
+						placeholder="질문에 대한 답" name="pTemporarily" id="temporarilyBlank"
+						class="input" onblur="emailCheckFnc();" onfocus="emailFocusFnc();">
+				</div>
+				
 			</div>
 
 			<div id="noNameError" class="error">· 이름: 필수 정보입니다.</div>

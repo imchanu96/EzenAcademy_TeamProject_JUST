@@ -10,5 +10,7 @@ public interface PersonalMemberDao {
 	PersonalMemberDto personalMemberExist(String id, String password);
 
 	List<PersonalMemberDto> memberSelectList();
+
+	int memberInsertOne(PersonalMemberDto personalMemberDto);
 	
 }
