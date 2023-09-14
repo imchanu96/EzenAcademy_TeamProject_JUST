@@ -9,6 +9,7 @@
 <body>
 	에러가 발생하였습니다 :(<br>
 	자세한 사항은 관리자에게 문의해주세요.
-	<h2>(Tail 끌어오기)</h2>
+	
+	<jsp:include page="/WEB-INF/views/Tail.jsp"/>
 </body>
 </html>
