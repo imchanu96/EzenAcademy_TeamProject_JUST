@@ -1,10 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>게시판 목록</title>
 <style type="text/css">
 	#tableDiv{
 		width: 70%;
@@ -31,11 +33,11 @@
 </head>
 <body>	
 	
-	<jsp:include page="../Header.jsp"></jsp:include>
+<%-- 	<jsp:include page="../Header.jsp"></jsp:include> --%>
 	<div style="margin-top: 100px;">
 	
 	</div>
-	<jsp:include page="./SideBar.jsp"></jsp:include>
+	<jsp:include page="./util/SideBar.jsp"></jsp:include>
 	<div id="tableDiv">
 		<table>
 			<tr>

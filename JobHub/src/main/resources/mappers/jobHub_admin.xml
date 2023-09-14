@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="com.jobhub.admin">
+
+	<resultMap type="adminDto" id="adminResultMap">
+		<id column="PERSONAL_NUMBER" property="pNo" />
+		<result column="PERSONAL_NAME" property="pName" />
+		<result column="PERSONAL_ID" property="pId" />
+		<result column="PERSONAL_PASSWORD" property="pPwd" />
+		<result column="PERSONAL_PHONENUMBER" property="pPhoneNum" />
+		<result column="PERSONAL_COMPANY" property="pCom" />
+		<result column="PERSONAL_NICKNAME" property="pNickname" />
+		<result column="PERSONAL_PROFILE" property="pProfile" />
+		<result column="PERSONAL_EMAIL" property="pEmail" />
+		<result column="PERSONAL_HIRE_DATE" property="pHireDate"
+			javaType="java.util.Date" />
+		<result column="PERSONAL_KEYWORD" property="pKeyword" />
+		<result column="PERSONAL_TEMPORARILY" property="pTemporarily" />
+		<result column="PERMISSION" property="pPermission" />
+		<result column="PERSONAL_CREATE_DATE" property="pCreateDate" 
+			javaType="java.util.Date" />
+		<result column="PERSONAL_MODIFY_DATE" property="pModifyDate" 
+			javaType="java.util.Date" />
+		<result column="CONNECTION_TIME" property="pConnectionTime" 
+			javaType="java.util.Date" />
+		<result column="DISCONNECTION_TIME" property="pDisconnectionTime" 
+			javaType="java.util.Date" />
+	</resultMap>
+
+	
+
+<!-- 	<select id="memberSelectList"  parameterType="map" resultMap="adminResultMap"> -->
+<!-- 		SELECT PERSONAL.PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_CREATE_DATE -->
+<!--         FROM PERSONAL -->
+<!-- 	</select> -->
+		
+		<select id="adminExist" parameterType="map"
+		resultMap="adminResultMap">
+		SELECT PERSONAL_NAME, PERSONAL_ID
+		FROM PERSONAL
+		WHERE PERSONAL_ID = #{pId} AND PERSONAL_PASSWORD = #{pPwd}
+	</select>
+</mapper>

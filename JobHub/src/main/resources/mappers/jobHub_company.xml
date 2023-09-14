@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="com.jobhub.personal">
+
+	<resultMap type="companyMemberDto" id="companyMemberResultMap">
+		<id column="COMPANY_NUMBER" property="cNo" />
+		<result column="COMPANY_NAME" property="cName" />
+		<result column="COMPANY_ADDRESS" property="cAdd" />
+		<result column="COMPANY_TYPE" property="cType" />
+		<result column="COMPANY_ESTABLISH_DATE" property="cEstDate" javaType="java.util.Date" />
+		<result column="COMPANY_HOMEPAGE" property="cHomepage" />
+		<result column="COMPANY_BUSINESS_DETAIL" property="cBusDetail" />
+		<result column="COMPANY_ID" property="cId" />
+		<result column="COMPANY_PASSWORD" property="cPwd" />
+		<result column="COMPANY_CODE" property="cCode" />
+		<result column="COMPANY_LICENSE" property="cLicense" />
+		<result column="COMPANY_LOGO" property="cLogo" />
+		<result column="COMPANY_PRESIDENT_NAME" property="cPrName" />
+		<result column="COMPANY_INCHARGE_NAME" property="cInChargeName" />
+		<result column="COMPANY_INCHARGE_EMAIL" property="cInChargeEmail" />
+		<result column="COMPANY_INCHARGE_PHONENUMBER" property="cInChargePhoneNum" />
+		<result column="COMPANY_PREFER" property="cPrefer" />
+
+	</resultMap>
+	
+</mapper>

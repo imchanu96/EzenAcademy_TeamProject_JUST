@@ -6,11 +6,14 @@
 <configuration>
 
 	<typeAliases>
-		<typeAlias type="com.jobhub.admin.dto.AdminDto" alias="AdminDto"/>
-		<typeAlias type="com.jobhub.company.dto.CompanyDto" alias="CompanyDto"/>
-		<typeAlias type="com.jobhub.personal.dto.PersonalDto" alias="PersonalDto"/>
-		<typeAlias type="com.jobhub.personal.dto.LetterDto" alias="LetterDto"/>
-		<typeAlias type="com.jobhub.personal.dto.ResumeDto" alias="ResumeDto"/>
+		<typeAlias type="com.jobhub.admin.dto.AdminDto" alias="adminDto"/>
+		
+		<typeAlias type="com.jobhub.personal.dto.PersonalMemberDto" 
+			alias="personalMemberDto"/>
+		<typeAlias type="com.jobhub.company.dto.CompanyMemberDto" 
+			alias="companyMemberDto"/>
+		<typeAlias type="com.jobhub.review.dto.ReviewDto" 
+			alias="reviewDto"/>
 	</typeAliases>
-	
+		
 </configuration>
