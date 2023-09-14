@@ -30,6 +30,12 @@
 			javaType="java.util.Date" />
 	</resultMap>
 	
+	<select id="personalIdCheck">
+		SELECT COUNT(PERSONAL_ID)
+		FROM PERSONAL
+		WHERE PERSONAL_ID = #{pId};
+	</select>
+	
 	<select id="memberSelectList"  parameterType="map" resultMap="personalResultMap">
 		SELECT PERSONAL.PERSONAL_NUMBER, PERSONAL.PERSONAL_NAME, PERSONAL.PERSONAL_ID, PERSONAL.PERSONAL_NICKNAME
     , PERSONAL.PERMISSION, PERSONAL.PERSONAL_CREATE_DATE, PERSONAL.PERSONAL_MODIFY_DATE
@@ -64,12 +70,6 @@
 				, #{pHireDate}, #{pTemporarily}
 				, 1, SYSDATE, SYSDATE)
 
-<!-- 			INSERT INTO PERSONAL -->
-<!-- 			VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID -->
-<!-- 			    , PERSONAL_PASSWORD, PERSONAL_PHONENUMBER, PERSONAL_EMAIL -->
-<!-- 			    , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE -->
-<!-- 			    , CONNECTION_TIME, DISCONNECTION_TIME) -->
-<!-- 			VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, #{pName}, #{pId}, #{pPwd}, #{pPhoneNum} -->
-<!-- 			, #{pEmail} , 1, SYSDATE, SYSDATE, SYSDATE, SYSDATE) -->
 	</insert>
+	
 </mapper>

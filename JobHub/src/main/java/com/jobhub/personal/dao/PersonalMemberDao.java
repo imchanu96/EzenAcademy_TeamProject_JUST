@@ -7,10 +7,10 @@ import com.jobhub.personal.dto.PersonalMemberDto;
 
 public interface PersonalMemberDao {
 	
-	PersonalMemberDto personalMemberExist(String id, String password);
+	PersonalMemberDto personalMemberExist(String pId, String pPwd);
 
-	List<PersonalMemberDto> memberSelectList();
+	public List<PersonalMemberDto> memberSelectList();
 
-	int memberInsertOne(PersonalMemberDto personalMemberDto);
+	public int memberInsertOne(PersonalMemberDto personalMemberDto);
 	
 }
