@@ -67,8 +67,8 @@
 	}
 </style>
 <script type="text/javascript">
-	function logOut() {
-		location.href = "auth/PersonalLoginForm.jsp";
+	function logout() {
+		location.href = "<%=request.getContextPath()%>/personal/login.do";
 	}
 	
 	function backButton() {
@@ -90,19 +90,17 @@
 			
 			<div id="centerForm">
 				<div class="centerForm">
-					<c:if test="${empty not sessionScope.personalmemberDto.pId}">
-					<p>${personalMemberDto.pId}님</p>
-					</c:if>
+					<p>회원님</p>
 					<p>정말 로그아웃 하시겠습니까?</p>
 				</div>
 			</div>
 			<br>
 			
-			<form action="logOut.do" method="get">
+			<form action="logout.do" method="get">
 				<div id="buttonForm">
 					<div class="buttonForm">
 						<div class="yesButton">
-							<input type="button" value="네" onclick="logOut();">
+							<input type="button" value="네" onclick="logout();">
 						</div>
 						
 						<div class="noButton">
