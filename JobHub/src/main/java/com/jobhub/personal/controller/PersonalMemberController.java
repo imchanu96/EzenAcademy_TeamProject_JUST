@@ -69,8 +69,9 @@ public class PersonalMemberController {
 	//회원가입	
 //	일반.do는 단순 페이지 이동
 	@RequestMapping(value = "/personal/add.do", method = RequestMethod.GET)
-	public String memberAdd(Model model) {
-		log.debug("Welcome PersonalMemberController personalAdd!");
+	public String MemberAdd(Model model) {
+		
+		log.debug("Welcome MemberController personalMemberAdd!");
 		
 		return "/personal/auth/JoinPersonal";
 	}
