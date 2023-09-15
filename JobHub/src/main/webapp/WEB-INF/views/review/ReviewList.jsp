@@ -9,75 +9,10 @@
 <title>Review list</title>
 <style type="text/css">
 	@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-			
-/* 공통 */
-	a {
-	  text-decoration: none;
-	  color: #292e41;
-	}
-    a:hover {
-    	color: #2d65f2;
-    }
-/* head form */
-	#headerBox {
-		height: 130px;
-		border-bottom: 1px solid #b4c0d3;
-	}
-	#headerContent {
-			
-		margin: 0px auto;
-		width: 1280px;
-		height: 120px;
-	}
-/* logo */
-	#logo {
-		float: left;
-		margin: 0px 90px;
-		width: 74px;
-		height: 111px;
-	}
-/* main menu */
-	#mainMenuBox {
-			
-		float: left;
-		width: 750px;
-		height: 100px;
-		margin-left: 30px;
-	}
-	.mainMenuItem {
-			
-		float: left;
-		margin: 20px;
-		width: 200px;
-		height: 60px;
-		text-align: center;
-		line-height: 60px;
-		font-size: 30px;
-		font-weight: 600;
-	}
-/* message */
-	#myMessageBox {
-			
-		float: left;
-		width: 100px;
-		height: 100px;
-		text-align: center;
-	}
-/* my menu */
-	#myMenuBox {
-			
-		float: left;
-		width: 140px;
-		height: 100px;
-		text-align: center;
-	}
-/* end of header */
-
-/* content */
+/* container */
 	#container {
 		width: 1280px;
 		height: 1000px;
-		
 		margin: 0px auto;
 	}
 /* navigation */
@@ -118,6 +53,7 @@
 	}
 	#companyInfoBox, #reviewAverage, .reviewItem {
 		border-radius: 10px;
+		
 	}
 	#companyInfoBox {
 		width: 910px;
@@ -191,6 +127,9 @@
 		width: 100px;
 		text-align: center;
 	}
+	.fas.fa-star {
+    	font-size: 13px;
+	}
 	.totalRate {
 		float: right;
 		width: 300px;
@@ -215,6 +154,7 @@
 		height: 160px;
 		margin: 30px auto;
 		color: #5c667b;
+		box-shadow: 0px 1px 4px 0px #ddd;
 	}
 	
 /* tail form */
@@ -330,8 +270,7 @@
 							<span>
 								<c:forEach var="i" begin="1" end="5">
 								    <i class="fas fa-star"
-								    	style="color: ${i <= reviewDto.rSal ? '#2d65f2' : '#ddd'};
-								    			font-size: 13px;"></i>
+								    	style="color: ${i <= reviewDto.rSal ? '#2d65f2' : '#ddd'};"></i>
 								</c:forEach>
 							</span>
 						</div>
@@ -342,8 +281,7 @@
 							<span>
 								<c:forEach var="i" begin="1" end="5">
 								    <i class="fas fa-star"
-								    	style="color: ${i <= reviewDto.rWel ? '#2d65f2' : '#ddd'};
-								    			font-size: 13px;"></i>
+								    	style="color: ${i <= reviewDto.rWel ? '#2d65f2' : '#ddd'};"></i>
 								</c:forEach>
 							</span>
 						</div>
@@ -354,8 +292,7 @@
 							<span>
 								<c:forEach var="i" begin="1" end="5">
 								    <i class="fas fa-star"
-								  	  style="color: ${i <= reviewDto.rEnv ? '#2d65f2' : '#ddd'};
-								    			font-size: 13px;"></i>
+								  	  style="color: ${i <= reviewDto.rEnv ? '#2d65f2' : '#ddd'};"></i>
 								</c:forEach>
 							</span>
 						</div>
@@ -366,8 +303,7 @@
 							<span>
 								<c:forEach var="i" begin="1" end="5">
 								    <i class="fas fa-star"
-								    	style="color: ${i <= reviewDto.rBoss ? '#2d65f2' : '#ddd'};
-								    			font-size: 13px;"></i>
+								    	style="color: ${i <= reviewDto.rBoss ? '#2d65f2' : '#ddd'};"></i>
 								</c:forEach>
 							</span>
 						</div>
@@ -378,8 +314,7 @@
 							<span>
 								<c:forEach var="i" begin="1" end="5">
 								    <i class="fas fa-star"
-								    	style="color: ${i <= reviewDto.rBal ? '#2d65f2' : '#ddd'};
-								    			font-size: 13px;"></i>
+								    	style="color: ${i <= reviewDto.rBal ? '#2d65f2' : '#ddd'};"></i>
 								</c:forEach>
 							</span>
 						</div>
@@ -394,19 +329,10 @@
 					</div>
 				</div>
 			</c:forEach>
-			
-			
-			
 		</div>
 	</div>	
 	
-	<div id="tailBox">
-		<div id="tailContent">
-			<div id="teamName">
-				TEAM JUST
-			</div>
-		</div>
-	</div>
+	<jsp:include page="/WEB-INF/views/Tail.jsp"/>
 	
 </body>
 </html>

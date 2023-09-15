@@ -78,17 +78,17 @@
 			<div id="mainMenuBox">
 				<div class="mainMenuItem">
 					<a href="http://www.naver.com">
-						메뉴 1
+						기업 추천
 					</a>
 				</div>
 				<div class="mainMenuItem">
 					<a href="http://www.naver.com">
-						메뉴 2
+						기업 리뷰
 					</a>
 				</div>
 				<div class="mainMenuItem">
 					<a href="http://www.naver.com">
-						메뉴 3
+						게시판
 					</a>
 				</div>
 			</div>

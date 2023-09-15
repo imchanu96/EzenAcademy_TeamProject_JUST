@@ -7,68 +7,7 @@
 <title>Review write</title>
 <style type="text/css">
 	@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-/* 공통 */
-	a {
-		text-decoration: none;
-		color: #292e41;
-	}
-	
-	a:hover {
-		color: #2d65f2;
-	}
-	
-/* head form */
-	#headerBox {
-		height: 130px;
-		border-bottom: 1px solid #b4c0d3;
-	}
-	
-	#headerContent {
-		margin: 0px auto;
-		width: 1280px;
-		height: 120px;
-	}
-/* logo */
-	#logo {
-		float: left;
-		margin: 0px 90px;
-		width: 74px;
-		height: 111px;
-	}
-/* main menu */
-	#mainMenuBox {
-		float: left;
-		width: 750px;
-		height: 100px;
-		margin-left: 30px;
-	}
-	
-	.mainMenuItem {
-		float: left;
-		margin: 20px;
-		width: 200px;
-		height: 60px;
-		text-align: center;
-		line-height: 60px;
-		font-size: 30px;
-		font-weight: 600;
-	}
-/* message */
-	#myMessageBox {
-		float: left;
-		width: 100px;
-		height: 100px;
-		text-align: center;
-	}
-/* my menu */
-	#myMenuBox {
-		float: left;
-		width: 140px;
-		height: 100px;
-		text-align: center;
-	}
-	
-/* content */
+/* container */
 	#container {
 		width: 1280px;
 		height: 1000px;
@@ -84,17 +23,16 @@
 		text-align: center;
 		background-color: #eff5ff;
 	}
-	
 	#smallMenuBox {
+			
 		margin: 30px auto;
 		width: 200px;
 		height: 500px;
 	}
-	
 	.smallMenuItem {
+			
 		margin-bottom: 20px;
 	}
-	
 	.smallMenuItem a {
 		color: #475067;
 	}
@@ -108,10 +46,11 @@
 		background-color: #f8fafc;
 	}
 	
-	#content > form > div {
+	#titleInputBox, #starInputBox, #contentInputBox {
 		background-color: #fff;
 		padding: 20px 0px 20px 15px;
 		border-radius: 10px;
+		box-shadow: 0px 1px 4px 0px #ddd;
 	}
 	
 	#titleInputBox {
@@ -125,8 +64,12 @@
 		margin-left: 30px;
 		width: 810px;
 		height: 25px;
+		border: 1px solid #d7dce5;
+		border-radius: 6px;
 	}
-	
+	#titleInput:focus {
+		outline: 1px solid #94b5fc;
+	}
 	#starInputBox {
 		float: left;
 		width: 120px;
@@ -195,35 +138,31 @@
 		float: left;
 		width: 760px;
 		height: 500px;
-		margin: 14px 0px 0px 14px;
+		margin-top: 14px;
 	}
 	
 	#contentInput {
 		margin-left: 50px;
 		width: 640px;
 		height: 480px;
+		border: 1px solid #d7dce5;
+		border-radius: 6px;
+		resize: none;
+	}
+	#contentInput:focus {
+		outline: 1px solid #94b5fc;
 	}
 	
 	#buttonBox {
-		margin: 0px 420px;
+		margin: 0px 400px;
 	}
-/* tail form */
-	#tailBox {
-		height: 150px;
-		background-color: #b4c0d3;
-		text-align: center;
-	}
-	
-	#tailContent {
-		width: 1280px;
-		height: 130px;
-		margin: auto;
-	}
-	
-	#teamName {
-		font-size: 50px;
-		font-weight: 800;
-		color: #999999;
+	button {
+		width: 70px;
+		height: 30px;
+		background-color: #bcd1fc;
+		border: none;
+		border-radius: 6px;
+		box-shadow: 0px 1px 4px 0px #ddd;
 	}
 </style>
 
@@ -410,11 +349,7 @@
 
 	</div>
 	
-	<div id="tailBox">
-		<div id="tailContent">
-			<div id="teamName">TEAM JUST</div>
-		</div>
-	</div>
+	<jsp:include page="/WEB-INF/views/Tail.jsp"/>
 
 </body>
 </html>

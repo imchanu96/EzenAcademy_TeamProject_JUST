@@ -6,9 +6,6 @@
 <meta charset="UTF-8">
 <title>Tail</title>
 	<style type="text/css">
-	
-			/* 	모든 선택자의 border: 1px solid red; 는 작업용입니다. */
-			
 /* 공통 */
 		a {
 		  text-decoration: none;
@@ -23,10 +20,10 @@
 			text-align: center;
 		}
 		#tailContent {
-				border: 1px solid red;
 			width: 1280px;
 			height: 130px;
 			margin: auto;
+			line-height: 130px;
 		}
 		#teamName {
 			font-size: 50px;
