@@ -25,4 +25,10 @@ public class BoardDaoImpl implements BoardDao{
 		
 		return sqlSession.selectList(namespace + "boardSelectList");
 	}
+
+	@Override
+	public int boardInsertOne(BoardDto boardDto) {
+		// TODO Auto-generated method stub
+		return sqlSession.insert("com.jobhub.board.boardInsertOne", boardDto);
+	}
 }

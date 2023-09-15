@@ -26,4 +26,11 @@
 		ORDER BY BOARD_NUMBER DESC
 	</select>
 	
+	<insert id="boardInsertOne" parameterType="boardDto">
+		INSERT INTO BOARD
+			(BOARD_NUMBER, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE, BOARD_MODIFY_DATE,
+            PERSONAL_NUMBER)
+		VALUES(BOARD_NUMBER_SEQ.NEXTVAL, #{bTitle}, #{bContent}, SYSDATE, SYSDATE, 
+			1)
+	</insert>
 </mapper>
