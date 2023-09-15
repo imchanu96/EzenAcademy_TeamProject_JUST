@@ -22,6 +22,12 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 		// TODO Auto-generated method stub
 		return companyMemberDao.companyMemberExist(cCode, cPwd);
 	}
+
+	@Override
+	public void companyInsertOne(CompanyMemberDto companyMemberDto) {
+		// TODO Auto-generated method stub
+		companyMemberDao.companyInsertOne(companyMemberDto);
+	}
 	
 	
 }

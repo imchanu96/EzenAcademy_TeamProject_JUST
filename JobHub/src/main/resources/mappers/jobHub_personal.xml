@@ -59,7 +59,7 @@
 	
 	</select>
 
-	<insert id="personalInsertOne" parameterType="PersonalMemberDto">
+	<insert id="personalInsertOne" parameterType="personalMemberDto">
 <!-- 		useGeneratedKeys="true" keyProperty="pNo"> -->
 <!-- 		<selectKey keyProperty="pNo" resultType="int" order="BEFORE"> -->
 <!-- 			SELECT PERSONAL_NUMBER_SEQ.NEXTVAL -->

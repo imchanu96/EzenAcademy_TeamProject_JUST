@@ -25,6 +25,13 @@ public class CompanyMemberDaoImpl implements CompanyMemberDao {
 		
 		return sqlSession.selectOne(namespace + "companyMemberExist", paramMap);
 	}
+
+	@Override
+	public int companyInsertOne(CompanyMemberDto companyMemberDto) {
+		// TODO Auto-generated method stub
+		
+		return sqlSession.insert(namespace + "companyInsertOne", companyMemberDto);
+	}
 	
 	
 

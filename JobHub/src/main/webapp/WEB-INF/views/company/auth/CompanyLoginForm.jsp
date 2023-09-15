@@ -62,6 +62,8 @@
 		height: 20px; 
 		margin-bottom: 50px; 
 		text-align: center;
+		box-shadow: 0px 0px 2px 0px black;
+		
 	}
 	
 	.ID_Box > input {
@@ -111,6 +113,11 @@
 	#TagNames > div > a {
 		color: black;
 	}
+	
+	input{
+		border: 0px solid;
+		
+	}
 </style>
 <script type="text/javascript">
 	function goCompanyLoginFnc() {
@@ -142,11 +149,11 @@
 				<form action="loginCtr.do" method="post">
 				<div id="IDandPwd_Box">
 					<div class="ID_Box">
-						<input type="text" name="pId" placeholder="사업자 등록번호">
+						<input type="text" name="cCode" placeholder="사업자 등록번호">
 					</div>
 					
 					<div class="Password_Box">
-						<input type="password" name="pPwd" placeholder="비밀번호">
+						<input type="password" name="cPwd" placeholder="비밀번호">
 					</div>
 				</div> <!-- IDandPwd_Box -->
 				

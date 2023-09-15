@@ -2,12 +2,15 @@ package com.jobhub.company.dto;
 
 import java.util.Date;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 public class CompanyMemberDto {
 
 	private int cNo;
 	private String cName;
 	private String cAdd;
 	private String cType;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date cEstDate;
 	private String cHomepage;
 	private String cBusDetail;

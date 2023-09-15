@@ -4,7 +4,7 @@
 
 
 
-<mapper namespace="com.jobhub.personal">
+<mapper namespace="com.jobhub.company">
 
 	<resultMap type="companyMemberDto" id="companyMemberResultMap">
 		<id column="COMPANY_NUMBER" property="cNo" />
@@ -25,11 +25,57 @@
 		<result column="COMPANY_INCHARGE_PHONENUMBER" property="cInChargePhoneNum" />
 		<result column="COMPANY_PREFER" property="cPrefer" />
 		<result column="PERMISSION" property="permission" />
-<!-- 		<result column="COMPANY_CREATE_DATE" property="cCreateDate" /> -->
-<!-- 		<result column="COMPANY_MODIFY_DATE" property="cModifyDate" /> -->
-<!-- 		<result column="CONNECTION_TIME" property="cConnectionTime" /> -->
-<!-- 		<result column="DISCONNECTION_TIME" property="cDisconnectionTime" /> -->
+		<result column="COMPANY_CREATE_DATE" property="cCreDate" />
+		<result column="COMPANY_MODIFY_DATE" property="cModDate" />
+		<result column="CONNECTION_TIME" property="connTime" />
+		<result column="DISCONNECTION_TIME" property="disconnTime" />
 
 	</resultMap>
+	
+	<select id="memberSelectList"  parameterType="map" resultMap="companyMemberResultMap">
+		SELECT PERSONAL.PERSONAL_NUMBER, PERSONAL.PERSONAL_NAME, PERSONAL.PERSONAL_ID
+			, PERSONAL.PERSONAL_NICKNAME, PERSONAL.PERMISSION, PERSONAL.PERSONAL_CREATE_DATE
+			, PERSONAL.PERSONAL_MODIFY_DATE
+		FROM( SELECT ROWNUM AS RNUM, P.PERSONAL_NUMBER, P.PERSONAL_NAME, P.PERSONAL_ID
+			, P.PERSONAL_NICKNAME, P.PERMISSION, P.PERSONAL_CREATE_DATE, P.PERSONAL_MODIFY_DATE
+        		FROM( SELECT PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID,PERSONAL_NICKNAME
+        			, PERMISSION, PERSONAL_CREATE_DATE, PERSONAL_MODIFY_DATE
+                		FROM PERSONAL
+                		ORDER BY PERSONAL_CREATE_DATE DESC
+                	) P
+			) PERSONAL
+<!-- 		WHERE PERSONAL.RNUM BETWEEN #{start} AND #{end} -->
+	</select>
+	
+
+	<select id="companyMemberExist" parameterType="map" resultMap="companyMemberResultMap">
+		SELECT COMPANY_CODE, COMPANY_PASSWORD
+		 FROM COMPANY
+		 WHERE COMPANY_CODE = #{cCode} AND COMPANY_PASSWORD = #{cPwd}
+	
+	</select>
+
+	<insert id="companyInsertOne" parameterType="companyMemberDto">
+<!-- 		useGeneratedKeys="true" keyProperty="pNo"> -->
+<!-- 		<selectKey keyProperty="pNo" resultType="int" order="BEFORE"> -->
+<!-- 			SELECT COMPANY_NUMBER_SEQ.NEXTVAL -->
+<!-- 			FROM DUAL -->
+<!-- 		</selectKey> -->
+		INSERT INTO COMPANY
+			VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS
+				, COMPANY_TYPE, COMPANY_BUSINESS_DETAIL
+    			, COMPANY_PASSWORD, COMPANY_CODE
+    			, COMPANY_LICENSE, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
+			    , COMPANY_INCHARGE_PHONENUMBER
+			    , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE
+			    , CONNECTION_TIME, DISCONNECTION_TIME)
+			VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, #{cName}, #{cAdd}
+				, #{cType}, #{cBusDetail}
+				, #{cPwd}, #{cCode}, #{cLicense}
+				, #{cInChargeName}, #{cInChargeEmail}
+				, #{cInChargePhoneNum}
+				, 5, SYSDATE, SYSDATE, SYSDATE, SYSDATE)
+
+	</insert>
 	
 </mapper>
