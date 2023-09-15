@@ -24,14 +24,7 @@ public class BoardController {
 	@Autowired
 	private BoardService boardService;
 	
-	@RequestMapping(value = "/board/board.do", method = RequestMethod.GET)
-	public String board(HttpSession session, Model model) {
-		log.info("Welcome BoardController board!");
-		
-		return "board/BoardList";
-	}
-	
-	@RequestMapping(value = "/board/boardList.do"
+	@RequestMapping(value = "/board/board.do"
 			, method = {RequestMethod.GET, RequestMethod.POST})
 	public String boardList(Model model) {
 		// log4j

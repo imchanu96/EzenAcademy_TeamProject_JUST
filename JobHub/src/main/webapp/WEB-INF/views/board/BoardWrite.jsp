@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -101,7 +103,7 @@
 </head>
 <body>
 
-	<jsp:include page="/WEB-INF/views/Header.jsp"/>
+	<jsp:include page="/WEB-INF/views/personal/Header.jsp"/>
 	
 	<div id="container">
 		<div id="navigation">
@@ -118,7 +120,10 @@
 					<div id="titleInputBox">
 						<input name="board" id="titleInput" type="text" placeholder="제목을 입력해주세요">
 					</div>
-	
+					<div>
+						<input type='text' name='writer' value='${personalMemberDto.pName}'
+							readonly>
+					</div>
 					<div id="contentInputBox">
 						<textarea id="contentInput" placeholder="내용을 입력해주세요"></textarea>
 					</div>

@@ -75,7 +75,7 @@
 </head>
 <body>
 
-	<jsp:include page="/WEB-INF/views/Header.jsp"/>
+	<jsp:include page="/WEB-INF/views/personal/Header.jsp"/>
 	
 	<div id="container">
 		<div id="navigation">
@@ -98,13 +98,17 @@
 						<th>작성일</th>
 						<th>조회수</th>
 					</tr>
-					<tr>
-						<td>1</td>
-						<td><a href="BoardView.jsp">안녕하세요</a></td>
-						<td>박미영</td>
-						<td>2023-09-14</td>
-						<td>0</td>
-					</tr>
+					<c:forEach var="boardDto" items="${boardList}">
+						<tr>
+							<td>${boardDto.bNo}</td>
+							<td><a href="BoardView.jsp">${boardDto.bTitle}</a></td>
+							<td>${boardDto.bWriter}</td>
+							<td>
+								<fmt:formatDate pattern="yyyy-MM-dd hh:mm" value="${boardDto.bCreDate}"/>
+							</td>
+							<td>${boardDto.bViews}</td>
+						</tr>
+					</c:forEach>
 				</table>
 		</div>
 	</div>

@@ -11,16 +11,17 @@ public class BoardDto {
 	private String bContent;
 	private String bImg;
 	private String bVotingCheck;
-	private Date bVotingCreDate;
-	private Date bVotingModDate;
+	private Date bCreDate;
+	private Date bModDate;
 	private int bLikeCount;
+	private int bViews;
 	
 	public BoardDto() {
 		super();
 	}
 
 	public BoardDto(int bNo, String bTag, String bTitle, String bWriter, String bContent, String bImg,
-			String bVotingCheck, Date bVotingCreDate, Date bVotingModDate, int bLikeCount) {
+			String bVotingCheck, Date bCreDate, Date bModDate, int bLikeCount, int bViews) {
 		super();
 		this.bNo = bNo;
 		this.bTag = bTag;
@@ -29,9 +30,10 @@ public class BoardDto {
 		this.bContent = bContent;
 		this.bImg = bImg;
 		this.bVotingCheck = bVotingCheck;
-		this.bVotingCreDate = bVotingCreDate;
-		this.bVotingModDate = bVotingModDate;
+		this.bCreDate = bCreDate;
+		this.bModDate = bModDate;
 		this.bLikeCount = bLikeCount;
+		this.bViews = bViews;
 	}
 
 	public int getbNo() {
@@ -90,20 +92,20 @@ public class BoardDto {
 		this.bVotingCheck = bVotingCheck;
 	}
 
-	public Date getbVotingCreDate() {
-		return bVotingCreDate;
+	public Date getbCreDate() {
+		return bCreDate;
 	}
 
-	public void setbVotingCreDate(Date bVotingCreDate) {
-		this.bVotingCreDate = bVotingCreDate;
+	public void setbCreDate(Date bCreDate) {
+		this.bCreDate = bCreDate;
 	}
 
-	public Date getbVotingModDate() {
-		return bVotingModDate;
+	public Date getbModDate() {
+		return bModDate;
 	}
 
-	public void setbVotingModDate(Date bVotingModDate) {
-		this.bVotingModDate = bVotingModDate;
+	public void setbModDate(Date bModDate) {
+		this.bModDate = bModDate;
 	}
 
 	public int getbLikeCount() {
@@ -114,11 +116,19 @@ public class BoardDto {
 		this.bLikeCount = bLikeCount;
 	}
 
+	public int getbViews() {
+		return bViews;
+	}
+
+	public void setbViews(int bViews) {
+		this.bViews = bViews;
+	}
+
 	@Override
 	public String toString() {
 		return "BoardDto [bNo=" + bNo + ", bTag=" + bTag + ", bTitle=" + bTitle + ", bWriter=" + bWriter + ", bContent="
-				+ bContent + ", bImg=" + bImg + ", bVotingCheck=" + bVotingCheck + ", bVotingCreDate=" + bVotingCreDate
-				+ ", bVotingModDate=" + bVotingModDate + ", bLikeCount=" + bLikeCount + "]";
+				+ bContent + ", bImg=" + bImg + ", bVotingCheck=" + bVotingCheck + ", bCreDate=" + bCreDate
+				+ ", bModDate=" + bModDate + ", bLikeCount=" + bLikeCount + ", bViews=" + bViews + "]";
 	}
-	
+
 }

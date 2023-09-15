@@ -94,7 +94,7 @@
 </head>
 <body>
 
-	<jsp:include page="/WEB-INF/views/Header.jsp"/>
+	<jsp:include page="/WEB-INF/views/personal/Header.jsp"/>
 	
 	<div id="container">
 		<div id="navigation">
@@ -114,7 +114,7 @@
 			<form class="boardViewT">
 				<table>
 					<tr>
-						<td colspan="2"><h3>제목: 안녕하세요</h3></td>
+						<td colspan="2"><h3>제목: ${boardDto.bTitle}</h3></td>
 					</tr>
 					<tr>
 						<td>글쓴이: 박미영</td>

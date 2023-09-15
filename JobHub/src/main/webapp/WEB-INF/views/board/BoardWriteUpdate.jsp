@@ -100,7 +100,7 @@
 </head>
 <body>
 
-	<jsp:include page="/WEB-INF/views/Header.jsp"/>
+	<jsp:include page="/WEB-INF/views/personal/Header.jsp"/>
 	
 	<div id="container">
 		<div id="navigation">
@@ -115,11 +115,11 @@
 			<div id="boardWriteBox">
 				<form action="">
 					<div id="titleInputBox">
-						<input name="board" id="titleInput" type="text" value="안녕하세요">
+						<input name="board" id="titleInput" type="text" value='${boardDto.bTitle}'>
 					</div>
 	
 					<div id="contentInputBox">
-						<textarea id="contentInput">반갑습니다 잘지내보아요</textarea>
+						<textarea id="contentInput">${boardDto.bContent}</textarea>
 					</div>
 					<button type="submit" onclick="updateFnc()">수정</button>
 					<button type="" onclick="cancleFnc()">취소</button>
