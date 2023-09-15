@@ -1,5 +1,7 @@
 package com.jobhub.review.service;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,13 +18,13 @@ public class ReviewServiceImpl implements ReviewService {
 	
 	@Autowired
 	public ReviewDao reviewDao;
-	
-//	@Override
-//	public ReviewDto reviewExist(int rNo) {
-//		// TODO Auto-generated method stub
-//		return reviewDao.reviewExist(rNo);
-//	}
 
+	@Override
+	public List<ReviewDto> reviewSelectList() {
+
+		return reviewDao.reviewSelectList();
+	}
+	
 	@Override
 	public void reviewInsertOne(ReviewDto reviewDto) throws Exception {
 
@@ -36,7 +38,6 @@ public class ReviewServiceImpl implements ReviewService {
 //				memberDao.insertFile(list.get(i));
 //			}
 	}
-	
 }
 
 

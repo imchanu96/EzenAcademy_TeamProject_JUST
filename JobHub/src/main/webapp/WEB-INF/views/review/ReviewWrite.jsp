@@ -164,7 +164,7 @@
 	}
 	.rate > label {
 		float: right;
-		color: #ddd
+		color: #ddd;
 	}
 	.rate > label:before {
 		display: inline-block;
@@ -178,11 +178,6 @@
 	.rate {
 		padding: 0px;
 	}
-	.rate .half:before {
-		content: "\f089 ";
-		position: absolute;
-		padding-right: 0;
-	}
 	.rate input:checked ~ label, 
 	.rate label:hover,.rate label:hover ~ label {
 		color: #2d65f2 !important;
@@ -194,7 +189,7 @@
 		color: #2d65f2 !important;
 	} 
 	#hiddenDiv {
-/* 		display: none;	 */
+ 		display: none;
 	}
 	#contentInputBox {
 		float: left;
@@ -317,7 +312,7 @@
 			<form action="./addCtr.do" method='post' onsubmit="AvgCalFnc();">
 				<div id="titleInputBox">
 					<input name="rTitle" id="titleInput" type="text"
-						placeholder="제목을 입력해주세요.">
+						placeholder="제목을 입력해주세요(20자 이내)">
 				</div>
 				<div id="starInputBox">
 					<div id="starInput">

@@ -1,226 +1,246 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Review list</title>
-	<style type="text/css">
-	
-			/* 	모든 선택자의  는 작업용입니다. */
+<style type="text/css">
+	@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 			
 /* 공통 */
-		a {
-		  text-decoration: none;
-		  color: #292e41;
-		}
-	    a:hover { color: #2d65f2; }
-			
+	a {
+	  text-decoration: none;
+	  color: #292e41;
+	}
+    a:hover {
+    	color: #2d65f2;
+    }
 /* head form */
-		#headerBox {
-			height: 130px;
-			border-bottom: 1px solid #b4c0d3;
-		}
-		#headerContent {
-				
-			margin: 0px auto;
-			width: 1280px;
-			height: 120px;
-		}
+	#headerBox {
+		height: 130px;
+		border-bottom: 1px solid #b4c0d3;
+	}
+	#headerContent {
+			
+		margin: 0px auto;
+		width: 1280px;
+		height: 120px;
+	}
 /* logo */
-		#logo {
-			float: left;
-			margin: 0px 90px;
-			width: 74px;
-			height: 111px;
-		}
+	#logo {
+		float: left;
+		margin: 0px 90px;
+		width: 74px;
+		height: 111px;
+	}
 /* main menu */
-		#mainMenuBox {
-				
-			float: left;
-			width: 750px;
-			height: 100px;
-			margin-left: 30px;
-		}
-		.mainMenuItem {
-				
-			float: left;
-			margin: 20px;
-			width: 200px;
-			height: 60px;
-			text-align: center;
-			line-height: 60px;
-			font-size: 30px;
-			font-weight: 600;
-		}
+	#mainMenuBox {
+			
+		float: left;
+		width: 750px;
+		height: 100px;
+		margin-left: 30px;
+	}
+	.mainMenuItem {
+			
+		float: left;
+		margin: 20px;
+		width: 200px;
+		height: 60px;
+		text-align: center;
+		line-height: 60px;
+		font-size: 30px;
+		font-weight: 600;
+	}
 /* message */
-		#myMessageBox {
-				
-			float: left;
-			width: 100px;
-			height: 100px;
-			text-align: center;
-		}
+	#myMessageBox {
+			
+		float: left;
+		width: 100px;
+		height: 100px;
+		text-align: center;
+	}
 /* my menu */
-		#myMenuBox {
-				
-			float: left;
-			width: 140px;
-			height: 100px;
-			text-align: center;
-		}
+	#myMenuBox {
+			
+		float: left;
+		width: 140px;
+		height: 100px;
+		text-align: center;
+	}
 /* end of header */
 
 /* content */
-		#container {
-			width: 1280px;
-			height: 1000px;
-			
-			margin: 0px auto;
-		}
+	#container {
+		width: 1280px;
+		height: 1000px;
+		
+		margin: 0px auto;
+	}
 /* navigation */
-		#navigation {
-			margin: 10px;
-			float: left;
-			width: 250px;
-			height: 950px;
-			font-size: 25px;
-			text-align: center;
-			background-color: #eff5ff;
-		}
-		#smallMenuBox {
-				
-			margin: 30px auto;
-			width: 200px;
-			height: 500px;
-		}
-		.smallMenuItem {
-				
-			margin-bottom: 20px;
-		}
-		.smallMenuItem a {
-			color: #475067;
-		}
+	#navigation {
+		margin: 10px;
+		float: left;
+		width: 250px;
+		height: 950px;
+		font-size: 25px;
+		text-align: center;
+		background-color: #eff5ff;
+	}
+	#smallMenuBox {
+			
+		margin: 30px auto;
+		width: 200px;
+		height: 500px;
+	}
+	.smallMenuItem {
+			
+		margin-bottom: 20px;
+	}
+	.smallMenuItem a {
+		color: #475067;
+	}
 /* content */
-		#content {
-			margin: 10px;
-			float: left;
-			width: 980px;
-			height: 950px;
-			font-size: 30px;
-			background-color: #f8fafc;
-		}
-		#content > div {
-			background-color: #fff;
-			padding: 20px;
-		}
-		#companyInfoBox, #reviewAverage, .reviewItem {
-			border-radius: 10px;
-		}
-		#companyInfoBox {
-			width: 910px;
-			height: 160px;
-			margin: 14px auto 0px auto;
-		}
+	#content {
+		margin: 10px;
+		float: left;
+		width: 980px;
+		height: 950px;
+		font-size: 30px;
+		background-color: #f8fafc;
+	}
+	#content > div {
+		background-color: #fff;
+		padding: 20px;
+	}
+	#companyInfoBox, #reviewAverage, .reviewItem {
+		border-radius: 10px;
+	}
+	#companyInfoBox {
+		width: 910px;
+		height: 160px;
+		margin: 14px auto 0px auto;
+	}
 /* 		#companyPhoto { */
 /* 				 */
 /* 			width: 945px; */
 /* 			height: 195px; */
 /* 			margin: auto; */
 /* 		} */
-		#companyLogo {
-			float: left;
-			width: 140px;
-			height: 140px;
-			margin: 10px;
-		}
-		#companySummary {
-			float: left;
-			width: 650px;
-			height: 80px;
-			margin: 20px;
-			color: #5c667b;
-		}
-		#companyName {
-		
-		}
-		#companyType {
-		
-		}
-		#companyHomepage {
-		
-		}
-		#totalRate {
-			float: right;
-		}
-		#reviewAverage, .reviewItem {
-			font-size: 18px;
-		}
-		#reviewAverage {
-			width: 910px;
-			height: 160px;
-			margin: 30px auto;
-			color: #5c667b;
-		}
-		#reviewAverageRate {
-			width: 300px;
-			height: 50px;
-			font-size: 25px;
-		}
-		#averageBox {
-			float: left;			
-			margin-left: 20px;
-		}
-		.starRateBox {
-			float: left;
-			margin-left: 20px;
-			width: 300px;
-			height: 120px;
-		}
-		.totalRate {
-			float: right;
-			width: 300px;
-			height: 120px;
-			line-height: 120px;
-			font-size: 30px;
-		}
-		.reviewTitleBox {
-			width: 600px;
-			height: 30px;
-			margin-bottom: 20px;
-			font-size: 25px;
-			color: #292e41
-		}
-		.reviewContentBox {
-			width: 600px;
-			height: 120px;
-			color: #292e41
-		}
-		.reviewItem {
-			width: 910px;
-			height: 160px;
-			margin: 30px auto;
-			color: #5c667b;
-		}
-		
+	#companyLogo {
+		float: left;
+		width: 140px;
+		height: 140px;
+		margin: 10px;
+	}
+	#companySummary {
+		float: left;
+		width: 650px;
+		height: 80px;
+		margin: 20px;
+		color: #5c667b;
+	}
+	#companyName {
+	
+	}
+	#companyType {
+	
+	}
+	#companyHomepage {
+	
+	}
+	#totalRate {
+		float: right;
+	}
+	#reviewAverage, .reviewItem {
+		font-size: 18px;
+	}
+	#reviewAverage {
+		width: 910px;
+		height: 200px;
+		margin: 30px auto;
+		color: #5c667b;
+	}
+	#reviewAverageRate {
+		width: 300px;
+		height: 50px;
+		font-size: 25px;
+	}
+	#averageBox {
+		float: left;			
+		margin-left: 20px;
+	}
+	.starRateBox {
+		float: left;
+		margin-top: 5px;
+		width: 250px;
+		height: 120px;
+	}
+	.starRateBox > div {
+		margin-top: 5px;
+	}
+	.starRateBox > div > span {
+		width: 90px;
+		text-align: center;
+	}
+	.starNameBox {
+		float: left;
+		width: 100px;
+		text-align: center;
+	}
+	.totalRate {
+		float: right;
+		width: 300px;
+		height: 120px;
+		line-height: 120px;
+		font-size: 30px;
+	}
+	.reviewTitleBox {
+		width: 800px;
+		height: 30px;
+		margin-bottom: 20px;
+		font-size: 25px;
+		color: #292e41
+	}
+	.reviewContentBox {
+		width: 600px;
+		height: 120px;
+		color: #292e41
+	}
+	.reviewItem {
+		width: 910px;
+		height: 160px;
+		margin: 30px auto;
+		color: #5c667b;
+	}
+	
 /* tail form */
-		#tailBox {
-			height: 150px;
-			background-color: #b4c0d3;
-			text-align: center;
-		}
-		#tailContent {
-				
-			width: 1280px;
-			height: 130px;
-			margin: auto;
-		}
-		#teamName {
-			font-size: 50px;
-			font-weight: 800;
-			color: #999999;
-		}
-	</style>
+	#tailBox {
+		height: 150px;
+		background-color: #b4c0d3;
+		text-align: center;
+	}
+	#tailContent {
+			
+		width: 1280px;
+		height: 130px;
+		margin: auto;
+	}
+	#teamName {
+		font-size: 50px;
+		font-weight: 800;
+		color: #999999;
+	}
+	
+	
+	
+	
+	
+</style>
+<script src="https://kit.fontawesome.com/7021bbabcd.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -256,31 +276,43 @@
 			<div id="reviewAverage">
 				<div id="reviewAverageRate">
 					<div id="averageBox">
-						<span>전체 리뷰 평균</span>
+						<span>전체 평균</span>
 					</div>
-					<span>★ 5.0</span>
+					<span>
+						★ ${totalAvg}
+					</span>
 				</div>
 				
 				<div class="starRateBox">
 					<div>
-						<span>급여</span>
-						<span>★ 5.0</span>
+						<div class="starNameBox">
+								<span>급여</span>
+							</div>
+						<span>★ ${salTotalAvg}</span>
 					</div>
 					<div>
-						<span>복지</span>
-						<span>★ 5.0</span>
+						<div class="starNameBox">
+								<span>복지</span>
+							</div>
+						<span>★ ${welTotalAvg}</span>
 					</div>
 					<div>
-						<span>근무환경</span>
-						<span>★ 5.0</span>
+						<div class="starNameBox">
+								<span>근무 환경</span>
+							</div>
+						<span>★ ${envTotalAvg}</span>
 					</div>
 					<div>
-						<span>경영진</span>
-						<span>★ 5.0</span>
+						<div class="starNameBox">
+								<span>경영진</span>
+							</div>
+						<span>★ ${bossTotalAvg}</span>
 					</div>
 					<div>
-						<span>워라밸</span>
-						<span>★ 5.0</span>
+						<div class="starNameBox">
+								<span>워라밸</span>
+							</div>
+						<span>★ ${balTotalAvg}</span>
 					</div>
 				</div>
 				<div class="totalRate">
@@ -288,36 +320,82 @@
 				</div>
 			</div>
 			
-			<div class="reviewItem">
-				<div class="starRateBox">
-					<div>
-						<span>급여</span>
-						<span>★ 5</span>
+			<c:forEach var="reviewDto" items="${reviewList}">
+				<div class="reviewItem">
+					<div class="starRateBox">
+						<div>
+							<div class="starNameBox">
+								<span>급여</span>
+							</div>
+							<span>
+								<c:forEach var="i" begin="1" end="5">
+								    <i class="fas fa-star"
+								    	style="color: ${i <= reviewDto.rSal ? '#2d65f2' : '#ddd'};
+								    			font-size: 13px;"></i>
+								</c:forEach>
+							</span>
+						</div>
+						<div>
+							<div class="starNameBox">
+								<span>복지</span>
+							</div>
+							<span>
+								<c:forEach var="i" begin="1" end="5">
+								    <i class="fas fa-star"
+								    	style="color: ${i <= reviewDto.rWel ? '#2d65f2' : '#ddd'};
+								    			font-size: 13px;"></i>
+								</c:forEach>
+							</span>
+						</div>
+						<div>
+							<div class="starNameBox">
+								<span>근무 환경</span>
+							</div>
+							<span>
+								<c:forEach var="i" begin="1" end="5">
+								    <i class="fas fa-star"
+								  	  style="color: ${i <= reviewDto.rEnv ? '#2d65f2' : '#ddd'};
+								    			font-size: 13px;"></i>
+								</c:forEach>
+							</span>
+						</div>
+						<div>
+							<div class="starNameBox">
+								<span>경영진</span>
+							</div>
+							<span>
+								<c:forEach var="i" begin="1" end="5">
+								    <i class="fas fa-star"
+								    	style="color: ${i <= reviewDto.rBoss ? '#2d65f2' : '#ddd'};
+								    			font-size: 13px;"></i>
+								</c:forEach>
+							</span>
+						</div>
+						<div>
+							<div class="starNameBox">
+								<span>워라밸</span>
+							</div>
+							<span>
+								<c:forEach var="i" begin="1" end="5">
+								    <i class="fas fa-star"
+								    	style="color: ${i <= reviewDto.rBal ? '#2d65f2' : '#ddd'};
+								    			font-size: 13px;"></i>
+								</c:forEach>
+							</span>
+						</div>
 					</div>
-					<div>
-						<span>복지</span>
-						<span>★ 5</span>
+					<div class="reviewTitleBox">
+						<div>
+							<span>${reviewDto.rTitle}</span>
+						</div>
 					</div>
-					<div>
-						<span>근무환경</span>
-						<span>★ 5</span>
-					</div>
-					<div>
-						<span>경영진</span>
-						<span>★ 5</span>
-					</div>
-					<div>
-						<span>워라밸</span>
-						<span>★ 5</span>
+					<div class="reviewContentBox">
+						<span>${reviewDto.rContent}</span>
 					</div>
 				</div>
-				<div class="reviewTitleBox">
-					<span>"일반 리뷰 제목"</span>
-				</div>
-				<div class="reviewContentBox">
-					<span>"일반 리뷰 내용"</span>
-				</div>
-			</div>
+			</c:forEach>
+			
+			
 			
 		</div>
 	</div>	

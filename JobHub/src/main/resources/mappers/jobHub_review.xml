@@ -22,6 +22,13 @@
 		<result column="REVIEW_MODIFY_DATE" property="rModDate" />
 	</resultMap>
 	
+	<select id="reviewSelectList" resultMap="reviewResultMap">
+		SELECT REVIEW_SALARY, REVIEW_WELFARE, REVIEW_ENVIRONMENT,
+				REVIEW_BOSS, REVIEW_BALANCE, REVIEW_AVERAGE,
+				REVIEW_TITLE, REVIEW_CONTENT
+		FROM REVIEW
+	</select>
+	
 	<insert id="reviewInsertOne" parameterType="reviewDto">
 		INSERT INTO REVIEW
 			(REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT, REVIEW_SALARY, 
@@ -32,11 +39,6 @@
 			#{rWel}, #{rEnv}, #{rBoss}, 
  			#{rBal}, #{rAvg}, SYSDATE, SYSDATE, 
 			1, 1)
-			
-<!-- 		VALUES(REVIEW_NUMBER_SEQ.NEXTVAL, #{rTitle}, 'test 리뷰 내용', 3,  -->
-<!-- 			4, 3, 4,  -->
-<!-- 			5, 1, SYSDATE, SYSDATE, -->
-<!--             2,2) -->
    </insert>
-	
+   
 </mapper>
