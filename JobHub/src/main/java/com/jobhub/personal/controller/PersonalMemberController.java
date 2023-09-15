@@ -64,8 +64,9 @@ public class PersonalMemberController {
 		
 		return "/common/LogoutForm";
 	}
-	
-	//회원가입
+
+	//회원가입	
+//	일반.do는 단순 페이지 이동
 	@RequestMapping(value = "/personal/add.do", method = RequestMethod.GET)
 	public String MemberAdd(Model model) {
 		

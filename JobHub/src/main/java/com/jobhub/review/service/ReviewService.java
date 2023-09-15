@@ -1,11 +1,13 @@
 package com.jobhub.review.service;
 
+import java.util.List;
+
 import com.jobhub.review.dto.ReviewDto;
 
 public interface ReviewService {
 
-//	ReviewDto reviewExist(int rNo);
-
-	public void reviewInsertOne(ReviewDto memberDto) throws Exception;
+	public List<ReviewDto> reviewSelectList();
+	
+	public void reviewInsertOne(ReviewDto reviewDto) throws Exception;
 	
 }

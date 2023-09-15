@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="com.jobhub.board">
+
+	<resultMap type="boardDto" id="boardResultMap">
+		<id column="BOARD_NUMBER" property="bNo" />
+		<result column="BOARD_TAG" property="bTag" />
+		<result column="BOARD_TITLE" property="bTitle" />
+		<result column="BOARD_WRITER" property="bWriter" />
+		<result column="BOARD_CONTENT" property="bContent" />
+		<result column="BOARD_IMAGE" property="bImg" />
+		<result column="BOARD_VOTING_CHECK" property="bVotingCheck" />
+		<result column="BOARD_CREATE_DATE" property="bCreDate" javaType="java.util.Date"/>
+		<result column="BOARD_MODIFY_DATE" property="bModDate" javaType="java.util.Date"/>
+		<result column="BOARD_LIKE_COUNT" property="bLikeCount" />
+		<result column="BOARD_VIEWS" property="bViews" />
+	</resultMap>
+
+	<select id="boardSelectList" resultMap="boardResultMap">
+		SELECT BOARD_NUMBER, BOARD_TITLE, BOARD_WRITER, BOARD_CREATE_DATE, BOARD_VIEWS
+		FROM BOARD
+		ORDER BY BOARD_NUMBER DESC
+	</select>
+	
+</mapper>
