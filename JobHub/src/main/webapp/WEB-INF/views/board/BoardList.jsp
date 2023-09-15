@@ -88,7 +88,7 @@
 		
 		<div id="content">
 			<div>
-				<button id='writeButton' onclick="location.href='BoardWrite.jsp'">글쓰기</button>
+				<button id='writeButton' onclick="location.href='./postAdd.do'">글쓰기</button>
 			</div>
 				<table class='boardListT'>
 					<tr>

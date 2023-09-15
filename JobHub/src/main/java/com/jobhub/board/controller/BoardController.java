@@ -39,7 +39,7 @@ public class BoardController {
 	    return "board/BoardList";
 	}
 	
-//	게시물 작성 페이지 열기
+//	게시물 작성 페이지 열기(글쓰기버튼 클릭)
 	@RequestMapping(value = "/board/postAdd.do", method = RequestMethod.GET)
 	public String postAdd(Model model) {
 		log.info("Welcome BoardController postAdd!");

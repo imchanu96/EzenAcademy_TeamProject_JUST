@@ -83,7 +83,6 @@
 	<script type="text/javascript">
 		function registerFnc() {
 			if (confirm("이대로 등록하시겠습니까?")){
-				location.href = "Board.jsp";
 				alert("등록 완료되었습니다.");
 			}else{
 				return;
@@ -116,19 +115,15 @@
 		
 		<div id="content">
 			<div id="boardWriteBox">
-				<form action="">
+				<form action="./addCtr.do">
 					<div id="titleInputBox">
-						<input name="board" id="titleInput" type="text" placeholder="제목을 입력해주세요">
-					</div>
-					<div>
-						<input type='text' name='writer' value='${personalMemberDto.pName}'
-							readonly>
+						<input id="titleInput" name="bTitle" type="text" placeholder="제목을 입력해주세요">
 					</div>
 					<div id="contentInputBox">
-						<textarea id="contentInput" placeholder="내용을 입력해주세요"></textarea>
+						<textarea id="contentInput" name ='bContent' placeholder="내용을 입력해주세요"></textarea>
 					</div>
-					<button type="submit" onclick="registerFnc()">등록</button>
-					<button type="" onclick="cancleFnc()">취소</button>
+					<button type="submit">등록</button>
+					<button type="button" onclick="cancleFnc()">취소</button>
 				</form>
 			</div>
 		</div>
