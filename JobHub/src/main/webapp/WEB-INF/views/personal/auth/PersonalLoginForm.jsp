@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>로그인</title>
+<title>개인 로그인</title>
 <style type="text/css">
 	a {
 		color:black;
@@ -133,8 +133,8 @@
 					
 					<div id="selectButton">
 						<div class="selectButton">
-							<a href="./PersonalLoginForm.jsp">개인회원</a>
-							<a href="./CompanyLoginForm.jsp">기업회원</a>
+							<a href="../personal/login.do">개인회원</a>
+							<a href="../company/login.do">기업회원</a>
 						</div>
 					</div> <!-- selectButton -->
 					

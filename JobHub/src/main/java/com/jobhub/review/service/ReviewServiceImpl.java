@@ -17,10 +17,26 @@ public class ReviewServiceImpl implements ReviewService {
 	@Autowired
 	public ReviewDao reviewDao;
 	
-	@Override
-	public ReviewDto reviewExist(int rNo) {
-		// TODO Auto-generated method stub
-		return reviewDao.reviewExist(rNo);
-	}
+//	@Override
+//	public ReviewDto reviewExist(int rNo) {
+//		// TODO Auto-generated method stub
+//		return reviewDao.reviewExist(rNo);
+//	}
 
+	@Override
+	public void reviewInsertOne(ReviewDto reviewDto) throws Exception {
+
+		reviewDao.reviewInsertOne(reviewDto);
+		
+//		int parentSeq = reviewDto.getrNo();
+//			List<Map<String, Object>> list = 
+//				fileUtils.parseInsertFileInfo(parentSeq, multipartHttpServletRequest);
+//			// 트랜잭션의 시작. 여러 건 업로드
+//			for (int i = 0; i < list.size(); i++) {
+//				memberDao.insertFile(list.get(i));
+//			}
+	}
+	
 }
+
+

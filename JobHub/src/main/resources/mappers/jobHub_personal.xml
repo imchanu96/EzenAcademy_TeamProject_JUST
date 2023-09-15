@@ -30,6 +30,12 @@
 			javaType="java.util.Date" />
 	</resultMap>
 	
+	<select id="personalIdCheck">
+		SELECT COUNT(PERSONAL_ID)
+		FROM PERSONAL
+		WHERE PERSONAL_ID = #{pId};
+	</select>
+	
 	<select id="memberSelectList"  parameterType="map" resultMap="personalResultMap">
 		SELECT PERSONAL.PERSONAL_NUMBER, PERSONAL.PERSONAL_NAME, PERSONAL.PERSONAL_ID
 			, PERSONAL.PERSONAL_NICKNAME, PERSONAL.PERMISSION, PERSONAL.PERSONAL_CREATE_DATE
