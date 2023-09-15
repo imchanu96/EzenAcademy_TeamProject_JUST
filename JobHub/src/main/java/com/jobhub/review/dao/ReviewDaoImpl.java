@@ -13,10 +13,10 @@ import com.jobhub.review.dto.ReviewDto;
 @Repository
 public class ReviewDaoImpl implements ReviewDao {
 	
-	String namespace = "com.jobhub.review.";
-	
 	@Autowired
 	SqlSessionTemplate sqlSession;
+	
+	String namespace = "com.jobhub.review.";
 	
 	@Override
 	public List<ReviewDto> reviewSelectList(int start, int end) {
@@ -32,19 +32,19 @@ public class ReviewDaoImpl implements ReviewDao {
 		HashMap<String, Object> paramMap = new HashMap<String, Object>();
 		paramMap.put("rNo", rNo);
 		
-		return sqlSession.selectOne("com.edu.review.reviewExist", paramMap);
+		return sqlSession.selectOne("com.jobhub.review.reviewExist", paramMap);
 	}
 
 	@Override
 	public int reviewInsertOne(ReviewDto reviewDto) {
 		
-		return sqlSession.insert("com.edu.review.reviewInsertOne", reviewDto);
+		return sqlSession.insert("com.jobhub.review.reviewInsertOne", reviewDto);
 	}
 
 	@Override
 	public ReviewDto reviewSelectOne(int no) {
 		
-		ReviewDto reviewDto = sqlSession.selectOne("com.edu.member.memberSelectOne", no);
+		ReviewDto reviewDto = sqlSession.selectOne("com.jobhub.member.memberSelectOne", no);
 		
 		return reviewDto;
 	}
@@ -52,19 +52,19 @@ public class ReviewDaoImpl implements ReviewDao {
 	@Override
 	public int reviewUpdateOne(ReviewDto reviewDto) {
 		
-		return sqlSession.update("com.edu.review.reviewUpdateOne", reviewDto);
+		return sqlSession.update("com.jobhub.review.reviewUpdateOne", reviewDto);
 	}
 
 	@Override
 	public int reviewDeleteOne(int rNo) {
 
-		return sqlSession.delete("com.edu.review.reviewDeleteOne", rNo);
+		return sqlSession.delete("com.jobhub.review.reviewDeleteOne", rNo);
 	}
 
 	@Override
 	public int reviewSelectTotalCount() {
 
-		return (int)sqlSession.selectOne("com.edu.review.reviewSelectTotalCount");
+		return (int)sqlSession.selectOne("com.jobhub.review.reviewSelectTotalCount");
 	}
 	
 }
