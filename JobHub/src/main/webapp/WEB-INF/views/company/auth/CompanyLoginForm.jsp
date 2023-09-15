@@ -51,7 +51,7 @@
 	
 	.selectButton > a {
 		text-decoration:none; 
-		font-size: 30px;
+		font-size: 27px;
 	}
 	
 	#IDandPwd_Box {
@@ -62,7 +62,6 @@
 		height: 20px; 
 		margin-bottom: 50px; 
 		text-align: center;
-		box-shadow: 0px 0px 2px 0px black;
 		
 	}
 	
@@ -116,7 +115,12 @@
 	
 	input{
 		border: 0px solid;
-		
+		border-radius: 6px;
+		box-shadow: 0px 1px 4px 0px gray;
+	}
+	.changeMember{
+		color: #8491a7;
+		margin-right: 10px;
 	}
 </style>
 <script type="text/javascript">
@@ -141,8 +145,8 @@
 					
 					<div id="selectButton">
 						<div class="selectButton">
-							<a href="../personal/login.do">개인회원</a>
-							<a href="../company/login.do">기업회원</a>
+							<a class="changeMember" href="../personal/login.do">개인회원</a>
+							<a class="changeMember"  style="color:black;" href="../company/login.do">기업회원</a>
 						</div>
 					</div> <!-- selectButton -->
 					
@@ -152,7 +156,7 @@
 						<input type="text" name="cCode" placeholder="사업자 등록번호">
 					</div>
 					
-					<div class="Password_Box">
+					<div class="Password_Box" style="margin: auto; ">
 						<input type="password" name="cPwd" placeholder="비밀번호">
 					</div>
 				</div> <!-- IDandPwd_Box -->

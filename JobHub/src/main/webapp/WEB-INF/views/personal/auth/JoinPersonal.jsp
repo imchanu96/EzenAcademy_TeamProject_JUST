@@ -50,13 +50,13 @@ img {
 }
 
 .inner {
-	width: 1280px;
+	width: 500px;
 	margin: auto;
 }
 
 .header img {
-	width: 20%;
-	height: 20%;
+	width: 30%;
+	height: 30%;
 }
 
 .input {
@@ -578,8 +578,10 @@ img {
 	<div class="inner">
 
 		<div class="header">
-			<a href="http://www.naver.com"> <img
-				src="../images/naverLogo.PNG">
+			<a href="./login.do"> <img style="width:60px;"
+				src="https://github.com/noohij/
+								Ezen_TeamProject_JUST/assets/54897384/
+								ee8218f0-b067-48da-8bf7-d31bef40f1cf">
 			</a>
 		</div>
 		<!-- header 종료 -->

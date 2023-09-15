@@ -50,7 +50,7 @@
 	
 	.selectButton > a {
 		text-decoration:none; 
-		font-size: 30px;
+		font-size: 27px;
 	}
 	
 	#IDandPwd_Box {
@@ -110,6 +110,15 @@
 	#TagNames > div > a {
 		color: black;
 	}
+	input{
+		border: 0px solid;
+		border-radius: 6px;
+		box-shadow: 0px 1px 4px 0px gray;
+	}
+	.changeMember{
+		color: #8491a7;
+		margin-right: 10px;
+	}
 </style>
 <script type="text/javascript">
 	function goCompanyLoginFnc() {
@@ -133,8 +142,8 @@
 					
 					<div id="selectButton">
 						<div class="selectButton">
-							<a href="../personal/login.do">개인회원</a>
-							<a href="../company/login.do">기업회원</a>
+							<a class="changeMember" style="color:black;" href="../personal/login.do">개인회원</a>
+							<a class="changeMember" href="../company/login.do">기업회원</a>
 						</div>
 					</div> <!-- selectButton -->
 					

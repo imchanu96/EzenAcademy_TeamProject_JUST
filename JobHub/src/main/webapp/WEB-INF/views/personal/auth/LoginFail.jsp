@@ -73,6 +73,7 @@
 		height: 70px;
 		margin-bottom: 50px;
 	}
+	
 </style>
 <script type="text/javascript">
 	function backButton() {
