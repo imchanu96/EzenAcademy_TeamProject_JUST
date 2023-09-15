@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>        
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,6 +56,13 @@
 			width: 100px;
 			height: 100px;
 			text-align: center;
+		}
+		
+		#chatImage {
+			width: 70px;
+			height: 70px;
+			margin-top: 20px;
+			margin-right: 50px;
 		}
 /* my menu */
 		#myMenuBox {
@@ -158,7 +166,9 @@
 		<div id="headerContent">
 		
 			<a href="http://www.naver.com">
-				<img id="logo" src="./img/JobHub_logo.png">
+				<img id="logo" src="https://github.com/noohij/
+								Ezen_TeamProject_JUST/assets/54897384/
+								ee8218f0-b067-48da-8bf7-d31bef40f1cf">
 			</a>
 			
 			<div id="mainMenuBox">
@@ -182,19 +192,25 @@
 			<div id="myMessageBox">
 				<div>
 					<a href="http://www.naver.com">
-						채팅
+						<img id="chatImage" alt="" 
+							src="https://github.com/noohij/Ezen_TeamProject_JUST/assets
+								/136562510/4387a6fc-84c2-4def-8411-f2572b6a12e7">
 					</a>
 				</div>
 			</div>
 			
-			<div id="myMenuBox">
-				<div>
-					<a href="http://www.naver.com">
-						로그인 / 회원가입
-					</a>
+			<c:if test="${sessionScope.personalmemberDto.pId ne null}">			
+				<div id="myMenuBox">
+					<div>
+						<span style="float:right;">
+							<a href="<%=request.getContextPath()%>/personal/logout.do">
+								${personalmemberDto.pId}
+							</a>
+						</span>
+					</div>
 				</div>
-			</div>
-			
+			</c:if>	
+					
 		</div>
 	</div> <!-- Header Ends -->
 	

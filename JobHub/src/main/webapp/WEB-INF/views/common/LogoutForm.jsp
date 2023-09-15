@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>      
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,6 +66,16 @@
 		float: right;
 	}
 </style>
+<script type="text/javascript">
+	function logOut() {
+		location.href = "auth/PersonalLoginForm.jsp";
+	}
+	
+	function backButton() {
+		window.history.back();
+	}
+
+</script>
 </head>
 <body>
 	<div id="backGround">
@@ -79,23 +90,27 @@
 			
 			<div id="centerForm">
 				<div class="centerForm">
-					<p>OOO님</p>
+					<c:if test="${empty not sessionScope.personalmemberDto.pId}">
+					<p>${personalMemberDto.pId}님</p>
+					</c:if>
 					<p>정말 로그아웃 하시겠습니까?</p>
 				</div>
 			</div>
 			<br>
 			
-			<div id="buttonForm">
-				<div class="buttonForm">
-					<div class="yesButton">
-						<input type="button" value="네" onclick="">
-					</div>
-					
-					<div class="noButton">
-						<input type="button" value="아니오" onclick="">
+			<form action="logOut.do" method="get">
+				<div id="buttonForm">
+					<div class="buttonForm">
+						<div class="yesButton">
+							<input type="button" value="네" onclick="logOut();">
+						</div>
+						
+						<div class="noButton">
+							<input type="button" value="아니오" onclick="backButton();">
+						</div>
 					</div>
 				</div>
-			</div>
+			</form>
 		</div><!-- logoutForm -->
 		
 	</div><!-- backGround -->

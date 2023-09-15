@@ -46,7 +46,6 @@ public class PersonalMemberController {
 		if(personalmemberDto != null) {
 //			회원이 존재하면 세션에 담는다
 			session.setAttribute("personalmemberDto", personalmemberDto);
-			
 			viewUrl = "personal/myPage/PersonalMyPage"; 
 		}else {
 			viewUrl = "personal/auth/LoginFail";
@@ -61,9 +60,9 @@ public class PersonalMemberController {
 		
 		log.info("Welcome MemberController logout!");
 		
-		session.invalidate();
+		session.invalidate(); //세션 종료
 		
-		return "personal/auth/PersonalLoginForm";
+		return "/common/LogoutForm";
 	}
 	
 	//회원가입
