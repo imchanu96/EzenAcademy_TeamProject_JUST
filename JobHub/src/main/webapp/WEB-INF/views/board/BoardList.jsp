@@ -81,14 +81,14 @@
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="Board.jsp">전체 게시판</a>
+					<a href="./list.do">전체 게시판</a>
 				</div>
 			</div>
 		</div>
 		
 		<div id="content">
 			<div>
-				<button id='writeButton' onclick="location.href='./postAdd.do'">글쓰기</button>
+				<button id='writeButton' onclick="location.href='./add.do'">글쓰기</button>
 			</div>
 				<table class='boardListT'>
 					<tr>
@@ -101,7 +101,7 @@
 					<c:forEach var="boardDto" items="${boardList}">
 						<tr>
 							<td>${boardDto.bNo}</td>
-							<td><a href="BoardView.jsp">${boardDto.bTitle}</a></td>
+							<td><a href='./listOne.do?no=${boardDto.bNo}'>${boardDto.bTitle}</a></td>
 							<td>${boardDto.bWriter}</td>
 							<td>
 								<fmt:formatDate pattern="yyyy-MM-dd hh:mm" value="${boardDto.bCreDate}"/>

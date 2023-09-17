@@ -1,8 +1,7 @@
 package com.jobhub.board.controller;
 
 import java.util.List;
-
-import javax.servlet.http.HttpSession;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.jobhub.board.dto.BoardDto;
 import com.jobhub.board.service.BoardService;
-import com.jobhub.review.dto.ReviewDto;
 
 @Controller
 public class BoardController {
@@ -26,7 +24,7 @@ public class BoardController {
 	private BoardService boardService;
 	
 //	게시판 리스트 조회
-	@RequestMapping(value = "/board/board.do"
+	@RequestMapping(value = "/board/list.do"
 			, method = {RequestMethod.GET, RequestMethod.POST})
 	public String boardList(Model model) {
 		// log4j
@@ -40,9 +38,9 @@ public class BoardController {
 	}
 	
 //	게시물 작성 페이지 열기(글쓰기버튼 클릭)
-	@RequestMapping(value = "/board/postAdd.do", method = RequestMethod.GET)
+	@RequestMapping(value = "/board/add.do", method = RequestMethod.GET)
 	public String postAdd(Model model) {
-		log.info("Welcome BoardController postAdd!");
+		log.info("Welcome BoardController boardAdd!");
 		
 		return "board/BoardWrite";
 	}
@@ -50,7 +48,7 @@ public class BoardController {
 //	새글 작성 완료
 	@RequestMapping(value = "/board/addCtr.do", method = RequestMethod.POST)
 	public String postAdd(BoardDto boardDto, Model model) {
-		log.info("Welcome BoardController postAdd!" + boardDto);
+		log.info("Welcome BoardController boardAdd!" + boardDto);
 		
 			try {
 				boardService.boardInsertOne(boardDto);
@@ -58,6 +56,34 @@ public class BoardController {
 				e.printStackTrace();
 			}
 		
-		return "redirect:/board/board.do";
+		return "redirect:/board/list.do";
+	}
+	
+	//게시글 조회
+	@RequestMapping(value = "/board/listOne.do", method = RequestMethod.GET)
+	public String memberListOne(int no, Model model) {
+		log.debug("Welcome BoardController boardListOne!", no);
+		
+		Map<String, Object> map = boardService.boardSelectOne(no);
+		
+		BoardDto boardDto = (BoardDto)map.get("boardDto");
+		
+		model.addAttribute("boardDto", boardDto);
+		
+		return "board/BoardView";
+	}
+	
+	//게시글 수정 화면으로
+	@RequestMapping(value = "/board/update.do", method = RequestMethod.GET)
+	public String boardUpdate(int no, Model model) {
+		log.info("Welcome BoardController boardUpdate!" + no);
+		
+		Map<String, Object> map = boardService.boardSelectOne(no);
+		
+		BoardDto boardDto = (BoardDto)map.get("boardDto");
+		
+		model.addAttribute("boardDto", boardDto);
+		
+		return "board/BoardWriteUpdate";
 	}
 }

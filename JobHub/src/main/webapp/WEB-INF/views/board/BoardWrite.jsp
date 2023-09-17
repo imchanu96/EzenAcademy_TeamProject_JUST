@@ -108,14 +108,14 @@
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="Board.jsp">전체 게시판</a>
+					<a href="./list.do">전체 게시판</a>
 				</div>
 			</div>
 		</div>
 		
 		<div id="content">
 			<div id="boardWriteBox">
-				<form action="./addCtr.do">
+				<form action="./addCtr.do" method='post'>
 					<div id="titleInputBox">
 						<input id="titleInput" name="bTitle" type="text" placeholder="제목을 입력해주세요">
 					</div>

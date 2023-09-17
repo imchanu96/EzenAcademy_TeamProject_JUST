@@ -32,4 +32,11 @@
             PERSONAL_NUMBER)
 		VALUES(BOARD_NUMBER_SEQ.NEXTVAL, #{bTitle}, #{bContent}, SYSDATE, SYSDATE, 1)
 	</insert>
+	
+	<select id="boardSelectOne" parameterType="int" resultMap="boardResultMap">
+		SELECT BOARD_NUMBER, BOARD_TITLE, BOARD_WRITER, BOARD_CREATE_DATE, BOARD_CONTENT
+		FROM BOARD
+		WHERE BOARD_NUMBER =#{bNo}
+	</select>
+	
 </mapper>

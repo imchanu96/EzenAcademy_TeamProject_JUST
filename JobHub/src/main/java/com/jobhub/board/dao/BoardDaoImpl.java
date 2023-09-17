@@ -1,8 +1,6 @@
 package com.jobhub.board.dao;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,14 +19,19 @@ public class BoardDaoImpl implements BoardDao{
 	@Override
 	public List<BoardDto> boardSelectList() {
 
-//		Map<String, Object> map = new HashMap<String, Object>();
-		
 		return sqlSession.selectList(namespace + "boardSelectList");
 	}
 
 	@Override
 	public int boardInsertOne(BoardDto boardDto) {
-		// TODO Auto-generated method stub
+		
 		return sqlSession.insert("com.jobhub.board.boardInsertOne", boardDto);
+	}
+
+	@Override
+	public BoardDto boardSelectOne(int no) {
+		
+		BoardDto boardDto = sqlSession.selectOne("com.jobhub.board.boardSelectOne", no);
+		return boardDto;
 	}
 }

@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -106,14 +108,14 @@
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="Board.jsp">전체 게시판</a>
+					<a href="./list.do">전체 게시판</a>
 				</div>
 			</div>
 		</div>
 		
 		<div id="content">
 			<div id="boardWriteBox">
-				<form action="">
+				<form action="./listOne.do" method="post">
 					<div id="titleInputBox">
 						<input name="board" id="titleInput" type="text" value='${boardDto.bTitle}'>
 					</div>
@@ -122,7 +124,7 @@
 						<textarea id="contentInput">${boardDto.bContent}</textarea>
 					</div>
 					<button type="submit" onclick="updateFnc()">수정</button>
-					<button type="" onclick="cancleFnc()">취소</button>
+					<button type="button" onclick="cancleFnc()">취소</button>
 				</form>
 			</div>
 		</div>

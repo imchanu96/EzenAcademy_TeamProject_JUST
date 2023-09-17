@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -100,28 +102,30 @@
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="Board.jsp">전체 게시판</a>
+					<a href="./list.do">전체 게시판</a>
 				</div>
 			</div>
 		</div>
 		
 		<div id="content">
-			<div class="boardButton">
-				<button onclick="location.href='BoardWriteUpdate.jsp'">수정</button>
-				<button onclick="deleteFnc()">삭제</button>
-			</div>
-			<p></p>
-			<form class="boardViewT">
+			<form class="boardViewT" action="./update.do" method="get">
+				<div class="boardButton">
+					<button type='submit'>수정</button>
+					<button type="button" onclick="deleteFnc()">삭제</button>
+				</div>
+				<input type='hidden' name='no' value='${boardDto.bNo}'>
 				<table>
 					<tr>
 						<td colspan="2"><h3>제목: ${boardDto.bTitle}</h3></td>
 					</tr>
 					<tr>
-						<td>글쓴이: 박미영</td>
-						<td>2023-09-14</td>
+						<td>글쓴이: ${boardDto.bWriter}</td>
+						<td>
+							<fmt:formatDate pattern="yyyy-MM-dd hh:mm" value="${boardDto.bCreDate}"/>
+						</td>
 					</tr>
 					<tr>
-						<td colspan="2">반갑습니다 잘지내보아요</td>
+						<td colspan="2">${boardDto.bContent}</td>
 					</tr>
 				</table>
 				

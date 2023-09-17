@@ -1,6 +1,8 @@
 package com.jobhub.board.service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -39,6 +41,17 @@ public class BoardServiceImpl implements BoardService{
 	public void boardInsertOne(BoardDto boardDto) throws Exception {
 		// TODO Auto-generated method stub
 		boardDao.boardInsertOne(boardDto);
+	}
+
+	@Override
+	public Map<String, Object> boardSelectOne(int no) {
+		
+		Map<String, Object> resultMap = new HashMap<String, Object>();
+		
+		BoardDto boardDto = boardDao.boardSelectOne(no);
+		resultMap.put("boardDto", boardDto);
+		
+		return resultMap;
 	}
 
 }
