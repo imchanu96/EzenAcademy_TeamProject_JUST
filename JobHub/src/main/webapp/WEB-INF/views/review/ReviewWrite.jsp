@@ -67,9 +67,6 @@
 		border: 1px solid #d7dce5;
 		border-radius: 6px;
 	}
-	#titleInput:focus {
-		outline: 1px solid #94b5fc;
-	}
 	#starInputBox {
 		float: left;
 		width: 120px;
@@ -149,27 +146,84 @@
 		border-radius: 6px;
 		resize: none;
 	}
-	#contentInput:focus {
-		outline: 1px solid #94b5fc;
-	}
 	
 	#buttonBox {
-		margin: 0px 400px;
+		float: left;
+		margin: 20px 350px 0px 350px;
+		width: 400px;
 	}
 	button {
-		width: 70px;
-		height: 30px;
-		background-color: #bcd1fc;
-		border: none;
-		border-radius: 6px;
-		box-shadow: 0px 1px 4px 0px #ddd;
+		width: 90px;
+	    height: 40px;
+	    margin-left: 30px;
+	    background-color: #bcd1fc;
+	    border: none;
+	    border-radius: 6px;
+	    box-shadow: 0px 1px 4px 0px #ddd;
+	    font-size: 16px;
+	    font-weight: bold;
+	    color: #475067;
 	}
 </style>
 
 <script>
-		
-	function AvgCalFnc() {
 	
+	function titleFocusFnc() {
+		
+		var titleObj = document.getElementById("titleInput");
+		
+		if (titleObj.getAttribute("style") != "border: 2px solid red") {
+			titleObj.setAttribute("style", "outline: 1px solid #94b5fc");
+		} else {
+			titleObj.getAttribute("style") = "outline: 2px solid red";
+		}
+	}
+// 	#d7dce5 회색
+// #94b5fc 파랑
+	function titleBlurFnc() {
+		
+		var titleObj = document.getElementById("titleInput");
+		
+		if (titleObj.value == "" || titleObj.value.length < 20) {
+			titleObj.setAttribute("style", "border: 1px solid #d7dce5");
+		} else {
+			titleObj.setAttribute("style", "border: 2px solid red");
+		}
+	}
+	
+	function contentFocusFnc() {
+		
+		var contentObj = document.getElementById("contentInput");
+		
+		if (contentObj.getAttribute("style") != "border: 2px solid red") {
+			contentObj.setAttribute("style", "outline: 1px solid #94b5fc")
+		}
+	}
+	
+	function contentBlurFnc() {
+		
+	}
+	
+	function onSubmitFnc(event) {
+	
+// 		//유효성 검사
+// 		var titleObj = document.getElementById("titleInput");
+// 		var contentObj = document.getElementById("contentInput");
+		
+// 		if (titleObj.value.length < 1
+// 			|| titleObj.value.length > 20) {
+// 			titleObj.setAttribute("style", "border: 2px solid red;")
+// 			event.preventDefault();
+			
+// 		}
+		
+// 		if (contentObj.value.length < 30
+// 			|| contentObj.value.length > 200) {
+// 			contentObj.setAttribute("style", "border: 2px solid red;")
+// 			event.preventDefault();
+// 		}
+		
+		
 	    var salRateList = document.getElementsByName("rSal");
 	    var welRateList = document.getElementsByName("rWel");
 	    var envRateList = document.getElementsByName("rEnv");
@@ -180,10 +234,8 @@
 	
 	    var totalRateNum = 0;
 	
-	    // 첫 번째 루프에서 사용할 변수명이 잘못되었습니다. salRateList를 사용해야 합니다.
 	    for (var i = 0; i < salRateList.length; i++) {
 	        if (salRateList[i].checked) {
-	            // 값을 숫자로 변환하여 더해야 합니다.
 	            totalRateNum += parseFloat(salRateList[i].value);
 	        }
 	    }
@@ -211,12 +263,7 @@
 	            totalRateNum += parseFloat(balRateList[i].value);
 	        }
 	    }
-	
-	    alert(totalRateNum/5);
-	    
-// 	    rAvgResultInputObj.setAttribute("value", (totalRateNum/5));
 	    rAvgResultInputObj.value = (totalRateNum/5);
-	    
 	}
 
 
@@ -248,10 +295,11 @@
 		</div>
 
 		<div id="content">
-			<form action="./addCtr.do" method='post' onsubmit="AvgCalFnc();">
+			<form action="./addCtr.do" method='post' onsubmit="onSubmitFnc(event);">
 				<div id="titleInputBox">
 					<input name="rTitle" id="titleInput" type="text"
-						placeholder="제목을 입력해주세요(20자 이내)">
+						placeholder="제목을 입력해주세요(20자 이내)"
+						onfocus="titleFocusFnc();" onblur="titleBlurFnc();">
 				</div>
 				<div id="starInputBox">
 					<div id="starInput">
@@ -338,10 +386,13 @@
 				</div>
 
 				<div id="contentInputBox">
-					<textarea id="contentInput" name="rContent" placeholder="내용을 입력해주세요."></textarea>
+					<textarea id="contentInput" name="rContent"
+						placeholder="내용을 입력해주세요."
+						onfocus="contentFocusFnc();" onblur="contentBlurFnc();">
+					</textarea>
 				</div>
 			<div id="buttonBox">
-				<button type="submit">제출하기</button>
+				<button type="submit">등록</button>
 				<button type="button">취소</button>
 			</div>
 			</form>

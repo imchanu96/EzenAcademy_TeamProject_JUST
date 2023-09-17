@@ -26,14 +26,6 @@ public class ReviewController {
 	@Autowired
 	private ReviewService reviewService;
 	
-//	test
-//	@RequestMapping(value = "/review/list.do", method = RequestMethod.GET)
-//	public String login(HttpSession session, Model model) {
-//		log.info("Welcome ReviewController test!");
-//		
-//		return "review/ReviewList";
-//	}
-	
 //	리뷰 리스트 조회
 	@RequestMapping(value = "/review/list.do", method = RequestMethod.GET)
 	public String reviewList(Model model) {
@@ -42,54 +34,53 @@ public class ReviewController {
 			
 		List<ReviewDto> reviewList = reviewService.reviewSelectList();
 		
-		double avgSum = 0.0;
-		double totalAvg = 0.0;
+		float avgSum = 0;
+		float totalAvg = 0;
 		
 		for (int i = 0; i < reviewList.size(); i++) {
 			avgSum += reviewList.get(i).getrAvg();
 		}
-		totalAvg = (Math.round(avgSum / reviewList.size() * 10.0)) / 10.0;
+		totalAvg = (Math.round(avgSum / reviewList.size() * 10)) / 10;
 		
-		double salAvgSum = 0.0;
-		double salTotalAvg = 0.0;
+		float salAvgSum = 0;
+		float salTotalAvg = 0;
 		
 		for (int i = 0; i < reviewList.size(); i++) {
 			salAvgSum += reviewList.get(i).getrSal();
 		}
-		salTotalAvg = (Math.round(salAvgSum / reviewList.size() * 10.0)) / 10.0;
+		salTotalAvg = (Math.round(salAvgSum / reviewList.size() * 10)) / 10;
 		
-		double welAvgSum = 0.0;
-		double welTotalAvg = 0.0;
+		float welAvgSum = 0;
+		float welTotalAvg = 0;
 		
 		for (int i = 0; i < reviewList.size(); i++) {
 			welAvgSum += reviewList.get(i).getrWel();
 		}
-		welTotalAvg = (Math.round(welAvgSum / reviewList.size() * 10.0)) / 10.0;
+		welTotalAvg = (Math.round(welAvgSum / reviewList.size() * 10)) / 10;
 		
-		double envAvgSum = 0.0;
-		double envTotalAvg = 0.0;
+		float envAvgSum = 0;
+		float envTotalAvg = 0;
 		
 		for (int i = 0; i < reviewList.size(); i++) {
 			envAvgSum += reviewList.get(i).getrEnv();
 		}
-		envTotalAvg = (Math.round(envAvgSum / reviewList.size() * 10.0)) / 10.0;
+		envTotalAvg = (Math.round(envAvgSum / reviewList.size() * 10)) / 10;
 		
-		double bossAvgSum = 0.0;
-		double bossTotalAvg = 0.0;
+		float bossAvgSum = 0;
+		float bossTotalAvg = 0;
 		
 		for (int i = 0; i < reviewList.size(); i++) {
 			bossAvgSum += reviewList.get(i).getrBoss();
 		}
-		bossTotalAvg = (Math.round(bossAvgSum / reviewList.size() * 10.0)) / 10.0;
+		bossTotalAvg = (Math.round(bossAvgSum / reviewList.size() * 10)) / 10;
 		
-		double balAvgSum = 0.0;
-		double balTotalAvg = 0.0;
+		float balAvgSum = 0;
+		float balTotalAvg = 0;
 		
 		for (int i = 0; i < reviewList.size(); i++) {
 			balAvgSum += reviewList.get(i).getrBal();
 		}
-		balTotalAvg = (Math.round(balAvgSum / reviewList.size() * 10.0)) / 10.0;
-		
+		balTotalAvg = (Math.round(balAvgSum / reviewList.size() * 10)) / 10;
 		
 		model.addAttribute("reviewList", reviewList);
 		model.addAttribute("totalAvg", totalAvg);

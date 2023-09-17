@@ -47,9 +47,10 @@
 		font-size: 30px;
 		background-color: #f8fafc;
 	}
-	#content > div {
+	#content > div, .reviewItem {
 		background-color: #fff;
 		padding: 20px;
+		box-shadow: 0px 1px 4px 0px #ddd;
 	}
 	#companyInfoBox, #reviewAverage, .reviewItem {
 		border-radius: 10px;
@@ -102,18 +103,20 @@
 	}
 	#reviewAverageRate {
 		width: 300px;
-		height: 50px;
+		height: 40px;
 		font-size: 25px;
 	}
 	#averageBox {
 		float: left;			
-		margin-left: 20px;
+		margin-left: 6px;
+		font-size: 20px;
+		font-weight: 600;
 	}
 	.starRateBox {
 		float: left;
 		margin-top: 5px;
 		width: 250px;
-		height: 120px;
+		height: 150px;
 	}
 	.starRateBox > div {
 		margin-top: 5px;
@@ -138,15 +141,17 @@
 		font-size: 30px;
 	}
 	.reviewTitleBox {
-		width: 800px;
-		height: 30px;
+		float: left;
 		margin-bottom: 20px;
+		width: 600px;
+		height: 30px;
 		font-size: 25px;
 		color: #292e41
 	}
 	.reviewContentBox {
+		float: left;
 		width: 600px;
-		height: 120px;
+		height: 110px;
 		color: #292e41
 	}
 	.reviewItem {
@@ -184,7 +189,7 @@
 </head>
 <body>
 
-	<jsp:include page="/WEB-INF/views/Header.jsp"/>
+<%-- 	<jsp:include page="/WEB-INF/views/Header.jsp"/> --%>
 	
 	<div id="container">
 		<div id="navigation">
@@ -216,10 +221,10 @@
 			<div id="reviewAverage">
 				<div id="reviewAverageRate">
 					<div id="averageBox">
-						<span>전체 평균</span>
+						<span>평균 별점</span>
 					</div>
 					<span>
-						★ ${totalAvg}
+						&nbsp;★ ${totalAvg}
 					</span>
 				</div>
 				
@@ -255,9 +260,9 @@
 						<span>★ ${balTotalAvg}</span>
 					</div>
 				</div>
-				<div class="totalRate">
-					매칭률 100
-				</div>
+<!-- 				<div class="totalRate"> -->
+<!-- 					매칭률 100 -->
+<!-- 				</div> -->
 			</div>
 			
 			<c:forEach var="reviewDto" items="${reviewList}">
@@ -332,7 +337,7 @@
 		</div>
 	</div>	
 	
-	<jsp:include page="/WEB-INF/views/Tail.jsp"/>
+<%-- 	<jsp:include page="/WEB-INF/views/Tail.jsp"/> --%>
 	
 </body>
 </html>
