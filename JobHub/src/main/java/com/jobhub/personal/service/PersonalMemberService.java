@@ -10,5 +10,8 @@ public interface PersonalMemberService {
 
 	public void personalInsertOne(PersonalMemberDto personalMemberDto);
 	
+	public int personalMemberSelectOne(int pNo);
+
+	public void personMemberUpdateOne(PersonalMemberDto personalMemberDto);
 	
 }

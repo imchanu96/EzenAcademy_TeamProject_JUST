@@ -234,7 +234,7 @@
 			</div>
 			<div id="personalInfoBox">
 				<div class="personalInfoItem">
-					<form action="" method="get">
+					<form action="personal/update.do" method="post">
 						<div class="personalInfoItemTitle">
 							닉네임
 						</div>

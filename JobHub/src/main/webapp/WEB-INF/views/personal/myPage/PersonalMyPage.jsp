@@ -249,7 +249,7 @@
 						${personalmemberDto.pNickname}
 					</div>
 					<div class="arrowBox">
-						<a href="/personal/update.do?no=${personalmemberDto.pNo}">></a>
+						<a href="/personal/updateCtr.do?no=${personalmemberDto.pNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -257,10 +257,10 @@
 						비밀번호
 					</div>
 					<div class="personalInfoItemContent">
-						${personalmemberDto.pPwd}
+						********
 					</div>
 					<div class="arrowBox">
-						<a href="/personal/update.do?no=${personalmemberDto.pNo}">></a>
+						<a href="/personal/updateCtr.do?no=${personalmemberDto.pNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -271,7 +271,7 @@
 						${personalmemberDto.pPhoneNum}
 					</div>
 					<div class="arrowBox">
-						<a href="/personal/update.do?no=${personalmemberDto.pNo}">></a>
+						<a href="/personal/updateCtr.do?no=${personalmemberDto.pNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -282,7 +282,7 @@
 						${personalmemberDto.pEmail}
 					</div>
 					<div class="arrowBox">
-						<a href="/personal/update.do?no=${personalmemberDto.pNo}">></a>
+						<a href="/personal/updateCtr.do?no=${personalmemberDto.pNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -293,7 +293,7 @@
 						${personalmemberDto.pKeyword}
 					</div>
 					<div class="arrowBox">
-						<a href="/personal/update.do?no=${personalmemberDto.pNo}">></a>
+						<a href="/personal/updateCtr.do?no=${personalmemberDto.pNo}">></a>
 					</div>
 				</div>
 			</div>

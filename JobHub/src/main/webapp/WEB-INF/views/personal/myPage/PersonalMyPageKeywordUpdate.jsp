@@ -277,7 +277,7 @@
 						</div>
 					</div>
 				
-					<form action="" method="get">
+					<form action="personal/update.do" method="post">
 						<div class="personalInfoItemTitle">
 							<label>
 								<input type="checkbox" name="keyword" value="연봉"
