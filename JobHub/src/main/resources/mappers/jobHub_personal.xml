@@ -53,7 +53,7 @@
 	
 
 	<select id="personalMemberExist" parameterType="map" resultMap="personalResultMap">
-		SELECT PERSONAL_ID, PERSONAL_PASSWORD
+		SELECT PERSONAL_ID, PERSONAL_PASSWORD, PERSONAL_NICKNAME
 		 FROM PERSONAL
 		 WHERE PERSONAL_ID = #{pId} AND PERSONAL_PASSWORD = #{pPwd}
 	

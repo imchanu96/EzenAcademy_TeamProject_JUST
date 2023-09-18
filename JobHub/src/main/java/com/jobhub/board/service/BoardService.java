@@ -19,4 +19,5 @@ public interface BoardService {
 	public void boardUpdateOne(BoardDto boardDto);
 	
 	public int boardDeleteOne(int no);
+	
 }

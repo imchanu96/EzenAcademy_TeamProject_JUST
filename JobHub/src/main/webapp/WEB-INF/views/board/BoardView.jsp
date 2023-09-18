@@ -97,7 +97,7 @@
 </head>
 <body>
 
-	<jsp:include page="/WEB-INF/views/personal/Header.jsp"/>
+	<jsp:include page="/WEB-INF/views/board/Header.jsp"/>
 	
 	<div id="container">
 		<div id="navigation">
@@ -112,8 +112,10 @@
 			<form class="boardViewT" action="./update.do" method="get">
 				<input type='hidden' name='no' value='${boardDto.bNo}'>
 				<div class="boardButton">
-					<button type='submit'>수정</button>
-					<button type="button" onclick='deleteFnc()'>삭제</button>
+					<c:if test="${boardDto.bWriter eq personalmemberDto.pNickname}">
+						<button type='submit'>수정</button>
+						<button type="button" onclick='deleteFnc()'>삭제</button>
+					</c:if>
 				</div>
 				<table>
 					<tr>

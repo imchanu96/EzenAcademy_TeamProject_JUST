@@ -15,4 +15,5 @@ public interface BoardDao {
 	public void boardUpdateOne(BoardDto boardDto);
 	
 	public int boardDeleteOne(int no);
+	
 }

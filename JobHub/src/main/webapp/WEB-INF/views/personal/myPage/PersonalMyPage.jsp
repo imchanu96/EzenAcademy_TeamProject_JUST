@@ -183,7 +183,7 @@
 					</a>
 				</div>
 				<div class="mainMenuItem">
-					<a href="http://www.naver.com">
+					<a href="../board/list.do">
 						게시판
 					</a>
 				</div>

@@ -46,4 +46,5 @@ public class BoardDaoImpl implements BoardDao{
 
 		return sqlSession.delete("com.jobhub.board.boardDeleteOne", no);
 	}
+
 }
