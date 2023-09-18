@@ -183,7 +183,7 @@
 					</a>
 				</div>
 				<div class="mainMenuItem">
-					<a href="http://www.naver.com">
+					<a href="../board/list.do">
 						게시판
 					</a>
 				</div>
@@ -239,16 +239,17 @@
 			<div class="infoTitle">
 				개인 정보
 			</div>
+			<form action="personal/list.do">
 			<div id="personalInfoBox">
 				<div class="personalInfoItem">
 					<div class="personalInfoItemTitle">
 						닉네임
 					</div>
 					<div class="personalInfoItemContent">
-						jihoon123
+						${personalmemberDto.pNickname}
 					</div>
 					<div class="arrowBox">
-						<a href="myPage/PersonalMyPageNickNameUpdate">></a>
+						<a href="/personal/update.do?no=${personalmemberDto.pNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -256,10 +257,10 @@
 						비밀번호
 					</div>
 					<div class="personalInfoItemContent">
-						********
+						${personalmemberDto.pPwd}
 					</div>
 					<div class="arrowBox">
-						<a href="myPage/PersonalMyPagePasswordUpdate">></a>
+						<a href="/personal/update.do?no=${personalmemberDto.pNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -267,10 +268,10 @@
 						전화번호
 					</div>
 					<div class="personalInfoItemContent">
-						010-1234-1234
+						${personalmemberDto.pPhoneNum}
 					</div>
 					<div class="arrowBox">
-						<a href="myPage/PersonalMyPagePhoneNumUpdate">></a>
+						<a href="/personal/update.do?no=${personalmemberDto.pNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -278,10 +279,10 @@
 						이메일
 					</div>
 					<div class="personalInfoItemContent">
-						park@gmail.com
+						${personalmemberDto.pEmail}
 					</div>
 					<div class="arrowBox">
-						<a href="myPage/PersonalMyPageEmailUpdate">></a>
+						<a href="/personal/update.do?no=${personalmemberDto.pNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -289,13 +290,14 @@
 						키워드
 					</div>
 					<div class="personalInfoItemContent">
-						연봉 및 복지, 경영진
+						${personalmemberDto.pKeyword}
 					</div>
 					<div class="arrowBox">
-						<a href="myPage/PersonalMyPageKeywordUpdate">></a>
+						<a href="/personal/update.do?no=${personalmemberDto.pNo}">></a>
 					</div>
 				</div>
 			</div>
+			</form>
 			<div class="infoTitle">
 				회사 정보
 			</div>
