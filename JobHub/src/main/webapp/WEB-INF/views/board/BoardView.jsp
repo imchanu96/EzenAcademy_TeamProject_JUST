@@ -85,13 +85,14 @@
 		function deleteFnc() {
 			if (confirm("정말 삭제하시겠습니까?") == true){
 				//true는 확인버튼을 눌렀을 때 코드 작성
-				location.href = "Board.jsp";
+				location.href = './delete.do?no=${boardDto.bNo}';
 				alert("삭제되었습니다.");
 			}else{
 				// false는 취소버튼을 눌렀을 때, 취소됨
 				return;
 			}
 		}
+		
 	</script>
 </head>
 <body>
@@ -109,11 +110,11 @@
 		
 		<div id="content">
 			<form class="boardViewT" action="./update.do" method="get">
+				<input type='hidden' name='no' value='${boardDto.bNo}'>
 				<div class="boardButton">
 					<button type='submit'>수정</button>
-					<button type="button" onclick="deleteFnc()">삭제</button>
+					<button type="button" onclick='deleteFnc()'>삭제</button>
 				</div>
-				<input type='hidden' name='no' value='${boardDto.bNo}'>
 				<table>
 					<tr>
 						<td colspan="2"><h3>제목: ${boardDto.bTitle}</h3></td>

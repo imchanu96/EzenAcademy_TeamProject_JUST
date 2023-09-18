@@ -15,4 +15,8 @@ public interface BoardService {
 	public void boardInsertOne(BoardDto boardDto) throws Exception;
 	
 	public Map<String, Object> boardSelectOne(int no);
+	
+	public void boardUpdateOne(BoardDto boardDto);
+	
+	public int boardDeleteOne(int no);
 }

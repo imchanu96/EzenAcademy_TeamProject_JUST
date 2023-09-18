@@ -116,6 +116,7 @@
 		<div id="content">
 			<div id="boardWriteBox">
 				<form action="./addCtr.do" method='post'>
+					<input type='hidden' name='bWriter' value='${personalMemberDto.pNickname}'>
 					<div id="titleInputBox">
 						<input id="titleInput" name="bTitle" type="text" placeholder="제목을 입력해주세요">
 					</div>

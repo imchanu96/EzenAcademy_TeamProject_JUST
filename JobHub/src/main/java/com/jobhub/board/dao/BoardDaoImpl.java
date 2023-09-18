@@ -34,4 +34,16 @@ public class BoardDaoImpl implements BoardDao{
 		BoardDto boardDto = sqlSession.selectOne("com.jobhub.board.boardSelectOne", no);
 		return boardDto;
 	}
+
+	@Override
+	public void boardUpdateOne(BoardDto boardDto) {
+
+		sqlSession.update("com.jobhub.board.boardUpdateOne", boardDto);
+	}
+
+	@Override
+	public int boardDeleteOne(int no) {
+
+		return sqlSession.delete("com.jobhub.board.boardDeleteOne", no);
+	}
 }
