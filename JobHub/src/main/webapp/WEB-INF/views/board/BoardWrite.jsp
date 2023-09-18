@@ -91,7 +91,7 @@
 			
 		function cancleFnc() {
 			if (confirm("정말 취소하시겠습니까?")){ 
-				location.href = "Board.jsp";
+				location.href = "./list.do";
 				alert("취소되었습니다.");
 			}else{
 				return;
@@ -102,7 +102,7 @@
 </head>
 <body>
 
-	<jsp:include page="/WEB-INF/views/personal/Header.jsp"/>
+	<jsp:include page="/WEB-INF/views/board/Header.jsp"/>
 	
 	<div id="container">
 		<div id="navigation">
@@ -116,14 +116,14 @@
 		<div id="content">
 			<div id="boardWriteBox">
 				<form action="./addCtr.do" method='post'>
-					<input type='hidden' name='bWriter' value='${personalMemberDto.pNickname}'>
+					<input type='hidden' name='bWriter' value='${personalmemberDto.getpNickname()}'>
 					<div id="titleInputBox">
 						<input id="titleInput" name="bTitle" type="text" placeholder="제목을 입력해주세요">
 					</div>
 					<div id="contentInputBox">
 						<textarea id="contentInput" name ='bContent' placeholder="내용을 입력해주세요"></textarea>
 					</div>
-					<button type="submit">등록</button>
+					<button type="submit" onclick="registerFnc()">등록</button>
 					<button type="button" onclick="cancleFnc()">취소</button>
 				</form>
 			</div>
