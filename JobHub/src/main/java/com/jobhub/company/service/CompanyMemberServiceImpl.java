@@ -1,5 +1,7 @@
 package com.jobhub.company.service;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +10,8 @@ import org.springframework.stereotype.Service;
 import com.jobhub.company.dao.CompanyMemberDao;
 import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.company.service.CompanyMemberServiceImpl;
+import com.jobhub.personal.dao.PersonalMemberDao;
+import com.jobhub.personal.dto.PersonalMemberDto;
 
 @Service
 public class CompanyMemberServiceImpl implements CompanyMemberService {
@@ -16,6 +20,8 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 	
 	@Autowired
 	public CompanyMemberDao companyMemberDao;
+	@Autowired
+	public PersonalMemberDao personalMemberDao;
 
 	@Override
 	public CompanyMemberDto companyMemberExist(String cCode, String cPwd) {
@@ -27,6 +33,12 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 	public void companyInsertOne(CompanyMemberDto companyMemberDto) {
 		// TODO Auto-generated method stub
 		companyMemberDao.companyInsertOne(companyMemberDto);
+	}
+
+	@Override
+	public List<PersonalMemberDto> personalInfoList() {
+		// TODO Auto-generated method stub
+		return personalMemberDao.personalInfoList();
 	}
 	
 	

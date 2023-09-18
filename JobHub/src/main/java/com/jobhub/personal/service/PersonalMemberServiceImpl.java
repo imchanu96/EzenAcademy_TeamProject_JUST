@@ -28,8 +28,6 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 	public void personalInsertOne(PersonalMemberDto personalMemberDto) {
 		// TODO Auto-generated method stub
 		personalMemberDao.memberInsertOne(personalMemberDto);
-		
-		
 	}
 
 }

@@ -1,5 +1,7 @@
 package com.jobhub.company.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.company.service.CompanyMemberService;
+import com.jobhub.personal.dto.PersonalMemberDto;
 
 @Controller
 public class CompanyMemberController {
@@ -71,5 +74,20 @@ public class CompanyMemberController {
 			e.printStackTrace();
 		}
 		return "redirect:/company/login.do";
+	}
+	
+	@RequestMapping(value = "/company/personalInfoList.do"
+			, method = {RequestMethod.GET, RequestMethod.POST})
+	public String memberList(Model model) {
+		// log4j
+		log.info("Welcome personalInfoController list!: {}");
+		
+//		int totalCount = adminService.memberSelectTotalCount();
+	      
+	    List<PersonalMemberDto> personalInfoList = companyMemberService.personalInfoList();
+	    
+	    model.addAttribute("personalInfoList", personalInfoList);
+
+	    return "company/search/SearchPerson";
 	}
 }

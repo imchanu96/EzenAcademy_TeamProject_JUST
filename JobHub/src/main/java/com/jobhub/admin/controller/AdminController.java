@@ -66,7 +66,7 @@ public class AdminController {
 //			int totalCount = adminService.memberSelectTotalCount();
 		      
 		    List<PersonalMemberDto> personalList = adminService.memberSelectList();
-		 
+
 		    model.addAttribute("personalList", personalList);
 
 		    return "admin/MemberList";

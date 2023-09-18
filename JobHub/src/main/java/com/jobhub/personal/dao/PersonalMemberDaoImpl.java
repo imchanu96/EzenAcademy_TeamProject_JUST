@@ -44,5 +44,14 @@ import com.jobhub.personal.dto.PersonalMemberDto;
 		return sqlSession.insert(namespace + "personalInsertOne", personalMemberDto);
 	}
 
+	
+	@Override
+	public List<PersonalMemberDto> personalInfoList() {
+		// TODO Auto-generated method stub
+		Map<String, Object> map = new HashMap<String, Object>();
+		
+		return sqlSession.selectList(namespace + "personalInfoList", map);
+	}
+
 }
 

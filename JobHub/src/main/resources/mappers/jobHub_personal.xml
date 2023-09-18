@@ -53,7 +53,7 @@
 	
 
 	<select id="personalMemberExist" parameterType="map" resultMap="personalResultMap">
-		SELECT PERSONAL_ID, PERSONAL_PASSWORD
+		SELECT PERSONAL_ID, PERSONAL_PASSWORD, PERSONAL_NICKNAME
 		 FROM PERSONAL
 		 WHERE PERSONAL_ID = #{pId} AND PERSONAL_PASSWORD = #{pPwd}
 	
@@ -87,4 +87,13 @@
 <!-- 			VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, #{pName}, #{pId}, #{pPwd}, #{pPhoneNum} -->
 <!-- 			, #{pEmail} , 1, SYSDATE, SYSDATE, SYSDATE, SYSDATE) -->
 	</insert>
+	
+	<select id="personalInfoList" resultType="map">
+		 SELECT P.PERSONAL_NUMBER AS "pNo", R.RESUME_PERSONAL_NAME AS "pName", R.RESUME_EDUCATION_NAME AS "pHightestEdu"
+        , R.RESUME_EDUCATION_MAJOR AS "pHightestEduMajor", R.RESUME_EDUCATION_GRADE AS "pHightestEduGrade"
+        , R.RESUME_CAREER_NAME AS "pCampany", ROUND((R.RESUME_CAREER_END_DATE - R.RESUME_CAREER_BEGIN_DATE) / 365, 1) || '년' AS "pCareer"
+        , NVL(R.RESUME_LICENSE_NAME , ' ') AS "pLicense", NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) AS "pLicenseCount"
+    FROM PERSONAL P INNER JOIN RESUME R
+    ON P.PERSONAL_NUMBER = R.PERSONAL_NUMBER
+	</select>
 </mapper>
