@@ -426,6 +426,7 @@
 						최대 200자 이내로 입력해주세요.
 					</div>
 				</div>
+				<input id="rAvgResult" type="text" name="rAvg" style="display: none;">
 				<div id="buttonBox">
 					<button type="submit">등록</button>
 					<button type="button">취소</button>

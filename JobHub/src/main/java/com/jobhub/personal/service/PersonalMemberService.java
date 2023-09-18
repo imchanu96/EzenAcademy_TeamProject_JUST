@@ -1,7 +1,5 @@
 package com.jobhub.personal.service;
 
-import org.springframework.web.multipart.MultipartHttpServletRequest;
-
 import com.jobhub.personal.dto.PersonalMemberDto;
 
 public interface PersonalMemberService {

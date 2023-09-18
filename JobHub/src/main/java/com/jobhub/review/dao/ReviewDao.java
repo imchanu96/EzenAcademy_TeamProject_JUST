@@ -6,8 +6,10 @@ import com.jobhub.review.dto.ReviewDto;
 
 public interface ReviewDao {
 
-	public List<ReviewDto> reviewSelectList();
+	List<ReviewDto> reviewSelectList(int start, int end);
 	
 	public int reviewInsertOne(ReviewDto reviewDto);
+
+	public int reviewSelectTotalCount();
 	
 }

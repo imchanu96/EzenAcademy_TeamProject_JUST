@@ -11,12 +11,12 @@
 		list-style-type: none;
 	    padding: 0;
 	    overflow: hidden;
-	    background-color: #333333;
-	/*     width: 1000px; */ /* 넓이를 주면 고정  */
-	    display: table; /* table을 주면  요소의 내용에 맞게 자동으로 크기 */
-	    margin-left: auto;
-	    margin-right: auto;
+	    background-color: #fff;
+	    display: table;
+	    margin: 0px auto;
 	    
+	    box-shadow: 0px 1px 4px 0px #ddd;
+	    border-radius: 10px;
 	}
 	
 	nav > ul > li {
@@ -25,26 +25,34 @@
 	
 	nav > ul > li > a {
 	    display: block;
-	    color: white; 
+	    color: #292e41; 
 	    text-align: center;
 	    padding: 16px;
 	    text-decoration: none;
+	    font-size: 16px;
+	    font-weight: bold;
 	}
 	
 	nav > ul > li > a:hover {
-	    color: #FFD9EC;
-	    background-color: #5D5D5D;
+ 	    color: #292e41;
+	    background-color: #eff5ff;
 	    font-weight: bold;
 	}
 </style>
 
 <script type="text/javascript">
+
+	window.onload() {
+		var curPageObj = document.getElementById('curPage');
+		curPageObj.setAttribute("style", "color: red;")
+	}
+
 	function goPage(pageNumber){
 		// 자바스크립트
 		var curPageObj = document.getElementById('curPage');
 		curPageObj.value = pageNumber;
 		
-// 		alert(curPageObj.value);
+		alert(curPageObj.value);
 		
 		var pagingFormObj = document.getElementById('pagingForm');
 		pagingFormObj.submit();
@@ -66,11 +74,10 @@
 
 	<nav>
 		<ul>
-<!-- 						ㄷ한자 -->
 			<c:if test="${pagingMap.reviewPaging.prevBlock ne 1}">
 			<li>
 				<a href="#" onclick="goPage(${pagingMap.reviewPaging.prevBlock});">
-					<span>≪</span>
+					<span>&#60;</span> <!-- < -->
 				</a>
 			</li>
 			</c:if>
@@ -86,7 +93,7 @@
 				test="${pagingMap.reviewPaging.curBlock < pagingMap.reviewPaging.totBlock}">
 			<li>
 				<a href="#" onclick="goPage(${pagingMap.reviewPaging.nextBlock});">
-					<span>≫</span>
+					<span>&#62;</span> <!-- > -->
 				</a>
 			</li>
 			</c:if>
