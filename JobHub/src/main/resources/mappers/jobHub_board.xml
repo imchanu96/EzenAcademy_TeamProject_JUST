@@ -28,9 +28,9 @@
 	
 	<insert id="boardInsertOne" parameterType="boardDto">
 		INSERT INTO BOARD
-			(BOARD_NUMBER, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE, BOARD_MODIFY_DATE,
+			(BOARD_NUMBER, BOARD_WRITER, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE, BOARD_MODIFY_DATE,
             PERSONAL_NUMBER)
-		VALUES(BOARD_NUMBER_SEQ.NEXTVAL, #{bTitle}, #{bContent}, SYSDATE, SYSDATE, 1)
+		VALUES(BOARD_NUMBER_SEQ.NEXTVAL, #{bWriter}, #{bTitle}, #{bContent}, SYSDATE, SYSDATE, 1)
 	</insert>
 	
 	<select id="boardSelectOne" parameterType="int" resultMap="boardResultMap">
@@ -38,5 +38,22 @@
 		FROM BOARD
 		WHERE BOARD_NUMBER =#{bNo}
 	</select>
+	
+	<update id="boardUpdateOne" parameterType="boardDto">
+		UPDATE BOARD
+	    SET BOARD_TITLE = #{bTitle}, BOARD_CONTENT = #{bContent}, BOARD_MODIFY_DATE = SYSDATE
+	    WHERE BOARD_NUMBER =#{bNo}
+	</update>
+	
+	<delete id="boardDeleteOne" parameterType="int">
+		DELETE FROM BOARD
+		WHERE BOARD_NUMBER =#{bNo}
+	</delete>
+	
+	<update id="increaseViews" parameterType="int">
+		UPDATE BOARD
+		SET BOARD_VIEWS = bViews+1
+		WHERE BOARD_NUMBER =#{bNo}
+	</update>
 	
 </mapper>

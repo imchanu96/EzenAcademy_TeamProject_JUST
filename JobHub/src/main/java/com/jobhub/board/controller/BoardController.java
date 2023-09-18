@@ -73,7 +73,7 @@ public class BoardController {
 		return "board/BoardView";
 	}
 	
-	//게시글 수정 화면으로
+	//게시글 수정 화면 이동
 	@RequestMapping(value = "/board/update.do", method = RequestMethod.GET)
 	public String boardUpdate(int no, Model model) {
 		log.info("Welcome BoardController boardUpdate!" + no);
@@ -84,6 +84,30 @@ public class BoardController {
 		
 		model.addAttribute("boardDto", boardDto);
 		
-		return "board/BoardWriteUpdate";
+		return "board/BoardUpdate";
 	}
+	
+	//게시글 수정
+	@RequestMapping(value = "/board/updateCtr.do", method = RequestMethod.POST)
+	public String boardUpdateCtr(BoardDto boardDto, Model model) {
+		log.info("Welcome BoardController boardUpdateCtr!" + boardDto);
+
+		try {
+			boardService.boardUpdateOne(boardDto);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return "redirect:/board/listOne.do?no="+boardDto.getbNo();
+	}
+	
+	//게시글 삭제
+	@RequestMapping(value = "/board/delete.do", method = RequestMethod.GET)
+	public String boardDelete(int no, Model model) {
+		log.info("Welcome BoardController boardDelete!" + no);
+		
+		boardService.boardDeleteOne(no);
+		
+		return "redirect:/board/list.do";
+	}
+		
 }

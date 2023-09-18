@@ -54,4 +54,16 @@ public class BoardServiceImpl implements BoardService{
 		return resultMap;
 	}
 
+	@Override
+	public void boardUpdateOne(BoardDto boardDto) {
+		
+		boardDao.boardUpdateOne(boardDto);
+	}
+
+	@Override
+	public int boardDeleteOne(int no) {
+
+		return boardDao.boardDeleteOne(no);
+	}
+
 }

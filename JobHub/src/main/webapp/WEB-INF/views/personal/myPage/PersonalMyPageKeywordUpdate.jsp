@@ -1,13 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>        
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>My page</title>
+<title>기업 선호도 변경</title>
 	<style type="text/css">
-			
 /* 공통 */
 		a {
 		  text-decoration: none;
@@ -21,7 +19,6 @@
 			border-bottom: 1px solid #b4c0d3;
 		}
 		#headerContent {
-				
 			margin: 0px auto;
 			width: 1280px;
 			height: 120px;
@@ -57,13 +54,6 @@
 			height: 100px;
 			text-align: center;
 		}
-		
-		#chatImage {
-			width: 70px;
-			height: 70px;
-			margin-top: 20px;
-			margin-right: 50px;
-		}
 /* my menu */
 		#myMenuBox {
 			float: left;
@@ -77,7 +67,6 @@
 		#container {
 			width: 1280px;
 			height: 1000px;
-			
 			margin: 0px auto;
 		}
 /* navigation */
@@ -111,36 +100,60 @@
 			background-color: #f8fafc;
 		}
 		#personalInfoBox, #companyInfoBox {
+			border: 1px solid #deebff;
 			background-color: #fff;
 			padding: 20px;
 			border-radius: 10px;
-			width: 910px;
-		    height: 300px;
-		    margin: 15px;
+			width: 620px;
+		    height: 260px;
+		    margin: 25px;
+		    margin-left: 100px;
 		    color: #5c667b;
 		}
 		.infoTitle {
-			margin: 15px 0px 0px 35px;
+			margin-top: 3px;
+			color: #000;
+			font-size: 32px;
+		}
+		#selectKeyword {
+		}
+		.selectKeyword {
+			margin-top: 28px;
+			margin-left: 10px;
 			font-size: 25px;
 		}
-		.personalInfoItemTitle, .companyInfoItemTitle {
-			line-height: 50px;
+		
+		.personalInfoItemTitle {
 			float: left;
-			width: 200px;
+			width: 550px;
 			height: 50px;
+			margin-top: 20px;
 			margin-left: 15px;
 			font-size: 20px;
-		}
-		.personalInfoItemContent, .companyInfoItemContent {
 			line-height: 50px;
+		}
+		.personalInfoItemTitle > label {
+			padding-left: 20px;
+		}
+		
+		.personalInfoItemUpdate {
 			float: left;
 			width: 500px;
-			height: 50px;
+			height: 25px;
 			font-size: 18px;
 		}
-		.arrowBox {
+
+		#buttonBox {
+			margin:auto;
+			width: 100px;
 			height: 50px;
 		}
+		
+		#buttonBox > button {
+			width: 100px;
+			height: 50px;
+		}
+		
 /* tail form */
 		#tailBox {
 			height: 150px;
@@ -148,7 +161,6 @@
 			text-align: center;
 		}
 		#tailContent {
-				
 			width: 1280px;
 			height: 130px;
 			margin: auto;
@@ -159,6 +171,25 @@
 			color: #999999;
 		}
 	</style>
+<script type="text/javascript">
+
+	function count_check(obj) {
+		var chkBox = document.getElementsByName("keyword");
+		var chkCnt = 0;
+		
+		for(var i = 0; i <chkBox.length; i++) {
+			if(chkBox[i].checked) {
+			chkCnt++;
+			}
+		}
+		if(chkCnt > 2) {
+			alert("2개까지 체크할 수 있습니다.");
+			obj.checked = false;
+			return false;
+		}
+	}
+	
+</script>
 </head>
 <body>
 
@@ -183,7 +214,7 @@
 					</a>
 				</div>
 				<div class="mainMenuItem">
-					<a href="../board/list.do">
+					<a href="http://www.naver.com">
 						게시판
 					</a>
 				</div>
@@ -192,25 +223,19 @@
 			<div id="myMessageBox">
 				<div>
 					<a href="http://www.naver.com">
-						<img id="chatImage" alt="" 
-							src="https://github.com/noohij/Ezen_TeamProject_JUST/assets
-								/136562510/4387a6fc-84c2-4def-8411-f2572b6a12e7">
+						채팅
 					</a>
 				</div>
 			</div>
 			
-			<c:if test="${sessionScope.personalmemberDto.pId ne null}">			
-				<div id="myMenuBox">
-					<div>
-						<span style="float:right;">
-							<a href="<%=request.getContextPath()%>/personal/logout.do">
-								${personalmemberDto.pId}
-							</a>
-						</span>
-					</div>
+			<div id="myMenuBox">
+				<div>
+					<a href="http://www.naver.com">
+						로그인 / 회원가입
+					</a>
 				</div>
-			</c:if>	
-					
+			</div>
+			
 		</div>
 	</div> <!-- Header Ends -->
 	
@@ -236,90 +261,61 @@
 		</div>
 		
 		<div id="content">
-			<div class="infoTitle">
-				개인 정보
-			</div>
-			<form action="personal/list.do">
+
 			<div id="personalInfoBox">
 				<div class="personalInfoItem">
-					<div class="personalInfoItemTitle">
-						닉네임
+					<div id="infoTitle">
+						<div class="infoTitle">
+							기업 선호도 수정
+						</div>
 					</div>
-					<div class="personalInfoItemContent">
-						${personalmemberDto.pNickname}
+					
+					<div id="selectKeyword">
+						<div class="selectKeyword">
+							<span style="color: #000; font-weight: bold;">선호 키워드</span>
+							<span style="font-size: 16px;">(최대 2개 선택 가능)</span>
+						</div>
 					</div>
-					<div class="arrowBox">
-						<a href="/personal/update.do?no=${personalmemberDto.pNo}">></a>
+				
+					<form action="" method="get">
+						<div class="personalInfoItemTitle">
+							<label>
+								<input type="checkbox" name="keyword" value="연봉"
+								onclick="count_check(this);">
+								<span>연봉</span>
+							</label>
+							<label>
+								<input type="checkbox" name="keyword" value="복지"
+								onclick="count_check(this);">
+								<span>복지</span>
+							</label>
+							<label>
+								<input type="checkbox" name="keyword" value="근무환경"
+								onclick="count_check(this);">
+								<span>근무환경</span>
+							</label>
+							<label>
+								<input type="checkbox" name="keyword" value="경영진"
+								onclick="count_check(this);">
+								<span>경영진</span>
+							</label>
+							<label>
+								<input type="checkbox" name="keyword" value="워라벨"
+								onclick="count_check(this);">
+								<span>워라벨</span>
+							</label>
+						</div>
+						<div class="personalInfoItemUpdate">
+						
+						</div>
+					
+					<div id="buttonBox">
+						<button type="submit" value="변경하기">변경하기</button>
 					</div>
-				</div>
-				<div class="personalInfoItem">
-					<div class="personalInfoItemTitle">
-						비밀번호
-					</div>
-					<div class="personalInfoItemContent">
-						${personalmemberDto.pPwd}
-					</div>
-					<div class="arrowBox">
-						<a href="/personal/update.do?no=${personalmemberDto.pNo}">></a>
-					</div>
-				</div>
-				<div class="personalInfoItem">
-					<div class="personalInfoItemTitle">
-						전화번호
-					</div>
-					<div class="personalInfoItemContent">
-						${personalmemberDto.pPhoneNum}
-					</div>
-					<div class="arrowBox">
-						<a href="/personal/update.do?no=${personalmemberDto.pNo}">></a>
-					</div>
-				</div>
-				<div class="personalInfoItem">
-					<div class="personalInfoItemTitle">
-						이메일
-					</div>
-					<div class="personalInfoItemContent">
-						${personalmemberDto.pEmail}
-					</div>
-					<div class="arrowBox">
-						<a href="/personal/update.do?no=${personalmemberDto.pNo}">></a>
-					</div>
-				</div>
-				<div class="personalInfoItem">
-					<div class="personalInfoItemTitle">
-						키워드
-					</div>
-					<div class="personalInfoItemContent">
-						${personalmemberDto.pKeyword}
-					</div>
-					<div class="arrowBox">
-						<a href="/personal/update.do?no=${personalmemberDto.pNo}">></a>
-					</div>
+					</form>
 				</div>
 			</div>
-			</form>
-			<div class="infoTitle">
-				회사 정보
-			</div>
-			<div id="companyInfoBox">
-				<div class="companyInfoItem">
-					<div class="companyInfoItemTitle">
-						회사 이름
-					</div>
-					<div class="companyInfoItemContent">
-						이젠 아카데미
-					</div>
-				</div>
-				<div class="companyInfoItem">
-					<div class="companyInfoItemTitle">
-						회사 주소
-					</div>
-					<div class="companyInfoItemContent">
-						서울특별시 서초구 강남대로 123 2층
-					</div>
-				</div>
-			</div>
-		</div>
+		</div> <!-- content -->
 		
 	</div>	
 	

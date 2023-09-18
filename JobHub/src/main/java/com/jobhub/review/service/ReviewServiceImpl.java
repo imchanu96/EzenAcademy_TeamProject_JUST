@@ -20,23 +20,21 @@ public class ReviewServiceImpl implements ReviewService {
 	public ReviewDao reviewDao;
 
 	@Override
-	public List<ReviewDto> reviewSelectList() {
+	public List<ReviewDto> reviewSelectList(int start, int end) {
 
-		return reviewDao.reviewSelectList();
+		return reviewDao.reviewSelectList(start, end);
 	}
 	
 	@Override
 	public void reviewInsertOne(ReviewDto reviewDto) throws Exception {
 
 		reviewDao.reviewInsertOne(reviewDto);
+	}
+
+	@Override
+	public int reviewSelectTotalCount() {
 		
-//		int parentSeq = reviewDto.getrNo();
-//			List<Map<String, Object>> list = 
-//				fileUtils.parseInsertFileInfo(parentSeq, multipartHttpServletRequest);
-//			// 트랜잭션의 시작. 여러 건 업로드
-//			for (int i = 0; i < list.size(); i++) {
-//				memberDao.insertFile(list.get(i));
-//			}
+		return reviewDao.reviewSelectTotalCount();
 	}
 }
 

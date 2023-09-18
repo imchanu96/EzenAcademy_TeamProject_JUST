@@ -14,7 +14,7 @@ public class ReviewDto {
 	private int rBal;
 	private String rGood;
 	private String rBad;
-	private float rAvg;
+	private double rAvg;
 	private Date rCreDate;
 	private Date rModDate;
 	
@@ -23,7 +23,7 @@ public class ReviewDto {
 	}
 
 	public ReviewDto(int rNo, String rTitle, String rContent, int rSal, int rWel, int rEnv, int rBoss, int rBal,
-			String rGood, String rBad, float rAvg, Date rCreDate, Date rModDate) {
+			String rGood, String rBad, double rAvg, Date rCreDate, Date rModDate) {
 		super();
 		this.rNo = rNo;
 		this.rTitle = rTitle;
@@ -120,11 +120,11 @@ public class ReviewDto {
 		this.rBad = rBad;
 	}
 
-	public float getrAvg() {
+	public double getrAvg() {
 		return rAvg;
 	}
 
-	public void setrAvg(float rAvg) {
+	public void setrAvg(double rAvg) {
 		this.rAvg = rAvg;
 	}
 

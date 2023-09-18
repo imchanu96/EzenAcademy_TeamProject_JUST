@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>BoardWrite</title>
+<title>BoardUpdate</title>
 	<style type="text/css">
 	
 			/* 	모든 선택자의 border: 1px solid red; 는 작업용입니다. */
@@ -83,7 +83,6 @@
 	<script type="text/javascript">
 		function updateFnc() {
 			if (confirm("이대로 수정하시겠습니까?") == true){ 
-				location.href = "BoardView.jsp";
 				alert("수정 완료되었습니다.");
 			}else{
 				return;
@@ -92,17 +91,18 @@
 			
 		function cancleFnc() {
 			if (confirm("정말 취소하시겠습니까?") == true){
-				location.href = "BoardView.jsp";
+				location.href = './listOne.do?no=${boardDto.bNo}';
 				alert("취소되었습니다.");
 			}else{
 				return;
 			}
 		}
+		
 	</script>
 </head>
 <body>
 
-	<jsp:include page="/WEB-INF/views/personal/Header.jsp"/>
+	<jsp:include page="/WEB-INF/views/board/Header.jsp"/>
 	
 	<div id="container">
 		<div id="navigation">
@@ -115,15 +115,16 @@
 		
 		<div id="content">
 			<div id="boardWriteBox">
-				<form action="./listOne.do" method="post">
+				<form action="./updateCtr.do" method="post">
+					<input type='hidden' name='bNo' value='${boardDto.bNo}'>
 					<div id="titleInputBox">
-						<input name="board" id="titleInput" type="text" value='${boardDto.bTitle}'>
+						<input name="bTitle" id="titleInput" type="text" value='${boardDto.bTitle}'>
 					</div>
 	
 					<div id="contentInputBox">
-						<textarea id="contentInput">${boardDto.bContent}</textarea>
+						<textarea name ='bContent' id="contentInput">${boardDto.bContent}</textarea>
 					</div>
-					<button type="submit" onclick="updateFnc()">수정</button>
+					<button type="submit" onclick='updateFnc()'>수정</button>
 					<button type="button" onclick="cancleFnc()">취소</button>
 				</form>
 			</div>

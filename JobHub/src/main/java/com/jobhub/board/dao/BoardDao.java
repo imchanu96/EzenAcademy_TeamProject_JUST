@@ -11,4 +11,9 @@ public interface BoardDao {
 	public int boardInsertOne(BoardDto boardDto);
 	
 	public BoardDto boardSelectOne(int no);
+	
+	public void boardUpdateOne(BoardDto boardDto);
+	
+	public int boardDeleteOne(int no);
+	
 }

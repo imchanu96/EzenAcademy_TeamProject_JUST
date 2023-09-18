@@ -48,20 +48,21 @@
 	
 	#titleInputBox, #starInputBox, #contentInputBox {
 		background-color: #fff;
-		padding: 20px 0px 20px 15px;
+		padding: 20px 0px 0px 10px;
 		border-radius: 10px;
 		box-shadow: 0px 1px 4px 0px #ddd;
 	}
 	
 	#titleInputBox {
 		width: 910px;
-		height: 30px;
+		height: 50px;
 		margin: 14px auto 0px auto;
 	}
 	
 	#titleInput {
 		float: left;
 		margin-left: 30px;
+		margin-right: 50px;
 		width: 810px;
 		height: 25px;
 		border: 1px solid #d7dce5;
@@ -70,8 +71,8 @@
 	#starInputBox {
 		float: left;
 		width: 120px;
-		height: 500px;
-		margin: 14px 14px 0px 25px;
+		height: 520px;
+		margin: 14px 14px 0px 30px;
 	}
 	
 	#starInput {
@@ -83,7 +84,7 @@
 	
 	.starInputItem {
 		float: left;
-		width: 180px;
+		width: 125px;
 		height: 90px;
 		text-align: left;
 	}
@@ -128,13 +129,10 @@
 	.rate label:hover ~ input:checked ~ label {
 		color: #2d65f2 !important;
 	} 
-	#hiddenDiv {
- 		display: none;
-	}
 	#contentInputBox {
 		float: left;
-		width: 760px;
-		height: 500px;
+		width: 765px;
+		height: 520px;
 		margin-top: 14px;
 	}
 	
@@ -146,7 +144,23 @@
 		border-radius: 6px;
 		resize: none;
 	}
-	
+	.errorMsg {
+ 		display: none;
+		color: red;
+		font-size: 14px;
+	}
+	#titleErrorMsg {
+		margin-left: 30px;
+	}
+	#contentErrorMsg {
+		margin-left: 50px;
+	}
+	#rateErrorMsg {
+		text-align: center;
+		width: 105px;
+	    height: 40px;
+	    float: left;
+	}
 	#buttonBox {
 		float: left;
 		margin: 20px 350px 0px 350px;
@@ -169,67 +183,87 @@
 <script>
 	
 	function titleFocusFnc() {
-		
 		var titleObj = document.getElementById("titleInput");
 		
-		if (titleObj.getAttribute("style") != "border: 2px solid red") {
 			titleObj.setAttribute("style", "outline: 1px solid #94b5fc");
-		} else {
-			titleObj.getAttribute("style") = "outline: 2px solid red";
-		}
 	}
-// 	#d7dce5 회색
-// #94b5fc 파랑
+
 	function titleBlurFnc() {
-		
 		var titleObj = document.getElementById("titleInput");
+		var titleErrorMsgObj = document.getElementById("titleErrorMsg")
 		
 		if (titleObj.value == "" || titleObj.value.length < 20) {
 			titleObj.setAttribute("style", "border: 1px solid #d7dce5");
-		} else {
+			titleErrorMsgObj.setAttribute("style", "display: none")
+		} else if (titleObj.value.length > 20){
 			titleObj.setAttribute("style", "border: 2px solid red");
+			titleErrorMsgObj.setAttribute("style", "display: block")
 		}
 	}
 	
 	function contentFocusFnc() {
-		
 		var contentObj = document.getElementById("contentInput");
 		
-		if (contentObj.getAttribute("style") != "border: 2px solid red") {
 			contentObj.setAttribute("style", "outline: 1px solid #94b5fc")
-		}
 	}
 	
 	function contentBlurFnc() {
+		var contentObj = document.getElementById("contentInput");
+		var contentErrorMsgObj = document.getElementById("contentErrorMsg")
 		
+		if (contentObj.value == "" || contentObj.value.length < 200) {
+			contentObj.setAttribute("style", "border: 1px solid #d7dce5");
+			contentErrorMsgObj.setAttribute("style", "display: none")
+		} else {
+			contentObj.setAttribute("style", "border: 2px solid red");
+			contentErrorMsgObj.setAttribute("style", "display: block")
+		}
 	}
 	
 	function onSubmitFnc(event) {
-	
-// 		//유효성 검사
-// 		var titleObj = document.getElementById("titleInput");
-// 		var contentObj = document.getElementById("contentInput");
 		
-// 		if (titleObj.value.length < 1
-// 			|| titleObj.value.length > 20) {
-// 			titleObj.setAttribute("style", "border: 2px solid red;")
-// 			event.preventDefault();
-			
-// 		}
+		var salRateList = document.getElementsByName("rSal");
+        var welRateList = document.getElementsByName("rWel");
+        var envRateList = document.getElementsByName("rEnv");
+        var bossRateList = document.getElementsByName("rBoss");
+        var balRateList = document.getElementsByName("rBal");
+        var starInputDivObj = document.getElementById("starInputBox");
+        var starErrorMsgObj = document.getElementById("rateErrorMsg");
 		
-// 		if (contentObj.value.length < 30
-// 			|| contentObj.value.length > 200) {
-// 			contentObj.setAttribute("style", "border: 2px solid red;")
-// 			event.preventDefault();
-// 		}
+        // 별점 유효성검사
+        var checkCnt = 0;
+
+        for (var i = 0; i < salRateList.length; i++) {
+            if (salRateList[i].checked) {
+                checkCnt++;
+            }
+        }
+        for (var i = 0; i < welRateList.length; i++) {
+            if (welRateList[i].checked) {
+                checkCnt++;
+            }
+        }
+        for (var i = 0; i < envRateList.length; i++) {
+            if (envRateList[i].checked) {
+                checkCnt++;
+            }
+        }
+        for (var i = 0; i < bossRateList.length; i++) {
+            if (bossRateList[i].checked) {
+                checkCnt++;
+            }
+        }
+        for (var i = 0; i < balRateList.length; i++) {
+            if (balRateList[i].checked) {
+                checkCnt++;
+            }
+        }
+        if (checkCnt < 5) {	// 별점이 빠짐없이 체크되었다면 checkCnt는 5가 되어야만 한다.
+        	starInputDivObj.setAttribute("style", "border: 2px solid red");
+        	starErrorMsgObj.setAttribute("style", "display: block");
+            event.preventDefault(); // 별점이 5개 중 하나라도 선택되지 않았을 때 폼 제출 방지
+        }
 		
-		
-	    var salRateList = document.getElementsByName("rSal");
-	    var welRateList = document.getElementsByName("rWel");
-	    var envRateList = document.getElementsByName("rEnv");
-	    var bossRateList = document.getElementsByName("rBoss");
-	    var balRateList = document.getElementsByName("rBal");
-	    
 	    var rAvgResultInputObj = document.getElementById("rAvgResult");
 	
 	    var totalRateNum = 0;
@@ -265,11 +299,6 @@
 	    }
 	    rAvgResultInputObj.value = (totalRateNum/5);
 	}
-
-
-	
-	
-	
 	
 </script>
 
@@ -300,6 +329,9 @@
 					<input name="rTitle" id="titleInput" type="text"
 						placeholder="제목을 입력해주세요(20자 이내)"
 						onfocus="titleFocusFnc();" onblur="titleBlurFnc();">
+					<div class="errorMsg" id="titleErrorMsg">
+						최대 20자 이내로 입력해주세요.
+					</div>
 				</div>
 				<div id="starInputBox">
 					<div id="starInput">
@@ -378,9 +410,9 @@
 						         	<label for="rBal1" title="1점"></label>
 						     </fieldset>
 						</div>
-						<div id="hiddenDiv">
-							<input id="rAvgResult" type="text" name="rAvg">
-							hiddenDiv
+						<div class="errorMsg" id="rateErrorMsg">
+							별점을 모두</br>
+							입력해주세요.
 						</div>
 					</div>
 				</div>
@@ -388,13 +420,17 @@
 				<div id="contentInputBox">
 					<textarea id="contentInput" name="rContent"
 						placeholder="내용을 입력해주세요."
-						onfocus="contentFocusFnc();" onblur="contentBlurFnc();">
-					</textarea>
+						onfocus="contentFocusFnc();"
+						onblur="contentBlurFnc();"></textarea>
+					<div class="errorMsg" id="contentErrorMsg">
+						최대 200자 이내로 입력해주세요.
+					</div>
 				</div>
-			<div id="buttonBox">
-				<button type="submit">등록</button>
-				<button type="button">취소</button>
-			</div>
+				<input id="rAvgResult" type="text" name="rAvg" style="display: none;">
+				<div id="buttonBox">
+					<button type="submit">등록</button>
+					<button type="button">취소</button>
+				</div>
 			</form>
 		</div>
 
