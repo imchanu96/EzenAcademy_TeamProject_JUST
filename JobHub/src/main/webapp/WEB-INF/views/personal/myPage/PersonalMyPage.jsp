@@ -194,11 +194,11 @@
 						닉네임
 					</div>
 					<div class="personalInfoItemContent">
-						${personalmemberDto.pNickname}
+						${personalMemberDto.pNickname}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
-							/personal/nickNameUpdate.do?no=${personalmemberDto.pNo}">></a>
+							/personal/nickNameUpdate.do?no=${personalMemberDto.pNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -210,7 +210,7 @@
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
-							/personal/passwordUpdate.do?no=${personalmemberDto.pNo}">></a>
+							/personal/passwordUpdate.do?no=${personalMemberDto.pNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -218,11 +218,11 @@
 						전화번호
 					</div>
 					<div class="personalInfoItemContent">
-						${personalmemberDto.pPhoneNum}
+						${personalMemberDto.pPhoneNum}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
-							/personal/phoneNumUpdate.do?no=${personalmemberDto.pNo}">></a>
+							/personal/phoneNumUpdate.do?no=${personalMemberDto.pNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -230,11 +230,11 @@
 						이메일
 					</div>
 					<div class="personalInfoItemContent">
-						${personalmemberDto.pEmail}
+						${personalMemberDto.pEmail}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
-							/personal/emailUpdate.do?no=${personalmemberDto.pNo}">></a>
+							/personal/emailUpdate.do?no=${personalMemberDto.pNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -242,11 +242,11 @@
 						키워드
 					</div>
 					<div class="personalInfoItemContent">
-						${personalmemberDto.pKeyword}
+						${personalMemberDto.pKeyword}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
-							/personal/keywordUpdate.do?no=${personalmemberDto.pNo}">></a>
+							/personal/keywordUpdate.do?no=${personalMemberDto.pNo}">></a>
 					</div>
 				</div>
 			</div>

@@ -264,8 +264,8 @@
 
 		<div id="content">
 			<form action="./addCtr.do" method='post'>
-				<input type='hidden' name='bWriter' value='${personalmemberDto.getpNickname()}'>
-				<input type='hidden' name='pNo' value='${personalmemberDto.getpNo()}'>
+				<input type='hidden' name='bWriter' value='${personalMemberDto.getpNickname()}'>
+				<input type='hidden' name='pNo' value='${personalMemberDto.getpNo()}'>
 				<div id="titleInputBox">
 					<input name="bTitle" id="titleInput" type="text"
 						placeholder="제목을 입력해주세요(20자 이내)"

@@ -238,7 +238,7 @@
 					<form action="keywordUpdateCtr.do" method="post">
 						<div>
 							<input name="pNo" style="display: none;" 
-								value="${personalmemberDto.pNo}">
+								value="${personalMemberDto.pNo}">
 						</div>
 						
 						<div class="personalInfoItemTitle">

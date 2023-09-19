@@ -112,7 +112,7 @@
 			<form class="boardViewT" action="./update.do" method="get">
 				<input type='hidden' name='no' value='${boardDto.bNo}'>
 				<div class="boardButton">
-					<c:if test="${boardDto.bWriter eq personalmemberDto.pNickname}">
+					<c:if test="${boardDto.bWriter eq personalMemberDto.pNickname}">
 						<button type='submit'>수정</button>
 						<button type="button" onclick='deleteFnc()'>삭제</button>
 					</c:if>

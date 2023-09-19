@@ -199,7 +199,7 @@
 						
 						<div>
 							<input name="pNo" style="display: none;" 
-								value="${personalmemberDto.pNo}">
+								value="${personalMemberDto.pNo}">
 						</div>
 						<div class="personalInfoItemUpdate">
 							<input type="text" name="pPhoneNum">

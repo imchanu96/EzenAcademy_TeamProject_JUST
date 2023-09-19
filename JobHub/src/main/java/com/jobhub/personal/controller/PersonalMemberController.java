@@ -42,13 +42,13 @@ public class PersonalMemberController {
 
 		log.info("Welcome PersonalMemberController loginCtr! " + pId + ", " + pPwd);
 
-		PersonalMemberDto personalmemberDto 
+		PersonalMemberDto personalMemberDto 
 			= PersonalMemberService.personalMemberExist(pId, pPwd);
 
 		String viewUrl = "";
-		if (personalmemberDto != null) {
+		if (personalMemberDto != null) {
 //			회원이 존재하면 세션에 담는다
-			session.setAttribute("personalmemberDto", personalmemberDto);
+			session.setAttribute("personalMemberDto", personalMemberDto);
 			viewUrl = "personal/myPage/PersonalMyPage";
 		} else {
 			viewUrl = "personal/auth/LoginFail";
