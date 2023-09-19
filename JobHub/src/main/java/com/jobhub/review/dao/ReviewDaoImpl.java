@@ -29,6 +29,12 @@ public class ReviewDaoImpl implements ReviewDao {
 	}
 	
 	@Override
+	public List<ReviewDto> reviewSelectList() {
+		
+		return sqlSession.selectList("com.jobhub.review.reviewSelectAllList");
+	}
+	
+	@Override
 	public int reviewInsertOne(ReviewDto reviewDto) {
 		
 		return sqlSession.insert("com.jobhub.review.reviewInsertOne", reviewDto);
@@ -40,5 +46,4 @@ public class ReviewDaoImpl implements ReviewDao {
 		return (int)sqlSession.selectOne("com.jobhub.review.reviewSelectTotalCount");
 	}
 
-	
 }

@@ -5,180 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Review write</title>
-<style type="text/css">
-	@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-/* container */
-	#container {
-		width: 1280px;
-		height: 1000px;
-		margin: 0px auto;
-	}
-/* navigation */
-	#navigation {
-		margin: 10px;
-		float: left;
-		width: 250px;
-		height: 950px;
-		font-size: 25px;
-		text-align: center;
-		background-color: #eff5ff;
-	}
-	#smallMenuBox {
-			
-		margin: 30px auto;
-		width: 200px;
-		height: 500px;
-	}
-	.smallMenuItem {
-			
-		margin-bottom: 20px;
-	}
-	.smallMenuItem a {
-		color: #475067;
-	}
-/* content */
-	#content {
-		margin: 10px;
-		float: left;
-		width: 980px;
-		height: 950px;
-		font-size: 30px;
-		background-color: #f8fafc;
-	}
-	
-	#titleInputBox, #starInputBox, #contentInputBox {
-		background-color: #fff;
-		padding: 20px 0px 0px 10px;
-		border-radius: 10px;
-		box-shadow: 0px 1px 4px 0px #ddd;
-	}
-	
-	#titleInputBox {
-		width: 910px;
-		height: 50px;
-		margin: 14px auto 0px auto;
-	}
-	
-	#titleInput {
-		float: left;
-		margin-left: 30px;
-		margin-right: 50px;
-		width: 810px;
-		height: 25px;
-		border: 1px solid #d7dce5;
-		border-radius: 6px;
-	}
-	#starInputBox {
-		float: left;
-		width: 120px;
-		height: 520px;
-		margin: 14px 14px 0px 30px;
-	}
-	
-	#starInput {
-		margin-top: 25px;
-		width: 160px;
-		height: 450px;
-		float: left;
-	}
-	
-	.starInputItem {
-		float: left;
-		width: 125px;
-		height: 90px;
-		text-align: left;
-	}
-	
-	.starInputItem > span {
-		float: left;
-		width: 110px;
-		font-size: 16px;
-		text-align: center;
-	}
-	.rate {
-		display: inline-block;
-		border: 0;
-		margin-right: 15px;
-	}
-	.rate > input {
-		display: none;
-	}
-	.rate > label {
-		float: right;
-		color: #ddd;
-	}
-	.rate > label:before {
-		display: inline-block;
-		font-size: 1rem;
-		padding: .3rem .2rem;
-		margin: 0;
-		cursor: pointer;
-		font-family: FontAwesome;
-		content: "\f005 ";
-	}
-	.rate {
-		padding: 0px;
-	}
-	.rate input:checked ~ label, 
-	.rate label:hover,.rate label:hover ~ label {
-		color: #2d65f2 !important;
-	} 
-	.rate input:checked + .rate label:hover,
-	.rate input input:checked ~ label:hover,
-	.rate input:checked ~ .rate label:hover ~ label,  
-	.rate label:hover ~ input:checked ~ label {
-		color: #2d65f2 !important;
-	} 
-	#contentInputBox {
-		float: left;
-		width: 765px;
-		height: 520px;
-		margin-top: 14px;
-	}
-	
-	#contentInput {
-		margin-left: 50px;
-		width: 640px;
-		height: 480px;
-		border: 1px solid #d7dce5;
-		border-radius: 6px;
-		resize: none;
-	}
-	.errorMsg {
- 		display: none;
-		color: red;
-		font-size: 14px;
-	}
-	#titleErrorMsg {
-		margin-left: 30px;
-	}
-	#contentErrorMsg {
-		margin-left: 50px;
-	}
-	#rateErrorMsg {
-		text-align: center;
-		width: 105px;
-	    height: 40px;
-	    float: left;
-	}
-	#buttonBox {
-		float: left;
-		margin: 20px 350px 0px 350px;
-		width: 400px;
-	}
-	button {
-		width: 90px;
-	    height: 40px;
-	    margin-left: 30px;
-	    background-color: #bcd1fc;
-	    border: none;
-	    border-radius: 6px;
-	    box-shadow: 0px 1px 4px 0px #ddd;
-	    font-size: 16px;
-	    font-weight: bold;
-	    color: #475067;
-	}
-</style>
+
+<link rel="stylesheet" href="/JobHub/resources/css/ReviewWrite.css" type="text/css">
 
 <script>
 	
@@ -312,10 +140,10 @@
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="">리뷰 조회</a>
+					<a href="http://localhost:9080/JobHub/review/list.do">리뷰 조회</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">리뷰 작성</a>
+					<a href="http://localhost:9080/JobHub/review/add.do">리뷰 작성</a>
 				</div>
 				<div class="smallMenuItem">
 					<a href="">기업 정보</a>
