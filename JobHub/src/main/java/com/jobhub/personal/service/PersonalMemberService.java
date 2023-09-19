@@ -10,6 +10,14 @@ public interface PersonalMemberService {
 	
 	public int personalMemberSelectOne(int pNo);
 
-	public void personMemberUpdateOne(PersonalMemberDto personalMemberDto);
+	public void personalMemberNickNameUpdateOne(PersonalMemberDto personalMemberDto);
+	
+	public void personalMemberPasswordUpdateOne(PersonalMemberDto personalMemberDto);
+	
+	public void personalMemberPhoneNumUpdateOne(PersonalMemberDto personalMemberDto);
+	
+	public void personalMemberEmailUpdateOne(PersonalMemberDto personalMemberDto);
+	
+	public void personalMemberKeywordUpdateOne(PersonalMemberDto personalMemberDto);
 	
 }

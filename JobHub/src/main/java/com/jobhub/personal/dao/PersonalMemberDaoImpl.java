@@ -52,11 +52,36 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 	}
 
 	@Override
-	public void personMemberUpdateOne(PersonalMemberDto personalMemberDto) {
+	public void personalMemberNickNameUpdateOne(PersonalMemberDto personalMemberDto) {
 		// TODO Auto-generated method stub
-		sqlSession.update(namespace + "personalMemberUpdateOne", personalMemberDto);
+		sqlSession.update(namespace + "personalMemberNickNameUpdateOne", personalMemberDto);
 	}
 	
+	@Override
+	public void personalMemberPasswordUpdateOne(PersonalMemberDto personalMemberDto) {
+		// TODO Auto-generated method stub
+		sqlSession.update(namespace + "personalMemberPasswordUpdateOne", personalMemberDto);
+	}
+	
+	@Override
+	public void personalMemberPhoneNumUpdateOne(PersonalMemberDto personalMemberDto) {
+		// TODO Auto-generated method stub
+		sqlSession.update(namespace + "personalMemberPhoneNumUpdateOne", personalMemberDto);
+	}
+
+
+	@Override
+	public void personalMemberEmailUpdateOne(PersonalMemberDto personalMemberDto) {
+		// TODO Auto-generated method stub
+		sqlSession.update(namespace + "personalMemberEmailUpdateOne", personalMemberDto);
+	}
+	
+	@Override
+	public void personalMemberKeywordUpdateOne(PersonalMemberDto personalMemberDto) {
+		// TODO Auto-generated method stub
+		sqlSession.update(namespace + "personalMemberKeywordUpdateOne", personalMemberDto);
+	}
+
 	@Override
 	public List<PersonalMemberDto> personalInfoList() {
 		// TODO Auto-generated method stub
@@ -64,6 +89,7 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 		
 		return sqlSession.selectList(namespace + "personalInfoList", map);
 	}
+
 
 }
 

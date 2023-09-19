@@ -15,7 +15,15 @@ public interface PersonalMemberDao {
 
 	public List<PersonalMemberDto> memberSelectList();
 
-	public void personMemberUpdateOne(PersonalMemberDto personalMemberDto);
+	public void personalMemberNickNameUpdateOne(PersonalMemberDto personalMemberDto);
+	
+	public void personalMemberPasswordUpdateOne(PersonalMemberDto personalMemberDto);
+	
+	public void personalMemberPhoneNumUpdateOne(PersonalMemberDto personalMemberDto);
+
+	public void personalMemberEmailUpdateOne(PersonalMemberDto personalMemberDto);
+	
+	public void personalMemberKeywordUpdateOne(PersonalMemberDto personalMemberDto);
 
 	public List<PersonalMemberDto> personalInfoList();
 	
