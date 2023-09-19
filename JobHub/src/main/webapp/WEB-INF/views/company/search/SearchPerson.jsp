@@ -262,6 +262,12 @@
 	function openResumeFnc(no) {
 		var modal = document.getElementById("resumeModal");
 		
+		var resumeValue = document.getElementsByClassName("resumeValue");
+		
+		for (var i = 0; i < resumeValue.length; i++) {
+			alert(resumeValue[i]);
+		}
+		
 		var jsonData = { "pNo": no}; 
 		
 		$.ajax({
@@ -274,9 +280,9 @@
 	        // 서버로부터 받은 데이터(data)를 처리합니다.
 	        
 	        // 예제: 결과를 resultContainer에 표시
-	        	alert(data.rName);
+	        	alert('성공');
 	      	
-	//         	modal.style.display = "block";
+	        	modal.style.display = "block";
 			
 			},
 			error: function() {
@@ -410,27 +416,27 @@
 					</thead>
 					<tr>
 						<td>이름</td>
-						<td>이름값</td>
+						<td class="resumeValue"></td>
 						<td>생년월일</td>
-						<td>19999</td>
+						<td class="resumeValue"></td>
 					</tr>
 					<tr>
 						<td>이메일</td>
-						<td></td>
+						<td class="resumeValue"></td>
 						<td>연락처</td>
-						<td></td>
+						<td class="resumeValue"></td>
 					</tr>
 					<tr>
 						<td>주소</td>
-						<td></td>
+						<td class="resumeValue"></td>
 						<td>결혼 여부</td>
-						<td></td>
+						<td class="resumeValue"></td>
 					</tr>
 					<tr>
 						<td>성별</td>
-						<td></td>
+						<td class="resumeValue"></td>
 						<td>병역 여부</td>
-						<td></td>
+						<td class="resumeValue"></td>
 					</tr>
 				</table>
 				
@@ -452,13 +458,13 @@
 						<td>졸업 구분</td>
 					</tr>
 					<tr>
-						<td>1999</td>
-						<td>1999</td>
-						<td>A대</td>
-						<td>B전공</td>
-						<td>서울</td>
-						<td>10</td>
-						<td>졸업</td>
+						<td class="resumeValue"></td>
+						<td class="resumeValue"></td>
+						<td class="resumeValue"></td>
+						<td class="resumeValue"></td>
+						<td class="resumeValue"></td>
+						<td class="resumeValue"></td>
+						<td class="resumeValue"></td>
 					</tr>
 				</table>
 				
@@ -477,12 +483,12 @@
 						<td>담당업무</td>
 					</tr>
 					<tr>
-						<td>1999</td>
-						<td>1999</td>
-						<td>A주식회사</td>
-						<td>대리</td>
-						<td>서울</td>
-						<td>백엔드</td>
+						<td class="resumeValue"></td>
+						<td class="resumeValue"></td>
+						<td class="resumeValue"></td>
+						<td class="resumeValue"></td>
+						<td class="resumeValue"></td>
+						<td class="resumeValue"></td>
 					</tr>
 				</table>
 				
@@ -499,10 +505,10 @@
 						<td>점수/등급</td>
 					</tr>
 					<tr>
-						<td>1999</td>
-						<td>정보처리산업기사</td>
-						<td>발급기관명::</td>
-						<td>산업기사</td>
+						<td class="resumeValue"></td>
+						<td class="resumeValue"></td>
+						<td class="resumeValue"></td>
+						<td class="resumeValue"></td>
 					</tr>
 				</table>
 			</div>
