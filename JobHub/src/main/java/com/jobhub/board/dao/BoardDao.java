@@ -3,7 +3,6 @@ package com.jobhub.board.dao;
 import java.util.List;
 
 import com.jobhub.board.dto.BoardDto;
-import com.jobhub.review.dto.ReviewDto;
 
 public interface BoardDao {
 

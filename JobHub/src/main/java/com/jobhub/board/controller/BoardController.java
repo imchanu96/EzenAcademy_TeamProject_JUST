@@ -17,8 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.jobhub.board.dto.BoardDto;
 import com.jobhub.board.service.BoardService;
-import com.jobhub.review.dto.ReviewDto;
-import com.jobhub.review.util.Paging;
+import com.jobhub.board.util.Paging;
 
 @Controller
 public class BoardController {
