@@ -31,7 +31,7 @@
 	</resultMap>
 	
 	<resultMap type="resumeDto" id="resumeResultMap">
-		<id column="PERSONAL_NUMBER" property="rNo" />
+		<id column="RESUME_NUMBER" property="rNo" />
 		<result column="RESUME_PERSONAL_NAME" property="rName"/>
 		<result column="RESUME_PERSONAL_BIRTHDAY" property="rBirthday"/>
 		<result column="RESUME_PERSONAL_EMAIL" property="rEmail"/>
@@ -58,8 +58,15 @@
 		<result column="RESUME_LICENSE_INSTITUTION" property="rLicenseInst"/>
 		<result column="RESUME_LICENSE_GRADE" property="rLicenseGrade"/>
 		<result column="PERSONAL_NUMBER" property="pNo"/>
-		
-		
+	</resultMap>
+	
+	<resultMap type="letterDto" id="letterResultMap">
+		<id column="LETTER_NUMBER" property="lNo" />
+		<result column="LETTER_HISTORY" property="history"/>
+		<result column="LETTER_MOTIVATION" property="motivation"/>
+		<result column="LETTER_CHARACTER" property="character"/>
+		<result column="LETTER_GOAL" property="goal"/>
+		<result column="PERSONAL_NUMBER" property="pNo"/>
 	</resultMap>
 	
 	<select id="personalIdCheck">
@@ -171,5 +178,11 @@
 		    , RESUME_LICENSE_GRADE, PERSONAL_NUMBER
 		FROM RESUME
 		WHERE PERSONAL_NUMBER = #{pNo}
+	</select>
+	<select id="showLetter" resultMap="letterResultMap" parameterType="map">
+	SELECT LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
+	    , LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER
+    FROM LETTER
+	WHERE PERSONAL_NUMBER = #{pNo}
 	</select>
 </mapper>

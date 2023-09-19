@@ -2,31 +2,23 @@ package com.jobhub.personal.dto;
 
 public class LetterDto {
 
-	private int LetterNo;
+	private int lNo;
 	private String history;
 	private String motivation;
 	private String character;
 	private String goal;
+	private int pNo;
 	
 	public LetterDto() {
 		super();
 	}
 
-	public LetterDto(int letterNo, String history, String motivation, String character, String goal) {
-		super();
-		this.LetterNo = letterNo;
-		this.history = history;
-		this.motivation = motivation;
-		this.character = character;
-		this.goal = goal;
+	public int getlNo() {
+		return lNo;
 	}
 
-	public int getLetterNo() {
-		return LetterNo;
-	}
-
-	public void setLetterNo(int letterNo) {
-		LetterNo = letterNo;
+	public void setlNo(int lNo) {
+		this.lNo = lNo;
 	}
 
 	public String getHistory() {
@@ -61,10 +53,23 @@ public class LetterDto {
 		this.goal = goal;
 	}
 
-	@Override
-	public String toString() {
-		return "LetterDto [LetterNo=" + LetterNo + ", history=" + history + ", motivation=" + motivation
-				+ ", character=" + character + ", goal=" + goal + "]";
+	public int getpNo() {
+		return pNo;
 	}
+
+	public void setpNo(int pNo) {
+		this.pNo = pNo;
+	}
+
+	public LetterDto(int lNo, String history, String motivation, String character, String goal, int pNo) {
+		super();
+		this.lNo = lNo;
+		this.history = history;
+		this.motivation = motivation;
+		this.character = character;
+		this.goal = goal;
+		this.pNo = pNo;
+	}
+
 	
 }
