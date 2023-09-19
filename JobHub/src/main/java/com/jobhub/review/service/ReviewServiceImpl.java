@@ -26,6 +26,12 @@ public class ReviewServiceImpl implements ReviewService {
 	}
 	
 	@Override
+	public List<ReviewDto> reviewSelectList() {
+
+		return reviewDao.reviewSelectList();
+	}
+	
+	@Override
 	public void reviewInsertOne(ReviewDto reviewDto) throws Exception {
 
 		reviewDao.reviewInsertOne(reviewDto);
@@ -36,6 +42,8 @@ public class ReviewServiceImpl implements ReviewService {
 		
 		return reviewDao.reviewSelectTotalCount();
 	}
+
+	
 }
 
 

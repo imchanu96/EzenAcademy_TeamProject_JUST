@@ -161,58 +161,7 @@
 	</style>
 </head>
 <body>
-
-	<div id="headerBox">
-		<div id="headerContent">
-		
-			<a href="http://www.naver.com">
-				<img id="logo" src="https://github.com/noohij/
-								Ezen_TeamProject_JUST/assets/54897384/
-								ee8218f0-b067-48da-8bf7-d31bef40f1cf">
-			</a>
-			
-			<div id="mainMenuBox">
-				<div class="mainMenuItem">
-					<a href="http://www.naver.com">
-						기업 추천
-					</a>
-				</div>
-				<div class="mainMenuItem">
-					<a href="http://www.naver.com">
-						기업 리뷰
-					</a>
-				</div>
-				<div class="mainMenuItem">
-					<a href="../board/list.do">
-						게시판
-					</a>
-				</div>
-			</div>
-			
-			<div id="myMessageBox">
-				<div>
-					<a href="http://www.naver.com">
-						<img id="chatImage" alt="" 
-							src="https://github.com/noohij/Ezen_TeamProject_JUST/assets
-								/136562510/4387a6fc-84c2-4def-8411-f2572b6a12e7">
-					</a>
-				</div>
-			</div>
-			
-			<c:if test="${sessionScope.personalmemberDto.pId ne null}">			
-				<div id="myMenuBox">
-					<div>
-						<span style="float:right;">
-							<a href="<%=request.getContextPath()%>/personal/logout.do">
-								${personalmemberDto.pId}
-							</a>
-						</span>
-					</div>
-				</div>
-			</c:if>	
-					
-		</div>
-	</div> <!-- Header Ends -->
+	<jsp:include page="/WEB-INF/views/Header.jsp"/>
 	
 	<div id="container">
 		<div id="navigation">
@@ -239,7 +188,6 @@
 			<div class="infoTitle">
 				개인 정보
 			</div>
-			<form action="personal/list.do">
 			<div id="personalInfoBox">
 				<div class="personalInfoItem">
 					<div class="personalInfoItemTitle">
@@ -249,7 +197,8 @@
 						${personalmemberDto.pNickname}
 					</div>
 					<div class="arrowBox">
-						<a href="/personal/updateCtr.do?no=${personalmemberDto.pNo}">></a>
+						<a href="<%=request.getContextPath()%>
+							/personal/nickNameUpdate.do?no=${personalmemberDto.pNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -260,7 +209,8 @@
 						********
 					</div>
 					<div class="arrowBox">
-						<a href="/personal/updateCtr.do?no=${personalmemberDto.pNo}">></a>
+						<a href="<%=request.getContextPath()%>
+							/personal/passwordUpdate.do?no=${personalmemberDto.pNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -271,7 +221,8 @@
 						${personalmemberDto.pPhoneNum}
 					</div>
 					<div class="arrowBox">
-						<a href="/personal/updateCtr.do?no=${personalmemberDto.pNo}">></a>
+						<a href="<%=request.getContextPath()%>
+							/personal/phoneNumUpdate.do?no=${personalmemberDto.pNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -282,7 +233,8 @@
 						${personalmemberDto.pEmail}
 					</div>
 					<div class="arrowBox">
-						<a href="/personal/updateCtr.do?no=${personalmemberDto.pNo}">></a>
+						<a href="<%=request.getContextPath()%>
+							/personal/emailUpdate.do?no=${personalmemberDto.pNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -293,11 +245,11 @@
 						${personalmemberDto.pKeyword}
 					</div>
 					<div class="arrowBox">
-						<a href="/personal/updateCtr.do?no=${personalmemberDto.pNo}">></a>
+						<a href="<%=request.getContextPath()%>
+							/personal/keywordUpdate.do?no=${personalmemberDto.pNo}">></a>
 					</div>
 				</div>
 			</div>
-			</form>
 			<div class="infoTitle">
 				회사 정보
 			</div>
@@ -323,13 +275,6 @@
 		
 	</div>	
 	
-	<div id="tailBox">
-		<div id="tailContent">
-			<div id="teamName">
-				TEAM JUST
-			</div>
-		</div>
-	</div>
-	
+	<jsp:include page="/WEB-INF/views/Tail.jsp"/>	
 </body>
 </html>

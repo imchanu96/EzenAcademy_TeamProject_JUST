@@ -96,18 +96,22 @@
 			<div id="myMessageBox">
 				<div>
 					<a href="http://www.naver.com">
-						채팅
+						<img id="chatImage" alt="" 
+							src="https://github.com/noohij/Ezen_TeamProject_JUST/assets
+								/136562510/4387a6fc-84c2-4def-8411-f2572b6a12e7">
 					</a>
 				</div>
 			</div>
 			
-			<div id="myMenuBox">
-				<div>
-					<a href="../personal/login.do">
-						로그인 / 회원가입
-					</a>
+			<c:if test="${sessionScope.personalmemberDto.pId ne null}">	
+				<div id="myMenuBox">
+					<div>
+						<a href="<%=request.getContextPath()%>/personal/logout.do">
+							${personalmemberDto.pId}
+						</a>
+					</div>
 				</div>
-			</div>
+			</c:if>	
 			
 		</div>
 	</div> <!-- Header Ends -->

@@ -22,6 +22,11 @@
 		<result column="REVIEW_MODIFY_DATE" property="rModDate" />
 	</resultMap>
 	
+	<select id="reviewSelectTotalCount" resultType="java.lang.Integer">
+		SELECT COUNT(*)
+		FROM REVIEW
+	</select>
+	
 	<select id="reviewSelectList" parameterType="map" resultMap="reviewResultMap">
 		SELECT RNR.RN, RNR.REVIEW_SALARY, RNR.REVIEW_WELFARE, RNR.REVIEW_ENVIRONMENT, RNR.REVIEW_BOSS, RNR.REVIEW_BALANCE, RNR.REVIEW_AVERAGE, RNR.REVIEW_TITLE, RNR.REVIEW_CONTENT
 		FROM (
@@ -35,10 +40,12 @@
 		WHERE RNR.RN BETWEEN #{start} AND #{end}
 	</select>
 	
-	<select id="reviewSelectTotalCount" resultType="java.lang.Integer">
-		SELECT COUNT(*)
+	<select id="reviewSelectAllList" resultMap="reviewResultMap">
+		SELECT REVIEW_SALARY, REVIEW_WELFARE, REVIEW_ENVIRONMENT,
+				REVIEW_BOSS, REVIEW_BALANCE, REVIEW_AVERAGE,
+				REVIEW_TITLE, REVIEW_CONTENT
 		FROM REVIEW
-	</select>
+	</select>	
 	
 	<insert id="reviewInsertOne" parameterType="reviewDto">
 		INSERT INTO REVIEW

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>           
 <!DOCTYPE html>
 <html>
 <head>
@@ -163,51 +164,8 @@
 </head>
 <body>
 
-	<div id="headerBox">
-		<div id="headerContent">
-		
-			<a href="http://www.naver.com">
-				<img id="logo" src="https://github.com/noohij/
-								Ezen_TeamProject_JUST/assets/54897384/
-								ee8218f0-b067-48da-8bf7-d31bef40f1cf">
-			</a>
-			
-			<div id="mainMenuBox">
-				<div class="mainMenuItem">
-					<a href="http://www.naver.com">
-						기업 추천
-					</a>
-				</div>
-				<div class="mainMenuItem">
-					<a href="http://www.naver.com">
-						기업 리뷰
-					</a>
-				</div>
-				<div class="mainMenuItem">
-					<a href="http://www.naver.com">
-						게시판
-					</a>
-				</div>
-			</div>
-			
-			<div id="myMessageBox">
-				<div>
-					<a href="http://www.naver.com">
-						채팅
-					</a>
-				</div>
-			</div>
-			
-			<div id="myMenuBox">
-				<div>
-					<a href="http://www.naver.com">
-						로그인 / 회원가입
-					</a>
-				</div>
-			</div>
-			
-		</div>
-	</div> <!-- Header Ends -->
+	<jsp:include page="/WEB-INF/views/Header.jsp"/>
+	
 	
 	<div id="container">
 		<div id="navigation">
@@ -236,17 +194,22 @@
 			</div>
 			<div id="personalInfoBox">
 				<div class="personalInfoItem">
-					<form action="personal/update.do" method="post">
+					<form action="emailUpdateCtr.do" method="post">
 						<div class="personalInfoItemTitle">
 							이메일
 						</div>
+						
+						<div>
+							<input name="pNo" style="display: none;" 
+								value="${personalmemberDto.pNo}">
+						</div>
 						<div class="personalInfoItemUpdate">
-							<input type="text">
+							<input type="text" name="pEmail">
 						</div>
 					
-					<div id="buttonBox">
-						<button type="submit">변경하기</button>
-					</div>
+						<div id="buttonBox">
+							<button type="submit">변경하기</button>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -254,13 +217,7 @@
 		
 	</div>	
 	
-	<div id="tailBox">
-		<div id="tailContent">
-			<div id="teamName">
-				TEAM JUST
-			</div>
-		</div>
-	</div>
+	<jsp:include page="/WEB-INF/views/Tail.jsp"/>
 	
 </body>
 </html>

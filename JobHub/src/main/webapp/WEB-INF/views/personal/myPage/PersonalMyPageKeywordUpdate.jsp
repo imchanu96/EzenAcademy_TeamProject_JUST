@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>           
 <!DOCTYPE html>
 <html>
 <head>
@@ -174,7 +175,7 @@
 <script type="text/javascript">
 
 	function count_check(obj) {
-		var chkBox = document.getElementsByName("keyword");
+		var chkBox = document.getElementsByName("pKeyword");
 		var chkCnt = 0;
 		
 		for(var i = 0; i <chkBox.length; i++) {
@@ -193,51 +194,8 @@
 </head>
 <body>
 
-	<div id="headerBox">
-		<div id="headerContent">
-		
-			<a href="http://www.naver.com">
-				<img id="logo" src="https://github.com/noohij/
-								Ezen_TeamProject_JUST/assets/54897384/
-								ee8218f0-b067-48da-8bf7-d31bef40f1cf">
-			</a>
-			
-			<div id="mainMenuBox">
-				<div class="mainMenuItem">
-					<a href="http://www.naver.com">
-						기업 추천
-					</a>
-				</div>
-				<div class="mainMenuItem">
-					<a href="http://www.naver.com">
-						기업 리뷰
-					</a>
-				</div>
-				<div class="mainMenuItem">
-					<a href="http://www.naver.com">
-						게시판
-					</a>
-				</div>
-			</div>
-			
-			<div id="myMessageBox">
-				<div>
-					<a href="http://www.naver.com">
-						채팅
-					</a>
-				</div>
-			</div>
-			
-			<div id="myMenuBox">
-				<div>
-					<a href="http://www.naver.com">
-						로그인 / 회원가입
-					</a>
-				</div>
-			</div>
-			
-		</div>
-	</div> <!-- Header Ends -->
+	<jsp:include page="/WEB-INF/views/Header.jsp"/>
+	
 	
 	<div id="container">
 		<div id="navigation">
@@ -277,30 +235,35 @@
 						</div>
 					</div>
 				
-					<form action="personal/update.do" method="post">
+					<form action="keywordUpdateCtr.do" method="post">
+						<div>
+							<input name="pNo" style="display: none;" 
+								value="${personalmemberDto.pNo}">
+						</div>
+						
 						<div class="personalInfoItemTitle">
 							<label>
-								<input type="checkbox" name="keyword" value="연봉"
+								<input type="checkbox" name="pKeyword" value="연봉"
 								onclick="count_check(this);">
 								<span>연봉</span>
 							</label>
 							<label>
-								<input type="checkbox" name="keyword" value="복지"
+								<input type="checkbox" name="pKeyword" value="복지"
 								onclick="count_check(this);">
 								<span>복지</span>
 							</label>
 							<label>
-								<input type="checkbox" name="keyword" value="근무환경"
+								<input type="checkbox" name="pKeyword" value="근무환경"
 								onclick="count_check(this);">
 								<span>근무환경</span>
 							</label>
 							<label>
-								<input type="checkbox" name="keyword" value="경영진"
+								<input type="checkbox" name="pKeyword" value="경영진"
 								onclick="count_check(this);">
 								<span>경영진</span>
 							</label>
 							<label>
-								<input type="checkbox" name="keyword" value="워라벨"
+								<input type="checkbox" name="pKeyword" value="워라벨"
 								onclick="count_check(this);">
 								<span>워라벨</span>
 							</label>
@@ -309,9 +272,9 @@
 						
 						</div>
 					
-					<div id="buttonBox">
-						<button type="submit" value="변경하기">변경하기</button>
-					</div>
+						<div id="buttonBox">
+							<button type="submit" value="변경하기">변경하기</button>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -319,13 +282,7 @@
 		
 	</div>	
 	
-	<div id="tailBox">
-		<div id="tailContent">
-			<div id="teamName">
-				TEAM JUST
-			</div>
-		</div>
-	</div>
+	<jsp:include page="/WEB-INF/views/Tail.jsp"/>
 	
 </body>
 </html>

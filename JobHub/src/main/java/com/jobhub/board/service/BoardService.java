@@ -10,7 +10,9 @@ public interface BoardService {
 
 	PersonalMemberDto personalMemberExist(String pId, String pPwd);
 	
-	List<BoardDto> boardSelectList();
+	List<BoardDto> boardSelectList(int start, int end);
+	
+	public int boardSelectTotalCount();
 	
 	public void boardInsertOne(BoardDto boardDto) throws Exception;
 	
@@ -19,5 +21,7 @@ public interface BoardService {
 	public void boardUpdateOne(BoardDto boardDto);
 	
 	public int boardDeleteOne(int no);
+	
+	public void increaseViews(int no);
 	
 }

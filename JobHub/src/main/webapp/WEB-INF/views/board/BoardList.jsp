@@ -71,12 +71,31 @@
 		.boardListT td{
 			border-bottom: 1px solid #cccccc;
 		}
+		
+		#buttonBox {
+			float: left;
+			margin: 20px 350px 0px 350px;
+			width: 400px;
+		}
+		
+		button {
+			width: 90px;
+		    height: 40px;
+		    margin-left: 30px;
+		    background-color: #bcd1fc;
+		    border: none;
+		    border-radius: 6px;
+		    box-shadow: 0px 1px 4px 0px #ddd;
+		    font-size: 16px;
+		    font-weight: bold;
+		    color: #475067;
+		}
+		
 	</style>
 </head>
 <body>
 
 	<jsp:include page="/WEB-INF/views/board/Header.jsp"/>
-	
 	<div id="container">
 		<div id="navigation">
 			<div id="smallMenuBox">
@@ -87,8 +106,8 @@
 		</div>
 		
 		<div id="content">
-			<div>
-				<button id='writeButton' onclick="location.href='./add.do'">글쓰기</button>
+			<div id="buttonBox">
+				<button type="submit" onclick="location.href='./add.do'">글쓰기</button>
 			</div>
 				<table class='boardListT'>
 					<tr>
@@ -110,16 +129,16 @@
 						</tr>
 					</c:forEach>
 				</table>
+				
+				<jsp:include page="/WEB-INF/views/board/Paging.jsp">
+				<jsp:param value="${pagingMap}" name="pagingMap"/>
+				</jsp:include>
+			
+				<form action="./list.do" id="pagingForm" method="post">
+					<input type="hidden" id="curPage" name="curPage" value="${pagingMap.boardPaging.curPage}">
+				</form>
 		</div>
 	</div>
-	
-	<jsp:include page="/WEB-INF/views/common/Paging.jsp">
-		<jsp:param value="${paginMap}" name="pagingMap"/>
-	</jsp:include>
-	
-	<form action="./list.do" id="pagingForm" method="post">
-		<input type="hidden" id="curPage" name="curPage" value="${pagingMap.boardPaging.curPage}">
-	</form>
 	
 	<jsp:include page="/WEB-INF/views/Tail.jsp"/>
 	

@@ -17,13 +17,14 @@ public class BoardDto {
 	private Date bModDate;
 	private int bLikeCount;
 	private int bViews;
+	private int pNo;
 	
 	public BoardDto() {
 		super();
 	}
 
 	public BoardDto(int bNo, String bTag, String bTitle, String bWriter, String bContent, String bImg,
-			String bVotingCheck, Date bCreDate, Date bModDate, int bLikeCount, int bViews) {
+			String bVotingCheck, Date bCreDate, Date bModDate, int bLikeCount, int bViews, int pNo) {
 		super();
 		this.bNo = bNo;
 		this.bTag = bTag;
@@ -36,6 +37,7 @@ public class BoardDto {
 		this.bModDate = bModDate;
 		this.bLikeCount = bLikeCount;
 		this.bViews = bViews;
+		this.pNo = pNo;
 	}
 
 	public int getbNo() {
@@ -126,11 +128,19 @@ public class BoardDto {
 		this.bViews = bViews;
 	}
 
+	public int getpNo() {
+		return pNo;
+	}
+
+	public void setpNo(int pNo) {
+		this.pNo = pNo;
+	}
+
 	@Override
 	public String toString() {
 		return "BoardDto [bNo=" + bNo + ", bTag=" + bTag + ", bTitle=" + bTitle + ", bWriter=" + bWriter + ", bContent="
 				+ bContent + ", bImg=" + bImg + ", bVotingCheck=" + bVotingCheck + ", bCreDate=" + bCreDate
-				+ ", bModDate=" + bModDate + ", bLikeCount=" + bLikeCount + ", bViews=" + bViews + "]";
+				+ ", bModDate=" + bModDate + ", bLikeCount=" + bLikeCount + ", bViews=" + bViews + ", pNo=" + pNo + "]";
 	}
 	
 }

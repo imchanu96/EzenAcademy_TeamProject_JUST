@@ -40,11 +40,34 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 	}
 
 	@Override
-	public void personMemberUpdateOne(PersonalMemberDto personalMemberDto) {
+	public void personalMemberNickNameUpdateOne(PersonalMemberDto personalMemberDto) {
 		// TODO Auto-generated method stub
-		personalMemberDao.personMemberUpdateOne(personalMemberDto);
+		personalMemberDao.personalMemberNickNameUpdateOne(personalMemberDto);
 	}
 
+	@Override
+	public void personalMemberPasswordUpdateOne(PersonalMemberDto personalMemberDto) {
+		// TODO Auto-generated method stub
+		personalMemberDao.personalMemberPasswordUpdateOne(personalMemberDto);
+	}
+
+	@Override
+	public void personalMemberPhoneNumUpdateOne(PersonalMemberDto personalMemberDto) {
+		// TODO Auto-generated method stub
+		personalMemberDao.personalMemberPhoneNumUpdateOne(personalMemberDto);
+	}
+
+	@Override
+	public void personalMemberEmailUpdateOne(PersonalMemberDto personalMemberDto) {
+		// TODO Auto-generated method stub
+		personalMemberDao.personalMemberEmailUpdateOne(personalMemberDto);
+	}
+
+	@Override
+	public void personalMemberKeywordUpdateOne(PersonalMemberDto personalMemberDto) {
+		// TODO Auto-generated method stub
+		personalMemberDao.personalMemberKeywordUpdateOne(personalMemberDto);
+	}
 
 
 }

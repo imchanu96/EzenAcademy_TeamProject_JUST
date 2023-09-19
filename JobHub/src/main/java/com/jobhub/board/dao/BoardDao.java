@@ -3,10 +3,13 @@ package com.jobhub.board.dao;
 import java.util.List;
 
 import com.jobhub.board.dto.BoardDto;
+import com.jobhub.review.dto.ReviewDto;
 
 public interface BoardDao {
 
-	public List<BoardDto> boardSelectList();
+	public List<BoardDto> boardSelectList(int start, int end);
+	
+	public int boardSelectTotalCount();
 	
 	public int boardInsertOne(BoardDto boardDto);
 	
@@ -15,5 +18,7 @@ public interface BoardDao {
 	public void boardUpdateOne(BoardDto boardDto);
 	
 	public int boardDeleteOne(int no);
+	
+	public void increaseViews(int no);
 	
 }

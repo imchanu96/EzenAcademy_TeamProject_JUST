@@ -7,186 +7,26 @@
 <head>
 <meta charset="UTF-8">
 <title>Review list</title>
-<style type="text/css">
-	@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-/* container */
-	#container {
-		width: 1280px;
-		height: 1000px;
-		margin: 0px auto;
-	}
-/* navigation */
-	#navigation {
-		margin: 10px;
-		float: left;
-		width: 250px;
-		height: 950px;
-		font-size: 25px;
-		text-align: center;
-		background-color: #eff5ff;
-	}
-	#smallMenuBox {
-			
-		margin: 30px auto;
-		width: 200px;
-		height: 500px;
-	}
-	.smallMenuItem {
-			
-		margin-bottom: 20px;
-	}
-	.smallMenuItem a {
-		color: #475067;
-	}
-/* content */
-	#content {
-		margin: 10px;
-		float: left;
-		width: 980px;
-		height: 950px;
-		font-size: 30px;
-		background-color: #f8fafc;
-	}
-	#content > div, .reviewItem {
-		background-color: #fff;
-		padding: 20px;
-		box-shadow: 0px 1px 4px 0px #ddd;
-	}
-	#companyInfoBox, #reviewAverage, .reviewItem {
-		border-radius: 10px;
-		
-	}
-	#companyInfoBox {
-		width: 910px;
-		height: 160px;
-		margin: 14px auto 0px auto;
-	}
-/* 		#companyPhoto { */
-/* 				 */
-/* 			width: 945px; */
-/* 			height: 195px; */
-/* 			margin: auto; */
-/* 		} */
-	#companyLogo {
-		float: left;
-		width: 140px;
-		height: 140px;
-		margin: 10px;
-	}
-	#companySummary {
-		float: left;
-		width: 650px;
-		height: 80px;
-		margin: 20px;
-		color: #5c667b;
-	}
-	#companyName {
+<script type="text/javascript">
+
+	window.addEventListener('DOMContentLoaded', function () {
+	    const navigation = document.getElementById('navigation');
+	    const content = document.getElementById('content');
 	
-	}
-	#companyType {
+	    function syncNavigationHeight() {
+	        navigation.style.height = content.clientHeight + 'px';
+	    }
 	
-	}
-	#companyHomepage {
+	    syncNavigationHeight();
+	    window.addEventListener('resize', syncNavigationHeight);
+	});
 	
-	}
-	#totalRate {
-		float: right;
-	}
-	#reviewAverage, .reviewItem {
-		font-size: 18px;
-	}
-	#reviewAverage {
-		width: 910px;
-		height: 200px;
-		margin: 30px auto;
-		color: #5c667b;
-	}
-	#reviewAverageRate {
-		width: 300px;
-		height: 40px;
-		font-size: 25px;
-		line-height: 40px;
-	}
-	#averageBox {
-		float: left;			
-		margin-left: 6px;
-		font-size: 20px;
-		font-weight: 600;
-	}
-	.starRateBox {
-		float: left;
-		margin-top: 5px;
-		width: 250px;
-		height: 150px;
-	}
-	.starRateBox > div {
-		margin-top: 5px;
-	}
-	.starRateBox > div > span {
-		width: 90px;
-		text-align: center;
-	}
-	.starNameBox {
-		float: left;
-		width: 100px;
-		text-align: center;
-	}
-	.fas.fa-star {
-    	font-size: 13px;
-	}
-	.totalRate {
-		float: right;
-		width: 300px;
-		height: 120px;
-		line-height: 120px;
-		font-size: 30px;
-	}
-	.reviewTitleBox {
-		float: left;
-		margin-bottom: 20px;
-		width: 600px;
-		height: 30px;
-		font-size: 25px;
-		color: #292e41
-	}
-	.reviewContentBox {
-		float: left;
-		width: 600px;
-		height: 110px;
-		color: #292e41;
-	}
-	.reviewItem {
-		width: 910px;
-		height: 160px;
-		margin: 30px auto;
-		color: #5c667b;
-		box-shadow: 0px 1px 4px 0px #ddd;
-	}
-	
-/* tail form */
-	#tailBox {
-		height: 150px;
-		background-color: #b4c0d3;
-		text-align: center;
-	}
-	#tailContent {
-			
-		width: 1280px;
-		height: 130px;
-		margin: auto;
-	}
-	#teamName {
-		font-size: 50px;
-		font-weight: 800;
-		color: #999999;
-	}
-	
-	
-	
-	
-	
-</style>
+</script>
+
 <script src="https://kit.fontawesome.com/7021bbabcd.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="/JobHub/resources/css/ReviewList.css" type="text/css">
+
 </head>
 <body>
 
@@ -196,10 +36,10 @@
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="">리뷰 조회</a>
+					<a href="http://localhost:9080/JobHub/review/list.do">리뷰 조회</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">리뷰 작성</a>
+					<a href="http://localhost:9080/JobHub/review/add.do">리뷰 작성</a>
 				</div>
 				<div class="smallMenuItem">
 					<a href="">기업 정보</a>

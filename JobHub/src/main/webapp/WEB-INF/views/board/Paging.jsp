@@ -42,20 +42,29 @@
 
 <script type="text/javascript">
 
+	window.onload() {
+		var curPageObj = document.getElementById('curPage');
+		curPageObj.setAttribute("style", "color: red;")
+	}
+
 	function goPage(pageNumber){
+		// 자바스크립트
+		var curPageObj = document.getElementById('curPage');
+		curPageObj.value = pageNumber;
 		
-		//제이쿼리
-		var curPageObj = $("#curPage");
-		curPageObj.val(pageNumber);
+		alert(curPageObj.value);
 		
-		var pagingFormObj = $('#pagingForm');
+		var pagingFormObj = document.getElementById('pagingForm');
 		pagingFormObj.submit();
 		
-// 		// 자바스크립트
-// 		var curPageObj = document.getElementById('curPage');
-// 		curPageObj.value = pageNumber;
+		//제이쿼리
+// 		var curPageObj = $("#curPage");
 		
-// 		var pagingFormObj = document.getElementById('pagingForm');
+// 		curPageObj.val(pageNumber);
+		
+// 		alert(curPageObj.val());
+		
+// 		var pagingFormObj = $('#pagingForm');
 // 		pagingFormObj.submit();
 		
 	}
@@ -65,30 +74,25 @@
 
 	<nav>
 		<ul>
-		
-			<!-- 화살표 -->
-			<c:if test="${pagingMap.reviewPaging.prevBlock ne 1}">
+			<c:if test="${pagingMap.boardPaging.prevBlock ne 1}">
 			<li>
-				<a href="#;" onclick="goPage(${pagingMap.reviewPaging.prevBlock});">
+				<a href="#" onclick="goPage(${pagingMap.boardPaging.prevBlock});">
 					<span>&#60;</span> <!-- < -->
 				</a>
 			</li>
 			</c:if>
 			
-			<!-- 숫자 -->
-			<c:forEach var="num"
-				begin="${pagingMap.reviewPaging.blockBegin}"
-				end="${pagingMap.reviewPaging.blockEnd}">
+			<c:forEach var="num" begin="${pagingMap.boardPaging.blockBegin}"
+				end="${pagingMap.boardPaging.blockEnd}">
 				<li>
-					<a href="#;" onclick="goPage(${num});">${num}</a>
+					<a href="#" onclick="goPage(${num})">${num}</a>
 				</li>
 			</c:forEach>
 			
-			<!-- 화살표 -->			
 			<c:if 
-				test="${pagingMap.reviewPaging.curBlock < pagingMap.reviewPaging.totBlock}">
+				test="${pagingMap.boardPaging.curBlock < pagingMap.boardPaging.totBlock}">
 			<li>
-				<a href="#;" onclick="goPage(${pagingMap.reviewPaging.nextBlock});">
+				<a href="#" onclick="goPage(${pagingMap.boardPaging.nextBlock});">
 					<span>&#62;</span> <!-- > -->
 				</a>
 			</li>

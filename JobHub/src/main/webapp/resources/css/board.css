@@ -1,0 +1,83 @@
+/* 공통 */
+		a {
+		  text-decoration: none;
+		  color: #292e41;
+		}
+	    a:hover { color: #2d65f2;}
+			
+/* content */
+		#container {
+			width: 1280px;
+			height: 1000px;
+			margin: 0px auto;
+		}
+/* navigation */
+		#navigation {
+			margin: 10px;
+			float: left;
+			width: 250px;
+			height: 950px;
+			font-size: 25px;
+			text-align: center;
+			background-color: #eff5ff;
+		}
+		#smallMenuBox {
+			margin: 30px auto;
+			width: 200px;
+			height: 500px;
+		}
+		.smallMenuItem {
+			margin-bottom: 20px;
+		}
+		.smallMenuItem a {
+			color: #475067;
+		}
+/* content */
+		#content {
+			margin: 10px;
+			float: left;
+			width: 980px;
+			height: 950px;
+			font-size: 30px;
+			background-color: #f8fafc;
+		}
+		.boardListT {
+			border-collapse: collapse;
+			border: 1px solid #999999;
+			width: 980px;
+			font-size: 20px;
+		}
+		
+		.boardListT th, .boardListT td{
+			text-align: center;
+			padding: 10px;
+		}
+		
+		.boardListT th{
+			border-top: 2px solid #aaaaaa;
+			border-bottom: 1px solid #cccccc;
+		}
+		
+		.boardListT td{
+			border-bottom: 1px solid #cccccc;
+		}
+		
+		#buttonBox {
+			float: left;
+			margin: 20px 350px 0px 350px;
+			width: 400px;
+		}
+		
+		button {
+			width: 90px;
+		    height: 40px;
+		    margin-left: 30px;
+		    background-color: #bcd1fc;
+		    border: none;
+		    border-radius: 6px;
+		    box-shadow: 0px 1px 4px 0px #ddd;
+		    font-size: 16px;
+		    font-weight: bold;
+		    color: #475067;
+		}
+		
