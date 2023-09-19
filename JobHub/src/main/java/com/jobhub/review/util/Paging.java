@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 public class Paging implements Serializable {
 
-	public static final int PAGE_SCALE = 1;		// 한 페이지당 리뷰 수
-	public static final int BLOCK_SCALE = 2;	// 페이징 몇 페이지부터 몇 페이지까지 보여주고 화살표처리 할건지
+	public static final int PAGE_SCALE = 10;		// 한 페이지당 리뷰 수
+	public static final int BLOCK_SCALE = 5;	// 페이징 몇 페이지부터 몇 페이지까지 보여주고 화살표처리 할건지
 	
 	private int curPage;
 	
