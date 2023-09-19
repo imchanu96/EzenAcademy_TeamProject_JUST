@@ -42,29 +42,20 @@
 
 <script type="text/javascript">
 
-	window.onload() {
-		var curPageObj = document.getElementById('curPage');
-		curPageObj.setAttribute("style", "color: red;")
-	}
-
 	function goPage(pageNumber){
-		// 자바스크립트
-		var curPageObj = document.getElementById('curPage');
-		curPageObj.value = pageNumber;
-		
-		alert(curPageObj.value);
-		
-		var pagingFormObj = document.getElementById('pagingForm');
-		pagingFormObj.submit();
 		
 		//제이쿼리
-// 		var curPageObj = $("#curPage");
+		var curPageObj = $("#curPage");
+		curPageObj.val(pageNumber);
 		
-// 		curPageObj.val(pageNumber);
+		var pagingFormObj = $('#pagingForm');
+		pagingFormObj.submit();
 		
-// 		alert(curPageObj.val());
+// 		// 자바스크립트
+// 		var curPageObj = document.getElementById('curPage');
+// 		curPageObj.value = pageNumber;
 		
-// 		var pagingFormObj = $('#pagingForm');
+// 		var pagingFormObj = document.getElementById('pagingForm');
 // 		pagingFormObj.submit();
 		
 	}
@@ -74,25 +65,30 @@
 
 	<nav>
 		<ul>
+		
+			<!-- 화살표 -->
 			<c:if test="${pagingMap.reviewPaging.prevBlock ne 1}">
 			<li>
-				<a href="#" onclick="goPage(${pagingMap.reviewPaging.prevBlock});">
+				<a href="#;" onclick="goPage(${pagingMap.reviewPaging.prevBlock});">
 					<span>&#60;</span> <!-- < -->
 				</a>
 			</li>
 			</c:if>
 			
-			<c:forEach var="num" begin="${pagingMap.reviewPaging.blockBegin}"
+			<!-- 숫자 -->
+			<c:forEach var="num"
+				begin="${pagingMap.reviewPaging.blockBegin}"
 				end="${pagingMap.reviewPaging.blockEnd}">
 				<li>
-					<a href="#" onclick="goPage(${num})">${num}</a>
+					<a href="#;" onclick="goPage(${num});">${num}</a>
 				</li>
 			</c:forEach>
 			
+			<!-- 화살표 -->			
 			<c:if 
 				test="${pagingMap.reviewPaging.curBlock < pagingMap.reviewPaging.totBlock}">
 			<li>
-				<a href="#" onclick="goPage(${pagingMap.reviewPaging.nextBlock});">
+				<a href="#;" onclick="goPage(${pagingMap.reviewPaging.nextBlock});">
 					<span>&#62;</span> <!-- > -->
 				</a>
 			</li>

@@ -92,24 +92,130 @@ public class PersonalMemberController {
 		return "redirect:/personal/login.do";
 	}
 	
-	@RequestMapping(value = "/personal/update.do", method = RequestMethod.GET)
-	public String update(HttpSession session, Model model) {
-		log.info("Welecom PersonalMemberUpdate!");
+	@RequestMapping(value = "/personal/nickNameUpdate.do", method = RequestMethod.GET)
+	public String nickNameUpdate(HttpSession session, Model model) {
+		log.info("Welecom PersonalMemberNickNameUpdate!");
 		
 		return "personal/myPage/PersonalMyPageNickNameUpdate";
 	}
 	
-	@RequestMapping(value = "/personal/updateCtr.do", method = RequestMethod.POST)
-	public String updateCtr(PersonalMemberDto personalMemberDto, Model model) {
-		log.debug("Welecome PersonalMemberUpdateCtr");
+	@RequestMapping(value = "/personal/passwordUpdate.do", method = RequestMethod.GET)
+	public String passwordUpdate(HttpSession session, Model model) {
+		log.info("Welecom PersonalMemberPasswordUpdate!");
+		
+		return "personal/myPage/PersonalMyPagePasswordUpdate";
+	}
+	
+	@RequestMapping(value = "/personal/phoneNumUpdate.do", method = RequestMethod.GET)
+	public String phoneNumUpdate(HttpSession session, Model model) {
+		log.info("Welecom PersonalMemberPhoneNumUpdate!");
+		
+		return "personal/myPage/PersonalMyPagePhoneNumUpdate";
+	}
+	
+	@RequestMapping(value = "/personal/emailUpdate.do", method = RequestMethod.GET)
+	public String emailUpdate(HttpSession session, Model model) {
+		log.info("Welecom PersonalMemberEmailUpdate!");
+		
+		return "personal/myPage/PersonalMyPageEmailUpdate";
+	}
+	
+	@RequestMapping(value = "/personal/keywordUpdate.do", method = RequestMethod.GET)
+	public String keywordUpdate(HttpSession session, Model model) {
+		log.info("Welecom PersonalMemberKeywordUpdate!");
+		
+		return "personal/myPage/PersonalMyPageKeywordUpdate";
+	}
+	
+	
+	@RequestMapping(value = "/personal/nickNameUpdateCtr.do", method = RequestMethod.POST)
+	public String nickNameUpdateCtr(String pNickname, int pNo 
+			, PersonalMemberDto personalMemberDto, Model model) {
+		log.info("Welecome PersonalMembernickNameUpdateCtr");
+		
+		personalMemberDto.setpNickname(pNickname);
+		personalMemberDto.setpNo(pNo);
 		
 		try {
-			PersonalMemberService.personMemberUpdateOne(personalMemberDto);
+			PersonalMemberService.personalMemberNickNameUpdateOne(personalMemberDto);
 		} catch (Exception e) {
 			// TODO: handle exception
+			e.printStackTrace();
 		}
 		
-		return "personal/MyPage/PersonalMyPage";
+		return "personal/myPage/PersonalMyPage";
+	}
+	
+	@RequestMapping(value = "/personal/passwordUpdateCtr.do", method = RequestMethod.POST)
+	public String passwordUpdateCtr(String pPwd, int pNo 
+			, PersonalMemberDto personalMemberDto, Model model) {
+		log.info("Welecome PersonalMemberPasswordUpdateCtr");
+		
+		personalMemberDto.setpNickname(pPwd);
+		personalMemberDto.setpNo(pNo);
+		
+		try {
+			PersonalMemberService.personalMemberPasswordUpdateOne(personalMemberDto);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return "personal/myPage/PersonalMyPage";
+	}
+	
+	@RequestMapping(value = "/personal/phoneNumUpdateCtr.do", method = RequestMethod.POST)
+	public String phoneNumUpdateCtr(String pPhoneNum, int pNo 
+			, PersonalMemberDto personalMemberDto, Model model) {
+		log.info("Welecome PersonalMemberPhoneNumUpdateCtr");
+		
+		personalMemberDto.setpNickname(pPhoneNum);
+		personalMemberDto.setpNo(pNo);
+		
+		try {
+			PersonalMemberService.personalMemberPhoneNumUpdateOne(personalMemberDto);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return "personal/myPage/PersonalMyPage";
+	}
+	
+	@RequestMapping(value = "/personal/emailUpdateCtr.do", method = RequestMethod.POST)
+	public String emailUpdateCtr(String pEmail, int pNo 
+			, PersonalMemberDto personalMemberDto, Model model) {
+		log.info("Welecome PersonalMemberEmailUpdateCtr");
+		
+		personalMemberDto.setpNickname(pEmail);
+		personalMemberDto.setpNo(pNo);
+		
+		try {
+			PersonalMemberService.personalMemberEmailUpdateOne(personalMemberDto);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return "personal/myPage/PersonalMyPage";
+	}
+	
+	@RequestMapping(value = "/personal/keywordUpdateCtr.do", method = RequestMethod.POST)
+	public String keywordUpdateCtr(String pKeyword, int pNo 
+			, PersonalMemberDto personalMemberDto, Model model) {
+		log.info("Welecome PersonalMemberKeywordUpdateCtr");
+		
+		personalMemberDto.setpNickname(pKeyword);
+		personalMemberDto.setpNo(pNo);
+		
+		try {
+			PersonalMemberService.personalMemberKeywordUpdateOne(personalMemberDto);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return "personal/myPage/PersonalMyPage";
 	}
 
 
