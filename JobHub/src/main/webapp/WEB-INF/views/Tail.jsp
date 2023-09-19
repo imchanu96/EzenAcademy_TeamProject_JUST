@@ -18,6 +18,7 @@
 			height: 150px;
 			background-color: #eaedf4;
 			text-align: center;
+			clear: both;
 		}
 		#tailContent {
 			width: 1280px;
