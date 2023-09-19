@@ -140,10 +140,10 @@
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="">리뷰 조회</a>
+					<a href="http://localhost:9080/JobHub/review/list.do">리뷰 조회</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">리뷰 작성</a>
+					<a href="http://localhost:9080/JobHub/review/add.do">리뷰 작성</a>
 				</div>
 				<div class="smallMenuItem">
 					<a href="">기업 정보</a>
