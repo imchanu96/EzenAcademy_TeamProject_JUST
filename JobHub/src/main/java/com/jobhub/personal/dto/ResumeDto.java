@@ -2,10 +2,13 @@ package com.jobhub.personal.dto;
 
 import java.util.Date;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 public class ResumeDto {
 
 	private int rNo;
 	private String rName;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date rBirthday;
 	private String rEmail;
 	private String rPhoneNum;
@@ -13,23 +16,29 @@ public class ResumeDto {
 	private String rMarry;
 	private String rGender;
 	private String rMilitary;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date rEduBeginDate;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date rEduEndDate;
 	private String rEduName;
 	private String rEduMajor;
 	private String rEduLoc;
 	private String rEduGrade;
 	private String rEduGraduate;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date rCareerBeginDate;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date rCareerEndDate;
 	private String rCareerName;
 	private String rCareerPos;
 	private String rCareerLoc;
 	private String rCareerJob;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date rLicenseDate;
 	private String rLicenseName;
 	private String rLicenseInst;
 	private String rLicenseGrade;
+	private int pNo;
 	
 	public ResumeDto() {
 		super();
@@ -39,7 +48,7 @@ public class ResumeDto {
 			String rGender, String rMilitary, Date rEduBeginDate, Date rEduEndDate, String rEduName, String rEduMajor,
 			String rEduLoc, String rEduGrade, String rEduGraduate, Date rCareerBeginDate, Date rCareerEndDate,
 			String rCareerName, String rCareerPos, String rCareerLoc, String rCareerJob, Date rLicenseDate,
-			String rLicenseName, String rLicenseInst, String rLicenseGrade) {
+			String rLicenseName, String rLicenseInst, String rLicenseGrade, int pNo) {
 		super();
 		this.rNo = rNo;
 		this.rName = rName;
@@ -67,6 +76,7 @@ public class ResumeDto {
 		this.rLicenseName = rLicenseName;
 		this.rLicenseInst = rLicenseInst;
 		this.rLicenseGrade = rLicenseGrade;
+		this.pNo = pNo;
 	}
 
 	public int getrNo() {
@@ -276,6 +286,13 @@ public class ResumeDto {
 	public void setrLicenseGrade(String rLicenseGrade) {
 		this.rLicenseGrade = rLicenseGrade;
 	}
+	public int getpNo() {
+		return rNo;
+	}
+
+	public void setpNo(int pNo) {
+		this.pNo = pNo;
+	}
 
 	@Override
 	public String toString() {
@@ -287,7 +304,7 @@ public class ResumeDto {
 				+ ", rCareerEndDate=" + rCareerEndDate + ", rCareerName=" + rCareerName + ", rCareerPos=" + rCareerPos
 				+ ", rCareerLoc=" + rCareerLoc + ", rCareerJob=" + rCareerJob + ", rLicenseDate=" + rLicenseDate
 				+ ", rLicenseName=" + rLicenseName + ", rLicenseInst=" + rLicenseInst + ", rLicenseGrade="
-				+ rLicenseGrade + "]";
+				+ rLicenseGrade + ", pNo=" + pNo + "]";
 	}
 	
 }

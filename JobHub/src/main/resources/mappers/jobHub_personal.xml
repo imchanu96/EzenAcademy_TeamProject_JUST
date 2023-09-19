@@ -30,6 +30,38 @@
 			javaType="java.util.Date" />
 	</resultMap>
 	
+	<resultMap type="resumeDto" id="resumeResultMap">
+		<id column="PERSONAL_NUMBER" property="rNo" />
+		<result column="RESUME_PERSONAL_NAME" property="rName"/>
+		<result column="RESUME_PERSONAL_BIRTHDAY" property="rBirthday"/>
+		<result column="RESUME_PERSONAL_EMAIL" property="rEmail"/>
+		<result column="RESUME_PERSONAL_PHONENUMBER" property="rPhoneNum"/>
+		<result column="RESUME_PERSONAL_ADDRESS" property="rAdd"/>
+		<result column="RESUME_PERSONAL_MARRY" property="rMarry"/>
+		<result column="RESUME_PERSONAL_GENDER" property="rGender"/>
+		<result column="RESUME_PERSONAL_MILITARY" property="rMilitary"/>
+		<result column="RESUME_EDUCATION_BEGIN_DATE" property="rEduBeginDate"/>
+		<result column="RESUME_EDUCATION_END_DATE" property="rEduEndDate"/>
+		<result column="RESUME_EDUCATION_NAME" property="rEduName"/>
+		<result column="RESUME_EDUCATION_MAJOR" property="rEduMajor"/>
+		<result column="RESUME_EDUCATION_LOCATION" property="rEduLoc"/>
+		<result column="RESUME_EDUCATION_GRADE" property="rEduGrade"/>
+		<result column="RESUME_EDUCATION_GRADUATE" property="rEduGraduate"/>
+		<result column="RESUME_CAREER_BEGIN_DATE" property="rCareerBeginDate"/>
+		<result column="RESUME_CAREER_END_DATE" property="rCareerEndDate"/>
+		<result column="RESUME_CAREER_NAME" property="rCareerName"/>
+		<result column="RESUME_CAREER_POSITION" property="rCareerPos"/>
+		<result column="RESUME_CAREER_LOCATION" property="rCareerLoc"/>
+		<result column="RESUME_CAREER_JOB" property="rCareerJob"/>
+		<result column="RESUME_LICENSE_DATE" property="rLicenseDate"/>
+		<result column="RESUME_LICENSE_NAME" property="rLicenseName"/>
+		<result column="RESUME_LICENSE_INSTITUTION" property="rLicenseInst"/>
+		<result column="RESUME_LICENSE_GRADE" property="rLicenseGrade"/>
+		<result column="PERSONAL_NUMBER" property="pNo"/>
+		
+		
+	</resultMap>
+	
 	<select id="personalIdCheck">
 		SELECT COUNT(PERSONAL_ID)
 		FROM PERSONAL
@@ -99,11 +131,24 @@
 	</update>
 	
 	<select id="personalInfoList" resultType="map">
-		 SELECT P.PERSONAL_NUMBER AS "pNo", R.RESUME_PERSONAL_NAME AS "pName", R.RESUME_EDUCATION_NAME AS "pHightestEdu"
-        , R.RESUME_EDUCATION_MAJOR AS "pHightestEduMajor", R.RESUME_EDUCATION_GRADE AS "pHightestEduGrade"
-        , R.RESUME_CAREER_NAME AS "pCampany", ROUND((R.RESUME_CAREER_END_DATE - R.RESUME_CAREER_BEGIN_DATE) / 365, 1) || '년' AS "pCareer"
-        , NVL(R.RESUME_LICENSE_NAME , ' ') AS "pLicense", NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) AS "pLicenseCount"
-    FROM PERSONAL P INNER JOIN RESUME R
-    ON P.PERSONAL_NUMBER = R.PERSONAL_NUMBER
+		 SELECT P.PERSONAL_NUMBER AS "pNo", R.RESUME_PERSONAL_NAME AS "pName", R.RESUME_EDUCATION_NAME AS "pHighestEdu"
+	        , R.RESUME_EDUCATION_MAJOR AS "pHightestEduMajor", R.RESUME_EDUCATION_GRADE AS "pHightestEduGrade"
+	        , R.RESUME_CAREER_NAME AS "pCampany", ROUND((R.RESUME_CAREER_END_DATE - R.RESUME_CAREER_BEGIN_DATE) / 365, 1) || '년' AS "pCareer"
+	        , NVL(R.RESUME_LICENSE_NAME , ' ') AS "pLicense", NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) AS "pLicenseCount"
+	    FROM PERSONAL P INNER JOIN RESUME R
+	    ON P.PERSONAL_NUMBER = R.PERSONAL_NUMBER
+	</select>
+	<select id="showResume" resultMap="resumeResultMap" parameterType="map">
+		SELECT RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
+		    , RESUME_PERSONAL_EMAIL, RESUME_PERSONAL_PHONENUMBER, RESUME_PERSONAL_ADDRESS
+		    , RESUME_PERSONAL_MARRY, RESUME_PERSONAL_GENDER, RESUME_PERSONAL_MILITARY
+		    , RESUME_EDUCATION_BEGIN_DATE, RESUME_EDUCATION_END_DATE, RESUME_EDUCATION_NAME
+		    , RESUME_EDUCATION_MAJOR, RESUME_EDUCATION_LOCATION, RESUME_EDUCATION_GRADE
+		    , RESUME_EDUCATION_GRADUATE, RESUME_CAREER_BEGIN_DATE, RESUME_CAREER_END_DATE
+		    , RESUME_CAREER_NAME, RESUME_CAREER_POSITION, RESUME_CAREER_LOCATION, RESUME_CAREER_JOB
+		    , RESUME_LICENSE_DATE, RESUME_LICENSE_NAME, RESUME_LICENSE_INSTITUTION
+		    , RESUME_LICENSE_GRADE, PERSONAL_NUMBER
+		FROM RESUME
+		WHERE PERSONAL_NUMBER = #{pNo}
 	</select>
 </mapper>

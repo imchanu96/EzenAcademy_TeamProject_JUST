@@ -320,29 +320,26 @@
 				</div>
 			</form>
 			
-			<!-- foreach -->
+			<c:forEach var="personalInfo" items="personalInfoList"> <!-- foreach -->
 			<div id="resultBox">
 				<div id="resultContent">
 					<div id="imgBox">
-						<img alt="" src="https://i.namu.wiki/i/H5J9o4ake1BvDxxS3D6Ok2K4vDVQXqdsrIpAR4dZao15EotgmyvbKDFBYogTau9a4qUahEj9u07UvC8O6QXNkC135sJWbi-eSaZuYj3hulq1lau889wAiXapGBgKbDU0-lCY9DTkxbjrJSv_xiF1lw.webp">
+						<img alt="" src="https://image.newsis.com/2021/09/14/NISI20210914_0000828888_web.jpg">
 					</div>
 					
 					<div id="companyBox">
-						현재 personalInfo.pCompany 재직중
+						${personalInfo.pCompany}
 					</div>
 					<div id="buttonBox">
 						<input type="button" value="이력서 보기" class="button" id="resumeBtn">
 						<input type="button" value="자소서 보기" class="button" id="letterBtn">
 					</div>
 					<div id="pNameBox">
-						personalInfo.pName
+						${personalInfo.pName}
 					</div>
 				</div>
 			</div>
-			<!-- foreach -->
-			<div>
-				$ {personalInfo.pCampany} 오타 잡아야 함. foreach 추가해야 함
-			</div>
+			</c:forEach><!-- foreach -->
 			
  		</div> <!-- end of content -->
 	</div>

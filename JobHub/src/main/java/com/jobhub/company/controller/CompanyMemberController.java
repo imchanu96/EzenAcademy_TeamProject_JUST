@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.company.service.CompanyMemberService;
 import com.jobhub.personal.dto.PersonalMemberDto;
+import com.jobhub.personal.dto.ResumeDto;
 
 @Controller
 public class CompanyMemberController {
@@ -90,4 +91,6 @@ public class CompanyMemberController {
 
 	    return "company/search/SearchPerson";
 	}
+	
+	
 }

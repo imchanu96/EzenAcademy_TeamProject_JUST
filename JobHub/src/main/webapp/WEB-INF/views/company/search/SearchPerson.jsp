@@ -1,200 +1,254 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>인재찾기</title>
-<style type="text/css">
-#backGround {
-	width: 100%;
-	height: 780px;
-}
-
-#Box {
-	border: 1px solid black;
-	width: 800px;
-	/* 	height: 600px; */
-	margin: auto;
-}
-
-.Box {
-	border: 1px solid black;
-	width: 750px;
-	margin-top: 30px;
-	margin-left: 25px;
-}
-
-#sideBar {
-	border: 1px solid #eff5ff;
-	width: 250px;
-	height: 750px;
-	margin-left: 250px;
-	float: left;
-}
-
-.category {
-	margin-top: 50px;
-}
-
-.menu1 {
-	font-size: 40px;
-	text-align: center;
-	width: 200px;
-	margin: auto;
-}
-
-.menu2 {
-	font-size: 25px;
-	text-align: left;
-	width: 150px;
-	margin: auto;
-}
-
-.menu3 {
-	font-size: 25px;
-	text-align: left;
-	width: 150px;
-	margin: auto;
-}
-
-.searchBox {
-	width: 650px;
-	height: 40px;
-	margin: auto;
-}
-
-.searchTag {
-	margin-top: 30px;
-	font-size: 25px;
-}
-
-.searchCheckBox {
-	margin-top: 20px;
-}
-
-#topBox {
-	border: 1px solid #eff5ff;
-	background-color: #f7fafe;
-	width: 650px;
-	height: 130px;
-	margin: auto;
-}
-
-.topBox {
-	font-size: 20px;
-	margin-left: 20px;
-	margin-top: 5px;
-}
-
-.check1 {
-	height: 31px;
-}
-
-.check1>div {
-	width: 150px;
-	float: left;
-}
-
-.check2 {
-	height: 31px;
-}
-
-.check2>div {
-	width: 150px;
-	float: left;
-}
-
-.check3 {
-	height: 31px;
-}
-
-.check3>div {
-	width: 150px;
-	float: left;
-}
-
-.check4 {
-	height: 31px;
-}
-
-.check4>div {
-	width: 150px;
-	float: left;
-}
-
-#bottomBox {
-	width: 650px;
-	height: 70px;
-	margin: auto;
-}
-
-.bottomBox>p {
-	width: 650px;
-	margin-top: auto;
-	text-align: center;
-}
-
-.bottomBox>div {
-	width: 620px;
-	margin: auto;
-}
-
-.bottomBox input {
-	height: 30px;
-	margin: auto;
-}
-
-.bottomBox select, button {
-	height: 35px;
-	margin: auto;
-}
-
-.helpButton {
-	width: 30px;
-	height: 30px;
-	padding: 0px 0px 0px 0px;
-	border: none;
-	background-color: inherit;
-}
-
-#helpText {
-	border-radius: 5px;
-	background-color: #bcd1fc;
-	display: none;
-	position: absolute;
-	left: 1150px;
-	top: 350px;
-}
-
-#helpText:after {
-	content: "";
-	border-top: 10px solid #bcd1fc;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-bottom: 0px solid transparent;
-	position: absolute;
-	top: 53px;
-	left: 75px;
-}
-
-#searchResultDiv {
-	border: 1px solid black;
-	border-radius: 3px;
-	margin: auto;
-	width: 750px;
-}
-
-#searchResultDiv img {
-	width: 60px;
-	height: 60px;
-	margin-top: 3px;
-	margin-left: 5px;
-	margin-right: 20px;
-}
+<title>Sample</title>
+	<style type="text/css">
+/* 공통 */
+	a {
+	  text-decoration: none;
+	  color: #292e41;
+	}
+    a:hover { color: #2d65f2;}
+			
+/* content */
+	#container {
+		width: 1280px;
+		height: 1000px;
+		margin: 0px auto;
+	}
+/* navigation */
+	#navigation {
+		margin: 10px;
+		float: left;
+		width: 250px;
+		height: 950px;
+		font-size: 25px;
+		text-align: center;
+		background-color: #eff5ff;
+	}
+	#smallMenuBox {
+		margin: 30px auto;
+		width: 200px;
+		height: 500px;
+	}
+	.smallMenuItem {
+		margin-bottom: 20px;
+	}
+	.smallMenuItem a {
+		color: #475067;
+	}
+/* content */
+	#content {
+		margin: 10px;
+		float: left;
+		width: 980px;
+		font-size: 30px;
+		background-color: #f8fafc;
+	}
+	#content > form > div, #content > div {
+		background-color: #fff;
+		border-radius: 10px;
+		box-shadow: 0px 1px 4px 0px #ddd;
+	}
+	#titleBox > p {
+		font-size: 24px;
+		margin: 0px 0px 20px 0px;
+	}
+	#searchBox {
+		width: 880px;
+	    height: 300px;
+	    margin: 14px auto 0px auto;
+	    padding-top: 20px;
+	    padding-left: 40px;
+	    font-size: 20px;
+	}
+	#conditionBox {
+		width: 850px;
+		height: 160px;
+		padding-top: 10px;
+		background-color: #f7fafe;
+		border-radius: 10px;
+	}
+	.condition {
+		width: 800px;
+	    height: 30px;
+	    line-height: 30px;
+	    margin-bottom: 10px;
+	    margin-left: 20px;
+	}
+	.conditionTitleBox {
+		float: left;
+		width: 150px;
+		margin-bottom: 10px;
+	}
+	
+	.radioBox {
+		float: left;
+		width: 650px;
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+	label {
+		display: inline-block;
+		width: 150px;
+	}
+	#inputBox {
+		width: 588px;
+	    height: 40px;
+	    line-height: 40px;
+	    margin-top: 10px;
+	    margin-left: 110px;
+	    text-align: center;
+	    float: left;
+	}
+	#inputBox > select {
+		height: 35px;
+	}
+	#textInput {
+		width: 400px;
+		height: 30px;
+	}
+	
+	.button {
+		width: 60px;
+		height: 35px;
+		background-color: #bcd1fc;
+	    border: none;
+	    border-radius: 6px;
+	    box-shadow: 0px 1px 4px 0px #ddd;
+	    font-size: 16px;
+	    font-weight: bold;
+	    color: #475067;
+	}
+	
+	.helpButton {
+		width: 30px;
+		height: 30px;
+		margin-top: 8px;
+		padding: 0px 0px 0px 0px;
+		border: none;
+		background-color: inherit;
+		position: relative;
+	}
+	
+	#helpText {
+		border-radius: 5px;
+		background-color: #bcd1fc;
+		display: none;
+		position: absolute;
+        left: 100%;
+        top: 0;
+        margin-left: 10px;
+        width: 200px;
+	}
+	
+	#helpText:after {
+		content: "";
+		border-top: 10px solid transparent;
+		border-left: 10px solid transparent;
+		border-right: 10px solid #bcd1fc;
+		border-bottom: 10px solid transparent;
+		position: absolute;
+        top: 14px;
+        left: -20px;
+	}
+	#resultBox {
+		width: 890px;
+	    height: 140px;
+	    margin: 30px auto;
+	    padding-left: 30px;
+	    padding-top: 30px;
+	    color: #5c667b;
+	}
+	#resultContent {
+		width: 850px;
+	    height: 180px;
+	}
+	#imgBox {
+		float: left;
+		width: 100px;
+		height: 100px;
+	}
+	#infoBox{
+		width: 400px;
+		height: 140px;
+		float:left;
+	}
+ 	img {
+ 		/* 실제 이미지 크기에 따라 조정 필요 */
+		width: 100%;
+		height: 100%;
+	}
+	#pNameBox {
+	 	width: 150px;
+		height: 20px;
+		font-size: 25px;
+		clear:both;
+	}
+	#companyBox { 
+		width: 350px; 
+		height: 50px;
+		font-size: 25px; 
+	} 
+ 	#buttonBox { 
+ 		width: 150px; 
+ 		height: 140px; 
+ 	} 
+ 	#highTestEduBox{ 
+ 		width: 350px; 
+ 		height: 40px;
+ 		font-size: 20px; 
+ 	}
+ 	#licenseCountBox{ 
+ 		width: 200px; 
+ 		height: 40px;
+ 		font-size: 20px; 
+ 	}
+ 	#resumeBtn, #letterBtn { 
+ 		width: 150px;
+ 		height: 50px;
+ 		margin-bottom: 10px;
+ 	}
+ 	#resumeModal{
+ 		position: fixed;
+ 		left: 600px;
+ 		top: 200px;
+		border: 1px solid black;
+		width: 700px;
+		border-radius: 5px;
+		padding: 30px;
+		display: none;
+	}
+	
+	#closeBtn{
+		float: right;
+		font-size: 20px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	
+	#resumeModal table{
+		border: 1px solid black;
+		border-collapse: collapse;
+		text-align: center;
+		margin: auto;
+		font-size: 20px;
+	}
+	
+	table{
+		width: 600px;
+	}
+	
+	tr td{
+		border: 1px solid black;
+	}
 </style>
+<script type="text/javascript" src="/JobHub/resources/js/jquery-3.7.1.js"></script>
 <script type="text/javascript">
 	function helpFnc(obj) {
 		var helpTextObj = document.getElementById("helpText");
@@ -204,131 +258,294 @@
 			helpTextObj.style.display = "none";
 		});
 	}
-</script>
+	
+	function openResumeFnc(no) {
+		var modal = document.getElementById("resumeModal");
+		
+		var jsonData = { "pNo": no}; 
+		
+		$.ajax({
+			url: "./showPersonalResume.do",
+			type: "post",
+			data: JSON.stringify(jsonData),
+			contentType: "application/json",		
+			success: function (data) {
+	        // Ajax 요청이 성공하면 이 함수가 실행됩니다.
+	        // 서버로부터 받은 데이터(data)를 처리합니다.
+	        
+	        // 예제: 결과를 resultContainer에 표시
+	        	alert(data.rName);
+	      	
+	//         	modal.style.display = "block";
+			
+			},
+			error: function() {
+				alert('실패함');
+			}
+		});
+		
+		
+		
+		
+	}
+	
+	function closeModal() {
+		var modal = document.getElementById("resumeModal");
+		
+		modal.style.display = "none";
+	}
+</script>	
+
 </head>
 <body>
-	<jsp:include page="../../Header.jsp" />
-	<div id="backGround">
-		<div class="backGround">
 
-			<div id="sideBar">
-				<div class="sideBar">
-					<div class="category">
-						<div class="menu1">
-							<a>인재 조회</a>
-						</div>
-						<br>
-						<div class="menu2">
-							<a>인재 찾기</a>
-						</div>
-						<br>
-						<div class="menu3">
-							<a>메세지 목록</a>
-						</div>
-					</div>
+	<jsp:include page="/WEB-INF/views/Header.jsp"/>
+	
+	<div id="container">
+		<div id="navigation">
+			<div id="smallMenuBox">
+				<div class="smallMenuItem">
+					<a href="http://www.naver.com">리뷰 조회</a>
+				</div>
+				<div class="smallMenuItem">
+					<a href="">리뷰 작성</a>
+				</div>
+				<div class="smallMenuItem">
+					<a href="">기업 정보</a>
 				</div>
 			</div>
+		</div>
+		
+		<div id="content">
 			<form action="./personalInfoList.do" method="post">
-				<div id="Box">
-					<div class="Box">
-						<div class="searchBox">
-							<div class="searchTag">
-								<p>인재찾기</p>
+				<div id="searchBox">
+					<div id="titleBox">
+						<p>인재찾기</p>
+					</div>
+					<div id="conditionBox">
+						<div class="condition">
+							<div class="conditionTitleBox">
+								<input type="checkbox"> 인재점수
+							</div>
+							<div class="radioBox">
+								<input type="radio" name="score" id="score1"> 
+									<label for="score1">60점 이상</label>
+								<input type="radio" name="score" id="score2"> 
+									<label for="score2">80점 이상</label>
+								<input type="radio" name="score" id="score3"> 
+									<label for="score3">90점 이상</label>
 							</div>
 						</div>
-
-						<div id="searchCheckBox">
-							<div class="searchCheckBox">
-								<div id="topBox">
-									<div class="topBox">
-										<div class="check1">
-											<div>
-												<input type="checkbox"> 인재점수
-											</div>
-											<input type="radio" name="score"> 60점 이상 <input
-												type="radio" name="score"> 80점 이상 <input
-												type="radio" name="score"> 90점 이상
-										</div>
-
-										<div class="check2">
-											<div>
-												<input type="checkbox"> 경력
-											</div>
-											<input type="radio" name="career"> 3년차 이하 <input
-												type="radio" name="career"> 3~5년차 <input
-												type="radio" name="career"> 5년차 이상
-										</div>
-
-										<div class="check3">
-											<div>
-												<input type="checkbox"> 최종 학력
-											</div>
-											<input type="radio" name="education"> 고졸 <input
-												type="radio" name="education"> 초대졸 <input
-												type="radio" name="education"> 대졸
-										</div>
-
-										<div class="check4">
-											<div>
-												<input type="checkbox"> 자격증
-											</div>
-											<input type="radio" name="license"> 1개 미만 <input
-												type="radio" name="license"> 1개~3개 <input
-												type="radio" name="license"> 3개 이상
-										</div>
-									</div>
-								</div>
-								<br>
-
-								<div id="bottomBox">
-									<div class="bottomBox">
-										<div>
-											<select id="search">
-												<option value="인재 점수">인재 점수</option>
-												<option value="경력">경력</option>
-												<option value="최종 학력">최종 학력</option>
-												<option value="자격증">자격증</option>
-											</select> <input type="text" style="width: 420px;"> <input
-												type="submit" value="검색">
-											<button class="helpButton" style="margin-bottom: -10px;">
-												<div id="helpText">
-													- 상세 검색 경력(년차 검색) <br> - 최종 학력(특정 교육기관 검색) <br> -
-													자격증(특정 자격증 검색) <br>
-												</div>
-												<img class="helpButton" alt="도움말"
-													onmouseover="helpFnc(this);"
-													src="https://cdn.icon-icons.com/icons2/602/PNG/512/Help_icon-icons.com_55891.png">
-											</button>
-										</div>
-									</div>
-								</div>
+						<div class="condition">
+							<div class="conditionTitleBox">
+								<input type="checkbox"> 경력
+							</div>
+							<div class="radioBox">
+								<input type="radio" name="career" id="career1"> 
+									<label for="career1">3년차 이하</label>
+								<input type="radio" name="career" id="career2"> 
+									<label for="career2">3~5년차</label>
+								<input type="radio" name="career" id="career3"> 
+									<label for="career3">5년차 이상</label>
+							</div>
+						</div>
+						<div class="condition">
+							<div class="conditionTitleBox">
+								<input type="checkbox"> 최종 학력
+							</div>
+							<div class="radioBox">
+								<input type="radio" name="education" id="score1"> 
+									<label for="score1">고졸</label>
+								<input type="radio" name="education" id="education2"> 
+									<label for="education2">초대졸</label>
+								<input type="radio" name="education" id="education3"> 
+									<label for="education3">대졸</label>
+							</div>	
+						</div>
+						<div class="condition">
+							<div class="conditionTitleBox">
+								<input type="checkbox"> 자격증
+							</div>
+							<div class="radioBox">
+								<input type="radio" name="license" id="license1"> 
+									<label for="license1">1개 미만</label>
+								<input type="radio" name="license" id="license2"> 
+									<label for="license2">1개~3개</label>
+								<input type="radio" name="license" id="license3"> 
+									<label for="license3">3개 이상</label>
 							</div>
 						</div>
 					</div>
-					<!--검색조건 끝 -->
+					<div id="inputBox">
+						<select id="search">
+							<option value="인재 점수">인재 점수</option>
+							<option value="경력">경력</option>
+							<option value="최종 학력">최종 학력</option>
+							<option value="자격증">자격증</option>
+						</select>
+						<input type="text" id="textInput">
+						<input type="submit" value="검색" class="button">
+						</div>
+						<button class="helpButton">
+							<div id="helpText">
+								- 상세 검색 경력(년차 검색) <br>
+								- 최종 학력(특정 교육기관 검색) <br>
+								- 자격증(특정 자격증 검색) <br>
+							</div>
+							<img class="helpButton" alt="도움말"
+								onmouseover="helpFnc(this);"
+								src="https://cdn.icon-icons.com/icons2/602/PNG/512/Help_icon-icons.com_55891.png">
+						</button>
+					
+				</div>
 			</form>
+			<div id="resumeModal">
+			 <span id="closeBtn" onclick="closeModal();">&times;</span>
+	누구누구의 이력서
+				<table>
+					<thead>
+						<th>
+							개인 정보
+						</th>
+					</thead>
+					<tr>
+						<td>이름</td>
+						<td>이름값</td>
+						<td>생년월일</td>
+						<td>19999</td>
+					</tr>
+					<tr>
+						<td>이메일</td>
+						<td></td>
+						<td>연락처</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>주소</td>
+						<td></td>
+						<td>결혼 여부</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>성별</td>
+						<td></td>
+						<td>병역 여부</td>
+						<td></td>
+					</tr>
+				</table>
+				
+				
+				
+				<table>
+					<thead>
+						<th>
+							학력 사항
+						</th>
+					</thead>
+					<tr>
+						<td>입학년도</td>
+						<td>졸업년도</td>
+						<td>학교명</td>
+						<td>전공</td>
+						<td>소재지</td>
+						<td>학점(등급)/ 만점</td>
+						<td>졸업 구분</td>
+					</tr>
+					<tr>
+						<td>1999</td>
+						<td>1999</td>
+						<td>A대</td>
+						<td>B전공</td>
+						<td>서울</td>
+						<td>10</td>
+						<td>졸업</td>
+					</tr>
+				</table>
+				
+				<table>
+					<thead>
+						<th>
+							경력 사항
+						</th>
+					</thead>
+					<tr>
+						<td>입사년도</td>
+						<td>퇴사년도</td>
+						<td>회사명</td>
+						<td>직위</td>
+						<td>소재지</td>
+						<td>담당업무</td>
+					</tr>
+					<tr>
+						<td>1999</td>
+						<td>1999</td>
+						<td>A주식회사</td>
+						<td>대리</td>
+						<td>서울</td>
+						<td>백엔드</td>
+					</tr>
+				</table>
+				
+				<table>
+					<thead>
+						<th>
+							자격증
+						</th>
+					</thead>
+					<tr>
+						<td>자격증 취득일</td>
+						<td>자격증명</td>
+						<td>발급 기관</td>
+						<td>점수/등급</td>
+					</tr>
+					<tr>
+						<td>1999</td>
+						<td>정보처리산업기사</td>
+						<td>발급기관명::</td>
+						<td>산업기사</td>
+					</tr>
+				</table>
+			</div>
 			<c:forEach var="personalInfo" items="${personalInfoList}">
-				<div id="searchResultDiv">
-					<div style="width: 70px;">
-						<img alt=""
-							src="https://i.namu.wiki/i/H5J9o4ake1BvDxxS3D6Ok2K4vDVQXqdsrIpAR4dZao15EotgmyvbKDFBYogTau9a4qUahEj9u07UvC8O6QXNkC135sJWbi-eSaZuYj3hulq1lau889wAiXapGBgKbDU0-lCY9DTkxbjrJSv_xiF1lw.webp">
-						<div style="width: 200px;">
-							${personalInfo.pName}
-							<div style="border: 1px solid black; text-align: center;">
-								현재 ${personalInfo.pCampany} 재직중</div>
+				<div id="resultBox">
+					<div id="resultContent">
+						<div style="width: 150px; height: 140px; float:left;">
+							<div id="imgBox">
+								<img alt="" src="https://www.fnnews.com/resource/media/image/2023/08/29/202308291128014614_l.jpg">
+							</div>
+							<div id="pNameBox">
+								${personalInfo.pName}
+							</div>
 						</div>
-					</div>
-
-					<div style="width: 200px; float: right">
-						<input type="button" value="이력서 보기"> <input type="button"
-							value="자소서 보기">
+						<div id="infoBox">
+							<div id="companyBox">
+							${personalInfo.pCampany}
+							</div>
+							<div id="highTestEduBox">
+								최종 학력 : ${personalInfo.pHightestEdu}
+							</div>
+							<div id="licenseCountBox">
+								자격증 :	${personalInfo.pLicenseCount}개
+							</div>
+						</div>
+						<div id="" style="width: 100px; float: left; margin-right: 50px;">
+								적합도 100%
+						</div>
+						<div id="buttonBox" style="float:left;">
+							<input type="button" value="이력서 보기" 
+								class="button" id="resumeBtn" onclick="openResumeFnc(${personalInfo.pNo});">
+							<input type="button" value="자소서 보기" class="button" id="letterBtn">
+						</div>
+						
 					</div>
 				</div>
 			</c:forEach>
-		</div>
-	</div>
-	</div>
-	<!-- backGround -->
-
+			
+ 		</div> <!-- end of content -->
+	</div>	
+	<jsp:include page="/WEB-INF/views/Tail.jsp"/>
+	
 </body>
+
 </html>
+
