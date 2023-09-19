@@ -22,10 +22,21 @@
 		<result column="REVIEW_MODIFY_DATE" property="rModDate" />
 	</resultMap>
 	
-	<select id="reviewSelectList" resultMap="reviewResultMap">
-		SELECT REVIEW_SALARY, REVIEW_WELFARE, REVIEW_ENVIRONMENT,
-				REVIEW_BOSS, REVIEW_BALANCE, REVIEW_AVERAGE,
-				REVIEW_TITLE, REVIEW_CONTENT
+	<select id="reviewSelectList" parameterType="map" resultMap="reviewResultMap">
+		SELECT RNR.RN, RNR.REVIEW_SALARY, RNR.REVIEW_WELFARE, RNR.REVIEW_ENVIRONMENT, RNR.REVIEW_BOSS, RNR.REVIEW_BALANCE, RNR.REVIEW_AVERAGE, RNR.REVIEW_TITLE, RNR.REVIEW_CONTENT
+		FROM (
+		        SELECT ROWNUM AS RN, REVIEW_SALARY, REVIEW_WELFARE, REVIEW_ENVIRONMENT, REVIEW_BOSS, REVIEW_BALANCE, REVIEW_AVERAGE, REVIEW_TITLE, REVIEW_CONTENT
+		        FROM (
+		                SELECT REVIEW_SALARY, REVIEW_WELFARE, REVIEW_ENVIRONMENT, REVIEW_BOSS, REVIEW_BALANCE, REVIEW_AVERAGE, REVIEW_TITLE, REVIEW_CONTENT
+		                FROM REVIEW R
+		                ORDER BY REVIEW_NUMBER DESC
+		        )
+		)RNR
+		WHERE RNR.RN BETWEEN #{start} AND #{end}
+	</select>
+	
+	<select id="reviewSelectTotalCount" resultType="java.lang.Integer">
+		SELECT COUNT(*)
 		FROM REVIEW
 	</select>
 	
@@ -40,5 +51,7 @@
  			#{rBal}, #{rAvg}, SYSDATE, SYSDATE, 
 			1, 1)
    </insert>
+   
+   
    
 </mapper>

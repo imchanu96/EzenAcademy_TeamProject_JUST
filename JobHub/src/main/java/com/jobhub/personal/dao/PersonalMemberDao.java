@@ -1,6 +1,7 @@
 package com.jobhub.personal.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import com.jobhub.personal.dto.PersonalMemberDto;
 
@@ -16,6 +17,6 @@ public interface PersonalMemberDao {
 
 	public void personMemberUpdateOne(PersonalMemberDto personalMemberDto);
 
-
-
+	public List<PersonalMemberDto> personalInfoList();
+	
 }

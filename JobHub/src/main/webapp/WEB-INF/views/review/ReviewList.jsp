@@ -105,6 +105,7 @@
 		width: 300px;
 		height: 40px;
 		font-size: 25px;
+		line-height: 40px;
 	}
 	#averageBox {
 		float: left;			
@@ -152,7 +153,7 @@
 		float: left;
 		width: 600px;
 		height: 110px;
-		color: #292e41
+		color: #292e41;
 	}
 	.reviewItem {
 		width: 910px;
@@ -189,7 +190,7 @@
 </head>
 <body>
 
-<%-- 	<jsp:include page="/WEB-INF/views/Header.jsp"/> --%>
+	<jsp:include page="/WEB-INF/views/Header.jsp"/>
 	
 	<div id="container">
 		<div id="navigation">
@@ -334,10 +335,21 @@
 					</div>
 				</div>
 			</c:forEach>
+			
+			<jsp:include page="/WEB-INF/views/review/Paging.jsp">
+				<jsp:param value="${pagingMap}" name="pagingMap"/>
+			</jsp:include>
+			
+			<form action="./list.do" id="pagingForm" method="post">
+				<input type="hidden" id="curPage" name="curPage"
+					value="${pagingMap.reviewPaging.curPage}">
+			</form>
+			
+			
 		</div>
 	</div>	
 	
-<%-- 	<jsp:include page="/WEB-INF/views/Tail.jsp"/> --%>
+	<jsp:include page="/WEB-INF/views/Tail.jsp"/>
 	
 </body>
 </html>

@@ -1,9 +1,7 @@
 package com.jobhub.review.controller;
 
-import java.util.Iterator;
+import java.util.HashMap;
 import java.util.List;
-
-import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,8 +10,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.multipart.MultipartHttpServletRequest;
+import org.springframework.web.bind.annotation.RequestParam;
 
+import com.jobhub.review.util.Paging;
+//import com.jobhub.util.Paging;
 import com.jobhub.review.dto.ReviewDto;
 import com.jobhub.review.service.ReviewService;
 
@@ -27,62 +27,76 @@ public class ReviewController {
 	private ReviewService reviewService;
 	
 //	리뷰 리스트 조회
-	@RequestMapping(value = "/review/list.do", method = RequestMethod.GET)
-	public String reviewList(Model model) {
-		// Log4j 
-		log.info("Welcome ReviewController list!");
-			
-		List<ReviewDto> reviewList = reviewService.reviewSelectList();
+	@RequestMapping(value = "/review/list.do", method = {RequestMethod.GET, RequestMethod.POST})
+	public String reviewList(@RequestParam(defaultValue = "1") int curPage, Model model) {
+
+		log.info("Welcome ReviewController list!: {}", curPage);
 		
-		float avgSum = 0;
-		float totalAvg = 0;
+		int totalCount = reviewService.reviewSelectTotalCount();
 		
-		for (int i = 0; i < reviewList.size(); i++) {
-			avgSum += reviewList.get(i).getrAvg();
-		}
-		totalAvg = (Math.round(avgSum / reviewList.size() * 10)) / 10;
+		Paging reviewPaging = new Paging(totalCount, curPage);
 		
-		float salAvgSum = 0;
-		float salTotalAvg = 0;
+		int start = reviewPaging.getPageBegin();
+		int end = reviewPaging.getPageEnd();
+		
+		List<ReviewDto> reviewList = reviewService.reviewSelectList(start, end);
+		
+		HashMap<String, Object> pagingMap = new HashMap<>(); 
+		pagingMap.put("totalCount", totalCount);
+		pagingMap.put("reviewPaging", reviewPaging);
+		
+		model.addAttribute("reviewList", reviewList);
+		model.addAttribute("pagingMap", pagingMap);
+		
+		double avgSum = 0.0;
+		double totalAvg = 0.0;
+		
+		double salAvgSum = 0.0;
+		double salTotalAvg = 0.0;
 		
 		for (int i = 0; i < reviewList.size(); i++) {
 			salAvgSum += reviewList.get(i).getrSal();
 		}
-		salTotalAvg = (Math.round(salAvgSum / reviewList.size() * 10)) / 10;
+		salTotalAvg = (Math.round(salAvgSum / reviewList.size() * 10.0)) / 10.0;
 		
-		float welAvgSum = 0;
-		float welTotalAvg = 0;
+		double welAvgSum = 0.0;
+		double welTotalAvg = 0.0;
 		
 		for (int i = 0; i < reviewList.size(); i++) {
 			welAvgSum += reviewList.get(i).getrWel();
 		}
-		welTotalAvg = (Math.round(welAvgSum / reviewList.size() * 10)) / 10;
+		welTotalAvg = (Math.round(welAvgSum / reviewList.size() * 10.0)) / 10.0;
 		
-		float envAvgSum = 0;
-		float envTotalAvg = 0;
+		double envAvgSum = 0.0;
+		double envTotalAvg = 0.0;
 		
 		for (int i = 0; i < reviewList.size(); i++) {
 			envAvgSum += reviewList.get(i).getrEnv();
 		}
-		envTotalAvg = (Math.round(envAvgSum / reviewList.size() * 10)) / 10;
+		envTotalAvg = (Math.round(envAvgSum / reviewList.size() * 10.0)) / 10.0;
 		
-		float bossAvgSum = 0;
-		float bossTotalAvg = 0;
+		double bossAvgSum = 0.0;
+		double bossTotalAvg = 0.0;
 		
 		for (int i = 0; i < reviewList.size(); i++) {
 			bossAvgSum += reviewList.get(i).getrBoss();
 		}
-		bossTotalAvg = (Math.round(bossAvgSum / reviewList.size() * 10)) / 10;
+		bossTotalAvg = (Math.round(bossAvgSum / reviewList.size() * 10.0)) / 10.0;
 		
-		float balAvgSum = 0;
-		float balTotalAvg = 0;
+		double balAvgSum = 0.0;
+		double balTotalAvg = 0.0;
 		
 		for (int i = 0; i < reviewList.size(); i++) {
 			balAvgSum += reviewList.get(i).getrBal();
 		}
-		balTotalAvg = (Math.round(balAvgSum / reviewList.size() * 10)) / 10;
+		balTotalAvg = (Math.round(balAvgSum / reviewList.size() * 10.0)) / 10.0;
 		
-		model.addAttribute("reviewList", reviewList);
+		for (int i = 0; i < reviewList.size(); i++) {
+			avgSum += reviewList.get(i).getrAvg();
+		}
+		totalAvg = (Math.round(avgSum / reviewList.size() * 10.0)) / 10.0;
+		
+		
 		model.addAttribute("totalAvg", totalAvg);
 		model.addAttribute("salTotalAvg", salTotalAvg);
 		model.addAttribute("welTotalAvg", welTotalAvg);
@@ -117,7 +131,3 @@ public class ReviewController {
 	}
 	
 }
-
-
-
-
