@@ -26,15 +26,21 @@ public class BoardServiceImpl implements BoardService{
 	public BoardDao boardDao;
 	
 	@Override
-	public PersonalMemberDto personalMemberExist(String pId, String pPwd) {
+	public List<BoardDto> boardSelectList(int start, int end) {
 		// TODO Auto-generated method stub
-		return personalMemberDao.personalMemberExist(pId, pPwd);
+		return boardDao.boardSelectList(start, end);
 	}
 
 	@Override
-	public List<BoardDto> boardSelectList() {
+	public int boardSelectTotalCount() {
 		// TODO Auto-generated method stub
-		return boardDao.boardSelectList();
+		return boardDao.boardSelectTotalCount();
+	}
+	
+	@Override
+	public PersonalMemberDto personalMemberExist(String pId, String pPwd) {
+		// TODO Auto-generated method stub
+		return personalMemberDao.personalMemberExist(pId, pPwd);
 	}
 
 	@Override
@@ -64,6 +70,12 @@ public class BoardServiceImpl implements BoardService{
 	public int boardDeleteOne(int no) {
 
 		return boardDao.boardDeleteOne(no);
+	}
+
+	@Override
+	public void increaseViews(int no) {
+		// TODO Auto-generated method stub
+		boardDao.increaseViews(no);
 	}
 
 }

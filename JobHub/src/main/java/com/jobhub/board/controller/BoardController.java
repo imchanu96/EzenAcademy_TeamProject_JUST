@@ -1,7 +1,10 @@
 package com.jobhub.board.controller;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,9 +13,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.jobhub.board.dto.BoardDto;
 import com.jobhub.board.service.BoardService;
+import com.jobhub.review.dto.ReviewDto;
+import com.jobhub.review.util.Paging;
 
 @Controller
 public class BoardController {
@@ -26,17 +32,29 @@ public class BoardController {
 //	게시판 리스트 조회
 	@RequestMapping(value = "/board/list.do"
 			, method = {RequestMethod.GET, RequestMethod.POST})
-	public String boardList(Model model) {
-		// log4j
-		log.info("Welcome BoardController boardList!");
+	public String boardList(@RequestParam(defaultValue = "1") int curPage, Model model) {
 		
-	    List<BoardDto> boardList = boardService.boardSelectList();
-	 
+		log.info("Welcome BoardController boardList!: {}", curPage);
+		
+		int totalCount = boardService.boardSelectTotalCount();
+		
+		Paging boardPaging = new Paging(totalCount, curPage);
+		
+		int start = boardPaging.getPageBegin();
+		int end = boardPaging.getPageEnd();
+		
+	    List<BoardDto> boardList = boardService.boardSelectList(start, end);
+
+	    HashMap<String, Object> pagingMap = new HashMap<>(); 
+		pagingMap.put("totalCount", totalCount);
+		pagingMap.put("boardPaging", boardPaging);
+		
 	    model.addAttribute("boardList", boardList);
+	    model.addAttribute("pagingMap", pagingMap);
 
 	    return "board/BoardList";
 	}
-	
+
 //	게시물 작성 페이지 열기(글쓰기버튼 클릭)
 	@RequestMapping(value = "/board/add.do", method = RequestMethod.GET)
 	public String postAdd(Model model) {
@@ -61,15 +79,17 @@ public class BoardController {
 	
 	//게시글 조회
 	@RequestMapping(value = "/board/listOne.do", method = RequestMethod.GET)
-	public String memberListOne(int no, Model model) {
+	public String memberListOne(int no, Model model, HttpSession session) {
 		log.debug("Welcome BoardController boardListOne!", no);
 		
 		Map<String, Object> map = boardService.boardSelectOne(no);
 		
+		boardService.increaseViews(no);
+		
 		BoardDto boardDto = (BoardDto)map.get("boardDto");
 		
 		model.addAttribute("boardDto", boardDto);
-		
+
 		return "board/BoardView";
 	}
 	

@@ -53,7 +53,7 @@
 	
 
 	<select id="personalMemberExist" parameterType="map" resultMap="personalResultMap">
-		SELECT PERSONAL_ID, PERSONAL_PASSWORD, PERSONAL_NICKNAME
+		SELECT  PERSONAL_NUMBER, PERSONAL_ID, PERSONAL_PASSWORD, PERSONAL_NICKNAME
 			, PERSONAL_PHONENUMBER, PERSONAL_EMAIL, PERSONAL_KEYWORD
 		 FROM PERSONAL
 		 WHERE PERSONAL_ID = #{pId} AND PERSONAL_PASSWORD = #{pPwd}
@@ -89,13 +89,34 @@
 <!-- 			, #{pEmail} , 1, SYSDATE, SYSDATE, SYSDATE, SYSDATE) -->
 	</insert>
 	
-	<update id="personalMemberUpdateOne" parameterType="PersonalMemberDto">
+	<update id="personalMemberNickNameUpdateOne" parameterType="personalMemberDto">
 		UPDATE PERSONAL
-		SET PERSONAL_NICKNAME = #{pNickname}, PERSONAL_PASSWORD = #{pPwd}
-			, PERSONAL_PHONENUMBER = #{pPhoneNum} ,PERSONAL_EMAIL = #{pEmail}
-			, PERSONAL_KEYWORD = #{pKeyword}
+		SET PERSONAL_NICKNAME = #{pNickname, jdbcType=VARCHAR}
 		WHERE PERSONAL_NUMBER = #{pNo}
+	</update>
 	
+	<update id="personalMemberPasswordUpdateOne" parameterType="personalMemberDto">
+		UPDATE PERSONAL
+		SET PERSONAL_PASSWORD = #{pPwd, jdbcType=VARCHAR}
+		WHERE PERSONAL_NUMBER = #{pNo}
+	</update>
+	
+	<update id="personalMemberPhoneNumUpdateOne" parameterType="personalMemberDto">
+		UPDATE PERSONAL
+		SET PERSONAL_PHONENUMBER = #{pPhoneNum, jdbcType=VARCHAR}
+		WHERE PERSONAL_NUMBER = #{pNo}
+	</update>
+	
+	<update id="personalMemberEmailUpdateOne" parameterType="personalMemberDto">
+		UPDATE PERSONAL
+		SET PERSONAL_EMAIL = #{pEmail, jdbcType=VARCHAR}
+		WHERE PERSONAL_NUMBER = #{pNo}
+	</update>
+	
+	<update id="personalMemberKeywordUpdateOne" parameterType="personalMemberDto">
+		UPDATE PERSONAL
+		SET PERSONAL_KEYWORD = #{pKeyword, jdbcType=VARCHAR}
+		WHERE PERSONAL_NUMBER = #{pNo}
 	</update>
 	
 	<select id="personalInfoList" resultType="map">
