@@ -129,15 +129,19 @@ public class PersonalMemberController {
 	
 	
 	@RequestMapping(value = "/personal/nickNameUpdateCtr.do", method = RequestMethod.POST)
-	public String nickNameUpdateCtr(String pNickname, int pNo 
-			, PersonalMemberDto personalMemberDto, Model model) {
+	public String nickNameUpdateCtr(String pNickname, HttpSession session, Model model) {
 		log.info("Welecome PersonalMembernickNameUpdateCtr");
 		
+		//기존 세션을 가져와서 personalMemberDto에 바뀐 정보를 담아둠
+		PersonalMemberDto personalMemberDto
+			= (PersonalMemberDto) session.getAttribute("personalMemberDto");
 		personalMemberDto.setpNickname(pNickname);
-		personalMemberDto.setpNo(pNo);
 		
 		try {
 			PersonalMemberService.personalMemberNickNameUpdateOne(personalMemberDto);
+			
+			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
+			session.setAttribute("personalMemberDto", personalMemberDto);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
@@ -147,15 +151,17 @@ public class PersonalMemberController {
 	}
 	
 	@RequestMapping(value = "/personal/passwordUpdateCtr.do", method = RequestMethod.POST)
-	public String passwordUpdateCtr(String pPwd, int pNo 
-			, PersonalMemberDto personalMemberDto, Model model) {
+	public String passwordUpdateCtr(String pPwd, HttpSession session, Model model) {
 		log.info("Welecome PersonalMemberPasswordUpdateCtr");
 		
-		personalMemberDto.setpNickname(pPwd);
-		personalMemberDto.setpNo(pNo);
+		PersonalMemberDto personalMemberDto
+			= (PersonalMemberDto) session.getAttribute("personalMemberDto");
+		personalMemberDto.setpPwd(pPwd);
 		
 		try {
 			PersonalMemberService.personalMemberPasswordUpdateOne(personalMemberDto);
+			
+			session.setAttribute("personalMemberDto", personalMemberDto);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
@@ -165,15 +171,17 @@ public class PersonalMemberController {
 	}
 	
 	@RequestMapping(value = "/personal/phoneNumUpdateCtr.do", method = RequestMethod.POST)
-	public String phoneNumUpdateCtr(String pPhoneNum, int pNo 
-			, PersonalMemberDto personalMemberDto, Model model) {
+	public String phoneNumUpdateCtr(String pPhoneNum, HttpSession session, Model model) {
 		log.info("Welecome PersonalMemberPhoneNumUpdateCtr");
 		
-		personalMemberDto.setpNickname(pPhoneNum);
-		personalMemberDto.setpNo(pNo);
+		PersonalMemberDto personalMemberDto
+			= (PersonalMemberDto) session.getAttribute("personalMemberDto");
+		personalMemberDto.setpPhoneNum(pPhoneNum);
 		
 		try {
 			PersonalMemberService.personalMemberPhoneNumUpdateOne(personalMemberDto);
+			
+			session.setAttribute("personalMemberDto", personalMemberDto);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
@@ -183,15 +191,17 @@ public class PersonalMemberController {
 	}
 	
 	@RequestMapping(value = "/personal/emailUpdateCtr.do", method = RequestMethod.POST)
-	public String emailUpdateCtr(String pEmail, int pNo 
-			, PersonalMemberDto personalMemberDto, Model model) {
+	public String emailUpdateCtr(String pEmail, HttpSession session, Model model) {
 		log.info("Welecome PersonalMemberEmailUpdateCtr");
 		
-		personalMemberDto.setpNickname(pEmail);
-		personalMemberDto.setpNo(pNo);
+		PersonalMemberDto personalMemberDto
+			= (PersonalMemberDto) session.getAttribute("personalMemberDto");
+		personalMemberDto.setpEmail(pEmail);	
 		
 		try {
 			PersonalMemberService.personalMemberEmailUpdateOne(personalMemberDto);
+			
+			session.setAttribute("personalMemberDto", personalMemberDto);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
@@ -201,15 +211,16 @@ public class PersonalMemberController {
 	}
 	
 	@RequestMapping(value = "/personal/keywordUpdateCtr.do", method = RequestMethod.POST)
-	public String keywordUpdateCtr(String pKeyword, int pNo 
-			, PersonalMemberDto personalMemberDto, Model model) {
+	public String keywordUpdateCtr(String pKeyword, HttpSession session, Model model) {
 		log.info("Welecome PersonalMemberKeywordUpdateCtr");
-		
-		personalMemberDto.setpNickname(pKeyword);
-		personalMemberDto.setpNo(pNo);
+		PersonalMemberDto personalMemberDto
+			= (PersonalMemberDto) session.getAttribute("personalMemberDto");
+		personalMemberDto.setpKeyword(pKeyword);
 		
 		try {
 			PersonalMemberService.personalMemberKeywordUpdateOne(personalMemberDto);
+			
+			session.setAttribute("personalMemberDto", personalMemberDto);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();

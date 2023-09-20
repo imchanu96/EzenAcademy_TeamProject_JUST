@@ -194,7 +194,7 @@
 						닉네임
 					</div>
 					<div class="personalInfoItemContent">
-						${personalMemberDto.pNickname}
+						${sessionScope.personalMemberDto.pNickname}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
@@ -218,7 +218,7 @@
 						전화번호
 					</div>
 					<div class="personalInfoItemContent">
-						${personalMemberDto.pPhoneNum}
+						${sessionScope.personalMemberDto.pPhoneNum}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
@@ -230,8 +230,8 @@
 						이메일
 					</div>
 					<div class="personalInfoItemContent">
-						${personalMemberDto.pEmail}
-					</div>
+						${sessionScope.personalMemberDto.pEmail}
+					</div><!-- request > session -->
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
 							/personal/emailUpdate.do?no=${personalMemberDto.pNo}">></a>
@@ -242,7 +242,7 @@
 						키워드
 					</div>
 					<div class="personalInfoItemContent">
-						${personalMemberDto.pKeyword}
+						${sessionScope.personalMemberDto.pKeyword}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>

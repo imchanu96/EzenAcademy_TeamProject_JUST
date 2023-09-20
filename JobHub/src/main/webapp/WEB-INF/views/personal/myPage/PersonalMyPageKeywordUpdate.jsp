@@ -236,11 +236,6 @@
 					</div>
 				
 					<form action="keywordUpdateCtr.do" method="post">
-						<div>
-							<input name="pNo" style="display: none;" 
-								value="${personalMemberDto.pNo}">
-						</div>
-						
 						<div class="personalInfoItemTitle">
 							<label>
 								<input type="checkbox" name="pKeyword" value="연봉"

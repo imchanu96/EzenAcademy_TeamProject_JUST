@@ -197,11 +197,6 @@
 						<div class="personalInfoItemTitle">
 							닉네임
 						</div>
-						
-						<div>
-							<input name="pNo" style="display: none;" 
-								value="${personalMemberDto.pNo}">
-						</div>
 						<div class="personalInfoItemUpdate">
 							<input type="text" name="pNickname">
 						</div>

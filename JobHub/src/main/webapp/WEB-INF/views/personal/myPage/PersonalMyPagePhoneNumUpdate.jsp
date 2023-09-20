@@ -197,10 +197,6 @@
 							전화번호
 						</div>
 						
-						<div>
-							<input name="pNo" style="display: none;" 
-								value="${personalMemberDto.pNo}">
-						</div>
 						<div class="personalInfoItemUpdate">
 							<input type="text" name="pPhoneNum">
 						</div>
