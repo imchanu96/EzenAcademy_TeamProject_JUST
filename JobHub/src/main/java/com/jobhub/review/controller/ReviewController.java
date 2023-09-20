@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.jobhub.review.util.Paging;
+import com.jobhub.review.util.CompanyMemberPaging;
 import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.review.dto.ReviewDto;
 import com.jobhub.review.service.ReviewService;
@@ -35,16 +36,16 @@ public class ReviewController {
 
 			int totalCount = reviewService.companyMemberSelectTotalCount();
 
-			Paging reviewPaging = new Paging(totalCount, curPage);
+			CompanyMemberPaging companyMemberPaging = new CompanyMemberPaging(totalCount, curPage);
 			
-			int start = reviewPaging.getPageBegin();
-			int end = reviewPaging.getPageEnd();
+			int start = companyMemberPaging.getPageBegin();
+			int end = companyMemberPaging.getPageEnd();
 			
 			List<CompanyMemberDto> companyMemberList = reviewService.companyMemberSelectList(start, end);
 			
 			HashMap<String, Object> pagingMap = new HashMap<>(); 
 			pagingMap.put("totalCount", totalCount);
-			pagingMap.put("reviewPaging", reviewPaging);
+			pagingMap.put("companyMemberPaging", companyMemberPaging);
 			
 			model.addAttribute("companyMemberList", companyMemberList);
 			model.addAttribute("pagingMap", pagingMap);

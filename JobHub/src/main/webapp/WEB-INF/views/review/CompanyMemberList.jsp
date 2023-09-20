@@ -1,3 +1,4 @@
+<%@page import="org.apache.ibatis.reflection.SystemMetaObject"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -55,11 +56,12 @@
 				</div>
 			</c:forEach>
 			
-			<jsp:include page="/WEB-INF/views/review/Paging.jsp">
+		<!-- 페이징 -->
+			<jsp:include page="/WEB-INF/views/review/CompanyMemberPaging.jsp">
 				<jsp:param value="${pagingMap}" name="pagingMap"/>
 			</jsp:include>
 			
-			<form action="./list.do" id="pagingForm" method="post">
+			<form action="./companyMemberList.do" id="pagingForm" method="post">
 				<input type="hidden" id="curPage" name="curPage"
 					value="${pagingMap.companyMemberPaging.curPage}">
 			</form>
