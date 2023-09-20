@@ -1,5 +1,6 @@
 package com.jobhub.company.controller;
 
+import java.util.Iterator;
 import java.util.List;
 
 import javax.servlet.http.HttpSession;
@@ -81,7 +82,7 @@ public class CompanyMemberController {
 			, method = {RequestMethod.GET, RequestMethod.POST})
 	public String memberList(Model model) {
 		// log4j
-		log.info("Welcome personalInfoController list!: {}");
+//		log.info("Welcome personalInfoController list!: {}");
 		
 //		int totalCount = adminService.memberSelectTotalCount();
 	      

@@ -16,25 +16,20 @@ public class ResumeDto {
 	private String rMarry;
 	private String rGender;
 	private String rMilitary;
-	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private Date rEduBeginDate;
-	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private Date rEduEndDate;
+	private String rEduBeginDate;
+	private String rEduEndDate;
 	private String rEduName;
 	private String rEduMajor;
 	private String rEduLoc;
 	private String rEduGrade;
 	private String rEduGraduate;
-	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private Date rCareerBeginDate;
-	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private Date rCareerEndDate;
+	private String rCareerBeginDate;
+	private String rCareerEndDate;
 	private String rCareerName;
 	private String rCareerPos;
 	private String rCareerLoc;
 	private String rCareerJob;
-	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private Date rLicenseDate;
+	private String rLicenseDate;
 	private String rLicenseName;
 	private String rLicenseInst;
 	private String rLicenseGrade;
@@ -45,9 +40,9 @@ public class ResumeDto {
 	}
 
 	public ResumeDto(int rNo, String rName, Date rBirthday, String rEmail, String rPhoneNum, String rAdd, String rMarry,
-			String rGender, String rMilitary, Date rEduBeginDate, Date rEduEndDate, String rEduName, String rEduMajor,
-			String rEduLoc, String rEduGrade, String rEduGraduate, Date rCareerBeginDate, Date rCareerEndDate,
-			String rCareerName, String rCareerPos, String rCareerLoc, String rCareerJob, Date rLicenseDate,
+			String rGender, String rMilitary, String rEduBeginDate, String rEduEndDate, String rEduName, String rEduMajor,
+			String rEduLoc, String rEduGrade, String rEduGraduate, String rCareerBeginDate, String rCareerEndDate,
+			String rCareerName, String rCareerPos, String rCareerLoc, String rCareerJob, String rLicenseDate,
 			String rLicenseName, String rLicenseInst, String rLicenseGrade, int pNo) {
 		super();
 		this.rNo = rNo;
@@ -151,19 +146,19 @@ public class ResumeDto {
 		this.rMilitary = rMilitary;
 	}
 
-	public Date getrEduBeginDate() {
+	public String getrEduBeginDate() {
 		return rEduBeginDate;
 	}
 
-	public void setrEduBeginDate(Date rEduBeginDate) {
+	public void setrEduBeginDate(String rEduBeginDate) {
 		this.rEduBeginDate = rEduBeginDate;
 	}
 
-	public Date getrEduEndDate() {
+	public String getrEduEndDate() {
 		return rEduEndDate;
 	}
 
-	public void setrEduEndDate(Date rEduEndDate) {
+	public void setrEduEndDate(String rEduEndDate) {
 		this.rEduEndDate = rEduEndDate;
 	}
 
@@ -207,19 +202,19 @@ public class ResumeDto {
 		this.rEduGraduate = rEduGraduate;
 	}
 
-	public Date getrCareerBeginDate() {
+	public String getrCareerBeginDate() {
 		return rCareerBeginDate;
 	}
 
-	public void setrCareerBeginDate(Date rCareerBeginDate) {
+	public void setrCareerBeginDate(String rCareerBeginDate) {
 		this.rCareerBeginDate = rCareerBeginDate;
 	}
 
-	public Date getrCareerEndDate() {
+	public String getrCareerEndDate() {
 		return rCareerEndDate;
 	}
 
-	public void setrCareerEndDate(Date rCareerEndDate) {
+	public void setrCareerEndDate(String rCareerEndDate) {
 		this.rCareerEndDate = rCareerEndDate;
 	}
 
@@ -255,11 +250,11 @@ public class ResumeDto {
 		this.rCareerJob = rCareerJob;
 	}
 
-	public Date getrLicenseDate() {
+	public String getrLicenseDate() {
 		return rLicenseDate;
 	}
 
-	public void setrLicenseDate(Date rLicenseDate) {
+	public void setrLicenseDate(String rLicenseDate) {
 		this.rLicenseDate = rLicenseDate;
 	}
 

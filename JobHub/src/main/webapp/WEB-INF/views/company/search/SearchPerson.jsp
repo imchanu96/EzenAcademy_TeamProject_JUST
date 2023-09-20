@@ -2,6 +2,8 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -216,7 +218,7 @@ img {
 #companyBox {
 	width: 350px;
 	height: 50px;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 #buttonBox {
@@ -245,12 +247,15 @@ img {
 #resumeModal, #letterModal {
 	position: fixed;
 	left: 600px;
-	top: 200px;
+	top: 50px;
 	border: 1px solid black;
-	width: 700px;
+	width: 850px;
 	border-radius: 5px;
 	padding: 30px;
 	display: none;
+	overflow-y: auto;
+	height: 80vh;
+	
 }
 
 .closeBtn {
@@ -269,7 +274,7 @@ img {
 }
 
 table {
-	width: 600px;
+	width: 750px;
 }
 
 tr td {
@@ -285,7 +290,13 @@ tr td {
 <script type="text/javascript"
 	src="/JobHub/resources/js/jquery-3.7.1.js"></script>
 <script type="text/javascript">
-
+	
+// 	window.onload = function() {
+// 		var HighestEduObj = document.getElementById("HighestEdu");
+// 		var eduArr = HighestEduObj.textContent.split(",");
+// 		HighestEduObj.textContent = eduArr[eduArr.length-1];
+// 	}
+	
 	function helpFnc(obj) {
 		var helpTextObj = document.getElementById("helpText");
 		helpTextObj.style.display = "block";
@@ -313,6 +324,9 @@ tr td {
 	        
 	        // 예제: 결과를 resultContainer에 표시
 // 	        	alert('성공');
+	        	
+	        		
+	        
 	        	modal.children[1].textContent = name + "의 이력서";
 	        	modal.children[1].style.textAlign = "center";
 	        	//이름
@@ -661,35 +675,37 @@ tr td {
 
 			</div>
 			<c:forEach var="personalInfo" items="${personalInfoList}">
-				<div id="resultBox">
-					<div id="resultContent">
-						<div style="width: 150px; height: 140px; float: left;">
-							<div id="imgBox">
-								<img alt=""
-									src="https://www.fnnews.com/resource/media/image/2023/08/29/202308291128014614_l.jpg">
+			<c:set var="eduArr" value="${fn:split(personalInfo.pHighestEdu, ',')}"/>
+			<c:set var="eduArrLength" value="${fn:length(eduArr)}"/> 
+			
+					<div id="resultBox">
+						<div id="resultContent">
+							<div style="width: 150px; height: 140px; float: left;">
+								<div id="imgBox">
+									<img alt=""
+										src="https://www.fnnews.com/resource/media/image/2023/08/29/202308291128014614_l.jpg">
+								</div>
+								<div id="pNameBox">${personalInfo.pName}</div>
 							</div>
-							<div id="pNameBox">${personalInfo.pName}</div>
+							<div id="infoBox">
+								<div id="companyBox">현재 "${personalInfo.currentCompany}" 재직중</div>
+								<div id="highTestEduBox">최종 학력 :
+									<span id="HighestEdu">${eduArr[eduArrLength-1]}</span></div>
+								<div id="licenseCountBox">자격증 :
+									${personalInfo.pLicenseCount}개</div>
+							</div>
+							<div id="" style="width: 100px; float: left; margin-right: 50px;">
+								적합도 100%</div>
+							<div id="buttonBox" style="float: left;">
+								<input type="button" value="이력서 보기" class="button" id="resumeBtn"
+									onclick="openResumeFnc('${personalInfo.pNo}', '${personalInfo.pName}');">
+								<input type="button" value="자소서 보기" class="button" id="letterBtn"
+									onclick="openLetterFnc('${personalInfo.pNo}', '${personalInfo.pName}');">
+							</div>
+	
 						</div>
-						<div id="infoBox">
-							<div id="companyBox">${personalInfo.pCampany}</div>
-							<div id="highTestEduBox">최종 학력 :
-								${personalInfo.pHighestEdu}</div>
-							<div id="licenseCountBox">자격증 :
-								${personalInfo.pLicenseCount}개</div>
-						</div>
-						<div id="" style="width: 100px; float: left; margin-right: 50px;">
-							적합도 100%</div>
-						<div id="buttonBox" style="float: left;">
-							<input type="button" value="이력서 보기" class="button" id="resumeBtn"
-								onclick="openResumeFnc('${personalInfo.pNo}', '${personalInfo.pName}');">
-							<input type="button" value="자소서 보기" class="button" id="letterBtn"
-								onclick="openLetterFnc('${personalInfo.pNo}', '${personalInfo.pName}');">
-						</div>
-
 					</div>
-				</div>
 			</c:forEach>
-
 		</div>
 		<!-- end of content -->
 	</div>
