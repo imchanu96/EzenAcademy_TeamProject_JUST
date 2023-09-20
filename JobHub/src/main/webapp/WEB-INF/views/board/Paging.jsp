@@ -13,7 +13,7 @@
 	    overflow: hidden;
 	    background-color: #fff;
 	    display: table;
-	    margin: 0px auto;
+	    margin: 10px auto;
 	    
 	    box-shadow: 0px 1px 4px 0px #ddd;
 	    border-radius: 10px;

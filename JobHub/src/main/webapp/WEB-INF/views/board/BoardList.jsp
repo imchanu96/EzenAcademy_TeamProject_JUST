@@ -7,91 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>BoardList</title>
-	<style type="text/css">
-/* 공통 */
-		a {
-		  text-decoration: none;
-		  color: #292e41;
-		}
-	    a:hover { color: #2d65f2;}
-			
-/* content */
-		#container {
-			width: 1280px;
-			height: 1000px;
-			margin: 0px auto;
-		}
-/* navigation */
-		#navigation {
-			margin: 10px;
-			float: left;
-			width: 250px;
-			height: 950px;
-			font-size: 25px;
-			text-align: center;
-			background-color: #eff5ff;
-		}
-		#smallMenuBox {
-			margin: 30px auto;
-			width: 200px;
-			height: 500px;
-		}
-		.smallMenuItem {
-			margin-bottom: 20px;
-		}
-		.smallMenuItem a {
-			color: #475067;
-		}
-/* content */
-		#content {
-			margin: 10px;
-			float: left;
-			width: 980px;
-			height: 950px;
-			font-size: 30px;
-			background-color: #f8fafc;
-		}
-		.boardListT {
-			border-collapse: collapse;
-			border: 1px solid #999999;
-			width: 980px;
-			font-size: 20px;
-		}
-		
-		.boardListT th, .boardListT td{
-			text-align: center;
-			padding: 10px;
-		}
-		
-		.boardListT th{
-			border-top: 2px solid #aaaaaa;
-			border-bottom: 1px solid #cccccc;
-		}
-		
-		.boardListT td{
-			border-bottom: 1px solid #cccccc;
-		}
-		
-		#buttonBox {
-			float: left;
-			margin: 20px 350px 0px 350px;
-			width: 400px;
-		}
-		
-		button {
-			width: 90px;
-		    height: 40px;
-		    margin-left: 30px;
-		    background-color: #bcd1fc;
-		    border: none;
-		    border-radius: 6px;
-		    box-shadow: 0px 1px 4px 0px #ddd;
-		    font-size: 16px;
-		    font-weight: bold;
-		    color: #475067;
-		}
-		
-	</style>
+	<link href="/JobHub/resources/css/Board.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -106,10 +22,11 @@
 		</div>
 		
 		<div id="content">
-			<div id="buttonBox">
+			<div id="writeBox">
 				<button type="submit" onclick="location.href='./add.do'">글쓰기</button>
 			</div>
-				<table class='boardListT'>
+			<div>
+				<table id="boardList">
 					<tr>
 						<th>번호</th>
 						<th>제목</th>
@@ -117,17 +34,25 @@
 						<th>작성일</th>
 						<th>조회수</th>
 					</tr>
-					<c:forEach var="boardDto" items="${boardList}">
-						<tr>
-							<td>${boardDto.bNo}</td>
-							<td><a href='./listOne.do?no=${boardDto.bNo}'>${boardDto.bTitle}</a></td>
-							<td>${boardDto.bWriter}</td>
-							<td>
-								<fmt:formatDate pattern="yyyy-MM-dd hh:mm" value="${boardDto.bCreDate}"/>
-							</td>
-							<td>${boardDto.bViews}</td>
-						</tr>
-					</c:forEach>
+					<c:choose>
+						<c:when test="${empty boardList}">
+							<tr>
+							<td  colspan="5">등록된 게시글이 없습니다.</td>
+						</c:when>
+						<c:otherwise>
+							<c:forEach var="boardDto" items="${boardList}">
+							<tr>
+								<td>${boardDto.bNo}</td>
+								<td><a href='./listOne.do?no=${boardDto.bNo}'>${boardDto.bTitle}</a></td>
+								<td>${boardDto.bWriter}</td>
+								<td>
+									<fmt:formatDate pattern="yyyy-MM-dd hh:mm" value="${boardDto.bCreDate}"/>
+								</td>
+								<td>${boardDto.bViews}</td>
+							</tr>
+							</c:forEach>
+						</c:otherwise>
+					</c:choose>
 				</table>
 				
 				<jsp:include page="/WEB-INF/views/board/Paging.jsp">
@@ -137,6 +62,7 @@
 				<form action="./list.do" id="pagingForm" method="post">
 					<input type="hidden" id="curPage" name="curPage" value="${pagingMap.boardPaging.curPage}">
 				</form>
+			</div>
 		</div>
 	</div>
 	

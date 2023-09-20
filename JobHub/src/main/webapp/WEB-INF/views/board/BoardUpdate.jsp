@@ -7,80 +7,47 @@
 <head>
 <meta charset="UTF-8">
 <title>BoardUpdate</title>
-	<style type="text/css">
-	
-			/* 	모든 선택자의 border: 1px solid red; 는 작업용입니다. */
-			
-/* 공통 */
-		a {
-		  text-decoration: none;
-		  color: #292e41;
-		}
-	    a:hover { color: #2d65f2;}
-			
-/* content */
-		#container {
-			width: 1280px;
-			height: 1000px;
-			margin: 0px auto;
-		}
-/* navigation */
-		#navigation {
-			margin: 10px;
-			float: left;
-			width: 250px;
-			height: 950px;
-			font-size: 25px;
-			text-align: center;
-			background-color: #eff5ff;
-		}
-		#smallMenuBox {
-			margin: 30px auto;
-			width: 200px;
-			height: 500px;
-		}
-		.smallMenuItem {
-			margin-bottom: 20px;
-		}
-		.smallMenuItem a {
-			color: #475067;
-		}
-/* content */
-		#content {
-			margin: 10px;
-			float: left;
-			width: 980px;
-			height: 950px;
-			font-size: 30px;
-			background-color: #f8fafc;
-		}
-		
-		#boardWriteBox{
-			border: 1px solid black;
-		}
-		
-		#titleInput{
-			border: 1px solid #999999;
-			background-color: #fff;
-			margin: 10px 25px 10px 25px;
-			padding: 10px;
-			border-radius: 5px;
-			width: 910px;
-			height: 30px;
-		}
-		
-		#contentInput{
-			border: 1px solid #999999;
-			background-color: #fff;
-			margin: 0px 25px 10px 25px;
-			padding: 10px;
-			border-radius: 5px;
-			width: 910px;
-			height: 500px;
-		}
-		
-	</style>
+<link href="/JobHub/resources/css/Board.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript">
+	
+		function titleFocusFnc() {
+			var titleObj = document.getElementById("titleInput");
+			
+				titleObj.setAttribute("style", "outline: 1px solid #94b5fc");
+		}
+	
+		function titleBlurFnc() {
+			var titleObj = document.getElementById("titleInput");
+			var titleErrorMsgObj = document.getElementById("titleErrorMsg")
+			
+			if (titleObj.value == "" || titleObj.value.length < 20) {
+				titleObj.setAttribute("style", "border: 1px solid #d7dce5");
+				titleErrorMsgObj.setAttribute("style", "display: none")
+			} else if (titleObj.value.length > 20){
+				titleObj.setAttribute("style", "border: 2px solid red");
+				titleErrorMsgObj.setAttribute("style", "display: block")
+			}
+		}
+		
+		function contentFocusFnc() {
+			var contentObj = document.getElementById("contentInput");
+			
+				contentObj.setAttribute("style", "outline: 1px solid #94b5fc")
+		}
+		
+		function contentBlurFnc() {
+			var contentObj = document.getElementById("contentInput");
+			var contentErrorMsgObj = document.getElementById("contentErrorMsg")
+			
+			if (contentObj.value == "" || contentObj.value.length < 200) {
+				contentObj.setAttribute("style", "border: 1px solid #d7dce5");
+				contentErrorMsgObj.setAttribute("style", "display: none")
+			} else {
+				contentObj.setAttribute("style", "border: 2px solid red");
+				contentErrorMsgObj.setAttribute("style", "display: block")
+			}
+		}
+	
 		function updateFnc() {
 			if (confirm("이대로 수정하시겠습니까?") == true){ 
 				alert("수정 완료되었습니다.");
@@ -114,20 +81,29 @@
 		</div>
 		
 		<div id="content">
-			<div id="boardWriteBox">
-				<form action="./updateCtr.do" method="post">
-					<input type='hidden' name='bNo' value='${boardDto.bNo}'>
-					<div id="titleInputBox">
-						<input name="bTitle" id="titleInput" type="text" value='${boardDto.bTitle}'>
+			<form action="./updateCtr.do" method='post'>
+				<input type='hidden' name='bNo' value='${boardDto.bNo}'>
+				<div id="titleInputBox">
+					<input name="bTitle" id="titleInput" type="text" 
+						value='${boardDto.bTitle}' onfocus="titleFocusFnc();" onblur="titleBlurFnc();">
+					<div class="errorMsg" id="titleErrorMsg">
+						최대 20자 이내로 입력해주세요.
 					</div>
-	
-					<div id="contentInputBox">
-						<textarea name ='bContent' id="contentInput">${boardDto.bContent}</textarea>
+				</div>
+
+				<div id="contentInputBox">
+					<textarea id="contentInput" name="bContent"
+						onfocus="contentFocusFnc();"
+						onblur="contentBlurFnc();">${boardDto.bContent}</textarea>
+					<div class="errorMsg" id="contentErrorMsg">
+						최대 200자 이내로 입력해주세요.
 					</div>
-					<button type="submit" onclick='updateFnc()'>수정</button>
+				</div>
+				<div id="buttonBox">
+					<button type="submit" onclick="updateFnc()">등록</button>
 					<button type="button" onclick="cancleFnc()">취소</button>
-				</form>
-			</div>
+				</div>
+			</form>
 		</div>
 	</div>
 	
