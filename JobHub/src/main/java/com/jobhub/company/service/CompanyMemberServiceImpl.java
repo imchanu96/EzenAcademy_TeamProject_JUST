@@ -40,6 +40,7 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 		// TODO Auto-generated method stub
 		return personalMemberDao.personalInfoList();
 	}
+
 	
-	
+
 }

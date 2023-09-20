@@ -4,7 +4,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
 <script type="text/javascript" 
-	src="/SpringHome/resources/js/jquery-3.7.1.js"></script>
+	src="/JobHub/resources/js/jquery-3.7.1.js"></script>
 
 <style type="text/css">
 	nav > ul {
@@ -96,4 +96,3 @@
 			
 		</ul>
 	</nav>
-

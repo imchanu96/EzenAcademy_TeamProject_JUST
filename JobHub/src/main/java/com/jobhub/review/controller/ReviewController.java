@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.jobhub.review.util.Paging;
+import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.review.dto.ReviewDto;
 import com.jobhub.review.service.ReviewService;
 
@@ -24,6 +25,32 @@ public class ReviewController {
 	
 	@Autowired
 	private ReviewService reviewService;
+	
+//	기업 리스트 조회
+	@RequestMapping(value = "/review/companyMemberList.do", 
+			method = {RequestMethod.GET, RequestMethod.POST})
+		public String companyMemberList(@RequestParam(defaultValue = "1") int curPage, Model model) {
+ 
+			log.info("Welcome ReviewController companyMemberList!: {}", curPage);
+
+			int totalCount = reviewService.companyMemberSelectTotalCount();
+
+			Paging reviewPaging = new Paging(totalCount, curPage);
+			
+			int start = reviewPaging.getPageBegin();
+			int end = reviewPaging.getPageEnd();
+			
+			List<CompanyMemberDto> companyMemberList = reviewService.companyMemberSelectList(start, end);
+			
+			HashMap<String, Object> pagingMap = new HashMap<>(); 
+			pagingMap.put("totalCount", totalCount);
+			pagingMap.put("reviewPaging", reviewPaging);
+			
+			model.addAttribute("companyMemberList", companyMemberList);
+			model.addAttribute("pagingMap", pagingMap);
+			
+			return "review/CompanyMemberList";
+		}
 	
 //	리뷰 리스트 조회
 	@RequestMapping(value = "/review/list.do", method = {RequestMethod.GET, RequestMethod.POST})

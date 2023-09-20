@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
+import com.jobhub.review.dto.ReviewDto;
 
 public interface CompanyMemberService {
 
@@ -12,7 +13,5 @@ public interface CompanyMemberService {
 	public void companyInsertOne(CompanyMemberDto companyMemberDto);
 
 	public List<PersonalMemberDto> personalInfoList();
-
-	
 	
 }

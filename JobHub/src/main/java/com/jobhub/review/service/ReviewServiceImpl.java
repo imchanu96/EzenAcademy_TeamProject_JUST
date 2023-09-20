@@ -7,6 +7,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.jobhub.company.dto.CompanyMemberDto;
+import com.jobhub.company.dao.CompanyMemberDao;
 import com.jobhub.review.dao.ReviewDao;
 import com.jobhub.review.dto.ReviewDto;
 
@@ -18,6 +20,8 @@ public class ReviewServiceImpl implements ReviewService {
 	
 	@Autowired
 	public ReviewDao reviewDao;
+	@Autowired
+	public CompanyMemberDao companyMemberDao;
 
 	@Override
 	public List<ReviewDto> reviewSelectList(int start, int end) {
@@ -41,6 +45,18 @@ public class ReviewServiceImpl implements ReviewService {
 	public int reviewSelectTotalCount() {
 		
 		return reviewDao.reviewSelectTotalCount();
+	}
+
+	@Override
+	public int companyMemberSelectTotalCount() {
+
+		return companyMemberDao.companyMemberSelectTotalCount();
+	}
+	
+	@Override
+	public List<CompanyMemberDto> companyMemberSelectList(int start, int end) {
+
+		return companyMemberDao.companyMemberSelectList(start, end);
 	}
 
 	

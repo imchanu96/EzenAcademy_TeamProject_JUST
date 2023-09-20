@@ -1,6 +1,8 @@
 package com.jobhub.company.dao;
 
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +34,20 @@ public class CompanyMemberDaoImpl implements CompanyMemberDao {
 		
 		return sqlSession.insert(namespace + "companyInsertOne", companyMemberDto);
 	}
-	
-	
+
+	@Override
+	public List<CompanyMemberDto> companyMemberSelectList(int start, int end) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("start", start);
+		map.put("end", end);
+		
+		return sqlSession.selectList("com.jobhub.company.companyMemberSelectList", map);
+	}
+
+	@Override
+	public int companyMemberSelectTotalCount() {
+		
+		return (int)sqlSession.selectOne("com.jobhub.company.companyMemberSelectTotalCount");
+	}
 
 }

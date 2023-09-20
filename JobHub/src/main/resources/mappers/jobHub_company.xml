@@ -32,6 +32,24 @@
 
 	</resultMap>
 	
+	<select id="companyMemberSelectTotalCount" resultType="java.lang.Integer">
+		SELECT COUNT(*)
+		FROM COMPANY
+	</select>
+	
+	<select id="companyMemberSelectList"  parameterType="map" resultMap="companyMemberResultMap">
+		SELECT RNC.RN, RNC.COMPANY_NAME, RNC.COMPANY_TYPE, RNC.COMPANY_HOMEPAGE, RNC.COMPANY_CREATE_DATE
+		FROM
+		    (SELECT ROWNUM RN, COMPANY_NAME, COMPANY_TYPE, COMPANY_HOMEPAGE, COMPANY_CREATE_DATE
+		        FROM (
+		             SELECT COMPANY_NAME, COMPANY_TYPE, COMPANY_HOMEPAGE, COMPANY_CREATE_DATE
+		             FROM COMPANY C
+		             ORDER BY COMPANY_CREATE_DATE DESC
+		         )
+		    ) RNC
+		WHERE RNC.RN BETWEEN #{start} AND #{end}
+	</select>
+	
 	<select id="memberSelectList"  parameterType="map" resultMap="companyMemberResultMap">
 		SELECT PERSONAL.PERSONAL_NUMBER, PERSONAL.PERSONAL_NAME, PERSONAL.PERSONAL_ID
 			, PERSONAL.PERSONAL_NICKNAME, PERSONAL.PERMISSION, PERSONAL.PERSONAL_CREATE_DATE
