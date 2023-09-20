@@ -160,13 +160,51 @@
 	
 	<select id="personalInfoList" resultType="map">
 		 SELECT P.PERSONAL_NUMBER AS "pNo", R.RESUME_PERSONAL_NAME AS "pName", P.PERSONAL_COMPANY AS "currentCompany"
-		 	, R.RESUME_EDUCATION_NAME AS "pHighestEdu" , R.RESUME_EDUCATION_MAJOR AS "pHighestEduMajor"
-		 	,R.RESUME_EDUCATION_GRADE AS "pHighestEduGrade", R.RESUME_CAREER_NAME AS "pCampany"
-		 	, R.RESUME_CAREER_BEGIN_DATE AS "pCareerBeginDate", R.RESUME_CAREER_END_DATE AS "pCareerEndDate"
-		    , NVL(R.RESUME_LICENSE_NAME , ' ') AS "pLicense"
-		    , NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) AS "pLicenseCount"
-		FROM PERSONAL P INNER JOIN RESUME R
-		ON P.PERSONAL_NUMBER = R.PERSONAL_NUMBER
+        , R.RESUME_EDUCATION_NAME AS "pHighestEdu" , R.RESUME_EDUCATION_MAJOR AS "pHighestEduMajor"
+        ,R.RESUME_EDUCATION_GRADE AS "pHighestEduGrade", R.RESUME_CAREER_NAME AS "pCampany"
+        , TO_DATE(R.RESUME_CAREER_BEGIN_DATE, 'YYYY-MM-DD') AS "pCareerBeginDate"
+        , TO_DATE(R.RESUME_CAREER_END_DATE, 'YYYY-MM-DD') AS "pCareerEndDate"
+        , NVL(R.RESUME_LICENSE_NAME , ' ') AS "pLicense"
+        , NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) AS "pLicenseCount" , P.COMPANY_PREFER AS "cPefer"
+    FROM (  SELECT P.PERSONAL_NUMBER, P.PERSONAL_COMPANY, C.COMPANY_PREFER
+            FROM PERSONAL P , COMPANY C
+            WHERE C.COMPANY_NUMBER = #{cNo}
+            ) P INNER JOIN RESUME R
+    ON P.PERSONAL_NUMBER = R.PERSONAL_NUMBER
+    <where>
+<!--     	<if test="talentScore != null"></if> -->
+<!--     	<if test="careerScore != null"></if> -->
+    	<if test="educationScore != null">
+    		<choose>
+	    		<when test="educationScore == 1">
+	    			<![CDATA[R.RESUME_EDUCATION_NAME LIKE '%고등학교%']]>
+	    		</when>
+	    		<when test="educationScore == 2">
+	    			<![CDATA[R.RESUME_EDUCATION_NAME LIKE '%전문대%']]>
+	    		</when>
+	    		<when test="educationScore == 3">
+	    			<![CDATA[R.RESUME_EDUCATION_NAME LIKE '%대학교%']]>
+	    		</when>
+    		</choose>
+    	</if>
+    	<if test="educationScore != null and licenseScore != null">
+    		 AND 
+    	 </if>
+    	<if test="licenseScore != null">
+    		<choose>
+	    		<when test="licenseScore == 1">
+	    			<![CDATA[NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) <= 1]]>
+	    		</when>
+	    		<when test="licenseScore == 2">
+	    			<![CDATA[NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) >= 1
+	    			AND NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) <= 3]]>
+	    		</when>
+	    		<when test="licenseScore == 3">
+	    			<![CDATA[NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) >= 3]]>
+	    		</when>
+    		</choose>
+    	</if>
+    </where>
 	</select>
 	<select id="showResume" resultMap="resumeResultMap" parameterType="map">
 		SELECT RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY

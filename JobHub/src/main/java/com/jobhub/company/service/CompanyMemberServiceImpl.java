@@ -1,6 +1,7 @@
 package com.jobhub.company.service;
 
 import java.util.List;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,9 +37,9 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 	}
 
 	@Override
-	public List<PersonalMemberDto> personalInfoList() {
+	public List<PersonalMemberDto> personalInfoList(Map<String, Object> map) {
 		// TODO Auto-generated method stub
-		return personalMemberDao.personalInfoList();
+		return personalMemberDao.personalInfoList(map);
 	}
 
 	

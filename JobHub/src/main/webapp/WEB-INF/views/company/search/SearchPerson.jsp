@@ -81,8 +81,8 @@ a:hover {
 
 #conditionBox {
 	width: 850px;
-	height: 160px;
-	padding-top: 10px;
+	height: 180px;
+/* 	padding-top: 10px; */
 	background-color: #f7fafe;
 	border-radius: 10px;
 }
@@ -142,6 +142,10 @@ label {
 	font-size: 16px;
 	font-weight: bold;
 	color: #475067;
+}
+
+.radioBtn{
+	display: none;
 }
 
 .helpButton {
@@ -291,11 +295,21 @@ tr td {
 	src="/JobHub/resources/js/jquery-3.7.1.js"></script>
 <script type="text/javascript">
 	
-// 	window.onload = function() {
-// 		var HighestEduObj = document.getElementById("HighestEdu");
-// 		var eduArr = HighestEduObj.textContent.split(",");
-// 		HighestEduObj.textContent = eduArr[eduArr.length-1];
-// 	}
+	function activeRadioFnc(obj, name) {
+		var radioBtnList = document.getElementsByName(name);
+		
+		if (obj.checked == true) {
+			for (var i = 0; i < radioBtnList.length; i++) {
+				radioBtnList[i].style.display = "inline";
+			}
+		}else if (obj.checked == false) {
+			for (var i = 0; i < radioBtnList.length; i++) {
+				radioBtnList[i].style.display = "none";
+				radioBtnList[i].checked = false;
+			}
+		}
+
+	}
 	
 	function helpFnc(obj) {
 		var helpTextObj = document.getElementById("helpText");
@@ -465,60 +479,66 @@ tr td {
 				</div>
 			</div>
 		</div>
-
 		<div id="content">
 			<form action="./personalInfoList.do" method="post">
+			<input type="hidden" name="cNo" value="${companymemberDto.cNo}">
 				<div id="searchBox">
 					<div id="titleBox">
 						<p>인재찾기</p>
 					</div>
 					<div id="conditionBox">
+						<input type="text" value="검색 여부" 
+							style="background-color: transparent; border: none;" readonly="readonly">
 						<div class="condition">
 							<div class="conditionTitleBox">
-								<input type="checkbox"> 인재점수
+								<input type="checkbox" value="체크!" onclick="activeRadioFnc(this, 'talentScore');"> 인재점수
 							</div>
 							<div class="radioBox">
-								<input type="radio" name="score" id="score1"> <label
-									for="score1">60점 이상</label> <input type="radio" name="score"
-									id="score2"> <label for="score2">80점 이상</label> <input
-									type="radio" name="score" id="score3"> <label
-									for="score3">90점 이상</label>
+								<input type="radio" name="talentScore" class="radioBtn" value="60">
+								<label for="talentScore">60점 이상</label>
+								<input type="radio" name="talentScore" class="radioBtn" value="80"> 
+								<label for="talentScore">80점 이상</label> 
+								<input type="radio" name="talentScore" class="radioBtn" value="90">
+								<label for="talentScore">90점 이상</label>
 							</div>
 						</div>
 						<div class="condition">
 							<div class="conditionTitleBox">
-								<input type="checkbox"> 경력
+								<input type="checkbox" onclick="activeRadioFnc(this, 'careerScore');"> 경력
 							</div>
 							<div class="radioBox">
-								<input type="radio" name="career" id="career1"> <label
-									for="career1">3년차 이하</label> <input type="radio" name="career"
-									id="career2"> <label for="career2">3~5년차</label> <input
-									type="radio" name="career" id="career3"> <label
-									for="career3">5년차 이상</label>
+								<input type="radio" name="careerScore" class="radioBtn" value="1">
+								<label for="careerScore">3년차 이하</label>
+								<input type="radio" name="careerScore" class="radioBtn" value="2">
+								<label for="careerScore">3~5년차</label> 
+								<input type="radio" name="careerScore" class="radioBtn" value="3"> 
+								<label for="careerScore">5년차 이상</label>
 							</div>
 						</div>
 						<div class="condition">
 							<div class="conditionTitleBox">
-								<input type="checkbox"> 최종 학력
+								<input type="checkbox" onclick="activeRadioFnc(this, 'educationScore');"> 최종 학력
 							</div>
 							<div class="radioBox">
-								<input type="radio" name="education" id="score1"> <label
-									for="score1">고졸</label> <input type="radio" name="education"
-									id="education2"> <label for="education2">초대졸</label> <input
-									type="radio" name="education" id="education3"> <label
-									for="education3">대졸</label>
+								<input type="radio" name="educationScore" class="radioBtn" value="1"> 
+								<label for="educationScore">고졸</label> 
+								<input type="radio" name="educationScore" class="radioBtn" value="2"> 
+								<label for="educationScore">초대졸</label> 
+								<input type="radio" name="educationScore" class="radioBtn" value="3"> 
+								<label for="educationScore">대졸</label>
 							</div>
 						</div>
 						<div class="condition">
 							<div class="conditionTitleBox">
-								<input type="checkbox"> 자격증
+								<input type="checkbox" onclick="activeRadioFnc(this, 'licenseScore');"> 자격증
 							</div>
 							<div class="radioBox">
-								<input type="radio" name="license" id="license1"> <label
-									for="license1">1개 미만</label> <input type="radio" name="license"
-									id="license2"> <label for="license2">1개~3개</label> <input
-									type="radio" name="license" id="license3"> <label
-									for="license3">3개 이상</label>
+								<input type="radio" name="licenseScore" class="radioBtn" value="1"> 
+								<label for="licenseScore">1개 이하</label> 
+								<input type="radio" name="licenseScore" class="radioBtn" value="2"> 
+								<label for="licenseScore">1개~3개</label> 
+								<input type="radio" name="licenseScore" class="radioBtn" value="3"> 
+								<label for="licenseScore">3개 이상</label>
 							</div>
 						</div>
 					</div>
@@ -677,7 +697,6 @@ tr td {
 			<c:forEach var="personalInfo" items="${personalInfoList}">
 			<c:set var="eduArr" value="${fn:split(personalInfo.pHighestEdu, ',')}"/>
 			<c:set var="eduArrLength" value="${fn:length(eduArr)}"/> 
-			
 					<div id="resultBox">
 						<div id="resultContent">
 							<div style="width: 150px; height: 140px; float: left;">

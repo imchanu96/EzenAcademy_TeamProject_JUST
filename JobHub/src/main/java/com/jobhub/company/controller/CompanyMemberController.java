@@ -1,7 +1,8 @@
 package com.jobhub.company.controller;
 
-import java.util.Iterator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpSession;
 
@@ -12,11 +13,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.company.service.CompanyMemberService;
 import com.jobhub.personal.dto.PersonalMemberDto;
-import com.jobhub.personal.dto.ResumeDto;
 
 @Controller
 public class CompanyMemberController {
@@ -80,14 +81,23 @@ public class CompanyMemberController {
 	
 	@RequestMapping(value = "/company/personalInfoList.do"
 			, method = {RequestMethod.GET, RequestMethod.POST})
-	public String memberList(Model model) {
+	public String memberList(int cNo, String talentScore, String careerScore, String educationScore
+			, String licenseScore, Model model) {
 		// log4j
 //		log.info("Welcome personalInfoController list!: {}");
+		log.info("기업 번호" +cNo + "인재 점수" + talentScore + "경력" + careerScore 
+					+ "학력" +educationScore + "자격증" +licenseScore);
 		
 //		int totalCount = adminService.memberSelectTotalCount();
-	      
-	    List<PersonalMemberDto> personalInfoList = companyMemberService.personalInfoList();
-	    
+	    Map<String, Object> map = new HashMap<String, Object>();
+	    map.put("cNo", cNo);
+	    map.put("talentScore", talentScore);
+	    map.put("careerScore", careerScore);
+	    map.put("educationScore", educationScore);
+	    map.put("licenseScore", licenseScore);
+		
+	    List<PersonalMemberDto> personalInfoList = companyMemberService.personalInfoList(map);
+
 	    model.addAttribute("personalInfoList", personalInfoList);
 
 	    return "company/search/SearchPerson";

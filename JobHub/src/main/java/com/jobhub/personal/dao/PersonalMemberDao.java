@@ -25,6 +25,6 @@ public interface PersonalMemberDao {
 	
 	public void personalMemberKeywordUpdateOne(PersonalMemberDto personalMemberDto);
 
-	public List<PersonalMemberDto> personalInfoList();
+	public List<PersonalMemberDto> personalInfoList(Map<String, Object> map);
 	
 }

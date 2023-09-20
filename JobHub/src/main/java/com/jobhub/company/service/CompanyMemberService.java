@@ -1,6 +1,7 @@
 package com.jobhub.company.service;
 
 import java.util.List;
+import java.util.Map;
 
 import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
@@ -12,6 +13,6 @@ public interface CompanyMemberService {
 
 	public void companyInsertOne(CompanyMemberDto companyMemberDto);
 
-	public List<PersonalMemberDto> personalInfoList();
+	public List<PersonalMemberDto> personalInfoList(Map<String, Object> map);
 	
 }

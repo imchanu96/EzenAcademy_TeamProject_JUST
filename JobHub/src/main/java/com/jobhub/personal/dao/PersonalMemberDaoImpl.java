@@ -83,9 +83,8 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 	}
 
 	@Override
-	public List<PersonalMemberDto> personalInfoList() {
-		// TODO Auto-generated method stub
-		Map<String, Object> map = new HashMap<String, Object>();
+	public List<PersonalMemberDto> personalInfoList(Map<String, Object> map) {
+		// TODO Auto-generated method stub		
 		
 		return sqlSession.selectList(namespace + "personalInfoList", map);
 	}
