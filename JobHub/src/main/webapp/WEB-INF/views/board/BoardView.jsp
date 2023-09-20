@@ -136,6 +136,9 @@
 					댓글
 				</div>
 			</form>
+			<div>
+				<button type="button" onclick="location.href='./list.do'">목록으로</button>
+			</div>
 		</div>
 	</div>
 	
