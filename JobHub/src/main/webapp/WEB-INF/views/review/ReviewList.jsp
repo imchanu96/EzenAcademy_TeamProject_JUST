@@ -30,7 +30,7 @@
 </head>
 <body>
 
-	<jsp:include page="/WEB-INF/views/Header.jsp"/>
+	<jsp:include page="/WEB-INF/views/review/Header.jsp"/>
 	
 	<div id="container">
 		<div id="navigation">
@@ -42,7 +42,7 @@
 					<a href="http://localhost:9080/JobHub/review/add.do">리뷰 작성</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">기업 정보</a>
+					<a href="http://localhost:9080/JobHub/review/companyInfo.do">기업 정보</a>
 				</div>
 			</div>
 		</div>

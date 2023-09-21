@@ -30,9 +30,12 @@ public class ReviewDaoImpl implements ReviewDao {
 	}
 	
 	@Override
-	public List<ReviewDto> reviewSelectList() {
+	public List<ReviewDto> reviewSelectList(int cNo) {
 		
-		return sqlSession.selectList("com.jobhub.review.reviewSelectAllList");
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("cNo", cNo);
+		
+		return sqlSession.selectList("com.jobhub.review.reviewSelectAllList", map);
 	}
 	
 	@Override

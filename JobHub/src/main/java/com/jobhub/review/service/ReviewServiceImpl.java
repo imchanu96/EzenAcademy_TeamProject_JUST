@@ -30,9 +30,9 @@ public class ReviewServiceImpl implements ReviewService {
 	}
 	
 	@Override
-	public List<ReviewDto> reviewSelectList() {
+	public List<ReviewDto> reviewSelectList(int cNo) {
 
-		return reviewDao.reviewSelectList();
+		return reviewDao.reviewSelectList(cNo);
 	}
 	
 	@Override

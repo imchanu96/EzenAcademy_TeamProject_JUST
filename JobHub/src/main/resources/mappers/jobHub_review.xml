@@ -48,6 +48,7 @@
 		SELECT REVIEW_SALARY, REVIEW_WELFARE, REVIEW_ENVIRONMENT,
 				REVIEW_BOSS, REVIEW_BALANCE, REVIEW_AVERAGE
 		FROM REVIEW
+		WHERE COMPANY_NUMBER = #{cNo}
 	</select>	
 	
 	<insert id="reviewInsertOne" parameterType="reviewDto">

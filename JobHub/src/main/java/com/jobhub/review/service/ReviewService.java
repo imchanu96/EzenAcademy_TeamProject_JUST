@@ -9,7 +9,7 @@ public interface ReviewService {
 	
 	public int reviewSelectTotalCount(int cNo);
 	public List<ReviewDto> reviewSelectList(int start, int end, int cNo);
-	public List<ReviewDto> reviewSelectList();
+	public List<ReviewDto> reviewSelectList(int cNo);
 	
 	public void reviewInsertOne(ReviewDto reviewDto) throws Exception;
 	

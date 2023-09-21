@@ -72,7 +72,7 @@ public class ReviewController {
 		// 페이지에서 보여줄 글 번호의 범위에 해당하는 글들을 조회 후, 그 글들의 ReviewDto를 List<> 형태로 만들기
 		List<ReviewDto> reviewList = reviewService.reviewSelectList(start, end, cNo);
 		// 글 전체를 조회 후, 그 글들의 ReviewDto를 List<> 형태로 만들기(이 ReviewDto에는 별점 관련 정보들만 담겨있다)
-		List<ReviewDto> reviewAllList = reviewService.reviewSelectList();
+		List<ReviewDto> reviewAllList = reviewService.reviewSelectList(cNo);
 		
 		// HashMap<> 타입의 pagingMap 생성
 		HashMap<String, Object> pagingMap = new HashMap<>(); 
@@ -167,6 +167,14 @@ public class ReviewController {
 			}
 		
 		return "redirect:/review/list.do";
+	}
+	
+//	기업 정보 조회
+	@RequestMapping(value = "/review/companyInfo.do", method = RequestMethod.GET)
+	public String memberAdd(Model model) {
+		log.debug("Welcome ReviewController CompanyInfo!");
+		
+		return "review/CompanyInfo";
 	}
 	
 }
