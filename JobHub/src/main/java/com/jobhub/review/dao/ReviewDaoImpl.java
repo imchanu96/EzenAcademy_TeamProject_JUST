@@ -19,11 +19,12 @@ public class ReviewDaoImpl implements ReviewDao {
 	String namespace = "com.jobhub.review.";
 	
 	@Override
-	public List<ReviewDto> reviewSelectList(int start, int end) {
+	public List<ReviewDto> reviewSelectList(int start, int end, int cNo) {
 		
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("start", start);
 		map.put("end", end);
+		map.put("cNo", cNo);
 		
 		return sqlSession.selectList("com.jobhub.review.reviewSelectList", map);
 	}
