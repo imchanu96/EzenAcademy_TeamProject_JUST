@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>BoardView</title>
+<title>${boardDto.bTitle} - JobHub</title>
 	<link href="/JobHub/resources/css/Board.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 	function deleteFnc() {
@@ -51,7 +51,7 @@
 					<tr>
 						<td>글쓴이: ${boardDto.bWriter}</td>
 						<td>
-							<fmt:formatDate pattern="yyyy-MM-dd hh:mm" value="${boardDto.bCreDate}"/>
+							<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.bCreDate}"/>
 						</td>
 						<td>
 							조회수 ${boardDto.bViews}

@@ -45,13 +45,20 @@
 		</div>
 		
 		<div id="content">
-			<c:forEach var="companyDto" items="${companyMemberList}">
+			<c:forEach var="companyMemberList" items="${companyMemberList}">
 				<div id="companyInfoBox">
 					<div id="companyLogo"></div>
 					<div id="companySummary">
-						<span id="companyName">${companyDto.cName}</span>
-						<span id="companyType">${companyDto.cType}</span>
-						<span id="companyHomepage">${companyDto.cHomepage}</span>
+						<span id="companyNumber">${companyMemberList.cNo}</span>
+						<a id="companyName" href="/JobHub/review/list.do?cNo=${companyMemberList.cNo}">
+							${companyMemberList.cName}
+						</a>
+						<span id="companyType">
+							${companyMemberList.cType}
+						</span>
+						<span id="companyHomepage">
+							${companyMemberList.cHomepage}
+						</span>
 					</div>
 				</div>
 			</c:forEach>

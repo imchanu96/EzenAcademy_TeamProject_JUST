@@ -105,11 +105,11 @@
 				</div>
 			</div>
 			
-			<c:if test="${sessionScope.companyMemberDto.cId ne null}">	
+			<c:if test="${sessionScope.companymemberDto.cCode ne null}">	
 				<div id="myMenuBox">
 					<div>
 						<a href="<%=request.getContextPath()%>/personal/logout.do">
-							${companyMemberDto.cId}
+							${companymemberDto.cName}
 						</a>
 					</div>
 				</div>

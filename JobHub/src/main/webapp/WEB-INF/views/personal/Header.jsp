@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>       
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -77,17 +79,17 @@
 			
 			<div id="mainMenuBox">
 				<div class="mainMenuItem">
-					<a href="http://www.naver.com">
+					<a href="http://localhost:9080/JobHub/review/list.do">
+						기업 조회
+					</a>
+				</div>
+				<div class="mainMenuItem">
+					<a href="#">
 						기업 추천
 					</a>
 				</div>
 				<div class="mainMenuItem">
-					<a href="http://www.naver.com">
-						기업 리뷰
-					</a>
-				</div>
-				<div class="mainMenuItem">
-					<a href="http://www.naver.com">
+					<a href="http://localhost:9080/JobHub/board/list.do">
 						게시판
 					</a>
 				</div>
@@ -111,7 +113,7 @@
 						</a>
 					</div>
 				</div>
-			</c:if>	
+			</c:if>
 			
 		</div>
 	</div> <!-- Header Ends -->

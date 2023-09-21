@@ -1,5 +1,6 @@
 package com.jobhub.company.controller;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -9,6 +10,7 @@ import javax.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -49,7 +51,7 @@ public class CompanyMemberController {
 //				회원이 존재하면 세션에 담는다
 				session.setAttribute("companymemberDto", companymemberDto);
 				
-				viewUrl = "company/search/SearchPerson";
+				viewUrl = "company/myPage/CompanyMyPage";
 			}else {
 				viewUrl = "personal/auth/LoginFail";
 			}
@@ -104,6 +106,263 @@ public class CompanyMemberController {
 	    model.addAttribute("personalInfoList", personalInfoList);
 
 	    return "company/search/SearchPerson";
+	}
+	
+	@RequestMapping(value = "/company/cInChargeNameUpdate.do", method = RequestMethod.GET)
+	public String cInChargeNameUpdate(HttpSession session, Model model) {
+		log.info("Welecom CompanyMembercInChargeNameNameUpdate!");
+		
+		return "company/myPage/CompanyMyPageInchargeNameUpdate";
+	}
+	
+	@RequestMapping(value = "/company/cInChargeEmailUpdate.do", method = RequestMethod.GET)
+	public String cInChargeEmailUpdate(HttpSession session, Model model) {
+		log.info("Welecom CompanyMembercInChargeEmailUpdate!");
+		
+		return "company/myPage/CompanyMyPageInChargeEmailUpdate";
+	}
+	
+	@RequestMapping(value = "/company/cInChargePhoneNumUpdate.do", method = RequestMethod.GET)
+	public String cInChargePhoneUpdate(HttpSession session, Model model) {
+		log.info("Welecom CompanyMembercInChargePhoneUpdate!");
+		
+		return "company/myPage/CompanyMyPageInChargePhoneNumUpdate";
+	}
+	
+	@RequestMapping(value = "/company/cNameUpdate.do", method = RequestMethod.GET)
+	public String cNameUpdateUpdate(HttpSession session, Model model) {
+		log.info("Welecom CompanyMembercNameUpdateUpdate!");
+		
+		return "company/myPage/CompanyMyPageCompanyNameUpdate";
+	}
+	
+	@RequestMapping(value = "/company/cAddUpdate.do", method = RequestMethod.GET)
+	public String cAddUpdate(HttpSession session, Model model) {
+		log.info("Welecom CompanyMembercAddUpdate!");
+		
+		return "company/myPage/CompanyMyPageCompanyAddUpdate";
+	}
+	
+	@RequestMapping(value = "/company/cTypeUpdate.do", method = RequestMethod.GET)
+	public String cTypeUpdate(HttpSession session, Model model) {
+		log.info("Welecom CompanyMembercTypeUpdate!");
+		
+		return "company/myPage/CompanyMyPageCompanyTypeUpdate";
+	}
+	
+	@RequestMapping(value = "/company/cEstDateUpdate.do", method = RequestMethod.GET)
+	public String cEstDateUpdate(HttpSession session, Model model) {
+		log.info("Welecom CompanyMembercEstDateUpdate!");
+		
+		return "company/myPage/CompanyMyPageCompanyEstDateUpdate";
+	}
+	
+	@RequestMapping(value = "/company/cHomepageUpdate.do", method = RequestMethod.GET)
+	public String cHomepageUpdate(HttpSession session, Model model) {
+		log.info("Welecom CompanyMembercHomepageUpdate!");
+		
+		return "company/myPage/CompanyMyPageCompanyHomepageUpdate";
+	}
+	
+	@RequestMapping(value = "/company/cBusDetailUpdate.do", method = RequestMethod.GET)
+	public String cBusDetailUpdate(HttpSession session, Model model) {
+		log.info("Welecom CompanyMembercBusDetailUpdate!");
+		
+		return "company/myPage/CompanyMyPageCompanyBusDetailUpdate";
+	}
+	
+	@RequestMapping(value = "/company/cInChargeNameCtr.do", method = RequestMethod.POST)
+	public String cInChargeNameUpdateCtr(String cInChargeName, HttpSession session, Model model) {
+		log.info("Welecome CompanyMembercInChargeNameUpdateCtr");
+		
+		//기존 세션을 가져와서 personalMemberDto에 바뀐 정보를 담아둠
+		CompanyMemberDto companymemberDto
+			= (CompanyMemberDto) session.getAttribute("companymemberDto");
+		companymemberDto.setcInChargeName(cInChargeName);
+		
+		try {
+			companyMemberService.companyMembercInChargeNameUpdateOne(companymemberDto);
+			
+			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
+			session.setAttribute("companymemberDto", companymemberDto);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return "company/myPage/CompanyMyPage";
+	}
+	
+	@RequestMapping(value = "/company/cInChargeEmaildateCtr.do", method = RequestMethod.POST)
+	public String cInChargeEmailUpdateCtr(String cInChargeEmail, HttpSession session, Model model) {
+		log.info("Welecome CompanyMembercInChargeEmailUpdateCtr");
+		
+		CompanyMemberDto companymemberDto
+			= (CompanyMemberDto) session.getAttribute("companymemberDto");
+		companymemberDto.setcInChargeEmail(cInChargeEmail);
+		
+		try {
+			companyMemberService.companyMembercInChargeEmailUpdateOne(companymemberDto);
+			
+			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
+			session.setAttribute("companymemberDto", companymemberDto);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+			
+			return "company/myPage/CompanyMyPage";
+		}
+	
+	@RequestMapping(value = "/company/cInChargePhoneNumUpdateCtr.do", method = RequestMethod.POST)
+	public String cInChargePhoneNumUpdateCtr(String cInChargePhoneNum, HttpSession session, Model model) {
+		log.info("Welecome CompanyMembercInChargePhoneNumUpdateCtr");
+		
+		CompanyMemberDto companymemberDto
+			= (CompanyMemberDto) session.getAttribute("companymemberDto");
+		companymemberDto.setcInChargePhoneNum(cInChargePhoneNum);
+		
+		try {
+			companyMemberService.companyMembercInChargePhoneNumUpdateOne(companymemberDto);
+			
+			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
+			session.setAttribute("companymemberDto", companymemberDto);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+			
+			return "company/myPage/CompanyMyPage";
+		}
+	
+	@RequestMapping(value = "/company/cNameUpdateCtr.do", method = RequestMethod.POST)
+	public String cNameUpdateCtr(String cName, HttpSession session, Model model) {
+		log.info("Welecome CompanyMembercNameUpdateCtr");
+		
+		CompanyMemberDto companymemberDto
+			= (CompanyMemberDto) session.getAttribute("companymemberDto");
+		companymemberDto.setcName(cName);
+		
+		try {
+			companyMemberService.companyMembercNameUpdateOne(companymemberDto);
+			
+			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
+			session.setAttribute("companymemberDto", companymemberDto);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return "company/myPage/CompanyMyPage";
+	}
+	
+	
+	@RequestMapping(value = "/company/cAddUpdateCtr.do", method = RequestMethod.POST)
+	public String cAddUpdateCtr(String cAdd, HttpSession session, Model model) {
+		log.info("Welecome CompanyMembercAddUpdateCtr");
+		
+		CompanyMemberDto companymemberDto
+			= (CompanyMemberDto) session.getAttribute("companymemberDto");
+		companymemberDto.setcAdd(cAdd);
+		
+		try {
+			companyMemberService.companyMembercAddUpdateOne(companymemberDto);
+			
+			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
+			session.setAttribute("companymemberDto", companymemberDto);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return "company/myPage/CompanyMyPage";
+	}
+	
+	@RequestMapping(value = "/company/cTypeUpdateCtr.do", method = RequestMethod.POST)
+	public String cTypeUpdateCtr(String cType, HttpSession session, Model model) {
+		log.info("Welecome CompanyMembercTypeUpdateCtr");
+		
+		CompanyMemberDto companymemberDto
+			= (CompanyMemberDto) session.getAttribute("companymemberDto");
+		companymemberDto.setcType(cType);
+		
+		try {
+			companyMemberService.companyMembercTypeUpdateOne(companymemberDto);
+			
+			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
+			session.setAttribute("companymemberDto", companymemberDto);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return "company/myPage/CompanyMyPage";
+	}
+	
+	@RequestMapping(value = "/company/cEstDateUpdateCtr.do", method = RequestMethod.POST)
+	public String cEstDateUpdateCtr(@DateTimeFormat(pattern = "yyyy-MM-dd")Date cEstDate
+			, HttpSession session, Model model) {
+		log.info("Welecome CompanyMembercEstDateUpdateCtr");
+		
+		CompanyMemberDto companymemberDto
+			= (CompanyMemberDto) session.getAttribute("companymemberDto");
+		companymemberDto.setcEstDate(cEstDate);
+		
+		try {
+			companyMemberService.companyMembercEstDateUpdateOne(companymemberDto);
+			
+			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
+			session.setAttribute("companymemberDto", companymemberDto);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+			
+			return "company/myPage/CompanyMyPage";
+		}
+	
+	
+	
+	@RequestMapping(value = "/company/cHomepageUpdateCtr.do", method = RequestMethod.POST)
+	public String cHomepageUpdateCtr(String cHomepage, HttpSession session, Model model) {
+		log.info("Welecome CompanyMembercHomepageUpdateCtr");
+		
+		CompanyMemberDto companymemberDto
+			= (CompanyMemberDto) session.getAttribute("companymemberDto");
+		companymemberDto.setcHomepage(cHomepage);
+		
+		try {
+			companyMemberService.companyMembercHomepageUpdateOne(companymemberDto);
+			
+			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
+			session.setAttribute("companymemberDto", companymemberDto);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return "company/myPage/CompanyMyPage";
+	}
+	
+	@RequestMapping(value = "/company/cBusDetailUpdateCtr.do", method = RequestMethod.POST)
+	public String cBusDetailUpdateCtr(String cBusDetail, HttpSession session, Model model) {
+		log.info("Welecome CompanyMembercTypeUpdateCtr");
+		
+		CompanyMemberDto companymemberDto
+			= (CompanyMemberDto) session.getAttribute("companymemberDto");
+		companymemberDto.setcBusDetail(cBusDetail);
+		
+		try {
+			companyMemberService.companyMembercBusDetailUpdateOne(companymemberDto);
+			
+			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
+			session.setAttribute("companymemberDto", companymemberDto);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return "company/myPage/CompanyMyPage";
 	}
 	
 	

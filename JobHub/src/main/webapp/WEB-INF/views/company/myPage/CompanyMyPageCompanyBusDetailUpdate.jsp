@@ -194,8 +194,8 @@
 							회사 회사소개
 						</div>
 						<div class="companyInfoItemContent">
-							<input type="text" name="cBusDetail">
-							${sessionScope.companyMemberDto.cBusDetail}
+							<input type="text" name="cBusDetail"
+								value="${sessionScope.companymemberDto.cBusDetail}">
 						</div>
 						<div class="button">
 							<input type="submit" value="변경하기">

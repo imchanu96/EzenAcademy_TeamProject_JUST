@@ -92,6 +92,24 @@ public class PersonalMemberController {
 		return "redirect:/personal/login.do";
 	}
 	
+	//아이디찾기 화면으로 이동
+	@RequestMapping(value = "/personal/findId.do", method = RequestMethod.GET)
+	public String personalFindId(Model model) {
+
+		log.debug("Welcome PersonalMemberController personalFindId!");
+
+		return "/personal/auth/PersonalFindId";
+	}
+	
+	//비밀번호찾기 화면으로 이동
+	@RequestMapping(value = "/personal/findPwd.do", method = RequestMethod.GET)
+	public String personalFindPwd(Model model) {
+
+		log.debug("Welcome PersonalMemberController personalFindPwd!");
+
+		return "/personal/auth/PersonalFindPwd";
+	}
+		
 	@RequestMapping(value = "/personal/nickNameUpdate.do", method = RequestMethod.GET)
 	public String nickNameUpdate(HttpSession session, Model model) {
 		log.info("Welecom PersonalMemberNickNameUpdate!");

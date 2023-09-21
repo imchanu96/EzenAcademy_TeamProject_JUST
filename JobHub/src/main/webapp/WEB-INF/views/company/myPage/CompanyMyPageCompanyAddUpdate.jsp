@@ -195,8 +195,9 @@
 						</div>
 						
 						<div class="companyInfoItemContent">
-							<input type="text" name="cAdd">
-							${sessionScope.companyMemberDto.cAdd}
+							<input type="text" name="cAdd" 
+								value="${sessionScope.companymemberDto.cAdd}">
+							
 						</div>
 						<div class="button">
 							<input type="submit" value="변경하기">

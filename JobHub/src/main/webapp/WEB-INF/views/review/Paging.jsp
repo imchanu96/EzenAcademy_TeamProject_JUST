@@ -66,7 +66,7 @@
 	<nav>
 		<ul>
 		
-			<!-- 화살표 -->
+		<!-- 화살표 -->
 			<c:if test="${pagingMap.reviewPaging.prevBlock ne 1}">
 			<li>
 				<a href="#;" onclick="goPage(${pagingMap.reviewPaging.prevBlock});">
@@ -75,7 +75,7 @@
 			</li>
 			</c:if>
 			
-			<!-- 숫자 -->
+		<!-- 숫자 -->
 			<c:forEach var="num"
 				begin="${pagingMap.reviewPaging.blockBegin}"
 				end="${pagingMap.reviewPaging.blockEnd}">
@@ -84,7 +84,7 @@
 				</li>
 			</c:forEach>
 			
-			<!-- 화살표 -->			
+		<!-- 화살표 -->			
 			<c:if 
 				test="${pagingMap.reviewPaging.curBlock < pagingMap.reviewPaging.totBlock}">
 			<li>

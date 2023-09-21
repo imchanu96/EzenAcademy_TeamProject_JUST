@@ -24,9 +24,9 @@ public class ReviewServiceImpl implements ReviewService {
 	public CompanyMemberDao companyMemberDao;
 
 	@Override
-	public List<ReviewDto> reviewSelectList(int start, int end) {
+	public List<ReviewDto> reviewSelectList(int start, int end, int cNo) {
 
-		return reviewDao.reviewSelectList(start, end);
+		return reviewDao.reviewSelectList(start, end, cNo);
 	}
 	
 	@Override
@@ -42,9 +42,9 @@ public class ReviewServiceImpl implements ReviewService {
 	}
 
 	@Override
-	public int reviewSelectTotalCount() {
+	public int reviewSelectTotalCount(int cNo) {
 		
-		return reviewDao.reviewSelectTotalCount();
+		return reviewDao.reviewSelectTotalCount(cNo);
 	}
 
 	@Override

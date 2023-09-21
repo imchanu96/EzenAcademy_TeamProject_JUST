@@ -55,27 +55,38 @@ public class ReviewController {
 	
 //	리뷰 리스트 조회
 	@RequestMapping(value = "/review/list.do", method = {RequestMethod.GET, RequestMethod.POST})
-	public String reviewList(@RequestParam(defaultValue = "1") int curPage, Model model) {
+	public String reviewList(int cNo, @RequestParam(defaultValue = "1") int curPage, Model model) {
 
 		log.info("Welcome ReviewController list!: {}", curPage);
+		// 리뷰 갯수 세서, totalCount에 담기
+		int totalCount = reviewService.reviewSelectTotalCount(cNo);
 		
-		int totalCount = reviewService.reviewSelectTotalCount();
-		
+		// Paging 클래스의 reviewPaging 인스턴스를 생성. 이 때, '총 페이지 수', '현재 페이지(기본값: 1)'을 매개변수로 가지고 있다 
 		Paging reviewPaging = new Paging(totalCount, curPage);
 		
+		// 페이지에서 보여줄 글 번호의 범위(시작 글 번호 ~ 끝 글 번호)
 		int start = reviewPaging.getPageBegin();
 		int end = reviewPaging.getPageEnd();
 		
-		List<ReviewDto> reviewList = reviewService.reviewSelectList(start, end);
+		
+		// 페이지에서 보여줄 글 번호의 범위에 해당하는 글들을 조회 후, 그 글들의 ReviewDto를 List<> 형태로 만들기
+		List<ReviewDto> reviewList = reviewService.reviewSelectList(start, end, cNo);
+		// 글 전체를 조회 후, 그 글들의 ReviewDto를 List<> 형태로 만들기(이 ReviewDto에는 별점 관련 정보들만 담겨있다)
 		List<ReviewDto> reviewAllList = reviewService.reviewSelectList();
 		
+		// HashMap<> 타입의 pagingMap 생성
 		HashMap<String, Object> pagingMap = new HashMap<>(); 
+		// 생성한 pagingMap 해시맵에 아까 세놓은 '리뷰 전체 갯수', '현재 페이지 수 정보'를 매핑한다.
 		pagingMap.put("totalCount", totalCount);
 		pagingMap.put("reviewPaging", reviewPaging);
+		pagingMap.put("cNo", cNo);
 		
+		// Model에 현재 페이지에서 보여줄 글들의 정보인 'reviewList'와
+		// 리뷰 전체 갯수, 현재 페이지 수의 정보를 담은 'pagingMap'을 담는다.
 		model.addAttribute("reviewList", reviewList);
 		model.addAttribute("pagingMap", pagingMap);
 		
+		// 별점 평균 계산
 		double avgSum = 0.0;
 		double totalAvg = 0.0;
 		

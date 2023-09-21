@@ -17,13 +17,16 @@ public class ReviewDto {
 	private double rAvg;
 	private Date rCreDate;
 	private Date rModDate;
+	private int rPNo;
+	private int rCNo;
 	
 	public ReviewDto() {
 		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	public ReviewDto(int rNo, String rTitle, String rContent, int rSal, int rWel, int rEnv, int rBoss, int rBal,
-			String rGood, String rBad, double rAvg, Date rCreDate, Date rModDate) {
+			String rGood, String rBad, double rAvg, Date rCreDate, Date rModDate, int rPNo, int rCNo) {
 		super();
 		this.rNo = rNo;
 		this.rTitle = rTitle;
@@ -38,6 +41,8 @@ public class ReviewDto {
 		this.rAvg = rAvg;
 		this.rCreDate = rCreDate;
 		this.rModDate = rModDate;
+		this.rPNo = rPNo;
+		this.rCNo = rCNo;
 	}
 
 	public int getrNo() {
@@ -144,10 +149,27 @@ public class ReviewDto {
 		this.rModDate = rModDate;
 	}
 
+	public int getrPNo() {
+		return rPNo;
+	}
+
+	public void setrPNo(int rPNo) {
+		this.rPNo = rPNo;
+	}
+
+	public int getrCNo() {
+		return rCNo;
+	}
+
+	public void setrCNo(int rCNo) {
+		this.rCNo = rCNo;
+	}
+
 	@Override
 	public String toString() {
 		return "ReviewDto [rNo=" + rNo + ", rTitle=" + rTitle + ", rContent=" + rContent + ", rSal=" + rSal + ", rWel="
 				+ rWel + ", rEnv=" + rEnv + ", rBoss=" + rBoss + ", rBal=" + rBal + ", rGood=" + rGood + ", rBad="
-				+ rBad + ", rAvg=" + rAvg + ", rCreDate=" + rCreDate + ", rModDate=" + rModDate + "]";
+				+ rBad + ", rAvg=" + rAvg + ", rCreDate=" + rCreDate + ", rModDate=" + rModDate + ", rPNo=" + rPNo
+				+ ", rCNo=" + rCNo + "]";
 	}
 }

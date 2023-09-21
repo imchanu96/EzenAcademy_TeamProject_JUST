@@ -50,4 +50,59 @@ public class CompanyMemberDaoImpl implements CompanyMemberDao {
 		return (int)sqlSession.selectOne("com.jobhub.company.companyMemberSelectTotalCount");
 	}
 
+	@Override
+	public void companyMembercInChargeNameUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		
+		sqlSession.update(namespace + "companyMembercInChargeNameUpdateOne", companymemberDto);
+	}
+
+	@Override
+	public void companyMembercInChargeEmailUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		sqlSession.update(namespace + "companyMembercInChargeEmailUpdateOne", companymemberDto);
+	}
+
+	@Override
+	public void companyMembercInChargePhoneNumUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		sqlSession.update(namespace + "companyMembercInChargePhoneNumUpdateOne", companymemberDto);
+	}
+
+	@Override
+	public void companyMembercNameUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		sqlSession.update(namespace + "companyMembercNameUpdateOne", companymemberDto);
+	}
+	
+	@Override
+	public void companyMembercAddUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		sqlSession.update(namespace + "companyMembercAddUpdateOne", companymemberDto);
+	}
+
+	@Override
+	public void companyMembercTypeUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		sqlSession.update(namespace + "companyMembercTypeUpdateOne", companymemberDto);
+	}
+
+	@Override
+	public void companyMembercEstDateUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		sqlSession.update(namespace + "companyMembercEstDateUpdateOne", companymemberDto);
+	}
+
+	@Override
+	public void companyMembercHomepageUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		sqlSession.update(namespace + "companyMembercHomepageUpdateOne", companymemberDto);
+	}
+
+	@Override
+	public void companyMembercBusDetailUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		sqlSession.update(namespace + "companyMembercBusDetailUpdateOne", companymemberDto);
+	}
+
 }
