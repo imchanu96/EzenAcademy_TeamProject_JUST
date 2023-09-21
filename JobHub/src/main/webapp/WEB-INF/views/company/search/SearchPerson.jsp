@@ -502,19 +502,19 @@ tr td {
 								<label for="talentScore">90점 이상</label>
 							</div>
 						</div>
-						<div class="condition">
-							<div class="conditionTitleBox">
-								<input type="checkbox" onclick="activeRadioFnc(this, 'careerScore');"> 경력
-							</div>
-							<div class="radioBox">
-								<input type="radio" name="careerScore" class="radioBtn" value="1">
-								<label for="careerScore">3년차 이하</label>
-								<input type="radio" name="careerScore" class="radioBtn" value="2">
-								<label for="careerScore">3~5년차</label> 
-								<input type="radio" name="careerScore" class="radioBtn" value="3"> 
-								<label for="careerScore">5년차 이상</label>
-							</div>
-						</div>
+<!-- 						<div class="condition"> -->
+<!-- 							<div class="conditionTitleBox"> -->
+<!-- 								<input type="checkbox" onclick="activeRadioFnc(this, 'careerScore');"> 경력 -->
+<!-- 							</div> -->
+<!-- 							<div class="radioBox"> -->
+<!-- 								<input type="radio" name="careerScore" class="radioBtn" value="1"> -->
+<!-- 								<label for="careerScore">3년차 이하</label> -->
+<!-- 								<input type="radio" name="careerScore" class="radioBtn" value="2"> -->
+<!-- 								<label for="careerScore">3~5년차</label>  -->
+<!-- 								<input type="radio" name="careerScore" class="radioBtn" value="3">  -->
+<!-- 								<label for="careerScore">5년차 이상</label> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
 						<div class="condition">
 							<div class="conditionTitleBox">
 								<input type="checkbox" onclick="activeRadioFnc(this, 'educationScore');"> 최종 학력
@@ -543,12 +543,12 @@ tr td {
 						</div>
 					</div>
 					<div id="inputBox">
-						<select id="search">
+						<select id="search" name="search">
 							<option value="인재 점수">인재 점수</option>
 							<option value="경력">경력</option>
-							<option value="최종 학력">최종 학력</option>
-							<option value="자격증">자격증</option>
-						</select> <input type="text" id="textInput"> <input type="submit"
+							<option value="R.RESUME_EDUCATION_NAME">최종 학력</option>
+							<option value="R.RESUME_LICENSE_NAME">자격증</option>
+						</select> <input type="text" name="searchText" id="textInput"> <input type="submit"
 							value="검색" class="button">
 					</div>
 					<button class="helpButton">

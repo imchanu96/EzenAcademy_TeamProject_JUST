@@ -82,11 +82,11 @@ public class CompanyMemberController {
 	@RequestMapping(value = "/company/personalInfoList.do"
 			, method = {RequestMethod.GET, RequestMethod.POST})
 	public String memberList(int cNo, String talentScore, String careerScore, String educationScore
-			, String licenseScore, Model model) {
+			, String licenseScore, String search, String searchText, Model model) {
 		// log4j
 //		log.info("Welcome personalInfoController list!: {}");
 		log.info("기업 번호" +cNo + "인재 점수" + talentScore + "경력" + careerScore 
-					+ "학력" +educationScore + "자격증" +licenseScore);
+					+ "학력" +educationScore + "자격증" +licenseScore + search + searchText);
 		
 //		int totalCount = adminService.memberSelectTotalCount();
 	    Map<String, Object> map = new HashMap<String, Object>();
@@ -95,6 +95,9 @@ public class CompanyMemberController {
 	    map.put("careerScore", careerScore);
 	    map.put("educationScore", educationScore);
 	    map.put("licenseScore", licenseScore);
+	    map.put("search", search);
+//	    searchText = " %" + searchText + "%";
+	    map.put("searchText", searchText);
 		
 	    List<PersonalMemberDto> personalInfoList = companyMemberService.personalInfoList(map);
 
