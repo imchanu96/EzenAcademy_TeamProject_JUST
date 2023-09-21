@@ -170,7 +170,7 @@
 					<div> <!-- 아이디/비번/회원가입 -->
 						<a href="../personal/findId.do">아이디</a>
 						|
-						<a href="">비밀번호 찾기</a>
+						<a href="../personal/findPwd.do">비밀번호 찾기</a>
 						|
 						<a href="../personal/add.do">회원가입</a>
 					</div>
