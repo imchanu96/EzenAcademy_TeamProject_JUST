@@ -42,9 +42,9 @@ public class ReviewServiceImpl implements ReviewService {
 	}
 
 	@Override
-	public int reviewSelectTotalCount() {
+	public int reviewSelectTotalCount(int cNo) {
 		
-		return reviewDao.reviewSelectTotalCount();
+		return reviewDao.reviewSelectTotalCount(cNo);
 	}
 
 	@Override

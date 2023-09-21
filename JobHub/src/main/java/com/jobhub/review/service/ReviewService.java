@@ -7,7 +7,7 @@ import com.jobhub.review.dto.ReviewDto;
 
 public interface ReviewService {
 	
-	public int reviewSelectTotalCount();
+	public int reviewSelectTotalCount(int cNo);
 	public List<ReviewDto> reviewSelectList(int start, int end, int cNo);
 	public List<ReviewDto> reviewSelectList();
 	

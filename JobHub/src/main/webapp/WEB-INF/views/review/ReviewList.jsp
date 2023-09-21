@@ -180,7 +180,7 @@
 				<jsp:param value="${pagingMap}" name="pagingMap"/>
 			</jsp:include>
 			
-			<form action="./list.do" id="pagingForm" method="post">
+			<form action="./list.do?cNo=${pagingMap.cNo}" id="pagingForm" method="post">
 				<input type="hidden" id="curPage" name="curPage"
 					value="${pagingMap.reviewPaging.curPage}">
 			</form>

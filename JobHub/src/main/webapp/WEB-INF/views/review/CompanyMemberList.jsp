@@ -22,13 +22,6 @@
 	    window.addEventListener('resize', syncNavigationHeight);
 	});
 	
-	function goReviewListFnc(cNo) {
-		alert(cNo);
-		
-		var cNoObj = document.getElementById("cNo");
-		cNoObj.submit();
-	}
-	
 </script>
 <link rel="stylesheet" href="/JobHub/resources/css/CompanyMemberList.css" type="text/css">
 </head>
@@ -52,21 +45,19 @@
 		</div>
 		
 		<div id="content">
-			<c:forEach var="companyDto" items="${companyMemberList}">
+			<c:forEach var="companyMemberList" items="${companyMemberList}">
 				<div id="companyInfoBox">
 					<div id="companyLogo"></div>
 					<div id="companySummary">
-						<span id="companyNumber">${companyDto.cNo}</span>
-						<form action="/review/list.do" id="cNo" method="get">
-							<a id="companyName" href="#" onclick="goReviewListFnc(${companyDto.cNo});">
-								${companyDto.cName}
-							</a>
-						</form>
+						<span id="companyNumber">${companyMemberList.cNo}</span>
+						<a id="companyName" href="/JobHub/review/list.do?cNo=${companyMemberList.cNo}">
+							${companyMemberList.cName}
+						</a>
 						<span id="companyType">
-							${companyDto.cType}
+							${companyMemberList.cType}
 						</span>
 						<span id="companyHomepage">
-							${companyDto.cHomepage}
+							${companyMemberList.cHomepage}
 						</span>
 					</div>
 				</div>

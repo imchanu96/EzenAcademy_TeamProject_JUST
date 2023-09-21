@@ -42,9 +42,12 @@ public class ReviewDaoImpl implements ReviewDao {
 	}
 
 	@Override
-	public int reviewSelectTotalCount() {
+	public int reviewSelectTotalCount(int cNo) {
 		
-		return (int)sqlSession.selectOne("com.jobhub.review.reviewSelectTotalCount");
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("cNo", cNo);
+		
+		return (int)sqlSession.selectOne("com.jobhub.review.reviewSelectTotalCount", map);
 	}
 
 }

@@ -11,6 +11,6 @@ public interface ReviewDao {
 	
 	public int reviewInsertOne(ReviewDto reviewDto);
 
-	public int reviewSelectTotalCount();
+	public int reviewSelectTotalCount(int cNo);
 	
 }
