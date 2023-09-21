@@ -121,10 +121,18 @@
 			<div id="companyInfoBox">
 				<div class="companyInfoRow">
 					<div class="titleBox">
-						<span>홈페이지</span>
+						<span>기업명</span>
 					</div>
 					<div class="contentBox">
-						<span>www.jobhub.com</span>
+						<span>이젠 아카데미</span>
+					</div>
+				</div>
+				<div class="companyInfoRow">
+					<div class="titleBox">
+						<span>주소</span>
+					</div>
+					<div class="contentBox">
+						<span>서울특별시 서초구</span>
 					</div>
 				</div>
 				<div class="companyInfoRow">
@@ -132,39 +140,47 @@
 						<span>업종</span>
 					</div>
 					<div class="contentBox">
-						<span>제조</span>
+						<span>교육</span>
 					</div>
 				</div>
 				<div class="companyInfoRow">
 					<div class="titleBox">
-						<span>홈페이지</span>
+						<span>설립</span>
 					</div>
 					<div class="contentBox">
-						<span>www.jobhub.com</span>
+						<span>2006년 7월 1일</span>
 					</div>
 				</div>
 				<div class="companyInfoRow">
 					<div class="titleBox">
-						<span>홈페이지</span>
+						<span>대표자명</span>
 					</div>
 					<div class="contentBox">
-						<span>www.jobhub.com</span>
+						<span>김이젠</span>
 					</div>
 				</div>
 				<div class="companyInfoRow">
 					<div class="titleBox">
-						<span>홈페이지</span>
+						<span>담당자명</span>
 					</div>
 					<div class="contentBox">
-						<span>www.jobhub.com</span>
+						<span>김삼젠</span>
 					</div>
 				</div>
 				<div class="companyInfoRow">
 					<div class="titleBox">
-						<span>소개</span>
+						<span>담당자 연락처</span>
 					</div>
 					<div class="contentBox">
-						<span>우리 회사는 이런 회사입니다.</span>
+						<span>02-456-4564</span>
+					</div>
+				</div>
+				<div class="companyInfoRow">
+					<div class="titleBox">
+						<span>담당자 이메일</span>
+					</div>
+					<div class="contentBox">
+						<span>incharge@ezen.ac.kr</span>
 					</div>
 				</div>
 			</div>

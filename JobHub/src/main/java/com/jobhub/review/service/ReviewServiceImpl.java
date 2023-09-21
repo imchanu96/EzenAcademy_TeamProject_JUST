@@ -58,8 +58,6 @@ public class ReviewServiceImpl implements ReviewService {
 
 		return companyMemberDao.companyMemberSelectList(start, end);
 	}
-
-	
 }
 
 

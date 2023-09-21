@@ -33,14 +33,15 @@
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="http://localhost:9080/JobHub/review/list.do">리뷰 조회</a>
+<!-- 					<a href="http://localhost:9080/JobHub/review/companyMemberList.do">리뷰 조회</a> -->
+					<a href="http://localhost:9080/JobHub/review/companyMemberList.do">기업 목록</a>
 				</div>
 				<div class="smallMenuItem">
 					<a href="http://localhost:9080/JobHub/review/add.do">리뷰 작성</a>
 				</div>
-				<div class="smallMenuItem">
-					<a href="http://localhost:9080/JobHub/review/companyInfo.do">기업 정보</a>
-				</div>
+<!-- 				<div class="smallMenuItem"> -->
+<!-- 					<a href="http://localhost:9080/JobHub/review/companyMemberList.do">기업 정보</a> -->
+<!-- 				</div> -->
 			</div>
 		</div>
 		
@@ -51,7 +52,7 @@
 					<div id="companySummary">
 						<span id="companyNumber">${companyMemberList.cNo}</span>
 						<a id="companyName" href="/JobHub/review/list.do?cNo=${companyMemberList.cNo}">
-							${companyMemberList.cName}
+							${companyMemberList.cName} 
 						</a>
 						<span id="companyType">
 							${companyMemberList.cType}

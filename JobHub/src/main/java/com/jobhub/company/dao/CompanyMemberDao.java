@@ -31,5 +31,4 @@ public interface CompanyMemberDao {
 	public void companyMembercHomepageUpdateOne(CompanyMemberDto companymemberDto);
 
 	public void companyMembercBusDetailUpdateOne(CompanyMemberDto companymemberDto);
-
 }

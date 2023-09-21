@@ -57,7 +57,8 @@
 								<td><a href='./listOne.do?no=${boardDto.bNo}'>${boardDto.bTitle}</a></td>
 								<td>${boardDto.bWriter}</td>
 								<td>
-									<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.bCreDate}"/>
+<%-- 									<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.bCreDate}"/> --%>
+									<fmt:formatDate pattern="yyyy-MM-dd" value="${boardDto.bCreDate}"/>
 								</td>
 								<td>${boardDto.bViews}</td>
 							</tr>

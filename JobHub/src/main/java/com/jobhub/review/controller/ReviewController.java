@@ -58,9 +58,10 @@ public class ReviewController {
 	public String reviewList(int cNo, @RequestParam(defaultValue = "1") int curPage, Model model) {
 
 		log.info("Welcome ReviewController list!: {}", curPage);
+		
 		// 리뷰 갯수 세서, totalCount에 담기
 		int totalCount = reviewService.reviewSelectTotalCount(cNo);
-		
+
 		// Paging 클래스의 reviewPaging 인스턴스를 생성. 이 때, '총 페이지 수', '현재 페이지(기본값: 1)'을 매개변수로 가지고 있다 
 		Paging reviewPaging = new Paging(totalCount, curPage);
 		
@@ -68,11 +69,11 @@ public class ReviewController {
 		int start = reviewPaging.getPageBegin();
 		int end = reviewPaging.getPageEnd();
 		
-		
 		// 페이지에서 보여줄 글 번호의 범위에 해당하는 글들을 조회 후, 그 글들의 ReviewDto를 List<> 형태로 만들기
 		List<ReviewDto> reviewList = reviewService.reviewSelectList(start, end, cNo);
 		// 글 전체를 조회 후, 그 글들의 ReviewDto를 List<> 형태로 만들기(이 ReviewDto에는 별점 관련 정보들만 담겨있다)
 		List<ReviewDto> reviewAllList = reviewService.reviewSelectList(cNo);
+		
 		
 		// HashMap<> 타입의 pagingMap 생성
 		HashMap<String, Object> pagingMap = new HashMap<>(); 
@@ -80,7 +81,7 @@ public class ReviewController {
 		pagingMap.put("totalCount", totalCount);
 		pagingMap.put("reviewPaging", reviewPaging);
 		pagingMap.put("cNo", cNo);
-		
+
 		// Model에 현재 페이지에서 보여줄 글들의 정보인 'reviewList'와
 		// 리뷰 전체 갯수, 현재 페이지 수의 정보를 담은 'pagingMap'을 담는다.
 		model.addAttribute("reviewList", reviewList);
@@ -171,8 +172,12 @@ public class ReviewController {
 	
 //	기업 정보 조회
 	@RequestMapping(value = "/review/companyInfo.do", method = RequestMethod.GET)
-	public String memberAdd(Model model) {
+	public String CompanyInfo(Model model) {
 		log.debug("Welcome ReviewController CompanyInfo!");
+		
+//		CompanyMemberDto companyMemberDto = new CompanyMemberDto();
+//		
+//		model.addAttribute("companyMemberDto", companyMemberDto);
 		
 		return "review/CompanyInfo";
 	}

@@ -21,6 +21,15 @@
 	    window.addEventListener('resize', syncNavigationHeight);
 	});
 	
+// 	cNo=${pagingMap.cNo}
+// /review/companyInfo.do?cNo=
+	function comDetailViewFnc(cNo) {
+		
+		 var url = 'http://localhost:9080/JobHub/review/companyInfo.do?cNo=' + cNo;
+		
+		location.href = url;
+	}
+	
 </script>
 
 <script src="https://kit.fontawesome.com/7021bbabcd.js" crossorigin="anonymous"></script>
@@ -36,14 +45,14 @@
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="http://localhost:9080/JobHub/review/list.do">리뷰 조회</a>
+					<a href="http://localhost:9080/JobHub/review/companyMemberList.do">기업 목록</a>
 				</div>
 				<div class="smallMenuItem">
 					<a href="http://localhost:9080/JobHub/review/add.do">리뷰 작성</a>
 				</div>
-				<div class="smallMenuItem">
-					<a href="http://localhost:9080/JobHub/review/companyInfo.do">기업 정보</a>
-				</div>
+<!-- 				<div class="smallMenuItem"> -->
+<!-- 					<a href="">기업 정보</a> -->
+<!-- 				</div> -->
 			</div>
 		</div>
 		
@@ -52,10 +61,13 @@
 			<div id="companyInfoBox">
 				<div id="companyLogo"></div>
 				<div id="companySummary">
+					${pagingMap.cNo}
 					<span id="companyName">(회사명)</span>
 					<span id="companyType">(업종)</span>
 					<span id="companyHomepage">(홈페이지)</span>
-					<span id="totalRate">(별점)</span>
+				</div>
+				<div id="companyDetail">
+					<button type="button" onclick="comDetailViewFnc(${pagingMap.cNo});">자세히 보기</button>
 				</div>
 			</div>
 			

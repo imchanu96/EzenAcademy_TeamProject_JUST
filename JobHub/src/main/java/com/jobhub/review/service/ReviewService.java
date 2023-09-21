@@ -15,5 +15,4 @@ public interface ReviewService {
 	
 	public int companyMemberSelectTotalCount();
 	public List<CompanyMemberDto> companyMemberSelectList(int start, int end);
-	
 }

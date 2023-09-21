@@ -37,7 +37,7 @@
 		SELECT COUNT(*)
 		FROM COMPANY
 	</select>
-	
+
 	<select id="companyMemberSelectList"  parameterType="map" resultMap="companyMemberResultMap">
 		SELECT RNC.RN, RNC.COMPANY_NUMBER, RNC.COMPANY_NAME, RNC.COMPANY_TYPE, RNC.COMPANY_HOMEPAGE, RNC.COMPANY_CREATE_DATE
 		FROM
@@ -77,7 +77,7 @@
 		 WHERE COMPANY_CODE = #{cCode} AND COMPANY_PASSWORD = #{cPwd}
 	
 	</select>
-
+	
 	<insert id="companyInsertOne" parameterType="companyMemberDto">
 <!-- 		useGeneratedKeys="true" keyProperty="pNo"> -->
 <!-- 		<selectKey keyProperty="pNo" resultType="int" order="BEFORE"> -->
@@ -154,5 +154,4 @@
 		 SET COMPANY_BUSINESS_DETAIL = #{cBusDetail}
 		 WHERE COMPANY_NUMBER = #{cNo}
 	</update>
-	
 </mapper>

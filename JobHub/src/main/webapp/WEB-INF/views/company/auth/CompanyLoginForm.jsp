@@ -67,8 +67,8 @@
 	
 	.ID_Box > input {
 		font-size: 15px; 
-		width:320px; 
-		height: 35px;
+		width: 300px; 
+		height: 45px;
 	} 
 	
 	.Password_Box {
@@ -78,9 +78,9 @@
 	}
 	
 	.Password_Box > input {
-		 font-size: 15px; 
-		 width:320px; 
-		 height: 35px;
+		font-size: 15px; 
+		width: 300px; 
+		height: 45px;
 	}
 	
 	#Login_Button {
@@ -94,9 +94,9 @@
 	.Login_Button  > input {
 		background-color: #94b5fc;
 		color: white; 
-		font-size: 15px; 
-		width: 260px; 
-		height: 30px;
+		font-size: 17px; 
+		width: 300px; 
+		height: 45px;
 	}
 	
 	#TagNames {
@@ -127,6 +127,26 @@
 	function goCompanyLoginFnc() {
 		
 	}
+	
+	function idInputFocusFnc() {
+		idInputObj = document.getElementById("idInput");
+		idInputObj.setAttribute("style", "outline: 2px solid #94b5fc");
+	}
+	
+	function idInputBlurFnc() {
+		idInputObj = document.getElementById("idInput");
+		idInputObj.setAttribute("style", "outline: none");
+	}
+	
+	function pwInputFocusFnc() {
+		pwInputObj = document.getElementById("pwInput");
+		pwInputObj.setAttribute("style", "outline: 2px solid #94b5fc");
+	}
+	
+	function pwInputBlurFnc() {
+		pwInputObj = document.getElementById("pwInput");
+		pwInputObj.setAttribute("style", "outline: none");
+	}
 </script>
 </head>
 <body>
@@ -153,11 +173,13 @@
 				<form action="loginCtr.do" method="post">
 				<div id="IDandPwd_Box">
 					<div class="ID_Box">
-						<input type="text" name="cCode" placeholder="사업자 등록번호">
+						<input type="text" id="idInput" name="cCode" placeholder="사업자등록번호"
+							onfocus="idInputFocusFnc();" onblur="idInputBlurFnc();">
 					</div>
 					
 					<div class="Password_Box" style="margin: auto; ">
-						<input type="password" name="cPwd" placeholder="비밀번호">
+						<input type="password" id="pwInput" name="cPwd" placeholder="비밀번호"
+							onfocus="pwInputFocusFnc();" onblur="pwInputBlurFnc();">
 					</div>
 				</div> <!-- IDandPwd_Box -->
 				

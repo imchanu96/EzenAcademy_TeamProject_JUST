@@ -58,10 +58,11 @@
 		width: 140px;
 		height: 140px;
 		margin: 10px;
+		border: 1px solid #5c667b;
 	}
 	#companySummary {
 		float: left;
-		width: 650px;
+		width: 600px;
 		height: 80px;
 		margin: 20px;
 		color: #5c667b;
@@ -76,7 +77,12 @@
 	
 	}
 	#totalRate {
-		float: right;
+		float: left;
+	}
+	#companyInfo {
+		float: left;
+		width: 90px;
+		height: 50px;
 	}
 	#reviewAverage, .reviewItem {
 		font-size: 18px;

@@ -53,7 +53,7 @@ a:hover { color: #2d65f2;}
 
 /* board list */
 #writeBox {
-	margin: 5px 0px 0px 545px;
+	margin: 15px 0px 0px 545px;
 	width: 400px;
 	text-align: right;
 }
@@ -74,7 +74,7 @@ button {
 	width: 910px;
 	border-radius: 10px;
 	border-collapse: collapse;
-	margin: 14px auto 0px auto;
+	margin: 20px auto 30px auto;
 	font-size: 18px;
 	background-color: #fff;
 	padding: 20px;

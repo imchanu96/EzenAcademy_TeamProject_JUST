@@ -104,5 +104,4 @@ public class CompanyMemberDaoImpl implements CompanyMemberDao {
 		// TODO Auto-generated method stub
 		sqlSession.update(namespace + "companyMembercBusDetailUpdateOne", companymemberDto);
 	}
-
 }
