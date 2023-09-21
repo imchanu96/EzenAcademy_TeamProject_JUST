@@ -168,8 +168,8 @@
 		 SELECT P.PERSONAL_NUMBER AS "pNo", R.RESUME_PERSONAL_NAME AS "pName", P.PERSONAL_COMPANY AS "currentCompany"
         , R.RESUME_EDUCATION_NAME AS "pHighestEdu" , R.RESUME_EDUCATION_MAJOR AS "pHighestEduMajor"
         ,R.RESUME_EDUCATION_GRADE AS "pHighestEduGrade", R.RESUME_CAREER_NAME AS "pCampany"
-        , TO_DATE(R.RESUME_CAREER_BEGIN_DATE, 'YYYY-MM-DD') AS "pCareerBeginDate"
-        , TO_DATE(R.RESUME_CAREER_END_DATE, 'YYYY-MM-DD') AS "pCareerEndDate"
+        , R.RESUME_CAREER_BEGIN_DATE AS "pCareerBeginDate"
+        , R.RESUME_CAREER_END_DATE AS "pCareerEndDate"
         , NVL(R.RESUME_LICENSE_NAME , ' ') AS "pLicense"
         , NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) AS "pLicenseCount" , P.COMPANY_PREFER AS "cPefer"
     FROM (  SELECT P.PERSONAL_NUMBER, P.PERSONAL_COMPANY, C.COMPANY_PREFER
@@ -183,10 +183,11 @@
     	<if test="educationScore != null">
     		<choose>
 	    		<when test="educationScore == 1">
-	    			<![CDATA[R.RESUME_EDUCATION_NAME LIKE '%고등학교%']]>
+	    			<![CDATA[R.RESUME_EDUCATION_NAME LIKE '%고등학교']]>
 	    		</when>
 	    		<when test="educationScore == 2">
-	    			<![CDATA[R.RESUME_EDUCATION_NAME LIKE '%전문대%']]>
+	    			<![CDATA[R.RESUME_EDUCATION_NAME LIKE '%전문대%'
+    					AND R.RESUME_EDUCATION_NAME NOT LIKE '%대학교%']]>
 	    		</when>
 	    		<when test="educationScore == 3">
 	    			<![CDATA[R.RESUME_EDUCATION_NAME LIKE '%대학교%']]>
@@ -209,6 +210,16 @@
 	    			<![CDATA[NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) >= 3]]>
 	    		</when>
     		</choose>
+    	</if>
+    	<if test="searchText != '' ">
+    		<if test="talentScore != null or careerScore != null 
+    			or educationScore != null or licenseScore != null">
+    			AND
+    		</if> 
+					<!-- 둘다 사용가능 #은 ''를 붙혀준다, $는 문자열 그대로 인식한다. -->
+<!--     			<![CDATA[R.RESUME_EDUCATION_NAME LIKE '%' || #{searchText} || '%']]> -->
+    			<![CDATA[${search} LIKE '%${searchText}%']]>	
+<!--     			<![CDATA[R.RESUME_EDUCATION_NAME LIKE '%서일%']]> -->
     	</if>
     </where>
 	</select>
