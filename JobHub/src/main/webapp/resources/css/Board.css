@@ -181,10 +181,6 @@ button {
 	text-align: right;
 }
 
-#boardView tr td:nth-child(n){
-	word-break:break-all;
-}
-
 #listBox {
 	margin: 5px 0px 0px 130px;
 	width: 400px;

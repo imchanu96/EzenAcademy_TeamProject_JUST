@@ -168,7 +168,7 @@
 				
 				<div id="TagNames">
 					<div> <!-- 아이디/비번/회원가입 -->
-						<a href="">아이디</a>
+						<a href="../personal/findId.do">아이디</a>
 						|
 						<a href="">비밀번호 찾기</a>
 						|

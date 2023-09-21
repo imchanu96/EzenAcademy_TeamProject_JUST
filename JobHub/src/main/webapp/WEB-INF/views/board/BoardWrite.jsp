@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Board Write</title>
+<title>글쓰기 - JobHub</title>
 	<link href="/JobHub/resources/css/Board.css" rel="stylesheet" type="text/css">
 <script>
 	
@@ -18,33 +18,41 @@
 
 	function titleBlurFnc() {
 		var titleObj = document.getElementById("titleInput");
-		var titleErrorMsgObj = document.getElementById("titleErrorMsg")
+		var titleErrorMsgObj = document.getElementById("titleErrorMsg");
 		
 		if (titleObj.value == "" || titleObj.value.length < 20) {
 			titleObj.setAttribute("style", "border: 1px solid #d7dce5");
-			titleErrorMsgObj.setAttribute("style", "display: none")
+			titleErrorMsgObj.setAttribute("style", "display: none");
+			
+			return true;
 		} else if (titleObj.value.length > 20){
 			titleObj.setAttribute("style", "border: 2px solid red");
-			titleErrorMsgObj.setAttribute("style", "display: block")
+			titleErrorMsgObj.setAttribute("style", "display: block");
+			
+			return false;
 		}
 	}
 	
 	function contentFocusFnc() {
 		var contentObj = document.getElementById("contentInput");
 		
-			contentObj.setAttribute("style", "outline: 1px solid #94b5fc")
+			contentObj.setAttribute("style", "outline: 1px solid #94b5fc");
 	}
 	
 	function contentBlurFnc() {
 		var contentObj = document.getElementById("contentInput");
-		var contentErrorMsgObj = document.getElementById("contentErrorMsg")
+		var contentErrorMsgObj = document.getElementById("contentErrorMsg");
 		
-		if (contentObj.value == "" || contentObj.value.length < 200) {
+		if (contentObj.value == "" || contentObj.value.length < 1000) {
 			contentObj.setAttribute("style", "border: 1px solid #d7dce5");
-			contentErrorMsgObj.setAttribute("style", "display: none")
+			contentErrorMsgObj.setAttribute("style", "display: none");
+			
+			return true;
 		} else {
 			contentObj.setAttribute("style", "border: 2px solid red");
-			contentErrorMsgObj.setAttribute("style", "display: block")
+			contentErrorMsgObj.setAttribute("style", "display: block");
+			
+			return false;
 		}
 	}
 	
@@ -62,6 +70,15 @@
 			alert("취소되었습니다.");
 		}else{
 			return;
+		}
+	}
+	
+	function submitFnc() {
+		var postObj = document.getElementsByTagName('Form')[0];
+		
+		if (titleBlurFnc() == true && contentBlurFnc() == true) {
+			registerFnc();
+			postObj.submit();
 		}
 	}
 </script>
@@ -99,11 +116,11 @@
 						onfocus="contentFocusFnc();"
 						onblur="contentBlurFnc();"></textarea>
 					<div class="errorMsg" id="contentErrorMsg">
-						최대 200자 이내로 입력해주세요.
+						최대 1000자 이내로 입력해주세요.
 					</div>
 				</div>
 				<div id="buttonBox">
-					<button type="submit" onclick="registerFnc()">등록</button>
+					<button type="button" onclick="submitFnc()">등록</button>
 					<button type="button" onclick="cancleFnc()">취소</button>
 				</div>
 			</form>

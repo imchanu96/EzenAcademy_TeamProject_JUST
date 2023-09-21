@@ -25,44 +25,44 @@ public class BoardDaoImpl implements BoardDao{
 		map.put("start", start);
 		map.put("end", end);
 		
-		return sqlSession.selectList("com.jobhub.board.boardSelectList", map);
+		return sqlSession.selectList(namespace + "boardSelectList", map);
 	}
 
 	@Override
 	public int boardSelectTotalCount() {
 
-		return (int)sqlSession.selectOne("com.jobhub.board.boardSelectTotalCount");
+		return (int)sqlSession.selectOne(namespace + "boardSelectTotalCount");
 	}
 	
 	@Override
 	public int boardInsertOne(BoardDto boardDto) {
 		
-		return sqlSession.insert("com.jobhub.board.boardInsertOne", boardDto);
+		return sqlSession.insert(namespace + "boardInsertOne", boardDto);
 	}
 
 	@Override
 	public BoardDto boardSelectOne(int no) {
 		
-		BoardDto boardDto = sqlSession.selectOne("com.jobhub.board.boardSelectOne", no);
+		BoardDto boardDto = sqlSession.selectOne(namespace + "boardSelectOne", no);
 		return boardDto;
 	}
 
 	@Override
 	public void boardUpdateOne(BoardDto boardDto) {
 
-		sqlSession.update("com.jobhub.board.boardUpdateOne", boardDto);
+		sqlSession.update(namespace + "boardUpdateOne", boardDto);
 	}
 
 	@Override
 	public int boardDeleteOne(int no) {
 
-		return sqlSession.delete("com.jobhub.board.boardDeleteOne", no);
+		return sqlSession.delete(namespace + "boardDeleteOne", no);
 	}
 
 	@Override
 	public void increaseViews(int no) {
 		// TODO Auto-generated method stub
-		sqlSession.update("com.jobhub.board.increaseViews", no);
+		sqlSession.update(namespace + "increaseViews", no);
 	}
 	
 }

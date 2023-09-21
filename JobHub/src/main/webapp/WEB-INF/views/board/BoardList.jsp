@@ -6,8 +6,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>BoardList</title>
+<title>게시판 - JobHub</title>
 	<link href="/JobHub/resources/css/Board.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript">
+	
+	function writeFnc() {
+		if("${personalMemberDto.getpNo()}" != ""){
+			location.href='./add.do';
+		} else if ("${personalMemberDto.getpNo()}" == ""){
+			location.href='../personal/login.do';
+		}
+	}
+	
+	</script>
 </head>
 <body>
 
@@ -23,7 +34,7 @@
 		
 		<div id="content">
 			<div id="writeBox">
-				<button type="submit" onclick="location.href='./add.do'">글쓰기</button>
+				<button type="button" onclick="writeFnc();">글쓰기</button>
 			</div>
 			<div>
 				<table id="boardList">
@@ -46,7 +57,7 @@
 								<td><a href='./listOne.do?no=${boardDto.bNo}'>${boardDto.bTitle}</a></td>
 								<td>${boardDto.bWriter}</td>
 								<td>
-									<fmt:formatDate pattern="yyyy-MM-dd hh:mm" value="${boardDto.bCreDate}"/>
+									<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.bCreDate}"/>
 								</td>
 								<td>${boardDto.bViews}</td>
 							</tr>

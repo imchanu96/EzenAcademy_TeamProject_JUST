@@ -128,6 +128,12 @@
 <!-- 			, #{pEmail} , 1, SYSDATE, SYSDATE, SYSDATE, SYSDATE) -->
 	</insert>
 	
+	<select id="pesonalMemberFindId" resultType="String" parameterType="personalMemberDto">
+		SELECT PERSONAL_ID
+		FROM PERSONAL
+		WHERE PERSONAL_EMAIL =#{pEmail}
+	</select>
+	
 	<update id="personalMemberNickNameUpdateOne" parameterType="personalMemberDto">
 		UPDATE PERSONAL
 		SET PERSONAL_NICKNAME = #{pNickname, jdbcType=VARCHAR}
