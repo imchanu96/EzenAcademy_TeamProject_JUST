@@ -201,7 +201,7 @@
 						이름
 					</div>
 					<div class="personalInfoItemContent">
-						${sessionScope.companyMemberDto.cInChargeName}ㅇㅇ
+						${sessionScope.companymemberDto.cInChargeName}ㅇㅇ
 					</div>
 				</div>
 				<div class="personalInfoItem">

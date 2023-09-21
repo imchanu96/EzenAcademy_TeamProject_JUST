@@ -42,6 +42,60 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 		return personalMemberDao.personalInfoList(map);
 	}
 
+	@Override
+	public void companyMembercInChargeNameUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		companyMemberDao.companyMembercInChargeNameUpdateOne(companymemberDto);
+	}
+
+	@Override
+	public void companyMembercInChargeEmailUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		companyMemberDao.companyMembercInChargeEmailUpdateOne(companymemberDto);
+	}
+
+	@Override
+	public void companyMembercInChargePhoneNumUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		companyMemberDao.companyMembercInChargePhoneNumUpdateOne(companymemberDto);
+	}
+
+	@Override
+	public void companyMembercNameUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		companyMemberDao.companyMembercNameUpdateOne(companymemberDto);
+	}
+
+	@Override
+	public void companyMembercAddUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		companyMemberDao.companyMembercAddUpdateOne(companymemberDto);
+	}
+
+	@Override
+	public void companyMembercTypeUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		companyMemberDao.companyMembercTypeUpdateOne(companymemberDto);
+	}
+
+	@Override
+	public void companyMembercEstDateUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		companyMemberDao.companyMembercEstDateUpdateOne(companymemberDto);
+	}
+
+	@Override
+	public void companyMembercHomepageUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		companyMemberDao.companyMembercHomepageUpdateOne(companymemberDto);
+	}
+
+	@Override
+	public void companyMembercBusDetailUpdateOne(CompanyMemberDto companymemberDto) {
+		// TODO Auto-generated method stub
+		companyMemberDao.companyMembercBusDetailUpdateOne(companymemberDto);
+	}
+
 	
 
 }

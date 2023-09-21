@@ -180,13 +180,14 @@
 						담당자 정보
 					</div>
 				
-					<form action="cInChargeEmailUpdateCtr.do" method="post">
+					<form action="cInChargeEmaildateCtr.do" method="post">
 						<div class="personalInfoItemTitle">
 							담당자 이메일
 						</div>
 						
 						<div class="personalInfoItemContent">
-							<input type="text" name="cInChargeEmail">
+							<input type="text" name="cInChargeEmail"
+								value="${sessionScope.companymemberDto.cInChargeEmail}">
 						</div>
 						
 						<div class="button">

@@ -194,8 +194,8 @@
 							회사 홈페이지
 						</div>
 						<div class="companyInfoItemContent">
-							<input type="text" name="cHomepage">
-							${sessionScope.companyMemberDto.cHomepage}
+							<input type="text" name="cHomepage"
+								value="${sessionScope.companymemberDto.cHomepage}">
 						</div>
 						<div class="button">
 							<input type="submit" value="변경하기">

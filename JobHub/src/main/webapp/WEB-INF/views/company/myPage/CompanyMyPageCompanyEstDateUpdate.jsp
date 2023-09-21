@@ -191,12 +191,13 @@
 					</div>
 					<form action="cEstDateUpdateCtr.do" method="post">
 						<div class="companyInfoItemTitle">
-							회사 설립
+							설립
 						</div>
 						
 						<div class="companyInfoItemContent">
-							<input type="text" name="cEstDate">
-							${sessionScope.companyMemberDto.cEstDate}
+							<input type="date" name="cEstDate" 
+								value="${sessionScope.companymemberDto.cEstDate}"
+								pattern="yyyy-MM-dd">
 						</div>
 						<div class="button">
 							<input type="submit" value="변경하기">

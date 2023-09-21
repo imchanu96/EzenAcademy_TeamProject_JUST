@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>        
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>        
 <!DOCTYPE html>
 <html>
 <head>
@@ -214,41 +215,41 @@
 			<div id="personalInfoBox">
 				<div class="personalInfoItem">
 					<div class="personalInfoItemTitle">
-						이름
+						담당자 이름
 					</div>
 					<div class="personalInfoItemContent">
-						${sessionScope.companyMemberDto.cInChargeName}
+						${sessionScope.companymemberDto.cInChargeName}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
 							/company/cInChargeNameUpdate.do?no=
-								${companyMemberDto.cNo}">></a>
+								${companymemberDto.cNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
 					<div class="personalInfoItemTitle">
-						이메일
+						담당자 이메일
 					</div>
 					<div class="personalInfoItemContent">
-						${sessionScope.companyMemberDto.cInChargeEmail}
+						${sessionScope.companymemberDto.cInChargeEmail}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
 							/company/cInChargeEmailUpdate.do?no=
-								${companyMemberDto.cNo}">></a>
+								${companymemberDto.cNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
 					<div class="personalInfoItemTitle">
-						연락처
+						담당자 연락처
 					</div>
 					<div class="personalInfoItemContent">
-						${sessionScope.companyMemberDto.cInChargePhoneNum}
+						${sessionScope.companymemberDto.cInChargePhoneNum}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
 							/company/cInChargePhoneNumUpdate.do?no=
-								${companyMemberDto.cNo}">></a>
+								${companymemberDto.cNo}">></a>
 					</div>
 				</div>
 			</div>
@@ -262,12 +263,12 @@
 					</div>
 					
 					<div class="companyInfoItemContent">
-						${sessionScope.companyMemberDto.cName}
+						${sessionScope.companymemberDto.cName}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
 							/company/cNameUpdate.do?no=
-								${companyMemberDto.cNo}">></a>
+								${companymemberDto.cNo}">></a>
 					</div>
 				</div>
 				
@@ -276,12 +277,12 @@
 						회사 주소
 					</div>
 					<div class="companyInfoItemContent">
-						${sessionScope.companyMemberDto.cAdd}
+						${sessionScope.companymemberDto.cAdd}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
 							/company/cAddUpdate.do?no=
-								${companyMemberDto.cNo}">></a>
+								${companymemberDto.cNo}">></a>
 					</div>
 				</div>
 				
@@ -290,12 +291,12 @@
 						업종
 					</div>
 					<div class="companyInfoItemContent">
-						${sessionScope.companyMemberDto.cType}
+						${sessionScope.companymemberDto.cType}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
 							/company/cTypeUpdate.do?no=
-								${companyMemberDto.cNo}">></a>
+								${companymemberDto.cNo}">></a>
 					</div>
 				</div>
 				
@@ -304,12 +305,13 @@
 						설립
 					</div>
 					<div class="companyInfoItemContent">
-						${sessionScope.companyMemberDto.cEstDate}
+						<fmt:formatDate value="${sessionScope.companymemberDto.cEstDate}"
+							pattern="YYYY-MM-dd"/>
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
 							/company/cEstDateUpdate.do?no=
-								${companyMemberDto.cNo}">></a>
+								${companymemberDto.cNo}">></a>
 					</div>
 				</div>
 				
@@ -318,13 +320,13 @@
 						홈페이지
 					</div>
 					<div class="companyInfoItemContent">
-						${sessionScope.companyMemberDto.cHomepage}
+						${sessionScope.companymemberDto.cHomepage}
 					</div>
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
 							/company/cHomepageUpdate.do?no=
-								${companyMemberDto.cNo}">></a>
+								${companymemberDto.cNo}">></a>
 					</div>
 					
 					<div class="companyInfoItem">
@@ -333,13 +335,13 @@
 						</div>
 						<div class="companyInfoContentBox">
 							<div class="companyInfoContent">
-								 ${sessionScope.companyMemberDto.cBusDetail}이젠아이티아카데미
+								 ${sessionScope.companymemberDto.cBusDetail}
 							</div>
 						</div>
 						<div class="arrowBox">
 							<a href="<%=request.getContextPath()%>
 								/company/cBusDetailUpdate.do?no=
-									${companyMemberDto.cNo}">></a>
+									${companymemberDto.cNo}">></a>
 						</div>
 					</div>
 				</div>

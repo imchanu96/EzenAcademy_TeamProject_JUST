@@ -186,7 +186,8 @@
 						</div>
 						
 						<div class="personalInfoItemContent">
-							<input type="text" name="cInChargePhoneNum">
+							<input type="text" name="cInChargePhoneNum"
+								value="${sessionScope.companymemberDto.cInChargePhoneNum}">
 						</div>
 						
 						<div class="button">

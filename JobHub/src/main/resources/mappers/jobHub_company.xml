@@ -11,7 +11,8 @@
 		<result column="COMPANY_NAME" property="cName" />
 		<result column="COMPANY_ADDRESS" property="cAdd" />
 		<result column="COMPANY_TYPE" property="cType" />
-		<result column="COMPANY_ESTABLISH_DATE" property="cEstDate" javaType="java.util.Date" />
+		<result column="COMPANY_ESTABLISH_DATE" property="cEstDate" 
+		javaType="java.util.Date" />
 		<result column="COMPANY_HOMEPAGE" property="cHomepage" />
 		<result column="COMPANY_BUSINESS_DETAIL" property="cBusDetail" />
 		<result column="COMPANY_ID" property="cId" />
@@ -67,7 +68,10 @@
 	
 
 	<select id="companyMemberExist" parameterType="map" resultMap="companyMemberResultMap">
-		SELECT COMPANY_NUMBER, COMPANY_CODE, COMPANY_PASSWORD
+		SELECT COMPANY_NUMBER, COMPANY_CODE, COMPANY_PASSWORD, COMPANY_INCHARGE_NAME
+				,COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_NAME
+				,COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
+				, COMPANY_HOMEPAGE, COMPANY_BUSINESS_DETAIL
 		 FROM COMPANY
 		 WHERE COMPANY_CODE = #{cCode} AND COMPANY_PASSWORD = #{cPwd}
 	
@@ -95,5 +99,59 @@
 				, 5, SYSDATE, SYSDATE, SYSDATE, SYSDATE)
 
 	</insert>
+	
+	<update id="companyMembercInChargeNameUpdateOne" parameterType="companyMemberDto">
+		UPDATE COMPANY
+		 SET COMPANY_INCHARGE_NAME = #{cInChargeName}
+		 WHERE COMPANY_NUMBER = #{cNo}
+	</update>
+	
+	<update id="companyMembercInChargeEmailUpdateOne" parameterType="companyMemberDto">
+		UPDATE COMPANY
+		 SET COMPANY_INCHARGE_EMAIL = #{cInChargeEmail}
+		 WHERE COMPANY_NUMBER = #{cNo}
+	</update>	
+	
+	<update id="companyMembercInChargePhoneNumUpdateOne" parameterType="companyMemberDto">
+		UPDATE COMPANY
+		 SET COMPANY_INCHARGE_PHONENUMBER = #{cInChargePhoneNum}
+		 WHERE COMPANY_NUMBER = #{cNo}
+	</update>
+	
+	<update id="companyMembercNameUpdateOne" parameterType="companyMemberDto">
+		UPDATE COMPANY
+		 SET COMPANY_NAME = #{cName}
+		 WHERE COMPANY_NUMBER = #{cNo}
+	</update>
+	
+	<update id="companyMembercAddUpdateOne" parameterType="companyMemberDto">
+		UPDATE COMPANY
+		 SET COMPANY_ADDRESS = #{cAdd}
+		 WHERE COMPANY_NUMBER = #{cNo}
+	</update>
+	
+	<update id="companyMembercTypeUpdateOne" parameterType="companyMemberDto">
+		UPDATE COMPANY
+		 SET COMPANY_TYPE = #{cType}
+		 WHERE COMPANY_NUMBER = #{cNo}
+	</update>
+	
+	<update id="companyMembercEstDateUpdateOne" parameterType="companyMemberDto">
+		UPDATE COMPANY
+		SET COMPANY_ESTABLISH_DATE = #{cEstDate}
+		WHERE COMPANY_NUMBER = #{cNo}
+	</update>
+	
+	<update id="companyMembercHomepageUpdateOne" parameterType="companyMemberDto">
+		UPDATE COMPANY
+		 SET COMPANY_HOMEPAGE = #{cHomepage}
+		 WHERE COMPANY_NUMBER = #{cNo}
+	</update>
+	
+	<update id="companyMembercBusDetailUpdateOne" parameterType="companymemberDto">
+		UPDATE COMPANY
+		 SET COMPANY_BUSINESS_DETAIL = #{cBusDetail}
+		 WHERE COMPANY_NUMBER = #{cNo}
+	</update>
 	
 </mapper>
