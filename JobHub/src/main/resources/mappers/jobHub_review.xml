@@ -24,6 +24,14 @@
 		<result column="COMPANY_NUMBER" property="rCNo" />
 	</resultMap>
 	
+	<select id="reviewSelectCNo" parameterType="map" resultType="java.lang.Integer">
+		SELECT (SELECT COMPANY_NUMBER
+                FROM COMPANY
+                WHERE COMPANY_NAME = PERSONAL_COMPANY)
+		FROM PERSONAL
+		WHERE PERSONAL_NUMBER = #{pNo}
+	</select>
+	
 	<select id="reviewSelectTotalCount" resultType="java.lang.Integer">
 		SELECT COUNT(*)
 		FROM REVIEW
@@ -60,7 +68,7 @@
 		VALUES(REVIEW_NUMBER_SEQ.NEXTVAL, #{rTitle}, #{rContent}, #{rSal}, 
 			#{rWel}, #{rEnv}, #{rBoss}, 
  			#{rBal}, #{rAvg}, SYSDATE, SYSDATE, 
-			1, 1)
+			#{rPNo}, 1)
    </insert>
    
    

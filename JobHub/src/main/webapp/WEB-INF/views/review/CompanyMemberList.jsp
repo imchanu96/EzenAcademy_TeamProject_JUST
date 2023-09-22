@@ -37,7 +37,7 @@
 					<a href="http://localhost:9080/JobHub/review/companyMemberList.do">기업 목록</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="http://localhost:9080/JobHub/review/add.do">리뷰 작성</a>
+					<a href="http://localhost:9080/JobHub/review/add.do?pNo=${sessionScope.personalMemberDto.pNo}">리뷰 작성</a>
 				</div>
 <!-- 				<div class="smallMenuItem"> -->
 <!-- 					<a href="http://localhost:9080/JobHub/review/companyMemberList.do">기업 정보</a> -->

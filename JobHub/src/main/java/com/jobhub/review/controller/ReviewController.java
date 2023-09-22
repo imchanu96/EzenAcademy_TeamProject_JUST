@@ -3,6 +3,8 @@ package com.jobhub.review.controller;
 import java.util.HashMap;
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.jobhub.review.util.Paging;
 import com.jobhub.review.util.CompanyMemberPaging;
 import com.jobhub.company.dto.CompanyMemberDto;
+import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.review.dto.ReviewDto;
 import com.jobhub.review.service.ReviewService;
 
@@ -157,8 +160,14 @@ public class ReviewController {
 	
 //	리뷰 작성 페이지 열기
 	@RequestMapping(value = "/review/add.do", method = RequestMethod.GET)
-	public String reviewAdd(Model model) {
+	public String reviewAdd(Model model, HttpSession session, int pNo) {
 		log.info("Welcome ReviewController reviewAdd!");
+		
+		PersonalMemberDto personalMemberDto = (PersonalMemberDto) session.getAttribute("personalMemberDto");
+		pNo = personalMemberDto.getpNo();
+		int cNo = (int)reviewService.reviewSelectCNo(pNo);
+		System.out.println(cNo);
+		model.addAttribute("cNo", cNo);
 		
 		return "review/ReviewWrite";
 	}
