@@ -49,8 +49,11 @@ public class CompanyMemberController {
 			String viewUrl = "";
 			if(companyMemberDto != null) {
 //				회원이 존재하면 세션에 담는다
-				session.setAttribute("companyMemberDto", companyMemberDto);
 				
+				int permission = companyMemberDto.getPermission();
+				
+				session.setAttribute("companyMemberDto", companyMemberDto);
+				session.setAttribute("permission", permission);
 				viewUrl = "company/myPage/CompanyMyPage";
 			}else {
 				viewUrl = "personal/auth/LoginFail";

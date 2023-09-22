@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.jobhub.personal.dto.PersonalMemberDto;
+import com.jobhub.personal.dto.ResumeDto;
 	
 @Repository
 public class PersonalMemberDaoImpl implements PersonalMemberDao {
@@ -87,6 +88,16 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 		// TODO Auto-generated method stub		
 		
 		return sqlSession.selectList(namespace + "personalInfoList", map);
+	}
+
+
+	@Override
+	public ResumeDto personalMemberShowResume(int pNo) {
+		// TODO Auto-generated method stub
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map.put("pNo", pNo);
+		
+		return sqlSession.selectOne(namespace + "personalMemberShowResume", map);
 	}
 
 

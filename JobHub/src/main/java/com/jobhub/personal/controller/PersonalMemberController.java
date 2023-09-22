@@ -16,6 +16,7 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import com.jobhub.personal.controller.PersonalMemberController;
 import com.jobhub.personal.dto.PersonalMemberDto;
+import com.jobhub.personal.dto.ResumeDto;
 import com.jobhub.personal.service.PersonalMemberService;
 
 @Controller
@@ -47,8 +48,12 @@ public class PersonalMemberController {
 
 		String viewUrl = "";
 		if (personalMemberDto != null) {
+			
+			int permission = personalMemberDto.getpPermission();
+			
 //			회원이 존재하면 세션에 담는다
 			session.setAttribute("personalMemberDto", personalMemberDto);
+			session.setAttribute("permission", permission);
 			viewUrl = "personal/myPage/PersonalMyPage";
 		} else {
 			viewUrl = "personal/auth/LoginFail";
@@ -248,4 +253,16 @@ public class PersonalMemberController {
 	}
 
 
+	@RequestMapping(value = "/personal/showResume.do", method = RequestMethod.GET)
+	public String showResume(int pNo, HttpSession session, Model model) {
+		log.info("Welecom showResume!" + pNo);
+		
+		
+		ResumeDto resumeDto = PersonalMemberService.personalMemberShowResume(pNo);
+		
+		session.setAttribute("resumeDto", resumeDto);
+				
+		return "personal/myPage/PersonalShowResume";
+	}
+	
 }// end PersonalMemberController

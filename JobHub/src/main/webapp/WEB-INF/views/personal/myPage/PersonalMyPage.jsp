@@ -173,7 +173,7 @@
 					<a href="">내가 쓴 글</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">이력서 관리</a>
+					<a href="./showResume.do?pNo=${personalMemberDto.pNo}">이력서 관리</a>
 				</div>
 				<div class="smallMenuItem">
 					<a href="">자소서 관리</a>
