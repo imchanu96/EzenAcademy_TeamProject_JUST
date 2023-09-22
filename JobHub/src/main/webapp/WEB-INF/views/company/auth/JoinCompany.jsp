@@ -48,7 +48,7 @@
 					<img src="#"> <input type="text" placeholder="업종"
 						name="cType" id="emailBlank" class="input"
 						onblur="emailCheckFnc();" onfocus="emailFocusFnc();"> <input
-						type="text" placeholder="사업내용" name="cBusDetail" name="email"
+						type="text" placeholder="사업내용" name="cIntroduce" name="email"
 						id="emailBlank" class="input" onblur="emailCheckFnc();"
 						onfocus="emailFocusFnc();">
 				</div>

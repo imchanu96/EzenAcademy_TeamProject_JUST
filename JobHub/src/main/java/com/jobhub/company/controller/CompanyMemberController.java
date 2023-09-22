@@ -164,9 +164,9 @@ public class CompanyMemberController {
 		return "company/myPage/CompanyMyPageCompanyHomepageUpdate";
 	}
 	
-	@RequestMapping(value = "/company/cBusDetailUpdate.do", method = RequestMethod.GET)
-	public String cBusDetailUpdate(HttpSession session, Model model) {
-		log.info("Welecom CompanyMembercBusDetailUpdate!");
+	@RequestMapping(value = "/company/cIntroduceUpdate.do", method = RequestMethod.GET)
+	public String cIntroduceUpdate(HttpSession session, Model model) {
+		log.info("Welecom CompanyMembercIntroduceUpdate!");
 		
 		return "company/myPage/CompanyMyPageCompanyBusDetailUpdate";
 	}
@@ -344,16 +344,16 @@ public class CompanyMemberController {
 		return "company/myPage/CompanyMyPage";
 	}
 	
-	@RequestMapping(value = "/company/cBusDetailUpdateCtr.do", method = RequestMethod.POST)
-	public String cBusDetailUpdateCtr(String cBusDetail, HttpSession session, Model model) {
+	@RequestMapping(value = "/company/cIntroduceUpdateCtr.do", method = RequestMethod.POST)
+	public String cIntroduce(String cIntroduce, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercTypeUpdateCtr");
 		
 		CompanyMemberDto companymemberDto
 			= (CompanyMemberDto) session.getAttribute("companymemberDto");
-		companymemberDto.setcBusDetail(cBusDetail);
+		companymemberDto.setcIntroduce(cIntroduce);
 		
 		try {
-			companyMemberService.companyMembercBusDetailUpdateOne(companymemberDto);
+			companyMemberService.companyMembercIntroduceUpdateOne(companymemberDto);
 			
 			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
 			session.setAttribute("companymemberDto", companymemberDto);

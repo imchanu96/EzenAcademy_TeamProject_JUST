@@ -13,7 +13,7 @@ public class CompanyMemberDto {
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date cEstDate;
 	private String cHomepage;
-	private String cBusDetail;
+	private String cIntroduce;
 	private String cId;
 	private String cPwd;
 	private String cCode;
@@ -35,7 +35,7 @@ public class CompanyMemberDto {
 	}
 
 	public CompanyMemberDto(int cNo, String cName, String cAdd, String cType, Date cEstDate, String cHomepage,
-			String cBusDetail, String cId, String cPwd, String cCode, String cLicense, String cLogo, String cPrName,
+			String cIntroduce, String cId, String cPwd, String cCode, String cLicense, String cLogo, String cPrName,
 			String cInChargeName, String cInChargeEmail, String cInChargePhoneNum, String cPrefer, int permission,
 			Date cCreDate, Date cModDate, Date connTime, Date disconnTime) {
 		super();
@@ -45,7 +45,7 @@ public class CompanyMemberDto {
 		this.cType = cType;
 		this.cEstDate = cEstDate;
 		this.cHomepage = cHomepage;
-		this.cBusDetail = cBusDetail;
+		this.cIntroduce = cIntroduce;
 		this.cId = cId;
 		this.cPwd = cPwd;
 		this.cCode = cCode;
@@ -111,12 +111,12 @@ public class CompanyMemberDto {
 		this.cHomepage = cHomepage;
 	}
 
-	public String getcBusDetail() {
-		return cBusDetail;
+	public String getcIntroduce() {
+		return cIntroduce;
 	}
 
-	public void setcBusDetail(String cBusDetail) {
-		this.cBusDetail = cBusDetail;
+	public void setcIntroduce(String cIntroduce) {
+		this.cIntroduce = cIntroduce;
 	}
 
 	public String getcId() {
@@ -242,7 +242,7 @@ public class CompanyMemberDto {
 	@Override
 	public String toString() {
 		return "CompanyMemberDto [cNo=" + cNo + ", cName=" + cName + ", cAdd=" + cAdd + ", cType=" + cType
-				+ ", cEstDate=" + cEstDate + ", cHomepage=" + cHomepage + ", cBusDetail=" + cBusDetail + ", cId=" + cId
+				+ ", cEstDate=" + cEstDate + ", cHomepage=" + cHomepage + ", cIntroduce=" + cIntroduce + ", cId=" + cId
 				+ ", cPwd=" + cPwd + ", cCode=" + cCode + ", cLicense=" + cLicense + ", cLogo=" + cLogo + ", cPrName="
 				+ cPrName + ", cInChargeName=" + cInChargeName + ", cInChargeEmail=" + cInChargeEmail
 				+ ", cInChargePhoneNum=" + cInChargePhoneNum + ", cPrefer=" + cPrefer + ", permission=" + permission

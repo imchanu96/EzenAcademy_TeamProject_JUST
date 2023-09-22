@@ -25,7 +25,7 @@
 // /review/companyInfo.do?cNo=
 	function comDetailViewFnc(cNo) {
 		
-		 var url = 'http://localhost:9080/JobHub/review/companyInfo.do?cNo=' + cNo;
+		 var url = 'http://localhost:9080/JobHub/review/companyDetail.do?cNo=' + cNo;
 		
 		location.href = url;
 	}
@@ -61,13 +61,15 @@
 			<div id="companyInfoBox">
 				<div id="companyLogo"></div>
 				<div id="companySummary">
-					${pagingMap.cNo}
-					<span id="companyName">(회사명)</span>
-					<span id="companyType">(업종)</span>
-					<span id="companyHomepage">(홈페이지)</span>
+					<span id="companyName">${companyMemberDto.cName}</span>
+					<span id="companyType">${companyMemberDto.cIntroduce}</span>
+					<span id="companyHomepage">${companyMemberDto.cHomepage}</span>
 				</div>
 				<div id="companyDetail">
 					<button type="button" onclick="comDetailViewFnc(${pagingMap.cNo});">자세히 보기</button>
+					<form action="./companyDetail.do" method="get">
+						<input type="text" value="${companyMemberDto.cNo}" style="display: none;">
+					</form>
 				</div>
 			</div>
 			

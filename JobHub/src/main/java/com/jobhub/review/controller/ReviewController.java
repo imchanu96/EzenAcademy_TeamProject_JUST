@@ -74,6 +74,13 @@ public class ReviewController {
 		// 글 전체를 조회 후, 그 글들의 ReviewDto를 List<> 형태로 만들기(이 ReviewDto에는 별점 관련 정보들만 담겨있다)
 		List<ReviewDto> reviewAllList = reviewService.reviewSelectList(cNo);
 		
+		// 선택한 기업 정보 조회
+		CompanyMemberDto companyMemberDto = reviewService.companyMemberSelectOne(cNo);
+		System.out.println(companyMemberDto);
+		System.out.println(companyMemberDto.toString());
+		model.addAttribute("companyMemberDto", companyMemberDto);
+		
+		
 		
 		// HashMap<> 타입의 pagingMap 생성
 		HashMap<String, Object> pagingMap = new HashMap<>(); 
@@ -171,15 +178,18 @@ public class ReviewController {
 	}
 	
 //	기업 정보 조회
-	@RequestMapping(value = "/review/companyInfo.do", method = RequestMethod.GET)
-	public String CompanyInfo(Model model) {
-		log.debug("Welcome ReviewController CompanyInfo!");
+	@RequestMapping(value = "/review/companyDetail.do", method = RequestMethod.GET)
+	public String CompanyInfo(Model model, int cNo) {
 		
-//		CompanyMemberDto companyMemberDto = new CompanyMemberDto();
-//		
-//		model.addAttribute("companyMemberDto", companyMemberDto);
+		log.debug("Welcome ReviewController CompanyDetail!");
 		
-		return "review/CompanyInfo";
+		// 선택한 기업 정보 조회
+		CompanyMemberDto companyMemberDto = reviewService.companyMemberSelectOne(cNo);
+		System.out.println(companyMemberDto);
+		System.out.println(companyMemberDto.toString());
+		model.addAttribute("companyMemberDto", companyMemberDto);
+		
+		return "review/CompanyDetail";
 	}
 	
 }

@@ -12,7 +12,9 @@
 		  text-decoration: none;
 		  color: #292e41;
 		}
-	    a:hover { color: #2d65f2; }
+	    a:hover {
+	    	color: #2d65f2;
+	    }
 
 /* content */
 		#container {
@@ -124,7 +126,7 @@
 						<span>기업명</span>
 					</div>
 					<div class="contentBox">
-						<span>이젠 아카데미</span>
+						<span>${companyMemberDto.cName}</span>
 					</div>
 				</div>
 				<div class="companyInfoRow">
@@ -132,7 +134,7 @@
 						<span>주소</span>
 					</div>
 					<div class="contentBox">
-						<span>서울특별시 서초구</span>
+						<span>${companyMemberDto.cAdd}</span>
 					</div>
 				</div>
 				<div class="companyInfoRow">
@@ -140,7 +142,7 @@
 						<span>업종</span>
 					</div>
 					<div class="contentBox">
-						<span>교육</span>
+						<span>${companyMemberDto.cType}</span>
 					</div>
 				</div>
 				<div class="companyInfoRow">
@@ -148,7 +150,7 @@
 						<span>설립</span>
 					</div>
 					<div class="contentBox">
-						<span>2006년 7월 1일</span>
+						<span>${companyMemberDto.cEstDate}</span>
 					</div>
 				</div>
 				<div class="companyInfoRow">
@@ -156,7 +158,7 @@
 						<span>대표자명</span>
 					</div>
 					<div class="contentBox">
-						<span>김이젠</span>
+						<span>${companyMemberDto.cPrName}</span>
 					</div>
 				</div>
 				<div class="companyInfoRow">
@@ -164,15 +166,7 @@
 						<span>담당자명</span>
 					</div>
 					<div class="contentBox">
-						<span>김삼젠</span>
-					</div>
-				</div>
-				<div class="companyInfoRow">
-					<div class="titleBox">
-						<span>담당자 연락처</span>
-					</div>
-					<div class="contentBox">
-						<span>02-456-4564</span>
+						<span>${companyMemberDto.cInChargeName}</span>
 					</div>
 				</div>
 				<div class="companyInfoRow">
@@ -180,7 +174,23 @@
 						<span>담당자 이메일</span>
 					</div>
 					<div class="contentBox">
-						<span>incharge@ezen.ac.kr</span>
+						<span>${companyMemberDto.cInChargeEmail}</span>
+					</div>
+				</div>
+				<div class="companyInfoRow">
+					<div class="titleBox">
+						<span>담당자 연락처</span>
+					</div>
+					<div class="contentBox">
+						<span>${companyMemberDto.cInChargePhoneNum}</span>
+					</div>
+				</div>
+				<div class="companyInfoRow">
+					<div class="titleBox">
+						<span>회사 소개</span>
+					</div>
+					<div class="contentBox">
+						<span>${companyMemberDto.cIntroduce}</span>
 					</div>
 				</div>
 			</div>
