@@ -11,6 +11,7 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import com.jobhub.personal.dao.PersonalMemberDao;
 import com.jobhub.personal.dto.PersonalMemberDto;
+import com.jobhub.personal.dto.ResumeDto;
 
 @Service
 public class PersonalMemberServiceImpl implements PersonalMemberService {
@@ -67,6 +68,13 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 	public void personalMemberKeywordUpdateOne(PersonalMemberDto personalMemberDto) {
 		// TODO Auto-generated method stub
 		personalMemberDao.personalMemberKeywordUpdateOne(personalMemberDto);
+	}
+
+	@Override
+	public ResumeDto personalMemberShowResume(int pNo) {
+		// TODO Auto-generated method stub
+		
+		return personalMemberDao.personalMemberShowResume(pNo);
 	}
 
 

@@ -71,11 +71,17 @@ a:hover {
 }
 /* end of header */
 </style>
+<script type="text/javascript">
+	window.onload = function() {
+		var permission = document.getElementById("permissionStr").value;
+		
+	}
+</script>
 </head>
 <body>
-	
-	<c:if test="${sessionScope.personalMemberDto.pPermission <= 2 
-		or sessionScope.personalMemberDto.pPermission == 10}">
+
+	<c:if test="${sessionScope.permission <= 2 
+		or sessionScope.permission == 10}">
 		<div id="headerBox">
 			<div id="headerContent">
 
@@ -108,7 +114,7 @@ a:hover {
 					<div id="myMenuBox">
 						<div>
 							<a href="<%=request.getContextPath()%>/personal/logout.do">
-								${personalMemberDto.pId} </a>
+								개인 : ${personalMemberDto.pId}님 </a>
 						</div>
 					</div>
 				</c:if>
@@ -117,7 +123,7 @@ a:hover {
 		</div>
 		<!-- Header Ends -->
 	</c:if>
-	<c:if test="${sessionScope.companyMemberDto.permission == 5}">
+	<c:if test="${sessionScope.permission == 5}">
 		<div id="headerBox">
 			<div id="headerContent">
 
@@ -147,7 +153,7 @@ a:hover {
 					<div id="myMenuBox">
 						<div>
 							<a href="<%=request.getContextPath()%>/personal/logout.do">
-								${companyMemberDto.cName} </a>
+								기업 : ${companyMemberDto.cName}님 </a>
 						</div>
 					</div>
 				</c:if>

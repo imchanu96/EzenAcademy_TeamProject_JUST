@@ -1,6 +1,7 @@
 package com.jobhub.personal.service;
 
 import com.jobhub.personal.dto.PersonalMemberDto;
+import com.jobhub.personal.dto.ResumeDto;
 
 public interface PersonalMemberService {
 	
@@ -20,4 +21,6 @@ public interface PersonalMemberService {
 	
 	public void personalMemberKeywordUpdateOne(PersonalMemberDto personalMemberDto);
 	
+	
+	public ResumeDto personalMemberShowResume(int pNo);
 }

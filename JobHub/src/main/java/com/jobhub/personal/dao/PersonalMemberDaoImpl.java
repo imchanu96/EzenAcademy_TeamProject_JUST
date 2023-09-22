@@ -100,7 +100,6 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 	}
 
 
-	@Override
 	public ResumeDto personalMemberShowResume(int pNo) {
 		// TODO Auto-generated method stub
 		HashMap<String, Object> map = new HashMap<String, Object>();

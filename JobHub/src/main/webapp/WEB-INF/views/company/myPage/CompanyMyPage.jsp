@@ -218,12 +218,12 @@
 						담당자 이름
 					</div>
 					<div class="personalInfoItemContent">
-						${sessionScope.companymemberDto.cInChargeName}
+						${sessionScope.companyMemberDto.cInChargeName}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
 							/company/cInChargeNameUpdate.do?no=
-								${companymemberDto.cNo}">></a>
+								${companyMemberDto.cNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -231,12 +231,12 @@
 						담당자 이메일
 					</div>
 					<div class="personalInfoItemContent">
-						${sessionScope.companymemberDto.cInChargeEmail}
+						${sessionScope.companyMemberDto.cInChargeEmail}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
 							/company/cInChargeEmailUpdate.do?no=
-								${companymemberDto.cNo}">></a>
+								${companyMemberDto.cNo}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -244,12 +244,12 @@
 						담당자 연락처
 					</div>
 					<div class="personalInfoItemContent">
-						${sessionScope.companymemberDto.cInChargePhoneNum}
+						${sessionScope.companyMemberDto.cInChargePhoneNum}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
 							/company/cInChargePhoneNumUpdate.do?no=
-								${companymemberDto.cNo}">></a>
+								${companyMemberDto.cNo}">></a>
 					</div>
 				</div>
 			</div>
@@ -263,12 +263,12 @@
 					</div>
 					
 					<div class="companyInfoItemContent">
-						${sessionScope.companymemberDto.cName}
+						${sessionScope.companyMemberDto.cName}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
 							/company/cNameUpdate.do?no=
-								${companymemberDto.cNo}">></a>
+								${companyMemberDto.cNo}">></a>
 					</div>
 				</div>
 				
@@ -277,12 +277,12 @@
 						회사 주소
 					</div>
 					<div class="companyInfoItemContent">
-						${sessionScope.companymemberDto.cAdd}
+						${sessionScope.companyMemberDto.cAdd}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
 							/company/cAddUpdate.do?no=
-								${companymemberDto.cNo}">></a>
+								${companyMemberDto.cNo}">></a>
 					</div>
 				</div>
 				
@@ -291,12 +291,12 @@
 						업종
 					</div>
 					<div class="companyInfoItemContent">
-						${sessionScope.companymemberDto.cType}
+						${sessionScope.companyMemberDto.cType}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
 							/company/cTypeUpdate.do?no=
-								${companymemberDto.cNo}">></a>
+								${companyMemberDto.cNo}">></a>
 					</div>
 				</div>
 				
@@ -305,13 +305,13 @@
 						설립
 					</div>
 					<div class="companyInfoItemContent">
-						<fmt:formatDate value="${sessionScope.companymemberDto.cEstDate}"
+						<fmt:formatDate value="${sessionScope.companyMemberDto.cEstDate}"
 							pattern="YYYY-MM-dd"/>
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
 							/company/cEstDateUpdate.do?no=
-								${companymemberDto.cNo}">></a>
+								${companyMemberDto.cNo}">></a>
 					</div>
 				</div>
 				
@@ -320,13 +320,13 @@
 						홈페이지
 					</div>
 					<div class="companyInfoItemContent">
-						${sessionScope.companymemberDto.cHomepage}
+						${sessionScope.companyMemberDto.cHomepage}
 					</div>
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
 							/company/cHomepageUpdate.do?no=
-								${companymemberDto.cNo}">></a>
+								${companyMemberDto.cNo}">></a>
 					</div>
 					
 					<div class="companyInfoItem">
@@ -335,13 +335,13 @@
 						</div>
 						<div class="companyInfoContentBox">
 							<div class="companyInfoContent">
-								 ${sessionScope.companymemberDto.cIntroduce}
+								 ${sessionScope.companyMemberDto.cIntroduce}
 							</div>
 						</div>
 						<div class="arrowBox">
 							<a href="<%=request.getContextPath()%>
 								/company/cIntroduceUpdate.do?no=
-									${companymemberDto.cNo}">></a>
+									${companyMemberDto.cNo}">></a>
 						</div>
 					</div>
 				</div>
