@@ -158,7 +158,7 @@
 		 WHERE COMPANY_NUMBER = #{cNo}
 	</update>
 	
-	<update id="companyMembercIntroduceUpdateOne" parameterType="companymemberDto">
+	<update id="companyMembercIntroduceUpdateOne" parameterType="companyMemberDto">
 		UPDATE COMPANY
 		 SET COMPANY_INTRODUCE = #{cIntroduce}
 		 WHERE COMPANY_NUMBER = #{cNo}
