@@ -62,19 +62,35 @@
 	}
 	#companySummary {
 		float: left;
+	    width: 600px;
+	    height: 132px;
+	    margin: 20px;
+	    color: #5c667b;
+	}
+	#companyNameBox {
+		margin-bottom: 10px;
+	}
+	#companyTypeBox, #companyHomepageBox {
+		float: left;
 		width: 600px;
-		height: 80px;
-		margin: 20px;
-		color: #5c667b;
+		font-size: 20px;
+		margin-bottom: 10px;
+		color: #8491a7;
+	}
+	#companyTypeBox {
+		
+	}
+	#companyHomepageBox {
+		
 	}
 	#companyName {
-	
+		
 	}
 	#companyType {
-	
+		
 	}
 	#companyHomepage {
-	
+		
 	}
 	#totalRate {
 		float: left;

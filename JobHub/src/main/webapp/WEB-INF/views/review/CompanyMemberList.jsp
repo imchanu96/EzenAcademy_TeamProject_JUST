@@ -50,16 +50,21 @@
 				<div id="companyInfoBox">
 					<div id="companyLogo"></div>
 					<div id="companySummary">
-						<span id="companyNumber">${companyMemberList.cNo}</span>
-						<a id="companyName" href="/JobHub/review/list.do?cNo=${companyMemberList.cNo}">
-							${companyMemberList.cName} 
-						</a>
-						<span id="companyType">
-							${companyMemberList.cType}
-						</span>
-						<span id="companyHomepage">
-							${companyMemberList.cHomepage}
-						</span>
+						<div id="companyNameBox">
+							<a id="companyName" href="/JobHub/review/list.do?cNo=${companyMemberList.cNo}">
+								${companyMemberList.cName} 
+							</a>
+						</div>
+						<div id="companyTypeBox">
+							<span id="companyType">
+								${companyMemberList.cType}
+							</span>
+						</div>
+						<div id="companyHomepageBox">
+							<a id="companyHomepage" href="http://${companyMemberList.cHomepage}" target="_blank">
+								${companyMemberList.cHomepage}
+							</a>
+						</div>
 					</div>
 				</div>
 			</c:forEach>

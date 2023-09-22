@@ -44,7 +44,7 @@
 	}
 	#companyInfoBox {
 		width: 910px;
-		height: 160px;
+		height: 90px;
 		margin: 30px auto;
 	}
 /* 		#companyPhoto { */
@@ -55,16 +55,31 @@
 /* 		} */
 	#companyLogo {
 		float: left;
-		width: 140px;
-		height: 140px;
+		width: 70px;
+		height: 70px;
 		margin: 10px;
 	}
 	#companySummary {
 		float: left;
 		width: 650px;
-		height: 80px;
-		margin: 20px;
+		height: 90px;
+		margin: 0px 20px;
 		color: #5c667b;
+	}
+	#companyNameBox {
+		width: 600px;
+		height: 60px;
+	}
+	#companyTypeBox, #companyHomepageBox {
+		float: left;
+		height: 30px;
+		font-size: 16px;
+	}
+	#companyTypeBox {
+		width: 150px;
+	}
+	#companyHomepageBox {
+		width: 300px;
 	}
 	#companyName {
 	

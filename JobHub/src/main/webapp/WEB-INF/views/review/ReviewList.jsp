@@ -61,9 +61,15 @@
 			<div id="companyInfoBox">
 				<div id="companyLogo"></div>
 				<div id="companySummary">
-					<span id="companyName">${companyMemberDto.cName}</span>
-					<span id="companyType">${companyMemberDto.cIntroduce}</span>
-					<span id="companyHomepage">${companyMemberDto.cHomepage}</span>
+					<div id="companyNameBox">
+						<span id="companyName">${companyMemberDto.cName}</span>
+					</div>
+					<div id="companyTypeBox">
+						<span id="companyType">${companyMemberDto.cIntroduce}</span>
+					</div>
+					<div id="companyHomepageBox">
+						<a id="companyHomepage" href="http://${companyMemberDto.cHomepage}" target="_blank">${companyMemberDto.cHomepage}</a>
+					</div>
 				</div>
 				<div id="companyDetail">
 					<button type="button" onclick="comDetailViewFnc(${pagingMap.cNo});">자세히 보기</button>
