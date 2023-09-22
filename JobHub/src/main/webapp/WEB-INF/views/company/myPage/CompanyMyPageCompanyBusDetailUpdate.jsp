@@ -194,8 +194,9 @@
 							회사 회사소개
 						</div>
 						<div class="companyInfoItemContent">
-							<input type="text" name="cIntroduce"
-								value="${sessionScope.companymemberDto.cIntroduce}">
+							<textarea rows="" cols="" name="cIntroduce">
+								${sessionScope.companymemberDto.cIntroduce}
+							</textarea>
 						</div>
 						<div class="button">
 							<input type="submit" value="변경하기">

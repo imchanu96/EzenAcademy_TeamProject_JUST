@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,10 +52,10 @@
 			location.href = "#전체#";
 			break;
 		case "personal":
-			location.href = "#개인#";
+			location.href = "<%=request.getContextPath()%>/admin/personalMemberList";
 			break;
 		case "company":
-			location.href = "#회사#";
+			location.href = "<%=request.getContextPath()%>/admin/companyMemList";
 			break;
 		default:
 			break;

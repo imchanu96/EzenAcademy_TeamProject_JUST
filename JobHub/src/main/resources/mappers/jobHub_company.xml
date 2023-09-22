@@ -87,6 +87,15 @@
 	
 	</select>
 	
+	<select id="companyMemExist" parameterType="map" resultMap="companyMemberResultMap">
+		SELECT COMPANY_NUMBER, COMPANY_CODE, COMPANY_PASSWORD, PERMISSION, COMPANY_INCHARGE_NAME
+				,COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_NAME
+				,COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
+				, COMPANY_HOMEPAGE, COMPANY_INTRODUCE
+		 FROM COMPANY
+		 WHERE COMPANY_CODE = #{cCode} AND COMPANY_PASSWORD = #{cPwd}
+	</select>
+	
 	<insert id="companyInsertOne" parameterType="companyMemberDto">
 <!-- 		useGeneratedKeys="true" keyProperty="pNo"> -->
 <!-- 		<selectKey keyProperty="pNo" resultType="int" order="BEFORE"> -->

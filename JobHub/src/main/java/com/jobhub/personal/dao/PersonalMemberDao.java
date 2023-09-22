@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.jobhub.personal.dto.PersonalMemberDto;
+import com.jobhub.personal.dto.ResumeDto;
 
 public interface PersonalMemberDao {
 	
@@ -26,5 +27,10 @@ public interface PersonalMemberDao {
 	public void personalMemberKeywordUpdateOne(PersonalMemberDto personalMemberDto);
 
 	public List<PersonalMemberDto> personalInfoList(Map<String, Object> map);
+
+	public List<PersonalMemberDto> personalMemberSelectList();
+
+	public ResumeDto personalMemberShowResume(int pNo);
+
 	
 }

@@ -3,6 +3,7 @@ package com.jobhub.admin.service;
 import java.util.List;
 
 import com.jobhub.admin.dto.AdminDto;
+import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 
 public interface AdminService {
@@ -12,4 +13,10 @@ public interface AdminService {
 	List<PersonalMemberDto> memberSelectList();
 	
 	int memberSelectTotalCount();
+
+	public void adminDeleteOne(AdminDto adminDto);
+
+	public List<CompanyMemberDto> companyMemSelectList();
+
+	public List<PersonalMemberDto> personalMemberSelectList();
 }

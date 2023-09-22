@@ -110,4 +110,12 @@ public class CompanyMemberDaoImpl implements CompanyMemberDao {
 		// TODO Auto-generated method stub
 		sqlSession.update(namespace + "companyMembercIntroduceUpdateOne", companymemberDto);
 	}
+
+	@Override
+	public List<CompanyMemberDto> companyMemSelectList() {
+		// TODO Auto-generated method stub
+		Map<String, Object> map = new HashMap<String, Object>();
+		
+		return sqlSession.selectList(namespace + "companyMemSelectList", map);
+	}
 }

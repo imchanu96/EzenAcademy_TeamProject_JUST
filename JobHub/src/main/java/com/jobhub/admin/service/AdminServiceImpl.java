@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 
 import com.jobhub.admin.dao.AdminDao;
 import com.jobhub.admin.dto.AdminDto;
+import com.jobhub.company.dao.CompanyMemberDao;
+import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.personal.dao.PersonalMemberDao;
 import com.jobhub.personal.dto.PersonalMemberDto;
 
@@ -21,7 +23,8 @@ public class AdminServiceImpl implements AdminService{
 	public AdminDao adminDao;
 	@Autowired
 	public PersonalMemberDao personalMemberDao;
-	
+	@Autowired
+	public CompanyMemberDao companyMemberDao;
 	
 	@Override
 	public AdminDto adminExist(String id, String pwd) {
@@ -39,6 +42,24 @@ public class AdminServiceImpl implements AdminService{
 	public int memberSelectTotalCount() {
 		// TODO Auto-generated method stub
 		return adminDao.memberSelectTotalCount();
+	}
+
+	@Override
+	public void adminDeleteOne(AdminDto adminDto) {
+		// TODO Auto-generated method stub
+		adminDao.adminDeleteOne(adminDto);
+	}
+
+	@Override
+	public List<CompanyMemberDto> companyMemSelectList() {
+		// TODO Auto-generated method stub
+		return companyMemberDao.companyMemSelectList();
+	}
+
+	@Override
+	public List<PersonalMemberDto> personalMemberSelectList() {
+		// TODO Auto-generated method stub
+		return personalMemberDao.personalMemberSelectList();
 	}
 
 }

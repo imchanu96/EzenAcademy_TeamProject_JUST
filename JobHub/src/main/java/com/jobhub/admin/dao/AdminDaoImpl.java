@@ -36,4 +36,11 @@ public class AdminDaoImpl implements AdminDao{
 		return (int)sqlSession.selectOne(namespace + "memberSelectTotalCount");
 	}
 
+
+	@Override
+	public void adminDeleteOne(AdminDto adminDto) {
+		// TODO Auto-generated method stub
+		sqlSession.delete(namespace + "adminDeleteOne", adminDto);
+	}
+
 }

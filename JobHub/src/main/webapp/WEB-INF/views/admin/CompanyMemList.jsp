@@ -43,20 +43,20 @@
 		<form action="delete.do" method="get">
 		<table>
 			<tr>
-				<th style="width: 10%;">회원 번호</th>
-				<th style="width: 20%;">회원 이름</th>
-				<th style="width: 15%;">회원 아이디</th>
-				<th style="width: 10%;">회원 닉네임</th>
+				<th style="width: 10%;">기업회원 번호</th>
+				<th style="width: 20%;">담당자 이름</th>
+				<th style="width: 15%;">회사 코드</th>
+				<th style="width: 10%;">회사명</th>
 				<th style="width: 15%;">권한 레벨</th>
 				<th style="width: 15%;">생성 일</th>
 				<th style="width: 15%;">수정 일</th>
 			</tr>
-			<c:forEach var="personalDto" items="${personalList}">
+			<c:forEach var="companyMemberDto" items="${companyList}">
 				<tr>
-					<td>${personalDto.pNo}</td>
-					<td>${personalDto.pName}</td>
-					<td>${personalDto.pId}</td>
-					<td>${personalDto.pNickname}</td>
+					<td>${companyMemberDto.cNo}</td>
+					<td>${companyMemberDto.cInChargeName}</td>
+					<td>${companyMemberDto.cCode}</td>
+					<td>${companyMemberDto.cName}</td>
 					<td>
 						<c:choose>
 							<c:when test="${personalDto.pPermission == 1 
@@ -72,10 +72,10 @@
 						</c:choose>
 					</td>
 					<td><fmt:formatDate pattern="yyyy-MM-dd" 
-						value="${personalDto.pCreateDate}" /></td>
+						value="${companyMemberDto.cCreDate}" /></td>
 					<td><fmt:formatDate pattern="yyyy-MM-dd" 
-						value="${personalDto.pModifyDate}" /></td>
-						<td><div><input type="submit" value="삭제" name="pNo"></div></td>
+						value="${companyMemberDto.cModDate}" /></td>
+						<td><div><input type="submit" value="삭제" name="cNo"></div></td>
 				</tr>
 			</c:forEach>
 		</table>

@@ -10,5 +10,7 @@ public interface AdminDao {
 
 	int memberSelectTotalCount();
 
+	public void adminDeleteOne(AdminDto adminDto);
+
 
 }

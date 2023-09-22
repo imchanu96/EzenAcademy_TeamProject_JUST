@@ -33,4 +33,6 @@ public interface CompanyMemberDao {
 	public void companyMembercHomepageUpdateOne(CompanyMemberDto companymemberDto);
 
 	public void companyMembercIntroduceUpdateOne(CompanyMemberDto companymemberDto);
+
+	public List<CompanyMemberDto> companyMemSelectList();
 }

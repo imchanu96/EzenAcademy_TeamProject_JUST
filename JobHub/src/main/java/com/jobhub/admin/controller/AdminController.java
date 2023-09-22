@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.jobhub.admin.dto.AdminDto;
 import com.jobhub.admin.service.AdminService;
+import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 
 @Controller
@@ -70,5 +71,49 @@ public class AdminController {
 		    model.addAttribute("personalList", personalList);
 
 		    return "admin/MemberList";
+		}
+		
+		@RequestMapping(value = "/admin/companyMemList.do"
+				, method = {RequestMethod.GET, RequestMethod.POST})
+		public String companyMemberList(Model model) {
+			
+			log.info("Welcome CompanyMemController");
+			
+			List<CompanyMemberDto> companyMemList 
+									= adminService.companyMemSelectList();
+			
+			model.addAttribute("companyMemList", companyMemList);
+			System.out.println(companyMemList);
+			
+			return "admin/CompanyMemList";
+		}
+		
+		@RequestMapping(value = "/admin/personalMemberList.do"
+				, method = {RequestMethod.GET, RequestMethod.POST})
+		public String personalmemberList(Model model) {
+			// log4j
+			log.info("Welcome PersonalMemberController list!: {}");
+			
+//			int totalCount = adminService.memberSelectTotalCount();
+		      
+		    List<PersonalMemberDto> personalList 
+		    							= adminService.personalMemberSelectList();
+
+		    model.addAttribute("personalList", personalList);
+		    System.out.println(personalList);
+
+		    return "admin/PersonalMemberList";
+		}
+		
+		@RequestMapping(value = "/admin/delete.do", method = RequestMethod.GET)
+		public String memberDelete(AdminDto adminDto, Model model) {
+			
+			log.info("Welcome MemberController delete");
+			
+			adminService.adminDeleteOne(adminDto);
+			
+			System.out.println(adminDto);
+			
+			return "admin/MemberList";
 		}
 }
