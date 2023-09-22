@@ -189,13 +189,13 @@
 					<div class="infoTitle">
 						회사 정보
 					</div>
-					<form action="cBusDetailUpdateCtr.do" method="post">
+					<form action="cIntroduceUpdateCtr.do" method="post">
 						<div class="companyInfoItemTitle">
 							회사 회사소개
 						</div>
 						<div class="companyInfoItemContent">
-							<input type="text" name="cBusDetail"
-								value="${sessionScope.companymemberDto.cBusDetail}">
+							<input type="text" name="cIntroduce"
+								value="${sessionScope.companymemberDto.cIntroduce}">
 						</div>
 						<div class="button">
 							<input type="submit" value="변경하기">

@@ -335,12 +335,12 @@
 						</div>
 						<div class="companyInfoContentBox">
 							<div class="companyInfoContent">
-								 ${sessionScope.companymemberDto.cBusDetail}
+								 ${sessionScope.companymemberDto.cIntroduce}
 							</div>
 						</div>
 						<div class="arrowBox">
 							<a href="<%=request.getContextPath()%>
-								/company/cBusDetailUpdate.do?no=
+								/company/cIntroduceUpdate.do?no=
 									${companymemberDto.cNo}">></a>
 						</div>
 					</div>
