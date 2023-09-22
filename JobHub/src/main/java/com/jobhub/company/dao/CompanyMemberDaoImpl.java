@@ -29,6 +29,12 @@ public class CompanyMemberDaoImpl implements CompanyMemberDao {
 	}
 
 	@Override
+	public CompanyMemberDto companyMemberSelectOne(int cNo) {
+		// TODO Auto-generated method stub
+		return sqlSession.selectOne(namespace + "companyMemberSelectOne", cNo);
+	}
+	
+	@Override
 	public int companyInsertOne(CompanyMemberDto companyMemberDto) {
 		// TODO Auto-generated method stub
 		
@@ -41,13 +47,13 @@ public class CompanyMemberDaoImpl implements CompanyMemberDao {
 		map.put("start", start);
 		map.put("end", end);
 		
-		return sqlSession.selectList("com.jobhub.company.companyMemberSelectList", map);
+		return sqlSession.selectList(namespace + "companyMemberSelectList", map);
 	}
 
 	@Override
 	public int companyMemberSelectTotalCount() {
 		
-		return (int)sqlSession.selectOne("com.jobhub.company.companyMemberSelectTotalCount");
+		return (int)sqlSession.selectOne(namespace + "companyMemberSelectTotalCount");
 	}
 
 	@Override
@@ -100,8 +106,8 @@ public class CompanyMemberDaoImpl implements CompanyMemberDao {
 	}
 
 	@Override
-	public void companyMembercBusDetailUpdateOne(CompanyMemberDto companymemberDto) {
+	public void companyMembercIntroduceUpdateOne(CompanyMemberDto companymemberDto) {
 		// TODO Auto-generated method stub
-		sqlSession.update(namespace + "companyMembercBusDetailUpdateOne", companymemberDto);
+		sqlSession.update(namespace + "companyMembercIntroduceUpdateOne", companymemberDto);
 	}
 }

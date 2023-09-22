@@ -481,7 +481,7 @@ tr td {
 		</div>
 		<div id="content">
 			<form action="./personalInfoList.do" method="post">
-			<input type="hidden" name="cNo" value="${companymemberDto.cNo}">
+			<input type="hidden" name="cNo" value="${sessionScope.companyMemberDto.cNo}">
 				<div id="searchBox">
 					<div id="titleBox">
 						<p>인재찾기</p>
@@ -546,7 +546,7 @@ tr td {
 						<select id="search" name="search">
 							<option value="인재 점수">인재 점수</option>
 							<option value="경력">경력</option>
-							<option value="R.RESUME_EDUCATION_NAME">최종 학력</option>
+							<option value="R.RESUME_EDUCATION_NAME">학교명</option>
 							<option value="R.RESUME_LICENSE_NAME">자격증</option>
 						</select> <input type="text" name="searchText" id="textInput"> <input type="submit"
 							value="검색" class="button">

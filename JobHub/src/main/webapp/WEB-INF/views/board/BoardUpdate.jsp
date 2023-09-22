@@ -69,7 +69,7 @@
 </head>
 <body>
 
-	<jsp:include page="/WEB-INF/views/board/Header.jsp"/>
+	<jsp:include page="/WEB-INF/views/Header.jsp"/>
 	
 	<div id="container">
 		<div id="navigation">

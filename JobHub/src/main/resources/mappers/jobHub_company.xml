@@ -14,7 +14,7 @@
 		<result column="COMPANY_ESTABLISH_DATE" property="cEstDate" 
 		javaType="java.util.Date" />
 		<result column="COMPANY_HOMEPAGE" property="cHomepage" />
-		<result column="COMPANY_BUSINESS_DETAIL" property="cBusDetail" />
+		<result column="COMPANY_INTRODUCE" property="cIntroduce" />
 		<result column="COMPANY_ID" property="cId" />
 		<result column="COMPANY_PASSWORD" property="cPwd" />
 		<result column="COMPANY_CODE" property="cCode" />
@@ -32,6 +32,16 @@
 		<result column="DISCONNECTION_TIME" property="disconnTime" />
 
 	</resultMap>
+	
+	<select id="companyMemberSelectOne" resultMap="companyMemberResultMap">
+		SELECT COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE,
+				COMPANY_ESTABLISH_DATE, COMPANY_HOMEPAGE, COMPANY_INTRODUCE, COMPANY_CODE,
+				COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME, 
+				COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, 
+				COMPANY_PREFER
+		 FROM COMPANY
+		 WHERE COMPANY_NUMBER = #{cNo}
+	</select>
 	
 	<select id="companyMemberSelectTotalCount" resultType="java.lang.Integer">
 		SELECT COUNT(*)
@@ -68,11 +78,10 @@
 	
 
 	<select id="companyMemberExist" parameterType="map" resultMap="companyMemberResultMap">
-		SELECT COMPANY_NUMBER, COMPANY_CODE, COMPANY_PASSWORD, PERMISSION
-		SELECT COMPANY_NUMBER, COMPANY_CODE, COMPANY_PASSWORD, COMPANY_INCHARGE_NAME
+		SELECT COMPANY_NUMBER, COMPANY_CODE, COMPANY_PASSWORD, PERMISSION, COMPANY_INCHARGE_NAME
 				,COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_NAME
 				,COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
-				, COMPANY_HOMEPAGE, COMPANY_BUSINESS_DETAIL
+				, COMPANY_HOMEPAGE, COMPANY_INTRODUCE
 		 FROM COMPANY
 		 WHERE COMPANY_CODE = #{cCode} AND COMPANY_PASSWORD = #{cPwd}
 	
@@ -86,14 +95,14 @@
 <!-- 		</selectKey> -->
 		INSERT INTO COMPANY
 			VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS
-				, COMPANY_TYPE, COMPANY_BUSINESS_DETAIL
+				, COMPANY_TYPE, COMPANY_INTRODUCE
     			, COMPANY_PASSWORD, COMPANY_CODE
     			, COMPANY_LICENSE, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
 			    , COMPANY_INCHARGE_PHONENUMBER
 			    , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE
 			    , CONNECTION_TIME, DISCONNECTION_TIME)
 			VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, #{cName}, #{cAdd}
-				, #{cType}, #{cBusDetail}
+				, #{cType}, #{cIntroduce}
 				, #{cPwd}, #{cCode}, #{cLicense}
 				, #{cInChargeName}, #{cInChargeEmail}
 				, #{cInChargePhoneNum}
@@ -149,9 +158,9 @@
 		 WHERE COMPANY_NUMBER = #{cNo}
 	</update>
 	
-	<update id="companyMembercBusDetailUpdateOne" parameterType="companymemberDto">
+	<update id="companyMembercIntroduceUpdateOne" parameterType="companymemberDto">
 		UPDATE COMPANY
-		 SET COMPANY_BUSINESS_DETAIL = #{cBusDetail}
+		 SET COMPANY_INTRODUCE = #{cIntroduce}
 		 WHERE COMPANY_NUMBER = #{cNo}
 	</update>
 </mapper>

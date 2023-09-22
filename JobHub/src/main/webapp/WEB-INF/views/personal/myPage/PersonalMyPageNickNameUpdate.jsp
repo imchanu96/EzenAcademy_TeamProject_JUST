@@ -162,7 +162,7 @@
 </head>
 <body>
 
-	<jsp:include page="/WEB-INF/views/personal/Header.jsp"/>
+	<jsp:include page="../../Header.jsp"/>
 	
 	
 	<div id="container">

@@ -31,6 +31,6 @@ public interface CompanyMemberService {
 	
 	public void companyMembercHomepageUpdateOne(CompanyMemberDto companymemberDto);
 	
-	public void companyMembercBusDetailUpdateOne(CompanyMemberDto companymemberDto);
+	public void companyMembercIntroduceUpdateOne(CompanyMemberDto companymemberDto);
 	
 }

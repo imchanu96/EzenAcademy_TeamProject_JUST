@@ -161,7 +161,7 @@
 	</style>
 </head>
 <body>
-	<jsp:include page="./Header.jsp"/>
+	<jsp:include page="../../Header.jsp"/>
 	
 	<div id="container">
 		<div id="navigation">

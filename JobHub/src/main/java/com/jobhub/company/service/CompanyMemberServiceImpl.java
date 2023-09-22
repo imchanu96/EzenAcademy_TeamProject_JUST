@@ -91,9 +91,9 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 	}
 
 	@Override
-	public void companyMembercBusDetailUpdateOne(CompanyMemberDto companymemberDto) {
+	public void companyMembercIntroduceUpdateOne(CompanyMemberDto companymemberDto) {
 		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercBusDetailUpdateOne(companymemberDto);
+		companyMemberDao.companyMembercIntroduceUpdateOne(companymemberDto);
 	}
 
 	
