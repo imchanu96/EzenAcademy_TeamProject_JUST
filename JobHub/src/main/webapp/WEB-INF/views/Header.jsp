@@ -136,7 +136,7 @@ a:hover {
 						<a href="../company/searchPerson.do"> 인재 조회 </a>
 					</div>
 					<div class="mainMenuItem">
-						<a href="../board/list.do"> 기업 리뷰 </a>
+						<a href="../review/list.do?cNo=${companyMemberDto.cNo}"> 기업 리뷰 </a>
 					</div>
 				</div>
 

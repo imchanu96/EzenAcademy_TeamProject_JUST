@@ -82,7 +82,14 @@
 		width: 300px; 
 		height: 45px;
 	}
-	
+	/* 	ID, PW 자동완성시 배경색이 user agent에 의해 자동 변경되는 것을 막아준다 */
+	input:-webkit-autofill {
+		-webkit-box-shadow: 0px 1px 4px 0px gray; -webkit-text-fill-color: #000;
+	}
+	input:-webkit-autofill, input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus, input:-webkit-autofill:active { 
+		transition: background-color 5000s ease-in-out 0s;
+	}
 	#Login_Button {
 		margin-top: 100px;
 	}

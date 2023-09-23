@@ -165,8 +165,8 @@ public class ReviewController {
 		
 		PersonalMemberDto personalMemberDto = (PersonalMemberDto) session.getAttribute("personalMemberDto");
 		pNo = personalMemberDto.getpNo();
+		
 		int cNo = (int)reviewService.reviewSelectCNo(pNo);
-		System.out.println(cNo);
 		model.addAttribute("cNo", cNo);
 		
 		return "review/ReviewWrite";
@@ -194,8 +194,6 @@ public class ReviewController {
 		
 		// 선택한 기업 정보 조회
 		CompanyMemberDto companyMemberDto = reviewService.companyMemberSelectOne(cNo);
-		System.out.println(companyMemberDto);
-		System.out.println(companyMemberDto.toString());
 		model.addAttribute("companyMemberDto", companyMemberDto);
 		
 		return "review/CompanyDetail";

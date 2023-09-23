@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* 공통 */
+	a {
+	  text-decoration: none;
+	  color: #292e41;
+	}
+    a:hover {
+    	color: #2d65f2;
+    }
+
+/* content */
+	#container {
+		width: 1280px;
+		height: 1000px;
+		margin: 0px auto;
+	}
+/* navigation */
+	#navigation {
+		margin: 10px;
+		float: left;
+		width: 250px;
+		height: 950px;
+		font-size: 25px;
+		text-align: center;
+		background-color: #eff5ff;
+	}
+	#smallMenuBox {
+			
+		margin: 30px auto;
+		width: 200px;
+		height: 500px;
+	}
+	.smallMenuItem {
+			
+		margin-bottom: 20px;
+	}
+	.smallMenuItem a {
+		color: #475067;
+	}
+/* content */
+	#content {
+		margin: 10px;
+		float: left;
+		width: 980px;
+		height: 950px;
+		font-size: 30px;
+		background-color: #f8fafc;
+	}
+	#content > div {
+		background-color: #fff;
+		padding: 20px;
+		border-radius: 10px;
+	}
+	#modDateBox {
+		width: 900px;
+		height: 20px;
+		text-align: right;
+		font-size: 12px;
+		color: #8491a7;
+	}
+	#companyInfoBox {
+		width: 910px;
+	    height: 500px;
+	    margin: 15px;
+	    color: #5c667b;
+	}
+	.companyInfoRow {
+		margin-left: 30px;
+		width: 880px;
+	    height: 50px;
+	}
+	.titleBox {
+		float: left;
+		width: 200px;
+		font-size: 22px;
+	}
+	.contentBox {
+		float: right;
+		width: 650px;
+		font-size: 16px;
+	}
