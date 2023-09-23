@@ -73,7 +73,7 @@
 	<div id="headerBox">
 		<div id="headerContent">
 		
-			<a href="http://www.naver.com">
+			<a href="http://localhost:9080/JobHub/home.do">
 				<img id="logo" src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/54897384/ee8218f0-b067-48da-8bf7-d31bef40f1cf">
 			</a>
 			
