@@ -259,9 +259,8 @@
 					<button type="submit">등록</button>
 					<button type="button">취소</button>
 				</div>
-			<!-- 나중에 type="hidden"으로 바꾸자 -->
-				<input type="text" name="rPNo" value="${personalMemberDto.pNo}">
-				<input type="text" name="rCNo" value="${cNo}">
+				<input type="hidden" name="rPNo" value="${personalMemberDto.pNo}">
+				<input type="hidden" name="rCNo" value="${cNo}">
 			</form>
 		</div>
 

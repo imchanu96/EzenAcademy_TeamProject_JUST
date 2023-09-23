@@ -48,7 +48,7 @@
 					<a href="http://localhost:9080/JobHub/review/companyMemberList.do">기업 목록</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="http://localhost:9080/JobHub/review/add.do">리뷰 작성</a>
+					<a href="http://localhost:9080/JobHub/review/add.do?pNo=${sessionScope.personalMemberDto.pNo}">리뷰 작성</a>
 				</div>
 <!-- 				<div class="smallMenuItem"> -->
 <!-- 					<a href="">기업 정보</a> -->
@@ -131,7 +131,7 @@
 					<div class="starRateBox">
 						<div>
 							<div class="starNameBox">
-								<span>급여</span>
+								<span>&nbsp;&nbsp;급&nbsp;&nbsp;여</span>
 							</div>
 							<span>
 								<c:forEach var="i" begin="1" end="5">
@@ -142,7 +142,7 @@
 						</div>
 						<div>
 							<div class="starNameBox">
-								<span>복지</span>
+								<span>&nbsp;&nbsp;복&nbsp;&nbsp;지</span>
 							</div>
 							<span>
 								<c:forEach var="i" begin="1" end="5">
@@ -164,7 +164,7 @@
 						</div>
 						<div>
 							<div class="starNameBox">
-								<span>경영진</span>
+								<span>&nbsp;경&nbsp;영&nbsp;진</span>
 							</div>
 							<span>
 								<c:forEach var="i" begin="1" end="5">
@@ -175,7 +175,7 @@
 						</div>
 						<div>
 							<div class="starNameBox">
-								<span>워라밸</span>
+								<span>&nbsp;워&nbsp;라&nbsp;밸</span>
 							</div>
 							<span>
 								<c:forEach var="i" begin="1" end="5">

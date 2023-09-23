@@ -1,104 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Company Info</title>
-	<style type="text/css">
-			
-/* 공통 */
-		a {
-		  text-decoration: none;
-		  color: #292e41;
-		}
-	    a:hover {
-	    	color: #2d65f2;
-	    }
-
-/* content */
-		#container {
-			width: 1280px;
-			height: 1000px;
-			
-			margin: 0px auto;
-		}
-/* navigation */
-		#navigation {
-			margin: 10px;
-			float: left;
-			width: 250px;
-			height: 950px;
-			font-size: 25px;
-			text-align: center;
-			background-color: #eff5ff;
-		}
-		#smallMenuBox {
-				
-			margin: 30px auto;
-			width: 200px;
-			height: 500px;
-		}
-		.smallMenuItem {
-				
-			margin-bottom: 20px;
-		}
-		.smallMenuItem a {
-			color: #475067;
-		}
-/* content */
-		#content {
-			margin: 10px;
-			float: left;
-			width: 980px;
-			height: 950px;
-			font-size: 30px;
-			background-color: #f8fafc;
-		}
-		#content > div {
-			background-color: #fff;
-			padding: 20px;
-			border-radius: 10px;
-		}
-		#companyInfoBox {
-			width: 910px;
-		    height: 500px;
-		    margin: 15px;
-		    color: #5c667b;
-		}
-		.companyInfoRow {
-			margin-left: 30px;
-			width: 880px;
-		    height: 50px;
-		}
-		.titleBox {
-			float: left;
-			width: 200px;
-			font-size: 22px;
-		}
-		.contentBox {
-			float: right;
-			width: 650px;
-			font-size: 16px;
-		}
-/* tail form */
-		#tailBox {
-			height: 150px;
-			background-color: #b4c0d3;
-			text-align: center;
-		}
-		#tailContent {
-				
-			width: 1280px;
-			height: 130px;
-			margin: auto;
-		}
-		#teamName {
-			font-size: 50px;
-			font-weight: 800;
-			color: #999999;
-		}
-	</style>
+<link rel="stylesheet" href="/JobHub/resources/css/CompanyDetail.css" type="text/css">
 </head>
 <body>
 
@@ -121,6 +29,12 @@
 		
 		<div id="content">
 			<div id="companyInfoBox">
+				<div id="modDateBox">
+					<span>
+						수정일: <fmt:formatDate value="${companyMemberDto.cModDate}"
+								pattern="yyyy년 MM월 dd일 hh:mm" type="date"/>
+					</span>
+				</div>
 				<div class="companyInfoRow">
 					<div class="titleBox">
 						<span>기업명</span>
@@ -150,7 +64,9 @@
 						<span>설립</span>
 					</div>
 					<div class="contentBox">
-						<span>${companyMemberDto.cEstDate}</span>
+						<span>
+							<fmt:formatDate value="${companyMemberDto.cEstDate}" pattern="yyyy년 MM월 dd일" type="date"/>
+						</span>
 					</div>
 				</div>
 				<div class="companyInfoRow">
