@@ -70,22 +70,23 @@
 			
 			<div style="width: 910px; border-radius: 10px; border-collapse: collapse; margin: 14px auto 0px auto; font-size: 20px;
 				background-color: #F7FBFF; padding: 20px; box-shadow: 0px 1px 4px 0px #ddd; table-layout: fixed;">
-				<table>
-					<tr>
-						<td>댓글</td>
-					</tr>
-					<tr>
-<%-- 						<td>${commentDto.comWriter}</td> --%>
-<!-- 						<td> -->
-<%-- 							<fmt:formatDate pattern="yyyy-MM-dd" value="${commentDto.comCreDate}"/> --%>
-<!-- 						</td> -->
-						<td>댓글 작성자</td>
-						<td>${commentDto.comContent}</td>
-						<td>작성일</td>
-						<td><a>수정</a></td>
-						<td><a>삭제</a></td>
-					</tr>
-				</table>
+				<form action="" method="get">
+					<input type='hidden' name='comNo' value='${CommentDto.comNo}'>
+					<table>
+						<tr>
+							<td>댓글</td>
+						</tr>
+						<tr>
+							<td>작성자 ${commentDto.comWriter}</td>
+							<td>내용 ${commentDto.comContent}</td>
+							<td>
+								<fmt:formatDate pattern="yyyy-MM-dd" value="${commentDto.comCreDate}"/>
+							</td>
+							<td><a>수정</a></td>
+							<td><a>삭제</a></td>
+						</tr>
+					</table>
+				</form>
 				<form action="" method="post">
 					<table style="width: 910px; border-radius: 10px; border-collapse: collapse; margin: 14px auto 0px auto; font-size: 20px;
 						background-color: #fff; padding: 20px; box-shadow: 0px 1px 4px 0px #ddd; table-layout: fixed;">

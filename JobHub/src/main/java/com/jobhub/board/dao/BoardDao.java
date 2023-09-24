@@ -3,6 +3,7 @@ package com.jobhub.board.dao;
 import java.util.List;
 
 import com.jobhub.board.dto.BoardDto;
+import com.jobhub.board.dto.CommentDto;
 
 public interface BoardDao {
 
@@ -19,5 +20,7 @@ public interface BoardDao {
 	public int boardDeleteOne(int no);
 	
 	public void increaseViews(int no);
+	
+	public List<CommentDto> readReply(int bNo);
 	
 }

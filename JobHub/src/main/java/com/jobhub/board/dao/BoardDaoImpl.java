@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.jobhub.board.dto.BoardDto;
+import com.jobhub.board.dto.CommentDto;
 
 @Repository
 public class BoardDaoImpl implements BoardDao{
@@ -48,6 +49,12 @@ public class BoardDaoImpl implements BoardDao{
 	}
 
 	@Override
+	public List<CommentDto> readReply(int bNo) {
+		// TODO Auto-generated method stub
+		return sqlSession.selectList(namespace + "readReply", bNo);
+	}
+	
+	@Override
 	public void boardUpdateOne(BoardDto boardDto) {
 
 		sqlSession.update(namespace + "boardUpdateOne", boardDto);
@@ -64,5 +71,5 @@ public class BoardDaoImpl implements BoardDao{
 		// TODO Auto-generated method stub
 		sqlSession.update(namespace + "increaseViews", no);
 	}
-	
+
 }

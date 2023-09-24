@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import com.jobhub.board.dao.BoardDao;
 import com.jobhub.board.dto.BoardDto;
+import com.jobhub.board.dto.CommentDto;
 import com.jobhub.personal.dao.PersonalMemberDao;
 import com.jobhub.personal.dto.PersonalMemberDto;
 
@@ -60,6 +61,12 @@ public class BoardServiceImpl implements BoardService{
 		return resultMap;
 	}
 
+	@Override
+	public List<CommentDto> readReply(int bNo) {
+		// TODO Auto-generated method stub
+		return boardDao.readReply(bNo);
+	}
+	
 	@Override
 	public void boardUpdateOne(BoardDto boardDto) {
 		

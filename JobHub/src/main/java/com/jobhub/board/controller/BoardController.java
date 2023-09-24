@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.jobhub.board.dto.BoardDto;
+import com.jobhub.board.dto.CommentDto;
 import com.jobhub.board.service.BoardService;
 import com.jobhub.board.util.Paging;
 
@@ -76,10 +77,10 @@ public class BoardController {
 		return "redirect:/board/list.do";
 	}
 	
-	//게시글 조회
+	//게시글, 댓글 조회
 	@RequestMapping(value = "/board/listOne.do", method = RequestMethod.GET)
-	public String memberListOne(int no, Model model, HttpSession session) {
-		log.debug("Welcome BoardController boardListOne!", no);
+	public String boardSelectOne(int no, Model model, HttpSession session) {
+		log.debug("Welcome BoardController boardSelectOne!", no);
 		
 		Map<String, Object> map = boardService.boardSelectOne(no);
 		
@@ -89,6 +90,9 @@ public class BoardController {
 		
 		model.addAttribute("boardDto", boardDto);
 
+		List<CommentDto> replyList = boardService.readReply(boardDto.getbNo());
+		model.addAttribute("replyList", replyList);
+		
 		return "board/BoardView";
 	}
 	

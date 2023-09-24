@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.jobhub.board.dto.BoardDto;
+import com.jobhub.board.dto.CommentDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 
 public interface BoardService {
@@ -23,5 +24,7 @@ public interface BoardService {
 	public int boardDeleteOne(int no);
 	
 	public void increaseViews(int no);
+	
+	public List<CommentDto> readReply(int bNo);
 	
 }
