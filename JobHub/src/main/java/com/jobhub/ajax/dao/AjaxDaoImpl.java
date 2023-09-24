@@ -20,13 +20,13 @@ public class AjaxDaoImpl implements AjaxDao{
 	@Override
 	public ResumeDto showPersonalResume(HashMap<String, String> paramMap) {
 		// TODO Auto-generated method stub
-		return sqlSession.selectOne(personalNamespace + "showResume", paramMap);
+		return sqlSession.selectOne(personalNamespace + "personalMemberShowResume", paramMap);
 	}
 	
 	@Override
 	public LetterDto showPersonalLetter(HashMap<String, String> paramMap) {
 		// TODO Auto-generated method stub
-		return sqlSession.selectOne(personalNamespace + "showLetter", paramMap);
+		return sqlSession.selectOne(personalNamespace + "personalMemberShowLetter", paramMap);
 	}
 
 }

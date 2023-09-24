@@ -1,5 +1,6 @@
 package com.jobhub.personal.controller;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -8,6 +9,7 @@ import javax.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import com.jobhub.personal.controller.PersonalMemberController;
+import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;
 import com.jobhub.personal.service.PersonalMemberService;
@@ -255,7 +258,7 @@ public class PersonalMemberController {
 
 	@RequestMapping(value = "/personal/showResume.do", method = RequestMethod.GET)
 	public String showResume(int pNo, HttpSession session, Model model) {
-		log.info("Welecom showResume!" + pNo);
+		log.info("Welecom showResume! 회원번호:" + pNo);
 		
 		
 		ResumeDto resumeDto = PersonalMemberService.personalMemberShowResume(pNo);
@@ -265,4 +268,59 @@ public class PersonalMemberController {
 		return "personal/myPage/PersonalShowResume";
 	}
 	
+	@RequestMapping(value = "/personal/resumeUpdate.do", method = RequestMethod.GET)
+	public String resumeUpdate(HttpSession session, Model model) {
+		log.info("Welecom resumeUpdate!");
+				
+		return "personal/myPage/PersonalResumeUpdate";
+	}
+	
+	@RequestMapping(value = "/personal/resumeUpdateCtr.do", method = RequestMethod.POST)
+	public String PersonalresumeUpdateCtr(ResumeDto resumeDto, int pNo, HttpSession session, Model model) {
+		log.info("Welecome PersonalresumeUpdateCtr" + resumeDto);
+		
+		try {
+			PersonalMemberService.PersonalresumeUpdateOne(resumeDto);
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return "redirect:./showResume.do?pNo=" + pNo;
+	}
+	
+	@RequestMapping(value = "/personal/showLetter.do", method = RequestMethod.GET)
+	public String showLetter(int pNo, HttpSession session, Model model) {
+		log.info("Welecom showLetter! 회원번호:" + pNo);
+		
+		LetterDto letterDto = PersonalMemberService.personalMembershowLetter(pNo);
+		
+		session.setAttribute("letterDto", letterDto);
+				
+		return "personal/myPage/PersonalShowLetter";
+	}
+	
+	@RequestMapping(value = "/personal/letterUpdate.do", method = RequestMethod.GET)
+	public String LetterUpdate(HttpSession session, Model model) {
+		log.info("Welecom LetterUpdate!");
+				
+		return "personal/myPage/PersonalLetterUpdate";
+	}
+	
+	@RequestMapping(value = "/personal/letterUpdateCtr.do", method = RequestMethod.POST)
+	public String PersonalLetterUpdateCtr(LetterDto letterDto, int pNo, HttpSession session, Model model) {
+		log.info("Welecome PersonalLetterUpdateCtr" + letterDto);
+		
+		try {
+			PersonalMemberService.PersonalLetterUpdateOne(letterDto);
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return "redirect:./showLetter.do?pNo=" + pNo;
+	}	
+		
 }// end PersonalMemberController

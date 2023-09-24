@@ -1,5 +1,8 @@
 package com.jobhub.personal.service;
 
+import java.util.Map;
+
+import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;
 
@@ -21,6 +24,11 @@ public interface PersonalMemberService {
 	
 	public void personalMemberKeywordUpdateOne(PersonalMemberDto personalMemberDto);
 	
-	
 	public ResumeDto personalMemberShowResume(int pNo);
+
+	public void PersonalresumeUpdateOne(ResumeDto resumeDto);
+	
+	public LetterDto personalMembershowLetter(int pNo);
+
+	public void PersonalLetterUpdateOne(LetterDto letterDto);
 }

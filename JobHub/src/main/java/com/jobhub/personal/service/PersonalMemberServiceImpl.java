@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import com.jobhub.personal.dao.PersonalMemberDao;
+import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;
 
@@ -75,6 +76,24 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 		// TODO Auto-generated method stub
 		
 		return personalMemberDao.personalMemberShowResume(pNo);
+	}
+
+	@Override
+	public void PersonalresumeUpdateOne(ResumeDto resumeDto) {
+		// TODO Auto-generated method stub
+		personalMemberDao.PersonalresumeUpdateOne(resumeDto);
+	}
+
+	@Override
+	public LetterDto personalMembershowLetter(int pNo) {
+		// TODO Auto-generated method stub
+		return personalMemberDao.personalMembershowLetter(pNo);
+	}
+
+	@Override
+	public void PersonalLetterUpdateOne(LetterDto letterDto) {
+		// TODO Auto-generated method stub
+		personalMemberDao.PersonalLetterUpdateOne(letterDto);
 	}
 
 
