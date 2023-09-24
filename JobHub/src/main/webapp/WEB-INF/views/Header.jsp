@@ -72,10 +72,7 @@ a:hover {
 /* end of header */
 </style>
 <script type="text/javascript">
-	window.onload = function() {
-		var permission = document.getElementById("permissionStr").value;
-		
-	}
+
 </script>
 </head>
 <body>

@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +19,7 @@
 
 /* navigation */
 #navigation {
-	margin: 10px;
+	/* 	margin: 10px; */
 	float: left;
 	width: 250px;
 	height: 950px;
@@ -27,12 +29,9 @@
 }
 
 #resumeContain {
-	border: 1px solid black;
-	width: 850px;
-	border-radius: 5px;
-	padding: 30px;
-/* 	overflow-y: auto; */
-	height: 80vh;
+	width: 1280px;
+	height: 1000px;
+	margin: 0px auto;
 }
 
 #resumeContain table {
@@ -51,33 +50,44 @@ tr td {
 	border: 1px solid black;
 }
 
-.letterValue {
+.resumeValue {
 	border: 1px solid black;
 	border-radius: 5px;
 	font-size: 20px;
 }
 </style>
+<script type="text/javascript">
+	function updateResumeFnc() {
+		location.href = "./resumeUpdate.do"
+	}
+</script>
 </head>
 <body>
 	<jsp:include page="../../Header.jsp" />
-
-	<div id="navigation">
-		<div id="smallMenuBox">
-			<div class="smallMenuItem">
-				<a href="http://www.naver.com">리뷰 조회</a>
-			</div>
-			<div class="smallMenuItem">
-				<a href="">리뷰 작성</a>
-			</div>
-			<div class="smallMenuItem">
-				<a href="">기업 정보</a>
+	<div id="container">
+		<div id="navigation">
+			<div id="smallMenuBox">
+				<div class="smallMenuItem">
+					<a href="">내 프로필</a>
+				</div>
+				<div class="smallMenuItem">
+					<a href="">내가 쓴 글</a>
+				</div>
+				<div class="smallMenuItem">
+					<a href="./showResume.do?pNo=${personalMemberDto.pNo}">이력서 관리</a>
+				</div>
+				<div class="smallMenuItem">
+					<a href="./showLetter.do?pNo=${personalMemberDto.pNo}">자소서 관리</a>
+				</div>
+				<div class="smallMenuItem">
+					<a href="">고객센터</a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div id="container">
 		<div id="resumeContain">
-			<span class="closeBtn"></span>
-			<p>${resumeDto.rName}의 이력서</p>
+			<input type="button" style="text-align: right;" value="수정하기"
+				onclick="updateResumeFnc();">
+			<p>${resumeDto.rName}의이력서</p>
 			<table>
 				<thead>
 					<th>개인 정보</th>
@@ -86,7 +96,8 @@ tr td {
 					<td>이름</td>
 					<td class="resumeValue">${resumeDto.rName}</td>
 					<td>생년월일</td>
-					<td class="resumeValue">${resumeDto.rBirthday}</td>
+					<td class="resumeValue"><fmt:formatDate pattern="yyyy-MM-dd"
+							value="${resumeDto.rBirthday}" /></td>
 				</tr>
 				<tr>
 					<td>이메일</td>
