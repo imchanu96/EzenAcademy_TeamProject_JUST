@@ -144,27 +144,5 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 		sqlSession.update(namespace + "PersonalLetterUpdateOne", letterDto);
 	}
 
-
-	@Override
-	public void PersonalresumeUpdateOne(ResumeDto resumeDto) {
-		// TODO Auto-generated method stub
-		sqlSession.update(namespace + "PersonalresumeUpdateOne", resumeDto);
-	}
-
-	@Override
-	public LetterDto personalMembershowLetter(int pNo) {
-		// TODO Auto-generated method stub
-		HashMap<String, Object> map = new HashMap<String, Object>();
-		map.put("pNo", pNo);
-		
-		return sqlSession.selectOne(namespace + "personalMembershowLetter", map);
-	}
-
-	@Override
-	public void PersonalLetterUpdateOne(LetterDto letterDto) {
-		// TODO Auto-generated method stub
-		sqlSession.update(namespace + "PersonalLetterUpdateOne", letterDto);
-	}
-
 }
 
