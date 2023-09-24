@@ -15,7 +15,7 @@
 	#findPwdBox {
 		margin: 0px auto;
 		width: 540px;
-		height: 745px;
+		height: 640px;
 		background-color: #fff;
 		border-radius: 10px;
 		box-shadow: 0px 1px 4px 0px #ddd;
@@ -67,19 +67,19 @@
 	function findIdFnc() {
 		var pwdSearch = document.getElementById("findPwdBox");
 		
-		if(pwdSearch.pName.value.length < 1) {
+		if(pwdSearch.pName.value == "") {
 			alert("이름을 입력해주세요");
-			return;
+			return false;
 		}
 		
-		if (pwdSearch.pId.value.length < 1) {
+		if (pwdSearch.pId.value == "") {
 			alert("아이디를 입력해주세요");
-			return;
+			return false;
 		}
 		
-		if (pwdSearch.pEmail.value.length < 3) {
+		if (pwdSearch.pEmail.value == "") {
 			alert("이메일을 입력해주세요");
-			return;
+			return false;
 		}
 	}
 	
@@ -88,7 +88,7 @@
 <body>
 
 	<div id="container">
-		<form id="findPwdBox" method="post">
+		<form id="findPwdBox" action="./findPwdCtr.do" method="post">
 			<div id="contentBox">
 				<div id="titleBox">
 					<p>비밀번호 찾기</p>
@@ -105,7 +105,7 @@
 					<div id="emailBox" class="inputBox">
 						<p>이메일 주소</p>
 						<input name="pEmail" type="text">
-						<button type="button" onclick="findIdFnc();">인증번호 받기</button>
+						<button type="submit" onclick="findIdFnc();">인증번호 받기</button>
 					</div>
 				</div>
 				<div id="validationBox" class="inputBox">
@@ -113,12 +113,8 @@
 					<input type="text" placeholder="인증번호 6자리 숫자 입력">
 					<button type="button">인증번호 확인</button>
 				</div>
-				<div id="informIdBox" class="inputBox">
-					<p>비밀번호</p>
-					<input type="text" placeholder="이메일 인증 후 비밀번호가 표시됩니다." readonly>
-				</div>
 				<div id="buttonBox">
-					<button type="button" onclick="history.back()">돌아가기</button>
+					<button type="button" onclick="location.href='./login.do';">돌아가기</button>
 				</div>
 			</div>
 		</form>

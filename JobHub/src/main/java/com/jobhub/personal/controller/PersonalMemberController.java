@@ -1,8 +1,5 @@
 package com.jobhub.personal.controller;
 
-import java.util.List;
-import java.util.Map;
-
 import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
@@ -12,9 +9,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.multipart.MultipartHttpServletRequest;
 
-import com.jobhub.personal.controller.PersonalMemberController;
+import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;
 import com.jobhub.personal.service.PersonalMemberService;
@@ -106,6 +102,24 @@ public class PersonalMemberController {
 		return "/personal/auth/PersonalFindId";
 	}
 	
+	//아이디 결과
+	@RequestMapping(value = "/personal/findIdCtr.do", method = RequestMethod.POST)
+	public String personalFindIdCtr(HttpSession session, PersonalMemberDto personalMemberDto, Model model) {
+
+		log.debug("Welcome PersonalMemberController personalFindIdCtr!");
+
+		try {
+			PersonalMemberService.personalMemberSearchId(personalMemberDto);
+		    
+		    model.addAttribute("personalMemberDto", personalMemberDto);
+		    
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return "/personal/auth/PersonalResultId";
+	}
+	
 	//비밀번호찾기 화면으로 이동
 	@RequestMapping(value = "/personal/findPwd.do", method = RequestMethod.GET)
 	public String personalFindPwd(Model model) {
@@ -114,7 +128,25 @@ public class PersonalMemberController {
 
 		return "/personal/auth/PersonalFindPwd";
 	}
+	
+	//비밀번호 결과
+	@RequestMapping(value = "/personal/findPwdCtr.do", method = RequestMethod.POST)
+	public String personalFindPwdCtr(HttpSession session, PersonalMemberDto personalMemberDto, Model model) {
+
+		log.debug("Welcome PersonalMemberController personalFindPwdCtr!");
+
+		try {
+			PersonalMemberService.personalMemberSearchPwd(personalMemberDto);
+		    
+		    model.addAttribute("personalMemberDto", personalMemberDto);
+		    
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
+		return "/personal/auth/PersonalResultPwd";
+	}
+	
 	@RequestMapping(value = "/personal/nickNameUpdate.do", method = RequestMethod.GET)
 	public String nickNameUpdate(HttpSession session, Model model) {
 		log.info("Welecom PersonalMemberNickNameUpdate!");
@@ -255,7 +287,7 @@ public class PersonalMemberController {
 
 	@RequestMapping(value = "/personal/showResume.do", method = RequestMethod.GET)
 	public String showResume(int pNo, HttpSession session, Model model) {
-		log.info("Welecom showResume!" + pNo);
+		log.info("Welecom showResume! 회원번호:" + pNo);
 		
 		
 		ResumeDto resumeDto = PersonalMemberService.personalMemberShowResume(pNo);
@@ -265,4 +297,59 @@ public class PersonalMemberController {
 		return "personal/myPage/PersonalShowResume";
 	}
 	
+	@RequestMapping(value = "/personal/resumeUpdate.do", method = RequestMethod.GET)
+	public String resumeUpdate(HttpSession session, Model model) {
+		log.info("Welecom resumeUpdate!");
+				
+		return "personal/myPage/PersonalResumeUpdate";
+	}
+	
+	@RequestMapping(value = "/personal/resumeUpdateCtr.do", method = RequestMethod.POST)
+	public String PersonalresumeUpdateCtr(ResumeDto resumeDto, int pNo, HttpSession session, Model model) {
+		log.info("Welecome PersonalresumeUpdateCtr" + resumeDto);
+		
+		try {
+			PersonalMemberService.PersonalresumeUpdateOne(resumeDto);
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return "redirect:./showResume.do?pNo=" + pNo;
+	}
+	
+	@RequestMapping(value = "/personal/showLetter.do", method = RequestMethod.GET)
+	public String showLetter(int pNo, HttpSession session, Model model) {
+		log.info("Welecom showLetter! 회원번호:" + pNo);
+		
+		LetterDto letterDto = PersonalMemberService.personalMembershowLetter(pNo);
+		
+		session.setAttribute("letterDto", letterDto);
+				
+		return "personal/myPage/PersonalShowLetter";
+	}
+	
+	@RequestMapping(value = "/personal/letterUpdate.do", method = RequestMethod.GET)
+	public String LetterUpdate(HttpSession session, Model model) {
+		log.info("Welecom LetterUpdate!");
+				
+		return "personal/myPage/PersonalLetterUpdate";
+	}
+	
+	@RequestMapping(value = "/personal/letterUpdateCtr.do", method = RequestMethod.POST)
+	public String PersonalLetterUpdateCtr(LetterDto letterDto, int pNo, HttpSession session, Model model) {
+		log.info("Welecome PersonalLetterUpdateCtr" + letterDto);
+		
+		try {
+			PersonalMemberService.PersonalLetterUpdateOne(letterDto);
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return "redirect:./showLetter.do?pNo=" + pNo;
+	}	
+		
 }// end PersonalMemberController

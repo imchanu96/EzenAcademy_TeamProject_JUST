@@ -141,10 +141,16 @@
 <!-- 			, #{pEmail} , 1, SYSDATE, SYSDATE, SYSDATE, SYSDATE) -->
 	</insert>
 	
-	<select id="pesonalMemberFindId" resultType="String" parameterType="personalMemberDto">
+	<select id="personalMemberSearchId" parameterType="personalMemberDto" resultMap="personalResultMap">
 		SELECT PERSONAL_ID
 		FROM PERSONAL
-		WHERE PERSONAL_EMAIL =#{pEmail}
+		WHERE PERSONAL_NAME =#{pName} AND PERSONAL_EMAIL =#{pEmail}
+	</select>
+	
+	<select id="personalMemberSearchPwd" parameterType="personalMemberDto" resultMap="personalResultMap">
+		SELECT PERSONAL_PASSWORD
+		FROM PERSONAL
+		WHERE PERSONAL_NAME =#{pName} AND PERSONAL_EMAIL =#{pEmail} AND PERSONAL_ID =#{pId}
 	</select>
 	
 	<update id="personalMemberNickNameUpdateOne" parameterType="personalMemberDto">
@@ -179,17 +185,17 @@
 	
 	<select id="personalInfoList" resultType="map">
 		 SELECT P.PERSONAL_NUMBER AS "pNo", R.RESUME_PERSONAL_NAME AS "pName", P.PERSONAL_COMPANY AS "currentCompany"
-        , R.RESUME_EDUCATION_NAME AS "pHighestEdu" , R.RESUME_EDUCATION_MAJOR AS "pHighestEduMajor"
-        ,R.RESUME_EDUCATION_GRADE AS "pHighestEduGrade", R.RESUME_CAREER_NAME AS "pCampany"
-        , R.RESUME_CAREER_BEGIN_DATE AS "pCareerBeginDate"
-        , R.RESUME_CAREER_END_DATE AS "pCareerEndDate"
-        , NVL(R.RESUME_LICENSE_NAME , ' ') AS "pLicense"
-        , NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) AS "pLicenseCount" , P.COMPANY_PREFER AS "cPefer"
-    FROM (  SELECT P.PERSONAL_NUMBER, P.PERSONAL_COMPANY, C.COMPANY_PREFER
+	        , R.RESUME_EDUCATION_NAME AS "pHighestEdu" , R.RESUME_EDUCATION_MAJOR AS "pHighestEduMajor"
+	        ,R.RESUME_EDUCATION_GRADE AS "pHighestEduGrade", R.RESUME_CAREER_NAME AS "pCampany"
+	        , R.RESUME_CAREER_BEGIN_DATE AS "pCareerBeginDate"
+	        , R.RESUME_CAREER_END_DATE AS "pCareerEndDate"
+	        , NVL(R.RESUME_LICENSE_NAME , ' ') AS "pLicense"
+	        , NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) AS "pLicenseCount" , P.COMPANY_PREFER AS "cPefer"
+    	FROM (  SELECT P.PERSONAL_NUMBER, P.PERSONAL_COMPANY, C.COMPANY_PREFER
             FROM PERSONAL P , COMPANY C
             WHERE C.COMPANY_NUMBER = #{cNo}
             ) P INNER JOIN RESUME R
-    ON P.PERSONAL_NUMBER = R.PERSONAL_NUMBER
+   		ON P.PERSONAL_NUMBER = R.PERSONAL_NUMBER
     <where>
 <!--     	<if test="talentScore != null"></if> -->
 <!--     	<if test="careerScore != null"></if> -->
@@ -248,10 +254,52 @@
 	FROM RESUME
 		WHERE PERSONAL_NUMBER = #{pNo}
 	</select>
-	<select id="showLetter" resultMap="letterResultMap" parameterType="map">
+	
+	<select id="personalMembershowLetter" resultMap="letterResultMap" parameterType="map">
 	SELECT LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
 	    , LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER
     FROM LETTER
 	WHERE PERSONAL_NUMBER = #{pNo}
 	</select>
+
+	<update id="PersonalresumeUpdateOne" parameterType="resumeDto">
+		UPDATE RESUME
+		SET RESUME_PERSONAL_NAME = #{rName}
+			, RESUME_PERSONAL_BIRTHDAY = #{rBirthday}
+			, RESUME_PERSONAL_EMAIL = #{rEmail}
+    		, RESUME_PERSONAL_PHONENUMBER = #{rPhoneNum}
+    		, RESUME_PERSONAL_ADDRESS = #{rAdd}
+    		, RESUME_PERSONAL_MARRY = #{rMarry}
+    		, RESUME_PERSONAL_GENDER = #{rGender}
+    		, RESUME_PERSONAL_MILITARY = #{rMilitary}
+    		, RESUME_EDUCATION_BEGIN_DATE = #{rEduBeginDate}
+		    , RESUME_EDUCATION_END_DATE = #{rEduEndDate}
+		    , RESUME_EDUCATION_NAME = #{rEduName}
+		    , RESUME_EDUCATION_MAJOR = #{rEduMajor}
+		    , RESUME_EDUCATION_LOCATION = #{rEduLoc}
+		    , RESUME_EDUCATION_GRADE = #{rEduGrade}
+		    , RESUME_EDUCATION_GRADUATE = #{rEduGraduate}
+		    , RESUME_CAREER_BEGIN_DATE = #{rCareerBeginDate}
+		    , RESUME_CAREER_END_DATE = #{rCareerEndDate}
+		    , RESUME_CAREER_NAME = #{rCareerName}
+		    , RESUME_CAREER_POSITION = #{rCareerPos}
+		    , RESUME_CAREER_LOCATION = #{rCareerLoc}
+		    , RESUME_CAREER_JOB = #{rCareerJob}
+		    , RESUME_LICENSE_DATE = #{rLicenseDate}
+		    , RESUME_LICENSE_NAME = #{rLicenseName}
+		    , RESUME_LICENSE_INSTITUTION = #{rLicenseInst}
+		    , RESUME_LICENSE_GRADE = #{rLicenseGrade}
+		WHERE PERSONAL_NUMBER = #{pNo}
+	</update>
+
+	<update id="PersonalLetterUpdateOne" parameterType="letterDto">
+		UPDATE LETTER
+		SET LETTER_HISTORY = #{history}
+			, LETTER_MOTIVATION = #{motivation}
+		    , LETTER_CHARACTER = #{character}
+		    , LETTER_GOAL = #{goal}
+		WHERE PERSONAL_NUMBER = #{pNo}
+	</update>
+	
+	
 </mapper>

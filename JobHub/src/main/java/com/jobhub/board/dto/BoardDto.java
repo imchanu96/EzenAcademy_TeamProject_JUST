@@ -2,8 +2,6 @@ package com.jobhub.board.dto;
 
 import java.util.Date;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
 public class BoardDto {
 
 	private int bNo;
