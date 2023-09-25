@@ -91,7 +91,7 @@
 	}
 	
 	.Login_Button  > input {
-		background-color: #94b5fc;
+		background-color: #4876ef;
 		color: white; 
 		font-size: 17px; 
 		width: 300px; 
@@ -175,7 +175,7 @@
 					
 					<div id="selectButton">
 						<div class="selectButton">
-							<a class="changeMember" style="color:black;" href="../personal/login.do">개인회원</a>
+							<a class="changeMember" style="color:black;">개인회원</a>
 						</div>
 					</div> <!-- selectButton -->
 					

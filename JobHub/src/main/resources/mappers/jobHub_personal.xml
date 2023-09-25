@@ -142,13 +142,13 @@
 	</insert>
 	
 	<select id="personalMemberSearchId" parameterType="personalMemberDto" resultMap="personalResultMap">
-		SELECT PERSONAL_ID
+		SELECT PERSONAL_ID, PERSONAL_NAME
 		FROM PERSONAL
 		WHERE PERSONAL_NAME =#{pName} AND PERSONAL_EMAIL =#{pEmail}
 	</select>
 	
 	<select id="personalMemberSearchPwd" parameterType="personalMemberDto" resultMap="personalResultMap">
-		SELECT PERSONAL_PASSWORD
+		SELECT PERSONAL_PASSWORD, PERSONAL_NAME
 		FROM PERSONAL
 		WHERE PERSONAL_NAME =#{pName} AND PERSONAL_EMAIL =#{pEmail} AND PERSONAL_ID =#{pId}
 	</select>

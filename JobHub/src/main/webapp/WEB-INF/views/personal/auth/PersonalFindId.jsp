@@ -67,21 +67,37 @@
 	    color: #475067;
 	}
 	
-	
 </style>
 <script type="text/javascript">
+	
+	var codeValue = 0;
 	
 	function findIdFnc() {
 		var idSearch = document.getElementById("findIdBox");
 		
 		if(idSearch.pName.value == "") {
-			alert("이름을 입력해주세요");
+			alert("이름을 입력해주세요.");
 			return false;
 		}
 		
 		if (idSearch.pEmail.value  == "") {
-			alert("이메일을 입력해주세요");
+			alert("이메일을 입력해주세요.");
 			return false;
+		}
+		
+		var codeNum = Math.random().toString().substr(2,6);
+		alert(codeNum);
+		codeValue = codeNum;
+	}
+	
+	function codeCheck() {
+		var codeCheck = document.getElementById("findIdBox");
+		
+		if(codeCheck.code.value != codeValue){
+			alert("인증번호가 일치하지 않습니다.");
+			return false;
+		} else if(codeCheck.code.value == codeValue){
+			return true;
 		}
 	}
 	
@@ -90,7 +106,7 @@
 <body>
 
 	<div id="container">
-		<form id="findIdBox" action="./findIdCtr.do" method="post">
+		<form id="findIdBox" action="./findIdCtr.do" method="post" onsubmit="return codeCheck();">
 			<div id="contentBox">
 				<div id="titleBox">
 					<p>아이디 찾기</p>
@@ -103,13 +119,13 @@
 					<div id="emailBox" class="inputBox">
 						<p>이메일 주소</p>
 						<input name="pEmail" type="text">
-						<button type="submit" onclick="findIdFnc();">인증번호 받기</button>
+						<button type="button" onclick="findIdFnc();">인증번호 받기</button>
 					</div>
 				</div>
 				<div id="validationBox" class="inputBox">
 					<p>인증번호</p>
-					<input type="text" placeholder="인증번호 6자리 숫자 입력">
-					<button type="button">인증번호 확인</button>
+					<input name="code" type="text" placeholder="인증번호 6자리 숫자 입력">
+					<button type="submit">인증번호 확인</button>
 				</div>
 				<div class="inputBox">
 					<p class="dummyBox" />

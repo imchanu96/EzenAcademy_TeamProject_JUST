@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,17 +74,34 @@
 <body>
 
 	<div id="container">
-		<form id="findIdBox" method="get">
+		<form id="findIdBox" method="post">
 			<div id="contentBox">
-				<div id="titleBox">
-					<p>${personalMemberDto.pName}님의 아이디</p>
-				</div>
-				<div id="informIdBox" class="inputBox">
-					<p>ID는 ${personalMemberDto.pId} 입니다</p>
-				</div>
-				<div id="buttonBox">
-					<button type="button" onclick="location.href='./login.do';">돌아가기</button>
-				</div>
+				<c:choose>
+					<c:when test="${empty personalMemberDto}">
+						<div id="titleBox">
+							<p>아이디 찾기</p>
+						</div>
+						<div id="informIdBox" class="inputBox">
+							<p>조회결과가 없습니다.</p>
+						</div>
+						<div id="buttonBox">
+							<button type="button" onclick="location.href='./findId.do';">다시 찾기</button>
+							<button type="button" onclick="location.href='./add.do';">회원가입</button>
+						</div>	
+					</c:when>
+					<c:otherwise>
+						<div id="titleBox">
+							<p>${personalMemberDto.pName}님의 아이디</p>
+						</div>
+						<div id="informIdBox" class="inputBox">
+							<p>ID는 ${personalMemberDto.pId} 입니다</p>
+						</div>
+						<div id="buttonBox">
+							<button type="button" onclick="location.href='./login.do';">로그인</button>
+							<button type="button" onclick="location.href='./findPwd.do';">비밀번호 찾기</button>
+						</div>			
+					</c:otherwise>
+				</c:choose>
 			</div>
 		</form>
 	</div>

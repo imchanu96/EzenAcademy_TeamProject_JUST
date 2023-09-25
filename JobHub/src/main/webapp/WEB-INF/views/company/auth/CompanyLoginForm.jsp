@@ -99,7 +99,7 @@
 	}
 	
 	.Login_Button  > input {
-		background-color: #94b5fc;
+		background-color: #4876ef;
 		color: white; 
 		font-size: 17px; 
 		width: 300px; 
@@ -175,7 +175,7 @@
 					
 					<div id="selectButton">
 						<div class="selectButton">
-							<a class="changeMember"  style="color:black;" href="../company/login.do">기업회원</a>
+							<a class="changeMember"  style="color:black;">기업회원</a>
 						</div>
 					</div> <!-- selectButton -->
 					
