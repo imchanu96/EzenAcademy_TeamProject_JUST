@@ -23,15 +23,10 @@
 <body>
 
 	<jsp:include page="/WEB-INF/views/Header.jsp"/>
+	
 	<div id="container">
-		<div id="navigation">
-			<div id="smallMenuBox">
-				<div class="smallMenuItem">
-					<a href="./list.do">전체 게시판</a>
-				</div>
-			</div>
-		</div>
-		
+		<jsp:include page="/WEB-INF/views/board/BoardNavigation.jsp"/>
+	
 		<div id="content">
 			<div id="writeBox">
 				<button type="button" onclick="writeFnc();">글쓰기</button>

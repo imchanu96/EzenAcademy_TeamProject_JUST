@@ -64,7 +64,9 @@
 </style>
 <script type="text/javascript">
 	
-	function findIdFnc() {
+	var codeValue = 0;
+
+	function findPwdFnc() {
 		var pwdSearch = document.getElementById("findPwdBox");
 		
 		if(pwdSearch.pName.value == "") {
@@ -81,6 +83,21 @@
 			alert("이메일을 입력해주세요");
 			return false;
 		}
+		
+		var codeNum = Math.random().toString().substr(2,6);
+		alert(codeNum);
+		codeValue = codeNum;
+	}
+	
+	function codeCheck() {
+		var codeCheck = document.getElementById("findPwdBox");
+		
+		if(codeCheck.code.value != codeValue){
+			alert("인증번호가 일치하지 않습니다.");
+			return false;
+		} else if(codeCheck.code.value == codeValue){
+			return true;
+		}
 	}
 	
 </script>
@@ -88,7 +105,7 @@
 <body>
 
 	<div id="container">
-		<form id="findPwdBox" action="./findPwdCtr.do" method="post">
+		<form id="findPwdBox" action="./findPwdCtr.do" method="post" onsubmit="return codeCheck();">
 			<div id="contentBox">
 				<div id="titleBox">
 					<p>비밀번호 찾기</p>
@@ -105,13 +122,13 @@
 					<div id="emailBox" class="inputBox">
 						<p>이메일 주소</p>
 						<input name="pEmail" type="text">
-						<button type="submit" onclick="findIdFnc();">인증번호 받기</button>
+						<button type="button" onclick="findPwdFnc();">인증번호 받기</button>
 					</div>
 				</div>
 				<div id="validationBox" class="inputBox">
 					<p>인증번호</p>
-					<input type="text" placeholder="인증번호 6자리 숫자 입력">
-					<button type="button">인증번호 확인</button>
+					<input name="code" type="text" placeholder="인증번호 6자리 숫자 입력">
+					<button type="submit">인증번호 확인</button>
 				</div>
 				<div id="buttonBox">
 					<button type="button" onclick="location.href='./login.do';">돌아가기</button>
