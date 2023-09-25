@@ -30,7 +30,7 @@
 
 #letterContain {
 	border: 1px solid black;
-	width: 850px;
+	width: 1280px;
 	border-radius: 5px;
 	/* 	padding: 30px; */
 }
@@ -54,7 +54,10 @@ tr td {
 .letterValue {
 	border: 1px solid black;
 	border-radius: 5px;
+	width: 750px;
+	height: 300px;
 	font-size: 20px;
+	resize: none;
 }
 </style>
 <script type="text/javascript">
@@ -65,19 +68,6 @@ tr td {
 </head>
 <body>
 	<jsp:include page="../../Header.jsp" />
-	<div id="navigation">
-		<div id="smallMenuBox">
-			<div class="smallMenuItem">
-				<a href="http://www.naver.com">리뷰 조회</a>
-			</div>
-			<div class="smallMenuItem">
-				<a href="">리뷰 작성</a>
-			</div>
-			<div class="smallMenuItem">
-				<a href="">기업 정보</a>
-			</div>
-		</div>
-	</div>
 	<div id="container">
 		<div id="navigation">
 			<div id="smallMenuBox">
@@ -101,31 +91,30 @@ tr td {
 		<div id="letterContain">
 			<input type="button" style="text-align: right;" value="수정하기"
 				onclick="updateLetterFnc();">
-			<p>${resumeDto.rName}의이력서</p>
+			<p>${pName}의이력서</p>
 			<div id="letter">
-				<span class="closeBtn" onclick="closeModal(this);">&times;</span>
 				<p>OO의 자기소개서</p>
 				<div>
-					성장 배경
-					<textarea class="letterValue" name="history">
+					<p>성장 배경</p>
+					<textarea class="letterValue" name="history" readonly="readonly">
 						${letterDto.history}
 					</textarea>
 				</div>
 				<div>
-					지원 동기
-					<textarea class="letterValue" name="motivation">
+					<p>지원 동기</p>
+					<textarea class="letterValue" name="motivation" readonly="readonly">
 						${letterDto.motivation}
 					</textarea>
 				</div>
 				<div>
-					성격의 장단점
-					<textarea class="letterValue" name="character">
+					<p>성격의 장단점</p>
+					<textarea class="letterValue" name="character" readonly="readonly">
 						${letterDto.character}
 					</textarea>
 				</div>
 				<div>
-					목표
-					<textarea class="letterValue" name="goal">
+					<p>목표</p>
+					<textarea class="letterValue" name="goal" readonly="readonly">
 						${letterDto.goal}
 					</textarea>
 				</div>
