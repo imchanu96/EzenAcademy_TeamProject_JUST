@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>회원 목록</title>
+<title>전체 회원 목록</title>
 <style type="text/css">
 	#tableDiv{
 		width: 70%;

@@ -19,4 +19,8 @@ public interface AdminService {
 	public List<CompanyMemberDto> companyMemSelectList();
 
 	public List<PersonalMemberDto> personalMemberSelectList();
+
+	void personalDeleteOne(AdminDto adminDto);
+
+	void companyDeleteOne(AdminDto adminDto);
 }

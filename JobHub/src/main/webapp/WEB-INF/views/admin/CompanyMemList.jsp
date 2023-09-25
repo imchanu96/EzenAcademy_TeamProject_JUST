@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>회원 목록</title>
+<title>기업회원 목록</title>
 <style type="text/css">
 	#tableDiv{
 		width: 70%;
@@ -40,7 +40,7 @@
 	</div>
 	<jsp:include page="./util/SideBar.jsp"></jsp:include>
 	<div id="tableDiv">
-		<form action="delete.do" method="get">
+		<form action="companydelete.do" method="get">
 		<table>
 			<tr>
 				<th style="width: 10%;">기업회원 번호</th>
@@ -51,31 +51,31 @@
 				<th style="width: 15%;">생성 일</th>
 				<th style="width: 15%;">수정 일</th>
 			</tr>
-			<c:forEach var="companyMemberDto" items="${companyList}">
+			<c:forEach var="companyMemberDto" items="${companyMemList}">
 				<tr>
 					<td>${companyMemberDto.cNo}</td>
 					<td>${companyMemberDto.cInChargeName}</td>
 					<td>${companyMemberDto.cCode}</td>
 					<td>${companyMemberDto.cName}</td>
 					<td>
-						<c:choose>
-							<c:when test="${personalDto.pPermission == 1 
-								|| personalDto.pPermission == 2}">
-										개인 회원
-									</c:when>
-							<c:when test="${personalDto.pPermission == 5}">
+<%-- 						<c:choose> --%>
+<%-- 							<c:when test="${personalDto.pPermission == 1  --%>
+<%-- 								|| personalDto.pPermission == 2}"> --%>
+<!-- 										개인 회원 -->
+<%-- 									</c:when> --%>
+<%-- 							<c:when test="${companyMemberDto.pPermission == 5}"> --%>
 										기업 회원
-									</c:when>
-							<c:when test="${personalDto.pPermission == 10}">
-										관리자
-									</c:when>
-						</c:choose>
+<%-- 									</c:when> --%>
+<%-- 							<c:when test="${personalDto.pPermission == 10}"> --%>
+<!-- 										관리자 -->
+<%-- 									</c:when> --%>
+<%-- 						</c:choose> --%>
 					</td>
 					<td><fmt:formatDate pattern="yyyy-MM-dd" 
 						value="${companyMemberDto.cCreDate}" /></td>
 					<td><fmt:formatDate pattern="yyyy-MM-dd" 
 						value="${companyMemberDto.cModDate}" /></td>
-						<td><div><input type="submit" value="삭제" name="cNo"></div></td>
+						<td><div><input type="submit" value="삭제"></div></td>
 				</tr>
 			</c:forEach>
 		</table>

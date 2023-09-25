@@ -196,7 +196,7 @@
 						
 						<div class="companyInfoItemContent">
 							<input type="date" name="cEstDate" 
-								value="${sessionScope.companymemberDto.cEstDate}"
+								placeholder="${sessionScope.companymemberDto.cEstDate}"
 								pattern="yyyy-MM-dd">
 						</div>
 						<div class="button">

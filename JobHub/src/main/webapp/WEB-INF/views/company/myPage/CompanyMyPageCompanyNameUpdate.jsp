@@ -196,7 +196,7 @@
 						
 						<div class="companyInfoItemContent">
 							<input type="text" name="cName"
-								value="${sessionScope.companymemberDto.cName}">
+								placeholder="${sessionScope.companymemberDto.cName}">
 						</div>
 						<div class="button">
 							<input type="submit" value="변경하기">

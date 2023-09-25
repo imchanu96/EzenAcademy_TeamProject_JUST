@@ -43,57 +43,57 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 	}
 
 	@Override
-	public void companyMembercInChargeNameUpdateOne(CompanyMemberDto companymemberDto) {
+	public void companyMembercInChargeNameUpdateOne(CompanyMemberDto companyMemberDto) {
 		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercInChargeNameUpdateOne(companymemberDto);
+		companyMemberDao.companyMembercInChargeNameUpdateOne(companyMemberDto);
 	}
 
 	@Override
-	public void companyMembercInChargeEmailUpdateOne(CompanyMemberDto companymemberDto) {
+	public void companyMembercInChargeEmailUpdateOne(CompanyMemberDto companyMemberDto) {
 		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercInChargeEmailUpdateOne(companymemberDto);
+		companyMemberDao.companyMembercInChargeEmailUpdateOne(companyMemberDto);
 	}
 
 	@Override
-	public void companyMembercInChargePhoneNumUpdateOne(CompanyMemberDto companymemberDto) {
+	public void companyMembercInChargePhoneNumUpdateOne(CompanyMemberDto companyMemberDto) {
 		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercInChargePhoneNumUpdateOne(companymemberDto);
+		companyMemberDao.companyMembercInChargePhoneNumUpdateOne(companyMemberDto);
 	}
 
 	@Override
-	public void companyMembercNameUpdateOne(CompanyMemberDto companymemberDto) {
+	public void companyMembercNameUpdateOne(CompanyMemberDto companyMemberDto) {
 		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercNameUpdateOne(companymemberDto);
+		companyMemberDao.companyMembercNameUpdateOne(companyMemberDto);
 	}
 
 	@Override
-	public void companyMembercAddUpdateOne(CompanyMemberDto companymemberDto) {
+	public void companyMembercAddUpdateOne(CompanyMemberDto companyMemberDto) {
 		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercAddUpdateOne(companymemberDto);
+		companyMemberDao.companyMembercAddUpdateOne(companyMemberDto);
 	}
 
 	@Override
-	public void companyMembercTypeUpdateOne(CompanyMemberDto companymemberDto) {
+	public void companyMembercTypeUpdateOne(CompanyMemberDto companyMemberDto) {
 		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercTypeUpdateOne(companymemberDto);
+		companyMemberDao.companyMembercTypeUpdateOne(companyMemberDto);
 	}
 
 	@Override
-	public void companyMembercEstDateUpdateOne(CompanyMemberDto companymemberDto) {
+	public void companyMembercEstDateUpdateOne(CompanyMemberDto companyMemberDto) {
 		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercEstDateUpdateOne(companymemberDto);
+		companyMemberDao.companyMembercEstDateUpdateOne(companyMemberDto);
 	}
 
 	@Override
-	public void companyMembercHomepageUpdateOne(CompanyMemberDto companymemberDto) {
+	public void companyMembercHomepageUpdateOne(CompanyMemberDto companyMemberDto) {
 		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercHomepageUpdateOne(companymemberDto);
+		companyMemberDao.companyMembercHomepageUpdateOne(companyMemberDto);
 	}
 
 	@Override
-	public void companyMembercIntroduceUpdateOne(CompanyMemberDto companymemberDto) {
+	public void companyMembercIntroduceUpdateOne(CompanyMemberDto companyMemberDto) {
 		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercIntroduceUpdateOne(companymemberDto);
+		companyMemberDao.companyMembercIntroduceUpdateOne(companyMemberDto);
 	}
 
 	

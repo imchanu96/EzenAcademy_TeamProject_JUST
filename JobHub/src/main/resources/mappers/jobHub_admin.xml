@@ -33,10 +33,19 @@
 
 	
 
-<!-- 	<select id="memberSelectList"  parameterType="map" resultMap="adminResultMap"> -->
-<!-- 		SELECT PERSONAL.PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_CREATE_DATE -->
-<!--         FROM PERSONAL -->
-<!-- 	</select> -->
+	<select id="memberSelectList"  parameterType="map" resultMap="adminResultMap">
+		SELECT PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
+        		, PERSONAL_NICKNAME, PERMISSION, PERSONAL_CREATE_DATE
+       		 	, PERSONAL_MODIFY_DATE
+		FROM PERSONAL
+		UNION
+		SELECT COMPANY_NUMBER, COMPANY_INCHARGE_NAME
+				, COMPANY_CODE, COMPANY_NAME, PERMISSION
+				, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE
+		FROM COMPANY
+		ORDER BY PERMISSION
+<!-- 		WHERE PERSONAL.RNUM BETWEEN #{start} AND #{end} -->
+	</select>
 		
 		<select id="adminExist" parameterType="map"
 		resultMap="adminResultMap">
@@ -48,5 +57,15 @@
 	<delete id="adminDeleteOne" parameterType="adminDto">
 		DELETE FROM PERSONAL
 		 WHERE PERSONAL_NUMBER = #{pNo}
+	</delete>
+	
+	<delete id="personalDeleteOne" parameterType="adminDto">
+		DELETE FROM PERSONAL
+		 WHERE PERSONAL_NUMBER = #{pNo}
+	</delete>
+	
+	<delete id="companyDeleteOne" parameterType="adminDto">
+		DELETE FROM COMPANY
+		 WHERE COMPANY_NUMBER = #{cNo}
 	</delete>
 </mapper>

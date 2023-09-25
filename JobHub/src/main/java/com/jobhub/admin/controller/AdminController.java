@@ -65,7 +65,10 @@ public class AdminController {
 			log.info("Welcome MemberController list!: {}");
 			
 //			int totalCount = adminService.memberSelectTotalCount();
-		      
+//			List<PersonalMemberDto> personalMemberList 
+//								= personalMemberList.personalMemberSelectList(); 
+//			List<CompanyMemberDto> companyMemList 
+//								= companyMemList.companyMemSelectList();
 		    List<PersonalMemberDto> personalList = adminService.memberSelectList();
 
 		    model.addAttribute("personalList", personalList);
@@ -115,5 +118,29 @@ public class AdminController {
 			System.out.println(adminDto);
 			
 			return "admin/MemberList";
+		}
+		
+		@RequestMapping(value = "/admin/personaldelete.do", method = RequestMethod.GET)
+		public String personalDelete(AdminDto adminDto, Model model) {
+			
+			log.info("Welcome MemberController personaldelete");
+			
+			adminService.personalDeleteOne(adminDto);
+			
+			System.out.println(adminDto);
+			
+			return "admin/PersonalMemberList";
+		}
+		
+		@RequestMapping(value = "/admin/companydelete.do", method = RequestMethod.GET)
+		public String companydelete(AdminDto adminDto, Model model) {
+			
+			log.info("Welcome MemberController companydelete");
+			
+			adminService.companyDeleteOne(adminDto);
+			
+			System.out.println(adminDto);
+			
+			return "admin/CompanyMemList";
 		}
 }

@@ -187,7 +187,7 @@
 						
 						<div class="personalInfoItemContent">
 							<input type="text" name="cInChargeName"
-								value="${sessionScope.companymemberDto.cInChargeName}">
+								placeholder="${sessionScope.companymemberDto.cInChargeName}">
 						</div>
 						
 						<div class="button">

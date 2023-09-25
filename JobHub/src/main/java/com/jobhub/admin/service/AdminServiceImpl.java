@@ -35,7 +35,7 @@ public class AdminServiceImpl implements AdminService{
 	@Override
 	public List<PersonalMemberDto> memberSelectList() {
 		// TODO Auto-generated method stub
-		return personalMemberDao.memberSelectList();
+		return adminDao.memberSelectList();
 	}
 	
 	@Override
@@ -60,6 +60,18 @@ public class AdminServiceImpl implements AdminService{
 	public List<PersonalMemberDto> personalMemberSelectList() {
 		// TODO Auto-generated method stub
 		return personalMemberDao.personalMemberSelectList();
+	}
+
+	@Override
+	public void personalDeleteOne(AdminDto adminDto) {
+		adminDao.personalDeleteOne(adminDto);
+		
+	}
+
+	@Override
+	public void companyDeleteOne(AdminDto adminDto) {
+		adminDao.companyDeleteOne(adminDto);
+		
 	}
 
 }

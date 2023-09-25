@@ -120,7 +120,7 @@ public class CompanyMemberController {
 	
 	@RequestMapping(value = "/company/cInChargeNameUpdate.do", method = RequestMethod.GET)
 	public String cInChargeNameUpdate(HttpSession session, Model model) {
-		log.info("Welecom CompanyMembercInChargeNameNameUpdate!");
+		log.info("Welecom CompanyMembercInChargeNameUpdate!");
 		
 		return "company/myPage/CompanyMyPageInchargeNameUpdate";
 	}
@@ -186,15 +186,15 @@ public class CompanyMemberController {
 		log.info("Welecome CompanyMembercInChargeNameUpdateCtr");
 		
 		//기존 세션을 가져와서 personalMemberDto에 바뀐 정보를 담아둠
-		CompanyMemberDto companymemberDto
-			= (CompanyMemberDto) session.getAttribute("companymemberDto");
-		companymemberDto.setcInChargeName(cInChargeName);
+		CompanyMemberDto companyMemberDto
+			= (CompanyMemberDto) session.getAttribute("companyMemberDto");
+		companyMemberDto.setcInChargeName(cInChargeName);
 		
 		try {
-			companyMemberService.companyMembercInChargeNameUpdateOne(companymemberDto);
+			companyMemberService.companyMembercInChargeNameUpdateOne(companyMemberDto);
 			
 			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
-			session.setAttribute("companymemberDto", companymemberDto);
+			session.setAttribute("companyMemberDto", companyMemberDto);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
@@ -207,15 +207,15 @@ public class CompanyMemberController {
 	public String cInChargeEmailUpdateCtr(String cInChargeEmail, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercInChargeEmailUpdateCtr");
 		
-		CompanyMemberDto companymemberDto
-			= (CompanyMemberDto) session.getAttribute("companymemberDto");
-		companymemberDto.setcInChargeEmail(cInChargeEmail);
+		CompanyMemberDto companyMemberDto
+			= (CompanyMemberDto) session.getAttribute("companyMemberDto");
+		companyMemberDto.setcInChargeEmail(cInChargeEmail);
 		
 		try {
-			companyMemberService.companyMembercInChargeEmailUpdateOne(companymemberDto);
+			companyMemberService.companyMembercInChargeEmailUpdateOne(companyMemberDto);
 			
 			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
-			session.setAttribute("companymemberDto", companymemberDto);
+			session.setAttribute("companyMemberDto", companyMemberDto);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
@@ -228,15 +228,15 @@ public class CompanyMemberController {
 	public String cInChargePhoneNumUpdateCtr(String cInChargePhoneNum, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercInChargePhoneNumUpdateCtr");
 		
-		CompanyMemberDto companymemberDto
-			= (CompanyMemberDto) session.getAttribute("companymemberDto");
-		companymemberDto.setcInChargePhoneNum(cInChargePhoneNum);
+		CompanyMemberDto companyMemberDto
+			= (CompanyMemberDto) session.getAttribute("companyMemberDto");
+		companyMemberDto.setcInChargePhoneNum(cInChargePhoneNum);
 		
 		try {
-			companyMemberService.companyMembercInChargePhoneNumUpdateOne(companymemberDto);
+			companyMemberService.companyMembercInChargePhoneNumUpdateOne(companyMemberDto);
 			
 			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
-			session.setAttribute("companymemberDto", companymemberDto);
+			session.setAttribute("companyMemberDto", companyMemberDto);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
@@ -249,15 +249,15 @@ public class CompanyMemberController {
 	public String cNameUpdateCtr(String cName, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercNameUpdateCtr");
 		
-		CompanyMemberDto companymemberDto
-			= (CompanyMemberDto) session.getAttribute("companymemberDto");
-		companymemberDto.setcName(cName);
+		CompanyMemberDto companyMemberDto
+			= (CompanyMemberDto) session.getAttribute("companyMemberDto");
+		companyMemberDto.setcName(cName);
 		
 		try {
-			companyMemberService.companyMembercNameUpdateOne(companymemberDto);
+			companyMemberService.companyMembercNameUpdateOne(companyMemberDto);
 			
 			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
-			session.setAttribute("companymemberDto", companymemberDto);
+			session.setAttribute("companyMemberDto", companyMemberDto);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
@@ -271,15 +271,15 @@ public class CompanyMemberController {
 	public String cAddUpdateCtr(String cAdd, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercAddUpdateCtr");
 		
-		CompanyMemberDto companymemberDto
-			= (CompanyMemberDto) session.getAttribute("companymemberDto");
-		companymemberDto.setcAdd(cAdd);
+		CompanyMemberDto companyMemberDto
+			= (CompanyMemberDto) session.getAttribute("companyMemberDto");
+		companyMemberDto.setcAdd(cAdd);
 		
 		try {
-			companyMemberService.companyMembercAddUpdateOne(companymemberDto);
+			companyMemberService.companyMembercAddUpdateOne(companyMemberDto);
 			
 			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
-			session.setAttribute("companymemberDto", companymemberDto);
+			session.setAttribute("companyMemberDto", companyMemberDto);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
@@ -292,15 +292,15 @@ public class CompanyMemberController {
 	public String cTypeUpdateCtr(String cType, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercTypeUpdateCtr");
 		
-		CompanyMemberDto companymemberDto
-			= (CompanyMemberDto) session.getAttribute("companymemberDto");
-		companymemberDto.setcType(cType);
+		CompanyMemberDto companyMemberDto
+			= (CompanyMemberDto) session.getAttribute("companyMemberDto");
+		companyMemberDto.setcType(cType);
 		
 		try {
-			companyMemberService.companyMembercTypeUpdateOne(companymemberDto);
+			companyMemberService.companyMembercTypeUpdateOne(companyMemberDto);
 			
 			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
-			session.setAttribute("companymemberDto", companymemberDto);
+			session.setAttribute("companyMemberDto", companyMemberDto);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
@@ -314,15 +314,15 @@ public class CompanyMemberController {
 			, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercEstDateUpdateCtr");
 		
-		CompanyMemberDto companymemberDto
-			= (CompanyMemberDto) session.getAttribute("companymemberDto");
-		companymemberDto.setcEstDate(cEstDate);
+		CompanyMemberDto companyMemberDto
+			= (CompanyMemberDto) session.getAttribute("companyMemberDto");
+		companyMemberDto.setcEstDate(cEstDate);
 		
 		try {
-			companyMemberService.companyMembercEstDateUpdateOne(companymemberDto);
+			companyMemberService.companyMembercEstDateUpdateOne(companyMemberDto);
 			
 			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
-			session.setAttribute("companymemberDto", companymemberDto);
+			session.setAttribute("companyMemberDto", companyMemberDto);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
@@ -337,15 +337,15 @@ public class CompanyMemberController {
 	public String cHomepageUpdateCtr(String cHomepage, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercHomepageUpdateCtr");
 		
-		CompanyMemberDto companymemberDto
-			= (CompanyMemberDto) session.getAttribute("companymemberDto");
-		companymemberDto.setcHomepage(cHomepage);
+		CompanyMemberDto companyMemberDto
+			= (CompanyMemberDto) session.getAttribute("companyMemberDto");
+		companyMemberDto.setcHomepage(cHomepage);
 		
 		try {
-			companyMemberService.companyMembercHomepageUpdateOne(companymemberDto);
+			companyMemberService.companyMembercHomepageUpdateOne(companyMemberDto);
 			
 			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
-			session.setAttribute("companymemberDto", companymemberDto);
+			session.setAttribute("companyMemberDto", companyMemberDto);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
@@ -358,15 +358,15 @@ public class CompanyMemberController {
 	public String cIntroduce(String cIntroduce, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercTypeUpdateCtr");
 		
-		CompanyMemberDto companymemberDto
-			= (CompanyMemberDto) session.getAttribute("companymemberDto");
-		companymemberDto.setcIntroduce(cIntroduce);
+		CompanyMemberDto companyMemberDto
+			= (CompanyMemberDto) session.getAttribute("companyMemberDto");
+		companyMemberDto.setcIntroduce(cIntroduce);
 		
 		try {
-			companyMemberService.companyMembercIntroduceUpdateOne(companymemberDto);
+			companyMemberService.companyMembercIntroduceUpdateOne(companyMemberDto);
 			
 			//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
-			session.setAttribute("companymemberDto", companymemberDto);
+			session.setAttribute("companyMemberDto", companyMemberDto);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
