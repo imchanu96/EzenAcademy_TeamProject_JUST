@@ -203,7 +203,7 @@
 					<a href="">이력서 관리</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">선호도 설정</a>
+					<a href="./setPrefer.do?cNo=${sessionScope.companyMemberDto.cNo}">선호도 설정</a>
 				</div>
 			</div>
 		</div>

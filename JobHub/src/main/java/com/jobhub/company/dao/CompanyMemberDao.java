@@ -1,6 +1,7 @@
 package com.jobhub.company.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import com.jobhub.company.dto.CompanyMemberDto;
 
@@ -35,4 +36,6 @@ public interface CompanyMemberDao {
 	public void companyMembercIntroduceUpdateOne(CompanyMemberDto companymemberDto);
 
 	public List<CompanyMemberDto> companyMemSelectList();
+
+	public void preferUpdateOne(Map<String, Object> map);
 }

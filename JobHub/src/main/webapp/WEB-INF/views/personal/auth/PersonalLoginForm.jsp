@@ -176,7 +176,6 @@
 					<div id="selectButton">
 						<div class="selectButton">
 							<a class="changeMember" style="color:black;" href="../personal/login.do">개인회원</a>
-							<a class="changeMember" href="../company/login.do">기업회원</a>
 						</div>
 					</div> <!-- selectButton -->
 					

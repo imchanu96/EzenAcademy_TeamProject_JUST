@@ -176,7 +176,7 @@
 					<a href="./showResume.do?pNo=${personalMemberDto.pNo}">이력서 관리</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">자소서 관리</a>
+					<a href="./showLetter.do?pNo=${personalMemberDto.pNo}">자소서 관리</a>
 				</div>
 				<div class="smallMenuItem">
 					<a href="">고객센터</a>
