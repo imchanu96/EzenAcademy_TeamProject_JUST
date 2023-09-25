@@ -190,7 +190,7 @@
 	        , R.RESUME_CAREER_BEGIN_DATE AS "pCareerBeginDate"
 	        , R.RESUME_CAREER_END_DATE AS "pCareerEndDate"
 	        , NVL(R.RESUME_LICENSE_NAME , ' ') AS "pLicense"
-	        , NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) AS "pLicenseCount" , P.COMPANY_PREFER AS "cPefer"
+	        , NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) AS "pLicenseCount" , P.COMPANY_PREFER AS "cPrefer"
     	FROM (  SELECT P.PERSONAL_NUMBER, P.PERSONAL_COMPANY, C.COMPANY_PREFER
             FROM PERSONAL P , COMPANY C
             WHERE C.COMPANY_NUMBER = #{cNo}

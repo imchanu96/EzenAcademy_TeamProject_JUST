@@ -96,6 +96,20 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 		companyMemberDao.companyMembercIntroduceUpdateOne(companyMemberDto);
 	}
 
+	@Override
+	public CompanyMemberDto companyMemberSelectOne(int cNo) {
+		// TODO Auto-generated method stub
+		
+		return companyMemberDao.companyMemberSelectOne(cNo);
+	}
+
+	@Override
+	public void preferUpdateOne(Map<String, Object> map) {
+		// TODO Auto-generated method stub
+		
+		companyMemberDao.preferUpdateOne(map);
+	}
+	
 	
 
 }

@@ -166,7 +166,7 @@ public class ReviewController {
 		PersonalMemberDto personalMemberDto = (PersonalMemberDto) session.getAttribute("personalMemberDto");
 		pNo = personalMemberDto.getpNo();
 		
-		int cNo = (int)reviewService.reviewSelectCNo(pNo);
+		int cNo = reviewService.reviewSelectCNo(pNo);
 		model.addAttribute("cNo", cNo);
 		
 		return "review/ReviewWrite";
@@ -175,7 +175,7 @@ public class ReviewController {
 //	리뷰 제출
 	@RequestMapping(value = "/review/addCtr.do", method = RequestMethod.POST)
 	public String reviewAdd(ReviewDto reviewDto, Model model) {
-		log.info("Welcome ReviewController reviewAdd! \r\n" + reviewDto);
+		log.info("Welcome ReviewController reviewAddCtr! \r\n" + reviewDto);
 		
 			try {
 				reviewService.reviewInsertOne(reviewDto);
@@ -183,7 +183,43 @@ public class ReviewController {
 				e.printStackTrace();
 			}
 		
-		return "redirect:/review/list.do";
+		return "redirect:/review/list.do?cNo=2";
+	}
+	
+//	리뷰 수정 화면
+	@RequestMapping(value = "/review/update.do", method = RequestMethod.GET)
+	public String reviewUpdate(Model model, int rNo) {
+		log.info("Welcome ReviewController reviewUpdate!");
+		
+		ReviewDto reviewDto = reviewService.reviewSelectOne(rNo);
+
+		model.addAttribute("reviewDto", reviewDto);
+		
+		return "review/ReviewUpdate";
+	}
+	
+//	리뷰 수정 제출
+	@RequestMapping(value = "/review/updateCtr.do", method = RequestMethod.POST)
+	public String reviewUpdate(ReviewDto reviewDto, Model model) {
+		log.info("Welcome ReviewController reviewUpdateCtr! \r\n" + reviewDto);
+			
+		try {
+				reviewService.reviewUpdateOne(reviewDto);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		
+		return "redirect:/review/list.do?cNo=2";
+	}
+	
+//	리뷰 삭제
+	@RequestMapping(value = "/review/delete.do", method = RequestMethod.GET)
+	public String reviewDelete(int rNo, Model model) {
+		log.info("Welcome BoardController reviewDelete!" + rNo);
+		
+		reviewService.reviewDeleteOne(rNo);
+		
+		return "redirect:/review/list.do?cNo=2";
 	}
 	
 //	기업 정보 조회

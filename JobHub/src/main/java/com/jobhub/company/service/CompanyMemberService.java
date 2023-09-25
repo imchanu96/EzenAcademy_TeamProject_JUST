@@ -5,7 +5,6 @@ import java.util.Map;
 
 import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
-import com.jobhub.review.dto.ReviewDto;
 
 public interface CompanyMemberService {
 
@@ -31,6 +30,10 @@ public interface CompanyMemberService {
 	
 	public void companyMembercHomepageUpdateOne(CompanyMemberDto companyMemberDto);
 	
-	public void companyMembercIntroduceUpdateOne(CompanyMemberDto companyMemberDto);
+	public void companyMembercIntroduceUpdateOne(CompanyMemberDto companymemberDto);
+
+	public CompanyMemberDto companyMemberSelectOne(int cNo);
+
+	public void preferUpdateOne(Map<String, Object> map);
 	
 }

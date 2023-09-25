@@ -18,4 +18,10 @@ public interface ReviewService {
 	
 	public CompanyMemberDto companyMemberSelectOne(int cNo);
 	public int reviewSelectCNo(int pNo);
+	
+	public ReviewDto reviewSelectOne(int rNo);
+	
+	public void reviewUpdateOne(ReviewDto reviewDto);
+	
+	public int reviewDeleteOne(int rNo);
 }

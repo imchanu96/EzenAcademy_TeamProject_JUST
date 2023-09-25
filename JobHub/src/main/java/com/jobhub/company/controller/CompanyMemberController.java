@@ -375,5 +375,37 @@ public class CompanyMemberController {
 		return "company/myPage/CompanyMyPage";
 	}
 	
+	@RequestMapping(value = "/company/setPrefer.do", method = RequestMethod.GET)
+	public String setPrefer(int cNo, HttpSession session, Model model) {
+		log.debug("Welcome CompanyMemberController setPrefer!");	
+		
+		CompanyMemberDto companyMemberDto 
+			= companyMemberService.companyMemberSelectOne(cNo);
+		
+		//담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
+		session.setAttribute("companyPrefer", companyMemberDto);
+		
+		
+		return "company/myPage/showPrefer";
+	}
 	
+	@RequestMapping(value = "/company/preferUpdate.do", method = RequestMethod.GET)
+	public String preferUpdate(HttpSession session, Model model) {
+		log.info("Welecom CompanyMemberController preferUpdate");
+		
+		return "company/myPage/preferUpdate";
+	}
+	
+	@RequestMapping(value = "/company/preferUpdateCtr.do", method = RequestMethod.POST)
+	public String preferUpdateCtr(String prefer, int cNo, HttpSession session, Model model) {
+		log.info("Welecom CompanyMemberController preferUpdateCtr! 정보:" + prefer);
+		
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("prefer", prefer);
+		map.put("cNo", cNo);
+		
+		companyMemberService.preferUpdateOne(map);
+		
+		return "company/myPage/CompanyMyPage";
+	}
 }

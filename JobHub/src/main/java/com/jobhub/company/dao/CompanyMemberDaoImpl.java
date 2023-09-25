@@ -118,4 +118,10 @@ public class CompanyMemberDaoImpl implements CompanyMemberDao {
 		
 		return sqlSession.selectList(namespace + "companyMemSelectList", map);
 	}
+
+	@Override
+	public void preferUpdateOne(Map<String, Object> map) {
+		// TODO Auto-generated method stub
+		sqlSession.update(namespace + "preferUpdateOne", map);
+	}
 }

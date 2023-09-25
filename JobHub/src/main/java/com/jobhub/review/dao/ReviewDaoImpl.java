@@ -61,4 +61,24 @@ public class ReviewDaoImpl implements ReviewDao {
 		
 		return sqlSession.selectOne("com.jobhub.review.reviewSelectCNo", map);
 	}
+
+	@Override
+	public ReviewDto reviewSelectOne(int rNo) {
+
+		ReviewDto reviewDto = sqlSession.selectOne("com.jobhub.review.reviewSelectOne", rNo);
+		
+		return reviewDto;
+	}
+
+	@Override
+	public void reviewUpdateOne(ReviewDto reviewDto) {
+		
+		sqlSession.update("com.jobhub.review.reviewUpdateOne", reviewDto);
+	}
+
+	@Override
+	public int reviewDeleteOne(int rNo) {
+
+		return sqlSession.delete("com.jobhub.review.reviewDeleteOne", rNo);
+	}
 }
