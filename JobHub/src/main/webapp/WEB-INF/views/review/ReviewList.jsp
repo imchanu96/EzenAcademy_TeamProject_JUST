@@ -21,13 +21,30 @@
 	    window.addEventListener('resize', syncNavigationHeight);
 	});
 	
-// 	cNo=${pagingMap.cNo}
-// /review/companyInfo.do?cNo=
 	function comDetailViewFnc(cNo) {
-		
-		 var url = 'http://localhost:9080/JobHub/review/companyDetail.do?cNo=' + cNo;
+		var url = 'http://localhost:9080/JobHub/review/companyDetail.do?cNo=' + cNo;
 		
 		location.href = url;
+	}
+	
+	function openShowMoreFnc() {
+		var showMoreBoxObj = document.getElementById("showMoreOptionBox");
+		showMoreBoxObj.style.display = "block";
+	}
+	
+	function closeShowMoreFnc() {
+		var showMoreBoxObj = document.getElementById("showMoreOptionBox");
+		showMoreBoxObj.style.display = "none";
+	}
+	
+	function goReviewUpdateFnc(rNo) {
+		
+		location.href = 'http://localhost:9080/JobHub/review/update.do?rNo=' + rNo;
+	}
+	
+	function goReviewDeleteFnc(rNo) {
+		
+		location.href = 'http://localhost:9080/JobHub/review/delete.do?rNo=' + rNo;
 	}
 	
 </script>
@@ -193,6 +210,23 @@
 					<div class="reviewContentBox">
 						<span>${reviewDto.rContent}</span>
 					</div>
+					${reviewDto.rNo}
+					<div>
+					</div>
+					<c:if test="${sessionScope.personalMemberDto.pNo == reviewDto.rPNo}">
+						<input type="button" class="reviewShowMoreBox" value="..." onclick="openShowMoreFnc();">
+						<div id="showMoreOptionBox">
+							<div class="showMoreOptionItems" onclick="closeShowMoreFnc();">
+								X
+							</div>
+							<div class="showMoreOptionItems" onclick="goReviewUpdateFnc(${reviewDto.rNo});">
+								수정하기
+							</div>
+							<div class="showMoreOptionItems" onclick="goReviewDeleteFnc(${reviewDto.rNo});">
+								삭제하기
+							</div>
+						</div>
+					</c:if>
 				</div>
 			</c:forEach>
 			

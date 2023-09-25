@@ -73,6 +73,26 @@ public class ReviewServiceImpl implements ReviewService {
 		// TODO Auto-generated method stub
 		return reviewDao.reviewSelectCNo(pNo);
 	}
+
+	@Override
+	public ReviewDto reviewSelectOne(int rNo) {
+		
+		ReviewDto reviewDto = reviewDao.reviewSelectOne(rNo);
+		
+		return reviewDto;
+	}
+
+	@Override
+	public void reviewUpdateOne(ReviewDto reviewDto) {
+		
+		reviewDao.reviewUpdateOne(reviewDto);
+	}
+
+	@Override
+	public int reviewDeleteOne(int rNo) {
+
+		return reviewDao.reviewDeleteOne(rNo);
+	}
 }
 
 

@@ -173,4 +173,10 @@
 		 SET COMPANY_INTRODUCE = #{cIntroduce}
 		 WHERE COMPANY_NUMBER = #{cNo}
 	</update>
+	
+	<update id="preferUpdateOne" parameterType="map">
+		UPDATE COMPANY
+		 SET COMPANY_PREFER = #{prefer}
+		 WHERE COMPANY_NUMBER = #{cNo}
+	</update>
 </mapper>
