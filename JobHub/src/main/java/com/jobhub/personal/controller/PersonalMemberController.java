@@ -1,5 +1,6 @@
 package com.jobhub.personal.controller;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
@@ -109,8 +111,7 @@ public class PersonalMemberController {
 		log.debug("Welcome PersonalMemberController personalFindIdCtr!");
 
 		try {
-			PersonalMemberService.personalMemberSearchId(personalMemberDto);
-		    
+			personalMemberDto = PersonalMemberService.personalMemberSearchId(personalMemberDto);
 		    model.addAttribute("personalMemberDto", personalMemberDto);
 		    
 		} catch (Exception e) {
@@ -136,7 +137,7 @@ public class PersonalMemberController {
 		log.debug("Welcome PersonalMemberController personalFindPwdCtr!");
 
 		try {
-			PersonalMemberService.personalMemberSearchPwd(personalMemberDto);
+			personalMemberDto = PersonalMemberService.personalMemberSearchPwd(personalMemberDto);
 		    
 		    model.addAttribute("personalMemberDto", personalMemberDto);
 		    

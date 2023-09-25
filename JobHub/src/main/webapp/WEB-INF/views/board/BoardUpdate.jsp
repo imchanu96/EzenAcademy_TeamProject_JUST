@@ -72,14 +72,8 @@
 	<jsp:include page="/WEB-INF/views/Header.jsp"/>
 	
 	<div id="container">
-		<div id="navigation">
-			<div id="smallMenuBox">
-				<div class="smallMenuItem">
-					<a href="./list.do">전체 게시판</a>
-				</div>
-			</div>
-		</div>
-		
+		<jsp:include page="/WEB-INF/views/board/BoardNavigation.jsp"/>
+	
 		<div id="content">
 			<form action="./updateCtr.do" method='post'>
 				<input type='hidden' name='bNo' value='${boardDto.bNo}'>
