@@ -127,6 +127,9 @@
 		color: #8491a7;
 		margin-right: 10px;
 	}
+	#loginBtn {
+		cursor: pointer;
+	}
 </style>
 <script type="text/javascript">
 	
@@ -193,7 +196,7 @@
 				
 					<div id="Login_Button">
 						<div class="Login_Button">
-								<input type="submit" value="로그인">
+								<input id="loginBtn" type="submit" value="로그인">
 						</div> 
 					</div> <!-- login_Button -->
 				</form>	

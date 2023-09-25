@@ -260,7 +260,7 @@
 					<button type="button">취소</button>
 				</div>
 				<input type="hidden" name="rPNo" value="${personalMemberDto.pNo}">
-				<input type="hidden" name="rCNo" value="${cNo}">
+				<input type="text" name="rCNo" value="${cNo}">
 			</form>
 		</div>
 

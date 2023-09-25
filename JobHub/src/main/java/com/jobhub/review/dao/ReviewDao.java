@@ -13,4 +13,10 @@ public interface ReviewDao {
 
 	public int reviewSelectTotalCount(int cNo);
 	int reviewSelectCNo(int pNo);
+	
+	ReviewDto reviewSelectOne(int rNo);
+	
+	public void reviewUpdateOne(ReviewDto reviewDto);
+	
+	public int reviewDeleteOne(int rNo);
 }
