@@ -70,22 +70,147 @@ a:hover {
 	text-align: center;
 }
 /* end of header */
+#logoutModal {
+	position: fixed;
+	left: 40%;
+	top: 20%;
+}
+
+#logoutForm {
+	background-color: white;
+	width: 400px;
+	height: 500px;
+	margin: auto;
+}
+
+#logoutHeaderForm {
+	border: 1px solid #deebff;
+	background-color: #94b5fc;
+}
+
+.logoutHeaderForm {
+	color: black;
+	font-size: 30px;
+	width: 370px;
+	margin: auto;
+}
+
+#centerForm {
+	border: 1px solid #deebff;
+	height: 250px;
+}
+
+.centerForm {
+	color: #000;
+	font-size: 25px;
+	width: 350px;
+	height: 250px;
+	margin: auto;
+}
+
+#buttonForm {
+	background-color: white;
+}
+
+.buttonForm {
+	width: 300px;
+	height: 100px;
+	margin: auto;
+}
+
+.yesButton>input {
+	background-color: #94b5fc;
+	font-size: 20px;
+	width: 100px;
+	height: 60px;
+	float: left;
+}
+
+.noButton>input {
+	background-color: #94b5fc;
+	font-size: 20px;
+	width: 100px;
+	height: 60px;
+	float: right;
+}
+#myMenu{
+	display: none;
+}
 </style>
 <script type="text/javascript">
 
+	function myMenuFnc() {
+		var myMenu = document.getElementById("myMenu");
+		myMenu.style.display = "block";
+		
+		myMenu.addEventListener("mouseleave", function(e) {
+			myMenu.style.display = "none";
+		});
+	}
+	function clickLogoutFnc() {
+		var logoutModal = document.getElementById("logoutModal");
+		logoutModal.style.display = "block";
+	}
+	function logoutFnc(permission) {
+		if (permission == 1 || permission == 2) {
+			location.href = "<%=request.getContextPath()%>/personal/login.do";
+		}else if (permission == 5) {
+			location.href = "<%=request.getContextPath()%>/company/login.do";
+		}
+		
+	}
+	function backButton() {
+		var logoutModal = document.getElementById("logoutModal");
+		logoutModal.style.display = "none";
+	}
 </script>
 </head>
 <body>
+	<div id="logoutModal" style="display: none;">
+		<div id="logoutForm">
 
-	<c:if test="${sessionScope.permission <= 2 
+			<div id="logoutHeaderForm">
+				<div class="logoutHeaderForm">
+					<p>로그아웃폼</p>
+				</div>
+			</div>
+
+			<div id="centerForm">
+				<div class="centerForm">
+					<p>회원님</p>
+					<p>정말 로그아웃 하시겠습니까?</p>
+				</div>
+			</div>
+			<br>
+
+			<form action="logout.do" method="get">
+				<div id="buttonForm">
+					<div class="buttonForm">
+						<div class="yesButton">
+							<input type="button" value="네" onclick="logoutFnc(${permission});">
+						</div>
+
+						<div class="noButton">
+							<input type="button" value="아니오" onclick="cancelFnc();">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- logoutForm -->
+
+	</div>
+	<c:if
+		test="${sessionScope.permission <= 2 
 		or sessionScope.permission == 10}">
 		<div id="headerBox">
 			<div id="headerContent">
 
-				<a href="http://localhost:9080/JobHub/personal/home.do"> <img id="logo"
+				<a href="http://localhost:9080/JobHub/personal/home.do"> <img
+					id="logo"
 					src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/54897384/ee8218f0-b067-48da-8bf7-d31bef40f1cf">
 				</a>
-				
+
 				<div id="mainMenuBox">
 					<div class="mainMenuItem">
 						<a href="../review/companyMemberList.do"> 기업 조회 </a>
@@ -110,8 +235,12 @@ a:hover {
 				<c:if test="${sessionScope.personalMemberDto.pId ne null}">
 					<div id="myMenuBox">
 						<div>
-							<a href="<%=request.getContextPath()%>/personal/logout.do">
+							<a href="#" onmouseover="myMenuFnc();">
 								개인 : ${personalMemberDto.pId}님 </a>
+							<div id="myMenu">
+								<a href="#">마이 페이지</a>
+								<p onclick="clickLogoutFnc();">로그 아웃</p>
+							</div>
 						</div>
 					</div>
 				</c:if>
@@ -124,16 +253,18 @@ a:hover {
 		<div id="headerBox">
 			<div id="headerContent">
 
-				<a href="http://localhost:9080/JobHub/personal/home.do"> <img id="logo"
+				<a href="http://localhost:9080/JobHub/personal/home.do"> <img
+					id="logo"
 					src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/54897384/ee8218f0-b067-48da-8bf7-d31bef40f1cf">
 				</a>
-				
+
 				<div id="mainMenuBox">
 					<div class="mainMenuItem">
 						<a href="../company/searchPerson.do"> 인재 조회 </a>
 					</div>
 					<div class="mainMenuItem">
-						<a href="../review/list.do?cNo=${companyMemberDto.cNo}"> 기업 리뷰 </a>
+						<a href="../review/list.do?cNo=${companyMemberDto.cNo}"> 기업 리뷰
+						</a>
 					</div>
 				</div>
 
@@ -149,8 +280,12 @@ a:hover {
 				<c:if test="${sessionScope.companyMemberDto.cCode ne null}">
 					<div id="myMenuBox">
 						<div>
-							<a href="<%=request.getContextPath()%>/personal/logout.do">
+							<a href="#"  onmouseover="myMenuFnc();">
 								기업 : ${companyMemberDto.cName}님 </a>
+								<div id="myMenu">
+								<a href="#">마이 페이지</a>
+								<p onclick="clickLogoutFnc();">로그 아웃</p>
+							</div>
 						</div>
 					</div>
 				</c:if>

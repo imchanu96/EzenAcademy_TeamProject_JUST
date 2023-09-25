@@ -68,7 +68,7 @@ public class PersonalMemberController {
 
 		session.invalidate(); // 세션 종료
 
-		return "/common/LogoutForm";
+		return "redirect:/personal/login.do";
 	}
 
 
