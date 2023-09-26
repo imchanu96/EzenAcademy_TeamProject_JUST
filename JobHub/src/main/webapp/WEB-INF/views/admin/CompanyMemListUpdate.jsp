@@ -29,9 +29,7 @@
 </style>
 
 <script type="text/javascript">
-	function permissionUpdateFnc(cNo) {
-		location.href= "./companyUpdate.do?cNo=" + cNo;
-	}
+	
 </script>
 </head>
 <body>	
@@ -42,7 +40,7 @@
 	</div>
 	<jsp:include page="./util/SideBar.jsp"></jsp:include>
 	<div id="tableDiv">
-		<form action="companyUpdate.do" method="get">
+		<form action="companyUpdateCtr.do" method="post">
 		<table>
 			<tr>
 				<th style="width: 10%;">기업회원 번호</th>
@@ -53,28 +51,31 @@
 				<th style="width: 15%;">생성 일</th>
 				<th style="width: 15%;">수정 일</th>
 			</tr>
-			<c:forEach var="companyMemberDto" items="${companyMemList}">
+			<c:forEach var="companyMemberDto" items="${companyMemListUpdate}">
 				<tr>
 					<td>${companyMemberDto.cNo}</td>
 					<td>${companyMemberDto.cInChargeName}</td>
 					<td>${companyMemberDto.cCode}</td>
 					<td>${companyMemberDto.cName}</td>
 					<td>
-						<c:choose>
-							<c:when test="${companyMemberDto.permission == 0}">
-								탈퇴 회원
-							</c:when>
-							<c:when test="${companyMemberDto.permission == 5}">
-								기업 회원
-							</c:when>
-						</c:choose>
+<%-- 						<c:choose> --%>
+<%-- 							<c:when test="${personalDto.pPermission == 1  --%>
+<%-- 								|| personalDto.pPermission == 2}"> --%>
+<!-- 										개인 회원 -->
+<%-- 									</c:when> --%>
+<%-- 							<c:when test="${companyMemberDto.pPermission == 5}"> --%>
+										기업 회원
+<%-- 									</c:when> --%>
+<%-- 							<c:when test="${personalDto.pPermission == 10}"> --%>
+<!-- 										관리자 -->
+<%-- 									</c:when> --%>
+<%-- 						</c:choose> --%>
 					</td>
 					<td><fmt:formatDate pattern="yyyy-MM-dd" 
 						value="${companyMemberDto.cCreDate}" /></td>
 					<td><fmt:formatDate pattern="yyyy-MM-dd" 
 						value="${companyMemberDto.cModDate}" /></td>
-						<td><div><input type="button" value="삭제" 
-							onclick="permissionUpdateFnc(${companyMemberDto.cNo});"></div></td>
+						<td></td>
 				</tr>
 			</c:forEach>
 		</table>

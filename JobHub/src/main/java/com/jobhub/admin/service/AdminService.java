@@ -1,6 +1,7 @@
 package com.jobhub.admin.service;
 
 import java.util.List;
+import java.util.Map;
 
 import com.jobhub.admin.dto.AdminDto;
 import com.jobhub.company.dto.CompanyMemberDto;
@@ -14,13 +15,13 @@ public interface AdminService {
 	
 	int memberSelectTotalCount();
 
-	public void adminDeleteOne(AdminDto adminDto);
+//	public void adminDeleteOne(AdminDto adminDto);
 
 	public List<CompanyMemberDto> companyMemSelectList();
 
 	public List<PersonalMemberDto> personalMemberSelectList();
 
-	void personalDeleteOne(AdminDto adminDto);
+	public void personalUpdateOne(Map<String, Object> map);
 
-	void companyDeleteOne(AdminDto adminDto);
+	public void companyUpdateOne(Map<String, Object> map);
 }

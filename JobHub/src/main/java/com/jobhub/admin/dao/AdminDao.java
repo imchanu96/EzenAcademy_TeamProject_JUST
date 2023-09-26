@@ -1,6 +1,7 @@
 package com.jobhub.admin.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import com.jobhub.admin.dto.AdminDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
@@ -11,11 +12,11 @@ public interface AdminDao {
 
 	int memberSelectTotalCount();
 
-	public void adminDeleteOne(AdminDto adminDto);
+//	public void adminDeleteOne(AdminDto adminDto);
 
-	void personalDeleteOne(AdminDto adminDto);
+	public void personalUpdateOne(Map<String, Object> map);
 
-	void companyDeleteOne(AdminDto adminDto);
+	public void companyUpdateOne(Map<String, Object> map);
 
 	List<PersonalMemberDto> memberSelectList();
 
