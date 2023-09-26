@@ -20,7 +20,7 @@
 			var titleObj = document.getElementById("titleInput");
 			var titleErrorMsgObj = document.getElementById("titleErrorMsg")
 			
-			if (titleObj.value == "" || titleObj.value.length < 20) {
+			if (titleObj.value == "" || titleObj.value.length < 50) {
 				titleObj.setAttribute("style", "border: 1px solid #d7dce5");
 				titleErrorMsgObj.setAttribute("style", "display: none")
 			} else if (titleObj.value.length > 20){
@@ -39,7 +39,7 @@
 			var contentObj = document.getElementById("contentInput");
 			var contentErrorMsgObj = document.getElementById("contentErrorMsg")
 			
-			if (contentObj.value == "" || contentObj.value.length < 200) {
+			if (contentObj.value == "" || contentObj.value.length < 1000) {
 				contentObj.setAttribute("style", "border: 1px solid #d7dce5");
 				contentErrorMsgObj.setAttribute("style", "display: none")
 			} else {
@@ -49,8 +49,11 @@
 		}
 	
 		function updateFnc() {
+		var postObj = document.getElementById('updateForm');
+		
 			if (confirm("이대로 수정하시겠습니까?") == true){ 
 				alert("수정 완료되었습니다.");
+				updateObj.submit();
 			}else{
 				return;
 			}
@@ -75,7 +78,7 @@
 		<jsp:include page="/WEB-INF/views/board/BoardNavigation.jsp"/>
 	
 		<div id="content">
-			<form action="./updateCtr.do" method='post'>
+			<form id="updateForm" action="./updateCtr.do" method='post'>
 				<input type='hidden' name='bNo' value='${boardDto.bNo}'>
 				<div id="titleInputBox">
 					<input name="bTitle" id="titleInput" type="text" 
@@ -94,7 +97,7 @@
 					</div>
 				</div>
 				<div id="buttonBox">
-					<button type="submit" onclick="updateFnc()">등록</button>
+					<button type="button" onclick="updateFnc()">등록</button>
 					<button type="button" onclick="cancleFnc()">취소</button>
 				</div>
 			</form>

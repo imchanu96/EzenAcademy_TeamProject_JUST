@@ -3,7 +3,6 @@
 	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
-
 <mapper namespace="com.jobhub.board">
 
 	<resultMap type="boardDto" id="boardResultMap">
@@ -21,13 +20,13 @@
 		<result column="PERSONAL_NUMBER" property="pNo" />
 	</resultMap>
 	
-	<resultMap type="commentDto" id="commentResultMap">
-		<id column="BOARD_COMMENT_NUMBER" property="comNo" />
-		<result column="BOARD_COMMENT_CONTENT" property="comContent" />
-		<result column="BOARD_COMMENT_LIKE_COUNT" property="comLikeCount" />
-		<result column="BOARD_NUMBER" property="bNo" />
-		<result column="PERSONAL_NUMBER" property="pNo" />
-	</resultMap>
+<!-- 	<resultMap type="commentDto" id="commentResultMap"> -->
+<!-- 		<id column="BOARD_COMMENT_NUMBER" property="comNo" /> -->
+<!-- 		<result column="BOARD_COMMENT_CONTENT" property="comContent" /> -->
+<!-- 		<result column="BOARD_COMMENT_LIKE_COUNT" property="comLikeCount" /> -->
+<!-- 		<result column="BOARD_NUMBER" property="bNo" /> -->
+<!-- 		<result column="PERSONAL_NUMBER" property="pNo" /> -->
+<!-- 	</resultMap> -->
 
 	<select id="boardSelectList" parameterType="map" resultMap="boardResultMap">
 		SELECT RNR.RN, RNR.BOARD_NUMBER, RNR.BOARD_TITLE, RNR.BOARD_WRITER, RNR.BOARD_CREATE_DATE, RNR.BOARD_VIEWS
@@ -60,11 +59,11 @@
 		WHERE BOARD_NUMBER =#{bNo}
 	</select>
 	
-	<select id="readReply" parameterType="int" resultMap="commentResultMap">
-		SELECT BOARD_COMMENT_NUMBER, BOARD_COMMENT_CONTENT, BOARD_COMMENT_LIKE_COUNT
-		FROM BOARD_COMMENT
-		WHERE BOARD_COMMENT_NUMBER =#{comNo}
-	</select>
+<!-- 	<select id="readReply" parameterType="int" resultMap="commentResultMap"> -->
+<!-- 		SELECT BOARD_COMMENT_NUMBER, BOARD_COMMENT_CONTENT, BOARD_COMMENT_LIKE_COUNT -->
+<!-- 		FROM BOARD_COMMENT -->
+<!-- 		WHERE BOARD_COMMENT_NUMBER =#{comNo} -->
+<!-- 	</select> -->
 	
 	<update id="boardUpdateOne" parameterType="boardDto">
 		UPDATE BOARD

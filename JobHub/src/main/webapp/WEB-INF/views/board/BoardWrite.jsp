@@ -20,7 +20,7 @@
 		var titleObj = document.getElementById("titleInput");
 		var titleErrorMsgObj = document.getElementById("titleErrorMsg");
 		
-		if (titleObj.value == "" || titleObj.value.length < 20) {
+		if (titleObj.value == "" || titleObj.value.length < 50) {
 			titleObj.setAttribute("style", "border: 1px solid #d7dce5");
 			titleErrorMsgObj.setAttribute("style", "display: none");
 			
@@ -57,15 +57,18 @@
 	}
 	
 	function registerFnc() {
-		if (confirm("이대로 등록하시겠습니까?")){
+		var postObj = document.getElementById('addForm');
+	
+		if (confirm("이대로 등록하시겠습니까?") == true){
 			alert("등록 완료되었습니다.");
+			postObj.submit();
 		}else{
 			return;
 		}
 	}
 		
 	function cancleFnc() {
-		if (confirm("정말 취소하시겠습니까?")){ 
+		if (confirm("정말 취소하시겠습니까?") == true){ 
 			location.href = "./list.do";
 			alert("취소되었습니다.");
 		}else{
@@ -74,12 +77,10 @@
 	}
 	
 	function submitFnc() {
-		var postObj = document.getElementsByTagName('Form')[0];
 		
 		if (titleBlurFnc() == true && contentBlurFnc() == true) {
 			registerFnc();
-			postObj.submit();
-		}
+		} 
 	}
 </script>
 
@@ -92,15 +93,15 @@
 		<jsp:include page="/WEB-INF/views/board/BoardNavigation.jsp"/>
 		
 		<div id="content">
-			<form action="./addCtr.do" method='post'>
-				<input type='hidden' name='bWriter' value='${personalMemberDto.getpNickname()}'>
+			<form id="addForm" action="./addCtr.do" method='post'>
+				<input type='hidden' name='bWriter' value='${personalMemberDto.getpNickname()} ${personalMemberDto.getpCom()}'>
 				<input type='hidden' name='pNo' value='${personalMemberDto.getpNo()}'>
 				<div id="titleInputBox">
 					<input name="bTitle" id="titleInput" type="text"
-						placeholder="제목을 입력해주세요(20자 이내)"
+						placeholder="제목을 입력해주세요(50자 이내)"
 						onfocus="titleFocusFnc();" onblur="titleBlurFnc();">
 					<div class="errorMsg" id="titleErrorMsg">
-						최대 20자 이내로 입력해주세요.
+						최대 50자 이내로 입력해주세요.
 					</div>
 				</div>
 

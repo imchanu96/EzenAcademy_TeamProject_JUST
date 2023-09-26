@@ -2,7 +2,9 @@ package com.jobhub.admin.controller;
 
 
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpSession;
 
@@ -108,39 +110,53 @@ public class AdminController {
 		    return "admin/PersonalMemberList";
 		}
 		
-		@RequestMapping(value = "/admin/delete.do", method = RequestMethod.GET)
-		public String memberDelete(AdminDto adminDto, Model model) {
+//		@RequestMapping(value = "/admin/memberUpdate.do", method = RequestMethod.GET)
+//		public String memberDelete(AdminDto adminDto, Model model) {
+//			
+//			log.info("Welcome MemberController delete");
+//			
+//			adminService.adminDeleteOne(adminDto);
+//			
+//			System.out.println(adminDto);
+//			
+//			return "admin/MemberList";
+//		}
+		
+		@RequestMapping(value = "/admin/personalUpdate.do", method = RequestMethod.GET)
+		public String personalUpdate(int pNo, Model model) {
 			
-			log.info("Welcome MemberController delete");
+			log.info("Welcome MemberController personalUpdate pNo=" + pNo);
+			Map<String, Object> map = new HashMap<String, Object>();
+			System.out.println(pNo);
+			map.put("pNo", pNo);
 			
-			adminService.adminDeleteOne(adminDto);
+			try {
+				adminService.personalUpdateOne(map);
+			} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			}
 			
-			System.out.println(adminDto);
-			
-			return "admin/MemberList";
+			return "redirect:/admin/personalMemberList.do";
 		}
 		
-		@RequestMapping(value = "/admin/personaldelete.do", method = RequestMethod.GET)
-		public String personalDelete(AdminDto adminDto, Model model) {
+		@RequestMapping(value = "/admin/companyUpdate.do", method = RequestMethod.GET)
+		public String companyUpdate(int cNo, Model model) {
 			
-			log.info("Welcome MemberController personaldelete");
+			log.info("Welcome MemberController companyUpdate");
 			
-			adminService.personalDeleteOne(adminDto);
+			Map<String, Object> map = new HashMap<String, Object>();
+			System.out.println(cNo);
+			map.put("cNo", cNo);
 			
-			System.out.println(adminDto);
+			try {
+				adminService.companyUpdateOne(map);
+			} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			}
 			
-			return "admin/PersonalMemberList";
+			return "redirect:/admin/companyMemberList.do";
 		}
 		
-		@RequestMapping(value = "/admin/companydelete.do", method = RequestMethod.GET)
-		public String companydelete(AdminDto adminDto, Model model) {
-			
-			log.info("Welcome MemberController companydelete");
-			
-			adminService.companyDeleteOne(adminDto);
-			
-			System.out.println(adminDto);
-			
-			return "admin/CompanyMemList";
-		}
 }

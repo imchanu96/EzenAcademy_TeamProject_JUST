@@ -1,6 +1,7 @@
 package com.jobhub.admin.service;
 
 import java.util.List;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -44,11 +45,11 @@ public class AdminServiceImpl implements AdminService{
 		return adminDao.memberSelectTotalCount();
 	}
 
-	@Override
-	public void adminDeleteOne(AdminDto adminDto) {
-		// TODO Auto-generated method stub
-		adminDao.adminDeleteOne(adminDto);
-	}
+//	@Override
+//	public void adminDeleteOne(AdminDto adminDto) {
+//		// TODO Auto-generated method stub
+//		adminDao.adminDeleteOne(adminDto);
+//	}
 
 	@Override
 	public List<CompanyMemberDto> companyMemSelectList() {
@@ -63,14 +64,14 @@ public class AdminServiceImpl implements AdminService{
 	}
 
 	@Override
-	public void personalDeleteOne(AdminDto adminDto) {
-		adminDao.personalDeleteOne(adminDto);
+	public void personalUpdateOne(Map<String, Object> map) {
+		adminDao.personalUpdateOne(map);
 		
 	}
 
 	@Override
-	public void companyDeleteOne(AdminDto adminDto) {
-		adminDao.companyDeleteOne(adminDto);
+	public void companyUpdateOne(Map<String, Object> map) {
+		adminDao.companyUpdateOne(map);
 		
 	}
 

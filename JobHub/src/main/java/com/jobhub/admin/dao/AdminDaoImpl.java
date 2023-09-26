@@ -37,24 +37,24 @@ public class AdminDaoImpl implements AdminDao{
 	}
 
 
+//	@Override
+//	public void adminDeleteOne(AdminDto adminDto) {
+//		// TODO Auto-generated method stub
+//		sqlSession.delete(namespace + "adminDeleteOne", adminDto);
+//	}
+
+
 	@Override
-	public void adminDeleteOne(AdminDto adminDto) {
+	public void personalUpdateOne(Map<String, Object> map) {
 		// TODO Auto-generated method stub
-		sqlSession.delete(namespace + "adminDeleteOne", adminDto);
+		sqlSession.update(namespace + "personalUpdateOne", map); 
 	}
 
 
 	@Override
-	public void personalDeleteOne(AdminDto adminDto) {
+	public void companyUpdateOne(Map<String, Object> map) {
 		// TODO Auto-generated method stub
-		sqlSession.delete(namespace + "personalDeleteOne", adminDto); 
-	}
-
-
-	@Override
-	public void companyDeleteOne(AdminDto adminDto) {
-		// TODO Auto-generated method stub
-		sqlSession.delete(namespace + "companyDeleteOne", adminDto);
+		sqlSession.update(namespace + "companyUpdateOne", map);
 	}
 
 

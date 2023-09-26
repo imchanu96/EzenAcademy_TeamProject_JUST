@@ -30,6 +30,31 @@
 		<result column="DISCONNECTION_TIME" property="pDisconnectionTime" 
 			javaType="java.util.Date" />
 	</resultMap>
+	
+	<resultMap type="companyMemberDto" id="companyResultMap">
+		<result column="COMPANY_NAME" property="cName" />	
+		<result column="COMPANY_NAME" property="cName" />
+		<result column="COMPANY_ADDRESS" property="cAdd" />
+		<result column="COMPANY_TYPE" property="cType" />
+		<result column="COMPANY_ESTABLISH_DATE" property="cEstDate" 
+		javaType="java.util.Date" />
+		<result column="COMPANY_HOMEPAGE" property="cHomepage" />
+		<result column="COMPANY_INTRODUCE" property="cIntroduce" />
+		<result column="COMPANY_ID" property="cId" />
+		<result column="COMPANY_PASSWORD" property="cPwd" />
+		<result column="COMPANY_CODE" property="cCode" />
+		<result column="COMPANY_LICENSE" property="cLicense" />
+		<result column="COMPANY_LOGO" property="cLogo" />
+		<result column="COMPANY_PRESIDENT_NAME" property="cPrName" />
+		<result column="COMPANY_INCHARGE_NAME" property="cInChargeName" />
+		<result column="COMPANY_INCHARGE_EMAIL" property="cInChargeEmail" />
+		<result column="COMPANY_INCHARGE_PHONENUMBER" property="cInChargePhoneNum" />
+		<result column="COMPANY_PREFER" property="cPrefer" />
+		<result column="COMPANY_CREATE_DATE" property="cCreDate" />
+		<result column="COMPANY_MODIFY_DATE" property="cModDate" />
+		<result column="CONNECTION_TIME" property="connTime" />
+		<result column="DISCONNECTION_TIME" property="disconnTime" />	
+	</resultMap>
 
 	
 
@@ -54,18 +79,15 @@
 		WHERE PERSONAL_ID = #{pId} AND PERSONAL_PASSWORD = #{pPwd}
 	</select>
 	
-	<delete id="adminDeleteOne" parameterType="adminDto">
-		DELETE FROM PERSONAL
+	<update id="personalUpdateOne" parameterType="map">
+		UPDATE PERSONAL
+		 SET PERMISSION = 0
 		 WHERE PERSONAL_NUMBER = #{pNo}
-	</delete>
+	</update>
 	
-	<delete id="personalDeleteOne" parameterType="adminDto">
-		DELETE FROM PERSONAL
-		 WHERE PERSONAL_NUMBER = #{pNo}
-	</delete>
-	
-	<delete id="companyDeleteOne" parameterType="adminDto">
-		DELETE FROM COMPANY
+	<update id="companyUpdateOne" parameterType="map">
+		UPDATE COMPANY
+		 SET PERMISSION	= 0
 		 WHERE COMPANY_NUMBER = #{cNo}
-	</delete>
+	</update>
 </mapper>
