@@ -60,11 +60,11 @@
 		WHERE BOARD_NUMBER =#{bNo}
 	</select>
 	
-	<select id="readReply" parameterType="int" resultMap="commentResultMap">
-		SELECT BOARD_COMMENT_NUMBER, BOARD_COMMENT_CONTENT, BOARD_COMMENT_LIKE_COUNT
-		FROM BOARD_COMMENT
-		WHERE BOARD_COMMENT_NUMBER =#{comNo}
-	</select>
+<!-- 	<select id="readReply" parameterType="int" resultMap="commentResultMap"> -->
+<!-- 		SELECT BOARD_COMMENT_NUMBER, BOARD_COMMENT_CONTENT, BOARD_COMMENT_LIKE_COUNT -->
+<!-- 		FROM BOARD_COMMENT -->
+<!-- 		WHERE BOARD_COMMENT_NUMBER =#{comNo} -->
+<!-- 	</select> -->
 	
 	<update id="boardUpdateOne" parameterType="boardDto">
 		UPDATE BOARD

@@ -59,7 +59,7 @@ public class BoardController {
 //	게시물 작성 페이지 열기(글쓰기버튼 클릭)
 	@RequestMapping(value = "/board/add.do", method = RequestMethod.GET)
 	public String postAdd(HttpSession session, Model model) {
-		log.info("Welcome BoardController boardAdd!{}", session);
+		log.info("Welcome BoardController boardAdd!");
 		
 		try {
 			PersonalMemberDto pmd = (PersonalMemberDto)session.getAttribute("personalMemberDto");

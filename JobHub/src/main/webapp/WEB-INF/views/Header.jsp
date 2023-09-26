@@ -153,9 +153,9 @@ a:hover {
 	}
 	function logoutFnc(permission) {
 		if (permission == 1 || permission == 2) {
-			location.href = "<%=request.getContextPath()%>/personal/login.do";
+			location.href = "<%=request.getContextPath()%>/personal/logout.do";
 		}else if (permission == 5) {
-			location.href = "<%=request.getContextPath()%>/company/login.do";
+			location.href = "<%=request.getContextPath()%>/company/logout.do";
 		}
 		
 	}
