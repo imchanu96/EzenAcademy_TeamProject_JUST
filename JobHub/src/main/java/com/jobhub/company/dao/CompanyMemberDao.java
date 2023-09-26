@@ -17,6 +17,10 @@ public interface CompanyMemberDao {
 
 	public int companyMemberSelectTotalCount();
 	
+	public CompanyMemberDto companyMemberSearchId(CompanyMemberDto companyMemberDto);
+
+	public CompanyMemberDto companyMemberSearchPwd(CompanyMemberDto companyMemberDto);
+	
 	public void companyMembercInChargeNameUpdateOne(CompanyMemberDto companyMemberDto);
 
 	public void companyMembercInChargeEmailUpdateOne(CompanyMemberDto companyMemberDto);

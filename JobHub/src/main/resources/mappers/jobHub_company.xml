@@ -76,7 +76,7 @@
                    FROM COMPANY
                    ORDER BY COMPANY_NUMBER
                ) C
-          ) COMPNAY
+          ) COMPANY
    </select>
 	
 	<select id="memberSelectList"  parameterType="map" resultMap="companyMemberResultMap">
@@ -136,6 +136,19 @@
 				, 5, SYSDATE, SYSDATE, SYSDATE, SYSDATE)
 
 	</insert>
+	
+	<select id="companyMemberSearchId" parameterType="companyMemberDto" resultMap="companyMemberResultMap">
+		SELECT COMPANY_NAME, COMPANY_CODE
+		FROM COMPANY
+		WHERE COMPANY_INCHARGE_NAME =#{cInChargeName} AND COMPANY_INCHARGE_EMAIL =#{cInChargeEmail}
+	</select>
+	
+	<select id="companyMemberSearchPwd" parameterType="companyMemberDto" resultMap="companyMemberResultMap">
+		SELECT COMPANY_NAME, COMPANY_PASSWORD
+		FROM COMPANY
+		WHERE COMPANY_INCHARGE_NAME =#{cInChargeName} AND COMPANY_INCHARGE_EMAIL =#{cInChargeEmail}
+		AND COMPANY_CODE =#{cCode}
+	</select>
 	
 	<update id="companyMembercInChargeNameUpdateOne" parameterType="companyMemberDto">
 		UPDATE COMPANY

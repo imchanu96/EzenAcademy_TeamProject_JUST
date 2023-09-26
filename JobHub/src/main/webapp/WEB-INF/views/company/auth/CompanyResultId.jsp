@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>개인회원 - 아이디 찾기</title>
+<title>기업회원 - 아이디 찾기</title>
 <style type="text/css">
 	#container {
 		margin: 0px auto;
@@ -77,7 +77,7 @@
 		<form id="findIdBox" method="post">
 			<div id="contentBox">
 				<c:choose>
-					<c:when test="${empty personalMemberDto}">
+					<c:when test="${empty companyMemberDto}">
 						<div id="titleBox">
 							<p>아이디 찾기</p>
 						</div>
@@ -92,10 +92,10 @@
 					</c:when>
 					<c:otherwise>
 						<div id="titleBox">
-							<p>${personalMemberDto.pName}님의 아이디</p>
+							<p>${companyMemberDto.cName}님의 아이디</p>
 						</div>
 						<div id="informIdBox" class="inputBox">
-							<p>ID는 ${personalMemberDto.pId} 입니다</p>
+							<p>ID(사업자 등록번호)는 ${companyMemberDto.cCode} 입니다</p>
 						</div>
 						<div id="buttonBox">
 							<button type="button" onclick="location.href='./login.do';">로그인</button>

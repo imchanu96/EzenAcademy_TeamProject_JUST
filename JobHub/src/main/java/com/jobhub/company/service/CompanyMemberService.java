@@ -14,6 +14,10 @@ public interface CompanyMemberService {
 
 	public List<PersonalMemberDto> personalInfoList(Map<String, Object> map);
 	
+	public CompanyMemberDto companyMemberSearchId(CompanyMemberDto companyMemberDto);
+
+	public CompanyMemberDto companyMemberSearchPwd(CompanyMemberDto companyMemberDto);
+	
 	public void companyMembercInChargeNameUpdateOne(CompanyMemberDto companyMemberDto);
 	
 	public void companyMembercInChargeEmailUpdateOne(CompanyMemberDto companyMemberDto);

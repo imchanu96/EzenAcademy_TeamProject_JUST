@@ -167,9 +167,11 @@
 				
 					<div id="logo">
 						<div class="logo">
-							<img alt="" src="https://github.com/noohij/
-								Ezen_TeamProject_JUST/assets/54897384/
-								ee8218f0-b067-48da-8bf7-d31bef40f1cf">
+							<a class="logo" href="http://localhost:9080/JobHub/home.do">
+								<img alt="" src="https://github.com/noohij/
+									Ezen_TeamProject_JUST/assets/54897384/
+									ee8218f0-b067-48da-8bf7-d31bef40f1cf">
+							</a>
 						</div> <!-- logo -->
 					</div>
 					
@@ -182,7 +184,7 @@
 				<form action="loginCtr.do" method="post">
 				<div id="IDandPwd_Box">
 					<div class="ID_Box">
-						<input type="text" id="idInput" name="cCode" placeholder="사업자등록번호"
+						<input type="text" id="idInput" name="cCode" placeholder="사업자 등록번호 '-' 포함"
 							onfocus="idInputFocusFnc();" onblur="idInputBlurFnc();">
 					</div>
 					
@@ -202,9 +204,9 @@
 				
 				<div id="TagNames">
 					<div> <!-- 아이디/비번/회원가입 -->
-						<a href="">아이디</a>
+						<a href="../company/findId.do">아이디</a>
 						|
-						<a href="">비밀번호 찾기</a>
+						<a href="../company/findPwd.do">비밀번호 찾기</a>
 						|
 						<a href="../company/add.do">회원가입</a>
 					</div>

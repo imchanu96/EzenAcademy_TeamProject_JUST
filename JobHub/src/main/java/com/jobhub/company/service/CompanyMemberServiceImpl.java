@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 
 import com.jobhub.company.dao.CompanyMemberDao;
 import com.jobhub.company.dto.CompanyMemberDto;
-import com.jobhub.company.service.CompanyMemberServiceImpl;
 import com.jobhub.personal.dao.PersonalMemberDao;
 import com.jobhub.personal.dto.PersonalMemberDto;
 
@@ -42,6 +41,18 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 		return personalMemberDao.personalInfoList(map);
 	}
 
+	@Override
+	public CompanyMemberDto companyMemberSearchId(CompanyMemberDto companyMemberDto) {
+		// TODO Auto-generated method stub
+		return companyMemberDao.companyMemberSearchId(companyMemberDto);
+	}
+
+	@Override
+	public CompanyMemberDto companyMemberSearchPwd(CompanyMemberDto companyMemberDto) {
+		// TODO Auto-generated method stub
+		return companyMemberDao.companyMemberSearchPwd(companyMemberDto);
+	}
+	
 	@Override
 	public void companyMembercInChargeNameUpdateOne(CompanyMemberDto companyMemberDto) {
 		// TODO Auto-generated method stub
@@ -109,7 +120,5 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 		
 		companyMemberDao.preferUpdateOne(map);
 	}
-	
-	
 
 }

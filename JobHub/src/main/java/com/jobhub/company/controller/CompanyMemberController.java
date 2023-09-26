@@ -15,7 +15,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.company.service.CompanyMemberService;
@@ -100,6 +99,59 @@ public class CompanyMemberController {
 		return "company/search/SearchPerson";
 	}
 
+	//아이디찾기 화면으로 이동
+	@RequestMapping(value = "/company/findId.do", method = RequestMethod.GET)
+	public String companyFindId(Model model) {
+
+		log.debug("Welcome CompanyMemberController personalFindId!");
+
+		return "/company/auth/CompanyFindId";
+	}
+		
+	//아이디 결과
+	@RequestMapping(value = "/company/findIdCtr.do", method = RequestMethod.POST)
+	public String companyFindIdCtr(HttpSession session, CompanyMemberDto companyMemberDto, Model model) {
+
+		log.debug("Welcome CompanyMemberController companyFindIdCtr!");
+
+		try {
+			companyMemberDto = companyMemberService.companyMemberSearchId(companyMemberDto);
+		    model.addAttribute("companyMemberDto", companyMemberDto);
+		    
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return "/company/auth/CompanyResultId";
+	}
+		
+	//비밀번호찾기 화면으로 이동
+	@RequestMapping(value = "/company/findPwd.do", method = RequestMethod.GET)
+	public String companyFindPwd(Model model) {
+
+		log.debug("Welcome CompanyMemberController companyFindPwd!");
+
+		return "/company/auth/CompanyFindPwd";
+	}
+		
+	//비밀번호 결과
+	@RequestMapping(value = "/company/findPwdCtr.do", method = RequestMethod.POST)
+	public String companyFindPwdCtr(HttpSession session, CompanyMemberDto companyMemberDto, Model model) {
+
+		log.debug("Welcome CompanyMemberController companyFindPwdCtr!");
+
+		try {
+			companyMemberDto = companyMemberService.companyMemberSearchPwd(companyMemberDto);
+		    
+		    model.addAttribute("companyMemberDto", companyMemberDto);
+		    
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return "/company/auth/CompanyResultPwd";
+	}
+		
 	@RequestMapping(value = "/company/personalInfoList.do", method = { RequestMethod.GET, RequestMethod.POST })
 	public String memberList(int cNo, String talentScore, String careerScore, String educationScore,
 			String licenseScore, String search, String searchText, Model model) {

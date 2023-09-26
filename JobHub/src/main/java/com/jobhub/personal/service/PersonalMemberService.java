@@ -1,7 +1,5 @@
 package com.jobhub.personal.service;
 
-import java.util.Map;
-
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;

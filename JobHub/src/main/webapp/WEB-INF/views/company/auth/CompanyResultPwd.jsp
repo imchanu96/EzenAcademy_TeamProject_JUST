@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>개인회원 - 아이디 찾기</title>
+<title>기업회원 - 비밀번호 찾기</title>
 <style type="text/css">
 	#container {
 		margin: 0px auto;
@@ -14,7 +14,7 @@
 		width: 540px;
 		background-color: #eff5ff;
 	}
-	#findIdBox {
+	#findPwdBox {
 		margin: 0px auto;
 		width: 540px;
 		height: 345px;
@@ -45,18 +45,12 @@
 	    border: 1px solid #d7dce5;
 	    border-radius: 6px;
 	}
-	
-	.dummyBox{
-		display: none;
-	}
-	
 	#buttonBox {
 		width: 400px;
 		height: 100px;
 		margin-top: 30px;
 		float: left;
 	}
-	
 	button {
 	    width: 115px;
 	    height: 38px;
@@ -74,33 +68,32 @@
 <body>
 
 	<div id="container">
-		<form id="findIdBox" method="post">
+		<form id="findPwdBox" method="post">
 			<div id="contentBox">
 				<c:choose>
-					<c:when test="${empty personalMemberDto}">
+					<c:when test="${empty companyMemberDto}">
 						<div id="titleBox">
-							<p>아이디 찾기</p>
+							<p>비밀번호 찾기</p>
 						</div>
 						<div id="informIdBox" class="inputBox">
 							<p>입력하신 정보와 일치하는 회원이 없습니다.<br>
 							해당 정보를 다시 확인하시거나 회원가입을 해주세요.</p>
 						</div>
 						<div id="buttonBox">
-							<button type="button" onclick="location.href='./findId.do';">다시 찾기</button>
+							<button type="button" onclick="location.href='./findPwd.do';">다시찾기</button>
 							<button type="button" onclick="location.href='./add.do';">회원가입</button>
 						</div>	
 					</c:when>
 					<c:otherwise>
 						<div id="titleBox">
-							<p>${personalMemberDto.pName}님의 아이디</p>
+							<p>${companyMemberDto.cName}님의 비밀번호</p>
 						</div>
 						<div id="informIdBox" class="inputBox">
-							<p>ID는 ${personalMemberDto.pId} 입니다</p>
+							<p>비밀번호는 ${companyMemberDto.cPwd} 입니다</p>
 						</div>
 						<div id="buttonBox">
 							<button type="button" onclick="location.href='./login.do';">로그인</button>
-							<button type="button" onclick="location.href='./findPwd.do';">비밀번호 찾기</button>
-						</div>			
+						</div>
 					</c:otherwise>
 				</c:choose>
 			</div>

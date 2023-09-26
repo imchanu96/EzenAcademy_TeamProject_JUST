@@ -76,7 +76,8 @@
 							<p>비밀번호 찾기</p>
 						</div>
 						<div id="informIdBox" class="inputBox">
-							<p>조회결과가 없습니다.</p>
+							<p>입력하신 정보와 일치하는 회원이 없습니다.<br>
+							해당 정보를 다시 확인하시거나 회원가입을 해주세요.</p>
 						</div>
 						<div id="buttonBox">
 							<button type="button" onclick="location.href='./findPwd.do';">다시찾기</button>

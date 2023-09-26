@@ -57,6 +57,18 @@ public class CompanyMemberDaoImpl implements CompanyMemberDao {
 	}
 
 	@Override
+	public CompanyMemberDto companyMemberSearchId(CompanyMemberDto companyMemberDto) {
+		// TODO Auto-generated method stub
+		return sqlSession.selectOne(namespace + "companyMemberSearchId", companyMemberDto);
+	}
+
+	@Override
+	public CompanyMemberDto companyMemberSearchPwd(CompanyMemberDto companyMemberDto) {
+		// TODO Auto-generated method stub
+		return sqlSession.selectOne(namespace + "companyMemberSearchPwd", companyMemberDto);
+	}
+	
+	@Override
 	public void companyMembercInChargeNameUpdateOne(CompanyMemberDto companyMemberDto) {
 		// TODO Auto-generated method stub
 		
@@ -124,4 +136,5 @@ public class CompanyMemberDaoImpl implements CompanyMemberDao {
 		// TODO Auto-generated method stub
 		sqlSession.update(namespace + "preferUpdateOne", map);
 	}
+
 }
