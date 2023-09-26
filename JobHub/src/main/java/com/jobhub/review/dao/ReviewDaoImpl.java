@@ -39,7 +39,7 @@ public class ReviewDaoImpl implements ReviewDao {
 	}
 	
 	@Override
-	public int reviewInsertOne(ReviewDto reviewDto) {
+	public int reviewInsertOne(ReviewDto reviewDto, int cNo) {
 		
 		return sqlSession.insert("com.jobhub.review.reviewInsertOne", reviewDto);
 	}
@@ -71,7 +71,7 @@ public class ReviewDaoImpl implements ReviewDao {
 	}
 
 	@Override
-	public void reviewUpdateOne(ReviewDto reviewDto) {
+	public void reviewUpdateOne(ReviewDto reviewDto, int rCNo) {
 		
 		sqlSession.update("com.jobhub.review.reviewUpdateOne", reviewDto);
 	}

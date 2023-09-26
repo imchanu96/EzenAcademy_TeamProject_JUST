@@ -261,6 +261,7 @@
 				</div>
 				pNo<input type="text" name="rPNo" value="${personalMemberDto.pNo}">
 				rNo<input type="text" name="rNo" value="${reviewDto.rNo}">
+				cNo<input type="text" name="rCNo" value="${reviewDto.rCNo}">
 			</form>
 		</div>
 

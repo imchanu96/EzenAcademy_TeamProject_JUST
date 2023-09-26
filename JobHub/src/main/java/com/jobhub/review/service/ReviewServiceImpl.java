@@ -36,9 +36,9 @@ public class ReviewServiceImpl implements ReviewService {
 	}
 	
 	@Override
-	public void reviewInsertOne(ReviewDto reviewDto) throws Exception {
+	public void reviewInsertOne(ReviewDto reviewDto, int cNo) throws Exception {
 
-		reviewDao.reviewInsertOne(reviewDto);
+		reviewDao.reviewInsertOne(reviewDto, cNo);
 	}
 
 	@Override
@@ -83,9 +83,9 @@ public class ReviewServiceImpl implements ReviewService {
 	}
 
 	@Override
-	public void reviewUpdateOne(ReviewDto reviewDto) {
+	public void reviewUpdateOne(ReviewDto reviewDto, int rCNo) {
 		
-		reviewDao.reviewUpdateOne(reviewDto);
+		reviewDao.reviewUpdateOne(reviewDto, rCNo);
 	}
 
 	@Override

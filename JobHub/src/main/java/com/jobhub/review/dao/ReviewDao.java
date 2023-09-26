@@ -9,14 +9,14 @@ public interface ReviewDao {
 	List<ReviewDto> reviewSelectList(int start, int end, int cNo);
 	List<ReviewDto> reviewSelectList(int cNo);
 	
-	public int reviewInsertOne(ReviewDto reviewDto);
+	public int reviewInsertOne(ReviewDto reviewDto, int cNo);
 
 	public int reviewSelectTotalCount(int cNo);
 	int reviewSelectCNo(int pNo);
 	
 	ReviewDto reviewSelectOne(int rNo);
 	
-	public void reviewUpdateOne(ReviewDto reviewDto);
+	public void reviewUpdateOne(ReviewDto reviewDto, int rCNo);
 	
 	public int reviewDeleteOne(int rNo);
 }

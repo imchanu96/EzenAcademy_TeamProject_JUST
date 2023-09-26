@@ -19,6 +19,8 @@ public class CompanyMemberDto {
 	private String cCode;
 	private String cLicense;
 	private String cLogo;
+	private String cRev;
+	private String cEmp;
 	private String cPrName;
 	private String cInChargeName;
 	private String cInChargeEmail;
@@ -35,9 +37,9 @@ public class CompanyMemberDto {
 	}
 
 	public CompanyMemberDto(int cNo, String cName, String cAdd, String cType, Date cEstDate, String cHomepage,
-			String cIntroduce, String cId, String cPwd, String cCode, String cLicense, String cLogo, String cPrName,
-			String cInChargeName, String cInChargeEmail, String cInChargePhoneNum, String cPrefer, int permission,
-			Date cCreDate, Date cModDate, Date connTime, Date disconnTime) {
+			String cIntroduce, String cId, String cPwd, String cCode, String cLicense, String cLogo, String cRev,
+			String cEmp, String cPrName, String cInChargeName, String cInChargeEmail, String cInChargePhoneNum,
+			String cPrefer, int permission, Date cCreDate, Date cModDate, Date connTime, Date disconnTime) {
 		super();
 		this.cNo = cNo;
 		this.cName = cName;
@@ -51,6 +53,8 @@ public class CompanyMemberDto {
 		this.cCode = cCode;
 		this.cLicense = cLicense;
 		this.cLogo = cLogo;
+		this.cRev = cRev;
+		this.cEmp = cEmp;
 		this.cPrName = cPrName;
 		this.cInChargeName = cInChargeName;
 		this.cInChargeEmail = cInChargeEmail;
@@ -159,6 +163,22 @@ public class CompanyMemberDto {
 		this.cLogo = cLogo;
 	}
 
+	public String getcRev() {
+		return cRev;
+	}
+
+	public void setcRev(String cRev) {
+		this.cRev = cRev;
+	}
+
+	public String getcEmp() {
+		return cEmp;
+	}
+
+	public void setcEmp(String cEmp) {
+		this.cEmp = cEmp;
+	}
+
 	public String getcPrName() {
 		return cPrName;
 	}
@@ -243,10 +263,11 @@ public class CompanyMemberDto {
 	public String toString() {
 		return "CompanyMemberDto [cNo=" + cNo + ", cName=" + cName + ", cAdd=" + cAdd + ", cType=" + cType
 				+ ", cEstDate=" + cEstDate + ", cHomepage=" + cHomepage + ", cIntroduce=" + cIntroduce + ", cId=" + cId
-				+ ", cPwd=" + cPwd + ", cCode=" + cCode + ", cLicense=" + cLicense + ", cLogo=" + cLogo + ", cPrName="
-				+ cPrName + ", cInChargeName=" + cInChargeName + ", cInChargeEmail=" + cInChargeEmail
-				+ ", cInChargePhoneNum=" + cInChargePhoneNum + ", cPrefer=" + cPrefer + ", permission=" + permission
-				+ ", cCreDate=" + cCreDate + ", cModDate=" + cModDate + ", connTime=" + connTime + ", disconnTime="
-				+ disconnTime + "]";
+				+ ", cPwd=" + cPwd + ", cCode=" + cCode + ", cLicense=" + cLicense + ", cLogo=" + cLogo + ", cRev="
+				+ cRev + ", cEmp=" + cEmp + ", cPrName=" + cPrName + ", cInChargeName=" + cInChargeName
+				+ ", cInChargeEmail=" + cInChargeEmail + ", cInChargePhoneNum=" + cInChargePhoneNum + ", cPrefer="
+				+ cPrefer + ", permission=" + permission + ", cCreDate=" + cCreDate + ", cModDate=" + cModDate
+				+ ", connTime=" + connTime + ", disconnTime=" + disconnTime + "]";
 	}
+	
 }

@@ -79,11 +79,7 @@ public class ReviewController {
 		
 		// 선택한 기업 정보 조회
 		CompanyMemberDto companyMemberDto = reviewService.companyMemberSelectOne(cNo);
-		System.out.println(companyMemberDto);
-		System.out.println(companyMemberDto.toString());
 		model.addAttribute("companyMemberDto", companyMemberDto);
-		
-		
 		
 		// HashMap<> 타입의 pagingMap 생성
 		HashMap<String, Object> pagingMap = new HashMap<>(); 
@@ -174,16 +170,15 @@ public class ReviewController {
 	
 //	리뷰 제출
 	@RequestMapping(value = "/review/addCtr.do", method = RequestMethod.POST)
-	public String reviewAdd(ReviewDto reviewDto, Model model) {
-		log.info("Welcome ReviewController reviewAddCtr! \r\n" + reviewDto);
-		
+	public String reviewAdd(ReviewDto reviewDto, Model model, int rCNo) {
+		log.info("Welcome ReviewController reviewAddCtr! \r\n" + reviewDto + "회사 번호" + rCNo);
 			try {
-				reviewService.reviewInsertOne(reviewDto);
+				reviewService.reviewInsertOne(reviewDto, rCNo);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		
-		return "redirect:/review/list.do?cNo=2";
+		return "redirect:/review/list.do?cNo=" + rCNo;
 	}
 	
 //	리뷰 수정 화면
@@ -200,16 +195,16 @@ public class ReviewController {
 	
 //	리뷰 수정 제출
 	@RequestMapping(value = "/review/updateCtr.do", method = RequestMethod.POST)
-	public String reviewUpdate(ReviewDto reviewDto, Model model) {
+	public String reviewUpdate(ReviewDto reviewDto, Model model, int rCNo) {
 		log.info("Welcome ReviewController reviewUpdateCtr! \r\n" + reviewDto);
 			
 		try {
-				reviewService.reviewUpdateOne(reviewDto);
+				reviewService.reviewUpdateOne(reviewDto, rCNo);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		
-		return "redirect:/review/list.do?cNo=2";
+		return "redirect:/review/list.do?cNo=" + rCNo;
 	}
 	
 //	리뷰 삭제

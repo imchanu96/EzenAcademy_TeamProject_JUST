@@ -109,13 +109,13 @@
 				<div class="starRateBox">
 					<div>
 						<div class="starNameBox">
-								<span>급여</span>
+								<span>&nbsp;&nbsp;급&nbsp;&nbsp;&nbsp;여</span>
 							</div>
 						<span>★ ${salTotalAvg}</span>
 					</div>
 					<div>
 						<div class="starNameBox">
-								<span>복지</span>
+								<span>&nbsp;&nbsp;복&nbsp;&nbsp;&nbsp;지</span>
 							</div>
 						<span>★ ${welTotalAvg}</span>
 					</div>
@@ -127,13 +127,13 @@
 					</div>
 					<div>
 						<div class="starNameBox">
-								<span>경영진</span>
+								<span>&nbsp;경&nbsp;영&nbsp;진</span>
 							</div>
 						<span>★ ${bossTotalAvg}</span>
 					</div>
 					<div>
 						<div class="starNameBox">
-								<span>워라밸</span>
+								<span>&nbsp;워&nbsp;라&nbsp;밸</span>
 							</div>
 						<span>★ ${balTotalAvg}</span>
 					</div>
@@ -148,7 +148,7 @@
 					<div class="starRateBox">
 						<div>
 							<div class="starNameBox">
-								<span>&nbsp;&nbsp;급&nbsp;&nbsp;여</span>
+								<span>&nbsp;&nbsp;급&nbsp;&nbsp;&nbsp;여</span>
 							</div>
 							<span>
 								<c:forEach var="i" begin="1" end="5">
@@ -159,7 +159,7 @@
 						</div>
 						<div>
 							<div class="starNameBox">
-								<span>&nbsp;&nbsp;복&nbsp;&nbsp;지</span>
+								<span>&nbsp;&nbsp;복&nbsp;&nbsp;&nbsp;지</span>
 							</div>
 							<span>
 								<c:forEach var="i" begin="1" end="5">
@@ -210,7 +210,7 @@
 					<div class="reviewContentBox">
 						<span>${reviewDto.rContent}</span>
 					</div>
-					${reviewDto.rNo}
+					reviewDto.rNo = ${reviewDto.rNo}
 					<div>
 					</div>
 					<c:if test="${sessionScope.personalMemberDto.pNo == reviewDto.rPNo}">

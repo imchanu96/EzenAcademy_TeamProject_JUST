@@ -71,6 +71,38 @@
 				</div>
 				<div class="companyInfoRow">
 					<div class="titleBox">
+						<span>매출액</span>
+					</div>
+					<div class="contentBox">
+						<span>
+							<span>${companyMemberDto.cRev}</span>
+						</span>
+					</div>
+				</div>
+				<div class="companyInfoRow">
+					<div class="titleBox">
+						<span>사원수</span>
+					</div>
+					<div class="contentBox">
+						<span>
+							<span>${companyMemberDto.cEmp}</span>
+						</span>
+					</div>
+				</div>
+				<div class="companyInfoRow">
+					<div class="titleBox">
+						<span>홈페이지</span>
+					</div>
+					<div class="contentBox">
+						<span>
+							<a href="http://${companyMemberDto.cHomepage}" target='_blank'>
+								${companyMemberDto.cHomepage}
+							</a>
+						</span>
+					</div>
+				</div>
+				<div class="companyInfoRow">
+					<div class="titleBox">
 						<span>대표자명</span>
 					</div>
 					<div class="contentBox">
