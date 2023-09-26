@@ -6,30 +6,7 @@
 		height: 760px;
 		margin: 0px auto;
 	}
-/* navigation */
-	#navigation {
-		margin: 10px;
-		float: left;
-		width: 250px;
-		height: 740px;
-		font-size: 25px;
-		text-align: center;
-		background-color: #eff5ff;
-		border: 1px solid #ddd;
-	}
-	#smallMenuBox {
-			
-		margin: 30px auto;
-		width: 200px;
-		height: 500px;
-	}
-	.smallMenuItem {
-			
-		margin-bottom: 20px;
-	}
-	.smallMenuItem a {
-		color: #475067;
-	}
+
 /* content */
 	#content {
 		margin: 10px;

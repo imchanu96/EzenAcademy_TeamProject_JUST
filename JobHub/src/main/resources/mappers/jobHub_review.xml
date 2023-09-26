@@ -65,6 +65,12 @@
 		WHERE COMPANY_NUMBER = #{cNo}
 	</select>	
 	
+	<select id="countPersonalReview" resultType="java.lang.Integer" parameterType="map">
+		SELECT COUNT(REVIEW_NUMBER)
+	    FROM REVIEW
+		WHERE PERSONAL_NUMBER = #{pNo}
+	</select>
+	
 	<insert id="reviewInsertOne" parameterType="reviewDto">
 		INSERT INTO REVIEW
 			(REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT, REVIEW_SALARY, 

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.jobhub.ajax.dao.AjaxDao;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.ResumeDto;
+import com.jobhub.review.dto.ReviewDto;
 
 @Service
 public class AjaxServiceImpl implements AjaxService {
@@ -25,6 +26,12 @@ public class AjaxServiceImpl implements AjaxService {
 	public LetterDto showPersonalLetter(HashMap<String, String> paramMap) {
 		// TODO Auto-generated method stub
 		return ajaxDao.showPersonalLetter(paramMap);
+	}
+
+	@Override
+	public int countPersonalReview(HashMap<String, String> paramMap) {
+		// TODO Auto-generated method stub
+		return ajaxDao.countPersonalReview(paramMap);
 	}
 
 }

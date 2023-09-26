@@ -209,12 +209,12 @@ public class ReviewController {
 	
 //	리뷰 삭제
 	@RequestMapping(value = "/review/delete.do", method = RequestMethod.GET)
-	public String reviewDelete(int rNo, Model model) {
+	public String reviewDelete(int rNo, Model model, int cNo) {
 		log.info("Welcome BoardController reviewDelete!" + rNo);
 		
 		reviewService.reviewDeleteOne(rNo);
 		
-		return "redirect:/review/list.do?cNo=2";
+		return "redirect:/review/list.do?cNo=" + cNo;
 	}
 	
 //	기업 정보 조회

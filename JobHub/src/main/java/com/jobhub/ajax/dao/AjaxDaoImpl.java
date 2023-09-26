@@ -8,11 +8,13 @@ import org.springframework.stereotype.Repository;
 
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.ResumeDto;
+import com.jobhub.review.dto.ReviewDto;
 
 @Repository
 public class AjaxDaoImpl implements AjaxDao{
 	
 	String personalNamespace = "com.jobhub.personal.";
+	String reviewNamespace = "com.jobhub.review.";
 	
 	@Autowired
 	SqlSessionTemplate sqlSession;
@@ -27,6 +29,12 @@ public class AjaxDaoImpl implements AjaxDao{
 	public LetterDto showPersonalLetter(HashMap<String, String> paramMap) {
 		// TODO Auto-generated method stub
 		return sqlSession.selectOne(personalNamespace + "personalMemberShowLetter", paramMap);
+	}
+
+	@Override
+	public int countPersonalReview(HashMap<String, String> paramMap) {
+		// TODO Auto-generated method stub
+		return sqlSession.selectOne(reviewNamespace + "countPersonalReview", paramMap);
 	}
 
 }

@@ -7,25 +7,15 @@
 <meta charset="UTF-8">
 <title>Company Info</title>
 <link rel="stylesheet" href="/JobHub/resources/css/CompanyDetail.css" type="text/css">
+<link rel="stylesheet" href="/JobHub/resources/css/ReviewNav.css" type="text/css">
 </head>
 <body>
 
 	<jsp:include page="/WEB-INF/views/review/Header.jsp"/>
 	
 	<div id="container">
-		<div id="navigation">
-			<div id="smallMenuBox">
-				<div class="smallMenuItem">
-					<a href="">리뷰 조회</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="">리뷰 작성</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="">기업 정보</a>
-				</div>
-			</div>
-		</div>
+		
+		<jsp:include page="/WEB-INF/views/review/ReviewNav.jsp"/>
 		
 		<div id="content">
 			<div id="companyInfoBox">

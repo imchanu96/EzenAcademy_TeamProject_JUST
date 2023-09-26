@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.jobhub.ajax.service.AjaxService;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.ResumeDto;
+import com.jobhub.review.dto.ReviewDto;
 
 @Controller
 public class AjaxController {
@@ -48,5 +49,17 @@ public class AjaxController {
 			= ajaxService.showPersonalLetter(paramMap);
 //
 		return letterDto;
+	}
+	
+	@RequestMapping(value = "/review/countPersonalReview.do", method = RequestMethod.POST)
+	@ResponseBody
+	public int countPersonalReview(@RequestBody HashMap<String, String> paramMap) {
+		
+		log.info("Welcome ReviewController countPersonalReview! " + paramMap);
+		
+		int countPersonalReview
+			= ajaxService.countPersonalReview(paramMap);
+//
+		return countPersonalReview;
 	}
 }

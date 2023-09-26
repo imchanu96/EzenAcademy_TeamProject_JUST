@@ -42,9 +42,9 @@
 		location.href = 'http://localhost:9080/JobHub/review/update.do?rNo=' + rNo;
 	}
 	
-	function goReviewDeleteFnc(rNo) {
+	function goReviewDeleteFnc(rNo, cNo) {
 		
-		location.href = 'http://localhost:9080/JobHub/review/delete.do?rNo=' + rNo;
+		location.href = 'http://localhost:9080/JobHub/review/delete.do?rNo=' + rNo + '&cNo=' + cNo;
 	}
 	
 </script>
@@ -52,26 +52,15 @@
 <script src="https://kit.fontawesome.com/7021bbabcd.js" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="/JobHub/resources/css/ReviewList.css" type="text/css">
-
+<link rel="stylesheet" href="/JobHub/resources/css/ReviewNav.css" type="text/css">
 </head>
 <body>
 
 	<jsp:include page="/WEB-INF/views/review/Header.jsp"/>
 	
 	<div id="container">
-		<div id="navigation">
-			<div id="smallMenuBox">
-				<div class="smallMenuItem">
-					<a href="http://localhost:9080/JobHub/review/companyMemberList.do">기업 목록</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="http://localhost:9080/JobHub/review/add.do?pNo=${sessionScope.personalMemberDto.pNo}">리뷰 작성</a>
-				</div>
-<!-- 				<div class="smallMenuItem"> -->
-<!-- 					<a href="">기업 정보</a> -->
-<!-- 				</div> -->
-			</div>
-		</div>
+	
+		<jsp:include page="/WEB-INF/views/review/ReviewNav.jsp"/>
 		
 		<div id="content">
 		
@@ -222,7 +211,7 @@
 							<div class="showMoreOptionItems" onclick="goReviewUpdateFnc(${reviewDto.rNo});">
 								수정하기
 							</div>
-							<div class="showMoreOptionItems" onclick="goReviewDeleteFnc(${reviewDto.rNo});">
+							<div class="showMoreOptionItems" onclick="goReviewDeleteFnc(${reviewDto.rNo}, ${pagingMap.cNo});">
 								삭제하기
 							</div>
 						</div>
