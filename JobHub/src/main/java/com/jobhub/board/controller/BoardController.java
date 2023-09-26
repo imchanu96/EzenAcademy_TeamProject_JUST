@@ -19,6 +19,7 @@ import com.jobhub.board.dto.BoardDto;
 import com.jobhub.board.dto.CommentDto;
 import com.jobhub.board.service.BoardService;
 import com.jobhub.board.util.Paging;
+import com.jobhub.personal.dto.PersonalMemberDto;
 
 @Controller
 public class BoardController {
@@ -57,10 +58,17 @@ public class BoardController {
 
 //	게시물 작성 페이지 열기(글쓰기버튼 클릭)
 	@RequestMapping(value = "/board/add.do", method = RequestMethod.GET)
-	public String postAdd(Model model) {
-		log.info("Welcome BoardController boardAdd!");
+	public String postAdd(HttpSession session, Model model) {
+		log.info("Welcome BoardController boardAdd!{}", session);
 		
-		return "board/BoardWrite";
+		try {
+			PersonalMemberDto pmd = (PersonalMemberDto)session.getAttribute("personalMemberDto");
+			pmd.getpNo();
+			return "board/BoardWrite";
+		} catch (Exception e) {
+			e.printStackTrace();
+			return "redirect:/personal/login.do";
+		}
 	}
 	
 //	새글 작성 완료
@@ -68,11 +76,12 @@ public class BoardController {
 	public String postAdd(BoardDto boardDto, Model model) {
 		log.info("Welcome BoardController boardAdd!" + boardDto);
 		
-			try {
-				boardService.boardInsertOne(boardDto);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+		try {
+			boardService.boardInsertOne(boardDto);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 		return "redirect:/board/list.do";
 	}

@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+body {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+
 /* 공통 */
 a {
   text-decoration: none;
@@ -52,6 +59,19 @@ a:hover { color: #2d65f2;}
 
 
 /* board list */
+.blur {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+#loginSign {
+	position: fixed;
+	z-index: 1;
+	left: 45%;
+	top: 25%;
+	width: auto;
+}
+		
 #writeBox {
 	margin: 15px 0px 0px 545px;
 	width: 400px;
