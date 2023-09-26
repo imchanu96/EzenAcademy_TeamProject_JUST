@@ -49,9 +49,6 @@
 			<div class="smallMenuItem">
 				<a href="#" onclick="reviewWriteFnc(${sessionScope.personalMemberDto.pNo});">리뷰 작성</a>
 			</div>
-			<div class="smallMenuItem">
-				<a href="http://localhost:9080/JobHub/review/companyInfo.do">기업 정보</a>
-			</div>
 		</div>
 	</div>
 	

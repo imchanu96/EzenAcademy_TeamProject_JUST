@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+	text-align: center;	
+}
+#introImgBox {
+	padding-top: 100px;
+	height: 700px;	
+}
+#mentBox {
+	padding-top: 200px;
+	background-color: #eff5ff;	
+	color: #292e41;
+}
+#mentBox > #comment {
+	font-size: 40px;
+	height: 100px;
+}
+#mentBox > #jobhub {
+	font-size: 60px;
+	height: 300px;
+}
+#goLoginBox {
+	padding: 200px;
+	font-size: 20px;
+	height: 200px; 
+}
+#loginMent {
+	font-size: 30px;
+	height: 50px;
+	color: #292e41;
+}
+input {
+	margin: 40px 50px;
+	width: 200px;
+    height: 80px;
+    background-color: #4876ef;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 1px 4px 0px #BDBDBD;
+}

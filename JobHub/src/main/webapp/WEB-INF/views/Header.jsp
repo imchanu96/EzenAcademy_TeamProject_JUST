@@ -64,10 +64,29 @@ a:hover {
 }
 /* my menu */
 #myMenuBox {
-	float: left;
-	width: 140px;
-	height: 100px;
+	float: right;
+	width: 130px;
+	height: 70px;
+	margin-top: 10px;
+	margin-right: 15px;
+	padding: 15px 0px;
 	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 15px; 
+	background-color: #EAEAEA;
+}
+.memberType {
+	width: 130px;
+	height: 34px;
+	line-height: 19px;
+	border-bottom: 3px solid #fff;
+	color: #5D5D5D;
+}
+.memberInfo {
+	width: 130px;
+	height: 35px;
+	line-height: 45px;
+	font-weight: bold;
 }
 /* end of header */
 #logoutModal {
@@ -223,25 +242,30 @@ a:hover {
 					</div>
 				</div>
 
-				<div id="myMessageBox">
-					<div>
-						<a href="http://www.naver.com"> <img id="chatImage" alt=""
-							src="https://github.com/noohij/Ezen_TeamProject_JUST/assets
-								/136562510/4387a6fc-84c2-4def-8411-f2572b6a12e7">
-						</a>
-					</div>
-				</div>
+<!-- 				<div id="myMessageBox"> -->
+<!-- 					<div> -->
+<!-- 						<a href="http://www.naver.com"> <img id="chatImage" alt="" -->
+<!-- 							src="https://github.com/noohij/Ezen_TeamProject_JUST/assets -->
+<!-- 								/136562510/4387a6fc-84c2-4def-8411-f2572b6a12e7"> -->
+<!-- 						</a> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
 
 				<c:if test="${sessionScope.personalMemberDto.pId ne null}">
 					<div id="myMenuBox">
-						<div>
+						<div class="memberType">
+							<span>개인회원</span>
+						</div>
+						<div class="memberInfo">
 							<a href="#" onmouseover="myMenuFnc();">
-								개인 : ${personalMemberDto.pId}님 </a>
+								${personalMemberDto.pId}님
+							</a>
 							<div id="myMenu">
 								<a href="#">마이 페이지</a>
 								<p onclick="clickLogoutFnc();">로그 아웃</p>
 							</div>
 						</div>
+						
 					</div>
 				</c:if>
 
@@ -268,14 +292,14 @@ a:hover {
 					</div>
 				</div>
 
-				<div id="myMessageBox">
-					<div>
-						<a href="http://www.naver.com"> <img id="chatImage" alt=""
-							src="https://github.com/noohij/Ezen_TeamProject_JUST/assets
-								/136562510/4387a6fc-84c2-4def-8411-f2572b6a12e7">
-						</a>
-					</div>
-				</div>
+<!-- 				<div id="myMessageBox"> -->
+<!-- 					<div> -->
+<!-- 						<a href="http://www.naver.com"> <img id="chatImage" alt="" -->
+<!-- 							src="https://github.com/noohij/Ezen_TeamProject_JUST/assets -->
+<!-- 								/136562510/4387a6fc-84c2-4def-8411-f2572b6a12e7"> -->
+<!-- 						</a> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
 
 				<c:if test="${sessionScope.companyMemberDto.cCode ne null}">
 					<div id="myMenuBox">
@@ -283,9 +307,9 @@ a:hover {
 							<a href="#"  onmouseover="myMenuFnc();">
 								기업 : ${companyMemberDto.cName}님 </a>
 								<div id="myMenu">
-								<a href="#">마이 페이지</a>
-								<p onclick="clickLogoutFnc();">로그 아웃</p>
-							</div>
+									<a href="#">마이 페이지</a>
+									<p onclick="clickLogoutFnc();">로그 아웃</p>
+								</div>
 						</div>
 					</div>
 				</c:if>
