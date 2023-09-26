@@ -76,7 +76,7 @@
                    FROM COMPANY
                    ORDER BY COMPANY_NUMBER
                ) C
-          ) COMPNAY
+          ) COMPANY
    </select>
 	
 	<select id="memberSelectList"  parameterType="map" resultMap="companyMemberResultMap">
