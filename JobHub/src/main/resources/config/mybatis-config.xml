@@ -16,6 +16,8 @@
 		<typeAlias type="com.jobhub.board.dto.BoardDto" alias="boardDto"/>
 		<typeAlias type="com.jobhub.personal.dto.ResumeDto" alias="resumeDto"/>
 		<typeAlias type="com.jobhub.personal.dto.LetterDto" alias="letterDto"/>
+		<typeAlias type="com.jobhub.personal.dto.CareerDto" alias="careerDto"/>
+		<typeAlias type="com.jobhub.personal.dto.EducationDto" alias="educationDto"/>
 		<typeAlias type="com.jobhub.board.dto.CommentDto" alias="commentDto"/>
 	</typeAliases>
 		

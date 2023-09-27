@@ -210,7 +210,7 @@ a:hover {
 						</div>
 
 						<div class="noButton">
-							<input type="button" value="아니오" onclick="cancelFnc();">
+							<input type="button" value="아니오" onclick="backButton();">
 						</div>
 					</div>
 				</div>

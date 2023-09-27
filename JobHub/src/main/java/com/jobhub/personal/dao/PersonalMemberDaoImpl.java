@@ -1,5 +1,6 @@
 package com.jobhub.personal.dao;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -8,6 +9,8 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.jobhub.personal.dto.CareerDto;
+import com.jobhub.personal.dto.EducationDto;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;
@@ -113,12 +116,27 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 	}
 
 
-	public ResumeDto personalMemberShowResume(int pNo) {
+	public Map<String, Object> personalMemberShowResume(int pNo) {
 		// TODO Auto-generated method stub
 		HashMap<String, Object> map = new HashMap<String, Object>();
 		map.put("pNo", pNo);
 		
-		return sqlSession.selectOne(namespace + "personalMemberShowResume", map);
+		HashMap<String, Object> resultMap = new HashMap<String, Object>();
+		
+		ResumeDto resumeDto = sqlSession.selectOne(namespace + "personalMemberShowResume", map);
+		resultMap.put("resumeDto", resumeDto);
+
+		map.put("rNo", resumeDto.getrNo());
+		
+		List<CareerDto> careerDtoList = sqlSession.selectList(namespace 
+				+ "personalMemberShowCareer", map);
+		
+		List<EducationDto> educationDtoList = sqlSession.selectList(namespace 
+				+ "personalMemberShowEducation", map);
+		resultMap.put("careerDtoList", careerDtoList);
+		resultMap.put("educationDtoList", educationDtoList);
+		
+		return resultMap;
 	}
 
 	@Override

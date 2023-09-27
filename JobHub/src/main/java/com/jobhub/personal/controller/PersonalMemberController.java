@@ -1,5 +1,8 @@
 package com.jobhub.personal.controller;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
@@ -10,6 +13,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.jobhub.personal.dto.CareerDto;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;
@@ -288,10 +292,9 @@ public class PersonalMemberController {
 	public String showResume(int pNo, HttpSession session, Model model) {
 		log.info("Welecom showResume! 회원번호:" + pNo);
 		
+		Map<String, Object> map = PersonalMemberService.personalMemberShowResume(pNo);
 		
-		ResumeDto resumeDto = PersonalMemberService.personalMemberShowResume(pNo);
-		
-		session.setAttribute("resumeDto", resumeDto);
+		model.addAttribute("map", map);
 				
 		return "personal/myPage/PersonalShowResume";
 	}
