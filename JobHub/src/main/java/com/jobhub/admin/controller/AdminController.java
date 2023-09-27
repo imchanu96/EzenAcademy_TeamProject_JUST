@@ -110,17 +110,22 @@ public class AdminController {
 		    return "admin/PersonalMemberList";
 		}
 		
-//		@RequestMapping(value = "/admin/memberUpdate.do", method = RequestMethod.GET)
-//		public String memberDelete(AdminDto adminDto, Model model) {
-//			
-//			log.info("Welcome MemberController delete");
-//			
-//			adminService.adminDeleteOne(adminDto);
-//			
-//			System.out.println(adminDto);
-//			
-//			return "admin/MemberList";
-//		}
+		@RequestMapping(value = "/admin/memberUpdate.do", method = RequestMethod.GET)
+		public String memberUpdate(int pNo, Model model) {
+			
+			log.info("Welcome MemberController memberUpdate");
+			Map<String, Object> map = new HashMap<String, Object>();
+			
+			map.put("pNo", pNo);
+			
+			try {
+				adminService.memberAllListPersonalUpdateOne(map);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			
+			return "redirect:/admin/memberList.do";
+		}
 		
 		@RequestMapping(value = "/admin/personalUpdate.do", method = RequestMethod.GET)
 		public String personalUpdate(int pNo, Model model) {
@@ -156,7 +161,7 @@ public class AdminController {
 				e.printStackTrace();
 			}
 			
-			return "redirect:/admin/companyMemberList.do";
+			return "redirect:/admin/companyMemList.do";
 		}
 		
 }
