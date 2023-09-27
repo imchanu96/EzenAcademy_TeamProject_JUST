@@ -94,8 +94,10 @@
 		
 		<div id="content">
 			<form id="addForm" action="./addCtr.do" method='post'>
-				<input type='hidden' name='bWriter' value='${personalMemberDto.getpNickname()} ${personalMemberDto.getpCom()}'>
+				<input type='hidden' name='bWriter' value='${personalMemberDto.getpNickname()}'>
 				<input type='hidden' name='pNo' value='${personalMemberDto.getpNo()}'>
+				<!-- 회사명 임시로 bTag에 담음 -->
+				<input type='hidden' name='bTag' value='${personalMemberDto.getpCom()}'>
 				<div id="titleInputBox">
 					<input name="bTitle" id="titleInput" type="text"
 						placeholder="제목을 입력해주세요(50자 이내)"

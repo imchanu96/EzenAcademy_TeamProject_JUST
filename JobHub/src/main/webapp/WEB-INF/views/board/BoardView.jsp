@@ -41,10 +41,12 @@
 				<div id="boardView">
 					<table>
 						<tr>
-							<td colspan="4"><h3>제목: ${boardDto.bTitle}</h3></td>
+							<td colspan="5"><h3>제목: ${boardDto.bTitle}</h3></td>
 						</tr>
 						<tr>
 							<td>${boardDto.bWriter}</td>
+							<!-- 회사명 임시로 bTag에 담음 -->
+							<td>${boardDto.bTag}</td>
 							<td>
 								<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.bCreDate}"/>
 							</td>
@@ -56,7 +58,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td colspan="4">${boardDto.bContent}</td>
+							<td colspan="5">${boardDto.bContent}</td>
 						</tr>
 					</table>
 				</div>
