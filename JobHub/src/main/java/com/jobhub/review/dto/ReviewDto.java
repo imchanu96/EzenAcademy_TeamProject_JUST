@@ -4,172 +4,182 @@ import java.util.Date;
 
 public class ReviewDto {
 
-	private int rNo;
-	private String rTitle;
-	private String rContent;
-	private int rSal;
-	private int rWel;
-	private int rEnv;
-	private int rBoss;
-	private int rBal;
-	private String rGood;
-	private String rBad;
-	private double rAvg;
-	private Date rCreDate;
-	private Date rModDate;
-	private int rPNo;
-	private int rCNo;
+	private int reviewNo;
+	private String reviewTitle;
+	private String reviewContent;
+	private int reviewSal;
+	private int reviewWel;
+	private int reviewEnv;
+	private int reviewBoss;
+	private int reviewBal;
+	private String reviewGood;
+	private String reviewBad;
+	private double reviewAvg;
+	private Date reviewCreDate;
+	private Date reviewModDate;
+	private int reviewPNo;
+	private int reviewCNo;
 	
 	public ReviewDto() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public ReviewDto(int rNo, String rTitle, String rContent, int rSal, int rWel, int rEnv, int rBoss, int rBal,
-			String rGood, String rBad, double rAvg, Date rCreDate, Date rModDate, int rPNo, int rCNo) {
+	public ReviewDto(int reviewNo, String reviewTitle, String reviewContent
+			, int reviewSal, int reviewWel, int reviewEnv, int reviewBoss
+			, int reviewBal, String reviewGood, String reviewBad, double reviewAvg
+			, Date reviewCreDate, Date reviewModDate, int reviewPNo, int reviewCNo) {
 		super();
-		this.rNo = rNo;
-		this.rTitle = rTitle;
-		this.rContent = rContent;
-		this.rSal = rSal;
-		this.rWel = rWel;
-		this.rEnv = rEnv;
-		this.rBoss = rBoss;
-		this.rBal = rBal;
-		this.rGood = rGood;
-		this.rBad = rBad;
-		this.rAvg = rAvg;
-		this.rCreDate = rCreDate;
-		this.rModDate = rModDate;
-		this.rPNo = rPNo;
-		this.rCNo = rCNo;
+		this.reviewNo = reviewNo;
+		this.reviewTitle = reviewTitle;
+		this.reviewContent = reviewContent;
+		this.reviewSal = reviewSal;
+		this.reviewWel = reviewWel;
+		this.reviewEnv = reviewEnv;
+		this.reviewBoss = reviewBoss;
+		this.reviewBal = reviewBal;
+		this.reviewGood = reviewGood;
+		this.reviewBad = reviewBad;
+		this.reviewAvg = reviewAvg;
+		this.reviewCreDate = reviewCreDate;
+		this.reviewModDate = reviewModDate;
+		this.reviewPNo = reviewPNo;
+		this.reviewCNo = reviewCNo;
 	}
 
-	public int getrNo() {
-		return rNo;
+	public int getReviewNo() {
+		return reviewNo;
 	}
 
-	public void setrNo(int rNo) {
-		this.rNo = rNo;
+	public void setReviewNo(int reviewNo) {
+		this.reviewNo = reviewNo;
 	}
 
-	public String getrTitle() {
-		return rTitle;
+	public String getReviewTitle() {
+		return reviewTitle;
 	}
 
-	public void setrTitle(String rTitle) {
-		this.rTitle = rTitle;
+	public void setReviewTitle(String reviewTitle) {
+		this.reviewTitle = reviewTitle;
 	}
 
-	public String getrContent() {
-		return rContent;
+	public String getReviewContent() {
+		return reviewContent;
 	}
 
-	public void setrContent(String rContent) {
-		this.rContent = rContent;
+	public void setReviewContent(String reviewContent) {
+		this.reviewContent = reviewContent;
 	}
 
-	public int getrSal() {
-		return rSal;
+	public int getReviewSal() {
+		return reviewSal;
 	}
 
-	public void setrSal(int rSal) {
-		this.rSal = rSal;
+	public void setReviewSal(int reviewSal) {
+		this.reviewSal = reviewSal;
 	}
 
-	public int getrWel() {
-		return rWel;
+	public int getReviewWel() {
+		return reviewWel;
 	}
 
-	public void setrWel(int rWel) {
-		this.rWel = rWel;
+	public void setReviewWel(int reviewWel) {
+		this.reviewWel = reviewWel;
 	}
 
-	public int getrEnv() {
-		return rEnv;
+	public int getReviewEnv() {
+		return reviewEnv;
 	}
 
-	public void setrEnv(int rEnv) {
-		this.rEnv = rEnv;
+	public void setReviewEnv(int reviewEnv) {
+		this.reviewEnv = reviewEnv;
 	}
 
-	public int getrBoss() {
-		return rBoss;
+	public int getReviewBoss() {
+		return reviewBoss;
 	}
 
-	public void setrBoss(int rBoss) {
-		this.rBoss = rBoss;
+	public void setReviewBoss(int reviewBoss) {
+		this.reviewBoss = reviewBoss;
 	}
 
-	public int getrBal() {
-		return rBal;
+	public int getReviewBal() {
+		return reviewBal;
 	}
 
-	public void setrBal(int rBal) {
-		this.rBal = rBal;
+	public void setReviewBal(int reviewBal) {
+		this.reviewBal = reviewBal;
 	}
 
-	public String getrGood() {
-		return rGood;
+	public String getReviewGood() {
+		return reviewGood;
 	}
 
-	public void setrGood(String rGood) {
-		this.rGood = rGood;
+	public void setReviewGood(String reviewGood) {
+		this.reviewGood = reviewGood;
 	}
 
-	public String getrBad() {
-		return rBad;
+	public String getReviewBad() {
+		return reviewBad;
 	}
 
-	public void setrBad(String rBad) {
-		this.rBad = rBad;
+	public void setReviewBad(String reviewBad) {
+		this.reviewBad = reviewBad;
 	}
 
-	public double getrAvg() {
-		return rAvg;
+	public double getReviewAvg() {
+		return reviewAvg;
 	}
 
-	public void setrAvg(double rAvg) {
-		this.rAvg = rAvg;
+	public void setReviewAvg(double reviewAvg) {
+		this.reviewAvg = reviewAvg;
 	}
 
-	public Date getrCreDate() {
-		return rCreDate;
+	public Date getReviewCreDate() {
+		return reviewCreDate;
 	}
 
-	public void setrCreDate(Date rCreDate) {
-		this.rCreDate = rCreDate;
+	public void setReviewCreDate(Date reviewCreDate) {
+		this.reviewCreDate = reviewCreDate;
 	}
 
-	public Date getrModDate() {
-		return rModDate;
+	public Date getReviewModDate() {
+		return reviewModDate;
 	}
 
-	public void setrModDate(Date rModDate) {
-		this.rModDate = rModDate;
+	public void setReviewModDate(Date reviewModDate) {
+		this.reviewModDate = reviewModDate;
 	}
 
-	public int getrPNo() {
-		return rPNo;
+	public int getReviewPNo() {
+		return reviewPNo;
 	}
 
-	public void setrPNo(int rPNo) {
-		this.rPNo = rPNo;
+	public void setReviewPNo(int reviewPNo) {
+		this.reviewPNo = reviewPNo;
 	}
 
-	public int getrCNo() {
-		return rCNo;
+	public int getReviewCNo() {
+		return reviewCNo;
 	}
 
-	public void setrCNo(int rCNo) {
-		this.rCNo = rCNo;
+	public void setReviewCNo(int reviewCNo) {
+		this.reviewCNo = reviewCNo;
 	}
 
 	@Override
 	public String toString() {
-		return "ReviewDto [rNo=" + rNo + ", rTitle=" + rTitle + ", rContent=" + rContent + ", rSal=" + rSal + ", rWel="
-				+ rWel + ", rEnv=" + rEnv + ", rBoss=" + rBoss + ", rBal=" + rBal + ", rGood=" + rGood + ", rBad="
-				+ rBad + ", rAvg=" + rAvg + ", rCreDate=" + rCreDate + ", rModDate=" + rModDate + ", rPNo=" + rPNo
-				+ ", rCNo=" + rCNo + "]";
+		return "ReviewDto [reviewNo=" + reviewNo + ", reviewTitle=" + reviewTitle
+				+ ", reviewContent=" + reviewContent + ", reviewSal=" + reviewSal
+				+ ", reviewWel=" + reviewWel + ", reviewEnv=" + reviewEnv
+				+ ", reviewBoss=" + reviewBoss + ", reviewBal=" + reviewBal
+				+ ", reviewGood=" + reviewGood + ", reviewBad=" + reviewBad
+				+ ", reviewAvg=" + reviewAvg + ", reviewCreDate=" + reviewCreDate
+				+ ", reviewModDate=" + reviewModDate + ", reviewPNo=" + reviewPNo
+				+ ", reviewCNo=" + reviewCNo + "]";
 	}
+	
+	
+
+	
 }

@@ -6,26 +6,26 @@
 <mapper namespace="com.jobhub.board">
 
 	<resultMap type="boardDto" id="boardResultMap">
-		<id column="BOARD_NUMBER" property="bNo" />
-		<result column="BOARD_TAG" property="bTag" />
-		<result column="BOARD_TITLE" property="bTitle" />
-		<result column="BOARD_WRITER" property="bWriter" />
-		<result column="BOARD_CONTENT" property="bContent" />
-		<result column="BOARD_IMAGE" property="bImg" />
-		<result column="BOARD_VOTING_CHECK" property="bVotingCheck" />
-		<result column="BOARD_CREATE_DATE" property="bCreDate" javaType="java.util.Date"/>
-		<result column="BOARD_MODIFY_DATE" property="bModDate" javaType="java.util.Date"/>
-		<result column="BOARD_LIKE_COUNT" property="bLikeCount" />
-		<result column="BOARD_VIEWS" property="bViews" />
-		<result column="PERSONAL_NUMBER" property="pNo" />
+		<id column="BOARD_NUMBER" property="boardNo" />
+		<result column="BOARD_TAG" property="boardTag" />
+		<result column="BOARD_TITLE" property="boardTitle" />
+		<result column="BOARD_WRITER" property="boardWriter" />
+		<result column="BOARD_CONTENT" property="boardContent" />
+		<result column="BOARD_IMAGE" property="boardImg" />
+		<result column="BOARD_VOTING_CHECK" property="boardVotingCheck" />
+		<result column="BOARD_CREATE_DATE" property="boardCreDate" javaType="java.util.Date"/>
+		<result column="BOARD_MODIFY_DATE" property="boardModDate" javaType="java.util.Date"/>
+		<result column="BOARD_LIKE_COUNT" property="boardLikeCount" />
+		<result column="BOARD_VIEWS" property="boardViews" />
+		<result column="PERSONAL_NUMBER" property="perNo" />
 	</resultMap>
 	
 <!-- 	<resultMap type="commentDto" id="commentResultMap"> -->
 <!-- 		<id column="BOARD_COMMENT_NUMBER" property="comNo" /> -->
 <!-- 		<result column="BOARD_COMMENT_CONTENT" property="comContent" /> -->
 <!-- 		<result column="BOARD_COMMENT_LIKE_COUNT" property="comLikeCount" /> -->
-<!-- 		<result column="BOARD_NUMBER" property="bNo" /> -->
-<!-- 		<result column="PERSONAL_NUMBER" property="pNo" /> -->
+<!-- 		<result column="BOARD_NUMBER" property="boardNo" /> -->
+<!-- 		<result column="PERSONAL_NUMBER" property="perNo" /> -->
 <!-- 	</resultMap> -->
 
 	<select id="boardSelectList" parameterType="map" resultMap="boardResultMap">
@@ -50,13 +50,13 @@
 		INSERT INTO BOARD
 			(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE, BOARD_MODIFY_DATE
 			, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-		VALUES(BOARD_NUMBER_SEQ.NEXTVAL, #{bWriter}, #{bTag}, #{bTitle}, #{bContent}, SYSDATE, SYSDATE, #{pNo}, 0, 0)
+		VALUES(BOARD_NUMBER_SEQ.NEXTVAL, #{boardWriter}, #{boardTag}, #{boardTitle}, #{boardContent}, SYSDATE, SYSDATE, #{pNo}, 0, 0)
 	</insert>
 	
 	<select id="boardSelectOne" parameterType="int" resultMap="boardResultMap">
 		SELECT BOARD_NUMBER, BOARD_TITLE, BOARD_WRITER, BOARD_TAG, BOARD_CREATE_DATE, BOARD_VIEWS, BOARD_LIKE_COUNT, BOARD_CONTENT
 		FROM BOARD
-		WHERE BOARD_NUMBER =#{bNo}
+		WHERE BOARD_NUMBER =#{boardNo}
 	</select>
 	
 <!-- 	<select id="readReply" parameterType="int" resultMap="commentResultMap"> -->
@@ -67,19 +67,19 @@
 	
 	<update id="boardUpdateOne" parameterType="boardDto">
 		UPDATE BOARD
-	    SET BOARD_TITLE = #{bTitle}, BOARD_CONTENT = #{bContent}, BOARD_MODIFY_DATE = SYSDATE
-	    WHERE BOARD_NUMBER =#{bNo}
+	    SET BOARD_TITLE = #{boardTitle}, BOARD_CONTENT = #{boardContent}, BOARD_MODIFY_DATE = SYSDATE
+	    WHERE BOARD_NUMBER =#{boardNo}
 	</update>
 	
 	<delete id="boardDeleteOne" parameterType="int">
 		DELETE FROM BOARD
-		WHERE BOARD_NUMBER =#{bNo}
+		WHERE BOARD_NUMBER =#{boardNo}
 	</delete>
 	
 	<update id="increaseViews" parameterType="int">
 		UPDATE BOARD
 		SET BOARD_VIEWS = BOARD_VIEWS+1
-		WHERE BOARD_NUMBER =#{bNo}
+		WHERE BOARD_NUMBER =#{boardNo}
 	</update>
 	
 </mapper>

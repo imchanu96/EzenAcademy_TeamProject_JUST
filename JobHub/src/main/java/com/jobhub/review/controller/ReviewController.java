@@ -58,12 +58,12 @@ public class ReviewController {
 	
 //	리뷰 리스트 조회
 	@RequestMapping(value = "/review/list.do", method = {RequestMethod.GET, RequestMethod.POST})
-	public String reviewList(int cNo, @RequestParam(defaultValue = "1") int curPage, Model model) {
+	public String reviewList(int comNo, @RequestParam(defaultValue = "1") int curPage, Model model) {
 
 		log.info("Welcome ReviewController list!: {}", curPage);
 		
 		// 리뷰 갯수 세서, totalCount에 담기
-		int totalCount = reviewService.reviewSelectTotalCount(cNo);
+		int totalCount = reviewService.reviewSelectTotalCount(comNo);
 
 		// Paging 클래스의 reviewPaging 인스턴스를 생성. 이 때, '총 페이지 수', '현재 페이지(기본값: 1)'을 매개변수로 가지고 있다 
 		Paging reviewPaging = new Paging(totalCount, curPage);
@@ -73,12 +73,12 @@ public class ReviewController {
 		int end = reviewPaging.getPageEnd();
 		
 		// 페이지에서 보여줄 글 번호의 범위에 해당하는 글들을 조회 후, 그 글들의 ReviewDto를 List<> 형태로 만들기
-		List<ReviewDto> reviewList = reviewService.reviewSelectList(start, end, cNo);
+		List<ReviewDto> reviewList = reviewService.reviewSelectList(start, end, comNo);
 		// 글 전체를 조회 후, 그 글들의 ReviewDto를 List<> 형태로 만들기(이 ReviewDto에는 별점 관련 정보들만 담겨있다)
-		List<ReviewDto> reviewAllList = reviewService.reviewSelectList(cNo);
+		List<ReviewDto> reviewAllList = reviewService.reviewSelectList(comNo);
 		
 		// 선택한 기업 정보 조회
-		CompanyMemberDto companyMemberDto = reviewService.companyMemberSelectOne(cNo);
+		CompanyMemberDto companyMemberDto = reviewService.companyMemberSelectOne(comNo);
 		model.addAttribute("companyMemberDto", companyMemberDto);
 		
 		// HashMap<> 타입의 pagingMap 생성
@@ -86,7 +86,7 @@ public class ReviewController {
 		// 생성한 pagingMap 해시맵에 아까 세놓은 '리뷰 전체 갯수', '현재 페이지 수 정보'를 매핑한다.
 		pagingMap.put("totalCount", totalCount);
 		pagingMap.put("reviewPaging", reviewPaging);
-		pagingMap.put("cNo", cNo);
+		pagingMap.put("comNo", comNo);
 
 		// Model에 현재 페이지에서 보여줄 글들의 정보인 'reviewList'와
 		// 리뷰 전체 갯수, 현재 페이지 수의 정보를 담은 'pagingMap'을 담는다.
@@ -101,7 +101,7 @@ public class ReviewController {
 		double salTotalAvg = 0.0;
 		
 		for (int i = 0; i < reviewAllList.size(); i++) {
-			salAvgSum += reviewAllList.get(i).getrSal();
+			salAvgSum += reviewAllList.get(i).getReviewSal();
 		}
 		salTotalAvg = (Math.round(salAvgSum / reviewAllList.size() * 10.0)) / 10.0;
 		
@@ -109,7 +109,7 @@ public class ReviewController {
 		double welTotalAvg = 0.0;
 		
 		for (int i = 0; i < reviewAllList.size(); i++) {
-			welAvgSum += reviewAllList.get(i).getrWel();
+			welAvgSum += reviewAllList.get(i).getReviewWel();
 		}
 		welTotalAvg = (Math.round(welAvgSum / reviewAllList.size() * 10.0)) / 10.0;
 		
@@ -117,7 +117,7 @@ public class ReviewController {
 		double envTotalAvg = 0.0;
 		
 		for (int i = 0; i < reviewAllList.size(); i++) {
-			envAvgSum += reviewAllList.get(i).getrEnv();
+			envAvgSum += reviewAllList.get(i).getReviewEnv();
 		}
 		envTotalAvg = (Math.round(envAvgSum / reviewAllList.size() * 10.0)) / 10.0;
 		
@@ -125,7 +125,7 @@ public class ReviewController {
 		double bossTotalAvg = 0.0;
 		
 		for (int i = 0; i < reviewAllList.size(); i++) {
-			bossAvgSum += reviewAllList.get(i).getrBoss();
+			bossAvgSum += reviewAllList.get(i).getReviewBoss();
 		}
 		bossTotalAvg = (Math.round(bossAvgSum / reviewAllList.size() * 10.0)) / 10.0;
 		
@@ -133,12 +133,12 @@ public class ReviewController {
 		double balTotalAvg = 0.0;
 		
 		for (int i = 0; i < reviewAllList.size(); i++) {
-			balAvgSum += reviewAllList.get(i).getrBal();
+			balAvgSum += reviewAllList.get(i).getReviewBal();
 		}
 		balTotalAvg = (Math.round(balAvgSum / reviewAllList.size() * 10.0)) / 10.0;
 		
 		for (int i = 0; i < reviewAllList.size(); i++) {
-			avgSum += reviewAllList.get(i).getrAvg();
+			avgSum += reviewAllList.get(i).getReviewAvg();
 		}
 		totalAvg = (Math.round(avgSum / reviewAllList.size() * 10.0)) / 10.0;
 		
@@ -156,37 +156,37 @@ public class ReviewController {
 	
 //	리뷰 작성 페이지 열기
 	@RequestMapping(value = "/review/add.do", method = RequestMethod.GET)
-	public String reviewAdd(Model model, HttpSession session, int pNo) {
+	public String reviewAdd(Model model, HttpSession session, int perNo) {
 		log.info("Welcome ReviewController reviewAdd!");
 		
 		PersonalMemberDto personalMemberDto = (PersonalMemberDto) session.getAttribute("personalMemberDto");
-		pNo = personalMemberDto.getpNo();
+		perNo = personalMemberDto.getPerNo();
 		
-		int cNo = reviewService.reviewSelectCNo(pNo);
-		model.addAttribute("cNo", cNo);
+		int comNo = reviewService.reviewSelectCNo(perNo);
+		model.addAttribute("comNo", comNo);
 		
 		return "review/ReviewWrite";
 	}
 	
 //	리뷰 제출
 	@RequestMapping(value = "/review/addCtr.do", method = RequestMethod.POST)
-	public String reviewAdd(ReviewDto reviewDto, Model model, int rCNo) {
-		log.info("Welcome ReviewController reviewAddCtr! \r\n" + reviewDto + "회사 번호" + rCNo);
+	public String reviewAdd(ReviewDto reviewDto, Model model, int comNo) {
+		log.info("Welcome ReviewController reviewAddCtr! \r\n" + reviewDto + "회사 번호" + comNo);
 			try {
-				reviewService.reviewInsertOne(reviewDto, rCNo);
+				reviewService.reviewInsertOne(reviewDto, comNo);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		
-		return "redirect:/review/list.do?cNo=" + rCNo;
+		return "redirect:/review/list.do?comNo=" + comNo;
 	}
 	
 //	리뷰 수정 화면
 	@RequestMapping(value = "/review/update.do", method = RequestMethod.GET)
-	public String reviewUpdate(Model model, int rNo) {
+	public String reviewUpdate(Model model, int reviewNo) {
 		log.info("Welcome ReviewController reviewUpdate!");
 		
-		ReviewDto reviewDto = reviewService.reviewSelectOne(rNo);
+		ReviewDto reviewDto = reviewService.reviewSelectOne(reviewNo);
 
 		model.addAttribute("reviewDto", reviewDto);
 		
@@ -195,36 +195,36 @@ public class ReviewController {
 	
 //	리뷰 수정 제출
 	@RequestMapping(value = "/review/updateCtr.do", method = RequestMethod.POST)
-	public String reviewUpdate(ReviewDto reviewDto, Model model, int rCNo) {
+	public String reviewUpdate(ReviewDto reviewDto, Model model, int comNo) {
 		log.info("Welcome ReviewController reviewUpdateCtr! \r\n" + reviewDto);
 			
 		try {
-				reviewService.reviewUpdateOne(reviewDto, rCNo);
+				reviewService.reviewUpdateOne(reviewDto, comNo);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		
-		return "redirect:/review/list.do?cNo=" + rCNo;
+		return "redirect:/review/list.do?comNo=" + comNo;
 	}
 	
 //	리뷰 삭제
 	@RequestMapping(value = "/review/delete.do", method = RequestMethod.GET)
-	public String reviewDelete(int rNo, Model model, int cNo) {
-		log.info("Welcome BoardController reviewDelete!" + rNo);
+	public String reviewDelete(int reviewNo, Model model, int comNo) {
+		log.info("Welcome BoardController reviewDelete!" + reviewNo);
 		
-		reviewService.reviewDeleteOne(rNo);
+		reviewService.reviewDeleteOne(reviewNo);
 		
-		return "redirect:/review/list.do?cNo=" + cNo;
+		return "redirect:/review/list.do?comNo=" + comNo;
 	}
 	
 //	기업 정보 조회
 	@RequestMapping(value = "/review/companyDetail.do", method = RequestMethod.GET)
-	public String CompanyInfo(Model model, int cNo) {
+	public String CompanyInfo(Model model, int comNo) {
 		
 		log.debug("Welcome ReviewController CompanyDetail!");
 		
 		// 선택한 기업 정보 조회
-		CompanyMemberDto companyMemberDto = reviewService.companyMemberSelectOne(cNo);
+		CompanyMemberDto companyMemberDto = reviewService.companyMemberSelectOne(comNo);
 		model.addAttribute("companyMemberDto", companyMemberDto);
 		
 		return "review/CompanyDetail";

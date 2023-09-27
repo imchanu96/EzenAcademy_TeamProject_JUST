@@ -6,399 +6,648 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 public class AdminDto {
 
-	private int pNo;
-	private String pName;
-	private String pId;
-	private String pPwd;
-	private String pPhoneNum;
-	private String pCom;
-	private String pNickname;
-	private String pProfile;
-	private String pEmail;
-	private Date pHireDate;
-	private String pKeyword;
-	private String pTemporarily;
-	private int pPermission;
-	private Date pCreateDate;
-	private Date pModifyDate;
-	private Date pConnectionTime;
-	private Date pDisconnectionTime;
+	private int perNo;
+	private String perName;
+	private String perId;
+	private String perPwd;
+	private String perPhoneNum;
+	private String perCom;
+	private String perNickname;
+	private String perProfile;
+	private String perEmail;
+	private Date perHireDate;
+	private String perKeyword;
+	private String perTemporarily;
+	private int perPermission;
+	private Date perCreateDate;
+	private Date perModifyDate;
+	private Date perConnectionTime;
+	private Date perDisconnectionTime;
 	
-	private int cNo;
-	private String cName;
-	private String cAdd;
-	private String cType;
+	private int comNo;
+	private String comName;
+	private String comAdd;
+	private String comType;
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private Date cEstDate;
-	private String cHomepage;
-	private String cIntroduce;
-	private String cId;
-	private String cPwd;
-	private String cCode;
-	private String cLicense;
-	private String cLogo;
-	private String cPrName;
-	private String cInChargeName;
-	private String cInChargeEmail;
-	private String cInChargePhoneNum;
-	private String cPrefer;
-	private Date cCreDate;
-	private Date cModDate;
+	private Date comEstDate;
+	private String comHomepage;
+	private String comIntroduce;
+	private String comId;
+	private String comPwd;
+	private String comCode;
+	private String comLicense;
+	private String comLogo;
+	private String comPrName;
+	private String comInChargeName;
+	private String comInChargeEmail;
+	private String comInChargePhoneNum;
+	private String comPrefer;
+	private Date comCreDate;
+	private Date comModDate;
 	private Date connTime;
 	private Date disconnTime;
 	
 	public AdminDto() {
 		super();
 	}
+	
+	
 
-	public AdminDto(int pNo, String pName, String pId, String pPwd
-			, String pPhoneNum, String pCom, String pNickname
-			, String pProfile, String pEmail, Date pHireDate, String pKeyword
-			, String pTemporarily, int pPermission, Date pCreateDate
-			, Date pModifyDate, Date pConnectionTime, Date pDisconnectionTime) {
+	public AdminDto(int perNo, String perName, String perId, String perPwd
+			, String perPhoneNum, String perCom, String perNickname, String perProfile
+			, String perEmail, Date perHireDate , String perKeyword
+			, String perTemporarily, int perPermission, Date perCreateDate
+			, Date perModifyDate, Date perConnectionTime, Date perDisconnectionTime) {
 		super();
-		this.pNo = pNo;
-		this.pName = pName;
-		this.pId = pId;
-		this.pPwd = pPwd;
-		this.pPhoneNum = pPhoneNum;
-		this.pCom = pCom;
-		this.pNickname = pNickname;
-		this.pProfile = pProfile;
-		this.pEmail = pEmail;
-		this.pHireDate = pHireDate;
-		this.pKeyword = pKeyword;
-		this.pTemporarily = pTemporarily;
-		this.pPermission = pPermission;
-		this.pCreateDate = pCreateDate;
-		this.pModifyDate = pModifyDate;
-		this.pConnectionTime = pConnectionTime;
-		this.pDisconnectionTime = pDisconnectionTime;
+		this.perNo = perNo;
+		this.perName = perName;
+		this.perId = perId;
+		this.perPwd = perPwd;
+		this.perPhoneNum = perPhoneNum;
+		this.perCom = perCom;
+		this.perNickname = perNickname;
+		this.perProfile = perProfile;
+		this.perEmail = perEmail;
+		this.perHireDate = perHireDate;
+		this.perKeyword = perKeyword;
+		this.perTemporarily = perTemporarily;
+		this.perPermission = perPermission;
+		this.perCreateDate = perCreateDate;
+		this.perModifyDate = perModifyDate;
+		this.perConnectionTime = perConnectionTime;
+		this.perDisconnectionTime = perDisconnectionTime;
 	}
 
-	public int getpNo() {
-		return pNo;
-	}
 
-	public void setpNo(int pNo) {
-		this.pNo = pNo;
-	}
-
-	public String getpName() {
-		return pName;
-	}
-
-	public void setpName(String pName) {
-		this.pName = pName;
-	}
-
-	public String getpId() {
-		return pId;
-	}
-
-	public void setpId(String pId) {
-		this.pId = pId;
-	}
-
-	public String getpPwd() {
-		return pPwd;
-	}
-
-	public void setpPwd(String pPwd) {
-		this.pPwd = pPwd;
-	}
-
-	public String getpPhoneNum() {
-		return pPhoneNum;
-	}
-
-	public void setpPhoneNum(String pPhoneNum) {
-		this.pPhoneNum = pPhoneNum;
-	}
-
-	public String getpCom() {
-		return pCom;
-	}
-
-	public void setpCom(String pCom) {
-		this.pCom = pCom;
-	}
-
-	public String getpNickname() {
-		return pNickname;
-	}
-
-	public void setpNickname(String pNickname) {
-		this.pNickname = pNickname;
-	}
-
-	public String getpProfile() {
-		return pProfile;
-	}
-
-	public void setpProfile(String pProfile) {
-		this.pProfile = pProfile;
-	}
-
-	public String getpEmail() {
-		return pEmail;
-	}
-
-	public void setpEmail(String pEmail) {
-		this.pEmail = pEmail;
-	}
-
-	public Date getpHireDate() {
-		return pHireDate;
-	}
-
-	public void setpHireDate(Date pHireDate) {
-		this.pHireDate = pHireDate;
-	}
-
-	public String getpKeyword() {
-		return pKeyword;
-	}
-
-	public void setpKeyword(String pKeyword) {
-		this.pKeyword = pKeyword;
-	}
-
-	public String getpTemporarily() {
-		return pTemporarily;
-	}
-
-	public void setpTemporarily(String pTemporarily) {
-		this.pTemporarily = pTemporarily;
-	}
-
-	public int getpPermission() {
-		return pPermission;
-	}
-
-	public void setpPermission(int pPermission) {
-		this.pPermission = pPermission;
-	}
-
-	public Date getpCreateDate() {
-		return pCreateDate;
-	}
-
-	public void setpCreateDate(Date pCreateDate) {
-		this.pCreateDate = pCreateDate;
-	}
-
-	public Date getpModifyDate() {
-		return pModifyDate;
-	}
-
-	public void setpModifyDate(Date pModifyDate) {
-		this.pModifyDate = pModifyDate;
-	}
-
-	public Date getpConnectionTime() {
-		return pConnectionTime;
-	}
-
-	public void setpConnectionTime(Date pConnectionTime) {
-		this.pConnectionTime = pConnectionTime;
-	}
-
-	public Date getpDisconnectionTime() {
-		return pDisconnectionTime;
-	}
-
-	public void setpDisconnectionTime(Date pDisconnectionTime) {
-		this.pDisconnectionTime = pDisconnectionTime;
-	}
-	
 	
 
-	public int getcNo() {
-		return cNo;
+	public AdminDto(int comNo, String comName, String comAdd, String comType
+			, Date comEstDate, String comHomepage, String comIntroduce, String comId
+			, String comPwd, String comCode , String comLicense, String comLogo
+			, String comPrName, String comInChargeName, String comInChargeEmail
+			, String comInChargePhoneNum, String comPrefer, Date comCreDate
+			, Date comModDate, Date connTime, Date disconnTime) {
+		super();
+		this.comNo = comNo;
+		this.comName = comName;
+		this.comAdd = comAdd;
+		this.comType = comType;
+		this.comEstDate = comEstDate;
+		this.comHomepage = comHomepage;
+		this.comIntroduce = comIntroduce;
+		this.comId = comId;
+		this.comPwd = comPwd;
+		this.comCode = comCode;
+		this.comLicense = comLicense;
+		this.comLogo = comLogo;
+		this.comPrName = comPrName;
+		this.comInChargeName = comInChargeName;
+		this.comInChargeEmail = comInChargeEmail;
+		this.comInChargePhoneNum = comInChargePhoneNum;
+		this.comPrefer = comPrefer;
+		this.comCreDate = comCreDate;
+		this.comModDate = comModDate;
+		this.connTime = connTime;
+		this.disconnTime = disconnTime;
 	}
 
-	public void setcNo(int cNo) {
-		this.cNo = cNo;
+
+
+	public AdminDto(int perNo, String perName, String perId, String perPwd
+			, String perPhoneNum, String perCom, String perNickname, String perProfile
+			, String perEmail, Date perHireDate, String perKeyword
+			, String perTemporarily, int perPermission, Date perCreateDate
+			, Date perModifyDate, Date perConnectionTime, Date perDisconnectionTime
+			, int comNo, String comName, String comAdd, String comType, Date comEstDate
+			, String comHomepage, String comIntroduce, String comId, String comPwd
+			, String comCode, String comLicense, String comLogo, String comPrName
+			, String comInChargeName, String comInChargeEmail, String comInChargePhoneNum
+			, String comPrefer, Date comCreDate, Date comModDate, Date connTime
+			, Date disconnTime) {
+		super();
+		this.perNo = perNo;
+		this.perName = perName;
+		this.perId = perId;
+		this.perPwd = perPwd;
+		this.perPhoneNum = perPhoneNum;
+		this.perCom = perCom;
+		this.perNickname = perNickname;
+		this.perProfile = perProfile;
+		this.perEmail = perEmail;
+		this.perHireDate = perHireDate;
+		this.perKeyword = perKeyword;
+		this.perTemporarily = perTemporarily;
+		this.perPermission = perPermission;
+		this.perCreateDate = perCreateDate;
+		this.perModifyDate = perModifyDate;
+		this.perConnectionTime = perConnectionTime;
+		this.perDisconnectionTime = perDisconnectionTime;
+		this.comNo = comNo;
+		this.comName = comName;
+		this.comAdd = comAdd;
+		this.comType = comType;
+		this.comEstDate = comEstDate;
+		this.comHomepage = comHomepage;
+		this.comIntroduce = comIntroduce;
+		this.comId = comId;
+		this.comPwd = comPwd;
+		this.comCode = comCode;
+		this.comLicense = comLicense;
+		this.comLogo = comLogo;
+		this.comPrName = comPrName;
+		this.comInChargeName = comInChargeName;
+		this.comInChargeEmail = comInChargeEmail;
+		this.comInChargePhoneNum = comInChargePhoneNum;
+		this.comPrefer = comPrefer;
+		this.comCreDate = comCreDate;
+		this.comModDate = comModDate;
+		this.connTime = connTime;
+		this.disconnTime = disconnTime;
 	}
 
-	public String getcName() {
-		return cName;
+
+
+	public int getPerNo() {
+		return perNo;
 	}
 
-	public void setcName(String cName) {
-		this.cName = cName;
+
+
+	public void setPerNo(int perNo) {
+		this.perNo = perNo;
 	}
 
-	public String getcAdd() {
-		return cAdd;
+
+
+	public String getPerName() {
+		return perName;
 	}
 
-	public void setcAdd(String cAdd) {
-		this.cAdd = cAdd;
+
+
+	public void setPerName(String perName) {
+		this.perName = perName;
 	}
 
-	public String getcType() {
-		return cType;
+
+
+	public String getPerId() {
+		return perId;
 	}
 
-	public void setcType(String cType) {
-		this.cType = cType;
+
+
+	public void setPerId(String perId) {
+		this.perId = perId;
 	}
 
-	public Date getcEstDate() {
-		return cEstDate;
+
+
+	public String getPerPwd() {
+		return perPwd;
 	}
 
-	public void setcEstDate(Date cEstDate) {
-		this.cEstDate = cEstDate;
+
+
+	public void setPerPwd(String perPwd) {
+		this.perPwd = perPwd;
 	}
 
-	public String getcHomepage() {
-		return cHomepage;
+
+
+	public String getPerPhoneNum() {
+		return perPhoneNum;
 	}
 
-	public void setcHomepage(String cHomepage) {
-		this.cHomepage = cHomepage;
+
+
+	public void setPerPhoneNum(String perPhoneNum) {
+		this.perPhoneNum = perPhoneNum;
 	}
 
-	public String getcIntroduce() {
-		return cIntroduce;
+
+
+	public String getPerCom() {
+		return perCom;
 	}
 
-	public void setcIntroduce(String cIntroduce) {
-		this.cIntroduce = cIntroduce;
+
+
+	public void setPerCom(String perCom) {
+		this.perCom = perCom;
 	}
 
-	public String getcId() {
-		return cId;
+
+
+	public String getPerNickname() {
+		return perNickname;
 	}
 
-	public void setcId(String cId) {
-		this.cId = cId;
+
+
+	public void setPerNickname(String perNickname) {
+		this.perNickname = perNickname;
 	}
 
-	public String getcPwd() {
-		return cPwd;
+
+
+	public String getPerProfile() {
+		return perProfile;
 	}
 
-	public void setcPwd(String cPwd) {
-		this.cPwd = cPwd;
+
+
+	public void setPerProfile(String perProfile) {
+		this.perProfile = perProfile;
 	}
 
-	public String getcCode() {
-		return cCode;
+
+
+	public String getPerEmail() {
+		return perEmail;
 	}
 
-	public void setcCode(String cCode) {
-		this.cCode = cCode;
+
+
+	public void setPerEmail(String perEmail) {
+		this.perEmail = perEmail;
 	}
 
-	public String getcLicense() {
-		return cLicense;
+
+
+	public Date getPerHireDate() {
+		return perHireDate;
 	}
 
-	public void setcLicense(String cLicense) {
-		this.cLicense = cLicense;
+
+
+	public void setPerHireDate(Date perHireDate) {
+		this.perHireDate = perHireDate;
 	}
 
-	public String getcLogo() {
-		return cLogo;
+
+
+	public String getPerKeyword() {
+		return perKeyword;
 	}
 
-	public void setcLogo(String cLogo) {
-		this.cLogo = cLogo;
+
+
+	public void setPerKeyword(String perKeyword) {
+		this.perKeyword = perKeyword;
 	}
 
-	public String getcPrName() {
-		return cPrName;
+
+
+	public String getPerTemporarily() {
+		return perTemporarily;
 	}
 
-	public void setcPrName(String cPrName) {
-		this.cPrName = cPrName;
+
+
+	public void setPerTemporarily(String perTemporarily) {
+		this.perTemporarily = perTemporarily;
 	}
 
-	public String getcInChargeName() {
-		return cInChargeName;
+
+
+	public int getPerPermission() {
+		return perPermission;
 	}
 
-	public void setcInChargeName(String cInChargeName) {
-		this.cInChargeName = cInChargeName;
+
+
+	public void setPerPermission(int perPermission) {
+		this.perPermission = perPermission;
 	}
 
-	public String getcInChargeEmail() {
-		return cInChargeEmail;
+
+
+	public Date getPerCreateDate() {
+		return perCreateDate;
 	}
 
-	public void setcInChargeEmail(String cInChargeEmail) {
-		this.cInChargeEmail = cInChargeEmail;
+
+
+	public void setPerCreateDate(Date perCreateDate) {
+		this.perCreateDate = perCreateDate;
 	}
 
-	public String getcInChargePhoneNum() {
-		return cInChargePhoneNum;
+
+
+	public Date getPerModifyDate() {
+		return perModifyDate;
 	}
 
-	public void setcInChargePhoneNum(String cInChargePhoneNum) {
-		this.cInChargePhoneNum = cInChargePhoneNum;
+
+
+	public void setPerModifyDate(Date perModifyDate) {
+		this.perModifyDate = perModifyDate;
 	}
 
-	public String getcPrefer() {
-		return cPrefer;
+
+
+	public Date getPerConnectionTime() {
+		return perConnectionTime;
 	}
 
-	public void setcPrefer(String cPrefer) {
-		this.cPrefer = cPrefer;
+
+
+	public void setPerConnectionTime(Date perConnectionTime) {
+		this.perConnectionTime = perConnectionTime;
 	}
 
-	public Date getcCreDate() {
-		return cCreDate;
+
+
+	public Date getPerDisconnectionTime() {
+		return perDisconnectionTime;
 	}
 
-	public void setcCreDate(Date cCreDate) {
-		this.cCreDate = cCreDate;
+
+
+	public void setPerDisconnectionTime(Date perDisconnectionTime) {
+		this.perDisconnectionTime = perDisconnectionTime;
 	}
 
-	public Date getcModDate() {
-		return cModDate;
+
+
+	public int getComNo() {
+		return comNo;
 	}
 
-	public void setcModDate(Date cModDate) {
-		this.cModDate = cModDate;
+
+
+	public void setComNo(int comNo) {
+		this.comNo = comNo;
 	}
+
+
+
+	public String getComName() {
+		return comName;
+	}
+
+
+
+	public void setComName(String comName) {
+		this.comName = comName;
+	}
+
+
+
+	public String getComAdd() {
+		return comAdd;
+	}
+
+
+
+	public void setComAdd(String comAdd) {
+		this.comAdd = comAdd;
+	}
+
+
+
+	public String getComType() {
+		return comType;
+	}
+
+
+
+	public void setComType(String comType) {
+		this.comType = comType;
+	}
+
+
+
+	public Date getComEstDate() {
+		return comEstDate;
+	}
+
+
+
+	public void setComEstDate(Date comEstDate) {
+		this.comEstDate = comEstDate;
+	}
+
+
+
+	public String getComHomepage() {
+		return comHomepage;
+	}
+
+
+
+	public void setComHomepage(String comHomepage) {
+		this.comHomepage = comHomepage;
+	}
+
+
+
+	public String getComIntroduce() {
+		return comIntroduce;
+	}
+
+
+
+	public void setComIntroduce(String comIntroduce) {
+		this.comIntroduce = comIntroduce;
+	}
+
+
+
+	public String getComId() {
+		return comId;
+	}
+
+
+
+	public void setComId(String comId) {
+		this.comId = comId;
+	}
+
+
+
+	public String getComPwd() {
+		return comPwd;
+	}
+
+
+
+	public void setComPwd(String comPwd) {
+		this.comPwd = comPwd;
+	}
+
+
+
+	public String getComCode() {
+		return comCode;
+	}
+
+
+
+	public void setComCode(String comCode) {
+		this.comCode = comCode;
+	}
+
+
+
+	public String getComLicense() {
+		return comLicense;
+	}
+
+
+
+	public void setComLicense(String comLicense) {
+		this.comLicense = comLicense;
+	}
+
+
+
+	public String getComLogo() {
+		return comLogo;
+	}
+
+
+
+	public void setComLogo(String comLogo) {
+		this.comLogo = comLogo;
+	}
+
+
+
+	public String getComPrName() {
+		return comPrName;
+	}
+
+
+
+	public void setComPrName(String comPrName) {
+		this.comPrName = comPrName;
+	}
+
+
+
+	public String getComInChargeName() {
+		return comInChargeName;
+	}
+
+
+
+	public void setComInChargeName(String comInChargeName) {
+		this.comInChargeName = comInChargeName;
+	}
+
+
+
+	public String getComInChargeEmail() {
+		return comInChargeEmail;
+	}
+
+
+
+	public void setComInChargeEmail(String comInChargeEmail) {
+		this.comInChargeEmail = comInChargeEmail;
+	}
+
+
+
+	public String getComInChargePhoneNum() {
+		return comInChargePhoneNum;
+	}
+
+
+
+	public void setComInChargePhoneNum(String comInChargePhoneNum) {
+		this.comInChargePhoneNum = comInChargePhoneNum;
+	}
+
+
+
+	public String getComPrefer() {
+		return comPrefer;
+	}
+
+
+
+	public void setComPrefer(String comPrefer) {
+		this.comPrefer = comPrefer;
+	}
+
+
+
+	public Date getComCreDate() {
+		return comCreDate;
+	}
+
+
+
+	public void setComCreDate(Date comCreDate) {
+		this.comCreDate = comCreDate;
+	}
+
+
+
+	public Date getComModDate() {
+		return comModDate;
+	}
+
+
+
+	public void setComModDate(Date comModDate) {
+		this.comModDate = comModDate;
+	}
+
+
 
 	public Date getConnTime() {
 		return connTime;
 	}
 
+
+
 	public void setConnTime(Date connTime) {
 		this.connTime = connTime;
 	}
+
+
 
 	public Date getDisconnTime() {
 		return disconnTime;
 	}
 
+
+
 	public void setDisconnTime(Date disconnTime) {
 		this.disconnTime = disconnTime;
 	}
 
+
+
 	@Override
 	public String toString() {
-		return "AdminDto [pNo=" + pNo + ", pName=" + pName + ", pId=" + pId
-				+ ", pPwd=" + pPwd + ", pPhoneNum="	+ pPhoneNum
-				+ ", pCom=" + pCom + ", pNickname=" + pNickname
-				+ ", pProfile=" + pProfile + ", pEmail=" + pEmail
-				+ ", pHireDate=" + pHireDate + ", pKeyword=" + pKeyword
-				+ ", pTemporarily=" + pTemporarily
-				+ ", pPermission=" + pPermission
-				+ ", pCreateDate=" + pCreateDate
-				+ ", pModifyDate=" + pModifyDate
-				+ ", pConnectionTime=" + pConnectionTime 
-				+ ", pDisconnectionTime=" + pDisconnectionTime + "]";
+		return "AdminDto [perNo=" + perNo + ", perName=" + perName + ", perId=" + perId
+				+ ", perPwd=" + perPwd + ", perPhoneNum=" + perPhoneNum
+				+ ", perCom=" + perCom + ", perNickname=" + perNickname
+				+ ", perProfile=" + perProfile + ", perEmail=" + perEmail
+				+ ", perHireDate=" + perHireDate + ", perKeyword=" + perKeyword 
+				+ ", perTemporarily=" + perTemporarily + ", perPermission="
+				+ perPermission + ", perCreateDate=" + perCreateDate
+				+ ", perModifyDate=" + perModifyDate
+				+ ", perConnectionTime=" + perConnectionTime
+				+ ", perDisconnectionTime=" + perDisconnectionTime
+				+ ", comNo=" + comNo + ", comName=" + comName + ", comAdd=" + comAdd
+				+ ", comType=" + comType + ", comEstDate=" + comEstDate
+				+ ", comHomepage=" + comHomepage + ", comIntroduce=" + comIntroduce
+				+ ", comId=" + comId + ", comPwd=" + comPwd + ", comCode=" + comCode
+				+ ", comLicense=" + comLicense + ", comLogo=" + comLogo
+				+ ", comPrName=" + comPrName + ", comInChargeName=" + comInChargeName
+				+ ", comInChargeEmail=" + comInChargeEmail
+				+ ", comInChargePhoneNum=" + comInChargePhoneNum 
+				+ ", comPrefer=" + comPrefer + ", comCreDate=" + comCreDate
+				+ ", comModDate=" + comModDate
+				+ ", connTime=" + connTime + ", disconnTime=" + disconnTime + "]";
 	}
 
-	
-	
 	
 }
 

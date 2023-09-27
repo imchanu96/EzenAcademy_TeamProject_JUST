@@ -6,300 +6,317 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 public class ResumeDto {
 
-	private int rNo;
-	private String rName;
+	private int resumeNo;
+	private String resumeName;
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private Date rBirthday;
-	private String rEmail;
-	private String rPhoneNum;
-	private String rAdd;
-	private String rMarry;
-	private String rGender;
-	private String rMilitary;
-	private String rEduBeginDate;
-	private String rEduEndDate;
-	private String rEduName;
-	private String rEduMajor;
-	private String rEduLoc;
-	private String rEduGrade;
-	private String rEduGraduate;
-	private String rCareerBeginDate;
-	private String rCareerEndDate;
-	private String rCareerName;
-	private String rCareerPos;
-	private String rCareerLoc;
-	private String rCareerJob;
-	private String rLicenseDate;
-	private String rLicenseName;
-	private String rLicenseInst;
-	private String rLicenseGrade;
-	private int pNo;
+	private Date resumeBirthday;
+	private String resumeEmail;
+	private String resumePhoneNum;
+	private String resumeAdd;
+	private String resumeMarry;
+	private String resumeGender;
+	private String resumeMilitary;
+	private String resumeEduBeginDate;
+	private String resumeEduEndDate;
+	private String resumeEduName;
+	private String resumeEduMajor;
+	private String resumeEduLoc;
+	private String resumeEduGrade;
+	private String resumeEduGraduate;
+	private String resumeCareerBeginDate;
+	private String resumeCareerEndDate;
+	private String resumeCareerName;
+	private String resumeCareerPos;
+	private String resumeCareerLoc;
+	private String resumeCareerJob;
+	private String resumeLicenseDate;
+	private String resumeLicenseName;
+	private String resumeLicenseInst;
+	private String resumeLicenseGrade;
+	private int perNo;
 	
 	public ResumeDto() {
 		super();
 	}
 
-	public ResumeDto(int rNo, String rName, Date rBirthday, String rEmail, String rPhoneNum, String rAdd, String rMarry,
-			String rGender, String rMilitary, String rEduBeginDate, String rEduEndDate, String rEduName, String rEduMajor,
-			String rEduLoc, String rEduGrade, String rEduGraduate, String rCareerBeginDate, String rCareerEndDate,
-			String rCareerName, String rCareerPos, String rCareerLoc, String rCareerJob, String rLicenseDate,
-			String rLicenseName, String rLicenseInst, String rLicenseGrade, int pNo) {
+	public ResumeDto(int resumeNo, String resumeName, Date resumeBirthday
+			, String resumeEmail, String resumePhoneNum, String resumeAdd
+			, String resumeMarry, String resumeGender, String resumeMilitary
+			, String resumeEduBeginDate, String resumeEduEndDate
+			, String resumeEduName, String resumeEduMajor, String resumeEduLoc,
+			String resumeEduGrade, String resumeEduGraduate
+			, String resumeCareerBeginDate, String resumeCareerEndDate
+			, String resumeCareerName, String resumeCareerPos
+			, String resumeCareerLoc, String resumeCareerJob
+			, String resumeLicenseDate, String resumeLicenseName
+			, String resumeLicenseInst, String resumeLicenseGrade, int perNo) {
 		super();
-		this.rNo = rNo;
-		this.rName = rName;
-		this.rBirthday = rBirthday;
-		this.rEmail = rEmail;
-		this.rPhoneNum = rPhoneNum;
-		this.rAdd = rAdd;
-		this.rMarry = rMarry;
-		this.rGender = rGender;
-		this.rMilitary = rMilitary;
-		this.rEduBeginDate = rEduBeginDate;
-		this.rEduEndDate = rEduEndDate;
-		this.rEduName = rEduName;
-		this.rEduMajor = rEduMajor;
-		this.rEduLoc = rEduLoc;
-		this.rEduGrade = rEduGrade;
-		this.rEduGraduate = rEduGraduate;
-		this.rCareerBeginDate = rCareerBeginDate;
-		this.rCareerEndDate = rCareerEndDate;
-		this.rCareerName = rCareerName;
-		this.rCareerPos = rCareerPos;
-		this.rCareerLoc = rCareerLoc;
-		this.rCareerJob = rCareerJob;
-		this.rLicenseDate = rLicenseDate;
-		this.rLicenseName = rLicenseName;
-		this.rLicenseInst = rLicenseInst;
-		this.rLicenseGrade = rLicenseGrade;
-		this.pNo = pNo;
+		this.resumeNo = resumeNo;
+		this.resumeName = resumeName;
+		this.resumeBirthday = resumeBirthday;
+		this.resumeEmail = resumeEmail;
+		this.resumePhoneNum = resumePhoneNum;
+		this.resumeAdd = resumeAdd;
+		this.resumeMarry = resumeMarry;
+		this.resumeGender = resumeGender;
+		this.resumeMilitary = resumeMilitary;
+		this.resumeEduBeginDate = resumeEduBeginDate;
+		this.resumeEduEndDate = resumeEduEndDate;
+		this.resumeEduName = resumeEduName;
+		this.resumeEduMajor = resumeEduMajor;
+		this.resumeEduLoc = resumeEduLoc;
+		this.resumeEduGrade = resumeEduGrade;
+		this.resumeEduGraduate = resumeEduGraduate;
+		this.resumeCareerBeginDate = resumeCareerBeginDate;
+		this.resumeCareerEndDate = resumeCareerEndDate;
+		this.resumeCareerName = resumeCareerName;
+		this.resumeCareerPos = resumeCareerPos;
+		this.resumeCareerLoc = resumeCareerLoc;
+		this.resumeCareerJob = resumeCareerJob;
+		this.resumeLicenseDate = resumeLicenseDate;
+		this.resumeLicenseName = resumeLicenseName;
+		this.resumeLicenseInst = resumeLicenseInst;
+		this.resumeLicenseGrade = resumeLicenseGrade;
+		this.perNo = perNo;
 	}
 
-	public int getrNo() {
-		return rNo;
+	public int getResumeNo() {
+		return resumeNo;
 	}
 
-	public void setrNo(int rNo) {
-		this.rNo = rNo;
+	public void setResumeNo(int resumeNo) {
+		this.resumeNo = resumeNo;
 	}
 
-	public String getrName() {
-		return rName;
+	public String getResumeName() {
+		return resumeName;
 	}
 
-	public void setrName(String rName) {
-		this.rName = rName;
+	public void setResumeName(String resumeName) {
+		this.resumeName = resumeName;
 	}
 
-	public Date getrBirthday() {
-		return rBirthday;
+	public Date getResumeBirthday() {
+		return resumeBirthday;
 	}
 
-	public void setrBirthday(Date rBirthday) {
-		this.rBirthday = rBirthday;
+	public void setResumeBirthday(Date resumeBirthday) {
+		this.resumeBirthday = resumeBirthday;
 	}
 
-	public String getrEmail() {
-		return rEmail;
+	public String getResumeEmail() {
+		return resumeEmail;
 	}
 
-	public void setrEmail(String rEmail) {
-		this.rEmail = rEmail;
+	public void setResumeEmail(String resumeEmail) {
+		this.resumeEmail = resumeEmail;
 	}
 
-	public String getrPhoneNum() {
-		return rPhoneNum;
+	public String getResumePhoneNum() {
+		return resumePhoneNum;
 	}
 
-	public void setrPhoneNum(String rPhoneNum) {
-		this.rPhoneNum = rPhoneNum;
+	public void setResumePhoneNum(String resumePhoneNum) {
+		this.resumePhoneNum = resumePhoneNum;
 	}
 
-	public String getrAdd() {
-		return rAdd;
+	public String getResumeAdd() {
+		return resumeAdd;
 	}
 
-	public void setrAdd(String rAdd) {
-		this.rAdd = rAdd;
+	public void setResumeAdd(String resumeAdd) {
+		this.resumeAdd = resumeAdd;
 	}
 
-	public String getrMarry() {
-		return rMarry;
+	public String getResumeMarry() {
+		return resumeMarry;
 	}
 
-	public void setrMarry(String rMarry) {
-		this.rMarry = rMarry;
+	public void setResumeMarry(String resumeMarry) {
+		this.resumeMarry = resumeMarry;
 	}
 
-	public String getrGender() {
-		return rGender;
+	public String getResumeGender() {
+		return resumeGender;
 	}
 
-	public void setrGender(String rGender) {
-		this.rGender = rGender;
+	public void setResumeGender(String resumeGender) {
+		this.resumeGender = resumeGender;
 	}
 
-	public String getrMilitary() {
-		return rMilitary;
+	public String getResumeMilitary() {
+		return resumeMilitary;
 	}
 
-	public void setrMilitary(String rMilitary) {
-		this.rMilitary = rMilitary;
+	public void setResumeMilitary(String resumeMilitary) {
+		this.resumeMilitary = resumeMilitary;
 	}
 
-	public String getrEduBeginDate() {
-		return rEduBeginDate;
+	public String getResumeEduBeginDate() {
+		return resumeEduBeginDate;
 	}
 
-	public void setrEduBeginDate(String rEduBeginDate) {
-		this.rEduBeginDate = rEduBeginDate;
+	public void setResumeEduBeginDate(String resumeEduBeginDate) {
+		this.resumeEduBeginDate = resumeEduBeginDate;
 	}
 
-	public String getrEduEndDate() {
-		return rEduEndDate;
+	public String getResumeEduEndDate() {
+		return resumeEduEndDate;
 	}
 
-	public void setrEduEndDate(String rEduEndDate) {
-		this.rEduEndDate = rEduEndDate;
+	public void setResumeEduEndDate(String resumeEduEndDate) {
+		this.resumeEduEndDate = resumeEduEndDate;
 	}
 
-	public String getrEduName() {
-		return rEduName;
+	public String getResumeEduName() {
+		return resumeEduName;
 	}
 
-	public void setrEduName(String rEduName) {
-		this.rEduName = rEduName;
+	public void setResumeEduName(String resumeEduName) {
+		this.resumeEduName = resumeEduName;
 	}
 
-	public String getrEduMajor() {
-		return rEduMajor;
+	public String getResumeEduMajor() {
+		return resumeEduMajor;
 	}
 
-	public void setrEduMajor(String rEduMajor) {
-		this.rEduMajor = rEduMajor;
+	public void setResumeEduMajor(String resumeEduMajor) {
+		this.resumeEduMajor = resumeEduMajor;
 	}
 
-	public String getrEduLoc() {
-		return rEduLoc;
+	public String getResumeEduLoc() {
+		return resumeEduLoc;
 	}
 
-	public void setrEduLoc(String rEduLoc) {
-		this.rEduLoc = rEduLoc;
+	public void setResumeEduLoc(String resumeEduLoc) {
+		this.resumeEduLoc = resumeEduLoc;
 	}
 
-	public String getrEduGrade() {
-		return rEduGrade;
+	public String getResumeEduGrade() {
+		return resumeEduGrade;
 	}
 
-	public void setrEduGrade(String rEduGrade) {
-		this.rEduGrade = rEduGrade;
+	public void setResumeEduGrade(String resumeEduGrade) {
+		this.resumeEduGrade = resumeEduGrade;
 	}
 
-	public String getrEduGraduate() {
-		return rEduGraduate;
+	public String getResumeEduGraduate() {
+		return resumeEduGraduate;
 	}
 
-	public void setrEduGraduate(String rEduGraduate) {
-		this.rEduGraduate = rEduGraduate;
+	public void setResumeEduGraduate(String resumeEduGraduate) {
+		this.resumeEduGraduate = resumeEduGraduate;
 	}
 
-	public String getrCareerBeginDate() {
-		return rCareerBeginDate;
+	public String getResumeCareerBeginDate() {
+		return resumeCareerBeginDate;
 	}
 
-	public void setrCareerBeginDate(String rCareerBeginDate) {
-		this.rCareerBeginDate = rCareerBeginDate;
+	public void setResumeCareerBeginDate(String resumeCareerBeginDate) {
+		this.resumeCareerBeginDate = resumeCareerBeginDate;
 	}
 
-	public String getrCareerEndDate() {
-		return rCareerEndDate;
+	public String getResumeCareerEndDate() {
+		return resumeCareerEndDate;
 	}
 
-	public void setrCareerEndDate(String rCareerEndDate) {
-		this.rCareerEndDate = rCareerEndDate;
+	public void setResumeCareerEndDate(String resumeCareerEndDate) {
+		this.resumeCareerEndDate = resumeCareerEndDate;
 	}
 
-	public String getrCareerName() {
-		return rCareerName;
+	public String getResumeCareerName() {
+		return resumeCareerName;
 	}
 
-	public void setrCareerName(String rCareerName) {
-		this.rCareerName = rCareerName;
+	public void setResumeCareerName(String resumeCareerName) {
+		this.resumeCareerName = resumeCareerName;
 	}
 
-	public String getrCareerPos() {
-		return rCareerPos;
+	public String getResumeCareerPos() {
+		return resumeCareerPos;
 	}
 
-	public void setrCareerPos(String rCareerPos) {
-		this.rCareerPos = rCareerPos;
+	public void setResumeCareerPos(String resumeCareerPos) {
+		this.resumeCareerPos = resumeCareerPos;
 	}
 
-	public String getrCareerLoc() {
-		return rCareerLoc;
+	public String getResumeCareerLoc() {
+		return resumeCareerLoc;
 	}
 
-	public void setrCareerLoc(String rCareerLoc) {
-		this.rCareerLoc = rCareerLoc;
+	public void setResumeCareerLoc(String resumeCareerLoc) {
+		this.resumeCareerLoc = resumeCareerLoc;
 	}
 
-	public String getrCareerJob() {
-		return rCareerJob;
+	public String getResumeCareerJob() {
+		return resumeCareerJob;
 	}
 
-	public void setrCareerJob(String rCareerJob) {
-		this.rCareerJob = rCareerJob;
+	public void setResumeCareerJob(String resumeCareerJob) {
+		this.resumeCareerJob = resumeCareerJob;
 	}
 
-	public String getrLicenseDate() {
-		return rLicenseDate;
+	public String getResumeLicenseDate() {
+		return resumeLicenseDate;
 	}
 
-	public void setrLicenseDate(String rLicenseDate) {
-		this.rLicenseDate = rLicenseDate;
+	public void setResumeLicenseDate(String resumeLicenseDate) {
+		this.resumeLicenseDate = resumeLicenseDate;
 	}
 
-	public String getrLicenseName() {
-		return rLicenseName;
+	public String getResumeLicenseName() {
+		return resumeLicenseName;
 	}
 
-	public void setrLicenseName(String rLicenseName) {
-		this.rLicenseName = rLicenseName;
+	public void setResumeLicenseName(String resumeLicenseName) {
+		this.resumeLicenseName = resumeLicenseName;
 	}
 
-	public String getrLicenseInst() {
-		return rLicenseInst;
+	public String getResumeLicenseInst() {
+		return resumeLicenseInst;
 	}
 
-	public void setrLicenseInst(String rLicenseInst) {
-		this.rLicenseInst = rLicenseInst;
+	public void setResumeLicenseInst(String resumeLicenseInst) {
+		this.resumeLicenseInst = resumeLicenseInst;
 	}
 
-	public String getrLicenseGrade() {
-		return rLicenseGrade;
+	public String getResumeLicenseGrade() {
+		return resumeLicenseGrade;
 	}
 
-	public void setrLicenseGrade(String rLicenseGrade) {
-		this.rLicenseGrade = rLicenseGrade;
-	}
-	public int getpNo() {
-		return rNo;
+	public void setResumeLicenseGrade(String resumeLicenseGrade) {
+		this.resumeLicenseGrade = resumeLicenseGrade;
 	}
 
-	public void setpNo(int pNo) {
-		this.pNo = pNo;
+	public int getPerNo() {
+		return perNo;
+	}
+
+	public void setPerNo(int perNo) {
+		this.perNo = perNo;
 	}
 
 	@Override
 	public String toString() {
-		return "ResumeDto [rNo=" + rNo + ", rName=" + rName + ", rBirthday=" + rBirthday + ", rEmail=" + rEmail
-				+ ", rPhoneNum=" + rPhoneNum + ", rAdd=" + rAdd + ", rMarry=" + rMarry + ", rGender=" + rGender
-				+ ", rMilitary=" + rMilitary + ", rEduBeginDate=" + rEduBeginDate + ", rEduEndDate=" + rEduEndDate
-				+ ", rEduName=" + rEduName + ", rEduMajor=" + rEduMajor + ", rEduLoc=" + rEduLoc + ", rEduGrade="
-				+ rEduGrade + ", rEduGraduate=" + rEduGraduate + ", rCareerBeginDate=" + rCareerBeginDate
-				+ ", rCareerEndDate=" + rCareerEndDate + ", rCareerName=" + rCareerName + ", rCareerPos=" + rCareerPos
-				+ ", rCareerLoc=" + rCareerLoc + ", rCareerJob=" + rCareerJob + ", rLicenseDate=" + rLicenseDate
-				+ ", rLicenseName=" + rLicenseName + ", rLicenseInst=" + rLicenseInst + ", rLicenseGrade="
-				+ rLicenseGrade + ", pNo=" + pNo + "]";
+		return "ResumeDto [resumeNo=" + resumeNo + ", resumeName=" + resumeName
+				+ ", resumeBirthday=" + resumeBirthday + ", resumeEmail=" + resumeEmail
+				+ ", resumePhoneNum=" + resumePhoneNum + ", resumeAdd=" + resumeAdd
+				+ ", resumeMarry=" + resumeMarry + ", resumeGender=" + resumeGender
+				+ ", resumeMilitary=" + resumeMilitary 
+				+ ", resumeEduBeginDate=" + resumeEduBeginDate 
+				+ ", resumeEduEndDate=" + resumeEduEndDate + ", resumeEduName=" + resumeEduName
+				+ ", resumeEduMajor=" + resumeEduMajor + ", resumeEduLoc=" + resumeEduLoc
+				+ ", resumeEduGrade=" + resumeEduGrade + ", resumeEduGraduate="
+				+ resumeEduGraduate + ", resumeCareerBeginDate=" + resumeCareerBeginDate
+				+ ", resumeCareerEndDate=" + resumeCareerEndDate
+				+ ", resumeCareerName=" + resumeCareerName + ", resumeCareerPos=" + resumeCareerPos
+				+ ", resumeCareerLoc=" + resumeCareerLoc + ", resumeCareerJob=" + resumeCareerJob
+				+ ", resumeLicenseDate=" + resumeLicenseDate
+				+ ", resumeLicenseName=" + resumeLicenseName
+				+ ", resumeLicenseInst=" + resumeLicenseInst
+				+ ", resumeLicenseGrade=" + resumeLicenseGrade + ", perNo=" + perNo + "]";
 	}
+
+	
 	
 }

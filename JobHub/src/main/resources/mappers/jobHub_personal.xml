@@ -6,19 +6,19 @@
 
 <mapper namespace="com.jobhub.personal">
 	<resultMap type="personalMemberDto" id="personalResultMap">
-		<id column="PERSONAL_NUMBER" property="pNo" />
-		<result column="PERSONAL_NAME" property="pName" />
-		<result column="PERSONAL_ID" property="pId" />
-		<result column="PERSONAL_PASSWORD" property="pPwd" />
-		<result column="PERSONAL_PHONENUMBER" property="pPhoneNum" />
-		<result column="PERSONAL_COMPANY" property="pCom" />
-		<result column="PERSONAL_NICKNAME" property="pNickname" />
-		<result column="PERSONAL_PROFILE" property="pProfile" />
-		<result column="PERSONAL_EMAIL" property="pEmail" />
-		<result column="PERSONAL_HIRE_DATE" property="pHireDate"
+		<id column="PERSONAL_NUMBER" property="perNo" />
+		<result column="PERSONAL_NAME" property="perName" />
+		<result column="PERSONAL_ID" property="perId" />
+		<result column="PERSONAL_PASSWORD" property="perPwd" />
+		<result column="PERSONAL_PHONENUMBER" property="perPhoneNum" />
+		<result column="PERSONAL_COMPANY" property="perCom" />
+		<result column="PERSONAL_NICKNAME" property="perNickname" />
+		<result column="PERSONAL_PROFILE" property="perProfile" />
+		<result column="PERSONAL_EMAIL" property="perEmail" />
+		<result column="PERSONAL_HIRE_DATE" property="perHireDate"
 			javaType="java.util.Date" />
-		<result column="PERSONAL_KEYWORD" property="pKeyword" />
-		<result column="PERSONAL_TEMPORARILY" property="pTemporarily" />
+		<result column="PERSONAL_KEYWORD" property="perKeyword" />
+		<result column="PERSONAL_TEMPORARILY" property="perTemporarily" />
 		<result column="PERMISSION" property="pPermission" />
 		<result column="PERSONAL_CREATE_DATE" property="pCreateDate" 
 			javaType="java.util.Date" />
@@ -31,42 +31,42 @@
 	</resultMap>
 	
 	<resultMap type="resumeDto" id="resumeResultMap">
-		<id column="RESUME_NUMBER" property="rNo" />
-		<result column="RESUME_PERSONAL_NAME" property="rName"/>
-		<result column="RESUME_PERSONAL_BIRTHDAY" property="rBirthday"/>
-		<result column="RESUME_PERSONAL_EMAIL" property="rEmail"/>
-		<result column="RESUME_PERSONAL_PHONENUMBER" property="rPhoneNum"/>
-		<result column="RESUME_PERSONAL_ADDRESS" property="rAdd"/>
-		<result column="RESUME_PERSONAL_MARRY" property="rMarry"/>
-		<result column="RESUME_PERSONAL_GENDER" property="rGender"/>
-		<result column="RESUME_PERSONAL_MILITARY" property="rMilitary"/>
-		<result column="RESUME_EDUCATION_BEGIN_DATE" property="rEduBeginDate"/>
-		<result column="RESUME_EDUCATION_END_DATE" property="rEduEndDate"/>
-		<result column="RESUME_EDUCATION_NAME" property="rEduName"/>
-		<result column="RESUME_EDUCATION_MAJOR" property="rEduMajor"/>
-		<result column="RESUME_EDUCATION_LOCATION" property="rEduLoc"/>
-		<result column="RESUME_EDUCATION_GRADE" property="rEduGrade"/>
-		<result column="RESUME_EDUCATION_GRADUATE" property="rEduGraduate"/>
-		<result column="RESUME_CAREER_BEGIN_DATE" property="rCareerBeginDate"/>
-		<result column="RESUME_CAREER_END_DATE" property="rCareerEndDate"/>
-		<result column="RESUME_CAREER_NAME" property="rCareerName"/>
-		<result column="RESUME_CAREER_POSITION" property="rCareerPos"/>
-		<result column="RESUME_CAREER_LOCATION" property="rCareerLoc"/>
-		<result column="RESUME_CAREER_JOB" property="rCareerJob"/>
-		<result column="RESUME_LICENSE_DATE" property="rLicenseDate"/>
-		<result column="RESUME_LICENSE_NAME" property="rLicenseName"/>
-		<result column="RESUME_LICENSE_INSTITUTION" property="rLicenseInst"/>
-		<result column="RESUME_LICENSE_GRADE" property="rLicenseGrade"/>
-		<result column="PERSONAL_NUMBER" property="pNo"/>
+		<id column="RESUME_NUMBER" property="resumeNo" />
+		<result column="RESUME_PERSONAL_NAME" property="resumeName"/>
+		<result column="RESUME_PERSONAL_BIRTHDAY" property="resumeBirthday"/>
+		<result column="RESUME_PERSONAL_EMAIL" property="resumeEmail"/>
+		<result column="RESUME_PERSONAL_PHONENUMBER" property="resumePhoneNum"/>
+		<result column="RESUME_PERSONAL_ADDRESS" property="resumeAdd"/>
+		<result column="RESUME_PERSONAL_MARRY" property="resumeMarry"/>
+		<result column="RESUME_PERSONAL_GENDER" property="resumeGender"/>
+		<result column="RESUME_PERSONAL_MILITARY" property="resumeMilitary"/>
+		<result column="RESUME_EDUCATION_BEGIN_DATE" property="resumeEduBeginDate"/>
+		<result column="RESUME_EDUCATION_END_DATE" property="resumeEduEndDate"/>
+		<result column="RESUME_EDUCATION_NAME" property="resumeEduName"/>
+		<result column="RESUME_EDUCATION_MAJOR" property="resumeEduMajor"/>
+		<result column="RESUME_EDUCATION_LOCATION" property="resumeEduLoc"/>
+		<result column="RESUME_EDUCATION_GRADE" property="resumeEduGrade"/>
+		<result column="RESUME_EDUCATION_GRADUATE" property="resumeEduGraduate"/>
+		<result column="RESUME_CAREER_BEGIN_DATE" property="resumeCareerBeginDate"/>
+		<result column="RESUME_CAREER_END_DATE" property="resumeCareerEndDate"/>
+		<result column="RESUME_CAREER_NAME" property="resumeCareerName"/>
+		<result column="RESUME_CAREER_POSITION" property="resumeCareerPos"/>
+		<result column="RESUME_CAREER_LOCATION" property="resumeCareerLoc"/>
+		<result column="RESUME_CAREER_JOB" property="resumeCareerJob"/>
+		<result column="RESUME_LICENSE_DATE" property="resumeLicenseDate"/>
+		<result column="RESUME_LICENSE_NAME" property="resumeLicenseName"/>
+		<result column="RESUME_LICENSE_INSTITUTION" property="resumeLicenseInst"/>
+		<result column="RESUME_LICENSE_GRADE" property="resumeLicenseGrade"/>
+		<result column="PERSONAL_NUMBER" property="perNo"/>
 	</resultMap>
 	
 	<resultMap type="letterDto" id="letterResultMap">
-		<id column="LETTER_NUMBER" property="lNo" />
+		<id column="LETTER_NUMBER" property="letterNo" />
 		<result column="LETTER_HISTORY" property="history"/>
 		<result column="LETTER_MOTIVATION" property="motivation"/>
 		<result column="LETTER_CHARACTER" property="character"/>
 		<result column="LETTER_GOAL" property="goal"/>
-		<result column="PERSONAL_NUMBER" property="pNo"/>
+		<result column="PERSONAL_NUMBER" property="perNo"/>
 	</resultMap>
 	
 	<resultMap type="careerDto" id="careerResultMap">
@@ -77,7 +77,7 @@
 		<result column="CAREER_POSITION" property="carPosition"/>
 		<result column="CAREER_LOCATION" property="carLocation"/>
 		<result column="CAREER_JOB" property="carJob"/>
-		<result column="RESUME_NUMBER" property="rNo"/>
+		<result column="RESUME_NUMBER" property="resumeNo"/>
 	</resultMap>
 	
 	<resultMap type="educationDto" id="educationResultMap">
@@ -89,13 +89,13 @@
 		<result column="EDUCATION_GRADE" property="eduGrade"/>
 		<result column="EDUCATION_LOCATION" property="eduLocation"/>
 		<result column="EDUCATION_GREADUATE" property="eduGreaduate"/>
-		<result column="RESUME_NUMBER" property="rNo"/>
+		<result column="RESUME_NUMBER" property="resumeNo"/>
 	</resultMap>
 	
 	<select id="personalIdCheck">
 		SELECT COUNT(PERSONAL_ID)
 		FROM PERSONAL
-		WHERE PERSONAL_ID = #{pId};
+		WHERE PERSONAL_ID = #{perId};
 	</select>
 	
 	<select id="memberSelectList"  parameterType="map" resultMap="personalResultMap">
@@ -131,7 +131,7 @@
 		SELECT  PERSONAL_NUMBER, PERSONAL_ID, PERSONAL_PASSWORD, PERSONAL_NICKNAME
 			, PERSONAL_PHONENUMBER, PERSONAL_EMAIL, PERSONAL_KEYWORD, PERMISSION, PERSONAL_COMPANY
 		 FROM PERSONAL
-		 WHERE PERSONAL_ID = #{pId} AND PERSONAL_PASSWORD = #{pPwd}
+		 WHERE PERSONAL_ID = #{perId} AND PERSONAL_PASSWORD = #{perPwd}
 	
 	</select>
 
@@ -148,11 +148,11 @@
 			    , PERSONAL_PROFILE, PERSONAL_EMAIL
 			    , PERSONAL_HIRE_DATE, PERSONAL_TEMPORARILY
 			    , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE)
-			VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, #{pName}, #{pId}
-				, #{pPwd}, #{pPhoneNum}
-				, #{pCom}, #{pNickname}
-				, #{pProfile}, #{pEmail}
-				, #{pHireDate}, #{pTemporarily}
+			VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, #{perName}, #{perId}
+				, #{perPwd}, #{perPhoneNum}
+				, #{perCom}, #{perNickname}
+				, #{perProfile}, #{perEmail}
+				, #{perHireDate}, #{perTemporarily}
 				, 1, SYSDATE, SYSDATE)
 
 <!-- 			INSERT INTO PERSONAL -->
@@ -167,56 +167,56 @@
 	<select id="personalMemberSearchId" parameterType="personalMemberDto" resultMap="personalResultMap">
 		SELECT PERSONAL_ID, PERSONAL_NAME
 		FROM PERSONAL
-		WHERE PERSONAL_NAME =#{pName} AND PERSONAL_EMAIL =#{pEmail}
+		WHERE PERSONAL_NAME =#{perName} AND PERSONAL_EMAIL =#{perEmail}
 	</select>
 	
 	<select id="personalMemberSearchPwd" parameterType="personalMemberDto" resultMap="personalResultMap">
 		SELECT PERSONAL_PASSWORD, PERSONAL_NAME
 		FROM PERSONAL
-		WHERE PERSONAL_NAME =#{pName} AND PERSONAL_EMAIL =#{pEmail} AND PERSONAL_ID =#{pId}
+		WHERE PERSONAL_NAME =#{perName} AND PERSONAL_EMAIL =#{perEmail} AND PERSONAL_ID =#{perId}
 	</select>
 	
 	<update id="personalMemberNickNameUpdateOne" parameterType="personalMemberDto">
 		UPDATE PERSONAL
-		SET PERSONAL_NICKNAME = #{pNickname, jdbcType=VARCHAR}
-		WHERE PERSONAL_NUMBER = #{pNo}
+		SET PERSONAL_NICKNAME = #{perNickname, jdbcType=VARCHAR}
+		WHERE PERSONAL_NUMBER = #{perNo}
 	</update>
 	
 	<update id="personalMemberPasswordUpdateOne" parameterType="personalMemberDto">
 		UPDATE PERSONAL
-		SET PERSONAL_PASSWORD = #{pPwd, jdbcType=VARCHAR}
-		WHERE PERSONAL_NUMBER = #{pNo}
+		SET PERSONAL_PASSWORD = #{perPwd, jdbcType=VARCHAR}
+		WHERE PERSONAL_NUMBER = #{perNo}
 	</update>
 	
 	<update id="personalMemberPhoneNumUpdateOne" parameterType="personalMemberDto">
 		UPDATE PERSONAL
-		SET PERSONAL_PHONENUMBER = #{pPhoneNum, jdbcType=VARCHAR}
-		WHERE PERSONAL_NUMBER = #{pNo}
+		SET PERSONAL_PHONENUMBER = #{perPhoneNum, jdbcType=VARCHAR}
+		WHERE PERSONAL_NUMBER = #{perNo}
 	</update>
 	
 	<update id="personalMemberEmailUpdateOne" parameterType="personalMemberDto">
 		UPDATE PERSONAL
-		SET PERSONAL_EMAIL = #{pEmail, jdbcType=VARCHAR}
-		WHERE PERSONAL_NUMBER = #{pNo}
+		SET PERSONAL_EMAIL = #{perEmail, jdbcType=VARCHAR}
+		WHERE PERSONAL_NUMBER = #{perNo}
 	</update>
 	
 	<update id="personalMemberKeywordUpdateOne" parameterType="personalMemberDto">
 		UPDATE PERSONAL
-		SET PERSONAL_KEYWORD = #{pKeyword, jdbcType=VARCHAR}
-		WHERE PERSONAL_NUMBER = #{pNo}
+		SET PERSONAL_KEYWORD = #{perKeyword, jdbcType=VARCHAR}
+		WHERE PERSONAL_NUMBER = #{perNo}
 	</update>
 	
 	<select id="personalInfoList" resultType="map">
-		 SELECT P.PERSONAL_NUMBER AS "pNo", R.RESUME_PERSONAL_NAME AS "pName", P.PERSONAL_COMPANY AS "currentCompany"
-	        , R.RESUME_EDUCATION_NAME AS "pHighestEdu" , R.RESUME_EDUCATION_MAJOR AS "pHighestEduMajor"
-	        ,R.RESUME_EDUCATION_GRADE AS "pHighestEduGrade", R.RESUME_CAREER_NAME AS "pCampany"
-	        , R.RESUME_CAREER_BEGIN_DATE AS "pCareerBeginDate"
-	        , R.RESUME_CAREER_END_DATE AS "pCareerEndDate"
-	        , NVL(R.RESUME_LICENSE_NAME , ' ') AS "pLicense"
-	        , NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) AS "pLicenseCount" , P.COMPANY_PREFER AS "cPrefer"
+		 SELECT P.PERSONAL_NUMBER AS "perNo", R.RESUME_PERSONAL_NAME AS "perName", P.PERSONAL_COMPANY AS "currentCompany"
+	        , R.RESUME_EDUCATION_NAME AS "perHighestEdu" , R.RESUME_EDUCATION_MAJOR AS "perHighestEduMajor"
+	        ,R.RESUME_EDUCATION_GRADE AS "perHighestEduGrade", R.RESUME_CAREER_NAME AS "perCampany"
+	        , R.RESUME_CAREER_BEGIN_DATE AS "perCareerBeginDate"
+	        , R.RESUME_CAREER_END_DATE AS "perCareerEndDate"
+	        , NVL(R.RESUME_LICENSE_NAME , ' ') AS "perLicense"
+	        , NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) AS "perLicenseCount" , P.COMPANY_PREFER AS "comPrefer"
     	FROM (  SELECT P.PERSONAL_NUMBER, P.PERSONAL_COMPANY, C.COMPANY_PREFER
             FROM PERSONAL P , COMPANY C
-            WHERE C.COMPANY_NUMBER = #{cNo}
+            WHERE C.COMPANY_NUMBER = #{comNo}
             ) P INNER JOIN RESUME R
    		ON P.PERSONAL_NUMBER = R.PERSONAL_NUMBER
     <where>
@@ -275,14 +275,14 @@
     , RESUME_CAREER_POSITION, RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE
     , RESUME_LICENSE_NAME, RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER
 	FROM RESUME
-		WHERE PERSONAL_NUMBER = #{pNo}
+		WHERE PERSONAL_NUMBER = #{perNo}
 	</select>
 	
 	<select id="personalMemberShowCareer" parameterType="map" resultMap="careerResultMap">
 		SELECT CAREER_NUMBER, CAREER_BEGIN_DATE, CAREER_END_DATE
 			, CAREER_NAME, CAREER_POSITION, CAREER_LOCATION, CAREER_JOB, RESUME_NUMBER
 		FROM CAREER
-		WHERE RESUME_NUMBER = #{rNo}
+		WHERE RESUME_NUMBER = #{resumeNo}
 	</select>
 		
 	<select id="personalMemberShowEducation" parameterType="map" resultMap="educationResultMap">
@@ -290,44 +290,44 @@
 			, EDUCATION_NAME, EDUCATION_MAJOR, EDUCATION_GRADE, EDUCATION_LOCATION
 			, EDUCATION_GREADUATE, RESUME_NUMBER
 		FROM EDUCATION
-		WHERE RESUME_NUMBER = #{rNo}
+		WHERE RESUME_NUMBER = #{resumeNo}
 	</select>
 	
 	<select id="personalMembershowLetter" resultMap="letterResultMap" parameterType="map">
 	SELECT LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
 	    , LETTER_CHARACTER, LETTER_GOAL, (SELECT PERSONAL_NAME FROM PERSONAL WHERE PERSONAL_NUMBER = #{pNo}) AS "pName", PERSONAL_NUMBER
     FROM LETTER
-	WHERE PERSONAL_NUMBER = #{pNo}
+	WHERE PERSONAL_NUMBER = #{perNo}
 	</select>
 
 	<update id="PersonalresumeUpdateOne" parameterType="resumeDto">
 		UPDATE RESUME
-		SET RESUME_PERSONAL_NAME = #{rName}
-			, RESUME_PERSONAL_BIRTHDAY = #{rBirthday}
-			, RESUME_PERSONAL_EMAIL = #{rEmail}
-    		, RESUME_PERSONAL_PHONENUMBER = #{rPhoneNum}
-    		, RESUME_PERSONAL_ADDRESS = #{rAdd}
-    		, RESUME_PERSONAL_MARRY = #{rMarry}
-    		, RESUME_PERSONAL_GENDER = #{rGender}
-    		, RESUME_PERSONAL_MILITARY = #{rMilitary}
-    		, RESUME_EDUCATION_BEGIN_DATE = #{rEduBeginDate}
-		    , RESUME_EDUCATION_END_DATE = #{rEduEndDate}
-		    , RESUME_EDUCATION_NAME = #{rEduName}
-		    , RESUME_EDUCATION_MAJOR = #{rEduMajor}
-		    , RESUME_EDUCATION_LOCATION = #{rEduLoc}
-		    , RESUME_EDUCATION_GRADE = #{rEduGrade}
-		    , RESUME_EDUCATION_GRADUATE = #{rEduGraduate}
-		    , RESUME_CAREER_BEGIN_DATE = #{rCareerBeginDate}
-		    , RESUME_CAREER_END_DATE = #{rCareerEndDate}
-		    , RESUME_CAREER_NAME = #{rCareerName}
-		    , RESUME_CAREER_POSITION = #{rCareerPos}
-		    , RESUME_CAREER_LOCATION = #{rCareerLoc}
-		    , RESUME_CAREER_JOB = #{rCareerJob}
-		    , RESUME_LICENSE_DATE = #{rLicenseDate}
-		    , RESUME_LICENSE_NAME = #{rLicenseName}
-		    , RESUME_LICENSE_INSTITUTION = #{rLicenseInst}
-		    , RESUME_LICENSE_GRADE = #{rLicenseGrade}
-		WHERE PERSONAL_NUMBER = #{pNo}
+		SET RESUME_PERSONAL_NAME = #{resumeName}
+			, RESUME_PERSONAL_BIRTHDAY = #{resumeBirthday}
+			, RESUME_PERSONAL_EMAIL = #{resumeEmail}
+    		, RESUME_PERSONAL_PHONENUMBER = #{resumePhoneNum}
+    		, RESUME_PERSONAL_ADDRESS = #{resumeAdd}
+    		, RESUME_PERSONAL_MARRY = #{resumeMarry}
+    		, RESUME_PERSONAL_GENDER = #{resumeGender}
+    		, RESUME_PERSONAL_MILITARY = #{resumeMilitary}
+    		, RESUME_EDUCATION_BEGIN_DATE = #{resumeEduBeginDate}
+		    , RESUME_EDUCATION_END_DATE = #{resumeEduEndDate}
+		    , RESUME_EDUCATION_NAME = #{resumeEduName}
+		    , RESUME_EDUCATION_MAJOR = #{resumeEduMajor}
+		    , RESUME_EDUCATION_LOCATION = #{resumeEduLoc}
+		    , RESUME_EDUCATION_GRADE = #{resumeEduGrade}
+		    , RESUME_EDUCATION_GRADUATE = #{resumeEduGraduate}
+		    , RESUME_CAREER_BEGIN_DATE = #{resumeCareerBeginDate}
+		    , RESUME_CAREER_END_DATE = #{resumeCareerEndDate}
+		    , RESUME_CAREER_NAME = #{resumeCareerName}
+		    , RESUME_CAREER_POSITION = #{resumeCareerPos}
+		    , RESUME_CAREER_LOCATION = #{resumeCareerLoc}
+		    , RESUME_CAREER_JOB = #{resumeCareerJob}
+		    , RESUME_LICENSE_DATE = #{resumeLicenseDate}
+		    , RESUME_LICENSE_NAME = #{resumeLicenseName}
+		    , RESUME_LICENSE_INSTITUTION = #{resumeLicenseInst}
+		    , RESUME_LICENSE_GRADE = #{resumeLicenseGrade}
+		WHERE PERSONAL_NUMBER = #{perNo}
 	</update>
 
 	<update id="PersonalLetterUpdateOne" parameterType="letterDto">
@@ -336,7 +336,7 @@
 			, LETTER_MOTIVATION = #{motivation}
 		    , LETTER_CHARACTER = #{character}
 		    , LETTER_GOAL = #{goal}
-		WHERE PERSONAL_NUMBER = #{pNo}
+		WHERE PERSONAL_NUMBER = #{perNo}
 	</update>
 	
 	

@@ -7,9 +7,9 @@ import com.jobhub.company.dto.CompanyMemberDto;
 
 public interface CompanyMemberDao {
 
-	public CompanyMemberDto companyMemberExist(String cCode, String cPwd);
+	public CompanyMemberDto companyMemberExist(String comCode, String comPwd);
 	
-	public CompanyMemberDto companyMemberSelectOne(int cNo);
+	public CompanyMemberDto companyMemberSelectOne(int comNo);
 
 	public int companyInsertOne(CompanyMemberDto companyMemberDto);
 

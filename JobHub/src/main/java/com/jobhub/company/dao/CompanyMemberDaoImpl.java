@@ -19,19 +19,19 @@ public class CompanyMemberDaoImpl implements CompanyMemberDao {
 	SqlSessionTemplate sqlSession;
 	
 	@Override
-	public CompanyMemberDto companyMemberExist(String cCode, String cPwd) {
+	public CompanyMemberDto companyMemberExist(String comCode, String comPwd) {
 		// TODO Auto-generated method stub
 		HashMap<String, Object> paramMap = new HashMap<String, Object>();
-		paramMap.put("cCode", cCode);
-		paramMap.put("cPwd", cPwd);
+		paramMap.put("comCode", comCode);
+		paramMap.put("comPwd", comPwd);
 		
 		return sqlSession.selectOne(namespace + "companyMemberExist", paramMap);
 	}
 
 	@Override
-	public CompanyMemberDto companyMemberSelectOne(int cNo) {
+	public CompanyMemberDto companyMemberSelectOne(int comNo) {
 		// TODO Auto-generated method stub
-		return sqlSession.selectOne(namespace + "companyMemberSelectOne", cNo);
+		return sqlSession.selectOne(namespace + "companyMemberSelectOne", comNo);
 	}
 	
 	@Override

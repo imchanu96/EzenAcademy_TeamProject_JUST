@@ -24,9 +24,9 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 	public PersonalMemberDao personalMemberDao;
 
 	@Override
-	public CompanyMemberDto companyMemberExist(String cCode, String cPwd) {
+	public CompanyMemberDto companyMemberExist(String comCode, String comPwd) {
 		// TODO Auto-generated method stub
-		return companyMemberDao.companyMemberExist(cCode, cPwd);
+		return companyMemberDao.companyMemberExist(comCode, comPwd);
 	}
 
 	@Override
@@ -108,10 +108,10 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 	}
 
 	@Override
-	public CompanyMemberDto companyMemberSelectOne(int cNo) {
+	public CompanyMemberDto companyMemberSelectOne(int comNo) {
 		// TODO Auto-generated method stub
 		
-		return companyMemberDao.companyMemberSelectOne(cNo);
+		return companyMemberDao.companyMemberSelectOne(comNo);
 	}
 
 	@Override

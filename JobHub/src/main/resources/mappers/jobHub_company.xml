@@ -7,27 +7,27 @@
 <mapper namespace="com.jobhub.company">
 
 	<resultMap type="companyMemberDto" id="companyMemberResultMap">
-		<id column="COMPANY_NUMBER" property="cNo" />
-		<result column="COMPANY_NAME" property="cName" />
-		<result column="COMPANY_ADDRESS" property="cAdd" />
-		<result column="COMPANY_TYPE" property="cType" />
-		<result column="COMPANY_ESTABLISH_DATE" property="cEstDate" 
+		<id column="COMPANY_NUMBER" property="comNo" />
+		<result column="COMPANY_NAME" property="comName" />
+		<result column="COMPANY_ADDRESS" property="comAdd" />
+		<result column="COMPANY_TYPE" property="comType" />
+		<result column="COMPANY_ESTABLISH_DATE" property="comEstDate" 
 		javaType="java.util.Date" />
-		<result column="COMPANY_HOMEPAGE" property="cHomepage" />
-		<result column="COMPANY_INTRODUCE" property="cIntroduce" />
-		<result column="COMPANY_ID" property="cId" />
-		<result column="COMPANY_PASSWORD" property="cPwd" />
-		<result column="COMPANY_CODE" property="cCode" />
-		<result column="COMPANY_LICENSE" property="cLicense" />
-		<result column="COMPANY_LOGO" property="cLogo" />
-		<result column="COMPANY_PRESIDENT_NAME" property="cPrName" />
-		<result column="COMPANY_INCHARGE_NAME" property="cInChargeName" />
-		<result column="COMPANY_INCHARGE_EMAIL" property="cInChargeEmail" />
-		<result column="COMPANY_INCHARGE_PHONENUMBER" property="cInChargePhoneNum" />
-		<result column="COMPANY_PREFER" property="cPrefer" />
+		<result column="COMPANY_HOMEPAGE" property="comHomepage" />
+		<result column="COMPANY_INTRODUCE" property="comIntroduce" />
+		<result column="COMPANY_ID" property="comId" />
+		<result column="COMPANY_PASSWORD" property="comPwd" />
+		<result column="COMPANY_CODE" property="comCode" />
+		<result column="COMPANY_LICENSE" property="comLicense" />
+		<result column="COMPANY_LOGO" property="comLogo" />
+		<result column="COMPANY_PRESIDENT_NAME" property="comPrName" />
+		<result column="COMPANY_INCHARGE_NAME" property="comInChargeName" />
+		<result column="COMPANY_INCHARGE_EMAIL" property="comInChargeEmail" />
+		<result column="COMPANY_INCHARGE_PHONENUMBER" property="comInChargePhoneNum" />
+		<result column="COMPANY_PREFER" property="comPrefer" />
 		<result column="PERMISSION" property="permission" />
-		<result column="COMPANY_CREATE_DATE" property="cCreDate" />
-		<result column="COMPANY_MODIFY_DATE" property="cModDate" />
+		<result column="COMPANY_CREATE_DATE" property="comCreDate" />
+		<result column="COMPANY_MODIFY_DATE" property="comModDate" />
 		<result column="CONNECTION_TIME" property="connTime" />
 		<result column="DISCONNECTION_TIME" property="disconnTime" />
 
@@ -41,7 +41,7 @@
 				COMPANY_PREFER,
 				COMPANY_MODIFY_DATE
 		 FROM COMPANY
-		 WHERE COMPANY_NUMBER = #{cNo}
+		 WHERE COMPANY_NUMBER = #{comNo}
 	</select>
 	
 	<select id="companyMemberSelectTotalCount" resultType="java.lang.Integer">
@@ -101,7 +101,7 @@
 				,COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
 				, COMPANY_HOMEPAGE, COMPANY_INTRODUCE
 		 FROM COMPANY
-		 WHERE COMPANY_CODE = #{cCode} AND COMPANY_PASSWORD = #{cPwd}
+		 WHERE COMPANY_CODE = #{comCode} AND COMPANY_PASSWORD = #{comPwd}
 	
 	</select>
 	
@@ -111,7 +111,7 @@
 				,COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
 				, COMPANY_HOMEPAGE, COMPANY_INTRODUCE
 		 FROM COMPANY
-		 WHERE COMPANY_CODE = #{cCode} AND COMPANY_PASSWORD = #{cPwd}
+		 WHERE COMPANY_CODE = #{comCode} AND COMPANY_PASSWORD = #{comPwd}
 	</select>
 	
 	<insert id="companyInsertOne" parameterType="companyMemberDto">
@@ -128,11 +128,11 @@
 			    , COMPANY_INCHARGE_PHONENUMBER
 			    , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE
 			    , CONNECTION_TIME, DISCONNECTION_TIME)
-			VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, #{cName}, #{cAdd}
-				, #{cType}, #{cIntroduce}
-				, #{cPwd}, #{cCode}, #{cLicense}
-				, #{cInChargeName}, #{cInChargeEmail}
-				, #{cInChargePhoneNum}
+			VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, #{comName}, #{comAdd}
+				, #{comType}, #{comIntroduce}
+				, #{comPwd}, #{comCode}, #{comLicense}
+				, #{comInChargeName}, #{comInChargeEmail}
+				, #{comInChargePhoneNum}
 				, 5, SYSDATE, SYSDATE, SYSDATE, SYSDATE)
 
 	</insert>
@@ -140,73 +140,73 @@
 	<select id="companyMemberSearchId" parameterType="companyMemberDto" resultMap="companyMemberResultMap">
 		SELECT COMPANY_NAME, COMPANY_CODE
 		FROM COMPANY
-		WHERE COMPANY_INCHARGE_NAME =#{cInChargeName} AND COMPANY_INCHARGE_EMAIL =#{cInChargeEmail}
+		WHERE COMPANY_INCHARGE_NAME =#{comInChargeName} AND COMPANY_INCHARGE_EMAIL =#{comInChargeEmail}
 	</select>
 	
 	<select id="companyMemberSearchPwd" parameterType="companyMemberDto" resultMap="companyMemberResultMap">
 		SELECT COMPANY_NAME, COMPANY_PASSWORD
 		FROM COMPANY
-		WHERE COMPANY_INCHARGE_NAME =#{cInChargeName} AND COMPANY_INCHARGE_EMAIL =#{cInChargeEmail}
-		AND COMPANY_CODE =#{cCode}
+		WHERE COMPANY_INCHARGE_NAME =#{comInChargeName} AND COMPANY_INCHARGE_EMAIL =#{comInChargeEmail}
+		AND COMPANY_CODE =#{comCode}
 	</select>
 	
 	<update id="companyMembercInChargeNameUpdateOne" parameterType="companyMemberDto">
 		UPDATE COMPANY
-		 SET COMPANY_INCHARGE_NAME = #{cInChargeName}
-		 WHERE COMPANY_NUMBER = #{cNo}
+		 SET COMPANY_INCHARGE_NAME = #{comInChargeName}
+		 WHERE COMPANY_NUMBER = #{comNo}
 	</update>
 	
 	<update id="companyMembercInChargeEmailUpdateOne" parameterType="companyMemberDto">
 		UPDATE COMPANY
-		 SET COMPANY_INCHARGE_EMAIL = #{cInChargeEmail}
-		 WHERE COMPANY_NUMBER = #{cNo}
+		 SET COMPANY_INCHARGE_EMAIL = #{comInChargeEmail}
+		 WHERE COMPANY_NUMBER = #{comNo}
 	</update>	
 	
 	<update id="companyMembercInChargePhoneNumUpdateOne" parameterType="companyMemberDto">
 		UPDATE COMPANY
-		 SET COMPANY_INCHARGE_PHONENUMBER = #{cInChargePhoneNum}
-		 WHERE COMPANY_NUMBER = #{cNo}
+		 SET COMPANY_INCHARGE_PHONENUMBER = #{comInChargePhoneNum}
+		 WHERE COMPANY_NUMBER = #{comNo}
 	</update>
 	
 	<update id="companyMembercNameUpdateOne" parameterType="companyMemberDto">
 		UPDATE COMPANY
-		 SET COMPANY_NAME = #{cName}
-		 WHERE COMPANY_NUMBER = #{cNo}
+		 SET COMPANY_NAME = #{comName}
+		 WHERE COMPANY_NUMBER = #{comNo}
 	</update>
 	
 	<update id="companyMembercAddUpdateOne" parameterType="companyMemberDto">
 		UPDATE COMPANY
-		 SET COMPANY_ADDRESS = #{cAdd}
-		 WHERE COMPANY_NUMBER = #{cNo}
+		 SET COMPANY_ADDRESS = #{comAdd}
+		 WHERE COMPANY_NUMBER = #{comNo}
 	</update>
 	
 	<update id="companyMembercTypeUpdateOne" parameterType="companyMemberDto">
 		UPDATE COMPANY
-		 SET COMPANY_TYPE = #{cType}
-		 WHERE COMPANY_NUMBER = #{cNo}
+		 SET COMPANY_TYPE = #{comType}
+		 WHERE COMPANY_NUMBER = #{comNo}
 	</update>
 	
 	<update id="companyMembercEstDateUpdateOne" parameterType="companyMemberDto">
 		UPDATE COMPANY
-		SET COMPANY_ESTABLISH_DATE = #{cEstDate}
-		WHERE COMPANY_NUMBER = #{cNo}
+		SET COMPANY_ESTABLISH_DATE = #{comEstDate}
+		WHERE COMPANY_NUMBER = #{comNo}
 	</update>
 	
 	<update id="companyMembercHomepageUpdateOne" parameterType="companyMemberDto">
 		UPDATE COMPANY
-		 SET COMPANY_HOMEPAGE = #{cHomepage}
-		 WHERE COMPANY_NUMBER = #{cNo}
+		 SET COMPANY_HOMEPAGE = #{comHomepage}
+		 WHERE COMPANY_NUMBER = #{comNo}
 	</update>
 	
 	<update id="companyMembercIntroduceUpdateOne" parameterType="companyMemberDto">
 		UPDATE COMPANY
-		 SET COMPANY_INTRODUCE = #{cIntroduce}
-		 WHERE COMPANY_NUMBER = #{cNo}
+		 SET COMPANY_INTRODUCE = #{comIntroduce}
+		 WHERE COMPANY_NUMBER = #{comNo}
 	</update>
 	
 	<update id="preferUpdateOne" parameterType="map">
 		UPDATE COMPANY
 		 SET COMPANY_PREFER = #{prefer}
-		 WHERE COMPANY_NUMBER = #{cNo}
+		 WHERE COMPANY_NUMBER = #{comNo}
 	</update>
 </mapper>

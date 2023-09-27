@@ -4,141 +4,150 @@ import java.util.Date;
 
 public class BoardDto {
 
-	private int bNo;
-	private String bTag;
-	private String bTitle;
-	private String bWriter;
-	private String bContent;
-	private String bImg;
-	private String bVotingCheck;
-	private Date bCreDate;
-	private Date bModDate;
-	private int bLikeCount;
-	private int bViews;
-	private int pNo;
+	private int boardNo;
+	private String boardTag;
+	private String boardTitle;
+	private String boardWriter;
+	private String boardContent;
+	private String boardImg;
+	private String boardVotingCheck;
+	private Date boardCreDate;
+	private Date boardModDate;
+	private int boardLikeCount;
+	private int boardViews;
+	private int perNo;
 	
 	public BoardDto() {
 		super();
 	}
 
-	public BoardDto(int bNo, String bTag, String bTitle, String bWriter, String bContent, String bImg,
-			String bVotingCheck, Date bCreDate, Date bModDate, int bLikeCount, int bViews, int pNo) {
+	public BoardDto(int boardNo, String boardTag, String boardTitle
+			, String boardWriter, String boardContent
+			, String boardImg, String boardVotingCheck
+			, Date boardCreDate, Date boardModDate, int boardLikeCount,
+			int boardViews, int perNo) {
 		super();
-		this.bNo = bNo;
-		this.bTag = bTag;
-		this.bTitle = bTitle;
-		this.bWriter = bWriter;
-		this.bContent = bContent;
-		this.bImg = bImg;
-		this.bVotingCheck = bVotingCheck;
-		this.bCreDate = bCreDate;
-		this.bModDate = bModDate;
-		this.bLikeCount = bLikeCount;
-		this.bViews = bViews;
-		this.pNo = pNo;
+		this.boardNo = boardNo;
+		this.boardTag = boardTag;
+		this.boardTitle = boardTitle;
+		this.boardWriter = boardWriter;
+		this.boardContent = boardContent;
+		this.boardImg = boardImg;
+		this.boardVotingCheck = boardVotingCheck;
+		this.boardCreDate = boardCreDate;
+		this.boardModDate = boardModDate;
+		this.boardLikeCount = boardLikeCount;
+		this.boardViews = boardViews;
+		this.perNo = perNo;
 	}
 
-	public int getbNo() {
-		return bNo;
+	public int getBoardNo() {
+		return boardNo;
 	}
 
-	public void setbNo(int bNo) {
-		this.bNo = bNo;
+	public void setBoardNo(int boardNo) {
+		this.boardNo = boardNo;
 	}
 
-	public String getbTag() {
-		return bTag;
+	public String getBoardTag() {
+		return boardTag;
 	}
 
-	public void setbTag(String bTag) {
-		this.bTag = bTag;
+	public void setBoardTag(String boardTag) {
+		this.boardTag = boardTag;
 	}
 
-	public String getbTitle() {
-		return bTitle;
+	public String getBoardTitle() {
+		return boardTitle;
 	}
 
-	public void setbTitle(String bTitle) {
-		this.bTitle = bTitle;
+	public void setBoardTitle(String boardTitle) {
+		this.boardTitle = boardTitle;
 	}
 
-	public String getbWriter() {
-		return bWriter;
+	public String getBoardWriter() {
+		return boardWriter;
 	}
 
-	public void setbWriter(String bWriter) {
-		this.bWriter = bWriter;
+	public void setBoardWriter(String boardWriter) {
+		this.boardWriter = boardWriter;
 	}
 
-	public String getbContent() {
-		return bContent;
+	public String getBoardContent() {
+		return boardContent;
 	}
 
-	public void setbContent(String bContent) {
-		this.bContent = bContent;
+	public void setBoardContent(String boardContent) {
+		this.boardContent = boardContent;
 	}
 
-	public String getbImg() {
-		return bImg;
+	public String getBoardImg() {
+		return boardImg;
 	}
 
-	public void setbImg(String bImg) {
-		this.bImg = bImg;
+	public void setBoardImg(String boardImg) {
+		this.boardImg = boardImg;
 	}
 
-	public String getbVotingCheck() {
-		return bVotingCheck;
+	public String getBoardVotingCheck() {
+		return boardVotingCheck;
 	}
 
-	public void setbVotingCheck(String bVotingCheck) {
-		this.bVotingCheck = bVotingCheck;
+	public void setBoardVotingCheck(String boardVotingCheck) {
+		this.boardVotingCheck = boardVotingCheck;
 	}
 
-	public Date getbCreDate() {
-		return bCreDate;
+	public Date getBoardCreDate() {
+		return boardCreDate;
 	}
 
-	public void setbCreDate(Date bCreDate) {
-		this.bCreDate = bCreDate;
+	public void setBoardCreDate(Date boardCreDate) {
+		this.boardCreDate = boardCreDate;
 	}
 
-	public Date getbModDate() {
-		return bModDate;
+	public Date getBoardModDate() {
+		return boardModDate;
 	}
 
-	public void setbModDate(Date bModDate) {
-		this.bModDate = bModDate;
+	public void setBoardModDate(Date boardModDate) {
+		this.boardModDate = boardModDate;
 	}
 
-	public int getbLikeCount() {
-		return bLikeCount;
+	public int getBoardLikeCount() {
+		return boardLikeCount;
 	}
 
-	public void setbLikeCount(int bLikeCount) {
-		this.bLikeCount = bLikeCount;
+	public void setBoardLikeCount(int boardLikeCount) {
+		this.boardLikeCount = boardLikeCount;
 	}
 
-	public int getbViews() {
-		return bViews;
+	public int getBoardViews() {
+		return boardViews;
 	}
 
-	public void setbViews(int bViews) {
-		this.bViews = bViews;
+	public void setBoardViews(int boardViews) {
+		this.boardViews = boardViews;
 	}
 
-	public int getpNo() {
-		return pNo;
+	public int getPerNo() {
+		return perNo;
 	}
 
-	public void setpNo(int pNo) {
-		this.pNo = pNo;
+	public void setPerNo(int perNo) {
+		this.perNo = perNo;
 	}
 
 	@Override
 	public String toString() {
-		return "BoardDto [bNo=" + bNo + ", bTag=" + bTag + ", bTitle=" + bTitle + ", bWriter=" + bWriter + ", bContent="
-				+ bContent + ", bImg=" + bImg + ", bVotingCheck=" + bVotingCheck + ", bCreDate=" + bCreDate
-				+ ", bModDate=" + bModDate + ", bLikeCount=" + bLikeCount + ", bViews=" + bViews + ", pNo=" + pNo + "]";
+		return "BoardDto [boardNo=" + boardNo + ", boardTag=" + boardTag
+				+ ", boardTitle=" + boardTitle + ", boardWriter=" + boardWriter
+				+ ", boardContent=" + boardContent + ", boardImg=" + boardImg
+				+ ", boardVotingCheck=" + boardVotingCheck
+				+ ", boardCreDate=" + boardCreDate + ", boardModDate=" + boardModDate
+				+ ", boardLikeCount=" + boardLikeCount + ", boardViews=" + boardViews
+				+ ", perNo=" + perNo + "]";
 	}
+
+	
 	
 }

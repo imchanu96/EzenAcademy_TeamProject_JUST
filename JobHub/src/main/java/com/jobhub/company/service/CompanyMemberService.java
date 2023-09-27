@@ -8,7 +8,7 @@ import com.jobhub.personal.dto.PersonalMemberDto;
 
 public interface CompanyMemberService {
 
-	public CompanyMemberDto companyMemberExist(String cCode, String cPwd);
+	public CompanyMemberDto companyMemberExist(String comCode, String comPwd);
 
 	public void companyInsertOne(CompanyMemberDto companyMemberDto);
 
@@ -36,7 +36,7 @@ public interface CompanyMemberService {
 	
 	public void companyMembercIntroduceUpdateOne(CompanyMemberDto companymemberDto);
 
-	public CompanyMemberDto companyMemberSelectOne(int cNo);
+	public CompanyMemberDto companyMemberSelectOne(int comNo);
 
 	public void preferUpdateOne(Map<String, Object> map);
 	

@@ -39,17 +39,17 @@ public class PersonalMemberController {
 
 	// 로그인 클릭 시 이동
 	@RequestMapping(value = "/personal/loginCtr.do", method = RequestMethod.POST)
-	public String loginCtr(String pId, String pPwd, HttpSession session, Model model) {
+	public String loginCtr(String perId, String perPwd, HttpSession session, Model model) {
 
-		log.info("Welcome PersonalMemberController loginCtr! " + pId + ", " + pPwd);
+		log.info("Welcome PersonalMemberController loginCtr! " + perId + ", " + perPwd);
 
 		PersonalMemberDto personalMemberDto 
-			= PersonalMemberService.personalMemberExist(pId, pPwd);
+			= PersonalMemberService.personalMemberExist(perId, perPwd);
 
 		String viewUrl = "";
 		if (personalMemberDto != null) {
 			
-			int permission = personalMemberDto.getpPermission();
+			int permission = personalMemberDto.getPerPermission();
 			
 //			회원이 존재하면 세션에 담는다
 			session.setAttribute("personalMemberDto", personalMemberDto);
@@ -187,13 +187,13 @@ public class PersonalMemberController {
 	
 	
 	@RequestMapping(value = "/personal/nickNameUpdateCtr.do", method = RequestMethod.POST)
-	public String nickNameUpdateCtr(String pNickname, HttpSession session, Model model) {
+	public String nickNameUpdateCtr(String perNickname, HttpSession session, Model model) {
 		log.info("Welecome PersonalMembernickNameUpdateCtr");
 		
 		//기존 세션을 가져와서 personalMemberDto에 바뀐 정보를 담아둠
 		PersonalMemberDto personalMemberDto
 			= (PersonalMemberDto) session.getAttribute("personalMemberDto");
-		personalMemberDto.setpNickname(pNickname);
+		personalMemberDto.setPerNickname(perNickname);
 		
 		try {
 			PersonalMemberService.personalMemberNickNameUpdateOne(personalMemberDto);
@@ -209,12 +209,12 @@ public class PersonalMemberController {
 	}
 	
 	@RequestMapping(value = "/personal/passwordUpdateCtr.do", method = RequestMethod.POST)
-	public String passwordUpdateCtr(String pPwd, HttpSession session, Model model) {
+	public String passwordUpdateCtr(String perPwd, HttpSession session, Model model) {
 		log.info("Welecome PersonalMemberPasswordUpdateCtr");
 		
 		PersonalMemberDto personalMemberDto
 			= (PersonalMemberDto) session.getAttribute("personalMemberDto");
-		personalMemberDto.setpPwd(pPwd);
+		personalMemberDto.setPerPwd(perPwd);
 		
 		try {
 			PersonalMemberService.personalMemberPasswordUpdateOne(personalMemberDto);
@@ -229,12 +229,12 @@ public class PersonalMemberController {
 	}
 	
 	@RequestMapping(value = "/personal/phoneNumUpdateCtr.do", method = RequestMethod.POST)
-	public String phoneNumUpdateCtr(String pPhoneNum, HttpSession session, Model model) {
+	public String phoneNumUpdateCtr(String perPhoneNum, HttpSession session, Model model) {
 		log.info("Welecome PersonalMemberPhoneNumUpdateCtr");
 		
 		PersonalMemberDto personalMemberDto
 			= (PersonalMemberDto) session.getAttribute("personalMemberDto");
-		personalMemberDto.setpPhoneNum(pPhoneNum);
+		personalMemberDto.setPerPhoneNum(perPhoneNum);
 		
 		try {
 			PersonalMemberService.personalMemberPhoneNumUpdateOne(personalMemberDto);
@@ -249,12 +249,12 @@ public class PersonalMemberController {
 	}
 	
 	@RequestMapping(value = "/personal/emailUpdateCtr.do", method = RequestMethod.POST)
-	public String emailUpdateCtr(String pEmail, HttpSession session, Model model) {
+	public String emailUpdateCtr(String perEmail, HttpSession session, Model model) {
 		log.info("Welecome PersonalMemberEmailUpdateCtr");
 		
 		PersonalMemberDto personalMemberDto
 			= (PersonalMemberDto) session.getAttribute("personalMemberDto");
-		personalMemberDto.setpEmail(pEmail);	
+		personalMemberDto.setPerEmail(perEmail);	
 		
 		try {
 			PersonalMemberService.personalMemberEmailUpdateOne(personalMemberDto);
@@ -269,11 +269,11 @@ public class PersonalMemberController {
 	}
 	
 	@RequestMapping(value = "/personal/keywordUpdateCtr.do", method = RequestMethod.POST)
-	public String keywordUpdateCtr(String pKeyword, HttpSession session, Model model) {
+	public String keywordUpdateCtr(String perKeyword, HttpSession session, Model model) {
 		log.info("Welecome PersonalMemberKeywordUpdateCtr");
 		PersonalMemberDto personalMemberDto
 			= (PersonalMemberDto) session.getAttribute("personalMemberDto");
-		personalMemberDto.setpKeyword(pKeyword);
+		personalMemberDto.setPerKeyword(perKeyword);
 		
 		try {
 			PersonalMemberService.personalMemberKeywordUpdateOne(personalMemberDto);
@@ -289,10 +289,10 @@ public class PersonalMemberController {
 
 
 	@RequestMapping(value = "/personal/showResume.do", method = RequestMethod.GET)
-	public String showResume(int pNo, HttpSession session, Model model) {
-		log.info("Welecom showResume! 회원번호:" + pNo);
+	public String showResume(int perNo, HttpSession session, Model model) {
+		log.info("Welecom showResume! 회원번호:" + perNo);
 		
-		Map<String, Object> map = PersonalMemberService.personalMemberShowResume(pNo);
+		Map<String, Object> map = PersonalMemberService.personalMemberShowResume(perNo);
 		
 		model.addAttribute("map", map);
 				
@@ -307,7 +307,7 @@ public class PersonalMemberController {
 	}
 	
 	@RequestMapping(value = "/personal/resumeUpdateCtr.do", method = RequestMethod.POST)
-	public String PersonalresumeUpdateCtr(ResumeDto resumeDto, int pNo, HttpSession session, Model model) {
+	public String PersonalresumeUpdateCtr(ResumeDto resumeDto, int perNo, HttpSession session, Model model) {
 		log.info("Welecome PersonalresumeUpdateCtr" + resumeDto);
 		
 		try {
@@ -318,14 +318,14 @@ public class PersonalMemberController {
 			e.printStackTrace();
 		}
 		
-		return "redirect:./showResume.do?pNo=" + pNo;
+		return "redirect:./showResume.do?pNo=" + perNo;
 	}
 	
 	@RequestMapping(value = "/personal/showLetter.do", method = RequestMethod.GET)
-	public String showLetter(int pNo, HttpSession session, Model model) {
-		log.info("Welecom showLetter! 회원번호:" + pNo);
+	public String showLetter(int perNo, HttpSession session, Model model) {
+		log.info("Welecom showLetter! 회원번호:" + perNo);
 		
-		LetterDto letterDto = PersonalMemberService.personalMembershowLetter(pNo);
+		LetterDto letterDto = PersonalMemberService.personalMembershowLetter(perNo);
 		
 		session.setAttribute("letterDto", letterDto);
 				
@@ -340,7 +340,7 @@ public class PersonalMemberController {
 	}
 	
 	@RequestMapping(value = "/personal/letterUpdateCtr.do", method = RequestMethod.POST)
-	public String PersonalLetterUpdateCtr(LetterDto letterDto, int pNo, HttpSession session, Model model) {
+	public String PersonalLetterUpdateCtr(LetterDto letterDto, int perNo, HttpSession session, Model model) {
 		log.info("Welecome PersonalLetterUpdateCtr" + letterDto);
 		
 		try {
@@ -351,7 +351,7 @@ public class PersonalMemberController {
 			e.printStackTrace();
 		}
 		
-		return "redirect:./showLetter.do?pNo=" + pNo;
+		return "redirect:./showLetter.do?pNo=" + perNo;
 	}	
 		
 }// end PersonalMemberController

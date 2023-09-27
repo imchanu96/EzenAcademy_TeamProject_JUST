@@ -6,29 +6,29 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 public class CompanyMemberDto {
 
-	private int cNo;
-	private String cName;
-	private String cAdd;
-	private String cType;
+	private int comNo;
+	private String comName;
+	private String comAdd;
+	private String comType;
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private Date cEstDate;
-	private String cHomepage;
-	private String cIntroduce;
-	private String cId;
-	private String cPwd;
-	private String cCode;
-	private String cLicense;
-	private String cLogo;
-	private String cRev;
-	private String cEmp;
-	private String cPrName;
-	private String cInChargeName;
-	private String cInChargeEmail;
-	private String cInChargePhoneNum;
-	private String cPrefer;
+	private Date comEstDate;
+	private String comHomepage;
+	private String comIntroduce;
+	private String comId;
+	private String comPwd;
+	private String comCode;
+	private String comLicense;
+	private String comLogo;
+	private String comRev;
+	private String comEmp;
+	private String comPrName;
+	private String comInChargeName;
+	private String comInChargeEmail;
+	private String comInChargePhoneNum;
+	private String comPrefer;
 	private int permission;
-	private Date cCreDate;
-	private Date cModDate;
+	private Date comCreDate;
+	private Date comModDate;
 	private Date connTime;
 	private Date disconnTime;
 	
@@ -36,187 +36,192 @@ public class CompanyMemberDto {
 		super();
 	}
 
-	public CompanyMemberDto(int cNo, String cName, String cAdd, String cType, Date cEstDate, String cHomepage,
-			String cIntroduce, String cId, String cPwd, String cCode, String cLicense, String cLogo, String cRev,
-			String cEmp, String cPrName, String cInChargeName, String cInChargeEmail, String cInChargePhoneNum,
-			String cPrefer, int permission, Date cCreDate, Date cModDate, Date connTime, Date disconnTime) {
+	public CompanyMemberDto(int comNo, String comName, String comAdd
+			, String comType, Date comEstDate
+			, String comHomepage, String comIntroduce
+			, String comId, String comPwd, String comCode, String comLicense 
+			, String comLogo, String comRev, String comEmp
+			, String comPrName, String comInChargeName
+			, String comInChargeEmail, String comInChargePhoneNum
+			, String comPrefer, int permission, Date comCreDate,
+			Date comModDate, Date connTime, Date disconnTime) {
 		super();
-		this.cNo = cNo;
-		this.cName = cName;
-		this.cAdd = cAdd;
-		this.cType = cType;
-		this.cEstDate = cEstDate;
-		this.cHomepage = cHomepage;
-		this.cIntroduce = cIntroduce;
-		this.cId = cId;
-		this.cPwd = cPwd;
-		this.cCode = cCode;
-		this.cLicense = cLicense;
-		this.cLogo = cLogo;
-		this.cRev = cRev;
-		this.cEmp = cEmp;
-		this.cPrName = cPrName;
-		this.cInChargeName = cInChargeName;
-		this.cInChargeEmail = cInChargeEmail;
-		this.cInChargePhoneNum = cInChargePhoneNum;
-		this.cPrefer = cPrefer;
+		this.comNo = comNo;
+		this.comName = comName;
+		this.comAdd = comAdd;
+		this.comType = comType;
+		this.comEstDate = comEstDate;
+		this.comHomepage = comHomepage;
+		this.comIntroduce = comIntroduce;
+		this.comId = comId;
+		this.comPwd = comPwd;
+		this.comCode = comCode;
+		this.comLicense = comLicense;
+		this.comLogo = comLogo;
+		this.comRev = comRev;
+		this.comEmp = comEmp;
+		this.comPrName = comPrName;
+		this.comInChargeName = comInChargeName;
+		this.comInChargeEmail = comInChargeEmail;
+		this.comInChargePhoneNum = comInChargePhoneNum;
+		this.comPrefer = comPrefer;
 		this.permission = permission;
-		this.cCreDate = cCreDate;
-		this.cModDate = cModDate;
+		this.comCreDate = comCreDate;
+		this.comModDate = comModDate;
 		this.connTime = connTime;
 		this.disconnTime = disconnTime;
 	}
 
-	public int getcNo() {
-		return cNo;
+	public int getComNo() {
+		return comNo;
 	}
 
-	public void setcNo(int cNo) {
-		this.cNo = cNo;
+	public void setComNo(int comNo) {
+		this.comNo = comNo;
 	}
 
-	public String getcName() {
-		return cName;
+	public String getComName() {
+		return comName;
 	}
 
-	public void setcName(String cName) {
-		this.cName = cName;
+	public void setComName(String comName) {
+		this.comName = comName;
 	}
 
-	public String getcAdd() {
-		return cAdd;
+	public String getComAdd() {
+		return comAdd;
 	}
 
-	public void setcAdd(String cAdd) {
-		this.cAdd = cAdd;
+	public void setComAdd(String comAdd) {
+		this.comAdd = comAdd;
 	}
 
-	public String getcType() {
-		return cType;
+	public String getComType() {
+		return comType;
 	}
 
-	public void setcType(String cType) {
-		this.cType = cType;
+	public void setComType(String comType) {
+		this.comType = comType;
 	}
 
-	public Date getcEstDate() {
-		return cEstDate;
+	public Date getComEstDate() {
+		return comEstDate;
 	}
 
-	public void setcEstDate(Date cEstDate) {
-		this.cEstDate = cEstDate;
+	public void setComEstDate(Date comEstDate) {
+		this.comEstDate = comEstDate;
 	}
 
-	public String getcHomepage() {
-		return cHomepage;
+	public String getComHomepage() {
+		return comHomepage;
 	}
 
-	public void setcHomepage(String cHomepage) {
-		this.cHomepage = cHomepage;
+	public void setComHomepage(String comHomepage) {
+		this.comHomepage = comHomepage;
 	}
 
-	public String getcIntroduce() {
-		return cIntroduce;
+	public String getComIntroduce() {
+		return comIntroduce;
 	}
 
-	public void setcIntroduce(String cIntroduce) {
-		this.cIntroduce = cIntroduce;
+	public void setComIntroduce(String comIntroduce) {
+		this.comIntroduce = comIntroduce;
 	}
 
-	public String getcId() {
-		return cId;
+	public String getComId() {
+		return comId;
 	}
 
-	public void setcId(String cId) {
-		this.cId = cId;
+	public void setComId(String comId) {
+		this.comId = comId;
 	}
 
-	public String getcPwd() {
-		return cPwd;
+	public String getComPwd() {
+		return comPwd;
 	}
 
-	public void setcPwd(String cPwd) {
-		this.cPwd = cPwd;
+	public void setComPwd(String comPwd) {
+		this.comPwd = comPwd;
 	}
 
-	public String getcCode() {
-		return cCode;
+	public String getComCode() {
+		return comCode;
 	}
 
-	public void setcCode(String cCode) {
-		this.cCode = cCode;
+	public void setComCode(String comCode) {
+		this.comCode = comCode;
 	}
 
-	public String getcLicense() {
-		return cLicense;
+	public String getComLicense() {
+		return comLicense;
 	}
 
-	public void setcLicense(String cLicense) {
-		this.cLicense = cLicense;
+	public void setComLicense(String comLicense) {
+		this.comLicense = comLicense;
 	}
 
-	public String getcLogo() {
-		return cLogo;
+	public String getComLogo() {
+		return comLogo;
 	}
 
-	public void setcLogo(String cLogo) {
-		this.cLogo = cLogo;
+	public void setComLogo(String comLogo) {
+		this.comLogo = comLogo;
 	}
 
-	public String getcRev() {
-		return cRev;
+	public String getComRev() {
+		return comRev;
 	}
 
-	public void setcRev(String cRev) {
-		this.cRev = cRev;
+	public void setComRev(String comRev) {
+		this.comRev = comRev;
 	}
 
-	public String getcEmp() {
-		return cEmp;
+	public String getComEmp() {
+		return comEmp;
 	}
 
-	public void setcEmp(String cEmp) {
-		this.cEmp = cEmp;
+	public void setComEmp(String comEmp) {
+		this.comEmp = comEmp;
 	}
 
-	public String getcPrName() {
-		return cPrName;
+	public String getComPrName() {
+		return comPrName;
 	}
 
-	public void setcPrName(String cPrName) {
-		this.cPrName = cPrName;
+	public void setComPrName(String comPrName) {
+		this.comPrName = comPrName;
 	}
 
-	public String getcInChargeName() {
-		return cInChargeName;
+	public String getComInChargeName() {
+		return comInChargeName;
 	}
 
-	public void setcInChargeName(String cInChargeName) {
-		this.cInChargeName = cInChargeName;
+	public void setComInChargeName(String comInChargeName) {
+		this.comInChargeName = comInChargeName;
 	}
 
-	public String getcInChargeEmail() {
-		return cInChargeEmail;
+	public String getComInChargeEmail() {
+		return comInChargeEmail;
 	}
 
-	public void setcInChargeEmail(String cInChargeEmail) {
-		this.cInChargeEmail = cInChargeEmail;
+	public void setComInChargeEmail(String comInChargeEmail) {
+		this.comInChargeEmail = comInChargeEmail;
 	}
 
-	public String getcInChargePhoneNum() {
-		return cInChargePhoneNum;
+	public String getComInChargePhoneNum() {
+		return comInChargePhoneNum;
 	}
 
-	public void setcInChargePhoneNum(String cInChargePhoneNum) {
-		this.cInChargePhoneNum = cInChargePhoneNum;
+	public void setComInChargePhoneNum(String comInChargePhoneNum) {
+		this.comInChargePhoneNum = comInChargePhoneNum;
 	}
 
-	public String getcPrefer() {
-		return cPrefer;
+	public String getComPrefer() {
+		return comPrefer;
 	}
 
-	public void setcPrefer(String cPrefer) {
-		this.cPrefer = cPrefer;
+	public void setComPrefer(String comPrefer) {
+		this.comPrefer = comPrefer;
 	}
 
 	public int getPermission() {
@@ -227,20 +232,20 @@ public class CompanyMemberDto {
 		this.permission = permission;
 	}
 
-	public Date getcCreDate() {
-		return cCreDate;
+	public Date getComCreDate() {
+		return comCreDate;
 	}
 
-	public void setcCreDate(Date cCreDate) {
-		this.cCreDate = cCreDate;
+	public void setComCreDate(Date comCreDate) {
+		this.comCreDate = comCreDate;
 	}
 
-	public Date getcModDate() {
-		return cModDate;
+	public Date getComModDate() {
+		return comModDate;
 	}
 
-	public void setcModDate(Date cModDate) {
-		this.cModDate = cModDate;
+	public void setComModDate(Date comModDate) {
+		this.comModDate = comModDate;
 	}
 
 	public Date getConnTime() {
@@ -261,13 +266,20 @@ public class CompanyMemberDto {
 
 	@Override
 	public String toString() {
-		return "CompanyMemberDto [cNo=" + cNo + ", cName=" + cName + ", cAdd=" + cAdd + ", cType=" + cType
-				+ ", cEstDate=" + cEstDate + ", cHomepage=" + cHomepage + ", cIntroduce=" + cIntroduce + ", cId=" + cId
-				+ ", cPwd=" + cPwd + ", cCode=" + cCode + ", cLicense=" + cLicense + ", cLogo=" + cLogo + ", cRev="
-				+ cRev + ", cEmp=" + cEmp + ", cPrName=" + cPrName + ", cInChargeName=" + cInChargeName
-				+ ", cInChargeEmail=" + cInChargeEmail + ", cInChargePhoneNum=" + cInChargePhoneNum + ", cPrefer="
-				+ cPrefer + ", permission=" + permission + ", cCreDate=" + cCreDate + ", cModDate=" + cModDate
+		return "CompanyMemberDto [comNo=" + comNo + ", comName=" + comName + ", comAdd="
+				+ comAdd + ", comType=" + comType + ", comEstDate=" + comEstDate
+				+ ", comHomepage=" + comHomepage + ", comIntroduce="
+				+ comIntroduce + ", comId=" + comId + ", comPwd=" + comPwd
+				+ ", comCode=" + comCode + ", comLicense=" + comLicense
+				+ ", comLogo=" + comLogo + ", comRev=" + comRev + ", comEmp=" + comEmp
+				+ ", comPrName=" + comPrName + ", comInChargeName=" + comInChargeName
+				+ ", comInChargeEmail=" + comInChargeEmail
+				+ ", comInChargePhoneNum=" + comInChargePhoneNum + ""
+				+ ", comPrefer=" + comPrefer + ", permission=" + permission
+				+ ", comCreDate=" + comCreDate + ", comModDate=" + comModDate
 				+ ", connTime=" + connTime + ", disconnTime=" + disconnTime + "]";
 	}
+	
+	
 	
 }

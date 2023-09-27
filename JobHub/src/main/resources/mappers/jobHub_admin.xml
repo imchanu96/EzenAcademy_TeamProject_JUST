@@ -7,51 +7,51 @@
 <mapper namespace="com.jobhub.admin">
 
 	<resultMap type="adminDto" id="adminResultMap">
-		<id column="PERSONAL_NUMBER" property="pNo" />
-		<result column="PERSONAL_NAME" property="pName" />
-		<result column="PERSONAL_ID" property="pId" />
-		<result column="PERSONAL_PASSWORD" property="pPwd" />
-		<result column="PERSONAL_PHONENUMBER" property="pPhoneNum" />
-		<result column="PERSONAL_COMPANY" property="pCom" />
-		<result column="PERSONAL_NICKNAME" property="pNickname" />
-		<result column="PERSONAL_PROFILE" property="pProfile" />
-		<result column="PERSONAL_EMAIL" property="pEmail" />
-		<result column="PERSONAL_HIRE_DATE" property="pHireDate"
+		<id column="PERSONAL_NUMBER" property="perNo" />
+		<result column="PERSONAL_NAME" property="perName" />
+		<result column="PERSONAL_ID" property="perId" />
+		<result column="PERSONAL_PASSWORD" property="perPwd" />
+		<result column="PERSONAL_PHONENUMBER" property="perPhoneNum" />
+		<result column="PERSONAL_COMPANY" property="perCom" />
+		<result column="PERSONAL_NICKNAME" property="perNickname" />
+		<result column="PERSONAL_PROFILE" property="perProfile" />
+		<result column="PERSONAL_EMAIL" property="perEmail" />
+		<result column="PERSONAL_HIRE_DATE" property="perHireDate"
 			javaType="java.util.Date" />
-		<result column="PERSONAL_KEYWORD" property="pKeyword" />
-		<result column="PERSONAL_TEMPORARILY" property="pTemporarily" />
-		<result column="PERMISSION" property="pPermission" />
-		<result column="PERSONAL_CREATE_DATE" property="pCreateDate" 
+		<result column="PERSONAL_KEYWORD" property="perKeyword" />
+		<result column="PERSONAL_TEMPORARILY" property="perTemporarily" />
+		<result column="PERMISSION" property="perPermission" />
+		<result column="PERSONAL_CREATE_DATE" property="perCreateDate" 
 			javaType="java.util.Date" />
-		<result column="PERSONAL_MODIFY_DATE" property="pModifyDate" 
+		<result column="PERSONAL_MODIFY_DATE" property="perModifyDate" 
 			javaType="java.util.Date" />
-		<result column="CONNECTION_TIME" property="pConnectionTime" 
+		<result column="CONNECTION_TIME" property="perConnectionTime" 
 			javaType="java.util.Date" />
-		<result column="DISCONNECTION_TIME" property="pDisconnectionTime" 
+		<result column="DISCONNECTION_TIME" property="perDisconnectionTime" 
 			javaType="java.util.Date" />
 	</resultMap>
 	
 	<resultMap type="companyMemberDto" id="companyResultMap">
-		<result column="COMPANY_NAME" property="cName" />	
-		<result column="COMPANY_NAME" property="cName" />
-		<result column="COMPANY_ADDRESS" property="cAdd" />
-		<result column="COMPANY_TYPE" property="cType" />
-		<result column="COMPANY_ESTABLISH_DATE" property="cEstDate" 
+		<result column="COMPANY_NAME" property="comName" />	
+		<result column="COMPANY_NAME" property="comName" />
+		<result column="COMPANY_ADDRESS" property="comAdd" />
+		<result column="COMPANY_TYPE" property="comType" />
+		<result column="COMPANY_ESTABLISH_DATE" property="comEstDate" 
 		javaType="java.util.Date" />
-		<result column="COMPANY_HOMEPAGE" property="cHomepage" />
-		<result column="COMPANY_INTRODUCE" property="cIntroduce" />
-		<result column="COMPANY_ID" property="cId" />
-		<result column="COMPANY_PASSWORD" property="cPwd" />
-		<result column="COMPANY_CODE" property="cCode" />
-		<result column="COMPANY_LICENSE" property="cLicense" />
-		<result column="COMPANY_LOGO" property="cLogo" />
-		<result column="COMPANY_PRESIDENT_NAME" property="cPrName" />
-		<result column="COMPANY_INCHARGE_NAME" property="cInChargeName" />
-		<result column="COMPANY_INCHARGE_EMAIL" property="cInChargeEmail" />
-		<result column="COMPANY_INCHARGE_PHONENUMBER" property="cInChargePhoneNum" />
-		<result column="COMPANY_PREFER" property="cPrefer" />
-		<result column="COMPANY_CREATE_DATE" property="cCreDate" />
-		<result column="COMPANY_MODIFY_DATE" property="cModDate" />
+		<result column="COMPANY_HOMEPAGE" property="comHomepage" />
+		<result column="COMPANY_INTRODUCE" property="comIntroduce" />
+		<result column="COMPANY_ID" property="comId" />
+		<result column="COMPANY_PASSWORD" property="comPwd" />
+		<result column="COMPANY_CODE" property="comCode" />
+		<result column="COMPANY_LICENSE" property="comLicense" />
+		<result column="COMPANY_LOGO" property="comLogo" />
+		<result column="COMPANY_PRESIDENT_NAME" property="comPrName" />
+		<result column="COMPANY_INCHARGE_NAME" property="comInChargeName" />
+		<result column="COMPANY_INCHARGE_EMAIL" property="comInChargeEmail" />
+		<result column="COMPANY_INCHARGE_PHONENUMBER" property="comInChargePhoneNum" />
+		<result column="COMPANY_PREFER" property="comPrefer" />
+		<result column="COMPANY_CREATE_DATE" property="comCreDate" />
+		<result column="COMPANY_MODIFY_DATE" property="comModDate" />
 		<result column="CONNECTION_TIME" property="connTime" />
 		<result column="DISCONNECTION_TIME" property="disconnTime" />	
 	</resultMap>
@@ -76,24 +76,24 @@
 		resultMap="adminResultMap">
 		SELECT PERSONAL_NAME, PERSONAL_ID, PERMISSION
 		FROM PERSONAL
-		WHERE PERSONAL_ID = #{pId} AND PERSONAL_PASSWORD = #{pPwd}
+		WHERE PERSONAL_ID = #{perId} AND PERSONAL_PASSWORD = #{perPwd}
 	</select>
 	
 	<update id="memberAllListPersonalUpdateOne" parameterType="map">
 		UPDATE PERSONAL
 		 SET PERMISSION = 0
-		 WHERE PERSONAL_NUMBER = #{pNo}
+		 WHERE PERSONAL_NUMBER = #{perNo}
 	</update>
 	
 	<update id="personalUpdateOne" parameterType="map">
 		UPDATE PERSONAL
 		 SET PERMISSION = 0
-		 WHERE PERSONAL_NUMBER = #{pNo}
+		 WHERE PERSONAL_NUMBER = #{perNo}
 	</update>
 	
 	<update id="companyUpdateOne" parameterType="map">
 		UPDATE COMPANY
 		 SET PERMISSION	= 0
-		 WHERE COMPANY_NUMBER = #{cNo}
+		 WHERE COMPANY_NUMBER = #{comNo}
 	</update>
 </mapper>

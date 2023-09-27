@@ -15,7 +15,7 @@ public class CareerDto {
 	private String carPosition;
 	private String carLocation;
 	private String carJob;
-	private String rNo;
+	private String resumeNo;
 	
 	public CareerDto() {
 		super();
@@ -23,7 +23,7 @@ public class CareerDto {
 
 	public CareerDto(int carNo, Date carBeginDate, Date carEndDate
 			, String carName, String carPosition,
-			String carLocation, String carJob, String rNo) {
+			String carLocation, String carJob, String resumeNo) {
 		super();
 		this.carNo = carNo;
 		this.carBeginDate = carBeginDate;
@@ -32,7 +32,7 @@ public class CareerDto {
 		this.carPosition = carPosition;
 		this.carLocation = carLocation;
 		this.carJob = carJob;
-		this.rNo = rNo;
+		this.resumeNo = resumeNo;
 	}
 
 	public int getCarNo() {
@@ -91,12 +91,12 @@ public class CareerDto {
 		this.carJob = carJob;
 	}
 
-	public String getrNo() {
-		return rNo;
+	public String getResumeNo() {
+		return resumeNo;
 	}
 
-	public void setrNo(String rNo) {
-		this.rNo = rNo;
+	public void setResumeNo(String resumeNo) {
+		this.resumeNo = resumeNo;
 	}
 
 	@Override
@@ -104,7 +104,7 @@ public class CareerDto {
 		return "CareerDto [carNo=" + carNo + ", carBeginDate=" + carBeginDate
 				+ ", carEndDate=" + carEndDate + ", carName=" + carName
 				+ ", carPosition=" + carPosition + ", carLocation=" + carLocation
-				+ ", carJob=" + carJob + ", rNo=" + rNo + "]";
+				+ ", carJob=" + carJob + ", resumeNo=" + resumeNo + "]";
 	}
 	
 	

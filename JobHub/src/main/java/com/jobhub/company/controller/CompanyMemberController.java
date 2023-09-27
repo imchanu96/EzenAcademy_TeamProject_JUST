@@ -38,11 +38,12 @@ public class CompanyMemberController {
 
 	// 로그인 클릭 시 이동
 	@RequestMapping(value = "/company/loginCtr.do", method = RequestMethod.POST)
-	public String loginCtr(String cCode, String cPwd, HttpSession session, Model model) {
+	public String loginCtr(String comCode, String comPwd, HttpSession session, Model model) {
 
-		log.info("Welcome CompanyMemberController loginCtr! " + cCode + ", " + cPwd);
+		log.info("Welcome CompanyMemberController loginCtr! " + comCode + ", " + comPwd);
 
-		CompanyMemberDto companyMemberDto = companyMemberService.companyMemberExist(cCode, cPwd);
+		CompanyMemberDto companyMemberDto
+			= companyMemberService.companyMemberExist(comCode, comPwd);
 
 		String viewUrl = "";
 		if (companyMemberDto != null) {
@@ -153,17 +154,17 @@ public class CompanyMemberController {
 	}
 		
 	@RequestMapping(value = "/company/personalInfoList.do", method = { RequestMethod.GET, RequestMethod.POST })
-	public String memberList(int cNo, String talentScore, String careerScore, String educationScore,
+	public String memberList(int comNo, String talentScore, String careerScore, String educationScore,
 			String licenseScore, String search, String searchText, Model model) {
 		// log4j
 //		log.info("Welcome personalInfoController list!: {}");
-		log.info("기업 번호" + cNo + "인재 점수" + talentScore + "경력" 
+		log.info("기업 번호" + comNo + "인재 점수" + talentScore + "경력" 
 				+ careerScore + "학력" + educationScore + "자격증"
 				+ licenseScore + search + searchText);
 
 //		int totalCount = adminService.memberSelectTotalCount();
 		Map<String, Object> map = new HashMap<String, Object>();
-		map.put("cNo", cNo);
+		map.put("comNo", comNo);
 		map.put("talentScore", talentScore);
 		map.put("careerScore", careerScore);
 		map.put("educationScore", educationScore);
@@ -243,12 +244,12 @@ public class CompanyMemberController {
 	}
 
 	@RequestMapping(value = "/company/cInChargeNameCtr.do", method = RequestMethod.POST)
-	public String cInChargeNameUpdateCtr(String cInChargeName, HttpSession session, Model model) {
+	public String cInChargeNameUpdateCtr(String comInChargeName, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercInChargeNameUpdateCtr");
 
 		// 기존 세션을 가져와서 personalMemberDto에 바뀐 정보를 담아둠
 		CompanyMemberDto companyMemberDto = (CompanyMemberDto) session.getAttribute("companyMemberDto");
-		companyMemberDto.setcInChargeName(cInChargeName);
+		companyMemberDto.setComInChargeName(comInChargeName);
 
 		try {
 			companyMemberService.companyMembercInChargeNameUpdateOne(companyMemberDto);
@@ -264,11 +265,11 @@ public class CompanyMemberController {
 	}
 
 	@RequestMapping(value = "/company/cInChargeEmaildateCtr.do", method = RequestMethod.POST)
-	public String cInChargeEmailUpdateCtr(String cInChargeEmail, HttpSession session, Model model) {
+	public String cInChargeEmailUpdateCtr(String comInChargeEmail, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercInChargeEmailUpdateCtr");
 
 		CompanyMemberDto companyMemberDto = (CompanyMemberDto) session.getAttribute("companyMemberDto");
-		companyMemberDto.setcInChargeEmail(cInChargeEmail);
+		companyMemberDto.setComInChargeEmail(comInChargeEmail);
 
 		try {
 			companyMemberService.companyMembercInChargeEmailUpdateOne(companyMemberDto);
@@ -284,11 +285,11 @@ public class CompanyMemberController {
 	}
 
 	@RequestMapping(value = "/company/cInChargePhoneNumUpdateCtr.do", method = RequestMethod.POST)
-	public String cInChargePhoneNumUpdateCtr(String cInChargePhoneNum, HttpSession session, Model model) {
+	public String cInChargePhoneNumUpdateCtr(String comInChargePhoneNum, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercInChargePhoneNumUpdateCtr");
 
 		CompanyMemberDto companyMemberDto = (CompanyMemberDto) session.getAttribute("companyMemberDto");
-		companyMemberDto.setcInChargePhoneNum(cInChargePhoneNum);
+		companyMemberDto.setComInChargePhoneNum(comInChargePhoneNum);
 
 		try {
 			companyMemberService.companyMembercInChargePhoneNumUpdateOne(companyMemberDto);
@@ -304,11 +305,11 @@ public class CompanyMemberController {
 	}
 
 	@RequestMapping(value = "/company/cNameUpdateCtr.do", method = RequestMethod.POST)
-	public String cNameUpdateCtr(String cName, HttpSession session, Model model) {
+	public String cNameUpdateCtr(String comName, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercNameUpdateCtr");
 
 		CompanyMemberDto companyMemberDto = (CompanyMemberDto) session.getAttribute("companyMemberDto");
-		companyMemberDto.setcName(cName);
+		companyMemberDto.setComName(comName);
 
 		try {
 			companyMemberService.companyMembercNameUpdateOne(companyMemberDto);
@@ -324,11 +325,12 @@ public class CompanyMemberController {
 	}
 
 	@RequestMapping(value = "/company/cAddUpdateCtr.do", method = RequestMethod.POST)
-	public String cAddUpdateCtr(String cAdd, HttpSession session, Model model) {
+	public String cAddUpdateCtr(String comAdd, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercAddUpdateCtr");
 
-		CompanyMemberDto companyMemberDto = (CompanyMemberDto) session.getAttribute("companyMemberDto");
-		companyMemberDto.setcAdd(cAdd);
+		CompanyMemberDto companyMemberDto
+			= (CompanyMemberDto) session.getAttribute("companyMemberDto");
+		companyMemberDto.setComAdd(comAdd);
 
 		try {
 			companyMemberService.companyMembercAddUpdateOne(companyMemberDto);
@@ -344,11 +346,12 @@ public class CompanyMemberController {
 	}
 
 	@RequestMapping(value = "/company/cTypeUpdateCtr.do", method = RequestMethod.POST)
-	public String cTypeUpdateCtr(String cType, HttpSession session, Model model) {
+	public String cTypeUpdateCtr(String comType, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercTypeUpdateCtr");
 
-		CompanyMemberDto companyMemberDto = (CompanyMemberDto) session.getAttribute("companyMemberDto");
-		companyMemberDto.setcType(cType);
+		CompanyMemberDto companyMemberDto
+			= (CompanyMemberDto) session.getAttribute("companyMemberDto");
+		companyMemberDto.setComType(comType);
 
 		try {
 			companyMemberService.companyMembercTypeUpdateOne(companyMemberDto);
@@ -364,12 +367,13 @@ public class CompanyMemberController {
 	}
 
 	@RequestMapping(value = "/company/cEstDateUpdateCtr.do", method = RequestMethod.POST)
-	public String cEstDateUpdateCtr(@DateTimeFormat(pattern = "yyyy-MM-dd") Date cEstDate, HttpSession session,
-			Model model) {
+	public String cEstDateUpdateCtr(@DateTimeFormat(pattern = "yyyy-MM-dd") Date comEstDate
+			, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercEstDateUpdateCtr");
 
-		CompanyMemberDto companyMemberDto = (CompanyMemberDto) session.getAttribute("companyMemberDto");
-		companyMemberDto.setcEstDate(cEstDate);
+		CompanyMemberDto companyMemberDto
+			= (CompanyMemberDto) session.getAttribute("companyMemberDto");
+		companyMemberDto.setComEstDate(comEstDate);
 
 		try {
 			companyMemberService.companyMembercEstDateUpdateOne(companyMemberDto);
@@ -385,11 +389,12 @@ public class CompanyMemberController {
 	}
 
 	@RequestMapping(value = "/company/cHomepageUpdateCtr.do", method = RequestMethod.POST)
-	public String cHomepageUpdateCtr(String cHomepage, HttpSession session, Model model) {
+	public String cHomepageUpdateCtr(String comHomepage, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercHomepageUpdateCtr");
 
-		CompanyMemberDto companyMemberDto = (CompanyMemberDto) session.getAttribute("companyMemberDto");
-		companyMemberDto.setcHomepage(cHomepage);
+		CompanyMemberDto companyMemberDto
+			= (CompanyMemberDto) session.getAttribute("companyMemberDto");
+		companyMemberDto.setComHomepage(comHomepage);
 
 		try {
 			companyMemberService.companyMembercHomepageUpdateOne(companyMemberDto);
@@ -405,11 +410,12 @@ public class CompanyMemberController {
 	}
 
 	@RequestMapping(value = "/company/cIntroduceUpdateCtr.do", method = RequestMethod.POST)
-	public String cIntroduce(String cIntroduce, HttpSession session, Model model) {
+	public String cIntroduce(String comIntroduce, HttpSession session, Model model) {
 		log.info("Welecome CompanyMembercTypeUpdateCtr");
 
-		CompanyMemberDto companyMemberDto = (CompanyMemberDto) session.getAttribute("companyMemberDto");
-		companyMemberDto.setcIntroduce(cIntroduce);
+		CompanyMemberDto companyMemberDto
+			= (CompanyMemberDto) session.getAttribute("companyMemberDto");
+		companyMemberDto.setComIntroduce(comIntroduce);
 
 		try {
 			companyMemberService.companyMembercIntroduceUpdateOne(companyMemberDto);
@@ -425,10 +431,10 @@ public class CompanyMemberController {
 	}
 
 	@RequestMapping(value = "/company/setPrefer.do", method = RequestMethod.GET)
-	public String setPrefer(int cNo, HttpSession session, Model model) {
+	public String setPrefer(int comNo, HttpSession session, Model model) {
 		log.debug("Welcome CompanyMemberController setPrefer!");
 
-		CompanyMemberDto companyMemberDto = companyMemberService.companyMemberSelectOne(cNo);
+		CompanyMemberDto companyMemberDto = companyMemberService.companyMemberSelectOne(comNo);
 
 		// 담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
 		session.setAttribute("companyPrefer", companyMemberDto);
@@ -444,12 +450,12 @@ public class CompanyMemberController {
 	}
 
 	@RequestMapping(value = "/company/preferUpdateCtr.do", method = RequestMethod.POST)
-	public String preferUpdateCtr(String prefer, int cNo, HttpSession session, Model model) {
+	public String preferUpdateCtr(String prefer, int comNo, HttpSession session, Model model) {
 		log.info("Welecom CompanyMemberController preferUpdateCtr! 정보:" + prefer);
 
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("prefer", prefer);
-		map.put("cNo", cNo);
+		map.put("comNo", comNo);
 
 		companyMemberService.preferUpdateOne(map);
 

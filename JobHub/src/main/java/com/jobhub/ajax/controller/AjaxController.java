@@ -31,7 +31,7 @@ public class AjaxController {
 		
 		log.info("Welcome CompanyMemberController showPersonalResume! " + paramMap);
 		
-//		log.info(paramMap.get("pNo"));
+//		log.info(paramMap.get("perNo"));
 		ResumeDto resumeDto 
 			= ajaxService.showPersonalResume(paramMap);
 //
@@ -44,7 +44,7 @@ public class AjaxController {
 		
 		log.info("Welcome CompanyMemberController showPersonalLetter! " + paramMap);
 		
-//		log.info(paramMap.get("pNo"));
+//		log.info(paramMap.get("perNo"));
 		LetterDto letterDto
 			= ajaxService.showPersonalLetter(paramMap);
 //

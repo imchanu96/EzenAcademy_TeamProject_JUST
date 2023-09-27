@@ -23,8 +23,8 @@ public class AdminDaoImpl implements AdminDao{
 	public AdminDto adminExist(String id, String pwd) {
 		// TODO Auto-generated method stub
 		HashMap<String, Object> paramMap = new HashMap<String, Object>();
-		paramMap.put("pId", id);
-		paramMap.put("pPwd", pwd);
+		paramMap.put("perId", id);
+		paramMap.put("perPwd", pwd);
 		
 		return sqlSession.selectOne(namespace + "adminExist", paramMap);
 	}

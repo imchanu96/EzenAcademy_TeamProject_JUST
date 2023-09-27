@@ -133,11 +133,11 @@
 <!-- 					</div> -->
 <!-- 				</div> -->
 
-				<c:if test="${sessionScope.personalMemberDto.pId ne null}">
+				<c:if test="${sessionScope.personalMemberDto.perId ne null}">
 					<div id="myMenuBox">
 						<div class="memberInfo">
 							<span>
-								${personalMemberDto.pId} 님
+								${personalMemberDto.perId} 님
 							</span>
 						</div>
 						<div class="memberType">
@@ -176,7 +176,7 @@
 						<a href="../company/searchPerson.do"> 인재 조회 </a>
 					</div>
 					<div class="mainMenuItem">
-						<a href="../review/list.do?cNo=${companyMemberDto.cNo}"> 기업 리뷰
+						<a href="../review/list.do?comNo=${companyMemberDto.comNo}"> 기업 리뷰
 						</a>
 					</div>
 				</div>
@@ -190,11 +190,11 @@
 <!-- 					</div> -->
 <!-- 				</div> -->
 
-				<c:if test="${sessionScope.companyMemberDto.cCode ne null}">
+				<c:if test="${sessionScope.companyMemberDto.comCode ne null}">
 					<div id="myMenuBox">
 						<div class="memberInfo">
 							<span>
-								${companyMemberDto.cName} 님
+								${companyMemberDto.comName} 님
 							</span>
 						</div>
 						<div class="memberType">

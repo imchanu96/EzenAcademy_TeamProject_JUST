@@ -7,21 +7,21 @@
 <mapper namespace="com.jobhub.review">
 
 	<resultMap type="reviewDto" id="reviewResultMap">
-		<id column="REVIEW_NUMBER" property="rNo" />
-		<result column="REVIEW_TITLE" property="rTitle" />
-		<result column="REVIEW_CONTENT" property="rContent" />
-		<result column="REVIEW_SALARY" property="rSal" />
-		<result column="REVIEW_WELFARE" property="rWel" />
-		<result column="REVIEW_ENVIRONMENT" property="rEnv" />
-		<result column="REVIEW_BOSS" property="rBoss" />
-		<result column="REVIEW_BALANCE" property="rBal" />
-		<result column="REVIEW_GOOD" property="rGood" />
-		<result column="REVIEW_BAD" property="rBad" />
-		<result column="REVIEW_AVERAGE" property="rAvg" />
-		<result column="REVIEW_CREATE_DATE" property="rCreDate" />
-		<result column="REVIEW_MODIFY_DATE" property="rModDate" />
-		<result column="PERSONAL_NUMBER" property="rPNo" />
-		<result column="COMPANY_NUMBER" property="rCNo" />
+		<id column="REVIEW_NUMBER" property="reviewNo" />
+		<result column="REVIEW_TITLE" property="reviewTitle" />
+		<result column="REVIEW_CONTENT" property="reviewContent" />
+		<result column="REVIEW_SALARY" property="reviewSal" />
+		<result column="REVIEW_WELFARE" property="reviewWel" />
+		<result column="REVIEW_ENVIRONMENT" property="reviewEnv" />
+		<result column="REVIEW_BOSS" property="reviewBoss" />
+		<result column="REVIEW_BALANCE" property="reviewBal" />
+		<result column="REVIEW_GOOD" property="reviewGood" />
+		<result column="REVIEW_BAD" property="reviewBad" />
+		<result column="REVIEW_AVERAGE" property="reviewAvg" />
+		<result column="REVIEW_CREATE_DATE" property="reviewCreDate" />
+		<result column="REVIEW_MODIFY_DATE" property="reviewModDate" />
+		<result column="PERSONAL_NUMBER" property="perNo" />
+		<result column="COMPANY_NUMBER" property="comNo" />
 	</resultMap>
 	
 	<select id="reviewSelectCNo" parameterType="map" resultType="java.lang.Integer">
@@ -29,13 +29,13 @@
                 FROM COMPANY
                 WHERE COMPANY_NAME = PERSONAL_COMPANY)
 		FROM PERSONAL
-		WHERE PERSONAL_NUMBER = #{pNo}
+		WHERE PERSONAL_NUMBER = #{perNo}
 	</select>
 	
 	<select id="reviewSelectTotalCount" resultType="java.lang.Integer">
 		SELECT COUNT(*)
 		FROM REVIEW
-		WHERE COMPANY_NUMBER = #{cNo}
+		WHERE COMPANY_NUMBER = #{comNo}
 	</select>
 	
 	<select id="reviewSelectList" parameterType="map" resultMap="reviewResultMap">
@@ -47,7 +47,7 @@
                      FROM REVIEW R
                      ORDER BY REVIEW_NUMBER DESC
                 		)
-                WHERE COMPANY_NUMBER = #{cNo}
+                WHERE COMPANY_NUMBER = #{comNo}
         		)RNR
 		WHERE RNR.RN BETWEEN #{start} AND #{end}
 	</select>
@@ -55,20 +55,20 @@
 	<select id="reviewSelectOne" parameterType="int" resultMap="reviewResultMap">
 		SELECT 	REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT, REVIEW_SALARY, REVIEW_WELFARE, REVIEW_ENVIRONMENT, REVIEW_BOSS, REVIEW_BALANCE, REVIEW_AVERAGE, REVIEW_MODIFY_DATE, REVIEW_MODIFY_DATE, COMPANY_NUMBER
 		FROM 	REVIEW
-		WHERE 	REVIEW_NUMBER = #{rNo}
+		WHERE 	REVIEW_NUMBER = #{reviewNo}
 	</select>
 	
 	<select id="reviewSelectAllList" resultMap="reviewResultMap">
 		SELECT REVIEW_SALARY, REVIEW_WELFARE, REVIEW_ENVIRONMENT,
 				REVIEW_BOSS, REVIEW_BALANCE, REVIEW_AVERAGE
 		FROM REVIEW
-		WHERE COMPANY_NUMBER = #{cNo}
+		WHERE COMPANY_NUMBER = #{comNo}
 	</select>	
 	
 	<select id="countPersonalReview" resultType="java.lang.Integer" parameterType="map">
 		SELECT COUNT(REVIEW_NUMBER)
 	    FROM REVIEW
-		WHERE PERSONAL_NUMBER = #{pNo}
+		WHERE PERSONAL_NUMBER = #{perNo}
 	</select>
 	
 	<insert id="reviewInsertOne" parameterType="reviewDto">
@@ -77,24 +77,24 @@
 			REVIEW_WELFARE, REVIEW_ENVIRONMENT, REVIEW_BOSS, 
 			REVIEW_BALANCE, REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
             PERSONAL_NUMBER, COMPANY_NUMBER)
-		VALUES(REVIEW_NUMBER_SEQ.NEXTVAL, #{rTitle}, #{rContent}, #{rSal}, 
-			#{rWel}, #{rEnv}, #{rBoss}, 
- 			#{rBal}, #{rAvg}, SYSDATE, SYSDATE, 
-			#{rPNo}, #{rCNo})
+		VALUES(REVIEW_NUMBER_SEQ.NEXTVAL, #{reviewTitle}, #{reviewContent}, #{reviewSal}, 
+			#{reviewWel}, #{reviewEnv}, #{reviewBoss}, 
+ 			#{reviewBal}, #{reviewAvg}, SYSDATE, SYSDATE, 
+			#{reviewPNo}, #{comNo})
    </insert>
    
    <update id="reviewUpdateOne" parameterType="map">
 		UPDATE REVIEW
-	    SET REVIEW_TITLE = #{rTitle}, REVIEW_CONTENT = #{rContent}, REVIEW_SALARY = #{rSal}, 
-			REVIEW_WELFARE = #{rWel}, REVIEW_ENVIRONMENT = #{rEnv}, REVIEW_BOSS = #{rBoss}, 
-			REVIEW_BALANCE = #{rBal}, REVIEW_AVERAGE = #{rAvg},
-			REVIEW_MODIFY_DATE = SYSDATE, PERSONAL_NUMBER = #{rPNo}
-	    WHERE REVIEW_NUMBER = #{rNo}
+	    SET REVIEW_TITLE = #{reviewTitle}, REVIEW_CONTENT = #{reviewContent}, REVIEW_SALARY = #{reviewSal}, 
+			REVIEW_WELFARE = #{reviewWel}, REVIEW_ENVIRONMENT = #{reviewEnv}, REVIEW_BOSS = #{reviewBoss}, 
+			REVIEW_BALANCE = #{reviewBal}, REVIEW_AVERAGE = #{reviewAvg},
+			REVIEW_MODIFY_DATE = SYSDATE, PERSONAL_NUMBER = #{perNo}
+	    WHERE REVIEW_NUMBER = #{reviewNo}
 	</update>
 	
 	<delete id="reviewDeleteOne" parameterType="int">
 		DELETE FROM REVIEW
-		WHERE REVIEW_NUMBER = #{rNo}
+		WHERE REVIEW_NUMBER = #{reviewNo}
 	</delete>
    
 </mapper>

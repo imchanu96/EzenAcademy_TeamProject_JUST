@@ -24,27 +24,27 @@ public class ReviewServiceImpl implements ReviewService {
 	public CompanyMemberDao companyMemberDao;
 
 	@Override
-	public List<ReviewDto> reviewSelectList(int start, int end, int cNo) {
+	public List<ReviewDto> reviewSelectList(int start, int end, int comNo) {
 
-		return reviewDao.reviewSelectList(start, end, cNo);
+		return reviewDao.reviewSelectList(start, end, comNo);
 	}
 	
 	@Override
-	public List<ReviewDto> reviewSelectList(int cNo) {
+	public List<ReviewDto> reviewSelectList(int comNo) {
 
-		return reviewDao.reviewSelectList(cNo);
+		return reviewDao.reviewSelectList(comNo);
 	}
 	
 	@Override
-	public void reviewInsertOne(ReviewDto reviewDto, int cNo) throws Exception {
+	public void reviewInsertOne(ReviewDto reviewDto, int comNo) throws Exception {
 
-		reviewDao.reviewInsertOne(reviewDto, cNo);
+		reviewDao.reviewInsertOne(reviewDto, comNo);
 	}
 
 	@Override
-	public int reviewSelectTotalCount(int cNo) {
+	public int reviewSelectTotalCount(int comNo) {
 		
-		return reviewDao.reviewSelectTotalCount(cNo);
+		return reviewDao.reviewSelectTotalCount(comNo);
 	}
 
 	@Override
@@ -63,35 +63,35 @@ public class ReviewServiceImpl implements ReviewService {
 	
 	
 	@Override
-	public CompanyMemberDto companyMemberSelectOne(int cNo) {
+	public CompanyMemberDto companyMemberSelectOne(int comNo) {
 		// TODO Auto-generated method stub
-		return companyMemberDao.companyMemberSelectOne(cNo);
+		return companyMemberDao.companyMemberSelectOne(comNo);
 	}
 
 	@Override
-	public int reviewSelectCNo(int pNo) {
+	public int reviewSelectCNo(int perNo) {
 		// TODO Auto-generated method stub
-		return reviewDao.reviewSelectCNo(pNo);
+		return reviewDao.reviewSelectCNo(perNo);
 	}
 
 	@Override
-	public ReviewDto reviewSelectOne(int rNo) {
+	public ReviewDto reviewSelectOne(int reviewNo) {
 		
-		ReviewDto reviewDto = reviewDao.reviewSelectOne(rNo);
+		ReviewDto reviewDto = reviewDao.reviewSelectOne(reviewNo);
 		
 		return reviewDto;
 	}
 
 	@Override
-	public void reviewUpdateOne(ReviewDto reviewDto, int rCNo) {
+	public void reviewUpdateOne(ReviewDto reviewDto, int comNo) {
 		
-		reviewDao.reviewUpdateOne(reviewDto, rCNo);
+		reviewDao.reviewUpdateOne(reviewDto, comNo);
 	}
 
 	@Override
-	public int reviewDeleteOne(int rNo) {
+	public int reviewDeleteOne(int reviewNo) {
 
-		return reviewDao.reviewDeleteOne(rNo);
+		return reviewDao.reviewDeleteOne(reviewNo);
 	}
 }
 

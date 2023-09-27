@@ -29,8 +29,8 @@
 </style>
 
 <script type="text/javascript">
-	function permissionUpdateFnc(cNo) {
-		location.href= "./companyUpdate.do?cNo=" + cNo;
+	function permissionUpdateFnc(comNo) {
+		location.href= "./companyUpdate.do?comNo=" + comNo;
 	}
 </script>
 </head>
@@ -55,10 +55,10 @@
 			</tr>
 			<c:forEach var="companyMemberDto" items="${companyMemList}">
 				<tr>
-					<td>${companyMemberDto.cNo}</td>
-					<td>${companyMemberDto.cInChargeName}</td>
-					<td>${companyMemberDto.cCode}</td>
-					<td>${companyMemberDto.cName}</td>
+					<td>${companyMemberDto.comNo}</td>
+					<td>${companyMemberDto.comInChargeName}</td>
+					<td>${companyMemberDto.comCode}</td>
+					<td>${companyMemberDto.comName}</td>
 					<td>
 						<c:choose>
 							<c:when test="${companyMemberDto.permission == 0}">
@@ -70,11 +70,11 @@
 						</c:choose>
 					</td>
 					<td><fmt:formatDate pattern="yyyy-MM-dd" 
-						value="${companyMemberDto.cCreDate}" /></td>
+						value="${companyMemberDto.comCreDate}" /></td>
 					<td><fmt:formatDate pattern="yyyy-MM-dd" 
-						value="${companyMemberDto.cModDate}" /></td>
+						value="${companyMemberDto.comModDate}" /></td>
 						<td><div><input type="button" value="삭제" 
-							onclick="permissionUpdateFnc(${companyMemberDto.cNo});"></div></td>
+							onclick="permissionUpdateFnc(${companyMemberDto.comNo});"></div></td>
 				</tr>
 			</c:forEach>
 		</table>

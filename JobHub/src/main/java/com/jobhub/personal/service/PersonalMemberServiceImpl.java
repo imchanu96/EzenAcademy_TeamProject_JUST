@@ -21,10 +21,10 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 	public PersonalMemberDao personalMemberDao;
 
 	@Override
-	public PersonalMemberDto personalMemberExist(String pId, String pPwd) {
+	public PersonalMemberDto personalMemberExist(String perId, String perPwd) {
 		// TODO Auto-generated method stub
 		
-		return personalMemberDao.personalMemberExist(pId, pPwd);
+		return personalMemberDao.personalMemberExist(perId, perPwd);
 	}
 
 	@Override
@@ -34,9 +34,9 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 	}
 
 	@Override
-	public int personalMemberSelectOne(int pNo) {
+	public int personalMemberSelectOne(int perNo) {
 		// TODO Auto-generated method stub
-		return personalMemberDao.memberSelectOne(pNo);
+		return personalMemberDao.memberSelectOne(perNo);
 	}
 
 	@Override
@@ -82,10 +82,10 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 	}
 
 	@Override
-	public Map<String, Object> personalMemberShowResume(int pNo) {
+	public Map<String, Object> personalMemberShowResume(int perNo) {
 		// TODO Auto-generated method stub
 		
-		return personalMemberDao.personalMemberShowResume(pNo);
+		return personalMemberDao.personalMemberShowResume(perNo);
 	}
 
 	@Override
@@ -95,9 +95,9 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 	}
 
 	@Override
-	public LetterDto personalMembershowLetter(int pNo) {
+	public LetterDto personalMembershowLetter(int perNo) {
 		// TODO Auto-generated method stub
-		return personalMemberDao.personalMembershowLetter(pNo);
+		return personalMemberDao.personalMembershowLetter(perNo);
 	}
 
 	@Override

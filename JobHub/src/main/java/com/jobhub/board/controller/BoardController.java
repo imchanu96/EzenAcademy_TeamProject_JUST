@@ -63,7 +63,7 @@ public class BoardController {
 		
 		try {
 			PersonalMemberDto pmd = (PersonalMemberDto)session.getAttribute("personalMemberDto");
-			pmd.getpNo();
+			pmd.getPerNo();
 			return "board/BoardWrite";
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -145,7 +145,7 @@ public class BoardController {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return "redirect:/board/listOne.do?no="+boardDto.getbNo();
+		return "redirect:/board/listOne.do?no="+boardDto.getBoardNo();
 	}
 	
 	//게시글 삭제

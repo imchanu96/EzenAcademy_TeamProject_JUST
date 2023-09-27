@@ -16,7 +16,7 @@ public class EducationDto {
 	private String eduGrade;
 	private String eduLocation;
 	private String eduGreaduate;
-	private int rNo;
+	private int resumeNo;
 	
 	public EducationDto() {
 		super();
@@ -24,7 +24,7 @@ public class EducationDto {
 
 	public EducationDto(int eduNo, Date eduBeginDate, Date eduEndDate
 			, String eduName, String eduMajor, String eduGrade,
-			String eduLocation, String eduGreaduate, int rNo) {
+			String eduLocation, String eduGreaduate, int resumeNo) {
 		super();
 		this.eduNo = eduNo;
 		this.eduBeginDate = eduBeginDate;
@@ -34,7 +34,7 @@ public class EducationDto {
 		this.eduGrade = eduGrade;
 		this.eduLocation = eduLocation;
 		this.eduGreaduate = eduGreaduate;
-		this.rNo = rNo;
+		this.resumeNo = resumeNo;
 	}
 
 	public int getEduNo() {
@@ -101,12 +101,12 @@ public class EducationDto {
 		this.eduGreaduate = eduGreaduate;
 	}
 
-	public int getrNo() {
-		return rNo;
+	public int getResumeNo() {
+		return resumeNo;
 	}
 
-	public void setrNo(int rNo) {
-		this.rNo = rNo;
+	public void setResumeNo(int resumeNo) {
+		this.resumeNo = resumeNo;
 	}
 
 	@Override
@@ -115,7 +115,7 @@ public class EducationDto {
 				+ ", eduEndDate=" + eduEndDate + ", eduName=" + eduName
 				+ ", eduMajor=" + eduMajor + ", eduGrade=" + eduGrade
 				+ ", eduLocation=" + eduLocation + ", eduGreaduate=" + eduGreaduate
-				+ ", rNo=" + rNo + "]";
+				+ ", resumeNo=" + resumeNo + "]";
 	}
 	
 	

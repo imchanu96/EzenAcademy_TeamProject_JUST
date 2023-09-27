@@ -6,24 +6,24 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 public class PersonalMemberDto {
 
-	private int pNo;
-	private String pName;
-	private String pId;
-	private String pPwd;
-	private String pPhoneNum;
-	private String pCom;
-	private String pNickname;
-	private String pProfile;
-	private String pEmail;
+	private int perNo;
+	private String perName;
+	private String perId;
+	private String perPwd;
+	private String perPhoneNum;
+	private String perCom;
+	private String perNickname;
+	private String perProfile;
+	private String perEmail;
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private Date pHireDate;
-	private String pKeyword;
-	private String pTemporarily;
-	private int pPermission;
-	private Date pCreateDate;
-	private Date pModifyDate;
-	private Date pConnectionTime;
-	private Date pDisconnectionTime;
+	private Date perHireDate;
+	private String perKeyword;
+	private String perTemporarily;
+	private int perPermission;
+	private Date perCreateDate;
+	private Date perModifyDate;
+	private Date perConnectionTime;
+	private Date perDisconnectionTime;
 	
 	
 	public PersonalMemberDto() {
@@ -31,215 +31,217 @@ public class PersonalMemberDto {
 	}
 
 
-	public PersonalMemberDto(int pNo, String pName, String pId, String pPwd
-			, String pPhoneNum, String pCom, String pNickname
-			, String pProfile, String pEmail, Date pHireDate, String pKeyword
-			, String pTemporarily, int pPermission, Date pCreateDate
-			, Date pModifyDate, Date pConnectionTime, Date pDisconnectionTime) {
+	public PersonalMemberDto(int perNo, String perName, String perId
+			, String perPwd, String perPhoneNum, String perCom,
+			String perNickname, String perProfile, String perEmail
+			, Date perHireDate, String perKeyword,
+			String perTemporarily, int perPermission, Date perCreateDate
+			, Date perModifyDate, Date perConnectionTime, Date perDisconnectionTime) {
 		super();
-		this.pNo = pNo;
-		this.pName = pName;
-		this.pId = pId;
-		this.pPwd = pPwd;
-		this.pPhoneNum = pPhoneNum;
-		this.pCom = pCom;
-		this.pNickname = pNickname;
-		this.pProfile = pProfile;
-		this.pEmail = pEmail;
-		this.pHireDate = pHireDate;
-		this.pKeyword = pKeyword;
-		this.pTemporarily = pTemporarily;
-		this.pPermission = pPermission;
-		this.pCreateDate = pCreateDate;
-		this.pModifyDate = pModifyDate;
-		this.pConnectionTime = pConnectionTime;
-		this.pDisconnectionTime = pDisconnectionTime;
+		this.perNo = perNo;
+		this.perName = perName;
+		this.perId = perId;
+		this.perPwd = perPwd;
+		this.perPhoneNum = perPhoneNum;
+		this.perCom = perCom;
+		this.perNickname = perNickname;
+		this.perProfile = perProfile;
+		this.perEmail = perEmail;
+		this.perHireDate = perHireDate;
+		this.perKeyword = perKeyword;
+		this.perTemporarily = perTemporarily;
+		this.perPermission = perPermission;
+		this.perCreateDate = perCreateDate;
+		this.perModifyDate = perModifyDate;
+		this.perConnectionTime = perConnectionTime;
+		this.perDisconnectionTime = perDisconnectionTime;
 	}
 
 
-	public int getpNo() {
-		return pNo;
+	public int getPerNo() {
+		return perNo;
 	}
 
 
-	public void setpNo(int pNo) {
-		this.pNo = pNo;
+	public void setPerNo(int perNo) {
+		this.perNo = perNo;
 	}
 
 
-	public String getpName() {
-		return pName;
+	public String getPerName() {
+		return perName;
 	}
 
 
-	public void setpName(String pName) {
-		this.pName = pName;
+	public void setPerName(String perName) {
+		this.perName = perName;
 	}
 
 
-	public String getpId() {
-		return pId;
+	public String getPerId() {
+		return perId;
 	}
 
 
-	public void setpId(String pId) {
-		this.pId = pId;
+	public void setPerId(String perId) {
+		this.perId = perId;
 	}
 
 
-	public String getpPwd() {
-		return pPwd;
+	public String getPerPwd() {
+		return perPwd;
 	}
 
 
-	public void setpPwd(String pPwd) {
-		this.pPwd = pPwd;
+	public void setPerPwd(String perPwd) {
+		this.perPwd = perPwd;
 	}
 
 
-	public String getpPhoneNum() {
-		return pPhoneNum;
+	public String getPerPhoneNum() {
+		return perPhoneNum;
 	}
 
 
-	public void setpPhoneNum(String pPhoneNum) {
-		this.pPhoneNum = pPhoneNum;
+	public void setPerPhoneNum(String perPhoneNum) {
+		this.perPhoneNum = perPhoneNum;
 	}
 
 
-	public String getpCom() {
-		return pCom;
+	public String getPerCom() {
+		return perCom;
 	}
 
 
-	public void setpCom(String pCom) {
-		this.pCom = pCom;
+	public void setPerCom(String perCom) {
+		this.perCom = perCom;
 	}
 
 
-	public String getpNickname() {
-		return pNickname;
+	public String getPerNickname() {
+		return perNickname;
 	}
 
 
-	public void setpNickname(String pNickname) {
-		this.pNickname = pNickname;
+	public void setPerNickname(String perNickname) {
+		this.perNickname = perNickname;
 	}
 
 
-	public String getpProfile() {
-		return pProfile;
+	public String getPerProfile() {
+		return perProfile;
 	}
 
 
-	public void setpProfile(String pProfile) {
-		this.pProfile = pProfile;
+	public void setPerProfile(String perProfile) {
+		this.perProfile = perProfile;
 	}
 
 
-	public String getpEmail() {
-		return pEmail;
+	public String getPerEmail() {
+		return perEmail;
 	}
 
 
-	public void setpEmail(String pEmail) {
-		this.pEmail = pEmail;
+	public void setPerEmail(String perEmail) {
+		this.perEmail = perEmail;
 	}
 
 
-	public Date getpHireDate() {
-		return pHireDate;
+	public Date getPerHireDate() {
+		return perHireDate;
 	}
 
 
-	public void setpHireDate(Date pHireDate) {
-		this.pHireDate = pHireDate;
+	public void setPerHireDate(Date perHireDate) {
+		this.perHireDate = perHireDate;
 	}
 
 
-	public String getpKeyword() {
-		return pKeyword;
+	public String getPerKeyword() {
+		return perKeyword;
 	}
 
 
-	public void setpKeyword(String pKeyword) {
-		this.pKeyword = pKeyword;
+	public void setPerKeyword(String perKeyword) {
+		this.perKeyword = perKeyword;
 	}
 
 
-	public String getpTemporarily() {
-		return pTemporarily;
+	public String getPerTemporarily() {
+		return perTemporarily;
 	}
 
 
-	public void setpTemporarily(String pTemporarily) {
-		this.pTemporarily = pTemporarily;
+	public void setPerTemporarily(String perTemporarily) {
+		this.perTemporarily = perTemporarily;
 	}
 
 
-	public int getpPermission() {
-		return pPermission;
+	public int getPerPermission() {
+		return perPermission;
 	}
 
 
-	public void setpPermission(int pPermission) {
-		this.pPermission = pPermission;
+	public void setPerPermission(int perPermission) {
+		this.perPermission = perPermission;
 	}
 
 
-	public Date getpCreateDate() {
-		return pCreateDate;
+	public Date getPerCreateDate() {
+		return perCreateDate;
 	}
 
 
-	public void setpCreateDate(Date pCreateDate) {
-		this.pCreateDate = pCreateDate;
+	public void setPerCreateDate(Date perCreateDate) {
+		this.perCreateDate = perCreateDate;
 	}
 
 
-	public Date getpModifyDate() {
-		return pModifyDate;
+	public Date getPerModifyDate() {
+		return perModifyDate;
 	}
 
 
-	public void setpModifyDate(Date pModifyDate) {
-		this.pModifyDate = pModifyDate;
+	public void setPerModifyDate(Date perModifyDate) {
+		this.perModifyDate = perModifyDate;
 	}
 
 
-	public Date getpConnectionTime() {
-		return pConnectionTime;
+	public Date getPerConnectionTime() {
+		return perConnectionTime;
 	}
 
 
-	public void setpConnectionTime(Date pConnectionTime) {
-		this.pConnectionTime = pConnectionTime;
+	public void setPerConnectionTime(Date perConnectionTime) {
+		this.perConnectionTime = perConnectionTime;
 	}
 
 
-	public Date getpDisconnectionTime() {
-		return pDisconnectionTime;
+	public Date getPerDisconnectionTime() {
+		return perDisconnectionTime;
 	}
 
 
-	public void setpDisconnectionTime(Date pDisconnectionTime) {
-		this.pDisconnectionTime = pDisconnectionTime;
+	public void setPerDisconnectionTime(Date perDisconnectionTime) {
+		this.perDisconnectionTime = perDisconnectionTime;
 	}
 
 
 	@Override
 	public String toString() {
-		return "PersonalMemberDto [pNo=" + pNo + ", pName=" + pName + ", pId=" + pId
-				+ ", pPwd=" + pPwd + ", pPhoneNum=" + pPhoneNum 
-				+ ", pCom=" + pCom + ", pNickname=" + pNickname 
-				+ ", pProfile=" + pProfile + ", pEmail=" + pEmail
-				+ ", pHireDate=" + pHireDate + ", pKeyword=" + pKeyword
-				+ ", pTemporarily=" + pTemporarily + ", pPermission=" + pPermission 
-				+ ", pCreateDate=" + pCreateDate + ", pModifyDate=" + pModifyDate
-				+ ", pConnectionTime=" + pConnectionTime
-				+ ", pDisconnectionTime=" + pDisconnectionTime + "]";
+		return "PersonalMemberDto [perNo=" + perNo + ", perName=" + perName
+				+ ", perId=" + perId + ", perPwd=" + perPwd
+				+ ", perPhoneNum=" + perPhoneNum + ", perCom=" + perCom
+				+ ", perNickname=" + perNickname + ", perProfile=" + perProfile
+				+ ", perEmail=" + perEmail + ", perHireDate=" + perHireDate
+				+ ", perKeyword=" + perKeyword + ", perTemporarily=" + perTemporarily
+				+ ", perPermission=" + perPermission + ", perCreateDate=" + perCreateDate
+				+ ", perModifyDate=" + perModifyDate
+				+ ", perConnectionTime=" + perConnectionTime
+				+ ", perDisconnectionTime=" + perDisconnectionTime + "]";
 	}
-
+	
 	
 	
 }

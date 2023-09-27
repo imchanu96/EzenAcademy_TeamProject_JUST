@@ -1,6 +1,5 @@
 package com.jobhub.personal.dao;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,21 +23,21 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 	SqlSessionTemplate sqlSession;
 	
 	@Override
-	public PersonalMemberDto personalMemberExist(String pId, String pPwd) {
+	public PersonalMemberDto personalMemberExist(String perId, String perPwd) {
 		// TODO Auto-generated method stub
 		
 		HashMap<String, Object> paramMap = new HashMap<String, Object>();
-		paramMap.put("pId", pId);
-		paramMap.put("pPwd", pPwd);
+		paramMap.put("perId", perId);
+		paramMap.put("perPwd", perPwd);
 		
 		return sqlSession.selectOne(namespace + "personalMemberExist", paramMap);
 	}
 
 
 	@Override
-	public int memberSelectOne(int pNo) {
+	public int memberSelectOne(int perNo) {
 		// TODO Auto-generated method stub
-		return sqlSession.update(namespace + "personalMemberSelectOne", pNo);
+		return sqlSession.update(namespace + "personalMemberSelectOne", perNo);
 	}
 
 	
@@ -116,17 +115,17 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 	}
 
 
-	public Map<String, Object> personalMemberShowResume(int pNo) {
+	public Map<String, Object> personalMemberShowResume(int perNo) {
 		// TODO Auto-generated method stub
 		HashMap<String, Object> map = new HashMap<String, Object>();
-		map.put("pNo", pNo);
+		map.put("perNo", perNo);
 		
 		HashMap<String, Object> resultMap = new HashMap<String, Object>();
 		
 		ResumeDto resumeDto = sqlSession.selectOne(namespace + "personalMemberShowResume", map);
 		resultMap.put("resumeDto", resumeDto);
 
-		map.put("rNo", resumeDto.getrNo());
+		map.put("resumeNo", resumeDto.getResumeNo());
 		
 		List<CareerDto> careerDtoList = sqlSession.selectList(namespace 
 				+ "personalMemberShowCareer", map);
@@ -147,10 +146,10 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 
 
 	@Override
-	public LetterDto personalMembershowLetter(int pNo) {
+	public LetterDto personalMembershowLetter(int perNo) {
 		// TODO Auto-generated method stub
 		HashMap<String, Object> map = new HashMap<String, Object>();
-		map.put("pNo", pNo);
+		map.put("perNo", perNo);
 		
 		return sqlSession.selectOne(namespace + "personalMembershowLetter", map);
 	}

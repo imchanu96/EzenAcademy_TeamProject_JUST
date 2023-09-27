@@ -9,11 +9,11 @@ import com.jobhub.personal.dto.ResumeDto;
 
 public interface PersonalMemberDao {
 	
-	public PersonalMemberDto personalMemberExist(String pId, String pPwd);
+	public PersonalMemberDto personalMemberExist(String perId, String perPwd);
 
 	public int memberInsertOne(PersonalMemberDto personalMemberDto);
 
-	public int memberSelectOne(int pNo);
+	public int memberSelectOne(int perNo);
 
 	public List<PersonalMemberDto> memberSelectList();
 	
@@ -35,11 +35,11 @@ public interface PersonalMemberDao {
 
 	public List<PersonalMemberDto> personalMemberSelectList();
 
-	public Map<String, Object> personalMemberShowResume(int pNo);
+	public Map<String, Object> personalMemberShowResume(int perNo);
 
 	public void PersonalresumeUpdateOne(ResumeDto resumeDto);
 
-	public LetterDto personalMembershowLetter(int pNo);
+	public LetterDto personalMembershowLetter(int perNo);
 
 	public void PersonalLetterUpdateOne(LetterDto letterDto);
 

@@ -5,20 +5,20 @@ public class CommentDto {
 	private int comNo;
 	private String comContent;
 	private int comLikeCount;
-	private int bNo;
-	private int pNo;
+	private int boardNo;
+	private int perNo;
 	
 	public CommentDto() {
 		super();
 	}
 
-	public CommentDto(int comNo, String comContent, int comLikeCount, int bNo, int pNo) {
+	public CommentDto(int comNo, String comContent, int comLikeCount, int boardNo, int perNo) {
 		super();
 		this.comNo = comNo;
 		this.comContent = comContent;
 		this.comLikeCount = comLikeCount;
-		this.bNo = bNo;
-		this.pNo = pNo;
+		this.boardNo = boardNo;
+		this.perNo = perNo;
 	}
 
 	public int getComNo() {
@@ -45,26 +45,26 @@ public class CommentDto {
 		this.comLikeCount = comLikeCount;
 	}
 
-	public int getbNo() {
-		return bNo;
+	public int getBoardNo() {
+		return boardNo;
 	}
 
-	public void setbNo(int bNo) {
-		this.bNo = bNo;
+	public void setBoardNo(int boardNo) {
+		this.boardNo = boardNo;
 	}
 
-	public int getpNo() {
-		return pNo;
+	public int getPerNo() {
+		return perNo;
 	}
 
-	public void setpNo(int pNo) {
-		this.pNo = pNo;
+	public void setPerNo(int perNo) {
+		this.perNo = perNo;
 	}
 
 	@Override
 	public String toString() {
 		return "CommentDto [comNo=" + comNo + ", comContent=" + comContent + ", comLikeCount=" + comLikeCount + ", bNo="
-				+ bNo + ", pNo=" + pNo + "]";
+				+ boardNo + ", perNo=" + perNo + "]";
 	}
 	
 }
