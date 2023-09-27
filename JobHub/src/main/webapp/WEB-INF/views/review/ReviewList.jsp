@@ -56,7 +56,7 @@
 </head>
 <body>
 
-	<jsp:include page="/WEB-INF/views/review/Header.jsp"/>
+	<jsp:include page="/WEB-INF/views/Header.jsp"/>
 	
 	<div id="container">
 	

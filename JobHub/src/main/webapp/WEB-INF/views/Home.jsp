@@ -27,13 +27,13 @@
 		<img src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/fcc71787-e35c-43fb-a18a-ffc7f4637ab7">
 	</div>
 	
-	<div style="width: 900px; height: 800px;">
+	<div class="seviceDetail">
 		서비스 캡쳐 화면 1
 	</div>
-	<div style="width: 900px; height: 800px;">
+	<div class="seviceDetail">
 		서비스 캡쳐 화면 2
 	</div>
-	<div style="width: 900px; height: 800px;">
+	<div class="seviceDetail">
 		서비스 캡쳐 화면 3
 	</div>
 	

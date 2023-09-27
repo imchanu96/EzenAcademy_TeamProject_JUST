@@ -4,12 +4,17 @@ body {
 	text-align: center;	
 }
 #introImgBox {
-	padding-top: 100px;
-	height: 700px;	
+	padding-top: 200px;
+	height: 800px;	
+}
+.seviceDetail {
+	height: 1000px;	
+	border: 1px solid black;
 }
 #mentBox {
-	padding-top: 200px;
-	background-color: #eff5ff;	
+	padding-top: 400px;
+	height: 600px;
+	background-color: #eff5ff;
 	color: #292e41;
 }
 #mentBox > #comment {
@@ -21,7 +26,7 @@ body {
 	height: 300px;
 }
 #goLoginBox {
-	padding: 200px;
+	padding: 400px 200px;
 	font-size: 20px;
 	height: 200px; 
 }
@@ -31,6 +36,7 @@ body {
 	color: #292e41;
 }
 input {
+	float: left;
 	margin: 40px 50px;
 	width: 200px;
     height: 80px;

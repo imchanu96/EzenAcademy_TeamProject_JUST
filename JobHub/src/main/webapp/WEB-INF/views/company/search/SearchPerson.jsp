@@ -469,7 +469,7 @@ tr td {
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="http://www.naver.com">리뷰 조회</a>
+					<a href="http://www.naver.com">기업 목록</a>
 				</div>
 				<div class="smallMenuItem">
 					<a href="">리뷰 작성</a>

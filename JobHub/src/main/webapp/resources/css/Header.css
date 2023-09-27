@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* 공통 */
+a {
+	text-decoration: none;
+	color: #292e41;
+}
+
+a:hover {
+	color: #2d65f2;
+}
+
+/* head form */
+#headerBox {
+	height: 130px;
+	border-bottom: 1px solid #002C91;
+}
+
+#headerContent {
+	margin: 0px auto;
+	width: 1280px;
+	height: 120px;
+}
+/* logo */
+#logo {
+	float: left;
+    width: 200px;
+    height: 55px;
+    margin: 30px 0px 30px 42px;
+}
+/* main menu */
+#mainMenuBox {
+	float: left;
+	width: 750px;
+	height: 100px;
+	margin-left: 30px;
+}
+
+.mainMenuItem {
+	float: left;
+	margin: 20px;
+	width: 200px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	font-size: 30px;
+	font-weight: 600;
+}
+/* message */
+#myMessageBox {
+	float: left;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+}
+/* my menu */
+#myMenuBox {
+	float: left;
+	width: 220px;
+	height: 100px;
+	margin: 10px 15px 0px 15px;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 15px; 
+	background-color: #E1E1E1;
+}
+.memberInfo {
+	width: 220px;
+	height: 30px;
+	line-height: 45px;
+	font-weight: bold;
+	font-size: 19px;
+}
+.memberType {
+	width: 220px;
+	height: 30px;
+	line-height: 19px;
+	color: #5D5D5D;
+	font-size: 13px;
+    line-height: 28px;
+}
+#myMenu{
+	display: block;
+	float: left;
+	width: 220px;
+	height: 40px;	
+	border-top: 1px solid #fff;
+}
+.myPage {
+	float: left;
+	width: 110px;
+	height: 40px;
+	line-height: 35px;
+	text-align: center;
+}
+.logout {
+	float: left;
+	width: 109px;
+	height: 40px;
+	line-height: 6px;
+	text-align: center;
+	cursor: pointer;
+	border-left: 1px solid #fff;
+}
+/* end of header */
+#logoutModal {
+	display: none;
+	position: fixed;
+	width: 600px;
+	height: 300px;
+	left: 40%;
+	top: 20%;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 30px;
+	box-shadow: 2px 2px 6px 0px #ddd;
+}
+
+
+#centerForm {
+	width: 600px;
+	height: 200px;
+	line-height: 160px;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+#buttonForm {
+	width: 400px;
+	height: 100px;
+	margin: auto;
+}
+
+#buttonForm input {
+	width: 130px;
+    height: 50px;
+    background-color: #4876ef;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 1px 4px 0px #ddd;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button {
+	float: left;
+	margin: 0px 35px;
+}
