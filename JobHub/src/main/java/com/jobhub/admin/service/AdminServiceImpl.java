@@ -45,12 +45,6 @@ public class AdminServiceImpl implements AdminService{
 		return adminDao.memberSelectTotalCount();
 	}
 
-//	@Override
-//	public void adminDeleteOne(AdminDto adminDto) {
-//		// TODO Auto-generated method stub
-//		adminDao.adminDeleteOne(adminDto);
-//	}
-
 	@Override
 	public List<CompanyMemberDto> companyMemSelectList() {
 		// TODO Auto-generated method stub
@@ -61,6 +55,12 @@ public class AdminServiceImpl implements AdminService{
 	public List<PersonalMemberDto> personalMemberSelectList() {
 		// TODO Auto-generated method stub
 		return personalMemberDao.personalMemberSelectList();
+	}
+	
+	@Override
+	public void memberAllListPersonalUpdateOne(Map<String, Object> map) {
+		// TODO Auto-generated method stub
+		adminDao.memberAllListPersonalUpdateOne(map);
 	}
 
 	@Override
@@ -74,5 +74,7 @@ public class AdminServiceImpl implements AdminService{
 		adminDao.companyUpdateOne(map);
 		
 	}
+
+
 
 }

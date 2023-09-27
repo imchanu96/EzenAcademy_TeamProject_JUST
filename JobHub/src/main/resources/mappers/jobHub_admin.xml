@@ -79,6 +79,12 @@
 		WHERE PERSONAL_ID = #{pId} AND PERSONAL_PASSWORD = #{pPwd}
 	</select>
 	
+	<update id="memberAllListPersonalUpdateOne" parameterType="map">
+		UPDATE PERSONAL
+		 SET PERMISSION = 0
+		 WHERE PERSONAL_NUMBER = #{pNo}
+	</update>
+	
 	<update id="personalUpdateOne" parameterType="map">
 		UPDATE PERSONAL
 		 SET PERMISSION = 0

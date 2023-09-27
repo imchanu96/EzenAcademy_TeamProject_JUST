@@ -12,13 +12,15 @@ public interface AdminDao {
 
 	int memberSelectTotalCount();
 
-//	public void adminDeleteOne(AdminDto adminDto);
+	public void memberAllListPersonalUpdateOne(Map<String, Object> map);
 
 	public void personalUpdateOne(Map<String, Object> map);
 
 	public void companyUpdateOne(Map<String, Object> map);
 
 	List<PersonalMemberDto> memberSelectList();
+
+	
 
 
 }

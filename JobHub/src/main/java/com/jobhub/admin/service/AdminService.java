@@ -15,7 +15,7 @@ public interface AdminService {
 	
 	int memberSelectTotalCount();
 
-//	public void adminDeleteOne(AdminDto adminDto);
+	public void memberAllListPersonalUpdateOne(Map<String, Object> map);
 
 	public List<CompanyMemberDto> companyMemSelectList();
 
@@ -24,4 +24,6 @@ public interface AdminService {
 	public void personalUpdateOne(Map<String, Object> map);
 
 	public void companyUpdateOne(Map<String, Object> map);
+
+	
 }
