@@ -39,7 +39,7 @@
 					<tr>
 						<th>번호</th>
 						<th>제목</th>
-						<th>글쓴이</th>
+						<th colspan="2">글쓴이</th>
 						<th>작성일</th>
 						<th>조회수</th>
 					</tr>
@@ -47,7 +47,7 @@
 						<c:choose>
 							<c:when test="${empty boardList}">
 								<tr>
-								<td colspan="5">등록된 게시글이 없습니다.</td>
+								<td colspan="6">등록된 게시글이 없습니다.</td>
 							</c:when>
 							<c:otherwise>
 								<c:forEach var="boardDto" items="${boardList}">
@@ -55,6 +55,8 @@
 									<td>${boardDto.bNo}</td>
 									<td><a href='./listOne.do?no=${boardDto.bNo}'>${boardDto.bTitle}</a></td>
 									<td>${boardDto.bWriter}</td>
+									<!-- 회사명 임시로 bTag에 담음 -->
+									<td>${boardDto.bTag}</td>
 									<td>
 	<%-- 									<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.bCreDate}"/> --%>
 										<fmt:formatDate pattern="yyyy-MM-dd" value="${boardDto.bCreDate}"/>

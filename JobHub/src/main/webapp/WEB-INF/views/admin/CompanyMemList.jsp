@@ -63,10 +63,10 @@
 						<c:choose>
 							<c:when test="${companyMemberDto.permission == 0}">
 								탈퇴 회원
-							</c:when>
+									</c:when>
 							<c:when test="${companyMemberDto.permission == 5}">
 								기업 회원
-							</c:when>
+									</c:when>
 						</c:choose>
 					</td>
 					<td><fmt:formatDate pattern="yyyy-MM-dd" 

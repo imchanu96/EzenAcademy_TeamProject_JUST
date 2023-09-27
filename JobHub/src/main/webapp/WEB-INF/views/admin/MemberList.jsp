@@ -29,7 +29,9 @@
 </style>
 
 <script type="text/javascript">
-	
+	function permissionUpdateFnc(pNo) {
+		location.href= "./memberUpdate.do?pNo=" + pNo;
+	}	
 </script>
 </head>
 <body>	
@@ -40,7 +42,7 @@
 	</div>
 	<jsp:include page="./util/SideBar.jsp"></jsp:include>
 	<div id="tableDiv">
-		<form action="delete.do" method="get">
+		<form action="memberUpdate.do" method="get">
 		<table>
 			<tr>
 				<th style="width: 10%;">회원 번호</th>
@@ -59,6 +61,10 @@
 					<td>${personalDto.pNickname}</td>
 					<td>
 						<c:choose>
+							<c:when test="${companyMemberDto.permission == 0
+								|| personalDto.pPermission == 0}">
+										탈퇴 회원
+									</c:when>
 							<c:when test="${personalDto.pPermission == 1 
 								|| personalDto.pPermission == 2}">
 										개인 회원
@@ -75,7 +81,8 @@
 						value="${personalDto.pCreateDate}" /></td>
 					<td><fmt:formatDate pattern="yyyy-MM-dd" 
 						value="${personalDto.pModifyDate}" /></td>
-						<td><div><input type="submit" value="삭제" name="pNo"></div></td>
+						<td><div><input type="button" value="삭제" 
+							onclick="permissionUpdateFnc(${personalDto.pNo});"></div></td>
 				</tr>
 			</c:forEach>
 		</table>

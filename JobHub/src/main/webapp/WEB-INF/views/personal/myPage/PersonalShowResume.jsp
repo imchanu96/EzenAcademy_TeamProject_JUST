@@ -88,13 +88,16 @@ tr td {
 			<input type="button" style="text-align: right;" value="수정하기"
 				onclick="updateResumeFnc();">
 			<p>${resumeDto.rName}의이력서</p>
+			<c:set var="careerDtoList" value="${map.get("careerDtoList")}"/>
+			${careerDtoList}
+			${map.get("educationDtoList")}
 			<table>
 				<thead>
 					<th>개인 정보</th>
 				</thead>
 				<tr>
 					<td>이름</td>
-					<td class="resumeValue">${resumeDto.rName}</td>
+					<td class="resumeValue">${map.get("resumeDto").rName}</td>
 					<td>생년월일</td>
 					<td class="resumeValue"><fmt:formatDate pattern="yyyy-MM-dd"
 							value="${resumeDto.rBirthday}" /></td>

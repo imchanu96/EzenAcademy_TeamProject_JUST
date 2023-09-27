@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -101,6 +103,23 @@
 		}
 	}
 	
+// 	$('#mailCheck').click(function() {
+// 		const eamil = $('#pEmail').val(); // 이메일 주소값 얻어오기!
+// 		console.log('완성된 이메일 : ' + eamil); // 이메일 오는지 확인
+// 		const checkInput = $('.mail-check-input') // 인증번호 입력하는곳 
+		
+// 		$.ajax({
+// 			type : 'get',
+// 			url : '<c:url value ="/personal/mailCheck?email="/>'+eamil, // GET방식이라 Url 뒤에 email을 뭍힐수있다.
+// 			success : function (data) {
+// 				console.log("data : " +  data);
+// 				checkInput.attr('disabled',false);
+// 				code =data;
+// 				alert('인증번호가 전송되었습니다.')
+// 			}			
+// 		}); // end ajax
+// 	}); // end send eamil
+	
 </script>
 </head>
 <body>
@@ -118,8 +137,8 @@
 					</div>
 					<div id="emailBox" class="inputBox">
 						<p>이메일 주소</p>
-						<input name="pEmail" type="text">
-						<button type="button" onclick="findIdFnc();">인증번호 받기</button>
+						<input id="pEmail" name="pEmail" type="text">
+						<button type="button" id="mailCheck" onclick="findIdFnc();">인증번호 받기</button>
 					</div>
 				</div>
 				<div id="validationBox" class="inputBox">

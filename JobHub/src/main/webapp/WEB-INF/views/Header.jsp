@@ -56,8 +56,38 @@
 <body>
 	<div id="logoutModal">
 
+<<<<<<< HEAD
 		<div id="centerForm">
 			<p>정말 로그아웃 하시겠습니까?</p>
+=======
+			<div id="logoutHeaderForm">
+				<div class="logoutHeaderForm">
+					<p>로그아웃폼</p>
+				</div>
+			</div>
+
+			<div id="centerForm">
+				<div class="centerForm">
+					<p>회원님</p>
+					<p>정말 로그아웃 하시겠습니까?</p>
+				</div>
+			</div>
+			<br>
+
+			<form action="logout.do" method="get">
+				<div id="buttonForm">
+					<div class="buttonForm">
+						<div class="yesButton">
+							<input type="button" value="네" onclick="logoutFnc(${permission});">
+						</div>
+
+						<div class="noButton">
+							<input type="button" value="아니오" onclick="backButton();">
+						</div>
+					</div>
+				</div>
+			</form>
+>>>>>>> branch 'main' of https://github.com/noohij/Ezen_TeamProject_JUST.git
 		</div>
 		<form action="logout.do" method="get">
 			<div id="buttonForm">

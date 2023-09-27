@@ -69,6 +69,29 @@
 		<result column="PERSONAL_NUMBER" property="pNo"/>
 	</resultMap>
 	
+	<resultMap type="careerDto" id="careerResultMap">
+		<id column="CAREER_NUMBER" property="carNo" />
+		<result column="CAREER_BEGIN_DATE" property="carBeginDate"/>
+		<result column="CAREER_END_DATE" property="carEndDate"/>
+		<result column="CAREER_NAME" property="carName"/>
+		<result column="CAREER_POSITION" property="carPosition"/>
+		<result column="CAREER_LOCATION" property="carLocation"/>
+		<result column="CAREER_JOB" property="carJob"/>
+		<result column="RESUME_NUMBER" property="rNo"/>
+	</resultMap>
+	
+	<resultMap type="educationDto" id="educationResultMap">
+		<id column="EDUCATION_NUMBER" property="eduNo" />
+		<result column="EDUCATION_BEGIN_DATE" property="eduBeginDate"/>
+		<result column="EDUCATION_END_DATE" property="eduEndDate"/>
+		<result column="EDUCATION_NAME" property="eduName"/>
+		<result column="EDUCATION_MAJOR" property="eduMajor"/>
+		<result column="EDUCATION_GRADE" property="eduGrade"/>
+		<result column="EDUCATION_LOCATION" property="eduLocation"/>
+		<result column="EDUCATION_GREADUATE" property="eduGreaduate"/>
+		<result column="RESUME_NUMBER" property="rNo"/>
+	</resultMap>
+	
 	<select id="personalIdCheck">
 		SELECT COUNT(PERSONAL_ID)
 		FROM PERSONAL
@@ -253,6 +276,21 @@
     , RESUME_LICENSE_NAME, RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER
 	FROM RESUME
 		WHERE PERSONAL_NUMBER = #{pNo}
+	</select>
+	
+	<select id="personalMemberShowCareer" parameterType="map" resultMap="careerResultMap">
+		SELECT CAREER_NUMBER, CAREER_BEGIN_DATE, CAREER_END_DATE
+			, CAREER_NAME, CAREER_POSITION, CAREER_LOCATION, CAREER_JOB, RESUME_NUMBER
+		FROM CAREER
+		WHERE RESUME_NUMBER = #{rNo}
+	</select>
+		
+	<select id="personalMemberShowEducation" parameterType="map" resultMap="educationResultMap">
+		SELECT EDUCATION_NUMBER, EDUCATION_BEGIN_DATE, EDUCATION_END_DATE
+			, EDUCATION_NAME, EDUCATION_MAJOR, EDUCATION_GRADE, EDUCATION_LOCATION
+			, EDUCATION_GREADUATE, RESUME_NUMBER
+		FROM EDUCATION
+		WHERE RESUME_NUMBER = #{rNo}
 	</select>
 	
 	<select id="personalMembershowLetter" resultMap="letterResultMap" parameterType="map">

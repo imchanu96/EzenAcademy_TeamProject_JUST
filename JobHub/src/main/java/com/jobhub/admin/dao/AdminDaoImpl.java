@@ -37,11 +37,11 @@ public class AdminDaoImpl implements AdminDao{
 	}
 
 
-//	@Override
-//	public void adminDeleteOne(AdminDto adminDto) {
-//		// TODO Auto-generated method stub
-//		sqlSession.delete(namespace + "adminDeleteOne", adminDto);
-//	}
+	@Override
+	public void memberAllListPersonalUpdateOne(Map<String, Object> map) {
+		// TODO Auto-generated method stub
+		sqlSession.update(namespace + "memberAllListPersonalUpdateOne", map);
+	}
 
 
 	@Override
@@ -63,5 +63,8 @@ public class AdminDaoImpl implements AdminDao{
 		// TODO Auto-generated method stub
 		return sqlSession.selectList(namespace + "memberSelectList");
 	}
+
+
+
 
 }

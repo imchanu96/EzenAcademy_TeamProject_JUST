@@ -1,5 +1,7 @@
 package com.jobhub.personal.service;
 
+import java.util.Map;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -80,7 +82,7 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 	}
 
 	@Override
-	public ResumeDto personalMemberShowResume(int pNo) {
+	public Map<String, Object> personalMemberShowResume(int pNo) {
 		// TODO Auto-generated method stub
 		
 		return personalMemberDao.personalMemberShowResume(pNo);

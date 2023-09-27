@@ -35,7 +35,7 @@ public interface PersonalMemberDao {
 
 	public List<PersonalMemberDto> personalMemberSelectList();
 
-	public ResumeDto personalMemberShowResume(int pNo);
+	public Map<String, Object> personalMemberShowResume(int pNo);
 
 	public void PersonalresumeUpdateOne(ResumeDto resumeDto);
 
