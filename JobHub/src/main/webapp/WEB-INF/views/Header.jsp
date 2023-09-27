@@ -165,7 +165,7 @@ a:hover {
 		myMenu.addEventListener("mouseleave", function(e) {
 			myMenu.style.display = "none";
 		});
-	}
+	} 
 	function clickLogoutFnc() {
 		var logoutModal = document.getElementById("logoutModal");
 		logoutModal.style.display = "block";
