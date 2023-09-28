@@ -28,7 +28,7 @@
 </head>
 <body>
 
-	<jsp:include page="/WEB-INF/views/review/ReviewHeader.jsp"/>
+	<jsp:include page="/WEB-INF/views/Header.jsp"/>
 	
 	<div id="container">
 		
