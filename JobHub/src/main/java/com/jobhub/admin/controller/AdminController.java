@@ -111,12 +111,12 @@ public class AdminController {
 		}
 		
 		@RequestMapping(value = "/admin/memberUpdate.do", method = RequestMethod.GET)
-		public String memberUpdate(int pNo, Model model) {
+		public String memberUpdate(int perNo, Model model) {
 			
 			log.info("Welcome MemberController memberUpdate");
 			Map<String, Object> map = new HashMap<String, Object>();
 			
-			map.put("pNo", pNo);
+			map.put("perNo", perNo);
 			
 			try {
 				adminService.memberAllListPersonalUpdateOne(map);
@@ -128,12 +128,12 @@ public class AdminController {
 		}
 		
 		@RequestMapping(value = "/admin/personalUpdate.do", method = RequestMethod.GET)
-		public String personalUpdate(int pNo, Model model) {
+		public String personalUpdate(int perNo, Model model) {
 			
-			log.info("Welcome MemberController personalUpdate pNo=" + pNo);
+			log.info("Welcome MemberController personalUpdate pNo=" + perNo);
 			Map<String, Object> map = new HashMap<String, Object>();
-			System.out.println(pNo);
-			map.put("pNo", pNo);
+			System.out.println(perNo);
+			map.put("perNo", perNo);
 			
 			try {
 				adminService.personalUpdateOne(map);
@@ -146,13 +146,13 @@ public class AdminController {
 		}
 		
 		@RequestMapping(value = "/admin/companyUpdate.do", method = RequestMethod.GET)
-		public String companyUpdate(int cNo, Model model) {
+		public String companyUpdate(int comNo, Model model) {
 			
-			log.info("Welcome MemberController companyUpdate");
+			log.info("Welcome MemberController companyUpdate" + comNo);
 			
 			Map<String, Object> map = new HashMap<String, Object>();
-			System.out.println(cNo);
-			map.put("cNo", cNo);
+			System.out.println(comNo);
+			map.put("cNo", comNo);
 			
 			try {
 				adminService.companyUpdateOne(map);

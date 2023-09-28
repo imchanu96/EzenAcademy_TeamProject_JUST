@@ -26,7 +26,7 @@ public class CompanyMemberDto {
 	private String comInChargeEmail;
 	private String comInChargePhoneNum;
 	private String comPrefer;
-	private int permission;
+	private int comPermission;
 	private Date comCreDate;
 	private Date comModDate;
 	private Date connTime;
@@ -43,7 +43,7 @@ public class CompanyMemberDto {
 			, String comLogo, String comRev, String comEmp
 			, String comPrName, String comInChargeName
 			, String comInChargeEmail, String comInChargePhoneNum
-			, String comPrefer, int permission, Date comCreDate,
+			, String comPrefer, int comPermission, Date comCreDate,
 			Date comModDate, Date connTime, Date disconnTime) {
 		super();
 		this.comNo = comNo;
@@ -65,7 +65,7 @@ public class CompanyMemberDto {
 		this.comInChargeEmail = comInChargeEmail;
 		this.comInChargePhoneNum = comInChargePhoneNum;
 		this.comPrefer = comPrefer;
-		this.permission = permission;
+		this.comPermission = comPermission;
 		this.comCreDate = comCreDate;
 		this.comModDate = comModDate;
 		this.connTime = connTime;
@@ -224,12 +224,12 @@ public class CompanyMemberDto {
 		this.comPrefer = comPrefer;
 	}
 
-	public int getPermission() {
-		return permission;
+	public int getComPermission() {
+		return comPermission;
 	}
 
-	public void setPermission(int permission) {
-		this.permission = permission;
+	public void setComPermission(int comPermission) {
+		this.comPermission = comPermission;
 	}
 
 	public Date getComCreDate() {
@@ -275,7 +275,7 @@ public class CompanyMemberDto {
 				+ ", comPrName=" + comPrName + ", comInChargeName=" + comInChargeName
 				+ ", comInChargeEmail=" + comInChargeEmail
 				+ ", comInChargePhoneNum=" + comInChargePhoneNum + ""
-				+ ", comPrefer=" + comPrefer + ", permission=" + permission
+				+ ", comPrefer=" + comPrefer + ", comPermission=" + comPermission
 				+ ", comCreDate=" + comCreDate + ", comModDate=" + comModDate
 				+ ", connTime=" + connTime + ", disconnTime=" + disconnTime + "]";
 	}

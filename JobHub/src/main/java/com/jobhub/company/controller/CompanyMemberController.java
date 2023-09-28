@@ -49,7 +49,7 @@ public class CompanyMemberController {
 		if (companyMemberDto != null) {
 //				회원이 존재하면 세션에 담는다
 
-			int permission = companyMemberDto.getPermission();
+			int permission = companyMemberDto.getComPermission();
 
 			session.setAttribute("companyMemberDto", companyMemberDto);
 			session.setAttribute("permission", permission);

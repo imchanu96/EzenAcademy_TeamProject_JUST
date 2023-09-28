@@ -92,10 +92,10 @@
 					</c:when>
 					<c:otherwise>
 						<div id="titleBox">
-							<p>${personalMemberDto.pName}님의 아이디</p>
+							<p>${personalMemberDto.perName}님의 아이디</p>
 						</div>
 						<div id="informIdBox" class="inputBox">
-							<p>ID는 ${personalMemberDto.pId} 입니다</p>
+							<p>ID는 ${personalMemberDto.perId} 입니다</p>
 						</div>
 						<div id="buttonBox">
 							<button type="button" onclick="location.href='./login.do';">로그인</button>

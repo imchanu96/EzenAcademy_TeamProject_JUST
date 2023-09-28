@@ -78,10 +78,10 @@ tr td {
 					<a href="">내가 쓴 글</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="./showResume.do?pNo=${personalMemberDto.pNo}">이력서 관리</a>
+					<a href="./showResume.do?perNo=${personalMemberDto.perNo}">이력서 관리</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="./showLetter.do?pNo=${personalMemberDto.pNo}">자소서 관리</a>
+					<a href="./showLetter.do?perNo=${personalMemberDto.perNo}">자소서 관리</a>
 				</div>
 				<div class="smallMenuItem">
 					<a href="">고객센터</a>
@@ -91,31 +91,31 @@ tr td {
 		<div id="letterContain">
 			<input type="button" style="text-align: right;" value="수정하기"
 				onclick="updateLetterFnc();">
-			<p>${pName}의이력서</p>
+			<p>${personalMemberDto.perName}의이력서</p>
 			<div id="letter">
 				<p>OO의 자기소개서</p>
 				<div>
 					<p>성장 배경</p>
-					<textarea class="letterValue" name="history" readonly="readonly">
-						${letterDto.history}
+					<textarea class="letterValue" name="history"
+					 	readonly="readonly">${letterDto.history}
 					</textarea>
 				</div>
 				<div>
 					<p>지원 동기</p>
-					<textarea class="letterValue" name="motivation" readonly="readonly">
-						${letterDto.motivation}
+					<textarea class="letterValue" name="motivation"
+						readonly="readonly">${letterDto.motivation}
 					</textarea>
 				</div>
 				<div>
 					<p>성격의 장단점</p>
-					<textarea class="letterValue" name="character" readonly="readonly">
-						${letterDto.character}
+					<textarea class="letterValue" name="character" 
+						readonly="readonly">${letterDto.character}
 					</textarea>
 				</div>
 				<div>
 					<p>목표</p>
-					<textarea class="letterValue" name="goal" readonly="readonly">
-						${letterDto.goal}
+					<textarea class="letterValue" name="goal" 
+					readonly="readonly">${letterDto.goal}
 					</textarea>
 				</div>
 

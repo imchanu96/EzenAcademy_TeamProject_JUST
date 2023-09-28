@@ -12,9 +12,9 @@
 	<script type="text/javascript">
 	
 	function writeFnc() {
-		if("${personalMemberDto.getpNo()}" != ""){
+		if("${personalMemberDto.perNo()}" != ""){
 			location.href='./add.do';
-		} else if ("${personalMemberDto.getpNo()}" == ""){
+		} else if ("${personalMemberDto.perNo()}" == ""){
 			location.href='../personal/login.do';
 		}
 	}

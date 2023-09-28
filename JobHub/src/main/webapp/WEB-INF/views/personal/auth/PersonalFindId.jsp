@@ -77,12 +77,12 @@
 	function findIdFnc() {
 		var idSearch = document.getElementById("findIdBox");
 		
-		if(idSearch.pName.value == "") {
+		if(idSearch.perName.value == "") {
 			alert("이름을 입력해주세요.");
 			return false;
 		}
 		
-		if (idSearch.pEmail.value  == "") {
+		if (idSearch.perEmail.value  == "") {
 			alert("이메일을 입력해주세요.");
 			return false;
 		}
@@ -104,7 +104,7 @@
 	}
 	
 // 	$('#mailCheck').click(function() {
-// 		const eamil = $('#pEmail').val(); // 이메일 주소값 얻어오기!
+// 		const eamil = $('#perEmail').val(); // 이메일 주소값 얻어오기!
 // 		console.log('완성된 이메일 : ' + eamil); // 이메일 오는지 확인
 // 		const checkInput = $('.mail-check-input') // 인증번호 입력하는곳 
 		
@@ -133,11 +133,11 @@
 				<div>
 					<div id="nameBox" class="inputBox">
 						<p>이름</p>
-						<input name="pName" type="text">
+						<input name="perName" type="text">
 					</div>
 					<div id="emailBox" class="inputBox">
 						<p>이메일 주소</p>
-						<input id="pEmail" name="pEmail" type="text">
+						<input id="perEmail" name="perEmail" type="text">
 						<button type="button" id="mailCheck" onclick="findIdFnc();">인증번호 받기</button>
 					</div>
 				</div>

@@ -19,14 +19,14 @@
 			javaType="java.util.Date" />
 		<result column="PERSONAL_KEYWORD" property="perKeyword" />
 		<result column="PERSONAL_TEMPORARILY" property="perTemporarily" />
-		<result column="PERMISSION" property="pPermission" />
-		<result column="PERSONAL_CREATE_DATE" property="pCreateDate" 
+		<result column="PERMISSION" property="perPermission" />
+		<result column="PERSONAL_CREATE_DATE" property="perCreateDate" 
 			javaType="java.util.Date" />
-		<result column="PERSONAL_MODIFY_DATE" property="pModifyDate" 
+		<result column="PERSONAL_MODIFY_DATE" property="perModifyDate" 
 			javaType="java.util.Date" />
-		<result column="CONNECTION_TIME" property="pConnectionTime" 
+		<result column="CONNECTION_TIME" property="perConnectionTime" 
 			javaType="java.util.Date" />
-		<result column="DISCONNECTION_TIME" property="pDisconnectionTime" 
+		<result column="DISCONNECTION_TIME" property="perDisconnectionTime" 
 			javaType="java.util.Date" />
 	</resultMap>
 	
@@ -136,8 +136,8 @@
 	</select>
 
 	<insert id="personalInsertOne" parameterType="personalMemberDto">
-<!-- 		useGeneratedKeys="true" keyProperty="pNo"> -->
-<!-- 		<selectKey keyProperty="pNo" resultType="int" order="BEFORE"> -->
+<!-- 		useGeneratedKeys="true" keyProperty="perNo"> -->
+<!-- 		<selectKey keyProperty="perNo" resultType="int" order="BEFORE"> -->
 <!-- 			SELECT PERSONAL_NUMBER_SEQ.NEXTVAL -->
 <!-- 			FROM DUAL -->
 <!-- 		</selectKey> -->
@@ -295,7 +295,7 @@
 	
 	<select id="personalMembershowLetter" resultMap="letterResultMap" parameterType="map">
 	SELECT LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
-	    , LETTER_CHARACTER, LETTER_GOAL, (SELECT PERSONAL_NAME FROM PERSONAL WHERE PERSONAL_NUMBER = #{pNo}) AS "pName", PERSONAL_NUMBER
+	    , LETTER_CHARACTER, LETTER_GOAL, (SELECT PERSONAL_NAME FROM PERSONAL WHERE PERSONAL_NUMBER = #{perNo}) AS "perName", PERSONAL_NUMBER
     FROM LETTER
 	WHERE PERSONAL_NUMBER = #{perNo}
 	</select>

@@ -71,17 +71,17 @@
 	function findPwdFnc() {
 		var pwdSearch = document.getElementById("findPwdBox");
 		
-		if(pwdSearch.pName.value == "") {
+		if(pwdSearch.perName.value == "") {
 			alert("이름을 입력해주세요");
 			return false;
 		}
 		
-		if (pwdSearch.pId.value == "") {
+		if (pwdSearch.perId.value == "") {
 			alert("아이디를 입력해주세요");
 			return false;
 		}
 		
-		if (pwdSearch.pEmail.value == "") {
+		if (pwdSearch.perEmail.value == "") {
 			alert("이메일을 입력해주세요");
 			return false;
 		}
@@ -115,15 +115,15 @@
 				<div>
 					<div id="nameBox" class="inputBox">
 						<p>이름</p>
-						<input name="pName" type="text">
+						<input name="perName" type="text">
 					</div>
 					<div id="idBox" class="inputBox">
 						<p>아이디</p>
-						<input name="pId" type="text">
+						<input name="perId" type="text">
 					</div>
 					<div id="emailBox" class="inputBox">
 						<p>이메일 주소</p>
-						<input name="pEmail" type="text">
+						<input name="perEmail" type="text">
 						<button type="button" onclick="findPwdFnc();">인증번호 받기</button>
 					</div>
 				</div>

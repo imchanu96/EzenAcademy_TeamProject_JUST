@@ -184,12 +184,12 @@
 				<form action="loginCtr.do" method="post">
 				<div id="IDandPwd_Box">
 					<div class="ID_Box">
-						<input type="text" id="idInput" name="pId" placeholder="아이디"
+						<input type="text" id="idInput" name="perId" placeholder="아이디"
 								onfocus="idInputFocusFnc();" onblur="idInputBlurFnc();">
 					</div>
 					
 					<div class="Password_Box">
-						<input type="password" id="pwInput" name="pPwd" placeholder="비밀번호"
+						<input type="password" id="pwInput" name="perPwd" placeholder="비밀번호"
 								onfocus="pwInputFocusFnc();" onblur="pwInputBlurFnc();">
 					</div>
 				</div> <!-- IDandPwd_Box -->

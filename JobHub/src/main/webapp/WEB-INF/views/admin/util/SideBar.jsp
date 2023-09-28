@@ -49,13 +49,13 @@
 	function lookMemberList(obj) {
 		switch (obj) {
 		case "all":
-			location.href = "<%=request.getContextPath()%>/admin/memberList.do?=${session.adminDto.pPermission}";
+			location.href = "<%=request.getContextPath()%>/admin/memberList.do";
 			break;
 		case "personal":
-			location.href = "<%=request.getContextPath()%>/admin/personalMemberList.do?=${session.personalMemberDto.pNo}";
+			location.href = "<%=request.getContextPath()%>/admin/personalMemberList.do";
 			break;
 		case "company":
-			location.href = "<%=request.getContextPath()%>/admin/companyMemList.do?=${session.companyMemberDto.cNo}";
+			location.href = "<%=request.getContextPath()%>/admin/companyMemList.do";
 			break;
 		default:
 			break;

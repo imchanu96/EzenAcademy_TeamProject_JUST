@@ -30,7 +30,7 @@
 
 <script type="text/javascript">
 	function permissionUpdateFnc(pNo) {
-		location.href= "./personalUpdate.do?pNo=" + pNo;
+		location.href= "./personalUpdate.do?perNo=" + perNo;
 	}
 </script>
 </head>
@@ -55,33 +55,33 @@
 			</tr>
 			<c:forEach var="personalDto" items="${personalList}">
 				<tr>
-					<td>${personalDto.pNo}</td>
-					<td>${personalDto.pName}</td>
-					<td>${personalDto.pId}</td>
-					<td>${personalDto.pNickname}</td>
-					<td>${personalDto.pPermission}
+					<td>${personalDto.perNo}</td>
+					<td>${personalDto.perName}</td>
+					<td>${personalDto.perId}</td>
+					<td>${personalDto.perNickname}</td>
+					<td>${personalDto.perPermission}
 						<c:choose>
-							<c:when test="${personalDto.pPermission == 0}">
+							<c:when test="${personalDto.perPermission == 0}">
 										탈퇴 회원
 									</c:when>
-							<c:when test="${personalDto.pPermission == 1 
-											|| personalDto.pPermission == 2}">
+							<c:when test="${personalDto.perPermission == 1 
+											|| personalDto.perPermission == 2}">
 										개인 회원
 									</c:when>
-							<c:when test="${personalDto.pPermission == 5}">
+							<c:when test="${personalDto.perPermission == 5}">
 										기업 회원
 									</c:when>
-							<c:when test="${personalDto.pPermission == 10}">
+							<c:when test="${personalDto.perPermission == 10}">
 										관리자
 									</c:when>
 						</c:choose>
 					</td>
 					<td><fmt:formatDate pattern="yyyy-MM-dd" 
-						value="${personalDto.pCreateDate}" /></td>
+						value="${personalDto.perCreateDate}" /></td>
 					<td><fmt:formatDate pattern="yyyy-MM-dd" 
-						value="${personalDto.pModifyDate}" /></td>
+						value="${personalDto.perModifyDate}" /></td>
 						<td><div><input type="button" value="삭제" 
-							onclick="permissionUpdateFnc(${personalDto.pNo});"></div></td>
+							onclick="permissionUpdateFnc(${personalDto.perNo});"></div></td>
 				</tr>
 			</c:forEach>
 		</table>

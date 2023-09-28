@@ -300,9 +300,12 @@ public class PersonalMemberController {
 	}
 	
 	@RequestMapping(value = "/personal/resumeUpdate.do", method = RequestMethod.GET)
-	public String resumeUpdate(HttpSession session, Model model) {
+	public String resumeUpdate(int perNo, HttpSession session, Model model) {
 		log.info("Welecom resumeUpdate!");
-				
+		Map<String, Object> map = PersonalMemberService.personalMemberShowResume(perNo);
+		
+		model.addAttribute("map", map);
+		
 		return "personal/myPage/PersonalResumeUpdate";
 	}
 	
@@ -318,7 +321,7 @@ public class PersonalMemberController {
 			e.printStackTrace();
 		}
 		
-		return "redirect:./showResume.do?pNo=" + perNo;
+		return "redirect:./showResume.do?perNo=" + perNo;
 	}
 	
 	@RequestMapping(value = "/personal/showLetter.do", method = RequestMethod.GET)
@@ -351,7 +354,7 @@ public class PersonalMemberController {
 			e.printStackTrace();
 		}
 		
-		return "redirect:./showLetter.do?pNo=" + perNo;
+		return "redirect:./showLetter.do?perNo=" + perNo;
 	}	
 		
 }// end PersonalMemberController

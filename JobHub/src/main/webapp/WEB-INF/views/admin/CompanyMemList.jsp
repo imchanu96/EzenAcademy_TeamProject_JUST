@@ -61,10 +61,10 @@
 					<td>${companyMemberDto.comName}</td>
 					<td>
 						<c:choose>
-							<c:when test="${companyMemberDto.permission == 0}">
+							<c:when test="${companyMemberDto.comPermission == 0}">
 								탈퇴 회원
 									</c:when>
-							<c:when test="${companyMemberDto.permission == 5}">
+							<c:when test="${companyMemberDto.comPermission == 5}">
 								기업 회원
 									</c:when>
 						</c:choose>
