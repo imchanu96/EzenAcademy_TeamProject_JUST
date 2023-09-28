@@ -6,172 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>기업 선호도 변경</title>
-	<style type="text/css">
-/* 공통 */
-		a {
-		  text-decoration: none;
-		  color: #292e41;
-		}
-	    a:hover { color: #2d65f2; }
-			
-/* head form */
-		#headerBox {
-			height: 130px;
-			border-bottom: 1px solid #b4c0d3;
-		}
-		#headerContent {
-			margin: 0px auto;
-			width: 1280px;
-			height: 120px;
-		}
-/* logo */
-		#logo {
-			float: left;
-			margin: 0px 90px;
-			width: 74px;
-			height: 111px;
-		}
-/* main menu */
-		#mainMenuBox {
-			float: left;
-			width: 750px;
-			height: 100px;
-			margin-left: 30px;
-		}
-		.mainMenuItem {
-			float: left;
-			margin: 20px;
-			width: 200px;
-			height: 60px;
-			text-align: center;
-			line-height: 60px;
-			font-size: 30px;
-			font-weight: 600;
-		}
-/* message */
-		#myMessageBox {
-			float: left;
-			width: 100px;
-			height: 100px;
-			text-align: center;
-		}
-/* my menu */
-		#myMenuBox {
-			float: left;
-			width: 140px;
-			height: 100px;
-			text-align: center;
-		}
-/* end of header */
 
-/* content */
-		#container {
-			width: 1280px;
-			height: 1000px;
-			margin: 0px auto;
-		}
-/* navigation */
-		#navigation {
-			margin: 10px;
-			float: left;
-			width: 250px;
-			height: 950px;
-			font-size: 25px;
-			text-align: center;
-			background-color: #eff5ff;
-		}
-		#smallMenuBox {
-			margin: 30px auto;
-			width: 200px;
-			height: 500px;
-		}
-		.smallMenuItem {
-			margin-bottom: 20px;
-		}
-		.smallMenuItem a {
-			color: #475067;
-		}
-/* content */
-		#content {
-			margin: 10px;
-			float: left;
-			width: 980px;
-			height: 950px;
-			font-size: 30px;
-			background-color: #f8fafc;
-		}
-		#personalInfoBox, #companyInfoBox {
-			border: 1px solid #deebff;
-			background-color: #fff;
-			padding: 20px;
-			border-radius: 10px;
-			width: 620px;
-		    height: 260px;
-		    margin: 25px;
-		    margin-left: 100px;
-		    color: #5c667b;
-		}
-		.infoTitle {
-			margin-top: 3px;
-			color: #000;
-			font-size: 32px;
-		}
-		#selectKeyword {
-		}
-		.selectKeyword {
-			margin-top: 28px;
-			margin-left: 10px;
-			font-size: 25px;
-		}
-		
-		.personalInfoItemTitle {
-			float: left;
-			width: 550px;
-			height: 50px;
-			margin-top: 20px;
-			margin-left: 15px;
-			font-size: 20px;
-			line-height: 50px;
-		}
-		.personalInfoItemTitle > label {
-			padding-left: 20px;
-		}
-		
-		.personalInfoItemUpdate {
-			float: left;
-			width: 500px;
-			height: 25px;
-			font-size: 18px;
-		}
-
-		#buttonBox {
-			margin:auto;
-			width: 100px;
-			height: 50px;
-		}
-		
-		#buttonBox > button {
-			width: 100px;
-			height: 50px;
-		}
-		
-/* tail form */
-		#tailBox {
-			height: 150px;
-			background-color: #b4c0d3;
-			text-align: center;
-		}
-		#tailContent {
-			width: 1280px;
-			height: 130px;
-			margin: auto;
-		}
-		#teamName {
-			font-size: 50px;
-			font-weight: 800;
-			color: #999999;
-		}
-	</style>
 <script type="text/javascript">
 
 	function count_check(obj) {
@@ -191,6 +26,8 @@
 	}
 	
 </script>
+
+<link rel="stylesheet" href="/JobHub/resources/css/PersonalMyPage.css" type="text/css">
 </head>
 <body>
 
@@ -220,10 +57,10 @@
 		
 		<div id="content">
 
-			<div id="personalInfoBox">
+			<div id="personalInfoBoxUpdate">
 				<div class="personalInfoItem">
 					<div id="infoTitle">
-						<div class="infoTitle">
+						<div class="infoTitleUpdate">
 							기업 선호도 수정
 						</div>
 					</div>
@@ -236,7 +73,7 @@
 					</div>
 				
 					<form action="keywordUpdateCtr.do" method="post">
-						<div class="personalInfoItemTitle">
+						<div class="personalInfoItemTitleUpdateCheckBox">
 							<label>
 								<input type="checkbox" name="pKeyword" value="연봉"
 								onclick="count_check(this);">
@@ -267,7 +104,7 @@
 						
 						</div>
 					
-						<div id="buttonBox">
+						<div id="buttonBoxUpdate">
 							<button type="submit" value="변경하기">변경하기</button>
 						</div>
 					</form>

@@ -5,82 +5,14 @@
 <head>
 <meta charset="UTF-8" http-equiv="Refresh" content="3;url=./login.do">
 <title>로그인 실패</title>
-<style type="text/css">
 
-	#loginFailBack {
-		width: 1880px;
-		height: 500px;
-	}
-	.loginFailBack {
-		margin-top: 150px;
-	}
-	
-	#loginFailBox {
-		border: 1px solid #eff5ff;
-		width: 600px;
-		height: 100%;
-		margin: auto;	
-	}
-	.loginFailBox {
-	}
-	
-	#header {
-		border: 1px solid #eff5ff;
-		background-color: #eff5ff;
-		width: 600px;
-		height: 100px;
-		font-size: 40px;
-		text-align: center;	
-	}
-	#loginFailBoxHeader {
-		
-		width: 400px;
-		height: 80px;
-		margin: auto;
-	}
-	.loginFailBoxHeader {
-		margin-top: 20px;
-	}
-	
-	#text {
-		width: 600px;
-		height: 300px;
-		font-size: 30px;
-		text-align: center;
-	}
-	#loginFailBoxText{
-		width: 400px;
-		height: 200px;
-		margin: auto;
-	}
-	.loginFailBoxText {
-		margin-top: 50px;
-		
-	}
-	
-	#button {
-		width: 600px;
-		height: 100px;
-	}
-	#loginFailButton {
-		width: 400px;
-		height: 70px;
-		margin: auto;
-	}
-	.loginFailButton > input {
-		background-color: #eff5ff;
-		width: 300px;
-		height: 70px;
-		margin-bottom: 50px;
-	}
-	
-</style>
 <script type="text/javascript">
 	function backButton() {
 		window.history.back();
 		//location href = "personal/auth/login.do";
 	}
 </script>
+<link rel="stylesheet" href="/JobHub/resources/css/LoginFail.css" type="text/css">
 </head>
 <body>
 
