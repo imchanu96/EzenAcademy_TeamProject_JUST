@@ -172,7 +172,7 @@
 						</div>
 						<div id="myMenu">
 							<div class="myPage">
-								<a href="#">마이 페이지</a>
+								<a href="../company/showCompanyInfo.do?comNo=${companyMemberDto.comNo}">마이 페이지</a>
 							</div>
 							<div class="logout">
 								<p onclick="clickLogoutFnc();"

@@ -47,7 +47,9 @@ public class AjaxController {
 //		log.info(paramMap.get("perNo"));
 		LetterDto letterDto
 			= ajaxService.showPersonalLetter(paramMap);
-//
+
+		System.out.println(letterDto);
+		
 		return letterDto;
 	}
 	

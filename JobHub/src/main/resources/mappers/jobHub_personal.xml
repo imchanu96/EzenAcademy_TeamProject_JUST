@@ -285,7 +285,7 @@
 		WHERE RESUME_NUMBER = #{resumeNo}
 	</select>
 		
-	<select id="personalMemberShowEducation" parameterType="map" resultMap="educationResultMap">
+	<select id="personalMemberShowEducation" resultMap="educationResultMap" parameterType="map">
 		SELECT EDUCATION_NUMBER, EDUCATION_BEGIN_DATE, EDUCATION_END_DATE
 			, EDUCATION_NAME, EDUCATION_MAJOR, EDUCATION_GRADE, EDUCATION_LOCATION
 			, EDUCATION_GREADUATE, RESUME_NUMBER
@@ -293,9 +293,10 @@
 		WHERE RESUME_NUMBER = #{resumeNo}
 	</select>
 	
-	<select id="personalMembershowLetter" resultMap="letterResultMap" parameterType="map">
+	<select id="personalMembershowLetter" parameterType="map" resultMap="letterResultMap" >
 	SELECT LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
-	    , LETTER_CHARACTER, LETTER_GOAL, (SELECT PERSONAL_NAME FROM PERSONAL WHERE PERSONAL_NUMBER = #{perNo}) AS "perName", PERSONAL_NUMBER
+	    , LETTER_CHARACTER, LETTER_GOAL
+	    , (SELECT PERSONAL_NAME FROM PERSONAL WHERE PERSONAL_NUMBER = #{perNo}) AS "perName", PERSONAL_NUMBER
     FROM LETTER
 	WHERE PERSONAL_NUMBER = #{perNo}
 	</select>

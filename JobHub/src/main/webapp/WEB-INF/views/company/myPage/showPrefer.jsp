@@ -157,7 +157,7 @@
 			</div>
 		</div>
 		<div id="content">
-		<c:set var="preferList" value="${fn:split(companyPrefer.cPrefer, ',')}"/>
+		<c:set var="preferList" value="${fn:split(companyPrefer.comPrefer, ',')}"/>
 			<div>
 				<span>내 선호도</span>
 			</div>
@@ -194,7 +194,7 @@
 				<div style="float: left;">${preferList[7]}</div>
 			</div>
 			<input type="button" style="margin-top: 400px;" value="수정" 
-				onclick="location.href='./preferUpdate.do?pNo=${companyMemberDto.cNo}'">
+				onclick="location.href='./preferUpdate.do?pNo=${companyMemberDto.comNo}'">
 		</div>
 		<jsp:include page="/WEB-INF/views/Tail.jsp" />
 </body>

@@ -9,6 +9,8 @@ public interface CompanyMemberDao {
 
 	public CompanyMemberDto companyMemberExist(String comCode, String comPwd);
 	
+	public CompanyMemberDto showCompanyInfo(int comNo);
+	
 	public CompanyMemberDto companyMemberSelectOne(int comNo);
 
 	public int companyInsertOne(CompanyMemberDto companyMemberDto);
@@ -26,4 +28,6 @@ public interface CompanyMemberDao {
 	public List<CompanyMemberDto> companyMemSelectList();
 
 	public void preferUpdateOne(Map<String, Object> map);
+
+	
 }

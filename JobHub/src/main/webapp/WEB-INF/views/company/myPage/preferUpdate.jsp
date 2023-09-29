@@ -178,10 +178,10 @@ input {
 				</div>
 			</div>
 		</div>
-		${companyPrefer.cPrefer}
+		${companyPrefer.comPrefer}
 		<div id="content">
 			<c:set var="preferList"
-				value="${fn:split(companyPrefer.cPrefer, ',')}" />
+				value="${fn:split(companyPrefer.comPrefer, ',')}" />
 			<div>
 				<span>내 선호도</span>
 			</div>
@@ -237,7 +237,7 @@ input {
 				<input type="button" style="margin-top: 400px;" value="수정 확정"
 					onclick="submitFnc();">
 					<input type="text" id="prefer" name="prefer">
-					<input type="text" id="cNo" name="cNo" value="${companyMemberDto.cNo}">
+					<input type="text" id="comNo" name="comNo" value="${companyMemberDto.comNo}">
 			</form>
 		</div>
 

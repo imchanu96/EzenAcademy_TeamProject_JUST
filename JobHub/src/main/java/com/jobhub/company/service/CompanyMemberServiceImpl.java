@@ -30,6 +30,13 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 	}
 
 	@Override
+	public CompanyMemberDto showCompanyInfo(int comNo) {
+		// TODO Auto-generated method stub
+		return companyMemberDao.showCompanyInfo(comNo);
+	}
+
+	
+	@Override
 	public void companyInsertOne(CompanyMemberDto companyMemberDto) {
 		// TODO Auto-generated method stub
 		companyMemberDao.companyInsertOne(companyMemberDto);
@@ -73,6 +80,7 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 		companyMemberDao.preferUpdateOne(map);
 	}
 
+	
 	
 
 }

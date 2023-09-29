@@ -29,6 +29,12 @@ public class CompanyMemberDaoImpl implements CompanyMemberDao {
 	}
 
 	@Override
+	public CompanyMemberDto showCompanyInfo(int comNo) {
+		// TODO Auto-generated method stub
+		return sqlSession.selectOne(namespace + "showCompanyInfo", comNo);
+	}
+	
+	@Override
 	public CompanyMemberDto companyMemberSelectOne(int comNo) {
 		// TODO Auto-generated method stub
 		return sqlSession.selectOne(namespace + "companyMemberSelectOne", comNo);
@@ -87,5 +93,7 @@ public class CompanyMemberDaoImpl implements CompanyMemberDao {
 		// TODO Auto-generated method stub
 		sqlSession.update(namespace + "preferUpdateOne", map);
 	}
+
+	
 
 }

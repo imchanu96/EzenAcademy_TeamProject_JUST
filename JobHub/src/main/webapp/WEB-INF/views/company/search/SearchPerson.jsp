@@ -413,7 +413,6 @@ tr td {
 		var modal = document.getElementById("letterModal");
 		
 		var letterValue = document.getElementsByClassName("letterValue");
-
 		var jsonData = { "perNo": no}; 
 		
 		$.ajax({
@@ -426,11 +425,11 @@ tr td {
 	        // 서버로부터 받은 데이터(data)를 처리합니다.
 	        
 	        // 예제: 결과를 resultContainer에 표시
-// 	        	alert('성공');
+	        	alert('성공');
 	        	modal.children[1].textContent = name + "의 자기 소개서";
 	        	modal.children[1].style.textAlign = "center";
 	        	
-// 	        	//성장 배경
+ 	        	//성장 배경
 	        	letterValue[0].textContent = data.history;
 	        	//지원 동기
 	        	letterValue[1].textContent = data.motivation;
@@ -548,8 +547,8 @@ tr td {
 							<option value="경력">경력</option>
 							<option value="R.RESUME_EDUCATION_NAME">학교명</option>
 							<option value="R.RESUME_LICENSE_NAME">자격증</option>
-						</select> <input type="text" name="searchText" id="textInput"> <input type="submit"
-							value="검색" class="button">
+						</select> <input type="text" name="searchText" id="textInput">
+						<input type="submit" value="검색" class="button">
 					</div>
 					<button class="helpButton">
 						<div id="helpText">

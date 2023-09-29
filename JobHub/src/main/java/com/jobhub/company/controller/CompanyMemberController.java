@@ -61,6 +61,21 @@ public class CompanyMemberController {
 
 		return viewUrl;
 	}
+	
+	// 로그인 클릭 시 이동
+		@RequestMapping(value = "/company/showCompanyInfo.do", method = RequestMethod.GET)
+		public String showCompanyInfo(int comNo, HttpSession session, Model model) {
+
+			log.info("Welcome CompanyMemberController showCompanyInfo! comNo" + comNo);
+
+			CompanyMemberDto companyMemberDto
+				= companyMemberService.showCompanyInfo(comNo);
+
+
+				model.addAttribute("companyMemberDto", companyMemberDto);
+
+			return "./company/myPage/CompanyMyPage";
+		}
 
 	// 로그아웃
 	@RequestMapping(value = "/company/logout.do", method = RequestMethod.GET)
