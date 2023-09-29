@@ -325,7 +325,7 @@ tr td {
 		
 		var resumeValue = document.getElementsByClassName("resumeValue");
 		
-		var jsonData = { "pNo": no}; 
+		var jsonData = { "perNo": no}; 
 		
 		$.ajax({
 			url: "./showPersonalResume.do",
@@ -344,55 +344,55 @@ tr td {
 	        	modal.children[1].textContent = name + "의 이력서";
 	        	modal.children[1].style.textAlign = "center";
 	        	//이름
-	        	resumeValue[0].textContent = data.rName;
+	        	resumeValue[0].textContent = data.resumeName;
 	        	//생일
-	        	resumeValue[1].textContent = data.rBirthday;
+	        	resumeValue[1].textContent = data.resumeBirthday;
 	        	//이메일
-	        	resumeValue[2].textContent = data.rEmail;
+	        	resumeValue[2].textContent = data.resumeEmail;
 	        	// 전화번호
-	        	resumeValue[3].textContent = data.rPhoneNum;
+	        	resumeValue[3].textContent = data.resumePhoneNum;
 	        	// 주소
-	        	resumeValue[4].textContent = data.rAdd;
+	        	resumeValue[4].textContent = data.resumeAdd;
 	        	// 결혼 여부
-	        	resumeValue[5].textContent = data.rMarry;
+	        	resumeValue[5].textContent = data.resumeMarry;
 	        	// 성별
-	        	resumeValue[6].textContent = data.rGender;
+	        	resumeValue[6].textContent = data.resumeGender;
 	        	// 병역 여부
-	        	resumeValue[7].textContent = data.rMilitary;
+	        	resumeValue[7].textContent = data.resumeMilitary;
 	        	//입학년도
-		        	resumeValue[8].textContent = data.rEduBeginDate;
+		        	resumeValue[8].textContent = data.resumeEduBeginDate;
 	        	//졸업년도
-	        	resumeValue[9].textContent = data.rEduEndDate;
+	        	resumeValue[9].textContent = data.resumeEduEndDate;
 	        	// 학교명
-	        	resumeValue[10].textContent = data.rEduName;
+	        	resumeValue[10].textContent = data.resumeEduName;
 	        	//전공
-	        	resumeValue[11].textContent = data.rEduMajor;
+	        	resumeValue[11].textContent = data.resumeEduMajor;
 	        	//소재지
-	        	resumeValue[12].textContent = data.rEduLoc;
+	        	resumeValue[12].textContent = data.resumeEduLoc;
 	        	//학점
-	        	resumeValue[13].textContent = data.rEduGrade;
+	        	resumeValue[13].textContent = data.resumeEduGrade;
 	        	//졸업 구분
-	        	resumeValue[14].textContent = data.rEduGraduate;
+	        	resumeValue[14].textContent = data.resumeEduGraduate;
 	        	//입사년도
-	        	resumeValue[15].textContent = data.rCareerBeginDate;
+	        	resumeValue[15].textContent = data.resumeCareerBeginDate;
 	        	//퇴사년도
-	        	resumeValue[16].textContent = data.rCareerEndDate;
+	        	resumeValue[16].textContent = data.resumeCareerEndDate;
 	        	//회사명
-	        	resumeValue[17].textContent = data.rCareerName;
+	        	resumeValue[17].textContent = data.resumeCareerName;
 	        	//직위
-	        	resumeValue[18].textContent = data.rCareerPos;
+	        	resumeValue[18].textContent = data.resumeCareerPos;
 	        	//소재지
-	        	resumeValue[19].textContent = data.rCareerLoc;
+	        	resumeValue[19].textContent = data.resumeCareerLoc;
 	        	//담당업무
-	        	resumeValue[20].textContent = data.rCareerJob;
+	        	resumeValue[20].textContent = data.resumeCareerJob;
 	        	//자격증 취득일
-	        	resumeValue[21].textContent = data.rLicenseDate;
+	        	resumeValue[21].textContent = data.resumeLicenseDate;
 	        	//자격증명
-	        	resumeValue[22].textContent = data.rLicenseName;
+	        	resumeValue[22].textContent = data.resumeLicenseName;
 	        	//발급기관
-	        	resumeValue[23].textContent = data.rLicenseInst;
+	        	resumeValue[23].textContent = data.resumeLicenseInst;
 	        	//점수/등급
-	        	resumeValue[24].textContent = data.rLicenseGrade;
+	        	resumeValue[24].textContent = data.resumeLicenseGrade;
 	        
 	        	modal.style.display = "block";
 	        	
@@ -414,7 +414,7 @@ tr td {
 		
 		var letterValue = document.getElementsByClassName("letterValue");
 
-		var jsonData = { "pNo": no}; 
+		var jsonData = { "perNo": no}; 
 		
 		$.ajax({
 			url: "./showPersonalLetter.do",
@@ -481,7 +481,7 @@ tr td {
 		</div>
 		<div id="content">
 			<form action="./personalInfoList.do" method="post">
-			<input type="hidden" name="cNo" value="${sessionScope.companyMemberDto.cNo}">
+			<input type="hidden" name="comNo" value="${sessionScope.companyMemberDto.comNo}">
 				<div id="searchBox">
 					<div id="titleBox">
 						<p>인재찾기</p>
@@ -695,7 +695,7 @@ tr td {
 
 			</div>
 			<c:forEach var="personalInfo" items="${personalInfoList}">
-			<c:set var="eduArr" value="${fn:split(personalInfo.pHighestEdu, ',')}"/>
+			<c:set var="eduArr" value="${fn:split(personalInfo.perHighestEdu, ',')}"/>
 			<c:set var="eduArrLength" value="${fn:length(eduArr)}"/> 
 					<div id="resultBox">
 						<div id="resultContent">
@@ -704,22 +704,22 @@ tr td {
 									<img alt=""
 										src="https://www.fnnews.com/resource/media/image/2023/08/29/202308291128014614_l.jpg">
 								</div>
-								<div id="pNameBox">${personalInfo.pName}</div>
+								<div id="pNameBox">${personalInfo.perName}</div>
 							</div>
 							<div id="infoBox">
 								<div id="companyBox">현재 "${personalInfo.currentCompany}" 재직중</div>
 								<div id="highTestEduBox">최종 학력 :
 									<span id="HighestEdu">${eduArr[eduArrLength-1]}</span></div>
 								<div id="licenseCountBox">자격증 :
-									${personalInfo.pLicenseCount}개</div>
+									${personalInfo.perLicenseCount}개</div>
 							</div>
 							<div id="" style="width: 100px; float: left; margin-right: 50px;">
 								적합도 100%</div>
 							<div id="buttonBox" style="float: left;">
 								<input type="button" value="이력서 보기" class="button" id="resumeBtn"
-									onclick="openResumeFnc('${personalInfo.pNo}', '${personalInfo.pName}');">
+									onclick="openResumeFnc('${personalInfo.perNo}', '${personalInfo.perName}');">
 								<input type="button" value="자소서 보기" class="button" id="letterBtn"
-									onclick="openLetterFnc('${personalInfo.pNo}', '${personalInfo.pName}');">
+									onclick="openLetterFnc('${personalInfo.perNo}', '${personalInfo.perName}');">
 							</div>
 	
 						</div>

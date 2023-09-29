@@ -18,23 +18,7 @@ public interface CompanyMemberService {
 
 	public CompanyMemberDto companyMemberSearchPwd(CompanyMemberDto companyMemberDto);
 	
-	public void companyMembercInChargeNameUpdateOne(CompanyMemberDto companyMemberDto);
-	
-	public void companyMembercInChargeEmailUpdateOne(CompanyMemberDto companyMemberDto);
-	
-	public void companyMembercInChargePhoneNumUpdateOne(CompanyMemberDto companyMemberDto);
-	
-	public void companyMembercNameUpdateOne(CompanyMemberDto companyMemberDto);
-	
-	public void companyMembercAddUpdateOne(CompanyMemberDto companyMemberDto);
-	
-	public void companyMembercTypeUpdateOne(CompanyMemberDto companyMemberDto);
-	
-	public void companyMembercEstDateUpdateOne(CompanyMemberDto companyMemberDto);
-	
-	public void companyMembercHomepageUpdateOne(CompanyMemberDto companyMemberDto);
-	
-	public void companyMembercIntroduceUpdateOne(CompanyMemberDto companymemberDto);
+	public void companyInfoUpdateOne(CompanyMemberDto companyMemberDto);
 
 	public CompanyMemberDto companyMemberSelectOne(int comNo);
 

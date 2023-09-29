@@ -54,57 +54,9 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 	}
 	
 	@Override
-	public void companyMembercInChargeNameUpdateOne(CompanyMemberDto companyMemberDto) {
+	public void companyInfoUpdateOne(CompanyMemberDto companyMemberDto) {
 		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercInChargeNameUpdateOne(companyMemberDto);
-	}
-
-	@Override
-	public void companyMembercInChargeEmailUpdateOne(CompanyMemberDto companyMemberDto) {
-		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercInChargeEmailUpdateOne(companyMemberDto);
-	}
-
-	@Override
-	public void companyMembercInChargePhoneNumUpdateOne(CompanyMemberDto companyMemberDto) {
-		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercInChargePhoneNumUpdateOne(companyMemberDto);
-	}
-
-	@Override
-	public void companyMembercNameUpdateOne(CompanyMemberDto companyMemberDto) {
-		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercNameUpdateOne(companyMemberDto);
-	}
-
-	@Override
-	public void companyMembercAddUpdateOne(CompanyMemberDto companyMemberDto) {
-		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercAddUpdateOne(companyMemberDto);
-	}
-
-	@Override
-	public void companyMembercTypeUpdateOne(CompanyMemberDto companyMemberDto) {
-		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercTypeUpdateOne(companyMemberDto);
-	}
-
-	@Override
-	public void companyMembercEstDateUpdateOne(CompanyMemberDto companyMemberDto) {
-		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercEstDateUpdateOne(companyMemberDto);
-	}
-
-	@Override
-	public void companyMembercHomepageUpdateOne(CompanyMemberDto companyMemberDto) {
-		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercHomepageUpdateOne(companyMemberDto);
-	}
-
-	@Override
-	public void companyMembercIntroduceUpdateOne(CompanyMemberDto companyMemberDto) {
-		// TODO Auto-generated method stub
-		companyMemberDao.companyMembercIntroduceUpdateOne(companyMemberDto);
+		companyMemberDao.companyInfoUpdateOne(companyMemberDto);
 	}
 
 	@Override
@@ -120,5 +72,7 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 		
 		companyMemberDao.preferUpdateOne(map);
 	}
+
+	
 
 }

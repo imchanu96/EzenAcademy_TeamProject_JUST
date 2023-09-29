@@ -203,7 +203,7 @@
 					<a href="">이력서 관리</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="./setPrefer.do?cNo=${sessionScope.companyMemberDto.cNo}">선호도 설정</a>
+					<a href="./setPrefer.do?comNo=${sessionScope.companyMemberDto.comNo}">선호도 설정</a>
 				</div>
 			</div>
 		</div>
@@ -218,12 +218,12 @@
 						담당자 이름
 					</div>
 					<div class="personalInfoItemContent">
-						${sessionScope.companyMemberDto.cInChargeName}
+						${sessionScope.companyMemberDto.comInChargeName}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
-							/company/cInChargeNameUpdate.do?no=
-								${companyMemberDto.cNo}">></a>
+							/company/companyInfoUpdate.do?comNo=
+								${companyMemberDto.comNo}&comInChargeName=${companyMemberDto.comInChargeName}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -231,12 +231,12 @@
 						담당자 이메일
 					</div>
 					<div class="personalInfoItemContent">
-						${sessionScope.companyMemberDto.cInChargeEmail}
+						${sessionScope.companyMemberDto.comInChargeEmail}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
-							/company/cInChargeEmailUpdate.do?no=
-								${companyMemberDto.cNo}">></a>
+							/company/companyInfoUpdate.do?comNo=
+								${companyMemberDto.comNo}&comInChargeEmail=${companyMemberDto.comInChargeEmail}">></a>
 					</div>
 				</div>
 				<div class="personalInfoItem">
@@ -244,12 +244,12 @@
 						담당자 연락처
 					</div>
 					<div class="personalInfoItemContent">
-						${sessionScope.companyMemberDto.cInChargePhoneNum}
+						${sessionScope.companyMemberDto.comInChargePhoneNum}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
-							/company/cInChargePhoneNumUpdate.do?no=
-								${companyMemberDto.cNo}">></a>
+							/company/companyInfoUpdate.do?comNo=
+								${companyMemberDto.comNo}&comInChargePhoneNum=${companyMemberDto.comInChargePhoneNum}">></a>
 					</div>
 				</div>
 			</div>
@@ -263,12 +263,12 @@
 					</div>
 					
 					<div class="companyInfoItemContent">
-						${sessionScope.companyMemberDto.cName}
+						${sessionScope.companyMemberDto.comName}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
-							/company/cNameUpdate.do?no=
-								${companyMemberDto.cNo}">></a>
+							/company/companyInfoUpdate.do?comNo=
+								${companyMemberDto.comNo}&comName=${companyMemberDto.comName}">></a>
 					</div>
 				</div>
 				
@@ -277,12 +277,11 @@
 						회사 주소
 					</div>
 					<div class="companyInfoItemContent">
-						${sessionScope.companyMemberDto.cAdd}
+						${sessionScope.companyMemberDto.comAdd}
 					</div>
 					<div class="arrowBox">
-						<a href="<%=request.getContextPath()%>
-							/company/cAddUpdate.do?no=
-								${companyMemberDto.cNo}">></a>
+						<a href="../company/companyInfoUpdate.do?comNo=
+								${companyMemberDto.comNo}&comAdd=${companyMemberDto.comAdd}">></a>
 					</div>
 				</div>
 				
@@ -291,12 +290,12 @@
 						업종
 					</div>
 					<div class="companyInfoItemContent">
-						${sessionScope.companyMemberDto.cType}
+						${sessionScope.companyMemberDto.comType}
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
-							/company/cTypeUpdate.do?no=
-								${companyMemberDto.cNo}">></a>
+							/company/companyInfoUpdate.do?comNo=
+								${companyMemberDto.comNo}&comType=${companyMemberDto.comType}">></a>
 					</div>
 				</div>
 				
@@ -305,13 +304,14 @@
 						설립
 					</div>
 					<div class="companyInfoItemContent">
-						<fmt:formatDate value="${sessionScope.companyMemberDto.cEstDate}"
+						<fmt:formatDate value="${sessionScope.companyMemberDto.comEstDate}"
 							pattern="YYYY-MM-dd"/>
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
-							/company/cEstDateUpdate.do?no=
-								${companyMemberDto.cNo}">></a>
+							/company/companyInfoUpdate.do?comNo=
+								${companyMemberDto.comNo}&comEstDate=<fmt:formatDate value="${sessionScope.companyMemberDto.comEstDate}"
+							pattern="YYYY-MM-dd"/>">></a>
 					</div>
 				</div>
 				
@@ -320,13 +320,13 @@
 						홈페이지
 					</div>
 					<div class="companyInfoItemContent">
-						${sessionScope.companyMemberDto.cHomepage}
+						${sessionScope.companyMemberDto.comHomepage}
 					</div>
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
-							/company/cHomepageUpdate.do?no=
-								${companyMemberDto.cNo}">></a>
+							/company/companyInfoUpdate.do?comNo=
+								${companyMemberDto.comNo}&comHomepage=${companyMemberDto.comHomepage}">></a>
 					</div>
 					
 					<div class="companyInfoItem">
@@ -335,13 +335,13 @@
 						</div>
 						<div class="companyInfoContentBox">
 							<div class="companyInfoContent">
-								 ${sessionScope.companyMemberDto.cIntroduce}
+								 ${sessionScope.companyMemberDto.comIntroduce}
 							</div>
 						</div>
 						<div class="arrowBox">
 							<a href="<%=request.getContextPath()%>
-								/company/cIntroduceUpdate.do?no=
-									${companyMemberDto.cNo}">></a>
+								/company/companyInfoUpdate.do?comNo=
+								${companyMemberDto.comNo}&comIntroduce=${companyMemberDto.comIntroduce}">></a>
 						</div>
 					</div>
 				</div>

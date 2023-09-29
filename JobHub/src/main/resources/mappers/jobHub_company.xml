@@ -150,57 +150,37 @@
 		AND COMPANY_CODE =#{comCode}
 	</select>
 	
-	<update id="companyMembercInChargeNameUpdateOne" parameterType="companyMemberDto">
+	<update id="companyInfoUpdateOne" parameterType="companyMemberDto">
 		UPDATE COMPANY
-		 SET COMPANY_INCHARGE_NAME = #{comInChargeName}
-		 WHERE COMPANY_NUMBER = #{comNo}
-	</update>
-	
-	<update id="companyMembercInChargeEmailUpdateOne" parameterType="companyMemberDto">
-		UPDATE COMPANY
-		 SET COMPANY_INCHARGE_EMAIL = #{comInChargeEmail}
-		 WHERE COMPANY_NUMBER = #{comNo}
-	</update>	
-	
-	<update id="companyMembercInChargePhoneNumUpdateOne" parameterType="companyMemberDto">
-		UPDATE COMPANY
-		 SET COMPANY_INCHARGE_PHONENUMBER = #{comInChargePhoneNum}
-		 WHERE COMPANY_NUMBER = #{comNo}
-	</update>
-	
-	<update id="companyMembercNameUpdateOne" parameterType="companyMemberDto">
-		UPDATE COMPANY
-		 SET COMPANY_NAME = #{comName}
-		 WHERE COMPANY_NUMBER = #{comNo}
-	</update>
-	
-	<update id="companyMembercAddUpdateOne" parameterType="companyMemberDto">
-		UPDATE COMPANY
-		 SET COMPANY_ADDRESS = #{comAdd}
-		 WHERE COMPANY_NUMBER = #{comNo}
-	</update>
-	
-	<update id="companyMembercTypeUpdateOne" parameterType="companyMemberDto">
-		UPDATE COMPANY
-		 SET COMPANY_TYPE = #{comType}
-		 WHERE COMPANY_NUMBER = #{comNo}
-	</update>
-	
-	<update id="companyMembercEstDateUpdateOne" parameterType="companyMemberDto">
-		UPDATE COMPANY
-		SET COMPANY_ESTABLISH_DATE = #{comEstDate}
-		WHERE COMPANY_NUMBER = #{comNo}
-	</update>
-	
-	<update id="companyMembercHomepageUpdateOne" parameterType="companyMemberDto">
-		UPDATE COMPANY
-		 SET COMPANY_HOMEPAGE = #{comHomepage}
-		 WHERE COMPANY_NUMBER = #{comNo}
-	</update>
-	
-	<update id="companyMembercIntroduceUpdateOne" parameterType="companyMemberDto">
-		UPDATE COMPANY
-		 SET COMPANY_INTRODUCE = #{comIntroduce}
+		<set>
+			<if test="comInChargeName != null">
+			 	COMPANY_INCHARGE_NAME = #{comInChargeName}
+			</if>
+			<if test="comInChargeEmail != null">
+			 	COMPANY_INCHARGE_EMAIL = #{comInChargeEmail}
+			</if>
+			<if test="comInChargePhoneNum != null">
+			 	COMPANY_INCHARGE_PHONENUMBER = #{comInChargePhoneNum}
+			</if>
+			<if test="comName != null">
+			 	COMPANY_NAME = #{comName}
+			</if>
+			<if test="comAdd != null">
+			 	COMPANY_ADDRESS = #{comAdd}
+			</if>
+			<if test="comType != null">
+			 	COMPANY_TYPE = #{comType}
+			</if>
+			<if test="comEstDate != null">
+			 	COMPANY_ESTABLISH_DATE = #{comEstDate}
+			</if>
+			<if test="comHomepage != null">
+			 	COMPANY_HOMEPAGE = #{comHomepage}
+			</if>
+			<if test="comIntroduce != null">
+		 		COMPANY_INTRODUCE = #{comIntroduce}
+			</if>
+		</set>
 		 WHERE COMPANY_NUMBER = #{comNo}
 	</update>
 	

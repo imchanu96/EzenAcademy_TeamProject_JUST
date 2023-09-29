@@ -69,58 +69,9 @@ public class CompanyMemberDaoImpl implements CompanyMemberDao {
 	}
 	
 	@Override
-	public void companyMembercInChargeNameUpdateOne(CompanyMemberDto companyMemberDto) {
+	public void companyInfoUpdateOne(CompanyMemberDto companyMemberDto) {
 		// TODO Auto-generated method stub
-		
-		sqlSession.update(namespace + "companyMembercInChargeNameUpdateOne", companyMemberDto);
-	}
-
-	@Override
-	public void companyMembercInChargeEmailUpdateOne(CompanyMemberDto companyMemberDto) {
-		// TODO Auto-generated method stub
-		sqlSession.update(namespace + "companyMembercInChargeEmailUpdateOne", companyMemberDto);
-	}
-
-	@Override
-	public void companyMembercInChargePhoneNumUpdateOne(CompanyMemberDto companyMemberDto) {
-		// TODO Auto-generated method stub
-		sqlSession.update(namespace + "companyMembercInChargePhoneNumUpdateOne", companyMemberDto);
-	}
-
-	@Override
-	public void companyMembercNameUpdateOne(CompanyMemberDto companyMemberDto) {
-		// TODO Auto-generated method stub
-		sqlSession.update(namespace + "companyMembercNameUpdateOne", companyMemberDto);
-	}
-	
-	@Override
-	public void companyMembercAddUpdateOne(CompanyMemberDto companyMemberDto) {
-		// TODO Auto-generated method stub
-		sqlSession.update(namespace + "companyMembercAddUpdateOne", companyMemberDto);
-	}
-
-	@Override
-	public void companyMembercTypeUpdateOne(CompanyMemberDto companyMemberDto) {
-		// TODO Auto-generated method stub
-		sqlSession.update(namespace + "companyMembercTypeUpdateOne", companyMemberDto);
-	}
-
-	@Override
-	public void companyMembercEstDateUpdateOne(CompanyMemberDto companyMemberDto) {
-		// TODO Auto-generated method stub
-		sqlSession.update(namespace + "companyMembercEstDateUpdateOne", companyMemberDto);
-	}
-
-	@Override
-	public void companyMembercHomepageUpdateOne(CompanyMemberDto companyMemberDto) {
-		// TODO Auto-generated method stub
-		sqlSession.update(namespace + "companyMembercHomepageUpdateOne", companyMemberDto);
-	}
-
-	@Override
-	public void companyMembercIntroduceUpdateOne(CompanyMemberDto companyMemberDto) {
-		// TODO Auto-generated method stub
-		sqlSession.update(namespace + "companyMembercIntroduceUpdateOne", companyMemberDto);
+		sqlSession.update(namespace + "companyInfoUpdateOne", companyMemberDto);
 	}
 
 	@Override

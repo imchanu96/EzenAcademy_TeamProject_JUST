@@ -184,12 +184,12 @@
 				<form action="loginCtr.do" method="post">
 				<div id="IDandPwd_Box">
 					<div class="ID_Box">
-						<input type="text" id="idInput" name="cCode" placeholder="사업자 등록번호 '-' 포함"
+						<input type="text" id="idInput" name="comCode" placeholder="사업자 등록번호 '-' 포함"
 							onfocus="idInputFocusFnc();" onblur="idInputBlurFnc();">
 					</div>
 					
 					<div class="Password_Box" style="margin: auto; ">
-						<input type="password" id="pwInput" name="cPwd" placeholder="비밀번호"
+						<input type="password" id="pwInput" name="comPwd" placeholder="비밀번호"
 							onfocus="pwInputFocusFnc();" onblur="pwInputBlurFnc();">
 					</div>
 				</div> <!-- IDandPwd_Box -->

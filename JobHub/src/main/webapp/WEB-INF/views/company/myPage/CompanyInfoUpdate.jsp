@@ -189,20 +189,23 @@
 					<div class="infoTitle">
 						회사 정보
 					</div>
-					<form action="cAddUpdateCtr.do" method="post">
+					
+					<c:if test="${requestScope.companyMemberDto.comAdd} != null">
+						<form action="cAddUpdateCtr.do" method="post">
 						<div class="companyInfoItemTitle">
 							회사 주소
 						</div>
 						
 						<div class="companyInfoItemContent">
-							<input type="text" name="cAdd" 
-								value="${sessionScope.companymemberDto.cAdd}">
+							<input type="text" name="comAdd" 
+								value="${sessionScope.companymemberDto.comAdd}">
 							
 						</div>
 						<div class="button">
 							<input type="submit" value="변경하기">
 						</div>
 					</form>
+					</c:if>
 				</div>
 					
 			</div>
