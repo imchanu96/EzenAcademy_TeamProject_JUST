@@ -7,32 +7,13 @@
 <head>
 <meta charset="EUC-KR">
 <title>개인회원 목록</title>
-<style type="text/css">
-	#tableDiv{
-		width: 70%;
-		float:left";
-	}
-	table{
-		border: 1px solid black;
-		border-collapse: collapse;
-		font-size: 23px;
-	}
-	th{
-		background: gray;
-		border: 1px solid black;
-	}
-	td{
-		border: 1px solid black;
-		font-size: 20px;
-		
-	}
-</style>
 
 <script type="text/javascript">
-	function permissionUpdateFnc(pNo) {
+	function persoanlPermissionUpdateFnc(pNo) {
 		location.href= "./personalUpdate.do?perNo=" + perNo;
 	}
 </script>
+<link rel="stylesheet" href="/JobHub/resources/css/AdminMemberList.css" type="text/css">
 </head>
 <body>	
 	
@@ -81,7 +62,7 @@
 					<td><fmt:formatDate pattern="yyyy-MM-dd" 
 						value="${personalDto.perModifyDate}" /></td>
 						<td><div><input type="button" value="삭제" 
-							onclick="permissionUpdateFnc(${personalDto.perNo});"></div></td>
+							onclick="persoanlPermissionUpdateFnc(${personalDto.perNo});"></div></td>
 				</tr>
 			</c:forEach>
 		</table>

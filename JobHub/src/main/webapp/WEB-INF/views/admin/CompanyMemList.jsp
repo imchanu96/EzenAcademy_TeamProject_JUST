@@ -7,32 +7,13 @@
 <head>
 <meta charset="EUC-KR">
 <title>기업회원 목록</title>
-<style type="text/css">
-	#tableDiv{
-		width: 70%;
-		float:left";
-	}
-	table{
-		border: 1px solid black;
-		border-collapse: collapse;
-		font-size: 23px;
-	}
-	th{
-		background: gray;
-		border: 1px solid black;
-	}
-	td{
-		border: 1px solid black;
-		font-size: 20px;
-		
-	}
-</style>
 
 <script type="text/javascript">
-	function permissionUpdateFnc(comNo) {
+	function companyPermissionUpdateFnc(comNo) {
 		location.href= "./companyUpdate.do?comNo=" + comNo;
 	}
 </script>
+<link rel="stylesheet" href="/JobHub/resources/css/AdminMemberList.css" type="text/css">
 </head>
 <body>	
 	
@@ -74,7 +55,7 @@
 					<td><fmt:formatDate pattern="yyyy-MM-dd" 
 						value="${companyMemberDto.comModDate}" /></td>
 						<td><div><input type="button" value="삭제" 
-							onclick="permissionUpdateFnc(${companyMemberDto.comNo});"></div></td>
+							onclick="companyPermissionUpdateFnc(${companyMemberDto.comNo});"></div></td>
 				</tr>
 			</c:forEach>
 		</table>

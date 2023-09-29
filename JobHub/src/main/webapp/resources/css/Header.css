@@ -11,7 +11,7 @@ a:hover {
 
 /* head form */
 #headerBox {
-	height: 130px;
+	height: 110px;
 	border-bottom: 1px solid #002C91;
 }
 
@@ -25,14 +25,14 @@ a:hover {
 	float: left;
     width: 200px;
     height: 55px;
-    margin: 30px 0px 30px 42px;
+    margin: 30px 0px 0px 42px;
 }
 /* main menu */
 #mainMenuBox {
 	float: left;
-	width: 750px;
-	height: 100px;
-	margin-left: 30px;
+    width: 720px;
+    height: 100px;
+    margin-left: 55px;
 }
 
 .mainMenuItem {
@@ -42,7 +42,7 @@ a:hover {
 	height: 60px;
 	text-align: center;
 	line-height: 60px;
-	font-size: 30px;
+	font-size: 26px;
 	font-weight: 600;
 }
 /* message */
@@ -56,7 +56,7 @@ a:hover {
 #myMenuBox {
 	float: left;
 	width: 220px;
-	height: 100px;
+	height: 90px;
 	margin: 10px 15px 0px 15px;
 	text-align: center;
 	border: 1px solid #fff;
@@ -82,21 +82,22 @@ a:hover {
 	display: block;
 	float: left;
 	width: 220px;
-	height: 40px;	
+	height: 30px;	
 	border-top: 1px solid #fff;
+	font-size: 14px;
 }
 .myPage {
 	float: left;
 	width: 110px;
-	height: 40px;
-	line-height: 35px;
+	height: 30px;
+	line-height: 28px;
 	text-align: center;
 }
 .logout {
 	float: left;
 	width: 109px;
-	height: 40px;
-	line-height: 6px;
+	height: 30px;
+	line-height: 1px;
 	text-align: center;
 	cursor: pointer;
 	border-left: 1px solid #fff;

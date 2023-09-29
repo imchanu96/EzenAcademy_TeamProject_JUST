@@ -210,7 +210,7 @@
 						     </fieldset>
 						</div>
 						<div class="starInputItem">
-							<span>워라밸</span>
+							<span>워라벨</span>
 							<fieldset class="rate">
 						         <input type="radio" id="rBal5" name="rBal" value=5>
 						         	<label for="rBal5" title="5점"></label>
