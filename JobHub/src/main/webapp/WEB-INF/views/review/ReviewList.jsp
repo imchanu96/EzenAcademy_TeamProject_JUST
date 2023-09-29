@@ -21,8 +21,8 @@
 	    window.addEventListener('resize', syncNavigationHeight);
 	});
 	
-	function comDetailViewFnc(cNo) {
-		var url = 'http://localhost:9080/JobHub/review/companyDetail.do?cNo=' + cNo;
+	function comDetailViewFnc(comNo) {
+		var url = 'http://localhost:9080/JobHub/review/companyDetail.do?comNo=' + comNo;
 		
 		location.href = url;
 	}
@@ -37,14 +37,14 @@
 		showMoreBoxObj.style.display = "none";
 	}
 	
-	function goReviewUpdateFnc(rNo) {
+	function goReviewUpdateFnc(reviewNo) {
 		
-		location.href = 'http://localhost:9080/JobHub/review/update.do?rNo=' + rNo;
+		location.href = 'http://localhost:9080/JobHub/review/update.do?reviewNo=' + reviewNo;
 	}
 	
-	function goReviewDeleteFnc(rNo, cNo) {
+	function goReviewDeleteFnc(reviewNo, comNo) {
 		
-		location.href = 'http://localhost:9080/JobHub/review/delete.do?rNo=' + rNo + '&cNo=' + cNo;
+		location.href = 'http://localhost:9080/JobHub/review/delete.do?reviewNo=' + reviewNo + '&comNo=' + comNo;
 	}
 	
 </script>
@@ -68,19 +68,19 @@
 				<div id="companyLogo"></div>
 				<div id="companySummary">
 					<div id="companyNameBox">
-						<span id="companyName">${companyMemberDto.cName}</span>
+						<span id="companyName">${companyMemberDto.comName}</span>
 					</div>
 					<div id="companyTypeBox">
-						<span id="companyType">${companyMemberDto.cIntroduce}</span>
+						<span id="companyType">${companyMemberDto.comIntroduce}</span>
 					</div>
 					<div id="companyHomepageBox">
-						<a id="companyHomepage" href="http://${companyMemberDto.cHomepage}" target="_blank">${companyMemberDto.cHomepage}</a>
+						<a id="companyHomepage" href="http://${companyMemberDto.comHomepage}" target="_blank">${companyMemberDto.comHomepage}</a>
 					</div>
 				</div>
 				<div id="companyDetail">
-					<button type="button" onclick="comDetailViewFnc(${pagingMap.cNo});">자세히 보기</button>
+					<button type="button" onclick="comDetailViewFnc(${pagingMap.comNo});">자세히 보기</button>
 					<form action="./companyDetail.do" method="get">
-						<input type="text" value="${companyMemberDto.cNo}" style="display: none;">
+						<input type="text" value="${companyMemberDto.comNo}" style="display: none;">
 					</form>
 				</div>
 			</div>
@@ -142,7 +142,7 @@
 							<span>
 								<c:forEach var="i" begin="1" end="5">
 								    <i class="fas fa-star"
-								    	style="color: ${i <= reviewDto.rSal ? '#2d65f2' : '#ddd'};"></i>
+								    	style="color: ${i <= reviewDto.reviewSal ? '#2d65f2' : '#ddd'};"></i>
 								</c:forEach>
 							</span>
 						</div>
@@ -153,7 +153,7 @@
 							<span>
 								<c:forEach var="i" begin="1" end="5">
 								    <i class="fas fa-star"
-								    	style="color: ${i <= reviewDto.rWel ? '#2d65f2' : '#ddd'};"></i>
+								    	style="color: ${i <= reviewDto.reviewWel ? '#2d65f2' : '#ddd'};"></i>
 								</c:forEach>
 							</span>
 						</div>
@@ -164,7 +164,7 @@
 							<span>
 								<c:forEach var="i" begin="1" end="5">
 								    <i class="fas fa-star"
-								  	  style="color: ${i <= reviewDto.rEnv ? '#2d65f2' : '#ddd'};"></i>
+								  	  style="color: ${i <= reviewDto.reviewEnv ? '#2d65f2' : '#ddd'};"></i>
 								</c:forEach>
 							</span>
 						</div>
@@ -175,7 +175,7 @@
 							<span>
 								<c:forEach var="i" begin="1" end="5">
 								    <i class="fas fa-star"
-								    	style="color: ${i <= reviewDto.rBoss ? '#2d65f2' : '#ddd'};"></i>
+								    	style="color: ${i <= reviewDto.reviewBoss ? '#2d65f2' : '#ddd'};"></i>
 								</c:forEach>
 							</span>
 						</div>
@@ -186,32 +186,32 @@
 							<span>
 								<c:forEach var="i" begin="1" end="5">
 								    <i class="fas fa-star"
-								    	style="color: ${i <= reviewDto.rBal ? '#2d65f2' : '#ddd'};"></i>
+								    	style="color: ${i <= reviewDto.reviewBal ? '#2d65f2' : '#ddd'};"></i>
 								</c:forEach>
 							</span>
 						</div>
 					</div>
 					<div class="reviewTitleBox">
 						<div>
-							<span>${reviewDto.rTitle}</span>
+							<span>${reviewDto.reviewTitle}</span>
 						</div>
 					</div>
 					<div class="reviewContentBox">
-						<span>${reviewDto.rContent}</span>
+						<span>${reviewDto.reviewContent}</span>
 					</div>
-					reviewDto.rNo = ${reviewDto.rNo}
+					reviewDto.reviewNo = ${reviewDto.reviewNo}
 					<div>
 					</div>
-					<c:if test="${sessionScope.personalMemberDto.pNo == reviewDto.rPNo}">
+					<c:if test="${sessionScope.personalMemberDto.perNo == reviewDto.perNo}">
 						<input type="button" class="reviewShowMoreBox" value="..." onclick="openShowMoreFnc();">
 						<div id="showMoreOptionBox">
 							<div class="showMoreOptionItems" onclick="closeShowMoreFnc();">
 								X
 							</div>
-							<div class="showMoreOptionItems" onclick="goReviewUpdateFnc(${reviewDto.rNo});">
+							<div class="showMoreOptionItems" onclick="goReviewUpdateFnc(${reviewDto.reviewNo});">
 								수정하기
 							</div>
-							<div class="showMoreOptionItems" onclick="goReviewDeleteFnc(${reviewDto.rNo}, ${pagingMap.cNo});">
+							<div class="showMoreOptionItems" onclick="goReviewDeleteFnc(${reviewDto.reviewNo}, ${pagingMap.comNo});">
 								삭제하기
 							</div>
 						</div>
@@ -223,7 +223,7 @@
 				<jsp:param value="${pagingMap}" name="pagingMap"/>
 			</jsp:include>
 			
-			<form action="./list.do?cNo=${pagingMap.cNo}" id="pagingForm" method="post">
+			<form action="./list.do?comNo=${pagingMap.comNo}" id="pagingForm" method="post">
 				<input type="hidden" id="curPage" name="curPage"
 					value="${pagingMap.reviewPaging.curPage}">
 			</form>

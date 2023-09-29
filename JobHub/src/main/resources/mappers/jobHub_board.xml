@@ -50,7 +50,7 @@
 		INSERT INTO BOARD
 			(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE, BOARD_MODIFY_DATE
 			, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-		VALUES(BOARD_NUMBER_SEQ.NEXTVAL, #{boardWriter}, #{boardTag}, #{boardTitle}, #{boardContent}, SYSDATE, SYSDATE, #{pNo}, 0, 0)
+		VALUES(BOARD_NUMBER_SEQ.NEXTVAL, #{boardWriter}, #{boardTag}, #{boardTitle}, #{boardContent}, SYSDATE, SYSDATE, #{perNo}, 0, 0)
 	</insert>
 	
 	<select id="boardSelectOne" parameterType="int" resultMap="boardResultMap">

@@ -131,14 +131,14 @@ a:hover {
 <!-- 					</div> -->
 <!-- 				</div> -->
 
-				<c:if test="${sessionScope.personalMemberDto.pId ne null}">
+				<c:if test="${sessionScope.personalMemberDto.perId ne null}">
 					<div class="myMenuBox">
 						<div class="memberType">
 							<span>개인회원</span>
 						</div>
 						<div class="memberInfo">
 							<a href="<%=request.getContextPath()%>/personal/logout.do">
-								${personalMemberDto.pId}
+								${personalMemberDto.perId}
 							</a>
 							님
 						</div>
@@ -162,7 +162,7 @@ a:hover {
 						<a href="../company/searchPerson.do"> 인재 조회 </a>
 					</div>
 					<div class="mainMenuItem">
-						<a href="../review/list.do?cNo=${companyMemberDto.cNo}"> 기업 리뷰 </a>
+						<a href="../review/list.do?comNo=${companyMemberDto.comNo}"> 기업 리뷰 </a>
 					</div>
 				</div>
 
@@ -175,14 +175,14 @@ a:hover {
 <!-- 					</div> -->
 <!-- 				</div> -->
 
-				<c:if test="${sessionScope.companyMemberDto.cCode ne null}">
+				<c:if test="${sessionScope.companyMemberDto.comCode ne null}">
 					<div class="myMenuBox">
 						<div class="memberType">
 							<span>기업회원</span>
 						</div>
 						<div class="memberInfo">
 							<a href="<%=request.getContextPath()%>/personal/logout.do">
-								${companyMemberDto.cName}
+								${companyMemberDto.comName}
 							</a>
 							님
 						</div>

@@ -6,13 +6,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>${boardDto.bTitle} - JobHub</title>
+<title>${boardDto.boardTitle} - JobHub</title>
 	<link href="/JobHub/resources/css/Board.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 	function deleteFnc() {
 		if (confirm("정말 삭제하시겠습니까?") == true){
 			//true는 확인버튼을 눌렀을 때 코드 작성
-			location.href = './delete.do?no=${boardDto.bNo}';
+			location.href = './delete.do?no=${boardDto.boardNo}';
 			alert("삭제되었습니다.");
 		}else{
 			// false는 취소버튼을 눌렀을 때, 취소됨
@@ -31,9 +31,9 @@
 				
 		<div id="content">
 			<form action="./update.do" method="get">
-				<input type='hidden' name='no' value='${boardDto.bNo}'>
+				<input type='hidden' name='no' value='${boardDto.boardNo}'>
 				<div id="viewBox">
-					<c:if test="${boardDto.bWriter eq personalMemberDto.pNickname}">
+					<c:if test="${boardDto.boardWriter eq personalMemberDto.perNickname}">
 						<button type='submit'>수정</button>
 						<button type="button" onclick='deleteFnc()'>삭제</button>
 					</c:if>
@@ -41,24 +41,24 @@
 				<div id="boardView">
 					<table>
 						<tr>
-							<td colspan="5"><h3>제목: ${boardDto.bTitle}</h3></td>
+							<td colspan="5"><h3>제목: ${boardDto.boardTitle}</h3></td>
 						</tr>
 						<tr>
-							<td>${boardDto.bWriter}</td>
+							<td>${boardDto.boardWriter}</td>
 							<!-- 회사명 임시로 bTag에 담음 -->
-							<td>${boardDto.bTag}</td>
+							<td>${boardDto.boardTag}</td>
 							<td>
-								<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.bCreDate}"/>
+								<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.boardCreDate}"/>
 							</td>
 							<td>
-								조회수 ${boardDto.bViews}
+								조회수 ${boardDto.boardViews}
 							</td>
 							<td>
-								추천수 ${boardDto.bLikeCount}
+								추천수 ${boardDto.boardLikeCount}
 							</td>
 						</tr>
 						<tr>
-							<td colspan="5">${boardDto.bContent}</td>
+							<td colspan="5">${boardDto.boardContent}</td>
 						</tr>
 					</table>
 				</div>

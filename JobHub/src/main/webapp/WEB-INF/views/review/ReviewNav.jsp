@@ -7,9 +7,9 @@
 <title>Insert title here</title>
 <script type="text/javascript">
 	
-	function reviewWriteFnc(pNo) {
+	function reviewWriteFnc(perNo) {
 		
-		var jsonData = { "pNo" : pNo};
+		var jsonData = { "perNo" : perNo};
 		
 		$.ajax({
 			url: "./countPersonalReview.do",
@@ -19,7 +19,7 @@
 			success: function (data) {
 					
 					if (data == 0) {
-						location.href = 'http://localhost:9080/JobHub/review/add.do?pNo=' + pNo;
+						location.href = 'http://localhost:9080/JobHub/review/add.do?perNo=' + perNo;
 					} else if (data != 0) {
 						alert("이미 리뷰를 작성하셨습니다.");
 					}
@@ -47,7 +47,7 @@
 				<a href="http://localhost:9080/JobHub/review/companyMemberList.do">리뷰 조회</a>
 			</div>
 			<div class="smallMenuItem">
-				<a href="#" onclick="reviewWriteFnc(${sessionScope.personalMemberDto.pNo});">리뷰 작성</a>
+				<a href="#" onclick="reviewWriteFnc(${sessionScope.personalMemberDto.perNo});">리뷰 작성</a>
 			</div>
 		</div>
 	</div>

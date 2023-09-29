@@ -94,12 +94,12 @@
 		
 		<div id="content">
 			<form id="addForm" action="./addCtr.do" method='post'>
-				<input type='hidden' name='bWriter' value='${personalMemberDto.getpNickname()}'>
-				<input type='hidden' name='pNo' value='${personalMemberDto.getpNo()}'>
+				<input type='hidden' name='boardWriter' value='${personalMemberDto.perNickname}'>
+				<input type='hidden' name='perNo' value='${personalMemberDto.perNo}'>
 				<!-- 회사명 임시로 bTag에 담음 -->
-				<input type='hidden' name='bTag' value='${personalMemberDto.getpCom()}'>
+				<input type='hidden' name='boardTag' value='${personalMemberDto.perCom}'>
 				<div id="titleInputBox">
-					<input name="bTitle" id="titleInput" type="text"
+					<input name="boardTitle" id="titleInput" type="text"
 						placeholder="제목을 입력해주세요(50자 이내)"
 						onfocus="titleFocusFnc();" onblur="titleBlurFnc();">
 					<div class="errorMsg" id="titleErrorMsg">
@@ -108,7 +108,7 @@
 				</div>
 
 				<div id="contentInputBox">
-					<textarea id="contentInput" name="bContent"
+					<textarea id="contentInput" name="boardContent"
 						placeholder="내용을 입력해주세요."
 						onfocus="contentFocusFnc();"
 						onblur="contentBlurFnc();"></textarea>

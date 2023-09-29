@@ -17,8 +17,8 @@ public class ReviewDto {
 	private double reviewAvg;
 	private Date reviewCreDate;
 	private Date reviewModDate;
-	private int reviewPNo;
-	private int reviewCNo;
+	private int perNo;
+	private int comNo;
 	
 	public ReviewDto() {
 		super();
@@ -28,7 +28,7 @@ public class ReviewDto {
 	public ReviewDto(int reviewNo, String reviewTitle, String reviewContent
 			, int reviewSal, int reviewWel, int reviewEnv, int reviewBoss
 			, int reviewBal, String reviewGood, String reviewBad, double reviewAvg
-			, Date reviewCreDate, Date reviewModDate, int reviewPNo, int reviewCNo) {
+			, Date reviewCreDate, Date reviewModDate, int perNo, int comNo) {
 		super();
 		this.reviewNo = reviewNo;
 		this.reviewTitle = reviewTitle;
@@ -43,8 +43,8 @@ public class ReviewDto {
 		this.reviewAvg = reviewAvg;
 		this.reviewCreDate = reviewCreDate;
 		this.reviewModDate = reviewModDate;
-		this.reviewPNo = reviewPNo;
-		this.reviewCNo = reviewCNo;
+		this.perNo = perNo;
+		this.comNo = comNo;
 	}
 
 	public int getReviewNo() {
@@ -151,35 +151,36 @@ public class ReviewDto {
 		this.reviewModDate = reviewModDate;
 	}
 
-	public int getReviewPNo() {
-		return reviewPNo;
+	public int getPerNo() {
+		return perNo;
 	}
 
-	public void setReviewPNo(int reviewPNo) {
-		this.reviewPNo = reviewPNo;
+	public void setPerNo(int perNo) {
+		this.perNo = perNo;
 	}
 
-	public int getReviewCNo() {
-		return reviewCNo;
+	public int getComNo() {
+		return comNo;
 	}
 
-	public void setReviewCNo(int reviewCNo) {
-		this.reviewCNo = reviewCNo;
+	public void setComNo(int comNo) {
+		this.comNo = comNo;
 	}
 
 	@Override
 	public String toString() {
 		return "ReviewDto [reviewNo=" + reviewNo + ", reviewTitle=" + reviewTitle
-				+ ", reviewContent=" + reviewContent + ", reviewSal=" + reviewSal
-				+ ", reviewWel=" + reviewWel + ", reviewEnv=" + reviewEnv
-				+ ", reviewBoss=" + reviewBoss + ", reviewBal=" + reviewBal
+				+ ", reviewContent=" + reviewContent
+				+ ", reviewSal=" + reviewSal + ", reviewWel=" + reviewWel
+				+ ", reviewEnv=" + reviewEnv + ", reviewBoss="
+				+ reviewBoss + ", reviewBal=" + reviewBal
 				+ ", reviewGood=" + reviewGood + ", reviewBad=" + reviewBad
-				+ ", reviewAvg=" + reviewAvg + ", reviewCreDate=" + reviewCreDate
-				+ ", reviewModDate=" + reviewModDate + ", reviewPNo=" + reviewPNo
-				+ ", reviewCNo=" + reviewCNo + "]";
+				+ ", reviewAvg=" + reviewAvg
+				+ ", reviewCreDate=" + reviewCreDate
+				+ ", reviewModDate=" + reviewModDate
+				+ ", perNo=" + perNo + ", comNo=" + comNo + "]";
 	}
-	
-	
 
+	
 	
 }

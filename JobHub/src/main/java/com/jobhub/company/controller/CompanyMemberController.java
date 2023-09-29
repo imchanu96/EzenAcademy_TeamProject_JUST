@@ -183,17 +183,17 @@ public class CompanyMemberController {
 
 
 	@RequestMapping(value = "/company/companyInfoUpdate.do", method = RequestMethod.GET)
-	public String cIntroduceUpdate(CompanyMemberDto companyMemberDto, HttpSession session, Model model) {
+	public String companyInfoUpdate(CompanyMemberDto companyMemberDto, Model model) {
 		log.info("Welecom CompanyInfoUpdate! companyMemberDto" + companyMemberDto);
 
-		model.addAttribute("companyMemberDto", companyMemberDto);
+		model.addAttribute("companyMemberDtoUpdate", companyMemberDto);
 
 		return "company/myPage/CompanyInfoUpdate";
 	}
 
 
 	@RequestMapping(value = "/company/CompanyInfoUpdateCtr.do", method = RequestMethod.POST)
-	public String cIntroduce(CompanyMemberDto companyMemberDto, HttpSession session, Model model) {
+	public String CompanyInfoUpdateCtr(CompanyMemberDto companyMemberDto, HttpSession session, Model model) {
 		log.info("Welecome companyInfoUpdateCtr" + companyMemberDto);
 
 

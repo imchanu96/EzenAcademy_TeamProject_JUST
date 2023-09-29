@@ -85,13 +85,8 @@
 						회사명
 					</div>
 					
-<<<<<<< HEAD
 					<div class="companyInfoItemContent">
 						${sessionScope.companyMemberDto.comName}
-=======
-					<div class="companyInfoItemContentUpdate">
-						${sessionScope.companyMemberDto.cName}
->>>>>>> branch 'main' of https://github.com/noohij/Ezen_TeamProject_JUST.git
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
@@ -104,13 +99,8 @@
 					<div class="companyInfoItemTitle">
 						회사 주소
 					</div>
-<<<<<<< HEAD
 					<div class="companyInfoItemContent">
 						${sessionScope.companyMemberDto.comAdd}
-=======
-					<div class="companyInfoItemContentUpdate">
-						${sessionScope.companyMemberDto.cAdd}
->>>>>>> branch 'main' of https://github.com/noohij/Ezen_TeamProject_JUST.git
 					</div>
 					<div class="arrowBox">
 						<a href="../company/companyInfoUpdate.do?comNo=
@@ -122,13 +112,8 @@
 					<div class="companyInfoItemTitle">
 						업종
 					</div>
-<<<<<<< HEAD
 					<div class="companyInfoItemContent">
 						${sessionScope.companyMemberDto.comType}
-=======
-					<div class="companyInfoItemContentUpdate">
-						${sessionScope.companyMemberDto.cType}
->>>>>>> branch 'main' of https://github.com/noohij/Ezen_TeamProject_JUST.git
 					</div>
 					<div class="arrowBox">
 						<a href="<%=request.getContextPath()%>
@@ -141,13 +126,9 @@
 					<div class="companyInfoItemTitle">
 						설립
 					</div>
-<<<<<<< HEAD
+
 					<div class="companyInfoItemContent">
 						<fmt:formatDate value="${sessionScope.companyMemberDto.comEstDate}"
-=======
-					<div class="companyInfoItemContentUpdate">
-						<fmt:formatDate value="${sessionScope.companyMemberDto.cEstDate}"
->>>>>>> branch 'main' of https://github.com/noohij/Ezen_TeamProject_JUST.git
 							pattern="YYYY-MM-dd"/>
 					</div>
 					<div class="arrowBox">
@@ -162,13 +143,8 @@
 					<div class="companyInfoItemTitle">
 						홈페이지
 					</div>
-<<<<<<< HEAD
 					<div class="companyInfoItemContent">
 						${sessionScope.companyMemberDto.comHomepage}
-=======
-					<div class="companyInfoItemContentUpdate">
-						${sessionScope.companyMemberDto.cHomepage}
->>>>>>> branch 'main' of https://github.com/noohij/Ezen_TeamProject_JUST.git
 					</div>
 					</div>
 					<div class="arrowBox">

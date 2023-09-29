@@ -11,10 +11,10 @@
 	
 	<script type="text/javascript">
 	
-	function writeFnc() {
-		if("${personalMemberDto.perNo()}" != ""){
+	function writeFnc(perNo) {
+		if(perNo != ""){
 			location.href='./add.do';
-		} else if ("${personalMemberDto.perNo()}" == ""){
+		} else if (perNo == ""){
 			location.href='../personal/login.do';
 		}
 	}
@@ -31,7 +31,7 @@
 		<div id="content">
 			<c:if test="${not empty personalMemberDto}">
 				<div id="writeBox">
-					<button type="button" onclick="writeFnc();">글쓰기</button>
+					<button type="button" onclick="writeFnc(${personalDto.perNo});">글쓰기</button>
 				</div>
 			</c:if>
 			<div>
@@ -52,16 +52,16 @@
 							<c:otherwise>
 								<c:forEach var="boardDto" items="${boardList}">
 								<tr>
-									<td>${boardDto.bNo}</td>
-									<td><a href='./listOne.do?no=${boardDto.bNo}'>${boardDto.bTitle}</a></td>
-									<td>${boardDto.bWriter}</td>
+									<td>${boardDto.boardNo}</td>
+									<td><a href='./listOne.do?no=${boardDto.boardNo}'>${boardDto.boardTitle}</a></td>
+									<td>${boardDto.boardWriter}</td>
 									<!-- 회사명 임시로 bTag에 담음 -->
-									<td>${boardDto.bTag}</td>
+									<td>${boardDto.boardTag}</td>
 									<td>
-	<%-- 									<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.bCreDate}"/> --%>
-										<fmt:formatDate pattern="yyyy-MM-dd" value="${boardDto.bCreDate}"/>
+	<%-- 									<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.boardCreDate}"/> --%>
+										<fmt:formatDate pattern="yyyy-MM-dd" value="${boardDto.boardCreDate}"/>
 									</td>
-									<td>${boardDto.bViews}</td>
+									<td>${boardDto.boardViews}</td>
 								</tr>
 								</c:forEach>
 							</c:otherwise>
@@ -77,14 +77,14 @@
 							<c:otherwise>
 								<c:forEach var="boardDto" items="${boardList}">
 								<tr class="blur">
-									<td>${boardDto.bNo}</td>
-									<td>${boardDto.bTitle}</td>
-									<td>${boardDto.bWriter}</td>
+									<td>${boardDto.boardNo}</td>
+									<td>${boardDto.boardTitle}</td>
+									<td>${boardDto.boardWriter}</td>
 									<td>
-	<%-- 									<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.bCreDate}"/> --%>
-										<fmt:formatDate pattern="yyyy-MM-dd" value="${boardDto.bCreDate}"/>
+	<%-- 									<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.boardCreDate}"/> --%>
+										<fmt:formatDate pattern="yyyy-MM-dd" value="${boardDto.boardCreDate}"/>
 									</td>
-									<td>${boardDto.bViews}</td>
+									<td>${boardDto.boardViews}</td>
 								</tr>
 								</c:forEach>
 							</c:otherwise>

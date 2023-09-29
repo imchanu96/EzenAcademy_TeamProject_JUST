@@ -61,7 +61,7 @@
 			
 		function cancleFnc() {
 			if (confirm("정말 취소하시겠습니까?") == true){
-				location.href = './listOne.do?no=${boardDto.bNo}';
+				location.href = './listOne.do?no=${boardDto.boardNo}';
 				alert("취소되었습니다.");
 			}else{
 				return;
@@ -79,19 +79,19 @@
 	
 		<div id="content">
 			<form id="updateForm" action="./updateCtr.do" method='post'>
-				<input type='hidden' name='bNo' value='${boardDto.bNo}'>
+				<input type='hidden' name='boardNo' value='${boardDto.boardNo}'>
 				<div id="titleInputBox">
-					<input name="bTitle" id="titleInput" type="text" 
-						value='${boardDto.bTitle}' onfocus="titleFocusFnc();" onblur="titleBlurFnc();">
+					<input name="boardTitle" id="titleInput" type="text" 
+						value='${boardDto.boardTitle}' onfocus="titleFocusFnc();" onblur="titleBlurFnc();">
 					<div class="errorMsg" id="titleErrorMsg">
 						최대 20자 이내로 입력해주세요.
 					</div>
 				</div>
 
 				<div id="contentInputBox">
-					<textarea id="contentInput" name="bContent"
+					<textarea id="contentInput" name="boardContent"
 						onfocus="contentFocusFnc();"
-						onblur="contentBlurFnc();">${boardDto.bContent}</textarea>
+						onblur="contentBlurFnc();">${boardDto.boardContent}</textarea>
 					<div class="errorMsg" id="contentErrorMsg">
 						최대 200자 이내로 입력해주세요.
 					</div>

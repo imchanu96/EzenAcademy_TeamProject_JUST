@@ -40,18 +40,18 @@
 					<div id="companyLogo"></div>
 					<div id="companySummary">
 						<div id="companyNameBox">
-							<a id="companyName" href="/JobHub/review/list.do?cNo=${companyMemberList.cNo}">
-								${companyMemberList.cName} 
+							<a id="companyName" href="/JobHub/review/list.do?comNo=${companyMemberList.comNo}">
+								${companyMemberList.comName} 
 							</a>
 						</div>
 						<div id="companyTypeBox">
 							<span id="companyType">
-								${companyMemberList.cType}
+								${companyMemberList.comType}
 							</span>
 						</div>
 						<div id="companyHomepageBox">
-							<a id="companyHomepage" href="http://${companyMemberList.cHomepage}" target="_blank">
-								${companyMemberList.cHomepage}
+							<a id="companyHomepage" href="http://${companyMemberList.comHomepage}" target="_blank">
+								${companyMemberList.comHomepage}
 							</a>
 						</div>
 					</div>
