@@ -29,22 +29,18 @@ public class CompanyMemberDto {
 	private int comPermission;
 	private Date comCreDate;
 	private Date comModDate;
-	private Date connTime;
-	private Date disconnTime;
+	private Date comConnTime;
+	private Date comDisconnTime;
 	
 	public CompanyMemberDto() {
 		super();
 	}
 
-	public CompanyMemberDto(int comNo, String comName, String comAdd
-			, String comType, Date comEstDate
-			, String comHomepage, String comIntroduce
-			, String comId, String comPwd, String comCode, String comLicense 
-			, String comLogo, String comRev, String comEmp
-			, String comPrName, String comInChargeName
-			, String comInChargeEmail, String comInChargePhoneNum
-			, String comPrefer, int comPermission, Date comCreDate,
-			Date comModDate, Date connTime, Date disconnTime) {
+	public CompanyMemberDto(int comNo, String comName, String comAdd, String comType, Date comEstDate,
+			String comHomepage, String comIntroduce, String comId, String comPwd, String comCode, String comLicense,
+			String comLogo, String comRev, String comEmp, String comPrName, String comInChargeName,
+			String comInChargeEmail, String comInChargePhoneNum, String comPrefer, int comPermission, Date comCreDate,
+			Date comModDate, Date comConnTime, Date comDisconnTime) {
 		super();
 		this.comNo = comNo;
 		this.comName = comName;
@@ -68,8 +64,8 @@ public class CompanyMemberDto {
 		this.comPermission = comPermission;
 		this.comCreDate = comCreDate;
 		this.comModDate = comModDate;
-		this.connTime = connTime;
-		this.disconnTime = disconnTime;
+		this.comConnTime = comConnTime;
+		this.comDisconnTime = comDisconnTime;
 	}
 
 	public int getComNo() {
@@ -248,38 +244,33 @@ public class CompanyMemberDto {
 		this.comModDate = comModDate;
 	}
 
-	public Date getConnTime() {
-		return connTime;
+	public Date getComConnTime() {
+		return comConnTime;
 	}
 
-	public void setConnTime(Date connTime) {
-		this.connTime = connTime;
+	public void setComConnTime(Date comConnTime) {
+		this.comConnTime = comConnTime;
 	}
 
-	public Date getDisconnTime() {
-		return disconnTime;
+	public Date getComDisconnTime() {
+		return comDisconnTime;
 	}
 
-	public void setDisconnTime(Date disconnTime) {
-		this.disconnTime = disconnTime;
+	public void setComDisconnTime(Date comDisconnTime) {
+		this.comDisconnTime = comDisconnTime;
 	}
 
 	@Override
 	public String toString() {
-		return "CompanyMemberDto [comNo=" + comNo + ", comName=" + comName + ", comAdd="
-				+ comAdd + ", comType=" + comType + ", comEstDate=" + comEstDate
-				+ ", comHomepage=" + comHomepage + ", comIntroduce="
-				+ comIntroduce + ", comId=" + comId + ", comPwd=" + comPwd
-				+ ", comCode=" + comCode + ", comLicense=" + comLicense
-				+ ", comLogo=" + comLogo + ", comRev=" + comRev + ", comEmp=" + comEmp
-				+ ", comPrName=" + comPrName + ", comInChargeName=" + comInChargeName
-				+ ", comInChargeEmail=" + comInChargeEmail
-				+ ", comInChargePhoneNum=" + comInChargePhoneNum + ""
-				+ ", comPrefer=" + comPrefer + ", comPermission=" + comPermission
-				+ ", comCreDate=" + comCreDate + ", comModDate=" + comModDate
-				+ ", connTime=" + connTime + ", disconnTime=" + disconnTime + "]";
+		return "CompanyMemberDto [comNo=" + comNo + ", comName=" + comName + ", comAdd=" + comAdd + ", comType="
+				+ comType + ", comEstDate=" + comEstDate + ", comHomepage=" + comHomepage + ", comIntroduce="
+				+ comIntroduce + ", comId=" + comId + ", comPwd=" + comPwd + ", comCode=" + comCode + ", comLicense="
+				+ comLicense + ", comLogo=" + comLogo + ", comRev=" + comRev + ", comEmp=" + comEmp + ", comPrName="
+				+ comPrName + ", comInChargeName=" + comInChargeName + ", comInChargeEmail=" + comInChargeEmail
+				+ ", comInChargePhoneNum=" + comInChargePhoneNum + ", comPrefer=" + comPrefer + ", comPermission="
+				+ comPermission + ", comCreDate=" + comCreDate + ", comModDate=" + comModDate + ", comConnTime="
+				+ comConnTime + ", comDisconnTime=" + comDisconnTime + "]";
 	}
-	
-	
+
 	
 }
