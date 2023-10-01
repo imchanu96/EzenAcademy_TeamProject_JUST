@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="com.jobhub.recommend">
+
+	<resultMap type="personalMemberDto" id="personalResultMap">
+		<id column="PERSONAL_NUMBER" property="perNo" />
+		<result column="PERSONAL_NAME" property="perName" />
+		<result column="PERSONAL_ID" property="perId" />
+		<result column="PERSONAL_PASSWORD" property="perPwd" />
+		<result column="PERSONAL_PHONENUMBER" property="perPhoneNum" />
+		<result column="PERSONAL_COMPANY" property="perCom" />
+		<result column="PERSONAL_NICKNAME" property="perNickname" />
+		<result column="PERSONAL_PROFILE" property="perProfile" />
+		<result column="PERSONAL_EMAIL" property="perEmail" />
+		<result column="PERSONAL_HIRE_DATE" property="perHireDate"
+			javaType="java.util.Date" />
+		<result column="PERSONAL_KEYWORD" property="perKeyword" />
+		<result column="PERSONAL_TEMPORARILY" property="perTemporarily" />
+		<result column="PERMISSION" property="perPermission" />
+		<result column="PERSONAL_CREATE_DATE" property="perCreateDate" 
+			javaType="java.util.Date" />
+		<result column="PERSONAL_MODIFY_DATE" property="perModifyDate" 
+			javaType="java.util.Date" />
+		<result column="CONNECTION_TIME" property="perConnectionTime" 
+			javaType="java.util.Date" />
+		<result column="DISCONNECTION_TIME" property="perDisconnectionTime" 
+			javaType="java.util.Date" />
+	</resultMap>
+	
+	<resultMap type="companyMemberDto" id="companyMemberResultMap">
+		<id column="COMPANY_NUMBER" property="comNo" />
+		<result column="COMPANY_NAME" property="comName" />
+		<result column="COMPANY_ADDRESS" property="comAdd" />
+		<result column="COMPANY_TYPE" property="comType" />
+		<result column="COMPANY_ESTABLISH_DATE" property="comEstDate" 
+		javaType="java.util.Date" />
+		<result column="COMPANY_HOMEPAGE" property="comHomepage" />
+		<result column="COMPANY_INTRODUCE" property="comIntroduce" />
+		<result column="COMPANY_ID" property="comId" />
+		<result column="COMPANY_PASSWORD" property="comPwd" />
+		<result column="COMPANY_CODE" property="comCode" />
+		<result column="COMPANY_LICENSE" property="comLicense" />
+		<result column="COMPANY_LOGO" property="comLogo" />
+		<result column="COMPANY_PRESIDENT_NAME" property="comPrName" />
+		<result column="COMPANY_INCHARGE_NAME" property="comInChargeName" />
+		<result column="COMPANY_INCHARGE_EMAIL" property="comInChargeEmail" />
+		<result column="COMPANY_INCHARGE_PHONENUMBER" property="comInChargePhoneNum" />
+		<result column="COMPANY_PREFER" property="comPrefer" />
+		<result column="PERMISSION" property="comPermission" />
+		<result column="COMPANY_CREATE_DATE" property="comCreDate" />
+		<result column="COMPANY_MODIFY_DATE" property="comModDate" />
+		<result column="CONNECTION_TIME" property="comConnTime" />
+		<result column="DISCONNECTION_TIME" property="comDisconnTime" />
+	</resultMap>
+
+	<resultMap type="resumeDto" id="resumeResultMap">
+		<id column="RESUME_NUMBER" property="resumeNo" />
+		<result column="RESUME_PERSONAL_NAME" property="resumeName"/>
+		<result column="RESUME_PERSONAL_BIRTHDAY" property="resumeBirthday"/>
+		<result column="RESUME_PERSONAL_EMAIL" property="resumeEmail"/>
+		<result column="RESUME_PERSONAL_PHONENUMBER" property="resumePhoneNum"/>
+		<result column="RESUME_PERSONAL_ADDRESS" property="resumeAdd"/>
+		<result column="RESUME_PERSONAL_MARRY" property="resumeMarry"/>
+		<result column="RESUME_PERSONAL_GENDER" property="resumeGender"/>
+		<result column="RESUME_PERSONAL_MILITARY" property="resumeMilitary"/>
+		<result column="RESUME_EDUCATION_BEGIN_DATE" property="resumeEduBeginDate"/>
+		<result column="RESUME_EDUCATION_END_DATE" property="resumeEduEndDate"/>
+		<result column="RESUME_EDUCATION_NAME" property="resumeEduName"/>
+		<result column="RESUME_EDUCATION_MAJOR" property="resumeEduMajor"/>
+		<result column="RESUME_EDUCATION_LOCATION" property="resumeEduLoc"/>
+		<result column="RESUME_EDUCATION_GRADE" property="resumeEduGrade"/>
+		<result column="RESUME_EDUCATION_GRADUATE" property="resumeEduGraduate"/>
+		<result column="RESUME_CAREER_BEGIN_DATE" property="resumeCareerBeginDate"/>
+		<result column="RESUME_CAREER_END_DATE" property="resumeCareerEndDate"/>
+		<result column="RESUME_CAREER_NAME" property="resumeCareerName"/>
+		<result column="RESUME_CAREER_POSITION" property="resumeCareerPos"/>
+		<result column="RESUME_CAREER_LOCATION" property="resumeCareerLoc"/>
+		<result column="RESUME_CAREER_JOB" property="resumeCareerJob"/>
+		<result column="RESUME_LICENSE_DATE" property="resumeLicenseDate"/>
+		<result column="RESUME_LICENSE_NAME" property="resumeLicenseName"/>
+		<result column="RESUME_LICENSE_INSTITUTION" property="resumeLicenseInst"/>
+		<result column="RESUME_LICENSE_GRADE" property="resumeLicenseGrade"/>
+		<result column="PERSONAL_NUMBER" property="perNo"/>
+	</resultMap>
+
+	<resultMap type="recommendDto" id="recommendResultMap">
+		<result column="RECOMMEND_NUMBER" property="recommendNo" />	
+		<result column="RECOMMEND_PREFER" property="recommendPrefer" />
+		<result column="PERSONAL_NUMBER" property="perNo" />
+		<result column="COMPANY_NUMBER" property="comNo" />
+		<result column="RECOMMEND_TOTAL_RATE" property="recommendTotalRate" />
+		<result column="RECOMMEND_DATE" property="recommendDate" 
+		javaType="java.util.Date" />
+		<result column="RECOMMEND_RESULT" property="recommendTotalRate" />
+	</resultMap>
+
+	<select id="personalMemberList" resultMap="personalResultMap">
+		SELECT PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_KEYWORD
+		FROM personal
+	</select>
+
+
+	<select id="personalMemberShowResume" resultMap="resumeResultMap" parameterType="map">
+		SELECT RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY, RESUME_PERSONAL_EMAIL
+	    , RESUME_PERSONAL_PHONENUMBER, RESUME_PERSONAL_ADDRESS, RESUME_PERSONAL_MARRY
+	    , RESUME_PERSONAL_GENDER, RESUME_PERSONAL_MILITARY, RESUME_LICENSE_DATE
+	    , RESUME_LICENSE_NAME, RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER
+		FROM RESUME
+			WHERE PERSONAL_NUMBER = #{perNo}
+	</select>
+	
+	<select id="checkRecommed" parameterType="map" resultMap="recommendResultMap">
+		SELECT RECOMMEND_NUMBER, RECOMMEND_PREFER, PERSONAL_NUMBER, COMPANY_NUMBER, REVIEW_NUMBER
+		, RECOMMEND_TOTAL_RATE, RECOMMEND_DATE, RECOMMEND_RESULT 
+		FROM RECOMMEND
+		WHERE PERSONAL_NUMBER = #{perNo}
+		AND COMPANY_NUMBER = #{comNo}
+	</select>
+	
+	<insert id="insertRecommendDto" parameterType="recommendDto">
+		INSERT INTO RECOMMEND 
+		VALUE(RECOMMEND_NUMBER, RECOMMEND_PREFER, PERSONAL_NUMBER, COMPANY_NUMBER
+			, RECOMMEND_TOTAL_RATE)
+		VALUES(RECOMMEND_NUMBER_SEQ.NEXTVAL, #{recommendPrefer}
+			, #{perNo}, #{comNo}, #{recommendTotalRate})
+	</insert>
+	
+	<update id="updateRecommendDto" parameterType="recommendDto">
+		UPDATE RECOMMEND
+		SET RECOMMEND_PREFER = #{recommendPrefer}
+		    , RECOMMEND_TOTAL_RATE =  #{recommendTotalRate}
+		WHERE PERSONAL_NUMBER = #{perNo}
+		    AND COMPANY_NUMBER = #{comNo}
+	</update>
+	
+</mapper>

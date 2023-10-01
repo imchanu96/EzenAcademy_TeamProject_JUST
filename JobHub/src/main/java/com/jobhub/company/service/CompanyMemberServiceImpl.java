@@ -12,6 +12,7 @@ import com.jobhub.company.dao.CompanyMemberDao;
 import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.personal.dao.PersonalMemberDao;
 import com.jobhub.personal.dto.PersonalMemberDto;
+import com.jobhub.recommend.dao.RecommendDao;
 
 @Service
 public class CompanyMemberServiceImpl implements CompanyMemberService {
@@ -22,6 +23,8 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 	public CompanyMemberDao companyMemberDao;
 	@Autowired
 	public PersonalMemberDao personalMemberDao;
+	@Autowired
+	public RecommendDao recommendDao;
 
 	@Override
 	public CompanyMemberDto companyMemberExist(String comCode, String comPwd) {
@@ -78,6 +81,8 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 		// TODO Auto-generated method stub
 		
 		companyMemberDao.preferUpdateOne(map);
+		recommendDao.recommendUpdate(map);
+		
 	}
 
 	

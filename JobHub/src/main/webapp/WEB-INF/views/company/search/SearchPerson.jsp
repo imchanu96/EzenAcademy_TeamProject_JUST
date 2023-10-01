@@ -144,9 +144,6 @@ label {
 	color: #475067;
 }
 
-.radioBtn{
-	display: none;
-}
 
 .helpButton {
 	width: 30px;
@@ -490,7 +487,7 @@ tr td {
 							style="background-color: transparent; border: none;" readonly="readonly">
 						<div class="condition">
 							<div class="conditionTitleBox">
-								<input type="checkbox" value="체크!" onclick="activeRadioFnc(this, 'talentScore');"> 인재점수
+								<input type="checkbox" value="체크!" onclick="activeRadioFnc(this, 'talentScore');" checked="checked"> 인재점수
 							</div>
 							<div class="radioBox">
 								<input type="radio" name="talentScore" class="radioBtn" value="60">
@@ -503,7 +500,7 @@ tr td {
 						</div>
 <!-- 						<div class="condition"> -->
 <!-- 							<div class="conditionTitleBox"> -->
-<!-- 								<input type="checkbox" onclick="activeRadioFnc(this, 'careerScore');"> 경력 -->
+<!-- 								<input type="checkbox" onclick="activeRadioFnc(this, 'careerScore');" checked="checked"> 경력 -->
 <!-- 							</div> -->
 <!-- 							<div class="radioBox"> -->
 <!-- 								<input type="radio" name="careerScore" class="radioBtn" value="1"> -->
@@ -516,7 +513,7 @@ tr td {
 <!-- 						</div> -->
 						<div class="condition">
 							<div class="conditionTitleBox">
-								<input type="checkbox" onclick="activeRadioFnc(this, 'educationScore');"> 최종 학력
+								<input type="checkbox" onclick="activeRadioFnc(this, 'educationScore');" checked="checked"> 최종 학력
 							</div>
 							<div class="radioBox">
 								<input type="radio" name="educationScore" class="radioBtn" value="1"> 
@@ -529,7 +526,7 @@ tr td {
 						</div>
 						<div class="condition">
 							<div class="conditionTitleBox">
-								<input type="checkbox" onclick="activeRadioFnc(this, 'licenseScore');"> 자격증
+								<input type="checkbox" onclick="activeRadioFnc(this, 'licenseScore');" checked="checked"> 자격증
 							</div>
 							<div class="radioBox">
 								<input type="radio" name="licenseScore" class="radioBtn" value="1"> 
