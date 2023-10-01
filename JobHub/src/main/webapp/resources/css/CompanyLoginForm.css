@@ -1,0 +1,113 @@
+@charset "UTF-8";
+	a {
+		color:black;
+	}
+	a:hover {
+		color:blue;
+	}
+	
+	#backColor {
+		width: auto; 
+		height: auto;
+	}
+	
+	#loginColor {
+		background-color: #eaedf4;
+		width: 1080px; 
+		height: 815px; 
+		margin: auto;
+		padding-top: 100px;
+	}
+	#logo {
+		width: 355px; 
+		height: 75px;
+		margin: 0px auto 0px auto;
+	}
+	img {
+		width: 355px; 
+		height: 78px;
+	}
+	#memberType {
+		width: 355px;
+		margin: 60px auto 0px auto;
+		font-size: 28px;
+		color: #292e41;
+		text-align: center;
+	}
+	#IDandPwd_Box {
+		margin-top: 70px;
+	}
+	
+	.ID_Box {
+		height: 20px; 
+		margin-bottom: 50px; 
+		text-align: center;
+	}
+	
+	.ID_Box > input {
+		font-size: 15px; 
+		width: 300px; 
+		height: 45px;
+		background-color: #fff;
+	} 
+	
+	.Password_Box {
+		height: 20px; 
+		margin-bottom: 50px; 
+		text-align: center;
+	}
+	
+	.Password_Box > input {
+		 font-size: 15px; 
+		 width: 300px; 
+		 height: 45px;
+	}
+	
+	#Login_Button {
+		margin-top: 100px;
+	}
+	
+	.Login_Button {
+		text-align: center;
+	}
+	
+	.Login_Button  > input {
+		background-color: #4876ef;
+		color: white; 
+		font-size: 17px; 
+		width: 300px; 
+		height: 45px;
+	}
+/* 	ID, PW 자동완성시 배경색이 user agent에 의해 자동 변경되는 것을 막아준다 */
+	input:-webkit-autofill {
+		-webkit-box-shadow: 0px 1px 4px 0px gray; -webkit-text-fill-color: #000;
+	}
+	input:-webkit-autofill, input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus, input:-webkit-autofill:active { 
+		transition: background-color 5000s ease-in-out 0s;
+	}
+	#TagNames {
+		margin-top: 50px;
+	}
+	
+	#TagNames > div {
+		height: 30px; 
+		margin: auto; 
+		text-align: center;
+	}
+	
+	#TagNames > div > a {
+		color: #8491a7;
+	}
+	input{
+		border: 0px solid;
+		border-radius: 6px;
+		box-shadow: 0px 1px 4px 0px gray;
+	}
+	.changeMember{
+		color: #8491a7;
+		margin-right: 10px;
+	}
+	#loginBtn {
+		cursor: pointer;
+	}

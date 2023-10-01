@@ -30,6 +30,8 @@
 	function openShowMoreFnc() {
 		var showMoreBoxObj = document.getElementById("showMoreOptionBox");
 		showMoreBoxObj.style.display = "block";
+		var deleteConfirmObj = document.getElementById("deleteConfirmBox");
+		deleteConfirmObj.style.display = "none";
 	}
 	
 	function closeShowMoreFnc() {
@@ -45,6 +47,20 @@
 	function goReviewDeleteFnc(reviewNo, comNo) {
 		
 		location.href = 'http://localhost:9080/JobHub/review/delete.do?reviewNo=' + reviewNo + '&comNo=' + comNo;
+	}
+	
+	function openModalFnc() {
+		var showMoreBoxObj = document.getElementById("showMoreOptionBox");
+		showMoreBoxObj.style.display = "none";
+		var deleteConfirmObj = document.getElementById("deleteConfirmBox");
+		deleteConfirmObj.style.display = "block";
+	}
+	
+	function closeModalFnc() {
+		var showMoreBoxObj = document.getElementById("showMoreOptionBox");
+		var deleteConfirmObj = document.getElementById("deleteConfirmBox");
+		showMoreBoxObj.style.display = "none";
+		deleteConfirmObj.style.display = "none";
 	}
 	
 </script>
@@ -134,6 +150,7 @@
 			
 			<c:forEach var="reviewDto" items="${reviewList}">
 				<div class="reviewItem">
+				<div id="extraDiv">
 					<div class="starRateBox">
 						<div>
 							<div class="starNameBox">
@@ -199,23 +216,39 @@
 					<div class="reviewContentBox">
 						<span>${reviewDto.reviewContent}</span>
 					</div>
-					reviewDto.reviewNo = ${reviewDto.reviewNo}
-					<div>
-					</div>
+					
+				
 					<c:if test="${sessionScope.personalMemberDto.perNo == reviewDto.perNo}">
-						<input type="button" class="reviewShowMoreBox" value="..." onclick="openShowMoreFnc();">
+						<input type="button" class="reviewShowMoreBox" value="···"
+								onclick="openShowMoreFnc();">
 						<div id="showMoreOptionBox">
-							<div class="showMoreOptionItems" onclick="closeShowMoreFnc();">
-								X
+							<div id="showMoreCloseBox" onclick="closeShowMoreFnc();">
+								X&nbsp;&nbsp;
 							</div>
-							<div class="showMoreOptionItems" onclick="goReviewUpdateFnc(${reviewDto.reviewNo});">
+							<div class="showMoreOptionItems"
+								onclick="goReviewUpdateFnc(${reviewDto.reviewNo});">
 								수정하기
 							</div>
-							<div class="showMoreOptionItems" onclick="goReviewDeleteFnc(${reviewDto.reviewNo}, ${pagingMap.comNo});">
+							<div id="showMoreOptionDelete" class="showMoreOptionItems"
+								onclick="openModalFnc();">
 								삭제하기
 							</div>
 						</div>
+						<div id="deleteConfirmBox">
+							정말 삭제할까요?
+							<div id="deleteAnswerBox">
+								<div class="deleteAnswerItems" id="deleteYes"
+									onclick="goReviewDeleteFnc(${reviewDto.reviewNo}, ${pagingMap.comNo});">
+									예
+								</div>
+								<div class="deleteAnswerItems"
+									onclick="closeModalFnc();">
+									아니오
+								</div>
+							</div>
+						</div>
 					</c:if>
+				</div>
 				</div>
 			</c:forEach>
 			

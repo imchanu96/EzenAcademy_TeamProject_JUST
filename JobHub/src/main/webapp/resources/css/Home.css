@@ -35,6 +35,11 @@ body {
 	height: 50px;
 	color: #292e41;
 }
+#buttonBox {
+	width: 600px;
+	height: 160px;
+	margin: 0px auto;	
+}
 input {
 	float: left;
 	margin: 40px 50px;

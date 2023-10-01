@@ -67,8 +67,7 @@
 /* content */
 		#container {
 			width: 1280px;
-			height: 1000px;
-			
+			height: 630px;
 			margin: 0px auto;
 		}
 /* navigation */
@@ -76,8 +75,8 @@
 			margin: 10px;
 			float: left;
 			width: 250px;
-			height: 950px;
-			font-size: 25px;
+			height: 600px;
+			font-size: 22px;
 			text-align: center;
 			background-color: #eff5ff;
 		}
@@ -87,7 +86,7 @@
 			height: 500px;
 		}
 		.smallMenuItem {
-			margin-bottom: 20px;
+			margin-bottom: 35px;
 		}
 		.smallMenuItem a {
 			color: #475067;
@@ -97,7 +96,7 @@
 			margin: 10px;
 			float: left;
 			width: 980px;
-			height: 950px;
+			height: 600px;
 			font-size: 30px;
 			background-color: #f8fafc;
 		}
@@ -106,9 +105,12 @@
 			padding: 20px;
 			border-radius: 10px;
 			width: 910px;
-		    height: 300px;
+		    height: 250px;
 		    margin: 15px;
 		    color: #5c667b;
+		}
+		#companyInfoBox {
+			height: 110px;
 		}
 		.infoTitle {
 			margin: 15px 0px 0px 35px;

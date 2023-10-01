@@ -245,9 +245,9 @@
 					<button type="submit">등록</button>
 					<button type="button">취소</button>
 				</div>
-				pNo<input type="text" name="perNo" value="${personalMemberDto.perNo}">
-				rNo<input type="text" name="reviewNo" value="${reviewDto.reviewNo}">
-				cNo<input type="text" name="comNo" value="${reviewDto.comNo}">
+				<input type="hidden" name="perNo" value="${personalMemberDto.perNo}">
+				<input type="hidden" name="reviewNo" value="${reviewDto.reviewNo}">
+				<input type="hidden" name="comNo" value="${reviewDto.comNo}">
 			</form>
 		</div>
 

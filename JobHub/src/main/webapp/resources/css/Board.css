@@ -28,7 +28,7 @@ a:hover { color: #2d65f2;}
 	float: left;
 	width: 250px;
 	height: 950px;
-	font-size: 25px;
+	font-size: 22px;
 	text-align: center;
 	background-color: #eff5ff;
 }
@@ -40,7 +40,7 @@ a:hover { color: #2d65f2;}
 }
 
 .smallMenuItem {
-	margin-bottom: 20px;
+	margin-bottom: 35px;
 }
 
 .smallMenuItem a {
@@ -81,13 +81,13 @@ a:hover { color: #2d65f2;}
 button {
 	width: 90px;
     height: 40px;
-    background-color: #bcd1fc;
+    background-color: #4876ef;
     border: none;
     border-radius: 6px;
     box-shadow: 0px 1px 4px 0px #ddd;
     font-size: 16px;
     font-weight: bold;
-    color: #475067;
+    color: #fff;
 }
 
 #boardList {
@@ -190,6 +190,32 @@ button {
 	table-layout: fixed;
 }
 
+#boardView #boardTitle {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 820px;
+    height: 55px;
+    line-height: 55px;
+    padding: 0px 22px;
+    margin: 0px;
+   	font-size: 22px;
+   	font-weight: bold;
+}
+#boardView table .boardInfo {
+	font-size: 18px;
+	color: #96a0b5;
+	padding: 0px 20px;
+	text-align: center;
+}
+#boardView > table #boardContent {
+	border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 820px;
+    vertical-align: top;
+    padding: 30px 22px;
+    font-size: 18px;
+}
+
 #boardView th, #boardView td{
 	padding: 20px;
 }
@@ -201,7 +227,7 @@ button {
 }
 
 #listBox {
-	margin: 5px 0px 0px 130px;
+	margin: 20px 0px 0px 130px;
 	width: 400px;
 	text-align: right;
 }

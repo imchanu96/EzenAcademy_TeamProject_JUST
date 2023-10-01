@@ -41,24 +41,24 @@
 				<div id="boardView">
 					<table>
 						<tr>
-							<td colspan="5"><h3>제목: ${boardDto.boardTitle}</h3></td>
+							<td colspan="5"><p id="boardTitle">${boardDto.boardTitle}</p></td>
 						</tr>
 						<tr>
-							<td>${boardDto.boardWriter}</td>
+							<td class="boardInfo">${boardDto.boardWriter}</td>
 							<!-- 회사명 임시로 bTag에 담음 -->
-							<td>${boardDto.boardTag}</td>
-							<td>
+							<td class="boardInfo">${boardDto.boardTag}</td>
+							<td class="boardInfo">
 								<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.boardCreDate}"/>
 							</td>
-							<td>
+							<td class="boardInfo">
 								조회수 ${boardDto.boardViews}
 							</td>
-							<td>
+							<td class="boardInfo">
 								추천수 ${boardDto.boardLikeCount}
 							</td>
 						</tr>
 						<tr>
-							<td colspan="5">${boardDto.boardContent}</td>
+							<td colspan="5"><div id="boardContent">${boardDto.boardContent}</div></td>
 						</tr>
 					</table>
 				</div>
