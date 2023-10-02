@@ -16,6 +16,9 @@
 }
 .smallMenuItem {
 	margin-bottom: 35px;
+	border-bottom: 2px solid #fff;
+    width: 180px;
+    height: 40px;
 }
 .smallMenuItem a {
 	color: #475067;

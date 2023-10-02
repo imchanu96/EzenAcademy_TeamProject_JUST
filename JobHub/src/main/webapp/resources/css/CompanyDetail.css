@@ -11,7 +11,6 @@
 /* content */
 	#container {
 		width: 1280px;
-		height: 1000px;
 		margin: 0px auto;
 	}
 /* navigation */
@@ -25,13 +24,15 @@
 		background-color: #eff5ff;
 	}
 	#smallMenuBox {
-			
 		margin: 30px auto;
-		width: 200px;
-		height: 500px;
+	    width: 180px;
+	    height: 500px;
 	}
 	.smallMenuItem {
 		margin-bottom: 35px;
+		border-bottom: 2px solid #fff;
+    	width: 180px;
+    	height: 40px;
 	}
 	.smallMenuItem a {
 		color: #475067;
@@ -41,7 +42,6 @@
 		margin: 10px;
 		float: left;
 		width: 980px;
-		height: 950px;
 		font-size: 30px;
 		background-color: #f8fafc;
 	}
@@ -59,7 +59,6 @@
 	}
 	#companyInfoBox {
 		width: 910px;
-	    height: 500px;
 	    margin: 15px;
 	    color: #5c667b;
 	}

@@ -17,10 +17,14 @@
 	}
 	#smallMenuBox {
 		margin: 30px auto;
-		width: 200px;
+	    width: 180px;
+	    height: 500px;
 	}
 	.smallMenuItem {
 		margin-bottom: 35px;
+		border-bottom: 2px solid #fff;
+   		width: 180px;
+   		height: 40px;
 	}
 	.smallMenuItem a {
 		color: #475067;
@@ -109,6 +113,20 @@
 	#companyHomepage {
 		
 	}
+	#emptyReviewList{
+		background-color: #fff;
+	    padding: 20px;
+	    box-shadow: 0px 1px 4px 0px #ddd;
+	    border-radius: 25px;
+	    width: 910px;
+	    height: 80px;
+	    line-height: 75px;
+	    margin: 14px auto 0px auto;
+	    text-align: center;
+	    color: #475067;
+	    font-size: 22px
+	}
+	
 	#totalRate {
 		float: left;
 	}

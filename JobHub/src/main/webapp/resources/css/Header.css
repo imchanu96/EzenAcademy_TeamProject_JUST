@@ -106,8 +106,8 @@ a:hover {
 #logoutModal {
 	display: none;
 	position: fixed;
-	width: 600px;
-	height: 300px;
+	width: 500px;
+	height: 250px;
 	left: 40%;
 	top: 20%;
 	background: #fff;
@@ -118,9 +118,9 @@ a:hover {
 
 
 #centerForm {
-	width: 600px;
-	height: 200px;
-	line-height: 160px;
+	width: 500px;
+	height: 130px;
+	line-height: 120px;
 	font-size: 20px;
 	text-align: center;
 }

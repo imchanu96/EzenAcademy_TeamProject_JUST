@@ -7,17 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>JobHub: Main</title>
-<script type="text/javascript">
-
-	function goPersonalLoginFnc() {
-		location.href = "http://localhost:9080/JobHub/personal/login.do";
-	}
-	
-	function goCompanyLoginFnc() {
-		location.href = "http://localhost:9080/JobHub/company/login.do";
-	}
-
-</script>
+<script type="text/javascript" src="/JobHub/resources/js/Home.js"></script>
 <link rel="stylesheet" href="/JobHub/resources/css/Home.css" type="text/css">
 </head>
 <body>
@@ -40,8 +30,13 @@
 	
 	
 	<div id="mentBox">
-		<div id="comment">원하는 기업과 인재를 찾는 가장 효율적인 방법</div>
-		<div id="jobhub">JOBHUB</div>
+		<div id="comment">
+			원하는 기업과 인재를 찾는 가장 효율적인 방법 -
+		</div>
+		<div id="logoBox">
+			<img id="jobHubLogo"
+				src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/4c2b0015-b325-434b-a879-9004486cd127">
+		</div>
 	</div>
 	
 	<div id="goLoginBox">

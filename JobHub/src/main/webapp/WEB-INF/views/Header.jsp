@@ -7,50 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Header</title>
-
-<script type="text/javascript">
-
-	function myMenuFnc() {
-		var myMenu = document.getElementById("myMenu");
-		myMenu.style.display = "block";
-		
-		myMenu.addEventListener("mouseleave", function(e) {
-			myMenu.style.display = "none";
-		});
-	} 
-	function clickLogoutFnc() {
-		var logoutModal = document.getElementById("logoutModal");
-		logoutModal.style.display = "block";
-	}
-	function logoutFnc(permission) {
-		if (permission == 1 || permission == 2) {
-			location.href = "<%=request.getContextPath()%>/personal/logout.do";
-		}else if (permission == 5) {
-			location.href = "<%=request.getContextPath()%>/company/logout.do";
-		}
-		
-	}
-	function mouseoverFnc() {
-		var logoutTextList = document.getElementsByClassName("logout");
-		
-		for (var i = 0; i < logoutTextList.length; i++) {
-	        logoutTextList[i].style.color = "#2d65f2";
-	    }
-	}
-	
-	function mouseleaveFnc() {
-		var logoutTextList = document.getElementsByClassName("logout");
-		
-		for (var i = 0; i < logoutTextList.length; i++) {
-	        logoutTextList[i].style.color = "#292e41";
-		}
-	}	
-		
-	function backButton() {
-		var logoutModal = document.getElementById("logoutModal");
-		logoutModal.style.display = "none";
-	}
-</script>
+<script type="text/javascript" src="/JobHub/resources/js/Header.js"></script>
 <link rel="stylesheet" href="/JobHub/resources/css/Header.css" type="text/css">
 </head>
 <body>

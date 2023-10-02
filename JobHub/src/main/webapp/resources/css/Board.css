@@ -34,13 +34,16 @@ a:hover { color: #2d65f2;}
 }
 
 #smallMenuBox {
-	margin: 30px auto;
-	width: 200px;
-	height: 500px;
+    margin: 30px auto;
+    width: 180px;
+    height: 500px;
 }
 
 .smallMenuItem {
 	margin-bottom: 35px;
+	border-bottom: 2px solid #fff;
+    width: 180px;
+    height: 40px;
 }
 
 .smallMenuItem a {
@@ -117,6 +120,16 @@ button {
 #boardList td{
 	border-top: 1px solid #cccccc;
 }
+
+#boardList #tdWriter {
+	 font-size: 15px;
+}
+
+#boardList #spanBTag {
+	 font-size: 14px;
+	 color: gray;
+}
+
 
 /*board write*/
 #titleInputBox, #contentInputBox {

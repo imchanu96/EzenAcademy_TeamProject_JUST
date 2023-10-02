@@ -39,7 +39,8 @@
 					<tr>
 						<th>번호</th>
 						<th>제목</th>
-						<th colspan="2">글쓴이</th>
+<!-- 						<th colspan="2">글쓴이</th> -->
+						<th>글쓴이</th>
 						<th>작성일</th>
 						<th>조회수</th>
 					</tr>
@@ -54,9 +55,12 @@
 								<tr>
 									<td>${boardDto.boardNo}</td>
 									<td><a href='./listOne.do?no=${boardDto.boardNo}'>${boardDto.boardTitle}</a></td>
-									<td>${boardDto.boardWriter}</td>
+									<td id="tdWriter">
+										${boardDto.boardWriter}&nbsp;&nbsp;
+										<span id="spanBTag">${boardDto.boardTag}</span>
+									</td>
 									<!-- 회사명 임시로 bTag에 담음 -->
-									<td>${boardDto.boardTag}</td>
+<%-- 									<td>${boardDto.boardTag}</td> --%>
 									<td>
 	<%-- 									<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.boardCreDate}"/> --%>
 										<fmt:formatDate pattern="yyyy-MM-dd" value="${boardDto.boardCreDate}"/>
