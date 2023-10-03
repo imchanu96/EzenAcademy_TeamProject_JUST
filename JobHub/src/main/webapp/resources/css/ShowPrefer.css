@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* content */
+#container {
+	width: 1280px;
+	height: 1000px;
+	margin: 0px auto;
+}
+/* navigation */
+#navigation {
+	margin: 10px;
+	float: left;
+	width: 250px;
+	height: 950px;
+	font-size: 25px;
+	text-align: center;
+	background-color: #d7dce5;
+}
+
+#smallMenuBox {
+	margin: 30px auto;
+	width: 200px;
+	height: 500px;
+}
+
+.smallMenuItem {
+	margin-bottom: 20px;
+}
+
+.smallMenuItem a {
+	color: #475067;
+}
+/* content */
+#content {
+	margin: 10px;
+	float: left;
+	width: 980px;
+	height: 950px;
+	font-size: 30px;
+	background-color: #f8fafc;
+}
+
+.preferInfoContent {
+	margin-top: 7px;
+	width: 470px;
+	height: 240px;
+	line-height: 35px;
+	font-size: 18px;
+}
+.infoTitle {
+    margin: 30px 0px 15px 35px;
+    font-size: 23px;
+    font-weight: bold;
+}
+#preferItemsBox {
+	background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 870px;
+    height: 250px;
+    margin: 35px;
+    color: #5c667b;
+    box-shadow: 0px 1px 4px 0px #ddd;
+}
+.preferItems {
+    line-height: 50px;
+    width: 850px;
+    height: 50px;
+    margin-left: 15px;
+    margin-bottom: 14px;
+    font-size: 20px;
+    clear: left;
+}
+.preferName {
+	float: left;
+	width: 150px;
+}
+.weightingPercentage {
+	float: left;
+	width: 100px;
+    font-size: 16px;
+}
+.weightingSelected {
+	float: left;
+	width: 590px;
+    font-weight: bold;
+}
+input[type=button] {
+    width: 90px;
+    height: 40px;
+    margin: 5px 0px 30px 452px;
+    background-color: #4876ef;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 1px 4px 0px #ddd;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
