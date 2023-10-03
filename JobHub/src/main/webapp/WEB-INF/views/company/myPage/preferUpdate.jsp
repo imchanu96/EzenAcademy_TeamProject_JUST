@@ -82,11 +82,11 @@
 				<div class="preferItems">
 					<div class="preferName">키워드</div>
 					<div class="weightingSelected">
-						<input type="text" class="preferList" value="${preferList[1]}"
+						<input type="text" class="preferList" value="${preferList[0]}"
 								onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
 					</div>
 					<div class="weightingPercentage">
-						가중치: <input type="text" class="preferList" value="${preferList[0]}"
+						가중치: <input type="text" class="preferList" value="${preferList[1]}"
 								onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
 					</div>
 				</div>
@@ -94,11 +94,11 @@
 				<div class="preferItems">
 					<div class="preferName">자격증</div>
 					<div class="weightingSelected">
-						<input type="text" class="preferList" value="${preferList[3]}"
+						<input type="text" class="preferList" value="${preferList[2]}"
 								onfocus="inputFocusFnc();" onblur="inputBlurFnc();"> 개
 					</div>
 					<div class="weightingPercentage">
-						가중치: <input type="text" class="preferList" value="${preferList[2]}"
+						가중치: <input type="text" class="preferList" value="${preferList[3]}"
 								onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
 					</div>
 				</div>
@@ -106,11 +106,11 @@
 				<div class="preferItems">
 					<div class="preferName">학력</div>
 					<div class="weightingSelected">
-						<input type="text" class="preferList" value="${preferList[5]}"
+						<input type="text" class="preferList" value="${preferList[4]}"
 								onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
 					</div>
 					<div class="weightingPercentage">
-						가중치: <input type="text" class="preferList" value="${preferList[4]}"
+						가중치: <input type="text" class="preferList" value="${preferList[5]}"
 								onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
 					</div>
 				</div>
@@ -118,11 +118,11 @@
 				<div class="preferItems">
 					<div class="preferName">경력</div>
 					<div class="weightingSelected">
-						<input type="text" class="preferList" value="${preferList[7]}"
+						<input type="text" class="preferList" value="${preferList[6]}"
 								onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
 					</div>
 					<div class="weightingPercentage">
-						가중치: <input type="text" class="preferList" value="${preferList[6]}"
+						가중치: <input type="text" class="preferList" value="${preferList[7]}"
 								onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
 					</div>
 				</div>

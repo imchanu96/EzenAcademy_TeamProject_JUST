@@ -710,7 +710,7 @@ tr td {
 									${personalInfo.perLicenseCount}개</div>
 							</div>
 							<div id="" style="width: 100px; float: left; margin-right: 50px;">
-								적합도 100%</div>
+								적합도 ${personalInfo.recommendTotalRate}%</div>
 							<div id="buttonBox" style="float: left;">
 								<input type="button" value="이력서 보기" class="button" id="resumeBtn"
 									onclick="openResumeFnc('${personalInfo.perNo}', '${personalInfo.perName}');">

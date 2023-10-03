@@ -56,26 +56,22 @@ public class RecommendDaoImpl implements RecommendDao{
 			List<EducationDto> educationDtoList
 			= sqlSession.selectList(personalNamespace + "personalMemberShowEducation", checkMap);
 			
-			try {
-				RecommendDto recommendDto = sqlSession.selectOne(recommendNamespace + "checkRecommed");
-			} catch (Exception e) {
-				// TODO: handle exception
-				System.out.println("recommendDto 없음");
-			}finally {
-				RecommendDto recommendDto = null;
-				
-				PreferCalculate preferCal = new PreferCalculate(personalMemberDto, resumeDto
-						, companyMemberDto, careerDtoList, educationDtoList);
-				System.out.println(preferCal);
-						if (recommendDto == null) {
-							RecommendDto insertRecommendDto = preferCal.getRecommendDto();
-							sqlSession.insert(recommendNamespace + "insertRecommendDto", insertRecommendDto);
-						}else {
-							RecommendDto updateRecommendDto = preferCal.getRecommendDto();
-							sqlSession.update(recommendNamespace + "updateRecommendDto", updateRecommendDto);
-						}
-			}
 			
+			RecommendDto recommendDto = sqlSession.selectOne(recommendNamespace + "checkRecommed", checkMap);
+				
+			PreferCalculate preferCal = new PreferCalculate(personalMemberDto, resumeDto
+					, companyMemberDto, careerDtoList, educationDtoList);
+			System.out.println(preferCal);
+			
+			if (recommendDto == null) {
+				System.out.println("insert");
+				RecommendDto insertRecommendDto = preferCal.getRecommendDto();
+				sqlSession.insert(recommendNamespace + "insertRecommendDto", insertRecommendDto);
+			}else if(recommendDto != null){
+				System.out.println("update");
+				RecommendDto updateRecommendDto = preferCal.getRecommendDto();
+				sqlSession.update(recommendNamespace + "updateRecommendDto", updateRecommendDto);
+			}
 			
 		}
 		
