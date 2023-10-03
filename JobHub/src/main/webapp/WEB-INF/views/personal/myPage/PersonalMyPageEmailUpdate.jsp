@@ -18,16 +18,16 @@
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="">내 프로필</a>
+					<a href="./personalMyPageList.do?perNo=${personalMemberDto.perNo}">내 프로필</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">내가 쓴 글</a>
+					<a href="./personalMyPostList.do?perNo=${personalMemberDto.perNo}">내가 쓴 글</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">이력서 관리</a>
+					<a href="./showResume.do?perNo=${personalMemberDto.perNo}">이력서 관리</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">자소서 관리</a>
+					<a href="./showLetter.do?perNo=${personalMemberDto.perNo}">자소서 관리</a>
 				</div>
 				<div class="smallMenuItem">
 					<a href="">고객센터</a>
@@ -47,7 +47,8 @@
 						</div>
 						
 						<div class="personalInfoItemUpdate">
-							<input type="text" name="pEmail">
+							<input type="text" name="perEmail"
+								placeholder="${personalMemberDto.perEmail}">
 						</div>
 					
 						<div id="buttonBox">

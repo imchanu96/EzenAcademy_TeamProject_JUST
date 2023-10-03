@@ -1,6 +1,7 @@
 package com.jobhub.personal.controller;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpSession;
@@ -12,7 +13,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
+import com.jobhub.board.dto.BoardDto;
+import com.jobhub.board.service.BoardService;
+import com.jobhub.board.util.Paging;
 import com.jobhub.personal.dto.CareerDto;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
@@ -150,9 +155,44 @@ public class PersonalMemberController {
 		return "/personal/auth/PersonalResultPwd";
 	}
 	
+	
+	@RequestMapping(value = "/personal/personalMyPageList.do", method = RequestMethod.GET)
+	public String personalMyPage(HttpSession session, Model model) {
+		log.info("Welcome PersonalMemberMyPageList");
+		
+		return "personal/myPage/PersonalMyPage";
+	}
+	
+	@RequestMapping(value = "/personal/personalMyPostList.do",
+									method = {RequestMethod.GET, RequestMethod.POST})
+	public String myPostList(@RequestParam(defaultValue = "1") int curPage
+										, PersonalMemberDto personalMemberDto,Model model) {
+		log.info("Welcome PersonalMemberMyPost!: {}", curPage);
+		
+		int totalCount = PersonalMemberService.personalMemberMyPostListSelectTotalCount();
+		
+		Paging myPostPaging = new Paging(totalCount, curPage);
+		
+		int start = myPostPaging.getPageBegin();
+		int end = myPostPaging.getPageEnd();
+		
+	    List<BoardDto> myPostList = PersonalMemberService.personalMemberMyPostList(start, end);
+
+	    HashMap<String, Object> pagingMap = new HashMap<>(); 
+		pagingMap.put("totalCount", totalCount);
+		pagingMap.put("myPostPaging", myPostPaging);
+		
+	    model.addAttribute("myPostList", myPostList);
+	    model.addAttribute("pagingMap", pagingMap);
+		
+		
+		return "/personal/myPage/PersonalMyPost";
+	}
+
+	
 	@RequestMapping(value = "/personal/nickNameUpdate.do", method = RequestMethod.GET)
 	public String nickNameUpdate(HttpSession session, Model model) {
-		log.info("Welecom PersonalMemberNickNameUpdate!");
+		log.info("Welcome PersonalMemberNickNameUpdate!");
 		
 		return "personal/myPage/PersonalMyPageNickNameUpdate";
 	}
@@ -166,21 +206,21 @@ public class PersonalMemberController {
 	
 	@RequestMapping(value = "/personal/phoneNumUpdate.do", method = RequestMethod.GET)
 	public String phoneNumUpdate(HttpSession session, Model model) {
-		log.info("Welecom PersonalMemberPhoneNumUpdate!");
+		log.info("Welcome PersonalMemberPhoneNumUpdate!");
 		
 		return "personal/myPage/PersonalMyPagePhoneNumUpdate";
 	}
 	
 	@RequestMapping(value = "/personal/emailUpdate.do", method = RequestMethod.GET)
 	public String emailUpdate(HttpSession session, Model model) {
-		log.info("Welecom PersonalMemberEmailUpdate!");
+		log.info("Welcome PersonalMemberEmailUpdate!");
 		
 		return "personal/myPage/PersonalMyPageEmailUpdate";
 	}
 	
 	@RequestMapping(value = "/personal/keywordUpdate.do", method = RequestMethod.GET)
 	public String keywordUpdate(HttpSession session, Model model) {
-		log.info("Welecom PersonalMemberKeywordUpdate!");
+		log.info("Welcome PersonalMemberKeywordUpdate!");
 		
 		return "personal/myPage/PersonalMyPageKeywordUpdate";
 	}
@@ -188,7 +228,7 @@ public class PersonalMemberController {
 	
 	@RequestMapping(value = "/personal/nickNameUpdateCtr.do", method = RequestMethod.POST)
 	public String nickNameUpdateCtr(String perNickname, HttpSession session, Model model) {
-		log.info("Welecome PersonalMembernickNameUpdateCtr");
+		log.info("Welcome PersonalMembernickNameUpdateCtr");
 		
 		//기존 세션을 가져와서 personalMemberDto에 바뀐 정보를 담아둠
 		PersonalMemberDto personalMemberDto
@@ -210,7 +250,7 @@ public class PersonalMemberController {
 	
 	@RequestMapping(value = "/personal/passwordUpdateCtr.do", method = RequestMethod.POST)
 	public String passwordUpdateCtr(String perPwd, HttpSession session, Model model) {
-		log.info("Welecome PersonalMemberPasswordUpdateCtr");
+		log.info("Welcome PersonalMemberPasswordUpdateCtr");
 		
 		PersonalMemberDto personalMemberDto
 			= (PersonalMemberDto) session.getAttribute("personalMemberDto");
@@ -230,7 +270,7 @@ public class PersonalMemberController {
 	
 	@RequestMapping(value = "/personal/phoneNumUpdateCtr.do", method = RequestMethod.POST)
 	public String phoneNumUpdateCtr(String perPhoneNum, HttpSession session, Model model) {
-		log.info("Welecome PersonalMemberPhoneNumUpdateCtr");
+		log.info("Welcome PersonalMemberPhoneNumUpdateCtr");
 		
 		PersonalMemberDto personalMemberDto
 			= (PersonalMemberDto) session.getAttribute("personalMemberDto");
@@ -250,7 +290,7 @@ public class PersonalMemberController {
 	
 	@RequestMapping(value = "/personal/emailUpdateCtr.do", method = RequestMethod.POST)
 	public String emailUpdateCtr(String perEmail, HttpSession session, Model model) {
-		log.info("Welecome PersonalMemberEmailUpdateCtr");
+		log.info("Welcome PersonalMemberEmailUpdateCtr");
 		
 		PersonalMemberDto personalMemberDto
 			= (PersonalMemberDto) session.getAttribute("personalMemberDto");
@@ -270,7 +310,7 @@ public class PersonalMemberController {
 	
 	@RequestMapping(value = "/personal/keywordUpdateCtr.do", method = RequestMethod.POST)
 	public String keywordUpdateCtr(String perKeyword, HttpSession session, Model model) {
-		log.info("Welecome PersonalMemberKeywordUpdateCtr");
+		log.info("Welcome PersonalMemberKeywordUpdateCtr");
 		PersonalMemberDto personalMemberDto
 			= (PersonalMemberDto) session.getAttribute("personalMemberDto");
 		personalMemberDto.setPerKeyword(perKeyword);

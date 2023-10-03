@@ -38,16 +38,16 @@
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="">내 프로필</a>
+					<a href="./personalMyPageList.do?perNo=${personalMemberDto.perNo}">내 프로필</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">내가 쓴 글</a>
+					<a href="./personalMyPostList.do?perNo=${personalMemberDto.perNo}">내가 쓴 글</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">이력서 관리</a>
+					<a href="./showResume.do?perNo=${personalMemberDto.perNo}">이력서 관리</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">자소서 관리</a>
+					<a href="./showLetter.do?perNo=${personalMemberDto.perNo}">자소서 관리</a>
 				</div>
 				<div class="smallMenuItem">
 					<a href="">고객센터</a>
@@ -75,27 +75,27 @@
 					<form action="keywordUpdateCtr.do" method="post">
 						<div class="personalInfoItemTitleUpdateCheckBox">
 							<label>
-								<input type="checkbox" name="pKeyword" value="연봉"
+								<input type="checkbox" name="perKeyword" value="연봉"
 								onclick="count_check(this);">
 								<span>연봉</span>
 							</label>
 							<label>
-								<input type="checkbox" name="pKeyword" value="복지"
+								<input type="checkbox" name="perKeyword" value="복지"
 								onclick="count_check(this);">
 								<span>복지</span>
 							</label>
 							<label>
-								<input type="checkbox" name="pKeyword" value="근무환경"
+								<input type="checkbox" name="perKeyword" value="근무환경"
 								onclick="count_check(this);">
 								<span>근무환경</span>
 							</label>
 							<label>
-								<input type="checkbox" name="pKeyword" value="경영진"
+								<input type="checkbox" name="perKeyword" value="경영진"
 								onclick="count_check(this);">
 								<span>경영진</span>
 							</label>
 							<label>
-								<input type="checkbox" name="pKeyword" value="워라벨"
+								<input type="checkbox" name="perKeyword" value="워라벨"
 								onclick="count_check(this);">
 								<span>워라벨</span>
 							</label>

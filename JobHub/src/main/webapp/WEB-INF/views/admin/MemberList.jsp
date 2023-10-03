@@ -42,7 +42,7 @@
 					<td>${personalDto.perNickname}</td>
 					<td>
 						<c:choose>
-							<c:when test="${companyMemberDto.perPermission == 0
+							<c:when test="${companyMemberDto.comPermission == 0
 								|| personalDto.perPermission == 0}">
 										탈퇴 회원
 									</c:when>
