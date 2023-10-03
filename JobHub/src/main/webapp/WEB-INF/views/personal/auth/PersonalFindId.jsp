@@ -143,7 +143,7 @@
 				</div>
 				<div id="validationBox" class="inputBox">
 					<p>인증번호</p>
-					<input name="code" type="text" placeholder="인증번호 6자리 숫자 입력">
+					<input name="code" type="text" placeholder="인증번호 6자리 숫자 입력" maxlength="6">
 					<button type="submit">인증번호 확인</button>
 				</div>
 				<div class="inputBox">

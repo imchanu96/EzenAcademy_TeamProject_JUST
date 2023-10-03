@@ -66,41 +66,78 @@
 </style>
 <script type="text/javascript">
 	
-	var codeValue = 0;
+// 	var codeValue = 0;
 
-	function findPwdFnc() {
-		var pwdSearch = document.getElementById("findPwdBox");
+// 	function findPwdFnc() {
+// 		var pwdSearch = document.getElementById("findPwdBox");
 		
-		if(pwdSearch.perName.value == "") {
-			alert("이름을 입력해주세요");
-			return false;
-		}
+// 		if(pwdSearch.perName.value == "") {
+// 			alert("이름을 입력해주세요");
+// 			return false;
+// 		}
 		
-		if (pwdSearch.perId.value == "") {
-			alert("아이디를 입력해주세요");
-			return false;
-		}
+// 		if (pwdSearch.perId.value == "") {
+// 			alert("아이디를 입력해주세요");
+// 			return false;
+// 		}
 		
-		if (pwdSearch.perEmail.value == "") {
-			alert("이메일을 입력해주세요");
-			return false;
-		}
+// 		if (pwdSearch.perEmail.value == "") {
+// 			alert("이메일을 입력해주세요");
+// 			return false;
+// 		}
 		
-		var codeNum = Math.random().toString().substr(2,6);
-		alert(codeNum);
-		codeValue = codeNum;
-	}
+// 		var codeNum = Math.random().toString().substr(2,6);
+// 		alert(codeNum);
+// 		codeValue = codeNum;
+// 	}
 	
-	function codeCheck() {
-		var codeCheck = document.getElementById("findPwdBox");
+// 	function codeCheck() {
+// 		var codeCheck = document.getElementById("findPwdBox");
 		
-		if(codeCheck.code.value != codeValue){
-			alert("인증번호가 일치하지 않습니다.");
-			return false;
-		} else if(codeCheck.code.value == codeValue){
-			return true;
+// 		if(codeCheck.code.value != codeValue){
+// 			alert("인증번호가 일치하지 않습니다.");
+// 			return false;
+// 		} else if(codeCheck.code.value == codeValue){
+// 			return true;
+// 		}
+// 	}
+	
+	$('#mailCheck').click(function() {
+		const eamil = $('#perEmail').val(); // 이메일 주소값 얻어오기!
+		console.log('완성된 이메일 : ' + eamil); // 이메일 오는지 확인
+		const checkInput = $('code') // 인증번호 입력하는곳 
+		
+		$.ajax({
+			type : 'get',
+			url : '<c:url value ="/personal/mailCheck?email="/>'+eamil, // GET방식이라 Url 뒤에 email을 뭍힐수있다.
+			success : function (data) {
+				console.log("data : " +  data);
+				checkInput.attr('disabled',false);
+				code =data;
+				alert('인증번호가 전송되었습니다.')
+			}			
+		}); // end ajax
+	}); // end send eamil
+	
+	
+	$('#code').blur(function() {
+		const inputCode = $(this).val();
+		const $resultMsg = $('#mail-check-warn');
+		
+		if(inputCode === code) {
+			$resultMsg.html('인증번호가 일치합니다.');
+			$resultMsg.css('color','green');
+			$('#mailCheck').attr('disabled',true);
+			$('#userEamil1').attr('readonly',true);
+			$('#userEamil2').attr('readonly',true);
+			$('#userEmail2').attr('onFocus', 'this.initialSelect = this.selectedIndex');
+	        $('#userEmail2').attr('onChange', 'this.selectedIndex = this.initialSelect');
+		}else{
+			$resultMsg.html('인증번호가 불일치 합니다. 다시 확인해주세요!.');
+			$resultMsg.css('color','red');
 		}
-	}
+	}); // end send eamil
+	
 	
 </script>
 </head>
@@ -124,13 +161,14 @@
 					<div id="emailBox" class="inputBox">
 						<p>이메일 주소</p>
 						<input name="perEmail" type="text">
-						<button type="button" onclick="findPwdFnc();">인증번호 받기</button>
+						<button type="button" id="mailCheck">인증번호 받기</button>
 					</div>
 				</div>
 				<div id="validationBox" class="inputBox">
 					<p>인증번호</p>
-					<input name="code" type="text" placeholder="인증번호 6자리 숫자 입력">
-					<button type="submit">인증번호 확인</button>
+					<input name="code" type="text" placeholder="인증번호 6자리 숫자 입력" maxlength="6">
+					<span id="mail-check-warn"></span>
+					<button type="submit" id="mailCheckInput">인증번호 확인</button>
 				</div>
 				<div id="buttonBox">
 					<button type="button" onclick="location.href='./login.do';">돌아가기</button>

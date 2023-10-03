@@ -213,7 +213,11 @@
 	        , R.RESUME_CAREER_BEGIN_DATE AS "perCareerBeginDate"
 	        , R.RESUME_CAREER_END_DATE AS "perCareerEndDate"
 	        , NVL(R.RESUME_LICENSE_NAME , ' ') AS "perLicense"
-	        , NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) AS "perLicenseCount" , P.COMPANY_PREFER AS "comPrefer"
+	        , NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) AS "perLicenseCount" 
+            , P.COMPANY_PREFER AS "comPrefer" , (SELECT RECOMMEND_TOTAL_RATE
+                                                 FROM RECOMMEND
+                                                 WHERE COMPANY_NUMBER = #{comNo}
+                                                 AND PERSONAL_NUMBER = P.PERSONAL_NUMBER) AS "recommendTotalRate"
     	FROM (  SELECT P.PERSONAL_NUMBER, P.PERSONAL_COMPANY, C.COMPANY_PREFER
             FROM PERSONAL P , COMPANY C
             WHERE C.COMPANY_NUMBER = #{comNo}
@@ -338,6 +342,13 @@
 		    , LETTER_CHARACTER = #{character}
 		    , LETTER_GOAL = #{goal}
 		WHERE PERSONAL_NUMBER = #{perNo}
+	</update>
+	
+	<update id="personalMemberFindPwd">
+		UPDATE PERSONAL
+		SET PERSONAL_PASSWORD = #{perPwd}
+		WHERE PERSONAL_EMAIL = #{perEmail}
+		AND PERSONAL_ID = #{perId}
 	</update>
 	
 	

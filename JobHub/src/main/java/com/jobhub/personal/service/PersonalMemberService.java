@@ -41,4 +41,8 @@ public interface PersonalMemberService {
 	public int personalMemberMyPostListSelectTotalCount();
 
 	public List<BoardDto> personalMemberMyPostList(int start, int end);
+	
+	
+	public void personalMemberFindPwd(String perEmail, String perId);
+	
 }
