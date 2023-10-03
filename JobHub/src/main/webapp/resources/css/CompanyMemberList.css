@@ -51,6 +51,12 @@
 		width: 600px;
 		height: 60px;
 	}
+	#companyName {
+		font-size: 24px;
+	}
+	#companyHomepage {
+		color: #5c667b;
+	}
 	#companyTypeBox, #companyHomepageBox {
 		float: left;
 		height: 30px;

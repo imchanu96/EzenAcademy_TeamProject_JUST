@@ -8,39 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Company Member list</title>
-<script type="text/javascript">
-
-	window.addEventListener('DOMContentLoaded', function () {
-	    const navigation = document.getElementById('navigation');
-	    const content = document.getElementById('content');
-	
-	    function syncNavigationHeight() {
-	        navigation.style.height = content.clientHeight + 'px';
-	    }
-	
-	    syncNavigationHeight();
-	    window.addEventListener('resize', syncNavigationHeight);
-	    
-		 // 비회원 열람 제한 - 회사 정보
-	    const blurElements = document.querySelectorAll('.blur a');
-
-	    for (const link of blurElements) {
-	        link.addEventListener('click', function (event) {
-	            event.preventDefault();
-	        });
-	    }
-	    
-	    // 비회원 열람 제한 - 페이징
-	    const pagingLinks = document.querySelectorAll('.pagination a');
-
-	    for (const link of pagingLinks) {
-	        link.addEventListener('click', function (event) {
-	            event.preventDefault(); // 링크의 기본 동작(페이지 이동)을 막음
-	        });
-	    }
-	});
-	
-</script>
+<script type="text/javascript" src="/JobHub/resources/js/CompanyMemberList.js"></script>
 <link rel="stylesheet" href="/JobHub/resources/css/CompanyMemberList.css" type="text/css">
 <link rel="stylesheet" href="/JobHub/resources/css/ReviewNav.css" type="text/css">
 </head>
