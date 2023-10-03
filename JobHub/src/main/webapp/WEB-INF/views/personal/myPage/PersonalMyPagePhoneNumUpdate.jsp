@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>전화번호 변경</title>
-
+<script type="text/javascript" src="/JobHub/resources/js/PersonalMyPage.js"></script>
 <link rel="stylesheet" href="/JobHub/resources/css/PersonalMyPage.css" type="text/css">	
 </head>
 <body>
@@ -47,6 +47,7 @@
 						</div>
 						
 						<div class="personalInfoItemUpdate">
+							<input type="text" name="pPhoneNum">
 							<input type="text" name="perPhoneNum"
 								placeholder="${personalMemberDto.perPhoneNum}">
 						</div>

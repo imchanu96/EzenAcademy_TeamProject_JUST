@@ -8,136 +8,11 @@
 <head>
 <meta charset="UTF-8">
 <title>선호도 설정</title>
-<style type="text/css">
-/* head form */
-#headerBox {
-	height: 130px;
-	border-bottom: 1px solid #b4c0d3;
-}
+<link rel="stylesheet" href="/JobHub/resources/css/ShowPrefer.css" type="text/css">
 
-#headerContent {
-	margin: 0px auto;
-	width: 1280px;
-	height: 120px;
-}
-/* logo */
-#logo {
-	float: left;
-	margin: 0px 90px;
-	width: 74px;
-	height: 111px;
-}
-/* main menu */
-#mainMenuBox {
-	float: left;
-	width: 750px;
-	height: 100px;
-	margin-left: 30px;
-}
-
-.mainMenuItem {
-	float: left;
-	margin: 20px;
-	width: 200px;
-	height: 60px;
-	text-align: center;
-	line-height: 60px;
-	font-size: 30px;
-	font-weight: 600;
-}
-/* message */
-#myMessageBox {
-	float: left;
-	width: 100px;
-	height: 100px;
-	text-align: center;
-}
-
-#chatImage {
-	width: 70px;
-	height: 70px;
-	margin-top: 20px;
-	margin-right: 50px;
-}
-/* my menu */
-#myMenuBox {
-	float: left;
-	width: 140px;
-	height: 100px;
-	text-align: center;
-}
-/* end of header */
-
-/* content */
-#container {
-	width: 1280px;
-	height: 1000px;
-	margin: 0px auto;
-}
-/* navigation */
-#navigation {
-	margin: 10px;
-	float: left;
-	width: 250px;
-	height: 950px;
-	font-size: 25px;
-	text-align: center;
-	background-color: #d7dce5;
-}
-
-#smallMenuBox {
-	margin: 30px auto;
-	width: 200px;
-	height: 500px;
-}
-
-.smallMenuItem {
-	margin-bottom: 20px;
-}
-
-.smallMenuItem a {
-	color: #475067;
-}
-/* content */
-#content {
-	margin: 10px;
-	float: left;
-	width: 980px;
-	height: 950px;
-	font-size: 30px;
-	background-color: #f8fafc;
-}
-
-.preferInfoContent {
-	margin-top: 7px;
-	width: 470px;
-	height: 240px;
-	line-height: 35px;
-	font-size: 18px;
-}
-
-/* tail form */
-#tailBox {
-	height: 150px;
-	background-color: #b4c0d3;
-	text-align: center;
-}
-
-#tailContent {
-	width: 1280px;
-	height: 130px;
-	margin: auto;
-}
-
-#teamName {
-	font-size: 50px;
-	font-weight: 800;
-	color: #999999;
-}
-</style>
 </head>
 <body>
-	<jsp:include page="../../Header.jsp" />
+	<jsp:include page="/WEB-INF/views/Header.jsp"/>
 
 	<div id="container">
 		<div id="navigation">
@@ -157,45 +32,61 @@
 			</div>
 		</div>
 		<div id="content">
-		<c:set var="preferList" value="${fn:split(companyPrefer.comPrefer, ',')}"/>
-			<div>
-				<span>내 선호도</span>
+			<c:set var="preferList" value="${fn:split(companyPrefer.comPrefer, ',')}"/>
+			
+			<div class="infoTitle">
+				내 선호도
 			</div>
-			<div>
-				<span style="float: left;">선호 키워드</span>
-				<div style="float: left; border: 1px solid black;">
-					가중치
-					<div>${preferList[0]}</div>
+			
+			<div id="preferItemsBox">
+			
+				<div class="preferItems">
+					<div class="preferName">키워드</div>
+					<div class="weightingSelected">
+						"${preferList[1]} " &nbsp;
+					</div>
+					<div class="weightingPercentage">
+						가중치: ${preferList[0]}
+					</div>
 				</div>
-				<div style="float: left;">${preferList[1]}</div>
-			</div>
-			<div>
-				<span style="clear: both; float: left;">선호 자격증 보유 수</span>
-				<div style="float: left; border: 1px solid black;">
-					가중치
-					<div>${preferList[2]}</div>
+				
+				<div class="preferItems">
+					<div class="preferName">자격증</div>
+					<div class="weightingSelected">
+						${preferList[3]} 개
+					</div>
+					<div class="weightingPercentage">
+						가중치: ${preferList[2]}
+					</div>
 				</div>
-				<div style="float: left;">${preferList[3]}</div>
-			</div>
-			<div>
-				<span style="clear: both; float: left;">선호 학력</span>
-				<div style="float: left; border: 1px solid black;">
-					가중치
-					<div>${preferList[4]}</div>
+				
+				<div class="preferItems">
+					<div class="preferName">학력</div>
+					<div class="weightingSelected">
+						${preferList[5]}
+					</div>
+					<div class="weightingPercentage">
+						가중치: ${preferList[4]}
+					</div>
 				</div>
-				<div style="float: left;">${preferList[5]}</div>
-			</div>
-			<div>
-				<span style="clear: both; float: left;">선호 경력</span>
-				<div style="float: left; border: 1px solid black;">
-					가중치
-					<div>${preferList[6]}</div>
+				
+				<div class="preferItems">
+					<div class="preferName">경력</div>
+					<div class="weightingSelected">
+						${preferList[7]}
+					</div>
+					<div class="weightingPercentage">
+						가중치: ${preferList[6]}
+					</div>
 				</div>
-				<div style="float: left;">${preferList[7]}</div>
+				
 			</div>
-			<input type="button" style="margin-top: 400px;" value="수정" 
+			
+			<input type="button" value="수정하기"
 				onclick="location.href='./preferUpdate.do?pNo=${companyMemberDto.comNo}'">
 		</div>
-		<jsp:include page="/WEB-INF/views/Tail.jsp" />
+	</div>
+		
+	<jsp:include page="/WEB-INF/views/Tail.jsp" />
 </body>
 </html>

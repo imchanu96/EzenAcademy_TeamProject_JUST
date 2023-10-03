@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>이메일 변경</title>
-
+<script type="text/javascript" src="/JobHub/resources/js/PersonalMyPage.js"></script>
 <link rel="stylesheet" href="/JobHub/resources/css/PersonalMyPage.css" type="text/css">
 </head>
 <body>
@@ -21,13 +21,13 @@
 					<a href="./personalMyPageList.do?perNo=${personalMemberDto.perNo}">내 프로필</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="./personalMyPostList.do?perNo=${personalMemberDto.perNo}">내가 쓴 글</a>
+					<a href="./personalMyPostList.do?perNo=${personalMemberDto.perNo">내가 쓴 글</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="./showResume.do?perNo=${personalMemberDto.perNo}">이력서 관리</a>
+					<a href="./showResume.do?perNo=${personalMemberDto.perNo">이력서 관리</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="./showLetter.do?perNo=${personalMemberDto.perNo}">자소서 관리</a>
+					<a href="./showLetter.do?perNo=${personalMemberDto.perNo">자소서 관리</a>
 				</div>
 				<div class="smallMenuItem">
 					<a href="">고객센터</a>
@@ -47,7 +47,7 @@
 						</div>
 						
 						<div class="personalInfoItemUpdate">
-							<input type="text" name="perEmail"
+							<input id="input" type="text" name="perEmail"
 								placeholder="${personalMemberDto.perEmail}">
 						</div>
 					

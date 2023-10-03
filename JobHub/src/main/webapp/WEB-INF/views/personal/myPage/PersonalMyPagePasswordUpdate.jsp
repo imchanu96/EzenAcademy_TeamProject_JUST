@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>비밀번호 변경</title>
-
+<script type="text/javascript" src="/JobHub/resources/js/PersonalMyPage.js"></script>
 <link rel="stylesheet" href="/JobHub/resources/css/PersonalMyPage.css" type="text/css">
 </head>
 <body>
@@ -47,7 +47,7 @@
 						</div>
 						
 						<div class="personalInfoItemUpdate">
-							<input type="password" name="perPwd"
+							<input id="input" type="password" name="perPwd"
 								placeholder="${personalMemberDto.perPwd}">
 						</div>
 					

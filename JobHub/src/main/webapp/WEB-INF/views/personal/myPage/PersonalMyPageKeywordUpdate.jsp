@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>기업 선호도 변경</title>
-
+<script type="text/javascript" src="/JobHub/resources/js/PersonalMyPage.js"></script>
 <script type="text/javascript">
 
 	function count_check(obj) {
@@ -41,10 +41,18 @@
 					<a href="./personalMyPageList.do?perNo=${personalMemberDto.perNo}">내 프로필</a>
 				</div>
 				<div class="smallMenuItem">
+<<<<<<< HEAD
+					<a href="./personalMyPostList.do?perNo=${personalMemberDto.perNo">내가 쓴 글</a>
+=======
 					<a href="./personalMyPostList.do?perNo=${personalMemberDto.perNo}">내가 쓴 글</a>
+>>>>>>> branch 'main' of https://github.com/noohij/Ezen_TeamProject_JUST.git
 				</div>
 				<div class="smallMenuItem">
+<<<<<<< HEAD
+					<a href="./showResume.do?perNo=${personalMemberDto.perNo">이력서 관리</a>
+=======
 					<a href="./showResume.do?perNo=${personalMemberDto.perNo}">이력서 관리</a>
+>>>>>>> branch 'main' of https://github.com/noohij/Ezen_TeamProject_JUST.git
 				</div>
 				<div class="smallMenuItem">
 					<a href="./showLetter.do?perNo=${personalMemberDto.perNo}">자소서 관리</a>
@@ -59,17 +67,12 @@
 
 			<div id="personalInfoBoxUpdate">
 				<div class="personalInfoItem">
-					<div id="infoTitle">
-						<div class="infoTitleUpdate">
-							기업 선호도 수정
-						</div>
+					<div class="infoTitle">
+						기업 선호도 수정
 					</div>
 					
-					<div id="selectKeyword">
-						<div class="selectKeyword">
-							<span style="color: #000; font-weight: bold;">선호 키워드</span>
-							<span style="font-size: 16px;">(최대 2개 선택 가능)</span>
-						</div>
+					<div id="selectDesc">
+						<span>직장을 선택할 때, 당신에게 중요한 두 가지 키워드를 선택해주세요(최대 2개).</span>
 					</div>
 				
 					<form action="keywordUpdateCtr.do" method="post">

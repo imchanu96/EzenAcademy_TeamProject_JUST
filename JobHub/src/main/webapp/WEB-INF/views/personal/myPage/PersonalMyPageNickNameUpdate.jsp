@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>닉네임 변경</title>
-
+<script type="text/javascript" src="/JobHub/resources/js/PersonalMyPage.js"></script>
 <link rel="stylesheet" href="/JobHub/resources/css/PersonalMyPage.css" type="text/css">
 </head>
 <body>
@@ -47,8 +47,8 @@
 							닉네임
 						</div>
 						<div class="personalInfoItemUpdate">
-							<input type="text" name="perNickname"
-								placeholder="${personalMemberDto.perNickname}">
+							<input id="input" type="text" name="perNickname" onfocus="inputFocusFnc();" onblur="inputBlurFnc();"
+								placeholder="${personalMemberDto.perNickname}">>
 						</div>
 					
 						<div id="buttonBox">
