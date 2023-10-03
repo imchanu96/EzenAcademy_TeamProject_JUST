@@ -202,6 +202,31 @@
 			height: 50px;
 		}
 		
+		#backButtonBox {
+			margin-top: -2px;
+			float:left;
+			width: 100px;
+			height: 30px;
+		}
+		
+		#backButtonBox > button {
+			margin-left: 20px;
+			width: 100px;
+		}
+		
+		#keyWordBackButtonBox {
+			margin-top: 10px;	
+			float: left;
+			width: 100px;
+			height: 50px;
+		}
+		
+		#keyWordBackButtonBox > button {
+			margin-left: 5px;
+			width: 100px;
+			height: 50px;
+		}
+		
 		.arrowBox {
 			height: 50px;
 		}

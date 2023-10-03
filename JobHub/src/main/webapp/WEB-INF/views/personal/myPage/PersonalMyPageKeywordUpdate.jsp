@@ -107,6 +107,14 @@
 						<div id="buttonBoxUpdate">
 							<button type="submit" value="변경하기">변경하기</button>
 						</div>
+						<div id="keyWordBackButtonBox">
+							<button>
+								<a href="./personalMyPageList.do?perNo=${personalMemberDto.perNo}">
+									돌아가기
+								</a>
+							</button>
+						</div>
+						
 					</form>
 				</div>
 			</div>
