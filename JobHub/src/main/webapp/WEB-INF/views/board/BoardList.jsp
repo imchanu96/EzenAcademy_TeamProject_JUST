@@ -96,7 +96,7 @@
 						
 						<div id="loginSign">
 							<div>
-								<p><a href="../personal/login.do">로그인</a> 후 이용하실 수 있습니다.</p>
+								<p><a href="../personal/login.do">로그인</a> 후 이용해주세요.</p>
 							</div>
 						</div>
 					<!-- 비회원 loginSign -->

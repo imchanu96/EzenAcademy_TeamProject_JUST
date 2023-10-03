@@ -26,7 +26,7 @@ public class ReviewDaoImpl implements ReviewDao {
 		map.put("end", end);
 		map.put("comNo", comNo);
 		
-		return sqlSession.selectList("com.jobhub.review.reviewSelectList", map);
+		return sqlSession.selectList(namespace + "reviewSelectList", map);
 	}
 	
 	@Override
@@ -35,13 +35,13 @@ public class ReviewDaoImpl implements ReviewDao {
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("comNo", comNo);
 		
-		return sqlSession.selectList("com.jobhub.review.reviewSelectAllList", map);
+		return sqlSession.selectList(namespace + "reviewSelectAllList", map);
 	}
 	
 	@Override
 	public int reviewInsertOne(ReviewDto reviewDto, int comNo) {
 		
-		return sqlSession.insert("com.jobhub.review.reviewInsertOne", reviewDto);
+		return sqlSession.insert(namespace + "reviewInsertOne", reviewDto);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class ReviewDaoImpl implements ReviewDao {
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("comNo", comNo);
 		
-		return (int)sqlSession.selectOne("com.jobhub.review.reviewSelectTotalCount", map);
+		return (int)sqlSession.selectOne(namespace + "reviewSelectTotalCount", map);
 	}
 
 	@Override
@@ -59,13 +59,13 @@ public class ReviewDaoImpl implements ReviewDao {
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("perNo", perNo);
 		
-		return sqlSession.selectOne("com.jobhub.review.reviewSelectCNo", map);
+		return sqlSession.selectOne(namespace + "reviewSelectCNo", map);
 	}
 
 	@Override
 	public ReviewDto reviewSelectOne(int reviewNo) {
 
-		ReviewDto reviewDto = sqlSession.selectOne("com.jobhub.review.reviewSelectOne", reviewNo);
+		ReviewDto reviewDto = sqlSession.selectOne(namespace + "reviewSelectOne", reviewNo);
 		
 		return reviewDto;
 	}
@@ -73,12 +73,12 @@ public class ReviewDaoImpl implements ReviewDao {
 	@Override
 	public void reviewUpdateOne(ReviewDto reviewDto, int comNo) {
 		
-		sqlSession.update("com.jobhub.review.reviewUpdateOne", reviewDto);
+		sqlSession.update(namespace + "reviewUpdateOne", reviewDto);
 	}
 
 	@Override
 	public int reviewDeleteOne(int reviewNo) {
 
-		return sqlSession.delete("com.jobhub.review.reviewDeleteOne", reviewNo);
+		return sqlSession.delete(namespace + "reviewDeleteOne", reviewNo);
 	}
 }
