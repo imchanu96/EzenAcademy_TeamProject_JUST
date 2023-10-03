@@ -8,6 +8,7 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.jobhub.board.dto.BoardDto;
 import com.jobhub.personal.dto.CareerDto;
 import com.jobhub.personal.dto.EducationDto;
 import com.jobhub.personal.dto.LetterDto;
@@ -159,6 +160,24 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 	public void PersonalLetterUpdateOne(LetterDto letterDto) {
 		// TODO Auto-generated method stub
 		sqlSession.update(namespace + "PersonalLetterUpdateOne", letterDto);
+	}
+
+
+	@Override
+	public List<BoardDto> personalMemberMyPostList(int start, int end) {
+		// TODO Auto-generated method stub
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("start", start);
+		map.put("end", end);
+		
+		return sqlSession.selectList("com.jobhub.board.personalMemberMyPostList", map);
+	}
+
+
+	@Override
+	public int personalMemberMyPostListSelectTotalCount() {
+		// TODO Auto-generated method stub
+		return sqlSession.selectOne("com.jobhub.board.personalMemberMyPostListSelectTotalCount");
 	}
 
 }

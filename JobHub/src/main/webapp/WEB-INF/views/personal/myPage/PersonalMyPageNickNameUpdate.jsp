@@ -47,7 +47,8 @@
 							닉네임
 						</div>
 						<div class="personalInfoItemUpdate">
-							<input id="input" type="text" name="perNickname" onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
+							<input id="input" type="text" name="perNickname" onfocus="inputFocusFnc();" onblur="inputBlurFnc();"
+								placeholder="${personalMemberDto.perNickname}">>
 						</div>
 					
 						<div id="buttonBox">

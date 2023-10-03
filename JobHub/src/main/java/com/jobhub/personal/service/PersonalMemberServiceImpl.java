@@ -1,5 +1,6 @@
 package com.jobhub.personal.service;
 
+import java.util.List;
 import java.util.Map;
 
 import org.slf4j.Logger;
@@ -7,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.jobhub.board.dto.BoardDto;
 import com.jobhub.personal.dao.PersonalMemberDao;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
@@ -104,6 +106,18 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 	public void PersonalLetterUpdateOne(LetterDto letterDto) {
 		// TODO Auto-generated method stub
 		personalMemberDao.PersonalLetterUpdateOne(letterDto);
+	}
+
+	@Override
+	public int personalMemberMyPostListSelectTotalCount() {
+		// TODO Auto-generated method stub
+		return personalMemberDao.personalMemberMyPostListSelectTotalCount();
+	}
+
+	@Override
+	public List<BoardDto> personalMemberMyPostList(int start, int end) {
+		// TODO Auto-generated method stub
+		return personalMemberDao.personalMemberMyPostList(start, end);
 	}
 
 }

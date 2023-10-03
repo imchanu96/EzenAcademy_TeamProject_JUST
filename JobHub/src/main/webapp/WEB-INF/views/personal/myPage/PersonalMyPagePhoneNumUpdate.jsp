@@ -47,7 +47,11 @@
 						</div>
 						
 						<div class="personalInfoItemUpdate">
+<<<<<<< HEAD
 							<input id="input" type="text" name="perPhoneNum"
+=======
+							<input type="text" name="perPhoneNum"
+>>>>>>> branch 'main' of https://github.com/noohij/Ezen_TeamProject_JUST.git
 								placeholder="${personalMemberDto.perPhoneNum}">
 						</div>
 					

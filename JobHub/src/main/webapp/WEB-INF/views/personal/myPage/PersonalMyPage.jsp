@@ -13,13 +13,14 @@
 	<jsp:include page="../../Header.jsp"/>
 	
 	<div id="container">
+		<form action="./personalMyPageList.do" method="get">
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="">내 프로필</a>
+					<a href="./personalMyPageList.do?perNo=${personalMemberDto.perNo}">내 프로필</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">내가 쓴 글</a>
+					<a href="./personalMyPostList.do?perNo=${personalMemberDto.perNo}">내가 쓴 글</a>
 				</div>
 				<div class="smallMenuItem">
 					<a href="./showResume.do?perNo=${personalMemberDto.perNo}">이력서 관리</a>
@@ -121,7 +122,7 @@
 				</div>
 			</div>
 		</div>
-		
+		</form>
 	</div>	
 	
 	<jsp:include page="/WEB-INF/views/Tail.jsp"/>	

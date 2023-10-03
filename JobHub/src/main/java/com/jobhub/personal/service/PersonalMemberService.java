@@ -1,7 +1,9 @@
 package com.jobhub.personal.service;
 
+import java.util.List;
 import java.util.Map;
 
+import com.jobhub.board.dto.BoardDto;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;
@@ -35,4 +37,8 @@ public interface PersonalMemberService {
 	public LetterDto personalMembershowLetter(int perNo);
 
 	public void PersonalLetterUpdateOne(LetterDto letterDto);
+
+	public int personalMemberMyPostListSelectTotalCount();
+
+	public List<BoardDto> personalMemberMyPostList(int start, int end);
 }
