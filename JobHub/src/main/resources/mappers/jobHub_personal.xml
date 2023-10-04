@@ -297,10 +297,12 @@
 		WHERE RESUME_NUMBER = #{resumeNo}
 	</select>
 	
-	<select id="personalMembershowLetter" parameterType="map" resultMap="letterResultMap" >
+	<select id="personalMembershowLetter" parameterType="map" resultType="map" >
 	SELECT LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
 	    , LETTER_CHARACTER, LETTER_GOAL
-	    , (SELECT PERSONAL_NAME FROM PERSONAL WHERE PERSONAL_NUMBER = #{perNo}) AS "perName", PERSONAL_NUMBER
+	    , (SELECT PERSONAL_NAME 
+	    FROM PERSONAL 
+	    WHERE PERSONAL_NUMBER = #{perNo}) AS "perName", PERSONAL_NUMBER
     FROM LETTER
 	WHERE PERSONAL_NUMBER = #{perNo}
 	</select>
