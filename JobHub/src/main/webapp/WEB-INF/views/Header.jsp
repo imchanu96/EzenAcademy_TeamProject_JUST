@@ -29,7 +29,7 @@
 	</div>
 	
 	<c:if
-		test="${sessionScope.permission <= 2 
+		test="${sessionScope.permission <= 3 
 		or sessionScope.permission == 10}">
 		<div id="headerBox">
 			<div id="headerContent">
@@ -89,7 +89,7 @@
 		</div>
 		<!-- Header Ends -->
 	</c:if>
-	<c:if test="${sessionScope.permission == 5}">
+	<c:if test="${sessionScope.permission == 6}">
 		<div id="headerBox">
 			<div id="headerContent">
 				<a href="http://localhost:9080/JobHub/home.do">
