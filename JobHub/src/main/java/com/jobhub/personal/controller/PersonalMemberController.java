@@ -11,17 +11,19 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.jobhub.board.dto.BoardDto;
-import com.jobhub.board.service.BoardService;
 import com.jobhub.board.util.Paging;
-import com.jobhub.personal.dto.CareerDto;
+import com.jobhub.personal.dao.PersonalMemberDao;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;
+import com.jobhub.personal.service.MailSendService;
 import com.jobhub.personal.service.PersonalMemberService;
 
 @Controller
@@ -32,7 +34,10 @@ public class PersonalMemberController {
 
 	@Autowired
 	private PersonalMemberService PersonalMemberService;
-
+	
+	@Autowired
+	private MailSendService mailSendService;
+	
 	// 로그인 화면 이동
 	@RequestMapping(value = "/personal/login.do", method = RequestMethod.GET)
 	public String login(HttpSession session, Model model) {
@@ -111,6 +116,15 @@ public class PersonalMemberController {
 		return "/personal/auth/PersonalFindId";
 	}
 	
+	@GetMapping("/mailCheck")
+	@ResponseBody
+	public String mailCheck(String email) {
+		log.debug("이메일 인증 요청이 들어옴!");
+		log.debug("이메일 인증 이메일: " + email);
+		return mailSendService.joinEmail(email);
+	}
+	
+	
 	//아이디 결과
 	@RequestMapping(value = "/personal/findIdCtr.do", method = RequestMethod.POST)
 	public String personalFindIdCtr(HttpSession session, PersonalMemberDto personalMemberDto, Model model) {
@@ -160,6 +174,14 @@ public class PersonalMemberController {
 	public String personalMyPage(HttpSession session, Model model) {
 		log.info("Welcome PersonalMemberMyPageList");
 		
+//		PersonalMemberDto personalMemberDto 
+//				= PersonalMemberService.personalMyPageList(session);
+//		
+//		if(personalMemberDto != null) {
+//			
+//			session.setAttribute("personalMemberDto", personalMemberDto);
+//		}
+		
 		return "personal/myPage/PersonalMyPage";
 	}
 	
@@ -169,14 +191,16 @@ public class PersonalMemberController {
 										, PersonalMemberDto personalMemberDto,Model model) {
 		log.info("Welcome PersonalMemberMyPost!: {}", curPage);
 		
-		int totalCount = PersonalMemberService.personalMemberMyPostListSelectTotalCount();
+		int totalCount 
+					= PersonalMemberService.personalMemberMyPostListSelectTotalCount();
 		
 		Paging myPostPaging = new Paging(totalCount, curPage);
 		
 		int start = myPostPaging.getPageBegin();
 		int end = myPostPaging.getPageEnd();
 		
-	    List<BoardDto> myPostList = PersonalMemberService.personalMemberMyPostList(start, end);
+	    List<BoardDto> myPostList 
+	    			= PersonalMemberService.personalMemberMyPostList(start, end);
 
 	    HashMap<String, Object> pagingMap = new HashMap<>(); 
 		pagingMap.put("totalCount", totalCount);

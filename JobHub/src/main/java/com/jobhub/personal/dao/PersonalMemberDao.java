@@ -48,4 +48,7 @@ public interface PersonalMemberDao {
 	
 	public int personalMemberMyPostListSelectTotalCount();
 	
+	
+	public int personalMemberFindPwd(String perPwd, String perEmail, String perId);
+	
 }

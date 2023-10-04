@@ -544,7 +544,8 @@ tr td {
 							<option value="경력">경력</option>
 							<option value="R.RESUME_EDUCATION_NAME">학교명</option>
 							<option value="R.RESUME_LICENSE_NAME">자격증</option>
-						</select> <input type="text" name="searchText" id="textInput">
+						</select>
+						<input type="text" name="searchText" id="textInput">
 						<input type="submit" value="검색" class="button">
 					</div>
 					<button class="helpButton">
@@ -710,7 +711,7 @@ tr td {
 									${personalInfo.perLicenseCount}개</div>
 							</div>
 							<div id="" style="width: 100px; float: left; margin-right: 50px;">
-								적합도 100%</div>
+								적합도 ${personalInfo.recommendTotalRate}%</div>
 							<div id="buttonBox" style="float: left;">
 								<input type="button" value="이력서 보기" class="button" id="resumeBtn"
 									onclick="openResumeFnc('${personalInfo.perNo}', '${personalInfo.perName}');">

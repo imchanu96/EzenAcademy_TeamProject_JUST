@@ -43,40 +43,40 @@
 				<div class="preferItems">
 					<div class="preferName">키워드</div>
 					<div class="weightingSelected">
-						"${preferList[1]} " &nbsp;
+						"${preferList[0]} " &nbsp;
 					</div>
 					<div class="weightingPercentage">
-						가중치: ${preferList[0]}
+						가중치: ${preferList[1]}%
 					</div>
 				</div>
 				
 				<div class="preferItems">
 					<div class="preferName">자격증</div>
 					<div class="weightingSelected">
-						${preferList[3]} 개
+						${preferList[2]}
 					</div>
 					<div class="weightingPercentage">
-						가중치: ${preferList[2]}
+						가중치: ${preferList[3]}%
 					</div>
 				</div>
 				
 				<div class="preferItems">
 					<div class="preferName">학력</div>
 					<div class="weightingSelected">
-						${preferList[5]}
+						${preferList[4]}
 					</div>
 					<div class="weightingPercentage">
-						가중치: ${preferList[4]}
+						가중치: ${preferList[5]}%
 					</div>
 				</div>
 				
 				<div class="preferItems">
 					<div class="preferName">경력</div>
 					<div class="weightingSelected">
-						${preferList[7]}
+						${preferList[6]}
 					</div>
 					<div class="weightingPercentage">
-						가중치: ${preferList[6]}
+						가중치: ${preferList[7]}%
 					</div>
 				</div>
 				

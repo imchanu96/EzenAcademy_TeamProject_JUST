@@ -213,7 +213,11 @@
 	        , R.RESUME_CAREER_BEGIN_DATE AS "perCareerBeginDate"
 	        , R.RESUME_CAREER_END_DATE AS "perCareerEndDate"
 	        , NVL(R.RESUME_LICENSE_NAME , ' ') AS "perLicense"
-	        , NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) AS "perLicenseCount" , P.COMPANY_PREFER AS "comPrefer"
+	        , NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) AS "perLicenseCount" 
+            , P.COMPANY_PREFER AS "comPrefer" , (SELECT RECOMMEND_TOTAL_RATE
+                                                 FROM RECOMMEND
+                                                 WHERE COMPANY_NUMBER = #{comNo}
+                                                 AND PERSONAL_NUMBER = P.PERSONAL_NUMBER) AS "recommendTotalRate"
     	FROM (  SELECT P.PERSONAL_NUMBER, P.PERSONAL_COMPANY, C.COMPANY_PREFER
             FROM PERSONAL P , COMPANY C
             WHERE C.COMPANY_NUMBER = #{comNo}
@@ -293,10 +297,12 @@
 		WHERE RESUME_NUMBER = #{resumeNo}
 	</select>
 	
-	<select id="personalMembershowLetter" parameterType="map" resultMap="letterResultMap" >
+	<select id="personalMembershowLetter" parameterType="map" resultType="map" >
 	SELECT LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
 	    , LETTER_CHARACTER, LETTER_GOAL
-	    , (SELECT PERSONAL_NAME FROM PERSONAL WHERE PERSONAL_NUMBER = #{perNo}) AS "perName", PERSONAL_NUMBER
+	    , (SELECT PERSONAL_NAME 
+	    FROM PERSONAL 
+	    WHERE PERSONAL_NUMBER = #{perNo}) AS "perName", PERSONAL_NUMBER
     FROM LETTER
 	WHERE PERSONAL_NUMBER = #{perNo}
 	</select>
@@ -338,6 +344,13 @@
 		    , LETTER_CHARACTER = #{character}
 		    , LETTER_GOAL = #{goal}
 		WHERE PERSONAL_NUMBER = #{perNo}
+	</update>
+	
+	<update id="personalMemberFindPwd">
+		UPDATE PERSONAL
+		SET PERSONAL_PASSWORD = #{perPwd}
+		WHERE PERSONAL_EMAIL = #{perEmail}
+		AND PERSONAL_ID = #{perId}
 	</update>
 	
 	

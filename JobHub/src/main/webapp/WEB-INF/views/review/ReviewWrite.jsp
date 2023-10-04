@@ -18,6 +18,7 @@
 	<jsp:include page="/WEB-INF/views/review/ReviewNav.jsp"/>
 
 		<div id="content">
+			<div id="reviewingCompany">${personalMemberDto.perCom} 리뷰 작성</div>
 			<form action="./addCtr.do" method='post' onsubmit="onSubmitFnc(event);">
 				<div id="titleInputBox">
 					<input name="rTitle" id="titleInput" type="text"

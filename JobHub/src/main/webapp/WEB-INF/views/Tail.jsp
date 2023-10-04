@@ -66,7 +66,7 @@
 		}
 		#gitHubText {
 			float: left;
-			width: 130px;
+			width: 160px;
 			height: 50px;
 			line-height: 50px;
 			color: #999999;
@@ -93,7 +93,7 @@
 					<div id="gitHubimg" style="float: left; width: 55px; height: 55px;">
 						<img id="gitHubLogo" src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/7f682a54-2367-4fdf-8a05-64314bcd2418">
 					</div>
-					<div id="gitHubText">&nbsp;Visit Our GitHub</div> 
+					<div id="gitHubText">&nbsp;Visit Our GitHub >></div> 
 				</a>
 			</div>
 		</div>

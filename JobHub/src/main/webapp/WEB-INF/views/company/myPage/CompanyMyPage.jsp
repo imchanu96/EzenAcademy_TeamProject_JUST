@@ -11,19 +11,14 @@
 <link rel="stylesheet" href="/JobHub/resources/css/CompanyMyPage.css" type="text/css">
 </head>
 <body>
-	<jsp:include page="../../Header.jsp"/>
+
+	<jsp:include page="/WEB-INF/views/Header.jsp"/>
 	
 	<div id="container">
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
 					<a href="">내 프로필</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="">내가 쓴 글</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="">이력서 관리</a>
 				</div>
 				<div class="smallMenuItem">
 					<a href="./setPrefer.do?comNo=${sessionScope.companyMemberDto.comNo}">선호도 설정</a>

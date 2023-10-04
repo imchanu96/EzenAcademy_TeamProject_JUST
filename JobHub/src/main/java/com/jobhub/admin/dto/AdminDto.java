@@ -44,8 +44,8 @@ public class AdminDto {
 	private String comPrefer;
 	private Date comCreDate;
 	private Date comModDate;
-	private Date connTime;
-	private Date disconnTime;
+	private Date comConnTime;
+	private Date comDisconnTime;
 	
 	public AdminDto() {
 		super();
@@ -86,7 +86,7 @@ public class AdminDto {
 			, String comPwd, String comCode , String comLicense, String comLogo
 			, String comPrName, String comInChargeName, String comInChargeEmail
 			, String comInChargePhoneNum, String comPrefer, Date comCreDate
-			, Date comModDate, Date connTime, Date disconnTime) {
+			, Date comModDate, Date comConnTime, Date comDisconnTime) {
 		super();
 		this.comNo = comNo;
 		this.comName = comName;
@@ -107,23 +107,19 @@ public class AdminDto {
 		this.comPrefer = comPrefer;
 		this.comCreDate = comCreDate;
 		this.comModDate = comModDate;
-		this.connTime = connTime;
-		this.disconnTime = disconnTime;
+		this.comConnTime = comConnTime;
+		this.comDisconnTime = comDisconnTime;
 	}
 
 
-
-	public AdminDto(int perNo, String perName, String perId, String perPwd
-			, String perPhoneNum, String perCom, String perNickname, String perProfile
-			, String perEmail, Date perHireDate, String perKeyword
-			, String perTemporarily, int perPermission, Date perCreateDate
-			, Date perModifyDate, Date perConnectionTime, Date perDisconnectionTime
-			, int comNo, String comName, String comAdd, String comType, Date comEstDate
-			, String comHomepage, String comIntroduce, String comId, String comPwd
-			, String comCode, String comLicense, String comLogo, String comPrName
-			, String comInChargeName, String comInChargeEmail, String comInChargePhoneNum
-			, String comPrefer, Date comCreDate, Date comModDate, Date connTime
-			, Date disconnTime) {
+	public AdminDto(int perNo, String perName, String perId, String perPwd, String perPhoneNum, String perCom,
+			String perNickname, String perProfile, String perEmail, Date perHireDate, String perKeyword,
+			String perTemporarily, int perPermission, Date perCreateDate, Date perModifyDate, Date perConnectionTime,
+			Date perDisconnectionTime, int comNo, String comName, String comAdd, String comType, Date comEstDate,
+			String comHomepage, String comIntroduce, String comId, String comPwd, String comCode, String comLicense,
+			String comLogo, String comPrName, String comInChargeName, String comInChargeEmail,
+			String comInChargePhoneNum, String comPrefer, Date comCreDate, Date comModDate, Date comConnTime,
+			Date comDisconnTime) {
 		super();
 		this.perNo = perNo;
 		this.perName = perName;
@@ -161,8 +157,8 @@ public class AdminDto {
 		this.comPrefer = comPrefer;
 		this.comCreDate = comCreDate;
 		this.comModDate = comModDate;
-		this.connTime = connTime;
-		this.disconnTime = disconnTime;
+		this.comConnTime = comConnTime;
+		this.comDisconnTime = comDisconnTime;
 	}
 
 
@@ -176,7 +172,6 @@ public class AdminDto {
 	public void setPerNo(int perNo) {
 		this.perNo = perNo;
 	}
-
 
 
 	public String getPerName() {
@@ -598,56 +593,47 @@ public class AdminDto {
 	}
 
 
-
-	public Date getConnTime() {
-		return connTime;
+	public Date getComConnTime() {
+		return comConnTime;
 	}
 
 
 
-	public void setConnTime(Date connTime) {
-		this.connTime = connTime;
+	public void setComConnTime(Date comConnTime) {
+		this.comConnTime = comConnTime;
 	}
 
 
 
-	public Date getDisconnTime() {
-		return disconnTime;
+	public Date getComDisconnTime() {
+		return comDisconnTime;
 	}
 
 
 
-	public void setDisconnTime(Date disconnTime) {
-		this.disconnTime = disconnTime;
+	public void setComDisconnTime(Date comDisconnTime) {
+		this.comDisconnTime = comDisconnTime;
 	}
 
 
 
 	@Override
 	public String toString() {
-		return "AdminDto [perNo=" + perNo + ", perName=" + perName + ", perId=" + perId
-				+ ", perPwd=" + perPwd + ", perPhoneNum=" + perPhoneNum
-				+ ", perCom=" + perCom + ", perNickname=" + perNickname
-				+ ", perProfile=" + perProfile + ", perEmail=" + perEmail
-				+ ", perHireDate=" + perHireDate + ", perKeyword=" + perKeyword 
-				+ ", perTemporarily=" + perTemporarily + ", perPermission="
-				+ perPermission + ", perCreateDate=" + perCreateDate
-				+ ", perModifyDate=" + perModifyDate
-				+ ", perConnectionTime=" + perConnectionTime
-				+ ", perDisconnectionTime=" + perDisconnectionTime
-				+ ", comNo=" + comNo + ", comName=" + comName + ", comAdd=" + comAdd
-				+ ", comType=" + comType + ", comEstDate=" + comEstDate
-				+ ", comHomepage=" + comHomepage + ", comIntroduce=" + comIntroduce
-				+ ", comId=" + comId + ", comPwd=" + comPwd + ", comCode=" + comCode
-				+ ", comLicense=" + comLicense + ", comLogo=" + comLogo
-				+ ", comPrName=" + comPrName + ", comInChargeName=" + comInChargeName
-				+ ", comInChargeEmail=" + comInChargeEmail
-				+ ", comInChargePhoneNum=" + comInChargePhoneNum 
-				+ ", comPrefer=" + comPrefer + ", comCreDate=" + comCreDate
-				+ ", comModDate=" + comModDate
-				+ ", connTime=" + connTime + ", disconnTime=" + disconnTime + "]";
+		return "AdminDto [perNo=" + perNo + ", perName=" + perName + ", perId=" + perId + ", perPwd=" + perPwd
+				+ ", perPhoneNum=" + perPhoneNum + ", perCom=" + perCom + ", perNickname=" + perNickname
+				+ ", perProfile=" + perProfile + ", perEmail=" + perEmail + ", perHireDate=" + perHireDate
+				+ ", perKeyword=" + perKeyword + ", perTemporarily=" + perTemporarily + ", perPermission="
+				+ perPermission + ", perCreateDate=" + perCreateDate + ", perModifyDate=" + perModifyDate
+				+ ", perConnectionTime=" + perConnectionTime + ", perDisconnectionTime=" + perDisconnectionTime
+				+ ", comNo=" + comNo + ", comName=" + comName + ", comAdd=" + comAdd + ", comType=" + comType
+				+ ", comEstDate=" + comEstDate + ", comHomepage=" + comHomepage + ", comIntroduce=" + comIntroduce
+				+ ", comId=" + comId + ", comPwd=" + comPwd + ", comCode=" + comCode + ", comLicense=" + comLicense
+				+ ", comLogo=" + comLogo + ", comPrName=" + comPrName + ", comInChargeName=" + comInChargeName
+				+ ", comInChargeEmail=" + comInChargeEmail + ", comInChargePhoneNum=" + comInChargePhoneNum
+				+ ", comPrefer=" + comPrefer + ", comCreDate=" + comCreDate + ", comModDate=" + comModDate
+				+ ", comConnTime=" + comConnTime + ", comDisconnTime=" + comDisconnTime + "]";
 	}
 
-	
+
 }
 

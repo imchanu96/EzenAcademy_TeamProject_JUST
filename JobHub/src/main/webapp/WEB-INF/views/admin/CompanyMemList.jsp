@@ -54,7 +54,7 @@
 						value="${companyMemberDto.comCreDate}" /></td>
 					<td><fmt:formatDate pattern="yyyy-MM-dd" 
 						value="${companyMemberDto.comModDate}" /></td>
-						<td><div><input type="button" value="삭제" 
+						<td><div><input type="button" value="삭제"
 							onclick="companyPermissionUpdateFnc(${companyMemberDto.comNo});"></div></td>
 				</tr>
 			</c:forEach>

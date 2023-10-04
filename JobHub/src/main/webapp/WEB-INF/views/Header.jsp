@@ -34,7 +34,7 @@
 		<div id="headerBox">
 			<div id="headerContent">
 
-				<a href="http://localhost:9080/JobHub/personal/home.do">
+				<a href="http://localhost:9080/JobHub/home.do">
 					<img id="logo"
 						src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/1aa66c0e-7488-4a56-bc50-f915be889cf8">
 				</a>
@@ -72,7 +72,7 @@
 						</div>
 						<div id="myMenu">
 							<div class="myPage">
-								<a href="#">마이 페이지</a>
+								<a href="/JobHub/personal/personalMyPageList.do?perNo=${personalMemberDto.perNo}">마이 페이지</a>
 							</div>
 							<div class="logout">
 								<p onclick="clickLogoutFnc();"
@@ -92,7 +92,6 @@
 	<c:if test="${sessionScope.permission == 5}">
 		<div id="headerBox">
 			<div id="headerContent">
-
 				<a href="http://localhost:9080/JobHub/home.do">
 				<img id="logo"
 					 src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/1aa66c0e-7488-4a56-bc50-f915be889cf8">
@@ -103,7 +102,7 @@
 						<a href="../company/searchPerson.do"> 인재 조회 </a>
 					</div>
 					<div class="mainMenuItem">
-						<a href="../review/list.do?comNo=${companyMemberDto.comNo}"> 기업 리뷰
+						<a href="../review/list.do?comNo=${sessionScope.companyMemberDto.comNo}"> 기업 리뷰
 						</a>
 					</div>
 				</div>
@@ -121,7 +120,7 @@
 					<div id="myMenuBox">
 						<div class="memberInfo">
 							<span>
-								${companyMemberDto.comName} 님
+								${sessionScope.companyMemberDto.comName} 님
 							</span>
 						</div>
 						<div class="memberType">
@@ -129,7 +128,7 @@
 						</div>
 						<div id="myMenu">
 							<div class="myPage">
-								<a href="../company/showCompanyInfo.do?comNo=${companyMemberDto.comNo}">마이 페이지</a>
+								<a href="/JobHub/company/showCompanyInfo.do?comNo=${sessionScope.companyMemberDto.comNo}">마이 페이지</a>
 							</div>
 							<div class="logout">
 								<p onclick="clickLogoutFnc();"

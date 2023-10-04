@@ -180,5 +180,18 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 		return sqlSession.selectOne("com.jobhub.board.personalMemberMyPostListSelectTotalCount");
 	}
 
+
+	@Override
+	public int personalMemberFindPwd(String perPwd, String perEmail, String perId) {
+		// TODO Auto-generated method stub
+		
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("perEmail", perEmail);
+		map.put("perId", perId);
+		map.put("perPwd", perPwd);
+		
+		return sqlSession.update(namespace + "personalMemberFindPwd", map);
+	}
+
 }
 

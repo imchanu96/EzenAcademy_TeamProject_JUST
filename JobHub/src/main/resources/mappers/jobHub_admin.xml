@@ -52,8 +52,8 @@
 		<result column="COMPANY_PREFER" property="comPrefer" />
 		<result column="COMPANY_CREATE_DATE" property="comCreDate" />
 		<result column="COMPANY_MODIFY_DATE" property="comModDate" />
-		<result column="CONNECTION_TIME" property="connTime" />
-		<result column="DISCONNECTION_TIME" property="disconnTime" />	
+		<result column="CONNECTION_TIME" property="comConnTime" />
+		<result column="DISCONNECTION_TIME" property="comDisconnTime" />	
 	</resultMap>
 
 	

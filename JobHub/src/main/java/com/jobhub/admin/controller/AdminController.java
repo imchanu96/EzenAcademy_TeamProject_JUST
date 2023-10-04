@@ -152,7 +152,7 @@ public class AdminController {
 			
 			Map<String, Object> map = new HashMap<String, Object>();
 			System.out.println(comNo);
-			map.put("cNo", comNo);
+			map.put("comNo", comNo);
 			
 			try {
 				adminService.companyUpdateOne(map);
