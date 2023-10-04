@@ -21,13 +21,13 @@
 					<a href="./personalMyPageList.do?perNo=${personalMemberDto.perNo}">내 프로필</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="./personalMyPostList.do?perNo=${personalMemberDto.perNo">내가 쓴 글</a>
+					<a href="./personalMyPostList.do?perNo=${personalMemberDto.perNo}">내가 쓴 글</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="./showResume.do?perNo=${personalMemberDto.perNo">이력서 관리</a>
+					<a href="./showResume.do?perNo=${personalMemberDto.perNo}">이력서 관리</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="./showLetter.do?perNo=${personalMemberDto.perNo">자소서 관리</a>
+					<a href="./showLetter.do?perNo=${personalMemberDto.perNo}">자소서 관리</a>
 				</div>
 				<div class="smallMenuItem">
 					<a href="">고객센터</a>
@@ -56,8 +56,8 @@
 						</div>
 						
 						<div id="backButtonBox">
-							<button>
-								<a href="./personalMyPageList.do?perNo=${personalMemberDto.perNo}">
+							<button id="backBtn">
+								<a href="./personalMyPageList.do?perNo=${sessionScope.personalMemberDto.perNo}">
 									돌아가기
 								</a>
 							</button>

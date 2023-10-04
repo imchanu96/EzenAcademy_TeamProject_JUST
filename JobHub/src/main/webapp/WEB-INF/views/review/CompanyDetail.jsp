@@ -65,7 +65,7 @@
 					</div>
 					<div class="contentBox">
 						<span>
-							<span>${companyMemberDto.comRev}</span>
+							<span>${companyMemberDto.comRev}억 원</span>
 						</span>
 					</div>
 				</div>
@@ -75,7 +75,7 @@
 					</div>
 					<div class="contentBox">
 						<span>
-							<span>${companyMemberDto.comEmp}</span>
+							<span>${companyMemberDto.comEmp} 명</span>
 						</span>
 					</div>
 				</div>

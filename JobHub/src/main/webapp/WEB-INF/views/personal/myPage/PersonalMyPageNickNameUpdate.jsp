@@ -48,7 +48,7 @@
 						</div>
 						<div class="personalInfoItemUpdate">
 							<input id="input" type="text" name="perNickname" onfocus="inputFocusFnc();" onblur="inputBlurFnc();"
-								placeholder="${personalMemberDto.perNickname}">>
+								placeholder="${personalMemberDto.perNickname}">
 						</div>
 					
 						<div id="buttonBox">
@@ -56,7 +56,7 @@
 						</div>
 						
 						<div id="backButtonBox">
-							<button>
+							<button id="backBtn">
 								<a href="./personalMyPageList.do?perNo=${sessionScope.personalMemberDto.perNo}">
 									돌아가기
 								</a>

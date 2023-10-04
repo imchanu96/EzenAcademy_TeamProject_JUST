@@ -56,7 +56,7 @@
 						</div>
 						
 						<div id="backButtonBox">
-							<button>
+							<button id="backBtn">
 								<a href="./personalMyPageList.do?perNo=${sessionScope.personalMemberDto.perNo}">
 									돌아가기
 								</a>

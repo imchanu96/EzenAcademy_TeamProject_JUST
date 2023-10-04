@@ -25,7 +25,9 @@
 		<result column="COMPANY_INCHARGE_EMAIL" property="comInChargeEmail" />
 		<result column="COMPANY_INCHARGE_PHONENUMBER" property="comInChargePhoneNum" />
 		<result column="COMPANY_PREFER" property="comPrefer" />
-		<result column="PERMISSION" property="comPermission" />
+		<result column="COMPANY_REVENUE" property="comRev" />
+		<result column="COMPANY_EMPLOYEES" property="comEmp" />
+		<result column="PERMISSION" property="comEmp" />
 		<result column="COMPANY_CREATE_DATE" property="comCreDate" />
 		<result column="COMPANY_MODIFY_DATE" property="comModDate" />
 		<result column="CONNECTION_TIME" property="comConnTime" />
@@ -38,7 +40,7 @@
 				COMPANY_ESTABLISH_DATE, COMPANY_HOMEPAGE, COMPANY_INTRODUCE, COMPANY_CODE,
 				COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME, 
 				COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, 
-				COMPANY_PREFER,
+				COMPANY_PREFER, COMPANY_REVENUE, COMPANY_EMPLOYEES,
 				COMPANY_MODIFY_DATE
 		 FROM COMPANY
 		 WHERE COMPANY_NUMBER = #{comNo}
