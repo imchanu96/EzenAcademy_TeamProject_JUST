@@ -87,7 +87,7 @@
 							</div>
 							<div>
 								<div class="starNameBox">
-										<span>&nbsp;워&nbsp;라&nbsp;밸</span>
+										<span>&nbsp;워&nbsp;라&nbsp;벨</span>
 									</div>
 								<span>★ ${balTotalAvg}</span>
 							</div>
@@ -147,7 +147,7 @@
 								</div>
 								<div>
 									<div class="starNameBox">
-										<span>&nbsp;워&nbsp;라&nbsp;밸</span>
+										<span>&nbsp;워&nbsp;라&nbsp;벨</span>
 									</div>
 									<span>
 										<c:forEach var="i" begin="1" end="5">
