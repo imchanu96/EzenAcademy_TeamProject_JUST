@@ -28,8 +28,7 @@ public class AjaxDaoImpl implements AjaxDao{
 	@Override
 	public LetterDto showPersonalLetter(HashMap<String, String> paramMap) {
 		// TODO Auto-generated method stub
-		LetterDto dto = sqlSession.selectOne(personalNamespace + "personalMemberShowLetter", paramMap);
-		return dto;
+		return sqlSession.selectOne(personalNamespace + "personalMemberShowLetter", paramMap);
 	}
 
 	@Override

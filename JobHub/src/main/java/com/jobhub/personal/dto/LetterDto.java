@@ -14,7 +14,7 @@ public class LetterDto {
 	}
 
 	public LetterDto(int letterNo, String history, String motivation
-			, String character, String goal, int perNo) {
+				, String character, String goal, int perNo) {
 		super();
 		this.letterNo = letterNo;
 		this.history = history;

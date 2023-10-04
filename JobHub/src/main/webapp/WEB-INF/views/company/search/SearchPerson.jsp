@@ -335,70 +335,143 @@ tr td {
 	        
 	        // 예제: 결과를 resultContainer에 표시
 // 	        	alert('성공');
+	        	var resumeDto = data.resumeDto;
+	        	var careerDtoList = data.careerDtoList;
+	        	var educationDtoList = data.educationDtoList;
 	        	
-	        		
-	        
-	        	modal.children[1].textContent = name + "의 이력서";
+// 	        	alert(resumeDto);
+// 	        	alert(careerDtoList);
+// 	        	alert(educationDtoList);
+	        	modal.children[1].textContent = resumeDto.resumeName + "의 이력서";
 	        	modal.children[1].style.textAlign = "center";
 	        	//이름
-	        	resumeValue[0].textContent = data.resumeName;
-	        	//생일
-	        	resumeValue[1].textContent = data.resumeBirthday;
-	        	//이메일
-	        	resumeValue[2].textContent = data.resumeEmail;
-	        	// 전화번호
-	        	resumeValue[3].textContent = data.resumePhoneNum;
-	        	// 주소
-	        	resumeValue[4].textContent = data.resumeAdd;
-	        	// 결혼 여부
-	        	resumeValue[5].textContent = data.resumeMarry;
-	        	// 성별
-	        	resumeValue[6].textContent = data.resumeGender;
-	        	// 병역 여부
-	        	resumeValue[7].textContent = data.resumeMilitary;
-	        	//입학년도
-		        	resumeValue[8].textContent = data.resumeEduBeginDate;
-	        	//졸업년도
-	        	resumeValue[9].textContent = data.resumeEduEndDate;
-	        	// 학교명
-	        	resumeValue[10].textContent = data.resumeEduName;
-	        	//전공
-	        	resumeValue[11].textContent = data.resumeEduMajor;
-	        	//소재지
-	        	resumeValue[12].textContent = data.resumeEduLoc;
-	        	//학점
-	        	resumeValue[13].textContent = data.resumeEduGrade;
-	        	//졸업 구분
-	        	resumeValue[14].textContent = data.resumeEduGraduate;
-	        	//입사년도
-	        	resumeValue[15].textContent = data.resumeCareerBeginDate;
-	        	//퇴사년도
-	        	resumeValue[16].textContent = data.resumeCareerEndDate;
-	        	//회사명
-	        	resumeValue[17].textContent = data.resumeCareerName;
-	        	//직위
-	        	resumeValue[18].textContent = data.resumeCareerPos;
-	        	//소재지
-	        	resumeValue[19].textContent = data.resumeCareerLoc;
-	        	//담당업무
-	        	resumeValue[20].textContent = data.resumeCareerJob;
-	        	//자격증 취득일
-	        	resumeValue[21].textContent = data.resumeLicenseDate;
-	        	//자격증명
-	        	resumeValue[22].textContent = data.resumeLicenseName;
-	        	//발급기관
-	        	resumeValue[23].textContent = data.resumeLicenseInst;
-	        	//점수/등급
-	        	resumeValue[24].textContent = data.resumeLicenseGrade;
-	        
+	        	resumeValue[0].textContent = resumeDto.resumeName;
+	        	//생일                      
+	        	resumeValue[1].textContent = resumeDto.resumeBirthday;
+	        	//이메일                    
+	        	resumeValue[2].textContent = resumeDto.resumeEmail;
+	        	// 전화번호                  
+	        	resumeValue[3].textContent = resumeDto.resumePhoneNum;
+	        	// 주소                     
+	        	resumeValue[4].textContent = resumeDto.resumeAdd;
+	        	// 결혼 여부                 
+	        	resumeValue[5].textContent = resumeDto.resumeMarry;
+	        	// 성별                     
+	        	resumeValue[6].textContent = resumeDto.resumeGender;
+	        	// 병역 여부                 
+	        	resumeValue[7].textContent = resumeDto.resumeMilitary;
+
+	        	
+	        	for (var i = 0; i < educationDtoList.length; i++) {
+	        		var educationTrObj = document.createElement("tr");
+	        		educationTrObj.id = "educationTr" + i;
+	        		var educationTable = document.getElementById("educationTr").parentNode;
+	        		
+					// 입학년도
+	        		var educationTdObj = document.createElement("td");
+	        		educationTrObj.appendChild(educationTdObj);
+	        		educationTdObj.textContent = educationDtoList[i].eduBeginDate;
+	        		// 졸업연도
+	        		var educationTdObj = document.createElement("td");
+	        		educationTrObj.appendChild(educationTdObj);
+	        		educationTdObj.textContent = educationDtoList[i].eduEndDate;
+	        		// 학교명
+	        		var educationTdObj = document.createElement("td");
+	        		educationTrObj.appendChild(educationTdObj);
+	        		educationTdObj.textContent = educationDtoList[i].eduName;
+	        		// 전공
+	        		var educationTdObj = document.createElement("td");
+	        		educationTrObj.appendChild(educationTdObj);
+	        		educationTdObj.textContent = educationDtoList[i].eduMajor;
+	        		// 소재지
+	        		var educationTdObj = document.createElement("td");
+	        		educationTrObj.appendChild(educationTdObj);
+	        		educationTdObj.textContent = educationDtoList[i].eduLocation;
+	        		// 학점
+	        		var educationTdObj = document.createElement("td");
+	        		educationTrObj.appendChild(educationTdObj);
+	        		educationTdObj.textContent = educationDtoList[i].eduGrade;
+	        		// 졸업 구분
+	        		var educationTdObj = document.createElement("td");
+	        		educationTrObj.appendChild(educationTdObj);
+	        		educationTdObj.textContent = educationDtoList[i].eduGreaduate;
+	        		
+        			educationTable.appendChild(educationTrObj);
+
+				}
+	        	
+	        	for (var i = 0; i < careerDtoList.length; i++) {
+	        		var careerTrObj = document.createElement("tr");
+	        		careerTrObj.id = "careerTr" + i;
+	        		var careerTable = document.getElementById("careerTr").parentNode;
+	        		
+					// 입사년도
+	        		var careerTdObj = document.createElement("td");
+	        		careerTrObj.appendChild(careerTdObj);
+	        		careerTdObj.textContent = careerDtoList[i].carBeginDate;
+					// 퇴사년도
+	        		var careerTdObj = document.createElement("td");
+	        		careerTrObj.appendChild(careerTdObj);
+	        		careerTdObj.textContent = careerDtoList[i].carEndDate;
+					// 회사명
+	        		var careerTdObj = document.createElement("td");
+	        		careerTrObj.appendChild(careerTdObj);
+	        		careerTdObj.textContent = careerDtoList[i].carName;
+					// 직무
+	        		var careerTdObj = document.createElement("td");
+	        		careerTrObj.appendChild(careerTdObj);
+	        		careerTdObj.textContent = careerDtoList[i].carPosition;
+					// 소재지
+	        		var careerTdObj = document.createElement("td");
+	        		careerTrObj.appendChild(careerTdObj);
+	        		careerTdObj.textContent = careerDtoList[i].carLocation;
+					// 담당업무
+	        		var careerTdObj = document.createElement("td");
+	        		careerTrObj.appendChild(careerTdObj);
+	        		careerTdObj.textContent = careerDtoList[i].carJob;
+	        		
+        			careerTable.appendChild(careerTrObj);
+
+				}
+	        	
+	        	var licenseDateArr = resumeDto.resumeLicenseDate.split(",");
+// 	        	alert(licenseDateArr);
+	        	var licenseNameArr = resumeDto.resumeLicenseName.split(",");
+	        	var licenseInstArr = resumeDto.resumeLicenseInst.split(",");
+	        	var licenseGradeArr = resumeDto.resumeLicenseGrade.split(",");
+	        	for (var i = 0; i < licenseDateArr.length; i++) {
+	        		var licenseTrObj = document.createElement("tr");
+	        		licenseTrObj.id = "licenseTr" + i;
+	        		var licenseTable = document.getElementById("licenseTr").parentNode;
+	        		
+					// 자격증취득일
+	        		var licenseTdObj = document.createElement("td");
+	        		licenseTrObj.appendChild(licenseTdObj);
+	        		licenseTdObj.textContent = licenseDateArr[i];
+					// 자격증명
+	        		var licenseTdObj = document.createElement("td");
+	        		licenseTrObj.appendChild(licenseTdObj);
+	        		licenseTdObj.textContent = licenseNameArr[i];
+					// 자격증 발급기관
+	        		var licenseTdObj = document.createElement("td");
+	        		licenseTrObj.appendChild(licenseTdObj);
+	        		licenseTdObj.textContent = licenseInstArr[i];
+					// 점수/등급
+	        		var licenseTdObj = document.createElement("td");
+	        		licenseTrObj.appendChild(licenseTdObj);
+	        		licenseTdObj.textContent = licenseGradeArr[i];
+	        		
+	        		licenseTable.appendChild(licenseTrObj);
+
+				}
 	        	modal.style.display = "block";
 	        	
 	        	var bodyObj = document.getElementById("body");
 	        	
-	        	bodyObj.addEventListener("click", function(e) {
-	        		resumeModal.style.display = "none";
-	        	});
-			
+	        	bodyObj.addEventListener("click", function (e) {
+        				resumeModal.style.display = "none";
+        				location.reload();
+	        			}, {once : true});
 			},
 			error: function() {
 				alert('불러오기 실패');
@@ -422,7 +495,7 @@ tr td {
 	        // 서버로부터 받은 데이터(data)를 처리합니다.
 	        
 	        // 예제: 결과를 resultContainer에 표시
-	        	alert('성공');
+// 	        	alert('성공');
 	        	modal.children[1].textContent = name + "의 자기 소개서";
 	        	modal.children[1].style.textAlign = "center";
 	        	
@@ -609,14 +682,8 @@ tr td {
 						<td>학점(등급)/ 만점</td>
 						<td>졸업 구분</td>
 					</tr>
-					<tr>
-						<td class="resumeValue"></td>
-						<td class="resumeValue"></td>
-						<td class="resumeValue"></td>
-						<td class="resumeValue"></td>
-						<td class="resumeValue"></td>
-						<td class="resumeValue"></td>
-						<td class="resumeValue"></td>
+					<tr id="educationTr">
+						
 					</tr>
 				</table>
 
@@ -628,17 +695,12 @@ tr td {
 						<td>입사년도</td>
 						<td>퇴사년도</td>
 						<td>회사명</td>
-						<td>직위</td>
+						<td>직무</td>
 						<td>소재지</td>
 						<td>담당업무</td>
 					</tr>
-					<tr>
-						<td class="resumeValue"></td>
-						<td class="resumeValue"></td>
-						<td class="resumeValue"></td>
-						<td class="resumeValue"></td>
-						<td class="resumeValue"></td>
-						<td class="resumeValue"></td>
+					<tr id="careerTr">
+					
 					</tr>
 				</table>
 
@@ -652,11 +714,8 @@ tr td {
 						<td>발급 기관</td>
 						<td>점수/등급</td>
 					</tr>
-					<tr>
-						<td class="resumeValue"></td>
-						<td class="resumeValue"></td>
-						<td class="resumeValue"></td>
-						<td class="resumeValue"></td>
+					<tr id="licenseTr">
+						
 					</tr>
 				</table>
 			</div>

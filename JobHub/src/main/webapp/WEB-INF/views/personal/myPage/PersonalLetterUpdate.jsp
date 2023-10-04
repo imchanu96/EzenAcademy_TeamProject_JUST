@@ -72,10 +72,10 @@ tr td {
 					<a href="">내가 쓴 글</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="./showResume.do?pNo=${personalMemberDto.pNo}">이력서 관리</a>
+					<a href="./showResume.do?perNo=${personalMemberDto.perNo}">이력서 관리</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="./showLetter.do?pNo=${personalMemberDto.pNo}">자소서 관리</a>
+					<a href="./showLetter.do?perNo=${personalMemberDto.perNo}">자소서 관리</a>
 				</div>
 				<div class="smallMenuItem">
 					<a href="">고객센터</a>
@@ -89,30 +89,22 @@ tr td {
 				<form action="./letterUpdateCtr.do" method="post"">
 					<div>
 						<p>성장 배경</p>
-						<textarea class="letterValue" name="history">
-						${letterDto.history}
-					</textarea>
+						<textarea class="letterValue" name="history">${letterDto.history}</textarea>
 					</div>
 					<div>
 						<p>지원 동기</p>
-						<textarea class="letterValue" name="motivation">
-						${letterDto.motivation}
-					</textarea>
+						<textarea class="letterValue" name="motivation">${letterDto.motivation}</textarea>
 					</div>
 					<div>
 						<p>성격의 장단점</p>
-						<textarea class="letterValue" name="character">
-						${letterDto.character}
-					</textarea>
+						<textarea class="letterValue" name="character">${letterDto.character}</textarea>
 					</div>
 					<div>
 						<p>목표</p>
-						<textarea class="letterValue" name="goal">
-						${letterDto.goal}
-					</textarea>
+						<textarea class="letterValue" name="goal">${letterDto.goal}</textarea>
 					</div>
-					<input type="hidden" name="rNo" value="${resumeDto.rNo}">
-					<input type="hidden" name="pNo" value="${sessionScope.personalMemberDto.pNo}">
+					<input type="hidden" name="resumeNo" value="${resumeDto.resumeNo}">
+					<input type="hidden" name="perNo" value="${sessionScope.personalMemberDto.perNo}">
 					<input type="submit">
 				</form>
 			</div>

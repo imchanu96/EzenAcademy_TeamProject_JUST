@@ -1,25 +1,27 @@
 package com.jobhub.ajax.service;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.jobhub.ajax.dao.AjaxDao;
+import com.jobhub.personal.dao.PersonalMemberDao;
 import com.jobhub.personal.dto.LetterDto;
-import com.jobhub.personal.dto.ResumeDto;
-import com.jobhub.review.dto.ReviewDto;
 
 @Service
 public class AjaxServiceImpl implements AjaxService {
 
 	@Autowired
 	public AjaxDao ajaxDao;
+	@Autowired
+	public PersonalMemberDao personalDao;
 	
 	@Override
-	public ResumeDto showPersonalResume(HashMap<String, String> paramMap) {
+	public Map<String, Object> showPersonalResume(int perNo) {
 		// TODO Auto-generated method stub
-		return ajaxDao.showPersonalResume(paramMap);
+		return personalDao.personalMemberShowResume(perNo);
 	}
 
 	@Override

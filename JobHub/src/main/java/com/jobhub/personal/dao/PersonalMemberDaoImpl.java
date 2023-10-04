@@ -152,7 +152,7 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 		HashMap<String, Object> map = new HashMap<String, Object>();
 		map.put("perNo", perNo);
 		
-		return sqlSession.selectOne(namespace + "personalMembershowLetter", map);
+		return sqlSession.selectOne(namespace + "personalMemberShowLetter", map);
 	}
 
 

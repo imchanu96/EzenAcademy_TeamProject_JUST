@@ -10,14 +10,7 @@
 		var logoutModal = document.getElementById("logoutModal");
 		logoutModal.style.display = "block";
 	}
-	function logoutFnc(permission) {
-		if (permission == 1 || permission == 2) {
-			location.href = "<%=request.getContextPath()%>/personal/logout.do";
-		}else if (permission == 5) {
-			location.href = "<%=request.getContextPath()%>/company/logout.do";
-		}
-		
-	}
+	
 	function mouseoverFnc() {
 		var logoutTextList = document.getElementsByClassName("logout");
 		
@@ -33,8 +26,8 @@
 	        logoutTextList[i].style.color = "#292e41";
 		}
 	}	
-		
-	function backButton() {
+
+	function closeModalFnc() {
 		var logoutModal = document.getElementById("logoutModal");
 		logoutModal.style.display = "none";
 	}
