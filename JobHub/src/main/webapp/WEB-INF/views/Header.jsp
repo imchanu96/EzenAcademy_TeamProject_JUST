@@ -72,7 +72,7 @@
 						</div>
 						<div id="myMenu">
 							<div class="myPage">
-								<a href="#">마이 페이지</a>
+								<a href="/JobHub/personal/personalMyPageList.do?perNo=${personalMemberDto.perNo}">마이 페이지</a>
 							</div>
 							<div class="logout">
 								<p onclick="clickLogoutFnc();"
@@ -128,7 +128,7 @@
 						</div>
 						<div id="myMenu">
 							<div class="myPage">
-								<a href="../company/showCompanyInfo.do?comNo=${sessionScope.companyMemberDto.comNo}">마이 페이지</a>
+								<a href="/JobHub/company/showCompanyInfo.do?comNo=${sessionScope.companyMemberDto.comNo}">마이 페이지</a>
 							</div>
 							<div class="logout">
 								<p onclick="clickLogoutFnc();"

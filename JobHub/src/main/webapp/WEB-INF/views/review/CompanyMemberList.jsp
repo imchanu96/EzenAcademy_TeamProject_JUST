@@ -27,7 +27,7 @@
 					<div id="companyInfoBox">
 					
 						<div id="companyLogo">
-						
+							<img src="${companyMemberList.comLogo}">
 						</div>
 						<div id="companySummary">
 							<div id="companyNameBox">

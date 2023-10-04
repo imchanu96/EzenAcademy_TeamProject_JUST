@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', function () {
+		// 네비게이션(사이드바) 높이를 content의 높이에 맞추기
 	    const navigation = document.getElementById('navigation');
 	    const content = document.getElementById('content');
 	

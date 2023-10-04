@@ -62,7 +62,12 @@
 		width: 140px;
 		height: 140px;
 		margin: 10px;
-		border: 1px solid #5c667b;
+		display: flex;
+   		align-items: center;
+	}
+	#companyLogo > img {
+		width: 140px;
+		height: auto;
 	}
 	#companySummary {
 		float: left;

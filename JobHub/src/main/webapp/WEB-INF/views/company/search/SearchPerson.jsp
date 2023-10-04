@@ -544,7 +544,8 @@ tr td {
 							<option value="경력">경력</option>
 							<option value="R.RESUME_EDUCATION_NAME">학교명</option>
 							<option value="R.RESUME_LICENSE_NAME">자격증</option>
-						</select> <input type="text" name="searchText" id="textInput">
+						</select>
+						<input type="text" name="searchText" id="textInput">
 						<input type="submit" value="검색" class="button">
 					</div>
 					<button class="helpButton">

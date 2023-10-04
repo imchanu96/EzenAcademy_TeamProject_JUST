@@ -12,11 +12,20 @@
 		margin: 10px;
 		float: left;
 		width: 980px;
-		height: 740px;
+		height: 770px;
 		font-size: 30px;
 		background-color: #f8fafc;
 	}
-	
+	#reviewingCompany {
+	    width: 950px;
+	    height: 30px;
+	    text-align: left;
+	    font-size: 18px;
+	    font-weight: bold;
+	    color: #475067;
+	    line-height: 44px;
+	    margin-left: 30px;
+	}
 	#titleInputBox, #starInputBox, #contentInputBox {
 		background-color: #fff;
 		padding: 20px 0px 0px 10px;

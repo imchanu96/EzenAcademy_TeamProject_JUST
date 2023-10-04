@@ -23,7 +23,9 @@
 		<div id="content">
 		
 			<div id="companyInfoBox">
-				<div id="companyLogo"></div>
+				<div id="companyLogo">
+					<img src="${companyMemberDto.comLogo}">
+				</div>
 				<div id="companySummary">
 					<div id="companyNameBox">
 						<span id="companyName">${companyMemberDto.comName}</span>
