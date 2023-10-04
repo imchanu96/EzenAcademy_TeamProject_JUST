@@ -47,7 +47,6 @@
 						</div>
 						
 						<div class="personalInfoItemUpdate">
-							<input type="text" name="pPhoneNum">
 							<input type="text" name="perPhoneNum"
 								placeholder="${personalMemberDto.perPhoneNum}">
 						</div>
@@ -58,7 +57,7 @@
 						
 						<div id="backButtonBox">
 							<button>
-								<a href="./personalMyPageList.do?perNo=${personalMemberDto.perNo}">
+								<a href="./personalMyPageList.do?perNo=${sessionScope.personalMemberDto.perNo}">
 									돌아가기
 								</a>
 							</button>

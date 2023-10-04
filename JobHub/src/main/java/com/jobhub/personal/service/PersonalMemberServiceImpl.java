@@ -3,6 +3,8 @@ package com.jobhub.personal.service;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpSession;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -145,5 +147,11 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 //		sendMail.setTo(perEmail);
 //		sendMail.send();
 	}
+
+//	@Override
+//	public PersonalMemberDto personalMyPageList(HttpSession session) {
+//		// TODO Auto-generated method stub
+//		return PersonalMemberDao.personalMyPageList(session);
+//	}
 
 }

@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.jobhub.board.dto.BoardDto;
 import com.jobhub.board.util.Paging;
+import com.jobhub.personal.dao.PersonalMemberDao;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;
@@ -173,6 +174,14 @@ public class PersonalMemberController {
 	public String personalMyPage(HttpSession session, Model model) {
 		log.info("Welcome PersonalMemberMyPageList");
 		
+//		PersonalMemberDto personalMemberDto 
+//				= PersonalMemberService.personalMyPageList(session);
+//		
+//		if(personalMemberDto != null) {
+//			
+//			session.setAttribute("personalMemberDto", personalMemberDto);
+//		}
+		
 		return "personal/myPage/PersonalMyPage";
 	}
 	
@@ -182,14 +191,16 @@ public class PersonalMemberController {
 										, PersonalMemberDto personalMemberDto,Model model) {
 		log.info("Welcome PersonalMemberMyPost!: {}", curPage);
 		
-		int totalCount = PersonalMemberService.personalMemberMyPostListSelectTotalCount();
+		int totalCount 
+					= PersonalMemberService.personalMemberMyPostListSelectTotalCount();
 		
 		Paging myPostPaging = new Paging(totalCount, curPage);
 		
 		int start = myPostPaging.getPageBegin();
 		int end = myPostPaging.getPageEnd();
 		
-	    List<BoardDto> myPostList = PersonalMemberService.personalMemberMyPostList(start, end);
+	    List<BoardDto> myPostList 
+	    			= PersonalMemberService.personalMemberMyPostList(start, end);
 
 	    HashMap<String, Object> pagingMap = new HashMap<>(); 
 		pagingMap.put("totalCount", totalCount);
