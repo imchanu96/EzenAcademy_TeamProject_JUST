@@ -157,7 +157,7 @@
 				내 선호도
 				<span id="warningMsg" style="color:red; margin:auto; display: none;">적합도 합이 100%가 아닙니다.</span>
 				<span id="totalRate" style="float: right; margin-right: 50px;">
-					총 적합도 : ${preferList[1] + preferList[3] + preferList[5] + preferList[7]}%
+					총 적합도 : ${fn:trim(preferList[1]) + fn:trim(preferList[3]) + fn:trim(preferList[5]) + fn:trim(preferList[7])}%
 				</span>
 			</div>
 			
