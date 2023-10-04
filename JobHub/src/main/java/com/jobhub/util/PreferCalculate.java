@@ -57,6 +57,7 @@ public class PreferCalculate {
 		this.keywordRate = preferArr[1].trim();
 		this.license = preferArr[2].trim();
 		this.licenseRate = preferArr[3].trim();
+		System.out.println("학력" + preferArr[4].trim());
 		this.education = preferArr[4].trim();
 		this.educationRate = preferArr[5].trim();
 		this.career = preferArr[6].trim();
@@ -141,7 +142,7 @@ public class PreferCalculate {
 		System.out.println("회사 요구 자격증 갯수" + getLicense());
 		
 		String licenseCondition1 = "1개 이하";
-		String licenseCondition2 = "1~3";
+		String licenseCondition2 = "1~3개";
 		String licenseCondition3 = "3개 이상";
 		
 		if (getLicense().equals(licenseCondition1)) {

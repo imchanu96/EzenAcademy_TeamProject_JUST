@@ -53,7 +53,7 @@
 				<div class="preferItems">
 					<div class="preferName">자격증</div>
 					<div class="weightingSelected">
-						${preferList[2]} 개
+						${preferList[2]}
 					</div>
 					<div class="weightingPercentage">
 						가중치: ${preferList[3]}%
