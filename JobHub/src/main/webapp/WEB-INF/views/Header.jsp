@@ -25,7 +25,6 @@
 				</div>
 			</div>
 	</div>
-	
 	<c:if
 		test="${sessionScope.permission <= 3 
 		or sessionScope.permission == 10}">

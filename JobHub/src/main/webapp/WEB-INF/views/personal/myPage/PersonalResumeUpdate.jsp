@@ -35,8 +35,7 @@
 						<td class="resumeValue">
 							<input type="date" name="resumeBirthday"
 									value="<fmt:formatDate pattern="yyyy-MM-dd"
-															value="${resumeDto.resumeBirthday}"/>
-							">
+															value="${resumeDto.resumeBirthday}"/>">
 						</td>
 					</tr>
 					<tr>
@@ -87,8 +86,8 @@
 <%-- 				${educationDtoList} --%>
 				<c:forEach var="educationDto" items="${educationDtoList}">
 					<tr>
-						<td class="resumeValue"><fmt:formatDate pattern="yyyy-MM-dd" 
-						value="${educationDto.eduBeginDate}" /></td>
+						<td class="resumeValue"><input type="date" value="<fmt:formatDate pattern="yyyy-MM-dd"
+															value="${educationDto.eduBeginDate}"/>"></td>
 						<td class="resumeValue"><fmt:formatDate pattern="yyyy-MM-dd" 
 						value="${educationDto.eduEndDate}" /></td>
 						<td class="resumeValue">${educationDto.eduName}</td>

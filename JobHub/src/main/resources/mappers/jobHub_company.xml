@@ -27,7 +27,7 @@
 		<result column="COMPANY_PREFER" property="comPrefer" />
 		<result column="COMPANY_REVENUE" property="comRev" />
 		<result column="COMPANY_EMPLOYEES" property="comEmp" />
-		<result column="PERMISSION" property="comEmp" />
+		<result column="PERMISSION" property="comPermission" />
 		<result column="COMPANY_CREATE_DATE" property="comCreDate" />
 		<result column="COMPANY_MODIFY_DATE" property="comModDate" />
 		<result column="CONNECTION_TIME" property="comConnTime" />
