@@ -160,7 +160,6 @@
                총 적합도 : ${fn:trim(preferList[1]) + fn:trim(preferList[3]) + fn:trim(preferList[5]) + fn:trim(preferList[7])}%
             </span>
          </div>
-			
 
 			<form action="./preferUpdateCtr.do" method="post" id="formObj">
 				<div id="preferItemsBox">
