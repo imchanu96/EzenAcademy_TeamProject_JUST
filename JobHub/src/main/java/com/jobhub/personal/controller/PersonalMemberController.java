@@ -80,7 +80,7 @@ public class PersonalMemberController {
 
 		session.invalidate(); // 세션 종료
 
-		return "redirect:/personal/login.do";
+		return "redirect:/home.do";
 	}
 
 
@@ -394,7 +394,7 @@ public class PersonalMemberController {
 		
 		LetterDto letterDto = PersonalMemberService.personalMembershowLetter(perNo);
 		
-		session.setAttribute("letterDto", letterDto);
+		model.addAttribute("letterDto", letterDto);
 				
 		return "personal/myPage/PersonalShowLetter";
 	}
@@ -402,7 +402,13 @@ public class PersonalMemberController {
 	@RequestMapping(value = "/personal/letterUpdate.do", method = RequestMethod.GET)
 	public String LetterUpdate(HttpSession session, Model model) {
 		log.info("Welecom LetterUpdate!");
-				
+		
+		PersonalMemberDto personalMemberDto = (PersonalMemberDto)session.getAttribute("personalMemberDto");
+
+		LetterDto letterDto = PersonalMemberService.personalMembershowLetter(personalMemberDto.getPerNo());
+		
+		model.addAttribute("letterDto", letterDto);
+		
 		return "personal/myPage/PersonalLetterUpdate";
 	}
 	

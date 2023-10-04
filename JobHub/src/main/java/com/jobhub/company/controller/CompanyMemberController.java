@@ -84,7 +84,7 @@ public class CompanyMemberController {
 
 		session.invalidate(); // 세션 종료
 
-		return "redirect:/company/login.do";
+		return "redirect:/home.do";
 	}
 
 	@RequestMapping(value = "/company/add.do", method = RequestMethod.GET)

@@ -16,16 +16,14 @@
 		<div id="centerForm">
 			<p>정말 로그아웃 하시겠습니까?</p>
 		</div>
-		<form action="logout.do" method="get">
 			<div id="buttonForm">
 				<div class="button">
-					<input type="button" value="네" onclick="logoutFnc(${permission});">
+					<input type="button" value="네" onclick="location.href='./logout.do'">
 				</div>
 				<div class="button">
-					<input type="button" value="아니오" onclick="backButton();">
+					<input type="button" value="아니오" onclick="closeModalFnc();">
 				</div>
 			</div>
-		</form>
 	</div>
 	
 	<c:if
@@ -75,9 +73,7 @@
 								<a href="/JobHub/personal/personalMyPageList.do?perNo=${personalMemberDto.perNo}">마이 페이지</a>
 							</div>
 							<div class="logout">
-								<p onclick="clickLogoutFnc();"
-									onmouseover="mouseoverFnc();"
-									onmouseleave="mouseleaveFnc();">
+								<p onclick="clickLogoutFnc();">
 									로그 아웃
 								</p>
 							</div>
@@ -131,9 +127,7 @@
 								<a href="/JobHub/company/showCompanyInfo.do?comNo=${sessionScope.companyMemberDto.comNo}">마이 페이지</a>
 							</div>
 							<div class="logout">
-								<p onclick="clickLogoutFnc();"
-									onmouseover="mouseoverFnc();"
-									onmouseleave="mouseleaveFnc();">
+								<p onclick="clickLogoutFnc();">
 									로그 아웃
 								</p>
 							</div>
