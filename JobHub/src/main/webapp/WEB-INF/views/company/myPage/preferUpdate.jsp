@@ -87,7 +87,7 @@
 					</div>
 					<div class="weightingPercentage">
 						가중치: <input type="text" class="preferList" value="${preferList[1]}"
-								onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
+								onfocus="inputFocusFnc();" onblur="inputBlurFnc();">%
 					</div>
 				</div>
 				
@@ -99,7 +99,7 @@
 					</div>
 					<div class="weightingPercentage">
 						가중치: <input type="text" class="preferList" value="${preferList[3]}"
-								onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
+								onfocus="inputFocusFnc();" onblur="inputBlurFnc();">%
 					</div>
 				</div>
 				
@@ -111,7 +111,7 @@
 					</div>
 					<div class="weightingPercentage">
 						가중치: <input type="text" class="preferList" value="${preferList[5]}"
-								onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
+								onfocus="inputFocusFnc();" onblur="inputBlurFnc();">%
 					</div>
 				</div>
 				
@@ -123,7 +123,7 @@
 					</div>
 					<div class="weightingPercentage">
 						가중치: <input type="text" class="preferList" value="${preferList[7]}"
-								onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
+								onfocus="inputFocusFnc();" onblur="inputBlurFnc();">%
 					</div>
 				</div>
 				

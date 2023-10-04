@@ -46,7 +46,7 @@
 						"${preferList[0]} " &nbsp;
 					</div>
 					<div class="weightingPercentage">
-						가중치: ${preferList[1]}
+						가중치: ${preferList[1]}%
 					</div>
 				</div>
 				
@@ -56,7 +56,7 @@
 						${preferList[2]} 개
 					</div>
 					<div class="weightingPercentage">
-						가중치: ${preferList[3]}
+						가중치: ${preferList[3]}%
 					</div>
 				</div>
 				
@@ -66,7 +66,7 @@
 						${preferList[4]}
 					</div>
 					<div class="weightingPercentage">
-						가중치: ${preferList[5]}
+						가중치: ${preferList[5]}%
 					</div>
 				</div>
 				
@@ -76,7 +76,7 @@
 						${preferList[6]}
 					</div>
 					<div class="weightingPercentage">
-						가중치: ${preferList[7]}
+						가중치: ${preferList[7]}%
 					</div>
 				</div>
 				

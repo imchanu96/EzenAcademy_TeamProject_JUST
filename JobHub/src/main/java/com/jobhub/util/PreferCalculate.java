@@ -53,13 +53,14 @@ public class PreferCalculate {
 		
 		this.preferArr = companyMemberDto.getComPrefer().split(",");
 		this.keyword = preferArr[0].trim();
-		this.keywordRate = preferArr[1].replace("%", "").trim();
+//		this.keywordRate = preferArr[1].replace("%", "").trim();
+		this.keywordRate = preferArr[1].trim();
 		this.license = preferArr[2].trim();
-		this.licenseRate = preferArr[3].replace("%", "").trim();
+		this.licenseRate = preferArr[3].trim();
 		this.education = preferArr[4].trim();
-		this.educationRate = preferArr[5].replace("%", "").trim();
+		this.educationRate = preferArr[5].trim();
 		this.career = preferArr[6].trim();
-		this.careerRate = preferArr[7].replace("%", "").trim();
+		this.careerRate = preferArr[7].trim();
 		for (int i = 0; i < preferArr.length; i++) {
 			System.out.println("preferArr"+i + preferArr[i]);
 		}
