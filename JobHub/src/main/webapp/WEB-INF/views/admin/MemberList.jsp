@@ -9,9 +9,16 @@
 <title>전체 회원 목록</title>
 
 <script type="text/javascript">
-	function memberPermissionUpdateFnc(perNo) {
-		location.href= "./memberUpdate.do?perNo=" + perNo;
-	}	
+	function memberPermissionUpdateFnc(perNo, comNo) {
+		
+		if(perNo) {
+			location.href = "./memberUpdate.do?perNo=" + perNo;
+			
+		} else if(comNo) {
+			location.href = "./companyUpdate.do?comNo=" + comNo;
+			
+		}
+	}
 </script>
 <link rel="stylesheet" href="/JobHub/resources/css/AdminMemberList.css" type="text/css">
 </head>
@@ -62,8 +69,20 @@
 						value="${personalDto.perCreateDate}" /></td>
 					<td><fmt:formatDate pattern="yyyy-MM-dd" 
 						value="${personalDto.perModifyDate}" /></td>
-						<td><div><input type="button" value="삭제" 
-							onclick="memberPermissionUpdateFnc(${personalDto.perNo});"></div></td>
+<!-- 					<td> -->
+<!-- 						<div> -->
+<%-- 							<c:choose> --%>
+<%-- 								<c:when test="${not empty personalDto.perNo}"> --%>
+<!-- 									<input type="button" value="삭제"  -->
+<%-- 										onclick="memberPermissionUpdateFnc(${personalDto.perNo});"> --%>
+<%-- 								</c:when> --%>
+<%-- 								<c:when test="${not empty companyMemberDto.comNo}"> --%>
+<!-- 									<input type="button" value="삭제"  -->
+<%-- 										onclick="memberPermissionUpdateFnc(${companyMemberDto.comNo});"> --%>
+<%-- 								</c:when> --%>
+<%-- 							</c:choose> --%>
+<!-- 						</div> -->
+<!-- 					</td> -->
 				</tr>
 			</c:forEach>
 		</table>

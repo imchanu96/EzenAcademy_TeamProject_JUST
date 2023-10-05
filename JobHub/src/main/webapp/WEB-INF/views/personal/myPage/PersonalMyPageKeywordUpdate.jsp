@@ -10,7 +10,7 @@
 <script type="text/javascript">
 
 	function count_check(obj) {
-		var chkBox = document.getElementsByName("pKeyword");
+		var chkBox = document.getElementsByName("perKeyword");
 		var chkCnt = 0;
 		
 		for(var i = 0; i <chkBox.length; i++) {

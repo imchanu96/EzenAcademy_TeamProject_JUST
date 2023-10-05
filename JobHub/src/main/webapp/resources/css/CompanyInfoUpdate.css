@@ -178,3 +178,26 @@ a:hover {
     color: #fff;
     cursor: pointer;
 }
+
+#backButtonBox {
+	margin-top: -2px;
+	float:left;
+	width: 100px;
+	height: 30px;
+}
+	
+#backButtonBox > button {
+	width: 100px;
+}
+
+#backBtn {
+	width: 90px;
+   	height: 40px;
+   	border: none;
+   	border-radius: 12px;
+   	box-shadow: 0px 1px 4px 0px #ddd;
+   	font-size: 16px;
+	font-weight: bold;
+	background-color: #ff837e;
+	color: #fff;
+}

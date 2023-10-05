@@ -61,7 +61,7 @@
 					<div id="myMenuBox">
 						<div class="memberInfo">
 							<span>
-								${personalMemberDto.perId} 님
+								${sessionScope.personalMemberDto.perId} 님
 							</span>
 						</div>
 						<div class="memberType">
@@ -69,7 +69,7 @@
 						</div>
 						<div id="myMenu">
 							<div class="myPage">
-								<a href="/JobHub/personal/personalMyPageList.do?perNo=${personalMemberDto.perNo}">마이 페이지</a>
+								<a href="/JobHub/personal/personalMyPageList.do?perNo=${sessionScope.personalMemberDto.perNo}">마이 페이지</a>
 							</div>
 							<div class="logout">
 								<p onclick="clickLogoutFnc();">

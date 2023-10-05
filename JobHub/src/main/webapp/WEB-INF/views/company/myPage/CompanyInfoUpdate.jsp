@@ -6,7 +6,20 @@
 <head>
 <meta charset="UTF-8">
 <title>회사 주소 변경</title>
+
+<script type="text/javascript">
+	function backButton() {
+// 		window.history.back();
+		location.href = "company/myPage/CompanyMyPage";
+	}
+</script>
+
+<style type="text/css">
+
+</style>
+
 <link rel="stylesheet" href="/JobHub/resources/css/CompanyInfoUpdate.css" type="text/css">
+
 </head>
 <body>
 	<jsp:include page="../../Header.jsp" />
@@ -18,13 +31,7 @@
 					<a href="">내 프로필</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">내가 쓴 글</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="">이력서 관리</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="">선호도 설정</a>
+					<a href="./setPrefer.do?comNo=${sessionScope.companyMemberDto.comNo}">선호도 설정</a>
 				</div>
 			</div>
 		</div>
@@ -47,6 +54,13 @@
 							<div class="button">
 								<input type="submit" value="변경하기">
 							</div>
+							
+							<div id="backButtonBox">
+							<button id="backBtn" onclick="backButton();">
+									돌아가기
+							</button>
+							</div>
+							
 						</form>
 					</c:if>
 					<c:if test="${companyMemberDtoUpdate.comInChargeEmail != null}">
@@ -64,6 +78,13 @@
 							<div class="button">
 								<input type="submit" value="변경하기">
 							</div>
+							
+							<div id="backButtonBox">
+							<button id="backBtn" onclick="backButton();">
+									돌아가기
+							</button>
+							</div>
+							
 						</form>
 					</c:if>
 					<c:if test="${companyMemberDtoUpdate.comInChargePhoneNum != null}">
@@ -81,6 +102,13 @@
 							<div class="button">
 								<input type="submit" value="변경하기">
 							</div>
+							
+							<div id="backButtonBox">
+							<button id="backBtn" onclick="backButton();">
+									돌아가기
+							</button>
+							</div>
+							
 						</form>
 					</c:if>
 					<c:if test="${companyMemberDtoUpdate.comName != null}">
@@ -98,6 +126,13 @@
 							<div class="button">
 								<input type="submit" value="변경하기">
 							</div>
+							
+							<div id="backButtonBox">
+							<button id="backBtn" onclick="backButton();">
+									돌아가기
+							</button>
+							</div>
+							
 						</form>
 					</c:if>
 					<c:if test="${companyMemberDtoUpdate.comAdd != null}">
@@ -115,6 +150,13 @@
 							<div class="button">
 								<input type="submit" value="변경하기">
 							</div>
+							
+							<div id="backButtonBox">
+							<button id="backBtn" onclick="backButton();">
+									돌아가기
+							</button>
+							</div>
+							
 						</form>
 					</c:if>
 					<c:if test="${companyMemberDtoUpdate.comType != null}">
@@ -132,6 +174,13 @@
 							<div class="button">
 								<input type="submit" value="변경하기">
 							</div>
+							
+							<div id="backButtonBox">
+							<button id="backBtn" onclick="backButton();">
+									돌아가기
+							</button>
+							</div>
+							
 						</form>
 					</c:if>
 					<c:if test="${companyMemberDtoUpdate.comEstDate != null}">
@@ -149,6 +198,13 @@
 							<div class="button">
 								<input type="submit" value="변경하기">
 							</div>
+							
+							<div id="backButtonBox">
+							<button id="backBtn" onclick="backButton();">
+									돌아가기
+							</button>
+							</div>
+							
 						</form>
 					</c:if>
 					<c:if test="${companyMemberDtoUpdate.comHomepage != null}">
@@ -166,6 +222,13 @@
 							<div class="button">
 								<input type="submit" value="변경하기">
 							</div>
+							
+							<div id="backButtonBox">
+							<button id="backBtn" onclick="backButton();">
+									돌아가기
+							</button>
+							</div>
+							
 						</form>
 					</c:if>
 					<c:if test="${companyMemberDtoUpdate.comIntroduce != null}">
@@ -183,6 +246,13 @@
 							<div class="button">
 								<input type="submit" value="변경하기">
 							</div>
+							
+							<div id="backButtonBox">
+							<button id="backBtn" onclick="backButton();">
+									돌아가기
+							</button>
+							</div>
+							
 						</form>
 					</c:if>
 				</div>
@@ -191,8 +261,6 @@
 		</div>
 	</div>
 
-
-	</div>
 
 	<jsp:include page="/WEB-INF/views/Tail.jsp" />
 </body>
