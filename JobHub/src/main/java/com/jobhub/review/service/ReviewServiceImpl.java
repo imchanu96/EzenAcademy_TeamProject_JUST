@@ -1,6 +1,7 @@
 package com.jobhub.review.service;
 
 import java.util.List;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -54,9 +55,9 @@ public class ReviewServiceImpl implements ReviewService {
 	}
 	
 	@Override
-	public List<CompanyMemberDto> companyMemberSelectList(int start, int end) {
+	public List<CompanyMemberDto> companyMemberSelectList(Map<String, Object> map) {
 
-		return companyMemberDao.companyMemberSelectList(start, end);
+		return companyMemberDao.companyMemberSelectList(map);
 	}
 
 	

@@ -28,7 +28,7 @@ function deleteTrFnc(trObj){
 //	var getPropertyList = document.getElementById(trObj).getElementsByTagName("input");
 //	alert(parentTable.nodeName);
 //	alert(trLength);
-	alert(removeTagList.length);
+//	alert(removeTagList.length);
 	if(removeTagList.length <= 1){
 		alert("첫 줄은 삭제가 불가능합니다.");
 	}else{

@@ -21,29 +21,29 @@
 	<jsp:include page="/WEB-INF/views/review/ReviewNav.jsp"/>
 		
 		<div id="content">
-		
 			<c:if test="${not empty personalMemberDto}">
 				<c:forEach var="companyMemberList" items="${companyMemberList}">
 					<div id="companyInfoBox">
 <%-- 					${personalMemberDto.perNo} --%>
 <%-- 					${companyMemberList.comNo} --%>
 						<div id="companyLogo">
-							<img src="${companyMemberList.comLogo}">
+							<img src="${companyMemberList.COMPANY_LOGO}">
 						</div>
+						${companyMemberList.RECOMMEND_TOTAL_RATE}
 						<div id="companySummary">
 							<div id="companyNameBox">
 								<a id="companyName" href="/JobHub/review/list.do?comNo=${companyMemberList.comNo}">
-									${companyMemberList.comName} 
+									${companyMemberList.COMPANY_NAME} 
 								</a>
 							</div>
 							<div id="companyTypeBox">
 								<span id="companyType">
-									${companyMemberList.comType}
+									${companyMemberList.COMPANY_TYPE}
 								</span>
 							</div>
 							<div id="companyHomepageBox">
-								<a id="companyHomepage" href="http://${companyMemberList.comHomepage}" target="_blank">
-									${companyMemberList.comHomepage}
+								<a id="companyHomepage" href="http://${companyMemberList.COMPANY_HOMEPAGE}" target="_blank">
+									${companyMemberList.COMPANY_HOMEPAGE}
 								</a>
 							</div>
 						</div>
@@ -73,20 +73,21 @@
 							<div id="companyLogo">
 							
 							</div>
+							${companyMemberList.RECOMMEND_TOTAL_RATE}
 							<div id="companySummary">
 								<div id="companyNameBox">
-									<a id="companyName" href="/JobHub/review/list.do?comNo=${companyMemberList.comNo}">
-										${companyMemberList.comName} 
+									<a id="companyName" href="/JobHub/review/list.do?comNo=${companyMemberList.COMPANY_NUMBER}">
+										${companyMemberList.COMPANY_NAME} 
 									</a>
 								</div>
 								<div id="companyTypeBox">
 									<span id="companyType">
-										${companyMemberList.comType}
+										${companyMemberList.COMPANY_TYPE}
 									</span>
 								</div>
 								<div id="companyHomepageBox">
-									<a id="companyHomepage" href="http://${companyMemberList.comHomepage}" target="_blank">
-										${companyMemberList.comHomepage}
+									<a id="companyHomepage" href="http://${companyMemberList.COMPANY_HOMEPAGE}" target="_blank">
+										${companyMemberList.COMPANY_HOMEPAGE}
 									</a>
 								</div>
 							</div>

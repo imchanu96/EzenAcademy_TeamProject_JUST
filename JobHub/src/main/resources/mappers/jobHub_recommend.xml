@@ -101,7 +101,7 @@
 	<select id="personalMemberList" resultMap="personalResultMap">
 		SELECT PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_KEYWORD
 		FROM personal
-		WHERE PERMISSION = 2
+		WHERE PERMISSION = 3
 	</select>
 
 
