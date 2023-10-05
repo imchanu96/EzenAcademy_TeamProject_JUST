@@ -30,8 +30,9 @@
 	#memberType {
 		width: 355px;
 		margin: 60px auto 0px auto;
-		font-size: 28px;
-		color: #292e41;
+		font-size: 24px;
+  		font-weight: bold;
+		color: #475067;
 		text-align: center;
 	}
 	#IDandPwd_Box {

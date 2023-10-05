@@ -11,19 +11,15 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.jobhub.board.dto.BoardDto;
 import com.jobhub.board.util.Paging;
-import com.jobhub.personal.dao.PersonalMemberDao;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;
-import com.jobhub.personal.service.MailSendService;
 import com.jobhub.personal.service.PersonalMemberService;
 
 @Controller
@@ -34,9 +30,6 @@ public class PersonalMemberController {
 
 	@Autowired
 	private PersonalMemberService PersonalMemberService;
-	
-	@Autowired
-	private MailSendService mailSendService;
 	
 	// 로그인 화면 이동
 	@RequestMapping(value = "/personal/login.do", method = RequestMethod.GET)
@@ -61,10 +54,15 @@ public class PersonalMemberController {
 			
 			int permission = personalMemberDto.getPerPermission();
 			
-//			회원이 존재하면 세션에 담는다
-			session.setAttribute("personalMemberDto", personalMemberDto);
-			session.setAttribute("permission", permission);
-			viewUrl = "personal/myPage/PersonalMyPage";
+			if (permission < 2) {
+				viewUrl = "personal/auth/emailAuthFail";
+			} else {
+//				회원이 존재하면 세션에 담는다
+				session.setAttribute("personalMemberDto", personalMemberDto);
+				session.setAttribute("permission", permission);
+				viewUrl = "personal/myPage/PersonalMyPage";
+			}
+			
 		} else {
 			viewUrl = "personal/auth/LoginFail";
 		}
@@ -114,14 +112,6 @@ public class PersonalMemberController {
 		log.debug("Welcome PersonalMemberController personalFindId!");
 
 		return "/personal/auth/PersonalFindId";
-	}
-	
-	@GetMapping("/mailCheck")
-	@ResponseBody
-	public String mailCheck(String email) {
-		log.debug("이메일 인증 요청이 들어옴!");
-		log.debug("이메일 인증 이메일: " + email);
-		return mailSendService.joinEmail(email);
 	}
 	
 	
@@ -426,5 +416,14 @@ public class PersonalMemberController {
 		
 		return "redirect:./showLetter.do?perNo=" + perNo;
 	}	
+	
+	@RequestMapping(value = "/personal/registerEmail.do", method = RequestMethod.GET)
+	public String emailConfirm(PersonalMemberDto personalMemberDto) {
+		System.out.println(personalMemberDto);
 		
+		PersonalMemberService.personalUpdatePermission(personalMemberDto);
+		
+		return "/personal/auth/emailAuthSuccess";
+	}
+	
 }// end PersonalMemberController

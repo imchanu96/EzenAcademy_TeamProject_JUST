@@ -3,8 +3,6 @@ package com.jobhub.personal.service;
 import java.util.List;
 import java.util.Map;
 
-import javax.servlet.http.HttpSession;
-
 import com.jobhub.board.dto.BoardDto;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
@@ -14,7 +12,7 @@ public interface PersonalMemberService {
 	
 	public PersonalMemberDto personalMemberExist(String perId, String perPwd);
 
-	public void personalInsertOne(PersonalMemberDto personalMemberDto);
+	public void personalInsertOne(PersonalMemberDto personalMemberDto) throws Exception;
 	
 	public int personalMemberSelectOne(int perNo);
 	
@@ -44,8 +42,9 @@ public interface PersonalMemberService {
 
 	public List<BoardDto> personalMemberMyPostList(int start, int end);
 	
+	public int personalUpdateTemporarily(PersonalMemberDto personalMemberDto);
 	
-	public void personalMemberFindPwd(String perEmail, String perId);
+	public int personalUpdatePermission(PersonalMemberDto personalMemberDto);	
 
 //	public PersonalMemberDto personalMyPageList(HttpSession session);
 	

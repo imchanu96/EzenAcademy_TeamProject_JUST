@@ -48,7 +48,8 @@ public interface PersonalMemberDao {
 	
 	public int personalMemberMyPostListSelectTotalCount();
 	
+	public int personalUpdateTemporarily(PersonalMemberDto personalMemberDto);
 	
-	public int personalMemberFindPwd(String perPwd, String perEmail, String perId);
+	public int personalUpdatePermission(PersonalMemberDto personalMemberDto);
 	
 }
