@@ -297,10 +297,9 @@
 		WHERE RESUME_NUMBER = #{resumeNo}
 	</select>
 	
-	<select id="personalMembershowLetter" parameterType="map" resultMap="letterResultMap" >
+	<select id="personalMemberShowLetter" resultMap="letterResultMap" parameterType="map">
 	SELECT LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
 	    , LETTER_CHARACTER, LETTER_GOAL
-	    , (SELECT PERSONAL_NAME FROM PERSONAL WHERE PERSONAL_NUMBER = #{perNo}) AS "perName", PERSONAL_NUMBER
     FROM LETTER
 	WHERE PERSONAL_NUMBER = #{perNo}
 	</select>
@@ -344,12 +343,18 @@
 		WHERE PERSONAL_NUMBER = #{perNo}
 	</update>
 	
-	<update id="personalMemberFindPwd">
+	<update id="personalUpdateTemporarily" parameterType="personalMemberDto">
 		UPDATE PERSONAL
-		SET PERSONAL_PASSWORD = #{perPwd}
+		SET PERSONAL_TEMPORARILY = #{perTemporarily}
 		WHERE PERSONAL_EMAIL = #{perEmail}
 		AND PERSONAL_ID = #{perId}
 	</update>
 	
+	<update id="personalUpdatePermission" parameterType="personalMemberDto">
+		UPDATE PERSONAL
+		SET PERMISSION = 2
+		WHERE PERSONAL_EMAIL = #{perEmail}
+		AND PERSONAL_TEMPORARILY = #{perTemporarily}
+	</update>
 	
 </mapper>

@@ -589,20 +589,17 @@ img {
 		<form action="./addCtr.do" method="post">
 			<div id="accountInfo" class="boxList">
 				<div id="idInput" class="infoRow">
-					<img src="../images/joinIcon_id.JPG"> <input type="text"
-						placeholder="아이디" name="perId" id="idBlank" class="input"
+					<input type="text" placeholder="아이디" name="perId" id="idBlank" class="input"
 						onblur="idCheckFnc();" onfocus="idFocusFnc();">
 				</div>
 
 				<div id="pwdInput" class="infoRow">
-					<img src="../images/joinIcon_pwd.JPG"> <input type="password"
-						placeholder="비밀번호(8~20글자)" name="perPwd" id="pwdBlank" class="input"
-						onblur="pwdCheckFnc();" onfocus="pwdFocusFnc();">
+					<input type="password" placeholder="비밀번호(8~20글자)" name="perPwd" id="pwdBlank" 
+						class="input" onblur="pwdCheckFnc();" onfocus="pwdFocusFnc();">
 				</div>
 
 				<div id="emailInput" class="infoRow">
-					<img src="../images/joinIcon_email.JPG"> <input type="text"
-						placeholder="이메일" name="perEmail" id="emailBlank"
+					<input type="text" placeholder="이메일" name="perEmail" id="emailBlank"
 						class="input" onblur="emailCheckFnc();" onfocus="emailFocusFnc();">
 				</div>
 			</div>
@@ -618,37 +615,31 @@ img {
 
 			<div id="personalInfo" class="boxList">
 				<div id="nameInput" class="infoRow">
-					<img src="../images/joinIcon_id.JPG"> <input type="text"
-						placeholder="이름" name="perName" id="nameBlank" class="input"
+					<input type="text" placeholder="이름" name="perName" id="nameBlank" class="input"
 						onblur="nameCheckFnc();" onfocus="nameFocusFnc();">
 				</div>
 
 				<div id="phoneNumInput" class="infoRow">
-					<img src="../images/joinIcon_phoneNum.JPG"> <input
-						type="number" placeholder="휴대전화번호" name="perPhoneNum"
-						id="phoneNumBlank" class="input" onblur="phoneNumCheckFnc();"
+					<input type="number" placeholder="휴대전화번호" name="perPhoneNum"
+						id="phoneNumBlank" class="input" onblur="phoneNumCheckFnc();" 
 						onfocus="phoneNumFocusFnc();">
 				</div>
+				
 				<div id="conpanyInput" class="infoRow">
-					<img src="../images/joinIcon_phoneNum.JPG"> <input
-						type="text" placeholder="현재 다니고 계시는 직장을 입력해주세요" name="perCom"
+					<input type="text" placeholder="현재 다니고 계시는 직장을 입력해주세요" name="perCom"
 						id="nameBlank" class="input" onblur="nameCheckFnc();"
 						onfocus="nameFocusFnc();">
 				</div>
 				<div id="nickNameInput" class="infoRow">
-					<img src="../images/joinIcon_phoneNum.JPG"> <input
-						type="text" placeholder="사용하실 닉네임을 입력해주세요" name="perNickname"
+					<input type="text" placeholder="사용하실 닉네임을 입력해주세요" name="perNickname"
 						id="nameBlank" class="input" onblur="nameCheckFnc();"
 						onfocus="nameFocusFnc();">
 				</div>
 				<div id="profileInput" class="infoRow">
-					<img src="../images/joinIcon_phoneNum.JPG"> <input
-						type="text" placeholder="사진을 넣어주세요" name="perProfile"
-						value="https://www.google.com/url?sa=i&url=https%3A%2F%2Fnamu.wiki%2Fw%2F%25EB%2584%2588%25EA%25B5%25B4%25EB%25A7%25A8&psig=AOvVaw0cPKvY-7v12HpbSAXqH-9i&ust=1694758663888000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCOj4iJO6qYEDFQAAAAAdAAAAABAD"
-						id="nameBlank" class="input">
+					<input type="text" placeholder="사진을 넣어주세요" name="perProfile"
+						value="증명사진" id="nameBlank" class="input">
 				</div>
 				<div id="birthdayInput" class="infoRow">
-					<img src="../images/joinIcon_birthday.JPG">
 					<input type="date" placeholder='입사일을 "-"없이 입력해주세요 ' name="perHireDate"
 						id="birthdayBlank1" class="input"
 						onblur="birthdayCheckFnc();" onfocus="birthdayFocusFnc();">
@@ -663,8 +654,7 @@ img {
 							<option value="">몰라</option>
 						</select>
 					</div>
-					<img src="../images/joinIcon_email.JPG"> <input type="text"
-						placeholder="질문에 대한 답" name="perTemporarily" id="temporarilyBlank"
+					<input type="text" placeholder="질문에 대한 답" name="perTemporarily" id="temporarilyBlank"
 						class="input" onblur="emailCheckFnc();" onfocus="emailFocusFnc();">
 				</div>
 				
@@ -682,7 +672,7 @@ img {
 			<div id="wrongAuthNumErrorDiv" class="error">인증번호가 일치하지 않습니다.</div>
 
 			<div>
-				<input type="submit" value="다음" id="submitButton"
+				<input type="submit" value="이메일인증" id="submitButton"
 					onclick="submitCheckFnc(event)">
 			</div>
 		</form>

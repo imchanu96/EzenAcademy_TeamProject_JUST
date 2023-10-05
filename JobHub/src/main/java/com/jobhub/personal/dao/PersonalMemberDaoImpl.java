@@ -152,7 +152,7 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 		HashMap<String, Object> map = new HashMap<String, Object>();
 		map.put("perNo", perNo);
 		
-		return sqlSession.selectOne(namespace + "personalMembershowLetter", map);
+		return sqlSession.selectOne(namespace + "personalMemberShowLetter", map);
 	}
 
 
@@ -182,16 +182,17 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 
 
 	@Override
-	public int personalMemberFindPwd(String perPwd, String perEmail, String perId) {
+	public int personalUpdateTemporarily(PersonalMemberDto personalMemberDto) {
 		// TODO Auto-generated method stub
-		
-		Map<String, Object> map = new HashMap<String, Object>();
-		map.put("perEmail", perEmail);
-		map.put("perId", perId);
-		map.put("perPwd", perPwd);
-		
-		return sqlSession.update(namespace + "personalMemberFindPwd", map);
+		return sqlSession.update(namespace + "personalUpdateTemporarily", personalMemberDto);
 	}
 
+
+	@Override
+	public int personalUpdatePermission(PersonalMemberDto personalMemberDto) {
+		// TODO Auto-generated method stub
+		return sqlSession.update(namespace + "personalUpdatePermission", personalMemberDto);
+	}
+	
 }
 
