@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.jobhub.board.dto.BoardDto;
 import com.jobhub.board.util.Paging;
-import com.jobhub.personal.dao.PersonalMemberDao;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;
