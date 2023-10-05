@@ -48,7 +48,7 @@
 							<!-- 회사명 임시로 bTag에 담음 -->
 							<td class="boardInfo">${boardDto.boardTag}</td>
 							<td class="boardInfo">
-								<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.boardModDate}"/>
+								수정일: <fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.boardModDate}"/>
 							</td>
 							<td class="boardInfo">
 								조회수 ${boardDto.boardViews}
