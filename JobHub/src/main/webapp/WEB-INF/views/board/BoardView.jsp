@@ -48,7 +48,7 @@
 							<!-- 회사명 임시로 bTag에 담음 -->
 							<td class="boardInfo">${boardDto.boardTag}</td>
 							<td class="boardInfo">
-								<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.boardCreDate}"/>
+								<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.boardModDate}"/>
 							</td>
 							<td class="boardInfo">
 								조회수 ${boardDto.boardViews}
@@ -58,7 +58,9 @@
 							</td>
 						</tr>
 						<tr>
-							<td colspan="5"><div id="boardContent">${boardDto.boardContent}</div></td>
+							<td colspan="5">
+								<div id="boardContent">${boardDto.boardContent}</div>
+							</td>
 						</tr>
 					</table>
 				</div>
@@ -101,7 +103,7 @@
 <!-- 			</div> -->
 			
 			<div id="listBox">
-				<button type="button" onclick="location.href='./list.do'">목록으로</button>
+				<button type="button" onclick="history.back()">목록으로</button>
 			</div>
 		</div>
 	</div>

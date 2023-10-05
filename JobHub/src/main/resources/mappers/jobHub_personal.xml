@@ -144,15 +144,11 @@
 		INSERT INTO PERSONAL
 			VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
 			    , PERSONAL_PASSWORD, PERSONAL_PHONENUMBER
-			    , PERSONAL_COMPANY, PERSONAL_NICKNAME
-			    , PERSONAL_PROFILE, PERSONAL_EMAIL
-			    , PERSONAL_HIRE_DATE, PERSONAL_TEMPORARILY
+			    , PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_EMAIL
 			    , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE)
 			VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, #{perName}, #{perId}
 				, #{perPwd}, #{perPhoneNum}
-				, #{perCom}, #{perNickname}
-				, #{perProfile}, #{perEmail}
-				, #{perHireDate}, #{perTemporarily}
+				, #{perCom}, #{perNickname}, #{perEmail}
 				, 1, SYSDATE, SYSDATE)
 
 <!-- 			INSERT INTO PERSONAL -->
@@ -207,22 +203,22 @@
 	</update>
 	
 	<select id="personalInfoList" resultType="map">
-		 SELECT P.PERSONAL_NUMBER AS "perNo", R.RESUME_PERSONAL_NAME AS "perName", P.PERSONAL_COMPANY AS "currentCompany"
-	        , R.RESUME_EDUCATION_NAME AS "perHighestEdu" , R.RESUME_EDUCATION_MAJOR AS "perHighestEduMajor"
-	        ,R.RESUME_EDUCATION_GRADE AS "perHighestEduGrade", R.RESUME_CAREER_NAME AS "perCampany"
-	        , R.RESUME_CAREER_BEGIN_DATE AS "perCareerBeginDate"
-	        , R.RESUME_CAREER_END_DATE AS "perCareerEndDate"
-	        , NVL(R.RESUME_LICENSE_NAME , ' ') AS "perLicense"
-	        , NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) AS "perLicenseCount" 
-            , P.COMPANY_PREFER AS "comPrefer" , (SELECT RECOMMEND_TOTAL_RATE
-                                                 FROM RECOMMEND
-                                                 WHERE COMPANY_NUMBER = #{comNo}
-                                                 AND PERSONAL_NUMBER = P.PERSONAL_NUMBER) AS "recommendTotalRate"
+		 SELECT P.PERSONAL_NUMBER AS "perNo", RESUME.RESUME_PERSONAL_NAME AS "perName", P.PERSONAL_COMPANY AS "currentCompany"
+	        , RESUME.RESUME_EDUCATION_NAME AS "perHighestEdu" , RESUME.RESUME_EDUCATION_MAJOR AS "perHighestEduMajor"
+	        , RESUME.RESUME_EDUCATION_GRADE AS "perHighestEduGrade", RESUME.RESUME_CAREER_NAME AS "perCampany"
+	        , RESUME.RESUME_CAREER_BEGIN_DATE AS "perCareerBeginDate"
+	        , RESUME.RESUME_CAREER_END_DATE AS "perCareerEndDate"
+	        , NVL(RESUME.RESUME_LICENSE_NAME , ' ') AS "perLicense"
+	        , NVL(REGEXP_COUNT(RESUME.RESUME_LICENSE_NAME, ',')+1, 0) AS "perLicenseCount" 
+            , P.COMPANY_PREFER AS "comPrefer" , RECOMMEND.RECOMMEND_TOTAL_RATE AS "recommendTotalRate"
     	FROM (  SELECT P.PERSONAL_NUMBER, P.PERSONAL_COMPANY, C.COMPANY_PREFER
             FROM PERSONAL P , COMPANY C
             WHERE C.COMPANY_NUMBER = #{comNo}
-            ) P INNER JOIN RESUME R
-   		ON P.PERSONAL_NUMBER = R.PERSONAL_NUMBER
+            ) P INNER JOIN RESUME RESUME
+   		ON P.PERSONAL_NUMBER = RESUME.PERSONAL_NUMBER
+        INNER JOIN RECOMMEND RECOMMEND
+        ON RECOMMEND.PERSONAL_NUMBER = P.PERSONAL_NUMBER
+        ORDER BY RECOMMEND.RECOMMEND_TOTAL_RATE DESC
     <where>
 <!--     	<if test="talentScore != null"></if> -->
 <!--     	<if test="careerScore != null"></if> -->

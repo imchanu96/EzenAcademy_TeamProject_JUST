@@ -49,7 +49,7 @@
 		}
 	
 		function updateFnc() {
-		var postObj = document.getElementById('updateForm');
+		var updateObj = document.getElementById('updateForm');
 		
 			if (confirm("이대로 수정하시겠습니까?") == true){ 
 				alert("수정 완료되었습니다.");
