@@ -29,7 +29,6 @@
 						<div id="companyLogo">
 							<img src="${companyMemberList.COMPANY_LOGO}">
 						</div>
-						${companyMemberList.RECOMMEND_TOTAL_RATE}
 						<div id="companySummary">
 							<div id="companyNameBox">
 								<a id="companyName" href="/JobHub/review/list.do?comNo=${companyMemberList.comNo}">
@@ -46,6 +45,9 @@
 									${companyMemberList.COMPANY_HOMEPAGE}
 								</a>
 							</div>
+						</div>
+						<div id="recommendTotalRateBox">
+							${companyMemberList.RECOMMEND_TOTAL_RATE}
 						</div>
 						
 					</div>	<!-- end of companyInfoBox -->
