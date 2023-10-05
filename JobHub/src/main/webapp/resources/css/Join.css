@@ -183,35 +183,3 @@ img {
 	line-height: 22px;
 }
 
-#agreeAll {
-	width: 30px;
-	height: 30px;
-	margin: 10px;
-}
-
-#agreeLabel {
-	font-size: 15px;
-	font-weight: 600;
-	line-height: 22px;
-	letter-spacing: -.8px;
-	color: #222;
-	vertical-align: middle;
-}
-
-#agreementDiv, #authorizationDiv {
-	height: 50px;
-}
-
-#authNumInput {
-	margin-left: 40px;
-}
-
-#authButton {
-	width: 95px;
-	height: 33px;
-	font-weight: bold;
-	background-color: #ffffff;
-	color: #09AA5C;
-	border: 2px solid #09AA5C;
-	border-radius: 4px;
-}

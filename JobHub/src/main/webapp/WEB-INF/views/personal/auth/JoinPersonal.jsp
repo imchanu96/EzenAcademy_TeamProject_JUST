@@ -384,24 +384,34 @@
 
 		<form action="./addCtr.do" method="post">
 			<div id="accountInfo" class="boxList">
+			
 				<div id="idInput" class="infoRow">
-					<input type="text" placeholder="아이디" name="perId" id="idBlank" class="input"
-						onblur="idCheckFnc();" onfocus="idFocusFnc();">
+					<input type="text" placeholder="아이디"
+						name="perId"
+						id="idBlank" class="input"
+						onblur="idCheckFnc();"
+						onfocus="idFocusFnc();">
 				</div>
 
 				<div id="pwdInput" class="infoRow">
-					<input type="password" placeholder="비밀번호" name="perPwd" id="pwdBlank" 
-						class="input" onblur="pwdCheckFnc();" onfocus="pwdFocusFnc();">
+					<input type="password" placeholder="비밀번호"
+						name="perPwd"
+						id="pwdBlank" class="input"
+						onblur="pwdCheckFnc();"
+						onfocus="pwdFocusFnc();">
 				</div>
 				
 				<div id="pwdRepeatInput" class="infoRow">
-					<input type="password" placeholder="비밀번호 확인" id="pwdRepeatBlank" 
-						class="input" onblur="pwdRepeatCheckFnc();">
+					<input type="password" placeholder="비밀번호 확인"
+						id="pwdRepeatBlank" 
+						class="input"
+						onblur="pwdRepeatCheckFnc();">
 				</div>
 				
 				<div id="nickNameInput" class="infoRow">
 					<input type="text" placeholder="닉네임" name="perNickname"
-						id="nickNameBlank" class="input" onblur="nickNameCheckFnc();"
+						id="nickNameBlank" class="input"
+						onblur="nickNameCheckFnc();"
 						onfocus="nameFocusFnc();">
 				</div>
 

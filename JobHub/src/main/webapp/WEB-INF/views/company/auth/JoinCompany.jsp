@@ -5,73 +5,104 @@
 <head>
 <meta charset="EUC-KR">
 <title>기업 회원가입</title>
-<style type="text/css">
-.infoRow {
-	height: 50px;
-	border: 1px solid #d6d6d6;
-	margin: -1px;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="/JobHub/resources/css/Join.css">
 </head>
 <body>
-	<div>
-		<div style="width: 1080px; margin: auto;">
-			<form action="./addCtr.do" method="post">
-				<div id="companyCodeInput" class="infoRow">
-					<img src="#"> <input type="text" placeholder="사업자 등록 번호"
-						name="cCode" id="emailBlank" class="input"
-						onblur="emailCheckFnc();" onfocus="emailFocusFnc();">
-					<button>증복 확인</button>
-				</div>
-				<div id="companyCodeInput" class="infoRow">
-					<img src="#"> <input type="text" placeholder="사업자 등록증 등록"
-						name="cLicense" id="emailBlank" class="input"
-						onblur="emailCheckFnc();" onfocus="emailFocusFnc();">
-					<button>중복 확인</button>
-				</div>
-				<div id="companyCodeInput" class="infoRow">
-					<img src="#"> <input type="text" placeholder="비밀번호"
-						name="cPwd" id="emailBlank" class="input"
-						onblur="emailCheckFnc();" onfocus="emailFocusFnc();">
-				</div>
-				<div id="companyCodeInput" class="infoRow">
-					<img src="#"> <input type="text" placeholder="회사명"
-						name="cName" id="emailBlank" class="input"
-						onblur="emailCheckFnc();" onfocus="emailFocusFnc();">
-				</div>
-				<div id="companyCodeInput" class="infoRow">
-					<img src="#"> <input type="text" placeholder="회사 주소"
-						name="cAdd" id="emailBlank" class="input"
-						onblur="emailCheckFnc();" onfocus="emailFocusFnc();">
-				</div>
-				<div id="companyCodeInput" class="infoRow">
-					<img src="#"> <input type="text" placeholder="업종"
-						name="cType" id="emailBlank" class="input"
-						onblur="emailCheckFnc();" onfocus="emailFocusFnc();"> <input
-						type="text" placeholder="사업내용" name="cIntroduce" name="email"
-						id="emailBlank" class="input" onblur="emailCheckFnc();"
-						onfocus="emailFocusFnc();">
-				</div>
-				<div id="companyCodeInput" class="infoRow">
-					<img src="#"> <input type="text" placeholder="인사담당자 이름"
-						name="cInChargeName" id="emailBlank" class="input"
-						onblur="emailCheckFnc();" onfocus="emailFocusFnc();">
-				</div>
-				<div id="companyCodeInput" class="infoRow">
-					<img src="#"> <input type="text" placeholder="인사담당자 연락처"
-						name="cInChargePhoneNum" id="emailBlank"
-						class="input" onblur="emailCheckFnc();" onfocus="emailFocusFnc();">
-					<button>중복 확인</button>
-				</div>
-				<div id="companyCodeInput" class="infoRow">
-					<img src="#"> <input type="text" placeholder="인사담당자 이메일"
-						name="cInChargeEmail" id="emailBlank" class="input"
-						onblur="emailCheckFnc();" onfocus="emailFocusFnc();">
-					<button>증복 확인</button>
-				</div>
+
+	<div class="inner">
+
+		<div class="header">
+			<img style="width: 250px;"
+				src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/1aa66c0e-7488-4a56-bc50-f915be889cf8">
 		</div>
-		<input type="submit" value="가입하기">
-			</form>
+
+		<form action="./addCtr.do" method="post">
+			<div id="companyInfo" class="boxList">
+			
+				<div id="companyCodeInput" class="infoRow">
+					<input type="text" placeholder="사업자등록번호"
+						name="comCode"
+						id="companyCodeBlank" class="input"
+						onblur="companyCodeCheckFnc();"
+						onfocus="companyCodeFocusFnc();">
+				</div>
+				
+				<div id="companyPwdInput" class="infoRow">
+					<input type="password" placeholder="비밀번호"
+						name="comPwd"
+						id="companyPwdBlank" class="input"
+						onblur="companyPwdCheckFnc();"
+						onfocus="companyPwdFocusFnc();">
+				</div>
+				
+				<div id="pwdRepeatInput" class="infoRow">
+					<input type="password" placeholder="비밀번호 확인"
+						id="pwdRepeatBlank" 
+						class="input"
+						onblur="pwdRepeatCheckFnc();">
+				</div>
+				
+				<div id="companyNameInput" class="infoRow">
+					<input type="text" placeholder="회사명"
+						name="comName"
+						id="companyNameBlank" class="input"
+						onblur="companyNameCheckFnc();"
+						onfocus="companyNameFocusFnc();">
+				</div>
+				
+				<div id="companyAddressInput" class="infoRow">
+					<input type="text" placeholder="회사 주소"
+						name="comAdd"
+						id="emailBlank" class="input"
+						onblur="companyAddressCheckFnc();"
+						onfocus="companyAddressFocusFnc();">
+				</div>
+				
+				<div id="companyTypeInput" class="infoRow">
+					<input type="text" placeholder="업종"
+						name="comType"
+						id="companyTypeBlank" class="input"
+						onblur="companyTypeCheckFnc();"
+						onfocus="companyTypeFocusFnc();">
+				</div>
+				<div id="companyIntroduceInput" class="infoRow">
+						<input type="text" placeholder="회사 소개"
+						name="comIntroduce"
+						id="companyIntroduceBlank" class="input"
+						onblur="companyIntroduceCheckFnc();"
+						onfocus="companyIntroduceFocusFnc();">
+				</div>
+			</div>
+			
+			<div id="inChargeInfo" class="boxList">
+				<div id="inChargeNameInput" class="infoRow">
+					<input type="text" placeholder="인사담당자 이름"
+						name="comInChargeName"
+						id="inChargeNameBlank" class="input"
+						onblur="inChargeNameCheckFnc();"
+						onfocus="inChargeNameFocusFnc();">
+				</div>
+				
+				<div id="inChargePhoneNumInput" class="infoRow">
+					<input type="text" placeholder="인사담당자 연락처"
+						name="comInChargePhoneNum"
+						id="InChargePhoneNumBlank" class="input"
+						onblur="InChargePhoneNumCheckFnc();"
+						onfocus="InChargePhoneNumFocusFnc();">
+				</div>
+				<div id="inChargeEmailInput" class="infoRow">
+					<input type="text" placeholder="인사담당자 이메일"
+						name="comInChargeEmail" id="emailBlank" class="input"
+						onblur="inChargeEmailCheckFnc();"
+						onfocus="inChargeEmailFocusFnc();">
+				</div>
+			</div>
+			<input type="submit" id="submitButton" value="가입하기">
+		</form>
+	</div>
+	
+	
+
 	</div>
 
 </body>
