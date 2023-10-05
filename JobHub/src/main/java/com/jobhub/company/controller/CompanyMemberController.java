@@ -101,6 +101,7 @@ public class CompanyMemberController {
 
 		try {
 			companyMemberService.companyInsertOne(companyMemberDto);
+			System.out.println(companyMemberDto);
 		} catch (Exception e) {
 			System.out.println("오류 처리할거 있음 한다");
 			e.printStackTrace();

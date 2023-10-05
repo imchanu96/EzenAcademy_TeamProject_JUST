@@ -40,9 +40,7 @@
 					<div class="mainMenuItem">
 						<a href="../review/companyMemberList.do"> 기업 조회 </a>
 					</div>
-					<div class="mainMenuItem">
-						<a href="#"> 기업 추천 </a>
-					</div>
+					
 					<div class="mainMenuItem">
 						<a href="../board/list.do"> 게시판 </a>
 					</div>

@@ -74,6 +74,11 @@
 	#companyHomepageBox {
 		width: 300px;
 	}
+	#recommendTotalRateBox {
+		width: 50px;
+		height: 50px;
+		font-size: 30px;
+	}
 	#companyName {
 	
 	}
