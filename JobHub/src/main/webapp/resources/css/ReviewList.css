@@ -59,21 +59,27 @@
 /* 		} */
 	#companyLogo {
 		float: left;
-		width: 140px;
-		height: 140px;
+		width: 130px;
+		height: 130px;
 		margin: 10px;
-		border: 1px solid #5c667b;
+		display: flex;
+   		align-items: center;
+	}
+	#companyLogo > img {
+		width: 130px;
+		height: auto;
 	}
 	#companySummary {
 		float: left;
-	    width: 600px;
+	    width: 617px;
 	    height: 122px;
 	    margin: 20px;
 	    color: #5c667b;
+	    overflow: auto;
 	}
 	#companyDetail {
 		float: left;
-		width: 100px;
+		width: 90px;
 		height: 100px;
 		margin: 50px 0px;
 	}

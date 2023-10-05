@@ -1,6 +1,7 @@
 package com.jobhub.ajax.controller;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,15 +28,16 @@ public class AjaxController {
 	
 	@RequestMapping(value = "/company/showPersonalResume.do", method = RequestMethod.POST)
 	@ResponseBody
-	public ResumeDto showPersonalResume(@RequestBody HashMap<String, String> paramMap) {
+	public Map<String, Object> showPersonalResume(@RequestBody HashMap<String, String> paramMap) {
 		
 		log.info("Welcome CompanyMemberController showPersonalResume! " + paramMap);
 		
-//		log.info(paramMap.get("perNo"));
-		ResumeDto resumeDto 
-			= ajaxService.showPersonalResume(paramMap);
-//
-		return resumeDto;
+		int perNo = Integer.parseInt(paramMap.get("perNo"));
+		Map<String, Object> map
+			= ajaxService.showPersonalResume(perNo);
+
+		System.out.println(map);
+		return map;
 	}
 	
 	@RequestMapping(value = "/company/showPersonalLetter.do", method = RequestMethod.POST)
@@ -44,7 +46,7 @@ public class AjaxController {
 		
 		log.info("Welcome CompanyMemberController showPersonalLetter! " + paramMap);
 		
-//		log.info(paramMap.get("perNo"));
+		log.info(paramMap.get("perNo"));
 		LetterDto letterDto
 			= ajaxService.showPersonalLetter(paramMap);
 

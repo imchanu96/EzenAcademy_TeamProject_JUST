@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Company Member list</title>
+<title>CompanyMemberList.jsp</title>
 <script type="text/javascript" src="/JobHub/resources/js/CompanyMemberList.js"></script>
 <link rel="stylesheet" href="/JobHub/resources/css/CompanyMemberList.css" type="text/css">
 <link rel="stylesheet" href="/JobHub/resources/css/ReviewNav.css" type="text/css">
@@ -25,9 +25,10 @@
 			<c:if test="${not empty personalMemberDto}">
 				<c:forEach var="companyMemberList" items="${companyMemberList}">
 					<div id="companyInfoBox">
-					
+<%-- 					${personalMemberDto.perNo} --%>
+<%-- 					${companyMemberList.comNo} --%>
 						<div id="companyLogo">
-						
+							<img src="${companyMemberList.comLogo}">
 						</div>
 						<div id="companySummary">
 							<div id="companyNameBox">

@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* content */
+#container {
+	width: 1280px;
+	height: 1000px;
+	margin: 0px auto;
+}
+
+#resumeContain {
+	margin: 10px;
+	padding: 30px 0px;
+    float: left;
+    width: 980px;
+    font-size: 30px;
+    background-color: #f8fafc;
+}
+
+/* navigation */
+#navigation {
+	/* 	margin: 10px; */
+	float: left;
+	width: 250px;
+	height: 950px;
+	font-size: 25px;
+	text-align: center;
+	background-color: #eff5ff;
+}
+
+#resumeContain table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	margin: auto;
+	font-size: 20px;
+	width: 850px;
+	background-color: #fff;
+}
+tr td {
+	border: 1px solid black;
+}
+
+.letterValue {
+	border: 1px solid black;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+input {
+	width: 95%;
+	height: 100%;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 1px 4px 0px gray;
+}
+#button {
+	width: 90px;
+    height: 40px;
+    margin-left: 780px;
+    margin-bottom: 20px;
+    background-color: #4876ef;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 1px 4px 0px #ddd;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+.addTr, .deleteTr{
+	width: 100px;
+	float: right;
+	margin-right: 10px;
+}

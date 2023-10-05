@@ -1,14 +1,13 @@
 package com.jobhub.ajax.service;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import com.jobhub.personal.dto.LetterDto;
-import com.jobhub.personal.dto.ResumeDto;
-import com.jobhub.review.dto.ReviewDto;
 
 public interface AjaxService {
 
-	public ResumeDto showPersonalResume(HashMap<String, String> paramMap);
+	public Map<String, Object> showPersonalResume(int perNo);
 
 	public LetterDto showPersonalLetter(HashMap<String, String> paramMap);
 

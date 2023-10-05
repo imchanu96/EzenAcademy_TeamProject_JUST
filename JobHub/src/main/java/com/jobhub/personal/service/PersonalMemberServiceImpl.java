@@ -164,4 +164,10 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 		return personalMemberDao.personalUpdatePermission(personalMemberDto);
 	}
 	
+//	@Override
+//	public PersonalMemberDto personalMyPageList(HttpSession session) {
+//		// TODO Auto-generated method stub
+//		return PersonalMemberDao.personalMyPageList(session);
+//	}
+
 }

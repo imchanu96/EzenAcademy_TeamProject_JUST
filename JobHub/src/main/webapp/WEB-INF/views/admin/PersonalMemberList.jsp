@@ -9,7 +9,7 @@
 <title>개인회원 목록</title>
 
 <script type="text/javascript">
-	function persoanlPermissionUpdateFnc(pNo) {
+	function persoanlPermissionUpdateFnc(perNo) {
 		location.href= "./personalUpdate.do?perNo=" + perNo;
 	}
 </script>

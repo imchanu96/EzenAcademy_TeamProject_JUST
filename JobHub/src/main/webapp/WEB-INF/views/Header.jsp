@@ -16,24 +16,21 @@
 		<div id="centerForm">
 			<p>정말 로그아웃 하시겠습니까?</p>
 		</div>
-		<form action="logout.do" method="get">
 			<div id="buttonForm">
 				<div class="button">
-					<input type="button" value="네" onclick="logoutFnc(${permission});">
+					<input type="button" value="네" onclick="location.href='./logout.do'">
 				</div>
 				<div class="button">
-					<input type="button" value="아니오" onclick="backButton();">
+					<input type="button" value="아니오" onclick="closeModalFnc();">
 				</div>
 			</div>
-		</form>
 	</div>
-	
 	<c:if
-		test="${sessionScope.permission <= 2 
+		test="${sessionScope.permission <= 3 
 		or sessionScope.permission == 10}">
 		<div id="headerBox">
 			<div id="headerContent">
-
+			
 				<a href="http://localhost:9080/JobHub/home.do">
 					<img id="logo"
 						src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/1aa66c0e-7488-4a56-bc50-f915be889cf8">
@@ -72,12 +69,10 @@
 						</div>
 						<div id="myMenu">
 							<div class="myPage">
-								<a href="#">마이 페이지</a>
+								<a href="/JobHub/personal/personalMyPageList.do?perNo=${personalMemberDto.perNo}">마이 페이지</a>
 							</div>
 							<div class="logout">
-								<p onclick="clickLogoutFnc();"
-									onmouseover="mouseoverFnc();"
-									onmouseleave="mouseleaveFnc();">
+								<p onclick="clickLogoutFnc();">
 									로그 아웃
 								</p>
 							</div>
@@ -89,7 +84,7 @@
 		</div>
 		<!-- Header Ends -->
 	</c:if>
-	<c:if test="${sessionScope.permission == 5}">
+	<c:if test="${sessionScope.permission == 6}">
 		<div id="headerBox">
 			<div id="headerContent">
 				<a href="http://localhost:9080/JobHub/home.do">
@@ -128,12 +123,10 @@
 						</div>
 						<div id="myMenu">
 							<div class="myPage">
-								<a href="../company/showCompanyInfo.do?comNo=${sessionScope.companyMemberDto.comNo}">마이 페이지</a>
+								<a href="/JobHub/company/showCompanyInfo.do?comNo=${sessionScope.companyMemberDto.comNo}">마이 페이지</a>
 							</div>
 							<div class="logout">
-								<p onclick="clickLogoutFnc();"
-									onmouseover="mouseoverFnc();"
-									onmouseleave="mouseleaveFnc();">
+								<p onclick="clickLogoutFnc();">
 									로그 아웃
 								</p>
 							</div>

@@ -47,11 +47,12 @@ public class CompanyMemberController {
 		String viewUrl = "";
 		if (companyMemberDto != null) {
 //				회원이 존재하면 세션에 담는다
-
+			
 			int permission = companyMemberDto.getComPermission();
 
 			session.setAttribute("companyMemberDto", companyMemberDto);
 			session.setAttribute("permission", permission);
+			
 			viewUrl = "company/myPage/CompanyMyPage";
 		} else {
 			viewUrl = "personal/auth/LoginFail";
@@ -83,7 +84,7 @@ public class CompanyMemberController {
 
 		session.invalidate(); // 세션 종료
 
-		return "redirect:/company/login.do";
+		return "redirect:/home.do";
 	}
 
 	@RequestMapping(value = "/company/add.do", method = RequestMethod.GET)

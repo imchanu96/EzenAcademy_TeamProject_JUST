@@ -6,172 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>회사 주소 변경</title>
-<style type="text/css">
-
-/* 공통 */
-a {
-	text-decoration: none;
-	color: #292e41;
-}
-
-a:hover {
-	color: #2d65f2;
-}
-
-/* logo */
-#logo {
-	float: left;
-	margin: 0px 90px;
-	width: 74px;
-	height: 111px;
-}
-/* main menu */
-#mainMenuBox {
-	float: left;
-	width: 750px;
-	height: 100px;
-	margin-left: 30px;
-}
-
-.mainMenuItem {
-	float: left;
-	margin: 20px;
-	width: 200px;
-	height: 60px;
-	text-align: center;
-	line-height: 60px;
-	font-size: 30px;
-	font-weight: 600;
-}
-/* message */
-#myMessageBox {
-	float: left;
-	width: 100px;
-	height: 100px;
-	text-align: center;
-}
-
-#chatImage {
-	width: 70px;
-	height: 70px;
-	margin-top: 20px;
-	margin-right: 50px;
-}
-/* my menu */
-#myMenuBox {
-	float: left;
-	width: 140px;
-	height: 100px;
-	text-align: center;
-}
-/* end of header */
-
-/* content */
-#container {
-	width: 1280px;
-	height: 1000px;
-	margin: 0px auto;
-}
-/* navigation */
-#navigation {
-	margin: 10px;
-	float: left;
-	width: 250px;
-	height: 950px;
-	font-size: 25px;
-	text-align: center;
-	background-color: #d7dce5;
-}
-
-#smallMenuBox {
-	margin: 30px auto;
-	width: 200px;
-	height: 500px;
-}
-
-.smallMenuItem {
-	margin-bottom: 20px;
-}
-
-.smallMenuItem a {
-	color: #475067;
-}
-/* content */
-#content {
-	margin: 10px;
-	float: left;
-	width: 980px;
-	height: 950px;
-	font-size: 30px;
-	background-color: #f8fafc;
-}
-
-#personalInfoBox {
-	border: 1px solid #d7dce5;
-	background-color: #fff;
-	padding: 20px;
-	border-radius: 10px;
-	width: 710px;
-	height: 150px;
-	margin: 15px;
-	margin-left: 75px;
-	color: #5c667b;
-}
-
-#companyInfoBox {
-	border: 1px solid #d7dce5;
-	background-color: #fff;
-	padding: 20px;
-	border-radius: 10px;
-	width: 710px;
-	height: 150px;
-	margin: 15px;
-	margin-left: 75px;
-	color: #5c667b;
-}
-
-.infoTitle {
-	margin: 0px 0px 20px 0px;
-	font-size: 25px;
-}
-
-.personalInfoItemTitle, .companyInfoItemTitle {
-	line-height: 50px;
-	float: left;
-	width: 250px;
-	height: 50px;
-	margin-top: 5px;
-	margin-left: 25px;
-	font-size: 20px;
-}
-
-.personalInfoItemContent, .companyInfoItemContent {
-	line-height: 50px;
-	float: left;
-	width: 350px;
-	height: 50px;
-	font-size: 18px;
-}
-
-.companyInfoContentBox {
-	float: left;
-	width: 500px;
-	height: 300px;
-}
-
-.companyInfoContent {
-	margin-top: 7px;
-	width: 470px;
-	height: 240px;
-	line-height: 35px;
-	font-size: 18px;
-}
-
-.button {
-	float: left;
-	height: 50px;
-}
-</style>
+<link rel="stylesheet" href="/JobHub/resources/css/CompanyInfoUpdate.css" type="text/css">
 </head>
 <body>
 	<jsp:include page="../../Header.jsp" />
@@ -205,7 +40,7 @@ a:hover {
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comInChargeName"
-									value="${companyMemberDtoUpdate.comInChargeName}">
+									placeholder="${companyMemberDtoUpdate.comInChargeName}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
@@ -222,7 +57,7 @@ a:hover {
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comInChargeEmail"
-									value="${companyMemberDtoUpdate.comInChargeEmail}">
+									placeholder="${companyMemberDtoUpdate.comInChargeEmail}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
@@ -239,7 +74,7 @@ a:hover {
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comInChargePhoneNum"
-									value="${companyMemberDtoUpdate.comInChargePhoneNum}">
+									placeholder="${companyMemberDtoUpdate.comInChargePhoneNum}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
@@ -256,7 +91,7 @@ a:hover {
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comName"
-									value="${companyMemberDtoUpdate.comName}">
+									placeholder="${companyMemberDtoUpdate.comName}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
@@ -273,7 +108,7 @@ a:hover {
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comAdd"
-									value="${companyMemberDtoUpdate.comAdd}">
+									placeholder="${companyMemberDtoUpdate.comAdd}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
@@ -290,7 +125,7 @@ a:hover {
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comType"
-									value="${companyMemberDtoUpdate.comType}">
+									placeholder="${companyMemberDtoUpdate.comType}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
@@ -306,8 +141,8 @@ a:hover {
 							<div class="companyInfoItemTitle">회사 설립일</div>
 
 							<div class="companyInfoItemContent">
-								<input type="text" name="comEstDate"
-									value="${companyMemberDtoUpdate.comEstDate}">
+								<input type="date" name="comEstDate"
+									placeholder="${companyMemberDtoUpdate.comEstDate}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
@@ -324,7 +159,7 @@ a:hover {
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comHomepage"
-									value="${companyMemberDtoUpdate.comHomepage}">
+									placeholder="${companyMemberDtoUpdate.comHomepage}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
@@ -341,7 +176,7 @@ a:hover {
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comIntroduce"
-									value="${companyMemberDtoUpdate.comIntroduce}">
+									placeholder="${companyMemberDtoUpdate.comIntroduce}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>

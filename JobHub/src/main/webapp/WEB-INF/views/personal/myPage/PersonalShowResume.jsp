@@ -8,55 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>이력서 보기</title>
-
-<style type="text/css">
-
-/* content */
-#container {
-	width: 1280px;
-	height: 1000px;
-	margin: 0px auto;
-}
-
-/* navigation */
-#navigation {
-	/* 	margin: 10px; */
-	float: left;
-	width: 250px;
-	height: 950px;
-	font-size: 25px;
-	text-align: center;
-	background-color: #eff5ff;
-}
-
-#resumeContain {
-	width: 1280px;
-	height: 1000px;
-	margin: 0px auto;
-}
-
-#resumeContain table {
-	border: 1px solid black;
-	border-collapse: collapse;
-	text-align: center;
-	margin: auto;
-	font-size: 20px;
-}
-
-table {
-	width: 750px;
-}
-
-tr td {
-	border: 1px solid black;
-}
-
-.resumeValue {
-	border: 1px solid black;
-	border-radius: 5px;
-	font-size: 20px;
-}
-</style>
+<link rel="stylesheet" href="/JobHub/resources/css/PersonalShowResume.css" type="text/css">
 <script type="text/javascript">
 	function updateResumeFnc(perNo) {
 		location.href = "./resumeUpdate.do?perNo=" + perNo;
@@ -66,33 +18,16 @@ tr td {
 <body>
 	<jsp:include page="../../Header.jsp" />
 	<div id="container">
-		<div id="navigation">
-			<div id="smallMenuBox">
-				<div class="smallMenuItem">
-					<a href="">내 프로필</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="">내가 쓴 글</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="./showResume.do?perNo=${personalMemberDto.perNo}">이력서 관리</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="./showLetter.do?perNo=${personalMemberDto.perNo}">자소서 관리</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="">고객센터</a>
-				</div>
-			</div>
-		</div>
+		
+		<jsp:include page="./PersonalMyPageNav.jsp"/>
+
 		<c:set var="resumeDto" value='${map.get("resumeDto")}'/>
 		<c:set var="careerDtoList" value='${map.get("careerDtoList")}'/>
 		<c:set var="educationDtoList" value='${map.get("educationDtoList")}'/>
+		
 		<div id="resumeContain">
-			<input type="button" style="text-align: right;" value="수정하기"
+			<input type="button" id="button" value="수정하기"
 				onclick="updateResumeFnc(${personalMemberDto.perNo});">
-			<p>${resumeDto.resumeName}의이력서</p>
-			
 
 			<table>
 				<thead>
@@ -215,5 +150,9 @@ tr td {
 			</table>
 		</div>
 	</div>
+	
+	<jsp:include page="/WEB-INF/views/Tail.jsp"/>
+	
+	
 </body>
 </html>

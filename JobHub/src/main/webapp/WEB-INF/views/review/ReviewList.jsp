@@ -23,7 +23,9 @@
 		<div id="content">
 		
 			<div id="companyInfoBox">
-				<div id="companyLogo"></div>
+				<div id="companyLogo">
+					<img src="${companyMemberDto.comLogo}">
+				</div>
 				<div id="companySummary">
 					<div id="companyNameBox">
 						<span id="companyName">${companyMemberDto.comName}</span>
@@ -85,7 +87,7 @@
 							</div>
 							<div>
 								<div class="starNameBox">
-										<span>&nbsp;워&nbsp;라&nbsp;밸</span>
+										<span>&nbsp;워&nbsp;라&nbsp;벨</span>
 									</div>
 								<span>★ ${balTotalAvg}</span>
 							</div>
@@ -145,7 +147,7 @@
 								</div>
 								<div>
 									<div class="starNameBox">
-										<span>&nbsp;워&nbsp;라&nbsp;밸</span>
+										<span>&nbsp;워&nbsp;라&nbsp;벨</span>
 									</div>
 									<span>
 										<c:forEach var="i" begin="1" end="5">

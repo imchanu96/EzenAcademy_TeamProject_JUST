@@ -62,6 +62,7 @@
 	<select id="personalMemberMyPostListSelectTotalCount" resultType="java.lang.Integer">
 		SELECT COUNT(*)
 		FROM BOARD
+<!-- 		WHERE PERSONAL_NUMBER = #{perNo} -->
 	</select>
 	
 	<insert id="boardInsertOne" parameterType="boardDto">

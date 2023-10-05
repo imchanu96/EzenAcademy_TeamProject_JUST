@@ -47,4 +47,7 @@ public interface PersonalMemberService {
 	public int personalUpdateTemporarily(PersonalMemberDto personalMemberDto);
 	
 	public int personalUpdatePermission(PersonalMemberDto personalMemberDto);	
+
+//	public PersonalMemberDto personalMyPageList(HttpSession session);
+	
 }
