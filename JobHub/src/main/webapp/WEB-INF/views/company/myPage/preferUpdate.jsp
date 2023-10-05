@@ -19,7 +19,6 @@
 		var rateSum = 0;
 
 		for (var i = 0; i < preferList.length; i++) {
-// 			alert(preferList[i].value);
 			prefer.value += preferList[i].value += ",";
 			
 			prefer.value += preferListRateList[i].value;
@@ -30,15 +29,16 @@
 			}
 		}
 		var warningMsgObj = document.getElementById("warningMsg");
-// 		alert(warningMsgObj.style.display != "block");
 		if (warningMsgObj.style.display != "block") {
 			formObj.submit();
 		}
 	}
 	
 	function showCheckBoxModalFnc() {
+		
 		var checkBoxModal = document.getElementById("checkBoxModal");
 		checkBoxModal.style.display = "block";
+
 	}
 	
 	function inputFocusFnc() {
@@ -122,10 +122,20 @@
 		var preferValue = document.getElementsByClassName("preferList")[3];
 		preferValue.value = value;
 	}
-	function closeModalFnc() {
+	
+	function tempCloseFnc(myObj) {
 		var checkBoxModal = document.getElementById("checkBoxModal");
-		checkBoxModal.style.display = "none";
+	    alert(checkBoxModal.style.display);
+	    checkBoxModal.style.display = "none";
 	}
+	
+// 	function closeModalFnc(showCheckBoxModalFnc) {
+// 		alert('????');
+// 		alert(myObj);
+		
+// 		myObj.stopPropagation();
+	    
+// 	}
 	
 </script>
 </head>
@@ -273,7 +283,7 @@
 					<input class="careerBtn" type="button" value="3~5년차" onclick="addCareerValueFnc(this)">
 					<input class="careerBtn" type="button" value="5년차 이상" onclick="addCareerValueFnc(this)">
 				</div>
-				<input type="button" value="확인" onclick="closeModalFnc();">
+				<input type="button" value="확인" onclick="tempCloseFnc(this);">
 			</div>
 				
 				<input type="button" value="수정 완료" style="margin: 0 auto;"

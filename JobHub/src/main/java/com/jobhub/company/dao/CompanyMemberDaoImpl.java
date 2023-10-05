@@ -1,5 +1,6 @@
 package com.jobhub.company.dao;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -48,10 +49,7 @@ public class CompanyMemberDaoImpl implements CompanyMemberDao {
 	}
 
 	@Override
-	public List<CompanyMemberDto> companyMemberSelectList(int start, int end) {
-		Map<String, Object> map = new HashMap<String, Object>();
-		map.put("start", start);
-		map.put("end", end);
+	public List<CompanyMemberDto> companyMemberSelectList(Map<String, Object> map) {
 		
 		return sqlSession.selectList(namespace + "companyMemberSelectList", map);
 	}

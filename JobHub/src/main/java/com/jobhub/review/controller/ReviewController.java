@@ -2,6 +2,7 @@ package com.jobhub.review.controller;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpSession;
 
@@ -33,7 +34,8 @@ public class ReviewController {
 //	기업 리스트 조회
 	@RequestMapping(value = "/review/companyMemberList.do", 
 			method = {RequestMethod.GET, RequestMethod.POST})
-		public String companyMemberList(@RequestParam(defaultValue = "1") int curPage, Model model) {
+		public String companyMemberList(@RequestParam(defaultValue = "1") int curPage
+				, Model model, HttpSession session) {
  
 			log.info("Welcome ReviewController companyMemberList!: {}", curPage);
 
@@ -41,11 +43,19 @@ public class ReviewController {
 
 			CompanyMemberPaging companyMemberPaging = new CompanyMemberPaging(totalCount, curPage);
 			
+			PersonalMemberDto personalMemberDto = (PersonalMemberDto)session.getAttribute("personalMemberDto");
+			
 			int start = companyMemberPaging.getPageBegin();
 			int end = companyMemberPaging.getPageEnd();
 			
-			List<CompanyMemberDto> companyMemberList = reviewService.companyMemberSelectList(start, end);
+			Map<String, Object> map = new HashMap<String, Object>();
 			
+			map.put("start", start);
+			map.put("end", end);
+			map.put("perNo", personalMemberDto.getPerNo());
+			
+			List<CompanyMemberDto> companyMemberList = reviewService.companyMemberSelectList(map);
+			System.out.println(companyMemberList);
 			HashMap<String, Object> pagingMap = new HashMap<>(); 
 			pagingMap.put("totalCount", totalCount);
 			pagingMap.put("companyMemberPaging", companyMemberPaging);

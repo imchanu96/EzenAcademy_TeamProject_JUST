@@ -15,7 +15,7 @@ public interface CompanyMemberDao {
 
 	public int companyInsertOne(CompanyMemberDto companyMemberDto);
 
-	public List<CompanyMemberDto> companyMemberSelectList(int start, int end);
+	public List<CompanyMemberDto> companyMemberSelectList(Map<String, Object> map);
 
 	public int companyMemberSelectTotalCount();
 	

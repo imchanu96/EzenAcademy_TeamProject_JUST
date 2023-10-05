@@ -47,8 +47,13 @@ public class RecommendDaoImpl implements RecommendDao{
 			System.out.println(checkMap.get("perNo"));
 			ResumeDto resumeDto
 				= sqlSession.selectOne(recommendNamespace + "personalMemberShowResume", checkMap);
+			System.out.println(resumeDto);
+			if (resumeDto != null) {
+				checkMap.put("resumeNo", resumeDto.getResumeNo());
+			}else {
+				continue;
+			}
 			
-			checkMap.put("resumeNo", resumeDto.getResumeNo());
 			
 			List<CareerDto> careerDtoList
 				= sqlSession.selectList(personalNamespace + "personalMemberShowCareer", checkMap);
