@@ -1,0 +1,217 @@
+@charset "UTF-8";
+input {
+	width: 400px;
+	height: 40px;
+	margin: 5px 0px 5px 0px;
+	border: none;
+}
+
+label {
+	font-size: 13px;
+	line-height: 18px;
+	color: #929294;
+	text-align: center;
+}
+
+input[type=radio] {
+	margin-left: 0px;
+	width: 1px;
+	height: 1px;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button
+	{
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+textarea:focus, input:focus, select:focus {
+	outline: none;
+}
+
+label>span {
+	color: #09AA5C;
+}
+
+img {
+	margin: 30px 110px 40px 110px;
+}
+
+.inner {
+	width: 500px;
+	margin: auto;
+}
+
+.header img {
+	width: 30%;
+	height: 30%;
+}
+
+.input {
+	width: 300px;
+	height: 40px;
+	margin: 5px 0px 5px 0px;
+	border: none;
+}
+
+.radioDiv {
+	width: 48%;
+	height: 86%;
+}
+
+.radioDiv:has(.radioBtn:checked) {
+	border: 2px solid #09AA5C;
+}
+
+.radioLabel {
+	display: inline-block;
+	width: 86%;
+	height: 90%;
+	text-align: center;
+	margin-top: 3px;
+	margin-right: 2px;
+}
+
+.error {
+	display: none;
+}
+
+.genderNationalitySelect label {
+	width: 100px;
+}
+
+.boxList {
+	width: 460px;
+	margin: 10px;
+	border-radius: 6px;
+	border: 1px solid #d6d6d6;
+}
+
+.infoRow {
+	height: 50px;
+	border: 1px solid #d6d6d6;
+	margin: -1px;
+}
+
+.radioBtn {
+	opacity: 0;
+}
+
+.error {
+	margin-left: 20px;
+	font-size: 13px;
+	line-height: 18px;
+	color: #ff3f3f;
+}
+
+#idBlank {
+	width: 450px;
+}
+
+#idInput, #nameInput {
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+#temporarilyInput{
+	height: 80px;
+}
+
+#emailInput {
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+#telecomBlank {
+	width: 400px;
+	height: 30px;
+	margin: 11px 0px 11px 0px;
+	border: none;
+}
+
+#smallLabel {
+	width: 100px;
+	height: 20px;
+}
+
+#genderSelect, #nationalitySelect {
+	width: 100px;
+	border-radius: 6px;
+	width: 200px;
+	height: 30px;
+	border: 1px solid #c6c6c6;
+	margin-top: 10px;
+}
+
+#genderSelect {
+	float: left;
+	margin-left: 10px;
+}
+
+#nationalitySelect {
+	float: right;
+	margin-right: 10px;
+}
+
+#maleDiv, #koreanDiv {
+	float: left;
+}
+
+#femaleDiv, #foreignerDiv {
+	float: right;
+}
+
+#under14ErrorMsg {
+	margin-left: 20px;
+	font-size: 13px;
+	line-height: 18px;
+	color: #09AA5C;
+}
+
+#submitButton {
+	margin: 0px 0px 20px 10px;
+	position: fixed;
+	bottom: 0;
+	width: 460px;
+	height: 52px;
+	background-color: #4876ef;
+	color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, .05);
+	border-radius: 6px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+}
+
+#agreeAll {
+	width: 30px;
+	height: 30px;
+	margin: 10px;
+}
+
+#agreeLabel {
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 22px;
+	letter-spacing: -.8px;
+	color: #222;
+	vertical-align: middle;
+}
+
+#agreementDiv, #authorizationDiv {
+	height: 50px;
+}
+
+#authNumInput {
+	margin-left: 40px;
+}
+
+#authButton {
+	width: 95px;
+	height: 33px;
+	font-weight: bold;
+	background-color: #ffffff;
+	color: #09AA5C;
+	border: 2px solid #09AA5C;
+	border-radius: 4px;
+}

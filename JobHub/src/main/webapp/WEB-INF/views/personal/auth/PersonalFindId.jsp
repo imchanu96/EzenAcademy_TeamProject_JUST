@@ -10,7 +10,7 @@
 <style type="text/css">
 	#container {
 		margin: 0px auto;
-		padding: 70px 270px;
+		padding: 135px 270px;
 		width: 540px;
 		background-color: #eff5ff;
 	}
@@ -31,7 +31,8 @@
 		text-align: left;
 	}
 	#titleBox > p {
-		font-size: 30px;
+		font-size: 21px;
+    	font-weight: bold;
 	}
 	.inputBox {
 		float: left;
@@ -60,13 +61,13 @@
 	button {
 	    width: 115px;
 	    height: 38px;
-	    background-color: #bcd1fc;
+	    background-color: #4876ef;
 	    border: none;
 	    border-radius: 6px;
 	    box-shadow: 0px 1px 4px 0px #ddd;
 	    font-size: 16px;
 	    font-weight: bold;
-	    color: #475067;
+	    color: #fff;
 	}
 	
 </style>

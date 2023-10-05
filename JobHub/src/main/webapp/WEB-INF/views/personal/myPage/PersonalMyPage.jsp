@@ -94,15 +94,7 @@
 							회사 이름
 						</div>
 						<div class="companyInfoItemContent">
-							이젠 아카데미
-						</div>
-					</div>
-					<div class="companyInfoItem">
-						<div class="companyInfoItemTitle">
-							회사 주소
-						</div>
-						<div class="companyInfoItemContent">
-							서울특별시 서초구 강남대로 123 2층
+							${personalMemberDto.perCom}
 						</div>
 					</div>
 				</div>

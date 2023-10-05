@@ -5,229 +5,6 @@
 <head>
 <meta charset="UTF-8">
 <title>개인 회원가입</title>
-<style type="text/css">
-input {
-	width: 400px;
-	height: 40px;
-	margin: 5px 0px 5px 0px;
-	border: none;
-}
-
-form {
-	margin-top: 50px;
-}
-
-label {
-	font-size: 13px;
-	line-height: 18px;
-	color: #929294;
-	text-align: center;
-}
-
-input[type=radio] {
-	margin-left: 0px;
-	width: 1px;
-	height: 1px;
-}
-
-input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button
-	{
-	-webkit-appearance: none;
-	margin: 0;
-}
-
-textarea:focus, input:focus, select:focus {
-	outline: none;
-}
-
-label>span {
-	color: #09AA5C;
-}
-
-img {
-	margin-left: 10px;
-	margin-top: 6px;
-}
-
-.inner {
-	width: 500px;
-	margin: auto;
-}
-
-.header img {
-	width: 30%;
-	height: 30%;
-}
-
-.input {
-	width: 300px;
-	height: 40px;
-	margin: 5px 0px 5px 0px;
-	border: none;
-}
-
-.radioDiv {
-	width: 48%;
-	height: 86%;
-}
-
-.radioDiv:has(.radioBtn:checked) {
-	border: 2px solid #09AA5C;
-}
-
-.radioLabel {
-	display: inline-block;
-	width: 86%;
-	height: 90%;
-	text-align: center;
-	margin-top: 3px;
-	margin-right: 2px;
-}
-
-.error {
-	display: none;
-}
-
-.genderNationalitySelect label {
-	width: 100px;
-}
-
-.boxList {
-	width: 460px;
-	margin: 10px;
-	border-radius: 6px;
-	border: 1px solid #d6d6d6;
-}
-
-.infoRow {
-	height: 50px;
-	border: 1px solid #d6d6d6;
-	margin: -1px;
-}
-
-.radioBtn {
-	opacity: 0;
-}
-
-.error {
-	margin-left: 20px;
-	font-size: 13px;
-	line-height: 18px;
-	color: #ff3f3f;
-}
-
-#idBlank {
-	width: 300px;
-}
-
-#idInput, #nameInput {
-	border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
-}
-
-#temporarilyInput{
-	height: 80px;
-}
-
-#emailInput, #phoneNumInput {
-	border-bottom-left-radius: 6px;
-	border-bottom-right-radius: 6px;
-}
-
-#telecomBlank {
-	width: 400px;
-	height: 30px;
-	margin: 11px 0px 11px 0px;
-	border: none;
-}
-
-#smallLabel {
-	width: 100px;
-	height: 20px;
-}
-
-#genderSelect, #nationalitySelect {
-	width: 100px;
-	border-radius: 6px;
-	width: 200px;
-	height: 30px;
-	border: 1px solid #c6c6c6;
-	margin-top: 10px;
-}
-
-#genderSelect {
-	float: left;
-	margin-left: 10px;
-}
-
-#nationalitySelect {
-	float: right;
-	margin-right: 10px;
-}
-
-#maleDiv, #koreanDiv {
-	float: left;
-}
-
-#femaleDiv, #foreignerDiv {
-	float: right;
-}
-
-#under14ErrorMsg {
-	margin-left: 20px;
-	font-size: 13px;
-	line-height: 18px;
-	color: #09AA5C;
-}
-
-#submitButton {
-	margin: 0px 0px 20px 10px;
-	position: fixed;
-	bottom: 0;
-	width: 460px;
-	height: 52px;
-	background-color: #09AA5C;
-	color: #FFFFFF;
-	border: 1px solid rgba(0, 0, 0, .05);
-	border-radius: 6px;
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 22px;
-}
-
-#agreeAll {
-	width: 30px;
-	height: 30px;
-	margin: 10px;
-}
-
-#agreeLabel {
-	font-size: 15px;
-	font-weight: 600;
-	line-height: 22px;
-	letter-spacing: -.8px;
-	color: #222;
-	vertical-align: middle;
-}
-
-#agreementDiv, #authorizationDiv {
-	height: 50px;
-}
-
-#authNumInput {
-	margin-left: 40px;
-}
-
-#authButton {
-	width: 95px;
-	height: 33px;
-	font-weight: bold;
-	background-color: #ffffff;
-	color: #09AA5C;
-	border: 2px solid #09AA5C;
-	border-radius: 4px;
-}
-</style>
 <script type="text/javascript">
    		
 		function submitCheckFnc(event) {
@@ -264,7 +41,7 @@ img {
 	   		// 공백 검사
 	   		if (idDivObj.value != "" &&			// 문제가 생긴 후 수정할 땐 초록으로 바뀌지 않음
 	   			idDivObj.getAttribute("style") != "border: 2px solid #ff3f3f") {
-	   			idDivObj.setAttribute("style", "border: 2px solid #09aa5c");
+	   			idDivObj.setAttribute("style", "border: 2px solid #94b5fc");
 			}
 		}
 	   	
@@ -307,7 +84,7 @@ img {
 	   		// 공백 검사
 	   		if (pwdDivObj.value != "" &&
 	   			pwdDivObj.getAttribute("style") != "border: 2px solid #ff3f3f") {
-	   			pwdDivObj.setAttribute("style", "border: 2px solid #09aa5c");
+	   			pwdDivObj.setAttribute("style", "border: 2px solid #94b5fc");
 			}
 		}
 	   	
@@ -344,6 +121,29 @@ img {
 				invalidPwdErrorObj.setAttribute("style", "display: none");
 				pwdDivObj.setAttribute("style", "border: 1px solid #d6d6d6");
 			}
+	   		var pwdRepeatBlankObj = document.getElementById("pwdRepeatBlank");
+	   		
+	   		if (pwdRepeatBlankObj.value != "") {
+	   			pwdRepeatCheckFnc();
+			}
+	   		
+		}
+		
+		function pwdRepeatCheckFnc() {
+   			var pwdBlankObj = document.getElementById("pwdBlank");
+   			var pwdRepeatBlankObj = document.getElementById("pwdRepeatBlank");
+   			
+   			var pwdRepeatInputObj = document.getElementById("pwdRepeatInput");
+   			var repeatPwdErrorObj = document.getElementById("repeatPwdError");
+   			
+   			if (pwdBlankObj.value != pwdRepeatBlankObj.value) {
+	   			pwdRepeatInputObj.setAttribute("style", "border: 2px solid #ff3f3f");
+	   			repeatPwdErrorObj.style.display = "block";
+			} else if (pwdBlankObj.value == pwdRepeatBlankObj.value) {
+				pwdRepeatInputObj.setAttribute("style", "border: 1px solid #d6d6d6;");
+				repeatPwdErrorObj.style.display = "none";
+			}
+   		
 		}
 		
 		function emailCheckFnc() {
@@ -372,7 +172,7 @@ img {
 	   		// 공백 검사
 	   		if (nameDivObj.value != "" &&
 	   			nameDivObj.getAttribute("style") != "border: 2px solid #ff3f3f") {
-	   			nameDivObj.setAttribute("style", "border: 2px solid #09aa5c");
+	   			nameDivObj.setAttribute("style", "border: 2px solid #94b5fc");
 			}
 		}
 		
@@ -400,7 +200,7 @@ img {
 	   		// 공백 검사
 	   		if (birthdayDivObj.value != "" &&
 	   			birthdayDivObj.getAttribute("style") != "border: 2px solid #ff3f3f") {
-	   			birthdayDivObj.setAttribute("style", "border: 2px solid #09aa5c");
+	   			birthdayDivObj.setAttribute("style", "border: 2px solid #94b5fc");
 			}
 		}
 				
@@ -495,7 +295,7 @@ img {
 	   		// 공백 검사
 	   		if (phoneNumDivObj.value != "" &&
 	   			phoneNumDivObj.getAttribute("style") != "border: 2px solid #ff3f3f") {
-	   			phoneNumDivObj.setAttribute("style", "border: 2px solid #09aa5c");
+	   			phoneNumDivObj.setAttribute("style", "border: 2px solid #94b5fc");
 			}
 		}
 		
@@ -570,7 +370,7 @@ img {
 		
    	
 	</script>
-<link rel="stylesheet" type="text/css" href="../css/JoinMyInfo.css">
+<link rel="stylesheet" type="text/css" href="/JobHub/resources/css/Join.css">
 </head>
 
 <body>
@@ -578,13 +378,9 @@ img {
 	<div class="inner">
 
 		<div class="header">
-			<a href="./login.do"> <img style="width:60px;"
-				src="https://github.com/noohij/
-								Ezen_TeamProject_JUST/assets/54897384/
-								ee8218f0-b067-48da-8bf7-d31bef40f1cf">
-			</a>
+			<img style="width: 250px;"
+				src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/1aa66c0e-7488-4a56-bc50-f915be889cf8">
 		</div>
-		<!-- header 종료 -->
 
 		<form action="./addCtr.do" method="post">
 			<div id="accountInfo" class="boxList">
@@ -594,8 +390,19 @@ img {
 				</div>
 
 				<div id="pwdInput" class="infoRow">
-					<input type="password" placeholder="비밀번호(8~20글자)" name="perPwd" id="pwdBlank" 
+					<input type="password" placeholder="비밀번호" name="perPwd" id="pwdBlank" 
 						class="input" onblur="pwdCheckFnc();" onfocus="pwdFocusFnc();">
+				</div>
+				
+				<div id="pwdRepeatInput" class="infoRow">
+					<input type="password" placeholder="비밀번호 확인" id="pwdRepeatBlank" 
+						class="input" onblur="pwdRepeatCheckFnc();">
+				</div>
+				
+				<div id="nickNameInput" class="infoRow">
+					<input type="text" placeholder="닉네임" name="perNickname"
+						id="nickNameBlank" class="input" onblur="nickNameCheckFnc();"
+						onfocus="nameFocusFnc();">
 				</div>
 
 				<div id="emailInput" class="infoRow">
@@ -610,6 +417,7 @@ img {
 			<div id="noPwdError" class="error">· 비밀번호: 필수 정보입니다.</div>
 			<div id="invalidPwdError" class="error">· 비밀번호: 8~16자의 영문
 				대/소문자, 숫자, 특수문자를 사용해 주세요.</div>
+			<div id="repeatPwdError" class="error">· 비밀번호: 비밀번호가 일치하지 않습니다.</div>
 			<div id="invalidEmailError" class="error">· 이메일: 이메일 주소가 정확한지
 				확인해 주세요.</div>
 
@@ -625,38 +433,34 @@ img {
 						onfocus="phoneNumFocusFnc();">
 				</div>
 				
-				<div id="conpanyInput" class="infoRow">
-					<input type="text" placeholder="현재 다니고 계시는 직장을 입력해주세요" name="perCom"
-						id="nameBlank" class="input" onblur="nameCheckFnc();"
-						onfocus="nameFocusFnc();">
+				<div id="companyInput" class="infoRow">
+					<input type="text" placeholder="직장" name="perCom"
+						id="companyBlank" class="input" onblur="companyCheckFnc();"
+						onfocus="companyFocusFnc();">
 				</div>
-				<div id="nickNameInput" class="infoRow">
-					<input type="text" placeholder="사용하실 닉네임을 입력해주세요" name="perNickname"
-						id="nameBlank" class="input" onblur="nameCheckFnc();"
-						onfocus="nameFocusFnc();">
-				</div>
-				<div id="profileInput" class="infoRow">
-					<input type="text" placeholder="사진을 넣어주세요" name="perProfile"
-						value="증명사진" id="nameBlank" class="input">
-				</div>
-				<div id="birthdayInput" class="infoRow">
-					<input type="date" placeholder='입사일을 "-"없이 입력해주세요 ' name="perHireDate"
-						id="birthdayBlank1" class="input"
-						onblur="birthdayCheckFnc();" onfocus="birthdayFocusFnc();">
-				</div>
-				<div id="temporarilyInput" class="infoRow">
-					<div>
-						<select >
-							<option value="">살았던 곳은?</option>
-							<option value="">고등학교 이름은?</option>
-							<option value="">집가고 싶다</option>
-							<option value="">ㅎ</option>
-							<option value="">몰라</option>
-						</select>
-					</div>
-					<input type="text" placeholder="질문에 대한 답" name="perTemporarily" id="temporarilyBlank"
-						class="input" onblur="emailCheckFnc();" onfocus="emailFocusFnc();">
-				</div>
+				
+<!-- 				<div id="profileInput" class="infoRow"> -->
+<!-- 					<input type="text" placeholder="사진" name="perProfile" -->
+<!-- 						value="증명사진" id="nameBlank" class="input"> -->
+<!-- 				</div> -->
+<!-- 				<div id="birthdayInput" class="infoRow"> -->
+<!-- 					<input type="date" placeholder='입사일을 "-"없이 입력해주세요 ' name="perHireDate" -->
+<!-- 						id="birthdayBlank1" class="input" -->
+<!-- 						onblur="birthdayCheckFnc();" onfocus="birthdayFocusFnc();"> -->
+<!-- 				</div> -->
+<!-- 				<div id="temporarilyInput" class="infoRow"> -->
+<!-- 					<div> -->
+<!-- 						<select > -->
+<!-- 							<option value="">살았던 곳은?</option> -->
+<!-- 							<option value="">고등학교 이름은?</option> -->
+<!-- 							<option value="">집가고 싶다</option> -->
+<!-- 							<option value="">ㅎ</option> -->
+<!-- 							<option value="">몰라</option> -->
+<!-- 						</select> -->
+<!-- 					</div> -->
+<!-- 					<input type="text" placeholder="질문에 대한 답" name="perTemporarily" id="temporarilyBlank" -->
+<!-- 						class="input" onblur="emailCheckFnc();" onfocus="emailFocusFnc();"> -->
+<!-- 				</div> -->
 				
 			</div>
 
