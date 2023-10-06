@@ -31,7 +31,7 @@
 						<span id="companyName">${companyMemberDto.comName}</span>
 					</div>
 					<div id="companyTypeBox">
-						<span id="companyType">${companyMemberDto.comIntroduce}</span>
+						<span id="companyType">${companyMemberDto.comType}</span>
 					</div>
 					<div id="companyHomepageBox">
 						<a id="companyHomepage" href="http://${companyMemberDto.comHomepage}"
@@ -58,7 +58,7 @@
 								<span>평균 별점</span>
 							</div>
 							<span>
-								&nbsp;★ ${totalAvg}
+								&nbsp;&nbsp;&nbsp; ${totalAvg}
 							</span>
 						</div>
 						
@@ -67,36 +67,36 @@
 								<div class="starNameBox">
 										<span>&nbsp;&nbsp;급&nbsp;&nbsp;&nbsp;여</span>
 									</div>
-								<span>★ ${salTotalAvg}</span>
+								<span> ${salTotalAvg}</span>
 							</div>
 							<div>
 								<div class="starNameBox">
 										<span>&nbsp;&nbsp;복&nbsp;&nbsp;&nbsp;지</span>
 									</div>
-								<span>★ ${welTotalAvg}</span>
+								<span> ${welTotalAvg}</span>
 							</div>
 							<div>
 								<div class="starNameBox">
 										<span>근무 환경</span>
 									</div>
-								<span>★ ${envTotalAvg}</span>
+								<span> ${envTotalAvg}</span>
 							</div>
 							<div>
 								<div class="starNameBox">
 										<span>&nbsp;경&nbsp;영&nbsp;진</span>
 									</div>
-								<span>★ ${bossTotalAvg}</span>
+								<span> ${bossTotalAvg}</span>
 							</div>
 							<div>
 								<div class="starNameBox">
 										<span>&nbsp;워&nbsp;라&nbsp;벨</span>
 									</div>
-								<span>★ ${balTotalAvg}</span>
+								<span> ${balTotalAvg}</span>
 							</div>
 						</div>
-		<!-- 				<div class="totalRate"> -->
-		<!-- 					매칭률 100 -->
-		<!-- 				</div> -->
+						<div class="totalRate">
+<%-- 							매칭률 ${companyMemberList.RECOMMEND_TOTAL_RATE} --%>
+						</div>
 					</div>
 					
 					<c:forEach var="reviewDto" items="${reviewList}">
