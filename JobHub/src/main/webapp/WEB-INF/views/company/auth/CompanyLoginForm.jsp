@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>기업 로그인</title>
+<title>JobHub : 로그인</title>
 
 <link rel="stylesheet" href="/JobHub/resources/css/CompanyLoginForm.css" type="text/css">
 <script type="text/javascript">

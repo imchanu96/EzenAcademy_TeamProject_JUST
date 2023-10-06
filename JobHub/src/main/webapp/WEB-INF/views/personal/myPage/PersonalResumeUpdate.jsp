@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>이력서 보기</title>
+<title>JobHub : 이력서 수정</title>
 <script type="text/javascript" src="/JobHub/resources/js/PersonalResumeUpdate.js"></script>
 <link rel="stylesheet" href="/JobHub/resources/css/PersonalResumeUpdate.css" type="text/css">
 </head>
@@ -252,5 +252,8 @@
 			</form>
 		</div>
 	</div>
+	
+	<jsp:include page="/WEB-INF/views/Tail.jsp"/>
+	
 </body>
 </html>

@@ -17,10 +17,10 @@
 			<p>정말 로그아웃 하시겠습니까?</p>
 		</div>
 			<div id="buttonForm">
-				<div class="button">
+				<div class="logoutButton">
 					<input type="button" value="네" onclick="location.href='./logout.do'">
 				</div>
-				<div class="button">
+				<div class="logoutButton">
 					<input type="button" value="아니오" onclick="closeModalFnc();">
 				</div>
 			</div>
@@ -73,7 +73,7 @@
 							</div>
 							<div class="logout">
 								<p onclick="clickLogoutFnc();">
-									로그 아웃
+									로그아웃
 								</p>
 							</div>
 						</div>

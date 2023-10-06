@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>회사 주소 변경</title>
+<title>JobHub : 내 정보 수정</title>
 
 <script type="text/javascript">
 	function cancelBtnFnc() {
@@ -181,9 +181,8 @@
 							<div class="companyInfoItemTitle">회사 설립일</div>
 
 							<div class="companyInfoItemContent">
-									value="${companyMemberDtoUpdate.comEstDate}">
-									value="<fmt:formatDate value="${sessionScope.companyMemberDto.comEstDate}" 
-									pattern="yyyy-MM-dd"/>">
+							<input type="date" name="comEstDate"
+								value="${companyMemberDtoUpdate.comEstDate}">
 									
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">

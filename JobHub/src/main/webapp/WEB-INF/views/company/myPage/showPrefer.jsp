@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>선호도 설정</title>
+<title>JobHub : 선호도 조회</title>
 <link rel="stylesheet" href="/JobHub/resources/css/ShowPrefer.css" type="text/css">
 
 </head>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>기업회원 - 아이디 찾기</title>
+<title>JobHub : 아이디 찾기</title>
 <style type="text/css">
 	#container {
 		margin: 0px auto;
@@ -61,7 +61,7 @@
 	    height: 38px;
 	    background-color: #4876ef;
 	    border: none;
-	    border-radius: 6px;
+	    border-radius: 12px;
 	    box-shadow: 0px 1px 4px 0px #ddd;
 	    font-size: 16px;
 	    font-weight: bold;

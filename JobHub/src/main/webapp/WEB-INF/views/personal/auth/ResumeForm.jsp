@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>이력서</title>
+<title>JobHub : 이력서 작성</title>
 <style type="text/css">
 tr td {
 	border: 1px solid black;

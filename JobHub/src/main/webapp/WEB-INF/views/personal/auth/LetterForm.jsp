@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>자기소개서</title>
+<title>JobHub : 자기소개서 작성</title>
 
 <style type="text/css">
 textarea {
