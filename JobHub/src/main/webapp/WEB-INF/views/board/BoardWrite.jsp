@@ -50,9 +50,9 @@
 	
 	function submitFnc() {
 		
-		if (contentObj.value == "" || titleObj.value == ""){
+		if(contentObj.value == "" || titleObj.value == ""){
 			alert("모든 항목을 다 입력해주세요.");
-			event.preventDefault();
+			
 		} else{
 			registerFnc();
 		}

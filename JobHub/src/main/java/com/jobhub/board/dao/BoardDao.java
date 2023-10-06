@@ -9,6 +9,8 @@ public interface BoardDao {
 
 	public List<BoardDto> boardSelectList(int start, int end);
 	
+	public List<BoardDto> boardSelectList(int start, int end, int perNo);
+	
 	public int boardSelectTotalCount();
 	
 	public int boardInsertOne(BoardDto boardDto);

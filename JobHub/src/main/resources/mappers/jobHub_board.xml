@@ -36,6 +36,7 @@
 		        FROM (
 		                SELECT BOARD_NUMBER, BOARD_TITLE, BOARD_WRITER, BOARD_TAG, BOARD_CREATE_DATE, BOARD_VIEWS
 		                FROM BOARD B
+		                <if test="perNo != null">WHERE PERSONAL_NUMBER =#{perNo}</if>
 		                ORDER BY BOARD_NUMBER DESC
 		        )
 		)RNR
@@ -45,25 +46,6 @@
 	<select id="boardSelectTotalCount" resultType="java.lang.Integer">
 		SELECT COUNT(*)
 		FROM BOARD
-	</select>
-	
-	<select id="personalMemberMyPostList" parameterType="map" resultMap="boardResultMap">
-		SELECT RNR.RN, RNR.BOARD_NUMBER, RNR.BOARD_TITLE, RNR.BOARD_WRITER, RNR.BOARD_TAG, RNR.BOARD_CREATE_DATE, RNR.BOARD_VIEWS
-		FROM (
-		        SELECT ROWNUM AS RN, BOARD_NUMBER, BOARD_TITLE, BOARD_WRITER, BOARD_TAG, BOARD_CREATE_DATE, BOARD_VIEWS
-		        FROM (
-		                SELECT BOARD_NUMBER, BOARD_TITLE, BOARD_WRITER, BOARD_TAG, BOARD_CREATE_DATE, BOARD_VIEWS
-		                FROM BOARD B
-		                ORDER BY BOARD_NUMBER DESC
-		        )
-		)RNR
-		WHERE RNR.RN BETWEEN #{start} AND #{end}
-	</select>
-	
-	<select id="personalMemberMyPostListSelectTotalCount" resultType="java.lang.Integer">
-		SELECT COUNT(*)
-		FROM BOARD
-<!-- 		WHERE PERSONAL_NUMBER = #{perNo} -->
 	</select>
 	
 	<insert id="boardInsertOne" parameterType="boardDto">
