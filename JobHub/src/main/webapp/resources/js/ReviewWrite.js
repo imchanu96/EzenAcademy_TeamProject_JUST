@@ -38,15 +38,41 @@ function contentBlurFnc() {
 
 function onSubmitFnc(event) {
 	
-	var salRateList = document.getElementsByName("rSal");
-    var welRateList = document.getElementsByName("rWel");
-    var envRateList = document.getElementsByName("rEnv");
-    var bossRateList = document.getElementsByName("rBoss");
-    var balRateList = document.getElementsByName("rBal");
+	// 제목 유효성 검사
+	var titleObj = document.getElementById("titleInput");
+	var titleErrorMsgObj = document.getElementById("titleErrorMsg")
+	
+	if (titleObj.value.length > 20 || titleObj.value.length < 1){
+		titleObj.setAttribute("style", "border: 2px solid red");
+		titleErrorMsgObj.setAttribute("style", "display: block");
+		event.preventDefault();
+	} else if (titleObj.value != "" && titleObj.value.length < 20) {
+		titleObj.setAttribute("style", "border: 1px solid #d7dce5");
+		titleErrorMsgObj.setAttribute("style", "display: none");
+	}
+	
+	// 내용 유효성 검사
+		var contentObj = document.getElementById("contentInput");
+		var contentErrorMsgObj = document.getElementById("contentErrorMsg")
+		
+		if (contentObj.value == "" || contentObj.value.length > 200) {
+			contentObj.setAttribute("style", "border: 2px solid red");
+			contentErrorMsgObj.setAttribute("style", "display: block");
+			event.preventDefault();
+		} else if (contentObj.value == "" && contentObj.value.length < 200) {
+			contentObj.setAttribute("style", "border: 1px solid #d7dce5");
+			contentErrorMsgObj.setAttribute("style", "display: none");
+		}
+	
+	// 별점 유효성검사
+	var salRateList = document.getElementsByName("reviewSal");
+    var welRateList = document.getElementsByName("reviewWel");
+    var envRateList = document.getElementsByName("reviewEnv");
+    var bossRateList = document.getElementsByName("reviewBoss");
+    var balRateList = document.getElementsByName("reviewBal");
     var starInputDivObj = document.getElementById("starInputBox");
     var starErrorMsgObj = document.getElementById("rateErrorMsg");
 	
-    // 별점 유효성검사
     var checkCnt = 0;
 
     for (var i = 0; i < salRateList.length; i++) {
@@ -78,9 +104,12 @@ function onSubmitFnc(event) {
     	starInputDivObj.setAttribute("style", "border: 2px solid red");
     	starErrorMsgObj.setAttribute("style", "display: block");
         event.preventDefault(); // 별점이 5개 중 하나라도 선택되지 않았을 때 폼 제출 방지
+    } else if (checkCnt = 5) {
+    	starInputDivObj.setAttribute("style", "border: 1px solid #d7dce5");
+    	starErrorMsgObj.setAttribute("style", "display: none");
     }
 	
-    var rAvgResultInputObj = document.getElementById("rAvgResult");
+    var reviewAvgResultInputObj = document.getElementById("reviewAvgResult");
 
     var totalRateNum = 0;
 
@@ -113,5 +142,5 @@ function onSubmitFnc(event) {
             totalRateNum += parseFloat(balRateList[i].value);
         }
     }
-    rAvgResultInputObj.value = (totalRateNum/5);
+    reviewAvgResultInputObj.value = (totalRateNum/5);
 }

@@ -122,7 +122,7 @@
 				</div>
 				<input id="rAvgResult" type="text" name="reviewAvg" style="display: none;">
 				<div id="buttonBox">
-					<button type="submit" id="submitButton">등록 완료</button>
+					<button type="submit" id="submitButton">수정 완료</button>
 					<button type="button" id="goBackBtn">취소</button>
 				</div>
 				<input type="hidden" name="perNo" value="${personalMemberDto.perNo}">

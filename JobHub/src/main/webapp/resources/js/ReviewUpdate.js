@@ -38,6 +38,33 @@ function titleFocusFnc() {
 	
 	function onSubmitFnc(event) {
 		
+		// 제목 유효성 검사
+		var titleObj = document.getElementById("titleInput");
+		var titleErrorMsgObj = document.getElementById("titleErrorMsg")
+		
+		if (titleObj.value.length > 20 || titleObj.value.length < 1){
+			titleObj.setAttribute("style", "border: 2px solid red");
+			titleErrorMsgObj.setAttribute("style", "display: block");
+			event.preventDefault();
+		} else if (titleObj.value != "" && titleObj.value.length < 20) {
+			titleObj.setAttribute("style", "border: 1px solid #d7dce5");
+			titleErrorMsgObj.setAttribute("style", "display: none");
+		}
+		
+		// 내용 유효성 검사
+		var contentObj = document.getElementById("contentInput");
+		var contentErrorMsgObj = document.getElementById("contentErrorMsg")
+		
+		if (contentObj.value == "" || contentObj.value.length > 200) {
+			contentObj.setAttribute("style", "border: 2px solid red");
+			contentErrorMsgObj.setAttribute("style", "display: block");
+			event.preventDefault();
+		} else if (contentObj.value == "" && contentObj.value.length < 200) {
+			contentObj.setAttribute("style", "border: 1px solid #d7dce5");
+			contentErrorMsgObj.setAttribute("style", "display: none");
+		}
+		
+		// 별점 유효성검사
 		var salRateList = document.getElementsByName("reviewSal");
         var welRateList = document.getElementsByName("reviewWel");
         var envRateList = document.getElementsByName("reviewEnv");
@@ -46,7 +73,6 @@ function titleFocusFnc() {
         var starInputDivObj = document.getElementById("starInputBox");
         var starErrorMsgObj = document.getElementById("rateErrorMsg");
 		
-        // 별점 유효성검사
         var checkCnt = 0;
 
         for (var i = 0; i < salRateList.length; i++) {
@@ -78,7 +104,10 @@ function titleFocusFnc() {
         	starInputDivObj.setAttribute("style", "border: 2px solid red");
         	starErrorMsgObj.setAttribute("style", "display: block");
             event.preventDefault(); // 별점이 5개 중 하나라도 선택되지 않았을 때 폼 제출 방지
-        }
+        } else if (checkCnt = 5) {
+	    	starInputDivObj.setAttribute("style", "border: 1px solid #d7dce5");
+	    	starErrorMsgObj.setAttribute("style", "display: none");
+	   	 }
 		
 	    var rAvgResultInputObj = document.getElementById("rAvgResult");
 	

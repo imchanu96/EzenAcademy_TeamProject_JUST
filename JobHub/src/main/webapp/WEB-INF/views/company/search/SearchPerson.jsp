@@ -44,10 +44,12 @@ a:hover {
 }
 
 .smallMenuItem {
-	margin-bottom: 20px;
+	margin-bottom: 35px;
+	border-bottom: 2px solid #fff;
+    width: 200px;
+    height: 40px;
    	font-size: 18px;
 }
-
 .smallMenuItem a {
 	color: #475067;
 }
@@ -556,14 +558,14 @@ tr td {
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="http://www.naver.com">기업 목록</a>
+					<a href="#">인재 찾기</a>
 				</div>
-				<div class="smallMenuItem">
-					<a href="">리뷰 작성</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="">기업 정보</a>
-				</div>
+<!-- 				<div class="smallMenuItem"> -->
+<!-- 					<a href="">리뷰 작성</a> -->
+<!-- 				</div> -->
+<!-- 				<div class="smallMenuItem"> -->
+<!-- 					<a href="">기업 정보</a> -->
+<!-- 				</div> -->
 			</div>
 		</div>
 		<div id="content">
@@ -571,12 +573,12 @@ tr td {
 			<input type="hidden" name="comNo" value="${sessionScope.companyMemberDto.comNo}">
 				<div id="searchBox">
 					<div id="titleBox">
-						<p>인재찾기</p>
+						<p>인재 찾기</p>
 					</div>
 					<div id="conditionBox">
 						<div class="condition">
 							<div class="conditionTitleBox">
-								<input type="checkbox" value="체크!" onclick="activeRadioFnc(this, 'talentScore');" checked="checked"> 인재점수
+								<input type="checkbox" value="체크!" onclick="activeRadioFnc(this, 'talentScore');" checked="checked"> 인재 점수
 							</div>
 							<div class="radioBox">
 								<input type="radio" name="talentScore" class="radioBtn" value="60">
@@ -615,7 +617,7 @@ tr td {
 						</div>
 						<div class="condition">
 							<div class="conditionTitleBox">
-								<input type="checkbox" onclick="activeRadioFnc(this, 'licenseScore');" checked="checked"> 자격증
+								<input type="checkbox" onclick="activeRadioFnc(this, 'licenseScore');" checked="checked"> 자격증 갯수
 							</div>
 							<div class="radioBox">
 								<input type="radio" name="licenseScore" class="radioBtn" value="1"> 

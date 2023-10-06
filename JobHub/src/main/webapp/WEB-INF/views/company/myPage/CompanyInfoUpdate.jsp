@@ -41,10 +41,10 @@
 			<div id="companyInfoBox">
 				<div class="companyInfoItem">
 					<c:if test="${companyMemberDtoUpdate.comInChargeName != null}">
-						<div class="infoTitle">회사 담당자 정보</div>
+						<div class="infoTitle">담당자 정보</div>
 
 						<form action="CompanyInfoUpdateCtr.do" method="post">
-							<div class="companyInfoItemTitle">담당자 명</div>
+							<div class="companyInfoItemTitle">담당자 이름</div>
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comInChargeName"
@@ -52,8 +52,8 @@
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
-							<div class="button">
-								<input type="submit" value="변경하기">
+							<div id="button">
+								<input id="submitButton" type="submit" value="변경하기">
 							</div>
 							
 							<div id="backButtonBox">
@@ -64,7 +64,7 @@
 						</form>
 					</c:if>
 					<c:if test="${companyMemberDtoUpdate.comInChargeEmail != null}">
-						<div class="infoTitle">회사 담당자 정보</div>
+						<div class="infoTitle">담당자 정보</div>
 
 						<form action="CompanyInfoUpdateCtr.do" method="post">
 							<div class="companyInfoItemTitle">담당자 이메일</div>
@@ -75,8 +75,8 @@
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
-							<div class="button">
-								<input type="submit" value="변경하기">
+							<div id="button">
+								<input id="submitButton" type="submit" value="변경하기">
 							</div>
 							
 							<div id="backButtonBox">
@@ -87,7 +87,7 @@
 						</form>
 					</c:if>
 					<c:if test="${companyMemberDtoUpdate.comInChargePhoneNum != null}">
-						<div class="infoTitle">회사 담당자 정보</div>
+						<div class="infoTitle">담당자 정보</div>
 
 						<form action="CompanyInfoUpdateCtr.do" method="post">
 							<div class="companyInfoItemTitle">담당자 연락처</div>
@@ -98,8 +98,8 @@
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
-							<div class="button">
-								<input type="submit" value="변경하기">
+							<div id="button">
+								<input id="submitButton" type="submit" value="변경하기">
 							</div>
 							
 							<div id="backButtonBox">
@@ -120,8 +120,8 @@
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
-							<div class="button">
-								<input type="submit" value="변경하기">
+							<div id="button">
+								<input id="submitButton" type="submit" value="변경하기">
 							</div>
 							
 							<div id="backButtonBox">
@@ -142,8 +142,8 @@
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
-							<div class="button">
-								<input type="submit" value="변경하기">
+							<div id="button">
+								<input id="submitButton" type="submit" value="변경하기">
 							</div>
 							
 							<div id="backButtonBox">
@@ -164,8 +164,8 @@
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
-							<div class="button">
-								<input type="submit" value="변경하기">
+							<div id="button">
+								<input id="submitButton" type="submit" value="변경하기">
 							</div>
 							
 							<div id="backButtonBox">
@@ -187,8 +187,8 @@
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
-							<div class="button">
-								<input type="submit" value="변경하기">
+							<div id="button">
+								<input id="submitButton" type="submit" value="변경하기">
 							</div>
 							
 							<div id="backButtonBox">
@@ -201,7 +201,7 @@
 						<div class="infoTitle">회사 정보</div>
 
 						<form action="CompanyInfoUpdateCtr.do" method="post">
-							<div class="companyInfoItemTitle">회사 홈페이지</div>
+							<div class="companyInfoItemTitle">홈페이지</div>
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comHomepage"
@@ -209,8 +209,8 @@
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
-							<div class="button">
-								<input type="submit" value="변경하기">
+							<div id="button">
+								<input id="submitButton" type="submit" value="변경하기">
 							</div>
 							
 							<div id="backButtonBox">
@@ -231,8 +231,8 @@
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
-							<div class="button">
-								<input type="submit" value="변경하기">
+							<div id="button">
+								<input id="submitButton" type="submit" value="변경하기">
 							</div>
 							
 							<div id="backButtonBox">
