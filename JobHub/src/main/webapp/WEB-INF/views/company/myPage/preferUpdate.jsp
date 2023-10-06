@@ -74,10 +74,14 @@
 			var totalRateObj = document.getElementById("totalRate");
 			totalRateObj.textContent = "총 적합도 : " + vloumeSum + "%";
 			var warningMsgObj = document.getElementById("warningMsg");
+			var totalRateObj = document.getElementById("totalRate");
+			
 			if (vloumeSum > 100 || vloumeSum < 100) {
-				warningMsgObj.style.display = "block";
+// 				warningMsgObj.style.display = "block";
+				totalRateObj.style.color = "red";
 			}else {
-				warningMsgObj.style.display = "none";
+// 				warningMsgObj.style.display = "none";
+				totalRateObj.style.color = "#000";
 			}
 		});
 	}
@@ -148,17 +152,13 @@
 					<a href="">내 프로필</a>
 				</div>
 				<div class="smallMenuItem">
-					<a href="">내가 쓴 글</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="">이력서 관리</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="./setPrefer.do">선호도 설정</a>
+					<a href="./setPrefer.do?comNo=${sessionScope.companyMemberDto.comNo}">선호도 설정</a>
 				</div>
 			</div>
 		</div>
-		${companyPrefer.comPrefer}
+		
+<%-- 		${companyPrefer.comPrefer} --%>
+		
 		<div id="content">
 			<c:set var="preferList"
 				value="${fn:split(companyPrefer.comPrefer, ',')}" />
@@ -166,7 +166,7 @@
 			<div class="infoTitle">
             내 선호도
             <span id="warningMsg" style="color:red; margin:auto; display: none;">적합도 합이 100%가 아닙니다.</span>
-            <span id="totalRate" style="float: right; margin-right: 50px;">
+            <span id="totalRate">
                총 적합도 : ${fn:trim(preferList[1]) + fn:trim(preferList[3]) + fn:trim(preferList[5]) + fn:trim(preferList[7])}%
             </span>
          </div>
@@ -285,11 +285,12 @@
 				</div>
 				<input type="button" value="확인" onclick="tempCloseFnc(this);">
 			</div>
-				
+			<div id="perferSubmitBtn">
 				<input type="button" value="수정 완료" style="margin: 0 auto;"
 					onclick="submitFnc();">
-					<input type="hidden" id="prefer" name="prefer">
-					<input type="hidden" id="comNo" name="comNo" value="${companyMemberDto.comNo}">
+			</div>
+				<input type="hidden" id="prefer" name="prefer">
+				<input type="hidden" id="comNo" name="comNo" value="${companyMemberDto.comNo}">
 			</form>
 		</div>
 

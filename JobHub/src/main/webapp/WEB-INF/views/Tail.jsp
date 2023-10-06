@@ -17,14 +17,14 @@
 		
 /* tail form */
 		#tailBox {
-			height: 150px;
+			height: 120px;
 			background-color: #F5F5F8;
 			text-align: center;
 			clear: both;
 		}
 		#tailContent {
 			width: 1280px;
-			height: 130px;
+			height: 120px;
 			margin: auto;
 			
 			text-align: center;
@@ -36,11 +36,11 @@
 			width: 400px;
 			font-size: 70px;
 			font-weight: 800;
-			line-height: 147px;
+			line-height: 110px;
 			color: #999999;
 		}
 		#teamInfo {
-			margin: 42px 0px -3px 8px;
+			margin: 24px 0px -3px 8px;
 			float: left;
 			width: 305px;
 			height: 30px;

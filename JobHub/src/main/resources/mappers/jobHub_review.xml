@@ -82,7 +82,7 @@
 		VALUES(REVIEW_NUMBER_SEQ.NEXTVAL, #{reviewTitle}, #{reviewContent}, #{reviewSal}, 
 			#{reviewWel}, #{reviewEnv}, #{reviewBoss}, 
  			#{reviewBal}, #{reviewAvg}, SYSDATE, SYSDATE, 
-			#{reviewPNo}, #{comNo})
+			#{perNo}, #{comNo})
    </insert>
    
    <update id="reviewUpdateOne" parameterType="map">

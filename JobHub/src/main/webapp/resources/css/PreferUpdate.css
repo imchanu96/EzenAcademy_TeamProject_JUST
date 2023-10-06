@@ -79,6 +79,11 @@
 	width: 150px;
 	font-size: 18px;
 }
+#totalRate {
+	float: right;
+	margin-right: 50px;
+	font-size: 16px;
+}
 .weightingPercentage {
 	float: left;
 	width: 250px;
@@ -109,6 +114,7 @@ input[type=button] {
 	width: 150px;
 	border: none;
 	margin-left: 5px;
+	border-radius: 10px;
 	height: 30px;
 	background-color: inherit;
 	box-shadow: 0px 1px 4px 0px #ddd;
@@ -150,4 +156,9 @@ input[type=button] {
 }
 .salBtn{
 	margin: 10px;
+}
+#perferSubmitBtn {
+	margin: 0px auto;
+	width: 90px;
+	height: 40px;	
 }
