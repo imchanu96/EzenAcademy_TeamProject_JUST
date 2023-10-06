@@ -181,14 +181,10 @@
 							<div class="companyInfoItemTitle">회사 설립일</div>
 
 							<div class="companyInfoItemContent">
-								<input type="date" name="comEstDate"
-<<<<<<< HEAD
 									value="${companyMemberDtoUpdate.comEstDate}">
-=======
 									value="<fmt:formatDate value="${sessionScope.companyMemberDto.comEstDate}" 
 									pattern="yyyy-MM-dd"/>">
 									
->>>>>>> branch 'main' of https://github.com/noohij/Ezen_TeamProject_JUST.git
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>

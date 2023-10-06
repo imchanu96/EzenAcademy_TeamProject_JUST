@@ -26,7 +26,7 @@
 
 		<div id="letterContain">
 			<div id="letter">
-				<input type="button" value="수정하기" id="button"
+				<input type="button" value="수정" id="button"
 						onclick="updateLetterFnc();">
 				<div>
 					<div class="letterItemTitle">성장 배경</div>

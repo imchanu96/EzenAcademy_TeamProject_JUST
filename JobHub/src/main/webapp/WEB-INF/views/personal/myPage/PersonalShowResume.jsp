@@ -26,7 +26,7 @@
 		<c:set var="educationDtoList" value='${map.get("educationDtoList")}'/>
 		
 		<div id="resumeContain">
-			<input type="button" id="button" value="수정하기"
+			<input type="button" id="button" value="수정"
 				onclick="updateResumeFnc(${personalMemberDto.perNo});">
 
 			<table>

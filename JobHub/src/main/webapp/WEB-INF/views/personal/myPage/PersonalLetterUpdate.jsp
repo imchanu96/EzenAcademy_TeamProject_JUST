@@ -74,18 +74,29 @@ tr td {
 #letter {
 	padding: 30px 0px;	
 }
-#button {
+#submitButton {
 	width: 90px;
     height: 40px;
-    margin-left: 770px;
+    margin-left: 640px;
     background-color: #4876ef;
     border: none;
-    border-radius: 6px;
+    border-radius: 12px;
     box-shadow: 0px 1px 4px 0px #ddd;
     font-size: 16px;
     font-weight: bold;
     color: #fff;
     cursor: pointer;
+}
+#goBackBtn {
+	width: 90px;
+   	height: 40px;
+   	border: none;
+   	border-radius: 12px;
+   	box-shadow: 0px 1px 4px 0px #ddd;
+   	font-size: 16px;
+	font-weight: bold;
+	background-color: #ff837e;
+	color: #fff;
 }
 </style>
 </head>
@@ -98,7 +109,9 @@ tr td {
 		<div id="letterContain">
 			<div id="letter">
 				<form action="./letterUpdateCtr.do" method="post">
-					<input type="submit" id="button" value="수정 완료">
+					<input type="submit" id="submitButton" value="수정 완료">
+					<button type="button" id="goBackBtn" 
+						onclick="location.href='./showLetter.do?perNo=${personalMemberDto.perNo}';">돌아가기</button>
 					<div>
 						<div class="letterItemTitle">성장 배경</div>
 						<textarea class="letterValue" name="history">${letterDto.history}
