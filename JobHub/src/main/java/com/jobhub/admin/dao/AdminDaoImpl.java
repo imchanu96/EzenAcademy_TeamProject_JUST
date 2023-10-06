@@ -87,10 +87,13 @@ public class AdminDaoImpl implements AdminDao{
 			keyMap.put("perNo", perNo);
 			ResumeDto resumeDto
 				=  sqlSession.selectOne(personalNamespace + "personalMemberShowResume", keyMap);
-			resumeList.add(resumeDto);
+			if (resumeDto != null) {
+				resumeList.add(resumeDto);
+			}
 		}// 이력서 가져오기
 		
 		for (int i = 0; i < resumeList.size(); i++) {
+			System.out.println("이력서 번호 : " + resumeList.get(i).getResumeNo());
 			int resumeNo = resumeList.get(i).getResumeNo();
 			keyMap.put("resumeNo", resumeNo);
 			List<CareerDto> careerDtoList 
