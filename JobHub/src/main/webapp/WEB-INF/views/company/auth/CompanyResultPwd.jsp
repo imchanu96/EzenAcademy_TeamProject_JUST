@@ -86,10 +86,10 @@
 					</c:when>
 					<c:otherwise>
 						<div id="titleBox">
-							<p>${companyMemberDto.cName}님의 비밀번호</p>
+							<p>${companyMemberDto.comName}님의 비밀번호</p>
 						</div>
 						<div id="informIdBox" class="inputBox">
-							<p>비밀번호는 ${companyMemberDto.cPwd} 입니다</p>
+							<p>비밀번호는 ${companyMemberDto.comPwd} 입니다</p>
 						</div>
 						<div id="buttonBox">
 							<button type="button" onclick="location.href='./login.do';">로그인</button>

@@ -76,12 +76,12 @@
 	function findIdFnc() {
 		var idSearch = document.getElementById("findIdBox");
 		
-		if(idSearch.cInChargeName.value == "") {
+		if(idSearch.comInChargeName.value == "") {
 			alert("이름을 입력해주세요.");
 			return false;
 		}
 		
-		if (idSearch.cInChargeEmail.value  == "") {
+		if (idSearch.comInChargeEmail.value  == "") {
 			alert("이메일을 입력해주세요.");
 			return false;
 		}
@@ -115,11 +115,11 @@
 				<div>
 					<div id="nameBox" class="inputBox">
 						<p>담당자 이름</p>
-						<input name="cInChargeName" type="text">
+						<input name="comInChargeName" type="text">
 					</div>
 					<div id="emailBox" class="inputBox">
 						<p>담당자 이메일 주소</p>
-						<input name="cInChargeEmail" type="text">
+						<input name="comInChargeEmail" type="text">
 						<button type="button" onclick="findIdFnc();">인증번호 받기</button>
 					</div>
 				</div>

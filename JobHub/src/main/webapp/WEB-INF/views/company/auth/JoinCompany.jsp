@@ -97,7 +97,7 @@
 						onfocus="inChargeEmailFocusFnc();">
 				</div>
 			</div>
-			<input type="submit" id="submitButton" value="가입하기">
+			<input type="submit" id="submitButton" value="이메일인증">
 		</form>
 	</div>
 	

@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.company.service.CompanyMemberService;
 import com.jobhub.personal.dto.PersonalMemberDto;
-import com.jobhub.recommend.service.RecommendService;
 
 @Controller
 public class CompanyMemberController {
@@ -46,14 +45,17 @@ public class CompanyMemberController {
 
 		String viewUrl = "";
 		if (companyMemberDto != null) {
-//				회원이 존재하면 세션에 담는다
 			
 			int permission = companyMemberDto.getComPermission();
 
-			session.setAttribute("companyMemberDto", companyMemberDto);
-			session.setAttribute("permission", permission);
+			if (permission < 6) {
+				viewUrl = "company/auth/emailAuthFail";
+			} else {
+				session.setAttribute("companyMemberDto", companyMemberDto);
+				session.setAttribute("permission", permission);
 			
-			viewUrl = "company/myPage/CompanyMyPage";
+				viewUrl = "company/myPage/CompanyMyPage";
+			}
 		} else {
 			viewUrl = "personal/auth/LoginFail";
 		}
@@ -61,7 +63,6 @@ public class CompanyMemberController {
 		return viewUrl;
 	}
 	
-	// 로그인 클릭 시 이동
 		@RequestMapping(value = "/company/showCompanyInfo.do", method = RequestMethod.GET)
 		public String showCompanyInfo(int comNo, HttpSession session, Model model) {
 
@@ -256,4 +257,14 @@ public class CompanyMemberController {
 
 		return "company/myPage/CompanyMyPage";
 	}
+	
+	@RequestMapping(value = "/company/registerEmail.do", method = RequestMethod.GET)
+	public String emailConfirm(CompanyMemberDto companyMemberDto) {
+		System.out.println(companyMemberDto);
+		
+		companyMemberService.companyUpdatePermission(companyMemberDto);
+		
+		return "/company/auth/emailAuthSuccess";
+	}
+	
 }

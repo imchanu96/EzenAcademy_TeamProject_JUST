@@ -1,6 +1,5 @@
 package com.jobhub.company.dao;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -90,6 +89,18 @@ public class CompanyMemberDaoImpl implements CompanyMemberDao {
 	public void preferUpdateOne(Map<String, Object> map) {
 		// TODO Auto-generated method stub
 		sqlSession.update(namespace + "preferUpdateOne", map);
+	}
+
+	@Override
+	public int companyUpdateId(CompanyMemberDto companyMemberDto) {
+		// TODO Auto-generated method stub
+		return sqlSession.update(namespace + "companyUpdateId", companyMemberDto);
+	}
+
+	@Override
+	public int companyUpdatePermission(CompanyMemberDto companyMemberDto) {
+		// TODO Auto-generated method stub
+		return sqlSession.update(namespace + "companyUpdatePermission", companyMemberDto);
 	}
 
 	

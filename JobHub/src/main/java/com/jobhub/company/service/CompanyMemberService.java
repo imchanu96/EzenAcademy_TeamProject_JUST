@@ -12,7 +12,7 @@ public interface CompanyMemberService {
 
 	public CompanyMemberDto showCompanyInfo(int comNo);
 	
-	public void companyInsertOne(CompanyMemberDto companyMemberDto);
+	public void companyInsertOne(CompanyMemberDto companyMemberDto) throws Exception;
 
 	public List<PersonalMemberDto> personalInfoList(Map<String, Object> map);
 	
@@ -26,6 +26,8 @@ public interface CompanyMemberService {
 
 	public void preferUpdateOne(Map<String, Object> map);
 
+	public int companyUpdateId(CompanyMemberDto companyMemberDto);
 	
+	public int companyUpdatePermission(CompanyMemberDto companyMemberDto);
 	
 }
