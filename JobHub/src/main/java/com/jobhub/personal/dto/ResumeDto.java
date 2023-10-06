@@ -35,6 +35,7 @@ public class ResumeDto {
 	private String resumeLicenseGrade;
 	private int perNo;
 	
+	
 	public ResumeDto() {
 		super();
 	}

@@ -16,17 +16,23 @@
 	<div id="container">
 	
 		<jsp:include page="./PersonalMyPageNav.jsp"/>
-		
 		<c:set var="resumeDto" value='${map.get("resumeDto")}'/>
 		<c:set var="careerDtoList" value='${map.get("careerDtoList")}'/>
 		<c:set var="educationDtoList" value='${map.get("educationDtoList")}'/>
 		<div id="resumeContain">
-			
 			<form id ="resumeUpdateForm" action="./resumeUpdateCtr.do" method="post">
-			<input type="button" id="submitButton" onclick="submitFnc();" value="수정 완료">
 				<table>
 					<thead>
-						<th>개인 정보</th>
+						<tr>
+							<th>개인 정보</th>
+							<th></th>
+							<th></th>
+							<th>
+							<input type="button" id="cancelButton" onclick="cancelFnc();" value="취소">
+							<input type="button" id="submitButton" onclick="submitFnc();" value="수정 완료">
+							</th>
+						
+						</tr>
 					</thead>
 					<tr>
 						<td>이름</td>
@@ -124,6 +130,7 @@
 							<td class="resumeValue"><input type="text" name="resumeEduLocValue" value="${educationDto.eduLocation}"></td>
 							<td class="resumeValue"><input type="text" name="resumeEduGradeValue" value="${educationDto.eduGrade}"></td>
 							<td class="resumeValue"><input type="text" name="resumeEduGraduateValue" value="${educationDto.eduGreaduate}"></td>
+							<td class="resumeValue"><input type="hidden" name="resumeEduNoValue" value="${educationDto.eduNo}"></td>
 						</tr>
 						
 					</c:forEach>
@@ -161,7 +168,7 @@
 							<td class="resumeValue"><input type="text" name="resumeCareerNameValue" value=""></td>
 							<td class="resumeValue"><input type="text" name="resumeCareerPosValue" value=""></td>
 							<td class="resumeValue"><input type="text" name="resumeCareerLocValue" value=""></td>
-							<td class="resumeValue"><input type="text" name="resumeCareerJobValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeCareerNoValue" value=""></td>
 						</tr>                      
 					</c:if>
 					<c:forEach var="careerDto" items="${careerDtoList}">
@@ -178,6 +185,8 @@
 							<td class="resumeValue"><input type="text" name="resumeCareerPosValue" value="${careerDto.carPosition}"></td>
 							<td class="resumeValue"><input type="text" name="resumeCareerLocValue" value="${careerDto.carLocation}"></td>
 							<td class="resumeValue"><input type="text" name="resumeCareerJobValue" value="${careerDto.carJob}"></td>
+							<td class="resumeValue"><input type="hidden" name="resumeCareerJobValue" value="${careerDto.carNo}"></td>
+							
 						</tr>                      
 					</c:forEach>
 
@@ -219,12 +228,12 @@
 						</tr>
 					</c:if>
 					<c:forEach var="i" begin="0" end="${fn:length(resumeDtoLicenseNameList)-1}">
-					
+
 						<tr class="licenseTr">
-							<td class="resumeValue"><input type="date" name="resumeLicenseDateValue" value="${resumeDtoLicenseDateList[i]}"></td>
-							<td class="resumeValue"><input type="text" name="resumeLicenseNameValue" value="${resumeDtoLicenseNameList[i]}"></td>
-							<td class="resumeValue"><input type="text" name="resumeLicenseInstValue" value="${resumeDtoLicenseInstList[i]}"></td>
-							<td class="resumeValue"><input type="text" name="resumeLicenseGradeValue" value="${resumeDtoLicenseGradeList[i]}"></td>
+							<td class="resumeValue"><input type="date" name="resumeLicenseDateValue" value="${fn:trim(resumeDtoLicenseDateList[i])}"></td>
+							<td class="resumeValue"><input type="text" name="resumeLicenseNameValue" value="${fn:trim(resumeDtoLicenseNameList[i])}"></td>
+							<td class="resumeValue"><input type="text" name="resumeLicenseInstValue" value="${fn:trim(resumeDtoLicenseInstList[i])}"></td>
+							<td class="resumeValue"><input type="text" name="resumeLicenseGradeValue" value="${fn:trim(resumeDtoLicenseGradeList[i])}"></td>
 						</tr>
 					</c:forEach>
 				</table>
@@ -245,8 +254,11 @@
 				<input type="hidden" id="resumeLicenseName" name="resumeLicenseName" value="">
 				<input type="hidden" id="resumeLicenseInst" name="resumeLicenseInst" value="">
 				<input type="hidden" id="resumeLicenseGrade" name="resumeLicenseGrade" value="">
-				<input type="hidden" name="resumeNo" value="${resumeDto.resumeNo}">
-				<input type="hidden" name="perNo" value="${sessionScope.personalMemberDto.perNo}">
+				<input type="text" id="dtoList" name="requestDto" value="">
+<!-- 				<input type="text" id="careerDtoV2" name="careerDto" value=""> -->
+<!-- 				<input type="text" id="educationDtoV2" name="educationDto" value=""> -->
+				<input type="text" id="resumeNo" name="resumeNo" value="${resumeDto.resumeNo}">
+				<input type="text" id="perNo" name="perNo" value="${sessionScope.personalMemberDto.perNo}">
 			</form>
 		</div>
 	</div>

@@ -93,7 +93,7 @@ public class AdminDaoImpl implements AdminDao{
 		}// 이력서 가져오기
 		
 		for (int i = 0; i < resumeList.size(); i++) {
-			System.out.println("이력서 번호 : " + resumeList.get(i).getResumeNo());
+//			System.out.println("이력서 번호 : " + resumeList.get(i).getResumeNo());
 			int resumeNo = resumeList.get(i).getResumeNo();
 			keyMap.put("resumeNo", resumeNo);
 			List<CareerDto> careerDtoList 
@@ -104,7 +104,7 @@ public class AdminDaoImpl implements AdminDao{
 			
 			List<EducationDto> educationDtoList
 				= sqlSession.selectList(personalNamespace + "personalMemberShowEducation", keyMap);
-			System.out.println("educationDtoList 가져옴");
+//			System.out.println("educationDtoList 가져옴");
 			
 			setEducationDto(resumeList.get(i), educationDtoList);
 		}
