@@ -1,5 +1,5 @@
 
---ê¸°ì—… íšŒì› ì‚½ìž…
+--±â¾÷ È¸¿ø »ðÀÔ
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE, COMPANY_HOMEPAGE,
    COMPANY_INTRODUCE,
@@ -7,11 +7,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì‹¬ì„±ì „ìž', 'ì„œìš¸ì‹œ ê°•ë‚¨êµ¬ ê°•ë‚¨ëŒ€ë¡œ152', 'ì œì¡°ì—…', '2001-04-27', 'www.samsung.com',
-   'ì‹¬ì„±ì „ìžëŠ” 2001ë…„ ì°½ë¦½ ì´ëž˜ ì œì¡°ì—…ì— ì¢…ì‚¬í•˜ê³  ìžˆìœ¼ë©°, 2023ë…„ 9ì›” ê¸°ì¤€ ì‚¬ì›ìˆ˜ ì•½ 6000ëª…ì˜ ê¸°ì—…ìž…ë‹ˆë‹¤.',
-   '6000', '12ì¡° 6000', 'COMPANY_ID', 'simsung', '123-45-67890', null, 'https://i.namu.wiki/i/6HUSaAtJoYZhpJmTrxzkilqzY10XRPfh1dGfPUQKH8VGLuuuinBbyUv2Lf_7-ARytCvKNy2ERXSiiR_UoqLhlHAWCs-arsTrVbpS9VhpTj6iaLCa6ZHqZ2cU7AlUZEwHe5UgTwduY0znIZl0XBnMwQ.svg', 
-   'ì´ì œìš©', 'ì´ê±´íœ˜', 'hr@simsung.com', '02-2200-4600',
-   'ë³µì§€-ì›Œë¼ë²¨', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '½É¼ºÀüÀÚ', '¼­¿ï½Ã °­³²±¸ °­³²´ë·Î152', 'Á¦Á¶¾÷', '2001-04-27', 'www.samsung.com',
+   '½É¼ºÀüÀÚ´Â 2001³â Ã¢¸³ ÀÌ·¡ Á¦Á¶¾÷¿¡ Á¾»çÇÏ°í ÀÖÀ¸¸ç, 2023³â 9¿ù ±âÁØ »ç¿ø¼ö ¾à 6000¸íÀÇ ±â¾÷ÀÔ´Ï´Ù.',
+   '6000', '12Á¶ 6000', 'COMPANY_ID', 'simsung', '123-45-67890', null, 'https://i.namu.wiki/i/6B9OxSIKR60ysfEhXHERFFTNu4cPH_7bcCbzL_gpaiFVSw2fz2QL_-p4Cjhrq6oOWNiCarYTMZ5q7vTTHdmvfRmN9JguNQbalGfIXeqIgzNPbbPBaHycYbetsxOHwX-pfxCkTvBsNYdJEYDgdvWZfw.svg', 
+   'ÀÌÁ¦¿ë', 'ÀÌ°ÇÈÖ', 'hr@simsung.com', '02-2200-4600',
+   'º¹Áö-¿ö¶óº§', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -21,11 +21,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'HNN', 'ì„œìš¸ì‹œ ì„œì´ˆêµ¬ ì„œì´ˆëŒ€ë¡œ52', 'ë¬¼ë¥˜ì—…', '1991-01-22', 'www.hnn.com',
-   'ì €í¬ hnnëŠ” 1991ë…„ ì°½ë¦½ í•˜ì˜€ìŠµë‹ˆë‹¤. ìž„ì§ì› 450ëª…, ë§¤ì¶œì•¡ 7800ì–µ ê°€ëŸ‰ì˜ íšŒì‚¬ìž…ë‹ˆë‹¤.',
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'HNN', '¼­¿ï½Ã ¼­ÃÊ±¸ ¼­ÃÊ´ë·Î52', '¹°·ù¾÷', '1991-01-22', 'www.hnn.com',
+   'ÀúÈñ hnn´Â 1991³â Ã¢¸³ ÇÏ¿´½À´Ï´Ù. ÀÓÁ÷¿ø 450¸í, ¸ÅÃâ¾× 7800¾ï °¡·®ÀÇ È¸»çÀÔ´Ï´Ù.',
    '450', '7800', 'COMPANY_ID', 'hnn', '145-42-15498', null, 'https://i.namu.wiki/i/ghTjUJbtx39FwxK7SIGLvUUyuf4mFhIhd9e6HJVfvex4obXVTuZGlLVaVCyBv7Z4oiFvL0s1q0Oxk_s7qr8CYwGuyu0CvodKpwgXBX3lJOc4xo92k9ktf2aWP-8BVQ3CXlDzHSBgwBL-L44KbnPdtA.svg', 
-   'ê¹€ì˜í˜¸', 'ì´ì§€ë¯¼', 'hr@hnn.com', '02-2215-0154',
-   'ê¸‰ì—¬-ê²½ì˜ì§„-ë³µì§€', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '±è¿µÈ£', 'ÀÌÁö¹Î', 'hr@hnn.com', '02-2215-0154',
+   '±Þ¿©-°æ¿µÁø-º¹Áö', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -35,11 +35,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì—°ëŒ€ì°¨', 'ì„œìš¸ì‹œ ì„œì´ˆêµ¬ ì–‘ìž¬ëŒ€ë¡œ 1', 'ì œì¡°ì—…', '1965-04-22', 'www.ydmotors.com',
-   'ì—°ëŒ€ì°¨ëŠ” 1965ë…„ ì°½ë¦½ ì´ëž˜ ì œì¡°ì—…ì— ì¢…ì‚¬í•˜ê³  ìžˆìœ¼ë©°, 2023ë…„ 9ì›” ê¸°ì¤€ ì‚¬ì›ìˆ˜ ì•½ 6000ëª…ì˜ ê¸°ì—…ìž…ë‹ˆë‹¤.',
-   '6000', '12ì¡° 6000', 'COMPANY_ID', 'ydmotors', '145-11-12332', null, 'https://i.namu.wiki/i/RgF8M5AFaNVNLUXnpKnnOvhVXgPoJSrrMwgJlKotasqbubjOpzQ1pDFM87mP-eqQrXHFeA69IttV8Zh2OYqnzgw-Gs-PiRVapKzJ6awA2xM44-9M6O0kKXJ4i5YGfgtYyomlALYeAD0luAT63iyt5Q.svg', 
-   'ì •ì˜ì„±', 'ê¹€ì§„ì˜', 'hr@ydmotors.com', '02-1233-1157',
-   'ì›Œë¼ë²¨', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¿¬´ëÂ÷', '¼­¿ï½Ã ¼­ÃÊ±¸ ¾çÀç´ë·Î 1', 'Á¦Á¶¾÷', '1965-04-22', 'www.ydmotors.com',
+   '¿¬´ëÂ÷´Â 1965³â Ã¢¸³ ÀÌ·¡ Á¦Á¶¾÷¿¡ Á¾»çÇÏ°í ÀÖÀ¸¸ç, 2023³â 9¿ù ±âÁØ »ç¿ø¼ö ¾à 6000¸íÀÇ ±â¾÷ÀÔ´Ï´Ù.',
+   '6000', '12Á¶ 6000', 'COMPANY_ID', 'ydmotors', '145-11-12332', null, 'https://i.namu.wiki/i/RgF8M5AFaNVNLUXnpKnnOvhVXgPoJSrrMwgJlKotasqbubjOpzQ1pDFM87mP-eqQrXHFeA69IttV8Zh2OYqnzgw-Gs-PiRVapKzJ6awA2xM44-9M6O0kKXJ4i5YGfgtYyomlALYeAD0luAT63iyt5Q.svg', 
+   'Á¤ÀÇ¼º', '±èÁø¿µ', 'hr@ydmotors.com', '02-1233-1157',
+   '¿ö¶óº§', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -49,11 +49,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'GLí™”í•™', 'ê²½ìƒë‚¨ë„ ìˆœì²œì‹œ ì—¬ìš¸ëŒ€ë¡œ12', 'ì œì¡°ì—…', '1946-10-10', 'www.glchem.com',
-   'ì €í¬ GLí™”í•™ì€ 1946ë…„ ì°½ë¦½í•œ ê·¼ë³¸ ë„˜ì¹˜ëŠ” ê¸°ì—…ìž…ë‹ˆë‹¤. ëŒ€í•œë¯¼êµ­ì˜ ë°œì „ì— ê¸°ì—¬í•´ì™”ìœ¼ë©°, ì•žìœ¼ë¡œë„ ì—´ì‹¬ížˆ ë…¸ë ¥í•˜ê² ìŠµë‹ˆë‹¤.',
-   '24000', '24ì¡° 6000', 'COMPANY_ID', 'glchem', '196-45-06497', null, 'https://i.namu.wiki/i/19EytWPdYDE6tL1977G2Ao2Wf3bBeNItZPYpVo7S3TgoQs8Oz2We5Fz3mdxbxmRZ18-MJdQwhVOipAYFvr36kaSffKBSV03recadaMjVBsbC3DIAy2GpQDPGG-qPmADDQPePPQyd90Vh2PoY99U42g.svg', 
-   'í•œìŠ¹ìš°', 'ì§„ì˜í¬', 'hr@glchem.com', '054-1647-4545',
-   'ê¸‰ì—¬-ê²½ì˜ì§„', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'GLÈ­ÇÐ', '°æ»ó³²µµ ¼øÃµ½Ã ¿©¿ï´ë·Î12', 'Á¦Á¶¾÷', '1946-10-10', 'www.glchem.com',
+   'ÀúÈñ GLÈ­ÇÐÀº 1946³â Ã¢¸³ÇÑ ±Ùº» ³ÑÄ¡´Â ±â¾÷ÀÔ´Ï´Ù. ´ëÇÑ¹Î±¹ÀÇ ¹ßÀü¿¡ ±â¿©ÇØ¿ÔÀ¸¸ç, ¾ÕÀ¸·Îµµ ¿­½ÉÈ÷ ³ë·ÂÇÏ°Ú½À´Ï´Ù.',
+   '24000', '24Á¶ 6000', 'COMPANY_ID', 'glchem', '196-45-06497', null, 'https://i.namu.wiki/i/19EytWPdYDE6tL1977G2Ao2Wf3bBeNItZPYpVo7S3TgoQs8Oz2We5Fz3mdxbxmRZ18-MJdQwhVOipAYFvr36kaSffKBSV03recadaMjVBsbC3DIAy2GpQDPGG-qPmADDQPePPQyd90Vh2PoY99U42g.svg', 
+   'ÇÑ½Â¿ì', 'Áø¿µÈñ', 'hr@glchem.com', '054-1647-4545',
+   '±Þ¿©-°æ¿µÁø', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -63,11 +63,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'KSí•˜ì´ë‹ˆìŠ¤', 'ì¸ì²œê´‘ì—­ì‹œ ì—°ìˆ˜êµ¬ ì²œìš°ëŒ€ë¡œ33', 'ì œì¡°ì—…', '1966-12-25', 'www.ksh.com',
-   'KSí•˜ì´ë‹ˆìŠ¤ìž…ë‹ˆë‹¤. ì¸ì²œê´‘ì—­ì‹œì—ì„œ ëŒ€í•œë¯¼êµ­ ìˆ˜ì¶œì— ì•žìž¥ì„œê³  ìžˆìŠµë‹ˆë‹¤. ì•žìœ¼ë¡œë„ ëŒ€í•œë¯¼êµ­ì„ ëŒ€í‘œí•˜ëŠ” ê¸°ì—…ìœ¼ë¡œì„œ ìµœì„ ì„ ë‹¤í•˜ê² ìŠµë‹ˆë‹¤.',
-   '86400', '260ì¡° 4200', 'COMPANY_ID', 'ksh', '122-44-31160', null, 'https://i.namu.wiki/i/z_GAYlqSX2wllTt0E-mSLg69q_zGsLpVESjMAEvcueTyP7c75kHKIU3yLHQ695nVwRCrm8ttDX_-xkWxIqIbEQ.svg', 
-   'ìµœëž€í¬', 'ìž„ì‹œì˜', 'hr@ksh.com', '032-277-7560',
-   'ì›Œë¼ë²¨-ê·¼ë¬´í™˜ê²½', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'KSÇÏÀÌ´Ï½º', 'ÀÎÃµ±¤¿ª½Ã ¿¬¼ö±¸ Ãµ¿ì´ë·Î33', 'Á¦Á¶¾÷', '1966-12-25', 'www.ksh.com',
+   'KSÇÏÀÌ´Ï½ºÀÔ´Ï´Ù. ÀÎÃµ±¤¿ª½Ã¿¡¼­ ´ëÇÑ¹Î±¹ ¼öÃâ¿¡ ¾ÕÀå¼­°í ÀÖ½À´Ï´Ù. ¾ÕÀ¸·Îµµ ´ëÇÑ¹Î±¹À» ´ëÇ¥ÇÏ´Â ±â¾÷À¸·Î¼­ ÃÖ¼±À» ´ÙÇÏ°Ú½À´Ï´Ù.',
+   '86400', '260Á¶ 4200', 'COMPANY_ID', 'ksh', '122-44-31160', null, 'https://i.namu.wiki/i/z_GAYlqSX2wllTt0E-mSLg69q_zGsLpVESjMAEvcueTyP7c75kHKIU3yLHQ695nVwRCrm8ttDX_-xkWxIqIbEQ.svg', 
+   'ÃÖ¶õÈñ', 'ÀÓ½Ã¿µ', 'hr@ksh.com', '032-277-7560',
+   '¿ö¶óº§-±Ù¹«È¯°æ', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -77,11 +77,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ê·€ì—½ì€í–‰', 'ì„œìš¸íŠ¹ë³„ì‹œ ì¤‘êµ¬ ì„ì§€ë¡œ 22', 'ê¸ˆìœµì—…', '1901-05-01', 'www.gueyeopbank.com',
-   'ì €í¬ ê·€ì—½ì€í–‰ì€ ìš°ë¦¬ë‚˜ë¼ì—ì„œ ì„¸ ë²ˆì§¸ë¡œ ì„¸ì›Œì§„ ì€í–‰ìž…ë‹ˆë‹¤. ê³ ê°ê³¼ì˜ ë¯¿ìŒì„ ìµœìš°ì„  ê°€ì¹˜ë¡œ í•©ë‹ˆë‹¤.',
-   '16000', '22ì¡° 4570', 'COMPANY_ID', 'gueyeopbank', '111-05-48000', null, 'https://i.namu.wiki/i/AfInloG2xTMUlEORrz5qQSOCu_hvIjOffivGyFcGBdssQ714vWSzlY3nwcK7XpIg0ECRH1dbjXwRHrQr9ydsstD5S2yaZxh9uQIGSoAPtgI_Dpct4BUMT7ahyznUtA9CG92gqmwfZacf_ofjsKaRbA.svg', 
-   'ì´ì œìš©', 'ì´ê±´íœ˜', 'hr@gueyeopbank.com', '02-2200-4600',
-   'ë³µì§€-ì›Œë¼ë²¨-ê·¼ë¬´í™˜ê²½', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '±Í¿±ÀºÇà', '¼­¿ïÆ¯º°½Ã Áß±¸ À»Áö·Î 22', '±ÝÀ¶¾÷', '1901-05-01', 'www.gueyeopbank.com',
+   'ÀúÈñ ±Í¿±ÀºÇàÀº ¿ì¸®³ª¶ó¿¡¼­ ¼¼ ¹øÂ°·Î ¼¼¿öÁø ÀºÇàÀÔ´Ï´Ù. °í°´°úÀÇ ¹ÏÀ½À» ÃÖ¿ì¼± °¡Ä¡·Î ÇÕ´Ï´Ù.',
+   '16000', '22Á¶ 4570', 'COMPANY_ID', 'gueyeopbank', '111-05-48000', null, 'https://i.namu.wiki/i/AfInloG2xTMUlEORrz5qQSOCu_hvIjOffivGyFcGBdssQ714vWSzlY3nwcK7XpIg0ECRH1dbjXwRHrQr9ydsstD5S2yaZxh9uQIGSoAPtgI_Dpct4BUMT7ahyznUtA9CG92gqmwfZacf_ofjsKaRbA.svg', 
+   'ÀÌÁ¦¿ë', 'ÀÌ°ÇÈÖ', 'hr@gueyeopbank.com', '02-2200-4600',
+   'º¹Áö-¿ö¶óº§-±Ù¹«È¯°æ', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -91,11 +91,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'K-OIL', 'ì„œìš¸íŠ¹ë³„ì‹œ ê°•ë‚¨êµ¬ ì—°ì„ ë¡œ 14', 'í™”í•™ ë° ì œì¡°ì—…', '1966-01-11', 'www.koil.com',
-   'ì¼€ì´ì˜¤ì¼ìž…ë‹ˆë‹¤. ì„ìœ í™”í•™ ì œí’ˆì„ ìƒì‚°í•˜ê³  ìžˆìœ¼ë©°, ìµœê·¼ ì¹œí™˜ê²½ ë¶€ë¬¸ì— ì‚¬ì—… ì—­ëŸ‰ì„ ê°•í™”í•˜ê³  ìžˆìŠµë‹ˆë‹¤.',
-   '28000', '180ì¡° 4660', 'COMPANY_ID', 'koil', '105-44-75630', null, 'https://i.namu.wiki/i/XgTan32Q_OrcWCysev2dF3vYS8kczol8ZfsVll8G2Q8UkN-cA5Of3V7yQoeOozaBq4sYRnUWMETcmI0TcinLC6v_2kgYgQFi8Nl4DyqHRwrXpHaXTO1vbp3XKhxcvPWMZdnrbFNOz9NCxKyNzEYG4Q.svg', 
-   'ê¹€ìŠ¹ìœ¤', 'ìµœë‚¨í˜¸', 'hr@koil.com', '02-2123-1123',
-   'ì›Œë¼ë²¨', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'K-OIL', '¼­¿ïÆ¯º°½Ã °­³²±¸ ¿¬¼±·Î 14', 'È­ÇÐ ¹× Á¦Á¶¾÷', '1966-01-11', 'www.koil.com',
+   'ÄÉÀÌ¿ÀÀÏÀÔ´Ï´Ù. ¼®À¯È­ÇÐ Á¦Ç°À» »ý»êÇÏ°í ÀÖÀ¸¸ç, ÃÖ±Ù Ä£È¯°æ ºÎ¹®¿¡ »ç¾÷ ¿ª·®À» °­È­ÇÏ°í ÀÖ½À´Ï´Ù.',
+   '28000', '180Á¶ 4660', 'COMPANY_ID', 'koil', '105-44-75630', null, 'https://i.namu.wiki/i/XgTan32Q_OrcWCysev2dF3vYS8kczol8ZfsVll8G2Q8UkN-cA5Of3V7yQoeOozaBq4sYRnUWMETcmI0TcinLC6v_2kgYgQFi8Nl4DyqHRwrXpHaXTO1vbp3XKhxcvPWMZdnrbFNOz9NCxKyNzEYG4Q.svg', 
+   '±è½ÂÀ±', 'ÃÖ³²È£', 'hr@koil.com', '02-2123-1123',
+   '¿ö¶óº§', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -105,11 +105,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'í‚¤ì•„ì°¨', 'ì„œìš¸ì‹œ ê°•ë‚¨êµ¬ ì£¼ì•ˆëŒ€ë¡œ 4', 'ì œì¡°ì—…', '1976-11-23', 'www.kiia.com',
-   'ì„¸ê³„ì ì¸ ëª…ì°¨, í‚¤ì•„ì°¨! ì €í¬ í‚¤ì•„ì°¨ëŠ” í›Œë¥­í•œ ì¸ìž¬ë“¤ì„ ëª¨ì‹œê³  ì„¸ê³„ ìµœê³ ì˜ ì¼ë¥˜ê¸°ì—…ìœ¼ë¡œ ê±°ë“­ë‚˜ê¸° ìœ„í•´ ëŠìž„ì—†ì´ ë…¸ë ¥í•  ê²ƒìž…ë‹ˆë‹¤.',
-   '22000', '130ì¡° 1300', 'COMPANY_ID', 'kiia', '199-36-25550', null, 'https://i.namu.wiki/i/geaT1hCuAW1_-h3bWFm8-m-Q8yveEXnRNdirfjBYNuJqExGvSMxaaqXAZC7ccX-gC7snDl76gFfzShmNhS8JTjDaIelQOXVPE6cur9u9A0FpIQYFuaOoZ10RplU2sYiCfI4j0YJ_6Wv9pANCKRqNpA.svg', 
-   'ì•ˆì§€í™˜', 'ê¹€ë‚¨ì˜', 'hr@kiia.com', '02-1120-4233',
-   'ê¸‰ì—¬-ì›Œë¼ë²¨', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'Å°¾ÆÂ÷', '¼­¿ï½Ã °­³²±¸ ÁÖ¾È´ë·Î 4', 'Á¦Á¶¾÷', '1976-11-23', 'www.kiia.com',
+   '¼¼°èÀûÀÎ ¸íÂ÷, Å°¾ÆÂ÷! ÀúÈñ Å°¾ÆÂ÷´Â ÈÇ¸¢ÇÑ ÀÎÀçµéÀ» ¸ð½Ã°í ¼¼°è ÃÖ°íÀÇ ÀÏ·ù±â¾÷À¸·Î °Åµì³ª±â À§ÇØ ²÷ÀÓ¾øÀÌ ³ë·ÂÇÒ °ÍÀÔ´Ï´Ù.',
+   '22000', '130Á¶ 1300', 'COMPANY_ID', 'kiia', '199-36-25550', null, 'https://i.namu.wiki/i/geaT1hCuAW1_-h3bWFm8-m-Q8yveEXnRNdirfjBYNuJqExGvSMxaaqXAZC7ccX-gC7snDl76gFfzShmNhS8JTjDaIelQOXVPE6cur9u9A0FpIQYFuaOoZ10RplU2sYiCfI4j0YJ_6Wv9pANCKRqNpA.svg', 
+   '¾ÈÁöÈ¯', '±è³²¿µ', 'hr@kiia.com', '02-1120-4233',
+   '±Þ¿©-¿ö¶óº§', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -119,11 +119,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ëŒ€ì•ˆí•­ê³µ', 'ì¸ì²œê´‘ì—­ì‹œ ì„œêµ¬ ê³µí•­ëŒ€ë¡œ 22', 'ë¬¼ë¥˜ ë° ê´€ê´‘ì—…', '1974-04-27', 'www.goreanair.com',
-   'í•­ê³µì‚¬ ë§Œì¡±ë„ ì„¸ê³„ 1ìœ„ë¥¼ ë‹¬ì„±í•œ ëŒ€ì•ˆí•­ê³µìž…ë‹ˆë‹¤. ì–¸ì œë‚˜ ê³ ê° ì—¬ëŸ¬ë¶„ë“¤ì˜ íŽ¸ì˜ë¥¼ ìœ„í•´ ë…¸ë ¥í•˜ëŠ” ëŒ€ì•ˆí•­ê³µì´ ë˜ê² ìŠµë‹ˆë‹¤.',
-   '16000', '10ì¡° 400', 'COMPANY_ID', 'goreanair', '107-44-44990', null, 'https://i.namu.wiki/i/XmbG_sV38Lrr6vQBAL8WLSNqHjnaKMioEoVud4zTOmpuF6BTu9t4zFxsjeAjjCbTIPiJ19F8YXQI6emsozaf26VgRFG4jJVuU_j3lCfdQhQTk9-4f-q-DhbuCgzQO6K_VrinRGdaUgCjiPp0N4sLoA.svg', 
-   'ì¡°ì—°ì•„', 'ê¹€í˜„ì•„', 'hr@goreanair.com', '02-1120-4411',
-   'ê¸‰ì—¬-ë³µì§€-ê²½ì˜ì§„-ì›Œë¼ë²¨', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '´ë¾ÈÇ×°ø', 'ÀÎÃµ±¤¿ª½Ã ¼­±¸ °øÇ×´ë·Î 22', '¹°·ù ¹× °ü±¤¾÷', '1974-04-27', 'www.goreanair.com',
+   'Ç×°ø»ç ¸¸Á·µµ ¼¼°è 1À§¸¦ ´Þ¼ºÇÑ ´ë¾ÈÇ×°øÀÔ´Ï´Ù. ¾ðÁ¦³ª °í°´ ¿©·¯ºÐµéÀÇ ÆíÀÇ¸¦ À§ÇØ ³ë·ÂÇÏ´Â ´ë¾ÈÇ×°øÀÌ µÇ°Ú½À´Ï´Ù.',
+   '16000', '10Á¶ 400', 'COMPANY_ID', 'goreanair', '107-44-44990', null, 'https://i.namu.wiki/i/XmbG_sV38Lrr6vQBAL8WLSNqHjnaKMioEoVud4zTOmpuF6BTu9t4zFxsjeAjjCbTIPiJ19F8YXQI6emsozaf26VgRFG4jJVuU_j3lCfdQhQTk9-4f-q-DhbuCgzQO6K_VrinRGdaUgCjiPp0N4sLoA.svg', 
+   'Á¶¿¬¾Æ', '±èÇö¾Æ', 'hr@goreanair.com', '02-1120-4411',
+   '±Þ¿©-º¹Áö-°æ¿µÁø-¿ö¶óº§', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -133,11 +133,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'BKê¸ˆìœµ', 'ì„œìš¸ì‹œ ì¤‘êµ¬ ì„ì§€ë¡œ ì€í–‰ëŒ€ë¡œ 4', 'ê¸ˆìœµì—…', '2001-04-27', 'www.bk.com',
-   'BKê¸ˆìœµìž…ë‹ˆë‹¤. ì„œìš¸íŠ¹ë³„ì‹œ ì¤‘êµ¬ ì„ì§€ë¡œì— ìœ„ì¹˜í•˜ê³  ìžˆìŠµë‹ˆë‹¤. ë§¤ì¶œì•¡ 3ì¡°ì›ì„ ëŒíŒŒí–ˆìŠµë‹ˆë‹¤. ê°ì‚¬í•©ë‹ˆë‹¤.',
-   '8900', '3ì¡° 1000', 'COMPANY_ID', 'bk', '100-06-66904', null, 'https://i.namu.wiki/i/K0R-Jj_XJgC6MrIVn6iGX56mUHvDDTB8s-rnosK0OjeqJVl1XxOpJOEYAGwoC8NGIR2yrwEcbweUOUHzWhqrjw.svg', 
-   'ë°•ì§„ì¼', 'ì‹¬ì˜ì›', 'hr@bk.com', '02-2200-4600',
-   'ë³µì§€-ê²½ì˜ì§„', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'BK±ÝÀ¶', '¼­¿ï½Ã Áß±¸ À»Áö·Î ÀºÇà´ë·Î 4', '±ÝÀ¶¾÷', '2001-04-27', 'www.bk.com',
+   'BK±ÝÀ¶ÀÔ´Ï´Ù. ¼­¿ïÆ¯º°½Ã Áß±¸ À»Áö·Î¿¡ À§Ä¡ÇÏ°í ÀÖ½À´Ï´Ù. ¸ÅÃâ¾× 3Á¶¿øÀ» µ¹ÆÄÇß½À´Ï´Ù. °¨»çÇÕ´Ï´Ù.',
+   '8900', '3Á¶ 1000', 'COMPANY_ID', 'bk', '100-06-66904', null, 'https://i.namu.wiki/i/K0R-Jj_XJgC6MrIVn6iGX56mUHvDDTB8s-rnosK0OjeqJVl1XxOpJOEYAGwoC8NGIR2yrwEcbweUOUHzWhqrjw.svg', 
+   '¹ÚÁøÀÏ', '½É¿µ¿ø', 'hr@bk.com', '02-2200-4600',
+   'º¹Áö-°æ¿µÁø', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -147,11 +147,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì½”ì½”ì•„', 'ê²½ê¸°ë„ ì„±ë‚¨ì‹œ ëŒ€ì™•íŒë£Œë¡œ 14', 'ì†Œí”„íŠ¸ì›¨ì–´ ê°œë°œì—…', '2020-01-01', 'www.kokoa.com',
-   'ì½”ì½”ì•„í†¡ìœ¼ë¡œ ì‹œìž‘í•˜ì—¬ ëŒ€í•œë¯¼êµ­ì˜ ì¼ìƒ ê³³ê³³ì—ì„œ ê³ ê° ì—¬ëŸ¬ë¶„ë“¤ì˜ íŽ¸ì˜ë¥¼ ë‹´ë‹¹í•˜ê³  ìžˆìŠµë‹ˆë‹¤. ì•žìœ¼ë¡œ í˜ì‹ ì„ ê±°ë“­í•˜ì—¬ ë” ì¢‹ì€ ì„œë¹„ìŠ¤ë¡œ ë³´ë‹µí•˜ê² ìŠµë‹ˆë‹¤.',
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÄÚÄÚ¾Æ', '°æ±âµµ ¼º³²½Ã ´ë¿ÕÆÇ·á·Î 14', '¼ÒÇÁÆ®¿þ¾î °³¹ß¾÷', '2020-01-01', 'www.kokoa.com',
+   'ÄÚÄÚ¾ÆÅåÀ¸·Î ½ÃÀÛÇÏ¿© ´ëÇÑ¹Î±¹ÀÇ ÀÏ»ó °÷°÷¿¡¼­ °í°´ ¿©·¯ºÐµéÀÇ ÆíÀÇ¸¦ ´ã´çÇÏ°í ÀÖ½À´Ï´Ù. ¾ÕÀ¸·Î Çõ½ÅÀ» °ÅµìÇÏ¿© ´õ ÁÁÀº ¼­ºñ½º·Î º¸´äÇÏ°Ú½À´Ï´Ù.',
    '5900', '9150', 'COMPANY_ID', 'kokoa', '122-85-65200', null, 'https://i.namu.wiki/i/BRUiNycPAMLbss5A0eABLajRMbWtcG1ng0DoKb_3u1N52ogTPtqD7LJsMhsejVtLmr08l-Cc2iSxICBDVLO4tpVWiBnpdwdRvQVcYFaJ5Q_cCJR5Nw9M7ejyXivIK5EN56UkF5RB_xoESuFio0Bx6Q.svg',
-   'ê¹€ë²”ìˆ˜', 'ê¹€ì˜í›ˆ', 'hr@kokoa.com', '031-1311-1311',
-   'ë³µì§€-ì›Œë¼ë²¨', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '±è¹ü¼ö', '±è¿µÈÆ', 'hr@kokoa.com', '031-1311-1311',
+   'º¹Áö-¿ö¶óº§', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -161,11 +161,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì—°ëŒ€ëª¨ë¹„ìŠ¤', 'ì„œìš¸ì‹œ ì†¡íŒŒêµ¬ ì†¡íŒŒëŒ€ë¡œ 76', 'ì œì¡°ì—…', '1968-04-27', 'www.yeonmobis.com',
-   'ì €í¬ ì—°ëŒ€ëª¨ë¹„ìŠ¤ëŠ” í˜ì‹ ì ì¸ ê¸°ìˆ ë ¥ìœ¼ë¡œ ì‹œìž¥ì„ ì„ ë„í•˜ëŠ” ê·¸ë£¹ìž…ë‹ˆë‹¤. ì•žìœ¼ë¡œ ë”ìš± ë…¸ë ¥í•˜ì—¬ ì„¸ê³„ ì¼ë¥˜ê¸°ì—…ìœ¼ë¡œ ê±°ë“­ë‚˜ê² ìŠµë‹ˆë‹¤.',
-   '4600', '12ì¡° 8000', 'COMPANY_ID', 'yeonmobis', '111-45-00660', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/N7ZQVWWJap3ja3fRubmcOavPgAysTj5ZYpfyxdDaAM-DwxhX8P_tHpEiPO4F2BkKIVpedjdM1gyZB_RDFNw1pw.svg',
-   'ê¹€ì˜í•˜', 'ìµœì•ˆì›', 'hr@yeonmobis.com', '02-2211-4610',
-   'ê¸‰ì—¬-ê²½ì˜ì§„', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¿¬´ë¸ðºñ½º', '¼­¿ï½Ã ¼ÛÆÄ±¸ ¼ÛÆÄ´ë·Î 76', 'Á¦Á¶¾÷', '1968-04-27', 'www.yeonmobis.com',
+   'ÀúÈñ ¿¬´ë¸ðºñ½º´Â Çõ½ÅÀûÀÎ ±â¼ú·ÂÀ¸·Î ½ÃÀåÀ» ¼±µµÇÏ´Â ±×·ìÀÔ´Ï´Ù. ¾ÕÀ¸·Î ´õ¿í ³ë·ÂÇÏ¿© ¼¼°è ÀÏ·ù±â¾÷À¸·Î °Åµì³ª°Ú½À´Ï´Ù.',
+   '4600', '12Á¶ 8000', 'COMPANY_ID', 'yeonmobis', '111-45-00660', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/N7ZQVWWJap3ja3fRubmcOavPgAysTj5ZYpfyxdDaAM-DwxhX8P_tHpEiPO4F2BkKIVpedjdM1gyZB_RDFNw1pw.svg',
+   '±è¿µÇÏ', 'ÃÖ¾È¿ø', 'hr@yeonmobis.com', '02-2211-4610',
+   '±Þ¿©-°æ¿µÁø', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -175,11 +175,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì‹¬ì„±ë¬¼ì‚°', 'ì„œìš¸ì‹œ ê°•ë‚¨êµ¬ ê°•ë‚¨ëŒ€ë¡œ 99', 'ì œì¡°ì—…', '2001-04-27', 'www.simsmul.com',
-   'ì•ˆë…•í•˜ì„¸ìš”, ì‹¬ì„±ë¬¼ì‚°ìž…ë‹ˆë‹¤. í•­ìƒ ë” ì¢‹ì€ ì œí’ˆê³¼ ì„œë¹„ìŠ¤ë¡œ ê³ ê°ë‹˜ë“¤ê»˜ ë³´ë‹µí•˜ê² ìŠµë‹ˆë‹¤. ê°ì‚¬í•©ë‹ˆë‹¤.',
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '½É¼º¹°»ê', '¼­¿ï½Ã °­³²±¸ °­³²´ë·Î 99', 'Á¦Á¶¾÷', '2001-04-27', 'www.simsmul.com',
+   '¾È³çÇÏ¼¼¿ä, ½É¼º¹°»êÀÔ´Ï´Ù. Ç×»ó ´õ ÁÁÀº Á¦Ç°°ú ¼­ºñ½º·Î °í°´´Ôµé²² º¸´äÇÏ°Ú½À´Ï´Ù. °¨»çÇÕ´Ï´Ù.',
    '164', '200', 'COMPANY_ID', 'simsmul', '188-42-67235', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/b0csdOWXtNxoBp25Y-9h_XoM1KV8YyXnabrLGAjqRwIYH2Y-VCrAyh0xB-JUV9HzcrnybvhmCF3dUq3yKuNkVrMKjk9nmAALfQJrnO4SIl3VW7PjDUHObX23Rf44CxlzkxQfQogjTJvT5gHDS_GKEg.svg',
-   'ê¹€ìœ ì‹', 'ì§„ì•„ë¦„', 'hr@simsmul.com', '02-2200-4600',
-   'ë³µì§€', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '±èÀ¯½Ä', 'Áø¾Æ¸§', 'hr@simsmul.com', '02-2200-4600',
+   'º¹Áö', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -189,11 +189,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'í•œì‹ ì§€ì£¼', 'ì„œìš¸ì‹œ ì¤‘êµ¬ ëª…ë™ë¡œ 14', 'ê¸ˆìœµì—…', '1966-11-14', 'www.hanshin.com',
-   'ëŒ€í•œë¯¼êµ­ ëŒ€í‘œ ì§€ì£¼, í•œì‹ ì§€ì£¼ìž…ë‹ˆë‹¤. ê³ ê°ë‹˜ë“¤ì˜ ê´€ì‹¬ê³¼ ì„±ì›ì— ê°ì‚¬ë“œë¦½ë‹ˆë‹¤. ëŠ˜ ë°œì „í•˜ëŠ” í•œì‹ ì§€ì£¼ê°€ ë˜ê² ìŠµë‹ˆë‹¤.',
-   '3000', '1ì¡° 4000', 'COMPANY_ID', 'hanshin', '166-41-16649', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/INjrpUqnIASiD7v-twAZgMlc6-L9Dp4fc89r7KTkj87cOAbq5R3ivL4FOw9lYa2qQOpHebYCgA4tbgzhBdKOC-VTM4LnTqzf9JlLqc6clD6OaP335JjFZMAGNc4Cu7z1lbJOetkIQCFNWNXP95SMFQ.svg',
-   'ê¹€ìœ ë‚˜', 'ì´í•œì§„', 'hr@hanshin.com', '02-1144-4144',
-   'ë³µì§€-ê¸‰ì—¬', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÇÑ½ÅÁöÁÖ', '¼­¿ï½Ã Áß±¸ ¸íµ¿·Î 14', '±ÝÀ¶¾÷', '1966-11-14', 'www.hanshin.com',
+   '´ëÇÑ¹Î±¹ ´ëÇ¥ ÁöÁÖ, ÇÑ½ÅÁöÁÖÀÔ´Ï´Ù. °í°´´ÔµéÀÇ °ü½É°ú ¼º¿ø¿¡ °¨»çµå¸³´Ï´Ù. ´Ã ¹ßÀüÇÏ´Â ÇÑ½ÅÁöÁÖ°¡ µÇ°Ú½À´Ï´Ù.',
+   '3000', '1Á¶ 4000', 'COMPANY_ID', 'hanshin', '166-41-16649', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/INjrpUqnIASiD7v-twAZgMlc6-L9Dp4fc89r7KTkj87cOAbq5R3ivL4FOw9lYa2qQOpHebYCgA4tbgzhBdKOC-VTM4LnTqzf9JlLqc6clD6OaP335JjFZMAGNc4Cu7z1lbJOetkIQCFNWNXP95SMFQ.svg',
+   '±èÀ¯³ª', 'ÀÌÇÑÁø', 'hr@hanshin.com', '02-1144-4144',
+   'º¹Áö-±Þ¿©', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -203,11 +203,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì—°ëŒ€ê¸€ë¡œë¹„ìŠ¤', 'ì„œìš¸ì‹œ ê°•ë‚¨êµ¬ ê°•ë‚¨ëŒ€ë¡œ 14', 'ì œì¡°ì—…', '1966-04-22', 'www.yeonglo.com',
-   'ì•ˆë…•í•˜ì„¸ìš”, ì—°ëŒ€ê¸€ë¡œë¹„ìŠ¤ ìž…ë‹ˆë‹¤. ê³ ê°ë‹˜ë“¤ì˜ ì„±ì›ì— ëŠ˜ ê°ì‚¬ë“œë¦½ë‹ˆë‹¤. ì•žìœ¼ë¡œë„ ë” ë‚˜ì€ í’ˆì§ˆì˜ ì œí’ˆê³¼ ì„œë¹„ìŠ¤ë¡œ ê³ ê°ë‹˜ë“¤ê»˜ ë³´ë‹µí•˜ê² ìŠµë‹ˆë‹¤. ê°ì‚¬í•©ë‹ˆë‹¤.',
-   '4410', '7ì¡° 770', 'COMPANY_ID', 'yeonglo', '123-45-67890', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/EjvrrG-NyHzm4Cv-UkVMQ8TAN86vKhvdEkzo966sWSKntupltSIV-CzNO4Z5XTeOvlo8mc47OI-PWDkfRmBfCpE0VkRNQqp43wBQZKxYQhhR9vOx967Vn4erskNQN28kXBfueJjD5aBXL0lfxPH8fA.svg',
-   'ê¹€ëŒ€ì—°', 'ìž¥ì˜¤ëž€', 'hr@yeonglo.com', '02-2211-0060',
-   'ê¸‰ì—¬-ê·¼ë¬´í™˜ê²½', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¿¬´ë±Û·Îºñ½º', '¼­¿ï½Ã °­³²±¸ °­³²´ë·Î 14', 'Á¦Á¶¾÷', '1966-04-22', 'www.yeonglo.com',
+   '¾È³çÇÏ¼¼¿ä, ¿¬´ë±Û·Îºñ½º ÀÔ´Ï´Ù. °í°´´ÔµéÀÇ ¼º¿ø¿¡ ´Ã °¨»çµå¸³´Ï´Ù. ¾ÕÀ¸·Îµµ ´õ ³ªÀº Ç°ÁúÀÇ Á¦Ç°°ú ¼­ºñ½º·Î °í°´´Ôµé²² º¸´äÇÏ°Ú½À´Ï´Ù. °¨»çÇÕ´Ï´Ù.',
+   '4410', '7Á¶ 770', 'COMPANY_ID', 'yeonglo', '123-45-67890', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/EjvrrG-NyHzm4Cv-UkVMQ8TAN86vKhvdEkzo966sWSKntupltSIV-CzNO4Z5XTeOvlo8mc47OI-PWDkfRmBfCpE0VkRNQqp43wBQZKxYQhhR9vOx967Vn4erskNQN28kXBfueJjD5aBXL0lfxPH8fA.svg',
+   '±è´ë¿¬', 'Àå¿À¶õ', 'hr@yeonglo.com', '02-2211-0060',
+   '±Þ¿©-±Ù¹«È¯°æ', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -217,11 +217,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ìœ ë¦¬ê¸ˆìœµì§€ì£¼', 'ì„œìš¸ì‹œ ì¤‘êµ¬ ì€í–‰ëŒ€ë¡œ 11', 'ì€í–‰ì—…', '2000-04-27', 'www.notglass.com',
-   'ì•ˆë…•í•˜ì„¸ìš”, ìœ ë¦¬ê¸ˆìœµì§€ì£¼ ìž…ë‹ˆë‹¤. ê³ ê°ë‹˜ë“¤ì˜ ì„±ì›ì— ëŠ˜ ê°ì‚¬ë“œë¦½ë‹ˆë‹¤. ì•žìœ¼ë¡œë„ ë” ë‚˜ì€ í’ˆì§ˆì˜ ì œí’ˆê³¼ ì„œë¹„ìŠ¤ë¡œ ê³ ê°ë‹˜ë“¤ê»˜ ë³´ë‹µí•˜ê² ìŠµë‹ˆë‹¤. ê°ì‚¬í•©ë‹ˆë‹¤.',
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'À¯¸®±ÝÀ¶ÁöÁÖ', '¼­¿ï½Ã Áß±¸ ÀºÇà´ë·Î 11', 'ÀºÇà¾÷', '2000-04-27', 'www.notglass.com',
+   '¾È³çÇÏ¼¼¿ä, À¯¸®±ÝÀ¶ÁöÁÖ ÀÔ´Ï´Ù. °í°´´ÔµéÀÇ ¼º¿ø¿¡ ´Ã °¨»çµå¸³´Ï´Ù. ¾ÕÀ¸·Îµµ ´õ ³ªÀº Ç°ÁúÀÇ Á¦Ç°°ú ¼­ºñ½º·Î °í°´´Ôµé²² º¸´äÇÏ°Ú½À´Ï´Ù. °¨»çÇÕ´Ï´Ù.',
    '950', '9400', 'COMPANY_ID', 'notglass', '199-41-13450', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/qbjPpio7gCDYnu5EIxOoLgvwVSSnqTavFBtGPlTbtW5mC3upn0Dxovwtu99SzGj6NkGj4OSDPd3IaJQ-jaqQ8HpY-HJgU137eOctM-TsWWoLIU4ATpkoJ_FthD_XgLP5QrfUBeKmF0WHoA9Rp9QRzA.svg',
-   'ì´ë‹¨ê²½', 'ì„œì§€ì€', 'hr@notglass.com', '02-1616-1115',
-   'ë³µì§€', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   'ÀÌ´Ü°æ', '¼­ÁöÀº', 'hr@notglass.com', '02-1616-1115',
+   'º¹Áö', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -231,11 +231,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'í•˜ë‚¨ê¸ˆìœµì§€ì£¼', 'ê²½ê¸°ë„ í•˜ë‚¨ì‹œ í•˜ë‚¨ëŒ€ë¡œ 12', 'ê¸ˆìœµì—…', '1994-05-05', 'www.hanambank.com',
-   'ì•ˆë…•í•˜ì„¸ìš”, í•˜ë‚¨ê¸ˆìœµì§€ì£¼ ìž…ë‹ˆë‹¤. ê³ ê°ë‹˜ë“¤ì˜ ì„±ì›ì— ëŠ˜ ê°ì‚¬ë“œë¦½ë‹ˆë‹¤. ì•žìœ¼ë¡œë„ ë” ë‚˜ì€ í’ˆì§ˆì˜ ì œí’ˆê³¼ ì„œë¹„ìŠ¤ë¡œ ê³ ê°ë‹˜ë“¤ê»˜ ë³´ë‹µí•˜ê² ìŠµë‹ˆë‹¤. ê°ì‚¬í•©ë‹ˆë‹¤.',
-   '1200', '2ì¡° 500', 'COMPANY_ID', 'hanambank', '123-45-67890', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/js8u8g13WYAuOxuUYMqFl0q-f5QZPWWseOPeI_nkiWGNDi3Gv1PiNd6xUyfoihjjamLzpDHbkIt1Fz6i3sU1da9b6XJq1JDBdQsNxOPozytD2CTDpI8hBou-hdf5noJGKDuZknmjQCwzZFHa87nwvA.svg',
-   'ì†¡ì¸í•œ', 'ê¹€í¬ì¤€', 'hr@hanambank.com', '031-550-7400',
-   'ì›Œë¼ë²¨-ê²½ì˜ì§„', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÇÏ³²±ÝÀ¶ÁöÁÖ', '°æ±âµµ ÇÏ³²½Ã ÇÏ³²´ë·Î 12', '±ÝÀ¶¾÷', '1994-05-05', 'www.hanambank.com',
+   '¾È³çÇÏ¼¼¿ä, ÇÏ³²±ÝÀ¶ÁöÁÖ ÀÔ´Ï´Ù. °í°´´ÔµéÀÇ ¼º¿ø¿¡ ´Ã °¨»çµå¸³´Ï´Ù. ¾ÕÀ¸·Îµµ ´õ ³ªÀº Ç°ÁúÀÇ Á¦Ç°°ú ¼­ºñ½º·Î °í°´´Ôµé²² º¸´äÇÏ°Ú½À´Ï´Ù. °¨»çÇÕ´Ï´Ù.',
+   '1200', '2Á¶ 500', 'COMPANY_ID', 'hanambank', '123-45-67890', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/js8u8g13WYAuOxuUYMqFl0q-f5QZPWWseOPeI_nkiWGNDi3Gv1PiNd6xUyfoihjjamLzpDHbkIt1Fz6i3sU1da9b6XJq1JDBdQsNxOPozytD2CTDpI8hBou-hdf5noJGKDuZknmjQCwzZFHa87nwvA.svg',
+   '¼ÛÀÎÇÑ', '±èÈñÁØ', 'hr@hanambank.com', '031-550-7400',
+   '¿ö¶óº§-°æ¿µÁø', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -245,11 +245,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì‹¬ì„±í™”ìž¬', 'ì„œìš¸ì‹œ ì†¡íŒŒêµ¬ ì†¡íŒŒëŒ€ë¡œ 2', 'ë³´í—˜ì—…', '1998-08-08', 'www.simshwa.com',
-   'ì•ˆë…•í•˜ì„¸ìš”, ì‹¬ì„±í™”ìž¬ ìž…ë‹ˆë‹¤. ê³ ê°ë‹˜ë“¤ì˜ ì„±ì›ì— ëŠ˜ ê°ì‚¬ë“œë¦½ë‹ˆë‹¤. ì•žìœ¼ë¡œë„ ë” ë‚˜ì€ í’ˆì§ˆì˜ ì œí’ˆê³¼ ì„œë¹„ìŠ¤ë¡œ ê³ ê°ë‹˜ë“¤ê»˜ ë³´ë‹µí•˜ê² ìŠµë‹ˆë‹¤. ê°ì‚¬í•©ë‹ˆë‹¤.',
-   '2200', '1ì¡° 4500', 'COMPANY_ID', 'simshwa', '123-45-67890', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/xV_6xvh-e6aj2CP2xh_hvjFcXuQBdv8k01SiqKhltffFRtSVP6O1FmMdJVKy1XDjOZ_SK2unCzrjik4wh6dU2GyxPLmcoljIr77ZeSArZjnAKrKq9xEQ9sm2jQVB4fk1Cr3Bn7Zg94yKt93IHxPv7Q.svg',
-   'ìž„ì„±ì§„', 'ì´ì§€í˜•', 'hr@simshwa.com', '02-6690-7566',
-   'ê¸‰ì—¬', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '½É¼ºÈ­Àç', '¼­¿ï½Ã ¼ÛÆÄ±¸ ¼ÛÆÄ´ë·Î 2', 'º¸Çè¾÷', '1998-08-08', 'www.simshwa.com',
+   '¾È³çÇÏ¼¼¿ä, ½É¼ºÈ­Àç ÀÔ´Ï´Ù. °í°´´ÔµéÀÇ ¼º¿ø¿¡ ´Ã °¨»çµå¸³´Ï´Ù. ¾ÕÀ¸·Îµµ ´õ ³ªÀº Ç°ÁúÀÇ Á¦Ç°°ú ¼­ºñ½º·Î °í°´´Ôµé²² º¸´äÇÏ°Ú½À´Ï´Ù. °¨»çÇÕ´Ï´Ù.',
+   '2200', '1Á¶ 4500', 'COMPANY_ID', 'simshwa', '123-45-67890', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/xV_6xvh-e6aj2CP2xh_hvjFcXuQBdv8k01SiqKhltffFRtSVP6O1FmMdJVKy1XDjOZ_SK2unCzrjik4wh6dU2GyxPLmcoljIr77ZeSArZjnAKrKq9xEQ9sm2jQVB4fk1Cr3Bn7Zg94yKt93IHxPv7Q.svg',
+   'ÀÓ¼ºÁø', 'ÀÌÁöÇü', 'hr@simshwa.com', '02-6690-7566',
+   '±Þ¿©', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -259,11 +259,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ë©”ì´ë²„', 'ê²½ê¸°ë„ ì„±ë‚¨ì‹œ ì•ˆì–‘íŒêµë¡œ 8', 'ì†Œí”„íŠ¸ì›¨ì–´ ê°œë°œì—…', '2022-01-11', 'www.maver.com',
-   'ì•ˆë…•í•˜ì„¸ìš”, ì—¬ëŸ¬ë¶„ì˜ ì´ì›ƒ ë©”ì´ë²„ìž…ë‹ˆë‹¤. ì°½ë¦½ 1ë…„ë§Œì— ê°€ìž…ìž ìˆ˜ 700ë§Œì„ ëŒíŒŒí•˜ì˜€ìŠµë‹ˆë‹¤. ê³ ê°ë‹˜ë“¤ì˜ ì„±ì›ì— ê°ì‚¬ë“œë¦½ë‹ˆë‹¤.',
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¸ÞÀÌ¹ö', '°æ±âµµ ¼º³²½Ã ¾È¾çÆÇ±³·Î 8', '¼ÒÇÁÆ®¿þ¾î °³¹ß¾÷', '2022-01-11', 'www.maver.com',
+   '¾È³çÇÏ¼¼¿ä, ¿©·¯ºÐÀÇ ÀÌ¿ô ¸ÞÀÌ¹öÀÔ´Ï´Ù. Ã¢¸³ 1³â¸¸¿¡ °¡ÀÔÀÚ ¼ö 700¸¸À» µ¹ÆÄÇÏ¿´½À´Ï´Ù. °í°´´ÔµéÀÇ ¼º¿ø¿¡ °¨»çµå¸³´Ï´Ù.',
    '400', '4400', 'COMPANY_ID', 'maver', '123-45-67890', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/DImz7n4yuxbNlKqkrKOVwBKKNNfU8FCeQ2ITB7VMqlEj_oQyTZ2Q-rhFrssX_Rh7sDUJW440OnD4Qn8vMMi-T1wKxOofcF-bKedMRc0iR_Qn-CA__tv1jwfUJgusPU1boBCdgRhmNQGqvup0ATnHKg.svg',
-   'ì´ì œìš©', 'ì´ê±´íœ˜', 'hr@maver.com', '031-0055-1900',
-   'ê¸‰ì—¬-ë³µì§€-ì›Œë¼ë²¨-ê²½ì˜ì§„', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   'ÀÌÁ¦¿ë', 'ÀÌ°ÇÈÖ', 'hr@maver.com', '031-0055-1900',
+   '±Þ¿©-º¹Áö-¿ö¶óº§-°æ¿µÁø', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -273,11 +273,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
    COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER,
    COMPANY_PREFER, PERMISSION, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
 
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'í•œì™€ì—ë“€', 'ì„œìš¸ì‹œ ë§ˆí¬êµ¬ í™ìµë¡œ 12', 'êµìœ¡ì„œë¹„ìŠ¤ì—…', '2023-05-27', 'www.hanwaedu.com',
-   'ì•ˆë…•í•˜ì„¸ìš”, ìµœê·¼ ê°œì—…í•œ í•œì™€ì—ë“€ìž…ë‹ˆë‹¤. ì•žìœ¼ë¡œ ìµœê³ ì˜ êµìœ¡ì„œë¹„ìŠ¤ì—…ì„ ì œê³µí•˜ì—¬ ëŒ€í•œë¯¼êµ­ ìµœê³ ë¡œ ê±°ë“­ë‚  ê²ƒì„ ì•½ì†ë“œë¦½ë‹ˆë‹¤. ê°ì‚¬í•©ë‹ˆë‹¤.',
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÇÑ¿Í¿¡µà', '¼­¿ï½Ã ¸¶Æ÷±¸ È«ÀÍ·Î 12', '±³À°¼­ºñ½º¾÷', '2023-05-27', 'www.hanwaedu.com',
+   '¾È³çÇÏ¼¼¿ä, ÃÖ±Ù °³¾÷ÇÑ ÇÑ¿Í¿¡µàÀÔ´Ï´Ù. ¾ÕÀ¸·Î ÃÖ°íÀÇ ±³À°¼­ºñ½º¾÷À» Á¦°øÇÏ¿© ´ëÇÑ¹Î±¹ ÃÖ°í·Î °Åµì³¯ °ÍÀ» ¾à¼Óµå¸³´Ï´Ù. °¨»çÇÕ´Ï´Ù.',
    '13', '8', 'COMPANY_ID', 'hanwaedu', '199-49-97440', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/gWfiPenxzHvqedAkOsie9Rv5pu-sHOw_XigQORcE_7DJN-lPw4NFs4zooffGurFgl4VXq08VfQDVsWP2uDWyTynx0vFs0HXCmwjCbFC0w1WMF2wuh1u3WWwhK21bZVOiIU0g8aTHnDVK-53DWDF2NA.webp',
-   'ê¹€ì€ì§€', 'ìµœìœ¤ì•„', 'hr@hanwaedu.com', '02-3555-3441',
-   'ë³µì§€', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '±èÀºÁö', 'ÃÖÀ±¾Æ', 'hr@hanwaedu.com', '02-3555-3441',
+   'º¹Áö', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -285,10 +285,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ë¹„ë§ˆíŠ¸', 'ì„œìš¸íŠ¹ë³„ì‹œ ì¤‘êµ¬ ì„¸ì¢…ëŒ€ë¡œ7ê¸¸ 37', 'ë„ì†Œë§¤ì—…', '1993-11-12', 'www.company.bmart.com'
-    , '(ì£¼)ë¹„ë§ˆíŠ¸ëŠ” êµ­ë‚´ ìµœì´ˆì˜ í• ì¸ì ìœ¼ë¡œì„œ ê³ ê°ì˜ í–‰ë³µí•œ ë¼ì´í”„ ìŠ¤íƒ€ì¼ê³¼ ì§€ì—­ì‚¬íšŒ ë°œì „ì„ ì¶”êµ¬í•˜ëŠ” ê°€ì¹˜ ì°½ì¡°ê¸°ì—…ì„ ì§€í–¥í•©ë‹ˆë‹¤'
-    , '23,024', '293,324', 'bmart', 'bmart12', '206-86-50913', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/506gc8mgBR-Scr7Kmm400fz8RYMAqBwC06F1dTW-f-FKIAifUMQ_dqALk-9fjwFUI41oga6rOk9Au5PqhQb37mwJQNCXcjm8Y0i_gHE6uG4bUk8G3tli6AgBGT3WxlvrFirz9aLGe1NpnqtkvZM_mg.svg', 'ê°•í¬ì„'
-    , 'ê¹€í¬ì„±', 'kimhs@bmart.com', '02-380-5678', '10%, ë³µì§€-30%, 1~3, 30%, ê³ ì¡¸, 30%, ì‹ ìž…'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ºñ¸¶Æ®', '¼­¿ïÆ¯º°½Ã Áß±¸ ¼¼Á¾´ë·Î7±æ 37', 'µµ¼Ò¸Å¾÷', '1993-11-12', 'www.company.bmart.com'
+    , '(ÁÖ)ºñ¸¶Æ®´Â ±¹³» ÃÖÃÊÀÇ ÇÒÀÎÁ¡À¸·Î¼­ °í°´ÀÇ Çàº¹ÇÑ ¶óÀÌÇÁ ½ºÅ¸ÀÏ°ú Áö¿ª»çÈ¸ ¹ßÀüÀ» Ãß±¸ÇÏ´Â °¡Ä¡ Ã¢Á¶±â¾÷À» ÁöÇâÇÕ´Ï´Ù'
+    , '23,024', '293,324', 'bmart', 'bmart12', '206-86-50913', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/506gc8mgBR-Scr7Kmm400fz8RYMAqBwC06F1dTW-f-FKIAifUMQ_dqALk-9fjwFUI41oga6rOk9Au5PqhQb37mwJQNCXcjm8Y0i_gHE6uG4bUk8G3tli6AgBGT3WxlvrFirz9aLGe1NpnqtkvZM_mg.svg', '°­Èñ¼®'
+    , '±èÈñ¼º', 'kimhs@bmart.com', '02-380-5678', '10%, º¹Áö-30%, 1~3, 30%, °íÁ¹, 30%, ½ÅÀÔ'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -297,10 +297,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'BBì†í•´ë³´í—˜', 'ì„œìš¸íŠ¹ë³„ì‹œ ê°•ë‚¨êµ¬ í…Œí—¤ëž€ë¡œ432', 'ê¸ˆìœµ ë° ë³´í—˜ì—…', '1968-11-01', 'www.ibbins.com'
-    , '1962ëŒ€í•œë¯¼êµ­ ìµœì´ˆì˜ ìžë™ì°¨ ë³´í—˜ ê³µì˜ì‚¬ë¡œ ì¶œë²”í•œ BBì†í•´ë³´í—˜ì€ êµ­ê°€ ê²½ì œì™€ ì‚°ì—…ë°œì „ì— ê¸°ì—¬í•˜ë©° ì„±ìž¥í•´ ì™”ìŠµë‹ˆë‹¤.'
-    , '4,597', '228,607', 'bbins', 'bbins12','201-81-45593', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/ty6sLuKdP_OoRjOLMOY123nAJA3JjS3HTB9Z9WAyB174y1H-aYZ4js7Qb3u0EKXqUMun-qSQdcvWUAYaD7sGIBLcdTARPjCnlq5K0rQwD_duxPBA8mW7kSy76AHqJOH_8AK_Y5y74bdRw3UzFeDxWw.svg', 'ì •ì¢…í‘œ'
-    , 'ìž¥ì§€í˜¸', 'jang@ibbins.com', '02-3011-3310', '10%, ê²½ì˜ì§„-30%, 1~3, 30%, ì´ˆëŒ€ì¡¸, 30%, 1ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'BB¼ÕÇØº¸Çè', '¼­¿ïÆ¯º°½Ã °­³²±¸ Å×Çì¶õ·Î432', '±ÝÀ¶ ¹× º¸Çè¾÷', '1968-11-01', 'www.ibbins.com'
+    , '1962´ëÇÑ¹Î±¹ ÃÖÃÊÀÇ ÀÚµ¿Â÷ º¸Çè °ø¿µ»ç·Î Ãâ¹üÇÑ BB¼ÕÇØº¸ÇèÀº ±¹°¡ °æÁ¦¿Í »ê¾÷¹ßÀü¿¡ ±â¿©ÇÏ¸ç ¼ºÀåÇØ ¿Ô½À´Ï´Ù.'
+    , '4,597', '228,607', 'bbins', 'bbins12','201-81-45593', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/ty6sLuKdP_OoRjOLMOY123nAJA3JjS3HTB9Z9WAyB174y1H-aYZ4js7Qb3u0EKXqUMun-qSQdcvWUAYaD7sGIBLcdTARPjCnlq5K0rQwD_duxPBA8mW7kSy76AHqJOH_8AK_Y5y74bdRw3UzFeDxWw.svg', 'Á¤Á¾Ç¥'
+    , 'ÀåÁöÈ£', 'jang@ibbins.com', '02-3011-3310', '10%, °æ¿µÁø-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 1³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -309,10 +309,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'í•œëŒ€ì œì² ', 'ê²½ê¸°ë„ ì„±ë‚¨ì‹œ ë¶„ë‹¹êµ¬ ë¶„ë‹¹ë‚´ê³¡ë¡œ 117', 'ì œì¡°ì—…', '1953-06-10', 'www.handai-steel.com'
-    , 'ì² , ê·¸ ì´ìƒì˜ ê°€ì¹˜ ì°½ì¡°. í•œëŒ€ì œì² ì€ ìµœê³ ì˜ ê¸°ìˆ ê³¼ í’ˆì§ˆì„ ë°”íƒ•ìœ¼ë¡œ ê³ ê°ì´ ê¿ˆê¾¸ëŠ” ì œí’ˆì„ ë§Œë“œëŠ”ë° í•„ìš”í•œ ìµœì ì˜ ì†Œìž¬ë¥¼ ê³µê¸‰í•˜ëŠ” íŒŒíŠ¸ë„ˆê°€ ë˜ê² ìŠµë‹ˆë‹¤.'
-    , '11,622', '273,406', 'hansteel', 'hansteel12','221-81-10385', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/2Na7OGQmFcYu6Ilnk_ULm-4vu-WUXgWPPQi3C_fN1F5o7Ii471NItTeEUUC_ebwrskb_qOhZsCWfzX07y8_KiA.svg', 'ì•ˆë™ì¼'
-    , 'ì´ëŒ€ì˜', 'lee@handaisteel.com', '031-510-2114', '10%, ê·¼ë¬´í™˜ê²½-30%, 1~3, 30%, ì´ˆëŒ€ì¡¸, 30%, 3ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÇÑ´ëÁ¦Ã¶', '°æ±âµµ ¼º³²½Ã ºÐ´ç±¸ ºÐ´ç³»°î·Î 117', 'Á¦Á¶¾÷', '1953-06-10', 'www.handai-steel.com'
+    , 'Ã¶, ±× ÀÌ»óÀÇ °¡Ä¡ Ã¢Á¶. ÇÑ´ëÁ¦Ã¶Àº ÃÖ°íÀÇ ±â¼ú°ú Ç°ÁúÀ» ¹ÙÅÁÀ¸·Î °í°´ÀÌ ²Þ²Ù´Â Á¦Ç°À» ¸¸µå´Âµ¥ ÇÊ¿äÇÑ ÃÖÀûÀÇ ¼ÒÀç¸¦ °ø±ÞÇÏ´Â ÆÄÆ®³Ê°¡ µÇ°Ú½À´Ï´Ù.'
+    , '11,622', '273,406', 'hansteel', 'hansteel12', '221-81-10385', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/2Na7OGQmFcYu6Ilnk_ULm-4vu-WUXgWPPQi3C_fN1F5o7Ii471NItTeEUUC_ebwrskb_qOhZsCWfzX07y8_KiA.svg', '¾Èµ¿ÀÏ'
+    , 'ÀÌ´ë¿µ', 'lee@handaisteel.com', '031-510-2114', '10%, ±Ù¹«È¯°æ-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 3³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -321,10 +321,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'KPNG', 'ëŒ€ì „ê´‘ì—­ì‹œ ëŒ€ë•êµ¬ ë²šê½ƒê¸¸ 71', 'ì œì¡°ì—…', '1987-04-01', 'www.kpng.com'
-    , 'KPNGì˜ í•µì‹¬ê°€ì¹˜ëŠ” ì¸ìž¬ì¤‘ì‹¬, ë„ì „ì •ì‹ , ì„±ê³¼ì§€í–¥, ìƒí˜¸í˜‘ë ¥, ê³ ê°ì¤‘ì‹œ, ìƒìƒì¶”êµ¬ 6ê°€ì§€ë¡œ ì´ë£¨ì–´ì ¸ ìžˆìŠµë‹ˆë‹¤.'
-    , '4,389', '58,514', 'kpng', 'kpng12','207-85-14660', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/xf7omtfKvQtyaL0phKD5XfDno8RNcHTPWK0k9MUO8tzZm876Bvn6clxGDBRmY_n5xEJKz3S3Qdrm5UokkE7N_3mtiEgxmd237E8u6lXExQ61-FMZXp6ogEC5xZKkl2pSc6vgNs1bsYILWQ6fxuRs-w.svg', 'ë°±ë³µì¸'
-    , 'ë°•ì§€ì˜', 'park@kpng.com', '042-939-5099', '10%, ë³µì§€-30%, 1~3, 30%, ì´ˆëŒ€ì¡¸, 30%, 2ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'KPNG', '´ëÀü±¤¿ª½Ã ´ë´ö±¸ º¢²É±æ 71', 'Á¦Á¶¾÷', '1987-04-01', 'www.kpng.com'
+    , 'KPNGÀÇ ÇÙ½É°¡Ä¡´Â ÀÎÀçÁß½É, µµÀüÁ¤½Å, ¼º°úÁöÇâ, »óÈ£Çù·Â, °í°´Áß½Ã, »ó»ýÃß±¸ 6°¡Áö·Î ÀÌ·ç¾îÁ® ÀÖ½À´Ï´Ù.'
+    , '4,389', '58,514', 'kpng', 'kpng12','207-85-14660', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/xf7omtfKvQtyaL0phKD5XfDno8RNcHTPWK0k9MUO8tzZm876Bvn6clxGDBRmY_n5xEJKz3S3Qdrm5UokkE7N_3mtiEgxmd237E8u6lXExQ61-FMZXp6ogEC5xZKkl2pSc6vgNs1bsYILWQ6fxuRs-w.svg', '¹éº¹ÀÎ'
+    , '¹ÚÁö¿µ', 'park@kpng.com', '042-939-5099', '10%, º¹Áö-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 2³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -333,10 +333,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì—ìŠ¤ì”¨ë°”ì´ì˜¤ì„¼ì„œ', 'ê²½ê¸°ë„ ìˆ˜ì›ì‹œ ì˜í†µêµ¬ ë•ì˜ëŒ€ë¡œ1556ë²ˆê¸¸ 16', 'ì œì¡°ì—…', '2010-12-21', 'www.scbiosensor.co.kr'
-    , 'SC ë°”ì´ì˜¤ì„¼ì„œëŠ” ì‹ ì†í•˜ê³  ì •í™•í•œ ì§ˆë³‘ ì§„ë‹¨ìœ¼ë¡œ ì‚¶ì˜ ì§ˆ í–¥ìƒì— ê³µí—Œí•˜ê³ ìž í•˜ëŠ” ì²´ì™¸ ì§„ë‹¨ ì „ë¬¸ ê¸°ì—…ìž…ë‹ˆë‹¤.'
-    , '611', '29,320', 'scbio', 'scbio12','235-86-13315', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'http://www.sdbiosensor.co.kr/d_html/front/images/logo.png', 'ì´íš¨ê·¼, í—ˆíƒœì˜'
-    , 'í•˜í˜„ì •', 'ha@scbiosensor.com', '031-300-0400', '10%, ê¸‰ì—¬-30%, 1~3, 30%, ëŒ€ì¡¸, 30%, 1ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¿¡½º¾¾¹ÙÀÌ¿À¼¾¼­', '°æ±âµµ ¼ö¿ø½Ã ¿µÅë±¸ ´ö¿µ´ë·Î1556¹ø±æ 16', 'Á¦Á¶¾÷', '2010-12-21', 'www.scbiosensor.co.kr'
+    , 'SC ¹ÙÀÌ¿À¼¾¼­´Â ½Å¼ÓÇÏ°í Á¤È®ÇÑ Áúº´ Áø´ÜÀ¸·Î »îÀÇ Áú Çâ»ó¿¡ °øÇåÇÏ°íÀÚ ÇÏ´Â Ã¼¿Ü Áø´Ü Àü¹® ±â¾÷ÀÔ´Ï´Ù.'
+    , '611', '29,320', 'scbio', 'scbio12','235-86-13315', '»ç¾÷ÀÚµî·ÏÁõ', 'http://www.sdbiosensor.co.kr/d_html/front/images/logo.png', 'ÀÌÈ¿±Ù, ÇãÅÂ¿µ'
+    , 'ÇÏÇöÁ¤', 'ha@scbiosensor.com', '031-300-0400', '10%, ±Þ¿©-30%, 1~3, 30%, ´ëÁ¹, 30%, 1³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -345,10 +345,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'STí…”ë ˆì½¤', 'ì„œìš¸íŠ¹ë³„ì‹œ ì¤‘êµ¬ ì„ì§€ë¡œ 65', 'ì •ë³´í†µì‹ ì—…', '1984-03-29', 'www.sttelecom.com'
-    , 'STí…”ë ˆì½¤ì€ êµ¬ì„±ì›ì˜ í–‰ë³µì„ ê²½ì˜í™œë™ì˜ ê¶ê·¹ì ì¸ ëª©ì ìœ¼ë¡œ ì •ì˜í•˜ê³ , ìžì‚¬ì˜ ICT ê¸°ìˆ ì„ ê¸°ë°˜ìœ¼ë¡œ ê³ ê°ê³¼ ì´í•´ê´€ê³„ìž ë“±ì˜ í–‰ë³µ ì¦ì§„ê³¼ ì‚¬íšŒì˜ ì§€ì†ê°€ëŠ¥í•œ ë°œì „ì„ ìœ„í•´ ë…¸ë ¥í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-    , '5,565', '173,049', 'sttel', 'sttel12','204-81-37225', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/y7te7UlecDtrb0q3dZ_U7tYRGeDL1STcbb8IpnSjGj3xcfCC_Ap8PXUeCs0Cl_-Ds0PNqc-jg-dNJl7Hg9OI4gK9pcNvxhwoJnEzZl9XleDInmcpkgz_THzYItKyiyWrQ-7BkGYdPoJnV7VG7cSvbw.svg', 'ìœ ì˜ìƒ'
-    , 'ì•ˆìœ ì„ ', 'an@sttelecom.com', '02-011-6000', '10%, ì›Œë¼ë²¨-30%, 1~3, 30%, ì´ˆëŒ€ì¡¸, 30%, 2ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'STÅÚ·¹ÄÞ', '¼­¿ïÆ¯º°½Ã Áß±¸ À»Áö·Î 65', 'Á¤º¸Åë½Å¾÷', '1984-03-29', 'www.sttelecom.com'
+    , 'STÅÚ·¹ÄÞÀº ±¸¼º¿øÀÇ Çàº¹À» °æ¿µÈ°µ¿ÀÇ ±Ã±ØÀûÀÎ ¸ñÀûÀ¸·Î Á¤ÀÇÇÏ°í, ÀÚ»çÀÇ ICT ±â¼úÀ» ±â¹ÝÀ¸·Î °í°´°ú ÀÌÇØ°ü°èÀÚ µîÀÇ Çàº¹ ÁõÁø°ú »çÈ¸ÀÇ Áö¼Ó°¡´ÉÇÑ ¹ßÀüÀ» À§ÇØ ³ë·ÂÇÏ°í ÀÖ½À´Ï´Ù.'
+    , '5,565', '173,049', 'sttel', 'sttel12','204-81-37225', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/y7te7UlecDtrb0q3dZ_U7tYRGeDL1STcbb8IpnSjGj3xcfCC_Ap8PXUeCs0Cl_-Ds0PNqc-jg-dNJl7Hg9OI4gK9pcNvxhwoJnEzZl9XleDInmcpkgz_THzYItKyiyWrQ-7BkGYdPoJnV7VG7cSvbw.svg', 'À¯¿µ»ó'
+    , '¾ÈÀ¯¼±', 'an@sttelecom.com', '02-011-6000', '10%, ¿ö¶óº§-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 2³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -357,10 +357,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì‹¬ì„±SDI', 'ê²½ê¸°ë„ ìš©ì¸ì‹œ ê¸°í¥êµ¬ ê³µì„¸ë¡œ 150-20', 'ì œì¡°ì—…', '1970-01-20', 'www.simsungsdi.co.kr'
-    , 'ì‹¬ì„±SDIëŠ” 2002ë…„ë¶€í„° ì§€ì†ê°€ëŠ¥ê²½ì˜ì„ ì¶”ì§„í•˜ë©°, ë³€í™”í•˜ëŠ” ì§€ì†ê°€ëŠ¥ì„± ì´ìŠˆì— ëŠ¥ë™ì ìœ¼ë¡œ ëŒ€ì‘í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-    , '12,160', '201,240', 'simsdi', 'simsdi12','224-81-31282', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/Au2_3qH9o2dgXuLiDtP90gxrtJ__v6WJkoF-fk-Z2ErvIaq2DeiGKZe55KM_YNLSJ8Ac4os5y_eRna_ihSuQGw.svg', 'ìµœìœ¤í˜¸'
-    , 'ì°¨ì˜ˆë¦°', 'cha@simsungsdi.com', '031-8006-3100', '10%, ê¸‰ì—¬-30%, 1~3, 30%, ëŒ€ì¡¸, 30%, 3ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '½É¼ºSDI', '°æ±âµµ ¿ëÀÎ½Ã ±âÈï±¸ °ø¼¼·Î 150-20', 'Á¦Á¶¾÷', '1970-01-20', 'www.simsungsdi.co.kr'
+    , '½É¼ºSDI´Â 2002³âºÎÅÍ Áö¼Ó°¡´É°æ¿µÀ» ÃßÁøÇÏ¸ç, º¯È­ÇÏ´Â Áö¼Ó°¡´É¼º ÀÌ½´¿¡ ´Éµ¿ÀûÀ¸·Î ´ëÀÀÇÏ°í ÀÖ½À´Ï´Ù.'
+    , '12,160', '201,240', 'simsdi', 'simsdi12','224-81-31282', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/Au2_3qH9o2dgXuLiDtP90gxrtJ__v6WJkoF-fk-Z2ErvIaq2DeiGKZe55KM_YNLSJ8Ac4os5y_eRna_ihSuQGw.svg', 'ÃÖÀ±È£'
+    , 'Â÷¿¹¸°', 'cha@simsungsdi.com', '031-8006-3100', '10%, ±Þ¿©-30%, 1~3, 30%, ´ëÁ¹, 30%, 3³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -369,10 +369,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'LZì „ìž', 'ì„œìš¸íŠ¹ë³„ì‹œ ì˜ë“±í¬êµ¬ ì—¬ì˜ëŒ€ë¡œ 128', 'ì œì¡°ì—…', '2002-04-01', 'www.lge.co.kr'
-    , 'LZì „ìžëŠ” Lifes Good ë¸Œëžœë“œ ì² í•™ì„ ë°”íƒ•ìœ¼ë¡œ ê³ ê°ì—ê²Œ ë” ë‚˜ì€ ì‚¶ì„ ì œê³µí•˜ê¸° ìœ„í•´ ìµœê³ ì˜, ì°¨ë³„í™”ëœ, ì„¸ìƒì— ì—†ë˜ ê²½í—˜ì„ ì„ ì‚¬í•˜ê³ ìž í•­ìƒ ë…¸ë ¥í•©ë‹ˆë‹¤.'
-    , '34,082', '834,673', 'lge', 'lge12','207-86-14075', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/Mi28LdTLOp5gaZezn9hVb3ejNhVDkwHgquS_8nlVY3XZkZijnnLY7IX9bLOun7Xn4YbFuu3TqdmMUOMhec0bc6zOiYIwQ3kbMc5dqHnLamFNtLnUgMAXAqNV0glqKNoDXV_HT6bsLIfx5BSmiwZO_g.svg', 'ì¡°ì£¼ì™„, ë°°ë‘ìš©'
-    , 'ì •ëŒ€ìš´', 'jung@lge.com', '02-3777-1114', '10%, ì›Œë¼ë²¨-30%, 1~3, 30%, ëŒ€ì¡¸, 30%, 3ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'LZÀüÀÚ', '¼­¿ïÆ¯º°½Ã ¿µµîÆ÷±¸ ¿©ÀÇ´ë·Î 128', 'Á¦Á¶¾÷', '2002-04-01', 'www.lge.co.kr'
+    , 'LZÀüÀÚ´Â Lifes Good ºê·£µå Ã¶ÇÐÀ» ¹ÙÅÁÀ¸·Î °í°´¿¡°Ô ´õ ³ªÀº »îÀ» Á¦°øÇÏ±â À§ÇØ ÃÖ°íÀÇ, Â÷º°È­µÈ, ¼¼»ó¿¡ ¾ø´ø °æÇèÀ» ¼±»çÇÏ°íÀÚ Ç×»ó ³ë·ÂÇÕ´Ï´Ù.'
+    , '34,082', '834,673', 'lge', 'lge12','207-86-14075', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/Mi28LdTLOp5gaZezn9hVb3ejNhVDkwHgquS_8nlVY3XZkZijnnLY7IX9bLOun7Xn4YbFuu3TqdmMUOMhec0bc6zOiYIwQ3kbMc5dqHnLamFNtLnUgMAXAqNV0glqKNoDXV_HT6bsLIfx5BSmiwZO_g.svg', 'Á¶ÁÖ¿Ï, ¹èµÎ¿ë'
+    , 'Á¤´ë¿î', 'jung@lge.com', '02-3777-1114', '10%, ¿ö¶óº§-30%, 1~3, 30%, ´ëÁ¹, 30%, 3³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -381,10 +381,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ê³ ë ¤ê°€ìŠ¤ê³µì‚¬', 'ëŒ€êµ¬ê´‘ì—­ì‹œ ë™êµ¬ ì²¨ë‹¨ë¡œ 120', 'ì „ê¸°, ê°€ìŠ¤, ì¦ê¸° ë° ìˆ˜ë„ì‚¬ì—…', '1983-08-18', 'www.kogas.or.kr'
-    , 'KOGASëŠ” ì²­ì • ì—ë„ˆì§€ì¸ ì²œì—°ê°€ìŠ¤ì˜ ê³µê¸‰ì„ í†µí•œ êµ­ë¯¼ìƒí™œì˜ íŽ¸ìµ ì¦ì§„ ë° ë³µë¦¬ í–¥ìƒì„ ìœ„í•˜ì—¬ 1983ë…„ 8ì›”ì— ì„¤ë¦½ë˜ì—ˆìŠµë‹ˆë‹¤.'
-    , '4,163', '517,242', 'kogas', 'kogas12','208-82-09434', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/bl8PQnxJwOi0Y-xtlcrrkCp1YbBRpuD7elKP9PTHcxznTqahvwdbTBg7-_OjgycTm2gj-Z-OL9ztwr3jWxiII_zQVUEj3Kxq7A9cFt6mcAgxoeenC9D2MLyWQTfYD_ECkYQH4BY6QEiXj0iwNreMJg.svg', 'ìµœì—°í˜œ'
-    , 'ì±„ì¸ì•„', 'chae@kogas.com', '053-670-0114', '10%, ë³µì§€-30%, 1~3, 30%, ì´ˆëŒ€ì¡¸, 30%, ì‹ ìž…'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '°í·Á°¡½º°ø»ç', '´ë±¸±¤¿ª½Ã µ¿±¸ Ã·´Ü·Î 120', 'Àü±â, °¡½º, Áõ±â ¹× ¼öµµ»ç¾÷', '1983-08-18', 'www.kogas.or.kr'
+    , 'KOGAS´Â Ã»Á¤ ¿¡³ÊÁöÀÎ Ãµ¿¬°¡½ºÀÇ °ø±ÞÀ» ÅëÇÑ ±¹¹Î»ýÈ°ÀÇ ÆíÀÍ ÁõÁø ¹× º¹¸® Çâ»óÀ» À§ÇÏ¿© 1983³â 8¿ù¿¡ ¼³¸³µÇ¾ú½À´Ï´Ù.'
+    , '4,163', '517,242', 'kogas', 'kogas12','208-82-09434', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/bl8PQnxJwOi0Y-xtlcrrkCp1YbBRpuD7elKP9PTHcxznTqahvwdbTBg7-_OjgycTm2gj-Z-OL9ztwr3jWxiII_zQVUEj3Kxq7A9cFt6mcAgxoeenC9D2MLyWQTfYD_ECkYQH4BY6QEiXj0iwNreMJg.svg', 'ÃÖ¿¬Çý'
+    , 'Ã¤ÀÎ¾Æ', 'chae@kogas.com', '053-670-0114', '10%, º¹Áö-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, ½ÅÀÔ'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -393,10 +393,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'KP', 'ê²½ê¸°ë„ ì„±ë‚¨ì‹œ ë¶„ë‹¹êµ¬ ë¶ˆì •ë¡œ 90', 'ì •ë³´í†µì‹ ì—…', '1981-12-10', 'www.corp.kp.com'
-    , 'KPëŠ” AI, BigData, Cloudë¥¼ ê¸°ë°˜ìœ¼ë¡œ ê³ ê°ì˜ ì‚¶ì˜ ë³€í™”ì™€ ë‹¤ë¥¸ ì‚°ì—…ì˜ í˜ì‹ ì„ ë¦¬ë”©í•˜ëŠ” ë””ì§€í„¸ í”Œëž«í¼ ê¸°ì—…(DIGICO)ìœ¼ë¡œ ë³€í™”í•˜ê³  ì„±ìž¥í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-    , '20,019', '256,500', 'kp', 'kp12','202-81-42945', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/zywEhZzGccurOVdse57MAoOU8T-OA4vsJ8llAobKBXpa3mDrPUwx2DVXjtUSvfdXf_lFbuvkKijskDeY91ySRPEzEwMjx7vLv55mkjMJufkZ8PlZ3BsobPMy_N4w1CKLW6aKeZL66VYnObgPh1OE8w.svg', 'ê¹€ì˜ì„­'
-    , 'ê°•ì•ˆë‚˜', 'kang@kp.com', '031-818-8034', '10%, ê·¼ë¬´í™˜ê²½-30%, 1~3, 30%, ê³ ì¡¸, 30%, 1ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'KP', '°æ±âµµ ¼º³²½Ã ºÐ´ç±¸ ºÒÁ¤·Î 90', 'Á¤º¸Åë½Å¾÷', '1981-12-10', 'www.corp.kp.com'
+    , 'KP´Â AI, BigData, Cloud¸¦ ±â¹ÝÀ¸·Î °í°´ÀÇ »îÀÇ º¯È­¿Í ´Ù¸¥ »ê¾÷ÀÇ Çõ½ÅÀ» ¸®µùÇÏ´Â µðÁöÅÐ ÇÃ·§Æû ±â¾÷(DIGICO)À¸·Î º¯È­ÇÏ°í ¼ºÀåÇÏ°í ÀÖ½À´Ï´Ù.'
+    , '20,019', '256,500', 'kp', 'kp12','202-81-42945', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/zywEhZzGccurOVdse57MAoOU8T-OA4vsJ8llAobKBXpa3mDrPUwx2DVXjtUSvfdXf_lFbuvkKijskDeY91ySRPEzEwMjx7vLv55mkjMJufkZ8PlZ3BsobPMy_N4w1CKLW6aKeZL66VYnObgPh1OE8w.svg', '±è¿µ¼·'
+    , '°­¾È³ª', 'kang@kp.com', '031-818-8034', '10%, ±Ù¹«È¯°æ-30%, 1~3, 30%, °íÁ¹, 30%, 1³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -405,10 +405,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'LZ', 'ì„œìš¸íŠ¹ë³„ì‹œ ì˜ë“±í¬êµ¬ ì—¬ì˜ëŒ€ë¡œ 128', 'ê¸ˆìœµ ë° ë³´í—˜ì—…', '1947-01-05', 'www.lz.co.kr'
-    , 'LZëŠ” ê²½ì˜ì´ë…ì¸ ê³ ê°ì„ ìœ„í•œ ê°€ì¹˜ì°½ì¡°ì™€ ì¸ê°„ì¡´ì¤‘ì˜ ê²½ì˜ì„ LZì˜ í–‰ë™ë°©ì‹ì¸ ì •ë„ê²½ì˜ìœ¼ë¡œ ì‹¤ì²œí•¨ìœ¼ë¡œì¨ LZì˜ ë¹„ì „ì¸ ì¼ë“±LZë¥¼ ë‹¬ì„±í•˜ê³ ìž í•©ë‹ˆë‹¤.'
-    , '182', '71,859', 'lz', 'lz12','207-86-14076', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/65KNlTnk_tZxNUeZ8gTey2QILTjlCJmbmfkbKd8zKjVHUHr00bP-dD3WebFarQhjtye2vp7kDYnC-whK_MkcxLfw5NV4kS3mbNoyPKfyXkRL79dP9CJiKauujYdmX_k-droVNUWgwuGx0heBf1iqeQ.svg', 'êµ¬ê´‘ëª¨, ê¶Œë´‰ì„'
-    , 'ê¹€ì§€í¬', 'hee@lz.com', '02-3777-1115', '10%, ê²½ì˜ì§„-30%, 1~3, 30%, ëŒ€ì¡¸, 30%, 3ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'LZ', '¼­¿ïÆ¯º°½Ã ¿µµîÆ÷±¸ ¿©ÀÇ´ë·Î 128', '±ÝÀ¶ ¹× º¸Çè¾÷', '1947-01-05', 'www.lz.co.kr'
+    , 'LZ´Â °æ¿µÀÌ³äÀÎ °í°´À» À§ÇÑ °¡Ä¡Ã¢Á¶¿Í ÀÎ°£Á¸ÁßÀÇ °æ¿µÀ» LZÀÇ Çàµ¿¹æ½ÄÀÎ Á¤µµ°æ¿µÀ¸·Î ½ÇÃµÇÔÀ¸·Î½á LZÀÇ ºñÀüÀÎ ÀÏµîLZ¸¦ ´Þ¼ºÇÏ°íÀÚ ÇÕ´Ï´Ù.'
+    , '182', '71,859', 'lz', 'lz12','207-86-14076', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/65KNlTnk_tZxNUeZ8gTey2QILTjlCJmbmfkbKd8zKjVHUHr00bP-dD3WebFarQhjtye2vp7kDYnC-whK_MkcxLfw5NV4kS3mbNoyPKfyXkRL79dP9CJiKauujYdmX_k-droVNUWgwuGx0heBf1iqeQ.svg', '±¸±¤¸ð, ±ÇºÀ¼®'
+    , '±èÁöÈñ', 'hee@lz.com', '02-3777-1115', '10%, °æ¿µÁø-30%, 1~3, 30%, ´ëÁ¹, 30%, 3³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -417,10 +417,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'LZì´ë…¸í…', 'ì„œìš¸íŠ¹ë³„ì‹œ ê°•ì„œêµ¬ ë§ˆê³¡ì¤‘ì•™10ë¡œ 30', 'ì œì¡°ì—…', '1976-02-24', 'www.lzinnotek.com'
-    , 'LZì´ë…¸í…ì€ 1970ë…„ ì„¤ë¦½ëœ ëŒ€í•œë¯¼êµ­ ìµœì´ˆì˜ ì¢…í•© ì „ìžë¶€í’ˆê¸°ì—…ìœ¼ë¡œ, ëŠìž„ì—†ëŠ” ê¸°ìˆ  ê°œë°œê³¼ í”„ë¡œì„¸ìŠ¤ í˜ì‹ ì„ í†µí•´ ì„¸ê³„ ì¼ë¥˜ ìƒí’ˆì„ ì§‘ì¤‘ ìœ¡ì„±í•˜ë©° ì˜¤ëŠ˜ë‚  ì„¸ê³„ ì‹œìž¥ì„ ì„ ë„í•˜ëŠ” ê¸€ë¡œë²Œ ì†Œìž¬Â·ë¶€í’ˆê¸°ì—…ìœ¼ë¡œ ì„±ìž¥í•˜ì˜€ìŠµë‹ˆë‹¤.'
-    , '13,107', '195,894', 'lzinno', 'lzinno12','207-86-14077', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/OyYVWZ788PwDGYhOUDIMisrcb5lzFzWkWQTpNCoIWeiDZ0fHZSPMp7r39-RGDPvyLMtNHVcqNbNriflq2N5VinMOYnJVI8E7yfje_zGAQ0_hJqS0BD3DPwIWO5OPxtENtbUHmgSPLquUA0uT65juTw.svg', 'ì •ì² ë™'
-    , 'ì´ì°¨ëŒ', 'lee@lzinnotek.com', '02-3777-1116', '10%, ê¸‰ì—¬-30%, 1~3, 30%, ì´ˆëŒ€ì¡¸, 30%, 2ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'LZÀÌ³ëÅØ', '¼­¿ïÆ¯º°½Ã °­¼­±¸ ¸¶°îÁß¾Ó10·Î 30', 'Á¦Á¶¾÷', '1976-02-24', 'www.lzinnotek.com'
+    , 'LZÀÌ³ëÅØÀº 1970³â ¼³¸³µÈ ´ëÇÑ¹Î±¹ ÃÖÃÊÀÇ Á¾ÇÕ ÀüÀÚºÎÇ°±â¾÷À¸·Î, ²÷ÀÓ¾ø´Â ±â¼ú °³¹ß°ú ÇÁ·Î¼¼½º Çõ½ÅÀ» ÅëÇØ ¼¼°è ÀÏ·ù »óÇ°À» ÁýÁß À°¼ºÇÏ¸ç ¿À´Ã³¯ ¼¼°è ½ÃÀåÀ» ¼±µµÇÏ´Â ±Û·Î¹ú ¼ÒÀç¡¤ºÎÇ°±â¾÷À¸·Î ¼ºÀåÇÏ¿´½À´Ï´Ù.'
+    , '13,107', '195,894', 'lzinno', 'lzinno12','207-86-14077', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/OyYVWZ788PwDGYhOUDIMisrcb5lzFzWkWQTpNCoIWeiDZ0fHZSPMp7r39-RGDPvyLMtNHVcqNbNriflq2N5VinMOYnJVI8E7yfje_zGAQ0_hJqS0BD3DPwIWO5OPxtENtbUHmgSPLquUA0uT65juTw.svg', 'Á¤Ã¶µ¿'
+    , 'ÀÌÂ÷µ¹', 'lee@lzinnotek.com', '02-3777-1116', '10%, ±Þ¿©-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 2³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -429,10 +429,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì‹¬ì„±ì „ê¸°', 'ê²½ê¸°ë„ ìˆ˜ì›ì‹œ ì˜í†µêµ¬ ë§¤ì˜ë¡œ 150', 'ì œì¡°ì—…', '1973-08-08', 'www.simsungsem.com'
-    , '1973ë…„ì— ì°½ë¦½ëœ ì‹¬ì„±ì „ê¸°ëŠ” í•œêµ­ì—ì„œ ë¿ë§Œ ì•„ë‹ˆë¼ ì „ì„¸ê³„ì ìœ¼ë¡œ í•µì‹¬ ì „ìžë¶€í’ˆì„ ê°œë°œÂ·ìƒì‚°í•˜ëŠ” ê¸°ì—…ìœ¼ë¡œ ë°œì „í•´ ì™”ìŠµë‹ˆë‹¤.'
-    , '11,989', '94,245', 'simsem', 'simsem12','224-81-00979', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/O3095NGJuVmhDxLC26zkqm8RfGAQbhvf5PP18p80_njZpDUDyVozzVRLs4VcrtmHJO1NX-8JrUvR4nE8a8KFPcEDMIc7Q36vykqE5iYGM5OBo9ziQoj8-gls23iNtTwGmrcOuDxiIP0AUTnVOhgSCw.svg', 'ìž¥ë•í˜„'
-    , 'ë°•ì§€ìœ¤', 'park@simsungsem.com', '031-210-5114', '10%, ê¸‰ì—¬-30%, 1~3, 30%, ì´ˆëŒ€ì¡¸, 30%, 1ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '½É¼ºÀü±â', '°æ±âµµ ¼ö¿ø½Ã ¿µÅë±¸ ¸Å¿µ·Î 150', 'Á¦Á¶¾÷', '1973-08-08', 'www.simsungsem.com'
+    , '1973³â¿¡ Ã¢¸³µÈ ½É¼ºÀü±â´Â ÇÑ±¹¿¡¼­ »Ó¸¸ ¾Æ´Ï¶ó Àü¼¼°èÀûÀ¸·Î ÇÙ½É ÀüÀÚºÎÇ°À» °³¹ß¡¤»ý»êÇÏ´Â ±â¾÷À¸·Î ¹ßÀüÇØ ¿Ô½À´Ï´Ù.'
+    , '11,989', '94,245', 'simsem', 'simsem12','224-81-00979', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/O3095NGJuVmhDxLC26zkqm8RfGAQbhvf5PP18p80_njZpDUDyVozzVRLs4VcrtmHJO1NX-8JrUvR4nE8a8KFPcEDMIc7Q36vykqE5iYGM5OBo9ziQoj8-gls23iNtTwGmrcOuDxiIP0AUTnVOhgSCw.svg', 'Àå´öÇö'
+    , '¹ÚÁöÀ±', 'park@simsungsem.com', '031-210-5114', '10%, ±Þ¿©-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 1³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -441,10 +441,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì‹¬ì„±ë°”ì´ì˜¤ë¡œì§ìŠ¤', 'ì¸ì²œê´‘ì—­ì‹œ ì—°ìˆ˜êµ¬ ì†¡ë„ë°”ì´ì˜¤ëŒ€ë¡œ 300', 'ì œì¡°ì—…', '2011-04-22', 'www.simsungbiologics.com'
-    , 'ìƒëª…ì„ í–¥í•œ ì˜ì§€ëŠ” ì‹¬ì„±ë°”ì´ì˜¤ë¡œì§ìŠ¤ì˜ DNAì— ë‚´ìž¬ëœ ì •ì²´ì„±ì´ìž ë” ë‚˜ì€ ì‚¶ì„ í–¥í•œ ìš°ë¦¬ì˜ ì•½ì†ìž…ë‹ˆë‹¤. ë” ê±´ê°•í•œ ì‚¶ì„ ìœ„í•´ ë©ˆì¶”ì§€ ì•ŠëŠ” ë„ì „ì€ ì‹¬ì„±ë°”ì´ì˜¤ë¡œì§ìŠ¤ë§Œì˜ DNAì—ì„œ ë¹„ë¡¯ë©ë‹ˆë‹¤.'
-    , '4,519', '30,012', 'simbio', 'simbio12','231-86-27632', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/2KzB71XkFo1qgzlsnjEoybJVknWPVXKiwx19A51g63A4--IfC0MXifmjDKS30Hb7oaGLzhG4qYcmygUXO8rQ43g2oP113-dMYOlAABLBdgplCYBeqqOhkPevULzJgd1uKhuaZjFEB_msP4tEpib8zg.svg', 'ìž„ì¡´ì¢…ë³´'
-    , 'ì–‘í˜„ì£¼', 'yang@simsungbiologics.com', '032-455-3114', '10%, ë³µì§€-30%, 1~3, 30%, ëŒ€ì¡¸, 30%, 1ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '½É¼º¹ÙÀÌ¿À·ÎÁ÷½º', 'ÀÎÃµ±¤¿ª½Ã ¿¬¼ö±¸ ¼Ûµµ¹ÙÀÌ¿À´ë·Î 300', 'Á¦Á¶¾÷', '2011-04-22', 'www.simsungbiologics.com'
+    , '»ý¸íÀ» ÇâÇÑ ÀÇÁö´Â ½É¼º¹ÙÀÌ¿À·ÎÁ÷½ºÀÇ DNA¿¡ ³»ÀçµÈ Á¤Ã¼¼ºÀÌÀÚ ´õ ³ªÀº »îÀ» ÇâÇÑ ¿ì¸®ÀÇ ¾à¼ÓÀÔ´Ï´Ù. ´õ °Ç°­ÇÑ »îÀ» À§ÇØ ¸ØÃßÁö ¾Ê´Â µµÀüÀº ½É¼º¹ÙÀÌ¿À·ÎÁ÷½º¸¸ÀÇ DNA¿¡¼­ ºñ·ÔµË´Ï´Ù.'
+    , '4,519', '30,012', 'simbio', 'simbio12','231-86-27632', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/2KzB71XkFo1qgzlsnjEoybJVknWPVXKiwx19A51g63A4--IfC0MXifmjDKS30Hb7oaGLzhG4qYcmygUXO8rQ43g2oP113-dMYOlAABLBdgplCYBeqqOhkPevULzJgd1uKhuaZjFEB_msP4tEpib8zg.svg', 'ÀÓÁ¸Á¾º¸'
+    , '¾çÇöÁÖ', 'yang@simsungbiologics.com', '032-455-3114', '10%, º¹Áö-30%, 1~3, 30%, ´ëÁ¹, 30%, 1³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -453,10 +453,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'íŒì˜¤ì…˜', 'ì„œìš¸íŠ¹ë³„ì‹œ ì¢…ë¡œêµ¬ ì¢…ë¡œ5ê¸¸ 7', 'ìš´ìˆ˜ì—…', '1966-05-28', 'www.panocean.com'
-    , 'ëŒ€í•œë¯¼êµ­ì„ ëŒ€í‘œí•˜ëŠ” ê¸€ë¡œë²Œ í•´ìš´ì„ ì‚¬ íŒì˜¤ì…˜ì€ ì£¼ë ¥ì‚¬ì—…ì¸ ë²Œí¬ì„  ì„œë¹„ìŠ¤ë¿ë§Œ ì•„ë‹ˆë¼ ì»¨í…Œì´ë„ˆì„ , íƒ±ì»¤ì„ , LNGì„ , ì¤‘ëŸ‰ë¬¼ìš´ë°˜ì„  ë“± ì¢…í•© ì„ ì‚¬ë¡œì„œ ì„¸ê³„ì ì¸ ëª…ì„±ê³¼ ì‹ ë¢°ë¥¼ ì–»ê³  ìžˆìŠµë‹ˆë‹¤.'
-    , '1,132', '57,004', 'pan', 'pan12','204-81-19101', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/bDC80v_QeLXFcq_y9R3bIVj6cQVKI3y0xvI1SQZSutVLmzGL_WmHW5xhpftrfiwfL903M2RUG_7rb6rIidW4p-lg9wxS6XpM2VF2rt4YUG35drtxeeXmXWiC9IF313emTedUHOlkvfeFSWyCWFA6-Q.svg', 'ê¹€í™êµ­, ì•ˆì¤‘í˜¸'
-    , 'ì´í˜œì§€', 'lhj@panocean.com', '02-316-5114', '10%, ê²½ì˜ì§„-30%, 1~3, 30%, ì´ˆëŒ€ì¡¸, 30%, 3ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÆÇ¿À¼Ç', '¼­¿ïÆ¯º°½Ã Á¾·Î±¸ Á¾·Î5±æ 7', '¿î¼ö¾÷', '1966-05-28', 'www.panocean.com'
+    , '´ëÇÑ¹Î±¹À» ´ëÇ¥ÇÏ´Â ±Û·Î¹ú ÇØ¿î¼±»ç ÆÇ¿À¼ÇÀº ÁÖ·Â»ç¾÷ÀÎ ¹úÅ©¼± ¼­ºñ½º»Ó¸¸ ¾Æ´Ï¶ó ÄÁÅ×ÀÌ³Ê¼±, ÅÊÄ¿¼±, LNG¼±, Áß·®¹°¿î¹Ý¼± µî Á¾ÇÕ ¼±»ç·Î¼­ ¼¼°èÀûÀÎ ¸í¼º°ú ½Å·Ú¸¦ ¾ò°í ÀÖ½À´Ï´Ù.'
+    , '1,132', '57,004', 'pan', 'pan12','204-81-19101', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/bDC80v_QeLXFcq_y9R3bIVj6cQVKI3y0xvI1SQZSutVLmzGL_WmHW5xhpftrfiwfL903M2RUG_7rb6rIidW4p-lg9wxS6XpM2VF2rt4YUG35drtxeeXmXWiC9IF313emTedUHOlkvfeFSWyCWFA6-Q.svg', '±èÈ«±¹, ¾ÈÁßÈ£'
+    , 'ÀÌÇýÁö', 'lhj@panocean.com', '02-316-5114', '10%, °æ¿µÁø-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 3³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -465,10 +465,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ê³ ë ¤ê¸ˆìœµì§€ì£¼', 'ì„œìš¸íŠ¹ë³„ì‹œ ì˜ë“±í¬êµ¬ ì˜ì‚¬ë‹¹ëŒ€ë¡œ 88', 'ê¸ˆìœµì—…', '2003-01-10', 'www.koreainvestment.com'
-    , 'ê³ ë ¤íˆ¬ìžê¸ˆìœµê·¸ë£¹ì˜ ê²½ì˜ì´ë…ì€ ëª¨ë‘ ì‚¬ëžŒì„ í–¥í•˜ê³  ìžˆìŠµë‹ˆë‹¤. ê¸ˆìœµì€ ì‚¬ëžŒê³¼ ì‚¬ëžŒê°„ì˜ ë¬´í˜•ì˜ ì‹ ë¢°ë¥¼ ë°”íƒ•ìœ¼ë¡œ ì´ë¤„ì§€ê³ , ìš°ë¦¬ì˜ ë¹„ì¦ˆë‹ˆìŠ¤ë„ ì‹œìŠ¤í…œì´ ì•„ë‹Œ ì‚¬ëžŒì— ì˜í•´ ì„±íŒ¨ê°€ ê²°ì •ë˜ê¸° ë•Œë¬¸ìž…ë‹ˆë‹¤.'
-    , '55', '250,281', 'koinvest', 'koinvest12','214-87-26478', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/l1BFvV-opSZO0ZwAQGhCn4xUNIplYxzNVym4bb3bvp-DWZxWWMpSrPOdEeyEO7U7XcOfqDRaRzl1_KW-CJTlInskV1cJTZSfE-hekqbCsWARRskS2dWtWooeVsJ2NdZeTXmRS3VTnV9L19cAJZHpOQ.webp', 'ê¹€ë‚¨êµ¬'
-    , 'ê°•ê¸°ë°±', 'gb@koreainvestment.com', '02-3276-6400', '10%, ì›Œë¼ë²¨-30%, 1~3, 30%, ì´ˆëŒ€ì¡¸, 30%, 3ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '°í·Á±ÝÀ¶ÁöÁÖ', '¼­¿ïÆ¯º°½Ã ¿µµîÆ÷±¸ ÀÇ»ç´ç´ë·Î 88', '±ÝÀ¶¾÷', '2003-01-10', 'www.koreainvestment.com'
+    , '°í·ÁÅõÀÚ±ÝÀ¶±×·ìÀÇ °æ¿µÀÌ³äÀº ¸ðµÎ »ç¶÷À» ÇâÇÏ°í ÀÖ½À´Ï´Ù. ±ÝÀ¶Àº »ç¶÷°ú »ç¶÷°£ÀÇ ¹«ÇüÀÇ ½Å·Ú¸¦ ¹ÙÅÁÀ¸·Î ÀÌ·ïÁö°í, ¿ì¸®ÀÇ ºñÁî´Ï½ºµµ ½Ã½ºÅÛÀÌ ¾Æ´Ñ »ç¶÷¿¡ ÀÇÇØ ¼ºÆÐ°¡ °áÁ¤µÇ±â ¶§¹®ÀÔ´Ï´Ù.'
+    , '55', '250,281', 'koinvest', 'koinvest12','214-87-26478', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/l1BFvV-opSZO0ZwAQGhCn4xUNIplYxzNVym4bb3bvp-DWZxWWMpSrPOdEeyEO7U7XcOfqDRaRzl1_KW-CJTlInskV1cJTZSfE-hekqbCsWARRskS2dWtWooeVsJ2NdZeTXmRS3VTnV9L19cAJZHpOQ.webp', '±è³²±¸'
+    , '°­±â¹é', 'gb@koreainvestment.com', '02-3276-6400', '10%, ¿ö¶óº§-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 3³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -477,10 +477,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'LZìœ í”ŒëŸ¬ìŠ¤', 'ì„œìš¸íŠ¹ë³„ì‹œ ìš©ì‚°êµ¬ í•œê°•ëŒ€ë¡œ 32', 'ì •ë³´í†µì‹ ì—…', '1996-07-11', 'www.lzuplus.com'
-    , 'LZìœ í”ŒëŸ¬ìŠ¤ëŠ” 1996ë…„ 7ì›” 11ì¼ ì„¤ë¦½ ì´ëž˜ í˜„ìž¬ê¹Œì§€ ê³ ê°ì˜ ì‚¶ì— ì˜ë¯¸ ìžˆëŠ” ë³€í™”ë¥¼ ë§Œë“¤ê¸° ìœ„í•´ ë…¸ë ¥í•´ ì™”ìŠµë‹ˆë‹¤. 5G ë° IoT ì‹œëŒ€ì—ë„ ê³ ê°ì—ê²Œ ì—¬ìœ ì™€ í–‰ë³µ, íŽ¸ì˜ë¥¼ ê°€ì ¸ë‹¤ ì¤„ ìƒˆë¡œìš´ ìƒí™œ ê°€ì¹˜ë¥¼ ë§Œë“¤ì–´ ë‚˜ê°€ë„ë¡ ìµœì„ ì„ ë‹¤í•˜ê² ìŠµë‹ˆë‹¤.'
-    , '10,626', '139,059', 'lzuplus', 'lzuplus12','220-81-39938', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/6w14alNconcjqrXSUAux1tHS56eRseh8dsu6sYc3iw35VsdtkI06zxfvA5AXwkd_ZJbysy9bjX4R14FIgR1MYw.svg', 'í™©í˜„ì‹'
-    , 'ê¹€í•˜ì§„', 'hajin@lzuplus.com', '02-1554-0010', '10%, ê·¼ë¬´í™˜ê²½-30%, 1~3, 30%, ê³ ì¡¸, 30%, 3ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'LZÀ¯ÇÃ·¯½º', '¼­¿ïÆ¯º°½Ã ¿ë»ê±¸ ÇÑ°­´ë·Î 32', 'Á¤º¸Åë½Å¾÷', '1996-07-11', 'www.lzuplus.com'
+    , 'LZÀ¯ÇÃ·¯½º´Â 1996³â 7¿ù 11ÀÏ ¼³¸³ ÀÌ·¡ ÇöÀç±îÁö °í°´ÀÇ »î¿¡ ÀÇ¹Ì ÀÖ´Â º¯È­¸¦ ¸¸µé±â À§ÇØ ³ë·ÂÇØ ¿Ô½À´Ï´Ù. 5G ¹× IoT ½Ã´ë¿¡µµ °í°´¿¡°Ô ¿©À¯¿Í Çàº¹, ÆíÀÇ¸¦ °¡Á®´Ù ÁÙ »õ·Î¿î »ýÈ° °¡Ä¡¸¦ ¸¸µé¾î ³ª°¡µµ·Ï ÃÖ¼±À» ´ÙÇÏ°Ú½À´Ï´Ù.'
+    , '10,626', '139,059', 'lzuplus', 'lzuplus12','220-81-39938', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/6w14alNconcjqrXSUAux1tHS56eRseh8dsu6sYc3iw35VsdtkI06zxfvA5AXwkd_ZJbysy9bjX4R14FIgR1MYw.svg', 'È²Çö½Ä'
+    , '±èÇÏÁø', 'hajin@lzuplus.com', '02-1554-0010', '10%, ±Ù¹«È¯°æ-30%, 1~3, 30%, °íÁ¹, 30%, 3³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -489,10 +489,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì½”ë¦¬ì•„ì•„ì—°', 'ì„œìš¸íŠ¹ë³„ì‹œ ê°•ë‚¨êµ¬ ê°•ë‚¨ëŒ€ë¡œ 542', 'ì œì¡°ì—…', '1974-08-01', 'www.koreazinc.co.kr'
-    , 'ì½”ë¦¬ì•„ì•„ì—°ì€ ì¹œí™˜ê²½ ê°€ì¹˜ ì¶”êµ¬ì™€ ë…ë³´ì ì¸ ê¸°ìˆ  ê²½ìŸë ¥ìœ¼ë¡œ ì§€ì†ê°€ëŠ¥í•œ ë¯¸ëž˜ë¥¼ ì—´ì–´ê°€ê³  ìžˆìŠµë‹ˆë‹¤. ë³´ë‹¤ ì‚´ê¸° ì¢‹ì€ ì‚¬íšŒ, ë” í–‰ë³µí•œ ì„¸ìƒì„ ë§Œë“¤ì–´ ê°‘ë‹ˆë‹¤.'
-    , '1,830', '112,193', 'kozinc', 'kozinc12','211-81-11260', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/PAvM7vc67plb0OM7Z3hyA95OiWWUJatFwXijg8uvIihgwVPYDI_JdAb-t19JCqPpHR3npb7uA7zBnW9PO4lG6kUgfvWI0MaJV_YY0J2txDUd2uJkMhv31jzmhNa6jFyfp88QUOPx8giOHwItkuNYaA.webp', 'ìµœìœ¤ë²”, ë°•ê¸°ë•'
-    , 'ìµœìœ¤ê¸°', 'yun@koreazinc.com', '02-519-3416', '10%, ì›Œë¼ë²¨-30%, 1~3, 30%, ì´ˆëŒ€ì¡¸, 30%, 1ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÄÚ¸®¾Æ¾Æ¿¬', '¼­¿ïÆ¯º°½Ã °­³²±¸ °­³²´ë·Î 542', 'Á¦Á¶¾÷', '1974-08-01', 'www.koreazinc.co.kr'
+    , 'ÄÚ¸®¾Æ¾Æ¿¬Àº Ä£È¯°æ °¡Ä¡ Ãß±¸¿Í µ¶º¸ÀûÀÎ ±â¼ú °æÀï·ÂÀ¸·Î Áö¼Ó°¡´ÉÇÑ ¹Ì·¡¸¦ ¿­¾î°¡°í ÀÖ½À´Ï´Ù. º¸´Ù »ì±â ÁÁÀº »çÈ¸, ´õ Çàº¹ÇÑ ¼¼»óÀ» ¸¸µé¾î °©´Ï´Ù.'
+    , '1,830', '112,193', 'kozinc', 'kozinc12','211-81-11260', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/PAvM7vc67plb0OM7Z3hyA95OiWWUJatFwXijg8uvIihgwVPYDI_JdAb-t19JCqPpHR3npb7uA7zBnW9PO4lG6kUgfvWI0MaJV_YY0J2txDUd2uJkMhv31jzmhNa6jFyfp88QUOPx8giOHwItkuNYaA.webp', 'ÃÖÀ±¹ü, ¹Ú±â´ö'
+    , 'ÃÖÀ±±â', 'yun@koreazinc.com', '02-519-3416', '10%, ¿ö¶óº§-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 1³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -501,10 +501,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì‹¬ì„±ì¹´ë“œ', 'ì„œìš¸íŠ¹ë³„ì‹œ ì¤‘êµ¬ ì„¸ì¢…ëŒ€ë¡œ 67', 'ê¸ˆìœµì—…', '1983-03-24', 'www.simsungcard.com'
-    , 'ì‹¬ì„±ì¹´ë“œì˜ ë³¸ì§ˆì  ê°€ì¹˜ì¸ ì‹ ë¢°ë¥¼ ë”ìš± ê°•í™”í•˜ì—¬ ì¹´ë“œì—…ì—ì„œ ì¼ë¥˜ë¥¼ ë‹¬ì„±í•˜ê³  ì¹´ë“œì—…ì„ ë„˜ì–´ ì‹ ë¢°ì˜ ì„¸ìƒì„ ë§Œë“¤ê² ìŠµë‹ˆë‹¤.'
-    , '1,933', '36,416', 'simcard', 'simcard12','202-81-45602', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/jNkZFxheVRJXXa4yB2RxZlGn_lqtIbq-DfTdAEDKoMRO05ClzDDKwL3guWll9IYhJ3t-OA-ERF8-PYCOfGIyTsonBf4IDufxG7kL-qrfdRSN1va08Ks75FG4RXjH1my2I6rdlwkcdTuY42w9oe9ixA.svg', 'ê¹€ëŒ€í™˜'
-    , 'ë°•ì°¬í¬', 'chan@simsungcard.com', '02-758-7315', '10%, ë³µì§€-30%, 1~3, 30%, ì´ˆëŒ€ì¡¸, 30%, 1ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '½É¼ºÄ«µå', '¼­¿ïÆ¯º°½Ã Áß±¸ ¼¼Á¾´ë·Î 67', '±ÝÀ¶¾÷', '1983-03-24', 'www.simsungcard.com'
+    , '½É¼ºÄ«µåÀÇ º»ÁúÀû °¡Ä¡ÀÎ ½Å·Ú¸¦ ´õ¿í °­È­ÇÏ¿© Ä«µå¾÷¿¡¼­ ÀÏ·ù¸¦ ´Þ¼ºÇÏ°í Ä«µå¾÷À» ³Ñ¾î ½Å·ÚÀÇ ¼¼»óÀ» ¸¸µé°Ú½À´Ï´Ù.'
+    , '1,933', '36,416', 'simcard', 'simcard12','202-81-45602', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/jNkZFxheVRJXXa4yB2RxZlGn_lqtIbq-DfTdAEDKoMRO05ClzDDKwL3guWll9IYhJ3t-OA-ERF8-PYCOfGIyTsonBf4IDufxG7kL-qrfdRSN1va08Ks75FG4RXjH1my2I6rdlwkcdTuY42w9oe9ixA.svg', '±è´ëÈ¯'
+    , '¹ÚÂùÈñ', 'chan@simsungcard.com', '02-758-7315', '10%, º¹Áö-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 1³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -513,10 +513,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PASSWORD, COMPANY_CODE, COMPANY_LICENSE, COMPANY_LOGO, COMPANY_PRESIDENT_NAME
     , COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL, COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER
     , PERMISSION,COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì‹¬ì„±ìƒëª…', 'ì„œìš¸íŠ¹ë³„ì‹œ ì„œì´ˆêµ¬ ì„œì´ˆëŒ€ë¡œ74ê¸¸ 11', 'ê¸ˆìœµ ë° ë³´í—˜ì—…', '1957-04-04', 'www.simsunglife.com'
-    , 'ë³´í—˜ì„ ë„˜ì–´, ê³ ê°ì˜ ë¯¸ëž˜ë¥¼ ì§€í‚¤ëŠ” ì¸ìƒê¸ˆìœµíŒŒíŠ¸ë„ˆ. ì‚¬ëž‘ì„ ë” í° ì‚¬ëž‘ìœ¼ë¡œ ë§Œë“œëŠ” ì‹¬ì„±ìƒëª…ì´ ë˜ê² ìŠµë‹ˆë‹¤.'
-    , '5,148', '403,309', 'simlife', 'simlife12','204-81-26688', 'ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/6IaPX4UQku15dnFoUyNq9bBYrA9Z9b-CTsn1NUByGafvPD9EWyHssmfYSUJPZtF4ZUqXWd937YtZ6xfs6QXG4RVDzHYWsGiG_XBzrnhyQrReF42DKqesW5vLlfsf2ss78N5cAfDSVBmML0B4zmxbKg.svg', 'ì „ì˜ë¬µ'
-    , 'ìž„ì§„ì˜', 'lim@simsunglife.com', '02-2259-7552', '10%, ê·¼ë¬´í™˜ê²½-30%, 1~3, 30%, ì´ˆëŒ€ì¡¸, 30%, 1ë…„ì´ìƒ'
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '½É¼º»ý¸í', '¼­¿ïÆ¯º°½Ã ¼­ÃÊ±¸ ¼­ÃÊ´ë·Î74±æ 11', '±ÝÀ¶ ¹× º¸Çè¾÷', '1957-04-04', 'www.simsunglife.com'
+    , 'º¸ÇèÀ» ³Ñ¾î, °í°´ÀÇ ¹Ì·¡¸¦ ÁöÅ°´Â ÀÎ»ý±ÝÀ¶ÆÄÆ®³Ê. »ç¶ûÀ» ´õ Å« »ç¶ûÀ¸·Î ¸¸µå´Â ½É¼º»ý¸íÀÌ µÇ°Ú½À´Ï´Ù.'
+    , '5,148', '403,309', 'simlife', 'simlife12','204-81-26688', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/6IaPX4UQku15dnFoUyNq9bBYrA9Z9b-CTsn1NUByGafvPD9EWyHssmfYSUJPZtF4ZUqXWd937YtZ6xfs6QXG4RVDzHYWsGiG_XBzrnhyQrReF42DKqesW5vLlfsf2ss78N5cAfDSVBmML0B4zmxbKg.svg', 'Àü¿µ¹¬'
+    , 'ÀÓÁø¿µ', 'lim@simsunglife.com', '02-2259-7552', '10%, ±Ù¹«È¯°æ-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 1³âÀÌ»ó'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -526,10 +526,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ê¹€í˜¸ì„ìœ ', 'ì„œìš¸íŠ¹ë³„ì‹œ ì¤‘êµ¬ ì²­ê³„ì²œë¡œ 100 (ìˆ˜í‘œë™)', 'ì œì¡°ì—…', '1970-12-28'
-    , 'https://www.kkpc.com/kor/', 'í•©ì„±ê³ ë¬´ SBR(ìŠ¤í‹°ë Œë¶€íƒ€ë””ì—”ëŸ¬ë²„),BR(í´ë¦¬ë¶€íƒ€ë””ì—”ëŸ¬ë²„),í•©ì„±ìˆ˜ì§€,BD,ë¼í…ìŠ¤ ì œì¡°,ë„ì†Œë§¤'
-    , '1,453ëª…', '7ì¡° 9,756ì–µ ì›', 'ê¹€í˜¸ì„ìœ í™”í•™ê·¸ë£¹', 'kimho123', '341-02-54375', 'ê¹€í˜¸ì„ìœ  ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/KK2xHT6ozQgEFLsuNqtyqMwRwaSi0rfi4WIg1ytM9ZR7PsCGxbP-SCvrreuwgoYK6c-tFruUIqbbGnQ1Cqw_UHGK8lstOInKWJ16MRXUvOfezGA4SWE6crMEvi5lAK0BnKIaQs4Hmlw-SAP8ZqMDYw.svg'
-    , 'ë°±ì¢…í›ˆ', 'ë°±ê¸ˆí˜¸', 'HR@kumho.com', '02-341-2513', 'ê¸‰ì—¬-ì›Œë¼ë²¨', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '±èÈ£¼®À¯', '¼­¿ïÆ¯º°½Ã Áß±¸ Ã»°èÃµ·Î 100 (¼öÇ¥µ¿)', 'Á¦Á¶¾÷', '1970-12-28'
+    , 'https://www.kkpc.com/kor/', 'ÇÕ¼º°í¹« SBR(½ºÆ¼·»ºÎÅ¸µð¿£·¯¹ö),BR(Æú¸®ºÎÅ¸µð¿£·¯¹ö),ÇÕ¼º¼öÁö,BD,¶óÅØ½º Á¦Á¶,µµ¼Ò¸Å'
+    , '1,453¸í', '7Á¶ 9,756¾ï ¿ø', '±èÈ£¼®À¯È­ÇÐ±×·ì', 'kimho123', '341-02-54375', '±èÈ£¼®À¯ »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/KK2xHT6ozQgEFLsuNqtyqMwRwaSi0rfi4WIg1ytM9ZR7PsCGxbP-SCvrreuwgoYK6c-tFruUIqbbGnQ1Cqw_UHGK8lstOInKWJ16MRXUvOfezGA4SWE6crMEvi5lAK0BnKIaQs4Hmlw-SAP8ZqMDYw.svg'
+    , '¹éÁ¾ÈÆ', '¹é±ÝÈ£', 'HR@kumho.com', '02-341-2513', '±Þ¿©-¿ö¶óº§', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
     
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -538,10 +538,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì‚¬ëŒ€í•´ìƒ', 'ì„œìš¸ ì¢…ë¡œêµ¬ ì„¸ì¢…ëŒ€ë¡œ 163', 'ê¸°íƒ€ ê°œì¸ì„œë¹„ìŠ¤ì—…', '1955-03-08'
-    , 'https://www.hi.co.kr/serviceAction.do', 'ìš°ë¦¬ í˜„ëŒ€í•´ìƒì€ 1955ë…„ êµ­ë‚´ ìµœì´ˆì˜ í•´ìƒë³´í—˜ ì „ì—…íšŒì‚¬ë¡œ ì¶œë²”í•œ ì´ëž˜ ê³ ê°ë§Œì¡±ì„ ê¸°ì—… ìµœê³ ì˜ ê°€ì¹˜ë¡œ ì—¬ê¸°ë©° "ê³ ê°ê³¼ í•¨ê»˜ ì„±ìž¥í•˜ëŠ” ìµœê³ ì˜ ë³´í—˜íšŒì‚¬" ë¥¼ ëª©í‘œë¡œ ìµœì„ ì˜ ë…¸ë ¥ì„ ë‹¤í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-    , '4,029ëª…', '52ì¡° 8,180ì–µ ì›', 'í˜„ëŒ€í•´ìƒ', 'hyundai123', '342-05-21453', 'ì‚¬ëŒ€í•´ìƒ ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/0ZL3gX6_7xuzHVrlrPx0ds61DJSuyWQygD7S51WNJmwXPN0vW8KiAFskf9NqeO37AykeOKOFZkxn_vjdS5pr9_L9z0opiqcr5d9MsHs_3aphTYCBgsx4_Z_E6NRKJJobcifexJDhV9jIDumYR_1tkw.svg'
-    , 'ì¡°ìš©ì¼/ì´ì„±ìž¬', 'ì¡°ëŒ€ìƒ', 'HR@hyundai.com', '02-491-2523', 'ê·¼ë¬´í™˜ê²½-ê²½ì˜ì§„', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '»ç´ëÇØ»ó', '¼­¿ï Á¾·Î±¸ ¼¼Á¾´ë·Î 163', '±âÅ¸ °³ÀÎ¼­ºñ½º¾÷', '1955-03-08'
+    , 'https://www.hi.co.kr/serviceAction.do', '¿ì¸® Çö´ëÇØ»óÀº 1955³â ±¹³» ÃÖÃÊÀÇ ÇØ»óº¸Çè Àü¾÷È¸»ç·Î Ãâ¹üÇÑ ÀÌ·¡ °í°´¸¸Á·À» ±â¾÷ ÃÖ°íÀÇ °¡Ä¡·Î ¿©±â¸ç "°í°´°ú ÇÔ²² ¼ºÀåÇÏ´Â ÃÖ°íÀÇ º¸ÇèÈ¸»ç" ¸¦ ¸ñÇ¥·Î ÃÖ¼±ÀÇ ³ë·ÂÀ» ´ÙÇÏ°í ÀÖ½À´Ï´Ù.'
+    , '4,029¸í', '52Á¶ 8,180¾ï ¿ø', 'Çö´ëÇØ»ó', 'hyundai123', '342-05-21453', '»ç´ëÇØ»ó »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/0ZL3gX6_7xuzHVrlrPx0ds61DJSuyWQygD7S51WNJmwXPN0vW8KiAFskf9NqeO37AykeOKOFZkxn_vjdS5pr9_L9z0opiqcr5d9MsHs_3aphTYCBgsx4_Z_E6NRKJJobcifexJDhV9jIDumYR_1tkw.svg'
+    , 'Á¶¿ëÀÏ/ÀÌ¼ºÀç', 'Á¶´ë»ó', 'HR@hyundai.com', '02-491-2523', '±Ù¹«È¯°æ-°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
     
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -550,10 +550,10 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'DDí•˜ì´í…', 'ê²½ê¸° ë¶€ì²œì‹œ ìˆ˜ë„ë¡œ 90', 'ì œì¡°ì—…', '1953-04-28'
-    , 'https://dbhitek.com/kr/default.asp', 'ì£¼ìš” ì‚¬ì—…ë‚´ìš© : ë¹„ë©”ëª¨ë¦¬ ë°˜ë„ì²´ì˜ íŒŒìš´ë“œë¦¬ì™€ ë¹„ë©”ëª¨ë¦¬ ë°˜ë„ì²´ì˜ ì¡°ë¦½ ë° íŒë§¤ ì£¼ìš” ì·¨ê¸‰í’ˆëª© : ë°˜ë„ì²´ì›¨ì´í¼íŒŒìš´ë“œë¦¬', '1,940ëª…', '1ì¡° 6,753ì–µ ì›'
-    , 'DBí•˜ì´í…', 'dbhitek123', '343-01-57915', 'DDí•˜ì´í… ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/l_cl6Wc1gUYsy8kBFYjANCsNQp3GmGTPHaj6gfNelrhKLW5mGcGAkiSvsYbLkmuJe0wKuGRnpKaasjvtQugVsj9u7-qrDE9cyHmRXKzeo-_B8MmGDYVzmknVGV5bRqX_hFt48zPjrUx2iIhE1t3wCA.webp'
-    , 'ìµœì°½ì‹', 'ìµœë°©ì‹', 'HR@hitek.com', '02-812-4427', 'ê¸‰ì—¬-ë³µì§€', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'DDÇÏÀÌÅØ', '°æ±â ºÎÃµ½Ã ¼öµµ·Î 90', 'Á¦Á¶¾÷', '1953-04-28'
+    , 'https://dbhitek.com/kr/default.asp', 'ÁÖ¿ä »ç¾÷³»¿ë : ºñ¸Þ¸ð¸® ¹ÝµµÃ¼ÀÇ ÆÄ¿îµå¸®¿Í ºñ¸Þ¸ð¸® ¹ÝµµÃ¼ÀÇ Á¶¸³ ¹× ÆÇ¸Å ÁÖ¿ä Ãë±ÞÇ°¸ñ : ¹ÝµµÃ¼¿þÀÌÆÛÆÄ¿îµå¸®', '1,940¸í', '1Á¶ 6,753¾ï ¿ø'
+    , 'DBÇÏÀÌÅØ', 'dbhitek123', '343-01-57915', 'DDÇÏÀÌÅØ »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/l_cl6Wc1gUYsy8kBFYjANCsNQp3GmGTPHaj6gfNelrhKLW5mGcGAkiSvsYbLkmuJe0wKuGRnpKaasjvtQugVsj9u7-qrDE9cyHmRXKzeo-_B8MmGDYVzmknVGV5bRqX_hFt48zPjrUx2iIhE1t3wCA.webp'
+    , 'ÃÖÃ¢½Ä', 'ÃÖ¹æ½Ä', 'HR@hitek.com', '02-812-4427', '±Þ¿©-º¹Áö', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
     
 
 INSERT INTO COMPANY
@@ -563,11 +563,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'SKU', 'ì„œìš¸íŠ¹ë³„ì‹œ ì¢…ë¡œêµ¬ ì¢…ë¡œ 26 (ì„œë¦°ë™)', 'ê¸°íƒ€ ê°œì¸ì„œë¹„ìŠ¤ì—…', '2015-08-03'
-    , 'http://www.sk.co.kr/', 'SKëŠ” SKê·¸ë£¹ì˜ ì§€ì£¼íšŒì‚¬ë‹¤. ì§€ì£¼ ë¶€ë¬¸ì¸ SKì£¼ì‹íšŒì‚¬ í™€ë”©ìŠ¤ì™€ ì‚¬ì—… ë¶€ë¬¸ì¸ SKì£¼ì‹íšŒì‚¬ C'||CHR(38)||'Cë¡œ êµ¬ì„±ë˜ì–´ ìžˆë‹¤.'
-    , '125,762ëª…', '224ì¡° 1,923ì–µì›'
-    , 'SK', 'sk123*', '344-01-51237', 'SKU ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/NnF2nIZFcEyGWKEETUcKAwQygJyMCWpDYakfaPw_gcIKVLadsoEmHi6u8oLakhIGIvw7d8M5ZJLEXZiAJiadmQ.svg'
-    , 'ìµœíƒœì›', 'ìµœì¢…ìˆ˜', 'HR@sk.com', '02-142-5213', 'ë³µì§€-ê¸‰ì—¬', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'SKU', '¼­¿ïÆ¯º°½Ã Á¾·Î±¸ Á¾·Î 26 (¼­¸°µ¿)', '±âÅ¸ °³ÀÎ¼­ºñ½º¾÷', '2015-08-03'
+    , 'http://www.sk.co.kr/', 'SK´Â SK±×·ìÀÇ ÁöÁÖÈ¸»ç´Ù. ÁöÁÖ ºÎ¹®ÀÎ SKÁÖ½ÄÈ¸»ç È¦µù½º¿Í »ç¾÷ ºÎ¹®ÀÎ SKÁÖ½ÄÈ¸»ç C'||CHR(38)||'C·Î ±¸¼ºµÇ¾î ÀÖ´Ù.'
+    , '125,762¸í', '224Á¶ 1,923¾ï¿ø'
+    , 'SK', 'sk123*', '344-01-51237', 'SKU »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/NnF2nIZFcEyGWKEETUcKAwQygJyMCWpDYakfaPw_gcIKVLadsoEmHi6u8oLakhIGIvw7d8M5ZJLEXZiAJiadmQ.svg'
+    , 'ÃÖÅÂ¿ø', 'ÃÖÁ¾¼ö', 'HR@sk.com', '02-142-5213', 'º¹Áö-±Þ¿©', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -576,12 +576,12 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì‚¼ì„±SKS', 'ì„œìš¸íŠ¹ë³„ì‹œ ì†¡íŒŒêµ¬ ì˜¬ë¦¼í”½ë¡œ35ê¸¸ 123 (ì‹ ì²œë™)', 'ì œì¡°ì—…', '1985-05-01'
-    , 'https://www.samsungsds.com/kr/index.html', 'ë¯¸ëž˜ë¥¼ í•œë°œ ì•žì„œ ë‚´ë‹¤ë³´ëŠ” IT ê¸°ìˆ  ì—­ëŸ‰ì„ í™œìš©í•˜ì—¬, ê³ ê°ì˜ ìš”êµ¬ë¥¼ ëª…í™•ížˆ íŒŒì•…í•˜ê³  ê³ ê°ì˜ ìš”êµ¬ì— ë§žëŠ” ë‹¤ì–‘í•œ ITì„œë¹„ìŠ¤ë¥¼ ì œê³µ'
-    , '11,414ëª…', '17ì¡° 2347ì–µì›'
-    , 'ì‚¼ì„±SDS', 'samsung123*', '345-01-42167', 'ì‚¼ì„±SKS ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/lrMIrgXgm37bxzqQaEB1DBmbi90mBgeyubkXUhJjjI6aouZDLJUgDzGROuKwk4DmZR48tLKwO7M-aJVVL61b2chxSZDAc-Bx3_qon_oBFBZ2nXnAeFT4KwjJoxyzDcSJXzQ_EeYLrbPRvkXjFPYFXw.webp'
-    , 'í™©ì„±ìš°', 'í™©ìƒìˆ˜', 'HR@samsung.com'
-    , '02-751-5312', 'ë³µì§€', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '»ï¼ºSKS', '¼­¿ïÆ¯º°½Ã ¼ÛÆÄ±¸ ¿Ã¸²ÇÈ·Î35±æ 123 (½ÅÃµµ¿)', 'Á¦Á¶¾÷', '1985-05-01'
+    , 'https://www.samsungsds.com/kr/index.html', '¹Ì·¡¸¦ ÇÑ¹ß ¾Õ¼­ ³»´Ùº¸´Â IT ±â¼ú ¿ª·®À» È°¿ëÇÏ¿©, °í°´ÀÇ ¿ä±¸¸¦ ¸íÈ®È÷ ÆÄ¾ÇÇÏ°í °í°´ÀÇ ¿ä±¸¿¡ ¸Â´Â ´Ù¾çÇÑ IT¼­ºñ½º¸¦ Á¦°ø'
+    , '11,414¸í', '17Á¶ 2347¾ï¿ø'
+    , '»ï¼ºSDS', 'samsung123*', '345-01-42167', '»ï¼ºSKS »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/lrMIrgXgm37bxzqQaEB1DBmbi90mBgeyubkXUhJjjI6aouZDLJUgDzGROuKwk4DmZR48tLKwO7M-aJVVL61b2chxSZDAc-Bx3_qon_oBFBZ2nXnAeFT4KwjJoxyzDcSJXzQ_EeYLrbPRvkXjFPYFXw.webp'
+    , 'È²¼º¿ì', 'È²»ó¼ö', 'HR@samsung.com'
+    , '02-751-5312', 'º¹Áö', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -590,12 +590,12 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ULXì¸í„°ë‚´ì…”ë„', 'ì„œìš¸íŠ¹ë³„ì‹œ ì¢…ë¡œêµ¬ ìƒˆë¬¸ì•ˆë¡œ 58 (ì‹ ë¬¸ë¡œ2ê°€)', 'ìš´ìˆ˜ì—…', '1953-11-26'
-    , 'https://www.lxinternational.com/', 'LXì¸í„°ë‚´ì…”ë„ì€ 1953ë…„ ì„¤ë¦½ëœ ì´ëž˜ ë‹¤ì–‘í•œ ìˆ˜ì¶œìž… ë¬´ì—­ì„ í†µí•´ ëŒ€í•œë¯¼êµ­ì˜ ë¬´ì—­ê¸°ë°˜ì„ êµ¬ì¶•í•˜ê³  êµ­ê°€ ê²½ì œë°œì „ê³¼ í•¨ê»˜ ì„±ìž¥í•´ ì™”ìŠµë‹ˆë‹¤. '
-    , '382ëª…', '18ì¡° 7,595ì–µì›'
-    , 'LXì¸í„°ë‚´ì…”ë„', 'lx123*', '346-27-54316', 'ULXì¸í„°ë‚´ì…”ë„ ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/noL1unwbB93hfXLWhujvHbd7fGcNkq1HFky9CT0Qr63IPXrW0NN4Pr2af89h1_clEH-kT_PR-d7cprdgiSq61XCLc1FMH2z8UGXOtswKRNhtzWfDS4mZeLH9cRETHsQBj46kILwijXWSlX0bA5Hd9g.svg'
-    , 'ìœ¤ì¶˜ì„±', 'ìœ¤ëŒ€ê·œ', 'HR@ulx.com'
-    , '02-472-5135', 'ê²½ì˜ì§„', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ULXÀÎÅÍ³»¼Å³Î', '¼­¿ïÆ¯º°½Ã Á¾·Î±¸ »õ¹®¾È·Î 58 (½Å¹®·Î2°¡)', '¿î¼ö¾÷', '1953-11-26'
+    , 'https://www.lxinternational.com/', 'LXÀÎÅÍ³»¼Å³ÎÀº 1953³â ¼³¸³µÈ ÀÌ·¡ ´Ù¾çÇÑ ¼öÃâÀÔ ¹«¿ªÀ» ÅëÇØ ´ëÇÑ¹Î±¹ÀÇ ¹«¿ª±â¹ÝÀ» ±¸ÃàÇÏ°í ±¹°¡ °æÁ¦¹ßÀü°ú ÇÔ²² ¼ºÀåÇØ ¿Ô½À´Ï´Ù. '
+    , '382¸í', '18Á¶ 7,595¾ï¿ø'
+    , 'LXÀÎÅÍ³»¼Å³Î', 'lx123*', '346-27-54316', 'ULXÀÎÅÍ³»¼Å³Î »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/noL1unwbB93hfXLWhujvHbd7fGcNkq1HFky9CT0Qr63IPXrW0NN4Pr2af89h1_clEH-kT_PR-d7cprdgiSq61XCLc1FMH2z8UGXOtswKRNhtzWfDS4mZeLH9cRETHsQBj46kILwijXWSlX0bA5Hd9g.svg'
+    , 'À±Ãá¼º', 'À±´ë±Ô', 'HR@ulx.com'
+    , '02-472-5135', '°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -604,11 +604,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'TGìŠ¤í‹¸', 'ì„œìš¸íŠ¹ë³„ì‹œ ì¤‘êµ¬ í†µì¼ë¡œ 92 5ì¸µ (ìˆœí™”ë™, KGíƒ€ì›Œ)', 'ì œì¡°ì—…', '1982-10-27'
-    , 'https://www.kg-steel.co.kr/html/index.html', 'ì£¼ìš” ì‚¬ì—…ë‚´ìš© : ì² ê°•ì œí’ˆ ì œì¡°, íŒë§¤ ì£¼ìš” ì·¨ê¸‰í’ˆëª© : ëƒ‰ì—°ê°•íŒ, ì•„ì—°ë„ê°•íŒ, ì»¬ëŸ¬ê°•íŒ, ì„ë„ê°•íŒ, ê°•ê´€, í˜•ê°•, ë´‰ê°•', '1,136ëª…', '3ì¡° 8,197ì–µì›'
-    , 'KGìŠ¤í‹¸', 'kg123*', '347-54-89721', 'TGìŠ¤í‹¸ ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/rScLfoWj1qZ11SeAU2UnXR7HUcrDtRUL-KGgHn-2bBnXGPdo0Ic8fPr7Zzp_OxO41Fp-DCvPX82GhVUKfKxiDm-aRp7iqCA3EjTv_nQNl8HLIFAAWJ9FSKxII8PlPLVB0tJ2O0GjrcH_Pddt2bg9NA.svg'
-    , 'ë°•ì„±í¬', 'ë°•ë™ìˆ˜', 'HR@kgsteal.com'
-    , '02-543-7812', 'ê·¼ë¬´í™˜ê²½', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'TG½ºÆ¿', '¼­¿ïÆ¯º°½Ã Áß±¸ ÅëÀÏ·Î 92 5Ãþ (¼øÈ­µ¿, KGÅ¸¿ö)', 'Á¦Á¶¾÷', '1982-10-27'
+    , 'https://www.kg-steel.co.kr/html/index.html', 'ÁÖ¿ä »ç¾÷³»¿ë : Ã¶°­Á¦Ç° Á¦Á¶, ÆÇ¸Å ÁÖ¿ä Ãë±ÞÇ°¸ñ : ³Ã¿¬°­ÆÇ, ¾Æ¿¬µµ°­ÆÇ, ÄÃ·¯°­ÆÇ, ¼®µµ°­ÆÇ, °­°ü, Çü°­, ºÀ°­', '1,136¸í', '3Á¶ 8,197¾ï¿ø'
+    , 'KG½ºÆ¿', 'kg123*', '347-54-89721', 'TG½ºÆ¿ »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/rScLfoWj1qZ11SeAU2UnXR7HUcrDtRUL-KGgHn-2bBnXGPdo0Ic8fPr7Zzp_OxO41Fp-DCvPX82GhVUKfKxiDm-aRp7iqCA3EjTv_nQNl8HLIFAAWJ9FSKxII8PlPLVB0tJ2O0GjrcH_Pddt2bg9NA.svg'
+    , '¹Ú¼ºÈñ', '¹Úµ¿¼ö', 'HR@kgsteal.com'
+    , '02-543-7812', '±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -617,11 +617,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì…€ë°”ì´ì˜¤íŠ¸ë¦¬ì˜¨', 'ì¸ì²œ ì—°ìˆ˜êµ¬ ì•„ì¹´ë°ë¯¸ë¡œ 23', 'ì œì¡°ì—…', '1991-02-27'
-    , 'https://www.celltrion.com/ko-kr/home/index', 'ì£¼ìš” ì‚¬ì—…ë‚´ìš© : ë™ë¬¼ì„¸í¬ ë°°ì–‘ê¸°ìˆ ì„ ì´ìš©í•œ ì˜ì•½í’ˆ, ìƒë¬¼í•™ì  ì˜ì•½í’ˆ ë“±ì˜ ì œì¡°, ì—°êµ¬ê°œë°œ, ìˆ˜ì¶œ ë° íŒë§¤', '2277ëª…', '1ì¡°9,116ì–µì›'
-    , 'ì…€íŠ¸ë¦¬ì˜¨', 'cell123*', '548-75-72541', 'ì…€ë°”ì´ì˜¤íŠ¸ë¦¬ì˜¨ ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/LxYgCYRQaGmd5fwX_tudCbioFH3lyCz78b1X_vKvRORd9WGQ-fGhML-RMDRNslTlEoP7chmN82RmpfvgzXrj_xg82kfSM2YkQyc4CzF6GQdydd24aUbw9q_a4Rplnm4bIOHeTRP2kXIGyv-kEvPpnw.svg'
-    , 'ê¸°ìš°ì„±', 'ê¸°ìƒìˆ˜', 'HR@cell.com'
-    , '02-742-5612', 'ê·¼ë¬´í™˜ê²½-ë³µì§€', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¼¿¹ÙÀÌ¿ÀÆ®¸®¿Â', 'ÀÎÃµ ¿¬¼ö±¸ ¾ÆÄ«µ¥¹Ì·Î 23', 'Á¦Á¶¾÷', '1991-02-27'
+    , 'https://www.celltrion.com/ko-kr/home/index', 'ÁÖ¿ä »ç¾÷³»¿ë : µ¿¹°¼¼Æ÷ ¹è¾ç±â¼úÀ» ÀÌ¿ëÇÑ ÀÇ¾àÇ°, »ý¹°ÇÐÀû ÀÇ¾àÇ° µîÀÇ Á¦Á¶, ¿¬±¸°³¹ß, ¼öÃâ ¹× ÆÇ¸Å', '2277¸í', '1Á¶9,116¾ï¿ø'
+    , '¼¿Æ®¸®¿Â', 'cell123*', '548-75-72541', '¼¿¹ÙÀÌ¿ÀÆ®¸®¿Â »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/LxYgCYRQaGmd5fwX_tudCbioFH3lyCz78b1X_vKvRORd9WGQ-fGhML-RMDRNslTlEoP7chmN82RmpfvgzXrj_xg82kfSM2YkQyc4CzF6GQdydd24aUbw9q_a4Rplnm4bIOHeTRP2kXIGyv-kEvPpnw.svg'
+    , '±â¿ì¼º', '±â»ó¼ö', 'HR@cell.com'
+    , '02-742-5612', '±Ù¹«È¯°æ-º¹Áö', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -630,12 +630,12 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'í‚¤ì›Œì¦ê¶Œ', 'ì„œìš¸íŠ¹ë³„ì‹œ ì˜ë“±í¬êµ¬ ì—¬ì˜ë‚˜ë£¨ë¡œ4ê¸¸ 18(ì—¬ì˜ë„ë™)', 'ê¸°íƒ€ ê°œì¸ì„œë¹„ìŠ¤ì—…', '2000-01-31'
-    , 'https://www3.kiwoom.com/h/main', 'í‚¤ì›€ì€ ì˜¨ë¼ì¸ ê±°ëž˜ì— ìƒˆë¡œìš´ ê¸°ì¤€ì„ ì œì‹œí•´ ì™”ìŠµë‹ˆë‹¤. ê·¸ ì–´ëŠ í™ˆíŠ¸ë ˆì´ë‹ë³´ë‹¤ ì•ˆì •ì ì´ê³  ì‹ ë¢°ë„ ë†’ì€ "ì˜ì›…ë¬¸"ì„ í†µí•´ ì˜¨ë¼ì¸ íˆ¬ìžë¬¸í™”ë¥¼ ì´ëŒì–´ ì™”ìŠµë‹ˆë‹¤.'
-    , '890ëª…', '8ì¡°9,424ì–µì›'
-    , 'í‚¤ì›€ì¦ê¶Œ', 'kiwoom123*', '549-08-21364', 'í‚¤ì›Œì¦ê¶Œ ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/MQM4p90HhG9pqFfRK2XxtTpmlLec8uwwrNKlqQqRaB72VnrOLvNS_KYMjSiRPstQd4aRudHEkVLZHBHLgTQpC1hTAz84YO3Z5K7wn0EGf1wJU2PPD8VAM6A4XYXxRytO2yPxAbP_cvx0eTDXeMT2Vg.svg'
-    , 'í™©í˜„ìˆœ', 'í™©ìˆœë•', 'HR@kiwoom.com'
-    , '02-753-5432', 'ë³µì§€', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'Å°¿öÁõ±Ç', '¼­¿ïÆ¯º°½Ã ¿µµîÆ÷±¸ ¿©ÀÇ³ª·ç·Î4±æ 18(¿©ÀÇµµµ¿)', '±âÅ¸ °³ÀÎ¼­ºñ½º¾÷', '2000-01-31'
+    , 'https://www3.kiwoom.com/h/main', 'Å°¿òÀº ¿Â¶óÀÎ °Å·¡¿¡ »õ·Î¿î ±âÁØÀ» Á¦½ÃÇØ ¿Ô½À´Ï´Ù. ±× ¾î´À È¨Æ®·¹ÀÌ´×º¸´Ù ¾ÈÁ¤ÀûÀÌ°í ½Å·Úµµ ³ôÀº "¿µ¿õ¹®"À» ÅëÇØ ¿Â¶óÀÎ ÅõÀÚ¹®È­¸¦ ÀÌ²ø¾î ¿Ô½À´Ï´Ù.'
+    , '890¸í', '8Á¶9,424¾ï¿ø'
+    , 'Å°¿òÁõ±Ç', 'kiwoom123*', '549-08-21364', 'Å°¿öÁõ±Ç »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/MQM4p90HhG9pqFfRK2XxtTpmlLec8uwwrNKlqQqRaB72VnrOLvNS_KYMjSiRPstQd4aRudHEkVLZHBHLgTQpC1hTAz84YO3Z5K7wn0EGf1wJU2PPD8VAM6A4XYXxRytO2yPxAbP_cvx0eTDXeMT2Vg.svg'
+    , 'È²Çö¼ø', 'È²¼ø´ö', 'HR@kiwoom.com'
+    , '02-753-5432', 'º¹Áö', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -644,11 +644,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ê·¸ëž˜í”„íŠ¸', 'ì„œìš¸íŠ¹ë³„ì‹œ ê°•ë‚¨êµ¬ í…Œí—¤ëž€ë¡œ 231(ì—­ì‚¼ë¡œ)', 'ê±´ì„¤ì—…', '2007-03-26'
-    , 'https://www.krafton.com/', 'í¬ëž˜í”„í†¤ì€ íŠ¹ì • ìž¥ë¥´ì—ì„œ ê²½ìŸë ¥ ìžˆëŠ” ì œìž‘ ëŠ¥ë ¥ì„ ê°–ì¶˜ ë…ë¦½ìŠ¤íŠœë””ì˜¤ë“¤ë¡œ êµ¬ì„±ë˜ì–´ ìžˆìŠµë‹ˆë‹¤. ', '1,796ëª…', '1ì¡° 8,540ì–µì›'
-    , 'í¬ëž˜í”„í†¤', 'krafton123*', '550-82-64231', 'ê·¸ëž˜í”„íŠ¸ ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/JeDWd8hwCo4Kixbdgrn7nGebKYoMlMyeLjv53Sn3ouRFXmZ1oBjr4dhZAKHlwch6_6_ZQGwGf4QcRMFLIgw4sA.svg'
-    , 'ê¹€ì°½í•œ', 'ê¹€ìˆ˜í•œ', 'HR@krafton.com'
-    , '02-652-7852', 'ë³µì§€-ê·¼ë¬´í™˜ê²½', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '±×·¡ÇÁÆ®', '¼­¿ïÆ¯º°½Ã °­³²±¸ Å×Çì¶õ·Î 231(¿ª»ï·Î)', '°Ç¼³¾÷', '2007-03-26'
+    , 'https://www.krafton.com/', 'Å©·¡ÇÁÅæÀº Æ¯Á¤ Àå¸£¿¡¼­ °æÀï·Â ÀÖ´Â Á¦ÀÛ ´É·ÂÀ» °®Ãá µ¶¸³½ºÆ©µð¿Àµé·Î ±¸¼ºµÇ¾î ÀÖ½À´Ï´Ù. ', '1,796¸í', '1Á¶ 8,540¾ï¿ø'
+    , 'Å©·¡ÇÁÅæ', 'krafton123*', '550-82-64231', '±×·¡ÇÁÆ® »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/JeDWd8hwCo4Kixbdgrn7nGebKYoMlMyeLjv53Sn3ouRFXmZ1oBjr4dhZAKHlwch6_6_ZQGwGf4QcRMFLIgw4sA.svg'
+    , '±èÃ¢ÇÑ', '±è¼öÇÑ', 'HR@krafton.com'
+    , '02-652-7852', 'º¹Áö-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -657,11 +657,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì— ì”¨ì†Œí”„íŠ¸', 'ê²½ê¸°ë„ ì„±ë‚¨ì‹œ ë¶„ë‹¹êµ¬ ëŒ€ì™•íŒêµë¡œ644ë²ˆê¸¸ 12 ì—”ì”¨ì†Œí”„íŠ¸', 'ê¸°íƒ€ ê°œì¸ì„œë¹„ìŠ¤ì—…', '1997-03-11'
-    , 'https://kr.ncsoft.com/kr/index.do', 'ì¦ê±°ì›€ìœ¼ë¡œ ì—°ê²°ëœ ìƒˆë¡œìš´ ì„¸ìƒ, ì—”ì”¨ì†Œí”„íŠ¸ ì„¸ìƒ ëª¨ë‘ê°€ ì¦ê±°ì›€ìœ¼ë¡œ ì—°ê²°ë˜ëŠ” ìƒˆë¡œìš´ ë¯¸ëž˜, ì•„ë¬´ë„ ê°€ë³´ì§€ ëª»í•œ ê·¸ ì„¸ìƒì´ ê°ë™ìœ¼ë¡œ ê°€ë“ ì°° ë•Œê¹Œì§€ ì—”ì”¨ëŠ” ëŠìž„ì—†ì´ ê¿ˆê¾¸ë©° ë„ì „ì„ ë©ˆì¶”ì§€ ì•Šì„ ê²ƒ ìž…ë‹ˆë‹¤.', '4,506ëª…', '2ì¡° 4,161ì–µì›'
-    , 'ì—”ì”¨ì†Œí”„íŠ¸', 'ncsoft123*', '551-64-23164', 'ì— ì”¨ì†Œí”„íŠ¸ ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/leFWi_52YAUIgJC5CobYqOaWT-N5nFD04tmnCSQu8-fFlmekvq4Y-vnGIyxHoxpYrxbA94GFXprJXY_Pkqpg1XVShV1OP8KVkrvFIX9Qlr1y2ICOY7Jo_OT0lNud3wbBb6ec-VK7LniqhIv5mPGrMA.svg'
-    , 'ê¹€íƒì§„', 'ê¹€ì°½ìˆ˜', 'HR@ncsoft.com'
-    , '02-852-4621', 'ê²½ì˜ì§„-ê·¼ë¬´í™˜ê²½', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¿¥¾¾¼ÒÇÁÆ®', '°æ±âµµ ¼º³²½Ã ºÐ´ç±¸ ´ë¿ÕÆÇ±³·Î644¹ø±æ 12 ¿£¾¾¼ÒÇÁÆ®', '±âÅ¸ °³ÀÎ¼­ºñ½º¾÷', '1997-03-11'
+    , 'https://kr.ncsoft.com/kr/index.do', 'Áñ°Å¿òÀ¸·Î ¿¬°áµÈ »õ·Î¿î ¼¼»ó, ¿£¾¾¼ÒÇÁÆ® ¼¼»ó ¸ðµÎ°¡ Áñ°Å¿òÀ¸·Î ¿¬°áµÇ´Â »õ·Î¿î ¹Ì·¡, ¾Æ¹«µµ °¡º¸Áö ¸øÇÑ ±× ¼¼»óÀÌ °¨µ¿À¸·Î °¡µæ Âû ¶§±îÁö ¿£¾¾´Â ²÷ÀÓ¾øÀÌ ²Þ²Ù¸ç µµÀüÀ» ¸ØÃßÁö ¾ÊÀ» °Í ÀÔ´Ï´Ù.', '4,506¸í', '2Á¶ 4,161¾ï¿ø'
+    , '¿£¾¾¼ÒÇÁÆ®', 'ncsoft123*', '551-64-23164', '¿¥¾¾¼ÒÇÁÆ® »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/leFWi_52YAUIgJC5CobYqOaWT-N5nFD04tmnCSQu8-fFlmekvq4Y-vnGIyxHoxpYrxbA94GFXprJXY_Pkqpg1XVShV1OP8KVkrvFIX9Qlr1y2ICOY7Jo_OT0lNud3wbBb6ec-VK7LniqhIv5mPGrMA.svg'
+    , '±èÅÃÁø', '±èÃ¢¼ö', 'HR@ncsoft.com'
+    , '02-852-4621', '°æ¿µÁø-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -670,12 +670,12 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'CWì´ë…¸ë² ì´ì…˜', 'ì„œìš¸íŠ¹ë³„ì‹œ ì¢…ë¡œêµ¬ ì¢…ë¡œ 26 (ì„œë¦°ë™)', 'ì œì¡°ì—…', '2007-07-03'
-    , 'https://www.skinnovation.com/', 'ì£¼ìš” ì‚¬ì—…ë‚´ìš© : ì„ìœ ì œí’ˆ, í™”í•™ì œí’ˆ ë“±ì˜ ìƒì‚° ë° íŒë§¤, ìœ ì „ ê°œë°œ, ëŒ€ì²´ì—ë„ˆì§€ì‚¬ì—…
-ì£¼ìš” ì·¨ê¸‰í’ˆëª© : ê²½ìœ , ë¬´ì—°íœ˜ë°œìœ , ì—í‹¸ë Œ, í•©ì„±ìˆ˜ì§€, ì›ìœ ì •ì œ, í™”í•™ì œí’ˆ', '1576ëª…', '46ì¡° 8,429ì–µì›'
-    , 'SKì´ë…¸ë² ì´ì…˜', 'skin123*', '552-34-86421', 'CWì´ë…¸ë² ì´ì…˜ ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/5ZbguDVzlQ6Spf61SYbCdVu38nn59Zq36Z0Vm-lC-eUBpQhzKIVwmbKW-Q1tnaFU_Z37dYtWNWEG0DysBMKSNASt673EuTnEM2zgCzXRLJK9617f4nS0QxSTTCxOSAckpLEA8BVr1tzmMp40vYQWsA.svg'
-    , 'ê¹€ì¤€', 'ê¹€ë™ìˆ˜', 'HR@skinnovation.com'
-    , '02-653-2136', 'ê²½ì˜ì§„-ë³µì§€', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'CWÀÌ³ëº£ÀÌ¼Ç', '¼­¿ïÆ¯º°½Ã Á¾·Î±¸ Á¾·Î 26 (¼­¸°µ¿)', 'Á¦Á¶¾÷', '2007-07-03'
+    , 'https://www.skinnovation.com/', 'ÁÖ¿ä »ç¾÷³»¿ë : ¼®À¯Á¦Ç°, È­ÇÐÁ¦Ç° µîÀÇ »ý»ê ¹× ÆÇ¸Å, À¯Àü °³¹ß, ´ëÃ¼¿¡³ÊÁö»ç¾÷
+ÁÖ¿ä Ãë±ÞÇ°¸ñ : °æÀ¯, ¹«¿¬ÈÖ¹ßÀ¯, ¿¡Æ¿·», ÇÕ¼º¼öÁö, ¿øÀ¯Á¤Á¦, È­ÇÐÁ¦Ç°', '1576¸í', '46Á¶ 8,429¾ï¿ø'
+    , 'SKÀÌ³ëº£ÀÌ¼Ç', 'skin123*', '552-34-86421', 'CWÀÌ³ëº£ÀÌ¼Ç »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/5ZbguDVzlQ6Spf61SYbCdVu38nn59Zq36Z0Vm-lC-eUBpQhzKIVwmbKW-Q1tnaFU_Z37dYtWNWEG0DysBMKSNASt673EuTnEM2zgCzXRLJK9617f4nS0QxSTTCxOSAckpLEA8BVr1tzmMp40vYQWsA.svg'
+    , '±èÁØ', '±èµ¿¼ö', 'HR@skinnovation.com'
+    , '02-653-2136', '°æ¿µÁø-º¹Áö', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -684,11 +684,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'LA', 'ì„œìš¸íŠ¹ë³„ì‹œ ìš©ì‚°êµ¬ í•œê°•ëŒ€ë¡œ 92(í•œê°•ë¡œë™)', 'ê±´ì„¤ì—…', '1962-05-15'
-    , 'https://www.lsholdings.co.kr/ko', 'LSì „ì„ ì€ ê³ ê°ì—ê²Œ Leading Solutionì„ ì œê³µí•˜ëŠ” ê¸°ì—…, ì‚¬íšŒì— ê³µí—Œí•˜ëŠ” ê¸°ì—…, ìž„ì§ì›ë“¤ì´ ìžì‹ ì˜ ê¿ˆì„ ì´ë£° ìˆ˜ ìžˆëŠ” ê¸°ì—…ìœ¼ë¡œ ì„±ìž¥í•´ ë‚˜ê°€ê³ ìž í•©ë‹ˆë‹¤. ', '2,172ëª…', '17ì¡° 4,913ì–µì›'
-    , 'LS', 'ls123*', '553-81-64182', 'LA ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/3LGbAWokRDBSmL-uFGzsgezvetGrCRz_MOfCVo9y0Hvn-TNUmSCyDkNOExjCbgg9nHFYoy8xcUKcYsUCDhQEov1BdJM6G0nI2RpyRq-X41emypK0amY3KIduVfnr-IpMcJeit5o4qQdrvEY-MJPTiw.svg'
-    , 'êµ¬ë³¸ê·œ', 'êµ¬ë³‘ê·œ', 'HR@ls.com'
-    , '02-378-6542', 'ê·¼ë¬´í™˜ê²½', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'LA', '¼­¿ïÆ¯º°½Ã ¿ë»ê±¸ ÇÑ°­´ë·Î 92(ÇÑ°­·Îµ¿)', '°Ç¼³¾÷', '1962-05-15'
+    , 'https://www.lsholdings.co.kr/ko', 'LSÀü¼±Àº °í°´¿¡°Ô Leading SolutionÀ» Á¦°øÇÏ´Â ±â¾÷, »çÈ¸¿¡ °øÇåÇÏ´Â ±â¾÷, ÀÓÁ÷¿øµéÀÌ ÀÚ½ÅÀÇ ²ÞÀ» ÀÌ·ê ¼ö ÀÖ´Â ±â¾÷À¸·Î ¼ºÀåÇØ ³ª°¡°íÀÚ ÇÕ´Ï´Ù. ', '2,172¸í', '17Á¶ 4,913¾ï¿ø'
+    , 'LS', 'ls123*', '553-81-64182', 'LA »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/3LGbAWokRDBSmL-uFGzsgezvetGrCRz_MOfCVo9y0Hvn-TNUmSCyDkNOExjCbgg9nHFYoy8xcUKcYsUCDhQEov1BdJM6G0nI2RpyRq-X41emypK0amY3KIduVfnr-IpMcJeit5o4qQdrvEY-MJPTiw.svg'
+    , '±¸º»±Ô', '±¸º´±Ô', 'HR@ls.com'
+    , '02-378-6542', '±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -697,12 +697,12 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ASë¦¬í…Œì¼', 'ì„œìš¸íŠ¹ë³„ì‹œ ê°•ë‚¨êµ¬ ë…¼í˜„ë¡œ 508 (ì—­ì‚¼ë™)', 'ë„ë§¤ì—…', '2004-07-07'
-    , 'https://www.gsretail.com/gsretail/ko/company', 'ì£¼ìš” ì‚¬ì—…ë‚´ìš© : (ì£¼)LGë¡œë¶€í„° ì¸ì ë¶„í• ë˜ì–´ GSì¹¼í…ìŠ¤(ì£¼), (ì£¼)GSë¦¬í…Œì¼, (ì£¼)GSí™ˆì‡¼í•‘, (ì£¼)GSìŠ¤í¬ì¸ ì— ëŒ€í•œ ì§€ì£¼íšŒì‚¬
-ì£¼ìš” ì·¨ê¸‰í’ˆëª© : ì§€ì£¼íšŒì‚¬, ë¶€ë™ì‚°ìž„ëŒ€', '8,024ëª…', '9ì¡° 7,656ì–µì›'
-    , 'GS', 'gs123*', '554-97-61389', 'ASë¦¬í…Œì¼ ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/wfa5HVejy0RH8rrXEwpStv4eINQLdnk7sahLb-qbj6r3WOCILCzKlHFk-oXwMdDDq3adsRpjK9gd_y9_XAxPddgO_V7FeYmY_9AH8a0M-Awy8U6FvsjQ4ku5jTVWXOXc94iMrRZplnXlLtu8OSDZ8w.svg'
-    , 'í—ˆì—°ìˆ˜/ê¹€í˜¸ì„±', 'í—ˆìƒìˆ˜', 'HR@gsretail.com'
-    , '02-873-8652', 'ê²½ì˜ì§„-ë³µì§€', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'AS¸®Å×ÀÏ', '¼­¿ïÆ¯º°½Ã °­³²±¸ ³íÇö·Î 508 (¿ª»ïµ¿)', 'µµ¸Å¾÷', '2004-07-07'
+    , 'https://www.gsretail.com/gsretail/ko/company', 'ÁÖ¿ä »ç¾÷³»¿ë : (ÁÖ)LG·ÎºÎÅÍ ÀÎÀûºÐÇÒµÇ¾î GSÄ®ÅØ½º(ÁÖ), (ÁÖ)GS¸®Å×ÀÏ, (ÁÖ)GSÈ¨¼îÇÎ, (ÁÖ)GS½ºÆ÷Ã÷¿¡ ´ëÇÑ ÁöÁÖÈ¸»ç
+ÁÖ¿ä Ãë±ÞÇ°¸ñ : ÁöÁÖÈ¸»ç, ºÎµ¿»êÀÓ´ë', '8,024¸í', '9Á¶ 7,656¾ï¿ø'
+    , 'GS', 'gs123*', '554-97-61389', 'AS¸®Å×ÀÏ »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/wfa5HVejy0RH8rrXEwpStv4eINQLdnk7sahLb-qbj6r3WOCILCzKlHFk-oXwMdDDq3adsRpjK9gd_y9_XAxPddgO_V7FeYmY_9AH8a0M-Awy8U6FvsjQ4ku5jTVWXOXc94iMrRZplnXlLtu8OSDZ8w.svg'
+    , 'Çã¿¬¼ö/±èÈ£¼º', 'Çã»ó¼ö', 'HR@gsretail.com'
+    , '02-873-8652', '°æ¿µÁø-º¹Áö', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -711,11 +711,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'SYìŠ¤í€˜ì–´', 'ì„œìš¸ ì¤‘êµ¬ ì„ì§€ë¡œ 65', 'ê¸ˆìœµì—…', '2021-11-01'
-    , 'https://www.sksquare.com/kor/index.do', 'ëŒ€í•œë¯¼êµ­ì˜ SK ì‚°í•˜ ë°˜ë„ì²´Â·ì •ë³´í†µì‹ ê¸°ìˆ  íˆ¬ìž ì „ë¬¸ê¸°ì—….', '79ëª…', '5,911ì–µ 8,500ë§Œì›'
-    , 'SKìŠ¤í€˜ì–´', 'sksquare123*', '555-72-13245', 'SYìŠ¤ë„ì¿  ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/TiiZ3zomqSTjcor5ndS9vcfqDUBygT1F5McHWQQN9nUW9xBCeCnth18ThewIp064eUm0rWkQP6d02HNpnPoWJPWL4ZyLaeA7ypFCK8_jIRehAyEcee_1147hK0F4qv85yqoF2LSKbT7UZjwnK0rzHg.svg'
-    , 'ë°•ì„±í•˜', 'ë°•ë™í•˜', 'HR@sksquare.com'
-    , '02-751-3542', 'ë³µì§€', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'SY½ºÄù¾î', '¼­¿ï Áß±¸ À»Áö·Î 65', '±ÝÀ¶¾÷', '2021-11-01'
+    , 'https://www.sksquare.com/kor/index.do', '´ëÇÑ¹Î±¹ÀÇ SK »êÇÏ ¹ÝµµÃ¼¡¤Á¤º¸Åë½Å±â¼ú ÅõÀÚ Àü¹®±â¾÷.', '79¸í', '5,911¾ï 8,500¸¸¿ø'
+    , 'SK½ºÄù¾î', 'sksquare123*', '555-72-13245', 'SY½ºµµÄí »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/TiiZ3zomqSTjcor5ndS9vcfqDUBygT1F5McHWQQN9nUW9xBCeCnth18ThewIp064eUm0rWkQP6d02HNpnPoWJPWL4ZyLaeA7ypFCK8_jIRehAyEcee_1147hK0F4qv85yqoF2LSKbT7UZjwnK0rzHg.svg'
+    , '¹Ú¼ºÇÏ', '¹Úµ¿ÇÏ', 'HR@sksquare.com'
+    , '02-751-3542', 'º¹Áö', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -724,11 +724,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ë¯¸ëž˜ê´€ë¦¬ì¦ê¶Œ', 'ì„œìš¸íŠ¹ë³„ì‹œ ì¤‘êµ¬ ì„ì§€ë¡œ5ê¸¸ 26(ìˆ˜í•˜ë™)', 'ê¸ˆìœµì—…', '1970-09-23'
-    , 'https://securities.miraeasset.com/', 'ìœ ê°€ì¦ê¶Œë§¤ë§¤,ìœ ê°€ì¦ê¶Œìœ„íƒë§¤ë§¤,ìœ ê°€ì¦ê¶Œì¸ìˆ˜', '3,488ëª…', '19ì¡° 1,612ì–µì›'
-    , 'ë¯¸ëž˜ì—ì…‹ì¦ê¶Œ', 'mirae123*', '556-88-45602', 'ë¯¸ëž˜ê´€ë¦¬ì¦ê¶Œ ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/mQccS507mkBBm9LWfA8DVqXorKtZEq2OcBPjmUssMESUY8rmXbz_B_oeJ7l4q1SzG6MGHgva9dsvdc9V3NiIJJ3GS01ixmyU6AK4NTdo0gwxcL7ulOFiVIJDvXJG1E6Y11ajVEllB3z-fOMzam5_2w.svg'
-    , 'ìµœí˜„ë§Œ/ì´ë§Œì—´', 'ì´ë™ìˆ˜', 'HR@mirae.com'
-    , '02-846-5422', 'ê·¼ë¬´í™˜ê²½', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¹Ì·¡°ü¸®Áõ±Ç', '¼­¿ïÆ¯º°½Ã Áß±¸ À»Áö·Î5±æ 26(¼öÇÏµ¿)', '±ÝÀ¶¾÷', '1970-09-23'
+    , 'https://securities.miraeasset.com/', 'À¯°¡Áõ±Ç¸Å¸Å,À¯°¡Áõ±ÇÀ§Å¹¸Å¸Å,À¯°¡Áõ±ÇÀÎ¼ö', '3,488¸í', '19Á¶ 1,612¾ï¿ø'
+    , '¹Ì·¡¿¡¼ÂÁõ±Ç', 'mirae123*', '556-88-45602', '¹Ì·¡°ü¸®Áõ±Ç »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/mQccS507mkBBm9LWfA8DVqXorKtZEq2OcBPjmUssMESUY8rmXbz_B_oeJ7l4q1SzG6MGHgva9dsvdc9V3NiIJJ3GS01ixmyU6AK4NTdo0gwxcL7ulOFiVIJDvXJG1E6Y11ajVEllB3z-fOMzam5_2w.svg'
+    , 'ÃÖÇö¸¸/ÀÌ¸¸¿­', 'ÀÌµ¿¼ö', 'HR@mirae.com'
+    , '02-846-5422', '±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -737,11 +737,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ë¡¯ë°ì •ë°€ë¶„ì„', 'ìš¸ì‚°ê´‘ì—­ì‹œ ë‚¨êµ¬ ì—¬ì²œë¡œ217ë²ˆê¸¸ 19 (ì—¬ì²œë™)', 'ì œì¡°ì—…', '1964-08-27'
-    , 'https://www.lottefinechem.com/', 'ì—¼ì†ŒÂ·ì…€ë£°ë¡œìŠ¤ê³„ì—´, ì•”ëª¨ë‹ˆì•„ ê³„ì—´, ì „ìžìž¬ë£Œ ë“± í™”í•™ì œí’ˆ ì œì¡°', '943ëª…', '2ì¡° 4,638ì–µì›'
-    , 'ë¡¯ë°ì •ë°€í™”í•™', 'lotte123*', '557-12-32564', 'ë¡¯ë°ì •ë°€ë¶„ì„ ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/2L_eBmBEIuycR5MS0tGC-_h-47B6TER-z3P_BnuPTOe9Hkk0k6jVDANAunVw8lqSAW-N79YiyWa3wpq4y5oTIA8sDKKez0AUaBjXt-y4EPXXqexq2-ppWeIi0j2iE04sOQXk1UuCrbAoahEUj7D0aQ.svg'
-    , 'ê¹€ìš©ì„', 'ê°•ì„í™”', 'HR@lotte.com'
-    , '02-846-7891', 'ë³µì§€-ê·¼ë¬´í™˜ê²½', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '·Ôµ¥Á¤¹ÐºÐ¼®', '¿ï»ê±¤¿ª½Ã ³²±¸ ¿©Ãµ·Î217¹ø±æ 19 (¿©Ãµµ¿)', 'Á¦Á¶¾÷', '1964-08-27'
+    , 'https://www.lottefinechem.com/', '¿°¼Ò¡¤¼¿·ê·Î½º°è¿­, ¾Ï¸ð´Ï¾Æ °è¿­, ÀüÀÚÀç·á µî È­ÇÐÁ¦Ç° Á¦Á¶', '943¸í', '2Á¶ 4,638¾ï¿ø'
+    , '·Ôµ¥Á¤¹ÐÈ­ÇÐ', 'lotte123*', '557-12-32564', '·Ôµ¥Á¤¹ÐºÐ¼® »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/2L_eBmBEIuycR5MS0tGC-_h-47B6TER-z3P_BnuPTOe9Hkk0k6jVDANAunVw8lqSAW-N79YiyWa3wpq4y5oTIA8sDKKez0AUaBjXt-y4EPXXqexq2-ppWeIi0j2iE04sOQXk1UuCrbAoahEUj7D0aQ.svg'
+    , '±è¿ë¼®', '°­¼®È­', 'HR@lotte.com'
+    , '02-846-7891', 'º¹Áö-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -750,11 +750,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'H'||CHR(38)||'J', 'ì„œìš¸ì‹œ ê°•ë‚¨êµ¬ ì–¸ì£¼ë¡œ 541 F'||CHR(38)||'Fë¹Œë”©', 'ì œì¡°ì—…', '1992-08-27'
-    , 'https://www.fnf.co.kr/pages/main/main.php', 'F'||CHR(38)||'FëŠ” 1992ë…„ íŒ¨ì…˜ ì‚¬ì—…ì— ì§„ì¶œí•´ ì‹œëŒ€ê°€ ì›í•˜ëŠ” ìƒˆë¡œìš´ ë¼ì´í”„ìŠ¤íƒ€ì¼ê³¼ ë¬¸í™”ë¥¼ ë§Œë“¤ê³  ì„¸ìƒì„ ë³€í™”ì‹œì¼œì™”ìŠµë‹ˆë‹¤. ', '634ëª…', '1ì¡° 8,000ì–µì›'
-    , 'F'||CHR(38)||'F', 'fnf123*', '558-77-54621', 'H'||CHR(38)||'J ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/S4Tc8MNqyYs1fDNdMXsduXzHB98Shy-z1O1BIQeTqhYbjZyPGHOoB5RyNMzjRd1hgLFwDx5p1W-DccZTGkfeLDd_Z4zX3r_ddLwXe7V0GuaVMat2zJjStMij1_bCu5jIcVWvSyLWhxJo5xp1Eur7yQ.webp'
-    , 'ê¹€ì°½ìˆ˜', 'ê¹€ì˜ˆì§€', 'HR@fnf.com'
-    , '02-785-2136', 'ê·¼ë¬´í™˜ê²½', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'H'||CHR(38)||'J', '¼­¿ï½Ã °­³²±¸ ¾ðÁÖ·Î 541 F'||CHR(38)||'Fºôµù', 'Á¦Á¶¾÷', '1992-08-27'
+    , 'https://www.fnf.co.kr/pages/main/main.php', 'F'||CHR(38)||'F´Â 1992³â ÆÐ¼Ç »ç¾÷¿¡ ÁøÃâÇØ ½Ã´ë°¡ ¿øÇÏ´Â »õ·Î¿î ¶óÀÌÇÁ½ºÅ¸ÀÏ°ú ¹®È­¸¦ ¸¸µé°í ¼¼»óÀ» º¯È­½ÃÄÑ¿Ô½À´Ï´Ù. ', '634¸í', '1Á¶ 8,000¾ï¿ø'
+    , 'F'||CHR(38)||'F', 'fnf123*', '558-77-54621', 'H'||CHR(38)||'J »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/S4Tc8MNqyYs1fDNdMXsduXzHB98Shy-z1O1BIQeTqhYbjZyPGHOoB5RyNMzjRd1hgLFwDx5p1W-DccZTGkfeLDd_Z4zX3r_ddLwXe7V0GuaVMat2zJjStMij1_bCu5jIcVWvSyLWhxJo5xp1Eur7yQ.webp'
+    , '±èÃ¢¼ö', '±è¿¹Áö', 'HR@fnf.com'
+    , '02-785-2136', '±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -763,11 +763,11 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ëŒ€í•œì¹¼', 'ì„œìš¸íŠ¹ë³„ì‹œ ì¤‘êµ¬ ì„œì†Œë¬¸ë¡œ 117 (ì„œì†Œë¬¸ë™)', 'ìš´ìˆ˜ì—…', '2013-08-01'
-    , 'https://hanjinkal.co.kr/kr/main/index.do', 'ì§€ì£¼ì‚¬ì—…,ê²½ì˜ìžë¬¸ ë° ì»¨ì„¤íŒ…/í•­ê³µ ì—¬ê° ìš´ì†¡', '39ëª…', '458ì–µ 1,423ë§Œì›'
-    , 'í•œì§„ì¹¼', 'hanjinkal123*', '559-91-21354', 'ëŒ€í•œì¹¼ ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/_urpRwjsFd2B35gg9V57u8jT2Y3HNfkEw7H82kj9XVLy3DMJkTBaDyW4yYLemHNLCGkY1ZNwD4isbmRph0PIfWMUn0baa3w-X5saN8Rnf8xga2-lqYxkguwsb60DTm1CBpwfILfsp-u1-jXKiekStA.svg'
-    , 'ì¡°ì›íƒœ/ë¥˜ê²½í‘œ', 'ì¡°ìˆ˜ê²½', 'HR@hanjinkal.com'
-    , '02-462-6123', 'ì›Œë¼ë²¨', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '´ëÇÑÄ®', '¼­¿ïÆ¯º°½Ã Áß±¸ ¼­¼Ò¹®·Î 117 (¼­¼Ò¹®µ¿)', '¿î¼ö¾÷', '2013-08-01'
+    , 'https://hanjinkal.co.kr/kr/main/index.do', 'ÁöÁÖ»ç¾÷,°æ¿µÀÚ¹® ¹× ÄÁ¼³ÆÃ/Ç×°ø ¿©°´ ¿î¼Û', '39¸í', '458¾ï 1,423¸¸¿ø'
+    , 'ÇÑÁøÄ®', 'hanjinkal123*', '559-91-21354', '´ëÇÑÄ® »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/_urpRwjsFd2B35gg9V57u8jT2Y3HNfkEw7H82kj9XVLy3DMJkTBaDyW4yYLemHNLCGkY1ZNwD4isbmRph0PIfWMUn0baa3w-X5saN8Rnf8xga2-lqYxkguwsb60DTm1CBpwfILfsp-u1-jXKiekStA.svg'
+    , 'Á¶¿øÅÂ/·ù°æÇ¥', 'Á¶¼ö°æ', 'HR@hanjinkal.com'
+    , '02-462-6123', '¿ö¶óº§', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -776,230 +776,230 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
     , COMPANY_PRESIDENT_NAME, COMPANY_INCHARGE_NAME, COMPANY_INCHARGE_EMAIL
     , COMPANY_INCHARGE_PHONENUMBER, COMPANY_PREFER, PERMISSION
     , COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ë¯¼êµ­ì¦ê¶Œ', 'ì„œìš¸íŠ¹ë³„ì‹œ ì„œì´ˆêµ¬ ì„œì´ˆëŒ€ë¡œ74ê¸¸ 11 (ì„œì´ˆë™, ì‚¼ì„±íƒ€ìš´)', 'ê¸ˆìœµì—…', '1983-10-19'
-    , 'https://www.samsungpop.com/', 'ìœ ê°€ì¦ê¶Œì˜ ë§¤ë§¤,ìœ„íƒë§¤ë§¤,ì¸ìˆ˜ì£¼ì„ ', '2,517ëª…', '13ì¡° 4,869ì–µì›'
-    , 'ì‚¼ì„±ì¦ê¶Œ', 'samsungpop123*', '560-57-87213', 'ë¯¼êµ­ì¦ê¶Œ ì‚¬ì—…ìžë“±ë¡ì¦', 'https://i.namu.wiki/i/exlfTZQtPYHhJXtPjijxoYlh24-jJpZ3NWlR37fdngsTXLuQQPsbxVRffQTv5usuAx-MoloQflX9srDGIX2dgc6TeKZ607hG206ik4eKFltc_Fi188U8qW5vSpBHKIEYc07536vZOBw2KQpAv3R_8w.svg'
-    , 'ìž¥ì„í›ˆ', 'ê¹€ì„í›ˆ', 'HR@samsumgpop@com'
-    , '02-615-5136', 'ì›Œë¼ë²¨', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¹Î±¹Áõ±Ç', '¼­¿ïÆ¯º°½Ã ¼­ÃÊ±¸ ¼­ÃÊ´ë·Î74±æ 11 (¼­ÃÊµ¿, »ï¼ºÅ¸¿î)', '±ÝÀ¶¾÷', '1983-10-19'
+    , 'https://www.samsungpop.com/', 'À¯°¡Áõ±ÇÀÇ ¸Å¸Å,À§Å¹¸Å¸Å,ÀÎ¼öÁÖ¼±', '2,517¸í', '13Á¶ 4,869¾ï¿ø'
+    , '»ï¼ºÁõ±Ç', 'samsungpop123*', '560-57-87213', '¹Î±¹Áõ±Ç »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/exlfTZQtPYHhJXtPjijxoYlh24-jJpZ3NWlR37fdngsTXLuQQPsbxVRffQTv5usuAx-MoloQflX9srDGIX2dgc6TeKZ607hG206ik4eKFltc_Fi188U8qW5vSpBHKIEYc07536vZOBw2KQpAv3R_8w.svg'
+    , 'Àå¼®ÈÆ', '±è¼®ÈÆ', 'HR@samsumgpop@com'
+    , '02-615-5136', '¿ö¶óº§', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- KDí•œêµ­ì¡°ì„ í•´ì–‘
+-- KDÇÑ±¹Á¶¼±ÇØ¾ç
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'KDí•œêµ­ì¡°ì„ í•´ì–‘', 'ì„œìš¸ì‹œ ê°•ë‚¨êµ¬ ì‚¼ì„±ë™ 17-1', 'ì¡°ì„ í•´ì–‘', TO_DATE('1980-01-01', 'YYYY-MM-DD'), 'www.kds.co.kr'
-, 'í•œêµ­ì¡°ì„ í•´ì–‘ì€ ì„¸ê³„ì ì¸ ì¡°ì„ í•´ì–‘ ê¸°ì—…ìœ¼ë¡œ, ì„ ë°• ë° í•´ì–‘í”ŒëžœíŠ¸ë¥¼ ì œì¡°í•˜ëŠ” ê¸°ì—…ìž…ë‹ˆë‹¤. 
-ìµœê·¼ ë‚ ì§œì—ëŠ” ìƒˆë¡œìš´ ê¸°ìˆ  ê°œë°œ ë° í™˜ê²½ ì¹œí™”ì ì¸ í”„ë¡œì íŠ¸ì— ì°¸ì—¬í•˜ê³  ìžˆìœ¼ë©°
-, 2023ë…„ 9ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 5000ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '5000', '5ì¡° 8700', 'kd_ship', 'kd_pass', '423-45-67118', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'KDÇÑ±¹Á¶¼±ÇØ¾ç', '¼­¿ï½Ã °­³²±¸ »ï¼ºµ¿ 17-1', 'Á¶¼±ÇØ¾ç', TO_DATE('1980-01-01', 'YYYY-MM-DD'), 'www.kds.co.kr'
+, 'ÇÑ±¹Á¶¼±ÇØ¾çÀº ¼¼°èÀûÀÎ Á¶¼±ÇØ¾ç ±â¾÷À¸·Î, ¼±¹Ú ¹× ÇØ¾çÇÃ·£Æ®¸¦ Á¦Á¶ÇÏ´Â ±â¾÷ÀÔ´Ï´Ù. 
+ÃÖ±Ù ³¯Â¥¿¡´Â »õ·Î¿î ±â¼ú °³¹ß ¹× È¯°æ Ä£È­ÀûÀÎ ÇÁ·ÎÁ§Æ®¿¡ Âü¿©ÇÏ°í ÀÖÀ¸¸ç
+, 2023³â 9¿ù ±âÁØ ÇöÀç±îÁö ¾à 5000¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '5000', '5Á¶ 8700', 'kd_ship', 'kd_pass', '423-45-67118', null
 , 'https://i.namu.wiki/i/nR-f3pg9kCjNrDlAQhtRAF9Qc4zSUa2S2HWZy11R7sm8vn1UsE9qAnlpdqMpzVZc8sh-gsdPy5m-tQuLBhdH6AoLiBinYtKZh-_bzpqqn4p2mspTGJLp2iEiT00m6R-af5WNDr-6e7xMVcygHbj6ig.svg'
-, 'ê¹€ì¤€ì˜', 'ì´ê±´í˜¸', 'gh0903@kds.com', '02-2218-5171'
-, 'ë³µì§€-ê²½ì˜ì§„', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '±èÁØ¿µ', 'ÀÌ°ÇÈ£', 'gh0903@kds.com', '02-2218-5171'
+, 'º¹Áö-°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- WJì½”ì›¨ì´
+-- WJÄÚ¿þÀÌ
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'WJì½”ì›¨ì´', 'ì„œìš¸ì‹œ ê°•ì„œêµ¬ í™”ê³¡ë™ 771', 'ê°€ì •ìš©í’ˆ', TO_DATE('1988-05-15', 'YYYY-MM-DD'), 'www.coway.co.kr'
-, 'WJì½”ì›¨ì´ëŠ” ê³µê¸°ì²­ì •ê¸°, ì •ìˆ˜ê¸° ë“± ê°€ì •ìš©í’ˆì„ ìƒì‚°í•˜ëŠ” ê¸°ì—…ìœ¼ë¡œ, êµ­ë‚´ì™¸ì—ì„œ ë†’ì€ ì‹ ë¢°ë¥¼ ì–»ê³  ìžˆìŠµë‹ˆë‹¤. 
-ìµœê·¼ ë‚ ì§œì—ëŠ” ìƒˆë¡œìš´ ì œí’ˆ ë¼ì¸ì—…ì„ ì¶œì‹œí•˜ë©° ì„±ìž¥í•˜ê³  ìžˆìœ¼ë©°
-, 2023ë…„ 8ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 3000ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '3000', '3ì¡° 7820', 'wj_coway', 'securepass', '487-65-43274', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'WJÄÚ¿þÀÌ', '¼­¿ï½Ã °­¼­±¸ È­°îµ¿ 771', '°¡Á¤¿ëÇ°', TO_DATE('1988-05-15', 'YYYY-MM-DD'), 'www.coway.co.kr'
+, 'WJÄÚ¿þÀÌ´Â °ø±âÃ»Á¤±â, Á¤¼ö±â µî °¡Á¤¿ëÇ°À» »ý»êÇÏ´Â ±â¾÷À¸·Î, ±¹³»¿Ü¿¡¼­ ³ôÀº ½Å·Ú¸¦ ¾ò°í ÀÖ½À´Ï´Ù. 
+ÃÖ±Ù ³¯Â¥¿¡´Â »õ·Î¿î Á¦Ç° ¶óÀÎ¾÷À» Ãâ½ÃÇÏ¸ç ¼ºÀåÇÏ°í ÀÖÀ¸¸ç
+, 2023³â 8¿ù ±âÁØ ÇöÀç±îÁö ¾à 3000¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '3000', '3Á¶ 7820', 'wj_coway', 'securepass', '487-65-43274', null
 , 'https://i.namu.wiki/i/WlgF775bjz0uwvtzC7wetZyX52_BT2f-9KRyFj73KcEAikJI8NpwOjgNyQ6-DPVkeXqJtMhksa0Hev6m-OHPL_EnCpYkX-1jDZ7dmQtpTJQ750sRoSxkTq-mABqV4awRYDXnljvNBjGepKL7NS995g.svg'
-, 'ì´ì§„ìš±', 'ë°•ì¤€ì„', 'junseok33@coway.com', '02-9110-5131'
-, 'ë³µì§€-ê·¼ë¬´í™˜ê²½', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, 'ÀÌÁø¿í', '¹ÚÁØ¼®', 'junseok33@coway.com', '02-9110-5131'
+, 'º¹Áö-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- ê¸°ì—…ë²ˆí˜¸, ê¸°ì—…ëª…, ê¸°ì—…ì£¼ì†Œ, ê¸°ì—… ì—…ì¢…, ê¸°ì—… ì„¤ë¦½ì¼, ê¸°ì—… í™ˆíŽ˜ì´ì§€, ê¸°ì—… ì†Œê°œ, ì‚¬ì›ìˆ˜, ë§¤ì¶œì•¡, ê¸°ì—… ì•„ì´ë””, ê¸°ì—… ë¹„ë°€ë²ˆí˜¸, ê¸°ì—… ì‚¬ì—…ìžë“±ë¡ë²ˆí˜¸, ê¸°ì—… ì‚¬ì—…ìžë“±ë¡ì¦, íšŒì‚¬ ë¡œê³ , ê¸°ì—… ëŒ€í‘œìžëª…, ê¸°ì—…_ë‹´ë‹¹ìž ì´ë¦„, ê¸°ì—…_ë‹´ë‹¹ìž ì´ë©”ì¼, ê¸°ì—…_ë‹´ë‹¹ìž ì—°ë½ì²˜, ê¸°ì—… ì„ í˜¸ë„, ê¶Œí•œ ë ˆë²¨, ê³„ì • ìƒì„±ì¼, ê³„ì • ìˆ˜ì •ì¼, ì ‘ì† ì‹œê°„, ì ‘ì† í•´ì œ ì‹œê°„
+-- ±â¾÷¹øÈ£, ±â¾÷¸í, ±â¾÷ÁÖ¼Ò, ±â¾÷ ¾÷Á¾, ±â¾÷ ¼³¸³ÀÏ, ±â¾÷ È¨ÆäÀÌÁö, ±â¾÷ ¼Ò°³, »ç¿ø¼ö, ¸ÅÃâ¾×, ±â¾÷ ¾ÆÀÌµð, ±â¾÷ ºñ¹Ð¹øÈ£, ±â¾÷ »ç¾÷ÀÚµî·Ï¹øÈ£, ±â¾÷ »ç¾÷ÀÚµî·ÏÁõ, È¸»ç ·Î°í, ±â¾÷ ´ëÇ¥ÀÚ¸í, ±â¾÷_´ã´çÀÚ ÀÌ¸§, ±â¾÷_´ã´çÀÚ ÀÌ¸ÞÀÏ, ±â¾÷_´ã´çÀÚ ¿¬¶ôÃ³, ±â¾÷ ¼±È£µµ, ±ÇÇÑ ·¹º§, °èÁ¤ »ý¼ºÀÏ, °èÁ¤ ¼öÁ¤ÀÏ, Á¢¼Ó ½Ã°£, Á¢¼Ó ÇØÁ¦ ½Ã°£
 
--- 'í•œí•˜ìƒëª…
+-- 'ÇÑÇÏ»ý¸í
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'í•œí•˜ìƒëª…', 'ì„œìš¸ì‹œ ê°•ë¶êµ¬ ì‚¼ì–‘ë™ 33-2', 'ë³´í—˜', TO_DATE('1995-08-23', 'YYYY-MM-DD'), 'www.hanhalife.co.kr'
-, 'í•œí•˜ìƒëª…ì€ ë‹¤ì–‘í•œ ì¢…ë¥˜ì˜ ë³´í—˜ ìƒí’ˆì„ ì œê³µí•˜ëŠ” ë³´í—˜íšŒì‚¬ë¡œ, ì•ˆì •ì ì¸ ì„±ìž¥ì„ ì´ì–´ê°€ê³  ìžˆìŠµë‹ˆë‹¤. 
-ìµœê·¼ì—ëŠ” ë””ì§€í„¸ ì „í™˜ì„ í†µí•œ ì„œë¹„ìŠ¤ í˜ì‹ ì— ì£¼ë ¥í•˜ë©° ê³ ê°ë“¤ì—ê²Œ ê°€ì¹˜ ìžˆëŠ” ë³´í—˜ ì†”ë£¨ì…˜ì„ ì œê³µí•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-2023ë…„ 8ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 2000ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '2000', '1ì¡° 6500', 'hanhalife_ins', 'hanhalife_pass', '416-23-61801', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÇÑÇÏ»ý¸í', '¼­¿ï½Ã °­ºÏ±¸ »ï¾çµ¿ 33-2', 'º¸Çè', TO_DATE('1995-08-23', 'YYYY-MM-DD'), 'www.hanhalife.co.kr'
+, 'ÇÑÇÏ»ý¸íÀº ´Ù¾çÇÑ Á¾·ùÀÇ º¸Çè »óÇ°À» Á¦°øÇÏ´Â º¸ÇèÈ¸»ç·Î, ¾ÈÁ¤ÀûÀÎ ¼ºÀåÀ» ÀÌ¾î°¡°í ÀÖ½À´Ï´Ù. 
+ÃÖ±Ù¿¡´Â µðÁöÅÐ ÀüÈ¯À» ÅëÇÑ ¼­ºñ½º Çõ½Å¿¡ ÁÖ·ÂÇÏ¸ç °í°´µé¿¡°Ô °¡Ä¡ ÀÖ´Â º¸Çè ¼Ö·ç¼ÇÀ» Á¦°øÇÏ°í ÀÖ½À´Ï´Ù. 
+2023³â 8¿ù ±âÁØ ÇöÀç±îÁö ¾à 2000¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '2000', '1Á¶ 6500', 'hanhalife_ins', 'hanhalife_pass', '416-23-61801', null
 , 'https://i.namu.wiki/i/9_fsNPTPbPtTl69-9YT7zh3u5MC7VSeMso7gVpSkBCEYsrsEmo9J6H2alLVNeNmEPz_Cgju_zHAxPSuLr4cxJA.svg'
-, 'ê¹€ìœ¤í•˜', 'ì´ì—°ì£¼', 'yeounjoo16@hanhalife.com', '02-3126-7111'
-, 'ë³µì§€-ê¸‰ì—¬', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '±èÀ±ÇÏ', 'ÀÌ¿¬ÁÖ', 'yeounjoo16@hanhalife.com', '02-3126-7111'
+, 'º¹Áö-±Þ¿©', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- í•œëŒ€ê±´ì„¤
+-- ÇÑ´ë°Ç¼³
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'í•œëŒ€ê±´ì„¤', 'ì„œìš¸ì‹œ ê°•ë‚¨êµ¬ ì„ ë¦‰ë¡œ158 12ê¸¸ ', 'ê±´ì„¤', TO_DATE('1987-03-15', 'YYYY-MM-DD'), 'www.handaegun.co.kr'
-, 'í•œëŒ€ê±´ì„¤ì€ ê±´ì¶• ë° í† ëª© ê³µì‚¬ë¥¼ ì „ë¬¸ìœ¼ë¡œ í•˜ëŠ” ê±´ì„¤ê¸°ì—…ìœ¼ë¡œ, ì•ˆì „í•˜ê³  í’ˆì§ˆ ë†’ì€ ê³µì‚¬ë¥¼ í†µí•´ ì‹ ë¢°ë¥¼ ìŒ“ê³  ìžˆìŠµë‹ˆë‹¤. 
-í˜„ìž¬ê¹Œì§€ ë‹¤ì–‘í•œ ê·œëª¨ì˜ ê³µì‚¬ë¥¼ ì„±ê³µì ìœ¼ë¡œ ìˆ˜í–‰í•˜ë©° ì„±ìž¥í•´ì™”ìŠµë‹ˆë‹¤. 
-2023ë…„ 9ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 1000ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '1000', '4ì¡° 8200', 'handaegun_con', 'handaegun_pass', '477-29-20162', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÇÑ´ë°Ç¼³', '¼­¿ï½Ã °­³²±¸ ¼±¸ª·Î158 12±æ ', '°Ç¼³', TO_DATE('1987-03-15', 'YYYY-MM-DD'), 'www.handaegun.co.kr'
+, 'ÇÑ´ë°Ç¼³Àº °ÇÃà ¹× Åä¸ñ °ø»ç¸¦ Àü¹®À¸·Î ÇÏ´Â °Ç¼³±â¾÷À¸·Î, ¾ÈÀüÇÏ°í Ç°Áú ³ôÀº °ø»ç¸¦ ÅëÇØ ½Å·Ú¸¦ ½×°í ÀÖ½À´Ï´Ù. 
+ÇöÀç±îÁö ´Ù¾çÇÑ ±Ô¸ðÀÇ °ø»ç¸¦ ¼º°øÀûÀ¸·Î ¼öÇàÇÏ¸ç ¼ºÀåÇØ¿Ô½À´Ï´Ù. 
+2023³â 9¿ù ±âÁØ ÇöÀç±îÁö ¾à 1000¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '1000', '4Á¶ 8200', 'handaegun_con', 'handaegun_pass', '477-29-20162', null
 , 'https://i.namu.wiki/i/BBOT3lGYfDrfe3S8DlujM8Pc6_ltIIJit57uQ4sw_I5OzDMZiyYhrHcBYr0E7Rks6-5Um71-KEjn8LQRsfHPAQocqFib1wXqPPJmd1p6mxH7ZxX-bIjAv_6fUOvVM0xvrI2FpV0o3HukqGL5IrFuKQ.svg'
-, 'ì´ê±´í˜¸', 'ë°•ê·¼ì„', 'pgs0081@handaegun.com', '02-5122-9012'
-, 'ê·¼ë¬´í™˜ê²½-ì›Œë¼ë²¨', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, 'ÀÌ°ÇÈ£', '¹Ú±Ù¼®', 'pgs0081@handaegun.com', '02-5122-9012'
+, '±Ù¹«È¯°æ-¿ö¶óº§', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- JDê¸ˆìœµì§€ì£¼
+-- JD±ÝÀ¶ÁöÁÖ
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'JDê¸ˆìœµì§€ì£¼', 'ì„œìš¸ì‹œ ì˜ë“±í¬êµ¬ ì—¬ì˜ë™ë¡œ3ê¸¸ 9 ', 'ê¸ˆìœµ', TO_DATE('2000-12-01', 'YYYY-MM-DD'), 'www.jdgroup.co.kr'
-, 'JDê¸ˆìœµì§€ì£¼ëŠ” ë‹¤ì–‘í•œ ê¸ˆìœµ ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ëŠ” ê¸°ì—…ìœ¼ë¡œ, ì€í–‰, ì¦ê¶Œ, ë³´í—˜ ë“± ë‹¤ì–‘í•œ ë¶„ì•¼ì—ì„œ ì‚¬ì—…ì„ í™•ìž¥í•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-ìµœê·¼ì—ëŠ” ë””ì§€í„¸ ê¸ˆìœµì—ë„ ì£¼ë ¥í•˜ë©° ë³€í™”í•˜ëŠ” ê¸ˆìœµ ì‹œìž¥ì— ë°œë§žì¶° ì„±ìž¥í•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-2023ë…„ 6ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 5000ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '5000', '20ì¡° 1300', 'jd_finance', 'jd_pass', '416-23-89621', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'JD±ÝÀ¶ÁöÁÖ', '¼­¿ï½Ã ¿µµîÆ÷±¸ ¿©ÀÇµ¿·Î3±æ 9 ', '±ÝÀ¶', TO_DATE('2000-12-01', 'YYYY-MM-DD'), 'www.jdgroup.co.kr'
+, 'JD±ÝÀ¶ÁöÁÖ´Â ´Ù¾çÇÑ ±ÝÀ¶ ¼­ºñ½º¸¦ Á¦°øÇÏ´Â ±â¾÷À¸·Î, ÀºÇà, Áõ±Ç, º¸Çè µî ´Ù¾çÇÑ ºÐ¾ß¿¡¼­ »ç¾÷À» È®ÀåÇÏ°í ÀÖ½À´Ï´Ù. 
+ÃÖ±Ù¿¡´Â µðÁöÅÐ ±ÝÀ¶¿¡µµ ÁÖ·ÂÇÏ¸ç º¯È­ÇÏ´Â ±ÝÀ¶ ½ÃÀå¿¡ ¹ß¸ÂÃç ¼ºÀåÇÏ°í ÀÖ½À´Ï´Ù. 
+2023³â 6¿ù ±âÁØ ÇöÀç±îÁö ¾à 5000¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '5000', '20Á¶ 1300', 'jd_finance', 'jd_pass', '416-23-89621', null
 , 'https://i.namu.wiki/i/eNfUvzKCUzblCjQ2ZSmgQIpycyg_9LEOLpG_NeFi664tfd7zhyKkaxJOdqORKFg6TEUegNfcC-1E4dcjrVx8VEDhuqtDTDyiiQdkeT_mfHfwMEB9uDhcSR39imaNbtbuUV3xj9VkpGxRMvriC25mFQ.svg'
-, 'ì‹ ì§„ìš±', 'ë¥˜ì„±í›ˆ', 'ryusung@jdgroup.com', '02-6120-3121'
-, 'ê²½ì˜ì§„-ê¸‰ì—¬', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '½ÅÁø¿í', '·ù¼ºÈÆ', 'ryusung@jdgroup.com', '02-6120-3121'
+, '°æ¿µÁø-±Þ¿©', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- HNíˆ¬ìžì¦ê¶Œ
+-- HNÅõÀÚÁõ±Ç
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'HNíˆ¬ìžì¦ê¶Œ', 'ì„œìš¸ì‹œ ê°•ë‚¨êµ¬ ì„ ë¦‰ë¡œ 669', 'ì¦ê¶Œ', TO_DATE('1998-06-30', 'YYYY-MM-DD'), 'www.hninvestment.co.kr'
-, 'HNíˆ¬ìžì¦ê¶Œì€ ë‹¤ì–‘í•œ íˆ¬ìž ìƒí’ˆ ë° ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ëŠ” ê¸ˆìœµíšŒì‚¬ë¡œ
-, ì•ˆì •ì ì¸ ìˆ˜ìµì„ ì¶”êµ¬í•˜ëŠ” ê³ ê°ë“¤ì—ê²Œ ë‹¤ì–‘í•œ íˆ¬ìž ê¸°íšŒë¥¼ ì œê³µí•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-2023ë…„ 7ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 800ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '800', '12ì¡° 3700', 'hn_investment', 'hn_pass', '477-29-60162', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'HNÅõÀÚÁõ±Ç', '¼­¿ï½Ã °­³²±¸ ¼±¸ª·Î 669', 'Áõ±Ç', TO_DATE('1998-06-30', 'YYYY-MM-DD'), 'www.hninvestment.co.kr'
+, 'HNÅõÀÚÁõ±ÇÀº ´Ù¾çÇÑ ÅõÀÚ »óÇ° ¹× ¼­ºñ½º¸¦ Á¦°øÇÏ´Â ±ÝÀ¶È¸»ç·Î
+, ¾ÈÁ¤ÀûÀÎ ¼öÀÍÀ» Ãß±¸ÇÏ´Â °í°´µé¿¡°Ô ´Ù¾çÇÑ ÅõÀÚ ±âÈ¸¸¦ Á¦°øÇÏ°í ÀÖ½À´Ï´Ù. 
+2023³â 7¿ù ±âÁØ ÇöÀç±îÁö ¾à 800¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '800', '12Á¶ 3700', 'hn_investment', 'hn_pass', '477-29-60162', null
 , 'https://i.namu.wiki/i/g99LDDzca0yLkXuMjUmJ1gttNXP3ZRROgANMPSNN2LGJNki5Qi2P94cX_y_zDfZTVmukX05JpGOQcw92Q2VYfA.svg'
-, 'ì „ìŠ¹í—Œ', 'ë°•ë¯¼ê¸°', 'park58@hninvestment.com', '02-3314-3311'
-, 'ê²½ì˜ì§„-ê·¼ë¬´í™˜ê²½', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, 'Àü½ÂÇå', '¹Ú¹Î±â', 'park58@hninvestment.com', '02-3314-3311'
+, '°æ¿µÁø-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- KG ETS
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'KG ETS', 'ì„œìš¸ì‹œ ì„œì´ˆêµ¬ ì–‘ìž¬ëŒ€ë¡œ12ê¸¸ 73-18', 'ì „ìž', TO_DATE('1985-02-14', 'YYYY-MM-DD'), 'www.kgets.co.kr'
-, 'KG ETSëŠ” ë‹¤ì–‘í•œ ì „ìž ì œí’ˆ ë° ì†”ë£¨ì…˜ì„ ì œê³µí•˜ëŠ” ê¸°ì—…ìœ¼ë¡œ
-, ê¸°ìˆ  í˜ì‹ ê³¼ ê³ ê° ì¤‘ì‹¬ì˜ ì„œë¹„ìŠ¤ë¥¼ ì¶”êµ¬í•˜ë©° ê¸€ë¡œë²Œ ì‹œìž¥ì—ì„œ ê²½ìŸë ¥ì„ ê°–ì¶”ê³  ìžˆìŠµë‹ˆë‹¤. 
-2023ë…„ 8ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 3000ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '3000', '6ì¡° 9400', 'kg_ets', 'kg_pass', '416-23-42621', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'KG ETS', '¼­¿ï½Ã ¼­ÃÊ±¸ ¾çÀç´ë·Î12±æ 73-18', 'ÀüÀÚ', TO_DATE('1985-02-14', 'YYYY-MM-DD'), 'www.kgets.co.kr'
+, 'KG ETS´Â ´Ù¾çÇÑ ÀüÀÚ Á¦Ç° ¹× ¼Ö·ç¼ÇÀ» Á¦°øÇÏ´Â ±â¾÷À¸·Î
+, ±â¼ú Çõ½Å°ú °í°´ Áß½ÉÀÇ ¼­ºñ½º¸¦ Ãß±¸ÇÏ¸ç ±Û·Î¹ú ½ÃÀå¿¡¼­ °æÀï·ÂÀ» °®Ãß°í ÀÖ½À´Ï´Ù. 
+2023³â 8¿ù ±âÁØ ÇöÀç±îÁö ¾à 3000¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '3000', '6Á¶ 9400', 'kg_ets', 'kg_pass', '416-23-42621', null
 , 'https://i.namu.wiki/i/jv6LAQ4a9npkUDlZXiCGgWls5Oz17E2t8Rnm98JM4EoucdntNX18jQLnCPJYiPotX3TJLhwP4TwOkk0kGF_A7rfxoL6G0cK_Xb-J6EHoWURgr5W9ooS53Oi9b2k9g8zpwxZ5BT_QpXxB8j6ykpDbaw.svg'
-, 'ê¹€ê¸°í›ˆ', 'ì •ìŠ¹í—Œ', 'jeong77@kgets.com', '02-3488-5110'
-, 'ë³µì§€-ê²½ì˜ì§„', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '±è±âÈÆ', 'Á¤½ÂÇå', 'jeong77@kgets.com', '02-3488-5110'
+, 'º¹Áö-°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- SanSungì—”ì§€ë‹ˆì–´ë§
+-- SanSung¿£Áö´Ï¾î¸µ
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'SanSungì—”ì§€ë‹ˆì–´ë§', 'ì„œìš¸ì‹œ ë§ˆí¬êµ¬ ì‹ ìˆ˜ë¡œ 58', 'ê³µí•™', TO_DATE('1983-12-05', 'YYYY-MM-DD'), 'www.sansungeng.co.kr'
-, 'SanSungì—”ì§€ë‹ˆì–´ë§ì€ ë‹¤ì–‘í•œ ê³µí•™ ë¶„ì•¼ì—ì„œ í† íƒˆ ì—”ì§€ë‹ˆì–´ë§ ì†”ë£¨ì…˜ì„ ì œê³µí•˜ëŠ” ê¸°ì—…ìœ¼ë¡œ
-, ì•ˆì •ì ì¸ ê¸°ìˆ ë ¥ìœ¼ë¡œ êµ­ë‚´ì™¸ì—ì„œ ì‹ ë¢°ë¥¼ ì–»ê³  ìžˆìŠµë‹ˆë‹¤. 
-2023ë…„ 5ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 1500ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '1500', '5ì¡° 3300', 'sansung_eng', 'sansung_pass', '416-23-14621', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'SanSung¿£Áö´Ï¾î¸µ', '¼­¿ï½Ã ¸¶Æ÷±¸ ½Å¼ö·Î 58', '°øÇÐ', TO_DATE('1983-12-05', 'YYYY-MM-DD'), 'www.sansungeng.co.kr'
+, 'SanSung¿£Áö´Ï¾î¸µÀº ´Ù¾çÇÑ °øÇÐ ºÐ¾ß¿¡¼­ ÅäÅ» ¿£Áö´Ï¾î¸µ ¼Ö·ç¼ÇÀ» Á¦°øÇÏ´Â ±â¾÷À¸·Î
+, ¾ÈÁ¤ÀûÀÎ ±â¼ú·ÂÀ¸·Î ±¹³»¿Ü¿¡¼­ ½Å·Ú¸¦ ¾ò°í ÀÖ½À´Ï´Ù. 
+2023³â 5¿ù ±âÁØ ÇöÀç±îÁö ¾à 1500¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '1500', '5Á¶ 3300', 'sansung_eng', 'sansung_pass', '416-23-14621', null
 , 'https://i.namu.wiki/i/a7Zsczm_B5KEOTmWQwAWWiE5dOJvqzbdA9FTcIZVFcD1ItXXcDgqo9YoS15kTs05Fn-r6yChFZ58C9NQNhesmQ3qnz6_Imy3Kmpc399ApiQUfzCUKzE2__s8kRQDqCo4ulgIt60w40A9l6IxwXDmQw.svg'
-, 'ê¹€ì¸ì§', 'ì„±ì¤€í›„', 'junhoo@sansungeng.com', '02-3711-6121'
-, 'ë³µì§€-ê²½ì˜ì§„', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '±èÀÎÁ÷', '¼ºÁØÈÄ', 'junhoo@sansungeng.com', '02-3711-6121'
+, 'º¹Áö-°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- í•œí•˜ì—ì–´ë¡œìŠ¤íŽ˜ì´ìŠ¤
+-- ÇÑÇÏ¿¡¾î·Î½ºÆäÀÌ½º
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'í•œí•˜ì—ì–´ë¡œìŠ¤íŽ˜ì´ìŠ¤', 'ì„œìš¸ì‹œ ê°•ì„œêµ¬ ë…¹ì‚°ì‚°ë‹¨ 262ë¡œ 58ë²ˆê¸¸ 51', 'í•­ê³µìš°ì£¼', TO_DATE('1997-11-30', 'YYYY-MM-DD'), 'www.hanhaaero.co.kr'
-, 'í•œí•˜ì—ì–´ë¡œìŠ¤íŽ˜ì´ìŠ¤ëŠ” í•­ê³µìš°ì£¼ ë¶„ì•¼ì—ì„œ ë‹¤ì–‘í•œ ì œí’ˆ ë° ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ëŠ” ê¸°ì—…ìœ¼ë¡œ
-, ë›°ì–´ë‚œ ê¸°ìˆ ë ¥ìœ¼ë¡œ ì„¸ê³„ì ì¸ ê¸°ì—…ë“¤ê³¼ í˜‘ë ¥í•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-2023ë…„ 6ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 1200ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '1200', '29ì¡° 3700', 'hanha_aero', 'hanha_pass', '477-29-30162', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÇÑÇÏ¿¡¾î·Î½ºÆäÀÌ½º', '¼­¿ï½Ã °­¼­±¸ ³ì»ê»ê´Ü 262·Î 58¹ø±æ 51', 'Ç×°ø¿ìÁÖ', TO_DATE('1997-11-30', 'YYYY-MM-DD'), 'www.hanhaaero.co.kr'
+, 'ÇÑÇÏ¿¡¾î·Î½ºÆäÀÌ½º´Â Ç×°ø¿ìÁÖ ºÐ¾ß¿¡¼­ ´Ù¾çÇÑ Á¦Ç° ¹× ¼­ºñ½º¸¦ Á¦°øÇÏ´Â ±â¾÷À¸·Î
+, ¶Ù¾î³­ ±â¼ú·ÂÀ¸·Î ¼¼°èÀûÀÎ ±â¾÷µé°ú Çù·ÂÇÏ°í ÀÖ½À´Ï´Ù. 
+2023³â 6¿ù ±âÁØ ÇöÀç±îÁö ¾à 1200¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '1200', '29Á¶ 3700', 'hanha_aero', 'hanha_pass', '477-29-30162', null
 , 'https://i.namu.wiki/i/ndJICJ1DRaket-J3So86GXRPeQQNYD8Hl1Rk0jBubNtz2ZyEdoOGEwvLIoilh53z23Fjf8oZny0S65SXPeUjt5d0gBuc278vBjTXLVvFbkQFB0MwwsOopZ3mOyyB7u_QsLsVfqE1JYNdkh_4i-Ic6Q.svg'
-, 'ì´ìž¥í›ˆ', 'ë°•ëª…ì„', 'park@hanhaaero.com', '02-5568-9012'
-, 'ì›Œë¼ë²¨-ê·¼ë¬´í™˜ê²½', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, 'ÀÌÀåÈÆ', '¹Ú¸í¼®', 'park@hanhaaero.com', '02-5568-9012'
+, '¿ö¶óº§-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- BMKê¸ˆìœµì§€ì£¼
+-- BMK±ÝÀ¶ÁöÁÖ
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'BMKê¸ˆìœµì§€ì£¼', 'ì„œìš¸ì‹œ ì¢…ë¡œêµ¬ ì¸ì‚¬ë™3ê¸¸ 30', 'ê¸ˆìœµ', TO_DATE('1990-04-25', 'YYYY-MM-DD'), 'www.bmkgroup.co.kr'
-, 'BMKê¸ˆìœµì§€ì£¼ëŠ” ë‹¤ì–‘í•œ ê¸ˆìœµ ë¶„ì•¼ì—ì„œ ì‚¬ì—…ì„ ì˜ìœ„í•˜ëŠ” ê¸°ì—…ìœ¼ë¡œ
-, ê¸€ë¡œë²Œ ì‹œìž¥ì—ì„œ ë†’ì€ ê²½ìŸë ¥ì„ ê°–ì¶”ê³  ìžˆìŠµë‹ˆë‹¤. 
-2023ë…„ 9ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 4500ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '4500', '18ì¡° 7800', 'bmk_finance', 'bmk_pass', '416-23-67621', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'BMK±ÝÀ¶ÁöÁÖ', '¼­¿ï½Ã Á¾·Î±¸ ÀÎ»çµ¿3±æ 30', '±ÝÀ¶', TO_DATE('1990-04-25', 'YYYY-MM-DD'), 'www.bmkgroup.co.kr'
+, 'BMK±ÝÀ¶ÁöÁÖ´Â ´Ù¾çÇÑ ±ÝÀ¶ ºÐ¾ß¿¡¼­ »ç¾÷À» ¿µÀ§ÇÏ´Â ±â¾÷À¸·Î
+, ±Û·Î¹ú ½ÃÀå¿¡¼­ ³ôÀº °æÀï·ÂÀ» °®Ãß°í ÀÖ½À´Ï´Ù. 
+2023³â 9¿ù ±âÁØ ÇöÀç±îÁö ¾à 4500¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '4500', '18Á¶ 7800', 'bmk_finance', 'bmk_pass', '416-23-67621', null
 , 'https://i.namu.wiki/i/Vn_htIQrKttNzjIOEgOH37vh7ZQQ7lRg0QsWNVQ2DYAcs9A9iBCtXwpj2wRetcXId_HUit6vS1r_1iyMxgk1DWamkz76Tzn9v0Y5sxIK64ddgJSJFUVvPV3JTIF1PN1_BqdL7pf01Qr34fvlieBQXw.svg'
-, 'ë°•í˜„ì¤€', 'ìµœì§„ì„±', 'choi@bmkgroup.com', '02-7890-3661'
-, 'ê²½ì˜ì§„-ê¸‰ì—¬', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '¹ÚÇöÁØ', 'ÃÖÁø¼º', 'choi@bmkgroup.com', '02-7890-3661'
+, '°æ¿µÁø-±Þ¿©', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- í˜¸ì„ í‹°ì•¤ì”¨
+-- È£¼±Æ¼¾Ø¾¾
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'í˜¸ì„ í‹°ì•¤ì”¨', 'ì„œìš¸ì‹œ ê°•ë¶êµ¬ ì˜¤í—Œë¡œ 199-9', 'ì‹í’ˆ', TO_DATE('1999-08-01', 'YYYY-MM-DD'), 'www.hostea.co.kr'
-, 'í˜¸ì„ í‹°ì•¤ì”¨ëŠ” ë‹¤ì–‘í•œ ì¢…ë¥˜ì˜ ì°¨ ë° ìŒë£Œë¥¼ ì œê³µí•˜ëŠ” ì‹í’ˆ ê¸°ì—…ìœ¼ë¡œ
-, ì°¨ë¥¼ í†µí•´ ê³ ê°ë“¤ì—ê²Œ ì¦ê±°ìš´ ê²½í—˜ì„ ì œê³µí•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-2023ë…„ 8ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 800ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'È£¼±Æ¼¾Ø¾¾', '¼­¿ï½Ã °­ºÏ±¸ ¿ÀÇå·Î 199-9', '½ÄÇ°', TO_DATE('1999-08-01', 'YYYY-MM-DD'), 'www.hostea.co.kr'
+, 'È£¼±Æ¼¾Ø¾¾´Â ´Ù¾çÇÑ Á¾·ùÀÇ Â÷ ¹× À½·á¸¦ Á¦°øÇÏ´Â ½ÄÇ° ±â¾÷À¸·Î
+, Â÷¸¦ ÅëÇØ °í°´µé¿¡°Ô Áñ°Å¿î °æÇèÀ» Á¦°øÇÏ°í ÀÖ½À´Ï´Ù. 
+2023³â 8¿ù ±âÁØ ÇöÀç±îÁö ¾à 800¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
 , '800', '7500', 'hostea_co', 'hostea_pass', '477-29-00162', null
 , 'https://i.namu.wiki/i/7XFK1Cv7Lq2pG4AA5axqykY8n9easGYddVf-7OmxSZp59DuvwhOFMiq6wFoFF-gJ7zzh-cxf0X7aMOkwVj0MOAv6C0e2WTDdpnGRcAoOmLNhiLsDWT4WR6vZ7DwOHdtKJtRwEQeqkwXeXpCP_cbZqQ.svg'
-, 'ê¹€í›ˆ', 'ì´ìœ¤ìˆ˜', 'lee@hostea.com', '02-2345-6789'
-, 'ë³µì§€-ì›Œë¼ë²¨', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '±èÈÆ', 'ÀÌÀ±¼ö', 'lee@hostea.com', '02-2345-6789'
+, 'º¹Áö-¿ö¶óº§', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- ë³´ìŠ¤ì½”ì¸í„°ë‚´ì…”ë„
+-- º¸½ºÄÚÀÎÅÍ³»¼Å³Î
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'ë³´ìŠ¤ì½”ì¸í„°ë‚´ì…”ë„', 'ì„œìš¸ì‹œ ê°•ë‚¨êµ¬ ë³´ìŠ¤ë¡œ 1213', 'ì „ìžìƒê±°ëž˜', TO_DATE('2005-03-20', 'YYYY-MM-DD'), 'www.bosco.co.kr'
-, 'ë³´ìŠ¤ì½”ì¸í„°ë‚´ì…”ë„ì€ ë‹¤ì–‘í•œ ìƒí’ˆì„ íŒë§¤í•˜ëŠ” ì „ìžìƒê±°ëž˜ ê¸°ì—…ìœ¼ë¡œ
-, ìµœì‹  íŠ¸ë Œë“œì— ë§žì¶˜ ìƒí’ˆì„ ê³ ê°ë“¤ì—ê²Œ ì œê³µí•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-2023ë…„ 7ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 1200ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '1200', '1ì¡° 8300', 'bosco_int', 'bosco_pass', '416-23-33621', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'º¸½ºÄÚÀÎÅÍ³»¼Å³Î', '¼­¿ï½Ã °­³²±¸ º¸½º·Î 1213', 'ÀüÀÚ»ó°Å·¡', TO_DATE('2005-03-20', 'YYYY-MM-DD'), 'www.bosco.co.kr'
+, 'º¸½ºÄÚÀÎÅÍ³»¼Å³ÎÀº ´Ù¾çÇÑ »óÇ°À» ÆÇ¸ÅÇÏ´Â ÀüÀÚ»ó°Å·¡ ±â¾÷À¸·Î
+, ÃÖ½Å Æ®·»µå¿¡ ¸ÂÃá »óÇ°À» °í°´µé¿¡°Ô Á¦°øÇÏ°í ÀÖ½À´Ï´Ù. 
+2023³â 7¿ù ±âÁØ ÇöÀç±îÁö ¾à 1200¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '1200', '1Á¶ 8300', 'bosco_int', 'bosco_pass', '416-23-33621', null
 , 'https://i.namu.wiki/i/feGvJKaLZfEkV-yTlOJDmxo5VEoY6vV8INKXy3Yz5QCLLOiz_Rda9L3Q1IqcPH5S0HAgqmSxinFZYWdmYiZIpTOKot-hXFk7EgDsqqS5jgHzzi1naiXLB2nPx_5OJYvwz_KVsi4pXh4PrQ58YgQt9Q.svg'
-, 'ì´ë³´í¬', 'ê¹€ìœ¤', 'ky02@bosco.com', '02-9876-5432'
-, 'ë³µì§€-ê²½ì˜ì§„', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, 'ÀÌº¸Èñ', '±èÀ±', 'ky02@bosco.com', '02-9876-5432'
+, 'º¹Áö-°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- í•œí•˜
+-- ÇÑÇÏ
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'í•œí•˜', 'ì„œìš¸ì‹œ ê°•ë‚¨êµ¬ ê°œí¬ë¡œ 618-8', 'ì¢…í•©ê¸°ì—…', TO_DATE('1993-10-11', 'YYYY-MM-DD'), 'www.hanha.com'
-, 'í•œí•˜ëŠ” ì¢…í•©ê¸°ì—…ìœ¼ë¡œ, ë‹¤ì–‘í•œ ì‚¬ì—… ë¶„ì•¼ì—ì„œ ì„±ìž¥í•˜ë©° êµ­ë‚´ì™¸ì—ì„œ ë‹¤ì–‘í•œ í”„ë¡œì íŠ¸ì— ì°¸ì—¬í•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-2023ë…„ 8ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 2500ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '2500', '8ì¡° 7700', 'hanha_group', 'hanha_pass', '477-29-90162', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÇÑÇÏ', '¼­¿ï½Ã °­³²±¸ °³Æ÷·Î 618-8', 'Á¾ÇÕ±â¾÷', TO_DATE('1993-10-11', 'YYYY-MM-DD'), 'www.hanha.com'
+, 'ÇÑÇÏ´Â Á¾ÇÕ±â¾÷À¸·Î, ´Ù¾çÇÑ »ç¾÷ ºÐ¾ß¿¡¼­ ¼ºÀåÇÏ¸ç ±¹³»¿Ü¿¡¼­ ´Ù¾çÇÑ ÇÁ·ÎÁ§Æ®¿¡ Âü¿©ÇÏ°í ÀÖ½À´Ï´Ù. 
+2023³â 8¿ù ±âÁØ ÇöÀç±îÁö ¾à 2500¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '2500', '8Á¶ 7700', 'hanha_group', 'hanha_pass', '477-29-90162', null
 , 'https://i.namu.wiki/i/HqWRMUo1ihw34U4um_NZUwOgFM7OkhGS54zyt9JCRzp4_wxW3XjhN8Ap1Yu7y1XF61zyqhofTY-YZHKQisCBbwHiOWb9cN6ezDVZusOZs0_0pOHHG6EcUTYRhiNzx_S47cUoUYQXz4QwFMlBfGkPTA.svg'
-, 'ê¹€í•œí•˜', 'ë°•ë³‘í—Œ', 'bbh1009@hanha.com', '02-3456-7890'
-, 'ë³µì§€-ê¸‰ì—¬', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '±èÇÑÇÏ', '¹Úº´Çå', 'bbh1009@hanha.com', '02-3456-7890'
+, 'º¹Áö-±Þ¿©', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- ì—˜ì•¤ì—ì´
+-- ¿¤¾Ø¿¡ÀÌ
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì—˜ì•¤ì—ì´', 'ì„œìš¸ì‹œ ê°•ë™êµ¬ ì„±ë‚´ë¡œ 45', 'ê´‘ê³ ', TO_DATE('2001-07-03', 'YYYY-MM-DD'), 'www.lna.co.kr'
-, 'ì—˜ì•¤ì—ì´ëŠ” ê´‘ê³  ë° ë§ˆì¼€íŒ… ë¶„ì•¼ì—ì„œ ì„¸ê³„ì ì¸ ê´‘ê³ íšŒì‚¬ë¡œ
-, ë‹¤ì–‘í•œ ì°½ì˜ì ì¸ ê´‘ê³  ìº íŽ˜ì¸ìœ¼ë¡œ ê³ ê°ë“¤ì—ê²Œ ì¸ìƒì„ ë‚¨ê¸°ê³  ìžˆìŠµë‹ˆë‹¤. 
-2023ë…„ 6ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 1800ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '1800', '4ì¡° 6800', 'lna_ad', 'lna_pass', '416-23-77621', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, '¿¤¾Ø¿¡ÀÌ', '¼­¿ï½Ã °­µ¿±¸ ¼º³»·Î 45', '±¤°í', TO_DATE('2001-07-03', 'YYYY-MM-DD'), 'www.lna.co.kr'
+, '¿¤¾Ø¿¡ÀÌ´Â ±¤°í ¹× ¸¶ÄÉÆÃ ºÐ¾ß¿¡¼­ ¼¼°èÀûÀÎ ±¤°íÈ¸»ç·Î
+, ´Ù¾çÇÑ Ã¢ÀÇÀûÀÎ ±¤°í Ä·ÆäÀÎÀ¸·Î °í°´µé¿¡°Ô ÀÎ»óÀ» ³²±â°í ÀÖ½À´Ï´Ù. 
+2023³â 6¿ù ±âÁØ ÇöÀç±îÁö ¾à 1800¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '1800', '4Á¶ 6800', 'lna_ad', 'lna_pass', '416-23-77621', null
 , 'https://i.namu.wiki/i/77aGZ8nlBblHep4q0ZjYAbuIneNqr3K5H3fEvgTPRQRt60lSqkWKLpZ1ecK51NDwHzI4g6J3_20gRsy2lsHRNo-gO7ZiEJS5qU5k-ruujLlEJNtrqz9Y_2RysXN_SWdCr5kUpYT8n_nyjw_BZkrWiw.webp'
-, 'ê¹€í¬ì›', 'ì´ì •í›ˆ', 'wjdgns112@lna.com', '02-5678-9012'
-, 'ì›Œë¼ë²¨-ê·¼ë¬´í™˜ê²½', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '±èÈñ¿ø', 'ÀÌÁ¤ÈÆ', 'wjdgns112@lna.com', '02-5678-9012'
+, '¿ö¶óº§-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- SHê°€ìŠ¤
+-- SH°¡½º
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'SHê°€ìŠ¤', 'ì„œìš¸ì‹œ ê°•ì„œêµ¬ ëŒ€ì €ë¡œ 63ë²ˆê¸¸ 32', 'ì—ë„ˆì§€', TO_DATE('1996-04-15', 'YYYY-MM-DD'), 'www.shgas.co.kr'
-, 'SHê°€ìŠ¤ëŠ” ì—ë„ˆì§€ ë¶„ì•¼ì—ì„œ ë‹¤ì–‘í•œ ê°€ìŠ¤ ì œí’ˆ ë° ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ëŠ” ê¸°ì—…ìœ¼ë¡œ
-, ì¹œí™˜ê²½ì ì´ê³  ì•ˆì „í•œ ì—ë„ˆì§€ ì†”ë£¨ì…˜ì„ ì œê³µí•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-2023ë…„ 8ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 1200ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '1200', '2ì¡° 5500', 'sh_gas', 'sh_pass', '477-29-40162', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'SH°¡½º', '¼­¿ï½Ã °­¼­±¸ ´ëÀú·Î 63¹ø±æ 32', '¿¡³ÊÁö', TO_DATE('1996-04-15', 'YYYY-MM-DD'), 'www.shgas.co.kr'
+, 'SH°¡½º´Â ¿¡³ÊÁö ºÐ¾ß¿¡¼­ ´Ù¾çÇÑ °¡½º Á¦Ç° ¹× ¼­ºñ½º¸¦ Á¦°øÇÏ´Â ±â¾÷À¸·Î
+, Ä£È¯°æÀûÀÌ°í ¾ÈÀüÇÑ ¿¡³ÊÁö ¼Ö·ç¼ÇÀ» Á¦°øÇÏ°í ÀÖ½À´Ï´Ù. 
+2023³â 8¿ù ±âÁØ ÇöÀç±îÁö ¾à 1200¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '1200', '2Á¶ 5500', 'sh_gas', 'sh_pass', '477-29-40162', null
 , 'https://i.namu.wiki/i/duJLxLWZXoswdZGRI0d-XYcr5GMF-CaFQtA8BEwaN7ZNv851FVsSmnRTqiI02T44YT1kOxNwTmt4vALs0MfqscM_yQS-jff26Zj7mv-gUXhJagOQfccrMjcsZ9HFtzQnGRUDbX-MM7ZTRxWz_o6cTA.svg'
-, 'ì§„í˜•ê¸°', 'ë°•ë¬¸í˜', 'parkmoon0216@shgas.com', '02-7890-1330'
-, 'ë³µì§€-ê²½ì˜ì§„', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, 'ÁøÇü±â', '¹Ú¹®Çõ', 'parkmoon0216@shgas.com', '02-7890-1330'
+, 'º¹Áö-°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- TJì œì¼ì œë‹¹
+-- TJÁ¦ÀÏÁ¦´ç
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'TJì œì¼ì œë‹¹', 'ì„œìš¸ì‹œ ê°•ë‚¨êµ¬ ë…¼í˜„ë¡œ 32', 'ì‹í’ˆ', TO_DATE('1989-11-07', 'YYYY-MM-DD'), 'www.tjjedang.co.kr'
-, 'TJì œì¼ì œë‹¹ì€ ë‹¤ì–‘í•œ ì‹í’ˆ ë¶„ì•¼ì—ì„œ ì•ˆì „í•˜ê³  ë§›ìžˆëŠ” ì œí’ˆì„ ê³ ê°ë“¤ì—ê²Œ ì œê³µí•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-ì§€ì† ê°€ëŠ¥í•œ ê²½ì˜ê³¼ ê³ ê° ë§Œì¡±ì„ ìµœìš°ì„ ìœ¼ë¡œ í•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-2023ë…„ 6ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 2000ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '2000', '10ì¡° 8000', 'tjjedang', 'tjjedang_pass', '423-75-61789', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'TJÁ¦ÀÏÁ¦´ç', '¼­¿ï½Ã °­³²±¸ ³íÇö·Î 32', '½ÄÇ°', TO_DATE('1989-11-07', 'YYYY-MM-DD'), 'www.tjjedang.co.kr'
+, 'TJÁ¦ÀÏÁ¦´çÀº ´Ù¾çÇÑ ½ÄÇ° ºÐ¾ß¿¡¼­ ¾ÈÀüÇÏ°í ¸ÀÀÖ´Â Á¦Ç°À» °í°´µé¿¡°Ô Á¦°øÇÏ°í ÀÖ½À´Ï´Ù. 
+Áö¼Ó °¡´ÉÇÑ °æ¿µ°ú °í°´ ¸¸Á·À» ÃÖ¿ì¼±À¸·Î ÇÏ°í ÀÖ½À´Ï´Ù. 
+2023³â 6¿ù ±âÁØ ÇöÀç±îÁö ¾à 2000¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '2000', '10Á¶ 8000', 'tjjedang', 'tjjedang_pass', '423-75-61789', null
 , 'https://i.namu.wiki/i/C0NZgdYIJtqfphc_Ps43a6-zU6IZf0lAw25PWsDSvtl5rSHZvsVSUdQP55yBWFXMfUbXC5zZzEuP7PD1inbIHUCTpGb6Jz02f5XyQBNT9f8XB4_WakJXbCe9Na__KheVj4-6kbCzauSv8hE7pFqViA.svg'
-, 'ê¹€ì „ê·œ', 'ì´ì‹ í˜•', 'shin0706@tjjedang.com', '02-1520-5611'
-, 'ì›Œë¼ë²¨-ê·¼ë¬´í™˜ê²½', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '±èÀü±Ô', 'ÀÌ½ÅÇü', 'shin0706@tjjedang.com', '02-1520-5611'
+, '¿ö¶óº§-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- KRíƒ€ì´ì–´ì•¤í…Œí¬ë†€ë¡œì§€
+-- KRÅ¸ÀÌ¾î¾ØÅ×Å©³î·ÎÁö
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'KRíƒ€ì´ì–´ì•¤í…Œí¬ë†€ë¡œì§€', 'ì„œìš¸ì‹œ ê°•ë¶êµ¬ ì¸ìˆ˜ë´‰ë¡œ 292', 'ìžë™ì°¨ ë¶€í’ˆ', TO_DATE('1992-05-30', 'YYYY-MM-DD'), 'www.krtntech.co.kr'
-, 'KRíƒ€ì´ì–´ì•¤í…Œí¬ë†€ë¡œì§€ëŠ” ìžë™ì°¨ ë¶€í’ˆ ë¶„ì•¼ì—ì„œ ì„ ë„ì ì¸ ê¸°ìˆ ê³¼ í’ˆì§ˆë¡œ ê³ ê°ë“¤ì—ê²Œ ì•ˆì „í•œ íƒ€ì´ì–´ë¥¼ ì œê³µí•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-2023ë…„ 7ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 1500ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '1500', '35ì¡° 2100', 'krtntech', 'krtntech_pass', '423-48-16289', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'KRÅ¸ÀÌ¾î¾ØÅ×Å©³î·ÎÁö', '¼­¿ï½Ã °­ºÏ±¸ ÀÎ¼öºÀ·Î 292', 'ÀÚµ¿Â÷ ºÎÇ°', TO_DATE('1992-05-30', 'YYYY-MM-DD'), 'www.krtntech.co.kr'
+, 'KRÅ¸ÀÌ¾î¾ØÅ×Å©³î·ÎÁö´Â ÀÚµ¿Â÷ ºÎÇ° ºÐ¾ß¿¡¼­ ¼±µµÀûÀÎ ±â¼ú°ú Ç°Áú·Î °í°´µé¿¡°Ô ¾ÈÀüÇÑ Å¸ÀÌ¾î¸¦ Á¦°øÇÏ°í ÀÖ½À´Ï´Ù. 
+2023³â 7¿ù ±âÁØ ÇöÀç±îÁö ¾à 1500¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '1500', '35Á¶ 2100', 'krtntech', 'krtntech_pass', '423-48-16289', null
 , 'https://i.namu.wiki/i/ZkLRPk3W_v0YyoLA3yQ2Z69jIvyEhzyrLO1s01aWrtYSXZJv3k3Oxs0m-9SjdnJHgQj6YIQSjqIjpB2NrBnW2yYn2invRfIBmgffz4kAXREkvL8UB0gbYVDHGgQVMkPH2pq2_M0vLGCGN4kG6nif_Q.svg'
-, 'ì„±ìŠ¹ê·œ', 'ê¹€ì§„ìš±', 'Jinwok76@krtntech.com', '02-2712-6711'
-, 'ì›Œë¼ë²¨-ê·¼ë¬´í™˜ê²½', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '¼º½Â±Ô', '±èÁø¿í', 'Jinwok76@krtntech.com', '02-2712-6711'
+, '¿ö¶óº§-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- ë§ˆì¹´ì˜¤ë±…í¬
+-- ¸¶Ä«¿À¹ðÅ©
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'ë§ˆì¹´ì˜¤ë±…í¬', 'ì„œìš¸ì‹œ ê°•ì„œêµ¬ í™”ê³¡ë¡œ 31ê°€ê¸¸ 33', 'ì€í–‰', TO_DATE('1997-09-18', 'YYYY-MM-DD'), 'www.macaubank.co.kr'
-, 'ë§ˆì¹´ì˜¤ë±…í¬ëŠ” ê¸ˆìœµ ë¶„ì•¼ì—ì„œ ë‹¤ì–‘í•œ ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ëŠ” ì€í–‰ìœ¼ë¡œ, ì•ˆì „í•˜ê³  íš¨ìœ¨ì ì¸ ê¸ˆìœµ ê±°ëž˜ë¥¼ ì§€ì›í•©ë‹ˆë‹¤. 
-2023ë…„ 9ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 2500ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '2500', '8ì¡° 1500', 'macau_bank', 'macau_pass', '477-29-50162', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, '¸¶Ä«¿À¹ðÅ©', '¼­¿ï½Ã °­¼­±¸ È­°î·Î 31°¡±æ 33', 'ÀºÇà', TO_DATE('1997-09-18', 'YYYY-MM-DD'), 'www.macaubank.co.kr'
+, '¸¶Ä«¿À¹ðÅ©´Â ±ÝÀ¶ ºÐ¾ß¿¡¼­ ´Ù¾çÇÑ ¼­ºñ½º¸¦ Á¦°øÇÏ´Â ÀºÇàÀ¸·Î, ¾ÈÀüÇÏ°í È¿À²ÀûÀÎ ±ÝÀ¶ °Å·¡¸¦ Áö¿øÇÕ´Ï´Ù. 
+2023³â 9¿ù ±âÁØ ÇöÀç±îÁö ¾à 2500¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '2500', '8Á¶ 1500', 'macau_bank', 'macau_pass', '477-29-50162', null
 , 'https://i.namu.wiki/i/LS___r8IvwBM0yUOloXjEaQfIU3g4e_BYmuoJGE3wmtaESExYpODN2McY_K9FIiDLPZH2EGsAnmLG7XAi3cdplh41luMmzLZtuj-7Sy5o3_z5-rPdL9zor1mPsKVYIP2nVH5xo84MHFEmU9Hq_XFhA.svg'
-, 'ê¹€ìˆ˜ì—°', 'ë°•ì£¼ì—°', 'park@macaubank.com', '02-7526-7801'
-, 'ê¸‰ì—¬-ê²½ì˜ì§„', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '±è¼ö¿¬', '¹ÚÁÖ¿¬', 'park@macaubank.com', '02-7526-7801'
+, '±Þ¿©-°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
--- ì „ìš°ê±´ì„¤
+-- Àü¿ì°Ç¼³
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'ì „ìš°ê±´ì„¤', 'ì„œìš¸ì‹œ ê°•ë™êµ¬ ë™ë‚¨ë¡œ 722', 'ê±´ì„¤', TO_DATE('1991-03-25', 'YYYY-MM-DD'), 'www.jwonconstruction.co.kr'
-, 'ì „ìš°ê±´ì„¤ì€ ê±´ì„¤ ë¶„ì•¼ì—ì„œ ì•ˆì „í•˜ê³  í’ˆì§ˆ ë†’ì€ ê³µì‚¬ë¥¼ ì œê³µí•˜ëŠ” ê¸°ì—…ìœ¼ë¡œ, ë‹¤ì–‘í•œ í”„ë¡œì íŠ¸ë¥¼ ì„±ê³µì ìœ¼ë¡œ ìˆ˜í–‰í•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-2023ë…„ 9ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 1800ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '1800', '4ì¡° 6500', 'jwon_construction', 'jwon_pass', '416-73-21621', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'Àü¿ì°Ç¼³', '¼­¿ï½Ã °­µ¿±¸ µ¿³²·Î 722', '°Ç¼³', TO_DATE('1991-03-25', 'YYYY-MM-DD'), 'www.jwonconstruction.co.kr'
+, 'Àü¿ì°Ç¼³Àº °Ç¼³ ºÐ¾ß¿¡¼­ ¾ÈÀüÇÏ°í Ç°Áú ³ôÀº °ø»ç¸¦ Á¦°øÇÏ´Â ±â¾÷À¸·Î, ´Ù¾çÇÑ ÇÁ·ÎÁ§Æ®¸¦ ¼º°øÀûÀ¸·Î ¼öÇàÇÏ°í ÀÖ½À´Ï´Ù. 
+2023³â 9¿ù ±âÁØ ÇöÀç±îÁö ¾à 1800¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '1800', '4Á¶ 6500', 'jwon_construction', 'jwon_pass', '416-73-21621', null
 , 'https://i.namu.wiki/i/Qndyz0wMecw0F7_6Uymug1PNMoPE1Ps2AGlJK2wsvmy5QDLeuw4cWpo6fN14eghZOIC9nAeaLjO1fbP3S8yWGVYi3fIxBpRSzjV2tjFmLjbkEe-qbuPFOsiGo4eoQFwbgIYajqg2uZqnmBViYjii4g.svg'
-, 'ë°•ê±´ìš°', 'ì´ì¸í˜', 'leeih@jwonconstruction.com', '02-5678-9012'
-, 'ë³µì§€-ì›Œë¼ë²¨', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '¹Ú°Ç¿ì', 'ÀÌÀÎÇõ', 'leeih@jwonconstruction.com', '02-5678-9012'
+, 'º¹Áö-¿ö¶óº§', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 
--- ë””ì—˜ENC
+-- µð¿¤ENC
 INSERT INTO COMPANY VALUES
-(COMPANY_NUMBER_SEQ.NEXTVAL, 'ë””ì—˜ENC', 'ì„œìš¸ì‹œ ê°•ë‚¨êµ¬ ì„ ë¦‰ë¡œ 211', 'ì „ìž', TO_DATE('1996-09-10', 'YYYY-MM-DD'), 'www.dlenc.co.kr'
-, 'ë””ì—˜ENCëŠ” ë‹¤ì–‘í•œ ì „ìž ì œí’ˆ ë° ì†”ë£¨ì…˜ì„ ì œê³µí•˜ëŠ” ê¸°ì—…ìœ¼ë¡œ
-, ê¸°ìˆ  í˜ì‹ ê³¼ ê³ ê° ì¤‘ì‹¬ì˜ ì„œë¹„ìŠ¤ë¥¼ ì¶”êµ¬í•˜ë©° ê¸€ë¡œë²Œ ì‹œìž¥ì—ì„œ ê²½ìŸë ¥ì„ ê°–ì¶”ê³  ìžˆìŠµë‹ˆë‹¤. 
-2023ë…„ 8ì›” ê¸°ì¤€ í˜„ìž¬ê¹Œì§€ ì•½ 3500ëª…ì˜ ì „ë¬¸ê°€ê°€ í•¨ê»˜ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, '3500', '3ì¡° 5300', 'dl_enc', 'dl_pass', '468-56-52120', null
+(COMPANY_NUMBER_SEQ.NEXTVAL, 'µð¿¤ENC', '¼­¿ï½Ã °­³²±¸ ¼±¸ª·Î 211', 'ÀüÀÚ', TO_DATE('1996-09-10', 'YYYY-MM-DD'), 'www.dlenc.co.kr'
+, 'µð¿¤ENC´Â ´Ù¾çÇÑ ÀüÀÚ Á¦Ç° ¹× ¼Ö·ç¼ÇÀ» Á¦°øÇÏ´Â ±â¾÷À¸·Î
+, ±â¼ú Çõ½Å°ú °í°´ Áß½ÉÀÇ ¼­ºñ½º¸¦ Ãß±¸ÇÏ¸ç ±Û·Î¹ú ½ÃÀå¿¡¼­ °æÀï·ÂÀ» °®Ãß°í ÀÖ½À´Ï´Ù. 
+2023³â 8¿ù ±âÁØ ÇöÀç±îÁö ¾à 3500¸íÀÇ Àü¹®°¡°¡ ÇÔ²² ÀÏÇÏ°í ÀÖ½À´Ï´Ù.'
+, '3500', '3Á¶ 5300', 'dl_enc', 'dl_pass', '468-56-52120', null
 , 'https://i.namu.wiki/i/n5I4Z1U_dbjVZuKL-H8_ctqBLw2phL4OoaXKV5_BHABcVnRzOWrC1DZtQ52XkRZ2-Q-ygp-EE8SUzdY7XFLuB1jAEnnt9T-kDRgP7IXHmO7g_1EYCZnt9NuyWHBF8IgLdgupWHYibI_aYreTRfoMpQ.svg'
-, 'ì§„í˜„ìˆ˜', 'ì´ê¸°í›ˆ', 'leekh@dlenc.com', '02-3116-7210'
-, 'ë³µì§€-ê²½ì˜ì§„', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, 'ÁøÇö¼ö', 'ÀÌ±âÈÆ', 'leekh@dlenc.com', '02-3116-7210'
+, 'º¹Áö-°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 
 COMMIT;
@@ -1007,7 +1007,7 @@ COMMIT;
 
 
 
--- ê°œì¸ íšŒì›
+-- °³ÀÎ È¸¿ø
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_PASSWORD, PERSONAL_PHONENUMBER
@@ -1016,8 +1016,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(9999, 'ê´€ë¦¬ìž', 'admin1', 'admin1', '000-0000-0000'
-    , 'ê´€ë¦¬ìž', 'ê´€ë¦¬ìž', NULL, 'admin1@jobhub.com', NULL, NULL, '!!!!'
+VALUES(9999, '°ü¸®ÀÚ', 'admin1', 'admin1', '000-0000-0000'
+    , '°ü¸®ÀÚ', '°ü¸®ÀÚ', NULL, 'admin1@jobhub.com', NULL, NULL, '!!!!'
     , 10, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1028,8 +1028,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ì§€í˜', 'jihyuk12', 'jihyuk12', '010-4930-4930'
-    , 'ì‹¬ì„±ì „ìž', 'ì‹¬ì„±ë§¨', NULL, 'jhp@simsung.com', '2021-07-01', 'ë³µì§€-ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚÁöÇõ', 'jihyuk12', 'jihyuk12', '010-4930-4930'
+    , '½É¼ºÀüÀÚ', '½É¼º¸Ç', NULL, 'jhp@simsung.com', '2021-07-01', 'º¹Áö-¿ö¶óº§', '!!!!'
     , 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1040,8 +1040,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ì§„ì˜', 'jinyoung75', 'jinyoung75', '010-1549-1547'
-    , 'ì‹¬ì„±ì „ìž', 'ì œì™€í”¼', NULL, 'jyp@simsung.com', '2020-01-01', 'ê¸‰ì—¬-ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚÁø¿µ', 'jinyoung75', 'jinyoung75', '010-1549-1547'
+    , '½É¼ºÀüÀÚ', 'Á¦¿ÍÇÇ', NULL, 'jyp@simsung.com', '2020-01-01', '±Þ¿©-¿ö¶óº§', '!!!!'
     , 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1052,8 +1052,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì˜ì§„', 'yjkim4151', 'yjkim4151', '010-4971-0157'
-    , 'HNN', 'ì˜ì§€ë‹ˆ', NULL, 'yjkim@hnn.com', '2021-11-01', 'ë³µì§€-ê¸‰ì—¬-ê²½ì˜ì§„', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±è¿µÁø', 'yjkim4151', 'yjkim4151', '010-4971-0157'
+    , 'HNN', '¿µÁö´Ï', NULL, 'yjkim@hnn.com', '2021-11-01', 'º¹Áö-±Þ¿©-°æ¿µÁø', '!!!!'
     , 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1064,8 +1064,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'í™ì •ì•„', 'jeonga1451', 'jeonga1451', '010-1549-0016'
-    , 'HNN', 'ì©¡ì•„', NULL, 'jeonga1451@hnn.com', '2019-02-04', 'ê²½ì˜ì§„', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'È«Á¤¾Æ', 'jeonga1451', 'jeonga1451', '010-1549-0016'
+    , 'HNN', 'ÂÄ¾Æ', NULL, 'jeonga1451@hnn.com', '2019-02-04', '°æ¿µÁø', '!!!!'
     , 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1076,8 +1076,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ë‚˜ì—°', 'nayoni11', 'nayoni11', '010-1549-1507'
-    , 'ì—°ëŒ€ì°¨', 'í‚¹ëŒ€ì°¨ê°“ë¬´ì§', NULL, 'nayoni11@ydmotors.com', '2018-01-01', 'ë³µì§€-ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±è³ª¿¬', 'nayoni11', 'nayoni11', '010-1549-1507'
+    , '¿¬´ëÂ÷', 'Å·´ëÂ÷°«¹«Á÷', NULL, 'nayoni11@ydmotors.com', '2018-01-01', 'º¹Áö-¿ö¶óº§', '!!!!'
     , 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1088,8 +1088,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì •ìˆ˜í˜„', 'soohyeon14', 'soohyeon14', '010-1548-0387'
-    , 'ì—°ëŒ€ì°¨', 'ê°“ëŒ€ì°¨í‚¹ì‚°ì§', NULL, 'soohyeon14@ydmotors.com', '2015-04-21', 'ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¤¼öÇö', 'soohyeon14', 'soohyeon14', '010-1548-0387'
+    , '¿¬´ëÂ÷', '°«´ëÂ÷Å·»êÁ÷', NULL, 'soohyeon14@ydmotors.com', '2015-04-21', '¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1100,8 +1100,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì§„í™˜', 'hwan11515', 'hwan11515', '010-5541-0167'
-    , 'GLí™”í•™', 'ê¹€ì§€ë†˜', NULL, 'hwan11515@glchem.com', '2023-09-22', 'ê²½ì˜ì§„-ê¸‰ì—¬', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÁøÈ¯', 'hwan11515', 'hwan11515', '010-5541-0167'
+    , 'GLÈ­ÇÐ', '±èÁö³÷', NULL, 'hwan11515@glchem.com', '2023-09-22', '°æ¿µÁø-±Þ¿©', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1112,8 +1112,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ì§€ì˜', 'jiyeongji', 'jiyeongji', '010-1549-0011'
-    , 'GLí™”í•™', 'ì§€ì˜ì§€', NULL, 'jiyeongji@glchem.com', '2020-01-01', 'ê·¼ë¬´í™˜ê²½-ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚÁö¿µ', 'jiyeongji', 'jiyeongji', '010-1549-0011'
+    , 'GLÈ­ÇÐ', 'Áö¿µÁö', NULL, 'jiyeongji@glchem.com', '2020-01-01', '±Ù¹«È¯°æ-¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1124,8 +1124,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ìœ ì•ˆ', 'youan5511', 'youan5511', '010-0697-5511'
-    , 'K-OIL', 'ìœ ì•ˆì¸', NULL, 'youan5511@koil.com', '2018-11-21', 'ê¸‰ì—¬-ê²½ì˜ì§„', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÀ¯¾È', 'youan5511', 'youan5511', '010-0697-5511'
+    , 'K-OIL', 'À¯¾ÈÀÎ', NULL, 'youan5511@koil.com', '2018-11-21', '±Þ¿©-°æ¿µÁø', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1136,8 +1136,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ì„ ìš°', 'ssunu1111', 'ssunu1111', '010-1547-1111'
-    , 'KSí•˜ì´ë‹ˆìŠ¤', 'ì¨ëˆ„ì§€ë¡±', NULL, 'ssunu1111@ksh.com', '2022-12-21', 'ê¸‰ì—¬-ê·¼ë¬´í™˜ê²½', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹Ú¼±¿ì', 'ssunu1111', 'ssunu1111', '010-1547-1111'
+    , 'KSÇÏÀÌ´Ï½º', '½á´©Áö·Õ', NULL, 'ssunu1111@ksh.com', '2022-12-21', '±Þ¿©-±Ù¹«È¯°æ', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1148,8 +1148,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì •ìš°ì˜', 'woo000', 'woo000', '010-0500-0060'
-    , 'KSí•˜ì´ë‹ˆìŠ¤', 'JYP', NULL, 'woo000@ksh.com', '2020-01-01', 'ë³µì§€-ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¤¿ì¿µ', 'woo000', 'woo000', '010-0500-0060'
+    , 'KSÇÏÀÌ´Ï½º', 'JYP', NULL, 'woo000@ksh.com', '2020-01-01', 'º¹Áö-¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1160,8 +1160,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì •ê·€ì˜', 'gui0000', 'gui0000', '010--'
-    , 'ê·€ì—½ì€í–‰', 'ê·€ì˜ì€í–‰ëŸ¬', NULL, 'gui0000@gueyeopbank.com', '2023-11-21', 'ê²½ì˜ì§„-ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¤±Í¿µ', 'gui0000', 'gui0000', '010--'
+    , '±Í¿±ÀºÇà', '±Í¿µÀºÇà·¯', NULL, 'gui0000@gueyeopbank.com', '2023-11-21', '°æ¿µÁø-¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1172,8 +1172,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ì„ ì•„', 'seonaya1415', 'seonaya1415', '010-1497-1415'
-    , 'ê·€ì—½ì€í–‰', 'ì„ ì•„ê·€ì—ìžˆë”°', NULL, 'jyp@gueyeopbank.com', '2017-11-11', 'ê¸‰ì—¬', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌ¼±¾Æ', 'seonaya1415', 'seonaya1415', '010-1497-1415'
+    , '±Í¿±ÀºÇà', '¼±¾Æ±Í¿¡ÀÖµû', NULL, 'jyp@gueyeopbank.com', '2017-11-11', '±Þ¿©', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1184,8 +1184,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì‹ ì§„', 'newjeans1549', 'newjeans1549', '010-1974-1549'
-    , 'K-OIL', 'ì‹ ì§„ë‰´ì§„', NULL, 'newjeans1549@koil.com', '2020-08-26', 'ê·¼ë¬´í™˜ê²½-ê¸‰ì—¬', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±è½ÅÁø', 'newjeans1549', 'newjeans1549', '010-1974-1549'
+    , 'K-OIL', '½ÅÁø´ºÁø', NULL, 'newjeans1549@koil.com', '2020-08-26', '±Ù¹«È¯°æ-±Þ¿©', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1196,8 +1196,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì†ì •', 'sonjeong9057', 'sonjeong9057', '010-1564-9057'
-    , 'í‚¤ì•„ì°¨', 'ì†ì •ì†ì •', NULL, 'sonjeong9057@kiia.com', '2016-06-21', 'ê²½ì˜ì§„-ê·¼ë¬´í™˜ê²½', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±è¼ÕÁ¤', 'sonjeong9057', 'sonjeong9057', '010-1564-9057'
+    , 'Å°¾ÆÂ÷', '¼ÕÁ¤¼ÕÁ¤', NULL, 'sonjeong9057@kiia.com', '2016-06-21', '°æ¿µÁø-±Ù¹«È¯°æ', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1208,8 +1208,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì •í¬ë‚¨', 'huihui111', 'huihui111', '010-7874-0154'
-    , 'í‚¤ì•„ì°¨', 'í¬í¬ë‚¨ë‚¨', NULL, 'huihui111@kiia.com', '2021-05-03', 'ê¸‰ì—¬-ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¤Èñ³²', 'huihui111', 'huihui111', '010-7874-0154'
+    , 'Å°¾ÆÂ÷', 'ÈñÈñ³²³²', NULL, 'huihui111@kiia.com', '2021-05-03', '±Þ¿©-¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1220,8 +1220,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì „ì„¸ì˜', 'jsy14', 'jsy14', '010-0014-1400'
-    , 'ëŒ€ì•ˆí•­ê³µ', 'ì „ì„¸', NULL, 'jsy14@goreanair.com', '2020-01-01', 'ê¸‰ì—¬-ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Àü¼¼¿µ', 'jsy14', 'jsy14', '010-0014-1400'
+    , '´ë¾ÈÇ×°ø', 'Àü¼¼', NULL, 'jsy14@goreanair.com', '2020-01-01', '±Þ¿©-¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1232,8 +1232,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì§„ì¼ìƒ', 'ordinary33', 'ordinary33', '010-3222-0144'
-    , 'ëŒ€ì•ˆí•­ê³µ', 'ì¼ìƒ', NULL, 'ordinary33@goreanair.com', '2020-01-01', 'ë³µì§€-ê·¼ë¬´í™˜ê²½', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÁøÀÏ»ó', 'ordinary33', 'ordinary33', '010-3222-0144'
+    , '´ë¾ÈÇ×°ø', 'ÀÏ»ó', NULL, 'ordinary33@goreanair.com', '2020-01-01', 'º¹Áö-±Ù¹«È¯°æ', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1244,8 +1244,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì„ ì˜ì¼', 'first01', 'first01', '010-1544-0147'
-    , 'BKê¸ˆìœµ', 'ì—¬ë¦¬ë¦¬ë§', NULL, 'first01@bk.com', '2020-01-01', 'ë³µì§€-ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¼±¿µÀÏ', 'first01', 'first01', '010-1544-0147'
+    , 'BK±ÝÀ¶', '¿©¸®¸®¸µ', NULL, 'first01@bk.com', '2020-01-01', 'º¹Áö-¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1256,8 +1256,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì§„í¬', 'jiny144', 'jiny144', '010-0111-0187'
-    , 'BKê¸ˆìœµ', 'ì§€ë‹ˆì§€ë‹ˆ', NULL, 'jiny144@bk.com', '2021-11-01', 'ê¸‰ì—¬-ê·¼ë¬´í™˜ê²½', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÁøÈñ', 'jiny144', 'jiny144', '010-0111-0187'
+    , 'BK±ÝÀ¶', 'Áö´ÏÁö´Ï', NULL, 'jiny144@bk.com', '2021-11-01', '±Þ¿©-±Ù¹«È¯°æ', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1268,8 +1268,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì •í•˜ë‚˜', 'jung1', 'jung1', '010-1101-1001'
-    , 'ì½”ì½”ì•„', 'ì©¡ì©¡', NULL, 'jung1@kokoa.com', '2022-03-01', 'ë³µì§€-ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¤ÇÏ³ª', 'jung1', 'jung1', '010-1101-1001'
+    , 'ÄÚÄÚ¾Æ', 'ÂÄÂÄ', NULL, 'jung1@kokoa.com', '2022-03-01', 'º¹Áö-¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1280,8 +1280,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ì‚°ì£¼', 'sanzu133', 'sanzu133', '010-0877-6499'
-    , 'ì½”ì½”ì•„', 'ë¹„ì‹¼ìˆ ', NULL, 'sanzu133@kokoa.com', '2020-01-01', 'ë³µì§€-ê·¼ë¬´í™˜ê²½', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌ»êÁÖ', 'sanzu133', 'sanzu133', '010-0877-6499'
+    , 'ÄÚÄÚ¾Æ', 'ºñ½Ñ¼ú', NULL, 'sanzu133@kokoa.com', '2020-01-01', 'º¹Áö-±Ù¹«È¯°æ', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1292,8 +1292,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ì§„ì•„', 'gnalee', 'gnalee', '010-4879-9833'
-    , 'ì—°ëŒ€ëª¨ë¹„ìŠ¤', 'ì´ì§€ë‚˜ì§€ë‚˜', NULL, 'gnalee@yeonmobis.com', '2023-03-03', 'ë³µì§€-ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌÁø¾Æ', 'gnalee', 'gnalee', '010-4879-9833'
+    , '¿¬´ë¸ðºñ½º', 'ÀÌÁö³ªÁö³ª', NULL, 'gnalee@yeonmobis.com', '2023-03-03', 'º¹Áö-¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1304,8 +1304,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì—°ìƒí˜', 'yeonyeonman', 'yeonyeonman', '010-0150-0310'
-    , 'ì—°ëŒ€ëª¨ë¹„ìŠ¤', 'ì—¬ë‹ˆ', NULL, 'yeonyeonman@yeonmobis.com', '2019-08-01', 'ê¸‰ì—¬', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¿¬»óÇõ', 'yeonyeonman', 'yeonyeonman', '010-0150-0310'
+    , '¿¬´ë¸ðºñ½º', '¿©´Ï', NULL, 'yeonyeonman@yeonmobis.com', '2019-08-01', '±Þ¿©', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1316,8 +1316,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì •ì„ ', 'jskimm5155', 'jskimm5155', '010-5489-1511'
-    , 'ì‹¬ì„±ë¬¼ì‚°', 'ê°•ì›ë„', NULL, 'jskimm5155@simsmul.com', '2020-01-01', 'ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÁ¤¼±', 'jskimm5155', 'jskimm5155', '010-5489-1511'
+    , '½É¼º¹°»ê', '°­¿øµµ', NULL, 'jskimm5155@simsmul.com', '2020-01-01', '¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1328,8 +1328,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ì§„ì„±', 'kapadokia', 'kapadokia', '010-5411-1911'
-    , 'ì‹¬ì„±ë¬¼ì‚°', 'ì¹´íŒŒë„í‚¤ì•„', NULL, 'kapadokia@simsmul.com', '2020-01-01', 'ë³µì§€', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚÁø¼º', 'kapadokia', 'kapadokia', '010-5411-1911'
+    , '½É¼º¹°»ê', 'Ä«ÆÄµµÅ°¾Æ', NULL, 'kapadokia@simsmul.com', '2020-01-01', 'º¹Áö', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1340,8 +1340,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì‹ í•œ', 'otawa', 'otawa', '010-9784-0167'
-    , 'í•œì‹ ì§€ì£¼', 'ì˜¤íƒ€ì™€', NULL, 'otawa@hanshin.com', '2020-01-01', 'ë³µì§€-ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±è½ÅÇÑ', 'otawa', 'otawa', '010-9784-0167'
+    , 'ÇÑ½ÅÁöÁÖ', '¿ÀÅ¸¿Í', NULL, 'otawa@hanshin.com', '2020-01-01', 'º¹Áö-¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1352,8 +1352,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì •í•œì„­', 'thierry', 'thierry', '010-0941-1414'
-    , 'í•œì‹ ì§€ì£¼', 'í‹°ì—ë¦¬ì•™ë¦¬', NULL, 'thierry@hanshin.com', '2020-01-01', 'ê¸‰ì—¬', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¤ÇÑ¼·', 'thierry', 'thierry', '010-0941-1414'
+    , 'ÇÑ½ÅÁöÁÖ', 'Æ¼¿¡¸®¾Ó¸®', NULL, 'thierry@hanshin.com', '2020-01-01', '±Þ¿©', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1364,8 +1364,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì •ì´ìˆ˜', 'arsenal016', 'arsenal016', '010--'
-    , 'ì—°ëŒ€ê¸€ë¡œë¹„ìŠ¤', 'ì•„ìŠ¤ë„', NULL, 'arsenal016@yeonglo.com', '2019-01-21', 'ê·¼ë¬´í™˜ê²½', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¤ÀÌ¼ö', 'arsenal016', 'arsenal016', '010--'
+    , '¿¬´ë±Û·Îºñ½º', '¾Æ½º³Î', NULL, 'arsenal016@yeonglo.com', '2019-01-21', '±Ù¹«È¯°æ', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1376,8 +1376,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ê²½ì˜', 'yeongcha', 'yeongcha', '010-0000-0001'
-    , 'ì—°ëŒ€ê¸€ë¡œë¹„ìŠ¤', 'ì¢‹ì•˜ì–´', NULL, 'yeongcha@yeonglo.com', '2020-01-01', 'ê²½ì˜ì§„', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌ°æ¿µ', 'yeongcha', 'yeongcha', '010-0000-0001'
+    , '¿¬´ë±Û·Îºñ½º', 'ÁÁ¾Ò¾î', NULL, 'yeongcha@yeonglo.com', '2020-01-01', '°æ¿µÁø', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1388,8 +1388,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì£¼í˜„ì˜', 'mzgirl', 'mzgirl', '010-0647-0487'
-    , 'ìœ ë¦¬ê¸ˆìœµì§€ì£¼', 'ì— ì§€ê±¸', NULL, 'mzgirl@notglass.com', '2020-01-01', 'ê¸‰ì—¬', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÁÖÇö¿µ', 'mzgirl', 'mzgirl', '010-0647-0487'
+    , 'À¯¸®±ÝÀ¶ÁöÁÖ', '¿¥Áö°É', NULL, 'mzgirl@notglass.com', '2020-01-01', '±Þ¿©', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1400,8 +1400,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê°•í•˜ë‚˜', 'kangeins', 'kangeins', '010-0167-0177'
-    , 'ìœ ë¦¬ê¸ˆìœµì§€ì£¼', 'ê°•ì•„ì¸ìŠ¤', NULL, 'kangeins@notglass.com', '2020-01-01', 'ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '°­ÇÏ³ª', 'kangeins', 'kangeins', '010-0167-0177'
+    , 'À¯¸®±ÝÀ¶ÁöÁÖ', '°­¾ÆÀÎ½º', NULL, 'kangeins@notglass.com', '2020-01-01', '¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1412,8 +1412,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ë¶€ì˜', 'rferddy', 'rferddy', '010-0974-6931'
-    , 'í•˜ë‚¨ê¸ˆìœµì§€ì£¼', 'ì² ì˜ìž¥ë²½', NULL, 'rferddy@hanambank.com', '2020-01-01', 'ê·¼ë¬´í™˜ê²½', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚºÎ¿µ', 'rferddy', 'rferddy', '010-0974-6931'
+    , 'ÇÏ³²±ÝÀ¶ÁöÁÖ', 'Ã¶ÀÇÀåº®', NULL, 'rferddy@hanambank.com', '2020-01-01', '±Ù¹«È¯°æ', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1424,8 +1424,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë‚¨ê¶í•œì†”', 'vidic', 'vidic', '010-1674-0115'
-    , 'í•˜ë‚¨ê¸ˆìœµì§€ì£¼', 'ì² ì˜ìž¥ë²½íˆ¬', NULL, 'vidic@hanambank.com', '2020-01-01', 'ë³µì§€', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '³²±ÃÇÑ¼Ö', 'vidic', 'vidic', '010-1674-0115'
+    , 'ÇÏ³²±ÝÀ¶ÁöÁÖ', 'Ã¶ÀÇÀåº®Åõ', NULL, 'vidic@hanambank.com', '2020-01-01', 'º¹Áö', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1436,8 +1436,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì „ë™ì—´', 'bastian', 'bastian', '010-4674-6357'
-    , 'ì‹¬ì„±í™”ìž¬', 'ìŠˆë°”ì¸ìŠˆíƒ€ì´ê±°', NULL, 'bastian@simshwa.com', '2020-01-01', 'ê¸‰ì—¬', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Àüµ¿¿­', 'bastian', 'bastian', '010-4674-6357'
+    , '½É¼ºÈ­Àç', '½´¹ÙÀÎ½´Å¸ÀÌ°Å', NULL, 'bastian@simshwa.com', '2020-01-01', '±Þ¿©', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1448,8 +1448,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ê²½í¬', 'berkamp', 'berkamp', '010-1874-1010'
-    , 'ì‹¬ì„±í™”ìž¬', 'ë² ë¥´ê¸°', NULL, 'berkamp@simshwa.com', '2018-07-01', 'ê¸‰ì—¬', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±è°æÈñ', 'berkamp', 'berkamp', '010-1874-1010'
+    , '½É¼ºÈ­Àç', 'º£¸£±â', NULL, 'berkamp@simshwa.com', '2018-07-01', '±Þ¿©', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1460,8 +1460,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì§„í™˜', 'pires', 'pires', '010-0169-1549'
-    , 'ë©”ì´ë²„', 'í”¼ë ˆìŠ¤', NULL, 'pires@maver.com', '2018-07-01', 'ë³µì§€', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÁøÈ¯', 'pires', 'pires', '010-0169-1549'
+    , '¸ÞÀÌ¹ö', 'ÇÇ·¹½º', NULL, 'pires@maver.com', '2018-07-01', 'º¹Áö', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1472,8 +1472,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì„í›ˆ', 'pvieira', 'pvieira', '010-0197-1234'
-    , 'ë©”ì´ë²„', 'íŒŒíŠ¸ë¦¬í¬', NULL, 'pvieira@maver.com', '2020-01-01', 'ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±è¼®ÈÆ', 'pvieira', 'pvieira', '010-0197-1234'
+    , '¸ÞÀÌ¹ö', 'ÆÄÆ®¸®Å©', NULL, 'pvieira@maver.com', '2020-01-01', '¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1484,8 +1484,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ìˆ˜í˜„', 'fljungberg', 'fljungberg', '010--'
-    , 'í•œì™€ì—ë“€', 'í”„ë ˆë””ìœµë² ë¦¬', NULL, 'fljungberg@hanwaedu.com', '2017-06-08', 'ê·¼ë¬´í™˜ê²½', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹Ú¼öÇö', 'fljungberg', 'fljungberg', '010--'
+    , 'ÇÑ¿Í¿¡µà', 'ÇÁ·¹µðÀ¶º£¸®', NULL, 'fljungberg@hanwaedu.com', '2017-06-08', '±Ù¹«È¯°æ', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1496,8 +1496,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ë‘í•œ', 'yainsidae', 'yainsidae', '010-1649-0114'
-    , 'í•œì™€ì—ë“€', 'ì•¼ì¸ì‹œëŒ€', NULL, 'yainsidae@hanwaedu.com', '2020-01-01', 'ê²½ì˜ì§„', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èµÎÇÑ', 'yainsidae', 'yainsidae', '010-1649-0114'
+    , 'ÇÑ¿Í¿¡µà', '¾ßÀÎ½Ã´ë', NULL, 'yainsidae@hanwaedu.com', '2020-01-01', '°æ¿µÁø', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1508,8 +1508,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì‹œì˜', 'eins', 'eins', '010-1547-0997'
-    , 'ì‹¬ì„±ì „ìž', 'ë„˜ë²„ì›', NULL, 'eins@simsung.com', '2020-01-01', 'ë³µì§€-ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±è½Ã¿µ', 'eins', 'eins', '010-1547-0997'
+    , '½É¼ºÀüÀÚ', '³Ñ¹ö¿ø', NULL, 'eins@simsung.com', '2020-01-01', 'º¹Áö-¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1520,8 +1520,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ì£¼í•œ', 'zweimann', 'zweimann', '010-2262-2122'
-    , 'ì‹¬ì„±ì „ìž', 'ë„˜ë²„íˆ¬', NULL, 'zweimann@simsung.com', '2020-01-01', 'ë³µì§€-ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌÁÖÇÑ', 'zweimann', 'zweimann', '010-2262-2122'
+    , '½É¼ºÀüÀÚ', '³Ñ¹öÅõ', NULL, 'zweimann@simsung.com', '2020-01-01', 'º¹Áö-¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1532,8 +1532,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì†¡í˜„ì•„', 'dreimann', 'dreimann', '010-1579-3333'
-    , 'ì‹¬ì„±ì „ìž', 'ë„˜ë²„ì“°ë¦¬', NULL, 'dreimann@simsung.com', '2020-01-01', 'ë³µì§€-ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¼ÛÇö¾Æ', 'dreimann', 'dreimann', '010-1579-3333'
+    , '½É¼ºÀüÀÚ', '³Ñ¹ö¾²¸®', NULL, 'dreimann@simsung.com', '2020-01-01', 'º¹Áö-¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1544,8 +1544,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€í˜„ì•„', 'nummervier', 'nummervier', '010-5444-1441'
-    , 'ì‹¬ì„±ì „ìž', 'ë„˜ë²„í¬', NULL, 'nummervier@simsung.com', '2018-05-01', 'ë³µì§€-ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÇö¾Æ', 'nummervier', 'nummervier', '010-5444-1441'
+    , '½É¼ºÀüÀÚ', '³Ñ¹öÆ÷', NULL, 'nummervier@simsung.com', '2018-05-01', 'º¹Áö-¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1556,8 +1556,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì§„í˜„ìˆ˜', 'fuenfnummer', 'fuenfnummer', '010-5135-5514'
-    , 'ì‹¬ì„±ì „ìž', 'ë„˜íŒŒ', NULL, 'fuenfnummer@simsung.com', '2020-01-01', 'ë³µì§€-ì›Œë¼ë²¨-ê²½ì˜ì§„', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÁøÇö¼ö', 'fuenfnummer', 'fuenfnummer', '010-5135-5514'
+    , '½É¼ºÀüÀÚ', '³ÑÆÄ', NULL, 'fuenfnummer@simsung.com', '2020-01-01', 'º¹Áö-¿ö¶óº§-°æ¿µÁø', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1568,8 +1568,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ì´ì—°', 'sechs', 'sechs', '010-6636-6116'
-    , 'ì‹¬ì„±ì „ìž', 'ë„˜ë²„ì‹ìŠ¤', NULL, 'sechs@simsung.com', '2015-01-01', 'ê·¼ë¬´í™˜ê²½', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚÀÌ¿¬', 'sechs', 'sechs', '010-6636-6116'
+    , '½É¼ºÀüÀÚ', '³Ñ¹ö½Ä½º', NULL, 'sechs@simsung.com', '2015-01-01', '±Ù¹«È¯°æ', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1580,8 +1580,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì£¼í•œì„­', 'sieben', 'sieben', '010-7787-7717'
-    , 'ì‹¬ì„±ì „ìž', 'numberone', NULL, 'sieben@simsung.com', '2020-01-01', 'ê¸‰ì—¬', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÁÖÇÑ¼·', 'sieben', 'sieben', '010-7787-7717'
+    , '½É¼ºÀüÀÚ', 'numberone', NULL, 'sieben@simsung.com', '2020-01-01', '±Þ¿©', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1592,8 +1592,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìµœì¤€ì„œ', 'acht', 'acht', '010-8488-8497'
-    , 'ì‹¬ì„±ì „ìž', 'nummbereins', NULL, 'acht@simsung.com', '2018-08-08', 'ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÃÖÁØ¼­', 'acht', 'acht', '010-8488-8497'
+    , '½É¼ºÀüÀÚ', 'nummbereins', NULL, 'acht@simsung.com', '2018-08-08', '¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1604,8 +1604,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì§€í˜', 'herrneun', 'herrneun', '010-9959-9979'
-    , 'ì‹¬ì„±ì „ìž', 'dasende', NULL, 'herrneun@simsung.com', '2019-09-01', 'ì›Œë¼ë²¨', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÁöÇõ', 'herrneun', 'herrneun', '010-9959-9979'
+    , '½É¼ºÀüÀÚ', 'dasende', NULL, 'herrneun@simsung.com', '2019-09-01', '¿ö¶óº§', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1616,8 +1616,8 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
     , PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE
     , CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ì§€í˜„', 'undzehn', 'undzehn', '010-1010-0010'
-    , 'ì‹¬ì„±ì „ìž', 'hatjetztgekommt', NULL, 'undzehn@simsung.com', '2020-01-01', 'ë³µì§€', '!!!!'
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌÁöÇö', 'undzehn', 'undzehn', '010-1010-0010'
+    , '½É¼ºÀüÀÚ', 'hatjetztgekommt', NULL, 'undzehn@simsung.com', '2020-01-01', 'º¹Áö', '!!!!'
     , 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL
@@ -1625,700 +1625,700 @@ VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì£¼ë¯¼í˜¸', 'joomh', 'joomh12', '010-1531-8536', 'ë¹„ë§ˆíŠ¸', 'ìŒì•…ê³ ëž˜', 'ì¦ëª…ì‚¬ì§„'
-    , 'joomh@bmart.com', '2003-05-30', 'ê¸‰ì—¬', '!@#$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÁÖ¹ÎÈ£', 'joomh', 'joomh12', '010-1531-8536', 'ºñ¸¶Æ®', 'À½¾Ç°í·¡', 'Áõ¸í»çÁø'
+    , 'joomh@bmart.com', '2003-05-30', '±Þ¿©', '!@#$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì§€ì˜', 'kimjy', 'kimjy12', '010-4831-1386', 'BBì†í•´ë³´í—˜', 'ì‹¬í•´íƒí—˜ê°€', 'ì¦ëª…ì‚¬ì§„'
-    , 'kimjy@ibbins.com', '2022-07-01', 'ë³µì§€', '#$%^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÁö¿µ', 'kimjy', 'kimjy12', '010-4831-1386', 'BB¼ÕÇØº¸Çè', '½ÉÇØÅ½Çè°¡', 'Áõ¸í»çÁø'
+    , 'kimjy@ibbins.com', '2022-07-01', 'º¹Áö', '#$%^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ìŠ¹ì¤€', 'parksj', 'parksj12', '010-7813-4135', 'í•œëŒ€ì œì² ', 'ì‚°ì•…ì¸', 'ì¦ëª…ì‚¬ì§„'
-    , 'parksj@handaisteel.com', '2015-04-11', 'ê·¼ë¬´í™˜ê²½', '3%$@', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹Ú½ÂÁØ', 'parksj', 'parksj12', '010-7813-4135', 'ÇÑ´ëÁ¦Ã¶', '»ê¾ÇÀÎ', 'Áõ¸í»çÁø'
+    , 'parksj@handaisteel.com', '2015-04-11', '±Ù¹«È¯°æ', '3%$@', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìµœìˆ˜ì§„', 'choisj', 'choisj12', '010-4561-8964', 'KPNG', 'lover', 'ì¦ëª…ì‚¬ì§„', 'choisj@kpng.com'
-    , '2016-05-04', 'ê²½ì˜ì§„', '@$#%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÃÖ¼öÁø', 'choisj', 'choisj12', '010-4561-8964', 'KPNG', 'lover', 'Áõ¸í»çÁø', 'choisj@kpng.com'
+    , '2016-05-04', '°æ¿µÁø', '@$#%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ë™í›ˆ', 'leedh', 'leedh12', '010-4813-7833', 'ì—ìŠ¤ì”¨ë°”ì´ì˜¤ì„¼ì„œ', 'ë¨¹ë°©ëª¨í—˜ê°€', 'ì¦ëª…ì‚¬ì§„'
-    , 'leedh@scbiosensor.com', '2009-03-01', 'ì›Œë¼ë²¨', '^&$%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌµ¿ÈÆ', 'leedh', 'leedh12', '010-4813-7833', '¿¡½º¾¾¹ÙÀÌ¿À¼¾¼­', '¸Ô¹æ¸ðÇè°¡', 'Áõ¸í»çÁø'
+    , 'leedh@scbiosensor.com', '2009-03-01', '¿ö¶óº§', '^&$%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì •ì£¼ì›', 'jungjw', 'jungjw12', '010-1785-8715', 'STí…”ë ˆì½¤', 'ê²Œìž„ì˜ì‹ ', 'ì¦ëª…ì‚¬ì§„'
-    , 'jungjw@sttelecom.com', '2006-03-09', 'ê¸‰ì—¬', '*$%#', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¤ÁÖ¿ø', 'jungjw', 'jungjw12', '010-1785-8715', 'STÅÚ·¹ÄÞ', '°ÔÀÓÀÇ½Å', 'Áõ¸í»çÁø'
+    , 'jungjw@sttelecom.com', '2006-03-09', '±Þ¿©', '*$%#', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€í•˜ì˜', 'kimhy', 'kimhy12', '010-8153-8776', 'ì‹¬ì„±SDI', 'ì»¤í”¼ì½©ëƒ„ìƒˆ', 'ì¦ëª…ì‚¬ì§„'
-    , 'kimhy@simsungsdi.com', '2018-06-22', 'ë³µì§€', '3%&^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÇÏ¿µ', 'kimhy', 'kimhy12', '010-8153-8776', '½É¼ºSDI', 'Ä¿ÇÇÄá³¿»õ', 'Áõ¸í»çÁø'
+    , 'kimhy@simsungsdi.com', '2018-06-22', 'º¹Áö', '3%&^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì†¡ì§€ìˆ˜', 'songjs', 'songjs12', '010-3124-1325', 'LZì „ìž', 'ê³¼í•™ì—´ì •', 'ì¦ëª…ì‚¬ì§„', 'songjs@lge.com'
-    , '2013-01-01', 'ê·¼ë¬´í™˜ê²½', '(&*^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¼ÛÁö¼ö', 'songjs', 'songjs12', '010-3124-1325', 'LZÀüÀÚ', '°úÇÐ¿­Á¤', 'Áõ¸í»çÁø', 'songjs@lge.com'
+    , '2013-01-01', '±Ù¹«È¯°æ', '(&*^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìž¥ë¯¼ìš°', 'jangmw', 'jangmw12', '010-3664-5412', 'ê³ ë ¤ê°€ìŠ¤ê³µì‚¬', 'íŒ¨ì…˜ìŠ¤íƒ€', 'ì¦ëª…ì‚¬ì§„'
-    , 'jangmw@kogas.com', '2004-08-05', 'ê²½ì˜ì§„', '9*#$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Àå¹Î¿ì', 'jangmw', 'jangmw12', '010-3664-5412', '°í·Á°¡½º°ø»ç', 'ÆÐ¼Ç½ºÅ¸', 'Áõ¸í»çÁø'
+    , 'jangmw@kogas.com', '2004-08-05', '°æ¿µÁø', '9*#$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ì˜ì§„', 'parkyj', 'parkyj12', '010-3124-7339', 'KP', 'ë³„ì´ë¹›ë‚˜ëŠ”ë°¤', 'ì¦ëª…ì‚¬ì§„', 'parkyj@kp.com'
-    , '2016-04-20', 'ì›Œë¼ë²¨', '2$%*', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹Ú¿µÁø', 'parkyj', 'parkyj12', '010-3124-7339', 'KP', 'º°ÀÌºû³ª´Â¹ã', 'Áõ¸í»çÁø', 'parkyj@kp.com'
+    , '2016-04-20', '¿ö¶óº§', '2$%*', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ìˆ˜ë¹ˆ', 'leesb', 'leesb12', '010-7981-1320', 'LZ', 'kiki', 'ì¦ëª…ì‚¬ì§„', 'leesb@lz.com'
-    , '2015-11-16', 'ê¸‰ì—¬', '$*^&', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌ¼öºó', 'leesb', 'leesb12', '010-7981-1320', 'LZ', 'kiki', 'Áõ¸í»çÁø', 'leesb@lz.com'
+    , '2015-11-16', '±Þ¿©', '$*^&', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'í™ì² ë¯¼', 'hongcm', 'hongcm12', '010-0254-1320', 'LZì´ë…¸í…', 'MusicJunkieX', 'ì¦ëª…ì‚¬ì§„'
-    , 'hongcm@lzinnotek.com', '2019-12-28', 'ë³µì§€', '$%^*', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'È«Ã¶¹Î', 'hongcm', 'hongcm12', '010-0254-1320', 'LZÀÌ³ëÅØ', 'MusicJunkieX', 'Áõ¸í»çÁø'
+    , 'hongcm@lzinnotek.com', '2019-12-28', 'º¹Áö', '$%^*', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì§€ìš°', 'kimjw', 'kimjw12', '010-9871-1032', 'ì‹¬ì„±ì „ê¸°', 'SkyRider', 'ì¦ëª…ì‚¬ì§„'
-    , 'kimjw@simsungsem.com', '2012-09-23', 'ê·¼ë¬´í™˜ê²½', '2#*$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÁö¿ì', 'kimjw', 'kimjw12', '010-9871-1032', '½É¼ºÀü±â', 'SkyRider', 'Áõ¸í»çÁø'
+    , 'kimjw@simsungsem.com', '2012-09-23', '±Ù¹«È¯°æ', '2#*$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì •ìˆ˜ë¯¼', 'jungsm', 'jungsm12', '010-9748-0235', 'ì‹¬ì„±ë°”ì´ì˜¤ë¡œì§ìŠ¤', 'CyberPioneer', 'ì¦ëª…ì‚¬ì§„'
-    , 'jungsm@simsungbiologics.com', '2021-06-06', 'ê²½ì˜ì§„', '4*%^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¤¼ö¹Î', 'jungsm', 'jungsm12', '010-9748-0235', '½É¼º¹ÙÀÌ¿À·ÎÁ÷½º', 'CyberPioneer', 'Áõ¸í»çÁø'
+    , 'jungsm@simsungbiologics.com', '2021-06-06', '°æ¿µÁø', '4*%^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ìŠ¹í˜¸', 'parksh', 'parksh12', '010-4503-4065', 'íŒì˜¤ì…˜', 'StarGazer', 'ì¦ëª…ì‚¬ì§„'
-    , 'parksh@panocean.com', '2017-09-10', 'ì›Œë¼ë²¨', '&^&%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹Ú½ÂÈ£', 'parksh', 'parksh12', '010-4503-4065', 'ÆÇ¿À¼Ç', 'StarGazer', 'Áõ¸í»çÁø'
+    , 'parksh@panocean.com', '2017-09-10', '¿ö¶óº§', '&^&%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìœ ì§€ì›', 'yoojw', 'yoojw12', '010-3764-1512', 'ê³ ë ¤ê¸ˆìœµì§€ì£¼', 'GameMastermind', 'ì¦ëª…ì‚¬ì§„'
-    , 'yoojw@koreainvestment.com', '2016-10-10', 'ê¸‰ì—¬', '!*#$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'À¯Áö¿ø', 'yoojw', 'yoojw12', '010-3764-1512', '°í·Á±ÝÀ¶ÁöÁÖ', 'GameMastermind', 'Áõ¸í»çÁø'
+    , 'yoojw@koreainvestment.com', '2016-10-10', '±Þ¿©', '!*#$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ìž¬í›ˆ', 'kimjh', 'kimjh12', '010-2136-3514', 'LZìœ í”ŒëŸ¬ìŠ¤', 'ArtisticSoul', 'ì¦ëª…ì‚¬ì§„'
-    , 'kimjh@lzuplus.com', '2008-08-18', 'ë³µì§€', '!#&(', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÀçÈÆ', 'kimjh', 'kimjh12', '010-2136-3514', 'LZÀ¯ÇÃ·¯½º', 'ArtisticSoul', 'Áõ¸í»çÁø'
+    , 'kimjh@lzuplus.com', '2008-08-18', 'º¹Áö', '!#&(', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ì˜í˜¸', 'leeyh', 'leeyh12', '010-1383-5310', 'ì½”ë¦¬ì•„ì•„ì—°', 'AnimalLover', 'ì¦ëª…ì‚¬ì§„'
-    , 'leeyh@koreazinc.com', '2007-12-31', 'ê·¼ë¬´í™˜ê²½', '@(&)', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌ¿µÈ£', 'leeyh', 'leeyh12', '010-1383-5310', 'ÄÚ¸®¾Æ¾Æ¿¬', 'AnimalLover', 'Áõ¸í»çÁø'
+    , 'leeyh@koreazinc.com', '2007-12-31', '±Ù¹«È¯°æ', '@(&)', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì†¡ë¯¸ë¼', 'songmr', 'songmr12', '010-1530-7899', 'ì‹¬ì„±ì¹´ë“œ', 'MovieCritic', 'ì¦ëª…ì‚¬ì§„'
-    , 'songmr@simsungcard.com', '2003-12-16', 'ê²½ì˜ì§„', '*%%)', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¼Û¹Ì¶ó', 'songmr', 'songmr12', '010-1530-7899', '½É¼ºÄ«µå', 'MovieCritic', 'Áõ¸í»çÁø'
+    , 'songmr@simsungcard.com', '2003-12-16', '°æ¿µÁø', '*%%)', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìž¥í•˜ëŠ˜', 'janghn', 'janghn12', '010-2417-8733', 'ì‹¬ì„±ìƒëª…', 'BeachLover', 'ì¦ëª…ì‚¬ì§„'
-    , 'janghn@simsunglife.com', '2014-02-14', 'ì›Œë¼ë²¨', '!@*%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀåÇÏ´Ã', 'janghn', 'janghn12', '010-2417-8733', '½É¼º»ý¸í', 'BeachLover', 'Áõ¸í»çÁø'
+    , 'janghn@simsunglife.com', '2014-02-14', '¿ö¶óº§', '!@*%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ìŠ¹ìš°', 'parksw', 'parksw12', '010-6483-5301', 'ë¹„ë§ˆíŠ¸', 'ThrillSeek', 'ì¦ëª…ì‚¬ì§„'
-    , 'parksw@bmart.com', '2005-09-06', 'ê¸‰ì—¬', ')#%!', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹Ú½Â¿ì', 'parksw', 'parksw12', '010-6483-5301', 'ºñ¸¶Æ®', 'ThrillSeek', 'Áõ¸í»çÁø'
+    , 'parksw@bmart.com', '2005-09-06', '±Þ¿©', ')#%!', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ë¯¼ìž¬', 'kimmj', 'kimmj12', '010-4513-7895', 'BBì†í•´ë³´í—˜', 'RoadWarrior', 'ì¦ëª…ì‚¬ì§„'
-    , 'kimmj@ibbins.com', '2006-03-25', 'ë³µì§€', '*#$@', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±è¹ÎÀç', 'kimmj', 'kimmj12', '010-4513-7895', 'BB¼ÕÇØº¸Çè', 'RoadWarrior', 'Áõ¸í»çÁø'
+    , 'kimmj@ibbins.com', '2006-03-25', 'º¹Áö', '*#$@', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ì„œì˜', 'leesy', 'leesy12', '010-4612-0482', 'í•œëŒ€ì œì² ', 'FoodieFan', 'ì¦ëª…ì‚¬ì§„'
-    , 'leesy@handaisteel.com', '2005-05-05', 'ê·¼ë¬´í™˜ê²½', '((%&', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌ¼­¿µ', 'leesy', 'leesy12', '010-4612-0482', 'ÇÑ´ëÁ¦Ã¶', 'FoodieFan', 'Áõ¸í»çÁø'
+    , 'leesy@handaisteel.com', '2005-05-05', '±Ù¹«È¯°æ', '((%&', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'í™©ì§€ë¯¼', 'hwangjm', 'hwangjm12', '010-7893-3120', 'KPNG', 'CoffeeLover', 'ì¦ëª…ì‚¬ì§„'
-    , 'hwangjm@kpng.com', '2010-11-12', 'ê²½ì˜ì§„', '!#%$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'È²Áö¹Î', 'hwangjm', 'hwangjm12', '010-7893-3120', 'KPNG', 'CoffeeLover', 'Áõ¸í»çÁø'
+    , 'hwangjm@kpng.com', '2010-11-12', '°æ¿µÁø', '!#%$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì •ìš°ì§„', 'jungwj', 'jungwj12', '010-4851-4565', 'ì—ìŠ¤ì”¨ë°”ì´ì˜¤ì„¼ì„œ', 'Bookworm', 'ì¦ëª…ì‚¬ì§„'
-    , 'jungwj@scbiosensor.com', '2009-03-01', 'ì›Œë¼ë²¨', '!#*$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¤¿ìÁø', 'jungwj', 'jungwj12', '010-4851-4565', '¿¡½º¾¾¹ÙÀÌ¿À¼¾¼­', 'Bookworm', 'Áõ¸í»çÁø'
+    , 'jungwj@scbiosensor.com', '2009-03-01', '¿ö¶óº§', '!#*$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ë¯¼ìˆ˜', 'parkms', 'parkms12', '010-3486-4865', 'STí…”ë ˆì½¤', 'NatureLuv', 'ì¦ëª…ì‚¬ì§„'
-    , 'parkms@sttelecom.com', '2011-10-28', 'ê¸‰ì—¬', '!^^#', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹Ú¹Î¼ö', 'parkms', 'parkms12', '010-3486-4865', 'STÅÚ·¹ÄÞ', 'NatureLuv', 'Áõ¸í»çÁø'
+    , 'parkms@sttelecom.com', '2011-10-28', '±Þ¿©', '!^^#', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì§€í›ˆ', 'kjhoon', 'kjhoon12', '010-3215-7863', 'ì‹¬ì„±SDI', 'StarryEyes', 'ì¦ëª…ì‚¬ì§„'
-    , 'kjhoon@simsungsdi.com', '2004-02-21', 'ë³µì§€', '!#^^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÁöÈÆ', 'kjhoon', 'kjhoon12', '010-3215-7863', '½É¼ºSDI', 'StarryEyes', 'Áõ¸í»çÁø'
+    , 'kjhoon@simsungsdi.com', '2004-02-21', 'º¹Áö', '!#^^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìœ¤ì€ë¹„', 'yooneb', 'yooneb12', '010-1320-6529', 'LZì „ìž', 'NightCrawler', 'ì¦ëª…ì‚¬ì§„'
-    , 'yooneb@lge.com', '2008-06-07', 'ê·¼ë¬´í™˜ê²½', '@$%^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'À±Àººñ', 'yooneb', 'yooneb12', '010-1320-6529', 'LZÀüÀÚ', 'NightCrawler', 'Áõ¸í»çÁø'
+    , 'yooneb@lge.com', '2008-06-07', '±Ù¹«È¯°æ', '@$%^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì‹ ë™í¬', 'shindh', 'shindh12', '010-1235-8645', 'ê³ ë ¤ê°€ìŠ¤ê³µì‚¬', 'ìƒˆë²½ë³„', 'ì¦ëª…ì‚¬ì§„'
-    , 'shindh@kogas.com', '2001-09-16', 'ê²½ì˜ì§„', ')#!!', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '½Åµ¿Èñ', 'shindh', 'shindh12', '010-1235-8645', '°í·Á°¡½º°ø»ç', '»õº®º°', 'Áõ¸í»çÁø'
+    , 'shindh@kogas.com', '2001-09-16', '°æ¿µÁø', ')#!!', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ì˜ˆë¦°', 'leeyr', 'leeyr12', '010-8794-1366', 'KP', 'ìžìœ ë¡œìš´ì˜í˜¼', 'ì¦ëª…ì‚¬ì§„', 'leeyr@kp.com'
-    , '2005-04-04', 'ì›Œë¼ë²¨', '!#$%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌ¿¹¸°', 'leeyr', 'leeyr12', '010-8794-1366', 'KP', 'ÀÚÀ¯·Î¿î¿µÈ¥', 'Áõ¸í»çÁø', 'leeyr@kp.com'
+    , '2005-04-04', '¿ö¶óº§', '!#$%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìž„ì„±í˜¸', 'limsh', 'imsh12', '010-7846-3313', 'LZ', 'ë§¥ì£¼ë§›ìžˆê²Œ', 'ì¦ëª…ì‚¬ì§„', 'imsh@lz.com'
-    , '2007-05-19', 'ê¸‰ì—¬', '1#%*', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÓ¼ºÈ£', 'limsh', 'imsh12', '010-7846-3313', 'LZ', '¸ÆÁÖ¸ÀÀÖ°Ô', 'Áõ¸í»çÁø', 'imsh@lz.com'
+    , '2007-05-19', '±Þ¿©', '1#%*', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì€ì§€', 'kimej', 'kimej12', '010-9413-1532', 'LZì´ë…¸í…', 'QuantumX', 'ì¦ëª…ì‚¬ì§„'
-    , 'kimej@lzinnotek.com', '2008-02-05', 'ë³µì§€', '*$^#', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÀºÁö', 'kimej', 'kimej12', '010-9413-1532', 'LZÀÌ³ëÅØ', 'QuantumX', 'Áõ¸í»çÁø'
+    , 'kimej@lzinnotek.com', '2008-02-05', 'º¹Áö', '*$^#', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ë¯¼ì§€', 'parkmj', 'parkmj12', '010-7846-5453', 'ì‹¬ì„±ì „ê¸°', 'GamePro', 'ì¦ëª…ì‚¬ì§„'
-    , 'parkmj@simsungsem.com', '2009-10-18', 'ê·¼ë¬´í™˜ê²½', '#%&^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹Ú¹ÎÁö', 'parkmj', 'parkmj12', '010-7846-5453', '½É¼ºÀü±â', 'GamePro', 'Áõ¸í»çÁø'
+    , 'parkmj@simsungsem.com', '2009-10-18', '±Ù¹«È¯°æ', '#%&^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'í™©ì¤€í˜¸', 'hwangjh', 'hwangjh12', '010-7984-3151', 'ì‹¬ì„±ë°”ì´ì˜¤ë¡œì§ìŠ¤', 'FitnessFreak', 'ì¦ëª…ì‚¬ì§„'
-    , 'hwangjh@simsungbiologics.com', '2016-07-17', 'ê²½ì˜ì§„', '!#$%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'È²ÁØÈ£', 'hwangjh', 'hwangjh12', '010-7984-3151', '½É¼º¹ÙÀÌ¿À·ÎÁ÷½º', 'FitnessFreak', 'Áõ¸í»çÁø'
+    , 'hwangjh@simsungbiologics.com', '2016-07-17', '°æ¿µÁø', '!#$%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì •ìŠ¹ì—°', 'jungsy', 'jungsy12', '010-1236-4851', 'íŒì˜¤ì…˜', 'í‘¸ë¥¸ë°”ë‹¤', 'ì¦ëª…ì‚¬ì§„'
-    , 'jungsy@panocean.com', '2009-08-16', 'ì›Œë¼ë²¨', '$^(&', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¤½Â¿¬', 'jungsy', 'jungsy12', '010-1236-4851', 'ÆÇ¿À¼Ç', 'Çª¸¥¹Ù´Ù', 'Áõ¸í»çÁø'
+    , 'jungsy@panocean.com', '2009-08-16', '¿ö¶óº§', '$^(&', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´í˜„ìš°', 'leehw', 'leehw12', '010-7894-1386', 'ê³ ë ¤ê¸ˆìœµì§€ì£¼', 'ê¿ˆë‚˜ë¬´', 'ì¦ëª…ì‚¬ì§„'
-    , 'leehw@koreainvestment.com', '2021-05-15', 'ê¸‰ì—¬', '@&$%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌÇö¿ì', 'leehw', 'leehw12', '010-7894-1386', '°í·Á±ÝÀ¶ÁöÁÖ', '²Þ³ª¹«', 'Áõ¸í»çÁø'
+    , 'leehw@koreainvestment.com', '2021-05-15', '±Þ¿©', '@&$%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ë¯¼ìš°', 'kimmw', 'kimmw12', '010-1387-4865', 'LZìœ í”ŒëŸ¬ìŠ¤', 'í–‰ë³µí•œë‚ ', 'ì¦ëª…ì‚¬ì§„'
-    , 'kimmw@lzuplus.com', '2005-04-06', 'ë³µì§€', '!#%$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±è¹Î¿ì', 'kimmw', 'kimmw12', '010-1387-4865', 'LZÀ¯ÇÃ·¯½º', 'Çàº¹ÇÑ³¯', 'Áõ¸í»çÁø'
+    , 'kimmw@lzuplus.com', '2005-04-06', 'º¹Áö', '!#%$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì†ì˜ˆì§€', 'sonyj', 'sonyj12', '010-7894-4133', 'ì½”ë¦¬ì•„ì•„ì—°', 'TechWiz', 'ì¦ëª…ì‚¬ì§„'
-    , 'sonyj@koreazinc.com', '2020-12-12', 'ê·¼ë¬´í™˜ê²½', '@$&%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¼Õ¿¹Áö', 'sonyj', 'sonyj12', '010-7894-4133', 'ÄÚ¸®¾Æ¾Æ¿¬', 'TechWiz', 'Áõ¸í»çÁø'
+    , 'sonyj@koreazinc.com', '2020-12-12', '±Ù¹«È¯°æ', '@$&%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ì§€ì˜', 'parkjy', 'parkjy12', '010-4865-3645', 'ì‹¬ì„±ì¹´ë“œ', 'CodingGuru', 'ì¦ëª…ì‚¬ì§„'
-    , 'parkjy@simsungcard.com', '2009-11-16', 'ê²½ì˜ì§„', '2$%^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚÁö¿µ', 'parkjy', 'parkjy12', '010-4865-3645', '½É¼ºÄ«µå', 'CodingGuru', 'Áõ¸í»çÁø'
+    , 'parkjy@simsungcard.com', '2009-11-16', '°æ¿µÁø', '2$%^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì¡°ë¯¼ìž¬', 'jomj', 'jomj12', '010-5656-5443', 'ì‹¬ì„±ìƒëª…', 'HistoryBuff', 'ì¦ëª…ì‚¬ì§„'
-    , 'jomj@simsunglife.com', '2006-05-30', 'ì›Œë¼ë²¨', '@*^$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¶¹ÎÀç', 'jomj', 'jomj12', '010-5656-5443', '½É¼º»ý¸í', 'HistoryBuff', 'Áõ¸í»çÁø'
+    , 'jomj@simsunglife.com', '2006-05-30', '¿ö¶óº§', '@*^$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ìž¬í˜¸', 'leejh', 'leejh12', '010-5798-4431', 'ë¹„ë§ˆíŠ¸', 'CoffeeHolic', 'ì¦ëª…ì‚¬ì§„'
-    , 'leejh@bmart.com', '2019-04-11', 'ê¸‰ì—¬', '1#%$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌÀçÈ£', 'leejh', 'leejh12', '010-5798-4431', 'ºñ¸¶Æ®', 'CoffeeHolic', 'Áõ¸í»çÁø'
+    , 'leejh@bmart.com', '2019-04-11', '±Þ¿©', '1#%$', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì§€ì„ ', 'kimjs', 'kimjs12', '010-8735-9843', 'í•œëŒ€ì œì² ', 'GreenThumb', 'ì¦ëª…ì‚¬ì§„'
-    , 'kimjs@handaisteel.com', '2007-06-25', 'ë³µì§€', '3&^%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÁö¼±', 'kimjs', 'kimjs12', '010-8735-9843', 'ÇÑ´ëÁ¦Ã¶', 'GreenThumb', 'Áõ¸í»çÁø'
+    , 'kimjs@handaisteel.com', '2007-06-25', 'º¹Áö', '3&^%', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê°•ë¯¼í˜¸', 'kangmh', 'kangmh12', '010-4861-3468', 'STí…”ë ˆì½¤', 'CloudSurfer', 'ì¦ëª…ì‚¬ì§„'
-    , 'kangmh@sttelecom.com', '2005-05-05', 'ê·¼ë¬´í™˜ê²½', '1%#@', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '°­¹ÎÈ£', 'kangmh', 'kangmh12', '010-4861-3468', 'STÅÚ·¹ÄÞ', 'CloudSurfer', 'Áõ¸í»çÁø'
+    , 'kangmh@sttelecom.com', '2005-05-05', '±Ù¹«È¯°æ', '1%#@', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'í™©ì„œì˜', 'hwangsy', 'hwangsy12', '010-7893-5546', 'ì‹¬ì„±SDI', 'OceanWave', 'ì¦ëª…ì‚¬ì§„'
-    , 'hwangsy@simsungsdi.com', '2013-12-01', 'ê²½ì˜ì§„', '3&%^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'È²¼­¿µ', 'hwangsy', 'hwangsy12', '010-7893-5546', '½É¼ºSDI', 'OceanWave', 'Áõ¸í»çÁø'
+    , 'hwangsy@simsungsdi.com', '2013-12-01', '°æ¿µÁø', '3&%^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìž„ì •ìš°', 'limjw', 'limjw12', '010-8943-1486', 'LZì „ìž', 'TravelBugsy', 'ì¦ëª…ì‚¬ì§„', 'limjw@lge.com'
-    , '2018-09-20', 'ì›Œë¼ë²¨', '($%^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÓÁ¤¿ì', 'limjw', 'limjw12', '010-8943-1486', 'LZÀüÀÚ', 'TravelBugsy', 'Áõ¸í»çÁø', 'limjw@lge.com'
+    , '2018-09-20', '¿ö¶óº§', '($%^', 2, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì •ë¯¼ì§€', 'jungmj', 'jungmj12', '010-7833-6431', 'KP', 'FashionistaX', 'ì¦ëª…ì‚¬ì§„', 'jungmj@kp.com'
-    , '2016-12-01', 'ê¸‰ì—¬', '2#%$', 3, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¤¹ÎÁö', 'jungmj', 'jungmj12', '010-7833-6431', 'KP', 'FashionistaX', 'Áõ¸í»çÁø', 'jungmj@kp.com'
+    , '2016-12-01', '±Þ¿©', '2#%$', 3, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´í˜„ì§€', 'leehj', 'leehj12', '010-3126-4657', 'LZì´ë…¸í…', 'GalaxyQuest', 'ì¦ëª…ì‚¬ì§„'
-    , 'leehj@lzinnotek.com', '2017-04-19', 'ë³µì§€', '!@$#', 3, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌÇöÁö', 'leehj', 'leehj12', '010-3126-4657', 'LZÀÌ³ëÅØ', 'GalaxyQuest', 'Áõ¸í»çÁø'
+    , 'leehj@lzinnotek.com', '2017-04-19', 'º¹Áö', '!@$#', 3, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì„±ë¯¼', 'kimsm', 'kimsm12', '010-2381-7811', 'ì‹¬ì„±ì „ê¸°', 'SkateKing', 'ì¦ëª…ì‚¬ì§„'
-    , 'kimsm@simsungsem.com', '2020-08-17', 'ê·¼ë¬´í™˜ê²½', '@^%$', 3, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '±è¼º¹Î', 'kimsm', 'kimsm12', '010-2381-7811', '½É¼ºÀü±â', 'SkateKing', 'Áõ¸í»çÁø'
+    , 'kimsm@simsungsem.com', '2020-08-17', '±Ù¹«È¯°æ', '@^%$', 3, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ì§€ì›', 'parkjw', 'parkjw12', '010-1236-5548', 'LZìœ í”ŒëŸ¬ìŠ¤', 'PetLover', 'ì¦ëª…ì‚¬ì§„'
-    , 'parkjw@lzuplus.com', '2020-06-23', 'ê²½ì˜ì§„', '$*^&', 3, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚÁö¿ø', 'parkjw', 'parkjw12', '010-1236-5548', 'LZÀ¯ÇÃ·¯½º', 'PetLover', 'Áõ¸í»çÁø'
+    , 'parkjw@lzuplus.com', '2020-06-23', '°æ¿µÁø', '$*^&', 3, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL
 VALUE(PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID, PERSONAL_PASSWORD
     , PERSONAL_PHONENUMBER, PERSONAL_COMPANY, PERSONAL_NICKNAME, PERSONAL_PROFILE
     , PERSONAL_EMAIL, PERSONAL_HIRE_DATE, PERSONAL_KEYWORD, PERSONAL_TEMPORARILY
     , PERMISSION, PERSONAL_CREATE_DATE ,PERSONAL_MODIFY_DATE, CONNECTION_TIME, DISCONNECTION_TIME)
-VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì¡°ì˜í˜¸', 'joyh', 'joyh12', '010-1136-6518', 'ì‹¬ì„±ë°”ì´ì˜¤ë¡œì§ìŠ¤', 'CoffeeBean', 'ì¦ëª…ì‚¬ì§„'
-    , 'joyh@simsungbiologics.com', TO_DATE('2018-03-07', 'YYYY-MM-DD'), 'ì›Œë¼ë²¨', '23%$', 3, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+VALUES(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¶¿µÈ£', 'joyh', 'joyh12', '010-1136-6518', '½É¼º¹ÙÀÌ¿À·ÎÁ÷½º', 'CoffeeBean', 'Áõ¸í»çÁø'
+    , 'joyh@simsungbiologics.com', TO_DATE('2018-03-07', 'YYYY-MM-DD'), '¿ö¶óº§', '23%$', 3, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ì§€í˜„', 'leejihyun', 'jihyun111', '010-1207-7532', 'ì‚¬ëŒ€í•´ìƒ', 'jihyun_lee', 'NULL', 'leejihyun@hyundai.com', TO_DATE('2017-10-08', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ê·¼ë¬´í™˜ê²½', 'temp_pass_101', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌÁöÇö', 'leejihyun', 'jihyun111', '010-1207-7532', '»ç´ëÇØ»ó', 'jihyun_lee', 'NULL', 'leejihyun@hyundai.com', TO_DATE('2017-10-08', 'YYYY-MM-DD'), '±Þ¿©-±Ù¹«È¯°æ', 'temp_pass_101', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìž¥í˜„ìš°', 'janghyunwoo', 'hyunwoo333', '010-3338-1524', 'DDí•˜ì´í…', 'hyunwoo_jang', 'NULL', 'janghyunwoo@hitek.com', TO_DATE('2019-08-15', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ê²½ì˜ì§„', 'temp_pass_102', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀåÇö¿ì', 'janghyunwoo', 'hyunwoo333', '010-3338-1524', 'DDÇÏÀÌÅØ', 'hyunwoo_jang', 'NULL', 'janghyunwoo@hitek.com', TO_DATE('2019-08-15', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-°æ¿µÁø', 'temp_pass_102', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìµœì˜ì„œ', 'choiyoungseo', 'youngseo444', '010-4724-5675', 'SKU', 'youngseo_choi', 'NULL', 'choiyoungseo@sk.com', TO_DATE('2016-12-01', 'YYYY-MM-DD'), 'ë³µì§€-ì›Œë¼ë²¨', 'temp_pass_103', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÃÖ¿µ¼­', 'choiyoungseo', 'youngseo444', '010-4724-5675', 'SKU', 'youngseo_choi', 'NULL', 'choiyoungseo@sk.com', TO_DATE('2016-12-01', 'YYYY-MM-DD'), 'º¹Áö-¿ö¶óº§', 'temp_pass_103', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ìž¬ì€', 'kimjaeeun', 'jaeeun555', '010-7866-2717', 'ê¹€í˜¸ì„ìœ ', 'jaeeun_kim', 'NULL', 'kimjaeeun@kumho.com', TO_DATE('2018-04-25', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ì›Œë¼ë²¨', 'temp_pass_104', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÀçÀº', 'kimjaeeun', 'jaeeun555', '010-7866-2717', '±èÈ£¼®À¯', 'jaeeun_kim', 'NULL', 'kimjaeeun@kumho.com', TO_DATE('2018-04-25', 'YYYY-MM-DD'), '±Þ¿©-¿ö¶óº§', 'temp_pass_104', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ë„í˜„', 'leedohyun', 'dohyun666', '010-7387-9128', 'ULXì¸í„°ë‚´ì…”ë„', 'dohyun_lee', 'NULL', 'leedohyun@ulx.com', TO_DATE('2020-11-10', 'YYYY-MM-DD'), 'ì›Œë¼ë²¨-ë³µì§€', 'temp_pass_105', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌµµÇö', 'leedohyun', 'dohyun666', '010-7387-9128', 'ULXÀÎÅÍ³»¼Å³Î', 'dohyun_lee', 'NULL', 'leedohyun@ulx.com', TO_DATE('2020-11-10', 'YYYY-MM-DD'), '¿ö¶óº§-º¹Áö', 'temp_pass_105', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì§€ì›', 'kimjiwon', 'jiwon777', '010-0147-2127', 'ê¹€í˜¸ì„ìœ ', 'jiwon_kim', 'NULL', 'kimjiwon@kumho.com', TO_DATE('2019-06-22', 'YYYY-MM-DD'), 'ê²½ì˜ì§„-ì›Œë¼ë²¨', 'temp_pass_106', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÁö¿ø', 'kimjiwon', 'jiwon777', '010-0147-2127', '±èÈ£¼®À¯', 'jiwon_kim', 'NULL', 'kimjiwon@kumho.com', TO_DATE('2019-06-22', 'YYYY-MM-DD'), '°æ¿µÁø-¿ö¶óº§', 'temp_pass_106', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ì„œìœ¤', 'leeseoyoon', 'seoyoon888', '010-7414-5675', 'ì‚¬ëŒ€í•´ìƒ', 'seoyoon_lee', 'NULL', 'leeseoyoon@hyundai.com', TO_DATE('2020-09-18', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ê²½ì˜ì§„', 'temp_pass_107', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌ¼­À±', 'leeseoyoon', 'seoyoon888', '010-7414-5675', '»ç´ëÇØ»ó', 'seoyoon_lee', 'NULL', 'leeseoyoon@hyundai.com', TO_DATE('2020-09-18', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-°æ¿µÁø', 'temp_pass_107', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ìž¬ì€', 'parkjaeeun', 'jaeeun999', '010-7001-8667', 'DDí•˜ì´í…', 'jaeeun_park', 'NULL', 'parkjaeeun@hitek.com', TO_DATE('2018-11-30', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ë³µì§€', 'temp_pass_108', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚÀçÀº', 'parkjaeeun', 'jaeeun999', '010-7001-8667', 'DDÇÏÀÌÅØ', 'jaeeun_park', 'NULL', 'parkjaeeun@hitek.com', TO_DATE('2018-11-30', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-º¹Áö', 'temp_pass_108', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì •ìˆ˜ë¹ˆ', 'jungsubin', 'subin123', '010-6177-9288', 'SKU', 'subin_jung', 'NULL', 'jungsubin@sk.com', TO_DATE('2017-04-15', 'YYYY-MM-DD'), 'ë³µì§€-ì›Œë¼ë²¨', 'temp_pass_109', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¤¼öºó', 'jungsubin', 'subin123', '010-6177-9288', 'SKU', 'subin_jung', 'NULL', 'jungsubin@sk.com', TO_DATE('2017-04-15', 'YYYY-MM-DD'), 'º¹Áö-¿ö¶óº§', 'temp_pass_109', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì§€ìš°', 'kimjiwoo', 'jiwoo456', '010-1997-1318', 'ì‚¼ì„±SKS', 'jiwoo_kim', 'NULL', 'kimjiwoo@samsung.com', TO_DATE('2016-08-10', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ê·¼ë¬´í™˜ê²½', 'temp_pass_110', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÁö¿ì', 'kimjiwoo', 'jiwoo456', '010-1997-1318', '»ï¼ºSKS', 'jiwoo_kim', 'NULL', 'kimjiwoo@samsung.com', TO_DATE('2016-08-10', 'YYYY-MM-DD'), '±Þ¿©-±Ù¹«È¯°æ', 'temp_pass_110', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´í•˜ë¦°', 'leeharin', 'harin000', '010-3114-2723', 'ULXì¸í„°ë‚´ì…”ë„', 'harin_lee', 'NULL', 'halee@ulx.com', TO_DATE('2019-03-25', 'YYYY-MM-DD'), 'ë³µì§€-ì›Œë¼ë²¨', 'temp_pass_111', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌÇÏ¸°', 'leeharin', 'harin000', '010-3114-2723', 'ULXÀÎÅÍ³»¼Å³Î', 'harin_lee', 'NULL', 'halee@ulx.com', TO_DATE('2019-03-25', 'YYYY-MM-DD'), 'º¹Áö-¿ö¶óº§', 'temp_pass_111', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ì¢…ë¯¼', 'parkjongmin', 'jongmin111', '010-4226-3453', 'TGìŠ¤í‹¸', 'jongmin_park', 'NULL', 'jongminpark@kgsteal.com', TO_DATE('2018-10-12', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ì›Œë¼ë²¨', 'temp_pass_112', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚÁ¾¹Î', 'parkjongmin', 'jongmin111', '010-4226-3453', 'TG½ºÆ¿', 'jongmin_park', 'NULL', 'jongminpark@kgsteal.com', TO_DATE('2018-10-12', 'YYYY-MM-DD'), '±Þ¿©-¿ö¶óº§', 'temp_pass_112', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìµœì—°ìš°', 'choiyenwoo', 'yenwoo222', '010-4331-6744', 'ì…€ë°”ì´ì˜¤íŠ¸ë¦¬ì˜¨', 'yenwoo_choi', 'NULL', 'yenwoochoi@cell.com', TO_DATE('2017-05-08', 'YYYY-MM-DD'), 'ê²½ì˜ì§„-ì›Œë¼ë²¨', 'temp_pass_113', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÃÖ¿¬¿ì', 'choiyenwoo', 'yenwoo222', '010-4331-6744', '¼¿¹ÙÀÌ¿ÀÆ®¸®¿Â', 'yenwoo_choi', 'NULL', 'yenwoochoi@cell.com', TO_DATE('2017-05-08', 'YYYY-MM-DD'), '°æ¿µÁø-¿ö¶óº§', 'temp_pass_113', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€í•˜ëŠ˜', 'kimhaneul', 'haneul333', '010-4624-7215', 'í‚¤ì›Œì¦ê¶Œ', 'haneul_kim', 'NULL', 'haneulkim@kiwoom.com', TO_DATE('2016-09-30', 'YYYY-MM-DD'), 'ê²½ì˜ì§„-ê¸‰ì—¬', 'temp_pass_24', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÇÏ´Ã', 'kimhaneul', 'haneul333', '010-4624-7215', 'Å°¿öÁõ±Ç', 'haneul_kim', 'NULL', 'haneulkim@kiwoom.com', TO_DATE('2016-09-30', 'YYYY-MM-DD'), '°æ¿µÁø-±Þ¿©', 'temp_pass_24', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìž¥ìˆ˜ë¯¼', 'jangsumin', 'sumin444', '010-5345-2166', 'ê·¸ëž˜í”„íŠ¸', 'sumin_jang', 'NULL', 'minjang@krafton.com', TO_DATE('2015-12-19', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ì›Œë¼ë²¨', 'temp_pass_25', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Àå¼ö¹Î', 'jangsumin', 'sumin444', '010-5345-2166', '±×·¡ÇÁÆ®', 'sumin_jang', 'NULL', 'minjang@krafton.com', TO_DATE('2015-12-19', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-¿ö¶óº§', 'temp_pass_25', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì§€ì›', 'kimjiwon', 'jiwon555', '010-4866-7977', 'ì— ì”¨ì†Œí”„íŠ¸', 'jiwon_kim5', 'NULL', 'jiwonkim@ncsoft.com', TO_DATE('2019-11-08', 'YYYY-MM-DD'), 'ë³µì§€-ê·¼ë¬´í™˜ê²½', 'temp_pass_116', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÁö¿ø', 'kimjiwon', 'jiwon555', '010-4866-7977', '¿¥¾¾¼ÒÇÁÆ®', 'jiwon_kim5', 'NULL', 'jiwonkim@ncsoft.com', TO_DATE('2019-11-08', 'YYYY-MM-DD'), 'º¹Áö-±Ù¹«È¯°æ', 'temp_pass_116', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì˜¤ìˆ˜í˜„', 'osuhyun', 'suhyun666', '010-7372-8918', 'CWì´ë…¸ë² ì´ì…˜', 'suhyun_oh', 'NULL', 'suhyun@skinnovation.com', TO_DATE('2018-04-02', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ê²½ì˜ì§„', 'temp_pass_117', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¿À¼öÇö', 'osuhyun', 'suhyun666', '010-7372-8918', 'CWÀÌ³ëº£ÀÌ¼Ç', 'suhyun_oh', 'NULL', 'suhyun@skinnovation.com', TO_DATE('2018-04-02', 'YYYY-MM-DD'), '±Þ¿©-°æ¿µÁø', 'temp_pass_117', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìž„í˜œì¸', 'imhyein', 'hyein777', '010-1848-4399', 'LA', 'hyein_lim', 'NULL', 'hyeinlim@ls.com', TO_DATE('2017-07-15', 'YYYY-MM-DD'), 'ì›Œë¼ë²¨-ê²½ì˜ì§„', 'temp_pass_118', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÓÇýÀÎ', 'imhyein', 'hyein777', '010-1848-4399', 'LA', 'hyein_lim', 'NULL', 'hyeinlim@ls.com', TO_DATE('2017-07-15', 'YYYY-MM-DD'), '¿ö¶óº§-°æ¿µÁø', 'temp_pass_118', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì–‘ì§„ì„', 'yangjinseok', 'jinseok888', '010-1929-1020', 'ASë¦¬í…Œì¼', 'jinseok_yang', 'NULL', 'jinseokyang@gsretail.com', TO_DATE('2016-02-21', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ì›Œë¼ë²¨', 'temp_pass_119', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¾çÁø¼®', 'yangjinseok', 'jinseok888', '010-1929-1020', 'AS¸®Å×ÀÏ', 'jinseok_yang', 'NULL', 'jinseokyang@gsretail.com', TO_DATE('2016-02-21', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-¿ö¶óº§', 'temp_pass_119', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•í•˜ë‚˜', 'parkhana', 'hana999', '010-7231-8674', 'SYìŠ¤í€˜ì–´', 'hana_park', 'NULL', 'hanapark@sksquare.com', TO_DATE('2015-05-30', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ë³µì§€', 'temp_pass_120', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚÇÏ³ª', 'parkhana', 'hana999', '010-7231-8674', 'SY½ºÄù¾î', 'hana_park', 'NULL', 'hanapark@sksquare.com', TO_DATE('2015-05-30', 'YYYY-MM-DD'), '±Þ¿©-º¹Áö', 'temp_pass_120', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ë¯¼í˜¸', 'leeminho', 'minho123', '010-2128-3634', 'ë¯¸ëž˜ê´€ë¦¬ì¦ê¶Œ', 'minho_lee', 'NULL', 'minho@mirae.com', TO_DATE('2018-09-10', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ì›Œë¼ë²¨', 'temp_pass_121', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌ¹ÎÈ£', 'leeminho', 'minho123', '010-2128-3634', '¹Ì·¡°ü¸®Áõ±Ç', 'minho_lee', 'NULL', 'minho@mirae.com', TO_DATE('2018-09-10', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-¿ö¶óº§', 'temp_pass_121', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì„œí˜„', 'kimseohyun', 'seohyun234', '010-4313-4741', 'ë¡¯ë°ì •ë°€ë¶„ì„', 'seohyun_kim', 'NULL', 'seohyunkim@lotte.com', TO_DATE('2019-12-05', 'YYYY-MM-DD'), 'ê²½ì˜ì§„-ì›Œë¼ë²¨', 'temp_pass_122', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±è¼­Çö', 'kimseohyun', 'seohyun234', '010-4313-4741', '·Ôµ¥Á¤¹ÐºÐ¼®', 'seohyun_kim', 'NULL', 'seohyunkim@lotte.com', TO_DATE('2019-12-05', 'YYYY-MM-DD'), '°æ¿µÁø-¿ö¶óº§', 'temp_pass_122', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•í˜„ìš°', 'parkhyunwoo', 'hyunwoo345', '010-6484-5815', 'H'||CHR(38)||'J', 'hyunwoo_park', 'NULL', 'hyunwoopark@fnf.com', TO_DATE('2017-03-25', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ê²½ì˜ì§„', 'temp_pass_123', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚÇö¿ì', 'parkhyunwoo', 'hyunwoo345', '010-6484-5815', 'H'||CHR(38)||'J', 'hyunwoo_park', 'NULL', 'hyunwoopark@fnf.com', TO_DATE('2017-03-25', 'YYYY-MM-DD'), '±Þ¿©-°æ¿µÁø', 'temp_pass_123', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ì±„ì˜', 'leechaeyoung', 'chaeyoung456', '010-5867-4166', 'ë¯¼êµ­ì¦ê¶Œ', 'chaeyoung_lee', 'NULL', 'chaeyounglee@samsumgpop.com', TO_DATE('2016-08-18', 'YYYY-MM-DD'), 'ë³µì§€-ì›Œë¼ë²¨', 'temp_pass_124', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌÃ¤¿µ', 'leechaeyoung', 'chaeyoung456', '010-5867-4166', '¹Î±¹Áõ±Ç', 'chaeyoung_lee', 'NULL', 'chaeyounglee@samsumgpop.com', TO_DATE('2016-08-18', 'YYYY-MM-DD'), 'º¹Áö-¿ö¶óº§', 'temp_pass_124', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìž¥ìš°ì§„', 'jangwoojin', 'woojin567', '010-6564-7872', 'SKS', 'woojin_jang', 'NULL', 'woojinjang@samsung.com', TO_DATE('2020-01-12', 'YYYY-MM-DD'), 'ì›Œë¼ë²¨-ê·¼ë¬´í™˜ê²½', 'temp_pass_125', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Àå¿ìÁø', 'jangwoojin', 'woojin567', '010-6564-7872', 'SKS', 'woojin_jang', 'NULL', 'woojinjang@samsung.com', TO_DATE('2020-01-12', 'YYYY-MM-DD'), '¿ö¶óº§-±Ù¹«È¯°æ', 'temp_pass_125', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìœ¤ì§€ë¯¼', 'yunjimin', 'jimin678', '010-7914-7588', 'ULXì¸í„°ë‚´ì…”ë„', 'jimin_yun', 'NULL', 'jimin@ulx.com', TO_DATE('2019-05-30', 'YYYY-MM-DD'), 'ì›Œë¼ë²¨-ë³µì§€', 'temp_pass_126', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'À±Áö¹Î', 'yunjimin', 'jimin678', '010-7914-7588', 'ULXÀÎÅÍ³»¼Å³Î', 'jimin_yun', 'NULL', 'jimin@ulx.com', TO_DATE('2019-05-30', 'YYYY-MM-DD'), '¿ö¶óº§-º¹Áö', 'temp_pass_126', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´íƒœì˜', 'itayoung', 'tayoung789', '010-6588-2979', 'TGìŠ¤í‹¸', 'tayoung_lee', 'NULL', 'tayoung@kgsteal.com', TO_DATE('2017-11-08', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ê¸‰ì—¬', 'temp_pass_127', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌÅÂ¿µ', 'itayoung', 'tayoung789', '010-6588-2979', 'TG½ºÆ¿', 'tayoung_lee', 'NULL', 'tayoung@kgsteal.com', TO_DATE('2017-11-08', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-±Þ¿©', 'temp_pass_127', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ìŠ¹ì¤€', 'parkseungjun', 'seungjun890', '010-4993-7010', 'ì…€ë°”ì´ì˜¤íŠ¸ë¦¬ì˜¨', 'seungjun_park', 'NULL', 'seungjunpark@cell.com', TO_DATE('2018-04-22', 'YYYY-MM-DD'), 'ì›Œë¼ë²¨-ê²½ì˜ì§„', 'temp_pass_128', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹Ú½ÂÁØ', 'parkseungjun', 'seungjun890', '010-4993-7010', '¼¿¹ÙÀÌ¿ÀÆ®¸®¿Â', 'seungjun_park', 'NULL', 'seungjunpark@cell.com', TO_DATE('2018-04-22', 'YYYY-MM-DD'), '¿ö¶óº§-°æ¿µÁø', 'temp_pass_128', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ë¯¼ì„±', 'kimminseong', 'minseong901', '010-3211-7722', 'í‚¤ì›Œì¦ê¶Œ', 'minseong_kim', 'NULL', 'minseong@kiwoom.com', TO_DATE('2020-09-15', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ì›Œë¼ë²¨', 'temp_pass_129', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±è¹Î¼º', 'kimminseong', 'minseong901', '010-3211-7722', 'Å°¿öÁõ±Ç', 'minseong_kim', 'NULL', 'minseong@kiwoom.com', TO_DATE('2020-09-15', 'YYYY-MM-DD'), '±Þ¿©-¿ö¶óº§', 'temp_pass_129', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìž¥í˜„ìš°', 'janghyunwoo', 'hyunwoo012', '010-2492-4233', 'ê·¸ëž˜í”„íŠ¸', 'hyunwoo_jang1', 'NULL', 'hyunwoojang@krafton.com', TO_DATE('2016-07-07', 'YYYY-MM-DD'), 'ë³µì§€-ê·¼ë¬´í™˜ê²½', 'temp_pass_130', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀåÇö¿ì', 'janghyunwoo', 'hyunwoo012', '010-2492-4233', '±×·¡ÇÁÆ®', 'hyunwoo_jang1', 'NULL', 'hyunwoojang@krafton.com', TO_DATE('2016-07-07', 'YYYY-MM-DD'), 'º¹Áö-±Ù¹«È¯°æ', 'temp_pass_130', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì •ë‹¤ì†œ', 'jeongdasom', 'dasom345', '010-4833-3474', 'ì— ì”¨ì†Œí”„íŠ¸', 'dasom_jeong', 'NULL', 'dasomjeong@ncsoft.com', TO_DATE('2017-12-10', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ë³µì§€', 'temp_pass_131', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¤´Ù¼Ø', 'jeongdasom', 'dasom345', '010-4833-3474', '¿¥¾¾¼ÒÇÁÆ®', 'dasom_jeong', 'NULL', 'dasomjeong@ncsoft.com', TO_DATE('2017-12-10', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-º¹Áö', 'temp_pass_131', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì‹ ìš°ì§„', 'sinwoojin', 'woojin567', '010-6344-8155', 'CWì´ë…¸ë² ì´ì…˜', 'woojin_shin', 'NULL', 'wooshin@skinnovation.com', TO_DATE('2018-06-25', 'YYYY-MM-DD'), 'ì›Œë¼ë²¨-ê²½ì˜ì§„', 'temp_pass_132', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '½Å¿ìÁø', 'sinwoojin', 'woojin567', '010-6344-8155', 'CWÀÌ³ëº£ÀÌ¼Ç', 'woojin_shin', 'NULL', 'wooshin@skinnovation.com', TO_DATE('2018-06-25', 'YYYY-MM-DD'), '¿ö¶óº§-°æ¿µÁø', 'temp_pass_132', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ìˆ˜ì§„', 'leesujin', 'sujin789', '010-5965-9667', 'LA', 'sujin_lee', 'NULL', 'sujinlee@ls.com', TO_DATE('2019-08-03', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ê·¼ë¬´í™˜ê²½', 'temp_pass_133', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌ¼öÁø', 'leesujin', 'sujin789', '010-5965-9667', 'LA', 'sujin_lee', 'NULL', 'sujinlee@ls.com', TO_DATE('2019-08-03', 'YYYY-MM-DD'), '±Þ¿©-±Ù¹«È¯°æ', 'temp_pass_133', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ìž¬ì›', 'kimjaewon', 'jaewon901', '010-6465-1577', 'ASë¦¬í…Œì¼', 'jaewon_kim', 'NULL', 'jaewon@gsretail.com', TO_DATE('2020-01-18', 'YYYY-MM-DD'), 'ë³µì§€-ê·¼ë¬´í™˜ê²½', 'temp_pass_134', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÀç¿ø', 'kimjaewon', 'jaewon901', '010-6465-1577', 'AS¸®Å×ÀÏ', 'jaewon_kim', 'NULL', 'jaewon@gsretail.com', TO_DATE('2020-01-18', 'YYYY-MM-DD'), 'º¹Áö-±Ù¹«È¯°æ', 'temp_pass_134', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìµœí•˜ìœ¤', 'choihayoon', 'hayoon012', '010-3777-8478', 'SYìŠ¤í€˜ì–´', 'hayoon_choi', 'NULL', 'hachoi@sksquare.com', TO_DATE('2020-11-29', 'YYYY-MM-DD'), 'ì›Œë¼ë²¨-ë³µì§€', 'temp_pass_135', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÃÖÇÏÀ±', 'choihayoon', 'hayoon012', '010-3777-8478', 'SY½ºÄù¾î', 'hayoon_choi', 'NULL', 'hachoi@sksquare.com', TO_DATE('2020-11-29', 'YYYY-MM-DD'), '¿ö¶óº§-º¹Áö', 'temp_pass_135', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ì§„ì˜', 'parkjinyoung', 'jinyoung345', '010-7818-9290', 'ë¯¸ëž˜ê´€ë¦¬ì¦ê¶Œ', 'jinyoung_park', 'NULL', 'jinyoungpark@mirae.com', TO_DATE('2017-04-05', 'YYYY-MM-DD'), 'ê²½ì˜ì§„-ì›Œë¼ë²¨', 'temp_pass_136', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚÁø¿µ', 'parkjinyoung', 'jinyoung345', '010-7818-9290', '¹Ì·¡°ü¸®Áõ±Ç', 'jinyoung_park', 'NULL', 'jinyoungpark@mirae.com', TO_DATE('2017-04-05', 'YYYY-MM-DD'), '°æ¿µÁø-¿ö¶óº§', 'temp_pass_136', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ì§€í›ˆ', 'leejihun', 'jihun567', '010-9299-4017', 'ë¡¯ë°ì •ë°€ë¶„ì„', 'jihun_lee', 'NULL', 'jihun@lotte.com', TO_DATE('2018-09-21', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ê¸‰ì—¬', 'temp_pass_137', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌÁöÈÆ', 'leejihun', 'jihun567', '010-9299-4017', '·Ôµ¥Á¤¹ÐºÐ¼®', 'jihun_lee', 'NULL', 'jihun@lotte.com', TO_DATE('2018-09-21', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-±Þ¿©', 'temp_pass_137', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°°ìœ ë¦¼', 'baeyurim', 'yurim789', '010-7114-5478', 'H'||CHR(38)||'J', 'yurim_bae', 'NULL', 'yurim@fnf.com', TO_DATE('2019-11-15', 'YYYY-MM-DD'), 'ë³µì§€-ê·¼ë¬´í™˜ê²½', 'temp_pass_138', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹èÀ¯¸²', 'baeyurim', 'yurim789', '010-7114-5478', 'H'||CHR(38)||'J', 'yurim_bae', 'NULL', 'yurim@fnf.com', TO_DATE('2019-11-15', 'YYYY-MM-DD'), 'º¹Áö-±Ù¹«È¯°æ', 'temp_pass_138', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê°•ë™í˜¸', 'kangdongho', 'dongho012', '010-8921-1189', 'ë¯¼êµ­ì¦ê¶Œ', 'dongho_kang', 'NULL', 'dongho.kang@samsumgpop.com', TO_DATE('2020-06-08', 'YYYY-MM-DD'), 'ì›Œë¼ë²¨-ë³µì§€', 'temp_pass_139', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '°­µ¿È£', 'kangdongho', 'dongho012', '010-8921-1189', '¹Î±¹Áõ±Ç', 'dongho_kang', 'NULL', 'dongho.kang@samsumgpop.com', TO_DATE('2020-06-08', 'YYYY-MM-DD'), '¿ö¶óº§-º¹Áö', 'temp_pass_139', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìž„ì†Œì€', 'imsoeun', 'soeun901', '010-3445-7080', 'DDí•˜ì´í…', 'soeun_lim', 'NULL', 'soeunlim@hitek.com', TO_DATE('2021-03-27', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ê²½ì˜ì§„', 'temp_pass_140', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÓ¼ÒÀº', 'imsoeun', 'soeun901', '010-3445-7080', 'DDÇÏÀÌÅØ', 'soeun_lim', 'NULL', 'soeunlim@hitek.com', TO_DATE('2021-03-27', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-°æ¿µÁø', 'temp_pass_140', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'í•œìŠ¹í¬', 'hanseunghee', 'seunghee234', '010-1214-5018', 'DDí•˜ì´í…', 'seunghee_han', 'NULL', 'seungheehan@hitek.com', TO_DATE('2017-08-12', 'YYYY-MM-DD'), 'ë³µì§€-ê²½ì˜ì§„', 'temp_pass_141', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÇÑ½ÂÈñ', 'hanseunghee', 'seunghee234', '010-1214-5018', 'DDÇÏÀÌÅØ', 'seunghee_han', 'NULL', 'seungheehan@hitek.com', TO_DATE('2017-08-12', 'YYYY-MM-DD'), 'º¹Áö-°æ¿µÁø', 'temp_pass_141', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì •ìš°ì§„', 'jeongwoojin', 'woojin567', '010-4345-6709', 'ì‚¼ì„±SKS', 'woojin_jeong', 'NULL', 'woojinjeong@samsung.com', TO_DATE('2018-12-05', 'YYYY-MM-DD'), 'ì›Œë¼ë²¨-ê¸‰ì—¬', 'temp_pass_142', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¤¿ìÁø', 'jeongwoojin', 'woojin567', '010-4345-6709', '»ï¼ºSKS', 'woojin_jeong', 'NULL', 'woojinjeong@samsung.com', TO_DATE('2018-12-05', 'YYYY-MM-DD'), '¿ö¶óº§-±Þ¿©', 'temp_pass_142', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì†ì§€í˜œ', 'sonjihye', 'jihye901', '010-7456-7110', 'ULXì¸í„°ë‚´ì…”ë„', 'jihye_son', 'NULL', 'jihyeson@ulx.com', TO_DATE('2019-06-21', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ì›Œë¼ë²¨', 'temp_pass_143', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¼ÕÁöÇý', 'sonjihye', 'jihye901', '010-7456-7110', 'ULXÀÎÅÍ³»¼Å³Î', 'jihye_son', 'NULL', 'jihyeson@ulx.com', TO_DATE('2019-06-21', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-¿ö¶óº§', 'temp_pass_143', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ìž¬í›ˆ', 'kimjaehoon', 'jaehoon012', '010-4827-8901', 'í‚¤ì›Œì¦ê¶Œ', 'jaehoon_kim', 'NULL', 'jaehoonkim@kiwoom.com', TO_DATE('2020-10-15', 'YYYY-MM-DD'), 'ê²½ì˜ì§„-ê¸‰ì—¬', 'temp_pass_144', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÀçÈÆ', 'kimjaehoon', 'jaehoon012', '010-4827-8901', 'Å°¿öÁõ±Ç', 'jaehoon_kim', 'NULL', 'jaehoonkim@kiwoom.com', TO_DATE('2020-10-15', 'YYYY-MM-DD'), '°æ¿µÁø-±Þ¿©', 'temp_pass_144', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìž„ì§€ë¯¼', 'imjimin', 'jimin345', '010-5671-9012', 'ê·¸ëž˜í”„íŠ¸', 'jimin_lim', 'NULL', 'jiminlim@krafton.com', TO_DATE('2021-04-02', 'YYYY-MM-DD'), 'ì›Œë¼ë²¨-ê·¼ë¬´í™˜ê²½', 'temp_pass_145', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÓÁö¹Î', 'imjimin', 'jimin345', '010-5671-9012', '±×·¡ÇÁÆ®', 'jimin_lim', 'NULL', 'jiminlim@krafton.com', TO_DATE('2021-04-02', 'YYYY-MM-DD'), '¿ö¶óº§-±Ù¹«È¯°æ', 'temp_pass_145', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•í˜„ìš°', 'parkhyunwoo', 'hyunwoo567', '010-6719-4143', 'ì— ì”¨ì†Œí”„íŠ¸', 'hyunwoo_park1', 'pNULL', 'hyunwoopark@ncsoft.com', TO_DATE('2018-03-19', 'YYYY-MM-DD'), 'ë³µì§€-ì›Œë¼ë²¨', 'temp_pass_146', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚÇö¿ì', 'parkhyunwoo', 'hyunwoo567', '010-6719-4143', '¿¥¾¾¼ÒÇÁÆ®', 'hyunwoo_park1', 'pNULL', 'hyunwoopark@ncsoft.com', TO_DATE('2018-03-19', 'YYYY-MM-DD'), 'º¹Áö-¿ö¶óº§', 'temp_pass_146', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€í˜œë¦°', 'kimhyerin', 'hyerin890', '010-7817-3214', 'CWì´ë…¸ë² ì´ì…˜', 'hyerin_kim', 'NULL', 'hyerinkim@skinnovation.com', TO_DATE('2019-09-25', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ê²½ì˜ì§„', 'temp_pass_147', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÇý¸°', 'kimhyerin', 'hyerin890', '010-7817-3214', 'CWÀÌ³ëº£ÀÌ¼Ç', 'hyerin_kim', 'NULL', 'hyerinkim@skinnovation.com', TO_DATE('2019-09-25', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-°æ¿µÁø', 'temp_pass_147', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ì¤€í˜¸', 'leejunho', 'junho123', '010-8901-2345', 'LA', 'junho_lee', 'NULL', 'junholee@ls.com', TO_DATE('2020-05-08', 'YYYY-MM-DD'), 'ê²½ì˜ì§„-ì›Œë¼ë²¨', 'temp_pass_148', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌÁØÈ£', 'leejunho', 'junho123', '010-8901-2345', 'LA', 'junho_lee', 'NULL', 'junholee@ls.com', TO_DATE('2020-05-08', 'YYYY-MM-DD'), '°æ¿µÁø-¿ö¶óº§', 'temp_pass_148', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìµœìœ¤ì„œ', 'choiyunseo', 'yunseo456', '010-9012-3456', 'ASë¦¬í…Œì¼', 'yunseo_choi', 'NULL', 'yunseochoi@gsretail.com', TO_DATE('2021-01-13', 'YYYY-MM-DD'), 'ì›Œë¼ë²¨-ê¸‰ì—¬', 'temp_pass_149', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÃÖÀ±¼­', 'choiyunseo', 'yunseo456', '010-9012-3456', 'AS¸®Å×ÀÏ', 'yunseo_choi', 'NULL', 'yunseochoi@gsretail.com', TO_DATE('2021-01-13', 'YYYY-MM-DD'), '¿ö¶óº§-±Þ¿©', 'temp_pass_149', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê°•ë„ìœ¤', 'kangdoyoon', 'doyoon789', '010-7587-4518', 'SYìŠ¤í€˜ì–´', 'doyoon_kang', 'NULL', 'doyoonkang@sksquare.com', TO_DATE('2022-08-30', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ê¸‰ì—¬', 'temp_pass_150', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '°­µµÀ±', 'kangdoyoon', 'doyoon789', '010-7587-4518', 'SY½ºÄù¾î', 'doyoon_kang', 'NULL', 'doyoonkang@sksquare.com', TO_DATE('2022-08-30', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-±Þ¿©', 'temp_pass_150', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì§€ì—°', 'kimjiyeon', 'jiyeon123', '010-4751-5668', 'KDí•œêµ­ì¡°ì„ í•´ì–‘', 'jenny', 'NULL', 'kimjiyeon@kds.com', TO_DATE('2016-05-12', 'YYYY-MM-DD'), 'ê²½ì˜ì§„-ë³µì§€', 'temp_pass_151', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÁö¿¬', 'kimjiyeon', 'jiyeon123', '010-4751-5668', 'KDÇÑ±¹Á¶¼±ÇØ¾ç', 'jenny', 'NULL', 'kimjiyeon@kds.com', TO_DATE('2016-05-12', 'YYYY-MM-DD'), '°æ¿µÁø-º¹Áö', 'temp_pass_151', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ìŠ¹ë¯¼', 'leeseungmin', 'pass456', '010-9126-5232', 'í•œí•˜ìƒëª…', 'smilemin', 'NULL', 'leeseungmin@hanhalife.com', TO_DATE('2019-02-28', 'YYYY-MM-DD'), 'ì›Œë¼ë²¨-ê¸‰ì—¬', 'temp_pass_152', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌ½Â¹Î', 'leeseungmin', 'pass456', '010-9126-5232', 'ÇÑÇÏ»ý¸í', 'smilemin', 'NULL', 'leeseungmin@hanhalife.com', TO_DATE('2019-02-28', 'YYYY-MM-DD'), '¿ö¶óº§-±Þ¿©', 'temp_pass_152', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ë¯¼ìž¬', 'parkminjae', 'mjae789', '010-5677-1253', 'TJì œì¼ì œë‹¹', 'minjae_park', 'NULL', 'parkminjae@tjjedang.com', TO_DATE('2018-07-20', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ì›Œë¼ë²¨', 'temp_pass_153', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹Ú¹ÎÀç', 'parkminjae', 'mjae789', '010-5677-1253', 'TJÁ¦ÀÏÁ¦´ç', 'minjae_park', 'NULL', 'parkminjae@tjjedang.com', TO_DATE('2018-07-20', 'YYYY-MM-DD'), '±Þ¿©-¿ö¶óº§', 'temp_pass_153', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'í™ì„í›ˆ', 'honggildong', 'gildong789', '010-7122-2812', 'ë§ˆì¹´ì˜¤ë±…í¬', 'hgd', 'NULL', 'honggildong@macaubank.com', TO_DATE('2017-09-15', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ì›Œë¼ë²¨', 'temp_pass_154', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'È«¼®ÈÆ', 'honggildong', 'gildong789', '010-7122-2812', '¸¶Ä«¿À¹ðÅ©', 'hgd', 'NULL', 'honggildong@macaubank.com', TO_DATE('2017-09-15', 'YYYY-MM-DD'), '±Þ¿©-¿ö¶óº§', 'temp_pass_154', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ë‚˜ì˜', 'leenayoung', 'na123', '010-3144-4717', 'BMKê¸ˆìœµì§€ì£¼', 'nayeong', 'NULL', 'leenayoung@bmkgroup.com', TO_DATE('2020-12-03', 'YYYY-MM-DD'), 'ë³µì§€-ê²½ì˜ì§„', 'temp_pass_155', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌ³ª¿µ', 'leenayoung', 'na123', '010-3144-4717', 'BMK±ÝÀ¶ÁöÁÖ', 'nayeong', 'NULL', 'leenayoung@bmkgroup.com', TO_DATE('2020-12-03', 'YYYY-MM-DD'), 'º¹Áö-°æ¿µÁø', 'temp_pass_155', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ë¯¼ìˆ˜', 'kimminsoo', 'minsu456', '010-6118-7717', 'ì „ìš°ê±´ì„¤', 'minsu', 'NULL', 'kimminsoo@jwonconstruction.com', TO_DATE('2023-01-21', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ê¸‰ì—¬', 'temp_pass_156', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±è¹Î¼ö', 'kimminsoo', 'minsu456', '010-6118-7717', 'Àü¿ì°Ç¼³', 'minsu', 'NULL', 'kimminsoo@jwonconstruction.com', TO_DATE('2023-01-21', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-±Þ¿©', 'temp_pass_156', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìµœì§€ìš°', 'choijiwoo', 'jiwoo789', '010-9102-1761', 'ë””ì—˜ENC', 'jw_choi', 'NULL', 'choijiwoo@dlenc.com', TO_DATE('2018-04-22', 'YYYY-MM-DD'), 'ë³µì§€-ê¸‰ì—¬', 'temp_pass_157', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÃÖÁö¿ì', 'choijiwoo', 'jiwoo789', '010-9102-1761', 'µð¿¤ENC', 'jw_choi', 'NULL', 'choijiwoo@dlenc.com', TO_DATE('2018-04-22', 'YYYY-MM-DD'), 'º¹Áö-±Þ¿©', 'temp_pass_157', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìž¥í˜„ìš°', 'janghyunwoo', 'hyunwoo123', '010-4512-5778', 'í˜¸ì„ í‹°ì•¤ì”¨', 'hwoo', 'NULL', 'janghyunwoo@hostea.com', TO_DATE('2016-11-30', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ê²½ì˜ì§„', 'temp_pass_158', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀåÇö¿ì', 'janghyunwoo', 'hyunwoo123', '010-4512-5778', 'È£¼±Æ¼¾Ø¾¾', 'hwoo', 'NULL', 'janghyunwoo@hostea.com', TO_DATE('2016-11-30', 'YYYY-MM-DD'), '±Þ¿©-°æ¿µÁø', 'temp_pass_158', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì†¡ì€ì£¼', 'songeunju', 'eunju456', '010-1655-7626', 'SHê°€ìŠ¤', 'eunju_song', 'NULL', 'songeunju@shgas.com', TO_DATE('2020-02-14', 'YYYY-MM-DD'), 'ë³µì§€-ì›Œë¼ë²¨', 'temp_pass_159', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¼ÛÀºÁÖ', 'songeunju', 'eunju456', '010-1655-7626', 'SH°¡½º', 'eunju_song', 'NULL', 'songeunju@shgas.com', TO_DATE('2020-02-14', 'YYYY-MM-DD'), 'º¹Áö-¿ö¶óº§', 'temp_pass_159', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ì² ìˆ˜', 'parkcheolsu', 'cheolsu789', '010-8810-9029', 'SanSungì—”ì§€ë‹ˆì–´ë§', 'cs_park', 'NULL', 'parkcheolsu@sansungeng.com', TO_DATE('2017-06-05', 'YYYY-MM-DD'), 'ë³µì§€-ê¸‰ì—¬', 'temp_pass_160', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚÃ¶¼ö', 'parkcheolsu', 'cheolsu789', '010-8810-9029', 'SanSung¿£Áö´Ï¾î¸µ', 'cs_park', 'NULL', 'parkcheolsu@sansungeng.com', TO_DATE('2017-06-05', 'YYYY-MM-DD'), 'º¹Áö-±Þ¿©', 'temp_pass_160', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì‹ ì§€í˜„', 'shinjihyun', 'jihyun123', '010-1417-9822', 'í•œí•˜ì—ì–´ë¡œìŠ¤íŽ˜ì´ìŠ¤', 'jihyun', 'NULL', 'shinjihyun@hanhaaero.com', TO_DATE('2019-01-20', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ê¸‰ì—¬', 'temp_pass_161', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '½ÅÁöÇö', 'shinjihyun', 'jihyun123', '010-1417-9822', 'ÇÑÇÏ¿¡¾î·Î½ºÆäÀÌ½º', 'jihyun', 'NULL', 'shinjihyun@hanhaaero.com', TO_DATE('2019-01-20', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-±Þ¿©', 'temp_pass_161', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ë„í˜„', 'leedohyun', 'dohyun456', '010-3443-4112', 'ë³´ìŠ¤ì½”ì¸í„°ë‚´ì…”ë„', 'ldh', 'NULL', 'leedohyun@bosco.com', TO_DATE('2018-07-12', 'YYYY-MM-DD'), 'ê²½ì˜ì§„-ì›Œë¼ë²¨', 'temp_pass_162', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌµµÇö', 'leedohyun', 'dohyun456', '010-3443-4112', 'º¸½ºÄÚÀÎÅÍ³»¼Å³Î', 'ldh', 'NULL', 'leedohyun@bosco.com', TO_DATE('2018-07-12', 'YYYY-MM-DD'), '°æ¿µÁø-¿ö¶óº§', 'temp_pass_162', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ìœ¤ì„œ', 'kimyunseo', 'yunseo789', '010-6126-3677', 'í•œí•˜', 'yunkim', 'NULL', 'kimyunseo@hanha.com', TO_DATE('2020-11-08', 'YYYY-MM-DD'), 'ì›Œë¼ë²¨-ë³µì§€', 'temp_pass_163', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÀ±¼­', 'kimyunseo', 'yunseo789', '010-6126-3677', 'ÇÑÇÏ', 'yunkim', 'NULL', 'kimyunseo@hanha.com', TO_DATE('2020-11-08', 'YYYY-MM-DD'), '¿ö¶óº§-º¹Áö', 'temp_pass_163', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìž„íƒœí˜¸', 'limtaeho', 'taeho123', '010-9999-1111', 'ì—˜ì•¤ì—ì´', 'taeho', 'NULL', 'limtaeho@lna.com', TO_DATE('2016-04-05', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ê²½ì˜ì§„', 'temp_pass_164', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÓÅÂÈ£', 'limtaeho', 'taeho123', '010-9999-1111', '¿¤¾Ø¿¡ÀÌ', 'taeho', 'NULL', 'limtaeho@lna.com', TO_DATE('2016-04-05', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-°æ¿µÁø', 'temp_pass_164', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê°•ìˆ˜ì§„', 'kangsoojin', 'soojin456', '010-2334-557', 'TJì œì¼ì œë‹¹', 'soojin', 'NULL', 'kangsoojin@tjjedang.com', TO_DATE('2019-08-23', 'YYYY-MM-DD'), 'ë³µì§€-ì›Œë¼ë²¨', 'temp_pass_165', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '°­¼öÁø', 'kangsoojin', 'soojin456', '010-2334-557', 'TJÁ¦ÀÏÁ¦´ç', 'soojin', 'NULL', 'kangsoojin@tjjedang.com', TO_DATE('2019-08-23', 'YYYY-MM-DD'), 'º¹Áö-¿ö¶óº§', 'temp_pass_165', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì¡°í˜„ìš°', 'johyunwoo', 'hyunwoo789', '010-8448-9901', 'WJì½”ì›¨ì´', 'hyunwoo', 'NULL', 'johyunwoo@coway.com', TO_DATE('2018-12-10', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ì›Œë¼ë²¨', 'temp_pass_166', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¶Çö¿ì', 'johyunwoo', 'hyunwoo789', '010-8448-9901', 'WJÄÚ¿þÀÌ', 'hyunwoo', 'NULL', 'johyunwoo@coway.com', TO_DATE('2018-12-10', 'YYYY-MM-DD'), '±Þ¿©-¿ö¶óº§', 'temp_pass_166', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ìˆ˜ë¹ˆ', 'leesoobin', 'soobin123', '010-2141-2189', 'í•œí•˜ìƒëª…', 'soobin', 'NULL', 'leesoobin@hanhalife.com', TO_DATE('2017-05-18', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ë³µì§€', 'temp_pass_167', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌ¼öºó', 'leesoobin', 'soobin123', '010-2141-2189', 'ÇÑÇÏ»ý¸í', 'soobin', 'NULL', 'leesoobin@hanhalife.com', TO_DATE('2017-05-18', 'YYYY-MM-DD'), '±Þ¿©-º¹Áö', 'temp_pass_167', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€íƒœìœ¤', 'kimtaeyoon', 'taeyoon456', '010-3365-4134', 'SHê°€ìŠ¤', 'taeyoon', 'NULL', 'kimtaeyoon@shgas.com', TO_DATE('2020-02-01', 'YYYY-MM-DD'), 'ë³µì§€-ê·¼ë¬´í™˜ê²½', 'temp_pass_168', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÅÂÀ±', 'kimtaeyoon', 'taeyoon456', '010-3365-4134', 'SH°¡½º', 'taeyoon', 'NULL', 'kimtaeyoon@shgas.com', TO_DATE('2020-02-01', 'YYYY-MM-DD'), 'º¹Áö-±Ù¹«È¯°æ', 'temp_pass_168', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ì§€ìœ¤', 'parkjiyoon', 'jiyoon789', '010-5785-3266', 'í•œí•˜ì—ì–´ë¡œìŠ¤íŽ˜ì´ìŠ¤', 'jiyoon', 'NULL', 'parkjiyoon@hanhaaero.com', TO_DATE('2019-10-22', 'YYYY-MM-DD'), 'ë³µì§€-ì›Œë¼ë²¨', 'temp_pass_169', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚÁöÀ±', 'parkjiyoon', 'jiyoon789', '010-5785-3266', 'ÇÑÇÏ¿¡¾î·Î½ºÆäÀÌ½º', 'jiyoon', 'NULL', 'parkjiyoon@hanhaaero.com', TO_DATE('2019-10-22', 'YYYY-MM-DD'), 'º¹Áö-¿ö¶óº§', 'temp_pass_169', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ë¯¼í˜¸', 'leeminho', 'minho123', '010-6612-4377', 'KRíƒ€ì´ì–´ì•¤í…Œí¬ë†€ë¡œì§€', 'minho', 'NULL', 'leeminho@krtntech.com', TO_DATE('2018-07-01', 'YYYY-MM-DD'), 'ê²½ì˜ì§„-ì›Œë¼ë²¨', 'temp_pass_170', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌ¹ÎÈ£', 'leeminho', 'minho123', '010-6612-4377', 'KRÅ¸ÀÌ¾î¾ØÅ×Å©³î·ÎÁö', 'minho', 'NULL', 'leeminho@krtntech.com', TO_DATE('2018-07-01', 'YYYY-MM-DD'), '°æ¿µÁø-¿ö¶óº§', 'temp_pass_170', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì†ì§€ìš°', 'sonjiwoo', 'jiwoo456', '010-0819-1881', 'í•œí•˜', 'jiwoo', 'NULL', 'sonjiwoo@hanha.com', TO_DATE('2017-11-14', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ê·¼ë¬´í™˜ê²½', 'temp_pass_171', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¼ÕÁö¿ì', 'sonjiwoo', 'jiwoo456', '010-0819-1881', 'ÇÑÇÏ', 'jiwoo', 'NULL', 'sonjiwoo@hanha.com', TO_DATE('2017-11-14', 'YYYY-MM-DD'), '±Þ¿©-±Ù¹«È¯°æ', 'temp_pass_171', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ìž¬í›ˆ', 'kimjaehoon', 'jaehoon789', '010-1944-6678', 'SHê°€ìŠ¤', 'jaehoon', 'NULL', 'kimjaehoon@shgas.com', TO_DATE('2020-03-25', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ê·¼ë¬´í™˜ê²½', 'temp_pass_172', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÀçÈÆ', 'kimjaehoon', 'jaehoon789', '010-1944-6678', 'SH°¡½º', 'jaehoon', 'NULL', 'kimjaehoon@shgas.com', TO_DATE('2020-03-25', 'YYYY-MM-DD'), '±Þ¿©-±Ù¹«È¯°æ', 'temp_pass_172', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìž¥í•˜ë¦°', 'jangharin', 'harin123', '010-8328-8499', 'í•œëŒ€ê±´ì„¤', 'harin', 'NULL', 'jangharin@handaegun.com', TO_DATE('2016-06-08', 'YYYY-MM-DD'), 'ë³µì§€-ê²½ì˜ì§„', 'temp_pass_173', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀåÇÏ¸°', 'jangharin', 'harin123', '010-8328-8499', 'ÇÑ´ë°Ç¼³', 'harin', 'NULL', 'jangharin@handaegun.com', TO_DATE('2016-06-08', 'YYYY-MM-DD'), 'º¹Áö-°æ¿µÁø', 'temp_pass_173', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€í•˜ëŠ˜', 'kimhaneul', 'haneul123', '010-2511-2878', 'SanSungì—”ì§€ë‹ˆì–´ë§', 'haneul', 'NULL', 'kimhaneul@sansungeng.com', TO_DATE('2019-01-15', 'YYYY-MM-DD'), 'ë³µì§€-ì›Œë¼ë²¨', 'temp_pass_174', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÇÏ´Ã', 'kimhaneul', 'haneul123', '010-2511-2878', 'SanSung¿£Áö´Ï¾î¸µ', 'haneul', 'NULL', 'kimhaneul@sansungeng.com', TO_DATE('2019-01-15', 'YYYY-MM-DD'), 'º¹Áö-¿ö¶óº§', 'temp_pass_174', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ë¯¼ì„', 'parkminseok', 'minseok456', '010-3370-4224', 'SanSungì—”ì§€ë‹ˆì–´ë§', 'minseok', 'NULL', 'parkminseok@sansungeng.com', TO_DATE('2018-05-02', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ê·¼ë¬´í™˜ê²½', 'temp_pass_175', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹Ú¹Î¼®', 'parkminseok', 'minseok456', '010-3370-4224', 'SanSung¿£Áö´Ï¾î¸µ', 'minseok', 'NULL', 'parkminseok@sansungeng.com', TO_DATE('2018-05-02', 'YYYY-MM-DD'), '±Þ¿©-±Ù¹«È¯°æ', 'temp_pass_175', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì •ìœ ì§„', 'jeongyujin', 'yujin789', '010-8755-6176', 'JDê¸ˆìœµì§€ì£¼', 'yujin', 'NULL', 'jeongyujin@jdgroup.com', TO_DATE('2017-11-28', 'YYYY-MM-DD'), 'ë³µì§€-ê²½ì˜ì§„', 'temp_pass_176', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¤À¯Áø', 'jeongyujin', 'yujin789', '010-8755-6176', 'JD±ÝÀ¶ÁöÁÖ', 'yujin', 'NULL', 'jeongyujin@jdgroup.com', TO_DATE('2017-11-28', 'YYYY-MM-DD'), 'º¹Áö-°æ¿µÁø', 'temp_pass_176', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ë™ë¯¼', 'leedongmin', 'dongmin123', '010-7781-8398', 'í•œëŒ€ê±´ì„¤', 'dongmin', 'NULL', 'leedongmin@handaegun.com', TO_DATE('2016-09-20', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ì›Œë¼ë²¨', 'temp_pass_177', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌµ¿¹Î', 'leedongmin', 'dongmin123', '010-7781-8398', 'ÇÑ´ë°Ç¼³', 'dongmin', 'NULL', 'leedongmin@handaegun.com', TO_DATE('2016-09-20', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-¿ö¶óº§', 'temp_pass_177', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ìˆ˜ë¹ˆ', 'kimsubin', 'subin456', '010-9827-1281', 'KDí•œêµ­ì¡°ì„ í•´ì–‘', 'subin', 'NULL', 'kimsubin@kds.com', TO_DATE('2020-12-07', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ê²½ì˜ì§„', 'temp_pass_178', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±è¼öºó', 'kimsubin', 'subin456', '010-9827-1281', 'KDÇÑ±¹Á¶¼±ÇØ¾ç', 'subin', 'NULL', 'kimsubin@kds.com', TO_DATE('2020-12-07', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-°æ¿µÁø', 'temp_pass_178', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìœ¤ì§€ë¯¼', 'yunjimin', 'jimin789', '010-1574-5578', 'KG ETS', 'jimin', 'NULL', 'yunjimin@kgets.com', TO_DATE('2019-03-14', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ì›Œë¼ë²¨', 'temp_pass_179', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'À±Áö¹Î', 'yunjimin', 'jimin789', '010-1574-5578', 'KG ETS', 'jimin', 'NULL', 'yunjimin@kgets.com', TO_DATE('2019-03-14', 'YYYY-MM-DD'), '±Þ¿©-¿ö¶óº§', 'temp_pass_179', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ì§„ìš°', 'leejinwoo', 'jinwoo123', '010-0166-9717', 'WJì½”ì›¨ì´', 'jinwoo', 'NULL', 'leejinwoo@coway.com', TO_DATE('2018-08-30', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ê²½ì˜ì§„', 'temp_pass_180', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌÁø¿ì', 'leejinwoo', 'jinwoo123', '010-0166-9717', 'WJÄÚ¿þÀÌ', 'jinwoo', 'NULL', 'leejinwoo@coway.com', TO_DATE('2018-08-30', 'YYYY-MM-DD'), '±Þ¿©-°æ¿µÁø', 'temp_pass_180', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•í•˜ì€', 'parkhaeun', 'haeun456', '010-1808-5969', 'í˜¸ì„ í‹°ì•¤ì”¨', 'haeun', 'NULL', 'parkhaeun@hostea.com', TO_DATE('2023-03-19', 'YYYY-MM-DD'), 'ë³µì§€-ê·¼ë¬´í™˜ê²½', 'temp_pass_181', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚÇÏÀº', 'parkhaeun', 'haeun456', '010-1808-5969', 'È£¼±Æ¼¾Ø¾¾', 'haeun', 'NULL', 'parkhaeun@hostea.com', TO_DATE('2023-03-19', 'YYYY-MM-DD'), 'º¹Áö-±Ù¹«È¯°æ', 'temp_pass_181', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€íƒœë¦°', 'kimtaerin', 'taerin123', '010-1197-2472', 'BMKê¸ˆìœµì§€ì£¼', 'taerin', 'NULL', 'kimtaerin@bmkgroup.com', TO_DATE('2020-04-18', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ì›Œë¼ë²¨', 'temp_pass_182', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÅÂ¸°', 'kimtaerin', 'taerin123', '010-1197-2472', 'BMK±ÝÀ¶ÁöÁÖ', 'taerin', 'NULL', 'kimtaerin@bmkgroup.com', TO_DATE('2020-04-18', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-¿ö¶óº§', 'temp_pass_182', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´í˜„ì¤€', 'leehyunjoon', 'hyunjoon789', '010-3213-5414', 'ë³´ìŠ¤ì½”ì¸í„°ë‚´ì…”ë„', 'hyunjoon', 'NULL', 'leehyunjoon@bosco.com', TO_DATE('2019-11-09', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ì›Œë¼ë²¨', 'temp_pass_183', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌÇöÁØ', 'leehyunjoon', 'hyunjoon789', '010-3213-5414', 'º¸½ºÄÚÀÎÅÍ³»¼Å³Î', 'hyunjoon', 'NULL', 'leehyunjoon@bosco.com', TO_DATE('2019-11-09', 'YYYY-MM-DD'), '±Þ¿©-¿ö¶óº§', 'temp_pass_183', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'í•œì§€í˜¸', 'hanjihoo', 'jihoo123', '010-5125-6611', 'ë§ˆì¹´ì˜¤ë±…í¬', 'jihoo', 'NULL', 'hanjihoo@macaubank.com', TO_DATE('2021-02-10', 'YYYY-MM-DD'), 'ë³µì§€-ê·¼ë¬´í™˜ê²½', 'temp_pass_184', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÇÑÁöÈ£', 'hanjihoo', 'jihoo123', '010-5125-6611', '¸¶Ä«¿À¹ðÅ©', 'jihoo', 'NULL', 'hanjihoo@macaubank.com', TO_DATE('2021-02-10', 'YYYY-MM-DD'), 'º¹Áö-±Ù¹«È¯°æ', 'temp_pass_184', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìœ ë¯¼ìž¬', 'yuminjae', 'minjae456', '010-7730-8817', 'ë³´ìŠ¤ì½”ì¸í„°ë‚´ì…”ë„', 'minjae', 'NULL', 'yuminjae@bosco.com', TO_DATE('2020-06-28', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ê²½ì˜ì§„', 'temp_pass_185', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'À¯¹ÎÀç', 'yuminjae', 'minjae456', '010-7730-8817', 'º¸½ºÄÚÀÎÅÍ³»¼Å³Î', 'minjae', 'NULL', 'yuminjae@bosco.com', TO_DATE('2020-06-28', 'YYYY-MM-DD'), '±Þ¿©-°æ¿µÁø', 'temp_pass_185', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´í˜œë¦°', 'leehyerin', 'hyerin789', '010-2719-1638', 'ë””ì—˜ENC', 'hyerin', 'NULL', 'leehyerin@dlenc.com', TO_DATE('2018-09-15', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ì›Œë¼ë²¨', 'temp_pass_186', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌÇý¸°', 'leehyerin', 'hyerin789', '010-2719-1638', 'µð¿¤ENC', 'hyerin', 'NULL', 'leehyerin@dlenc.com', TO_DATE('2018-09-15', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-¿ö¶óº§', 'temp_pass_186', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìž¥ìŠ¹ìš°', 'jangseungwoo', 'seungwoo123', '010-1070-5607', 'HNíˆ¬ìžì¦ê¶Œ', 'seungwoo', 'NULL', 'jangseungwoo@hninvestment.com', TO_DATE('2019-04-22', 'YYYY-MM-DD'), 'ë³µì§€-ì›Œë¼ë²¨', 'temp_pass_187', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Àå½Â¿ì', 'jangseungwoo', 'seungwoo123', '010-1070-5607', 'HNÅõÀÚÁõ±Ç', 'seungwoo', 'NULL', 'jangseungwoo@hninvestment.com', TO_DATE('2019-04-22', 'YYYY-MM-DD'), 'º¹Áö-¿ö¶óº§', 'temp_pass_187', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´í•˜ë‚˜', 'leehana', 'hana456', '010-6626-7717', 'í•œí•˜', 'hana', 'NULL', 'leehana@hanha.com', TO_DATE('2017-10-17', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ê²½ì˜ì§„', 'temp_pass_188', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌÇÏ³ª', 'leehana', 'hana456', '010-6626-7717', 'ÇÑÇÏ', 'hana', 'NULL', 'leehana@hanha.com', TO_DATE('2017-10-17', 'YYYY-MM-DD'), '±Þ¿©-°æ¿µÁø', 'temp_pass_188', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ì„±ë¯¼', 'parkseongmin', 'seongmin123', '010-8808-2599', 'TJì œì¼ì œë‹¹', 'seongmin', 'NULL', 'parkseongmin@tjjedang.com', TO_DATE('2022-01-08', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ì›Œë¼ë²¨', 'temp_pass_189', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹Ú¼º¹Î', 'parkseongmin', 'seongmin123', '010-8808-2599', 'TJÁ¦ÀÏÁ¦´ç', 'seongmin', 'NULL', 'parkseongmin@tjjedang.com', TO_DATE('2022-01-08', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-¿ö¶óº§', 'temp_pass_189', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ë‹¤í˜„', 'kimdahyun', 'dahyun123', '010-1201-7262', 'ì—˜ì•¤ì—ì´', 'dahyun', 'NULL', 'kimdahyun@lna.com', TO_DATE('2020-04-02', 'YYYY-MM-DD'), 'ë³µì§€-ê·¼ë¬´í™˜ê²½', 'temp_pass_190', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±è´ÙÇö', 'kimdahyun', 'dahyun123', '010-1201-7262', '¿¤¾Ø¿¡ÀÌ', 'dahyun', 'NULL', 'kimdahyun@lna.com', TO_DATE('2020-04-02', 'YYYY-MM-DD'), 'º¹Áö-±Ù¹«È¯°æ', 'temp_pass_190', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìž¥ìž¬í˜', 'jangjaehyuk', 'jaehyuk456', '010-3033-7084', 'í•œí•˜', 'jaehyuk', 'NULL', 'jangjaehyuk@hanha.com', TO_DATE('2019-07-11', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ì›Œë¼ë²¨', 'temp_pass_191', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀåÀçÇõ', 'jangjaehyuk', 'jaehyuk456', '010-3033-7084', 'ÇÑÇÏ', 'jaehyuk', 'NULL', 'jangjaehyuk@hanha.com', TO_DATE('2019-07-11', 'YYYY-MM-DD'), '±Þ¿©-¿ö¶óº§', 'temp_pass_191', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ìˆ˜ë¹ˆ', 'leesubin', 'subin789', '010-5125-6620', 'í•œëŒ€ê±´ì„¤', 'subin2', 'NULL', 'leesubin@handaegun.com', TO_DATE('2018-02-25', 'YYYY-MM-DD'), 'ë³µì§€-ê²½ì˜ì§„', 'temp_pass_192', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌ¼öºó', 'leesubin', 'subin789', '010-5125-6620', 'ÇÑ´ë°Ç¼³', 'subin2', 'NULL', 'leesubin@handaegun.com', TO_DATE('2018-02-25', 'YYYY-MM-DD'), 'º¹Áö-°æ¿µÁø', 'temp_pass_192', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€ì˜ì„œ', 'kimyoungseo', 'youngseo123', '010-2789-2388', 'WJì½”ì›¨ì´', 'youngseo', 'NULL', 'kimyoungseo@coway.com', TO_DATE('2017-05-30', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ê²½ì˜ì§„', 'temp_pass_193', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±è¿µ¼­', 'kimyoungseo', 'youngseo123', '010-2789-2388', 'WJÄÚ¿þÀÌ', 'youngseo', 'NULL', 'kimyoungseo@coway.com', TO_DATE('2017-05-30', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-°æ¿µÁø', 'temp_pass_193', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ë¯¼ì§€', 'parkminji', 'minji123', '010-2034-5608', 'SanSungì—”ì§€ë‹ˆì–´ë§', 'minji', 'NULL', 'parkminji@sansungeng.com', TO_DATE('2021-08-15', 'YYYY-MM-DD'), 'ë³µì§€-ì›Œë¼ë²¨', 'temp_pass_194', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹Ú¹ÎÁö', 'parkminji', 'minji123', '010-2034-5608', 'SanSung¿£Áö´Ï¾î¸µ', 'minji', 'NULL', 'parkminji@sansungeng.com', TO_DATE('2021-08-15', 'YYYY-MM-DD'), 'º¹Áö-¿ö¶óº§', 'temp_pass_194', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ê¹€íƒœìš°', 'kimtaewoo', 'taewoo456', '010-6216-3678', 'ì „ìš°ê±´ì„¤', 'taewoo', 'NULL', 'kimtaewoo@jwonconstruction.com', TO_DATE('2019-02-28', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ê·¼ë¬´í™˜ê²½', 'temp_pass_195', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '±èÅÂ¿ì', 'kimtaewoo', 'taewoo456', '010-6216-3678', 'Àü¿ì°Ç¼³', 'taewoo', 'NULL', 'kimtaewoo@jwonconstruction.com', TO_DATE('2019-02-28', 'YYYY-MM-DD'), '±Þ¿©-±Ù¹«È¯°æ', 'temp_pass_195', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì •í•˜ë¦°', 'jungharin', 'harin123', '010-8128-9679', 'í•œí•˜ìƒëª…', 'harin2', 'NULL', 'jungharin@hanhalife.com', TO_DATE('2022-04-05', 'YYYY-MM-DD'), 'ê·¼ë¬´í™˜ê²½-ê²½ì˜ì§„', 'temp_pass_196', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'Á¤ÇÏ¸°', 'jungharin', 'harin123', '010-8128-9679', 'ÇÑÇÏ»ý¸í', 'harin2', 'NULL', 'jungharin@hanhalife.com', TO_DATE('2022-04-05', 'YYYY-MM-DD'), '±Ù¹«È¯°æ-°æ¿µÁø', 'temp_pass_196', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì´ìž¬ìœ¤', 'leejaeyoon', 'jaeyoon789', '010-7151-2321', 'SHê°€ìŠ¤', 'jaeyoon', 'path/to/leejaeyoon_profile.jpg', 'leejaeyoon@shgas.com', TO_DATE('2020-09-10', 'YYYY-MM-DD'), 'ë³µì§€-ì›Œë¼ë²¨', 'temp_pass_197', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÌÀçÀ±', 'leejaeyoon', 'jaeyoon789', '010-7151-2321', 'SH°¡½º', 'jaeyoon', 'path/to/leejaeyoon_profile.jpg', 'leejaeyoon@shgas.com', TO_DATE('2020-09-10', 'YYYY-MM-DD'), 'º¹Áö-¿ö¶óº§', 'temp_pass_197', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ì†¡í•˜ìœ¤', 'songhayoon', 'hayoon123', '010-3983-5244', 'KDí•œêµ­ì¡°ì„ í•´ì–‘', 'hayoon', 'NULL', 'songhayoon@kds.com', TO_DATE('2018-11-22', 'YYYY-MM-DD'), 'ê¸‰ì—¬-ê·¼ë¬´í™˜ê²½', 'temp_pass_198', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¼ÛÇÏÀ±', 'songhayoon', 'hayoon123', '010-3983-5244', 'KDÇÑ±¹Á¶¼±ÇØ¾ç', 'hayoon', 'NULL', 'songhayoon@kds.com', TO_DATE('2018-11-22', 'YYYY-MM-DD'), '±Þ¿©-±Ù¹«È¯°æ', 'temp_pass_198', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ë°•ì¤€ì„œ', 'parkjunseo', 'junseo456', '010-9755-6686', 'HNíˆ¬ìžì¦ê¶Œ', 'junseo', 'NULL', 'parkjunseo@hninvestment.com', TO_DATE('2022-01-21', 'YYYY-MM-DD'), 'ê²½ì˜ì§„-ì›Œë¼ë²¨', 'temp_pass_199', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, '¹ÚÁØ¼­', 'parkjunseo', 'junseo456', '010-9755-6686', 'HNÅõÀÚÁõ±Ç', 'junseo', 'NULL', 'parkjunseo@hninvestment.com', TO_DATE('2022-01-21', 'YYYY-MM-DD'), '°æ¿µÁø-¿ö¶óº§', 'temp_pass_199', 3, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO PERSONAL VALUES
-(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ìž„ì€ìˆ˜', 'imeunsu', 'eunsu123', '010-9377-8498', 'ì „ìš°ê±´ì„¤', 'eunsu', 'NULL', 'imeunsu@jwonconstruction.com', TO_DATE('2019-12-03', 'YYYY-MM-DD'), 'ë³µì§€-ê·¼ë¬´í™˜ê²½', 'temp_pass_200', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+(PERSONAL_NUMBER_SEQ.NEXTVAL, 'ÀÓÀº¼ö', 'imeunsu', 'eunsu123', '010-9377-8498', 'Àü¿ì°Ç¼³', 'eunsu', 'NULL', 'imeunsu@jwonconstruction.com', TO_DATE('2019-12-03', 'YYYY-MM-DD'), 'º¹Áö-±Ù¹«È¯°æ', 'temp_pass_200', 2, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 
 COMMIT;
@@ -2329,385 +2329,385 @@ COMMIT;
 
 
 
--- ìžê¸°ì†Œê°œì„œ
+-- ÀÚ±â¼Ò°³¼­
 INSERT INTO LETTER
 VALUE(LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
     , LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
-VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'ì €ì˜ ì–´ë¦° ì‹œì ˆì€ ì •ë§ íŠ¹ë³„í–ˆìŠµë‹ˆë‹¤. ì €ì˜ ê°€ì¡±ë“¤ì´ ì •ë§ íŠ¹ë³„í•œ ì¡´ìž¬ì˜€ê¸° ë•Œë¬¸ìž…ë‹ˆë‹¤. êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.', 
-   'ì €ëŠ” ì†Œí”„íŠ¸ì›¨ì–´ ì—”ì§€ë‹ˆì–´ë¡œ ì„±ìž¥í•˜ê¸° ìœ„í•´ ë‹¤ìŒê³¼ ê°™ì€ ë…¸ë ¥ì„ í•´ì™”ìŠµë‹ˆë‹¤. ë¨¼ì €, ì‘ìš©ì†Œí”„íŠ¸ì›¨ì–´í•™ê³¼ë¥¼ ìˆ˜ì„ìœ¼ë¡œ ì¡¸ì—…í–ˆìŠµë‹ˆë‹¤. êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.',
-   'ì €ì˜ ìž¥ì ì€ ì‹œê°„ê´€ë¦¬ì— ë§¤ìš° ë›°ì–´ë‚˜ë‹¤ëŠ” ì ìž…ë‹ˆë‹¤. ì´ëŠ” ë‚¨ë“¤ì— ë¹„í•´ ì›”ë“±í•œ ëŠ¥ë¥ ì„ ì œê³µí•  ìˆ˜ ìžˆë‹¤ëŠ” ê²ƒì„ ì˜ë¯¸í•©ë‹ˆë‹¤. êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.', 
-   'ì €ì˜ ëª©í‘œëŠ” ë‹¹ì‚¬ì˜ CIOê°€ ë˜ì–´ 20ë…„ í›„ ì„¸ê³„ì—ì„œ ì¸ì •ë°›ëŠ” íšŒì‚¬ë¡œ ê±°ë“­ë‚  ìˆ˜ ìžˆë„ë¡ í•˜ëŠ” ê²ƒìž…ë‹ˆë‹¤. êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.', 
+VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'ÀúÀÇ ¾î¸° ½ÃÀýÀº Á¤¸» Æ¯º°Çß½À´Ï´Ù. ÀúÀÇ °¡Á·µéÀÌ Á¤¸» Æ¯º°ÇÑ Á¸Àç¿´±â ¶§¹®ÀÔ´Ï´Ù. ±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. ¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. ¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.', 
+   'Àú´Â ¼ÒÇÁÆ®¿þ¾î ¿£Áö´Ï¾î·Î ¼ºÀåÇÏ±â À§ÇØ ´ÙÀ½°ú °°Àº ³ë·ÂÀ» ÇØ¿Ô½À´Ï´Ù. ¸ÕÀú, ÀÀ¿ë¼ÒÇÁÆ®¿þ¾îÇÐ°ú¸¦ ¼ö¼®À¸·Î Á¹¾÷Çß½À´Ï´Ù. ±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. ¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. ¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.',
+   'ÀúÀÇ ÀåÁ¡Àº ½Ã°£°ü¸®¿¡ ¸Å¿ì ¶Ù¾î³ª´Ù´Â Á¡ÀÔ´Ï´Ù. ÀÌ´Â ³²µé¿¡ ºñÇØ ¿ùµîÇÑ ´É·üÀ» Á¦°øÇÒ ¼ö ÀÖ´Ù´Â °ÍÀ» ÀÇ¹ÌÇÕ´Ï´Ù. ±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. ¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. ¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.', 
+   'ÀúÀÇ ¸ñÇ¥´Â ´ç»çÀÇ CIO°¡ µÇ¾î 20³â ÈÄ ¼¼°è¿¡¼­ ÀÎÁ¤¹Þ´Â È¸»ç·Î °Åµì³¯ ¼ö ÀÖµµ·Ï ÇÏ´Â °ÍÀÔ´Ï´Ù. ±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. ¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. ¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.', 
    1);
 
 INSERT INTO LETTER
 VALUE(LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
     , LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
-VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'ì €ì˜ ì„±ìž¥í™˜ê²½ì€ ìµœê³ ì˜ ë§ˆì¼€í„°ê°€ ë˜ê¸° ìœ„í•´ ë„ˆë¬´ë‚˜ë„ ë”± ë§žëŠ” í™˜ê²½ì´ì—ˆìŠµë‹ˆë‹¤. 
-ê·¸ ì´ìœ ëŠ” êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. 
-ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. 
-ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. 
-ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. 
-ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.'
-, 'ì €ëŠ” ì´ íšŒì‚¬ì—ì„œ ìµœê³ ì˜ ë§ˆì¼€í„°ê°€ ë  ìˆ˜ ìžˆë‹¤ê³  í™•ì‹ í•˜ê¸° ë•Œë¬¸ì— ì§€ì›í•˜ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤.  
-êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. 
-ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. 
-ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. 
-ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. 
-ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.'
-, 'ì €ì˜ ìž¥ì ì€ ë‹¤ë¥¸ ì‚¬ëžŒë“¤ì˜ ê°ì •ì„ ìž˜ ì½ì–´ë‚¸ë‹¤ëŠ” ê²ƒìž…ë‹ˆë‹¤. ì´ëŠ” ë§ˆì¼€í„°ê°€ ë˜ê¸° ìœ„í•´ ì•„ì£¼ ì¢‹ì€ ìž¥ì ìž…ë‹ˆë‹¤.  
-êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. 
-ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. 
-ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. 
-ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. 
-ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.'
-, 'ì €ì˜ ëª©í‘œëŠ” 5ë…„ ë‚´ë¡œ ì¤‘êµ­ì‹œìž¥ì— ì§„ì¶œí•˜ì—¬, í•´ë‹¹ ì‹œìž¥ì„ ì„ ì í•˜ì—¬ ì‹œìž¥ì—ì„œ ì•žì„œê°€ëŠ” ê²ƒìž…ë‹ˆë‹¤. 
-êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. 
-ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. 
-ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. 
-ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. 
-ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.', 2);
+VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'ÀúÀÇ ¼ºÀåÈ¯°æÀº ÃÖ°íÀÇ ¸¶ÄÉÅÍ°¡ µÇ±â À§ÇØ ³Ê¹«³ªµµ µü ¸Â´Â È¯°æÀÌ¾ú½À´Ï´Ù. 
+±× ÀÌÀ¯´Â ±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. 
+½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. 
+ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. 
+¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. 
+¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.'
+, 'Àú´Â ÀÌ È¸»ç¿¡¼­ ÃÖ°íÀÇ ¸¶ÄÉÅÍ°¡ µÉ ¼ö ÀÖ´Ù°í È®½ÅÇÏ±â ¶§¹®¿¡ Áö¿øÇÏ°Ô µÇ¾ú½À´Ï´Ù.  
+±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. 
+½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. 
+ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. 
+¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. 
+¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.'
+, 'ÀúÀÇ ÀåÁ¡Àº ´Ù¸¥ »ç¶÷µéÀÇ °¨Á¤À» Àß ÀÐ¾î³½´Ù´Â °ÍÀÔ´Ï´Ù. ÀÌ´Â ¸¶ÄÉÅÍ°¡ µÇ±â À§ÇØ ¾ÆÁÖ ÁÁÀº ÀåÁ¡ÀÔ´Ï´Ù.  
+±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. 
+½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. 
+ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. 
+¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. 
+¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.'
+, 'ÀúÀÇ ¸ñÇ¥´Â 5³â ³»·Î Áß±¹½ÃÀå¿¡ ÁøÃâÇÏ¿©, ÇØ´ç ½ÃÀåÀ» ¼±Á¡ÇÏ¿© ½ÃÀå¿¡¼­ ¾Õ¼­°¡´Â °ÍÀÔ´Ï´Ù. 
+±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. 
+½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. 
+ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. 
+¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. 
+¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.', 2);
 
 INSERT INTO LETTER
 VALUE(LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
     , LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
-VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'ê³ ë“±í•™ìƒ ì‹œì ˆë¶€í„° ì €ì˜ ìœ ì¼í•œ ëª©í‘œëŠ” ê±´ì„¤ ì—”ì§€ë‹ˆì–´ê°€ ë˜ëŠ” ê²ƒì´ì—ˆìŠµë‹ˆë‹¤. ê·¸ ì´í›„ë¡œë„ ê±´ì„¤ ì—”ì§€ë‹ˆì–´ê°€ ë˜ê¸° ìœ„í•œ ì €ì˜ ëª©í‘œì˜ì‹ì€ ë³€í•˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤. êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.', 
-   'ì œê°€ ì§€ì›í•˜ê²Œ ëœ ë™ê¸°ëŠ” ìµœê³ ì˜ ìžë¦¬ì—ì„œ ìµœê³ ì˜ ê¸°ì—…ì„ ë§Œë“¤ê³ ìží•˜ëŠ” ì˜ì§€ ë•Œë¬¸ìž…ë‹ˆë‹¤. ì €ì˜ ê²½í—˜ì€ ìµœê³ ì˜ ì—”ì§€ë‹ˆì–´ê°€ ë˜ê¸° ìœ„í•´ ì¶©ë¶„í•©ë‹ˆë‹¤. êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.',
-   'ê±´ì„¤ ì—”ì§€ë‹ˆì–´ë¡œì„œ, ì €ì˜ ê°€ìž¥ í° ìž¥ì ì€ ë†’ì€ ì§‘ì¤‘ë ¥ìž…ë‹ˆë‹¤. ë†’ì€ ì§‘ì¤‘ë ¥ì„ í†µí•´, ëŒ€í•™ ì‹œì ˆ í° ì„±ê³¼ë¥¼ ë‚´ì–´ ë³¸ ê²½í—˜ì´ ìžˆìŠµë‹ˆë‹¤. êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.', 
-   'ì €ì˜ ëª©í‘œëŠ” ê±´ì„¤ ì—”ì§€ë‹ˆì–´ë¡œì„œ ìµœê³ ì˜ ê¸°ì—…ì„ ë§Œë“œëŠ” ìµœê³ ì˜ ì¸ìž¬ê°€ ë˜ëŠ” ê²ƒìž…ë‹ˆë‹¤. ê·¸ë¦¬ê³  ì €ëŠ” ê·¸ê²ƒì´ ê°€ëŠ¥í•˜ë‹¤ê³  í™•ì‹ í•©ë‹ˆë‹¤. êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.', 
+VALUES(LETTER_NUMBER_SEQ.NEXTVAL, '°íµîÇÐ»ý ½ÃÀýºÎÅÍ ÀúÀÇ À¯ÀÏÇÑ ¸ñÇ¥´Â °Ç¼³ ¿£Áö´Ï¾î°¡ µÇ´Â °ÍÀÌ¾ú½À´Ï´Ù. ±× ÀÌÈÄ·Îµµ °Ç¼³ ¿£Áö´Ï¾î°¡ µÇ±â À§ÇÑ ÀúÀÇ ¸ñÇ¥ÀÇ½ÄÀº º¯ÇÏÁö ¾Ê¾Ò½À´Ï´Ù. ±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. ¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. ¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.', 
+   'Á¦°¡ Áö¿øÇÏ°Ô µÈ µ¿±â´Â ÃÖ°íÀÇ ÀÚ¸®¿¡¼­ ÃÖ°íÀÇ ±â¾÷À» ¸¸µé°íÀÚÇÏ´Â ÀÇÁö ¶§¹®ÀÔ´Ï´Ù. ÀúÀÇ °æÇèÀº ÃÖ°íÀÇ ¿£Áö´Ï¾î°¡ µÇ±â À§ÇØ ÃæºÐÇÕ´Ï´Ù. ±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. ¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. ¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.',
+   '°Ç¼³ ¿£Áö´Ï¾î·Î¼­, ÀúÀÇ °¡Àå Å« ÀåÁ¡Àº ³ôÀº ÁýÁß·ÂÀÔ´Ï´Ù. ³ôÀº ÁýÁß·ÂÀ» ÅëÇØ, ´ëÇÐ ½ÃÀý Å« ¼º°ú¸¦ ³»¾î º» °æÇèÀÌ ÀÖ½À´Ï´Ù. ±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. ¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. ¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.', 
+   'ÀúÀÇ ¸ñÇ¥´Â °Ç¼³ ¿£Áö´Ï¾î·Î¼­ ÃÖ°íÀÇ ±â¾÷À» ¸¸µå´Â ÃÖ°íÀÇ ÀÎÀç°¡ µÇ´Â °ÍÀÔ´Ï´Ù. ±×¸®°í Àú´Â ±×°ÍÀÌ °¡´ÉÇÏ´Ù°í È®½ÅÇÕ´Ï´Ù. ±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. ¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. ¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.', 
    3);
 
 INSERT INTO LETTER
 VALUE(LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
     , LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
-VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'ì €ëŠ” ë¯¸êµ­ì—ì„œ íƒœì–´ë‚˜ ë‹¤ì–‘í•œ ë¬¸í™”ë¥¼ ì ‘í•˜ë©° ìžë¼ì™”ìŠµë‹ˆë‹¤. ì´ëŠ” í•´ë‹¹ ì§ë¬´ë¥¼ ìž˜ ìˆ˜í–‰í•  ìˆ˜ ìžˆëŠ” ê°€ìž¥ ì¢‹ì€ í™˜ê²½ì´ì—ˆë‹¤ê³  ìƒê°í•©ë‹ˆë‹¤. êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.', 
-   'ë¯¸êµ­ì—ì„œ íƒœì–´ë‚œ ì €ì˜ ë°°ê²½ì€ ìžì—°ìŠ¤ëŸ½ê²Œ ë‹¹ì‚¬ì˜ ì‚¬ì—…ë¶„ì•¼ì— ê´€ì‹¬ì„ ê°€ì§€ê²Œ í•´ì£¼ì—ˆê³ , ìµœê³ ì˜ ì¸ìž¬ë¡œ ì„±ìž¥í•  ìˆ˜ ìžˆëŠ” í™˜ê²½ì´ë¼ê³  ìƒê°í•˜ì—¬ ì§€ì›í•˜ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.',
-   'ì €ì˜ ìž¥ì ì€ 5ê°œêµ­ì–´ë¥¼ ì™„ë²½í•˜ê²Œ êµ¬ì‚¬í•œë‹¤ëŠ” ì ìž…ë‹ˆë‹¤. í•œêµ­ì–´ì™€ ì˜ì–´ëŠ” ë¬¼ë¡ , ìŠ¤íŽ˜ì¸ì–´, ì¼ë³¸ì–´, ì´íƒˆë¦¬ì•„ì–´ê¹Œì§€ êµ¬ì‚¬ê°€ ê°€ëŠ¥í•©ë‹ˆë‹¤. êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.', 
-   'ì €ëŠ” ì•„ì‹œì•„íƒœí‰ì–‘ ì§€ì—­ì—ì„œ ê°€ìž¥ ì˜í–¥ë ¥ìžˆëŠ” íšŒì‚¬ë¡œ ë§Œë“¤ê³  ì‹¶ìŠµë‹ˆë‹¤. ë‚˜ì•„ê°€ ìœ ëŸ½ê¹Œì§€ ì§„ì¶œí•˜ì—¬ ê¶ê·¹ì ìœ¼ë¡œëŠ” ì„¸ê³„ ëª¨ë“  ê³³ì— ë‹¹ì‚¬ì˜ ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ê³ ìž í•©ë‹ˆë‹¤. êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.', 
+VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'Àú´Â ¹Ì±¹¿¡¼­ ÅÂ¾î³ª ´Ù¾çÇÑ ¹®È­¸¦ Á¢ÇÏ¸ç ÀÚ¶ó¿Ô½À´Ï´Ù. ÀÌ´Â ÇØ´ç Á÷¹«¸¦ Àß ¼öÇàÇÒ ¼ö ÀÖ´Â °¡Àå ÁÁÀº È¯°æÀÌ¾ú´Ù°í »ý°¢ÇÕ´Ï´Ù. ±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. ¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. ¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.', 
+   '¹Ì±¹¿¡¼­ ÅÂ¾î³­ ÀúÀÇ ¹è°æÀº ÀÚ¿¬½º·´°Ô ´ç»çÀÇ »ç¾÷ºÐ¾ß¿¡ °ü½ÉÀ» °¡Áö°Ô ÇØÁÖ¾ú°í, ÃÖ°íÀÇ ÀÎÀç·Î ¼ºÀåÇÒ ¼ö ÀÖ´Â È¯°æÀÌ¶ó°í »ý°¢ÇÏ¿© Áö¿øÇÏ°Ô µÇ¾ú½À´Ï´Ù. ±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. ¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. ¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.',
+   'ÀúÀÇ ÀåÁ¡Àº 5°³±¹¾î¸¦ ¿Ïº®ÇÏ°Ô ±¸»çÇÑ´Ù´Â Á¡ÀÔ´Ï´Ù. ÇÑ±¹¾î¿Í ¿µ¾î´Â ¹°·Ð, ½ºÆäÀÎ¾î, ÀÏº»¾î, ÀÌÅ»¸®¾Æ¾î±îÁö ±¸»ç°¡ °¡´ÉÇÕ´Ï´Ù. ±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. ¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. ¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.', 
+   'Àú´Â ¾Æ½Ã¾ÆÅÂÆò¾ç Áö¿ª¿¡¼­ °¡Àå ¿µÇâ·ÂÀÖ´Â È¸»ç·Î ¸¸µé°í ½Í½À´Ï´Ù. ³ª¾Æ°¡ À¯·´±îÁö ÁøÃâÇÏ¿© ±Ã±ØÀûÀ¸·Î´Â ¼¼°è ¸ðµç °÷¿¡ ´ç»çÀÇ ¼­ºñ½º¸¦ Á¦°øÇÏ°íÀÚ ÇÕ´Ï´Ù. ±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. ¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. ¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.', 
    4);
 
 INSERT INTO LETTER
 VALUE(LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
     , LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
-VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'ëŒ€í•™ì‹œì ˆ ì €ëŠ” ìœ ë‚œížˆ ìžë™ì°¨ì— ê´€ì‹¬ì´ ë§Žì•˜ìŠµë‹ˆë‹¤. ì¤‘ê³ ë¡œ êµ¬ë§¤í•œ ì•„ë°˜ë–¼ëŠ” ìœ ë‚œížˆ ê³ ìž¥ì´ ìž¦ì•˜ê³ , ì§ì ‘ ìœ íŠœë¸Œë¥¼ ì°¾ì•„ë³´ë©° ìˆ˜ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤. êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.', 
-   'ì €ëŠ” ê°€ìž¥ ë†’ì€ ê³³ì—ì„œ ìµœê³ ì˜ ì¸ìž¬ê°€ ë˜ê³  ì‹¶ìŠµë‹ˆë‹¤. ìµœê³ ì˜ ìœ„ì¹˜ì— ìžˆëŠ” ë‹¹ì‚¬ì— ì§€ì›í•œ ê²ƒì€ ì´ì™€ ê°™ì€ ì´ìœ ì—ì„œìž…ë‹ˆë‹¤. êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.',
-   'ì €ì˜ ê°€ìž¥ í° ìž¥ì ì€ ëª©í‘œí•œ ê²ƒì€ ë°˜ë“œì‹œ ì´ë¤„ë‚´ëŠ” ê²ƒìž…ë‹ˆë‹¤. ëŒ€í•™ê³¼ ì‚¬íšŒë¥¼ ê±°ì¹˜ë©°, ìˆ˜ë§Žì€ ëª©í‘œë¥¼ ì„¸ì› ê³  ì´ë¥¼ ëª¨ë‘ ë‹¬ì„±í•˜ì˜€ìŠµë‹ˆë‹¤. êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.', 
-   'ìµœê³ ì˜ ìœ„ì¹˜ì—ì„œ, ìµœê³ ì˜ ì¸ìž¬ê°€ ë˜ê³ ìž í•©ë‹ˆë‹¤. ì´ë¥¼ ìœ„í•´, ìž…ì‚¬ í›„ ìµœê³ ì˜ ì¸ìž¬ê°€ ë˜ê¸° ìœ„í•´ ë…¸ë ¥í•˜ê² ìŠµë‹ˆë‹¤. êµìœ¡ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë©´ì„œ ë§¤ë‹ˆì €ê°€ ì œê°€ ì œì‹œí•œ ë°©ì•ˆì´ ë” ì¢‹ì„ ê²ƒì´ë¼ê³  ì´ì•¼ê¸°í•˜ì—¬ ì œê°€ êµìœ¡ì„ ë§¡ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì—…ë¬´ ì§€ì†ì„±ì´ ê¸¸ì§€ ì•Šì€ ê²ƒì´ ë¬¸ì œì—¬ì„œ ë¹¨ë¦¬ ì ì‘í•˜ëŠ” ê²ƒì„ ì£¼ì•ˆì ìœ¼ë¡œ ë‘ê³  êµìœ¡ìžë£Œë¥¼ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. ì´ë¯¸ì§€ ì—°ìƒë²•ê³¼ ìˆ«ìžì˜ ë¹„ë¥¼ í™œìš©í•œ ì•”ê¸°ë²•ì„ ê°œë°œí•˜ì—¬ êµìœ¡í•˜ì˜€ìŠµë‹ˆë‹¤. ë§¹ëª©ì ì¸ ì•”ê¸°ë¥¼ í•˜ê²Œ í•˜ëŠ” ê²ƒë³´ë‹¤ ìžì—°ìŠ¤ëŸ½ê²Œ ì²´í™”ë˜ëŠ” ë°©ì‹ì„ ì œì‹œí•´ ì‹ ìž… ì•„ë¥´ë°”ì´íŠ¸ìƒì˜ ì ì‘ ê¸°ê°„ì„ ì ˆë°˜ ê°€ëŸ‰ ë‹¨ì¶•ì‹œì¼°ìŠµë‹ˆë‹¤. ë˜í•œ êµìœ¡ ë‚´ìš©ì„ ë°ì´í„°í™”í•˜ì—¬ ì•žìœ¼ë¡œë„ ì¼ê´€ëœ êµìœ¡ë°©ë²•ì„ í•  ìˆ˜ ìžˆë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.', 
+VALUES(LETTER_NUMBER_SEQ.NEXTVAL, '´ëÇÐ½ÃÀý Àú´Â À¯³­È÷ ÀÚµ¿Â÷¿¡ °ü½ÉÀÌ ¸¹¾Ò½À´Ï´Ù. Áß°í·Î ±¸¸ÅÇÑ ¾Æ¹Ý¶¼´Â À¯³­È÷ °íÀåÀÌ Àæ¾Ò°í, Á÷Á¢ À¯Æ©ºê¸¦ Ã£¾Æº¸¸ç ¼ö¸®ÇÏ¿´½À´Ï´Ù. ±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. ¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. ¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.', 
+   'Àú´Â °¡Àå ³ôÀº °÷¿¡¼­ ÃÖ°íÀÇ ÀÎÀç°¡ µÇ°í ½Í½À´Ï´Ù. ÃÖ°íÀÇ À§Ä¡¿¡ ÀÖ´Â ´ç»ç¿¡ Áö¿øÇÑ °ÍÀº ÀÌ¿Í °°Àº ÀÌÀ¯¿¡¼­ÀÔ´Ï´Ù. ±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. ¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. ¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.',
+   'ÀúÀÇ °¡Àå Å« ÀåÁ¡Àº ¸ñÇ¥ÇÑ °ÍÀº ¹Ýµå½Ã ÀÌ·ï³»´Â °ÍÀÔ´Ï´Ù. ´ëÇÐ°ú »çÈ¸¸¦ °ÅÄ¡¸ç, ¼ö¸¹Àº ¸ñÇ¥¸¦ ¼¼¿ü°í ÀÌ¸¦ ¸ðµÎ ´Þ¼ºÇÏ¿´½À´Ï´Ù. ±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. ¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. ¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.', 
+   'ÃÖ°íÀÇ À§Ä¡¿¡¼­, ÃÖ°íÀÇ ÀÎÀç°¡ µÇ°íÀÚ ÇÕ´Ï´Ù. ÀÌ¸¦ À§ÇØ, ÀÔ»ç ÈÄ ÃÖ°íÀÇ ÀÎÀç°¡ µÇ±â À§ÇØ ³ë·ÂÇÏ°Ú½À´Ï´Ù. ±³À°¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±â¸¦ ³ª´©¸é¼­ ¸Å´ÏÀú°¡ Á¦°¡ Á¦½ÃÇÑ ¹æ¾ÈÀÌ ´õ ÁÁÀ» °ÍÀÌ¶ó°í ÀÌ¾ß±âÇÏ¿© Á¦°¡ ±³À°À» ¸Ã°Ô µÇ¾ú½À´Ï´Ù. ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ¾÷¹« Áö¼Ó¼ºÀÌ ±æÁö ¾ÊÀº °ÍÀÌ ¹®Á¦¿©¼­ »¡¸® ÀûÀÀÇÏ´Â °ÍÀ» ÁÖ¾ÈÁ¡À¸·Î µÎ°í ±³À°ÀÚ·á¸¦ ¸¸µé¾ú½À´Ï´Ù. ÀÌ¹ÌÁö ¿¬»ó¹ý°ú ¼ýÀÚÀÇ ºñ¸¦ È°¿ëÇÑ ¾Ï±â¹ýÀ» °³¹ßÇÏ¿© ±³À°ÇÏ¿´½À´Ï´Ù. ¸Í¸ñÀûÀÎ ¾Ï±â¸¦ ÇÏ°Ô ÇÏ´Â °Íº¸´Ù ÀÚ¿¬½º·´°Ô Ã¼È­µÇ´Â ¹æ½ÄÀ» Á¦½ÃÇØ ½ÅÀÔ ¾Æ¸£¹ÙÀÌÆ®»ýÀÇ ÀûÀÀ ±â°£À» Àý¹Ý °¡·® ´ÜÃà½ÃÄ×½À´Ï´Ù. ¶ÇÇÑ ±³À° ³»¿ëÀ» µ¥ÀÌÅÍÈ­ÇÏ¿© ¾ÕÀ¸·Îµµ ÀÏ°üµÈ ±³À°¹æ¹ýÀ» ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¿´½À´Ï´Ù.', 
    5);
 
 INSERT INTO LETTER
 VALUE(LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
     , LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
-VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'ì €ì˜ ì–´ë¦° ì‹œì ˆì€ ì•„ë¦„ë‹¤ìš´ ê½ƒê³¼ ìžì—°ì„ ì‚¬ëž‘í•˜ë©° í’ìš”ë¡œìš´ ê°€ì¡±ê³¼ í•¨ê»˜ í‰ì˜¨í•œ í™˜ê²½ì—ì„œ ìžëžìŠµë‹ˆë‹¤. 
-ì–´ë ¤ì„œë¶€í„° ê°€ì¡±, ì¹œêµ¬ë“¤ê³¼ ë§Žì€ ì‹œê°„ì„ ë³´ë‚´ë©° ì†Œí†µì— ì›í™œí•œ ëŠ¥ë ¥ì„ í‚¤ì›Œê°”ìŠµë‹ˆë‹¤. 
-ëŒ€í•™ì—ì„œëŠ” í†µì‹  ë° ì •ë³´ ê¸°ìˆ ì„ ì „ê³µí•˜ì˜€ìœ¼ë©°, 
-í˜„ ì§ìž¥ì—ì„œ ì¼í•˜ê¸° ì „ì—ë„ í†µì‹  ê¸°ìˆ ê³¼ ì†Œí”„íŠ¸ì›¨ì–´ ê°œë°œ ë¶„ì•¼ì—ì„œ ë…¸ë ¥í•˜ë©° ì‹¤ë ¥ì„ í‚¤ì› ìŠµë‹ˆë‹¤. 
-ìµœì‹  í†µì‹  ê¸°ìˆ ê³¼ ë¬´ì„  ë„¤íŠ¸ì›Œí¬ì— ëŒ€í•œ ì—°êµ¬ì™€ ê°œë°œì„ ìˆ˜í–‰í•˜ê³  ìžˆìœ¼ë©°, 
-ê³ ê°ë“¤ì˜ ì»¤ë®¤ë‹ˆì¼€ì´ì…˜ ê²½í—˜ì„ í–¥ìƒì‹œí‚¤ê¸° ìœ„í•´ ë…¸ë ¥í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, 'í˜„ìž¬ KPì—ì„œ í†µì‹  ê¸°ìˆ  ë° ì„œë¹„ìŠ¤ ë¶„ì•¼ì—ì„œ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-KPì—ì„œ ì¼í•˜ë©´ì„œ í†µì‹  ê¸°ìˆ ì˜ ì¤‘ìš”ì„±ê³¼ í˜ì‹ ì„ ëª¸ì†Œ ì²´í—˜í•˜ë©°, 
-ê³ ê°ë“¤ì—ê²Œ ë” ë‚˜ì€ ì—°ê²°ì„±ì„ ì œê³µí•˜ëŠ” ì—­í• ì„ ë§¡ì•˜ìŠµë‹ˆë‹¤. 
-ë³¸ íšŒì‚¬ì—ì„œë„ ì´ëŸ¬í•œ ê²½í—˜ê³¼ ì—­ëŸ‰ì„ ë°”íƒ•ìœ¼ë¡œ í†µì‹  ê¸°ìˆ ê³¼ ë””ì§€í„¸ ì„œë¹„ìŠ¤ ë¶„ì•¼ì—ì„œ ì„ ë„ì ì¸ ì—­í• ì„ í•˜ê³  ì‹¶ìŠµë‹ˆë‹¤. 
-ê³ ê° ì¤‘ì‹¬ì˜ í˜ì‹ ì ì¸ ì„œë¹„ìŠ¤ë¥¼ ê°œë°œí•˜ê³  ê³ ê° ë§Œì¡±ë„ë¥¼ ë†’ì´ëŠ” ë° ê¸°ì—¬í•˜ê² ìŠµë‹ˆë‹¤.'
-, 'ì €ì˜ ìž¥ì ì€ ì°½ì˜ì ì´ê³  ì˜ˆìˆ ì ì¸ ì„±í–¥ì„ ê°€ì§€ê³  ìžˆì–´ ë¬¸ì œ í•´ê²°ê³¼ íŒ€ í”„ë¡œì íŠ¸ì—ì„œ ìƒˆë¡œìš´ ì•„ì´ë””ì–´ì™€ ì‹œê°ì„ ì œê³µí•©ë‹ˆë‹¤. 
-ë˜í•œ ì¸ë‚´ì‹¬ì´ ê°•í•˜ë©° ì–´ë ¤ìš´ ìž‘ì—…ì—ë„ ëˆê¸° ìžˆê²Œ ë…¸ë ¥í•˜ì—¬ ëª©í‘œë¥¼ ë‹¬ì„±í•©ë‹ˆë‹¤. 
-ê·¸ë¦¬ê³  ê³ ê° ì„œë¹„ìŠ¤ ê²½í—˜ì„ ì¤‘ìš”ì‹œí•˜ë©°, ì—…ë¬´ì—ì„œ ê³ ê° ìš”êµ¬ì‚¬í•­ì„ ì´í•´í•˜ê³  ê³ ê° ë§Œì¡±ë„ë¥¼ ë†’ìž…ë‹ˆë‹¤.
-ë‹¨ì ì€ ë•Œë¡œëŠ” ë„ˆë¬´ ì˜ˆë¯¼í•˜ê±°ë‚˜ ê°ì •ì ì¼ ìˆ˜ ìžˆìœ¼ë©°, ìŠ¤íŠ¸ë ˆìŠ¤ì— ë¯¼ê°í•  ë•Œê°€ ìžˆìŠµë‹ˆë‹¤. 
-ê³ ë¯¼ì´ ë§Žì•„ì„œ ê²°ì •ì„ ë‚´ë¦¬ê¸°ê¹Œì§€ ì‹œê°„ì´ ì˜¤ëž˜ ê±¸ë¦´ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. 
-íŠ¹ì • ë¶„ì•¼ì— ë„ˆë¬´ ì§‘ì¤‘í•˜ì—¬ ë‹¤ë¥¸ ë¶„ì•¼ì˜ ê´€ì‹¬ì„ ìžƒì„ ë•Œê°€ ìžˆì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.'
-, 'ì €ëŠ” í˜„ìž¬ í†µì‹  ê¸°ìˆ ê³¼ ì„œë¹„ìŠ¤ ë¶„ì•¼ì—ì„œì˜ ê²½í—˜ì„ í–¥ìƒì‹œí‚¤ê³  ìžˆìŠµë‹ˆë‹¤. 
-ìž…ì‚¬í•œë‹¤ë©´, ë°°ìš´ ì§€ì‹ê³¼ ëŠ¥ë ¥ì„ ë°”íƒ•ìœ¼ë¡œ ë” ë‚˜ì€ ì„œë¹„ìŠ¤ì™€ ì—°ê²°ì„±ì„ ì œê³µí•˜ê¸° ìœ„í•´ ë…¸ë ¥í•  ê²ƒìž…ë‹ˆë‹¤. 
-ìž…ì‚¬ í›„ì—ë„ ê¸°ìˆ ê³¼ í˜ì‹ ì— ì£¼ë ¥í•˜ì—¬ ê³ ê°ë“¤ì—ê²Œ ë” ë‚˜ì€ ì—°ê²°ì„±ì„ ì œê³µí•˜ê³ ìž í•©ë‹ˆë‹¤. 
-ë˜í•œ, íšŒì‚¬ì˜ ê°€ì¹˜ì™€ ëª©í‘œë¥¼ ì‹¤í˜„í•˜ê¸° ìœ„í•´ íŒ€ì›ë“¤ê³¼ í˜‘ë ¥í•˜ì—¬ ê¸°ìˆ  í˜ì‹ ì„ ì£¼ë„í•˜ê³  ê³ ê° ê²½í—˜ì„ í–¥ìƒì‹œí‚¬ ê²ƒìž…ë‹ˆë‹¤.', 96);
+VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'ÀúÀÇ ¾î¸° ½ÃÀýÀº ¾Æ¸§´Ù¿î ²É°ú ÀÚ¿¬À» »ç¶ûÇÏ¸ç Ç³¿ä·Î¿î °¡Á·°ú ÇÔ²² Æò¿ÂÇÑ È¯°æ¿¡¼­ ÀÚ¶ú½À´Ï´Ù. 
+¾î·Á¼­ºÎÅÍ °¡Á·, Ä£±¸µé°ú ¸¹Àº ½Ã°£À» º¸³»¸ç ¼ÒÅë¿¡ ¿øÈ°ÇÑ ´É·ÂÀ» Å°¿ö°¬½À´Ï´Ù. 
+´ëÇÐ¿¡¼­´Â Åë½Å ¹× Á¤º¸ ±â¼úÀ» Àü°øÇÏ¿´À¸¸ç, 
+Çö Á÷Àå¿¡¼­ ÀÏÇÏ±â Àü¿¡µµ Åë½Å ±â¼ú°ú ¼ÒÇÁÆ®¿þ¾î °³¹ß ºÐ¾ß¿¡¼­ ³ë·ÂÇÏ¸ç ½Ç·ÂÀ» Å°¿ü½À´Ï´Ù. 
+ÃÖ½Å Åë½Å ±â¼ú°ú ¹«¼± ³×Æ®¿öÅ©¿¡ ´ëÇÑ ¿¬±¸¿Í °³¹ßÀ» ¼öÇàÇÏ°í ÀÖÀ¸¸ç, 
+°í°´µéÀÇ Ä¿¹Â´ÏÄÉÀÌ¼Ç °æÇèÀ» Çâ»ó½ÃÅ°±â À§ÇØ ³ë·ÂÇÏ°í ÀÖ½À´Ï´Ù.'
+, 'ÇöÀç KP¿¡¼­ Åë½Å ±â¼ú ¹× ¼­ºñ½º ºÐ¾ß¿¡¼­ ÀÏÇÏ°í ÀÖ½À´Ï´Ù. 
+KP¿¡¼­ ÀÏÇÏ¸é¼­ Åë½Å ±â¼úÀÇ Áß¿ä¼º°ú Çõ½ÅÀ» ¸ö¼Ò Ã¼ÇèÇÏ¸ç, 
+°í°´µé¿¡°Ô ´õ ³ªÀº ¿¬°á¼ºÀ» Á¦°øÇÏ´Â ¿ªÇÒÀ» ¸Ã¾Ò½À´Ï´Ù. 
+º» È¸»ç¿¡¼­µµ ÀÌ·¯ÇÑ °æÇè°ú ¿ª·®À» ¹ÙÅÁÀ¸·Î Åë½Å ±â¼ú°ú µðÁöÅÐ ¼­ºñ½º ºÐ¾ß¿¡¼­ ¼±µµÀûÀÎ ¿ªÇÒÀ» ÇÏ°í ½Í½À´Ï´Ù. 
+°í°´ Áß½ÉÀÇ Çõ½ÅÀûÀÎ ¼­ºñ½º¸¦ °³¹ßÇÏ°í °í°´ ¸¸Á·µµ¸¦ ³ôÀÌ´Â µ¥ ±â¿©ÇÏ°Ú½À´Ï´Ù.'
+, 'ÀúÀÇ ÀåÁ¡Àº Ã¢ÀÇÀûÀÌ°í ¿¹¼úÀûÀÎ ¼ºÇâÀ» °¡Áö°í ÀÖ¾î ¹®Á¦ ÇØ°á°ú ÆÀ ÇÁ·ÎÁ§Æ®¿¡¼­ »õ·Î¿î ¾ÆÀÌµð¾î¿Í ½Ã°¢À» Á¦°øÇÕ´Ï´Ù. 
+¶ÇÇÑ ÀÎ³»½ÉÀÌ °­ÇÏ¸ç ¾î·Á¿î ÀÛ¾÷¿¡µµ ²ö±â ÀÖ°Ô ³ë·ÂÇÏ¿© ¸ñÇ¥¸¦ ´Þ¼ºÇÕ´Ï´Ù. 
+±×¸®°í °í°´ ¼­ºñ½º °æÇèÀ» Áß¿ä½ÃÇÏ¸ç, ¾÷¹«¿¡¼­ °í°´ ¿ä±¸»çÇ×À» ÀÌÇØÇÏ°í °í°´ ¸¸Á·µµ¸¦ ³ôÀÔ´Ï´Ù.
+´ÜÁ¡Àº ¶§·Î´Â ³Ê¹« ¿¹¹ÎÇÏ°Å³ª °¨Á¤ÀûÀÏ ¼ö ÀÖÀ¸¸ç, ½ºÆ®·¹½º¿¡ ¹Î°¨ÇÒ ¶§°¡ ÀÖ½À´Ï´Ù. 
+°í¹ÎÀÌ ¸¹¾Æ¼­ °áÁ¤À» ³»¸®±â±îÁö ½Ã°£ÀÌ ¿À·¡ °É¸± ¼ö ÀÖ½À´Ï´Ù. 
+Æ¯Á¤ ºÐ¾ß¿¡ ³Ê¹« ÁýÁßÇÏ¿© ´Ù¸¥ ºÐ¾ßÀÇ °ü½ÉÀ» ÀÒÀ» ¶§°¡ ÀÖÀ» ¼ö ÀÖ½À´Ï´Ù.'
+, 'Àú´Â ÇöÀç Åë½Å ±â¼ú°ú ¼­ºñ½º ºÐ¾ß¿¡¼­ÀÇ °æÇèÀ» Çâ»ó½ÃÅ°°í ÀÖ½À´Ï´Ù. 
+ÀÔ»çÇÑ´Ù¸é, ¹è¿î Áö½Ä°ú ´É·ÂÀ» ¹ÙÅÁÀ¸·Î ´õ ³ªÀº ¼­ºñ½º¿Í ¿¬°á¼ºÀ» Á¦°øÇÏ±â À§ÇØ ³ë·ÂÇÒ °ÍÀÔ´Ï´Ù. 
+ÀÔ»ç ÈÄ¿¡µµ ±â¼ú°ú Çõ½Å¿¡ ÁÖ·ÂÇÏ¿© °í°´µé¿¡°Ô ´õ ³ªÀº ¿¬°á¼ºÀ» Á¦°øÇÏ°íÀÚ ÇÕ´Ï´Ù. 
+¶ÇÇÑ, È¸»çÀÇ °¡Ä¡¿Í ¸ñÇ¥¸¦ ½ÇÇöÇÏ±â À§ÇØ ÆÀ¿øµé°ú Çù·ÂÇÏ¿© ±â¼ú Çõ½ÅÀ» ÁÖµµÇÏ°í °í°´ °æÇèÀ» Çâ»ó½ÃÅ³ °ÍÀÔ´Ï´Ù.', 96);
 
 INSERT INTO LETTER
 VALUE(LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
     , LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
-VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'ì €ëŠ” ëŒ€í•œë¯¼êµ­ ë¶€ì‚°ì—ì„œ íƒœì–´ë‚¬ìŠµë‹ˆë‹¤. 
-ì–´ë¦° ì‹œì ˆ, ë°”ë‹·ê°€ì—ì„œ ìžëž€ ê²½í—˜ìœ¼ë¡œ ìžì—°ì˜ ì•„ë¦„ë‹¤ì›€ê³¼ ë°”ë‹¤ì˜ í‰ì˜¨í•œ ì†Œë¦¬ë¥¼ ì‚¬ëž‘í•˜ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. 
-ëŒ€í•™êµì—ì„œ ì»´í“¨í„° ê³µí•™ì„ ì „ê³µí•˜ê³  ì¡¸ì—… í›„ì— LZì´ë…¸í…ì—ì„œ ì†Œí”„íŠ¸ì›¨ì–´ ì—”ì§€ë‹ˆì–´ë¡œì„œ ê²½ë ¥ì„ ì‹œìž‘í–ˆìŠµë‹ˆë‹¤. 
-ê¸°ìˆ  ë¶„ì•¼ì—ì„œì˜ ê¾¸ì¤€í•œ ì„±ìž¥ìœ¼ë¡œ LZì´ë…¸í…ì—ì„œ ì£¼ìš” ì†Œí”„íŠ¸ì›¨ì–´ í”„ë¡œì íŠ¸ë¥¼ ì´ëŒê³  ìžˆìœ¼ë©°, 
-í˜ì‹ ì ì¸ ì†Œí”„íŠ¸ì›¨ì–´ ì†”ë£¨ì…˜ì„ ê°œë°œí•˜ì—¬ ê¸°ì—…ì˜ ê²½ìŸë ¥ì„ í–¥ìƒì‹œí‚¤ê³  ìžˆìŠµë‹ˆë‹¤.'
-, 'í˜„ìž¬ LZì´ë…¸í…ì—ì„œ ì†Œí”„íŠ¸ì›¨ì–´ ì—”ì§€ë‹ˆì–´ë¡œì„œ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-LZì´ë…¸í…ì—ì„œëŠ” ê¸°ìˆ ê³¼ í˜ì‹ ì´ ê°€ìž¥ ì¤‘ìš”í•˜ë‹¤ëŠ” ê²ƒì„ ëª¸ì†Œ ëŠë¼ê³  ìžˆìŠµë‹ˆë‹¤. 
-í•˜ì§€ë§Œ ë³¸ íšŒì‚¬ì—ì„œë„ ë™ì¼í•œ ì—´ì •ê³¼ ê¸°ìˆ  ì—­ëŸ‰ì„ ë°œíœ˜í•˜ê³  ì‹¶ìŠµë‹ˆë‹¤. 
-ì €ëŠ” ì†Œí”„íŠ¸ì›¨ì–´ ê°œë°œ ë¶„ì•¼ì—ì„œ ê³ ê° ìš”êµ¬ë¥¼ ì¶©ì¡±ì‹œí‚¤ê³  í˜ì‹ ì ì¸ ì†”ë£¨ì…˜ì„ ê°œë°œí•˜ì—¬ ê¸°ì—…ì˜ ì„±ìž¥ì„ ì´ëŒ ê²ƒìž…ë‹ˆë‹¤. 
-ë³¸ íšŒì‚¬ì—ì„œ í•¨ê»˜ ì¼í•  ê¸°íšŒë¥¼ ê°–ê²Œ ëœë‹¤ë©´ í° ì—´ì •ê³¼ ì—­ëŸ‰ì„ ê¸°ì—¬í•˜ê² ìŠµë‹ˆë‹¤.'
-, 'ì €ì˜ ìž¥ì ì€ ë¶„ì„ì ì´ê³  ë…¼ë¦¬ì ìœ¼ë¡œ ë¬¸ì œë¥¼ í•´ê²°í•˜ëŠ” ë° ë›°ì–´ë‚œ ëŠ¥ë ¥ì„ ê°€ì§€ê³  ìžˆìŠµë‹ˆë‹¤. 
-ëª©í‘œë¥¼ ë‹¬ì„±í•˜ê¸° ìœ„í•´ ëˆê¸° ìžˆê²Œ ë…¸ë ¥í•˜ë©°, í”„ë¡œì íŠ¸ë¥¼ ì™„ë£Œí•˜ê¸° ìœ„í•´ ë…¸ë ¥í•˜ëŠ” ëª¨ë²”ì ì¸ ì§ì›ìž…ë‹ˆë‹¤. 
-ì–¸ì–´ ëŠ¥ë ¥ì´ ë›°ì–´ë‚˜ê¸° ë•Œë¬¸ì— ì»¤ë®¤ë‹ˆì¼€ì´ì…˜ê³¼ ë¬¸ì„œ ìž‘ì„±ì— ëŠ¥í•©ë‹ˆë‹¤. 
-ë‹¨ì ì€ ë•Œë¡œëŠ” ë„ˆë¬´ ê¹Œë‹¤ë¡œì›Œì§ˆ ìˆ˜ ìžˆìœ¼ë©°, ì™„ë²½ì£¼ì˜ì ì¸ ê²½í–¥ì´ ìžˆì–´ í˜‘ì—…ì—ì„œ ì¼ì •ì´ ì§€ì—°ë˜ê¸°ë„ í•©ë‹ˆë‹¤. 
-ì‹ ë¢°ë¥¼ ì‰½ê²Œ ì£¼ì§€ ì•Šê³ , ë‹¤ë¥¸ ì‚¬ëžŒë“¤ì´ ìžì‹ ì˜ í‘œí˜„ì„ ì´í•´í•˜ê¸° ì–´ë ¤ì›Œí•  ë•Œê°€ ìžˆìŠµë‹ˆë‹¤.'
-, 'LZì´ë…¸í…ì—ì„œì˜ ê²½í—˜ì´ ì†Œí”„íŠ¸ì›¨ì–´ ì—”ì§€ë‹ˆì–´ë¡œì„œ ë†’ì€ ì—­ëŸ‰ì„ ì œê³µí•˜ì˜€ìŠµë‹ˆë‹¤. 
-ì†Œí”„íŠ¸ì›¨ì–´ ê°œë°œ ë° ê¸°ìˆ  í˜ì‹ ì„ ì£¼ë„í•˜ì—¬ íšŒì‚¬ì˜ ì„±ìž¥ê³¼ ê¸°ìˆ ë ¥ì„ í–¥ìƒì‹œí‚¤ê³ ìž í•©ë‹ˆë‹¤. 
-í˜‘ë ¥ê³¼ íŒ€ì›Œí¬ë¥¼ ê°•ì¡°í•˜ì—¬ ê³ ê°ì—ê²Œ ìµœìƒì˜ ì œí’ˆì„ ì œê³µí•˜ê³ , 
-íšŒì‚¬ì˜ ëª©í‘œë¥¼ ë‹¬ì„±í•˜ê¸° ìœ„í•´ ìµœì„ ì„ ë‹¤í•˜ê² ìŠµë‹ˆë‹¤.', 97);
+VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'Àú´Â ´ëÇÑ¹Î±¹ ºÎ»ê¿¡¼­ ÅÂ¾î³µ½À´Ï´Ù. 
+¾î¸° ½ÃÀý, ¹Ù´å°¡¿¡¼­ ÀÚ¶õ °æÇèÀ¸·Î ÀÚ¿¬ÀÇ ¾Æ¸§´Ù¿ò°ú ¹Ù´ÙÀÇ Æò¿ÂÇÑ ¼Ò¸®¸¦ »ç¶ûÇÏ°Ô µÇ¾ú½À´Ï´Ù. 
+´ëÇÐ±³¿¡¼­ ÄÄÇ»ÅÍ °øÇÐÀ» Àü°øÇÏ°í Á¹¾÷ ÈÄ¿¡ LZÀÌ³ëÅØ¿¡¼­ ¼ÒÇÁÆ®¿þ¾î ¿£Áö´Ï¾î·Î¼­ °æ·ÂÀ» ½ÃÀÛÇß½À´Ï´Ù. 
+±â¼ú ºÐ¾ß¿¡¼­ÀÇ ²ÙÁØÇÑ ¼ºÀåÀ¸·Î LZÀÌ³ëÅØ¿¡¼­ ÁÖ¿ä ¼ÒÇÁÆ®¿þ¾î ÇÁ·ÎÁ§Æ®¸¦ ÀÌ²ø°í ÀÖÀ¸¸ç, 
+Çõ½ÅÀûÀÎ ¼ÒÇÁÆ®¿þ¾î ¼Ö·ç¼ÇÀ» °³¹ßÇÏ¿© ±â¾÷ÀÇ °æÀï·ÂÀ» Çâ»ó½ÃÅ°°í ÀÖ½À´Ï´Ù.'
+, 'ÇöÀç LZÀÌ³ëÅØ¿¡¼­ ¼ÒÇÁÆ®¿þ¾î ¿£Áö´Ï¾î·Î¼­ ÀÏÇÏ°í ÀÖ½À´Ï´Ù. 
+LZÀÌ³ëÅØ¿¡¼­´Â ±â¼ú°ú Çõ½ÅÀÌ °¡Àå Áß¿äÇÏ´Ù´Â °ÍÀ» ¸ö¼Ò ´À³¢°í ÀÖ½À´Ï´Ù. 
+ÇÏÁö¸¸ º» È¸»ç¿¡¼­µµ µ¿ÀÏÇÑ ¿­Á¤°ú ±â¼ú ¿ª·®À» ¹ßÈÖÇÏ°í ½Í½À´Ï´Ù. 
+Àú´Â ¼ÒÇÁÆ®¿þ¾î °³¹ß ºÐ¾ß¿¡¼­ °í°´ ¿ä±¸¸¦ ÃæÁ·½ÃÅ°°í Çõ½ÅÀûÀÎ ¼Ö·ç¼ÇÀ» °³¹ßÇÏ¿© ±â¾÷ÀÇ ¼ºÀåÀ» ÀÌ²ø °ÍÀÔ´Ï´Ù. 
+º» È¸»ç¿¡¼­ ÇÔ²² ÀÏÇÒ ±âÈ¸¸¦ °®°Ô µÈ´Ù¸é Å« ¿­Á¤°ú ¿ª·®À» ±â¿©ÇÏ°Ú½À´Ï´Ù.'
+, 'ÀúÀÇ ÀåÁ¡Àº ºÐ¼®ÀûÀÌ°í ³í¸®ÀûÀ¸·Î ¹®Á¦¸¦ ÇØ°áÇÏ´Â µ¥ ¶Ù¾î³­ ´É·ÂÀ» °¡Áö°í ÀÖ½À´Ï´Ù. 
+¸ñÇ¥¸¦ ´Þ¼ºÇÏ±â À§ÇØ ²ö±â ÀÖ°Ô ³ë·ÂÇÏ¸ç, ÇÁ·ÎÁ§Æ®¸¦ ¿Ï·áÇÏ±â À§ÇØ ³ë·ÂÇÏ´Â ¸ð¹üÀûÀÎ Á÷¿øÀÔ´Ï´Ù. 
+¾ð¾î ´É·ÂÀÌ ¶Ù¾î³ª±â ¶§¹®¿¡ Ä¿¹Â´ÏÄÉÀÌ¼Ç°ú ¹®¼­ ÀÛ¼º¿¡ ´ÉÇÕ´Ï´Ù. 
+´ÜÁ¡Àº ¶§·Î´Â ³Ê¹« ±î´Ù·Î¿öÁú ¼ö ÀÖÀ¸¸ç, ¿Ïº®ÁÖÀÇÀûÀÎ °æÇâÀÌ ÀÖ¾î Çù¾÷¿¡¼­ ÀÏÁ¤ÀÌ Áö¿¬µÇ±âµµ ÇÕ´Ï´Ù. 
+½Å·Ú¸¦ ½±°Ô ÁÖÁö ¾Ê°í, ´Ù¸¥ »ç¶÷µéÀÌ ÀÚ½ÅÀÇ Ç¥ÇöÀ» ÀÌÇØÇÏ±â ¾î·Á¿öÇÒ ¶§°¡ ÀÖ½À´Ï´Ù.'
+, 'LZÀÌ³ëÅØ¿¡¼­ÀÇ °æÇèÀÌ ¼ÒÇÁÆ®¿þ¾î ¿£Áö´Ï¾î·Î¼­ ³ôÀº ¿ª·®À» Á¦°øÇÏ¿´½À´Ï´Ù. 
+¼ÒÇÁÆ®¿þ¾î °³¹ß ¹× ±â¼ú Çõ½ÅÀ» ÁÖµµÇÏ¿© È¸»çÀÇ ¼ºÀå°ú ±â¼ú·ÂÀ» Çâ»ó½ÃÅ°°íÀÚ ÇÕ´Ï´Ù. 
+Çù·Â°ú ÆÀ¿öÅ©¸¦ °­Á¶ÇÏ¿© °í°´¿¡°Ô ÃÖ»óÀÇ Á¦Ç°À» Á¦°øÇÏ°í, 
+È¸»çÀÇ ¸ñÇ¥¸¦ ´Þ¼ºÇÏ±â À§ÇØ ÃÖ¼±À» ´ÙÇÏ°Ú½À´Ï´Ù.', 97);
 
 INSERT INTO LETTER
 VALUE(LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
     , LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
-VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'ì €ëŠ” ëŒ€í•œë¯¼êµ­ ì„œìš¸ì—ì„œ íƒœì–´ë‚¬ìœ¼ë©°, í™œë°œí•˜ê³  í˜¸ê¸°ì‹¬ ë§Žì€ ì•„ì´ë¡œ ìžëžìŠµë‹ˆë‹¤. 
-ì–´ë¦° ì‹œì ˆë¶€í„° ê¸°ìˆ ê³¼ ê³µí•™ì— ëŒ€í•œ ê´€ì‹¬ì´ ë§Žì•˜ìœ¼ë©°, 
-ì»´í“¨í„°ì™€ ë¡œë´‡ì„ ë¶„í•´í•˜ê³  ì¡°ë¦½í•˜ëŠ” ë“± ìžì²´ì ìœ¼ë¡œ ê¸°ìˆ ì„ ìµí˜”ìŠµë‹ˆë‹¤. 
-ëŒ€í•™ì—ì„œ ì „ê¸° ê³µí•™ ë¶„ì•¼ì—ì„œ í•™ë¬¸ì„ ê³µë¶€í•˜ì˜€ìœ¼ë©°, 
-ì‹¬ì„±ì „ê¸°ì—ì„œëŠ” ì „ìž ë¶€í’ˆ ë° ë””ë°”ì´ìŠ¤ ì œì¡°ì— ê´€í•œ ì—°êµ¬ ë° ê°œë°œì„ ìˆ˜í–‰í•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-ì €ì˜ ì—…ì ì€ ê³ ê°ë“¤ì—ê²Œ ê³ í’ˆì§ˆ ì „ìž ì œí’ˆì„ ì œê³µí•˜ê³  ì‹¬ì„±ì „ê¸°ì˜ ê¸°ìˆ  í˜ì‹ ì„ ì´ëŒì–´ ë‚´ê³  ìžˆìŠµë‹ˆë‹¤.'
-, 'ì‹¬ì„±ì „ê¸°ì—ì„œì˜ ê²½í—˜ì´ ê¸°ìˆ  ë° ì „ìž ë””ë°”ì´ìŠ¤ ì œì¡° ë¶„ì•¼ì—ì„œì˜ ë›°ì–´ë‚œ ì—­ëŸ‰ì„ í‚¤ì›Œì£¼ì—ˆìŠµë‹ˆë‹¤. 
-ê·¸ëŸ¬ë‚˜ ë³¸ íšŒì‚¬ì—ì„œë„ ë˜‘ê°™ì€ ì—´ì •ê³¼ ê¸°ìˆ ì„ ë°”íƒ•ìœ¼ë¡œ ì¼í•˜ê³  ì‹¶ìŠµë‹ˆë‹¤. 
-ê¸°ìˆ  í˜ì‹ ê³¼ í’ˆì§ˆ í–¥ìƒì„ í†µí•´ ê³ ê°ì—ê²Œ ìµœìƒì˜ ì œí’ˆì„ ì œê³µí•˜ëŠ”ë° ê¸°ì—¬í•˜ê³  ì‹¶ìŠµë‹ˆë‹¤. 
-ë³¸ íšŒì‚¬ì—ì„œë„ ê¸°ìˆ  ë¦¬ë”ì‹­ì„ ìœ ì§€í•˜ë©° í˜ì‹ ì„ ì£¼ë„í•  ì¤€ë¹„ê°€ ë˜ì–´ ìžˆìŠµë‹ˆë‹¤.'
-, 'ì €ì˜ ìž¥ì ì€ ê¸°ìˆ ê³¼ ê³µí•™ ë¶„ì•¼ì—ì„œ ë›°ì–´ë‚œ ì§€ì‹ê³¼ ê²½í—˜ì„ ê°€ì§€ê³  ìžˆì–´, ë¬¸ì œ í•´ê²° ëŠ¥ë ¥ì´ ë†’ìŠµë‹ˆë‹¤. 
-ë˜í•œ ëª©í‘œë¥¼ ë‹¬ì„±í•˜ê¸° ìœ„í•œ ëˆê¸°ì™€ ì±…ìž„ê°ì„ ê°€ì§€ê³  ìžˆì–´ í”„ë¡œì íŠ¸ë¥¼ ì„±ê³µì ìœ¼ë¡œ ì™„ë£Œí•©ë‹ˆë‹¤. 
-ê·¸ë¦¬ê³  íŒ€ì—ì„œ í˜‘ë ¥ê³¼ ë¦¬ë”ì‹­ì„ ë°œíœ˜í•˜ì—¬ ë™ë£Œë“¤ì„ ì´ëŒì–´ ë‚˜ê°ˆ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. 
-ë‹¨ì ì€ ë•Œë¡œëŠ” ì—…ë¬´ì— ì§‘ì¤‘í•˜ë‹¤ ë³´ë‹ˆ ì»¤ë®¤ë‹ˆì¼€ì´ì…˜ê³¼ ì†Œí†µ ëŠ¥ë ¥ì´ ë¶€ì¡±í•  ë•Œê°€ ìžˆìŠµë‹ˆë‹¤. 
-ê·¸ëŸ¬ë‹¤ë³´ë‹ˆ ìœ ì—°ì„±ì´ ë¶€ì¡±í•˜ì—¬ ìƒˆë¡œìš´ ì•„ì´ë””ì–´ë‚˜ ì ‘ê·¼ë²•ì„ ë°›ì•„ë“¤ì´ê¸° ì–´ë ¤ìš¸ ë•Œê°€ ìžˆìŠµë‹ˆë‹¤. 
-ë˜í•œ ì—…ë¬´ì— ëŒ€í•œ ì—´ì • ë•Œë¬¸ì— ì¼ê³¼ ìƒí™œ ê· í˜•ì„ ìœ ì§€í•˜ê¸° ì–´ë ¤ìš¸ ë•Œê°€ ìžˆìŠµë‹ˆë‹¤.'
-, 'ì „ìž ë¶€í’ˆ ë° ë””ë°”ì´ìŠ¤ ì œì¡° ë¶„ì•¼ì—ì„œì˜ ì „ë¬¸ ì§€ì‹ì„ í‚¤ì›Œì™”ìŠµë‹ˆë‹¤. 
-ë³¸ íšŒì‚¬ì—ì„œë„ ì „ìž ì œí’ˆì˜ í’ˆì§ˆì„ ë†’ì´ê³  ê¸°ìˆ  í˜ì‹ ì„ ì£¼ë„í•˜ì—¬ ê³ ê°ë“¤ì—ê²Œ ê°€ì¹˜ë¥¼ ì œê³µí•˜ê³ ìž í•©ë‹ˆë‹¤. 
-ê³ ê°ì˜ ìš”êµ¬ë¥¼ ì¶©ì¡±ì‹œí‚¤ë©° íšŒì‚¬ì˜ ì„±ìž¥ì„ ì§€ì›í•˜ê³ , 
-íŒ€ ë‚´ì—ì„œ í˜‘ë ¥ê³¼ ë¦¬ë”ì‹­ì„ ë°œíœ˜í•˜ì—¬ ê¸°ì—…ì˜ ëª©í‘œë¥¼ ë‹¬ì„±í•˜ê² ìŠµë‹ˆë‹¤.', 98);
+VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'Àú´Â ´ëÇÑ¹Î±¹ ¼­¿ï¿¡¼­ ÅÂ¾î³µÀ¸¸ç, È°¹ßÇÏ°í È£±â½É ¸¹Àº ¾ÆÀÌ·Î ÀÚ¶ú½À´Ï´Ù. 
+¾î¸° ½ÃÀýºÎÅÍ ±â¼ú°ú °øÇÐ¿¡ ´ëÇÑ °ü½ÉÀÌ ¸¹¾ÒÀ¸¸ç, 
+ÄÄÇ»ÅÍ¿Í ·Îº¿À» ºÐÇØÇÏ°í Á¶¸³ÇÏ´Â µî ÀÚÃ¼ÀûÀ¸·Î ±â¼úÀ» ÀÍÇû½À´Ï´Ù. 
+´ëÇÐ¿¡¼­ Àü±â °øÇÐ ºÐ¾ß¿¡¼­ ÇÐ¹®À» °øºÎÇÏ¿´À¸¸ç, 
+½É¼ºÀü±â¿¡¼­´Â ÀüÀÚ ºÎÇ° ¹× µð¹ÙÀÌ½º Á¦Á¶¿¡ °üÇÑ ¿¬±¸ ¹× °³¹ßÀ» ¼öÇàÇÏ°í ÀÖ½À´Ï´Ù. 
+ÀúÀÇ ¾÷ÀûÀº °í°´µé¿¡°Ô °íÇ°Áú ÀüÀÚ Á¦Ç°À» Á¦°øÇÏ°í ½É¼ºÀü±âÀÇ ±â¼ú Çõ½ÅÀ» ÀÌ²ø¾î ³»°í ÀÖ½À´Ï´Ù.'
+, '½É¼ºÀü±â¿¡¼­ÀÇ °æÇèÀÌ ±â¼ú ¹× ÀüÀÚ µð¹ÙÀÌ½º Á¦Á¶ ºÐ¾ß¿¡¼­ÀÇ ¶Ù¾î³­ ¿ª·®À» Å°¿öÁÖ¾ú½À´Ï´Ù. 
+±×·¯³ª º» È¸»ç¿¡¼­µµ ¶È°°Àº ¿­Á¤°ú ±â¼úÀ» ¹ÙÅÁÀ¸·Î ÀÏÇÏ°í ½Í½À´Ï´Ù. 
+±â¼ú Çõ½Å°ú Ç°Áú Çâ»óÀ» ÅëÇØ °í°´¿¡°Ô ÃÖ»óÀÇ Á¦Ç°À» Á¦°øÇÏ´Âµ¥ ±â¿©ÇÏ°í ½Í½À´Ï´Ù. 
+º» È¸»ç¿¡¼­µµ ±â¼ú ¸®´õ½ÊÀ» À¯ÁöÇÏ¸ç Çõ½ÅÀ» ÁÖµµÇÒ ÁØºñ°¡ µÇ¾î ÀÖ½À´Ï´Ù.'
+, 'ÀúÀÇ ÀåÁ¡Àº ±â¼ú°ú °øÇÐ ºÐ¾ß¿¡¼­ ¶Ù¾î³­ Áö½Ä°ú °æÇèÀ» °¡Áö°í ÀÖ¾î, ¹®Á¦ ÇØ°á ´É·ÂÀÌ ³ô½À´Ï´Ù. 
+¶ÇÇÑ ¸ñÇ¥¸¦ ´Þ¼ºÇÏ±â À§ÇÑ ²ö±â¿Í Ã¥ÀÓ°¨À» °¡Áö°í ÀÖ¾î ÇÁ·ÎÁ§Æ®¸¦ ¼º°øÀûÀ¸·Î ¿Ï·áÇÕ´Ï´Ù. 
+±×¸®°í ÆÀ¿¡¼­ Çù·Â°ú ¸®´õ½ÊÀ» ¹ßÈÖÇÏ¿© µ¿·áµéÀ» ÀÌ²ø¾î ³ª°¥ ¼ö ÀÖ½À´Ï´Ù. 
+´ÜÁ¡Àº ¶§·Î´Â ¾÷¹«¿¡ ÁýÁßÇÏ´Ù º¸´Ï Ä¿¹Â´ÏÄÉÀÌ¼Ç°ú ¼ÒÅë ´É·ÂÀÌ ºÎÁ·ÇÒ ¶§°¡ ÀÖ½À´Ï´Ù. 
+±×·¯´Ùº¸´Ï À¯¿¬¼ºÀÌ ºÎÁ·ÇÏ¿© »õ·Î¿î ¾ÆÀÌµð¾î³ª Á¢±Ù¹ýÀ» ¹Þ¾ÆµéÀÌ±â ¾î·Á¿ï ¶§°¡ ÀÖ½À´Ï´Ù. 
+¶ÇÇÑ ¾÷¹«¿¡ ´ëÇÑ ¿­Á¤ ¶§¹®¿¡ ÀÏ°ú »ýÈ° ±ÕÇüÀ» À¯ÁöÇÏ±â ¾î·Á¿ï ¶§°¡ ÀÖ½À´Ï´Ù.'
+, 'ÀüÀÚ ºÎÇ° ¹× µð¹ÙÀÌ½º Á¦Á¶ ºÐ¾ß¿¡¼­ÀÇ Àü¹® Áö½ÄÀ» Å°¿ö¿Ô½À´Ï´Ù. 
+º» È¸»ç¿¡¼­µµ ÀüÀÚ Á¦Ç°ÀÇ Ç°ÁúÀ» ³ôÀÌ°í ±â¼ú Çõ½ÅÀ» ÁÖµµÇÏ¿© °í°´µé¿¡°Ô °¡Ä¡¸¦ Á¦°øÇÏ°íÀÚ ÇÕ´Ï´Ù. 
+°í°´ÀÇ ¿ä±¸¸¦ ÃæÁ·½ÃÅ°¸ç È¸»çÀÇ ¼ºÀåÀ» Áö¿øÇÏ°í, 
+ÆÀ ³»¿¡¼­ Çù·Â°ú ¸®´õ½ÊÀ» ¹ßÈÖÇÏ¿© ±â¾÷ÀÇ ¸ñÇ¥¸¦ ´Þ¼ºÇÏ°Ú½À´Ï´Ù.', 98);
 
 INSERT INTO LETTER
 VALUE(LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
     , LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
-VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'ì €ëŠ” ëŒ€í•œë¯¼êµ­ ëŒ€êµ¬ì—ì„œ íƒœì–´ë‚¬ìœ¼ë©° ì–´ë¦° ì‹œì ˆë¶€í„° ì²´ìœ¡ í™œë™ì„ ì‚¬ëž‘í–ˆìŠµë‹ˆë‹¤. 
-ì¶•êµ¬, ë†êµ¬, ì•¼êµ¬ ë“± ë‹¤ì–‘í•œ ìŠ¤í¬ì¸ ë¥¼ ì¦ê¸°ë©° ìžì‹ ì˜ ì²´ë ¥ê³¼ ìŠ¤í¬ì¸  ì—­ëŸ‰ì„ í‚¤ì› ìŠµë‹ˆë‹¤. 
-ê³ ë“±í•™êµì™€ ëŒ€í•™êµ ì‹œì ˆì—ëŠ” ìŠ¤í¬ì¸  íŒ€ì˜ ì£¼ìž¥ìœ¼ë¡œ í™œì•½í•˜ë©° ë¦¬ë”ì‹­ì„ ë°œíœ˜í•˜ì˜€ìŠµë‹ˆë‹¤. 
-í˜„ìž¬ëŠ” ëŒ€í•œë¯¼êµ­ì˜ í†µì‹  ê¸°ì—… LZìœ í”ŒëŸ¬ìŠ¤ì—ì„œ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-í†µì‹  ë° ë„¤íŠ¸ì›Œí¬ ë¶„ì•¼ì—ì„œ í­ë„“ì€ ê²½í—˜ì„ ê°€ì§€ê³  ìžˆìœ¼ë©°, 
-ê³ ê°ë“¤ì—ê²Œ ë” ë‚˜ì€ í†µì‹  ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ê¸° ìœ„í•´ ë…¸ë ¥í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, 'LZìœ í”ŒëŸ¬ìŠ¤ì—ì„œ í†µì‹  ë¶„ì•¼ì—ì„œì˜ ê²½í—˜ì´ ì €ì—ê²Œ ë§Žì€ ê°€ì¹˜ë¥¼ ì œê³µí•´ ì£¼ì—ˆìŠµë‹ˆë‹¤. 
-í•˜ì§€ë§Œ ë³¸ íšŒì‚¬ì—ì„œë„ í†µì‹  ë° ë„¤íŠ¸ì›Œí¬ ë¶„ì•¼ì—ì„œ ì„ ë„ì ì¸ ì—­í• ì„ í•˜ê³  ì‹¶ìŠµë‹ˆë‹¤. 
-ê³ ê° ì¤‘ì‹¬ì˜ ì„œë¹„ìŠ¤ ì œê³µê³¼ ë„¤íŠ¸ì›Œí¬ ê¸°ìˆ ì˜ í˜ì‹ ì„ í†µí•´ ê¸°ì—…ì˜ ì„±ìž¥ê³¼ ê³ ê° ë§Œì¡±ë„ë¥¼ ë†’ì´ê³  ì‹¶ìŠµë‹ˆë‹¤. 
-ì €ì˜ ì—´ì •ê³¼ ì „ë¬¸ ì§€ì‹ì„ ê·€ì‚¬ì— ê¸°ì—¬í•˜ê² ìŠµë‹ˆë‹¤.'
-, 'ì €ì˜ ìž¥ì ì€ í†µì‹  ë¶„ì•¼ì— ëŒ€í•œ ì „ë¬¸ ì§€ì‹ì„ ê°€ì§€ê³  ìžˆìœ¼ë©°, ê³ ê° ì„œë¹„ìŠ¤ì— ëŒ€í•œ ë›°ì–´ë‚œ ì´í•´ë¥¼ ë°”íƒ•ìœ¼ë¡œ ì¼í•©ë‹ˆë‹¤. 
-ë¹ ë¥¸ íŒë‹¨ë ¥ê³¼ ë¬¸ì œ í•´ê²° ëŠ¥ë ¥ì„ ê°€ì§€ê³  ìžˆì–´, ê¸´ê¸‰ ìƒí™©ì—ì„œë„ íš¨ê³¼ì ìœ¼ë¡œ ëŒ€ì²˜í•©ë‹ˆë‹¤. 
-ë˜í•œ íŒ€ í”Œë ˆì´ì–´ë¡œì„œ í˜‘ì—…ì„ ì¤‘ìš”ì‹œí•˜ë©°, ë™ë£Œë“¤ê³¼ ì›í™œí•˜ê²Œ í˜‘ë ¥í•©ë‹ˆë‹¤. 
-ë‹¨ì ì€ ê³ ê° ì„œë¹„ìŠ¤ì— ëŒ€í•œ ì—´ì • ë•Œë¬¸ì— ê°€ë” ì—…ë¬´ì˜ ìŠ¤íŠ¸ë ˆìŠ¤ë¥¼ ë°›ì„ ë•Œê°€ ìžˆìŠµë‹ˆë‹¤. 
-ë„ˆë¬´ ê³ ê° ì¤‘ì‹¬ìœ¼ë¡œ ìƒê°í•˜ê¸° ë•Œë¬¸ì— ë‚´ë¶€ í”„ë¡œì„¸ìŠ¤ì— ëŒ€í•œ ì¤‘ìš”ì„±ì„ ê°„ê³¼í•  ë•Œê°€ ìžˆìŠµë‹ˆë‹¤. 
-ê·¸ë¦¬ê³  ë³€í™”ë¥¼ ë°›ì•„ë“¤ì´ê¸° ì–´ë ¤ì›Œì„œ ìƒˆë¡œìš´ ì•„ì´ë””ì–´ì— ì ì‘í•˜ëŠ” ë° ì‹œê°„ì´ ê±¸ë¦´ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.'
-, 'ì‹  ë¶„ì•¼ì—ì„œì˜ ì „ë¬¸ ì§€ì‹ê³¼ ê³ ê° ì„œë¹„ìŠ¤ ê²½í—˜ì„ í‚¤ì›Œì™”ìŠµë‹ˆë‹¤. 
-ë³¸ íšŒì‚¬ì—ì„œë„ ê³ ê° ì„œë¹„ìŠ¤ë¥¼ ê°œì„ í•˜ê³  ì—°ê²°ì„±ì„ í–¥ìƒì‹œí‚¤ê¸° ìœ„í•´ ìµœì„ ì„ ë‹¤í•˜ê² ìŠµë‹ˆë‹¤. 
-í†µì‹  ë¶„ì•¼ì—ì„œ í˜ì‹ ì„ ì£¼ë„í•˜ì—¬ íšŒì‚¬ì˜ ì„±ìž¥ì„ ì§€ì›í•˜ê³ , 
-íŒ€ì›ë“¤ê³¼ í˜‘ì—…í•˜ì—¬ ê³ ê°ë“¤ì—ê²Œ ìµœê³ ì˜ ê²½í—˜ì„ ì œê³µí•˜ê² ìŠµë‹ˆë‹¤.', 99);
+VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'Àú´Â ´ëÇÑ¹Î±¹ ´ë±¸¿¡¼­ ÅÂ¾î³µÀ¸¸ç ¾î¸° ½ÃÀýºÎÅÍ Ã¼À° È°µ¿À» »ç¶ûÇß½À´Ï´Ù. 
+Ãà±¸, ³ó±¸, ¾ß±¸ µî ´Ù¾çÇÑ ½ºÆ÷Ã÷¸¦ Áñ±â¸ç ÀÚ½ÅÀÇ Ã¼·Â°ú ½ºÆ÷Ã÷ ¿ª·®À» Å°¿ü½À´Ï´Ù. 
+°íµîÇÐ±³¿Í ´ëÇÐ±³ ½ÃÀý¿¡´Â ½ºÆ÷Ã÷ ÆÀÀÇ ÁÖÀåÀ¸·Î È°¾àÇÏ¸ç ¸®´õ½ÊÀ» ¹ßÈÖÇÏ¿´½À´Ï´Ù. 
+ÇöÀç´Â ´ëÇÑ¹Î±¹ÀÇ Åë½Å ±â¾÷ LZÀ¯ÇÃ·¯½º¿¡¼­ ÀÏÇÏ°í ÀÖ½À´Ï´Ù. 
+Åë½Å ¹× ³×Æ®¿öÅ© ºÐ¾ß¿¡¼­ Æø³ÐÀº °æÇèÀ» °¡Áö°í ÀÖÀ¸¸ç, 
+°í°´µé¿¡°Ô ´õ ³ªÀº Åë½Å ¼­ºñ½º¸¦ Á¦°øÇÏ±â À§ÇØ ³ë·ÂÇÏ°í ÀÖ½À´Ï´Ù.'
+, 'LZÀ¯ÇÃ·¯½º¿¡¼­ Åë½Å ºÐ¾ß¿¡¼­ÀÇ °æÇèÀÌ Àú¿¡°Ô ¸¹Àº °¡Ä¡¸¦ Á¦°øÇØ ÁÖ¾ú½À´Ï´Ù. 
+ÇÏÁö¸¸ º» È¸»ç¿¡¼­µµ Åë½Å ¹× ³×Æ®¿öÅ© ºÐ¾ß¿¡¼­ ¼±µµÀûÀÎ ¿ªÇÒÀ» ÇÏ°í ½Í½À´Ï´Ù. 
+°í°´ Áß½ÉÀÇ ¼­ºñ½º Á¦°ø°ú ³×Æ®¿öÅ© ±â¼úÀÇ Çõ½ÅÀ» ÅëÇØ ±â¾÷ÀÇ ¼ºÀå°ú °í°´ ¸¸Á·µµ¸¦ ³ôÀÌ°í ½Í½À´Ï´Ù. 
+ÀúÀÇ ¿­Á¤°ú Àü¹® Áö½ÄÀ» ±Í»ç¿¡ ±â¿©ÇÏ°Ú½À´Ï´Ù.'
+, 'ÀúÀÇ ÀåÁ¡Àº Åë½Å ºÐ¾ß¿¡ ´ëÇÑ Àü¹® Áö½ÄÀ» °¡Áö°í ÀÖÀ¸¸ç, °í°´ ¼­ºñ½º¿¡ ´ëÇÑ ¶Ù¾î³­ ÀÌÇØ¸¦ ¹ÙÅÁÀ¸·Î ÀÏÇÕ´Ï´Ù. 
+ºü¸¥ ÆÇ´Ü·Â°ú ¹®Á¦ ÇØ°á ´É·ÂÀ» °¡Áö°í ÀÖ¾î, ±ä±Þ »óÈ²¿¡¼­µµ È¿°úÀûÀ¸·Î ´ëÃ³ÇÕ´Ï´Ù. 
+¶ÇÇÑ ÆÀ ÇÃ·¹ÀÌ¾î·Î¼­ Çù¾÷À» Áß¿ä½ÃÇÏ¸ç, µ¿·áµé°ú ¿øÈ°ÇÏ°Ô Çù·ÂÇÕ´Ï´Ù. 
+´ÜÁ¡Àº °í°´ ¼­ºñ½º¿¡ ´ëÇÑ ¿­Á¤ ¶§¹®¿¡ °¡²û ¾÷¹«ÀÇ ½ºÆ®·¹½º¸¦ ¹ÞÀ» ¶§°¡ ÀÖ½À´Ï´Ù. 
+³Ê¹« °í°´ Áß½ÉÀ¸·Î »ý°¢ÇÏ±â ¶§¹®¿¡ ³»ºÎ ÇÁ·Î¼¼½º¿¡ ´ëÇÑ Áß¿ä¼ºÀ» °£°úÇÒ ¶§°¡ ÀÖ½À´Ï´Ù. 
+±×¸®°í º¯È­¸¦ ¹Þ¾ÆµéÀÌ±â ¾î·Á¿ö¼­ »õ·Î¿î ¾ÆÀÌµð¾î¿¡ ÀûÀÀÇÏ´Â µ¥ ½Ã°£ÀÌ °É¸± ¼ö ÀÖ½À´Ï´Ù.'
+, '½Å ºÐ¾ß¿¡¼­ÀÇ Àü¹® Áö½Ä°ú °í°´ ¼­ºñ½º °æÇèÀ» Å°¿ö¿Ô½À´Ï´Ù. 
+º» È¸»ç¿¡¼­µµ °í°´ ¼­ºñ½º¸¦ °³¼±ÇÏ°í ¿¬°á¼ºÀ» Çâ»ó½ÃÅ°±â À§ÇØ ÃÖ¼±À» ´ÙÇÏ°Ú½À´Ï´Ù. 
+Åë½Å ºÐ¾ß¿¡¼­ Çõ½ÅÀ» ÁÖµµÇÏ¿© È¸»çÀÇ ¼ºÀåÀ» Áö¿øÇÏ°í, 
+ÆÀ¿øµé°ú Çù¾÷ÇÏ¿© °í°´µé¿¡°Ô ÃÖ°íÀÇ °æÇèÀ» Á¦°øÇÏ°Ú½À´Ï´Ù.', 99);
 
 INSERT INTO LETTER
 VALUE(LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
     , LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
-VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'ì €ëŠ” ëŒ€í•œë¯¼êµ­ ì„œìš¸ì—ì„œ íƒœì–´ë‚¬ìœ¼ë©°, ì–´ë¦° ì‹œì ˆë¶€í„° ìžì—°ê³¼ íƒí—˜ì„ ì‚¬ëž‘í–ˆìŠµë‹ˆë‹¤. 
-ë“±ì‚°, ìº í•‘, í•´ì•ˆê°€ ì—¬í–‰ ë“± ë‹¤ì–‘í•œ í™œë™ì„ í†µí•´ ëŒ€í•œë¯¼êµ­ì˜ ì•„ë¦„ë‹¤ìš´ ìžì—° í™˜ê²½ì„ íƒí—˜í•˜ë©° ì„±ìž¥í–ˆìŠµë‹ˆë‹¤. 
-í˜„ìž¬ëŠ” í™˜ê²½ ë³´í˜¸ ë‹¨ì²´ì—ì„œ í™œë™í•˜ë©° ìžì—° ë³´ì „ì„ ì‹¤ì²œí•˜ê³  ìžˆê³ , 
-ìƒëª…ê³¼í•™ ë¶„ì•¼ ê³„ì—´ì‚¬ì¸ ì‹¬ì„±ë°”ì´ì˜¤ë¡œì§ìŠ¤ì—ì„œ ì¼í•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-ìƒëª… ê³¼í•™ ë° ë°”ì´ì˜¤ í…Œí¬ë†€ë¡œì§€ ë¶„ì•¼ì—ì„œì˜ ì „ë¬¸ ì§€ì‹ì„ ê°€ì§€ê³  ìžˆìœ¼ë©°, 
-ì‹¬ì„±ë°”ì´ì˜¤ë¡œì§ìŠ¤ì—ì„œëŠ” í˜ì‹ ì ì¸ ë°”ì´ì˜¤ ì˜ì•½í’ˆ ë° ë°”ì´ì˜¤ í”„ë¡œì„¸ìŠ¤ ê°œë°œì„ ì£¼ë„í•˜ê³  ìžˆìŠµë‹ˆë‹¤. 
-ì €ì˜ ë…¸ë ¥ì€ ì˜ì•½í’ˆ ê°œë°œê³¼ ìƒëª… ê³¼í•™ ë¶„ì•¼ì˜ ë°œì „ì— ê¸°ì—¬í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, 'ì‹¬ì„±ë°”ì´ì˜¤ë¡œì§ìŠ¤ì—ì„œì˜ ê²½í—˜ì€ ì œê²Œ ë°”ì´ì˜¤ ì˜ì•½í’ˆ ë¶„ì•¼ì—ì„œì˜ ì „ë¬¸ ì§€ì‹ê³¼ ì—­ëŸ‰ì„ ì œê³µí•´ ì£¼ì—ˆìŠµë‹ˆë‹¤. 
-í•˜ì§€ë§Œ ë³¸ íšŒì‚¬ì—ì„œë„ ë°”ì´ì˜¤ ì˜ì•½í’ˆ ë° ë°”ì´ì˜¤ í”„ë¡œì„¸ìŠ¤ ë¶„ì•¼ì—ì„œì˜ ë¦¬ë”ë¡œì„œ ì¼í•˜ê³  ì‹¶ìŠµë‹ˆë‹¤. 
-í˜ì‹ ì ì¸ ì—°êµ¬ì™€ ê°œë°œì„ í†µí•´ ì˜ì•½í’ˆ ë¶„ì•¼ì—ì„œì˜ ë°œì „ì„ ì£¼ë„í•˜ê³  ì‹¶ìŠµë‹ˆë‹¤. 
-ì €ì˜ ì „ë¬¸ ì§€ì‹ê³¼ ì—´ì •ì„ ê·€ì‚¬ì—ì„œ ë°œíœ˜í•˜ë©° ì„±ê³¼ë¥¼ ì°½ì¶œí•˜ê² ìŠµë‹ˆë‹¤.'
-, 'ì €ì˜ ìž¥ì ì€ ë°”ì´ì˜¤ ì˜ì•½í’ˆ ë¶„ì•¼ì—ì„œì˜ ì „ë¬¸ ì§€ì‹ê³¼ ê²½í—˜ì„ ê°€ì§€ê³  ìžˆì–´, 
-ì—°êµ¬ ë° ê°œë°œ ë¶„ì•¼ì—ì„œ ë›°ì–´ë‚œ ì—­ëŸ‰ì„ ê°€ì§‘ë‹ˆë‹¤. 
-ë¬¸ì œ í•´ê²° ëŠ¥ë ¥ì´ ë›°ì–´ë‚˜ë©°, í˜ì‹ ì ì¸ í”„ë¡œì íŠ¸ë¥¼ ì£¼ë„í•©ë‹ˆë‹¤. 
-ê·¸ëž˜ì„œ íŒ€ì—ì„œì˜ í˜‘ë ¥ê³¼ ì§€ë„ë ¥ì„ í†µí•´ ë™ë£Œë“¤ì„ ì´ëŒì–´ ë‚˜ê°‘ë‹ˆë‹¤.
-ë‹¨ì ì€ ë„ˆë¬´ ì—…ë¬´ì— ì§‘ì¤‘í•˜ì—¬ ê°œì¸ ì‹œê°„ì„ ì†Œí™€ížˆ í•  ë•Œê°€ ìžˆì–´, 
-ì¼ê³¼ ìƒí™œ ê· í˜•ì„ ìœ ì§€í•˜ê¸° ì–´ë ¤ìš¸ ë•Œê°€ ìžˆìŠµë‹ˆë‹¤. 
-íƒ€ì¸ì˜ ì˜ê²¬ì„ ìˆ˜ìš©í•˜ê¸° ì–´ë ¤ìš¸ ë•Œê°€ ìžˆìœ¼ë©°, ê³ ì§‘ ì„¼ ë©´ëª¨ê°€ ìžˆì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. 
-ë˜í•œ ì‹¤íŒ¨ì— ëŒ€í•œ ì—¼ë ¤ ë•Œë¬¸ì— ìƒˆë¡œìš´ ì•„ì´ë””ì–´ë¥¼ ë°›ì•„ë“¤ì´ê¸° ì–´ë ¤ìš¸ ë•Œê°€ ìžˆìŠµë‹ˆë‹¤.'
-, 'ì‹¬ì„±ë°”ì´ì˜¤ë¡œì§ìŠ¤ì—ì„œì˜ ê²½í—˜ì´ ë°”ì´ì˜¤ ì˜ì•½í’ˆ ë¶„ì•¼ì—ì„œì˜ ì „ë¬¸ ì§€ì‹ê³¼ ê²½í—˜ì„ ì œê³µí•˜ì˜€ìŠµë‹ˆë‹¤. 
-ë³¸ íšŒì‚¬ì—ì„œë„ ë°”ì´ì˜¤ ì˜ì•½í’ˆ ë¶„ì•¼ì—ì„œì˜ ì—°êµ¬ì™€ ê°œë°œì„ ì£¼ë„í•˜ì—¬ ì˜ì•½í’ˆ ë¶„ì•¼ì—ì„œì˜ í˜ì‹ ì„ ì‹¤í˜„í•˜ê³ ìž í•©ë‹ˆë‹¤. 
-íšŒì‚¬ì˜ ëª©í‘œë¥¼ ë‹¬ì„±í•˜ê¸° ìœ„í•´ ìµœì„ ì„ ë‹¤í•˜ë©°, 
-íŒ€ì›ë“¤ê³¼ í˜‘ë ¥í•˜ì—¬ ì˜ì•½í’ˆ ê°œë°œ ë° ìƒëª… ê³¼í•™ ë¶„ì•¼ì—ì„œì˜ ì„±ê³¼ë¥¼ ì°½ì¶œí•˜ê² ìŠµë‹ˆë‹¤.', 100);
+VALUES(LETTER_NUMBER_SEQ.NEXTVAL, 'Àú´Â ´ëÇÑ¹Î±¹ ¼­¿ï¿¡¼­ ÅÂ¾î³µÀ¸¸ç, ¾î¸° ½ÃÀýºÎÅÍ ÀÚ¿¬°ú Å½ÇèÀ» »ç¶ûÇß½À´Ï´Ù. 
+µî»ê, Ä·ÇÎ, ÇØ¾È°¡ ¿©Çà µî ´Ù¾çÇÑ È°µ¿À» ÅëÇØ ´ëÇÑ¹Î±¹ÀÇ ¾Æ¸§´Ù¿î ÀÚ¿¬ È¯°æÀ» Å½ÇèÇÏ¸ç ¼ºÀåÇß½À´Ï´Ù. 
+ÇöÀç´Â È¯°æ º¸È£ ´ÜÃ¼¿¡¼­ È°µ¿ÇÏ¸ç ÀÚ¿¬ º¸ÀüÀ» ½ÇÃµÇÏ°í ÀÖ°í, 
+»ý¸í°úÇÐ ºÐ¾ß °è¿­»çÀÎ ½É¼º¹ÙÀÌ¿À·ÎÁ÷½º¿¡¼­ ÀÏÇÏ°í ÀÖ½À´Ï´Ù. 
+»ý¸í °úÇÐ ¹× ¹ÙÀÌ¿À Å×Å©³î·ÎÁö ºÐ¾ß¿¡¼­ÀÇ Àü¹® Áö½ÄÀ» °¡Áö°í ÀÖÀ¸¸ç, 
+½É¼º¹ÙÀÌ¿À·ÎÁ÷½º¿¡¼­´Â Çõ½ÅÀûÀÎ ¹ÙÀÌ¿À ÀÇ¾àÇ° ¹× ¹ÙÀÌ¿À ÇÁ·Î¼¼½º °³¹ßÀ» ÁÖµµÇÏ°í ÀÖ½À´Ï´Ù. 
+ÀúÀÇ ³ë·ÂÀº ÀÇ¾àÇ° °³¹ß°ú »ý¸í °úÇÐ ºÐ¾ßÀÇ ¹ßÀü¿¡ ±â¿©ÇÏ°í ÀÖ½À´Ï´Ù.'
+, '½É¼º¹ÙÀÌ¿À·ÎÁ÷½º¿¡¼­ÀÇ °æÇèÀº Á¦°Ô ¹ÙÀÌ¿À ÀÇ¾àÇ° ºÐ¾ß¿¡¼­ÀÇ Àü¹® Áö½Ä°ú ¿ª·®À» Á¦°øÇØ ÁÖ¾ú½À´Ï´Ù. 
+ÇÏÁö¸¸ º» È¸»ç¿¡¼­µµ ¹ÙÀÌ¿À ÀÇ¾àÇ° ¹× ¹ÙÀÌ¿À ÇÁ·Î¼¼½º ºÐ¾ß¿¡¼­ÀÇ ¸®´õ·Î¼­ ÀÏÇÏ°í ½Í½À´Ï´Ù. 
+Çõ½ÅÀûÀÎ ¿¬±¸¿Í °³¹ßÀ» ÅëÇØ ÀÇ¾àÇ° ºÐ¾ß¿¡¼­ÀÇ ¹ßÀüÀ» ÁÖµµÇÏ°í ½Í½À´Ï´Ù. 
+ÀúÀÇ Àü¹® Áö½Ä°ú ¿­Á¤À» ±Í»ç¿¡¼­ ¹ßÈÖÇÏ¸ç ¼º°ú¸¦ Ã¢ÃâÇÏ°Ú½À´Ï´Ù.'
+, 'ÀúÀÇ ÀåÁ¡Àº ¹ÙÀÌ¿À ÀÇ¾àÇ° ºÐ¾ß¿¡¼­ÀÇ Àü¹® Áö½Ä°ú °æÇèÀ» °¡Áö°í ÀÖ¾î, 
+¿¬±¸ ¹× °³¹ß ºÐ¾ß¿¡¼­ ¶Ù¾î³­ ¿ª·®À» °¡Áý´Ï´Ù. 
+¹®Á¦ ÇØ°á ´É·ÂÀÌ ¶Ù¾î³ª¸ç, Çõ½ÅÀûÀÎ ÇÁ·ÎÁ§Æ®¸¦ ÁÖµµÇÕ´Ï´Ù. 
+±×·¡¼­ ÆÀ¿¡¼­ÀÇ Çù·Â°ú Áöµµ·ÂÀ» ÅëÇØ µ¿·áµéÀ» ÀÌ²ø¾î ³ª°©´Ï´Ù.
+´ÜÁ¡Àº ³Ê¹« ¾÷¹«¿¡ ÁýÁßÇÏ¿© °³ÀÎ ½Ã°£À» ¼ÒÈ¦È÷ ÇÒ ¶§°¡ ÀÖ¾î, 
+ÀÏ°ú »ýÈ° ±ÕÇüÀ» À¯ÁöÇÏ±â ¾î·Á¿ï ¶§°¡ ÀÖ½À´Ï´Ù. 
+Å¸ÀÎÀÇ ÀÇ°ßÀ» ¼ö¿ëÇÏ±â ¾î·Á¿ï ¶§°¡ ÀÖÀ¸¸ç, °íÁý ¼¾ ¸é¸ð°¡ ÀÖÀ» ¼ö ÀÖ½À´Ï´Ù. 
+¶ÇÇÑ ½ÇÆÐ¿¡ ´ëÇÑ ¿°·Á ¶§¹®¿¡ »õ·Î¿î ¾ÆÀÌµð¾î¸¦ ¹Þ¾ÆµéÀÌ±â ¾î·Á¿ï ¶§°¡ ÀÖ½À´Ï´Ù.'
+, '½É¼º¹ÙÀÌ¿À·ÎÁ÷½º¿¡¼­ÀÇ °æÇèÀÌ ¹ÙÀÌ¿À ÀÇ¾àÇ° ºÐ¾ß¿¡¼­ÀÇ Àü¹® Áö½Ä°ú °æÇèÀ» Á¦°øÇÏ¿´½À´Ï´Ù. 
+º» È¸»ç¿¡¼­µµ ¹ÙÀÌ¿À ÀÇ¾àÇ° ºÐ¾ß¿¡¼­ÀÇ ¿¬±¸¿Í °³¹ßÀ» ÁÖµµÇÏ¿© ÀÇ¾àÇ° ºÐ¾ß¿¡¼­ÀÇ Çõ½ÅÀ» ½ÇÇöÇÏ°íÀÚ ÇÕ´Ï´Ù. 
+È¸»çÀÇ ¸ñÇ¥¸¦ ´Þ¼ºÇÏ±â À§ÇØ ÃÖ¼±À» ´ÙÇÏ¸ç, 
+ÆÀ¿øµé°ú Çù·ÂÇÏ¿© ÀÇ¾àÇ° °³¹ß ¹× »ý¸í °úÇÐ ºÐ¾ß¿¡¼­ÀÇ ¼º°ú¸¦ Ã¢ÃâÇÏ°Ú½À´Ï´Ù.', 100);
 
 INSERT INTO LETTER (LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION, LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
 VALUES
-(LETTER_NUMBER_SEQ.NEXTVAL, 'ìƒëª…ê³µí•™ ë¶„ì•¼ì— í¥ë¯¸ë¥¼ ëŠë¼ê²Œ ëœ ì´ìœ ëŠ” í˜ì‹ ì ì¸ ì˜ì•½í’ˆ ë° ì¹˜ë£Œë²•ì˜ ê°œë°œì— ëŒ€í•œ ê´€ì‹¬ê³¼ ì‹¤í—˜ì ì¸ ê³¼í•™ì— ëŒ€í•œ ì—´ì •ìž…ë‹ˆë‹¤. 
-ëŒ€í•™ì—ì„œ ìƒëª…ê³¼í•™ì„ ì „ê³µí•˜ë©´ì„œ ìœ ì „ìž ì¡°ìž‘, ì„¸í¬ ê³µí•™ ë“± ë‹¤ì–‘í•œ ì—°êµ¬ì— ì°¸ì—¬í•˜ë©´ì„œ ìƒëª…ê³µí•™ ë¶„ì•¼ì—ì„œì˜ ê²½í—˜ì„ ìŒ“ì•˜ìŠµë‹ˆë‹¤. 
-ìƒëª…ê³µí•™ ë¶„ì•¼ì—ì„œëŠ” í˜ì‹ ì ì¸ ì—°êµ¬ ë° ê°œë°œì„ í†µí•´ ì˜í•™ ë° í™˜ê²½ì— ê¸°ì—¬í•˜ê³  ì‹¶ìŠµë‹ˆë‹¤.', 
-'ìƒëª…ê³µí•™ ë¶„ì•¼ì— ì§€ì›í•˜ëŠ” ë™ê¸°ëŠ” í˜„ëŒ€ ì˜í•™ê³¼ í™˜ê²½ ë¬¸ì œì— ëŒ€í•œ ì†”ë£¨ì…˜ì„ ì°¾ê³ ìž í•¨ì— ìžˆìŠµë‹ˆë‹¤. 
-í•­ìƒ ìµœì‹  ìƒëª…ê³¼í•™ ê¸°ìˆ ê³¼ ì—°êµ¬ ë™í–¥ì„ ì£¼ì‹œí•˜ë©°, ì´ë¥¼ í†µí•´ ìƒˆë¡œìš´ ì¹˜ë£Œë²•ì´ë‚˜ ì˜ì•½í’ˆì˜ ê°œë°œì— ê¸°ì—¬í•˜ê³ ìž í•©ë‹ˆë‹¤. 
-ë˜í•œ íŒ€ì›ë“¤ê³¼ì˜ í˜‘ì—…ì„ í†µí•´ í˜ì‹ ì ì¸ ìƒëª…ê³µí•™ í”„ë¡œì íŠ¸ë¥¼ ì´ëŒì–´ë‚´ê³ ìž í•©ë‹ˆë‹¤.', 
-'ì„±ê²©ì˜ ìž¥ì ìœ¼ë¡œëŠ” ì‹¤í—˜ì— ëŒ€í•œ ì¸ë‚´ì™€ ê¾¸ì¤€í•¨ì´ ìžˆìŠµë‹ˆë‹¤. ì–´ë ¤ìš´ ì‹¤í—˜ ê³¼ì •ì—ë„ í¬ê¸°í•˜ì§€ ì•Šê³  ëˆì§ˆê¸°ê²Œ ì—°êµ¬ë¥¼ ì§„í–‰í•˜ëŠ” ê²ƒì„ ì¦ê¹ë‹ˆë‹¤. 
-ê·¸ëŸ¬ë‚˜ ë•Œë¡œëŠ” ì‹¤í—˜ ê²°ê³¼ì— ì§€ë‚˜ì¹˜ê²Œ ì§‘ì°©í•˜ì—¬ íš¨ìœ¨ì„±ì„ ë†“ì¹  ë•Œê°€ ìžˆëŠ”ë°, 
-ì´ë¥¼ ê·¹ë³µí•˜ê¸° ìœ„í•´ ì‹¤í—˜ì˜ ëª©ì ê³¼ ì¤‘ìš”ì„±ì„ í•­ìƒ ì—¼ë‘ì— ë‘ë ¤ê³  ë…¸ë ¥í•˜ê³  ìžˆìŠµë‹ˆë‹¤.', 
-'ìƒëª…ê³µí•™ ë¶„ì•¼ì—ì„œëŠ” í˜ì‹ ì ì¸ ì—°êµ¬ ë° ê°œë°œì„ í†µí•´ ì˜í•™ ë° í™˜ê²½ì— ê¸°ì—¬í•˜ê³ , 
-íŒ€ì›ë“¤ê³¼ì˜ í˜‘ì—…ì„ í†µí•´ í˜ì‹ ì ì¸ ìƒëª…ê³µí•™ í”„ë¡œì íŠ¸ë¥¼ ì´ëŒì–´ë‚´ê³  ì‹¶ìŠµë‹ˆë‹¤.', 
+(LETTER_NUMBER_SEQ.NEXTVAL, '»ý¸í°øÇÐ ºÐ¾ß¿¡ Èï¹Ì¸¦ ´À³¢°Ô µÈ ÀÌÀ¯´Â Çõ½ÅÀûÀÎ ÀÇ¾àÇ° ¹× Ä¡·á¹ýÀÇ °³¹ß¿¡ ´ëÇÑ °ü½É°ú ½ÇÇèÀûÀÎ °úÇÐ¿¡ ´ëÇÑ ¿­Á¤ÀÔ´Ï´Ù. 
+´ëÇÐ¿¡¼­ »ý¸í°úÇÐÀ» Àü°øÇÏ¸é¼­ À¯ÀüÀÚ Á¶ÀÛ, ¼¼Æ÷ °øÇÐ µî ´Ù¾çÇÑ ¿¬±¸¿¡ Âü¿©ÇÏ¸é¼­ »ý¸í°øÇÐ ºÐ¾ß¿¡¼­ÀÇ °æÇèÀ» ½×¾Ò½À´Ï´Ù. 
+»ý¸í°øÇÐ ºÐ¾ß¿¡¼­´Â Çõ½ÅÀûÀÎ ¿¬±¸ ¹× °³¹ßÀ» ÅëÇØ ÀÇÇÐ ¹× È¯°æ¿¡ ±â¿©ÇÏ°í ½Í½À´Ï´Ù.', 
+'»ý¸í°øÇÐ ºÐ¾ß¿¡ Áö¿øÇÏ´Â µ¿±â´Â Çö´ë ÀÇÇÐ°ú È¯°æ ¹®Á¦¿¡ ´ëÇÑ ¼Ö·ç¼ÇÀ» Ã£°íÀÚ ÇÔ¿¡ ÀÖ½À´Ï´Ù. 
+Ç×»ó ÃÖ½Å »ý¸í°úÇÐ ±â¼ú°ú ¿¬±¸ µ¿ÇâÀ» ÁÖ½ÃÇÏ¸ç, ÀÌ¸¦ ÅëÇØ »õ·Î¿î Ä¡·á¹ýÀÌ³ª ÀÇ¾àÇ°ÀÇ °³¹ß¿¡ ±â¿©ÇÏ°íÀÚ ÇÕ´Ï´Ù. 
+¶ÇÇÑ ÆÀ¿øµé°úÀÇ Çù¾÷À» ÅëÇØ Çõ½ÅÀûÀÎ »ý¸í°øÇÐ ÇÁ·ÎÁ§Æ®¸¦ ÀÌ²ø¾î³»°íÀÚ ÇÕ´Ï´Ù.', 
+'¼º°ÝÀÇ ÀåÁ¡À¸·Î´Â ½ÇÇè¿¡ ´ëÇÑ ÀÎ³»¿Í ²ÙÁØÇÔÀÌ ÀÖ½À´Ï´Ù. ¾î·Á¿î ½ÇÇè °úÁ¤¿¡µµ Æ÷±âÇÏÁö ¾Ê°í ²öÁú±â°Ô ¿¬±¸¸¦ ÁøÇàÇÏ´Â °ÍÀ» Áñ±é´Ï´Ù. 
+±×·¯³ª ¶§·Î´Â ½ÇÇè °á°ú¿¡ Áö³ªÄ¡°Ô ÁýÂøÇÏ¿© È¿À²¼ºÀ» ³õÄ¥ ¶§°¡ ÀÖ´Âµ¥, 
+ÀÌ¸¦ ±Øº¹ÇÏ±â À§ÇØ ½ÇÇèÀÇ ¸ñÀû°ú Áß¿ä¼ºÀ» Ç×»ó ¿°µÎ¿¡ µÎ·Á°í ³ë·ÂÇÏ°í ÀÖ½À´Ï´Ù.', 
+'»ý¸í°øÇÐ ºÐ¾ß¿¡¼­´Â Çõ½ÅÀûÀÎ ¿¬±¸ ¹× °³¹ßÀ» ÅëÇØ ÀÇÇÐ ¹× È¯°æ¿¡ ±â¿©ÇÏ°í, 
+ÆÀ¿øµé°úÀÇ Çù¾÷À» ÅëÇØ Çõ½ÅÀûÀÎ »ý¸í°øÇÐ ÇÁ·ÎÁ§Æ®¸¦ ÀÌ²ø¾î³»°í ½Í½À´Ï´Ù.', 
 113);
 
 INSERT INTO LETTER (LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION, LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
 VALUES
-(LETTER_NUMBER_SEQ.NEXTVAL, 'ê²Œìž„ê°œë°œ ë¶„ì•¼ì— ìž…ì‚¬í•˜ê²Œ ëœ ë™ê¸°ëŠ” ì–´ë¦´ ì ë¶€í„° ê²Œìž„ì— ëŒ€í•œ ì—´ì •ê³¼ ê´€ì‹¬ì´ ìžˆì—ˆê¸° ë•Œë¬¸ìž…ë‹ˆë‹¤. 
-ëŒ€í•™ì—ì„œ ì»´í“¨í„° ê³µí•™ì„ ì „ê³µí•˜ë©´ì„œ ë‹¤ì–‘í•œ ê²Œìž„ í”„ë¡œì íŠ¸ì— ì°¸ì—¬í•˜ê³ , ê²Œìž„ ê°œë°œì˜ ìž¬ë¯¸ì™€ ë„ì „ì— ë§¤ë£Œë˜ì—ˆìŠµë‹ˆë‹¤. 
-ê²Œìž„ ê°œë°œ ë¶„ì•¼ì—ì„œëŠ” ì°½ì˜ì„±ì„ ë°œíœ˜í•˜ë©° ìƒˆë¡œìš´ ê²Œìž„ì„ ê°œë°œí•˜ê³ , ì‚¬ìš©ìžë“¤ì—ê²Œ ì¦ê±°ì›€ì„ ì „í•´ì£¼ê³  ì‹¶ìŠµë‹ˆë‹¤.', 
-'ê²Œìž„ê°œë°œ ë¶„ì•¼ì— ì§€ì›í•˜ëŠ” ë™ê¸°ëŠ” íƒì›”í•œ ê¸°ìˆ ë ¥ì„ í†µí•´ í˜ì‹ ì ì´ê³  í¥ë¯¸ë¡œìš´ ê²Œìž„ì„ ë§Œë“¤ì–´ë‚´ê³  ì‹¶ê¸° ë•Œë¬¸ìž…ë‹ˆë‹¤. 
-í•­ìƒ ìµœì‹  ê¸°ìˆ ê³¼ íŠ¸ë Œë“œë¥¼ ìµížˆë©°, ì´ë¥¼ í™œìš©í•˜ì—¬ ì‚¬ìš©ìžë“¤ì—ê²Œ ë” ë‚˜ì€ ê²Œìž„ ê²½í—˜ì„ ì œê³µí•˜ëŠ” ê²ƒì´ ëª©í‘œìž…ë‹ˆë‹¤. 
-ë˜í•œ íŒ€ì›ë“¤ê³¼ì˜ í˜‘ì—…ì„ í†µí•´ íš¨ê³¼ì ì¸ ê²Œìž„ í”„ë¡œì íŠ¸ë¥¼ ì´ëŒì–´ë‚´ê³ ìž í•©ë‹ˆë‹¤.', 
-'ì„±ê²©ì˜ ìž¥ì ìœ¼ë¡œëŠ” ì°½ì˜ì ì´ê³  ë¬¸ì œ í•´ê²°ì— ëŒ€í•œ ì—´ì •ì´ ìžˆìŠµë‹ˆë‹¤. 
-ê²Œìž„ ê°œë°œ ê³¼ì •ì—ì„œ ë°œìƒí•˜ëŠ” ë‹¤ì–‘í•œ ê¸°ìˆ ì  ë¬¸ì œì— ëŒ€í•´ ì ê·¹ì ìœ¼ë¡œ í•´ê²°ì±…ì„ ëª¨ìƒ‰í•˜ë©°, 
-ìƒˆë¡œìš´ ì•„ì´ë””ì–´ë¥¼ ì œì•ˆí•˜ëŠ” ê²ƒì„ ì¦ê¹ë‹ˆë‹¤. 
-ê·¸ëŸ¬ë‚˜ ë•Œë¡œëŠ” ë””í…Œì¼ì— ì§‘ì°©í•˜ì—¬ ë„ˆë¬´ ì˜¤ëžœ ì‹œê°„ì„ ìŸì•„ë¶€ì„ ë•Œê°€ ìžˆëŠ”ë°, 
-ì´ë¥¼ ê·¹ë³µí•˜ê¸° ìœ„í•´ íš¨ìœ¨ì ì¸ ì—…ë¬´ ê³„íšì„ ì„¸ìš°ê³  ìžˆìŠµë‹ˆë‹¤.', 
-'ê²Œìž„ê°œë°œ ë¶„ì•¼ì—ì„œëŠ” í˜ì‹ ì ì´ê³  í¥ë¯¸ë¡œìš´ ê²Œìž„ì„ ê°œë°œí•˜ì—¬ ì‚¬ìš©ìžë“¤ì—ê²Œ ì¦ê±°ì›€ì„ ì „ë‹¬í•˜ê³ , 
-íŒ€ì›ë“¤ê³¼ì˜ í˜‘ì—…ì„ í†µí•´ íš¨ê³¼ì ì¸ í”„ë¡œì íŠ¸ë¥¼ ì´ëŒì–´ë‚´ê³  ì‹¶ìŠµë‹ˆë‹¤.', 
+(LETTER_NUMBER_SEQ.NEXTVAL, '°ÔÀÓ°³¹ß ºÐ¾ß¿¡ ÀÔ»çÇÏ°Ô µÈ µ¿±â´Â ¾î¸± ÀûºÎÅÍ °ÔÀÓ¿¡ ´ëÇÑ ¿­Á¤°ú °ü½ÉÀÌ ÀÖ¾ú±â ¶§¹®ÀÔ´Ï´Ù. 
+´ëÇÐ¿¡¼­ ÄÄÇ»ÅÍ °øÇÐÀ» Àü°øÇÏ¸é¼­ ´Ù¾çÇÑ °ÔÀÓ ÇÁ·ÎÁ§Æ®¿¡ Âü¿©ÇÏ°í, °ÔÀÓ °³¹ßÀÇ Àç¹Ì¿Í µµÀü¿¡ ¸Å·áµÇ¾ú½À´Ï´Ù. 
+°ÔÀÓ °³¹ß ºÐ¾ß¿¡¼­´Â Ã¢ÀÇ¼ºÀ» ¹ßÈÖÇÏ¸ç »õ·Î¿î °ÔÀÓÀ» °³¹ßÇÏ°í, »ç¿ëÀÚµé¿¡°Ô Áñ°Å¿òÀ» ÀüÇØÁÖ°í ½Í½À´Ï´Ù.', 
+'°ÔÀÓ°³¹ß ºÐ¾ß¿¡ Áö¿øÇÏ´Â µ¿±â´Â Å¹¿ùÇÑ ±â¼ú·ÂÀ» ÅëÇØ Çõ½ÅÀûÀÌ°í Èï¹Ì·Î¿î °ÔÀÓÀ» ¸¸µé¾î³»°í ½Í±â ¶§¹®ÀÔ´Ï´Ù. 
+Ç×»ó ÃÖ½Å ±â¼ú°ú Æ®·»µå¸¦ ÀÍÈ÷¸ç, ÀÌ¸¦ È°¿ëÇÏ¿© »ç¿ëÀÚµé¿¡°Ô ´õ ³ªÀº °ÔÀÓ °æÇèÀ» Á¦°øÇÏ´Â °ÍÀÌ ¸ñÇ¥ÀÔ´Ï´Ù. 
+¶ÇÇÑ ÆÀ¿øµé°úÀÇ Çù¾÷À» ÅëÇØ È¿°úÀûÀÎ °ÔÀÓ ÇÁ·ÎÁ§Æ®¸¦ ÀÌ²ø¾î³»°íÀÚ ÇÕ´Ï´Ù.', 
+'¼º°ÝÀÇ ÀåÁ¡À¸·Î´Â Ã¢ÀÇÀûÀÌ°í ¹®Á¦ ÇØ°á¿¡ ´ëÇÑ ¿­Á¤ÀÌ ÀÖ½À´Ï´Ù. 
+°ÔÀÓ °³¹ß °úÁ¤¿¡¼­ ¹ß»ýÇÏ´Â ´Ù¾çÇÑ ±â¼úÀû ¹®Á¦¿¡ ´ëÇØ Àû±ØÀûÀ¸·Î ÇØ°áÃ¥À» ¸ð»öÇÏ¸ç, 
+»õ·Î¿î ¾ÆÀÌµð¾î¸¦ Á¦¾ÈÇÏ´Â °ÍÀ» Áñ±é´Ï´Ù. 
+±×·¯³ª ¶§·Î´Â µðÅ×ÀÏ¿¡ ÁýÂøÇÏ¿© ³Ê¹« ¿À·£ ½Ã°£À» ½ñ¾ÆºÎÀ» ¶§°¡ ÀÖ´Âµ¥, 
+ÀÌ¸¦ ±Øº¹ÇÏ±â À§ÇØ È¿À²ÀûÀÎ ¾÷¹« °èÈ¹À» ¼¼¿ì°í ÀÖ½À´Ï´Ù.', 
+'°ÔÀÓ°³¹ß ºÐ¾ß¿¡¼­´Â Çõ½ÅÀûÀÌ°í Èï¹Ì·Î¿î °ÔÀÓÀ» °³¹ßÇÏ¿© »ç¿ëÀÚµé¿¡°Ô Áñ°Å¿òÀ» Àü´ÞÇÏ°í, 
+ÆÀ¿øµé°úÀÇ Çù¾÷À» ÅëÇØ È¿°úÀûÀÎ ÇÁ·ÎÁ§Æ®¸¦ ÀÌ²ø¾î³»°í ½Í½À´Ï´Ù.', 
 116);
 
 INSERT INTO LETTER (LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION, LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
 VALUES
-(LETTER_NUMBER_SEQ.NEXTVAL, 'ê¸ˆìœµì¦ê¶Œ ë¶„ì•¼ì— í¥ë¯¸ë¥¼ ëŠë¼ê²Œ ëœ ê³„ê¸°ëŠ” ê¸ˆìœµ ì‹œìž¥ì˜ ë‹¤ì–‘í•œ ê²½í—˜ê³¼ ë³€í™”ì— ëŒ€í•œ ê´€ì‹¬ìž…ë‹ˆë‹¤. 
-ëŒ€í•™ì—ì„œ ê¸ˆìœµí•™ì„ ì „ê³µí•˜ë©´ì„œ ê¸ˆìœµ ì‹œìŠ¤í…œì˜ ë³µìž¡ì„±ê³¼ ë‹¤ì–‘ì„±ì„ ì´í•´í•˜ê²Œ ë˜ì—ˆê³ , 
-ì‹¤ë¬´ì—ì„œëŠ” íˆ¬ìž ë° ìžì‚° ê´€ë¦¬ì— ì°¸ì—¬í•˜ë©´ì„œ ê¸ˆìœµ ë¶„ì•¼ì—ì„œì˜ ê²½í—˜ì„ ìŒ“ì•˜ìŠµë‹ˆë‹¤. 
-ê¸ˆìœµì¦ê¶Œ ë¶„ì•¼ì—ì„œëŠ” ê¸ˆìœµ ì‹œìž¥ ë™í–¥ì„ ì´í•´í•˜ê³ , 
-ê³ ê°ë“¤ì—ê²Œ ê°€ì¹˜ ìžˆëŠ” ê¸ˆìœµ ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ê³ ìž í•©ë‹ˆë‹¤.', 
-'ê¸ˆìœµì¦ê¶Œ ë¶„ì•¼ì— ì§€ì›í•˜ëŠ” ë™ê¸°ëŠ” ê¸ˆìœµ ì‹œìž¥ì˜ ë™í–¥ì„ ì´í•´í•˜ê³ , 
-ê·¸ì— ë”°ë¥¸ íˆ¬ìž ì „ëžµì„ ìˆ˜ë¦½í•˜ì—¬ ê³ ê°ì˜ ê¸ˆìœµ ëª©í‘œë¥¼ ë„ì™€ì£¼ê³  ì‹¶ê¸° ë•Œë¬¸ìž…ë‹ˆë‹¤. 
-í•­ìƒ ê¸ˆìœµ ì‹œìž¥ì˜ ë³€í™”ë¥¼ ì£¼ì‹œí•˜ë©°, ì´ë¥¼ í†µí•´ ìµœì ì˜ íˆ¬ìž ê¸°íšŒë¥¼ ì°¾ëŠ” ê²ƒì´ ëª©í‘œìž…ë‹ˆë‹¤. 
-ë˜í•œ íŒ€ì›ë“¤ê³¼ì˜ í˜‘ì—…ì„ í†µí•´ ê¸ˆìœµ ì„œë¹„ìŠ¤ì˜ í’ˆì§ˆì„ í–¥ìƒì‹œí‚¤ê³ ìž í•©ë‹ˆë‹¤.', 
-'ì„±ê²©ì˜ ìž¥ì ìœ¼ë¡œëŠ” ë¶„ì„ì ì´ê³  ì‹ ì†í•œ íŒë‹¨ ëŠ¥ë ¥ì´ ìžˆìŠµë‹ˆë‹¤. 
-ê¸ˆìœµ ì‹œìž¥ì—ì„œ ë¹ ë¥´ê²Œ ë³€í•˜ëŠ” ìƒí™©ì— ëŠ¥ìˆ™í•˜ê²Œ ëŒ€ì‘í•˜ë©°, 
-ê³ ê°ì˜ ìš”êµ¬ì— ì‹ ì†í•˜ê²Œ ëŒ€ì‘í•˜ëŠ” ê²ƒì„ ì¦ê¹ë‹ˆë‹¤. 
-ê·¸ëŸ¬ë‚˜ ë•Œë¡œëŠ” ê³¼ë„í•œ ë¦¬ìŠ¤í¬ íšŒí”¼ì— ë¹ ì ¸ ê¸°íšŒë¥¼ ë†“ì¹  ë•Œê°€ ìžˆëŠ”ë°, 
-ì´ë¥¼ ê·¹ë³µí•˜ê¸° ìœ„í•´ ì¡°ì‹¬ìŠ¤ëŸ½ê²Œ ëŒ€ì²˜í•˜ë ¤ê³  ë…¸ë ¥í•˜ê³  ìžˆìŠµë‹ˆë‹¤.', 
-'ê¸ˆìœµì¦ê¶Œ ë¶„ì•¼ì—ì„œëŠ” ê¸ˆìœµ ì‹œìž¥ ë™í–¥ì„ íŒŒì•…í•˜ë©°, 
-ê³ ê°ì—ê²Œ ê°€ì¹˜ ìžˆëŠ” ê¸ˆìœµ ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ì—¬ ê¸ˆìœµ ëª©í‘œë¥¼ ë‹¬ì„±í•˜ê³ , 
-íŒ€ì›ë“¤ê³¼ì˜ í˜‘ì—…ì„ í†µí•´ ê¸ˆìœµ ì„œë¹„ìŠ¤ì˜ í’ˆì§ˆì„ í–¥ìƒì‹œí‚¤ê³  ì‹¶ìŠµë‹ˆë‹¤.', 
+(LETTER_NUMBER_SEQ.NEXTVAL, '±ÝÀ¶Áõ±Ç ºÐ¾ß¿¡ Èï¹Ì¸¦ ´À³¢°Ô µÈ °è±â´Â ±ÝÀ¶ ½ÃÀåÀÇ ´Ù¾çÇÑ °æÇè°ú º¯È­¿¡ ´ëÇÑ °ü½ÉÀÔ´Ï´Ù. 
+´ëÇÐ¿¡¼­ ±ÝÀ¶ÇÐÀ» Àü°øÇÏ¸é¼­ ±ÝÀ¶ ½Ã½ºÅÛÀÇ º¹Àâ¼º°ú ´Ù¾ç¼ºÀ» ÀÌÇØÇÏ°Ô µÇ¾ú°í, 
+½Ç¹«¿¡¼­´Â ÅõÀÚ ¹× ÀÚ»ê °ü¸®¿¡ Âü¿©ÇÏ¸é¼­ ±ÝÀ¶ ºÐ¾ß¿¡¼­ÀÇ °æÇèÀ» ½×¾Ò½À´Ï´Ù. 
+±ÝÀ¶Áõ±Ç ºÐ¾ß¿¡¼­´Â ±ÝÀ¶ ½ÃÀå µ¿ÇâÀ» ÀÌÇØÇÏ°í, 
+°í°´µé¿¡°Ô °¡Ä¡ ÀÖ´Â ±ÝÀ¶ ¼­ºñ½º¸¦ Á¦°øÇÏ°íÀÚ ÇÕ´Ï´Ù.', 
+'±ÝÀ¶Áõ±Ç ºÐ¾ß¿¡ Áö¿øÇÏ´Â µ¿±â´Â ±ÝÀ¶ ½ÃÀåÀÇ µ¿ÇâÀ» ÀÌÇØÇÏ°í, 
+±×¿¡ µû¸¥ ÅõÀÚ Àü·«À» ¼ö¸³ÇÏ¿© °í°´ÀÇ ±ÝÀ¶ ¸ñÇ¥¸¦ µµ¿ÍÁÖ°í ½Í±â ¶§¹®ÀÔ´Ï´Ù. 
+Ç×»ó ±ÝÀ¶ ½ÃÀåÀÇ º¯È­¸¦ ÁÖ½ÃÇÏ¸ç, ÀÌ¸¦ ÅëÇØ ÃÖÀûÀÇ ÅõÀÚ ±âÈ¸¸¦ Ã£´Â °ÍÀÌ ¸ñÇ¥ÀÔ´Ï´Ù. 
+¶ÇÇÑ ÆÀ¿øµé°úÀÇ Çù¾÷À» ÅëÇØ ±ÝÀ¶ ¼­ºñ½ºÀÇ Ç°ÁúÀ» Çâ»ó½ÃÅ°°íÀÚ ÇÕ´Ï´Ù.', 
+'¼º°ÝÀÇ ÀåÁ¡À¸·Î´Â ºÐ¼®ÀûÀÌ°í ½Å¼ÓÇÑ ÆÇ´Ü ´É·ÂÀÌ ÀÖ½À´Ï´Ù. 
+±ÝÀ¶ ½ÃÀå¿¡¼­ ºü¸£°Ô º¯ÇÏ´Â »óÈ²¿¡ ´É¼÷ÇÏ°Ô ´ëÀÀÇÏ¸ç, 
+°í°´ÀÇ ¿ä±¸¿¡ ½Å¼ÓÇÏ°Ô ´ëÀÀÇÏ´Â °ÍÀ» Áñ±é´Ï´Ù. 
+±×·¯³ª ¶§·Î´Â °úµµÇÑ ¸®½ºÅ© È¸ÇÇ¿¡ ºüÁ® ±âÈ¸¸¦ ³õÄ¥ ¶§°¡ ÀÖ´Âµ¥, 
+ÀÌ¸¦ ±Øº¹ÇÏ±â À§ÇØ Á¶½É½º·´°Ô ´ëÃ³ÇÏ·Á°í ³ë·ÂÇÏ°í ÀÖ½À´Ï´Ù.', 
+'±ÝÀ¶Áõ±Ç ºÐ¾ß¿¡¼­´Â ±ÝÀ¶ ½ÃÀå µ¿ÇâÀ» ÆÄ¾ÇÇÏ¸ç, 
+°í°´¿¡°Ô °¡Ä¡ ÀÖ´Â ±ÝÀ¶ ¼­ºñ½º¸¦ Á¦°øÇÏ¿© ±ÝÀ¶ ¸ñÇ¥¸¦ ´Þ¼ºÇÏ°í, 
+ÆÀ¿øµé°úÀÇ Çù¾÷À» ÅëÇØ ±ÝÀ¶ ¼­ºñ½ºÀÇ Ç°ÁúÀ» Çâ»ó½ÃÅ°°í ½Í½À´Ï´Ù.', 
 129);
 
 INSERT INTO LETTER (LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION, LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
 VALUES
-(LETTER_NUMBER_SEQ.NEXTVAL, 'ìœ í†µ ë¶„ì•¼ì— í¥ë¯¸ë¥¼ ëŠë¼ê²Œ ëœ ê³„ê¸°ëŠ” ìƒí’ˆê³¼ ì†Œë¹„ìž ê°„ì˜ ë‹¤ì–‘í•œ ìƒí˜¸ ìž‘ìš©ê³¼ ìœ í†µ ì‹œìž¥ì˜ ë™í–¥ì— ëŒ€í•œ ê´€ì‹¬ìž…ë‹ˆë‹¤. 
-ëŒ€í•™ì—ì„œ ê²½ì˜í•™ì„ ì „ê³µí•˜ë©´ì„œ ë§ˆì¼€íŒ… ë° ìœ í†µ ì „ëžµì— ëŒ€í•œ ê°•ì˜ë¥¼ ìˆ˜ê°•í•˜ê³ , 
-ì‹¤ë¬´ì—ì„œëŠ” ë‹¤ì–‘í•œ ìœ í†µ ì±„ë„ê³¼ ì†Œë¹„ í–‰íƒœë¥¼ ë¶„ì„í•˜ë©° ê²½ì˜ ê²½í—˜ì„ ìŒ“ì•˜ìŠµë‹ˆë‹¤. 
-ìœ í†µ ë¶„ì•¼ì—ì„œëŠ” ì†Œë¹„ìžì—ê²Œ ê°€ì¹˜ ìžˆëŠ” ìƒí’ˆì„ ì œê³µí•˜ê³ , íš¨ê³¼ì ì¸ ìœ í†µ ì „ëžµì„ êµ¬ìƒí•˜ê³ ìž í•©ë‹ˆë‹¤.', 
-'ìœ í†µ ë¶„ì•¼ì— ì§€ì›í•˜ëŠ” ë™ê¸°ëŠ” ì†Œë¹„ìžì™€ì˜ ìƒí˜¸ ìž‘ìš©ì„ í†µí•´ ë¸Œëžœë“œì™€ ìƒí’ˆì— ëŒ€í•œ ì´í•´ë¥¼ ë†’ì´ê³ , 
-íš¨ê³¼ì ì¸ ìœ í†µ ì „ëžµì„ ê°œë°œí•˜ê³ ìž í•¨ì— ìžˆìŠµë‹ˆë‹¤. í•­ìƒ ì†Œë¹„ìžì˜ ë‹ˆì¦ˆì™€ ì‹œìž¥ ë™í–¥ì„ íŒŒì•…í•˜ë©°, 
-ì´ë¥¼ ê¸°ë°˜ìœ¼ë¡œ íš¨ê³¼ì ì¸ íŒë§¤ ë° ë§ˆì¼€íŒ… ì „ëžµì„ ìˆ˜ë¦½í•˜ëŠ” ê²ƒì´ ëª©í‘œìž…ë‹ˆë‹¤. 
-ë˜í•œ íŒ€ì›ë“¤ê³¼ì˜ í˜‘ì—…ì„ í†µí•´ íš¨ìœ¨ì ì¸ ìœ í†µ ì „ëžµì„ ì¶”ì§„í•˜ê³ ìž í•©ë‹ˆë‹¤.', 
-'ì„±ê²©ì˜ ìž¥ì ìœ¼ë¡œëŠ” ì»¤ë®¤ë‹ˆì¼€ì´ì…˜ ë° í˜‘ì—… ëŠ¥ë ¥ì´ ìžˆìŠµë‹ˆë‹¤. 
-ì†Œë¹„ìžì™€ì˜ ì›í™œí•œ ì†Œí†µê³¼ íŒ€ì›ë“¤ê³¼ì˜ í˜‘ì—…ì„ í†µí•´ íš¨ê³¼ì ì¸ ìœ í†µ ì „ëžµì„ êµ¬ì„±í•˜ëŠ” ê²ƒì„ ì¦ê¹ë‹ˆë‹¤. 
-ê·¸ëŸ¬ë‚˜ ë•Œë¡œëŠ” ì‹œìž¥ ë™í–¥ì— ì§€ë‚˜ì¹˜ê²Œ ë¯¼ê°í•˜ê²Œ ë°˜ì‘í•  ë•Œê°€ ìžˆëŠ”ë°, 
-ì´ë¥¼ ê·¹ë³µí•˜ê¸° ìœ„í•´ ì‹ ì¤‘í•˜ê²Œ ë°ì´í„°ë¥¼ ë¶„ì„í•˜ê³  ë…¼ë¦¬ì ì¸ íŒë‹¨ì„ í•˜ë ¤ê³  ë…¸ë ¥í•˜ê³  ìžˆìŠµë‹ˆë‹¤.', 
-'ìœ í†µ ë¶„ì•¼ì—ì„œëŠ” íš¨ê³¼ì ì¸ ìœ í†µ ì „ëžµì„ ê°œë°œí•˜ì—¬ ì†Œë¹„ìžì—ê²Œ ê°€ì¹˜ë¥¼ ì œê³µí•˜ê³ , 
-íŒ€ì›ë“¤ê³¼ì˜ í˜‘ì—…ì„ í†µí•´ ìœ í†µ ì „ëžµì˜ íš¨ìœ¨ì„±ì„ ë†’ì´ê³  ì‹¶ìŠµë‹ˆë‹¤.', 
+(LETTER_NUMBER_SEQ.NEXTVAL, 'À¯Åë ºÐ¾ß¿¡ Èï¹Ì¸¦ ´À³¢°Ô µÈ °è±â´Â »óÇ°°ú ¼ÒºñÀÚ °£ÀÇ ´Ù¾çÇÑ »óÈ£ ÀÛ¿ë°ú À¯Åë ½ÃÀåÀÇ µ¿Çâ¿¡ ´ëÇÑ °ü½ÉÀÔ´Ï´Ù. 
+´ëÇÐ¿¡¼­ °æ¿µÇÐÀ» Àü°øÇÏ¸é¼­ ¸¶ÄÉÆÃ ¹× À¯Åë Àü·«¿¡ ´ëÇÑ °­ÀÇ¸¦ ¼ö°­ÇÏ°í, 
+½Ç¹«¿¡¼­´Â ´Ù¾çÇÑ À¯Åë Ã¤³Î°ú ¼Òºñ ÇàÅÂ¸¦ ºÐ¼®ÇÏ¸ç °æ¿µ °æÇèÀ» ½×¾Ò½À´Ï´Ù. 
+À¯Åë ºÐ¾ß¿¡¼­´Â ¼ÒºñÀÚ¿¡°Ô °¡Ä¡ ÀÖ´Â »óÇ°À» Á¦°øÇÏ°í, È¿°úÀûÀÎ À¯Åë Àü·«À» ±¸»óÇÏ°íÀÚ ÇÕ´Ï´Ù.', 
+'À¯Åë ºÐ¾ß¿¡ Áö¿øÇÏ´Â µ¿±â´Â ¼ÒºñÀÚ¿ÍÀÇ »óÈ£ ÀÛ¿ëÀ» ÅëÇØ ºê·£µå¿Í »óÇ°¿¡ ´ëÇÑ ÀÌÇØ¸¦ ³ôÀÌ°í, 
+È¿°úÀûÀÎ À¯Åë Àü·«À» °³¹ßÇÏ°íÀÚ ÇÔ¿¡ ÀÖ½À´Ï´Ù. Ç×»ó ¼ÒºñÀÚÀÇ ´ÏÁî¿Í ½ÃÀå µ¿ÇâÀ» ÆÄ¾ÇÇÏ¸ç, 
+ÀÌ¸¦ ±â¹ÝÀ¸·Î È¿°úÀûÀÎ ÆÇ¸Å ¹× ¸¶ÄÉÆÃ Àü·«À» ¼ö¸³ÇÏ´Â °ÍÀÌ ¸ñÇ¥ÀÔ´Ï´Ù. 
+¶ÇÇÑ ÆÀ¿øµé°úÀÇ Çù¾÷À» ÅëÇØ È¿À²ÀûÀÎ À¯Åë Àü·«À» ÃßÁøÇÏ°íÀÚ ÇÕ´Ï´Ù.', 
+'¼º°ÝÀÇ ÀåÁ¡À¸·Î´Â Ä¿¹Â´ÏÄÉÀÌ¼Ç ¹× Çù¾÷ ´É·ÂÀÌ ÀÖ½À´Ï´Ù. 
+¼ÒºñÀÚ¿ÍÀÇ ¿øÈ°ÇÑ ¼ÒÅë°ú ÆÀ¿øµé°úÀÇ Çù¾÷À» ÅëÇØ È¿°úÀûÀÎ À¯Åë Àü·«À» ±¸¼ºÇÏ´Â °ÍÀ» Áñ±é´Ï´Ù. 
+±×·¯³ª ¶§·Î´Â ½ÃÀå µ¿Çâ¿¡ Áö³ªÄ¡°Ô ¹Î°¨ÇÏ°Ô ¹ÝÀÀÇÒ ¶§°¡ ÀÖ´Âµ¥, 
+ÀÌ¸¦ ±Øº¹ÇÏ±â À§ÇØ ½ÅÁßÇÏ°Ô µ¥ÀÌÅÍ¸¦ ºÐ¼®ÇÏ°í ³í¸®ÀûÀÎ ÆÇ´ÜÀ» ÇÏ·Á°í ³ë·ÂÇÏ°í ÀÖ½À´Ï´Ù.', 
+'À¯Åë ºÐ¾ß¿¡¼­´Â È¿°úÀûÀÎ À¯Åë Àü·«À» °³¹ßÇÏ¿© ¼ÒºñÀÚ¿¡°Ô °¡Ä¡¸¦ Á¦°øÇÏ°í, 
+ÆÀ¿øµé°úÀÇ Çù¾÷À» ÅëÇØ À¯Åë Àü·«ÀÇ È¿À²¼ºÀ» ³ôÀÌ°í ½Í½À´Ï´Ù.', 
 134);
 
 INSERT INTO LETTER (LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION, LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
 VALUES
-(LETTER_NUMBER_SEQ.NEXTVAL, 'ë¬´ì—­ ë¶„ì•¼ì— ëŒ€í•œ í¥ë¯¸ëŠ” êµ­ì œì ì¸ ë¹„ì¦ˆë‹ˆìŠ¤ í™˜ê²½ì—ì„œ ë‹¤ì–‘í•œ ë¬¸í™”ì™€ ê±°ëž˜ì— ëŒ€í•œ ì´í•´ë¥¼ ìŒ“ê³  ì‹¶ì–´ì¡Œê¸° ë•Œë¬¸ìž…ë‹ˆë‹¤. ëŒ€í•™ì—ì„œ êµ­ì œë¬´ì—­ì„ ì „ê³µí•˜ë©´ì„œ ë‹¤ì–‘í•œ êµ­ê°€ì™€ì˜ ê±°ëž˜ ë° ë¬´ì—­ í˜‘ìƒì— ì°¸ì—¬í•˜ë©° êµ­ì œ ë¹„ì¦ˆë‹ˆìŠ¤ì— ëŒ€í•œ ì „ë¬¸ì„±ì„ í‚¤ì› ìŠµë‹ˆë‹¤. 
-ë¬´ì—­ ë¶„ì•¼ì—ì„œëŠ” ê¸€ë¡œë²Œ ì‹œìž¥ì—ì„œì˜ ê²½ìŸê³¼ í˜‘ì—…ì— ì°¸ì—¬í•˜ë©°, 
-ë‹¤ì–‘í•œ ë¹„ì¦ˆë‹ˆìŠ¤ ëª¨ë¸ì„ ì´í•´í•˜ê³ ìž í•©ë‹ˆë‹¤.', 
-'ë¬´ì—­ ë¶„ì•¼ì— ì§€ì›í•˜ëŠ” ë™ê¸°ëŠ” ë‹¤ì–‘í•œ êµ­ê°€ì™€ì˜ ê±°ëž˜ ë° í˜‘ìƒì„ í†µí•´ êµ­ì œ ë¹„ì¦ˆë‹ˆìŠ¤ ê²½í—˜ì„ ìŒ“ê³ , 
-ê¸€ë¡œë²Œ ì‹œìž¥ì—ì„œì˜ ê²½ìŸë ¥ì„ í–¥ìƒì‹œí‚¤ê¸° ìœ„í•¨ìž…ë‹ˆë‹¤. 
-í•­ìƒ ê¸€ë¡œë²Œ ì‹œìž¥ ë™í–¥ì„ ì£¼ì‹œí•˜ë©°, ê·¸ì— ë”°ë¥¸ ë¹„ì¦ˆë‹ˆìŠ¤ ì „ëžµì„ ì„¸ìš°ê³  ì‹¤í–‰í•˜ëŠ” ê²ƒì´ ëª©í‘œìž…ë‹ˆë‹¤. 
-ë˜í•œ íŒ€ì›ë“¤ê³¼ì˜ í˜‘ì—…ì„ í†µí•´ ê¸€ë¡œë²Œ ë¹„ì¦ˆë‹ˆìŠ¤ì—ì„œì˜ ì„±ê³¼ë¥¼ ì°½ì¶œí•˜ê³ ìž í•©ë‹ˆë‹¤.', 
-'ì„±ê²©ì˜ ìž¥ì ìœ¼ë¡œëŠ” ê¸ì •ì ì´ê³  ëŒ€ì¸ ê´€ê³„ í˜•ì„±ì— ëŠ¥ìˆ™í•©ë‹ˆë‹¤. ìƒˆë¡œìš´ ì‚¬ëžŒë“¤ê³¼ì˜ ì†Œí†µì„ ì¦ê¸°ë©°, 
-ë¬¸ì œ ìƒí™©ì—ì„œë„ ë‚™ê´€ì ìœ¼ë¡œ í•´ê²°ì±…ì„ ì°¾ëŠ” ê²ƒì„ ì„ í˜¸í•©ë‹ˆë‹¤. 
-ê·¸ëŸ¬ë‚˜ ë•Œë¡œëŠ” ë„ˆë¬´ ë‚™ê´€ì ìœ¼ë¡œë§Œ ë³´ëŠ” ê²½í–¥ì´ ìžˆì–´, 
-í˜„ì‹¤ì ì¸ ê³„íšê³¼ ëŒ€ë¹„ì±…ì„ ê°•ì¡°í•˜ë ¤ê³  ë…¸ë ¥í•˜ê³  ìžˆìŠµë‹ˆë‹¤.', 
-'ë¬´ì—­ ë¶„ì•¼ì—ì„œëŠ” ê¸€ë¡œë²Œ ì‹œìž¥ ë™í–¥ì„ ì£¼ì‹œí•˜ë©°, 
-ë‹¤ì–‘í•œ êµ­ê°€ì™€ì˜ ê±°ëž˜ ë° í˜‘ìƒì„ í†µí•´ ë¹„ì¦ˆë‹ˆìŠ¤ ì˜í–¥ë ¥ì„ í™•ëŒ€í•˜ê³ , 
-íŒ€ì›ë“¤ê³¼ì˜ í˜‘ì—…ì„ í†µí•´ ê¸€ë¡œë²Œ ë¹„ì¦ˆë‹ˆìŠ¤ì—ì„œì˜ ì„±ê³¼ë¥¼ ì°½ì¶œí•˜ê³  ì‹¶ìŠµë‹ˆë‹¤.', 
+(LETTER_NUMBER_SEQ.NEXTVAL, '¹«¿ª ºÐ¾ß¿¡ ´ëÇÑ Èï¹Ì´Â ±¹Á¦ÀûÀÎ ºñÁî´Ï½º È¯°æ¿¡¼­ ´Ù¾çÇÑ ¹®È­¿Í °Å·¡¿¡ ´ëÇÑ ÀÌÇØ¸¦ ½×°í ½Í¾îÁ³±â ¶§¹®ÀÔ´Ï´Ù. ´ëÇÐ¿¡¼­ ±¹Á¦¹«¿ªÀ» Àü°øÇÏ¸é¼­ ´Ù¾çÇÑ ±¹°¡¿ÍÀÇ °Å·¡ ¹× ¹«¿ª Çù»ó¿¡ Âü¿©ÇÏ¸ç ±¹Á¦ ºñÁî´Ï½º¿¡ ´ëÇÑ Àü¹®¼ºÀ» Å°¿ü½À´Ï´Ù. 
+¹«¿ª ºÐ¾ß¿¡¼­´Â ±Û·Î¹ú ½ÃÀå¿¡¼­ÀÇ °æÀï°ú Çù¾÷¿¡ Âü¿©ÇÏ¸ç, 
+´Ù¾çÇÑ ºñÁî´Ï½º ¸ðµ¨À» ÀÌÇØÇÏ°íÀÚ ÇÕ´Ï´Ù.', 
+'¹«¿ª ºÐ¾ß¿¡ Áö¿øÇÏ´Â µ¿±â´Â ´Ù¾çÇÑ ±¹°¡¿ÍÀÇ °Å·¡ ¹× Çù»óÀ» ÅëÇØ ±¹Á¦ ºñÁî´Ï½º °æÇèÀ» ½×°í, 
+±Û·Î¹ú ½ÃÀå¿¡¼­ÀÇ °æÀï·ÂÀ» Çâ»ó½ÃÅ°±â À§ÇÔÀÔ´Ï´Ù. 
+Ç×»ó ±Û·Î¹ú ½ÃÀå µ¿ÇâÀ» ÁÖ½ÃÇÏ¸ç, ±×¿¡ µû¸¥ ºñÁî´Ï½º Àü·«À» ¼¼¿ì°í ½ÇÇàÇÏ´Â °ÍÀÌ ¸ñÇ¥ÀÔ´Ï´Ù. 
+¶ÇÇÑ ÆÀ¿øµé°úÀÇ Çù¾÷À» ÅëÇØ ±Û·Î¹ú ºñÁî´Ï½º¿¡¼­ÀÇ ¼º°ú¸¦ Ã¢ÃâÇÏ°íÀÚ ÇÕ´Ï´Ù.', 
+'¼º°ÝÀÇ ÀåÁ¡À¸·Î´Â ±àÁ¤ÀûÀÌ°í ´ëÀÎ °ü°è Çü¼º¿¡ ´É¼÷ÇÕ´Ï´Ù. »õ·Î¿î »ç¶÷µé°úÀÇ ¼ÒÅëÀ» Áñ±â¸ç, 
+¹®Á¦ »óÈ²¿¡¼­µµ ³«°üÀûÀ¸·Î ÇØ°áÃ¥À» Ã£´Â °ÍÀ» ¼±È£ÇÕ´Ï´Ù. 
+±×·¯³ª ¶§·Î´Â ³Ê¹« ³«°üÀûÀ¸·Î¸¸ º¸´Â °æÇâÀÌ ÀÖ¾î, 
+Çö½ÇÀûÀÎ °èÈ¹°ú ´ëºñÃ¥À» °­Á¶ÇÏ·Á°í ³ë·ÂÇÏ°í ÀÖ½À´Ï´Ù.', 
+'¹«¿ª ºÐ¾ß¿¡¼­´Â ±Û·Î¹ú ½ÃÀå µ¿ÇâÀ» ÁÖ½ÃÇÏ¸ç, 
+´Ù¾çÇÑ ±¹°¡¿ÍÀÇ °Å·¡ ¹× Çù»óÀ» ÅëÇØ ºñÁî´Ï½º ¿µÇâ·ÂÀ» È®´ëÇÏ°í, 
+ÆÀ¿øµé°úÀÇ Çù¾÷À» ÅëÇØ ±Û·Î¹ú ºñÁî´Ï½º¿¡¼­ÀÇ ¼º°ú¸¦ Ã¢ÃâÇÏ°í ½Í½À´Ï´Ù.', 
 143);
 
--- ê±´ì„¤ì‚¬ì— ëŒ€í•œ ë”ë¯¸ ë°ì´í„°
+-- °Ç¼³»ç¿¡ ´ëÇÑ ´õ¹Ì µ¥ÀÌÅÍ
 INSERT INTO LETTER (LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION, LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
 VALUES
 (LETTER_NUMBER_SEQ.NEXTVAL
-, 'ê±´ì„¤ì‚¬ì— ìž…ì‚¬í•˜ê²Œ ëœ ë™ê¸°ëŠ” ì–´ë¦´ ì ë¶€í„° ê±´ì¶•ê³¼ êµ¬ì¡°ì— ëŒ€í•œ í¥ë¯¸ì™€ ê´€ì‹¬ì´ ìžˆì—ˆê¸° ë•Œë¬¸ìž…ë‹ˆë‹¤. 
-ëŒ€í•™ì—ì„œ ê±´ì„¤ê³µí•™ì„ ì „ê³µí•˜ë©´ì„œ ë‹¤ì–‘í•œ í”„ë¡œì íŠ¸ì— ì°¸ì—¬í•˜ë©° í˜„ìž¥ ê²½í—˜ì„ ìŒ“ì•˜ìŠµë‹ˆë‹¤. 
-ì´ë¥¼ í†µí•´ ê±´ì¶•ë¬¼ì„ ì„¸ìš°ëŠ” ê³¼ì •ì—ì„œì˜ ë„ì „ê³¼ ì„±ì·¨ë¥¼ ì²´í—˜í•˜ê²Œ ë˜ì—ˆê³ , 
-ì´ëŸ¬í•œ ê²½í—˜ì„ í† ëŒ€ë¡œ ë¯¸ëž˜ì˜ ê±´ì„¤ í”„ë¡œì íŠ¸ì— ê¸°ì—¬í•˜ê³  ì‹¶ìŠµë‹ˆë‹¤.'
-, 'ê±´ì„¤ ë¶„ì•¼ì—ì„œ ì¼í•˜ê³  ì‹¶ì€ ì´ìœ ëŠ” ìƒˆë¡œìš´ ë„ì „ê³¼ ì„±ìž¥ì˜ ê¸°íšŒë¥¼ ì°¾ê³  ìžˆê¸° ë•Œë¬¸ìž…ë‹ˆë‹¤. 
-í•­ìƒ ìƒˆë¡œìš´ ê¸°ìˆ ê³¼ íŠ¸ë Œë“œë¥¼ ì£¼ì‹œí•˜ë©°, ê·¸ê²ƒì„ ì‹¤ë¬´ì— ì ìš©í•˜ì—¬ í”„ë¡œì íŠ¸ë¥¼ ì„±ê³µì ìœ¼ë¡œ ì´ëŒì–´ë‚´ëŠ” ê²ƒì´ ëª©í‘œìž…ë‹ˆë‹¤. 
-íŠ¹ížˆ, íŒ€ì›ë“¤ê³¼ì˜ í˜‘ì—…ê³¼ ì†Œí†µì„ í†µí•´ íš¨ê³¼ì ì¸ í”„ë¡œì íŠ¸ ì‹¤í–‰ì— ê¸°ì—¬í•˜ê³ ìž í•©ë‹ˆë‹¤.'
-, 'ì„±ê²©ì˜ ìž¥ë‹¨ì ìœ¼ë¡œëŠ” ëˆê¸° ìžˆê³  í˜‘ë™ì‹¬ì´ ê°•í•˜ë‹¤ëŠ” ì ìž…ë‹ˆë‹¤. 
-ì–´ë–¤ ì–´ë ¤ìš´ ê³¼ì œë¼ë„ ê¾¸ì¤€í•œ ë…¸ë ¥ê³¼ í˜‘ë ¥ì„ í†µí•´ í•´ê²°í•´ ë‚˜ê°€ëŠ” ê²ƒì„ ì¦ê¹ë‹ˆë‹¤. 
-í•˜ì§€ë§Œ ë•Œë¡œëŠ” ì¼ì— ëª°ë‘í•˜ë‹¤ ë³´ë©´ ì„¸ë¶€ ì‚¬í•­ì„ ê°„ê³¼í•  ë•Œê°€ ìžˆëŠ”ë°, 
-ì´ë¥¼ ê·¹ë³µí•˜ê¸° ìœ„í•´ í•­ìƒ ì£¼ë³€ì˜ ì˜ê²¬ì„ ìˆ˜ë ´í•˜ë ¤ê³  ë…¸ë ¥í•©ë‹ˆë‹¤.'
-, 'ê±´ì„¤ì‚¬ì—ì„œëŠ” ì•ˆì „í•˜ê³  íš¨ìœ¨ì ì¸ ê±´ì„¤ í”„ë¡œì íŠ¸ë¥¼ ì„±ê³µì ìœ¼ë¡œ ì´ëŒì–´ë‚´ê³ , 
-ìµœì‹  ê¸°ìˆ ì„ í™œìš©í•˜ì—¬ í˜„ìž¥ì—ì„œì˜ ì—…ë¬´ë¥¼ í–¥ìƒì‹œí‚¤ëŠ” ì¼ì— ì „ë…í•˜ê³  ì‹¶ìŠµë‹ˆë‹¤.'
+, '°Ç¼³»ç¿¡ ÀÔ»çÇÏ°Ô µÈ µ¿±â´Â ¾î¸± ÀûºÎÅÍ °ÇÃà°ú ±¸Á¶¿¡ ´ëÇÑ Èï¹Ì¿Í °ü½ÉÀÌ ÀÖ¾ú±â ¶§¹®ÀÔ´Ï´Ù. 
+´ëÇÐ¿¡¼­ °Ç¼³°øÇÐÀ» Àü°øÇÏ¸é¼­ ´Ù¾çÇÑ ÇÁ·ÎÁ§Æ®¿¡ Âü¿©ÇÏ¸ç ÇöÀå °æÇèÀ» ½×¾Ò½À´Ï´Ù. 
+ÀÌ¸¦ ÅëÇØ °ÇÃà¹°À» ¼¼¿ì´Â °úÁ¤¿¡¼­ÀÇ µµÀü°ú ¼ºÃë¸¦ Ã¼ÇèÇÏ°Ô µÇ¾ú°í, 
+ÀÌ·¯ÇÑ °æÇèÀ» Åä´ë·Î ¹Ì·¡ÀÇ °Ç¼³ ÇÁ·ÎÁ§Æ®¿¡ ±â¿©ÇÏ°í ½Í½À´Ï´Ù.'
+, '°Ç¼³ ºÐ¾ß¿¡¼­ ÀÏÇÏ°í ½ÍÀº ÀÌÀ¯´Â »õ·Î¿î µµÀü°ú ¼ºÀåÀÇ ±âÈ¸¸¦ Ã£°í ÀÖ±â ¶§¹®ÀÔ´Ï´Ù. 
+Ç×»ó »õ·Î¿î ±â¼ú°ú Æ®·»µå¸¦ ÁÖ½ÃÇÏ¸ç, ±×°ÍÀ» ½Ç¹«¿¡ Àû¿ëÇÏ¿© ÇÁ·ÎÁ§Æ®¸¦ ¼º°øÀûÀ¸·Î ÀÌ²ø¾î³»´Â °ÍÀÌ ¸ñÇ¥ÀÔ´Ï´Ù. 
+Æ¯È÷, ÆÀ¿øµé°úÀÇ Çù¾÷°ú ¼ÒÅëÀ» ÅëÇØ È¿°úÀûÀÎ ÇÁ·ÎÁ§Æ® ½ÇÇà¿¡ ±â¿©ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
+, '¼º°ÝÀÇ Àå´ÜÁ¡À¸·Î´Â ²ö±â ÀÖ°í Çùµ¿½ÉÀÌ °­ÇÏ´Ù´Â Á¡ÀÔ´Ï´Ù. 
+¾î¶² ¾î·Á¿î °úÁ¦¶óµµ ²ÙÁØÇÑ ³ë·Â°ú Çù·ÂÀ» ÅëÇØ ÇØ°áÇØ ³ª°¡´Â °ÍÀ» Áñ±é´Ï´Ù. 
+ÇÏÁö¸¸ ¶§·Î´Â ÀÏ¿¡ ¸ôµÎÇÏ´Ù º¸¸é ¼¼ºÎ »çÇ×À» °£°úÇÒ ¶§°¡ ÀÖ´Âµ¥, 
+ÀÌ¸¦ ±Øº¹ÇÏ±â À§ÇØ Ç×»ó ÁÖº¯ÀÇ ÀÇ°ßÀ» ¼ö·ÅÇÏ·Á°í ³ë·ÂÇÕ´Ï´Ù.'
+, '°Ç¼³»ç¿¡¼­´Â ¾ÈÀüÇÏ°í È¿À²ÀûÀÎ °Ç¼³ ÇÁ·ÎÁ§Æ®¸¦ ¼º°øÀûÀ¸·Î ÀÌ²ø¾î³»°í, 
+ÃÖ½Å ±â¼úÀ» È°¿ëÇÏ¿© ÇöÀå¿¡¼­ÀÇ ¾÷¹«¸¦ Çâ»ó½ÃÅ°´Â ÀÏ¿¡ Àü³äÇÏ°í ½Í½À´Ï´Ù.'
 , 156);
 
--- ì—ë„ˆì§€ê°œë°œì— ëŒ€í•œ ë”ë¯¸ ë°ì´í„°
+-- ¿¡³ÊÁö°³¹ß¿¡ ´ëÇÑ ´õ¹Ì µ¥ÀÌÅÍ
 INSERT INTO LETTER (LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION, LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
 VALUES
 (LETTER_NUMBER_SEQ.NEXTVAL
-, 'ì—ë„ˆì§€ê°œë°œ ë¶„ì•¼ì— í¥ë¯¸ë¥¼ ëŠë¼ê²Œ ëœ ê³„ê¸°ëŠ” ì§€ì† ê°€ëŠ¥í•œ ì—ë„ˆì§€ ì†”ë£¨ì…˜ì— ëŒ€í•œ ì „ì„¸ê³„ì ì¸ ê´€ì‹¬ì´ ë†’ì•„ì§€ë©´ì„œì˜€ìŠµë‹ˆë‹¤. 
-ëŒ€í•™ì—ì„œ í™”í•™ê³µí•™ì„ ì „ê³µí•˜ë©´ì„œ í™”ì„ì—°ë£Œ ëŒ€ì‹  ì‹ ìž¬ìƒ ì—ë„ˆì§€ì— ëŒ€í•œ ì—°êµ¬ì— ì°¸ì—¬í•˜ë©´ì„œ ì§€êµ¬ í™˜ê²½ì— ëŒ€í•œ ì±…ìž„ê°ì„ ëŠê¼ˆìŠµë‹ˆë‹¤. 
-ì—ë„ˆì§€ ë¶„ì•¼ì—ì„œ ì¼í•¨ìœ¼ë¡œì¨ ë¯¸ëž˜ë¥¼ ìœ„í•œ ì§€ì† ê°€ëŠ¥í•œ ì†”ë£¨ì…˜ì„ ì°¾ê³  ê°œë°œí•˜ëŠ”ë° ê¸°ì—¬í•˜ê³ ìž í•©ë‹ˆë‹¤.'
-, 'ì—ë„ˆì§€ê°œë°œ ë¶„ì•¼ì— ì§€ì›í•˜ëŠ” ë™ê¸°ëŠ” ì§€ì† ê°€ëŠ¥í•œ ì—ë„ˆì§€ ì†”ë£¨ì…˜ì„ ê°œë°œí•˜ê³  ì„¸ê³„ì ì¸ í™˜ê²½ ë¬¸ì œì— ëŒ€í•œ í•´ê²°ì±…ì„ ì°¾ê¸° ìœ„í•¨ìž…ë‹ˆë‹¤. 
-í•­ìƒ ìµœì‹  ê¸°ìˆ ê³¼ ì—°êµ¬ ë™í–¥ì„ ì£¼ì‹œí•˜ë©°, ì´ë¥¼ í™œìš©í•˜ì—¬ í˜„ìž¥ì—ì„œ ì‹¤ì§ˆì ì¸ í•´ê²°ì±…ì„ ì°¾ì•„ë‚´ëŠ” ê²ƒì´ ëª©í‘œìž…ë‹ˆë‹¤. 
-ë˜í•œ íŒ€ì›ë“¤ê³¼ì˜ í˜‘ì—…ì„ í†µí•´ í˜ì‹ ì ì´ê³  íš¨ê³¼ì ì¸ í”„ë¡œì íŠ¸ë¥¼ ì´ëŒì–´ë‚´ê³  ì‹¶ìŠµë‹ˆë‹¤.'
-, 'ì„±ê²©ì˜ ìž¥ì ìœ¼ë¡œëŠ” ì°½ì˜ì ì´ê³  ë¬¸ì œ í•´ê²°ì— ëŒ€í•œ ì—´ì •ì´ ìžˆìŠµë‹ˆë‹¤. 
-ìƒˆë¡œìš´ ì•„ì´ë””ì–´ë¥¼ ì ê·¹ì ìœ¼ë¡œ ë°›ì•„ë“¤ì´ë©°, 
-ì£¼ì–´ì§„ ë¬¸ì œì— ëŒ€í•œ í•´ê²°ì±…ì„ ì°¾ëŠ” ê³¼ì •ì—ì„œ ë³´ëžŒì„ ëŠë‚ë‹ˆë‹¤. 
-ê·¸ëŸ¬ë‚˜ ë•Œë¡œëŠ” ê³ ì§‘ìŠ¤ëŸ¬ì›€ì´ ë¶€ì •ì ìœ¼ë¡œ ìž‘ìš©í•  ë•Œê°€ ìžˆëŠ”ë°, 
-ì´ë¥¼ ê·¹ë³µí•˜ê¸° ìœ„í•´ ë‹¤ì–‘í•œ ì˜ê²¬ì„ ìˆ˜ìš©í•˜ë ¤ê³  ë…¸ë ¥í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, 'ì—ë„ˆì§€ê°œë°œ ë¶„ì•¼ì—ì„œëŠ” ì§€ì† ê°€ëŠ¥í•œ ì†”ë£¨ì…˜ì„ ê°œë°œí•˜ê³ , 
-í˜„ìž¥ì—ì„œì˜ ì—ë„ˆì§€ í”„ë¡œì íŠ¸ë¥¼ ì„±ê³µì ìœ¼ë¡œ ì´ëŒì–´ë‚´ë©°, 
-ìƒˆë¡œìš´ ê¸°ìˆ ì„ ì ê·¹ì ìœ¼ë¡œ ì ìš©í•˜ì—¬ ë” ë‚˜ì€ ë¯¸ëž˜ë¥¼ ìœ„í•œ ê¸°ì—¬ë¥¼ í•˜ê³  ì‹¶ìŠµë‹ˆë‹¤.'
+, '¿¡³ÊÁö°³¹ß ºÐ¾ß¿¡ Èï¹Ì¸¦ ´À³¢°Ô µÈ °è±â´Â Áö¼Ó °¡´ÉÇÑ ¿¡³ÊÁö ¼Ö·ç¼Ç¿¡ ´ëÇÑ Àü¼¼°èÀûÀÎ °ü½ÉÀÌ ³ô¾ÆÁö¸é¼­¿´½À´Ï´Ù. 
+´ëÇÐ¿¡¼­ È­ÇÐ°øÇÐÀ» Àü°øÇÏ¸é¼­ È­¼®¿¬·á ´ë½Å ½ÅÀç»ý ¿¡³ÊÁö¿¡ ´ëÇÑ ¿¬±¸¿¡ Âü¿©ÇÏ¸é¼­ Áö±¸ È¯°æ¿¡ ´ëÇÑ Ã¥ÀÓ°¨À» ´À²¼½À´Ï´Ù. 
+¿¡³ÊÁö ºÐ¾ß¿¡¼­ ÀÏÇÔÀ¸·Î½á ¹Ì·¡¸¦ À§ÇÑ Áö¼Ó °¡´ÉÇÑ ¼Ö·ç¼ÇÀ» Ã£°í °³¹ßÇÏ´Âµ¥ ±â¿©ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
+, '¿¡³ÊÁö°³¹ß ºÐ¾ß¿¡ Áö¿øÇÏ´Â µ¿±â´Â Áö¼Ó °¡´ÉÇÑ ¿¡³ÊÁö ¼Ö·ç¼ÇÀ» °³¹ßÇÏ°í ¼¼°èÀûÀÎ È¯°æ ¹®Á¦¿¡ ´ëÇÑ ÇØ°áÃ¥À» Ã£±â À§ÇÔÀÔ´Ï´Ù. 
+Ç×»ó ÃÖ½Å ±â¼ú°ú ¿¬±¸ µ¿ÇâÀ» ÁÖ½ÃÇÏ¸ç, ÀÌ¸¦ È°¿ëÇÏ¿© ÇöÀå¿¡¼­ ½ÇÁúÀûÀÎ ÇØ°áÃ¥À» Ã£¾Æ³»´Â °ÍÀÌ ¸ñÇ¥ÀÔ´Ï´Ù. 
+¶ÇÇÑ ÆÀ¿øµé°úÀÇ Çù¾÷À» ÅëÇØ Çõ½ÅÀûÀÌ°í È¿°úÀûÀÎ ÇÁ·ÎÁ§Æ®¸¦ ÀÌ²ø¾î³»°í ½Í½À´Ï´Ù.'
+, '¼º°ÝÀÇ ÀåÁ¡À¸·Î´Â Ã¢ÀÇÀûÀÌ°í ¹®Á¦ ÇØ°á¿¡ ´ëÇÑ ¿­Á¤ÀÌ ÀÖ½À´Ï´Ù. 
+»õ·Î¿î ¾ÆÀÌµð¾î¸¦ Àû±ØÀûÀ¸·Î ¹Þ¾ÆµéÀÌ¸ç, 
+ÁÖ¾îÁø ¹®Á¦¿¡ ´ëÇÑ ÇØ°áÃ¥À» Ã£´Â °úÁ¤¿¡¼­ º¸¶÷À» ´À³§´Ï´Ù. 
+±×·¯³ª ¶§·Î´Â °íÁý½º·¯¿òÀÌ ºÎÁ¤ÀûÀ¸·Î ÀÛ¿ëÇÒ ¶§°¡ ÀÖ´Âµ¥, 
+ÀÌ¸¦ ±Øº¹ÇÏ±â À§ÇØ ´Ù¾çÇÑ ÀÇ°ßÀ» ¼ö¿ëÇÏ·Á°í ³ë·ÂÇÏ°í ÀÖ½À´Ï´Ù.'
+, '¿¡³ÊÁö°³¹ß ºÐ¾ß¿¡¼­´Â Áö¼Ó °¡´ÉÇÑ ¼Ö·ç¼ÇÀ» °³¹ßÇÏ°í, 
+ÇöÀå¿¡¼­ÀÇ ¿¡³ÊÁö ÇÁ·ÎÁ§Æ®¸¦ ¼º°øÀûÀ¸·Î ÀÌ²ø¾î³»¸ç, 
+»õ·Î¿î ±â¼úÀ» Àû±ØÀûÀ¸·Î Àû¿ëÇÏ¿© ´õ ³ªÀº ¹Ì·¡¸¦ À§ÇÑ ±â¿©¸¦ ÇÏ°í ½Í½À´Ï´Ù.'
 , 162);
 
--- í™”í•™ì— ëŒ€í•œ ë”ë¯¸ ë°ì´í„°
+-- È­ÇÐ¿¡ ´ëÇÑ ´õ¹Ì µ¥ÀÌÅÍ
 INSERT INTO LETTER (LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION, LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
 VALUES
 (LETTER_NUMBER_SEQ.NEXTVAL
-, 'í™”í•™ ë¶„ì•¼ì— ëŒ€í•œ í¥ë¯¸ëŠ” ì–´ë¦´ ì ë¶€í„° ì‹œìž‘ë˜ì—ˆìŠµë‹ˆë‹¤. 
-ì‹¤í—˜ê³¼ ë°œê²¬ì˜ ì¦ê±°ì›€ì„ ê²½í—˜í•˜ë©°, ëŒ€í•™ì—ì„œ í™”í•™ì„ ì „ê³µí•˜ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. 
-í™”í•™ì€ ìš°ë¦¬ ì¼ìƒ ì†ì— ê¹Šìˆ™ì´ ê´€ì—¬í•˜ê³  ìžˆìœ¼ë©°, 
-ì´ë¥¼ í†µí•´ ìƒˆë¡œìš´ ë¬¼ì§ˆì„ ì°½ì¶œí•˜ëŠ” ê²ƒì— ëŒ€í•œ ì—´ì •ì´ ìžˆìŠµë‹ˆë‹¤. 
-í™”í•™ ë¶„ì•¼ì—ì„œëŠ” ì´ëŸ¬í•œ ì—´ì •ì„ ë°”íƒ•ìœ¼ë¡œ ìƒˆë¡œìš´ ì†Œìž¬ ë° ì œí’ˆ ê°œë°œì— ê¸°ì—¬í•˜ê³  ì‹¶ìŠµë‹ˆë‹¤.'
-, 'í™”í•™ ë¶„ì•¼ì— ì§€ì›í•˜ëŠ” ë™ê¸°ëŠ” ì°½ì˜ì ì¸ í™”í•™ì  í•´ê²°ì±…ì„ ì°¾ê³ , 
-ì‹¤ì œë¡œ ì‚°ì—… ë° ì œí’ˆì— ì ìš©í•˜ì—¬ í˜ì‹ ì ì¸ ê²°ê³¼ë¬¼ì„ ë§Œë“¤ê³  ì‹¶ê¸° ë•Œë¬¸ìž…ë‹ˆë‹¤. 
-í•­ìƒ ì‹¤í—˜ì ì¸ ì ‘ê·¼ê³¼ ì²´ê³„ì ì¸ ì—°êµ¬ë¥¼ í†µí•´ ìƒˆë¡œìš´ ê¸°ìˆ ê³¼ ë¬¼ì§ˆì„ ê°œë°œí•˜ëŠ” ê²ƒì— ê´€ì‹¬ì´ ìžˆìœ¼ë©°, 
-ì´ë¥¼ í†µí•´ í™”í•™ ë¶„ì•¼ì—ì„œ ì„±ìž¥í•˜ê³  ì‹¶ìŠµë‹ˆë‹¤.'
-, 'ì„±ê²©ì˜ ìž¥ì ìœ¼ë¡œëŠ” ê¾¸ì¤€í•˜ê³  ì‹¤í—˜ì ì¸ ì‚¬ê³  ë°©ì‹ì´ ìžˆìŠµë‹ˆë‹¤. 
-ì–´ë ¤ìš´ ë¬¸ì œì— ëŒ€í•œ í•´ê²°ì±…ì„ ì°¾ê¸° ìœ„í•´ ëŠìž„ì—†ì´ ì‹¤í—˜í•˜ê³  ì¡°ì‚¬í•˜ëŠ” ê²ƒì„ ì¦ê¹ë‹ˆë‹¤. 
-ê·¸ëŸ¬ë‚˜ ë•Œë¡œëŠ” ê³¼ë„í•œ ì‹¤í—˜ì— ì‹œê°„ì„ ì†Œë¹„í•  ë•Œê°€ ìžˆëŠ”ë°, 
-ì´ë¥¼ ê·¹ë³µí•˜ê¸° ìœ„í•´ íš¨ê³¼ì ì¸ ê³„íšê³¼ ì¼ì • ê´€ë¦¬ì— ë…¸ë ¥í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, 'í™”í•™ ë¶„ì•¼ì—ì„œëŠ” ìƒˆë¡œìš´ ë¬¼ì§ˆ ë° ì†Œìž¬ë¥¼ ê°œë°œí•˜ê³ , 
-ì´ë¥¼ ì‚°ì—… ë° ì œí’ˆì— ì ìš©í•˜ì—¬ í˜ì‹ ì ì¸ ê²°ê³¼ë¬¼ì„ ì°½ì¶œí•˜ë©°, 
-ì§€ì† ê°€ëŠ¥í•œ í™”í•™ ê¸°ìˆ ì— ê¸°ì—¬í•˜ê³  ì‹¶ìŠµë‹ˆë‹¤.'
+, 'È­ÇÐ ºÐ¾ß¿¡ ´ëÇÑ Èï¹Ì´Â ¾î¸± ÀûºÎÅÍ ½ÃÀÛµÇ¾ú½À´Ï´Ù. 
+½ÇÇè°ú ¹ß°ßÀÇ Áñ°Å¿òÀ» °æÇèÇÏ¸ç, ´ëÇÐ¿¡¼­ È­ÇÐÀ» Àü°øÇÏ°Ô µÇ¾ú½À´Ï´Ù. 
+È­ÇÐÀº ¿ì¸® ÀÏ»ó ¼Ó¿¡ ±í¼÷ÀÌ °ü¿©ÇÏ°í ÀÖÀ¸¸ç, 
+ÀÌ¸¦ ÅëÇØ »õ·Î¿î ¹°ÁúÀ» Ã¢ÃâÇÏ´Â °Í¿¡ ´ëÇÑ ¿­Á¤ÀÌ ÀÖ½À´Ï´Ù. 
+È­ÇÐ ºÐ¾ß¿¡¼­´Â ÀÌ·¯ÇÑ ¿­Á¤À» ¹ÙÅÁÀ¸·Î »õ·Î¿î ¼ÒÀç ¹× Á¦Ç° °³¹ß¿¡ ±â¿©ÇÏ°í ½Í½À´Ï´Ù.'
+, 'È­ÇÐ ºÐ¾ß¿¡ Áö¿øÇÏ´Â µ¿±â´Â Ã¢ÀÇÀûÀÎ È­ÇÐÀû ÇØ°áÃ¥À» Ã£°í, 
+½ÇÁ¦·Î »ê¾÷ ¹× Á¦Ç°¿¡ Àû¿ëÇÏ¿© Çõ½ÅÀûÀÎ °á°ú¹°À» ¸¸µé°í ½Í±â ¶§¹®ÀÔ´Ï´Ù. 
+Ç×»ó ½ÇÇèÀûÀÎ Á¢±Ù°ú Ã¼°èÀûÀÎ ¿¬±¸¸¦ ÅëÇØ »õ·Î¿î ±â¼ú°ú ¹°ÁúÀ» °³¹ßÇÏ´Â °Í¿¡ °ü½ÉÀÌ ÀÖÀ¸¸ç, 
+ÀÌ¸¦ ÅëÇØ È­ÇÐ ºÐ¾ß¿¡¼­ ¼ºÀåÇÏ°í ½Í½À´Ï´Ù.'
+, '¼º°ÝÀÇ ÀåÁ¡À¸·Î´Â ²ÙÁØÇÏ°í ½ÇÇèÀûÀÎ »ç°í ¹æ½ÄÀÌ ÀÖ½À´Ï´Ù. 
+¾î·Á¿î ¹®Á¦¿¡ ´ëÇÑ ÇØ°áÃ¥À» Ã£±â À§ÇØ ²÷ÀÓ¾øÀÌ ½ÇÇèÇÏ°í Á¶»çÇÏ´Â °ÍÀ» Áñ±é´Ï´Ù. 
+±×·¯³ª ¶§·Î´Â °úµµÇÑ ½ÇÇè¿¡ ½Ã°£À» ¼ÒºñÇÒ ¶§°¡ ÀÖ´Âµ¥, 
+ÀÌ¸¦ ±Øº¹ÇÏ±â À§ÇØ È¿°úÀûÀÎ °èÈ¹°ú ÀÏÁ¤ °ü¸®¿¡ ³ë·ÂÇÏ°í ÀÖ½À´Ï´Ù.'
+, 'È­ÇÐ ºÐ¾ß¿¡¼­´Â »õ·Î¿î ¹°Áú ¹× ¼ÒÀç¸¦ °³¹ßÇÏ°í, 
+ÀÌ¸¦ »ê¾÷ ¹× Á¦Ç°¿¡ Àû¿ëÇÏ¿© Çõ½ÅÀûÀÎ °á°ú¹°À» Ã¢ÃâÇÏ¸ç, 
+Áö¼Ó °¡´ÉÇÑ È­ÇÐ ±â¼ú¿¡ ±â¿©ÇÏ°í ½Í½À´Ï´Ù.'
 , 171);
 
--- ë¬´ì—­ì— ëŒ€í•œ ë”ë¯¸ ë°ì´í„°
+-- ¹«¿ª¿¡ ´ëÇÑ ´õ¹Ì µ¥ÀÌÅÍ
 INSERT INTO LETTER (LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION, LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
 VALUES
 (LETTER_NUMBER_SEQ.NEXTVAL
-, 'ë¬´ì—­ ë¶„ì•¼ì—ì„œì˜ ê²½í—˜ì´ ë¹„ì¦ˆë‹ˆìŠ¤ì™€ êµ­ì œ ê´€ê³„ì— ëŒ€í•œ í¥ë¯¸ë¥¼ í‚¤ìš°ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. 
-ë‹¤ì–‘í•œ êµ­ê°€ì™€ ë¬¸í™” ê°„ì˜ ê±°ëž˜ì™€ í˜‘ìƒì€ ë§¤ë ¥ì ìœ¼ë¡œ ë‹¤ê°€ì™”ê³ , 
-ëŒ€í•™ì—ì„œ êµ­ì œë¬´ì—­ì„ ì „ê³µí•˜ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤. 
-ë¬´ì—­ ë¶„ì•¼ì—ì„œëŠ” ê¸€ë¡œë²Œ ì‹œìž¥ì—ì„œì˜ ê²½ìŸê³¼ í˜‘ì—…ì— ì°¸ì—¬í•˜ë©°, 
-ë‹¤ì–‘í•œ ë¹„ì¦ˆë‹ˆìŠ¤ ëª¨ë¸ì„ ì´í•´í•˜ê³ ìž í•©ë‹ˆë‹¤.'
-, 'ë¬´ì—­ ë¶„ì•¼ì— ìž…ì‚¬í•˜ê³  ì‹¶ì€ ë™ê¸°ëŠ” êµ­ì œì ì¸ ë¹„ì¦ˆë‹ˆìŠ¤ í™˜ê²½ì—ì„œ ë‹¤ì–‘í•œ ê²½í—˜ì„ ìŒ“ê³ , 
-ë‹¤ë¬¸í™” í™˜ê²½ì—ì„œì˜ ë¬´ì—­ ê±°ëž˜ ë° í˜‘ìƒ ëŠ¥ë ¥ì„ í–¥ìƒì‹œí‚¤ê¸° ìœ„í•¨ìž…ë‹ˆë‹¤. 
-í•­ìƒ ê¸€ë¡œë²Œ ì‹œìž¥ ë™í–¥ì„ ì£¼ì‹œí•˜ë©°, ê·¸ì— ë”°ë¥¸ ë¹„ì¦ˆë‹ˆìŠ¤ ì „ëžµì„ ì„¸ìš°ê³  ì‹¤í–‰í•˜ëŠ” ê²ƒì´ ëª©í‘œìž…ë‹ˆë‹¤. 
-ë˜í•œ íŒ€ì›ë“¤ê³¼ì˜ í˜‘ì—…ì„ í†µí•´ ê¸€ë¡œë²Œ ë¹„ì¦ˆë‹ˆìŠ¤ì—ì„œì˜ ì„±ê³¼ë¥¼ ì°½ì¶œí•˜ê³ ìž í•©ë‹ˆë‹¤.'
-, 'ì„±ê²©ì˜ ìž¥ì ìœ¼ë¡œëŠ” ê¸ì •ì ì´ê³  ëŒ€ì¸ ê´€ê³„ í˜•ì„±ì— ëŠ¥ìˆ™í•©ë‹ˆë‹¤. 
-ìƒˆë¡œìš´ ì‚¬ëžŒë“¤ê³¼ì˜ ì†Œí†µì„ ì¦ê¸°ë©°, ë¬¸ì œ ìƒí™©ì—ì„œë„ ë‚™ê´€ì ìœ¼ë¡œ í•´ê²°ì±…ì„ ì°¾ëŠ” ê²ƒì„ ì„ í˜¸í•©ë‹ˆë‹¤. 
-ê·¸ëŸ¬ë‚˜ ë•Œë¡œëŠ” ë„ˆë¬´ ë‚™ê´€ì ìœ¼ë¡œë§Œ ë³´ëŠ” ê²½í–¥ì´ ìžˆì–´, 
-í˜„ì‹¤ì ì¸ ê³„íšê³¼ ëŒ€ë¹„ì±…ì„ ê°•ì¡°í•˜ë ¤ê³  ë…¸ë ¥í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, 'ë¬´ì—­ ë¶„ì•¼ì—ì„œëŠ” ê¸€ë¡œë²Œ ì‹œìž¥ ë™í–¥ì„ ì£¼ì‹œí•˜ë©°, 
-ë‹¤ì–‘í•œ êµ­ê°€ì™€ì˜ ê±°ëž˜ ë° í˜‘ìƒì„ í†µí•´ ë¹„ì¦ˆë‹ˆìŠ¤ ì˜í–¥ë ¥ì„ í™•ëŒ€í•˜ê³ , 
-íŒ€ì›ë“¤ê³¼ì˜ í˜‘ì—…ì„ í†µí•´ ê¸€ë¡œë²Œ ë¹„ì¦ˆë‹ˆìŠ¤ì—ì„œì˜ ì„±ê³¼ë¥¼ ì°½ì¶œí•˜ê³  ì‹¶ìŠµë‹ˆë‹¤.'
+, '¹«¿ª ºÐ¾ß¿¡¼­ÀÇ °æÇèÀÌ ºñÁî´Ï½º¿Í ±¹Á¦ °ü°è¿¡ ´ëÇÑ Èï¹Ì¸¦ Å°¿ì°Ô µÇ¾ú½À´Ï´Ù. 
+´Ù¾çÇÑ ±¹°¡¿Í ¹®È­ °£ÀÇ °Å·¡¿Í Çù»óÀº ¸Å·ÂÀûÀ¸·Î ´Ù°¡¿Ô°í, 
+´ëÇÐ¿¡¼­ ±¹Á¦¹«¿ªÀ» Àü°øÇÏ°Ô µÇ¾ú½À´Ï´Ù. 
+¹«¿ª ºÐ¾ß¿¡¼­´Â ±Û·Î¹ú ½ÃÀå¿¡¼­ÀÇ °æÀï°ú Çù¾÷¿¡ Âü¿©ÇÏ¸ç, 
+´Ù¾çÇÑ ºñÁî´Ï½º ¸ðµ¨À» ÀÌÇØÇÏ°íÀÚ ÇÕ´Ï´Ù.'
+, '¹«¿ª ºÐ¾ß¿¡ ÀÔ»çÇÏ°í ½ÍÀº µ¿±â´Â ±¹Á¦ÀûÀÎ ºñÁî´Ï½º È¯°æ¿¡¼­ ´Ù¾çÇÑ °æÇèÀ» ½×°í, 
+´Ù¹®È­ È¯°æ¿¡¼­ÀÇ ¹«¿ª °Å·¡ ¹× Çù»ó ´É·ÂÀ» Çâ»ó½ÃÅ°±â À§ÇÔÀÔ´Ï´Ù. 
+Ç×»ó ±Û·Î¹ú ½ÃÀå µ¿ÇâÀ» ÁÖ½ÃÇÏ¸ç, ±×¿¡ µû¸¥ ºñÁî´Ï½º Àü·«À» ¼¼¿ì°í ½ÇÇàÇÏ´Â °ÍÀÌ ¸ñÇ¥ÀÔ´Ï´Ù. 
+¶ÇÇÑ ÆÀ¿øµé°úÀÇ Çù¾÷À» ÅëÇØ ±Û·Î¹ú ºñÁî´Ï½º¿¡¼­ÀÇ ¼º°ú¸¦ Ã¢ÃâÇÏ°íÀÚ ÇÕ´Ï´Ù.'
+, '¼º°ÝÀÇ ÀåÁ¡À¸·Î´Â ±àÁ¤ÀûÀÌ°í ´ëÀÎ °ü°è Çü¼º¿¡ ´É¼÷ÇÕ´Ï´Ù. 
+»õ·Î¿î »ç¶÷µé°úÀÇ ¼ÒÅëÀ» Áñ±â¸ç, ¹®Á¦ »óÈ²¿¡¼­µµ ³«°üÀûÀ¸·Î ÇØ°áÃ¥À» Ã£´Â °ÍÀ» ¼±È£ÇÕ´Ï´Ù. 
+±×·¯³ª ¶§·Î´Â ³Ê¹« ³«°üÀûÀ¸·Î¸¸ º¸´Â °æÇâÀÌ ÀÖ¾î, 
+Çö½ÇÀûÀÎ °èÈ¹°ú ´ëºñÃ¥À» °­Á¶ÇÏ·Á°í ³ë·ÂÇÏ°í ÀÖ½À´Ï´Ù.'
+, '¹«¿ª ºÐ¾ß¿¡¼­´Â ±Û·Î¹ú ½ÃÀå µ¿ÇâÀ» ÁÖ½ÃÇÏ¸ç, 
+´Ù¾çÇÑ ±¹°¡¿ÍÀÇ °Å·¡ ¹× Çù»óÀ» ÅëÇØ ºñÁî´Ï½º ¿µÇâ·ÂÀ» È®´ëÇÏ°í, 
+ÆÀ¿øµé°úÀÇ Çù¾÷À» ÅëÇØ ±Û·Î¹ú ºñÁî´Ï½º¿¡¼­ÀÇ ¼º°ú¸¦ Ã¢ÃâÇÏ°í ½Í½À´Ï´Ù.'
 , 181);
 
--- ê¸ˆìœµì— ëŒ€í•œ ë”ë¯¸ ë°ì´í„°
+-- ±ÝÀ¶¿¡ ´ëÇÑ ´õ¹Ì µ¥ÀÌÅÍ
 INSERT INTO LETTER (LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION, LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
 VALUES
 (LETTER_NUMBER_SEQ.NEXTVAL
-, 'ê¸ˆìœµ ë¶„ì•¼ì—ì„œì˜ ê²½í—˜ì€ ê¸ˆìœµ ì‹œìŠ¤í…œê³¼ ë¹„ì¦ˆë‹ˆìŠ¤ ì „ëžµì— ëŒ€í•œ ë†’ì€ í¥ë¯¸ë¥¼ ê°€ì§€ê²Œ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. 
-ëŒ€í•™ì—ì„œ ê¸ˆìœµí•™ì„ ì „ê³µí•˜ë©´ì„œ ê¸ˆìœµ ì‹œìž¥ì˜ ë‹¤ì–‘í•œ ì¸¡ë©´ì„ íƒêµ¬í•˜ê³ , 
-ì‹¤ë¬´ì—ì„œëŠ” ê¸ˆìœµ ìƒí’ˆ ê°œë°œê³¼ íˆ¬ìž ì „ëžµ ìˆ˜ë¦½ì— ì°¸ì—¬í•˜ë©° ì‹¤ì „ ê²½í—˜ì„ ìŒ“ì•˜ìŠµë‹ˆë‹¤. 
-ê¸ˆìœµ ë¶„ì•¼ì—ì„œëŠ” ê³ ê°ë“¤ì˜ ê¸ˆìœµ ëª©í‘œë¥¼ ë‹¬ì„±í•˜ëŠ” ë° ê¸°ì—¬í•˜ê³  ì‹¶ìŠµë‹ˆë‹¤.'
-, 'ê¸ˆìœµ ë¶„ì•¼ì— ì§€ì›í•˜ëŠ” ë™ê¸°ëŠ” í˜„ëŒ€ ì‚¬íšŒì—ì„œ ê¸ˆìœµì´ ì–¼ë§ˆë‚˜ ì¤‘ìš”í•œ ì—­í• ì„ í•˜ëŠ”ì§€ë¥¼ ì´í•´í•˜ê³ , 
-ì´ë¥¼ í†µí•´ ê³ ê°ì—ê²Œ ê°€ì¹˜ ìžˆëŠ” ê¸ˆìœµ ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ê³ ìž í•¨ì— ìžˆìŠµë‹ˆë‹¤. 
-í•­ìƒ ê¸ˆìœµ ì‹œìž¥ì˜ ë™í–¥ì„ íŒŒì•…í•˜ê³ , 
-ì´ì— ë”°ë¥¸ íˆ¬ìž ì „ëžµ ë° ê¸ˆìœµ ìƒí’ˆì„ ê°œë°œí•˜ì—¬ ê³ ê°ì˜ ê¸°ëŒ€ë¥¼ ì´ˆê³¼í•˜ëŠ” ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ëŠ” ê²ƒì´ ëª©í‘œìž…ë‹ˆë‹¤.'
-, 'ì„±ê²©ì˜ ìž¥ì ìœ¼ë¡œëŠ” ë¶„ì„ì ì´ê³  ë¬¸ì œ í•´ê²°ì— ëŒ€í•œ ë›°ì–´ë‚œ ëŠ¥ë ¥ì´ ìžˆìŠµë‹ˆë‹¤. 
-ê¸ˆìœµ ì‹œìž¥ì˜ ë³µìž¡í•œ ë™í–¥ì„ ë¶„ì„í•˜ê³ , ê³ ê°ë“¤ì˜ ê¸ˆìœµ ëª©í‘œë¥¼ íŒŒì•…í•˜ì—¬ ìµœì ì˜ ì†”ë£¨ì…˜ì„ ì œê³µí•˜ëŠ” ê²ƒì„ ì¦ê¹ë‹ˆë‹¤. 
-í•˜ì§€ë§Œ ë•Œë¡œëŠ” ê³¼ë„í•œ ë¶„ì„ì— ë¹ ì ¸ ì‹œê°„ì„ ë‚­ë¹„í•˜ëŠ” ê²½í–¥ì´ ìžˆì–´, 
-íš¨ìœ¨ì ì¸ ì—…ë¬´ ì²˜ë¦¬ë¥¼ ìœ„í•´ ë…¸ë ¥í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'
-, 'ê¸ˆìœµ ë¶„ì•¼ì—ì„œëŠ” ê¸ˆìœµ ì‹œìž¥ ë™í–¥ì„ íŒŒì•…í•˜ë©°, 
-í˜ì‹ ì ì¸ ê¸ˆìœµ ìƒí’ˆ ë° ì„œë¹„ìŠ¤ë¥¼ ê°œë°œí•˜ì—¬ ê³ ê°ì—ê²Œ ê°€ì¹˜ë¥¼ ì œê³µí•˜ê³ , 
-íŒ€ì›ë“¤ê³¼ì˜ í˜‘ì—…ì„ í†µí•´ ê¸ˆìœµ ë¶„ì•¼ì—ì„œì˜ ì„±ê³¼ë¥¼ ì°½ì¶œí•˜ê³  ì‹¶ìŠµë‹ˆë‹¤.'
+, '±ÝÀ¶ ºÐ¾ß¿¡¼­ÀÇ °æÇèÀº ±ÝÀ¶ ½Ã½ºÅÛ°ú ºñÁî´Ï½º Àü·«¿¡ ´ëÇÑ ³ôÀº Èï¹Ì¸¦ °¡Áö°Ô ¸¸µé¾ú½À´Ï´Ù. 
+´ëÇÐ¿¡¼­ ±ÝÀ¶ÇÐÀ» Àü°øÇÏ¸é¼­ ±ÝÀ¶ ½ÃÀåÀÇ ´Ù¾çÇÑ Ãø¸éÀ» Å½±¸ÇÏ°í, 
+½Ç¹«¿¡¼­´Â ±ÝÀ¶ »óÇ° °³¹ß°ú ÅõÀÚ Àü·« ¼ö¸³¿¡ Âü¿©ÇÏ¸ç ½ÇÀü °æÇèÀ» ½×¾Ò½À´Ï´Ù. 
+±ÝÀ¶ ºÐ¾ß¿¡¼­´Â °í°´µéÀÇ ±ÝÀ¶ ¸ñÇ¥¸¦ ´Þ¼ºÇÏ´Â µ¥ ±â¿©ÇÏ°í ½Í½À´Ï´Ù.'
+, '±ÝÀ¶ ºÐ¾ß¿¡ Áö¿øÇÏ´Â µ¿±â´Â Çö´ë »çÈ¸¿¡¼­ ±ÝÀ¶ÀÌ ¾ó¸¶³ª Áß¿äÇÑ ¿ªÇÒÀ» ÇÏ´ÂÁö¸¦ ÀÌÇØÇÏ°í, 
+ÀÌ¸¦ ÅëÇØ °í°´¿¡°Ô °¡Ä¡ ÀÖ´Â ±ÝÀ¶ ¼­ºñ½º¸¦ Á¦°øÇÏ°íÀÚ ÇÔ¿¡ ÀÖ½À´Ï´Ù. 
+Ç×»ó ±ÝÀ¶ ½ÃÀåÀÇ µ¿ÇâÀ» ÆÄ¾ÇÇÏ°í, 
+ÀÌ¿¡ µû¸¥ ÅõÀÚ Àü·« ¹× ±ÝÀ¶ »óÇ°À» °³¹ßÇÏ¿© °í°´ÀÇ ±â´ë¸¦ ÃÊ°úÇÏ´Â ¼­ºñ½º¸¦ Á¦°øÇÏ´Â °ÍÀÌ ¸ñÇ¥ÀÔ´Ï´Ù.'
+, '¼º°ÝÀÇ ÀåÁ¡À¸·Î´Â ºÐ¼®ÀûÀÌ°í ¹®Á¦ ÇØ°á¿¡ ´ëÇÑ ¶Ù¾î³­ ´É·ÂÀÌ ÀÖ½À´Ï´Ù. 
+±ÝÀ¶ ½ÃÀåÀÇ º¹ÀâÇÑ µ¿ÇâÀ» ºÐ¼®ÇÏ°í, °í°´µéÀÇ ±ÝÀ¶ ¸ñÇ¥¸¦ ÆÄ¾ÇÇÏ¿© ÃÖÀûÀÇ ¼Ö·ç¼ÇÀ» Á¦°øÇÏ´Â °ÍÀ» Áñ±é´Ï´Ù. 
+ÇÏÁö¸¸ ¶§·Î´Â °úµµÇÑ ºÐ¼®¿¡ ºüÁ® ½Ã°£À» ³¶ºñÇÏ´Â °æÇâÀÌ ÀÖ¾î, 
+È¿À²ÀûÀÎ ¾÷¹« Ã³¸®¸¦ À§ÇØ ³ë·ÂÇÏ°í ÀÖ½À´Ï´Ù.'
+, '±ÝÀ¶ ºÐ¾ß¿¡¼­´Â ±ÝÀ¶ ½ÃÀå µ¿ÇâÀ» ÆÄ¾ÇÇÏ¸ç, 
+Çõ½ÅÀûÀÎ ±ÝÀ¶ »óÇ° ¹× ¼­ºñ½º¸¦ °³¹ßÇÏ¿© °í°´¿¡°Ô °¡Ä¡¸¦ Á¦°øÇÏ°í, 
+ÆÀ¿øµé°úÀÇ Çù¾÷À» ÅëÇØ ±ÝÀ¶ ºÐ¾ß¿¡¼­ÀÇ ¼º°ú¸¦ Ã¢ÃâÇÏ°í ½Í½À´Ï´Ù.'
 , 199);
 
 COMMIT;
@@ -2717,7 +2717,7 @@ COMMIT;
 
 
 
--- ì´ë ¥ì„œ
+-- ÀÌ·Â¼­
 INSERT INTO RESUME
 VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
 , RESUME_PERSONAL_EMAIL, RESUME_PERSONAL_PHONENUMBER
@@ -2729,12 +2729,12 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
 , RESUME_CAREER_END_DATE, RESUME_CAREER_NAME, RESUME_CAREER_POSITION
 , RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE, RESUME_LICENSE_NAME
 , RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ë°•ì§€í˜', TO_DATE('1984-01-15', 'YYYY-MM-DD'), 'jhp@simsung.com', '010-4930-4930', 'ì„œìš¸ì‹œ ë™ìž‘êµ¬ í‘ì„ëŒ€ë¡œ 12'
-   , 'ê¸°í˜¼', 'ë‚¨', 'í•„', '2003-03-02,2000-03-02', '2009-02-18,2003-02-15'
-   , 'í™ì¸ëŒ€í•™êµ, ë•ì›ê³ ë“±í•™êµ', 'ì „ìžê³µí•™, -', 'ì„œìš¸ ë§ˆí¬êµ¬, ê²½ê¸° ì•ˆì–‘ì‹œ', '4.2/4.5, -', 'ì¡¸ì—…,ì¡¸ì—…'
-   , '2021-07-01, 2009-06-01', 'ìž¬ì§ì¤‘, 2021-06-30', 'ì‹¬ì„±ì „ìž, AJì „ìž'
-   , 'ê³¼ìž¥, ëŒ€ë¦¬', 'ì„œìš¸ ê°•ë‚¨êµ¬, ì„œìš¸ ì„œì´ˆêµ¬', 'ì†Œí”„íŠ¸ì›¨ì–´ ì—”ì§€ë‹ˆì–´, ì†Œí”„íŠ¸ì›¨ì–´ ì—”ì§€ë‹ˆì–´'
-    , '2015-05-20,2017-04-10,2013-06-15', 'Oracle ì¸ì¦,í”„ë¡œì íŠ¸ ê´€ë¦¬ìž ì¸ì¦,í’ˆì§ˆ ê´€ë¦¬ìž ì¸ì¦', 'Oracle êµìœ¡ì›,PMP ì¸ì¦ ê¸°ê´€,í’ˆì§ˆ ê´€ë¦¬í˜‘íšŒ', '1,1,1', 1);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, '¹ÚÁöÇõ', TO_DATE('1984-01-15', 'YYYY-MM-DD'), 'jhp@simsung.com', '010-4930-4930', '¼­¿ï½Ã µ¿ÀÛ±¸ Èæ¼®´ë·Î 12'
+   , '±âÈ¥', '³²', 'ÇÊ', '2003-03-02,2000-03-02', '2009-02-18,2003-02-15'
+   , 'È«ÀÎ´ëÇÐ±³, ´ö¿ø°íµîÇÐ±³', 'ÀüÀÚ°øÇÐ, ÀÌ°ú', '¼­¿ï ¸¶Æ÷±¸, °æ±â ¾È¾ç½Ã', '4.2/4.5, 2µî±Þ', 'Á¹¾÷,Á¹¾÷'
+   , '2021-07-01, 2009-06-01', ',2021-06-30', '½É¼ºÀüÀÚ, AJÀüÀÚ'
+   , '°úÀå, ´ë¸®', '¼­¿ï °­³²±¸, ¼­¿ï ¼­ÃÊ±¸', '¼ÒÇÁÆ®¿þ¾î ¿£Áö´Ï¾î, ¼ÒÇÁÆ®¿þ¾î ¿£Áö´Ï¾î'
+    , '2015-05-20,2017-04-10,2013-06-15', 'Oracle ÀÎÁõ,ÇÁ·ÎÁ§Æ® °ü¸®ÀÚ ÀÎÁõ,Ç°Áú °ü¸®ÀÚ ÀÎÁõ', 'Oracle ±³À°¿ø,PMP ÀÎÁõ ±â°ü,Ç°Áú °ü¸®ÇùÈ¸', 'Pass,Pass,Pass', 1);
 
 INSERT INTO RESUME
 VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
@@ -2747,12 +2747,12 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
 , RESUME_CAREER_END_DATE, RESUME_CAREER_NAME, RESUME_CAREER_POSITION
 , RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE, RESUME_LICENSE_NAME
 , RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ë°•ì§„ì˜', TO_DATE('1991-01-15', 'YYYY-MM-DD'), 'parkjinyoung@example.com', '010-1549-1547', 'ì„œìš¸ì‹œ ì„œì´ˆêµ¬ ì„œì´ˆëŒ€ë¡œ 122'
-   , 'ë¯¸í˜¼', 'ë‚¨', 'í•„', '2016-02-16,2010-02-14', '2010-03-02,2007-03-02'
-   , 'ì„±ê· ëŒ€í•™êµ, ê´€ì„±ê³ ë“±í•™êµ', 'ê²½ì˜í•™, -', 'ì„œìš¸ ì¢…ë¡œêµ¬,ì„œìš¸ ë§ˆí¬êµ¬', '3.9/4.5', 'ì¡¸ì—…,ì¡¸ì—…'
-   , '2020-01-01,2019-12-15', 'ìž¬ì§ì¤‘,2016-10-04', 'XYZ ì£¼ì‹íšŒì‚¬,EFG ì£¼ì‹íšŒì‚¬'
-   , 'ì‚¬ì›, ëŒ€ë¦¬', 'ì„œìš¸ ê°•ë‚¨êµ¬, ì„œìš¸ ê°•ë‚¨êµ¬', 'ë§ˆì¼€íŒ… ë§¤ë‹ˆì €, ë§ˆì¼€íŒ… ë‹´ë‹¹'
-    , '2010-05-20,2011-04-10,2012-06-15', 'Oracle ì¸ì¦,í”„ë¡œì íŠ¸ ê´€ë¦¬ìž ì¸ì¦,í’ˆì§ˆ ê´€ë¦¬ìž ì¸ì¦', 'Oracle êµìœ¡ì›,PMP ì¸ì¦ ê¸°ê´€,í’ˆì§ˆ ê´€ë¦¬í˜‘íšŒ', 'Pass,Pass,Pass', 2);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, '¹ÚÁø¿µ', TO_DATE('1991-01-15', 'YYYY-MM-DD'), 'parkjinyoung@example.com', '010-1549-1547', '¼­¿ï½Ã ¼­ÃÊ±¸ ¼­ÃÊ´ë·Î 122'
+   , '¹ÌÈ¥', '³²', 'ÇÊ', '2010-03-02,2007-03-02', '2016-02-16,2010-02-14'
+   , '¼º±Õ´ëÇÐ±³, °ü¼º°íµîÇÐ±³', '°æ¿µÇÐ, ¹®°ú', '¼­¿ï Á¾·Î±¸,¼­¿ï ¸¶Æ÷±¸', '3.9/4.5, 3µî±Þ', 'Á¹¾÷,Á¹¾÷'
+   , '2020-01-01,2019-12-15', ',2016-10-04', 'XYZ ÁÖ½ÄÈ¸»ç,EFG ÁÖ½ÄÈ¸»ç'
+   , '»ç¿ø, ´ë¸®', '¼­¿ï °­³²±¸, ¼­¿ï °­³²±¸', '¸¶ÄÉÆÃ ¸Å´ÏÀú, ¸¶ÄÉÆÃ ´ã´ç'
+    , '2010-05-20,2011-04-10,2012-06-15', 'Oracle ÀÎÁõ,ÇÁ·ÎÁ§Æ® °ü¸®ÀÚ ÀÎÁõ,Ç°Áú °ü¸®ÀÚ ÀÎÁõ', 'Oracle ±³À°¿ø,PMP ÀÎÁõ ±â°ü,Ç°Áú °ü¸®ÇùÈ¸', 'Pass,Pass,Pass', 2);
 
 INSERT INTO RESUME
 VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
@@ -2765,11 +2765,11 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
 , RESUME_CAREER_END_DATE, RESUME_CAREER_NAME, RESUME_CAREER_POSITION
 , RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE, RESUME_LICENSE_NAME
 , RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ê¹€ì˜ì§„', TO_DATE('1991-01-15', 'YYYY-MM-DD'), 'yjkim@hnn.com', '010-4971-0157', 'ê²½ê¸°ë„ ìˆ˜ì›ì‹œ ì˜í†µêµ¬ ì˜í†µëŒ€ë¡œ 12'
-   , 'ë¯¸í˜¼', 'ë‚¨', 'í•„', '2016-02-16,2010-02-14', '2010-03-02,2007-03-02'
-   , 'ì„±ê· ëŒ€í•™êµ, ê´€ì„±ê³ ë“±í•™êµ', 'ê²½ì˜í•™, -', 'ì„œìš¸ ì¢…ë¡œêµ¬,ì„œìš¸ ë§ˆí¬êµ¬', '3.9/4.5', 'ì¡¸ì—…,ì¡¸ì—…'
-   , '2021-11-01,2021-10-15', 'ìž¬ì§ì¤‘,2016-10-04', 'XYZ ì£¼ì‹íšŒì‚¬,EFG ì£¼ì‹íšŒì‚¬'
-   , 'ì‚¬ì›, ëŒ€ë¦¬', 'ì„œìš¸ ê°•ë‚¨êµ¬, ì„œìš¸ ê°•ë‚¨êµ¬', 'ë§ˆì¼€íŒ… ë§¤ë‹ˆì €, ë§ˆì¼€íŒ… ë‹´ë‹¹'
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, '±è¿µÁø', TO_DATE('1991-01-15', 'YYYY-MM-DD'), 'yjkim@hnn.com', '010-4971-0157', '°æ±âµµ ¼ö¿ø½Ã ¿µÅë±¸ ¿µÅë´ë·Î 12'
+   , '¹ÌÈ¥', '³²', 'ÇÊ', '2010-03-02,2007-03-02', '2016-02-16,2010-02-14'
+   , '¼º±Õ´ëÇÐ±³, °ü¼º°íµîÇÐ±³', '°æ¿µÇÐ, ¹®°ú', '¼­¿ï Á¾·Î±¸,¼­¿ï ¸¶Æ÷±¸', '3.9/4.5, 2µî±Þ', 'Á¹¾÷,Á¹¾÷'
+   , '2021-11-01,2015-10-15', ',2021-10-04', 'XYZ ÁÖ½ÄÈ¸»ç,EFG ÁÖ½ÄÈ¸»ç'
+   , '»ç¿ø, ´ë¸®', '¼­¿ï °­³²±¸, ¼­¿ï °­³²±¸', '¸¶ÄÉÆÃ ¸Å´ÏÀú, ¸¶ÄÉÆÃ ´ã´ç'
     , '', '', '', '', 3);
 
 
@@ -2784,12 +2784,12 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
 , RESUME_CAREER_END_DATE, RESUME_CAREER_NAME, RESUME_CAREER_POSITION
 , RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE, RESUME_LICENSE_NAME
 , RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'í™ì •ì•„', TO_DATE('1991-01-15', 'YYYY-MM-DD'), 'jeonga1451@hnn.com', '010-1549-0016', 'ì¸ì²œì‹œ ì—°ìˆ˜êµ¬ ì—°ìˆ˜ë¡œ 12ê¸¸ 7'
-   , 'ë¯¸í˜¼', 'ì—¬', 'ë¯¸í•„', '2016-02-16,2010-02-14', '2010-03-02,2007-03-02'
-   , 'ì„±ê· ëŒ€í•™êµ, ê´€ì„±ê³ ë“±í•™êµ', 'ê²½ì˜í•™, -', 'ì„œìš¸ ì¢…ë¡œêµ¬,ì„œìš¸ ë§ˆí¬êµ¬', '3.9/4.5', 'ì¡¸ì—…,ì¡¸ì—…'
-   , '2019-02-04,2019-01-15', 'ìž¬ì§ì¤‘,2016-10-04', 'XYZ ì£¼ì‹íšŒì‚¬,EFG ì£¼ì‹íšŒì‚¬'
-   , 'ì‚¬ì›, ëŒ€ë¦¬', 'ì„œìš¸ ê°•ë‚¨êµ¬, ì„œìš¸ ê°•ë‚¨êµ¬', 'ë§ˆì¼€íŒ… ë§¤ë‹ˆì €, ë§ˆì¼€íŒ… ë‹´ë‹¹'
-    , '2010-05-20,2011-04-10', 'ì›Œë“œí”„ë¡œì„¸ì„œ, ìžë™ì°¨ ìš´ì „ë©´í—ˆ', 'ëŒ€í•œìƒê³µíšŒì˜ì†Œ, ê²½ì°°ì²­', '1ê¸‰, 1ê¸‰, 1ì¢… ë³´í†µ', 4);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'È«Á¤¾Æ', TO_DATE('1991-01-15', 'YYYY-MM-DD'), 'jeonga1451@hnn.com', '010-1549-0016', 'ÀÎÃµ½Ã ¿¬¼ö±¸ ¿¬¼ö·Î 12±æ 7'
+   , '¹ÌÈ¥', '¿©', '¹ÌÇÊ', '2010-03-02,2007-03-02', '2016-02-16,2010-02-14'
+   , '¼º±Õ´ëÇÐ±³, °ü¼º°íµîÇÐ±³', '°æ¿µÇÐ, ¹®°ú', '¼­¿ï Á¾·Î±¸,¼­¿ï ¸¶Æ÷±¸', '3.9/4.5, 1µî±Þ', 'Á¹¾÷,Á¹¾÷'
+   , '2019-02-04,2016-01-15', ',2019-02-01', 'XYZ ÁÖ½ÄÈ¸»ç,EFG ÁÖ½ÄÈ¸»ç'
+   , '»ç¿ø, ´ë¸®', '¼­¿ï °­³²±¸, ¼­¿ï °­³²±¸', '¸¶ÄÉÆÃ ¸Å´ÏÀú, ¸¶ÄÉÆÃ ´ã´ç'
+    , '2010-05-20,2011-04-10', '¿öµåÇÁ·Î¼¼¼­, ÀÚµ¿Â÷ ¿îÀü¸éÇã', '´ëÇÑ»ó°øÈ¸ÀÇ¼Ò, °æÂûÃ»', '1±Þ, 1±Þ, 1Á¾ º¸Åë', 4);
 
 
 INSERT INTO RESUME
@@ -2803,12 +2803,12 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
 , RESUME_CAREER_END_DATE, RESUME_CAREER_NAME, RESUME_CAREER_POSITION
 , RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE, RESUME_LICENSE_NAME
 , RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ê¹€ë‚˜ì—°', TO_DATE('1991-01-15', 'YYYY-MM-DD'), 'nayoni11@ydmotors.com', '010-1549-1507', 'ê²½ê¸°ë„ ê³ ì–‘ì‹œ ì¼ì‚°ë™êµ¬ ì‚°ë™ë¡œ19'
-   , 'ë¯¸í˜¼', 'ì—¬', 'ë¯¸í•„', '2016-02-16,2010-02-14', '2010-03-02,2007-03-02'
-   , 'ì„±ê· ëŒ€í•™êµ, ê´€ì„±ê³ ë“±í•™êµ', 'ê²½ì˜í•™, -', 'ì„œìš¸ ì¢…ë¡œêµ¬,ì„œìš¸ ë§ˆí¬êµ¬', '3.9/4.5', 'ì¡¸ì—…,ì¡¸ì—…'
-   , '2018-01-01,2017-12-28', 'ìž¬ì§ì¤‘,2016-10-04', 'XYZ ì£¼ì‹íšŒì‚¬,EFG ì£¼ì‹íšŒì‚¬'
-   , 'ì‚¬ì›, ëŒ€ë¦¬', 'ì„œìš¸ ê°•ë‚¨êµ¬, ì„œìš¸ ê°•ë‚¨êµ¬', 'ë§ˆì¼€íŒ… ë§¤ë‹ˆì €, ë§ˆì¼€íŒ… ë‹´ë‹¹'
-    , '2010-05-20,2011-04-10', 'í•œêµ­ì‚¬ ëŠ¥ë ¥ê²€ì •ì‹œí—˜, ìžë™ì°¨ ìš´ì „ë©´í—ˆ', 'êµ­ì‚¬íŽ¸ì°¬ìœ„ì›íšŒ, ê²½ì°°ì²­', '2ê¸‰, 1ì¢… ë³´í†µ', 5);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, '±è³ª¿¬', TO_DATE('1991-01-15', 'YYYY-MM-DD'), 'nayoni11@ydmotors.com', '010-1549-1507', '°æ±âµµ °í¾ç½Ã ÀÏ»êµ¿±¸ »êµ¿·Î19'
+   , '¹ÌÈ¥', '¿©', '¹ÌÇÊ', '2010-03-02,2007-03-02', '2016-02-16,2010-02-14'
+   , '¼º±Õ´ëÇÐ±³, °ü¼º°íµîÇÐ±³', '°æ¿µÇÐ, ¹®°ú', '¼­¿ï Á¾·Î±¸,¼­¿ï ¸¶Æ÷±¸', '3.9/4.5, 1µî±Þ', 'Á¹¾÷,Á¹¾÷'
+   , '2018-01-01,2016-12-28', ',2017-10-04', 'XYZ ÁÖ½ÄÈ¸»ç,EFG ÁÖ½ÄÈ¸»ç'
+   , '»ç¿ø, ´ë¸®', '¼­¿ï °­³²±¸, ¼­¿ï °­³²±¸', '¸¶ÄÉÆÃ ¸Å´ÏÀú, ¸¶ÄÉÆÃ ´ã´ç'
+    , '2010-05-20,2011-04-10', 'ÇÑ±¹»ç ´É·Â°ËÁ¤½ÃÇè, ÀÚµ¿Â÷ ¿îÀü¸éÇã', '±¹»çÆíÂùÀ§¿øÈ¸, °æÂûÃ»', '2±Þ, 1Á¾ º¸Åë', 5);
 
 INSERT INTO RESUME
 VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY, RESUME_PERSONAL_EMAIL
@@ -2819,12 +2819,12 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY, RESUME_PERS
 , RESUME_CAREER_BEGIN_DATE, RESUME_CAREER_END_DATE, RESUME_CAREER_NAME
 , RESUME_CAREER_POSITION, RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE
 , RESUME_LICENSE_NAME, RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ì •ë¯¼ì§€', TO_DATE('1992-03-25', 'YYYY-MM-DD'), 'jungmj@kp.com', '010-7833-6431'
-    , 'ê²½ê¸°ë„ ì„±ë‚¨ì‹œ ë¶„ë‹¹êµ¬ ë¶„ë‹¹ë¡œ201ë²ˆê¸¸ 17', 'ë¯¸í˜¼', 'ì—¬', 'ë¯¸í•„', '2011-03-02,2008-03-02'
-    , '2014-02-11,2011-02-13', 'ì„±ê³µëŒ€í•™êµ,ì„±ì‚°ê³ ë“±í•™êµ', 'ì •ë³´í†µì‹ ê³µí•™ê³¼,ì´ê³¼', '4,1.7'
-    , 'ì„œìš¸,ì„œìš¸', 'ì¡¸ì—…,ì¡¸ì—…', '2016-12-01,2014-09-20', '~,2016-11-19', 'KP,STí…”ë ˆì½¤'
-    , 'ê³¼ìž¥,ì£¼ìž„', 'ê²½ê¸°,ì„œìš¸', 'í’ˆì§ˆê´€ë¦¬ìž,ì—”ì§€ë‹ˆì–´', '2014-06-30,2013-04-15', 'ì •ë³´ì²˜ë¦¬ê¸°ì‚¬,TOEIC'
-    , 'í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨,í•œêµ­í† ìµìœ„ì›íšŒ(ETS)', '86ì ,920ì ', 96);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'Á¤¹ÎÁö', TO_DATE('1992-03-25', 'YYYY-MM-DD'), 'jungmj@kp.com', '010-7833-6431'
+    , '°æ±âµµ ¼º³²½Ã ºÐ´ç±¸ ºÐ´ç·Î201¹ø±æ 17', '¹ÌÈ¥', '¿©', '¹ÌÇÊ', '2011-03-02,2008-03-02'
+    , '2014-02-11,2011-02-13', '¼º°ø´ëÇÐ±³,¼º»ê°íµîÇÐ±³', 'Á¤º¸Åë½Å°øÇÐ°ú,ÀÌ°ú', '4, 1.7µî±Þ'
+    , '¼­¿ï,¼­¿ï', 'Á¹¾÷,Á¹¾÷', '2016-12-01,2014-09-20', ',2016-11-19', 'KP,STÅÚ·¹ÄÞ'
+    , '°úÀå,ÁÖÀÓ', '°æ±â,¼­¿ï', 'Ç°Áú°ü¸®ÀÚ,¿£Áö´Ï¾î', '2014-06-30,2013-04-15', 'Á¤º¸Ã³¸®±â»ç,TOEIC'
+    , 'ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü,ÇÑ±¹ÅäÀÍÀ§¿øÈ¸(ETS)', '86Á¡,920Á¡', 96);
 
 INSERT INTO RESUME
 VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY, RESUME_PERSONAL_EMAIL
@@ -2835,12 +2835,12 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY, RESUME_PERS
 , RESUME_CAREER_BEGIN_DATE, RESUME_CAREER_END_DATE, RESUME_CAREER_NAME
 , RESUME_CAREER_POSITION, RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE
 , RESUME_LICENSE_NAME, RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ì´í˜„ì§€', TO_DATE('1994-07-04', 'YYYY-MM-DD'), 'leehj@lzinnotek.com', '010-3126-4657'
-    , 'ì„œìš¸íŠ¹ë³„ì‹œ ê°•ì„œêµ¬ ë§ˆê³¡ì¤‘ì•™1ë¡œ 71 (ë§ˆê³¡ë™, ë§ˆê³¡ 13ë‹¨ì§€ ížìŠ¤í…Œì´íŠ¸ ë§ˆìŠ¤í„°)', 'ë¯¸í˜¼', 'ì—¬', 'ë¯¸í•„'
-    , '2013-03-02,2010-03-02', '2017-02-14,2013-02-07', 'í…Œí¬ë…¸ë¡œì§€ëŒ€í•™êµ,í‘¸ë¥¸í•˜ëŠ˜ê³ ë“±í•™êµ'
-    , 'ì»´í“¨í„°ê³µí•™ê³¼,ì´ê³¼', '3.9,2.4', 'ì„œìš¸,ë¶€ì‚°', 'ì¡¸ì—…,ì¡¸ì—…', '2017-04-19', '~', 'LZì´ë…¸í…'
-    , 'ëŒ€ë¦¬', 'ì„œìš¸', 'ì†Œí”„íŠ¸ì›¨ì–´ ì—”ì§€ë‹ˆì–´', '2016-11-26,2015-06-20', 'ì •ë³´ì²˜ë¦¬ê¸°ì‚¬,TOEIC'
-    , 'í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨,í•œêµ­í† ìµìœ„ì›íšŒ(ETS)', '88ì ,940ì ', 97);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ÀÌÇöÁö', TO_DATE('1994-07-04', 'YYYY-MM-DD'), 'leehj@lzinnotek.com', '010-3126-4657'
+    , '¼­¿ïÆ¯º°½Ã °­¼­±¸ ¸¶°îÁß¾Ó1·Î 71 (¸¶°îµ¿, ¸¶°î 13´ÜÁö Èú½ºÅ×ÀÌÆ® ¸¶½ºÅÍ)', '¹ÌÈ¥', '¿©', '¹ÌÇÊ'
+    , '2013-03-02,2010-03-02', '2017-02-14,2013-02-07', 'Å×Å©³ë·ÎÁö´ëÇÐ±³,Çª¸¥ÇÏ´Ã°íµîÇÐ±³'
+    , 'ÄÄÇ»ÅÍ°øÇÐ°ú,ÀÌ°ú', '3.9,2.4µî±Þ', '¼­¿ï,ºÎ»ê', 'Á¹¾÷,Á¹¾÷', '2017-04-19', ' ', 'LZÀÌ³ëÅØ'
+    , '´ë¸®', '¼­¿ï', '¼ÒÇÁÆ®¿þ¾î ¿£Áö´Ï¾î', '2016-11-26,2015-06-20', 'Á¤º¸Ã³¸®±â»ç,TOEIC'
+    , 'ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü,ÇÑ±¹ÅäÀÍÀ§¿øÈ¸(ETS)', '88Á¡,940Á¡', 97);
 
 INSERT INTO RESUME
 VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY, RESUME_PERSONAL_EMAIL
@@ -2851,12 +2851,12 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY, RESUME_PERS
 , RESUME_CAREER_BEGIN_DATE, RESUME_CAREER_END_DATE, RESUME_CAREER_NAME
 , RESUME_CAREER_POSITION, RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE
 , RESUME_LICENSE_NAME, RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ê¹€ì„±ë¯¼', TO_DATE('1991-09-13', 'YYYY-MM-DD'), 'kimsm@simsungsem.com', '010-2381-7811'
-    , 'ê²½ê¸°ë„ ìˆ˜ì›ì‹œ ì˜í†µêµ¬ ê´‘êµë¡œ 286 (ì´ì˜ë™, ê´‘êµ í•´ëª¨ë¡œ ì•„íŒŒíŠ¸)', 'ê¸°í˜¼', 'ë‚¨', 'í•„'
-    , '2010-03-02,2007-03-02', '2015-02-12,2010-02-14', 'í˜ì‹ ëŒ€í•™êµ,ë™ë°©ê³ ë“±í•™êµ', 'ì „ê¸°ê³µí•™ê³¼,ì´ê³¼'
-    , '4.2,1', 'ëŒ€ì „,ì„œìš¸', 'ì¡¸ì—…,ì¡¸ì—…', '2020-08-17,2015-04-10', '~,2020-08-10'
-    , 'ì‹¬ì„±ì „ê¸°,BBí•˜ì´í…', 'ê³¼ìž¥,ì£¼ìž„', 'ê²½ê¸°,ê²½ê¸°', 'ì—°êµ¬ê°œë°œì§,ì—”ì§€ë‹ˆì–´', '2014-12-15,2014-09-04,2014-06-30'
-    , 'ì „ê¸°ê¸°ì‚¬,ì „ê¸°ê³µì‚¬ê¸°ì‚¬,TOEIC', 'í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨,í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨,í•œêµ­í† ìµìœ„ì›íšŒ(ETS)', '90ì ,95ì ,980ì ', 98);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, '±è¼º¹Î', TO_DATE('1991-09-13', 'YYYY-MM-DD'), 'kimsm@simsungsem.com', '010-2381-7811'
+    , '°æ±âµµ ¼ö¿ø½Ã ¿µÅë±¸ ±¤±³·Î 286 (ÀÌÀÇµ¿, ±¤±³ ÇØ¸ð·Î ¾ÆÆÄÆ®)', '±âÈ¥', '³²', 'ÇÊ'
+    , '2010-03-02,2007-03-02', '2015-02-12,2010-02-14', 'Çõ½Å´ëÇÐ±³,µ¿¹æ°íµîÇÐ±³', 'Àü±â°øÇÐ°ú,ÀÌ°ú'
+    , '4.2,1µî±Þ', '´ëÀü,¼­¿ï', 'Á¹¾÷,Á¹¾÷', '2020-08-17,2015-04-10', ',2020-08-10'
+    , '½É¼ºÀü±â,BBÇÏÀÌÅØ', '°úÀå,ÁÖÀÓ', '°æ±â,°æ±â', '¿¬±¸°³¹ßÁ÷,¿£Áö´Ï¾î', '2014-12-15,2014-09-04,2014-06-30'
+    , 'Àü±â±â»ç,Àü±â°ø»ç±â»ç,TOEIC', 'ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü,ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü,ÇÑ±¹ÅäÀÍÀ§¿øÈ¸(ETS)', '90Á¡,95Á¡,980Á¡', 98);
 
 INSERT INTO RESUME
 VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY, RESUME_PERSONAL_EMAIL
@@ -2867,10 +2867,10 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY, RESUME_PERS
 , RESUME_CAREER_BEGIN_DATE, RESUME_CAREER_END_DATE, RESUME_CAREER_NAME
 , RESUME_CAREER_POSITION, RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE
 , RESUME_LICENSE_NAME, RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ë°•ì§€ì›',TO_DATE('1996-11-03', 'YYYY-MM-DD'), 'parkjw@lzuplus.com', '010-1236-5548'
-    , 'ì„œìš¸íŠ¹ë³„ì‹œ ìš©ì‚°êµ¬ ë§Œë¦¬ìž¬ë¡œ 202 (ì„œê³„ë™)', 'ë¯¸í˜¼', 'ë‚¨', 'í•„', '2015-03-02,2012-03-02'
-    , '2020-02-10,2015-02-15', 'ì°½ì˜ë¬¸í™”ëŒ€í•™êµ,ë¯¸ëž˜ì¤€ë¹„ê³ ë“±í•™êµ', 'í†µì‹ ê³µí•™ê³¼,ë¬¸ê³¼', '4.1,2.2'
-    , 'ì„œìš¸,ëŒ€êµ¬', 'ì¡¸ì—…,ì¡¸ì—…', '2020-06-23', '~', 'LZìœ í”ŒëŸ¬ìŠ¤', 'ì‚¬ì›', 'ì„œìš¸', 'ë„¤íŠ¸ì›Œí¬ìš´ì˜ê¸°ìˆ ì§'
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, '¹ÚÁö¿ø',TO_DATE('1996-11-03', 'YYYY-MM-DD'), 'parkjw@lzuplus.com', '010-1236-5548'
+    , '¼­¿ïÆ¯º°½Ã ¿ë»ê±¸ ¸¸¸®Àç·Î 202 (¼­°èµ¿)', '¹ÌÈ¥', '³²', 'ÇÊ', '2015-03-02,2012-03-02'
+    , '2020-02-10,2015-02-15', 'Ã¢ÀÇ¹®È­´ëÇÐ±³,¹Ì·¡ÁØºñ°íµîÇÐ±³', 'Åë½Å°øÇÐ°ú,¹®°ú', '4.1,2.2µî±Þ'
+    , '¼­¿ï,´ë±¸', 'Á¹¾÷,Á¹¾÷', '2020-06-23', ' ', 'LZÀ¯ÇÃ·¯½º', '»ç¿ø', '¼­¿ï', '³×Æ®¿öÅ©¿î¿µ±â¼úÁ÷'
     ,  null, null, null, null,99);
 
 INSERT INTO RESUME
@@ -2882,13 +2882,13 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY, RESUME_PERS
 , RESUME_CAREER_BEGIN_DATE, RESUME_CAREER_END_DATE, RESUME_CAREER_NAME
 , RESUME_CAREER_POSITION, RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE
 , RESUME_LICENSE_NAME, RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ì¡°ì˜í˜¸',TO_DATE('1989-04-30', 'YYYY-MM-DD'), 'joyh@simsungbiologics.com', '010-1136-6518'
-    , 'ì¸ì²œê´‘ì—­ì‹œ ì—°ìˆ˜êµ¬ ì¸ì²œíƒ€ì›ŒëŒ€ë¡œ 253-25 (ì†¡ë„ë™, ì•„íŠ¸ìœˆ í‘¸ë¥´ì§€ì˜¤)', 'ê¸°í˜¼', 'ë‚¨', 'í•„'
-    , '2008-03-02,2005-03-02', '2014-02-08,2008-02-14', 'ê¸€ë¡œë²Œê³¼í•™ëŒ€í•™êµ,í™”ì‚°ì‚°ê³ ë“±í•™êµ'
-    , 'ìƒëª…ê³¼í•™ê³¼,ì´ê³¼', '4.4,1.2', 'ê²½ê¸°,ì„œìš¸', 'ì¡¸ì—…,ì¡¸ì—…', '2018-03-07,2014-03-02', '~,2018-03-02'
-    , 'ì‹¬ì„±ë°”ì´ì˜¤ë¡œì§ìŠ¤,ìœ ì•ˆì–‘í–‰', 'ê³¼ìž¥,ì£¼ìž„', 'ì¸ì²œ,ì„œìš¸', 'ì—°êµ¬íŒ€ìž¥,ì—°êµ¬ì›'
-    , '2015-12-01,2014-09-06,2012-06-30', 'ìƒë¬¼ë¶„ë¥˜ê¸°ì‚¬,ë°”ì´ì˜¤í™”í•™ì œí’ˆì œì¡°ê¸°ì‚¬,TOEIC'
-    , 'í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨,í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨,í•œêµ­í† ìµìœ„ì›íšŒ(ETS)', '93ì ,92ì ,990ì ', 100);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'Á¶¿µÈ£',TO_DATE('1989-04-30', 'YYYY-MM-DD'), 'joyh@simsungbiologics.com', '010-1136-6518'
+    , 'ÀÎÃµ±¤¿ª½Ã ¿¬¼ö±¸ ÀÎÃµÅ¸¿ö´ë·Î 253-25 (¼Ûµµµ¿, ¾ÆÆ®À© Çª¸£Áö¿À)', '±âÈ¥', '³²', 'ÇÊ'
+    , '2008-03-02,2005-03-02', '2014-02-08,2008-02-14', '±Û·Î¹ú°úÇÐ´ëÇÐ±³,È­»ê»ê°íµîÇÐ±³'
+    , '»ý¸í°úÇÐ°ú,ÀÌ°ú', '4.4,1.2µî±Þ', '°æ±â,¼­¿ï', 'Á¹¾÷,Á¹¾÷', '2018-03-07,2014-03-02', ',2018-03-02'
+    , '½É¼º¹ÙÀÌ¿À·ÎÁ÷½º,À¯¾È¾çÇà', '°úÀå,ÁÖÀÓ', 'ÀÎÃµ,¼­¿ï', '¿¬±¸ÆÀÀå,¿¬±¸¿ø'
+    , '2015-12-01,2014-09-06,2012-06-30', '»ý¹°ºÐ·ù±â»ç,¹ÙÀÌ¿ÀÈ­ÇÐÁ¦Ç°Á¦Á¶±â»ç,TOEIC'
+    , 'ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü,ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü,ÇÑ±¹ÅäÀÍÀ§¿øÈ¸(ETS)', '93Á¡,92Á¡,990Á¡', 100);
 
 INSERT INTO RESUME
 VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
@@ -2901,13 +2901,13 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
 , RESUME_CAREER_END_DATE, RESUME_CAREER_NAME, RESUME_CAREER_POSITION
 , RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE, RESUME_LICENSE_NAME
 , RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ìµœì—°ìš°', TO_DATE('1978-07-15', 'YYYY-MM-DD'), 'yenwoochoi@cell.com', '010-4331-6744'
-, 'ì„œìš¸ì‹œ ê°•ë‚¨êµ¬ ì„œì´ˆëŒ€ë¡œ 9ê¸¸', 'ê¸°í˜¼', 'ì—¬ì„±', 'ë¯¸í•„', '1997-03-02, 1994-03-02', '2001-02-11, 1997-02-12'
-, 'ì„±ê· ê´€ëŒ€í•™êµ, ëŒ€í‰ê³ ë“±í•™êµ', 'ìƒëª…ê³µí•™ê³¼, ì´ê³¼', 'ì„œìš¸, ê²½ê¸°ë„', '4.2', 'ì¡¸ì—…, ì¡¸ì—…'
-, '2001-06-17, 2005-10-23, 2017-05-08', '2005-09-22, 2017-03-19', 'ì œë„¥ìŠ¤ì‹ , ìœ ì–´ë°”ì´ì˜¤ë¡œì§ìŠ¤, ì…€ë°”ì´ì˜¤íŠ¸ë¦¬ì˜¨'
-, 'ì£¼ìž„, ê³¼ìž¥, ì°¨ìž¥', 'ê²½ê¸°ë„, ì„œìš¸, ì„œìš¸', 'ë¯¸ìƒë¬¼ ì—°êµ¬ ë³´ì¡°, ë¯¸ìƒë¬¼ ì—°êµ¬, ë¯¸ìƒë¬¼ ì—°êµ¬'
-, '2000-08-11, 2004-03-22', 'í™”í•™ë¶„ì„ê¸°ìž, ìƒëª…ê³¼í•™ì§€ë„ì‚¬'
-, 'í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨, í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨', 'í•©ê²©, í•©ê²©', 113);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ÃÖ¿¬¿ì', TO_DATE('1978-07-15', 'YYYY-MM-DD'), 'yenwoochoi@cell.com', '010-4331-6744'
+, '¼­¿ï½Ã °­³²±¸ ¼­ÃÊ´ë·Î 9±æ', '±âÈ¥', '¿©¼º', '¹ÌÇÊ', '1997-03-02, 1994-03-02', '2001-02-11, 1997-02-12'
+, '¼º±Õ°ü´ëÇÐ±³, ´ëÆò°íµîÇÐ±³', '»ý¸í°øÇÐ°ú, ÀÌ°ú', '¼­¿ï, °æ±âµµ', '4.2,1µî±Þ', 'Á¹¾÷, Á¹¾÷'
+, '2001-06-17, 2005-10-23, 2017-05-08', '2005-09-22, 2017-03-19, ', 'Á¦³Ø½º½Å, À¯¾î¹ÙÀÌ¿À·ÎÁ÷½º, ¼¿¹ÙÀÌ¿ÀÆ®¸®¿Â'
+, 'ÁÖÀÓ, °úÀå, Â÷Àå', '°æ±âµµ, ¼­¿ï, ¼­¿ï', '¹Ì»ý¹° ¿¬±¸ º¸Á¶, ¹Ì»ý¹° ¿¬±¸, ¹Ì»ý¹° ¿¬±¸'
+, '2000-08-11, 2004-03-22', 'È­ÇÐºÐ¼®±âÀÚ, »ý¸í°úÇÐÁöµµ»ç'
+, 'ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü, ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü', 'ÇÕ°Ý, ÇÕ°Ý', 113);
 
 INSERT INTO RESUME
 VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
@@ -2920,12 +2920,12 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
 , RESUME_CAREER_END_DATE, RESUME_CAREER_NAME, RESUME_CAREER_POSITION
 , RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE, RESUME_LICENSE_NAME
 , RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ê¹€ì§€ì›', TO_DATE('1990-03-15', 'YYYY-MM-DD'), 'jiwonkim@ncsoft.com', '010-4866-7977'
-, 'ì„œìš¸ì‹œ ê°•ë‚¨êµ¬ ì„œì´ˆëŒ€ë¡œ 8ê¸¸', 'ë¯¸í˜¼', 'ë‚¨ì„±', 'í•„', '2009-03-02, 2006-03-02', '2015-02-11, 2009-02-12'
-, 'ì„œê°•ëŒ€í•™êµ, ëŒ€í‰ê³ ë“±í•™êµ', 'ì»´í“¨í„°ê³µí•™ê³¼, ì´ê³¼', 'ì„œìš¸, ê²½ê¸°ë„', '3.8', 'ì¡¸ì—…, ì¡¸ì—…', '2015-06-17, 2019-11-08', '2019-09-22', 'í¼ë‹ˆì†Œí”„íŠ¸, ì— ì”¨ì†Œí”„íŠ¸'
-, 'ì£¼ìž„, ëŒ€ë¦¬', 'ê²½ê¸°ë„, ì„œìš¸', 'ê²Œìž„ ê°œë°œ, ê²Œìž„ ê¸°íšê°œë°œ'
-, '2013-08-11, 2014-03-22, 2014-06-17', 'ì •ë³´ì²˜ë¦¬ì‚°ì—…ê¸°ì‚¬, ê²Œìž„í”„ë¡œê·¸ëž˜ë°ì „ë¬¸ê°€, ê²Œìž„ê¸°íšì „ë¬¸ê°€'
-, 'í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨, í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨, í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨', 'í•©ê²©, í•©ê²©, í•©ê²©', 116);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, '±èÁö¿ø', TO_DATE('1990-03-15', 'YYYY-MM-DD'), 'jiwonkim@ncsoft.com', '010-4866-7977'
+, '¼­¿ï½Ã °­³²±¸ ¼­ÃÊ´ë·Î 8±æ', '¹ÌÈ¥', '³²¼º', 'ÇÊ', '2009-03-02, 2006-03-02', '2015-02-11, 2009-02-12'
+, '¼­°­´ëÇÐ±³, ´ëÆò°íµîÇÐ±³', 'ÄÄÇ»ÅÍ°øÇÐ°ú, ÀÌ°ú', '¼­¿ï, °æ±âµµ', '3.8, 5µî±Þ', 'Á¹¾÷, Á¹¾÷', '2015-06-17, 2019-11-08', '2019-09-22, ', 'ÆÛ´Ï¼ÒÇÁÆ®, ¿¥¾¾¼ÒÇÁÆ®'
+, 'ÁÖÀÓ, ´ë¸®', '°æ±âµµ, ¼­¿ï', '°ÔÀÓ °³¹ß, °ÔÀÓ ±âÈ¹°³¹ß'
+, '2013-08-11, 2014-03-22, 2014-06-17', 'Á¤º¸Ã³¸®»ê¾÷±â»ç, °ÔÀÓÇÁ·Î±×·¡¹ÖÀü¹®°¡, °ÔÀÓ±âÈ¹Àü¹®°¡'
+, 'ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü, ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü, ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü', 'ÇÕ°Ý, ÇÕ°Ý, ÇÕ°Ý', 116);
 
 INSERT INTO RESUME
 VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
@@ -2938,12 +2938,12 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
 , RESUME_CAREER_END_DATE, RESUME_CAREER_NAME, RESUME_CAREER_POSITION
 , RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE, RESUME_LICENSE_NAME
 , RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ê¹€ë¯¼ì„±', TO_DATE('1987-03-15', 'YYYY-MM-DD'), 'minseong@kiwoom.com', '010-3211-7722'
-, 'ì„œìš¸ì‹œ ê°•ë™êµ¬ ì–‘ìž¬ëŒ€ë¡œ 1404-35', 'ë¯¸í˜¼', 'ë‚¨ì„±', 'í•„', '2006-03-02, 2003-03-02', '2012-02-11, 2006-02-12'
-, 'í•œì–‘ëŒ€í•™êµ, ë‘”ì´Œê³ ë“±í•™êµ', 'ê²½ì œê¸ˆìœµí•™ê³¼, ì´ê³¼', 'ì„œìš¸, ê²½ê¸°ë„', '3.8', 'ì¡¸ì—…, ì¡¸ì—…'
-, '2012-05-17, 2015-11-23, 2020-09-15', '2015-09-22, 2020-08-19', 'ëª¨ë‘ê¸ˆìœµ, SNíŽ€ë“œë§¤ë‹ˆ, í‚¤ì›Œì¦ê¶Œ'
-, 'ì£¼ìž„, ëŒ€ë¦¬, ëŒ€ë¦¬', 'ê²½ê¸°ë„, ì„œìš¸, ì„œìš¸', 'ê¸ˆìœµ ë¶„ì„, ê¸ˆìœµíˆ¬ìž ë¶„ì„ ê³„íš, ê¸ˆìœµ ì• ë„ë¦¬ìŠ¤íŠ¸', '2010-08-11, 2011-03-22, 2011-06-17', 'íˆ¬ìžìžì‚°ìš´ìš©ì‚¬, ì‹ ìš©ë¶„ì„ì‚¬, SQLD'
-, 'í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨, í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨, í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨', 'í•©ê²©, í•©ê²©, í•©ê²©', 129);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, '±è¹Î¼º', TO_DATE('1987-03-15', 'YYYY-MM-DD'), 'minseong@kiwoom.com', '010-3211-7722'
+, '¼­¿ï½Ã °­µ¿±¸ ¾çÀç´ë·Î 1404-35', '¹ÌÈ¥', '³²¼º', 'ÇÊ', '2006-03-02, 2003-03-02', '2012-02-11, 2006-02-12'
+, 'ÇÑ¾ç´ëÇÐ±³, µÐÃÌ°íµîÇÐ±³', '°æÁ¦±ÝÀ¶ÇÐ°ú, ÀÌ°ú', '¼­¿ï, °æ±âµµ', '3.8, 1µî±Þ', 'Á¹¾÷, Á¹¾÷'
+, '2012-05-17, 2015-11-23, 2020-09-15', '2015-09-22, 2020-08-19, ', '¸ðµÎ±ÝÀ¶, SNÆÝµå¸Å´Ï, Å°¿öÁõ±Ç'
+, 'ÁÖÀÓ, ´ë¸®, ´ë¸®', '°æ±âµµ, ¼­¿ï, ¼­¿ï', '±ÝÀ¶ ºÐ¼®, ±ÝÀ¶ÅõÀÚ ºÐ¼® °èÈ¹, ±ÝÀ¶ ¾Ö³Î¸®½ºÆ®', '2010-08-11, 2011-03-22, 2011-06-17', 'ÅõÀÚÀÚ»ê¿î¿ë»ç, ½Å¿ëºÐ¼®»ç, SQLD'
+, 'ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü, ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü, ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü', 'ÇÕ°Ý, ÇÕ°Ý, ÇÕ°Ý', 129);
 
 INSERT INTO RESUME
 VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
@@ -2956,12 +2956,12 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
 , RESUME_CAREER_END_DATE, RESUME_CAREER_NAME, RESUME_CAREER_POSITION
 , RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE, RESUME_LICENSE_NAME
 , RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ê¹€ìž¬ì›', TO_DATE('1988-08-27', 'YYYY-MM-DD'), 'jaewon@gsretail.com', '010-6465-1577'
-, 'ì„œìš¸ì‹œ ê¸ˆì²œêµ¬ ê¸ˆí•˜ë¡œ 685-8', 'ë¯¸í˜¼', 'ë‚¨ì„±', 'í•„', '2007-03-02, 2004-03-02', '2013-02-11, 2007-02-12'
-, 'êµ­ë¯¼ëŒ€í•™êµ, ê¸ˆì²œê³ ë“±í•™êµ', 'ê²½ì œê¸ˆìœµí•™ê³¼, ë¬¸ê³¼', 'ì„œìš¸, ê²½ê¸°ë„', '3.7', 'ì¡¸ì—…, ì¡¸ì—…'
-, '2013-06-17, 2017-11-23, 2020-01-18', '2017-09-17, 2019-12-22', 'JSë¬¼ì‚°, YKë¬¼ë¥˜ìœ í†µ, ASë¦¬í…Œì¼'
-, 'ì£¼ìž„, ëŒ€ë¦¬, ëŒ€ë¦¬', 'ê²½ê¸°ë„, ì„œìš¸, ì„œìš¸', 'ìœ í†µê´€ë¦¬ì‚¬, ì™¸í™˜ê´€ë¦¬ì‚¬, ì™¸í™˜ê´€ë¦¬ì‚¬', '2011-08-11, 2012-03-22, 2012-06-17', 'ë³´ì„¸ì‚¬, ë¬¼ë¥˜ê´€ë¦¬ì‚¬, ìœ í†µê´€ë¦¬ì‚¬'
-, 'í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨, í•œêµ­ì‚°ì—…ì¸ë ¥ê±´ì„¤, í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨', 'í•©ê²©, í•©ê²©, í•©ê²©', 134);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, '±èÀç¿ø', TO_DATE('1988-08-27', 'YYYY-MM-DD'), 'jaewon@gsretail.com', '010-6465-1577'
+, '¼­¿ï½Ã ±ÝÃµ±¸ ±ÝÇÏ·Î 685-8', '¹ÌÈ¥', '³²¼º', 'ÇÊ', '2007-03-02, 2004-03-02', '2013-02-11, 2007-02-12'
+, '±¹¹Î´ëÇÐ±³, ±ÝÃµ°íµîÇÐ±³', '°æÁ¦±ÝÀ¶ÇÐ°ú, ¹®°ú', '¼­¿ï, °æ±âµµ', '3.7, 2µî±Þ', 'Á¹¾÷, Á¹¾÷'
+, '2013-06-17, 2017-11-23, 2020-01-18', '2017-09-17, 2019-12-22, ', 'JS¹°»ê, YK¹°·ùÀ¯Åë, AS¸®Å×ÀÏ'
+, 'ÁÖÀÓ, ´ë¸®, ´ë¸®', '°æ±âµµ, ¼­¿ï, ¼­¿ï', 'À¯Åë°ü¸®»ç, ¿ÜÈ¯°ü¸®»ç, ¿ÜÈ¯°ü¸®»ç', '2011-08-11, 2012-03-22, 2012-06-17', 'º¸¼¼»ç, ¹°·ù°ü¸®»ç, À¯Åë°ü¸®»ç'
+, 'ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü, ÇÑ±¹»ê¾÷ÀÎ·Â°Ç¼³, ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü', 'ÇÕ°Ý, ÇÕ°Ý, ÇÕ°Ý', 134);
 
 INSERT INTO RESUME
 VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
@@ -2974,12 +2974,12 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
 , RESUME_CAREER_END_DATE, RESUME_CAREER_NAME, RESUME_CAREER_POSITION
 , RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE, RESUME_LICENSE_NAME
 , RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ì†ì§€í˜œ', TO_DATE('1986-10-15', 'YYYY-MM-DD'), 'jihyeson@ulx.com', '010-7456-7110'
-, 'ì„œìš¸ì‹œ ê°•ë™êµ¬ ì–‘ìž¬ëŒ€ë¡œ 1404-35', 'ë¯¸í˜¼', 'ë‚¨ì„±', 'í•„', '2005-03-02, 2002-03-02', '2009-02-11, 2005-02-12'
-, 'ê±´êµ­ëŒ€í•™êµ, ë‘”ì´Œê³ ë“±í•™êµ', 'ìž¬ë¬´ê¸ˆìœµí•™ê³¼, ë¬¸ê³¼', 'ì„œìš¸, ê²½ê¸°ë„', '3.7', 'ì¡¸ì—…, ì¡¸ì—…'
-, '2009-06-17, 2014-11-23, 2019-06-21', '2014-09-22, 2019-04-19', 'OHë¬¼ë¥˜ë¬¼ì‚°, YKìœ í†µ, ULXì¸í„°ë‚´ì…”ë„'
-, 'ì£¼ìž„, ëŒ€ë¦¬, ê³¼ìž¥', 'ê²½ê¸°ë„, ì„œìš¸, ì„œìš¸', 'ìœ í†µê´€ë¦¬ì‚¬, ì™¸í™˜ê´€ë¦¬ì‚¬, ì™¸í™˜ê´€ë¦¬ì‚¬', '2007-09-14, 2008-08-22, 2009-07-17', 'ë³´ì„¸ì‚¬, ë¬¼ë¥˜ê´€ë¦¬ì‚¬, ìœ í†µê´€ë¦¬ì‚¬'
-, 'í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨, í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨, í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨', 'í•©ê²©, í•©ê²©, í•©ê²©', 143);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, '¼ÕÁöÇý', TO_DATE('1986-10-15', 'YYYY-MM-DD'), 'jihyeson@ulx.com', '010-7456-7110'
+, '¼­¿ï½Ã °­µ¿±¸ ¾çÀç´ë·Î 1404-35', '¹ÌÈ¥', '³²¼º', 'ÇÊ', '2005-03-02, 2002-03-02', '2009-02-11, 2005-02-12'
+, '°Ç±¹´ëÇÐ±³, µÐÃÌ°íµîÇÐ±³', 'Àç¹«±ÝÀ¶ÇÐ°ú, ¹®°ú', '¼­¿ï, °æ±âµµ', '3.7, 2µî±Þ', 'Á¹¾÷, Á¹¾÷'
+, '2009-06-17, 2014-11-23, 2019-06-21', '2014-09-22, 2019-04-19, ', 'OH¹°·ù¹°»ê, YKÀ¯Åë, ULXÀÎÅÍ³»¼Å³Î'
+, 'ÁÖÀÓ, ´ë¸®, °úÀå', '°æ±âµµ, ¼­¿ï, ¼­¿ï', 'À¯Åë°ü¸®»ç, ¿ÜÈ¯°ü¸®»ç, ¿ÜÈ¯°ü¸®»ç', '2007-09-14, 2008-08-22, 2009-07-17', 'º¸¼¼»ç, ¹°·ù°ü¸®»ç, À¯Åë°ü¸®»ç'
+, 'ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü, ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü, ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü', 'ÇÕ°Ý, ÇÕ°Ý, ÇÕ°Ý', 143);
 
 INSERT INTO RESUME
 VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
@@ -2992,13 +2992,13 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
 , RESUME_CAREER_END_DATE, RESUME_CAREER_NAME, RESUME_CAREER_POSITION
 , RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE, RESUME_LICENSE_NAME
 , RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ê¹€ë¯¼ìˆ˜', TO_DATE('1990-01-15', 'YYYY-MM-DD'), 'kimminsoo@jwonconstruction.com', '010-6118-7717'
-, 'ì„œìš¸ì‹œ ê°•ë‚¨êµ¬ ì„œì´ˆëŒ€ë¡œ 8ê¸¸', 'ë¯¸í˜¼', 'ë‚¨ì„±', 'í•„', '2010-03-02, 2007-03-02', '2016-02-11, 2010-02-12'
-, 'ì„œê°•ëŒ€í•™êµ, ëŒ€í‰ê³ ë“±í•™êµ', 'í† ëª©ê±´ì„¤í•™ê³¼, ì´ê³¼', 'ì„œìš¸, ê²½ê¸°ë„', '3.8', 'ì¡¸ì—…, ì¡¸ì—…'
-, '2017-06-17, 2019-11-23, 2023-01-21', '2019-09-22, 2022-12-19', 'OHí† ëª©ê±´ì„¤, YMKê±´ì„¤, ì „ìš°ê±´ì„¤'
-, 'ì‚¬ì›, ì£¼ìž„, ëŒ€ë¦¬', 'ê²½ê¸°ë„, ì„œìš¸, ì„œìš¸', 'ê±´ì¶• ì•ˆì „ êµìœ¡, ê±´ì¶• êµ¬ì¡°ë¶„ì„, ê±´ì¶• ì‹œê³µ ê³„íš'
-, '2015-08-11, 2016-03-22, 2016-06-17', 'í† ëª©ì‚°ì—…ê¸°ì‚¬, ê±´ì„¤ìž¬ë£Œì‹œí—˜ì‚°ì—…ê¸°ì‚¬, ì¸¡ëŸ‰ ë° ì§€í˜•ê³µê°„ì •ë³´ì‚°ì—…ê¸°ì‚¬
-', 'í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨, í•œêµ­í† ëª©ê±´ì„¤, í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨', 'í•©ê²©, í•©ê²©, í•©ê²©', 156);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, '±è¹Î¼ö', TO_DATE('1990-01-15', 'YYYY-MM-DD'), 'kimminsoo@jwonconstruction.com', '010-6118-7717'
+, '¼­¿ï½Ã °­³²±¸ ¼­ÃÊ´ë·Î 8±æ', '¹ÌÈ¥', '³²¼º', 'ÇÊ', '2010-03-02, 2007-03-02', '2016-02-11, 2010-02-12'
+, '¼­°­´ëÇÐ±³, ´ëÆò°íµîÇÐ±³', 'Åä¸ñ°Ç¼³ÇÐ°ú, ÀÌ°ú', '¼­¿ï, °æ±âµµ', '3.8, 2µî±Þ', 'Á¹¾÷, Á¹¾÷'
+, '2017-06-17, 2019-11-23, 2023-01-21', '2019-09-22, 2022-12-19, ', 'OHÅä¸ñ°Ç¼³, YMK°Ç¼³, Àü¿ì°Ç¼³'
+, '»ç¿ø, ÁÖÀÓ, ´ë¸®', '°æ±âµµ, ¼­¿ï, ¼­¿ï', '°ÇÃà ¾ÈÀü ±³À°, °ÇÃà ±¸Á¶ºÐ¼®, °ÇÃà ½Ã°ø °èÈ¹'
+, '2015-08-11, 2016-03-22, 2016-06-17', 'Åä¸ñ»ê¾÷±â»ç, °Ç¼³Àç·á½ÃÇè»ê¾÷±â»ç, Ãø·® ¹× ÁöÇü°ø°£Á¤º¸»ê¾÷±â»ç
+', 'ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü, ÇÑ±¹Åä¸ñ°Ç¼³, ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü', 'ÇÕ°Ý, ÇÕ°Ý, ÇÕ°Ý', 156);
 
 INSERT INTO RESUME
 VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
@@ -3011,13 +3011,13 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
 , RESUME_CAREER_END_DATE, RESUME_CAREER_NAME, RESUME_CAREER_POSITION
 , RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE, RESUME_LICENSE_NAME
 , RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ì´ë„í˜„', TO_DATE('1986-07-23', 'YYYY-MM-DD'), 'leedohyun@bosco.com', '010-3443-4112'
-, 'ê²½ê¸°ë„ ìš©ì¸ì‹œ ì²˜ì¸êµ¬ ë°±ì˜¥ëŒ€ë¡œ 1044', 'ê¸°í˜¼', 'ë‚¨ì„±', 'í•„', '2005-03-02, 2003-03-02', '2011-02-11, 2005-02-12'
-, 'í•œì„±ëŒ€í•™êµ, ê´‘êµê³ ë“±í•™êµ', 'ìžì›ê³µí•™ê³¼, ì´ê³¼', 'ì„œìš¸, ê²½ê¸°ë„', '3.8', 'ì¡¸ì—…, ì¡¸ì—…'
-, '2011-05-17, 2016-11-23, 2018-07-12', '2016-10-22, 2018-06-08', '(ì£¼)SMSENC, ë„¥ìŠ¤ì§€ì˜¤, ë³´ìŠ¤ì½”ì¸í„°ë‚´ì…”ë„'
-, 'ëŒ€ë¦¬, ê³¼ìž¥, ë¶€ìž¥', 'ê²½ê¸°ë„, ê²½ê¸°ë„, ì„œìš¸', 'ì—ë„ˆì§€ ì¸¡ì • ë¶„ì„, ì—ë„ˆì§€ ì—°êµ¬ê°œë°œ, ì—ë„ˆì§€ ì—°êµ¬ê°œë°œ'
-, '2007-06-21, 2008-03-29', 'ì—ë„ˆì§€ê´€ë¦¬ê¸°ëŠ¥ì‚¬, ì—ë„ˆì§€ê´€ë¦¬ì‚°ì—…ê¸°ì‚¬'
-, 'í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨, í•œêµ­ì—ë„ˆì§€ì¸ë ¥ê³µë‹¨', 'í•©ê²©, í•©ê²©', 162);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ÀÌµµÇö', TO_DATE('1986-07-23', 'YYYY-MM-DD'), 'leedohyun@bosco.com', '010-3443-4112'
+, '°æ±âµµ ¿ëÀÎ½Ã Ã³ÀÎ±¸ ¹é¿Á´ë·Î 1044', '±âÈ¥', '³²¼º', 'ÇÊ', '2005-03-02, 2003-03-02', '2011-02-11, 2005-02-12'
+, 'ÇÑ¼º´ëÇÐ±³, ±¤±³°íµîÇÐ±³', 'ÀÚ¿ø°øÇÐ°ú, ÀÌ°ú', '¼­¿ï, °æ±âµµ', '3.8, 4µî±Þ', 'Á¹¾÷, Á¹¾÷'
+, '2011-05-17, 2016-11-23, 2018-07-12', '2016-10-22, 2018-06-08, ', '(ÁÖ)SMSENC, ³Ø½ºÁö¿À, º¸½ºÄÚÀÎÅÍ³»¼Å³Î'
+, '´ë¸®, °úÀå, ºÎÀå', '°æ±âµµ, °æ±âµµ, ¼­¿ï', '¿¡³ÊÁö ÃøÁ¤ ºÐ¼®, ¿¡³ÊÁö ¿¬±¸°³¹ß, ¿¡³ÊÁö ¿¬±¸°³¹ß'
+, '2007-06-21, 2008-03-29', '¿¡³ÊÁö°ü¸®±â´É»ç, ¿¡³ÊÁö°ü¸®»ê¾÷±â»ç'
+, 'ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü, ÇÑ±¹¿¡³ÊÁöÀÎ·Â°ø´Ü', 'ÇÕ°Ý, ÇÕ°Ý', 162);
 
 INSERT INTO RESUME
 VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
@@ -3030,13 +3030,13 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
 , RESUME_CAREER_END_DATE, RESUME_CAREER_NAME, RESUME_CAREER_POSITION
 , RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE, RESUME_LICENSE_NAME
 , RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ì†ì§€ìš°', TO_DATE('1977-10-12 ', 'YYYY-MM-DD'), 'sonjiwoo@hanha.com', '010-0819-1881'
-, 'ê²½ê¸°ë„ ì„±ë‚¨ì‹œ ìˆ˜ì •êµ¬ ì‚°ì„±ëŒ€ë¡œ 225', 'ê¸°í˜¼', 'ë‚¨ì„±', 'í•„', '1996-03-02, 1993-03-02', '2003-02-11, 1996-02-12'
-, 'ì¤‘ì•™ëŒ€í•™êµ, ë³´í‰ê³ ë“±í•™êµ', 'í™”í•™ê³µí•™ê³¼, ì´ê³¼', 'ì„œìš¸, ê²½ê¸°ë„', '3.9', 'ì¡¸ì—…, ì¡¸ì—…'
-, '2003-03-16, 2013-11-16, 2017-11-14', '2013-10-03, 2017-10-19', 'OHí™”í•™, YMKì¼€ë¯¸ì¹¼, í•œí•˜'
-, 'ê³¼ìž¥, ê³¼ìž¥, ë¶€ìž¥', 'ì„œìš¸, ê²½ê¸°ë„, ì„œìš¸', 'í™”í•™ë¬¼ì§ˆ ë¶„ì„, í™”í•™ê³µì • ê´€ë¦¬ê°ë…, ìžì—°í™”í•™ ê°œë°œì—°êµ¬'
-, '1998-08-11, 2000-03-22, 2000-06-17', 'í™”í•™ë¶„ì„ê¸°ëŠ¥ì‚¬, í™”ê³µê¸°ëŠ¥ì‚¬, ìœ„í—˜ë¬¼ê¸°ëŠ¥ì‚¬'
-, 'í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨, í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨, í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨', 'í•©ê²©, í•©ê²©, í•©ê²©', 171);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, '¼ÕÁö¿ì', TO_DATE('1977-10-12 ', 'YYYY-MM-DD'), 'sonjiwoo@hanha.com', '010-0819-1881'
+, '°æ±âµµ ¼º³²½Ã ¼öÁ¤±¸ »ê¼º´ë·Î 225', '±âÈ¥', '³²¼º', 'ÇÊ', '1996-03-02, 1993-03-02', '2003-02-11, 1996-02-12'
+, 'Áß¾Ó´ëÇÐ±³, º¸Æò°íµîÇÐ±³', 'È­ÇÐ°øÇÐ°ú, ÀÌ°ú', '¼­¿ï, °æ±âµµ', '3.9, 3µî±Þ', 'Á¹¾÷, Á¹¾÷'
+, '2003-03-16, 2013-11-16, 2017-11-14', '2013-10-03, 2017-10-19, ', 'OHÈ­ÇÐ, YMKÄÉ¹ÌÄ®, ÇÑÇÏ'
+, '°úÀå, °úÀå, ºÎÀå', '¼­¿ï, °æ±âµµ, ¼­¿ï', 'È­ÇÐ¹°Áú ºÐ¼®, È­ÇÐ°øÁ¤ °ü¸®°¨µ¶, ÀÚ¿¬È­ÇÐ °³¹ß¿¬±¸'
+, '1998-08-11, 2000-03-22, 2000-06-17', 'È­ÇÐºÐ¼®±â´É»ç, È­°ø±â´É»ç, À§Çè¹°±â´É»ç'
+, 'ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü, ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü, ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü', 'ÇÕ°Ý, ÇÕ°Ý, ÇÕ°Ý', 171);
 
 INSERT INTO RESUME
 VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
@@ -3049,13 +3049,13 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
 , RESUME_CAREER_END_DATE, RESUME_CAREER_NAME, RESUME_CAREER_POSITION
 , RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE, RESUME_LICENSE_NAME
 , RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ë°•í•˜ì€', TO_DATE('1989-03-13', 'YYYY-MM-DD'), 'parkhaeun@hostea.com', '010-1808-5969'
-, 'ì„œìš¸ì‹œ ê°•ë™êµ¬ ì–‘ìž¬ëŒ€ë¡œ 1404-35', 'ë¯¸í˜¼', 'ì—¬ì„±', 'ë¯¸í•„', '2008-03-02, 2006-03-02', '2012-02-11, 2008-02-12'
-, 'í•œì–‘ëŒ€í•™êµ, ë‘”ì´Œê³ ë“±í•™êµ', 'ê²½ì œê¸ˆìœµí•™ê³¼, ë¬¸ê³¼', 'ì„œìš¸, ê²½ê¸°ë„', '3.6', 'ì¡¸ì—…, ì¡¸ì—…'
-, '2012-08-17, 2018-11-23, 2023-03-19', '2018-09-22, 2023-02-25', 'ì‚°ì„±ë¬¼ì‚°, DSë¬¼ì‚°, í˜¸ì„ í‹°ì•¤ì”¨'
-, 'ëŒ€ë¦¬, ëŒ€ë¦¬, ê³¼ìž¥', 'ê²½ê¸°ë„, ì„œìš¸, ì„œìš¸', 'ìœ í†µê´€ë¦¬ì‚¬, ì™¸í™˜ê´€ë¦¬ì‚¬, ì™¸í™˜ê´€ë¦¬ì‚¬'
-, '2009-08-11, 2010-03-22, 2012-06-17', 'ë³´ì„¸ì‚¬, ë¬¼ë¥˜ê´€ë¦¬ì‚¬, ìœ í†µê´€ë¦¬ì‚¬'
-, 'í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨, í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨, í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨', 'í•©ê²©, í•©ê²©, í•©ê²©', 181);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, '¹ÚÇÏÀº', TO_DATE('1989-03-13', 'YYYY-MM-DD'), 'parkhaeun@hostea.com', '010-1808-5969'
+, '¼­¿ï½Ã °­µ¿±¸ ¾çÀç´ë·Î 1404-35', '¹ÌÈ¥', '¿©¼º', '¹ÌÇÊ', '2008-03-02, 2006-03-02', '2012-02-11, 2008-02-12'
+, 'ÇÑ¾ç´ëÇÐ±³, µÐÃÌ°íµîÇÐ±³', '°æÁ¦±ÝÀ¶ÇÐ°ú, ¹®°ú', '¼­¿ï, °æ±âµµ', '3.6, 2µî±Þ', 'Á¹¾÷, Á¹¾÷'
+, '2012-08-17, 2018-11-23, 2023-03-19', '2018-09-22, 2023-02-25, ', '»ê¼º¹°»ê, DS¹°»ê, È£¼±Æ¼¾Ø¾¾'
+, '´ë¸®, ´ë¸®, °úÀå', '°æ±âµµ, ¼­¿ï, ¼­¿ï', 'À¯Åë°ü¸®»ç, ¿ÜÈ¯°ü¸®»ç, ¿ÜÈ¯°ü¸®»ç'
+, '2009-08-11, 2010-03-22, 2012-06-17', 'º¸¼¼»ç, ¹°·ù°ü¸®»ç, À¯Åë°ü¸®»ç'
+, 'ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü, ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü, ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü', 'ÇÕ°Ý, ÇÕ°Ý, ÇÕ°Ý', 181);
 
 INSERT INTO RESUME
 VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
@@ -3068,13 +3068,13 @@ VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
 , RESUME_CAREER_END_DATE, RESUME_CAREER_NAME, RESUME_CAREER_POSITION
 , RESUME_CAREER_LOCATION, RESUME_CAREER_JOB, RESUME_LICENSE_DATE, RESUME_LICENSE_NAME
 , RESUME_LICENSE_INSTITUTION, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
-VALUES(RESUME_NUMBER_SEQ.NEXTVAL, 'ë°•ì¤€ì„œ', TO_DATE('1989-11-27', 'YYYY-MM-DD'), 'parkjunseo@hninvestment.com', '010-9755-6686'
-, 'ì„œìš¸ì‹œ ê¸ˆì²œêµ¬ ê¸ˆí•˜ë¡œ 685-6', 'ë¯¸í˜¼', 'ë‚¨ì„±', 'í•„', '2008-03-02, 2006-03-02', '2013-02-11, 2008-02-12'
-, 'êµ­ë¯¼ëŒ€í•™êµ, ê¸ˆì²œê³ ë“±í•™êµ', 'ìž¬ë¬´ê¸ˆìœµí•™ê³¼, ë¬¸ê³¼', 'ì„œìš¸, ê²½ê¸°ë„', '4.1', 'ì¡¸ì—…, ì¡¸ì—…'
-, '2013-09-17, 2019-11-23, 2022-01-21', '2019-10-22, 2021-12-19', 'SHê¸ˆìœµì§€ì£¼, í•œëŒ€ê¸ˆìœµì§€ì£¼, HNíˆ¬ìžì¦ê¶Œ'
-, 'ëŒ€ë¦¬, ê³¼ìž¥, ê³¼ìž¥', 'ì„œìš¸, ì„œìš¸, ì„œìš¸', 'ê¸ˆìœµ ë¶„ì„ ë° ëª¨ë¸ë§, ê¸ˆìœµ ì• ë„ë¦¬ìŠ¤íŠ¸, ê¸ˆìœµ ì• ë„ë¦¬ìŠ¤íŠ¸'
-, '2015-08-11, 2016-03-22, 2016-06-17', 'íˆ¬ìžìžì‚°ìš´ìš©ì‚¬, ì‹ ìš©ë¶„ì„ì‚¬, SQLD'
-, 'í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨, í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨, í•œêµ­ì‚°ì—…ì¸ë ¥ê³µë‹¨', 'í•©ê²©, í•©ê²©, í•©ê²©', 199);
+VALUES(RESUME_NUMBER_SEQ.NEXTVAL, '¹ÚÁØ¼­', TO_DATE('1989-11-27', 'YYYY-MM-DD'), 'parkjunseo@hninvestment.com', '010-9755-6686'
+, '¼­¿ï½Ã ±ÝÃµ±¸ ±ÝÇÏ·Î 685-6', '¹ÌÈ¥', '³²¼º', 'ÇÊ', '2008-03-02, 2006-03-02', '2013-02-11, 2008-02-12'
+, '±¹¹Î´ëÇÐ±³, ±ÝÃµ°íµîÇÐ±³', 'Àç¹«±ÝÀ¶ÇÐ°ú, ¹®°ú', '¼­¿ï, °æ±âµµ', '4.1, 1µî±Þ', 'Á¹¾÷, Á¹¾÷'
+, '2013-09-17, 2019-11-23, 2022-01-21', '2019-10-22, 2021-12-19, ', 'SH±ÝÀ¶ÁöÁÖ, ÇÑ´ë±ÝÀ¶ÁöÁÖ, HNÅõÀÚÁõ±Ç'
+, '´ë¸®, °úÀå, °úÀå', '¼­¿ï, ¼­¿ï, ¼­¿ï', '±ÝÀ¶ ºÐ¼® ¹× ¸ðµ¨¸µ, ±ÝÀ¶ ¾Ö³Î¸®½ºÆ®, ±ÝÀ¶ ¾Ö³Î¸®½ºÆ®'
+, '2015-08-11, 2016-03-22, 2016-06-17', 'ÅõÀÚÀÚ»ê¿î¿ë»ç, ½Å¿ëºÐ¼®»ç, SQLD'
+, 'ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü, ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü, ÇÑ±¹»ê¾÷ÀÎ·Â°ø´Ü', 'ÇÕ°Ý, ÇÕ°Ý, ÇÕ°Ý', 199);
 
 
 COMMIT;
@@ -3083,14 +3083,14 @@ COMMIT;
 
 
 
--- ê¸°ì—… ë¦¬ë·°
+-- ±â¾÷ ¸®ºä
 INSERT INTO REVIEW (
     REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT,
     REVIEW_SALARY, REVIEW_WELFARE, REVIEW_ENVIRONMENT, REVIEW_BOSS, REVIEW_BALANCE,
     REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
     PERSONAL_NUMBER, COMPANY_NUMBER
 ) VALUES
-(REVIEW_NUMBER_SEQ.NEXTVAL, 'ì „ë°˜ì ìœ¼ë¡œ ë§Œì¡±í•˜ëŠ” íšŒì‚¬!!', 'ê¸‰ì—¬-ë³µì§€ ë“± ë­ í•˜ë‚˜ ê±¸ë¦¬ëŠ” ê±´ ì—†ìŒ. ì¶œí‡´ê·¼ì‹œê°„ë„ ìžìœ ë¡­ê³  ìž¬íƒê·¼ë¬´ë„ ê°€ëŠ¥í•œê²Œ ê°€ìž¥ í° ìž¥ì  !!', 5, 5, 4, 4, 5, 4.6, SYSDATE, SYSDATE, 1, 1);
+(REVIEW_NUMBER_SEQ.NEXTVAL, 'Àü¹ÝÀûÀ¸·Î ¸¸Á·ÇÏ´Â È¸»ç!!', '±Þ¿©-º¹Áö µî ¹¹ ÇÏ³ª °É¸®´Â °Ç ¾øÀ½. ÃâÅð±Ù½Ã°£µµ ÀÚÀ¯·Ó°í ÀçÅÃ±Ù¹«µµ °¡´ÉÇÑ°Ô °¡Àå Å« ÀåÁ¡ !!', 5, 5, 4, 4, 5, 4.6, SYSDATE, SYSDATE, 1, 1);
 
 INSERT INTO REVIEW (
     REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT,
@@ -3098,7 +3098,7 @@ INSERT INTO REVIEW (
     REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
     PERSONAL_NUMBER, COMPANY_NUMBER
 ) VALUES
-(REVIEW_NUMBER_SEQ.NEXTVAL, 'ë‹¤ ì¢‹ì€ë° ì›Œë¼ë²¨ì€ ì¢€....', 'íšŒì‚¬ì— ìƒ¤ì›Œì‹¤ì´ ìžˆë‹¤ê³  í•  ë•Œë¶€í„° ì•Œì•„ë´¤ì–´ì•¼ í–ˆìŒ í•˜... ì§„ì§œ ì›Œë¼ë²¨ ë˜¥ë§ì´ê³  ì£¼ì¤‘ì— ì €ë… ì—†ë‹¤ê³  ë³´ë©´ ë¨. ê·¸ëž˜ë„ ì—°ë´‰ì€ ì—…ê³„ ìµœê³  ìˆ˜ì¤€ìž„. í‡´ê·¼ë§Œ ì¢€ ì œë•Œ ì‹œì¼œì£¼ì„¸ìš” ã… ã… ã… ', 5, 4, 3, 2, 1, 3.0, SYSDATE, SYSDATE, 2, 1);
+(REVIEW_NUMBER_SEQ.NEXTVAL, '´Ù ÁÁÀºµ¥ ¿ö¶óº§Àº Á»....', 'È¸»ç¿¡ »þ¿ö½ÇÀÌ ÀÖ´Ù°í ÇÒ ¶§ºÎÅÍ ¾Ë¾ÆºÃ¾î¾ß ÇßÀ½ ÇÏ... ÁøÂ¥ ¿ö¶óº§ ¶Ë¸ÁÀÌ°í ÁÖÁß¿¡ Àú³á ¾ø´Ù°í º¸¸é µÊ. ±×·¡µµ ¿¬ºÀÀº ¾÷°è ÃÖ°í ¼öÁØÀÓ. Åð±Ù¸¸ Á» Á¦¶§ ½ÃÄÑÁÖ¼¼¿ä ¤Ð¤Ð¤Ð', 5, 4, 3, 2, 1, 3.0, SYSDATE, SYSDATE, 2, 1);
 
 INSERT INTO REVIEW (
     REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT,
@@ -3106,7 +3106,7 @@ INSERT INTO REVIEW (
     REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
     PERSONAL_NUMBER, COMPANY_NUMBER
 ) VALUES
-(REVIEW_NUMBER_SEQ.NEXTVAL, 'í‡´ì‚¬ ì˜ˆì •.... ë”í™©ì± ', 'ì´ê±´ ë­... ë§¨ë‚  ì•¼ê·¼ì— ì£¼ë§ ì¶œê·¼ë„ í•œ ë‹¬ì— í•œ ë²ˆì€ ê¼­ ìžˆëŠ” ë“¯. ê·¸ë‚˜ë§ˆ ì‹œì„¤ì€ êµ‰ìž¥ížˆ ì¢‹ì€ íŽ¸ì¸ë°, ë‹¤ë¥¸ê²Œ ì›Œë‚™ ë³„ë¡œì—¬ì„œ ì´ê²ƒ ì¡°ì°¨ ë©”ë¦¬íŠ¸ê°€ ì•„ë‹Œ ëŠë‚Œ. ê°€ìž¥ í° ë¬¸ì œëŠ” ì´ê±¸ ë¬¸ì œë¡œ ì¸ì‹í•˜ì§€ ì•Šê³  ë‹¹ì—°ì‹œí•˜ëŠ” ê²½ì˜ì§„ì´ê³ . ì´ë²ˆ ë‹¬ì— ë“œë””ì–´ í‡´ì‚¬í•©ë‹ˆë‹¤!!!', 3, 3, 4, 1, 1, 2.4, SYSDATE, SYSDATE, 3, 2);
+(REVIEW_NUMBER_SEQ.NEXTVAL, 'Åð»ç ¿¹Á¤.... µ¼È²Ã­', 'ÀÌ°Ç ¹¹... ¸Ç³¯ ¾ß±Ù¿¡ ÁÖ¸» Ãâ±Ùµµ ÇÑ ´Þ¿¡ ÇÑ ¹øÀº ²À ÀÖ´Â µí. ±×³ª¸¶ ½Ã¼³Àº ±²ÀåÈ÷ ÁÁÀº ÆíÀÎµ¥, ´Ù¸¥°Ô ¿ö³« º°·Î¿©¼­ ÀÌ°Í Á¶Â÷ ¸Þ¸®Æ®°¡ ¾Æ´Ñ ´À³¦. °¡Àå Å« ¹®Á¦´Â ÀÌ°É ¹®Á¦·Î ÀÎ½ÄÇÏÁö ¾Ê°í ´ç¿¬½ÃÇÏ´Â °æ¿µÁøÀÌ°í. ÀÌ¹ø ´Þ¿¡ µåµð¾î Åð»çÇÕ´Ï´Ù!!!', 3, 3, 4, 1, 1, 2.4, SYSDATE, SYSDATE, 3, 2);
 
 INSERT INTO REVIEW (
     REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT,
@@ -3114,7 +3114,7 @@ INSERT INTO REVIEW (
     REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
     PERSONAL_NUMBER, COMPANY_NUMBER
 ) VALUES
-(REVIEW_NUMBER_SEQ.NEXTVAL, 'ì‹ ì˜ ì§ìž¥', 'ì •ë§ ìµœê³ ì˜ íšŒì‚¬ìž…ë‹ˆë‹¤. ë¶„ìœ„ê¸°ë„ ì§„ì§œ ìžìœ ë¡­ê³  ìžìœ¨ì¶œí‡´ê·¼ì€ ë¬¼ë¡ , í•œ ë‹¬ì— í•œ ë²ˆì”© 4ì‹œ í‡´ê·¼ì´ ê°€ëŠ¥í•œ ì ì´ ê°€ìž¥ ë§ˆìŒì— ë“¤ì–´ìš”!! ã…Žã…Žã…Ž ì¢€ ì˜¤ëž˜ëœ ê±´ë¬¼ì´ë¼ ì—˜ë ˆë² ì´í„°ë„ ëŠë¦° íŽ¸ì´ê³  ê·¸ëŸ° ì‹œì„¤ì ì¸ ë©´ì´ ì•„ì‰½ì§€ë§Œ, ê·¸ëŸ° ê²ƒë“¤ì„ ì „ë¶€ ì»¤ë²„í•  ì •ë„ë¡œ ë­ í•˜ë‚˜ ë¹ ì§€ì§€ ì•ŠëŠ” íšŒì‚¬ì¸ ê²ƒ ê°™ìŠµë‹ˆë‹¹ ã…‹ã…‹ã…‹ ì—°ë´‰ ì¸ìƒí­ë„ ì¤€ìˆ˜í•œ íŽ¸ì´ë¼ ë§¤ìš° ë§Œì¡±.', 5, 5, 4, 5, 5, 4.8, SYSDATE, SYSDATE, 4, 2);
+(REVIEW_NUMBER_SEQ.NEXTVAL, '½ÅÀÇ Á÷Àå', 'Á¤¸» ÃÖ°íÀÇ È¸»çÀÔ´Ï´Ù. ºÐÀ§±âµµ ÁøÂ¥ ÀÚÀ¯·Ó°í ÀÚÀ²ÃâÅð±ÙÀº ¹°·Ð, ÇÑ ´Þ¿¡ ÇÑ ¹ø¾¿ 4½Ã Åð±ÙÀÌ °¡´ÉÇÑ Á¡ÀÌ °¡Àå ¸¶À½¿¡ µé¾î¿ä!! ¤¾¤¾¤¾ Á» ¿À·¡µÈ °Ç¹°ÀÌ¶ó ¿¤·¹º£ÀÌÅÍµµ ´À¸° ÆíÀÌ°í ±×·± ½Ã¼³ÀûÀÎ ¸éÀÌ ¾Æ½±Áö¸¸, ±×·± °ÍµéÀ» ÀüºÎ Ä¿¹öÇÒ Á¤µµ·Î ¹¹ ÇÏ³ª ºüÁöÁö ¾Ê´Â È¸»çÀÎ °Í °°½À´Ï´ç ¤»¤»¤» ¿¬ºÀ ÀÎ»óÆøµµ ÁØ¼öÇÑ ÆíÀÌ¶ó ¸Å¿ì ¸¸Á·.', 5, 5, 4, 5, 5, 4.8, SYSDATE, SYSDATE, 4, 2);
 
 INSERT INTO REVIEW (
     REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT,
@@ -3122,53 +3122,53 @@ INSERT INTO REVIEW (
     REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
     PERSONAL_NUMBER, COMPANY_NUMBER
 ) VALUES
-(REVIEW_NUMBER_SEQ.NEXTVAL, 'ì›Œë¼ë²¨ ë¹¼ê³¤ ê·¸ëƒ¥ ê·¸ëŸ¼', 'ì¼ë‹¨ ì£¼ 4.5ì¼ ê·¼ë¬´ëŠ” ì•„ì£¼ ì¹­ì°¬í•¨. ê·¼ë° ì—°ë´‰ ìƒìŠ¹ë¥ ë„ ê·¸ëƒ¥ ê·¸ë ‡ê³ ... ì „ë°˜ì ìœ¼ë¡œ ë¬´ë‚œí•œ ë“¯ í•˜ì§€ë§Œ 4.5ì¼ ê·¼ë¬´ ë§ê³  ë‹¤ë¥¸ ìž¥ì ì€ ë”±ížˆ ìƒê°ì´ ì•ˆë‚¨ ã… ã… ã…Žã…Ž', 3, 4, 4, 3, 5, 3.8, SYSDATE, SYSDATE, 5, 3);
+(REVIEW_NUMBER_SEQ.NEXTVAL, '¿ö¶óº§ »©°ï ±×³É ±×·³', 'ÀÏ´Ü ÁÖ 4.5ÀÏ ±Ù¹«´Â ¾ÆÁÖ ÄªÂùÇÔ. ±Ùµ¥ ¿¬ºÀ »ó½Â·üµµ ±×³É ±×·¸°í... Àü¹ÝÀûÀ¸·Î ¹«³­ÇÑ µí ÇÏÁö¸¸ 4.5ÀÏ ±Ù¹« ¸»°í ´Ù¸¥ ÀåÁ¡Àº µüÈ÷ »ý°¢ÀÌ ¾È³² ¤Ð¤Ð¤¾¤¾', 3, 4, 4, 3, 5, 3.8, SYSDATE, SYSDATE, 5, 3);
 
 INSERT INTO REVIEW
 VALUE(REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT, REVIEW_SALARY, REVIEW_WELFARE
     , REVIEW_ENVIRONMENT, REVIEW_BOSS, REVIEW_BALANCE, REVIEW_GOOD, REVIEW_BAD
     , REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE, PERSONAL_NUMBER, COMPANY_NUMBER)
-VALUES(REVIEW_NUMBER_SEQ.NEXTVAL, 'íŒ€ ë‚´ í˜‘ë ¥ê³¼ ì—…ë¬´ í™˜ê²½ í›Œë¥­', 'íŒ€ ë‚´ í˜‘ë ¥ê³¼ ì—…ë¬´ í™˜ê²½ë„ í›Œë¥­í•˜ë©°, ë™ë£Œë“¤ê³¼ í•¨ê»˜ ì¼í•  ë•Œ í•­ìƒ ì¦ê±°ìš´ ì‹œê°„ì„ ë³´ëƒˆë‹¤. 
-ê³ ê° ì¤‘ì‹¬ì˜ ê¸°ì—… ë¬¸í™”ë¥¼ ë°°ìš¸ ìˆ˜ ìžˆëŠ” í›Œë¥­í•œ ê¸°íšŒì˜€ë‹¤.', 3, 4, 5, 3, 3
-, 'ê¸°ìˆ  í˜ì‹ ê³¼ ê³ ê° ì„œë¹„ìŠ¤ì— ëŒ€í•œ ì—´ì •', 'ì—…ë¬´ ì²˜ë¦¬ ì†ë„ì™€ ê³ ê° ì„œë¹„ìŠ¤ í’ˆì§ˆì— ëŒ€í•œ ë¬¸ì œê°€ ì§€ì†ì ìœ¼ë¡œ ë°œìƒ'
+VALUES(REVIEW_NUMBER_SEQ.NEXTVAL, 'ÆÀ ³» Çù·Â°ú ¾÷¹« È¯°æ ÈÇ¸¢', 'ÆÀ ³» Çù·Â°ú ¾÷¹« È¯°æµµ ÈÇ¸¢ÇÏ¸ç, µ¿·áµé°ú ÇÔ²² ÀÏÇÒ ¶§ Ç×»ó Áñ°Å¿î ½Ã°£À» º¸³Â´Ù. 
+°í°´ Áß½ÉÀÇ ±â¾÷ ¹®È­¸¦ ¹è¿ï ¼ö ÀÖ´Â ÈÇ¸¢ÇÑ ±âÈ¸¿´´Ù.', 3, 4, 5, 3, 3
+, '±â¼ú Çõ½Å°ú °í°´ ¼­ºñ½º¿¡ ´ëÇÑ ¿­Á¤', '¾÷¹« Ã³¸® ¼Óµµ¿Í °í°´ ¼­ºñ½º Ç°Áú¿¡ ´ëÇÑ ¹®Á¦°¡ Áö¼ÓÀûÀ¸·Î ¹ß»ý'
 , 3.6, SYSDATE, SYSDATE, 96, 30);
 
 INSERT INTO REVIEW
 VALUE(REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT, REVIEW_SALARY, REVIEW_WELFARE
     , REVIEW_ENVIRONMENT, REVIEW_BOSS, REVIEW_BALANCE, REVIEW_GOOD, REVIEW_BAD
     , REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE, PERSONAL_NUMBER, COMPANY_NUMBER)
-VALUES(REVIEW_NUMBER_SEQ.NEXTVAL, 'ë›°ì–´ë‚œ ê¸°ìˆ ê³¼ ì†”ë£¨ì…˜ ë‹¤ì–‘ì„±', 'ì „ë¬¸ì„±ê³¼ í˜ì‹ ì„ ì¤‘ìš”ì‹œí•œë‹¤. 
-ì—…ë¬´ê°€ ê¹Œë‹¤ë¡œìš°ë©°, ì—…ë¬´ì™€ ê°œì¸ìƒí™œì˜ ê· í˜•ì„ ìœ ì§€í•˜ê¸° ì–´ë µë‹¤. 
-ê·¸ëŸ¬ë‚˜ ì „ìž ë° ì†Œí”„íŠ¸ì›¨ì–´ ë¶„ì•¼ì—ì„œì˜ ê²½ë ¥ì„ í‚¤ìš°ê¸°ì— í›Œë¥­í•œ ê³³ì´ë‹¤.', 5, 3, 3, 3, 1
-, 'ì „ìž ë° ì†Œí”„íŠ¸ì›¨ì–´ ë¶„ì•¼ì—ì„œ ë†’ì€ í’ˆì§ˆê³¼ ê¸°ìˆ ì„ ì œê³µí•˜ëŠ” íšŒì‚¬. ê¸°ìˆ ë ¥ê³¼ ì†”ë£¨ì…˜ì˜ ë‹¤ì–‘ì„±.'
-, 'ê¹Œë‹¤ë¡œìš´ ì—…ë¬´. ì—…ë¬´ì™€ ê°œì¸ìƒí™œì˜ ê· í˜•ì„ ìœ ì§€í•˜ê¸° ì–´ë ¤ì›€', 3, SYSDATE, SYSDATE, 97, 32);
+VALUES(REVIEW_NUMBER_SEQ.NEXTVAL, '¶Ù¾î³­ ±â¼ú°ú ¼Ö·ç¼Ç ´Ù¾ç¼º', 'Àü¹®¼º°ú Çõ½ÅÀ» Áß¿ä½ÃÇÑ´Ù. 
+¾÷¹«°¡ ±î´Ù·Î¿ì¸ç, ¾÷¹«¿Í °³ÀÎ»ýÈ°ÀÇ ±ÕÇüÀ» À¯ÁöÇÏ±â ¾î·Æ´Ù. 
+±×·¯³ª ÀüÀÚ ¹× ¼ÒÇÁÆ®¿þ¾î ºÐ¾ß¿¡¼­ÀÇ °æ·ÂÀ» Å°¿ì±â¿¡ ÈÇ¸¢ÇÑ °÷ÀÌ´Ù.', 5, 3, 3, 3, 1
+, 'ÀüÀÚ ¹× ¼ÒÇÁÆ®¿þ¾î ºÐ¾ß¿¡¼­ ³ôÀº Ç°Áú°ú ±â¼úÀ» Á¦°øÇÏ´Â È¸»ç. ±â¼ú·Â°ú ¼Ö·ç¼ÇÀÇ ´Ù¾ç¼º.'
+, '±î´Ù·Î¿î ¾÷¹«. ¾÷¹«¿Í °³ÀÎ»ýÈ°ÀÇ ±ÕÇüÀ» À¯ÁöÇÏ±â ¾î·Á¿ò', 3, SYSDATE, SYSDATE, 97, 32);
 
 INSERT INTO REVIEW
 VALUE(REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT, REVIEW_SALARY, REVIEW_WELFARE
     , REVIEW_ENVIRONMENT, REVIEW_BOSS, REVIEW_BALANCE, REVIEW_GOOD, REVIEW_BAD
     , REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE, PERSONAL_NUMBER, COMPANY_NUMBER)
-VALUES(REVIEW_NUMBER_SEQ.NEXTVAL, 'ë›°ì–´ë‚œ ê¸°ìˆ  í˜ì‹ ê³¼ ì—…ë¬´ í™˜ê²½ ì œê³µ', 'í•­ìƒ ê³ ê° ìš”êµ¬ ì‚¬í•­ì„ ì¶©ì¡±ì‹œí‚¤ê¸° ìœ„í•œ ë…¸ë ¥ìœ¼ë¡œ ê°€ë“ ì°¨ ìžˆê³ , 
-í’ˆì§ˆì— ëŒ€í•œ ì—„ê²©í•œ ê¸°ì¤€ì„ ê°€ì§€ê³  ìžˆë‹¤. ì´ë¡œ ì¸í•´ ì—…ë¬´ê°€ ê¹Œë‹¤ë¡œìš¸ ìˆ˜ ìžˆì§€ë§Œ, ê²½ë ¥ì„ í‚¤ìš°ê¸°ì— ì´ìƒì ì¸ ê³³ì´ë‹¤.'
-, 4, 4, 3, 3, 3, 'ê¸°ìˆ  í˜ì‹ ê³¼ ì—…ë¬´ í™˜ê²½', 'ê¹Œë‹¤ë¡œìš´ ì—…ë¬´', 3.4, SYSDATE, SYSDATE, 98, 33);
+VALUES(REVIEW_NUMBER_SEQ.NEXTVAL, '¶Ù¾î³­ ±â¼ú Çõ½Å°ú ¾÷¹« È¯°æ Á¦°ø', 'Ç×»ó °í°´ ¿ä±¸ »çÇ×À» ÃæÁ·½ÃÅ°±â À§ÇÑ ³ë·ÂÀ¸·Î °¡µæ Â÷ ÀÖ°í, 
+Ç°Áú¿¡ ´ëÇÑ ¾ö°ÝÇÑ ±âÁØÀ» °¡Áö°í ÀÖ´Ù. ÀÌ·Î ÀÎÇØ ¾÷¹«°¡ ±î´Ù·Î¿ï ¼ö ÀÖÁö¸¸, °æ·ÂÀ» Å°¿ì±â¿¡ ÀÌ»óÀûÀÎ °÷ÀÌ´Ù.'
+, 4, 4, 3, 3, 3, '±â¼ú Çõ½Å°ú ¾÷¹« È¯°æ', '±î´Ù·Î¿î ¾÷¹«', 3.4, SYSDATE, SYSDATE, 98, 33);
 
 INSERT INTO REVIEW
 VALUE(REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT, REVIEW_SALARY, REVIEW_WELFARE
     , REVIEW_ENVIRONMENT, REVIEW_BOSS, REVIEW_BALANCE, REVIEW_GOOD, REVIEW_BAD
     , REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE, PERSONAL_NUMBER, COMPANY_NUMBER)
-VALUES(REVIEW_NUMBER_SEQ.NEXTVAL, 'ì„œë¹„ìŠ¤ ì—´ì •ìœ¼ë¡œì¸í•œ ì—…ë¬´ ìŠ¤íŠ¸ë ˆìŠ¤', 'ê³ ê° ì„œë¹„ìŠ¤ì˜ ì—´ì • ë•Œë¬¸ì— ì—…ë¬´ ìŠ¤íŠ¸ë ˆìŠ¤ë¥¼ ë°›ì„ ë•Œê°€ ìžˆë‹¤. 
-ê³ ê° ì„œë¹„ìŠ¤ì™€ íšŒì‚¬ ë‚´ë¶€ì˜ íš¨ìœ¨ì„±ì„ í–¥ìƒì‹œí‚¤ëŠ” í”„ë¡œì„¸ìŠ¤ ê°œì„ ì— ëŒ€í•œ ë…¸ë ¥ì´ í•„ìš”í•˜ë‹¤.', 4, 3, 2, 2, 3
-, 'íšŒì‚¬ëŠ” í•­ìƒ ìµœê³ ì˜ ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ê³ ìž ë…¸ë ¥í•˜ë©°, íŒ€ ë‚´ í˜‘ë ¥ê³¼ ê³ ê° ì¤‘ì‹¬ì˜ ë¬¸í™”ë¥¼ ì¤‘ìš”ì‹œí•œë‹¤.'
-, 'ê³ ê° ì„œë¹„ìŠ¤ì˜ ì—´ì • ë•Œë¬¸ì— ì—…ë¬´ ìŠ¤íŠ¸ë ˆìŠ¤ë¥¼ ë°›ìŒ', 2.8, SYSDATE, SYSDATE, 99, 37);
+VALUES(REVIEW_NUMBER_SEQ.NEXTVAL, '¼­ºñ½º ¿­Á¤À¸·ÎÀÎÇÑ ¾÷¹« ½ºÆ®·¹½º', '°í°´ ¼­ºñ½ºÀÇ ¿­Á¤ ¶§¹®¿¡ ¾÷¹« ½ºÆ®·¹½º¸¦ ¹ÞÀ» ¶§°¡ ÀÖ´Ù. 
+°í°´ ¼­ºñ½º¿Í È¸»ç ³»ºÎÀÇ È¿À²¼ºÀ» Çâ»ó½ÃÅ°´Â ÇÁ·Î¼¼½º °³¼±¿¡ ´ëÇÑ ³ë·ÂÀÌ ÇÊ¿äÇÏ´Ù.', 4, 3, 2, 2, 3
+, 'È¸»ç´Â Ç×»ó ÃÖ°íÀÇ ¼­ºñ½º¸¦ Á¦°øÇÏ°íÀÚ ³ë·ÂÇÏ¸ç, ÆÀ ³» Çù·Â°ú °í°´ Áß½ÉÀÇ ¹®È­¸¦ Áß¿ä½ÃÇÑ´Ù.'
+, '°í°´ ¼­ºñ½ºÀÇ ¿­Á¤ ¶§¹®¿¡ ¾÷¹« ½ºÆ®·¹½º¸¦ ¹ÞÀ½', 2.8, SYSDATE, SYSDATE, 99, 37);
 
 INSERT INTO REVIEW
 VALUE(REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT, REVIEW_SALARY, REVIEW_WELFARE
     , REVIEW_ENVIRONMENT, REVIEW_BOSS, REVIEW_BALANCE, REVIEW_GOOD, REVIEW_BAD
     , REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE, PERSONAL_NUMBER, COMPANY_NUMBER)
-VALUES(REVIEW_NUMBER_SEQ.NEXTVAL, 'ê°œì¸ ì‹œê°„ê³¼ í˜ì‹  ë¶€ì¡±ì„ ê²½í—˜', 'ê³ ê°ì˜ ìš”êµ¬ë¥¼ ì¶©ì¡±ì‹œí‚¤ê¸° ìœ„í•œ ì—°êµ¬ì™€ ê°œë°œì— ì§‘ì¤‘í•˜ë©°, 
-ë›°ì–´ë‚œ íŒ€ í˜‘ë ¥ê³¼ ë¦¬ë”ì‹­ì„ ë³´ì—¬ì¤€ë‹¤. ê·¸ëŸ¬ë‚˜ ìƒˆë¡œìš´ ì•„ì´ë””ì–´ë¥¼ ì ê·¹ì ìœ¼ë¡œ ìˆ˜ìš©í•˜ëŠ” ë¬¸í™”ë¥¼ ê°•ì¡°í•´ì•¼í•œë‹¤.'
-, 5, 4, 2, 2, 2, 'ë°”ì´ì˜¤ ì˜ì•½í’ˆ ë¶„ì•¼ì—ì„œì˜ ê¸°ìˆ  í˜ì‹ ê³¼ ì—°êµ¬ ëŠ¥ë ¥. 
-í•­ìƒ ê³ ê°ì˜ ìš”êµ¬ë¥¼ ì¶©ì¡±ì‹œí‚¤ê¸° ìœ„í•œ ì—°êµ¬ì™€ ê°œë°œì— ì§‘ì¤‘í•˜ë©°, ë›°ì–´ë‚œ íŒ€ í˜‘ë ¥ê³¼ ë¦¬ë”ì‹­ì„ ë³´ì—¬ì¤Œ.'
-, 'ë„ˆë¬´ ì—…ë¬´ì— ì§‘ì¤‘í•˜ê¸° ë•Œë¬¸ì— ê°œì¸ ì‹œê°„ì„ ì†Œí™€ížˆ í•  ë•Œê°€ ìžˆë‹¤. ë˜í•œ, ìƒˆë¡œìš´ ì•„ì´ë””ì–´ë¥¼ ë°›ì•„ë“¤ì´ê¸° ì–´ë ¤ìš¸ ë•Œë„ ìžˆë‹¤.'
+VALUES(REVIEW_NUMBER_SEQ.NEXTVAL, '°³ÀÎ ½Ã°£°ú Çõ½Å ºÎÁ·À» °æÇè', '°í°´ÀÇ ¿ä±¸¸¦ ÃæÁ·½ÃÅ°±â À§ÇÑ ¿¬±¸¿Í °³¹ß¿¡ ÁýÁßÇÏ¸ç, 
+¶Ù¾î³­ ÆÀ Çù·Â°ú ¸®´õ½ÊÀ» º¸¿©ÁØ´Ù. ±×·¯³ª »õ·Î¿î ¾ÆÀÌµð¾î¸¦ Àû±ØÀûÀ¸·Î ¼ö¿ëÇÏ´Â ¹®È­¸¦ °­Á¶ÇØ¾ßÇÑ´Ù.'
+, 5, 4, 2, 2, 2, '¹ÙÀÌ¿À ÀÇ¾àÇ° ºÐ¾ß¿¡¼­ÀÇ ±â¼ú Çõ½Å°ú ¿¬±¸ ´É·Â. 
+Ç×»ó °í°´ÀÇ ¿ä±¸¸¦ ÃæÁ·½ÃÅ°±â À§ÇÑ ¿¬±¸¿Í °³¹ß¿¡ ÁýÁßÇÏ¸ç, ¶Ù¾î³­ ÆÀ Çù·Â°ú ¸®´õ½ÊÀ» º¸¿©ÁÜ.'
+, '³Ê¹« ¾÷¹«¿¡ ÁýÁßÇÏ±â ¶§¹®¿¡ °³ÀÎ ½Ã°£À» ¼ÒÈ¦È÷ ÇÒ ¶§°¡ ÀÖ´Ù. ¶ÇÇÑ, »õ·Î¿î ¾ÆÀÌµð¾î¸¦ ¹Þ¾ÆµéÀÌ±â ¾î·Á¿ï ¶§µµ ÀÖ´Ù.'
 , 3, SYSDATE, SYSDATE, 100, 34);
 
 INSERT INTO REVIEW (
@@ -3177,7 +3177,7 @@ INSERT INTO REVIEW (
     REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
     PERSONAL_NUMBER, COMPANY_NUMBER
 ) VALUES
-(REVIEW_NUMBER_SEQ.NEXTVAL, 'ì›Œë¼ë²¨ì€ ë³´ìž¥ë˜ëŠ” ê³³ì¸ë°', 'ê¸‰ì—¬ëž‘ ì§ì› ë³µì§€ê°€ ì¢€ ê·¸ëŸ¬ë„¤ìš”. ê²½ì˜ì§„ì€ ì© ë‚˜ì˜ì§„ ì•Šì€ë°ë„ ë§¤ë²ˆ ì•„ì‰½ìŠµë‹ˆë‹¤', 2, 2, 3, 3, 4, 2.8, SYSDATE, SYSDATE, 113, 48);
+(REVIEW_NUMBER_SEQ.NEXTVAL, '¿ö¶óº§Àº º¸ÀåµÇ´Â °÷ÀÎµ¥', '±Þ¿©¶û Á÷¿ø º¹Áö°¡ Á» ±×·¯³×¿ä. °æ¿µÁøÀº ½â ³ª»ÚÁø ¾ÊÀºµ¥µµ ¸Å¹ø ¾Æ½±½À´Ï´Ù', 2, 2, 3, 3, 4, 2.8, SYSDATE, SYSDATE, 113, 48);
 
 INSERT INTO REVIEW (
     REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT,
@@ -3185,7 +3185,7 @@ INSERT INTO REVIEW (
     REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
     PERSONAL_NUMBER, COMPANY_NUMBER
 ) VALUES
-(REVIEW_NUMBER_SEQ.NEXTVAL, 'ëŒ€ê¸°ì—…ì´ ì™œ ëŒ€ê¸°ì—…ì¸ì§€ ì•Œ ìˆ˜ ìžˆëŠ” ê³³ì´ì—ìš”', 'ì§„ì§œ ëŒ€ê¸°ì—…ë‹µê²Œ ìƒë‹¹ížˆ ì¢‹ìŠµë‹ˆë‹¤. ê²½ì˜ì§„ë§Œ ë¹¼ë©´, ì§„ì§œ ëˆ„êµ¬ë“ ì§€ ë§Œì¡±í•  íšŒì‚¬ê°™ì•„ìš”! ì§ì›ì„ ìœ„í•œ íšŒì‚¬ë¼ëŠ” ê³³ì´ ì–´ë–¤ê±´ì§€ ì²´ê°ë©ë‹ˆë‹¤!', 4, 5, 4, 2, 4, 3.8, SYSDATE, SYSDATE, 116, 51);
+(REVIEW_NUMBER_SEQ.NEXTVAL, '´ë±â¾÷ÀÌ ¿Ö ´ë±â¾÷ÀÎÁö ¾Ë ¼ö ÀÖ´Â °÷ÀÌ¿¡¿ä', 'ÁøÂ¥ ´ë±â¾÷´ä°Ô »ó´çÈ÷ ÁÁ½À´Ï´Ù. °æ¿µÁø¸¸ »©¸é, ÁøÂ¥ ´©±¸µçÁö ¸¸Á·ÇÒ È¸»ç°°¾Æ¿ä! Á÷¿øÀ» À§ÇÑ È¸»ç¶ó´Â °÷ÀÌ ¾î¶²°ÇÁö Ã¼°¨µË´Ï´Ù!', 4, 5, 4, 2, 4, 3.8, SYSDATE, SYSDATE, 116, 51);
 
 INSERT INTO REVIEW (
     REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT,
@@ -3193,7 +3193,7 @@ INSERT INTO REVIEW (
     REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
     PERSONAL_NUMBER, COMPANY_NUMBER
 ) VALUES
-(REVIEW_NUMBER_SEQ.NEXTVAL, 'ì¢‹ì€ ê³³ì´ê¸´ í•œë°, ì†Œë¬¸ë³´ë‹¤ ê·¸ë ‡ê²Œê¹Œì§„ ì•„ë‹Œ ê³³ ê°™ì•„ìš”', 'ê¸‰ì—¬ë„ ë³µì§€ë„ ì¢‹ê¸´ í•œë°, ì •ë§ ê·¸ê²Œ ëì¸ íšŒì‚¬ê°™ì•„ìš”. ì—¬íƒœê» ë“¤ì€ê±°ëž‘ ë¹„êµí•˜ë‹ˆ ì¢€ ë‹¬ë¼ì„œ ë‹¤ì†Œ ì‹¤ë§ê°ì´ ìžˆë„¤ìš”', 4, 4, 3, 3, 3, 3.4, SYSDATE, SYSDATE, 129, 49);
+(REVIEW_NUMBER_SEQ.NEXTVAL, 'ÁÁÀº °÷ÀÌ±ä ÇÑµ¥, ¼Ò¹®º¸´Ù ±×·¸°Ô±îÁø ¾Æ´Ñ °÷ °°¾Æ¿ä', '±Þ¿©µµ º¹Áöµµ ÁÁ±ä ÇÑµ¥, Á¤¸» ±×°Ô ³¡ÀÎ È¸»ç°°¾Æ¿ä. ¿©ÅÂ²¯ µéÀº°Å¶û ºñ±³ÇÏ´Ï Á» ´Þ¶ó¼­ ´Ù¼Ò ½Ç¸Á°¨ÀÌ ÀÖ³×¿ä', 4, 4, 3, 3, 3, 3.4, SYSDATE, SYSDATE, 129, 49);
 
 INSERT INTO REVIEW (
     REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT,
@@ -3201,7 +3201,7 @@ INSERT INTO REVIEW (
     REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
     PERSONAL_NUMBER, COMPANY_NUMBER
 ) VALUES
-(REVIEW_NUMBER_SEQ.NEXTVAL, 'ê¸‰ì—¬ë„ ë³µì§€í˜œíƒë„ ì¢‹ì€ë° ë„ˆë¬´ ë°”ë¹ ìš”', 'ê¸‰ì—¬-ë³µì§€í˜œíƒ ì´ëŸ°ê±´ ë‹¤ ì¢‹ì€ë° ë„ˆë¬´ ë°”ì˜ê³ , ì‰´í‹ˆì´ ì—†ì–´ì„œ ê°€ë” ì§€ì¹©ë‹ˆë‹¤. ê·¸ëŸ°ë° ê²½ì˜ì§„ì€ ë§¤ì¶œë§Œ ë³´ê³  íŒë‹¨í•˜ë‹ˆ ì¢€ ë‹µë‹µí•˜ë„¤ìš”', 5, 4, 2, 2, 2, 3.0, SYSDATE, SYSDATE, 134, 54);
+(REVIEW_NUMBER_SEQ.NEXTVAL, '±Þ¿©µµ º¹ÁöÇýÅÃµµ ÁÁÀºµ¥ ³Ê¹« ¹Ùºü¿ä', '±Þ¿©-º¹ÁöÇýÅÃ ÀÌ·±°Ç ´Ù ÁÁÀºµ¥ ³Ê¹« ¹Ù»Ú°í, ½¯Æ´ÀÌ ¾ø¾î¼­ °¡²û ÁöÄ¨´Ï´Ù. ±×·±µ¥ °æ¿µÁøÀº ¸ÅÃâ¸¸ º¸°í ÆÇ´ÜÇÏ´Ï Á» ´ä´äÇÏ³×¿ä', 5, 4, 2, 2, 2, 3.0, SYSDATE, SYSDATE, 134, 54);
 
 INSERT INTO REVIEW (
     REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT,
@@ -3209,7 +3209,7 @@ INSERT INTO REVIEW (
     REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
     PERSONAL_NUMBER, COMPANY_NUMBER
 ) VALUES
-(REVIEW_NUMBER_SEQ.NEXTVAL, 'ì¼ì´ ì–´ë µì§€ ì•Šì€ë°, ë„ˆë¬´ ë°˜ë³µë˜ëŠ” ëŠë‚Œì¸ ê³³', 'ì›Œë¼ë²¨ ë³´ì¦ë˜ê³ , ê·¼ë¬´í™˜ê²½ë„ ê´œì°®ì€ë° ì§„ì§œ ëŠ˜ í•˜ë˜ê±°ë§Œ í•˜ëŠ”ê²Œ ì•„ì‰½ë„¤ìš”. ìƒˆë¡œì›€ì´ ì—†ëŠ”ê²Œ ì•„ì‰½ë„¤ìš”.', 3, 2, 4, 2, 4, 3.0, SYSDATE, SYSDATE, 143, 46);
+(REVIEW_NUMBER_SEQ.NEXTVAL, 'ÀÏÀÌ ¾î·ÆÁö ¾ÊÀºµ¥, ³Ê¹« ¹Ýº¹µÇ´Â ´À³¦ÀÎ °÷', '¿ö¶óº§ º¸ÁõµÇ°í, ±Ù¹«È¯°æµµ ±¦ÂúÀºµ¥ ÁøÂ¥ ´Ã ÇÏ´ø°Å¸¸ ÇÏ´Â°Ô ¾Æ½±³×¿ä. »õ·Î¿òÀÌ ¾ø´Â°Ô ¾Æ½±³×¿ä.', 3, 2, 4, 2, 4, 3.0, SYSDATE, SYSDATE, 143, 46);
 
 INSERT INTO REVIEW (
     REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT,
@@ -3217,7 +3217,7 @@ INSERT INTO REVIEW (
     REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
     PERSONAL_NUMBER, COMPANY_NUMBER
 ) VALUES
-(REVIEW_NUMBER_SEQ.NEXTVAL, 'ê¸‰ì—¬ëž‘ í™˜ê²½ì€ ì¢‹ì•„ìš”', 'ê¸‰ì—¬ëž‘ ê·¼ë¬´í™˜ê²½ì€ ì¢‹ì€ë°, ì§ì› ë³µì§€ì™€ ìž¦ì€ ì•¼ê·¼ì´ ì¢€ ê·¸ëŸ¬ë„¤ìš”.', 4, 2, 4, 2, 3, 3.0, SYSDATE, SYSDATE, 156, 79);
+(REVIEW_NUMBER_SEQ.NEXTVAL, '±Þ¿©¶û È¯°æÀº ÁÁ¾Æ¿ä', '±Þ¿©¶û ±Ù¹«È¯°æÀº ÁÁÀºµ¥, Á÷¿ø º¹Áö¿Í ÀæÀº ¾ß±ÙÀÌ Á» ±×·¯³×¿ä.', 4, 2, 4, 2, 3, 3.0, SYSDATE, SYSDATE, 156, 79);
 
 INSERT INTO REVIEW (
     REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT,
@@ -3225,7 +3225,7 @@ INSERT INTO REVIEW (
     REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
     PERSONAL_NUMBER, COMPANY_NUMBER
 ) VALUES
-(REVIEW_NUMBER_SEQ.NEXTVAL, 'ë‚˜ì˜ì§„ ì•Šì€ ê³³ì´ì—ìš”', 'ê¸‰ì—¬ë„ ì›Œë¼ë²¨ë„ ê´œì°®ì€ë° ê²½ì˜ì§„ì´ ì¢€ ë¶ˆíŽ¸í•˜ë„¤ìš”.', 4, 3, 3, 2, 4, 3.2, SYSDATE, SYSDATE, 162, 72);
+(REVIEW_NUMBER_SEQ.NEXTVAL, '³ª»ÚÁø ¾ÊÀº °÷ÀÌ¿¡¿ä', '±Þ¿©µµ ¿ö¶óº§µµ ±¦ÂúÀºµ¥ °æ¿µÁøÀÌ Á» ºÒÆíÇÏ³×¿ä.', 4, 3, 3, 2, 4, 3.2, SYSDATE, SYSDATE, 162, 72);
 
 INSERT INTO REVIEW (
     REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT,
@@ -3233,7 +3233,7 @@ INSERT INTO REVIEW (
     REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
     PERSONAL_NUMBER, COMPANY_NUMBER
 ) VALUES
-(REVIEW_NUMBER_SEQ.NEXTVAL, 'ê·¸ëƒ¥ ê·¸ëž¬ì–´ìš”', 'ë³µì§€ëŠ” ê´œì°®ì•˜ì§€ë§Œ ê¸‰ì—¬ê°€ ë†’ì§€ëŠ” ì•Šì•„ì„œ ì•„ì‰¬ì› ìŠµë‹ˆë‹¤.', 3, 4, 3, 3, 3, 3.2, SYSDATE, SYSDATE, 171, 73);
+(REVIEW_NUMBER_SEQ.NEXTVAL, '±×³É ±×·¨¾î¿ä', 'º¹Áö´Â ±¦Âú¾ÒÁö¸¸ ±Þ¿©°¡ ³ôÁö´Â ¾Ê¾Æ¼­ ¾Æ½¬¿ü½À´Ï´Ù.', 3, 4, 3, 3, 3, 3.2, SYSDATE, SYSDATE, 171, 73);
 
 INSERT INTO REVIEW (
     REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT,
@@ -3241,7 +3241,7 @@ INSERT INTO REVIEW (
     REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
     PERSONAL_NUMBER, COMPANY_NUMBER
 ) VALUES
-(REVIEW_NUMBER_SEQ.NEXTVAL, 'ì§„ì§œ ì¢‹ì€ íšŒì‚¬ì—ìš”', 'ëŒ€ê¸°ì—…ë‹µê²Œ ì¢‹ì€ë°, íšŒì‚¬ë‚´ ê²½ìŸì´ ì¹˜ì—´í•©ë‹ˆë‹¤.', 5, 4, 3, 3, 4, 3.8, SYSDATE, SYSDATE, 181, 71);
+(REVIEW_NUMBER_SEQ.NEXTVAL, 'ÁøÂ¥ ÁÁÀº È¸»ç¿¡¿ä', '´ë±â¾÷´ä°Ô ÁÁÀºµ¥, È¸»ç³» °æÀïÀÌ Ä¡¿­ÇÕ´Ï´Ù.', 5, 4, 3, 3, 4, 3.8, SYSDATE, SYSDATE, 181, 71);
 
 INSERT INTO REVIEW (
     REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT,
@@ -3249,7 +3249,7 @@ INSERT INTO REVIEW (
     REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
     PERSONAL_NUMBER, COMPANY_NUMBER
 ) VALUES
-(REVIEW_NUMBER_SEQ.NEXTVAL, 'ë­”ê°€ ì•„ì‰¬ìš´ íšŒì‚¬ì—ìš”', 'ì›Œë¼ë²¨ ë³´ì¦ë˜ê³ , ê²½ì˜ì§„ë„ ê´œì°®ì€ë° ê·¼ë¬´í™˜ê²½ì´ ì¢‹ì§€ ì•Šì•„ìš”.', 3, 3, 2, 4, 5, 3.4, SYSDATE, SYSDATE, 199, 66);
+(REVIEW_NUMBER_SEQ.NEXTVAL, '¹º°¡ ¾Æ½¬¿î È¸»ç¿¡¿ä', '¿ö¶óº§ º¸ÁõµÇ°í, °æ¿µÁøµµ ±¦ÂúÀºµ¥ ±Ù¹«È¯°æÀÌ ÁÁÁö ¾Ê¾Æ¿ä.', 3, 3, 2, 4, 5, 3.4, SYSDATE, SYSDATE, 199, 66);
 
 COMMIT;
 
@@ -3258,1176 +3258,1173 @@ COMMIT;
 
 
 
--- ê²Œì‹œê¸€ 140ê°œ
+-- °Ô½Ã±Û 140°³
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'JYP', 'KSí•˜ì´ë‹ˆìŠ¤', 'ì§ìž¥ì—ì„œì˜ ë¦¬ë”ì‹­ ë°œì „ê³¼ íŒ€ ì„±ê³¼'
-    , 'ì§ìž¥ì—ì„œ ë¦¬ë”ë¡œ ì„±ìž¥í•˜ëŠ” ê³¼ì •ê³¼ ì–´ë–»ê²Œ íŒ€ ì„±ê³¼ì— ê¸°ì—¬í•˜ëŠ”ì§€ì— ëŒ€í•œ ê²½í—˜ì„ ê³µìœ í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë¦¬ë”ì‹­ì€ íŒ€ì˜ ë™ê¸°ë¶€ì—¬ì™€ ì„±ê³¼ì— í° ì˜í–¥ì„ ë¯¸ì¹©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'JYP', 'KSÇÏÀÌ´Ï½º', 'Á÷Àå¿¡¼­ÀÇ ¸®´õ½Ê ¹ßÀü°ú ÆÀ ¼º°ú'
+    , 'Á÷Àå¿¡¼­ ¸®´õ·Î ¼ºÀåÇÏ´Â °úÁ¤°ú ¾î¶»°Ô ÆÀ ¼º°ú¿¡ ±â¿©ÇÏ´ÂÁö¿¡ ´ëÇÑ °æÇèÀ» °øÀ¯ÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '¸®´õ½ÊÀº ÆÀÀÇ µ¿±âºÎ¿©¿Í ¼º°ú¿¡ Å« ¿µÇâÀ» ¹ÌÄ¨´Ï´Ù.'
     , SYSDATE-56, SYSDATE-56, 11, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ê·€ì˜ì€í–‰ëŸ¬', 'ê·€ì—½ì€í–‰', 'ì§ìž¥ ë‚´ í˜ì‹ ê³¼ ì•„ì´ë””ì–´ êµ¬í˜„'
-    , 'ì§ìž¥ ë‚´ í˜ì‹ ì€ ì¡°ì§ì˜ ê²½ìŸë ¥ì„ ê°•í™”í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì§ìž¥ ë‚´ì—ì„œ ì•„ì´ë””ì–´ë¥¼ ì œì•ˆí•˜ê³  êµ¬í˜„í•˜ëŠ” ê³¼ì •ì„ ì„¤ëª…í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '±Í¿µÀºÇà·¯', '±Í¿±ÀºÇà', 'Á÷Àå ³» Çõ½Å°ú ¾ÆÀÌµð¾î ±¸Çö'
+    , 'Á÷Àå ³» Çõ½ÅÀº Á¶Á÷ÀÇ °æÀï·ÂÀ» °­È­ÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô Á÷Àå ³»¿¡¼­ ¾ÆÀÌµð¾î¸¦ Á¦¾ÈÇÏ°í ±¸ÇöÇÏ´Â °úÁ¤À» ¼³¸íÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-56, SYSDATE-56, 12, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì„ ì•„ê·€ì—ìžˆë”°', 'ê·€ì—½ì€í–‰', 'ì§ìž¥ ë‚´ ì—…ë¬´ í”„ë ˆì  í…Œì´ì…˜ì˜ ì¤‘ìš”ì„±'
-    , 'ì§ìž¥ ë‚´ ì—…ë¬´ í”„ë ˆì  í…Œì´ì…˜ì€ ì •ë³´ ì „ë‹¬ê³¼ ì˜ì‚¬ ê²°ì •ì— ì˜í–¥ì„ ë¯¸ì¹©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ íš¨ê³¼ì ì¸ ì—…ë¬´ í”„ë ˆì  í…Œì´ì…˜ì„ ì¤€ë¹„í•˜ê³  ì „ë‹¬í•˜ëŠ” ë°©ë²•ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '¼±¾Æ±Í¿¡ÀÖµû', '±Í¿±ÀºÇà', 'Á÷Àå ³» ¾÷¹« ÇÁ·¹Á¨Å×ÀÌ¼ÇÀÇ Áß¿ä¼º'
+    , 'Á÷Àå ³» ¾÷¹« ÇÁ·¹Á¨Å×ÀÌ¼ÇÀº Á¤º¸ Àü´Þ°ú ÀÇ»ç °áÁ¤¿¡ ¿µÇâÀ» ¹ÌÄ¨´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô È¿°úÀûÀÎ ¾÷¹« ÇÁ·¹Á¨Å×ÀÌ¼ÇÀ» ÁØºñÇÏ°í Àü´ÞÇÏ´Â ¹æ¹ýÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-56, SYSDATE-56, 13, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì‹ ì§„ë‰´ì§„', 'K-OIL', 'ì§ìž¥ì—ì„œì˜ ì»¤ë®¤ë‹ˆì¼€ì´ì…˜ ìŠ¤í‚¬ ê°œì„ '
-    , 'ì»¤ë®¤ë‹ˆì¼€ì´ì…˜ ìŠ¤í‚¬ì€ ì§ìž¥ì—ì„œ í•µì‹¬ ì—­ëŸ‰ ì¤‘ í•˜ë‚˜ìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì»¤ë®¤ë‹ˆì¼€ì´ì…˜ ìŠ¤í‚¬ì„ í–¥ìƒì‹œí‚¤ê³ , ë™ë£Œì™€ ì›í™œí•œ ì˜ì‚¬ ì†Œí†µì„ ìœ ì§€í•˜ëŠ” ë°©ë²•ì„ ì°¾ì•„ëƒˆìŠµë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '½ÅÁø´ºÁø', 'K-OIL', 'Á÷Àå¿¡¼­ÀÇ Ä¿¹Â´ÏÄÉÀÌ¼Ç ½ºÅ³ °³¼±'
+    , 'Ä¿¹Â´ÏÄÉÀÌ¼Ç ½ºÅ³Àº Á÷Àå¿¡¼­ ÇÙ½É ¿ª·® Áß ÇÏ³ªÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô Ä¿¹Â´ÏÄÉÀÌ¼Ç ½ºÅ³À» Çâ»ó½ÃÅ°°í, µ¿·á¿Í ¿øÈ°ÇÑ ÀÇ»ç ¼ÒÅëÀ» À¯ÁöÇÏ´Â ¹æ¹ýÀ» Ã£¾Æ³Â½À´Ï´Ù.'
     , SYSDATE-55, SYSDATE-53, 14, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì†ì •ì†ì •', 'í‚¤ì•„ì°¨', 'íšŒì‚¬ì—ì„œì˜ ê¸€ë¡œë²Œ ì—…ë¬´ ê²½í—˜'
-    , 'ê¸€ë¡œë²Œ ì—…ë¬´ ê²½í—˜ì€ ë¬¸í™”ì  ì´í•´ì™€ êµ­ì œì  ì—­ëŸ‰ì„ í‚¤ìš°ëŠ” ë° ë„ì›€ì„ ì¤ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ê¸€ë¡œë²Œ í”„ë¡œì íŠ¸ì™€ íŒ€ì—ì„œì˜ ê²½í—˜ì„ í†µí•´ ì„±ìž¥í•˜ì˜€ìŠµë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '¼ÕÁ¤¼ÕÁ¤', 'Å°¾ÆÂ÷', 'È¸»ç¿¡¼­ÀÇ ±Û·Î¹ú ¾÷¹« °æÇè'
+    , '±Û·Î¹ú ¾÷¹« °æÇèÀº ¹®È­Àû ÀÌÇØ¿Í ±¹Á¦Àû ¿ª·®À» Å°¿ì´Â µ¥ µµ¿òÀ» ÁÝ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ±Û·Î¹ú ÇÁ·ÎÁ§Æ®¿Í ÆÀ¿¡¼­ÀÇ °æÇèÀ» ÅëÇØ ¼ºÀåÇÏ¿´½À´Ï´Ù.'
     , SYSDATE-54, SYSDATE-52, 15, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'í¬í¬ë‚¨ë‚¨', 'í‚¤ì•„ì°¨', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ìœ¤ë¦¬ì™€ ê²°ì •'
-    , 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ìœ¤ë¦¬ì™€ ìœ¤ë¦¬ì  ê²°ì •ì€ ì¡°ì§ì˜ ëª…ì˜ˆì™€ ì‹ ë¢°ë¥¼ ì§€í‚¤ëŠ” ë° ì¤‘ìš”í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ìœ¤ë¦¬ì  ê²°ì •ì„ ë‚´ë¦¬ê³  ì§ìž¥ ë‚´ ì—…ë¬´ ìœ¤ë¦¬ë¥¼ ì¤€ìˆ˜í•˜ëŠ” ë°©ë²•ì— ëŒ€í•´ ì´ì•¼ê¸°í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ÈñÈñ³²³²', 'Å°¾ÆÂ÷', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« À±¸®¿Í °áÁ¤'
+    , 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« À±¸®¿Í À±¸®Àû °áÁ¤Àº Á¶Á÷ÀÇ ¸í¿¹¿Í ½Å·Ú¸¦ ÁöÅ°´Â µ¥ Áß¿äÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô À±¸®Àû °áÁ¤À» ³»¸®°í Á÷Àå ³» ¾÷¹« À±¸®¸¦ ÁØ¼öÇÏ´Â ¹æ¹ý¿¡ ´ëÇØ ÀÌ¾ß±âÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-54, SYSDATE-50, 16, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì „ì„¸', 'ëŒ€ì•ˆí•­ê³µ', 'ì§ìž¥ ë‚´ í”„ë¡œì íŠ¸ íŒ€ ë¹Œë”©'
-    , 'í”„ë¡œì íŠ¸ íŒ€ ë¹Œë”©ì€ ì„±ê³µì ì¸ í”„ë¡œì íŠ¸ì˜ í•µì‹¬ìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ íŒ€ì›ë“¤ ê°„ì˜ í˜‘ë ¥ì„ ì´‰ì§„í•˜ê³  í”„ë¡œì íŠ¸ íŒ€ì„ íš¨ê³¼ì ìœ¼ë¡œ êµ¬ì¶•í•˜ëŠ” ë° ê¸°ì—¬í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'Àü¼¼', '´ë¾ÈÇ×°ø', 'Á÷Àå ³» ÇÁ·ÎÁ§Æ® ÆÀ ºôµù'
+    , 'ÇÁ·ÎÁ§Æ® ÆÀ ºôµùÀº ¼º°øÀûÀÎ ÇÁ·ÎÁ§Æ®ÀÇ ÇÙ½ÉÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÆÀ¿øµé °£ÀÇ Çù·ÂÀ» ÃËÁøÇÏ°í ÇÁ·ÎÁ§Æ® ÆÀÀ» È¿°úÀûÀ¸·Î ±¸ÃàÇÏ´Â µ¥ ±â¿©ÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-54, SYSDATE-54, 17, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì¼ìƒ', 'ëŒ€ì•ˆí•­ê³µ', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ìžë™í™”ì™€ íš¨ìœ¨ì„±'
-    , 'ì—…ë¬´ ìžë™í™”ëŠ” ì—…ë¬´ íš¨ìœ¨ì„±ì„ ë†’ì´ëŠ” ë° ë„ì›€ì„ ì¤ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ìžë™í™”ë¥¼ ë„ìž…í•˜ê³  ì–´ë–¤ ê²°ê³¼ë¥¼ ì–»ì—ˆëŠ”ì§€ë¥¼ ì„¤ëª…í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ÀÏ»ó', '´ë¾ÈÇ×°ø', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« ÀÚµ¿È­¿Í È¿À²¼º'
+    , '¾÷¹« ÀÚµ¿È­´Â ¾÷¹« È¿À²¼ºÀ» ³ôÀÌ´Â µ¥ µµ¿òÀ» ÁÝ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« ÀÚµ¿È­¸¦ µµÀÔÇÏ°í ¾î¶² °á°ú¸¦ ¾ò¾ú´ÂÁö¸¦ ¼³¸íÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-52, SYSDATE-50, 18, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì—¬ë¦¬ë¦¬ë§', 'BKê¸ˆìœµ', 'ì§ìž¥ì—ì„œì˜ ê³ ê° ì„œë¹„ìŠ¤ì™€ ë§Œì¡±ë„'
-    , 'ê³ ê° ì„œë¹„ìŠ¤ëŠ” ì¡°ì§ì˜ ëª…ì„±ì„ í˜•ì„±í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ê³ ê° ì„œë¹„ìŠ¤ í’ˆì§ˆì„ í–¥ìƒì‹œí‚¤ê³  ê³ ê° ë§Œì¡±ë„ë¥¼ ìœ ì§€í•˜ëŠ” ë°©ë²•ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '¿©¸®¸®¸µ', 'BK±ÝÀ¶', 'Á÷Àå¿¡¼­ÀÇ °í°´ ¼­ºñ½º¿Í ¸¸Á·µµ'
+    , '°í°´ ¼­ºñ½º´Â Á¶Á÷ÀÇ ¸í¼ºÀ» Çü¼ºÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô °í°´ ¼­ºñ½º Ç°ÁúÀ» Çâ»ó½ÃÅ°°í °í°´ ¸¸Á·µµ¸¦ À¯ÁöÇÏ´Â ¹æ¹ýÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-52, SYSDATE-52, 19, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì§€ë‹ˆì§€ë‹ˆ', 'BKê¸ˆìœµ', 'ì§ìž¥ì—ì„œì˜ í”„ë¡œì íŠ¸ ê´€ë¦¬ ë„êµ¬ í™œìš©'
-    , 'í”„ë¡œì íŠ¸ ê´€ë¦¬ ë„êµ¬ëŠ” ì—…ë¬´ íš¨ìœ¨ì„±ì„ í–¥ìƒì‹œí‚¤ëŠ” ë° ì¤‘ìš”í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ í”„ë¡œì íŠ¸ ê´€ë¦¬ ë„êµ¬ë¥¼ í™œìš©í•˜ì—¬ í”„ë¡œì íŠ¸ë¥¼ íš¨ê³¼ì ìœ¼ë¡œ ê´€ë¦¬í•˜ì˜€ëŠ”ì§€ì— ëŒ€í•´ ì´ì•¼ê¸°í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'Áö´ÏÁö´Ï', 'BK±ÝÀ¶', 'Á÷Àå¿¡¼­ÀÇ ÇÁ·ÎÁ§Æ® °ü¸® µµ±¸ È°¿ë'
+    , 'ÇÁ·ÎÁ§Æ® °ü¸® µµ±¸´Â ¾÷¹« È¿À²¼ºÀ» Çâ»ó½ÃÅ°´Â µ¥ Áß¿äÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÇÁ·ÎÁ§Æ® °ü¸® µµ±¸¸¦ È°¿ëÇÏ¿© ÇÁ·ÎÁ§Æ®¸¦ È¿°úÀûÀ¸·Î °ü¸®ÇÏ¿´´ÂÁö¿¡ ´ëÇØ ÀÌ¾ß±âÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-51, SYSDATE-51, 20, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì©¡ì©¡', 'ì½”ì½”ì•„', 'ì§ìž¥ ë‚´ ê³ ë‚œê³¼ ê·¹ë³µ'
-    , 'ê³ ë‚œì€ ì„±ìž¥ì˜ ê¸°íšŒê°€ ë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì–´ë ¤ìš´ ìƒí™©ì—ì„œ ê·¹ë³µí•˜ê³  ì„±ê³µì„ ì°¾ì•„ëƒˆëŠ”ì§€ë¥¼ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ÂÄÂÄ', 'ÄÚÄÚ¾Æ', 'Á÷Àå ³» °í³­°ú ±Øº¹'
+    , '°í³­Àº ¼ºÀåÀÇ ±âÈ¸°¡ µÉ ¼ö ÀÖ½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾î·Á¿î »óÈ²¿¡¼­ ±Øº¹ÇÏ°í ¼º°øÀ» Ã£¾Æ³Â´ÂÁö¸¦ °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-51, SYSDATE-51, 21, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ë¹„ì‹¼ìˆ ', 'ì½”ì½”ì•„', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ì™„ìˆ˜ì™€ íš¨ê³¼ì ì¸ ê³„íš'
-    , 'ì—…ë¬´ ì™„ìˆ˜ì™€ íš¨ê³¼ì ì¸ ê³„íšì€ ì—…ë¬´ ì„±ê³¼ë¥¼ ë†’ì´ëŠ” ë° í•„ìš”í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ë¥¼ ê³„íší•˜ê³  íš¨ìœ¨ì ìœ¼ë¡œ ì™„ìˆ˜í–ˆëŠ”ì§€ì— ëŒ€í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ºñ½Ñ¼ú', 'ÄÚÄÚ¾Æ', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« ¿Ï¼ö¿Í È¿°úÀûÀÎ °èÈ¹'
+    , '¾÷¹« ¿Ï¼ö¿Í È¿°úÀûÀÎ °èÈ¹Àº ¾÷¹« ¼º°ú¸¦ ³ôÀÌ´Â µ¥ ÇÊ¿äÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹«¸¦ °èÈ¹ÇÏ°í È¿À²ÀûÀ¸·Î ¿Ï¼öÇß´ÂÁö¿¡ ´ëÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-50, SYSDATE-50, 22, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì´ì§€ë‚˜ì§€ë‚˜', 'ì—°ëŒ€ëª¨ë¹„ìŠ¤', 'ì§ìž¥ ë‚´ í”„ë¡œëª¨ì…˜ ì „ëžµê³¼ ê²°ê³¼'
-    , 'í”„ë¡œëª¨ì…˜ì€ ëª©í‘œ ì¤‘ í•˜ë‚˜ì¼ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ í”„ë¡œëª¨ì…˜ì„ ìœ„í•œ ì „ëžµì„ ì„¸ìš°ê³  ì–´ë–¤ ê²°ê³¼ë¥¼ ì–»ì—ˆëŠ”ì§€ë¥¼ ì´ì•¼ê¸°í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ÀÌÁö³ªÁö³ª', '¿¬´ë¸ðºñ½º', 'Á÷Àå ³» ÇÁ·Î¸ð¼Ç Àü·«°ú °á°ú'
+    , 'ÇÁ·Î¸ð¼ÇÀº ¸ñÇ¥ Áß ÇÏ³ªÀÏ ¼ö ÀÖ½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÇÁ·Î¸ð¼ÇÀ» À§ÇÑ Àü·«À» ¼¼¿ì°í ¾î¶² °á°ú¸¦ ¾ò¾ú´ÂÁö¸¦ ÀÌ¾ß±âÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-49, SYSDATE-49, 23, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì—¬ë‹ˆ', 'ì—°ëŒ€ëª¨ë¹„ìŠ¤', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ë³€í™”ì™€ ì ì‘'
-    , 'ì—…ë¬´ ë³€í™”ëŠ” í•­ìƒ ìžˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ë³€í™”ì— ëŒ€ì²˜í•˜ê³  ì–´ë–¤ ì ì‘ ì „ëžµì„ í™œìš©í–ˆëŠ”ì§€ë¥¼ ì„¤ëª…í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '¿©´Ï', '¿¬´ë¸ðºñ½º', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« º¯È­¿Í ÀûÀÀ'
+    , '¾÷¹« º¯È­´Â Ç×»ó ÀÖ½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« º¯È­¿¡ ´ëÃ³ÇÏ°í ¾î¶² ÀûÀÀ Àü·«À» È°¿ëÇß´ÂÁö¸¦ ¼³¸íÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-49, SYSDATE-49, 24, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ê°•ì›ë„', 'ì‹¬ì„±ë¬¼ì‚°', 'ì§ìž¥ì—ì„œì˜ í”„ë¡œì íŠ¸ ìŠ¤ì¼€ì¤„ ê´€ë¦¬"'
-    , 'í”„ë¡œì íŠ¸ ìŠ¤ì¼€ì¤„ ê´€ë¦¬ëŠ” í”„ë¡œì íŠ¸ ì„±ê³¼ì— í° ì˜í–¥ì„ ë¯¸ì¹©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ í”„ë¡œì íŠ¸ ìŠ¤ì¼€ì¤„ì„ íš¨ê³¼ì ìœ¼ë¡œ ê´€ë¦¬í•˜ê³  ì„±ê³µì„ ì´ëˆ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '°­¿øµµ', '½É¼º¹°»ê', 'Á÷Àå¿¡¼­ÀÇ ÇÁ·ÎÁ§Æ® ½ºÄÉÁÙ °ü¸®"'
+    , 'ÇÁ·ÎÁ§Æ® ½ºÄÉÁÙ °ü¸®´Â ÇÁ·ÎÁ§Æ® ¼º°ú¿¡ Å« ¿µÇâÀ» ¹ÌÄ¨´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÇÁ·ÎÁ§Æ® ½ºÄÉÁÙÀ» È¿°úÀûÀ¸·Î °ü¸®ÇÏ°í ¼º°øÀ» ÀÌ²ö °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-49, SYSDATE-49, 25, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì¹´íŒŒë„í‚¤ì•„', 'ì‹¬ì„±ë¬¼ì‚°', 'ì§ìž¥ ë‚´ ì—…ë¬´ ë¶€í•˜ì™€ ìŠ¤íŠ¸ë ˆìŠ¤ ê´€ë¦¬'
-    , 'ì§ìž¥ ë‚´ ì—…ë¬´ ë¶€í•˜ëŠ” ìŠ¤íŠ¸ë ˆìŠ¤ë¥¼ ì´ˆëž˜í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ë¶€í•˜ë¥¼ ê´€ë¦¬í•˜ê³  ìŠ¤íŠ¸ë ˆìŠ¤ë¥¼ íš¨ê³¼ì ìœ¼ë¡œ ê´€ë¦¬í•˜ëŠ” ë°©ë²•ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'Ä«ÆÄµµÅ°¾Æ', '½É¼º¹°»ê', 'Á÷Àå ³» ¾÷¹« ºÎÇÏ¿Í ½ºÆ®·¹½º °ü¸®'
+    , 'Á÷Àå ³» ¾÷¹« ºÎÇÏ´Â ½ºÆ®·¹½º¸¦ ÃÊ·¡ÇÒ ¼ö ÀÖ½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« ºÎÇÏ¸¦ °ü¸®ÇÏ°í ½ºÆ®·¹½º¸¦ È¿°úÀûÀ¸·Î °ü¸®ÇÏ´Â ¹æ¹ýÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-46, SYSDATE-46, 26, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì˜¤íƒ€ì™€', 'í•œì‹ ì§€ì£¼', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ íš¨ìœ¨ì„±ê³¼ ê°œì„ '
-    , 'ì—…ë¬´ íš¨ìœ¨ì„±ì€ ì¡°ì§ì˜ ì„±ê³¼ë¥¼ í–¥ìƒì‹œí‚µë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ íš¨ìœ¨ì„±ì„ ê°œì„ í•˜ê¸° ìœ„í•œ ë…¸ë ¥ê³¼ ë°©ë²•ì„ ì†Œê°œí•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '¿ÀÅ¸¿Í', 'ÇÑ½ÅÁöÁÖ', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« È¿À²¼º°ú °³¼±'
+    , '¾÷¹« È¿À²¼ºÀº Á¶Á÷ÀÇ ¼º°ú¸¦ Çâ»ó½ÃÅµ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« È¿À²¼ºÀ» °³¼±ÇÏ±â À§ÇÑ ³ë·Â°ú ¹æ¹ýÀ» ¼Ò°³ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-46, SYSDATE-46, 27, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'í‹°ì—ë¦¬ì•™ë¦¬', 'í•œì‹ ì§€ì£¼', 'ì§ìž¥ ë‚´ í”„ë¡œì íŠ¸ ì„±ê³µê³¼ ë°°ìš´ ì '
-    , 'ì§ìž¥ ë‚´ í”„ë¡œì íŠ¸ ì„±ê³µì€ ì„±ìž¥ì˜ ê¸°íšŒìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ í”„ë¡œì íŠ¸ì—ì„œ ì„±ê³¼ë¥¼ ì–»ì—ˆê³  ì–´ë–¤ êµí›ˆì„ ì–»ì—ˆëŠ”ì§€ë¥¼ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'Æ¼¿¡¸®¾Ó¸®', 'ÇÑ½ÅÁöÁÖ', 'Á÷Àå ³» ÇÁ·ÎÁ§Æ® ¼º°ø°ú ¹è¿î Á¡'
+    , 'Á÷Àå ³» ÇÁ·ÎÁ§Æ® ¼º°øÀº ¼ºÀåÀÇ ±âÈ¸ÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÇÁ·ÎÁ§Æ®¿¡¼­ ¼º°ú¸¦ ¾ò¾ú°í ¾î¶² ±³ÈÆÀ» ¾ò¾ú´ÂÁö¸¦ °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-46, SYSDATE-46, 28, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì•„ìŠ¤ë„', 'ì—°ëŒ€ê¸€ë¡œë¹„ìŠ¤', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ìš°ì„ ìˆœìœ„ ì„¤ì •'
-    , 'ì—…ë¬´ ìš°ì„ ìˆœìœ„ ì„¤ì •ì€ ì—…ë¬´ ê´€ë¦¬ì˜ í•µì‹¬ìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ìš°ì„ ìˆœìœ„ë¥¼ ì •í•˜ê³  íš¨ê³¼ì ìœ¼ë¡œ ì—…ë¬´ë¥¼ ê´€ë¦¬í–ˆëŠ”ì§€ë¥¼ ì´ì•¼ê¸°í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '¾Æ½º³Î', '¿¬´ë±Û·Îºñ½º', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« ¿ì¼±¼øÀ§ ¼³Á¤'
+    , '¾÷¹« ¿ì¼±¼øÀ§ ¼³Á¤Àº ¾÷¹« °ü¸®ÀÇ ÇÙ½ÉÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« ¿ì¼±¼øÀ§¸¦ Á¤ÇÏ°í È¿°úÀûÀ¸·Î ¾÷¹«¸¦ °ü¸®Çß´ÂÁö¸¦ ÀÌ¾ß±âÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-45, SYSDATE-45, 29, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì¢‹ì•˜ì–´', 'ì—°ëŒ€ê¸€ë¡œë¹„ìŠ¤', 'ì§ìž¥ì—ì„œì˜ í”„ë¡œì íŠ¸ ì‹¤íŒ¨ì™€ êµí›ˆ'
-    , 'í”„ë¡œì íŠ¸ ì‹¤íŒ¨ëŠ” êµí›ˆì„ ì œê³µí•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ í”„ë¡œì íŠ¸ì—ì„œ ì‹¤íŒ¨ë¥¼ ê²½í—˜í•˜ê³  ì–´ë–¤ êµí›ˆì„ ì–»ì—ˆëŠ”ì§€ë¥¼ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ÁÁ¾Ò¾î', '¿¬´ë±Û·Îºñ½º', 'Á÷Àå¿¡¼­ÀÇ ÇÁ·ÎÁ§Æ® ½ÇÆÐ¿Í ±³ÈÆ'
+    , 'ÇÁ·ÎÁ§Æ® ½ÇÆÐ´Â ±³ÈÆÀ» Á¦°øÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÇÁ·ÎÁ§Æ®¿¡¼­ ½ÇÆÐ¸¦ °æÇèÇÏ°í ¾î¶² ±³ÈÆÀ» ¾ò¾ú´ÂÁö¸¦ °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-45, SYSDATE-45, 30, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì— ì§€ê±¸', 'ìœ ë¦¬ê¸ˆìœµì§€ì£¼', 'ì§ìž¥ì—ì„œì˜ ê¸¸ê³  íž˜ë“¤ì—ˆë˜ í”„ë¡œì íŠ¸ ì™„ìˆ˜'
-    , 'í•œ ë²ˆì˜ ê¸¸ê³  ì–´ë ¤ì› ë˜ í”„ë¡œì íŠ¸ëŠ” ë§Žì€ ë°°ì›€ê³¼ ë„ì „ì„ ì•ˆê²¨ì£¼ì—ˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ê·¸ ê²½í—˜ì„ í†µí•´ ë‚˜ëŠ” ì–´ë–»ê²Œ ë¬¸ì œë¥¼ ê·¹ë³µí•˜ê³  í”„ë¡œì íŠ¸ë¥¼ ì„±ê³µì ìœ¼ë¡œ ì™„ìˆ˜í–ˆëŠ”ì§€ë¥¼ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '¿¥Áö°É', 'À¯¸®±ÝÀ¶ÁöÁÖ', 'Á÷Àå¿¡¼­ÀÇ ±æ°í Èûµé¾ú´ø ÇÁ·ÎÁ§Æ® ¿Ï¼ö'
+    , 'ÇÑ ¹øÀÇ ±æ°í ¾î·Á¿ü´ø ÇÁ·ÎÁ§Æ®´Â ¸¹Àº ¹è¿ò°ú µµÀüÀ» ¾È°ÜÁÖ¾ú½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '±× °æÇèÀ» ÅëÇØ ³ª´Â ¾î¶»°Ô ¹®Á¦¸¦ ±Øº¹ÇÏ°í ÇÁ·ÎÁ§Æ®¸¦ ¼º°øÀûÀ¸·Î ¿Ï¼öÇß´ÂÁö¸¦ °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-45, SYSDATE-45, 31, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ê°•ì•„ì¸ìŠ¤', 'ìœ ë¦¬ê¸ˆìœµì§€ì£¼', 'ì§ìž¥ ë‚´ ë‹¤ì–‘ì„±ê³¼ ì¸í´ë£¨ì „ ë…¸ë ¥ì˜ ê²°ê³¼'
-    , 'ì§ìž¥ ë‚´ì—ì„œì˜ ë‹¤ì–‘ì„±ê³¼ ì¸í´ë£¨ì „ì€ ì¡°ì§ì˜ ì„±ê³µê³¼ í˜ì‹ ì„ ì´‰ì§„í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ë‹¤ì–‘ì„±ê³¼ ì¸í´ë£¨ì „ì„ ì¦ê¸°ê³  ë…¸ë ¥í•œ ê²°ê³¼ë¥¼ ë‚˜íƒ€ë‚´ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '°­¾ÆÀÎ½º', 'À¯¸®±ÝÀ¶ÁöÁÖ', 'Á÷Àå ³» ´Ù¾ç¼º°ú ÀÎÅ¬·çÀü ³ë·ÂÀÇ °á°ú'
+    , 'Á÷Àå ³»¿¡¼­ÀÇ ´Ù¾ç¼º°ú ÀÎÅ¬·çÀüÀº Á¶Á÷ÀÇ ¼º°ø°ú Çõ½ÅÀ» ÃËÁøÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ´Ù¾ç¼º°ú ÀÎÅ¬·çÀüÀ» Áñ±â°í ³ë·ÂÇÑ °á°ú¸¦ ³ªÅ¸³»°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-45, SYSDATE-45, 32, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì² ì˜ìž¥ë²½', 'í•˜ë‚¨ê¸ˆìœµì§€ì£¼', 'ì§ìž¥ì—ì„œì˜ í˜‘ì—…ê³¼ ê³µë™ ìž‘ì—…ì˜ ì¤‘ìš”ì„±'
-    , 'ì§ìž¥ì—ì„œì˜ í˜‘ì—…ì€ ì„±ê³¼ì™€ íš¨ìœ¨ì„±ì— í° ì˜í–¥ì„ ë¯¸ì¹©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ íš¨ê³¼ì ì¸ í˜‘ì—…ê³¼ ê³µë™ ìž‘ì—…ì„ í†µí•´ í”„ë¡œì íŠ¸ë¥¼ ì„±ê³µì ìœ¼ë¡œ ì´ëˆ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'Ã¶ÀÇÀåº®', 'ÇÏ³²±ÝÀ¶ÁöÁÖ', 'Á÷Àå¿¡¼­ÀÇ Çù¾÷°ú °øµ¿ ÀÛ¾÷ÀÇ Áß¿ä¼º'
+    , 'Á÷Àå¿¡¼­ÀÇ Çù¾÷Àº ¼º°ú¿Í È¿À²¼º¿¡ Å« ¿µÇâÀ» ¹ÌÄ¨´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô È¿°úÀûÀÎ Çù¾÷°ú °øµ¿ ÀÛ¾÷À» ÅëÇØ ÇÁ·ÎÁ§Æ®¸¦ ¼º°øÀûÀ¸·Î ÀÌ²ö °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-45, SYSDATE-45, 33, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì² ì˜ìž¥ë²½íˆ¬', 'í•˜ë‚¨ê¸ˆìœµì§€ì£¼', 'ì§ìž¥ì—ì„œì˜ í”„ë¡œì íŠ¸ ì˜ˆì‚° ê´€ë¦¬ì™€ ê²½í—˜'
-    , 'í”„ë¡œì íŠ¸ ì˜ˆì‚° ê´€ë¦¬ëŠ” ì¤‘ìš”í•œ ìŠ¤í‚¬ìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ í”„ë¡œì íŠ¸ ì˜ˆì‚°ì„ íš¨ê³¼ì ìœ¼ë¡œ ê´€ë¦¬í•˜ê³  ì˜ˆì‚° ì´ˆê³¼ë¥¼ ë°©ì§€í•œ ê²½í—˜ì„ ë‚˜ëˆ„ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'Ã¶ÀÇÀåº®Åõ', 'ÇÏ³²±ÝÀ¶ÁöÁÖ', 'Á÷Àå¿¡¼­ÀÇ ÇÁ·ÎÁ§Æ® ¿¹»ê °ü¸®¿Í °æÇè'
+    , 'ÇÁ·ÎÁ§Æ® ¿¹»ê °ü¸®´Â Áß¿äÇÑ ½ºÅ³ÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÇÁ·ÎÁ§Æ® ¿¹»êÀ» È¿°úÀûÀ¸·Î °ü¸®ÇÏ°í ¿¹»ê ÃÊ°ú¸¦ ¹æÁöÇÑ °æÇèÀ» ³ª´©°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-43, SYSDATE-40, 34, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ìŠˆë°”ì¸ìŠˆíƒ€ì´ê±°', 'ì‹¬ì„±í™”ìž¬', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ë¦¬ë”ì‹­ê³¼ ì˜í–¥ë ¥'
-    , 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ë¦¬ë”ì‹­ì€ ì¡°ì§ê³¼ ë™ë£Œë“¤ì—ê²Œ ì˜í–¥ë ¥ì„ ë¯¸ì¹©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ë¦¬ë”ì‹­ì„ ë°œíœ˜í•˜ê³  ì¡°ì§ ë‚´ì—ì„œ ì˜í–¥ë ¥ì„ í™•ìž¥í•œ ê²½í—˜ì„ ì´ì•¼ê¸°í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '½´¹ÙÀÎ½´Å¸ÀÌ°Å', '½É¼ºÈ­Àç', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« ¸®´õ½Ê°ú ¿µÇâ·Â'
+    , 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« ¸®´õ½ÊÀº Á¶Á÷°ú µ¿·áµé¿¡°Ô ¿µÇâ·ÂÀ» ¹ÌÄ¨´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« ¸®´õ½ÊÀ» ¹ßÈÖÇÏ°í Á¶Á÷ ³»¿¡¼­ ¿µÇâ·ÂÀ» È®ÀåÇÑ °æÇèÀ» ÀÌ¾ß±âÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-41, SYSDATE-40, 35, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ë² ë¥´ê¸°', 'ì‹¬ì„±í™”ìž¬', 'ì§ìž¥ì—ì„œì˜ í”„ë¡œì íŠ¸ í’ˆì§ˆ ê´€ë¦¬'
-    , 'í”„ë¡œì íŠ¸ í’ˆì§ˆ ê´€ë¦¬ëŠ” ê³ ê° ë§Œì¡±ë„ë¥¼ ë†’ì´ëŠ” í•µì‹¬ìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ í”„ë¡œì íŠ¸ í’ˆì§ˆì„ ìœ ì§€í•˜ê³  í–¥ìƒì‹œí‚¤ëŠ” ë°©ë²•ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'º£¸£±â', '½É¼ºÈ­Àç', 'Á÷Àå¿¡¼­ÀÇ ÇÁ·ÎÁ§Æ® Ç°Áú °ü¸®'
+    , 'ÇÁ·ÎÁ§Æ® Ç°Áú °ü¸®´Â °í°´ ¸¸Á·µµ¸¦ ³ôÀÌ´Â ÇÙ½ÉÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÇÁ·ÎÁ§Æ® Ç°ÁúÀ» À¯ÁöÇÏ°í Çâ»ó½ÃÅ°´Â ¹æ¹ýÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-40, SYSDATE-40, 36, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'í”¼ë ˆìŠ¤', 'ë©”ì´ë²„', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ë¶„ì„ê³¼ ê°œì„  ì „ëžµ'
-    , 'ì—…ë¬´ ë¶„ì„ê³¼ ê°œì„  ì „ëžµì€ ì—…ë¬´ í”„ë¡œì„¸ìŠ¤ë¥¼ í–¥ìƒì‹œí‚¤ëŠ” ë° ë„ì›€ì„ ì¤ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ë¶„ì„ì„ ìˆ˜í–‰í•˜ê³  ì—…ë¬´ ê°œì„  ì „ëžµì„ ì‹¤í–‰í–ˆëŠ”ì§€ì— ëŒ€í•œ ê²½í—˜ì„ ë‚˜ëˆ„ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ÇÇ·¹½º', '¸ÞÀÌ¹ö', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« ºÐ¼®°ú °³¼± Àü·«'
+    , '¾÷¹« ºÐ¼®°ú °³¼± Àü·«Àº ¾÷¹« ÇÁ·Î¼¼½º¸¦ Çâ»ó½ÃÅ°´Â µ¥ µµ¿òÀ» ÁÝ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« ºÐ¼®À» ¼öÇàÇÏ°í ¾÷¹« °³¼± Àü·«À» ½ÇÇàÇß´ÂÁö¿¡ ´ëÇÑ °æÇèÀ» ³ª´©°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-39, SYSDATE-33, 37, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'íŒŒíŠ¸ë¦¬í¬', 'ë©”ì´ë²„', 'ì§ìž¥ ë‚´ ì„±ê³µì„ ìœ„í•œ ì§€ì†ì ì¸ í•™ìŠµ'
-    , 'ì§ìž¥ ë‚´ ì„±ê³µì€ ì§€ì†ì ì¸ í•™ìŠµê³¼ ë°œì „ì— ì˜í•´ ë‹¬ì„±ë©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ í•™ìŠµì„ ì§€ì†í•˜ê³  ë‚˜ì˜ ì—­ëŸ‰ì„ í–¥ìƒì‹œí‚¤ë©° ì„±ê³µì„ ì¶”êµ¬í–ˆëŠ”ì§€ë¥¼ ì„¤ëª…í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ÆÄÆ®¸®Å©', '¸ÞÀÌ¹ö', 'Á÷Àå ³» ¼º°øÀ» À§ÇÑ Áö¼ÓÀûÀÎ ÇÐ½À'
+    , 'Á÷Àå ³» ¼º°øÀº Áö¼ÓÀûÀÎ ÇÐ½À°ú ¹ßÀü¿¡ ÀÇÇØ ´Þ¼ºµË´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÇÐ½ÀÀ» Áö¼ÓÇÏ°í ³ªÀÇ ¿ª·®À» Çâ»ó½ÃÅ°¸ç ¼º°øÀ» Ãß±¸Çß´ÂÁö¸¦ ¼³¸íÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-38, SYSDATE-38, 38, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'í”„ë ˆë””ìœµë² ë¦¬', 'í•œì™€ì—ë“€', 'ì§ìž¥ì—ì„œì˜ í”„ë¡œì íŠ¸ ìœ„í—˜ ê´€ë¦¬'
-    , 'í”„ë¡œì íŠ¸ ìœ„í—˜ ê´€ë¦¬ëŠ” ì˜ˆìƒì¹˜ ëª»í•œ ë¬¸ì œë¥¼ ì˜ˆë°©í•˜ëŠ” ë° ì¤‘ìš”í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ í”„ë¡œì íŠ¸ ìœ„í—˜ì„ ì‹ë³„í•˜ê³  ê´€ë¦¬í•˜ëŠ” ì „ëžµì„ ì‚¬ìš©í–ˆëŠ”ì§€ì— ëŒ€í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ÇÁ·¹µðÀ¶º£¸®', 'ÇÑ¿Í¿¡µà', 'Á÷Àå¿¡¼­ÀÇ ÇÁ·ÎÁ§Æ® À§Çè °ü¸®'
+    , 'ÇÁ·ÎÁ§Æ® À§Çè °ü¸®´Â ¿¹»óÄ¡ ¸øÇÑ ¹®Á¦¸¦ ¿¹¹æÇÏ´Â µ¥ Áß¿äÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÇÁ·ÎÁ§Æ® À§ÇèÀ» ½Äº°ÇÏ°í °ü¸®ÇÏ´Â Àü·«À» »ç¿ëÇß´ÂÁö¿¡ ´ëÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-37, SYSDATE-35, 39, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì•¼ì¸ì‹œëŒ€', 'í•œì™€ì—ë“€', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ë°ë“œë¼ì¸ ê´€ë¦¬'
-    , 'ë°ë“œë¼ì¸ ê´€ë¦¬ëŠ” ì—…ë¬´ íš¨ìœ¨ì„±ì„ ë†’ì´ëŠ” ë° ì¤‘ìš”í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ë°ë“œë¼ì¸ì„ ì¤€ìˆ˜í•˜ê³  ì—…ë¬´ë¥¼ ì„±ê³µì ìœ¼ë¡œ ì™„ë£Œí–ˆëŠ”ì§€ë¥¼ ì´ì•¼ê¸°í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '¾ßÀÎ½Ã´ë', 'ÇÑ¿Í¿¡µà', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« µ¥µå¶óÀÎ °ü¸®'
+    , 'µ¥µå¶óÀÎ °ü¸®´Â ¾÷¹« È¿À²¼ºÀ» ³ôÀÌ´Â µ¥ Áß¿äÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« µ¥µå¶óÀÎÀ» ÁØ¼öÇÏ°í ¾÷¹«¸¦ ¼º°øÀûÀ¸·Î ¿Ï·áÇß´ÂÁö¸¦ ÀÌ¾ß±âÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-36, SYSDATE-36, 40, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ë„˜ë²„ì›', 'ì‹¬ì„±ì „ìž', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ë¶„ì‚°ê³¼ íš¨ìœ¨í™”'
-    , 'ì—…ë¬´ ë¶„ì‚°ê³¼ íš¨ìœ¨í™”ëŠ” ì—…ë¬´ ë¶€í•˜ë¥¼ ë¶„ì‚°í•˜ê³  ì„±ê³¼ë¥¼ í–¥ìƒì‹œí‚µë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ë¥¼ ë¶„ì‚°í•˜ê³  íŒ€ì˜ íš¨ìœ¨ì„±ì„ ë†’ì´ëŠ” ë°©ë²•ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '³Ñ¹ö¿ø', '½É¼ºÀüÀÚ', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« ºÐ»ê°ú È¿À²È­'
+    , '¾÷¹« ºÐ»ê°ú È¿À²È­´Â ¾÷¹« ºÎÇÏ¸¦ ºÐ»êÇÏ°í ¼º°ú¸¦ Çâ»ó½ÃÅµ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹«¸¦ ºÐ»êÇÏ°í ÆÀÀÇ È¿À²¼ºÀ» ³ôÀÌ´Â ¹æ¹ýÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-35, SYSDATE-35, 41, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ë„˜ë²„íˆ¬', 'ì‹¬ì„±ì „ìž', 'ì§ìž¥ ë‚´ ê¸°ìˆ  ì—­ëŸ‰ ê°œë°œê³¼ ì„±ê³µ'
-    , 'ê¸°ìˆ  ì—­ëŸ‰ ê°œë°œì€ ì§ìž¥ ë‚´ì—ì„œì˜ ì„±ìž¥ê³¼ ì„±ê³µì— í•„ìˆ˜ì ìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ê¸°ìˆ  ì—­ëŸ‰ì„ í–¥ìƒì‹œí‚¤ê³  ë‚˜ì˜ ì§ìž¥ì—ì„œì˜ ì„±ê³µì— ê¸°ì—¬í•œ ê²½í—˜ì„ ë‚˜ëˆ„ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '³Ñ¹öÅõ', '½É¼ºÀüÀÚ', 'Á÷Àå ³» ±â¼ú ¿ª·® °³¹ß°ú ¼º°ø'
+    , '±â¼ú ¿ª·® °³¹ßÀº Á÷Àå ³»¿¡¼­ÀÇ ¼ºÀå°ú ¼º°ø¿¡ ÇÊ¼öÀûÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ±â¼ú ¿ª·®À» Çâ»ó½ÃÅ°°í ³ªÀÇ Á÷Àå¿¡¼­ÀÇ ¼º°ø¿¡ ±â¿©ÇÑ °æÇèÀ» ³ª´©°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-35, SYSDATE-35, 42, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ë„˜ë²„ì“°ë¦¬', 'ì‹¬ì„±ì „ìž', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ë¸”ë¡œê·¸ ìš´ì˜'
-    , 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ë¸”ë¡œê·¸ ìš´ì˜ì€ ì§€ì‹ ê³µìœ ì™€ ì˜ì‚¬ ì†Œí†µì„ ì´‰ì§„í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ë¸”ë¡œê·¸ë¥¼ ìš´ì˜í•˜ê³  ë™ë£Œë“¤ê³¼ ì§€ì‹ì„ ê³µìœ í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '³Ñ¹ö¾²¸®', '½É¼ºÀüÀÚ', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« ºí·Î±× ¿î¿µ'
+    , 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« ºí·Î±× ¿î¿µÀº Áö½Ä °øÀ¯¿Í ÀÇ»ç ¼ÒÅëÀ» ÃËÁøÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« ºí·Î±×¸¦ ¿î¿µÇÏ°í µ¿·áµé°ú Áö½ÄÀ» °øÀ¯ÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-35, SYSDATE-35, 43, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ë„˜ë²„í¬', 'ì‹¬ì„±ì „ìž', 'ì§ìž¥ ë‚´ ì»¤ë¦¬ì–´ ë¡œë“œë§µê³¼ ê³„íš'
-    , 'ì»¤ë¦¬ì–´ ë¡œë“œë§µê³¼ ê³„íšì€ ì„±ê³µì ì¸ ì»¤ë¦¬ì–´ë¥¼ êµ¬ì¶•í•˜ëŠ” ë° ë„ì›€ì„ ì¤ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ë‚˜ì˜ ì»¤ë¦¬ì–´ë¥¼ ê³„íší•˜ê³  ë¡œë“œë§µì„ ë”°ë¼ ë‚˜ì•„ê°”ëŠ”ì§€ë¥¼ ì´ì•¼ê¸°í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '³Ñ¹öÆ÷', '½É¼ºÀüÀÚ', 'Á÷Àå ³» Ä¿¸®¾î ·Îµå¸Ê°ú °èÈ¹'
+    , 'Ä¿¸®¾î ·Îµå¸Ê°ú °èÈ¹Àº ¼º°øÀûÀÎ Ä¿¸®¾î¸¦ ±¸ÃàÇÏ´Â µ¥ µµ¿òÀ» ÁÝ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ³ªÀÇ Ä¿¸®¾î¸¦ °èÈ¹ÇÏ°í ·Îµå¸ÊÀ» µû¶ó ³ª¾Æ°¬´ÂÁö¸¦ ÀÌ¾ß±âÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-35, SYSDATE-35, 44, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ë„˜íŒŒ', 'ì‹¬ì„±ì „ìž', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ê´€ê³„ êµ¬ì¶•ê³¼ ë„¤íŠ¸ì›Œí‚¹'
-    , 'ì§ìž¥ ë‚´ì—ì„œì˜ ê´€ê³„ êµ¬ì¶•ê³¼ ë„¤íŠ¸ì›Œí‚¹ì€ ê¸°íšŒë¥¼ ì°½ì¶œí•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ë™ë£Œë“¤ê³¼ì˜ ê´€ê³„ë¥¼ êµ¬ì¶•í•˜ê³  ë„¤íŠ¸ì›Œí¬ë¥¼ í™•ìž¥í•œ ê²½í—˜ì„ ë‚˜ëˆ„ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '³ÑÆÄ', '½É¼ºÀüÀÚ', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« °ü°è ±¸Ãà°ú ³×Æ®¿öÅ·'
+    , 'Á÷Àå ³»¿¡¼­ÀÇ °ü°è ±¸Ãà°ú ³×Æ®¿öÅ·Àº ±âÈ¸¸¦ Ã¢ÃâÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô µ¿·áµé°úÀÇ °ü°è¸¦ ±¸ÃàÇÏ°í ³×Æ®¿öÅ©¸¦ È®ÀåÇÑ °æÇèÀ» ³ª´©°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-35, SYSDATE-35, 45, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ë„˜ë²„ì‹ìŠ¤', 'ì‹¬ì„±ì „ìž', 'ì§ìž¥ì—ì„œì˜ í”„ë¡œì íŠ¸ ìŠ¤ì½”í”„ ê´€ë¦¬'
-    , 'í”„ë¡œì íŠ¸ ìŠ¤ì½”í”„ ê´€ë¦¬ëŠ” í”„ë¡œì íŠ¸ì˜ ì„±íŒ¨ë¥¼ ì¢Œìš°í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ í”„ë¡œì íŠ¸ ìŠ¤ì½”í”„ë¥¼ ê´€ë¦¬í•˜ê³  í”„ë¡œì íŠ¸ë¥¼ ì„±ê³µì ìœ¼ë¡œ ì™„ìˆ˜í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '³Ñ¹ö½Ä½º', '½É¼ºÀüÀÚ', 'Á÷Àå¿¡¼­ÀÇ ÇÁ·ÎÁ§Æ® ½ºÄÚÇÁ °ü¸®'
+    , 'ÇÁ·ÎÁ§Æ® ½ºÄÚÇÁ °ü¸®´Â ÇÁ·ÎÁ§Æ®ÀÇ ¼ºÆÐ¸¦ ÁÂ¿ìÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÇÁ·ÎÁ§Æ® ½ºÄÚÇÁ¸¦ °ü¸®ÇÏ°í ÇÁ·ÎÁ§Æ®¸¦ ¼º°øÀûÀ¸·Î ¿Ï¼öÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-35, SYSDATE-35, 46, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'numberone', 'ì‹¬ì„±ì „ìž', 'ì§ìž¥ ë‚´ ë¬¸ì œ í•´ê²°ê³¼ ì°½ì˜ì„±'
-    , 'ì§ìž¥ ë‚´ ë¬¸ì œ í•´ê²°ê³¼ ì°½ì˜ì„±ì€ ì¡°ì§ì˜ ë°œì „ì„ ì´‰ì§„í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ë¬¸ì œë¥¼ í•´ê²°í•˜ê³  ì°½ì˜ì ì¸ í•´ê²°ì±…ì„ ì œì•ˆí•œ ê²½í—˜ì„ ì´ì•¼ê¸°í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'numberone', '½É¼ºÀüÀÚ', 'Á÷Àå ³» ¹®Á¦ ÇØ°á°ú Ã¢ÀÇ¼º'
+    , 'Á÷Àå ³» ¹®Á¦ ÇØ°á°ú Ã¢ÀÇ¼ºÀº Á¶Á÷ÀÇ ¹ßÀüÀ» ÃËÁøÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¹®Á¦¸¦ ÇØ°áÇÏ°í Ã¢ÀÇÀûÀÎ ÇØ°áÃ¥À» Á¦¾ÈÇÑ °æÇèÀ» ÀÌ¾ß±âÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-35, SYSDATE-35, 47, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'nummbereins', 'ì‹¬ì„±ì „ìž', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ í™˜ê²½ ê°œì„ '
-    , 'ì—…ë¬´ í™˜ê²½ ê°œì„ ì€ ì§ì›ë“¤ì˜ ë§Œì¡±ë„ë¥¼ ë†’ì´ê³  ìƒì‚°ì„±ì„ í–¥ìƒì‹œí‚µë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ í™˜ê²½ì„ ê°œì„ í•˜ê³  ì§ì›ë“¤ì˜ íš¨ìœ¨ì„±ì„ ë†’ì¸ ê²½í—˜ì„ ë‚˜ëˆ„ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'nummbereins', '½É¼ºÀüÀÚ', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« È¯°æ °³¼±'
+    , '¾÷¹« È¯°æ °³¼±Àº Á÷¿øµéÀÇ ¸¸Á·µµ¸¦ ³ôÀÌ°í »ý»ê¼ºÀ» Çâ»ó½ÃÅµ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« È¯°æÀ» °³¼±ÇÏ°í Á÷¿øµéÀÇ È¿À²¼ºÀ» ³ôÀÎ °æÇèÀ» ³ª´©°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-35, SYSDATE-35, 48, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'dasende', 'ì‹¬ì„±ì „ìž', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ì„±ê³¼ í‰ê°€ì™€ ì„±ìž¥'
-    , 'ì„±ê³¼ í‰ê°€ëŠ” ê°œì¸ì˜ ì„±ìž¥ê³¼ ë°œì „ì„ ì´‰ì§„í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ì„±ê³¼ë¥¼ í‰ê°€í•˜ê³  ì„±ìž¥ì„ ì´ë£¨ì–´ë‚¸ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'dasende', '½É¼ºÀüÀÚ', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« ¼º°ú Æò°¡¿Í ¼ºÀå'
+    , '¼º°ú Æò°¡´Â °³ÀÎÀÇ ¼ºÀå°ú ¹ßÀüÀ» ÃËÁøÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« ¼º°ú¸¦ Æò°¡ÇÏ°í ¼ºÀåÀ» ÀÌ·ç¾î³½ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-34, SYSDATE-34, 49, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'hatjetztgekommt', 'ì‹¬ì„±ì „ìž', 'ì§ìž¥ ë‚´ ì´ìŠˆ í•´ê²°ê³¼ ë¦¬ë”ì‹­'
-    , 'ì§ìž¥ ë‚´ ì´ìŠˆ í•´ê²°ì€ ë¦¬ë”ì‹­ê³¼ ì—°ê²°ë©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì´ìŠˆë¥¼ í•´ê²°í•˜ê³  ë™ë£Œë“¤ì„ ì´ëˆ ë¦¬ë”ì‹­ì„ ì†Œê°œí•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'hatjetztgekommt', '½É¼ºÀüÀÚ', 'Á÷Àå ³» ÀÌ½´ ÇØ°á°ú ¸®´õ½Ê'
+    , 'Á÷Àå ³» ÀÌ½´ ÇØ°áÀº ¸®´õ½Ê°ú ¿¬°áµË´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÀÌ½´¸¦ ÇØ°áÇÏ°í µ¿·áµéÀ» ÀÌ²ö ¸®´õ½ÊÀ» ¼Ò°³ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-34, SYSDATE-34, 50, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'kiki', 'LZ', 'ì§ìž¥ì—ì„œì˜ ë³€í™”ì™€ ë³€í™” ê´€ë¦¬'
-    , 'ì§ìž¥ì—ì„œì˜ ë³€í™”ëŠ” í•„ì—°ì ìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ë³€í™”ë¥¼ ìˆ˜ìš©í•˜ê³  ê´€ë¦¬í•˜ë©° ì¡°ì§ì— ê¸ì •ì ì¸ ì˜í–¥ì„ ë¯¸ì³¤ëŠ”ì§€ë¥¼ ì´ì•¼ê¸°í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'kiki', 'LZ', 'Á÷Àå¿¡¼­ÀÇ º¯È­¿Í º¯È­ °ü¸®'
+    , 'Á÷Àå¿¡¼­ÀÇ º¯È­´Â ÇÊ¿¬ÀûÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô º¯È­¸¦ ¼ö¿ëÇÏ°í °ü¸®ÇÏ¸ç Á¶Á÷¿¡ ±àÁ¤ÀûÀÎ ¿µÇâÀ» ¹ÌÃÆ´ÂÁö¸¦ ÀÌ¾ß±âÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-34, SYSDATE-34, 61, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'MusicJunkieX', 'LZì´ë…¸í…', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ìœ ì—°ì„±ê³¼ ì›Œí¬-ë¼ì´í”„ ë°¸ëŸ°ìŠ¤'
-    , 'ì—…ë¬´ ìœ ì—°ì„±ê³¼ ì›Œí¬-ë¼ì´í”„ ë°¸ëŸ°ìŠ¤ëŠ” ì§ìž¥ ë‚´ ë§Œì¡±ë„ë¥¼ ë†’ìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ìœ ì—°ì„±ì„ ì¦ê¸°ê³  ì›Œí¬-ë¼ì´í”„ ë°¸ëŸ°ìŠ¤ë¥¼ ìœ ì§€í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'MusicJunkieX', 'LZÀÌ³ëÅØ', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« À¯¿¬¼º°ú ¿öÅ©-¶óÀÌÇÁ ¹ë·±½º'
+    , '¾÷¹« À¯¿¬¼º°ú ¿öÅ©-¶óÀÌÇÁ ¹ë·±½º´Â Á÷Àå ³» ¸¸Á·µµ¸¦ ³ôÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« À¯¿¬¼ºÀ» Áñ±â°í ¿öÅ©-¶óÀÌÇÁ ¹ë·±½º¸¦ À¯ÁöÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-34, SYSDATE-34, 62, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'SkyRider', 'ì‹¬ì„±ì „ê¸°', 'ì§ìž¥ì—ì„œì˜ íŒ€ ë¹Œë”©ê³¼ ë™ë£Œë“¤ê³¼ì˜ ê´€ê³„'
-    , 'íŒ€ ë¹Œë”©ì€ ì¡°ì§ ë‚´ ê´€ê³„ë¥¼ ê°•í™”í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ íŒ€ ë¹Œë”©ì„ ì´‰ì§„í•˜ê³  ë™ë£Œë“¤ê³¼ì˜ ê´€ê³„ë¥¼ ê°•í™”í•œ ê²½í—˜ì„ ë‚˜ëˆ„ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'SkyRider', '½É¼ºÀü±â', 'Á÷Àå¿¡¼­ÀÇ ÆÀ ºôµù°ú µ¿·áµé°úÀÇ °ü°è'
+    , 'ÆÀ ºôµùÀº Á¶Á÷ ³» °ü°è¸¦ °­È­ÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÆÀ ºôµùÀ» ÃËÁøÇÏ°í µ¿·áµé°úÀÇ °ü°è¸¦ °­È­ÇÑ °æÇèÀ» ³ª´©°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-33, SYSDATE-33, 63, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'CyberPioneer', 'ì‹¬ì„±ë°”ì´ì˜¤ë¡œì§ìŠ¤', 'ì§ìž¥ ë‚´ ì—…ë¬´ ìœ¤ë¦¬ì™€ íšŒì‚¬ ê°€ì¹˜'
-    , 'ì§ìž¥ ë‚´ ì—…ë¬´ ìœ¤ë¦¬ì™€ íšŒì‚¬ ê°€ì¹˜ëŠ” ì¡°ì§ì˜ ë¬¸í™”ë¥¼ í˜•ì„±í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ìœ¤ë¦¬ë¥¼ ì¤€ìˆ˜í•˜ê³  íšŒì‚¬ ê°€ì¹˜ë¥¼ ì‹¤ì²œí–ˆëŠ”ì§€ì— ëŒ€í•œ ê²½í—˜ì„ ì´ì•¼ê¸°í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'CyberPioneer', '½É¼º¹ÙÀÌ¿À·ÎÁ÷½º', 'Á÷Àå ³» ¾÷¹« À±¸®¿Í È¸»ç °¡Ä¡'
+    , 'Á÷Àå ³» ¾÷¹« À±¸®¿Í È¸»ç °¡Ä¡´Â Á¶Á÷ÀÇ ¹®È­¸¦ Çü¼ºÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« À±¸®¸¦ ÁØ¼öÇÏ°í È¸»ç °¡Ä¡¸¦ ½ÇÃµÇß´ÂÁö¿¡ ´ëÇÑ °æÇèÀ» ÀÌ¾ß±âÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-33, SYSDATE-33, 64, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'StarGazer', 'íŒì˜¤ì…˜', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ì„±ê³¼ ë³´ê³ ì™€ ì˜ì‚¬ ì†Œí†µ'
-    , 'ì„±ê³¼ ë³´ê³ ì™€ ì˜ì‚¬ ì†Œí†µì€ ì¡°ì§ ë‚´ íˆ¬ëª…ì„±ì„ ë†’ìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ì„±ê³¼ë¥¼ ë³´ê³ í•˜ê³  ë™ë£Œë“¤ê³¼ì˜ íš¨ê³¼ì ì¸ ì˜ì‚¬ ì†Œí†µì„ ìœ ì§€í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'StarGazer', 'ÆÇ¿À¼Ç', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« ¼º°ú º¸°í¿Í ÀÇ»ç ¼ÒÅë'
+    , '¼º°ú º¸°í¿Í ÀÇ»ç ¼ÒÅëÀº Á¶Á÷ ³» Åõ¸í¼ºÀ» ³ôÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« ¼º°ú¸¦ º¸°íÇÏ°í µ¿·áµé°úÀÇ È¿°úÀûÀÎ ÀÇ»ç ¼ÒÅëÀ» À¯ÁöÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-33, SYSDATE-33, 65, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'GameMastermind', 'ê³ ë ¤ê¸ˆìœµì§€ì£¼', 'ì§ìž¥ì—ì„œì˜ í”„ë¡œì íŠ¸ í†µí•© ê´€ë¦¬'
-    , 'í”„ë¡œì íŠ¸ í†µí•© ê´€ë¦¬ëŠ” í”„ë¡œì íŠ¸ì˜ ì„±íŒ¨ë¥¼ ì¢Œìš°í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ í”„ë¡œì íŠ¸ í†µí•© ê´€ë¦¬ë¥¼ ìˆ˜í–‰í•˜ê³  ì„±ê³µì ì¸ ê²°ê³¼ë¥¼ ì–»ì€ ê²½í—˜ì„ ë‚˜ëˆ„ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'GameMastermind', '°í·Á±ÝÀ¶ÁöÁÖ', 'Á÷Àå¿¡¼­ÀÇ ÇÁ·ÎÁ§Æ® ÅëÇÕ °ü¸®'
+    , 'ÇÁ·ÎÁ§Æ® ÅëÇÕ °ü¸®´Â ÇÁ·ÎÁ§Æ®ÀÇ ¼ºÆÐ¸¦ ÁÂ¿ìÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÇÁ·ÎÁ§Æ® ÅëÇÕ °ü¸®¸¦ ¼öÇàÇÏ°í ¼º°øÀûÀÎ °á°ú¸¦ ¾òÀº °æÇèÀ» ³ª´©°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-32, SYSDATE-32, 66, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ArtisticSoul', 'LZìœ í”ŒëŸ¬ìŠ¤', 'ì§ìž¥ ë‚´ ì—…ë¬´ ìžë™í™”ì™€ í˜ì‹ '
-    , 'ì—…ë¬´ ìžë™í™”ì™€ í˜ì‹ ì€ ì¡°ì§ì˜ ê²½ìŸë ¥ì„ í–¥ìƒì‹œí‚µë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ìžë™í™”ì™€ í˜ì‹ ì„ ì¶”ì§„í•˜ê³  ì¡°ì§ì— ê¸°ì—¬í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ArtisticSoul', 'LZÀ¯ÇÃ·¯½º', 'Á÷Àå ³» ¾÷¹« ÀÚµ¿È­¿Í Çõ½Å'
+    , '¾÷¹« ÀÚµ¿È­¿Í Çõ½ÅÀº Á¶Á÷ÀÇ °æÀï·ÂÀ» Çâ»ó½ÃÅµ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« ÀÚµ¿È­¿Í Çõ½ÅÀ» ÃßÁøÇÏ°í Á¶Á÷¿¡ ±â¿©ÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-32, SYSDATE-32, 67, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'AnimalLover', 'ì½”ë¦¬ì•„ì•„ì—°', 'ì§ìž¥ì—ì„œì˜ í”„ë¡œì íŠ¸ ë¬¸ì„œí™”ì™€ íš¨ê³¼ì ì¸ ê´€ë¦¬'
-    , 'í”„ë¡œì íŠ¸ ë¬¸ì„œí™”ì™€ íš¨ê³¼ì ì¸ ê´€ë¦¬ëŠ” í”„ë¡œì íŠ¸ ì§„í–‰ì„ ì›í™œí•˜ê²Œ í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ í”„ë¡œì íŠ¸ ë¬¸ì„œí™”ë¥¼ ìˆ˜í–‰í•˜ê³  ê´€ë¦¬í•˜ëŠ” ë°©ë²•ì„ ì†Œê°œí•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'AnimalLover', 'ÄÚ¸®¾Æ¾Æ¿¬', 'Á÷Àå¿¡¼­ÀÇ ÇÁ·ÎÁ§Æ® ¹®¼­È­¿Í È¿°úÀûÀÎ °ü¸®'
+    , 'ÇÁ·ÎÁ§Æ® ¹®¼­È­¿Í È¿°úÀûÀÎ °ü¸®´Â ÇÁ·ÎÁ§Æ® ÁøÇàÀ» ¿øÈ°ÇÏ°Ô ÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÇÁ·ÎÁ§Æ® ¹®¼­È­¸¦ ¼öÇàÇÏ°í °ü¸®ÇÏ´Â ¹æ¹ýÀ» ¼Ò°³ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-32, SYSDATE-32, 68, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'MovieCritic', 'ì‹¬ì„±ì¹´ë“œ', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ê´€ë ¨ êµìœ¡ê³¼ í›ˆë ¨'
-    , 'ì—…ë¬´ ê´€ë ¨ êµìœ¡ê³¼ í›ˆë ¨ì€ ì „ë¬¸ì„±ì„ í–¥ìƒì‹œí‚µë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ êµìœ¡ê³¼ í›ˆë ¨ì„ ë°›ê³  ì§ìž¥ì—ì„œì˜ ì„±ìž¥ì„ ì´ë£¬ ê²½í—˜ì„ ë‚˜ëˆ„ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'MovieCritic', '½É¼ºÄ«µå', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« °ü·Ã ±³À°°ú ÈÆ·Ã'
+    , '¾÷¹« °ü·Ã ±³À°°ú ÈÆ·ÃÀº Àü¹®¼ºÀ» Çâ»ó½ÃÅµ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ±³À°°ú ÈÆ·ÃÀ» ¹Þ°í Á÷Àå¿¡¼­ÀÇ ¼ºÀåÀ» ÀÌ·é °æÇèÀ» ³ª´©°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-31, SYSDATE-30, 69, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'BeachLover', 'ì‹¬ì„±ìƒëª…', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ì„±ê³¼ì™€ ì¸ì •'
-    , 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ì„±ê³¼ëŠ” ì¸ì •ê³¼ ë³´ìƒì„ ë°›ëŠ” ê³„ê¸°ê°€ ë©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ì„±ê³¼ë¥¼ ë‹¬ì„±í•˜ê³  ì¸ì •ì„ ë°›ì•˜ëŠ”ì§€ë¥¼ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'BeachLover', '½É¼º»ý¸í', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« ¼º°ú¿Í ÀÎÁ¤'
+    , 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« ¼º°ú´Â ÀÎÁ¤°ú º¸»óÀ» ¹Þ´Â °è±â°¡ µË´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« ¼º°ú¸¦ ´Þ¼ºÇÏ°í ÀÎÁ¤À» ¹Þ¾Ò´ÂÁö¸¦ °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-31, SYSDATE-31, 70, 0, 0);
  
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ThrillSeek', 'ë¹„ë§ˆíŠ¸', 'ì§ìž¥ ë‚´ í”„ë¡œì íŠ¸ íš¨ê³¼ì ì¸ íŒ€ì› ì—­í• '
-    , 'í”„ë¡œì íŠ¸ ë‚´ì—ì„œ íš¨ê³¼ì ì¸ íŒ€ì› ì—­í• ì€ í”„ë¡œì íŠ¸ ì„±ê³µì— ê¸°ì—¬í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ íš¨ê³¼ì ì¸ íŒ€ì› ì—­í• ì„ ìˆ˜í–‰í•˜ê³  í”„ë¡œì íŠ¸ë¥¼ ì„±ê³µì ìœ¼ë¡œ ì´ëˆ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ThrillSeek', 'ºñ¸¶Æ®', 'Á÷Àå ³» ÇÁ·ÎÁ§Æ® È¿°úÀûÀÎ ÆÀ¿ø ¿ªÇÒ'
+    , 'ÇÁ·ÎÁ§Æ® ³»¿¡¼­ È¿°úÀûÀÎ ÆÀ¿ø ¿ªÇÒÀº ÇÁ·ÎÁ§Æ® ¼º°ø¿¡ ±â¿©ÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô È¿°úÀûÀÎ ÆÀ¿ø ¿ªÇÒÀ» ¼öÇàÇÏ°í ÇÁ·ÎÁ§Æ®¸¦ ¼º°øÀûÀ¸·Î ÀÌ²ö °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-30, SYSDATE-30, 71, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'RoadWarrior', 'BBì†í•´ë³´í—˜', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ê³ ê° ì˜ê²¬ ìˆ˜ë ´ê³¼ ë°˜ì˜'
-    , 'ê³ ê° ì˜ê²¬ ìˆ˜ë ´ê³¼ ë°˜ì˜ì€ ì œí’ˆ ê°œì„ ê³¼ ê³ ê° ë§Œì¡±ë„ë¥¼ ë†’ìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ê³ ê° ì˜ê²¬ì„ ìˆ˜ë ´í•˜ê³  ì œí’ˆ ê°œì„ ì— ë°˜ì˜í•œ ê²½í—˜ì„ ì´ì•¼ê¸°í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'RoadWarrior', 'BB¼ÕÇØº¸Çè', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« °í°´ ÀÇ°ß ¼ö·Å°ú ¹Ý¿µ'
+    , '°í°´ ÀÇ°ß ¼ö·Å°ú ¹Ý¿µÀº Á¦Ç° °³¼±°ú °í°´ ¸¸Á·µµ¸¦ ³ôÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô °í°´ ÀÇ°ßÀ» ¼ö·ÅÇÏ°í Á¦Ç° °³¼±¿¡ ¹Ý¿µÇÑ °æÇèÀ» ÀÌ¾ß±âÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-30, SYSDATE-30, 72, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'FoodieFan', 'í•œëŒ€ì œì² ', 'ì§ìž¥ ë‚´ ì—…ë¬´ ê´€ë ¨ í”„ë¡œì íŠ¸ ë¦¬ë”ì‹­'
-    , 'ì§ìž¥ ë‚´ ì—…ë¬´ ê´€ë ¨ í”„ë¡œì íŠ¸ ë¦¬ë”ì‹­ì€ í”„ë¡œì íŠ¸ì˜ ì„±íŒ¨ë¥¼ ì¢Œìš°í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ í”„ë¡œì íŠ¸ ë¦¬ë”ì‹­ì„ í†µí•´ ì„±ê³µì ì¸ í”„ë¡œì íŠ¸ë¥¼ ì´ëˆ ê²½í—˜ì„ ë‚˜ëˆ„ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'FoodieFan', 'ÇÑ´ëÁ¦Ã¶', 'Á÷Àå ³» ¾÷¹« °ü·Ã ÇÁ·ÎÁ§Æ® ¸®´õ½Ê'
+    , 'Á÷Àå ³» ¾÷¹« °ü·Ã ÇÁ·ÎÁ§Æ® ¸®´õ½ÊÀº ÇÁ·ÎÁ§Æ®ÀÇ ¼ºÆÐ¸¦ ÁÂ¿ìÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÇÁ·ÎÁ§Æ® ¸®´õ½ÊÀ» ÅëÇØ ¼º°øÀûÀÎ ÇÁ·ÎÁ§Æ®¸¦ ÀÌ²ö °æÇèÀ» ³ª´©°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-30, SYSDATE-30, 73, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'CoffeeLover', 'KPNG', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ì„±ê³¼ì™€ ë³´ìƒ'
-    , 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ì„±ê³¼ëŠ” ë³´ìƒê³¼ ì¸ì •ì„ ë°›ëŠ” ì¤‘ìš”í•œ ìš”ì†Œìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ì„±ê³¼ë¥¼ ë‹¬ì„±í•˜ê³  ì–´ë–¤ ë³´ìƒì„ ë°›ì•˜ëŠ”ì§€ë¥¼ ì´ì•¼ê¸°í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'CoffeeLover', 'KPNG', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« ¼º°ú¿Í º¸»ó'
+    , 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« ¼º°ú´Â º¸»ó°ú ÀÎÁ¤À» ¹Þ´Â Áß¿äÇÑ ¿ä¼ÒÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« ¼º°ú¸¦ ´Þ¼ºÇÏ°í ¾î¶² º¸»óÀ» ¹Þ¾Ò´ÂÁö¸¦ ÀÌ¾ß±âÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-30, SYSDATE-30, 74, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'Bookworm', 'ì—ìŠ¤ì”¨ë°”ì´ì˜¤ì„¼ì„œ', 'ì§ìž¥ ë‚´ ì—…ë¬´ ìš°ì„ ìˆœìœ„ì™€ ê´€ë¦¬'
-    , 'ì—…ë¬´ ìš°ì„ ìˆœìœ„ ì„¤ì •ì€ ì—…ë¬´ ê´€ë¦¬ì˜ í•µì‹¬ìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ìš°ì„ ìˆœìœ„ë¥¼ ì •í•˜ê³  ê´€ë¦¬í•˜ì—¬ ì„±ê³¼ë¥¼ ë†’ì¸ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'Bookworm', '¿¡½º¾¾¹ÙÀÌ¿À¼¾¼­', 'Á÷Àå ³» ¾÷¹« ¿ì¼±¼øÀ§¿Í °ü¸®'
+    , '¾÷¹« ¿ì¼±¼øÀ§ ¼³Á¤Àº ¾÷¹« °ü¸®ÀÇ ÇÙ½ÉÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« ¿ì¼±¼øÀ§¸¦ Á¤ÇÏ°í °ü¸®ÇÏ¿© ¼º°ú¸¦ ³ôÀÎ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-29, SYSDATE-29, 75, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'NatureLuv', 'STí…”ë ˆì½¤', 'ì§ìž¥ì—ì„œì˜ í”„ë¡œì íŠ¸ ì‹¤íŒ¨ì™€ êµí›ˆ'
-    , 'í”„ë¡œì íŠ¸ ì‹¤íŒ¨ëŠ” êµí›ˆì„ ì œê³µí•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ í”„ë¡œì íŠ¸ì—ì„œ ì‹¤íŒ¨ë¥¼ ê²½í—˜í•˜ê³  ì–´ë–¤ êµí›ˆì„ ì–»ì—ˆëŠ”ì§€ë¥¼ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'NatureLuv', 'STÅÚ·¹ÄÞ', 'Á÷Àå¿¡¼­ÀÇ ÇÁ·ÎÁ§Æ® ½ÇÆÐ¿Í ±³ÈÆ'
+    , 'ÇÁ·ÎÁ§Æ® ½ÇÆÐ´Â ±³ÈÆÀ» Á¦°øÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÇÁ·ÎÁ§Æ®¿¡¼­ ½ÇÆÐ¸¦ °æÇèÇÏ°í ¾î¶² ±³ÈÆÀ» ¾ò¾ú´ÂÁö¸¦ °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-28, SYSDATE-28, 76, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'StarryEyes', 'ì‹¬ì„±SDI', 'ì§ìž¥ ë‚´ ì—…ë¬´ ë°ë“œë¼ì¸ê³¼ ìŠ¤íŠ¸ë ˆìŠ¤ ê´€ë¦¬'
-    , 'ì—…ë¬´ ë°ë“œë¼ì¸ê³¼ ìŠ¤íŠ¸ë ˆìŠ¤ ê´€ë¦¬ëŠ” ì§ìž¥ ë‚´ì—ì„œ ì¤‘ìš”í•œ ì£¼ì œìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ë°ë“œë¼ì¸ì„ ê´€ë¦¬í•˜ê³  ìŠ¤íŠ¸ë ˆìŠ¤ë¥¼ íš¨ê³¼ì ìœ¼ë¡œ ê´€ë¦¬í•œ ê²½í—˜ì„ ë‚˜ëˆ„ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'StarryEyes', '½É¼ºSDI', 'Á÷Àå ³» ¾÷¹« µ¥µå¶óÀÎ°ú ½ºÆ®·¹½º °ü¸®'
+    , '¾÷¹« µ¥µå¶óÀÎ°ú ½ºÆ®·¹½º °ü¸®´Â Á÷Àå ³»¿¡¼­ Áß¿äÇÑ ÁÖÁ¦ÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« µ¥µå¶óÀÎÀ» °ü¸®ÇÏ°í ½ºÆ®·¹½º¸¦ È¿°úÀûÀ¸·Î °ü¸®ÇÑ °æÇèÀ» ³ª´©°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-28, SYSDATE-28, 77, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'NightCrawler', 'LZì „ìž', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ íš¨ìœ¨ì„±ê³¼ ê°œì„ '
-    , 'ì—…ë¬´ íš¨ìœ¨ì„±ì€ ì¡°ì§ì˜ ì„±ê³¼ë¥¼ í–¥ìƒì‹œí‚µë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ íš¨ìœ¨ì„±ì„ ê°œì„ í•˜ê¸° ìœ„í•œ ë…¸ë ¥ê³¼ ë°©ë²•ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'NightCrawler', 'LZÀüÀÚ', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« È¿À²¼º°ú °³¼±'
+    , '¾÷¹« È¿À²¼ºÀº Á¶Á÷ÀÇ ¼º°ú¸¦ Çâ»ó½ÃÅµ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« È¿À²¼ºÀ» °³¼±ÇÏ±â À§ÇÑ ³ë·Â°ú ¹æ¹ýÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-28, SYSDATE-28, 78, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ìƒˆë²½ë³„', 'ê³ ë ¤ê°€ìŠ¤ê³µì‚¬', 'ì§ìž¥ ë‚´ í”„ë¡œì íŠ¸ ì„±ê³µê³¼ ë°°ìš´ ì '
-    , 'ì§ìž¥ ë‚´ í”„ë¡œì íŠ¸ ì„±ê³µì€ ë°°ì›€ì˜ ê¸°íšŒë¥¼ ì œê³µí•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ í”„ë¡œì íŠ¸ì—ì„œ ì„±ê³¼ë¥¼ ì–»ê³  ì–´ë–¤ êµí›ˆì„ ì–»ì—ˆëŠ”ì§€ë¥¼ ì´ì•¼ê¸°í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '»õº®º°', '°í·Á°¡½º°ø»ç', 'Á÷Àå ³» ÇÁ·ÎÁ§Æ® ¼º°ø°ú ¹è¿î Á¡'
+    , 'Á÷Àå ³» ÇÁ·ÎÁ§Æ® ¼º°øÀº ¹è¿òÀÇ ±âÈ¸¸¦ Á¦°øÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÇÁ·ÎÁ§Æ®¿¡¼­ ¼º°ú¸¦ ¾ò°í ¾î¶² ±³ÈÆÀ» ¾ò¾ú´ÂÁö¸¦ ÀÌ¾ß±âÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-27, SYSDATE-27, 79, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ìžìœ ë¡œìš´ì˜í˜¼', 'KP', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ë¶„ì„ê³¼ ê°œì„  ì „ëžµ'
-    , 'ì—…ë¬´ ë¶„ì„ê³¼ ê°œì„  ì „ëžµì€ ì—…ë¬´ í”„ë¡œì„¸ìŠ¤ë¥¼ í–¥ìƒì‹œí‚¤ëŠ” ë° ë„ì›€ì„ ì¤ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ë¶„ì„ì„ ìˆ˜í–‰í•˜ê³  ì—…ë¬´ ê°œì„  ì „ëžµì„ ì‹¤í–‰í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ÀÚÀ¯·Î¿î¿µÈ¥', 'KP', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« ºÐ¼®°ú °³¼± Àü·«'
+    , '¾÷¹« ºÐ¼®°ú °³¼± Àü·«Àº ¾÷¹« ÇÁ·Î¼¼½º¸¦ Çâ»ó½ÃÅ°´Â µ¥ µµ¿òÀ» ÁÝ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« ºÐ¼®À» ¼öÇàÇÏ°í ¾÷¹« °³¼± Àü·«À» ½ÇÇàÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-27, SYSDATE-27, 80, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ë§¥ì£¼ë§›ìžˆê²Œ', 'LZ', 'ì§ìž¥ ë‚´ ì»¤ë¦¬ì–´ ë¡œë“œë§µê³¼ ê³„íš'
-    , 'ì»¤ë¦¬ì–´ ë¡œë“œë§µê³¼ ê³„íšì€ ì„±ê³µì ì¸ ì»¤ë¦¬ì–´ë¥¼ êµ¬ì¶•í•˜ëŠ” ë° í•„ìˆ˜ì ìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ë‚˜ì˜ ì»¤ë¦¬ì–´ë¥¼ ê³„íší•˜ê³  ë¡œë“œë§µì„ ë”°ë¼ ë‚˜ì•„ê°”ëŠ”ì§€ë¥¼ ì„¤ëª…í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '¸ÆÁÖ¸ÀÀÖ°Ô', 'LZ', 'Á÷Àå ³» Ä¿¸®¾î ·Îµå¸Ê°ú °èÈ¹'
+    , 'Ä¿¸®¾î ·Îµå¸Ê°ú °èÈ¹Àº ¼º°øÀûÀÎ Ä¿¸®¾î¸¦ ±¸ÃàÇÏ´Â µ¥ ÇÊ¼öÀûÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ³ªÀÇ Ä¿¸®¾î¸¦ °èÈ¹ÇÏ°í ·Îµå¸ÊÀ» µû¶ó ³ª¾Æ°¬´ÂÁö¸¦ ¼³¸íÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-27, SYSDATE-27, 81, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'QuantumX', 'LZì´ë…¸í…', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ê´€ê³„ êµ¬ì¶•ê³¼ ë„¤íŠ¸ì›Œí‚¹'
-    , 'ì§ìž¥ ë‚´ì—ì„œì˜ ê´€ê³„ êµ¬ì¶•ê³¼ ë„¤íŠ¸ì›Œí‚¹ì€ ê¸°íšŒë¥¼ ì°½ì¶œí•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ë™ë£Œë“¤ê³¼ì˜ ê´€ê³„ë¥¼ êµ¬ì¶•í•˜ê³  ë„¤íŠ¸ì›Œí¬ë¥¼ í™•ìž¥í•œ ê²½í—˜ì„ ë‚˜ëˆ„ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'QuantumX', 'LZÀÌ³ëÅØ', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« °ü°è ±¸Ãà°ú ³×Æ®¿öÅ·'
+    , 'Á÷Àå ³»¿¡¼­ÀÇ °ü°è ±¸Ãà°ú ³×Æ®¿öÅ·Àº ±âÈ¸¸¦ Ã¢ÃâÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô µ¿·áµé°úÀÇ °ü°è¸¦ ±¸ÃàÇÏ°í ³×Æ®¿öÅ©¸¦ È®ÀåÇÑ °æÇèÀ» ³ª´©°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-26, SYSDATE-25, 82, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'GamePro', 'ì‹¬ì„±ì „ê¸°', 'ì§ìž¥ì—ì„œì˜ í”„ë¡œì íŠ¸ ìŠ¤ì½”í”„ ê´€ë¦¬'
-    , 'í”„ë¡œì íŠ¸ ìŠ¤ì½”í”„ ê´€ë¦¬ëŠ” í”„ë¡œì íŠ¸ì˜ ì„±íŒ¨ë¥¼ ì¢Œìš°í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ í”„ë¡œì íŠ¸ ìŠ¤ì½”í”„ë¥¼ ê´€ë¦¬í•˜ê³  í”„ë¡œì íŠ¸ë¥¼ ì„±ê³µì ìœ¼ë¡œ ì™„ìˆ˜í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'GamePro', '½É¼ºÀü±â', 'Á÷Àå¿¡¼­ÀÇ ÇÁ·ÎÁ§Æ® ½ºÄÚÇÁ °ü¸®'
+    , 'ÇÁ·ÎÁ§Æ® ½ºÄÚÇÁ °ü¸®´Â ÇÁ·ÎÁ§Æ®ÀÇ ¼ºÆÐ¸¦ ÁÂ¿ìÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÇÁ·ÎÁ§Æ® ½ºÄÚÇÁ¸¦ °ü¸®ÇÏ°í ÇÁ·ÎÁ§Æ®¸¦ ¼º°øÀûÀ¸·Î ¿Ï¼öÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-25, SYSDATE-25, 83, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'FitnessFreak', 'ì‹¬ì„±ë°”ì´ì˜¤ë¡œì§ìŠ¤', 'ì§ìž¥ ë‚´ ì—…ë¬´ ë¬¸ì œ í•´ê²°ê³¼ ì°½ì˜ì„±'
-    , 'ì§ìž¥ ë‚´ ë¬¸ì œ í•´ê²°ê³¼ ì°½ì˜ì„±ì€ ì¡°ì§ì˜ ë°œì „ì„ ì´‰ì§„í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ë¬¸ì œë¥¼ í•´ê²°í•˜ê³  ì°½ì˜ì ì¸ í•´ê²°ì±…ì„ ì œì•ˆí•œ ê²½í—˜ì„ ì´ì•¼ê¸°í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'FitnessFreak', '½É¼º¹ÙÀÌ¿À·ÎÁ÷½º', 'Á÷Àå ³» ¾÷¹« ¹®Á¦ ÇØ°á°ú Ã¢ÀÇ¼º'
+    , 'Á÷Àå ³» ¹®Á¦ ÇØ°á°ú Ã¢ÀÇ¼ºÀº Á¶Á÷ÀÇ ¹ßÀüÀ» ÃËÁøÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¹®Á¦¸¦ ÇØ°áÇÏ°í Ã¢ÀÇÀûÀÎ ÇØ°áÃ¥À» Á¦¾ÈÇÑ °æÇèÀ» ÀÌ¾ß±âÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-25, SYSDATE-25, 84, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'í‘¸ë¥¸ë°”ë‹¤', 'íŒì˜¤ì…˜', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ í™˜ê²½ ê°œì„ '
-    , 'ì—…ë¬´ í™˜ê²½ ê°œì„ ì€ ì§ì›ë“¤ì˜ ë§Œì¡±ë„ë¥¼ ë†’ì´ê³  ìƒì‚°ì„±ì„ í–¥ìƒì‹œí‚µë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ í™˜ê²½ì„ ê°œì„ í•˜ê³  ì§ì›ë“¤ì˜ íš¨ìœ¨ì„±ì„ ë†’ì¸ ê²½í—˜ì„ ë‚˜ëˆ„ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'Çª¸¥¹Ù´Ù', 'ÆÇ¿À¼Ç', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« È¯°æ °³¼±'
+    , '¾÷¹« È¯°æ °³¼±Àº Á÷¿øµéÀÇ ¸¸Á·µµ¸¦ ³ôÀÌ°í »ý»ê¼ºÀ» Çâ»ó½ÃÅµ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« È¯°æÀ» °³¼±ÇÏ°í Á÷¿øµéÀÇ È¿À²¼ºÀ» ³ôÀÎ °æÇèÀ» ³ª´©°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-25, SYSDATE-25, 85, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ê¿ˆë‚˜ë¬´', 'ê³ ë ¤ê¸ˆìœµì§€ì£¼', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ì„±ê³¼ í‰ê°€ì™€ ì„±ìž¥'
-    , 'ì„±ê³¼ í‰ê°€ëŠ” ê°œì¸ì˜ ì„±ìž¥ê³¼ ë°œì „ì„ ì´‰ì§„í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ì„±ê³¼ë¥¼ í‰ê°€í•˜ê³  ì„±ìž¥ì„ ì´ë£¨ì–´ë‚¸ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '²Þ³ª¹«', '°í·Á±ÝÀ¶ÁöÁÖ', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« ¼º°ú Æò°¡¿Í ¼ºÀå'
+    , '¼º°ú Æò°¡´Â °³ÀÎÀÇ ¼ºÀå°ú ¹ßÀüÀ» ÃËÁøÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« ¼º°ú¸¦ Æò°¡ÇÏ°í ¼ºÀåÀ» ÀÌ·ç¾î³½ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-25, SYSDATE-25, 86, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'í–‰ë³µí•œë‚ ', 'LZìœ í”ŒëŸ¬ìŠ¤', 'ì§ìž¥ ë‚´ ì´ìŠˆ í•´ê²°ê³¼ ë¦¬ë”ì‹­'
-    , 'ì§ìž¥ ë‚´ ì´ìŠˆ í•´ê²°ì€ ë¦¬ë”ì‹­ê³¼ ì—°ê²°ë©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì´ìŠˆë¥¼ í•´ê²°í•˜ê³  ë™ë£Œë“¤ì„ ì´ëˆ ë¦¬ë”ì‹­ì„ ì†Œê°œí•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'Çàº¹ÇÑ³¯', 'LZÀ¯ÇÃ·¯½º', 'Á÷Àå ³» ÀÌ½´ ÇØ°á°ú ¸®´õ½Ê'
+    , 'Á÷Àå ³» ÀÌ½´ ÇØ°áÀº ¸®´õ½Ê°ú ¿¬°áµË´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÀÌ½´¸¦ ÇØ°áÇÏ°í µ¿·áµéÀ» ÀÌ²ö ¸®´õ½ÊÀ» ¼Ò°³ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-25, SYSDATE-25, 87, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'TechWiz', 'ì½”ë¦¬ì•„ì•„ì—°', 'ì§ìž¥ì—ì„œì˜ ë³€í™”ì™€ ë³€í™” ê´€ë¦¬'
-    , 'ì§ìž¥ì—ì„œì˜ ë³€í™”ëŠ” í•„ì—°ì ìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ë³€í™”ë¥¼ ìˆ˜ìš©í•˜ê³  ê´€ë¦¬í•˜ë©° ì¡°ì§ì— ê¸ì •ì ì¸ ì˜í–¥ì„ ë¯¸ì³¤ëŠ”ì§€ë¥¼ ì´ì•¼ê¸°í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'TechWiz', 'ÄÚ¸®¾Æ¾Æ¿¬', 'Á÷Àå¿¡¼­ÀÇ º¯È­¿Í º¯È­ °ü¸®'
+    , 'Á÷Àå¿¡¼­ÀÇ º¯È­´Â ÇÊ¿¬ÀûÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô º¯È­¸¦ ¼ö¿ëÇÏ°í °ü¸®ÇÏ¸ç Á¶Á÷¿¡ ±àÁ¤ÀûÀÎ ¿µÇâÀ» ¹ÌÃÆ´ÂÁö¸¦ ÀÌ¾ß±âÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-25, SYSDATE-25, 88, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'CodingGuru', 'ì‹¬ì„±ì¹´ë“œ', 'ì§ìž¥ì—ì„œì˜ ì—…ë¬´ ìœ ì—°ì„±ê³¼ ì›Œí¬-ë¼ì´í”„ ë°¸ëŸ°ìŠ¤'
-    , 'ì—…ë¬´ ìœ ì—°ì„±ê³¼ ì›Œí¬-ë¼ì´í”„ ë°¸ëŸ°ìŠ¤ëŠ” ì§ìž¥ ë‚´ ë§Œì¡±ë„ë¥¼ ë†’ìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ ìœ ì—°ì„±ì„ ì¦ê¸°ê³  ì›Œí¬-ë¼ì´í”„ ë°¸ëŸ°ìŠ¤ë¥¼ ìœ ì§€í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'CodingGuru', '½É¼ºÄ«µå', 'Á÷Àå¿¡¼­ÀÇ ¾÷¹« À¯¿¬¼º°ú ¿öÅ©-¶óÀÌÇÁ ¹ë·±½º'
+    , '¾÷¹« À¯¿¬¼º°ú ¿öÅ©-¶óÀÌÇÁ ¹ë·±½º´Â Á÷Àå ³» ¸¸Á·µµ¸¦ ³ôÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹« À¯¿¬¼ºÀ» Áñ±â°í ¿öÅ©-¶óÀÌÇÁ ¹ë·±½º¸¦ À¯ÁöÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-24, SYSDATE-24, 89, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'HistoryBuff', 'ì‹¬ì„±ìƒëª…', 'ì§ìž¥ì—ì„œì˜ íŒ€ ë¹Œë”©ê³¼ ë™ë£Œë“¤ê³¼ì˜ ê´€ê³„'
-    , 'íŒ€ ë¹Œë”©ì€ ì¡°ì§ ë‚´ ê´€ê³„ë¥¼ ê°•í™”í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ íŒ€ ë¹Œë”©ì„ ì´‰ì§„í•˜ê³  ë™ë£Œë“¤ê³¼ì˜ ê´€ê³„ë¥¼ ê°•í™”í•œ ê²½í—˜ì„ ë‚˜ëˆ„ê³ ìž í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'HistoryBuff', '½É¼º»ý¸í', 'Á÷Àå¿¡¼­ÀÇ ÆÀ ºôµù°ú µ¿·áµé°úÀÇ °ü°è'
+    , 'ÆÀ ºôµùÀº Á¶Á÷ ³» °ü°è¸¦ °­È­ÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÆÀ ºôµùÀ» ÃËÁøÇÏ°í µ¿·áµé°úÀÇ °ü°è¸¦ °­È­ÇÑ °æÇèÀ» ³ª´©°íÀÚ ÇÕ´Ï´Ù.'
     , SYSDATE-24, SYSDATE-24, 90, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'CoffeeHolic', 'ë¹„ë§ˆíŠ¸', 'ì•„ì¹¨ ì¼ì° ì¼ì–´ë‚˜ì„œ ì¦ê¸´ ì¡°ê¹…ì˜ ê¸°ì¨'
-    , 'ì˜¤ëŠ˜ ì•„ì¹¨ì— ì¼ì° ì¼ì–´ë‚˜ì„œ ê³µì›ì—ì„œ ì¡°ê¹…ì„ ì¦ê²¼ìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ìƒì¾Œí•œ ê³µê¸°ì™€ ìƒˆì†Œë¦¬ë¥¼ ë“¤ìœ¼ë©° ì‹œìž‘í•˜ëŠ” í•˜ë£¨ëŠ” ì–¸ì œë‚˜ íŠ¹ë³„í•˜ë„¤ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'CoffeeHolic', 'ºñ¸¶Æ®', '¾ÆÄ§ ÀÏÂï ÀÏ¾î³ª¼­ Áñ±ä Á¶±ëÀÇ ±â»Ý'
+    , '¿À´Ã ¾ÆÄ§¿¡ ÀÏÂï ÀÏ¾î³ª¼­ °ø¿ø¿¡¼­ Á¶±ëÀ» Áñ°å½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '»óÄèÇÑ °ø±â¿Í »õ¼Ò¸®¸¦ µéÀ¸¸ç ½ÃÀÛÇÏ´Â ÇÏ·ç´Â ¾ðÁ¦³ª Æ¯º°ÇÏ³×¿ä.'
     , SYSDATE-24, SYSDATE-24, 91, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'GreenThumb', 'í•œëŒ€ì œì² ', 'ì‹ì‚¬ ì¤€ë¹„ì— ì‹œê°„ íˆ¬ìží•œ ë§Œí¼ ë§›ìžˆëŠ” ì €ë…'
-    , 'ì˜¤ëŠ˜ ì €ë…ì—ëŠ” ì‹ì‚¬ ì¤€ë¹„ì— ì‹œê°„ì„ íˆ¬ìží–ˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ê²°ê³¼ë¬¼ì€ ì •ë§ ë§›ìžˆì–´ì„œ ë§Œì¡±ìŠ¤ëŸ½ìŠµë‹ˆë‹¤. ìžì‹  ë§Œì˜ ìš”ë¦¬ë¥¼ ë§Œë“œëŠ” ê²ƒì€ ì°¸ íŠ¹ë³„í•œ ê²½í—˜ìž…ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'GreenThumb', 'ÇÑ´ëÁ¦Ã¶', '½Ä»ç ÁØºñ¿¡ ½Ã°£ ÅõÀÚÇÑ ¸¸Å­ ¸ÀÀÖ´Â Àú³á'
+    , '¿À´Ã Àú³á¿¡´Â ½Ä»ç ÁØºñ¿¡ ½Ã°£À» ÅõÀÚÇß½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '°á°ú¹°Àº Á¤¸» ¸ÀÀÖ¾î¼­ ¸¸Á·½º·´½À´Ï´Ù. ÀÚ½Å ¸¸ÀÇ ¿ä¸®¸¦ ¸¸µå´Â °ÍÀº Âü Æ¯º°ÇÑ °æÇèÀÔ´Ï´Ù.'
     , SYSDATE-24, SYSDATE-24, 92, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'CloudSurfer', 'STí…”ë ˆì½¤', 'ìƒˆë¡œìš´ ì±…ì„ ì½ìœ¼ë©´ì„œ íœ´ì‹í•˜ëŠ” í† ìš”ì¼'
-    , 'í† ìš”ì¼ ì˜¤í›„, ìƒˆë¡œìš´ ì±…ì„ ì½ìœ¼ë©° íœ´ì‹ì„ ì¦ê²¼ìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ì´ëŸ° ì¡°ìš©í•œ ì‹œê°„ì€ ë§ˆìŒì„ ì¶©ì „ì‹œí‚¤ëŠ” ë° ìµœê³ ìž…ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'CloudSurfer', 'STÅÚ·¹ÄÞ', '»õ·Î¿î Ã¥À» ÀÐÀ¸¸é¼­ ÈÞ½ÄÇÏ´Â Åä¿äÀÏ'
+    , 'Åä¿äÀÏ ¿ÀÈÄ, »õ·Î¿î Ã¥À» ÀÐÀ¸¸ç ÈÞ½ÄÀ» Áñ°å½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    'ÀÌ·± Á¶¿ëÇÑ ½Ã°£Àº ¸¶À½À» ÃæÀü½ÃÅ°´Â µ¥ ÃÖ°íÀÔ´Ï´Ù.'
     , SYSDATE-24, SYSDATE-24, 93, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'OceanWave', 'ì‹¬ì„±SDI', 'ê°€ì¡±ê³¼ í•¨ê»˜í•œ ì•¼ì™¸ ì†Œí’'
-    , 'ì˜¤ëŠ˜ì€ ê°€ì¡±ê³¼ í•¨ê»˜ ì•¼ì™¸ ì†Œí’ì„ ë‹¤ë…€ì™”ìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ìžì—° ì†ì—ì„œ ì‹œê°„ì„ ë³´ë‚´ë©´ì„œ ê°€ì¡±ê³¼ì˜ ì†Œì¤‘í•œ ìˆœê°„ì„ ë‚˜ëˆŒ ìˆ˜ ìžˆì–´ ê¸°ì©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'OceanWave', '½É¼ºSDI', '°¡Á·°ú ÇÔ²²ÇÑ ¾ß¿Ü ¼ÒÇ³'
+    , '¿À´ÃÀº °¡Á·°ú ÇÔ²² ¾ß¿Ü ¼ÒÇ³À» ´Ù³à¿Ô½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    'ÀÚ¿¬ ¼Ó¿¡¼­ ½Ã°£À» º¸³»¸é¼­ °¡Á·°úÀÇ ¼ÒÁßÇÑ ¼ø°£À» ³ª´­ ¼ö ÀÖ¾î ±â»Þ´Ï´Ù.'
     , SYSDATE-23, SYSDATE-23, 94, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'TravelBugsy', 'LZì „ìž', 'ìƒˆë¡œìš´ ì·¨ë¯¸ì¸ ìš”ê°€ì— ë„ì „'
-    , 'ìµœê·¼ì— ìƒˆë¡œìš´ ì·¨ë¯¸ë¡œ ìš”ê°€ë¥¼ ì‹œìž‘í–ˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ëª¸ê³¼ ë§ˆìŒ ëª¨ë‘ì— ì¢‹ì€ ì˜í–¥ì„ ë¯¸ì¹˜ê³  ìžˆì–´ì„œ ë§¤ì¼ ê¸°ëŒ€ë˜ëŠ” ì‹œê°„ì´ì—ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'TravelBugsy', 'LZÀüÀÚ', '»õ·Î¿î Ãë¹ÌÀÎ ¿ä°¡¿¡ µµÀü'
+    , 'ÃÖ±Ù¿¡ »õ·Î¿î Ãë¹Ì·Î ¿ä°¡¸¦ ½ÃÀÛÇß½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '¸ö°ú ¸¶À½ ¸ðµÎ¿¡ ÁÁÀº ¿µÇâÀ» ¹ÌÄ¡°í ÀÖ¾î¼­ ¸ÅÀÏ ±â´ëµÇ´Â ½Ã°£ÀÌ¿¡¿ä.'
     , SYSDATE-23, SYSDATE-23, 95, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'FashionistaX', 'KP', 'ì¹œêµ¬ì™€ í•¨ê»˜í•œ ì‹ì‚¬ì™€ ëŒ€í™”'
-    , 'ì˜¤ëžœë§Œì— ì¹œêµ¬ë“¤ê³¼ ëª¨ì˜€ìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë§›ìžˆëŠ” ìŒì‹ê³¼ í•¨ê»˜ í•˜ëŠ” ëŒ€í™”ëŠ” í•­ìƒ ì¦ê±°ì› ì–´ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'FashionistaX', 'KP', 'Ä£±¸¿Í ÇÔ²²ÇÑ ½Ä»ç¿Í ´ëÈ­'
+    , '¿À·£¸¸¿¡ Ä£±¸µé°ú ¸ð¿´½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '¸ÀÀÖ´Â À½½Ä°ú ÇÔ²² ÇÏ´Â ´ëÈ­´Â Ç×»ó Áñ°Å¿ü¾î¿ä.'
     , SYSDATE-22, SYSDATE-22, 96, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'GalaxyQuest', 'LZì´ë…¸í…', 'ì§‘ ê¾¸ë¯¸ê¸° í”„ë¡œì íŠ¸ ì‹œìž‘'
-    , 'ì§‘ ê¾¸ë¯¸ê¸° í”„ë¡œì íŠ¸ë¥¼ ì‹œìž‘í–ˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ìƒˆë¡œìš´ ê°€êµ¬ì™€ ìž¥ì‹í’ˆìœ¼ë¡œ ì§‘ì´ ë” ì•„ëŠ‘í•˜ê³  ë©‹ì§€ê²Œ ë³€í™”í•˜ê³  ìžˆì–´ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'GalaxyQuest', 'LZÀÌ³ëÅØ', 'Áý ²Ù¹Ì±â ÇÁ·ÎÁ§Æ® ½ÃÀÛ'
+    , 'Áý ²Ù¹Ì±â ÇÁ·ÎÁ§Æ®¸¦ ½ÃÀÛÇß½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '»õ·Î¿î °¡±¸¿Í Àå½ÄÇ°À¸·Î ÁýÀÌ ´õ ¾Æ´ÁÇÏ°í ¸ÚÁö°Ô º¯È­ÇÏ°í ÀÖ¾î¿ä.'
     , SYSDATE-22, SYSDATE-22, 97, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'SkateKing', 'ì‹¬ì„±ì „ê¸°', 'ìš´ë™ í›„ì— ëŠë¼ëŠ” ê¸°ë¶„ ì¢‹ì€ í”¼ë¡œê°'
-    , 'ìš´ë™ í›„ì— ëŠë¼ëŠ” ê¸°ë¶„ ì¢‹ì€ í”¼ë¡œê°ì€ ë§ˆìŒì„ ì •í™”ì‹œì¼œì¤ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ê±´ê°•í•œ ìŠµê´€ì„ ìœ ì§€í•˜ëŠ” ê²ƒì€ ì¤‘ìš”í•˜ë‹ˆê¹Œìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'SkateKing', '½É¼ºÀü±â', '¿îµ¿ ÈÄ¿¡ ´À³¢´Â ±âºÐ ÁÁÀº ÇÇ·Î°¨'
+    , '¿îµ¿ ÈÄ¿¡ ´À³¢´Â ±âºÐ ÁÁÀº ÇÇ·Î°¨Àº ¸¶À½À» Á¤È­½ÃÄÑÁÝ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '°Ç°­ÇÑ ½À°üÀ» À¯ÁöÇÏ´Â °ÍÀº Áß¿äÇÏ´Ï±î¿ä.'
     , SYSDATE-22, SYSDATE-22, 98, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'PetLover', 'LZìœ í”ŒëŸ¬ìŠ¤', 'ë´„ ë‚ ì”¨ì— ë§žì¶° ì˜·ìž¥ ì •ë¦¬'
-    , 'ë´„ì´ ë‹¤ê°€ì˜¤ë©´ì„œ ì˜·ìž¥ì„ ì •ë¦¬í•˜ê³  ë´„ ì˜·ì„ êº¼ë‚´ëŠ” ìž‘ì—…ì„ í–ˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ê³„ì ˆë§ˆë‹¤ ì˜·ì„ ë°”ê¾¸ëŠ” ê²ƒì€ ëŠ˜ ì¦ê±°ìš´ ì¼ì´ì—ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'PetLover', 'LZÀ¯ÇÃ·¯½º', 'º½ ³¯¾¾¿¡ ¸ÂÃç ¿ÊÀå Á¤¸®'
+    , 'º½ÀÌ ´Ù°¡¿À¸é¼­ ¿ÊÀåÀ» Á¤¸®ÇÏ°í º½ ¿ÊÀ» ²¨³»´Â ÀÛ¾÷À» Çß½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '°èÀý¸¶´Ù ¿ÊÀ» ¹Ù²Ù´Â °ÍÀº ´Ã Áñ°Å¿î ÀÏÀÌ¿¡¿ä.'
     , SYSDATE-22, SYSDATE-22, 99, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'CoffeeBean', 'ì‹¬ì„±ë°”ì´ì˜¤ë¡œì§ìŠ¤', 'ìƒˆë¡œìš´ ë ˆì‹œí”¼ ì‹œë„'
-    , 'ìš”ë¦¬ë¥¼ ì¢‹ì•„í•˜ëŠ”ë°, ì˜¤ëŠ˜ì€ ìƒˆë¡œìš´ ë ˆì‹œí”¼ë¥¼ ì‹œë„í•´ë³´ì•˜ìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ì‹¤í—˜ì ì¸ ìš”ë¦¬ë„ ìž¬ë¯¸ìžˆì–´ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'CoffeeBean', '½É¼º¹ÙÀÌ¿À·ÎÁ÷½º', '»õ·Î¿î ·¹½ÃÇÇ ½Ãµµ'
+    , '¿ä¸®¸¦ ÁÁ¾ÆÇÏ´Âµ¥, ¿À´ÃÀº »õ·Î¿î ·¹½ÃÇÇ¸¦ ½ÃµµÇØº¸¾Ò½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '½ÇÇèÀûÀÎ ¿ä¸®µµ Àç¹ÌÀÖ¾î¿ä.'
     , SYSDATE-21, SYSDATE-20, 100, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'harin_lee', 'ULXì¸í„°ë‚´ì…”ë„', 'ìžì—° ì†ì—ì„œì˜ í•˜ì´í‚¹ ì—¬í–‰'
-    , 'ì£¼ë§ì—ëŠ” ì¹œêµ¬ë“¤ê³¼ í•¨ê»˜ ìžì—° ì†ì—ì„œ í•˜ì´í‚¹ ì—¬í–‰ì„ ì¦ê²¼ìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ì•„ë¦„ë‹¤ìš´ í’ê²½ì„ ê°ìƒí•˜ë©° ê±·ëŠ” ê²ƒì€ ì •ë§ íŠ¹ë³„í•œ ê²½í—˜ì´ì—ˆìŠµë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'harin_lee', 'ULXÀÎÅÍ³»¼Å³Î', 'ÀÚ¿¬ ¼Ó¿¡¼­ÀÇ ÇÏÀÌÅ· ¿©Çà'
+    , 'ÁÖ¸»¿¡´Â Ä£±¸µé°ú ÇÔ²² ÀÚ¿¬ ¼Ó¿¡¼­ ÇÏÀÌÅ· ¿©ÇàÀ» Áñ°å½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '¾Æ¸§´Ù¿î Ç³°æÀ» °¨»óÇÏ¸ç °È´Â °ÍÀº Á¤¸» Æ¯º°ÇÑ °æÇèÀÌ¾ú½À´Ï´Ù.'
     , SYSDATE-20, SYSDATE-20, 111, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jongmin_park', 'TGìŠ¤í‹¸', 'ì¼ê¸° ì“°ëŠ” ìŠµê´€ì„ ë‹¤ì‹œ ì‹œìž‘'
-    , 'ì¼ê¸° ì“°ëŠ” ìŠµê´€ì„ ë‹¤ì‹œ ì‹œìž‘í–ˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'í•˜ë£¨ ì¼ê³¼ì™€ ê°ì •ì„ ê¸°ë¡í•˜ëŠ” ê²ƒì€ ë‚˜ì—ê²Œ ì¡°ê¸ˆ ë” ê°€ì¹˜ ìžˆëŠ” í•˜ë£¨ë¥¼ ë§Œë“¤ì–´ì¤ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jongmin_park', 'TG½ºÆ¿', 'ÀÏ±â ¾²´Â ½À°üÀ» ´Ù½Ã ½ÃÀÛ'
+    , 'ÀÏ±â ¾²´Â ½À°üÀ» ´Ù½Ã ½ÃÀÛÇß½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    'ÇÏ·ç ÀÏ°ú¿Í °¨Á¤À» ±â·ÏÇÏ´Â °ÍÀº ³ª¿¡°Ô Á¶±Ý ´õ °¡Ä¡ ÀÖ´Â ÇÏ·ç¸¦ ¸¸µé¾îÁÝ´Ï´Ù.'
     , SYSDATE-20, SYSDATE-20, 112, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'yenwoo_choi', 'ì…€ë°”ì´ì˜¤íŠ¸ë¦¬ì˜¨', 'ìƒˆë¡œìš´ ìŒì•…ì„ ë°œê²¬í•˜ê³  ìŒì•… ê°ìƒ'
-    , 'ìƒˆë¡œìš´ ìŒì•…ì„ ë°œê²¬í•˜ê³ , ì´ ìŒì•…ì„ ë“¤ìœ¼ë©° íœ´ì‹ì„ ì·¨í–ˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ìŒì•…ì€ ë§ˆìŒì„ ì¹˜ìœ í•´ì£¼ëŠ” íž˜ì´ ìžˆì–´ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'yenwoo_choi', '¼¿¹ÙÀÌ¿ÀÆ®¸®¿Â', '»õ·Î¿î À½¾ÇÀ» ¹ß°ßÇÏ°í À½¾Ç °¨»ó'
+    , '»õ·Î¿î À½¾ÇÀ» ¹ß°ßÇÏ°í, ÀÌ À½¾ÇÀ» µéÀ¸¸ç ÈÞ½ÄÀ» ÃëÇß½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    'À½¾ÇÀº ¸¶À½À» Ä¡À¯ÇØÁÖ´Â ÈûÀÌ ÀÖ¾î¿ä.'
     , SYSDATE-20, SYSDATE-20, 113, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'haneul_kim', 'í‚¤ì›Œì¦ê¶Œ', 'ì¹œêµ¬ì˜ ìƒì¼ íŒŒí‹°ì— ì°¸ì„'
-    , 'ì¹œêµ¬ì˜ ìƒì¼ íŒŒí‹°ì— ì°¸ì„í•´ì„œ ì¦ê±°ìš´ ì‹œê°„ì„ ë³´ëƒˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ìƒì¼ ì¶•í•˜ì™€ í•¨ê»˜ í•¨ê»˜í•œ ìˆœê°„ì´ íŠ¹ë³„í–ˆì–´ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'haneul_kim', 'Å°¿öÁõ±Ç', 'Ä£±¸ÀÇ »ýÀÏ ÆÄÆ¼¿¡ Âü¼®'
+    , 'Ä£±¸ÀÇ »ýÀÏ ÆÄÆ¼¿¡ Âü¼®ÇØ¼­ Áñ°Å¿î ½Ã°£À» º¸³Â½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '»ýÀÏ ÃàÇÏ¿Í ÇÔ²² ÇÔ²²ÇÑ ¼ø°£ÀÌ Æ¯º°Çß¾î¿ä.'
     , SYSDATE-20, SYSDATE-20, 114, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'sumin_jang', 'ê·¸ëž˜í”„íŠ¸', 'ì£¼ë§ì— í•¨ê»˜ ìš”ë¦¬í•˜ëŠ” ê°€ì¡± ì‹œê°„'
-    , 'ì£¼ë§ì— ê°€ì¡±ê³¼ í•¨ê»˜ ìš”ë¦¬í•˜ëŠ” ì‹œê°„ì„ ë³´ëƒˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'í•¨ê»˜ ìš”ë¦¬í•˜ë©´ì„œ ê°€ì¡± ê°„ì˜ ìœ ëŒ€ê°ì„ ë†’ì´ëŠ” ê²ƒ ê°™ì•„ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'sumin_jang', '±×·¡ÇÁÆ®', 'ÁÖ¸»¿¡ ÇÔ²² ¿ä¸®ÇÏ´Â °¡Á· ½Ã°£'
+    , 'ÁÖ¸»¿¡ °¡Á·°ú ÇÔ²² ¿ä¸®ÇÏ´Â ½Ã°£À» º¸³Â½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    'ÇÔ²² ¿ä¸®ÇÏ¸é¼­ °¡Á· °£ÀÇ À¯´ë°¨À» ³ôÀÌ´Â °Í °°¾Æ¿ä.'
     , SYSDATE-20, SYSDATE-20, 115, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jiwon_kim5', 'ì— ì”¨ì†Œí”„íŠ¸', 'íœ´ê°€ ê³„íšì„ ì„¸ìš°ë©° ê¸°ëŒ€í•˜ëŠ” ì¤‘'
-    , 'ë‹¤ê°€ì˜¤ëŠ” íœ´ê°€ë¥¼ ìœ„í•´ ê³„íšì„ ì„¸ìš°ê³  ìžˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ìƒˆë¡œìš´ ìž¥ì†Œì—ì„œì˜ ëª¨í—˜ì— ê¸°ëŒ€ê°€ ë˜ì–´ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jiwon_kim5', '¿¥¾¾¼ÒÇÁÆ®', 'ÈÞ°¡ °èÈ¹À» ¼¼¿ì¸ç ±â´ëÇÏ´Â Áß'
+    , '´Ù°¡¿À´Â ÈÞ°¡¸¦ À§ÇØ °èÈ¹À» ¼¼¿ì°í ÀÖ½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '»õ·Î¿î Àå¼Ò¿¡¼­ÀÇ ¸ðÇè¿¡ ±â´ë°¡ µÇ¾î¿ä.'
     , SYSDATE-20, SYSDATE-20, 116, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'suhyun_oh', 'CWì´ë…¸ë² ì´ì…˜', 'ë§¤ì¼ ì•„ì¹¨ì˜ ê°„ë‹¨í•œ ëª…ìƒ'
-    , 'ë§¤ì¼ ì•„ì¹¨ ëª‡ ë¶„ì„ ê°„ë‹¨í•œ ëª…ìƒì— í• ì• í•©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ëª…ìƒì€ ë‚´ í‰ì˜¨ì„ ìœ ì§€í•˜ëŠ” ë° í° ë„ì›€ì´ ë¼ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'suhyun_oh', 'CWÀÌ³ëº£ÀÌ¼Ç', '¸ÅÀÏ ¾ÆÄ§ÀÇ °£´ÜÇÑ ¸í»ó'
+    , '¸ÅÀÏ ¾ÆÄ§ ¸î ºÐÀ» °£´ÜÇÑ ¸í»ó¿¡ ÇÒ¾ÖÇÕ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '¸í»óÀº ³» Æò¿ÂÀ» À¯ÁöÇÏ´Â µ¥ Å« µµ¿òÀÌ µÅ¿ä.'
     , SYSDATE-19, SYSDATE-19, 117, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'hyein_lim', 'LA', 'ì¢‹ì•„í•˜ëŠ” ìž‘ê°€ì˜ ìƒˆ ì±… ì¶œê°„ ê¸°ë…'
-    , 'ì¢‹ì•„í•˜ëŠ” ìž‘ê°€ì˜ ìƒˆ ì±…ì´ ë‚˜ì™”ìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ì±…ì„ ì½ìœ¼ë©´ì„œ ìž‘ê°€ì˜ ì´ì•¼ê¸°ì— ë¹ ì ¸ë“¤ ê³„íšìž…ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'hyein_lim', 'LA', 'ÁÁ¾ÆÇÏ´Â ÀÛ°¡ÀÇ »õ Ã¥ Ãâ°£ ±â³ä'
+    , 'ÁÁ¾ÆÇÏ´Â ÀÛ°¡ÀÇ »õ Ã¥ÀÌ ³ª¿Ô½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    'Ã¥À» ÀÐÀ¸¸é¼­ ÀÛ°¡ÀÇ ÀÌ¾ß±â¿¡ ºüÁ®µé °èÈ¹ÀÔ´Ï´Ù.'
     , SYSDATE-19, SYSDATE-19, 118, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'hana_park', 'ASë¦¬í…Œì¼', 'ê·¼ì²˜ ë™ë„¤ì—ì„œ ì—´ë¦° ì˜ˆìˆ  ì „ì‹œíšŒ ê´€ëžŒ'
-    , 'ê·¼ì²˜ ë™ë„¤ì—ì„œ ì—´ë¦° ì˜ˆìˆ  ì „ì‹œíšŒë¥¼ ê´€ëžŒí–ˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ì˜ˆìˆ ì€ í•­ìƒ ì˜ê°ì„ ì£¼ëŠ” ìš”ì†Œìž…ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'hana_park', 'AS¸®Å×ÀÏ', '±ÙÃ³ µ¿³×¿¡¼­ ¿­¸° ¿¹¼ú Àü½ÃÈ¸ °ü¶÷'
+    , '±ÙÃ³ µ¿³×¿¡¼­ ¿­¸° ¿¹¼ú Àü½ÃÈ¸¸¦ °ü¶÷Çß½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '¿¹¼úÀº Ç×»ó ¿µ°¨À» ÁÖ´Â ¿ä¼ÒÀÔ´Ï´Ù.'
     , SYSDATE-18, SYSDATE-18, 120, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jinseok_yang', 'SYìŠ¤í€˜ì–´', 'ìƒˆë¡œìš´ ì–¸ì–´ í•™ìŠµ ë„ì „'
-    , 'ìƒˆë¡œìš´ ì–¸ì–´ë¥¼ í•™ìŠµí•˜ëŠ” ë„ì „ì„ ì‹œìž‘í–ˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‹¤ë¥¸ ì–¸ì–´ë¥¼ ë°°ìš°ëŠ” ê²ƒì€ ë¬¸í™”ë¥¼ ë” ê¹Šê²Œ ì´í•´í•˜ëŠ”ë° ë„ì›€ì´ ë©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jinseok_yang', 'SY½ºÄù¾î', '»õ·Î¿î ¾ð¾î ÇÐ½À µµÀü'
+    , '»õ·Î¿î ¾ð¾î¸¦ ÇÐ½ÀÇÏ´Â µµÀüÀ» ½ÃÀÛÇß½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '´Ù¸¥ ¾ð¾î¸¦ ¹è¿ì´Â °ÍÀº ¹®È­¸¦ ´õ ±í°Ô ÀÌÇØÇÏ´Âµ¥ µµ¿òÀÌ µË´Ï´Ù.'
     , SYSDATE-18, SYSDATE-18, 119, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'JYP', 'KSí•˜ì´ë‹ˆìŠ¤', 'ì»¤ë®¤ë‹ˆí‹° ë´‰ì‚¬í™œë™ì— ì°¸ì—¬'
-    , 'ì§€ì—­ ì»¤ë®¤ë‹ˆí‹° ë´‰ì‚¬í™œë™ì— ì°¸ì—¬í–ˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‹¤ë¥¸ ì‚¬ëžŒë“¤ì„ ë•ëŠ” ê²ƒì€ ë³´ëžŒì°¬ ê²½í—˜ì´ì—ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'JYP', 'KSÇÏÀÌ´Ï½º', 'Ä¿¹Â´ÏÆ¼ ºÀ»çÈ°µ¿¿¡ Âü¿©'
+    , 'Áö¿ª Ä¿¹Â´ÏÆ¼ ºÀ»çÈ°µ¿¿¡ Âü¿©Çß½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '´Ù¸¥ »ç¶÷µéÀ» µ½´Â °ÍÀº º¸¶÷Âù °æÇèÀÌ¿¡¿ä.'
     , SYSDATE-18, SYSDATE-18, 11, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ê·€ì˜ì€í–‰ëŸ¬', 'ê·€ì—½ì€í–‰', 'í•˜ë£¨ ì¤‘ì— ì°¨ í•œ ìž”ì˜ ì—¬ìœ '
-    , 'í•˜ë£¨ ì¤‘ì— ì°¨ í•œ ìž”ì„ ì¦ê¸°ëŠ” ì‹œê°„ì€ ì—¬ìœ ë¡œì›€ì„ ëŠë¼ê²Œ í•´ì¤ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ëŠë¦° í•œìž”ì˜ ì°¨ ì‹œê°„ì€ ì†Œì¤‘í•´ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '±Í¿µÀºÇà·¯', '±Í¿±ÀºÇà', 'ÇÏ·ç Áß¿¡ Â÷ ÇÑ ÀÜÀÇ ¿©À¯'
+    , 'ÇÏ·ç Áß¿¡ Â÷ ÇÑ ÀÜÀ» Áñ±â´Â ½Ã°£Àº ¿©À¯·Î¿òÀ» ´À³¢°Ô ÇØÁÝ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '´À¸° ÇÑÀÜÀÇ Â÷ ½Ã°£Àº ¼ÒÁßÇØ¿ä.'
     , SYSDATE-18, SYSDATE-18, 12, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì„ ì•„ê·€ì—ìžˆë”°', 'ê·€ì—½ì€í–‰', 'ë¹„ì˜¤ëŠ” ë‚  ì°½ê°€ì—ì„œ ì±… ì½ê¸°'
-    , 'ë¹„ì˜¤ëŠ” ë‚ , ì°½ê°€ì— ì•‰ì•„ì„œ ì±…ì„ ì½ëŠ” ê²ƒì€ ìµœê³ ì˜ íœ´ì‹ìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë¹„ì†Œë¦¬ì™€ í•¨ê»˜ ì±… ì† ì´ì•¼ê¸°ì— ëª°ë‘í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '¼±¾Æ±Í¿¡ÀÖµû', '±Í¿±ÀºÇà', 'ºñ¿À´Â ³¯ Ã¢°¡¿¡¼­ Ã¥ ÀÐ±â'
+    , 'ºñ¿À´Â ³¯, Ã¢°¡¿¡ ¾É¾Æ¼­ Ã¥À» ÀÐ´Â °ÍÀº ÃÖ°íÀÇ ÈÞ½ÄÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    'ºñ¼Ò¸®¿Í ÇÔ²² Ã¥ ¼Ó ÀÌ¾ß±â¿¡ ¸ôµÎÇÕ´Ï´Ù.'
     , SYSDATE-17, SYSDATE-17, 13, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì‹ ì§„ë‰´ì§„', 'K-OIL', 'ê°€ì¡±ê³¼ í•¨ê»˜í•œ ì£¼ë§ ë‚˜ë“¤ì´'
-    , 'ì£¼ë§ì— ê°€ì¡±ê³¼ í•¨ê»˜í•œ ë‚˜ë“¤ì´ëŠ” í•­ìƒ ê¸°ì–µì— ë‚¨ìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ê°€ì¡±ê³¼ í•¨ê»˜ ë³´ë‚´ëŠ” ì‹œê°„ì€ ì†Œì¤‘í•˜ì£ .'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '½ÅÁø´ºÁø', 'K-OIL', '°¡Á·°ú ÇÔ²²ÇÑ ÁÖ¸» ³ªµéÀÌ'
+    , 'ÁÖ¸»¿¡ °¡Á·°ú ÇÔ²²ÇÑ ³ªµéÀÌ´Â Ç×»ó ±â¾ï¿¡ ³²½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '°¡Á·°ú ÇÔ²² º¸³»´Â ½Ã°£Àº ¼ÒÁßÇÏÁÒ.'
     , SYSDATE-16, SYSDATE-16, 14, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì†ì •ì†ì •', 'í‚¤ì•„ì°¨', 'ë§¤ì¼ í•˜ë£¨ì˜ ëª©í‘œ ì„¤ì •'
-    , 'ë§¤ì¼ í•˜ë£¨ë¥¼ ì‹œìž‘í•  ë•Œ ëª©í‘œë¥¼ ì„¤ì •í•˜ëŠ” ê²ƒì€ ìƒì‚°ì ì¸ ìŠµê´€ìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ëª©í‘œë¥¼ ì´ë£¨ë©´ ì„±ì·¨ê°ì„ ëŠë‚„ ìˆ˜ ìžˆì–´ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '¼ÕÁ¤¼ÕÁ¤', 'Å°¾ÆÂ÷', '¸ÅÀÏ ÇÏ·çÀÇ ¸ñÇ¥ ¼³Á¤'
+    , '¸ÅÀÏ ÇÏ·ç¸¦ ½ÃÀÛÇÒ ¶§ ¸ñÇ¥¸¦ ¼³Á¤ÇÏ´Â °ÍÀº »ý»êÀûÀÎ ½À°üÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '¸ñÇ¥¸¦ ÀÌ·ç¸é ¼ºÃë°¨À» ´À³¥ ¼ö ÀÖ¾î¿ä.'
     , SYSDATE-15, SYSDATE-15, 15, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'í¬í¬ë‚¨ë‚¨', 'í‚¤ì•„ì°¨', 'ìžì—° ì† ì‚°ì±…ìœ¼ë¡œ ìŠ¤íŠ¸ë ˆìŠ¤ í•´ì†Œ'
-    , 'ìŠ¤íŠ¸ë ˆìŠ¤ë¥¼ í•´ì†Œí•˜ê¸° ìœ„í•´ ìžì—° ì† ì‚°ì±…ì„ ì¦ê¹ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ìžì—°ì€ ë§ˆìŒì„ ì¹˜ìœ í•´ì¤ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ÈñÈñ³²³²', 'Å°¾ÆÂ÷', 'ÀÚ¿¬ ¼Ó »êÃ¥À¸·Î ½ºÆ®·¹½º ÇØ¼Ò'
+    , '½ºÆ®·¹½º¸¦ ÇØ¼ÒÇÏ±â À§ÇØ ÀÚ¿¬ ¼Ó »êÃ¥À» Áñ±é´Ï´Ù.'||CHR(13)||CHR(10)||
+    'ÀÚ¿¬Àº ¸¶À½À» Ä¡À¯ÇØÁÝ´Ï´Ù.'
     , SYSDATE-15, SYSDATE-15, 16, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì „ì„¸', 'ëŒ€ì•ˆí•­ê³µ', 'ìƒˆë¡œìš´ ê³µì˜ˆ í”„ë¡œì íŠ¸ ì‹œìž‘'
-    , 'ìƒˆë¡œìš´ ê³µì˜ˆ í”„ë¡œì íŠ¸ì— ë„ì „í•˜ê³  ìžˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ì†ìœ¼ë¡œ ë¬´ì–¸ê°€ë¥¼ ë§Œë“œëŠ” ê²ƒì€ ì°½ì˜ì„±ì„ í‚¤ìš°ëŠ” ë°©ë²• ì¤‘ í•˜ë‚˜ì—ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'Àü¼¼', '´ë¾ÈÇ×°ø', '»õ·Î¿î °ø¿¹ ÇÁ·ÎÁ§Æ® ½ÃÀÛ'
+    , '»õ·Î¿î °ø¿¹ ÇÁ·ÎÁ§Æ®¿¡ µµÀüÇÏ°í ÀÖ½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '¼ÕÀ¸·Î ¹«¾ð°¡¸¦ ¸¸µå´Â °ÍÀº Ã¢ÀÇ¼ºÀ» Å°¿ì´Â ¹æ¹ý Áß ÇÏ³ª¿¡¿ä.'
     , SYSDATE-15, SYSDATE-15, 17, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì¼ìƒ', 'ëŒ€ì•ˆí•­ê³µ', 'ë§¤ì¼ ê°ì‚¬ ì¼ê¸° ì“°ê¸°'
-    , 'ë§¤ì¼ ê°ì‚¬ ì¼ê¸°ë¥¼ ì“°ëŠ” ìŠµê´€ì„ ê°€ì§€ê³  ìžˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ê°ì‚¬í•˜ëŠ” ë§ˆìŒì€ ë” í–‰ë³µí•œ ì‚¶ì„ ë§Œë“¤ì–´ì¤ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ÀÏ»ó', '´ë¾ÈÇ×°ø', '¸ÅÀÏ °¨»ç ÀÏ±â ¾²±â'
+    , '¸ÅÀÏ °¨»ç ÀÏ±â¸¦ ¾²´Â ½À°üÀ» °¡Áö°í ÀÖ½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '°¨»çÇÏ´Â ¸¶À½Àº ´õ Çàº¹ÇÑ »îÀ» ¸¸µé¾îÁÝ´Ï´Ù.'
     , SYSDATE-15, SYSDATE-15, 18, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì—¬ë¦¬ë¦¬ë§', 'BKê¸ˆìœµ', 'ìƒˆë¡œìš´ ìŒì‹ì„ ì‹œë„í•˜ëŠ” ìŒì‹ íƒí—˜'
-    , 'ìƒˆë¡œìš´ ìŒì‹ì„ ì‹œë„í•˜ëŠ” ê²ƒì„ ì¦ê¹ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‹¤ì–‘í•œ ë¬¸í™”ì˜ ìŒì‹ì„ ë§›ë³´ë©´ì„œ ì„¸ê³„ë¥¼ ë” ë„“ê²Œ ë³¼ ìˆ˜ ìžˆì–´ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '¿©¸®¸®¸µ', 'BK±ÝÀ¶', '»õ·Î¿î À½½ÄÀ» ½ÃµµÇÏ´Â À½½Ä Å½Çè'
+    , '»õ·Î¿î À½½ÄÀ» ½ÃµµÇÏ´Â °ÍÀ» Áñ±é´Ï´Ù.'||CHR(13)||CHR(10)||
+    '´Ù¾çÇÑ ¹®È­ÀÇ À½½ÄÀ» ¸Àº¸¸é¼­ ¼¼°è¸¦ ´õ ³Ð°Ô º¼ ¼ö ÀÖ¾î¿ä.'
     , SYSDATE-14, SYSDATE-13, 19, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì§€ë‹ˆì§€ë‹ˆ', 'BKê¸ˆìœµ', 'ì¹œêµ¬ì™€ í•¨ê»˜í•œ ì˜í™” ë°¤'
-    , 'ì¹œêµ¬ë“¤ê³¼ í•¨ê»˜ ì˜í™” ë°¤ì„ ì¦ê²¼ìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ì˜í™”ë¥¼ ë³´ë©´ì„œ í•¨ê»˜ ì›ƒê³  ê°ë™í•˜ëŠ” ìˆœê°„ì„ ê³µìœ í•˜ëŠ” ê²ƒì€ íŠ¹ë³„í•©ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'Áö´ÏÁö´Ï', 'BK±ÝÀ¶', 'Ä£±¸¿Í ÇÔ²²ÇÑ ¿µÈ­ ¹ã'
+    , 'Ä£±¸µé°ú ÇÔ²² ¿µÈ­ ¹ãÀ» Áñ°å½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '¿µÈ­¸¦ º¸¸é¼­ ÇÔ²² ¿ô°í °¨µ¿ÇÏ´Â ¼ø°£À» °øÀ¯ÇÏ´Â °ÍÀº Æ¯º°ÇÕ´Ï´Ù.'
     , SYSDATE-13, SYSDATE-13, 20, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì œì™€í”¼', 'ì‹¬ì„±ì „ìž', 'íšŒì‚¬ ë™ë£Œì™€ì˜ ì¹œë¶„, ê·¸ë¦¬ê³  ìš°ì •'
-    , 'ì²« ì§ìž¥ì€ í•­ìƒ íŠ¹ë³„í•˜ë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ëŒ€í•™ì„ ì¡¸ì—…í•˜ê³  ì²« ì§ìž¥ì„ ì‹œìž‘í•œ í›„ì— ì–¼ë§ˆë‚˜ ë§Žì€ ê²ƒì„ ë°°ì› ëŠ”ì§€ ë†€ëžë‹¤.'||CHR(13)||CHR(10)||
-    'ë¬´ì—‡ë³´ë‹¤ë„, ì—…ë¬´ ìœ ê²½í—˜ì´ ë¶€ì¡±í•œ ìƒí™©ì—ì„œ ì–´ë–»ê²Œ ë™ë£Œë“¤ê³¼ í˜‘ë ¥í•˜ê³  ë¬¸ì œë¥¼ í•´ê²°í•˜ëŠ” ëŠ¥ë ¥ì„ í‚¤ì›Œë‚˜ê°”ë‹¤.'||CHR(13)||CHR(10)||
-    'ë˜í•œ, ìƒì‚¬ì™€ì˜ ì›í™œí•œ ì»¤ë®¤ë‹ˆì¼€ì´ì…˜ê³¼ ì—…ë¬´ ê´€ë¦¬ì˜ ì¤‘ìš”ì„±ì„ ê¹¨ë‹¬ì•˜ë‹¤.'||CHR(13)||CHR(10)||
-    'ì´ëŸ¬í•œ êµí›ˆë“¤ì€ ë‚˜ì˜ ì§ìž¥ìƒí™œì„ í’ìš”ë¡­ê²Œ ë§Œë“¤ì–´ì£¼ì—ˆê³ , ì•žìœ¼ë¡œì˜ ê²½ë ¥ì— í° ì˜í–¥ì„ ë¯¸ì¹  ê²ƒì´ë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'Á¦¿ÍÇÇ', '½É¼ºÀüÀÚ', 'È¸»ç µ¿·á¿ÍÀÇ Ä£ºÐ, ±×¸®°í ¿ìÁ¤'
+    , 'Ã¹ Á÷ÀåÀº Ç×»ó Æ¯º°ÇÏ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ´ëÇÐÀ» Á¹¾÷ÇÏ°í Ã¹ Á÷ÀåÀ» ½ÃÀÛÇÑ ÈÄ¿¡ ¾ó¸¶³ª ¸¹Àº °ÍÀ» ¹è¿ü´ÂÁö ³î¶ú´Ù.'||CHR(13)||CHR(10)||
+    '¹«¾ùº¸´Ùµµ, ¾÷¹« À¯°æÇèÀÌ ºÎÁ·ÇÑ »óÈ²¿¡¼­ ¾î¶»°Ô µ¿·áµé°ú Çù·ÂÇÏ°í ¹®Á¦¸¦ ÇØ°áÇÏ´Â ´É·ÂÀ» Å°¿ö³ª°¬´Ù.'||CHR(13)||CHR(10)||
+    '¶ÇÇÑ, »ó»ç¿ÍÀÇ ¿øÈ°ÇÑ Ä¿¹Â´ÏÄÉÀÌ¼Ç°ú ¾÷¹« °ü¸®ÀÇ Áß¿ä¼ºÀ» ±ú´Þ¾Ò´Ù.'||CHR(13)||CHR(10)||
+    'ÀÌ·¯ÇÑ ±³ÈÆµéÀº ³ªÀÇ Á÷Àå»ýÈ°À» Ç³¿ä·Ó°Ô ¸¸µé¾îÁÖ¾ú°í, ¾ÕÀ¸·ÎÀÇ °æ·Â¿¡ Å« ¿µÇâÀ» ¹ÌÄ¥ °ÍÀÌ´Ù.'
     , SYSDATE-13, SYSDATE-13, 2, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì˜ì§€ë‹ˆ', 'HNN', 'ì§„ë¡œ ë³€ê²½: ë‹¤ë¥¸ ë¶„ì•¼ì—ì„œì˜ ì‹œìž‘'
-    , 'ë©€ë¦¬ ìžˆëŠ” ê²ƒì²˜ëŸ¼ ë³´ì´ëŠ” ì§„ë¡œ ë³€ê²½ì€ ì–¸ì œë“ ì§€ ê°€ëŠ¥í•˜ë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì´ì „ì˜ ê²½ë ¥ì„ ë²„ë¦¬ê³  ë‹¤ë¥¸ ë¶„ì•¼ì—ì„œì˜ ì‹œìž‘ì„ ê²°ì •í–ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ì´ ê²°ì •ì€ ì²˜ìŒì—ëŠ” ë¶ˆí™•ì‹¤í–ˆì§€ë§Œ, ìƒˆë¡œìš´ ë„ì „ì„ í†µí•´ ë‚˜ ìžì‹ ì„ ë°œê²¬í•˜ê³  ë°œì „ì‹œí‚¬ ìˆ˜ ìžˆì—ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ì§„ë¡œ ë³€ê²½ì€ ìš°ë¦¬ê°€ ì–¸ì œë“ ì§€ ìƒˆë¡œìš´ ê¸¸ì„ íƒí—˜í•  ê¸°íšŒë¥¼ ì œê³µí•œë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '¿µÁö´Ï', 'HNN', 'Áø·Î º¯°æ: ´Ù¸¥ ºÐ¾ß¿¡¼­ÀÇ ½ÃÀÛ'
+    , '¸Ö¸® ÀÖ´Â °ÍÃ³·³ º¸ÀÌ´Â Áø·Î º¯°æÀº ¾ðÁ¦µçÁö °¡´ÉÇÏ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ÀÌÀüÀÇ °æ·ÂÀ» ¹ö¸®°í ´Ù¸¥ ºÐ¾ß¿¡¼­ÀÇ ½ÃÀÛÀ» °áÁ¤Çß´Ù.'||CHR(13)||CHR(10)||
+    'ÀÌ °áÁ¤Àº Ã³À½¿¡´Â ºÒÈ®½ÇÇßÁö¸¸, »õ·Î¿î µµÀüÀ» ÅëÇØ ³ª ÀÚ½ÅÀ» ¹ß°ßÇÏ°í ¹ßÀü½ÃÅ³ ¼ö ÀÖ¾ú´Ù.'||CHR(13)||CHR(10)||
+    'Áø·Î º¯°æÀº ¿ì¸®°¡ ¾ðÁ¦µçÁö »õ·Î¿î ±æÀ» Å½ÇèÇÒ ±âÈ¸¸¦ Á¦°øÇÑ´Ù.'
     , SYSDATE-13, SYSDATE-13, 3, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì©¡ì•„', 'HNN', 'íšŒì‚¬ì—ì„œì˜ ì‹¤ìˆ˜ì™€ ê·¸ë¡œë¶€í„°ì˜ ì„±ìž¥'
-    , 'ì‹¤ìˆ˜ëŠ” ì¸ìƒì—ì„œ í”¼í•  ìˆ˜ ì—†ëŠ” ë¶€ë¶„ì´ë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” íšŒì‚¬ì—ì„œ ëª‡ ë²ˆì˜ í° ì‹¤ìˆ˜ë¥¼ í–ˆê³ , ì´ë¥¼ í†µí•´ ì–´ë–»ê²Œ ì„±ìž¥í•  ìˆ˜ ìžˆëŠ”ì§€ë¥¼ ë°°ì› ë‹¤.'||CHR(13)||CHR(10)||
-    'ì‹¤ìˆ˜ë¥¼ ìˆ¨ê¸°ì§€ ì•Šê³  ì¸ì •í•˜ê³ , ê·¸ë¡œë¶€í„° ë¬´ì—‡ì„ ë°°ì› ëŠ”ì§€ë¥¼ ê³ ë¯¼í•˜ëŠ” ê²ƒì€ ë¯¸ëž˜ì˜ ì„±ê³µì— í•„ìˆ˜ì ì´ë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ì˜ ì‹¤ìˆ˜ëŠ” ë‚˜ë¥¼ ë” ê°•ì¸í•˜ê²Œ ë§Œë“¤ì—ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ÂÄ¾Æ', 'HNN', 'È¸»ç¿¡¼­ÀÇ ½Ç¼ö¿Í ±×·ÎºÎÅÍÀÇ ¼ºÀå'
+    , '½Ç¼ö´Â ÀÎ»ý¿¡¼­ ÇÇÇÒ ¼ö ¾ø´Â ºÎºÐÀÌ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â È¸»ç¿¡¼­ ¸î ¹øÀÇ Å« ½Ç¼ö¸¦ Çß°í, ÀÌ¸¦ ÅëÇØ ¾î¶»°Ô ¼ºÀåÇÒ ¼ö ÀÖ´ÂÁö¸¦ ¹è¿ü´Ù.'||CHR(13)||CHR(10)||
+    '½Ç¼ö¸¦ ¼û±âÁö ¾Ê°í ÀÎÁ¤ÇÏ°í, ±×·ÎºÎÅÍ ¹«¾ùÀ» ¹è¿ü´ÂÁö¸¦ °í¹ÎÇÏ´Â °ÍÀº ¹Ì·¡ÀÇ ¼º°ø¿¡ ÇÊ¼öÀûÀÌ´Ù.'||CHR(13)||CHR(10)||
+    '³ªÀÇ ½Ç¼ö´Â ³ª¸¦ ´õ °­ÀÎÇÏ°Ô ¸¸µé¾ú´Ù.'
     , SYSDATE-11, SYSDATE-11, 4, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'í‚¹ëŒ€ì°¨ê°“ë¬´ì§', 'ì—°ëŒ€ì°¨', 'íŒ€ í”„ë¡œì íŠ¸ì˜ ì„±ê³µê³¼ ë‚œê´€ ê·¹ë³µ'
-    , 'íŒ€ í”„ë¡œì íŠ¸ì—ì„œì˜ ì„±ê³µì€ í•­ìƒ ì‰½ì§€ ì•Šë‹¤.'||CHR(13)||CHR(10)||
-    'ìš°ë¦¬ê°€ ì§ë©´í•œ ì–´ë ¤ì›€ê³¼ ë‚œê´€ì„ ê·¹ë³µí•˜ê¸° ìœ„í•´ íŒ€ì›ë“¤ê³¼ í•¨ê»˜ í˜‘ë ¥í•˜ëŠ” ê³¼ì •ì€ ë…¸ë ¥ê³¼ í—Œì‹ ì„ í•„ìš”ë¡œ í•œë‹¤.'||CHR(13)||CHR(10)|| 
-    'í•˜ì§€ë§Œ ì´ëŸ¬í•œ ê²½í—˜ì€ íŒ€ì›Œí¬, ë¬¸ì œ í•´ê²° ëŠ¥ë ¥, ì»¤ë®¤ë‹ˆì¼€ì´ì…˜ ìŠ¤í‚¬ ë“±ì„ í–¥ìƒì‹œí‚¤ëŠ” ë° í° ë„ì›€ì´ ë˜ì—ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'Å·´ëÂ÷°«¹«Á÷', '¿¬´ëÂ÷', 'ÆÀ ÇÁ·ÎÁ§Æ®ÀÇ ¼º°ø°ú ³­°ü ±Øº¹'
+    , 'ÆÀ ÇÁ·ÎÁ§Æ®¿¡¼­ÀÇ ¼º°øÀº Ç×»ó ½±Áö ¾Ê´Ù.'||CHR(13)||CHR(10)||
+    '¿ì¸®°¡ Á÷¸éÇÑ ¾î·Á¿ò°ú ³­°üÀ» ±Øº¹ÇÏ±â À§ÇØ ÆÀ¿øµé°ú ÇÔ²² Çù·ÂÇÏ´Â °úÁ¤Àº ³ë·Â°ú Çå½ÅÀ» ÇÊ¿ä·Î ÇÑ´Ù.'||CHR(13)||CHR(10)|| 
+    'ÇÏÁö¸¸ ÀÌ·¯ÇÑ °æÇèÀº ÆÀ¿öÅ©, ¹®Á¦ ÇØ°á ´É·Â, Ä¿¹Â´ÏÄÉÀÌ¼Ç ½ºÅ³ µîÀ» Çâ»ó½ÃÅ°´Â µ¥ Å« µµ¿òÀÌ µÇ¾ú´Ù.'
     , SYSDATE-11, SYSDATE-11, 5, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'í‚¹ëŒ€ì°¨ê°“ë¬´ì§', 'ì—°ëŒ€ì°¨', 'íšŒì‚¬ì—ì„œì˜ ì¸ì •ê³¼ ìŠ¹ì§„ ì´ì•¼ê¸°'
-    , 'íšŒì‚¬ì—ì„œì˜ ì¸ì •ê³¼ ìŠ¹ì§„ì€ ë…¸ë ¥ê³¼ ì—´ì •ì„ ë³´ì´ëŠ” ì‚¬ëžŒë“¤ì—ê²Œ ì£¼ì–´ì§„ë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ë‚˜ì˜ ì—…ë¬´ì— ëŒ€í•œ í—Œì‹ ê³¼ ê²°ê³¼ë¬¼ì„ í†µí•´ ìŠ¹ì§„ ê¸°íšŒë¥¼ ì–»ì—ˆëŠ”ì§€ì— ëŒ€í•œ ì´ì•¼ê¸°ë¥¼ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ì´ë¥¼ í†µí•´ ë‚˜ëŠ” ì–´ë–»ê²Œ ë‚˜ì˜ ëª©í‘œë¥¼ ë‹¬ì„±í•˜ê¸° ìœ„í•´ ë…¸ë ¥í•˜ê³  ì—´ì •ì„ ê°€ì§€ê³  ì¼ì„ í–ˆëŠ”ì§€ë¥¼ ì„¤ëª…í•˜ê³ ìž í•œë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'Å·´ëÂ÷°«¹«Á÷', '¿¬´ëÂ÷', 'È¸»ç¿¡¼­ÀÇ ÀÎÁ¤°ú ½ÂÁø ÀÌ¾ß±â'
+    , 'È¸»ç¿¡¼­ÀÇ ÀÎÁ¤°ú ½ÂÁøÀº ³ë·Â°ú ¿­Á¤À» º¸ÀÌ´Â »ç¶÷µé¿¡°Ô ÁÖ¾îÁø´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ³ªÀÇ ¾÷¹«¿¡ ´ëÇÑ Çå½Å°ú °á°ú¹°À» ÅëÇØ ½ÂÁø ±âÈ¸¸¦ ¾ò¾ú´ÂÁö¿¡ ´ëÇÑ ÀÌ¾ß±â¸¦ °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    'ÀÌ¸¦ ÅëÇØ ³ª´Â ¾î¶»°Ô ³ªÀÇ ¸ñÇ¥¸¦ ´Þ¼ºÇÏ±â À§ÇØ ³ë·ÂÇÏ°í ¿­Á¤À» °¡Áö°í ÀÏÀ» Çß´ÂÁö¸¦ ¼³¸íÇÏ°íÀÚ ÇÑ´Ù.'
     , SYSDATE-11, SYSDATE-11, 6, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ê¹€ì§€ë†˜', 'GLí™”í•™', 'íšŒì‚¬ì—ì„œì˜ ì—…ì ê³¼ ê³µë¡œ ì¸ì •'
-    , 'ìš°ë¦¬ íšŒì‚¬ëŠ” ì—…ì ê³¼ ê³µë¡œë¥¼ ì¸ì •í•˜ëŠ” ë¬¸í™”ë¥¼ ê°–ê³  ìžˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ë‚´ ì—…ì ê³¼ ê³µë¡œê°€ íšŒì‚¬ì—ì„œ ì¸ì •ë˜ì—ˆìœ¼ë©°, ì´ë¥¼ í†µí•´ ë‚˜ì˜ ì—…ë¬´ í¼í¬ë¨¼ìŠ¤ë¥¼ ì–´ë–»ê²Œ ê°œì„ í–ˆëŠ”ì§€ì— ëŒ€í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'íšŒì‚¬ì—ì„œì˜ ì„±ê³¼ë¥¼ ì¸ì •ë°›ëŠ” ê²ƒì€ ì§ì›ìœ¼ë¡œì„œ í° ìžë¶€ì‹¬ì„ ëŠë¼ê²Œ í•œë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '±èÁö³÷', 'GLÈ­ÇÐ', 'È¸»ç¿¡¼­ÀÇ ¾÷Àû°ú °ø·Î ÀÎÁ¤'
+    , '¿ì¸® È¸»ç´Â ¾÷Àû°ú °ø·Î¸¦ ÀÎÁ¤ÇÏ´Â ¹®È­¸¦ °®°í ÀÖ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ³» ¾÷Àû°ú °ø·Î°¡ È¸»ç¿¡¼­ ÀÎÁ¤µÇ¾úÀ¸¸ç, ÀÌ¸¦ ÅëÇØ ³ªÀÇ ¾÷¹« ÆÛÆ÷¸Õ½º¸¦ ¾î¶»°Ô °³¼±Çß´ÂÁö¿¡ ´ëÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    'È¸»ç¿¡¼­ÀÇ ¼º°ú¸¦ ÀÎÁ¤¹Þ´Â °ÍÀº Á÷¿øÀ¸·Î¼­ Å« ÀÚºÎ½ÉÀ» ´À³¢°Ô ÇÑ´Ù.'
     , SYSDATE-11, SYSDATE-11, 7, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì§€ì˜ì§€', 'GLí™”í•™', 'ì§ìž¥ì—ì„œì˜ ë„ì „ì ì¸ í”„ë¡œì íŠ¸ ê²½í—˜'
-    , 'ë„ì „ì ì¸ í”„ë¡œì íŠ¸ëŠ” ê°œì¸ì ì¸ ì„±ìž¥ê³¼ ìŠ¤í‚¬ í–¥ìƒì˜ ê¸°íšŒë¥¼ ì œê³µí•œë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì§ìž¥ì—ì„œ ë„ì „ì ì¸ í”„ë¡œì íŠ¸ì— ì°¸ì—¬í•˜ê³ , ì–´ë–»ê²Œ ê·¸ê²ƒì„ ì„±ê³µì ìœ¼ë¡œ ì™„ë£Œí–ˆëŠ”ì§€ì— ëŒ€í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ë„ì „ì ì¸ í”„ë¡œì íŠ¸ì—ì„œ ì–»ì€ êµí›ˆì€ ë‚˜ì˜ ì§ìž¥ìƒí™œì„ í–¥ìƒì‹œí‚¤ëŠ” ë° í° ì—­í• ì„ í•˜ì˜€ë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'Áö¿µÁö', 'GLÈ­ÇÐ', 'Á÷Àå¿¡¼­ÀÇ µµÀüÀûÀÎ ÇÁ·ÎÁ§Æ® °æÇè'
+    , 'µµÀüÀûÀÎ ÇÁ·ÎÁ§Æ®´Â °³ÀÎÀûÀÎ ¼ºÀå°ú ½ºÅ³ Çâ»óÀÇ ±âÈ¸¸¦ Á¦°øÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô Á÷Àå¿¡¼­ µµÀüÀûÀÎ ÇÁ·ÎÁ§Æ®¿¡ Âü¿©ÇÏ°í, ¾î¶»°Ô ±×°ÍÀ» ¼º°øÀûÀ¸·Î ¿Ï·áÇß´ÂÁö¿¡ ´ëÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    'µµÀüÀûÀÎ ÇÁ·ÎÁ§Æ®¿¡¼­ ¾òÀº ±³ÈÆÀº ³ªÀÇ Á÷Àå»ýÈ°À» Çâ»ó½ÃÅ°´Â µ¥ Å« ¿ªÇÒÀ» ÇÏ¿´´Ù.'
     , SYSDATE-10, SYSDATE-10, 8, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ìœ ì•ˆì¸', 'K-OIL', 'ì§ìž¥ ë‚´ ë¦¬ë”ì‹­ ë°œíœ˜ì™€ ì„±ê³µ ìŠ¤í† ë¦¬'
-    , 'ë¦¬ë”ì‹­ì€ ì§ìž¥ì—ì„œ ì¤‘ìš”í•œ ì—­í• ì„ í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ë‚´ ë¦¬ë”ì‹­ ìŠ¤í‚¬ì„ ë°œíœ˜í•˜ê³ , íŒ€ì„ ì„±ê³µìœ¼ë¡œ ì´ëˆ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ì§ìž¥ì—ì„œ ë¦¬ë”ë¡œì„œ ì„±ê³µí•˜ë ¤ë©´ íŒ€ì›ë“¤ì„ ì´ë„ëŠ” ë° í•„ìš”í•œ ìŠ¤í‚¬ê³¼ ì „ëžµì„ ê°œë°œí•´ì•¼ í•œë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'À¯¾ÈÀÎ', 'K-OIL', 'Á÷Àå ³» ¸®´õ½Ê ¹ßÈÖ¿Í ¼º°ø ½ºÅä¸®'
+    , '¸®´õ½ÊÀº Á÷Àå¿¡¼­ Áß¿äÇÑ ¿ªÇÒÀ» ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ³» ¸®´õ½Ê ½ºÅ³À» ¹ßÈÖÇÏ°í, ÆÀÀ» ¼º°øÀ¸·Î ÀÌ²ö °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    'Á÷Àå¿¡¼­ ¸®´õ·Î¼­ ¼º°øÇÏ·Á¸é ÆÀ¿øµéÀ» ÀÌ²ô´Â µ¥ ÇÊ¿äÇÑ ½ºÅ³°ú Àü·«À» °³¹ßÇØ¾ß ÇÑ´Ù.'
     , SYSDATE-8, SYSDATE-8, 9, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì¨ëˆ„ì§€ë¡±', 'KSí•˜ì´ë‹ˆìŠ¤', 'íšŒì‚¬ì—ì„œì˜ ë¬¸ì œ í•´ê²° ëŠ¥ë ¥ ê°•í™”'
-    , 'ë¬¸ì œ í•´ê²° ëŠ¥ë ¥ì€ íšŒì‚¬ì—ì„œ í•„ìˆ˜ì ì¸ ìŠ¤í‚¬ ì¤‘ í•˜ë‚˜ì´ë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ íšŒì‚¬ì—ì„œ ë°œìƒí•œ ë¬¸ì œë¥¼ í•´ê²°í•˜ê³ , ì´ë¥¼ í†µí•´ ì–´ë–»ê²Œ ë‚˜ì˜ ëŠ¥ë ¥ì„ í–¥ìƒì‹œì¼°ëŠ”ì§€ì— ëŒ€í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ë¬¸ì œ í•´ê²° ëŠ¥ë ¥ì€ ì—…ë¬´ íš¨ìœ¨ì„±ì„ í–¥ìƒì‹œí‚¤ê³  ì—…ì ì„ ìŒ“ëŠ” ë° ì¤‘ìš”í•œ ì—­í• ì„ í•œë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '½á´©Áö·Õ', 'KSÇÏÀÌ´Ï½º', 'È¸»ç¿¡¼­ÀÇ ¹®Á¦ ÇØ°á ´É·Â °­È­'
+    , '¹®Á¦ ÇØ°á ´É·ÂÀº È¸»ç¿¡¼­ ÇÊ¼öÀûÀÎ ½ºÅ³ Áß ÇÏ³ªÀÌ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô È¸»ç¿¡¼­ ¹ß»ýÇÑ ¹®Á¦¸¦ ÇØ°áÇÏ°í, ÀÌ¸¦ ÅëÇØ ¾î¶»°Ô ³ªÀÇ ´É·ÂÀ» Çâ»ó½ÃÄ×´ÂÁö¿¡ ´ëÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '¹®Á¦ ÇØ°á ´É·ÂÀº ¾÷¹« È¿À²¼ºÀ» Çâ»ó½ÃÅ°°í ¾÷ÀûÀ» ½×´Â µ¥ Áß¿äÇÑ ¿ªÇÒÀ» ÇÑ´Ù.'
     , SYSDATE-8, SYSDATE-8, 10, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ìŒì•…ê³ ëž˜', 'ë¹„ë§ˆíŠ¸', 'íšŒì‚¬ì—ì„œì˜ ì‹œê°„ ê´€ë¦¬ì˜ ì¤‘ìš”ì„±ê³¼ ì „ëžµ'
-    , 'íšŒì‚¬ì—ì„œ ì—…ë¬´ë¥¼ íš¨ìœ¨ì ìœ¼ë¡œ ì²˜ë¦¬í•˜ê¸° ìœ„í•´ì„œëŠ” ì‹œê°„ ê´€ë¦¬ê°€ ì¤‘ìš”í•˜ë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì‹œê°„ì„ ê´€ë¦¬í•˜ê³  ì—…ë¬´ ìš°ì„ ìˆœìœ„ë¥¼ ì •í•˜ë©°, ì–´ë–»ê²Œ ë” ìƒì‚°ì ìœ¼ë¡œ ì¼í•  ìˆ˜ ìžˆëŠ”ì§€ì— ëŒ€í•œ ì „ëžµì„ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ì‹œê°„ì„ íš¨ê³¼ì ìœ¼ë¡œ í™œìš©í•˜ë©´ ì—…ë¬´ì™€ ê°œì¸ ìƒí™œì˜ ë°¸ëŸ°ìŠ¤ë¥¼ ìœ ì§€í•˜ëŠ” ë° ë„ì›€ì´ ëœë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'À½¾Ç°í·¡', 'ºñ¸¶Æ®', 'È¸»ç¿¡¼­ÀÇ ½Ã°£ °ü¸®ÀÇ Áß¿ä¼º°ú Àü·«'
+    , 'È¸»ç¿¡¼­ ¾÷¹«¸¦ È¿À²ÀûÀ¸·Î Ã³¸®ÇÏ±â À§ÇØ¼­´Â ½Ã°£ °ü¸®°¡ Áß¿äÇÏ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ½Ã°£À» °ü¸®ÇÏ°í ¾÷¹« ¿ì¼±¼øÀ§¸¦ Á¤ÇÏ¸ç, ¾î¶»°Ô ´õ »ý»êÀûÀ¸·Î ÀÏÇÒ ¼ö ÀÖ´ÂÁö¿¡ ´ëÇÑ Àü·«À» °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '½Ã°£À» È¿°úÀûÀ¸·Î È°¿ëÇÏ¸é ¾÷¹«¿Í °³ÀÎ »ýÈ°ÀÇ ¹ë·±½º¸¦ À¯ÁöÇÏ´Â µ¥ µµ¿òÀÌ µÈ´Ù.'
     , SYSDATE-8, SYSDATE-8, 51, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì‹¬í•´íƒí—˜ê°€', 'BBì†í•´ë³´í—˜', 'ì§ìž¥ ë‚´ ì¶©ëŒ í•´ê²°ê³¼ ì›ë§Œí•œ ê´€ê³„ ìœ ì§€'
-    , 'ì§ìž¥ì—ì„œ ì¶©ëŒì€ í”¼í•  ìˆ˜ ì—†ëŠ” ìƒí™©ì´ë‹¤.'||CHR(13)||CHR(10)||
-    'í•˜ì§€ë§Œ ë‚˜ëŠ” ì–´ë–»ê²Œ ì§ìž¥ ë‚´ ì¶©ëŒì„ ê±´ì„¤ì ìœ¼ë¡œ í•´ê²°í•˜ê³ , ë™ë£Œì™€ì˜ ì›ë§Œí•œ ê´€ê³„ë¥¼ ìœ ì§€í•˜ëŠ” ë°©ë²•ì„ ì°¾ì•„ëƒˆë‹¤.'||CHR(13)||CHR(10)||
-    'ì¶©ëŒ ê´€ë¦¬ì™€ ì»¤ë®¤ë‹ˆì¼€ì´ì…˜ ìŠ¤í‚¬ì€ ì§ìž¥ ë‚´ ì„±ê³µì˜ í•µì‹¬ì´ë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '½ÉÇØÅ½Çè°¡', 'BB¼ÕÇØº¸Çè', 'Á÷Àå ³» Ãæµ¹ ÇØ°á°ú ¿ø¸¸ÇÑ °ü°è À¯Áö'
+    , 'Á÷Àå¿¡¼­ Ãæµ¹Àº ÇÇÇÒ ¼ö ¾ø´Â »óÈ²ÀÌ´Ù.'||CHR(13)||CHR(10)||
+    'ÇÏÁö¸¸ ³ª´Â ¾î¶»°Ô Á÷Àå ³» Ãæµ¹À» °Ç¼³ÀûÀ¸·Î ÇØ°áÇÏ°í, µ¿·á¿ÍÀÇ ¿ø¸¸ÇÑ °ü°è¸¦ À¯ÁöÇÏ´Â ¹æ¹ýÀ» Ã£¾Æ³Â´Ù.'||CHR(13)||CHR(10)||
+    'Ãæµ¹ °ü¸®¿Í Ä¿¹Â´ÏÄÉÀÌ¼Ç ½ºÅ³Àº Á÷Àå ³» ¼º°øÀÇ ÇÙ½ÉÀÌ´Ù.'
     , SYSDATE-8, SYSDATE-8, 52, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì‚°ì•…ì¸', 'í•œëŒ€ì œì² ', 'ì§ìž¥ì—ì„œì˜ ìžê¸°ê°œë°œê³¼ ìŠ¤í‚¬ í–¥ìƒ'
-    , 'ì§ìž¥ì—ì„œ ìžê¸°ê°œë°œì€ ê³„ì†í•´ì„œ ì„±ìž¥í•˜ê³  ë°œì „í•˜ëŠ” ë° í•„ìˆ˜ì ì´ë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì§ìž¥ì—ì„œ ìŠ¤í‚¬ì„ í–¥ìƒì‹œí‚¤ê¸° ìœ„í•´ êµìœ¡ ë° ìžê¸° í•™ìŠµì„ ì–´ë–»ê²Œ í†µí•©í–ˆëŠ”ì§€ì— ëŒ€í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ìžê¸°ê°œë°œì€ ê°œì¸ê³¼ ì¡°ì§ ëª¨ë‘ì—ê²Œ ì´ìµì„ ì œê³µí•œë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '»ê¾ÇÀÎ', 'ÇÑ´ëÁ¦Ã¶', 'Á÷Àå¿¡¼­ÀÇ ÀÚ±â°³¹ß°ú ½ºÅ³ Çâ»ó'
+    , 'Á÷Àå¿¡¼­ ÀÚ±â°³¹ßÀº °è¼ÓÇØ¼­ ¼ºÀåÇÏ°í ¹ßÀüÇÏ´Â µ¥ ÇÊ¼öÀûÀÌ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô Á÷Àå¿¡¼­ ½ºÅ³À» Çâ»ó½ÃÅ°±â À§ÇØ ±³À° ¹× ÀÚ±â ÇÐ½ÀÀ» ¾î¶»°Ô ÅëÇÕÇß´ÂÁö¿¡ ´ëÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    'ÀÚ±â°³¹ßÀº °³ÀÎ°ú Á¶Á÷ ¸ðµÎ¿¡°Ô ÀÌÀÍÀ» Á¦°øÇÑ´Ù.'
     , SYSDATE-8, SYSDATE-8, 53, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'lover', 'KPNG', 'ì§ìž¥ì—ì„œì˜ ë¦¬ë”ì‹­ê³¼ íŒ€ ê´€ë¦¬'
-    , 'ì§ìž¥ì—ì„œ ë¦¬ë”ë¡œì„œì˜ ì—­í• ì€ íŒ€ì„ íš¨ê³¼ì ìœ¼ë¡œ ê´€ë¦¬í•˜ê³  ì´ëŒê¸° ìœ„í•œ ìŠ¤í‚¬ê³¼ ì±…ìž„ì„ ìˆ˜ë°˜í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ë¦¬ë”ì‹­ ìŠ¤í‚¬ì„ ë°œíœ˜í•˜ê³  íŒ€ì›ë“¤ì„ íš¨ê³¼ì ìœ¼ë¡œ ì´ëˆ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'íŒ€ ê´€ë¦¬ëŠ” ì¡°ì§ì˜ ì„±ê³¼ì— í° ì˜í–¥ì„ ë¯¸ì¹œë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'lover', 'KPNG', 'Á÷Àå¿¡¼­ÀÇ ¸®´õ½Ê°ú ÆÀ °ü¸®'
+    , 'Á÷Àå¿¡¼­ ¸®´õ·Î¼­ÀÇ ¿ªÇÒÀº ÆÀÀ» È¿°úÀûÀ¸·Î °ü¸®ÇÏ°í ÀÌ²ø±â À§ÇÑ ½ºÅ³°ú Ã¥ÀÓÀ» ¼ö¹ÝÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¸®´õ½Ê ½ºÅ³À» ¹ßÈÖÇÏ°í ÆÀ¿øµéÀ» È¿°úÀûÀ¸·Î ÀÌ²ö °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    'ÆÀ °ü¸®´Â Á¶Á÷ÀÇ ¼º°ú¿¡ Å« ¿µÇâÀ» ¹ÌÄ£´Ù.'
     , SYSDATE-7, SYSDATE-6, 54, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ë¨¹ë°©ëª¨í—˜ê°€', 'ì—ìŠ¤ì”¨ë°”ì´ì˜¤ì„¼ì„œ', 'ì§ìž¥ ë‚´ êµìœ¡ í”„ë¡œê·¸ëž¨ì˜ ì¤‘ìš”ì„±'
-    , 'ì§ìž¥ ë‚´ êµìœ¡ í”„ë¡œê·¸ëž¨ì€ ì§ì›ë“¤ì˜ ì„±ìž¥ì„ ì´‰ì§„í•˜ëŠ” ë° ì¤‘ìš”í•˜ë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ íšŒì‚¬ì—ì„œ ì œê³µí•˜ëŠ” êµìœ¡ í”„ë¡œê·¸ëž¨ì„ í™œìš©í•˜ì—¬ ì–´ë–»ê²Œ ë‚´ ì—­ëŸ‰ì„ ê°œë°œí•˜ê³  ê²½ë ¥ì„ í–¥ìƒì‹œì¼°ëŠ”ì§€ì— ëŒ€í•œ ì´ì•¼ê¸°ë¥¼ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'êµìœ¡ì€ ì§ìž¥ì—ì„œì˜ ì„±ê³µì— í•„ìˆ˜ì ì¸ ìš”ì†Œ ì¤‘ í•˜ë‚˜ì´ë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '¸Ô¹æ¸ðÇè°¡', '¿¡½º¾¾¹ÙÀÌ¿À¼¾¼­', 'Á÷Àå ³» ±³À° ÇÁ·Î±×·¥ÀÇ Áß¿ä¼º'
+    , 'Á÷Àå ³» ±³À° ÇÁ·Î±×·¥Àº Á÷¿øµéÀÇ ¼ºÀåÀ» ÃËÁøÇÏ´Â µ¥ Áß¿äÇÏ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô È¸»ç¿¡¼­ Á¦°øÇÏ´Â ±³À° ÇÁ·Î±×·¥À» È°¿ëÇÏ¿© ¾î¶»°Ô ³» ¿ª·®À» °³¹ßÇÏ°í °æ·ÂÀ» Çâ»ó½ÃÄ×´ÂÁö¿¡ ´ëÇÑ ÀÌ¾ß±â¸¦ ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '±³À°Àº Á÷Àå¿¡¼­ÀÇ ¼º°ø¿¡ ÇÊ¼öÀûÀÎ ¿ä¼Ò Áß ÇÏ³ªÀÌ´Ù.'
     , SYSDATE-7, SYSDATE-6, 55, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ê²Œìž„ì˜ì‹ ', 'STí…”ë ˆì½¤', 'ì§ìž¥ì—ì„œì˜ ìŠ¤íŠ¸ë ˆìŠ¤ ê´€ë¦¬ì™€ ì›Œë¼ë°¸'
-    , 'ì§ìž¥ì—ì„œì˜ ìŠ¤íŠ¸ë ˆìŠ¤ ê´€ë¦¬ëŠ” ê±´ê°•ê³¼ í–‰ë³µì„ ìœ ì§€í•˜ëŠ” ë° ì¤‘ìš”í•˜ë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì—…ë¬´ì™€ ê°œì¸ ìƒí™œ ê°„ì˜ ë°¸ëŸ°ìŠ¤ë¥¼ ìœ ì§€í•˜ê³  ìŠ¤íŠ¸ë ˆìŠ¤ë¥¼ íš¨ê³¼ì ìœ¼ë¡œ ê´€ë¦¬í•˜ëŠ” ë°©ë²•ì„ ì°¾ì•„ëƒˆë‹¤.'||CHR(13)||CHR(10)||
-    'ì›Œë¼ë°¸ì€ ì§ìž¥ ë‚´ ë§Œì¡±ë„ì™€ ìƒì‚°ì„±ì„ í–¥ìƒì‹œí‚¤ëŠ” ë° ë„ì›€ì„ ì¤€ë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '°ÔÀÓÀÇ½Å', 'STÅÚ·¹ÄÞ', 'Á÷Àå¿¡¼­ÀÇ ½ºÆ®·¹½º °ü¸®¿Í ¿ö¶ó¹ë'
+    , 'Á÷Àå¿¡¼­ÀÇ ½ºÆ®·¹½º °ü¸®´Â °Ç°­°ú Çàº¹À» À¯ÁöÇÏ´Â µ¥ Áß¿äÇÏ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¾÷¹«¿Í °³ÀÎ »ýÈ° °£ÀÇ ¹ë·±½º¸¦ À¯ÁöÇÏ°í ½ºÆ®·¹½º¸¦ È¿°úÀûÀ¸·Î °ü¸®ÇÏ´Â ¹æ¹ýÀ» Ã£¾Æ³Â´Ù.'||CHR(13)||CHR(10)||
+    '¿ö¶ó¹ëÀº Á÷Àå ³» ¸¸Á·µµ¿Í »ý»ê¼ºÀ» Çâ»ó½ÃÅ°´Â µ¥ µµ¿òÀ» ÁØ´Ù.'
     , SYSDATE-7, SYSDATE-7, 56, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì»¤í”¼ì½©ëƒ„ìƒˆ', 'ì‹¬ì„±SDI', 'ì§ìž¥ì—ì„œì˜ ë‹¤ì–‘ì„±ê³¼ ì¸í´ë£¨ì „'
-    , 'ì§ìž¥ì—ì„œì˜ ë‹¤ì–‘ì„±ê³¼ ì¸í´ë£¨ì „ì€ ì¡°ì§ì˜ ì„±ê³µê³¼ í˜ì‹ ì„ ì´‰ì§„í•˜ëŠ” ë° ê¸°ì—¬í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ íšŒì‚¬ ë‚´ì—ì„œ ë‹¤ì–‘ì„±ì„ ì¦ê¸°ê³  ì¸í´ë£¨ì „ì„ í™œì„±í™”ì‹œí‚¤ëŠ” ë…¸ë ¥ê³¼ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ë‹¤ì–‘ì„±ì€ ì•„ì´ë””ì–´ì˜ ë‹¤ì–‘ì„±ê³¼ í˜ì‹ ì„ ì´‰ì§„í•œë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'Ä¿ÇÇÄá³¿»õ', '½É¼ºSDI', 'Á÷Àå¿¡¼­ÀÇ ´Ù¾ç¼º°ú ÀÎÅ¬·çÀü'
+    , 'Á÷Àå¿¡¼­ÀÇ ´Ù¾ç¼º°ú ÀÎÅ¬·çÀüÀº Á¶Á÷ÀÇ ¼º°ø°ú Çõ½ÅÀ» ÃËÁøÇÏ´Â µ¥ ±â¿©ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô È¸»ç ³»¿¡¼­ ´Ù¾ç¼ºÀ» Áñ±â°í ÀÎÅ¬·çÀüÀ» È°¼ºÈ­½ÃÅ°´Â ³ë·Â°ú °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '´Ù¾ç¼ºÀº ¾ÆÀÌµð¾îÀÇ ´Ù¾ç¼º°ú Çõ½ÅÀ» ÃËÁøÇÑ´Ù.'
     , SYSDATE-7, SYSDATE-7, 57, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ê³¼í•™ì—´ì •', 'LZì „ìž', 'ì§ìž¥ ë‚´ í”„ë¡œëª¨ì…˜ ì „ëžµê³¼ ê²½í—˜'
-    , 'í”„ë¡œëª¨ì…˜ì€ ì§ìž¥ì—ì„œì˜ ëª©í‘œ ì¤‘ í•˜ë‚˜ì¼ ìˆ˜ ìžˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ë‚˜ì˜ ì§ìž¥ì—ì„œì˜ í”„ë¡œëª¨ì…˜ì„ ìœ„í•´ ì–´ë–»ê²Œ ê³„íšì„ ì„¸ìš°ê³  ë…¸ë ¥í–ˆëŠ”ì§€ì— ëŒ€í•œ ì´ì•¼ê¸°ë¥¼ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'í”„ë¡œëª¨ì…˜ì€ ê°œì¸ì˜ ì„±ê³¼ì™€ ì—…ì ì„ ì¸ì •ë°›ëŠ” ìˆœê°„ì´ë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '°úÇÐ¿­Á¤', 'LZÀüÀÚ', 'Á÷Àå ³» ÇÁ·Î¸ð¼Ç Àü·«°ú °æÇè'
+    , 'ÇÁ·Î¸ð¼ÇÀº Á÷Àå¿¡¼­ÀÇ ¸ñÇ¥ Áß ÇÏ³ªÀÏ ¼ö ÀÖ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ³ªÀÇ Á÷Àå¿¡¼­ÀÇ ÇÁ·Î¸ð¼ÇÀ» À§ÇØ ¾î¶»°Ô °èÈ¹À» ¼¼¿ì°í ³ë·ÂÇß´ÂÁö¿¡ ´ëÇÑ ÀÌ¾ß±â¸¦ ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    'ÇÁ·Î¸ð¼ÇÀº °³ÀÎÀÇ ¼º°ú¿Í ¾÷ÀûÀ» ÀÎÁ¤¹Þ´Â ¼ø°£ÀÌ´Ù.'
     , SYSDATE-7, SYSDATE-7, 58, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'íŒ¨ì…˜ìŠ¤íƒ€', 'ê³ ë ¤ê°€ìŠ¤ê³µì‚¬', 'íšŒì‚¬ ë‚´ í”„ë¡œì íŠ¸ ì‹¤íŒ¨ì™€ êµí›ˆ'
-    , 'í”„ë¡œì íŠ¸ ì‹¤íŒ¨ëŠ” ì„±ìž¥ê³¼ êµí›ˆì˜ ê¸°íšŒë¥¼ ì œê³µí•œë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ íšŒì‚¬ ë‚´ í”„ë¡œì íŠ¸ì—ì„œ ì‹¤íŒ¨í•˜ê³ , ì´ë¥¼ í†µí•´ ì–´ë–»ê²Œ ë‚´ ëŠ¥ë ¥ê³¼ ì ‘ê·¼ ë°©ì‹ì„ ê°œì„ í–ˆëŠ”ì§€ì— ëŒ€í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'í”„ë¡œì íŠ¸ ì‹¤íŒ¨ëŠ” ìƒˆë¡œìš´ ì‹œìž‘ê³¼ ë°°ì›€ì˜ ì‹œìž‘ì¼ ìˆ˜ ìžˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ÆÐ¼Ç½ºÅ¸', '°í·Á°¡½º°ø»ç', 'È¸»ç ³» ÇÁ·ÎÁ§Æ® ½ÇÆÐ¿Í ±³ÈÆ'
+    , 'ÇÁ·ÎÁ§Æ® ½ÇÆÐ´Â ¼ºÀå°ú ±³ÈÆÀÇ ±âÈ¸¸¦ Á¦°øÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô È¸»ç ³» ÇÁ·ÎÁ§Æ®¿¡¼­ ½ÇÆÐÇÏ°í, ÀÌ¸¦ ÅëÇØ ¾î¶»°Ô ³» ´É·Â°ú Á¢±Ù ¹æ½ÄÀ» °³¼±Çß´ÂÁö¿¡ ´ëÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    'ÇÁ·ÎÁ§Æ® ½ÇÆÐ´Â »õ·Î¿î ½ÃÀÛ°ú ¹è¿òÀÇ ½ÃÀÛÀÏ ¼ö ÀÖ´Ù.'
     , SYSDATE-7, SYSDATE-7, 59, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ë³„ì´ë¹›ë‚˜ëŠ”ë°¤', 'KP', 'ì§ìž¥ì—ì„œì˜ ì†Œì…œ ìŠ¤í‚¬ê³¼ ë„¤íŠ¸ì›Œí‚¹'
-    , 'ë¹„ì¦ˆë‹ˆìŠ¤ ì†Œì…œ ìŠ¤í‚¬ì€ ì§ìž¥ì—ì„œì˜ ì„±ê³µì— ì¤‘ìš”í•œ ì—­í• ì„ í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì†Œì…œ ìŠ¤í‚¬ì„ ê°œë°œí•˜ê³  ë¹„ì¦ˆë‹ˆìŠ¤ ë„¤íŠ¸ì›Œí‚¹ì„ í†µí•´ ì–´ë–»ê²Œ ìƒˆë¡œìš´ ê¸°íšŒë¥¼ ì°¾ì•˜ëŠ”ì§€ì— ëŒ€í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ë¹„ì¦ˆë‹ˆìŠ¤ ì†Œì…œ ìŠ¤í‚¬ì€ ì—°ê²°ê³¼ ê¸°íšŒë¥¼ ì°½ì¶œí•œë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'º°ÀÌºû³ª´Â¹ã', 'KP', 'Á÷Àå¿¡¼­ÀÇ ¼Ò¼È ½ºÅ³°ú ³×Æ®¿öÅ·'
+    , 'ºñÁî´Ï½º ¼Ò¼È ½ºÅ³Àº Á÷Àå¿¡¼­ÀÇ ¼º°ø¿¡ Áß¿äÇÑ ¿ªÇÒÀ» ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¼Ò¼È ½ºÅ³À» °³¹ßÇÏ°í ºñÁî´Ï½º ³×Æ®¿öÅ·À» ÅëÇØ ¾î¶»°Ô »õ·Î¿î ±âÈ¸¸¦ Ã£¾Ò´ÂÁö¿¡ ´ëÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    'ºñÁî´Ï½º ¼Ò¼È ½ºÅ³Àº ¿¬°á°ú ±âÈ¸¸¦ Ã¢ÃâÇÑ´Ù.'
     , SYSDATE-6, SYSDATE-6, 60, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jihyun_lee', 'ì‚¬ëŒ€í•´ìƒ', 'íšŒì‚¬ì—ì„œì˜ ì„±ê³µ ìŠ¤í† ë¦¬ì™€ ì¸í„°ë·°'
-    , 'ì„±ê³µí•œ ë¹„ì¦ˆë‹ˆìŠ¤ ë¦¬ë”ë“¤ì˜ ìŠ¤í† ë¦¬ì™€ ì¸í„°ë·°ëŠ” ì˜ê°ì„ ì£¼ëŠ” ì´ì•¼ê¸°ë¥¼ ì œê³µí•œë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì„±ê³µí•œ ì‚¬ëžŒë“¤ì˜ ìŠ¤í† ë¦¬ì™€ ì¸í„°ë·°ë¥¼ í†µí•´ ì–´ë–¤ ì¸ì‚¬ì´íŠ¸ì™€ ì˜ê°ì„ ì–»ì—ˆëŠ”ì§€ì— ëŒ€í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ì„±ê³µ ìŠ¤í† ë¦¬ëŠ” ìš°ë¦¬ì—ê²Œ ìƒˆë¡œìš´ ì•„ì´ë””ì–´ì™€ ìžê·¹ì„ ì¤„ ìˆ˜ ìžˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jihyun_lee', '»ç´ëÇØ»ó', 'È¸»ç¿¡¼­ÀÇ ¼º°ø ½ºÅä¸®¿Í ÀÎÅÍºä'
+    , '¼º°øÇÑ ºñÁî´Ï½º ¸®´õµéÀÇ ½ºÅä¸®¿Í ÀÎÅÍºä´Â ¿µ°¨À» ÁÖ´Â ÀÌ¾ß±â¸¦ Á¦°øÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ¼º°øÇÑ »ç¶÷µéÀÇ ½ºÅä¸®¿Í ÀÎÅÍºä¸¦ ÅëÇØ ¾î¶² ÀÎ»çÀÌÆ®¿Í ¿µ°¨À» ¾ò¾ú´ÂÁö¿¡ ´ëÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '¼º°ø ½ºÅä¸®´Â ¿ì¸®¿¡°Ô »õ·Î¿î ¾ÆÀÌµð¾î¿Í ÀÚ±ØÀ» ÁÙ ¼ö ÀÖ´Ù.'
     , SYSDATE-6, SYSDATE-6, 101, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'hyunwoo_jang', 'DDí•˜ì´í…', 'ì§ìž¥ ë‚´ ì¸í”„ë¼ ê°œì„ ì„ ìœ„í•œ ì œì•ˆ'
-    , 'ì§ìž¥ ë‚´ ì¸í”„ë¼ëŠ” ì—…ë¬´ íš¨ìœ¨ì„±ì— í° ì˜í–¥ì„ ë¯¸ì¹œë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ íšŒì‚¬ ë‚´ ì¸í”„ë¼ë¥¼ ê°œì„ í•˜ê¸° ìœ„í•œ ì œì•ˆì„ í•˜ê³ , ì´ë¥¼ ì–´ë–»ê²Œ ì‹¤í–‰ìœ¼ë¡œ ì˜®ê²¼ëŠ”ì§€ì— ëŒ€í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ì¸í”„ë¼ ê°œì„ ì€ ì§ì›ë“¤ì˜ ë§Œì¡±ë„ì™€ ìƒì‚°ì„±ì„ í–¥ìƒì‹œí‚¨ë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'hyunwoo_jang', 'DDÇÏÀÌÅØ', 'Á÷Àå ³» ÀÎÇÁ¶ó °³¼±À» À§ÇÑ Á¦¾È'
+    , 'Á÷Àå ³» ÀÎÇÁ¶ó´Â ¾÷¹« È¿À²¼º¿¡ Å« ¿µÇâÀ» ¹ÌÄ£´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô È¸»ç ³» ÀÎÇÁ¶ó¸¦ °³¼±ÇÏ±â À§ÇÑ Á¦¾ÈÀ» ÇÏ°í, ÀÌ¸¦ ¾î¶»°Ô ½ÇÇàÀ¸·Î ¿Å°å´ÂÁö¿¡ ´ëÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    'ÀÎÇÁ¶ó °³¼±Àº Á÷¿øµéÀÇ ¸¸Á·µµ¿Í »ý»ê¼ºÀ» Çâ»ó½ÃÅ²´Ù.'
     , SYSDATE-6, SYSDATE-6, 102, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'youngseo_choi', 'SKU', 'ì§ìž¥ ë‚´ í”„ë¡œì íŠ¸ ì„±ê³¼ì™€ ê²½í—˜'
-    , 'ì§ìž¥ ë‚´ í”„ë¡œì íŠ¸ëŠ” ì„±ê³¼ì™€ ê²½í—˜ì„ ì–»ì„ ìˆ˜ ìžˆëŠ” ê¸°íšŒë¥¼ ì œê³µí•œë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ íšŒì‚¬ ë‚´ í”„ë¡œì íŠ¸ì—ì„œ ì„±ê³¼ë¥¼ ì–»ì—ˆìœ¼ë©°, ì´ë¥¼ í†µí•´ ì–´ë–»ê²Œ ë‚´ ì—­ëŸ‰ì„ í–¥ìƒì‹œì¼°ëŠ”ì§€ì— ëŒ€í•œ ì´ì•¼ê¸°ë¥¼ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'í”„ë¡œì íŠ¸ ê²½í—˜ì€ ì§ìž¥ ë‚´ ì„±ìž¥ì— í° ì˜í–¥ì„ ë¯¸ì¹œë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'youngseo_choi', 'SKU', 'Á÷Àå ³» ÇÁ·ÎÁ§Æ® ¼º°ú¿Í °æÇè'
+    , 'Á÷Àå ³» ÇÁ·ÎÁ§Æ®´Â ¼º°ú¿Í °æÇèÀ» ¾òÀ» ¼ö ÀÖ´Â ±âÈ¸¸¦ Á¦°øÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô È¸»ç ³» ÇÁ·ÎÁ§Æ®¿¡¼­ ¼º°ú¸¦ ¾ò¾úÀ¸¸ç, ÀÌ¸¦ ÅëÇØ ¾î¶»°Ô ³» ¿ª·®À» Çâ»ó½ÃÄ×´ÂÁö¿¡ ´ëÇÑ ÀÌ¾ß±â¸¦ ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    'ÇÁ·ÎÁ§Æ® °æÇèÀº Á÷Àå ³» ¼ºÀå¿¡ Å« ¿µÇâÀ» ¹ÌÄ£´Ù.'
     , SYSDATE-6, SYSDATE-6, 103, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jaeeun_kim', 'ê¹€í˜¸ì„ìœ ', 'ì§ìž¥ ë‚´ ì—…ë¬´ í”„ë¡œì„¸ìŠ¤ ê°œì„ '
-    , 'ì§ìž¥ ë‚´ ì—…ë¬´ í”„ë¡œì„¸ìŠ¤ ê°œì„ ì€ ì—…ë¬´ íš¨ìœ¨ì„±ì„ í–¥ìƒì‹œí‚¤ëŠ” ë° ì¤‘ìš”í•˜ë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ íšŒì‚¬ ë‚´ ì—…ë¬´ í”„ë¡œì„¸ìŠ¤ë¥¼ ê°œì„ í•˜ê¸° ìœ„í•œ ë…¸ë ¥ê³¼ ì „ëžµì„ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ì—…ë¬´ í”„ë¡œì„¸ìŠ¤ ê°œì„ ì€ íšŒì‚¬ì˜ ê²½ìŸë ¥ì„ í–¥ìƒì‹œí‚¤ëŠ” ë° ë„ì›€ì„ ì¤€ë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jaeeun_kim', '±èÈ£¼®À¯', 'Á÷Àå ³» ¾÷¹« ÇÁ·Î¼¼½º °³¼±'
+    , 'Á÷Àå ³» ¾÷¹« ÇÁ·Î¼¼½º °³¼±Àº ¾÷¹« È¿À²¼ºÀ» Çâ»ó½ÃÅ°´Â µ¥ Áß¿äÇÏ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô È¸»ç ³» ¾÷¹« ÇÁ·Î¼¼½º¸¦ °³¼±ÇÏ±â À§ÇÑ ³ë·Â°ú Àü·«À» °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '¾÷¹« ÇÁ·Î¼¼½º °³¼±Àº È¸»çÀÇ °æÀï·ÂÀ» Çâ»ó½ÃÅ°´Â µ¥ µµ¿òÀ» ÁØ´Ù.'
     , SYSDATE-5, SYSDATE-4, 104, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'dohyun_lee', 'ULXì¸í„°ë‚´ì…”ë„', 'ì§ìž¥ì—ì„œì˜ ìœ ìš©í•œ ë„êµ¬ì™€ ì†Œí”„íŠ¸ì›¨ì–´'
-    , 'ì§ìž¥ì—ì„œ ìœ ìš©í•œ ë„êµ¬ì™€ ì†Œí”„íŠ¸ì›¨ì–´ëŠ” ì—…ë¬´ë¥¼ ë³´ë‹¤ íš¨ê³¼ì ìœ¼ë¡œ ìˆ˜í–‰í•˜ëŠ” ë° ë„ì›€ì„ ì¤€ë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–¤ ë„êµ¬ì™€ ì†Œí”„íŠ¸ì›¨ì–´ê°€ ë‚˜ì˜ ì—…ë¬´ í¼í¬ë¨¼ìŠ¤ë¥¼ í–¥ìƒì‹œí‚¤ëŠ” ë° ì–´ë–¤ ì—­í• ì„ í–ˆëŠ”ì§€ì— ëŒ€í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ìœ ìš©í•œ ë„êµ¬ì™€ ì†Œí”„íŠ¸ì›¨ì–´ëŠ” ìƒì‚°ì„±ì„ ë†’ì¸ë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'dohyun_lee', 'ULXÀÎÅÍ³»¼Å³Î', 'Á÷Àå¿¡¼­ÀÇ À¯¿ëÇÑ µµ±¸¿Í ¼ÒÇÁÆ®¿þ¾î'
+    , 'Á÷Àå¿¡¼­ À¯¿ëÇÑ µµ±¸¿Í ¼ÒÇÁÆ®¿þ¾î´Â ¾÷¹«¸¦ º¸´Ù È¿°úÀûÀ¸·Î ¼öÇàÇÏ´Â µ¥ µµ¿òÀ» ÁØ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶² µµ±¸¿Í ¼ÒÇÁÆ®¿þ¾î°¡ ³ªÀÇ ¾÷¹« ÆÛÆ÷¸Õ½º¸¦ Çâ»ó½ÃÅ°´Â µ¥ ¾î¶² ¿ªÇÒÀ» Çß´ÂÁö¿¡ ´ëÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    'À¯¿ëÇÑ µµ±¸¿Í ¼ÒÇÁÆ®¿þ¾î´Â »ý»ê¼ºÀ» ³ôÀÎ´Ù.'
     , SYSDATE-5, SYSDATE-5, 105, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jiwon_kim', 'ê¹€í˜¸ì„ìœ ', 'ì§ìž¥ì—ì„œì˜ ìƒˆë¡œìš´ ê¸°ìˆ  ë„ìž…ê³¼ ì ì‘'
-    , 'ì§ìž¥ì—ì„œ ìƒˆë¡œìš´ ê¸°ìˆ ì€ í•­ìƒ ë„ìž…ë˜ê³  ìžˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ìƒˆë¡œìš´ ê¸°ìˆ ì´ íšŒì‚¬ì— ë„ìž…ë˜ì—ˆì„ ë•Œ ì–´ë–»ê²Œ ì ì‘í•˜ê³  í™œìš©í•˜ëŠ” ë°©ë²•ì„ ì°¾ì•„ëƒˆëŠ”ì§€ì— ëŒ€í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ê¸°ìˆ  ì ì‘ì€ ì—…ë¬´ íš¨ìœ¨ì„±ì„ í–¥ìƒì‹œí‚¨ë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jiwon_kim', '±èÈ£¼®À¯', 'Á÷Àå¿¡¼­ÀÇ »õ·Î¿î ±â¼ú µµÀÔ°ú ÀûÀÀ'
+    , 'Á÷Àå¿¡¼­ »õ·Î¿î ±â¼úÀº Ç×»ó µµÀÔµÇ°í ÀÖ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô »õ·Î¿î ±â¼úÀÌ È¸»ç¿¡ µµÀÔµÇ¾úÀ» ¶§ ¾î¶»°Ô ÀûÀÀÇÏ°í È°¿ëÇÏ´Â ¹æ¹ýÀ» Ã£¾Æ³Â´ÂÁö¿¡ ´ëÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '±â¼ú ÀûÀÀÀº ¾÷¹« È¿À²¼ºÀ» Çâ»ó½ÃÅ²´Ù.'
     , SYSDATE-5, SYSDATE-5, 106, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'seoyoon_lee', 'ì‚¬ëŒ€í•´ìƒ', 'ì§ìž¥ ë‚´ í”„ë¡œì íŠ¸ ê´€ë¦¬ì™€ ì„±ê³µ ìš”ì¸'
-    , 'ì§ìž¥ ë‚´ í”„ë¡œì íŠ¸ ê´€ë¦¬ëŠ” ì„±ê³µì˜ í•µì‹¬ì´ë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ í”„ë¡œì íŠ¸ë¥¼ íš¨ê³¼ì ìœ¼ë¡œ ê´€ë¦¬í•˜ê³ , ì–´ë–¤ ì„±ê³µ ìš”ì¸ì„ ê³ ë ¤í•˜ì—¬ í”„ë¡œì íŠ¸ë¥¼ ì„±ê³µì ìœ¼ë¡œ ì™„ë£Œí–ˆëŠ”ì§€ì— ëŒ€í•œ ì´ì•¼ê¸°ë¥¼ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'í”„ë¡œì íŠ¸ ê´€ë¦¬ëŠ” ì—…ì ì„ ì¸ì •ë°›ëŠ” ë° í•„ìˆ˜ì ì´ë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'seoyoon_lee', '»ç´ëÇØ»ó', 'Á÷Àå ³» ÇÁ·ÎÁ§Æ® °ü¸®¿Í ¼º°ø ¿äÀÎ'
+    , 'Á÷Àå ³» ÇÁ·ÎÁ§Æ® °ü¸®´Â ¼º°øÀÇ ÇÙ½ÉÀÌ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÇÁ·ÎÁ§Æ®¸¦ È¿°úÀûÀ¸·Î °ü¸®ÇÏ°í, ¾î¶² ¼º°ø ¿äÀÎÀ» °í·ÁÇÏ¿© ÇÁ·ÎÁ§Æ®¸¦ ¼º°øÀûÀ¸·Î ¿Ï·áÇß´ÂÁö¿¡ ´ëÇÑ ÀÌ¾ß±â¸¦ ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    'ÇÁ·ÎÁ§Æ® °ü¸®´Â ¾÷ÀûÀ» ÀÎÁ¤¹Þ´Â µ¥ ÇÊ¼öÀûÀÌ´Ù.'
     , SYSDATE-5, SYSDATE-5, 107, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jaeeun_park', 'DDí•˜ì´í…', 'ì§ìž¥ ë‚´ ì´ìŠˆì™€ ë¬¸ì œ í•´ê²° ì „ëžµ'
-    , 'ì§ìž¥ ë‚´ ì´ìŠˆì™€ ë¬¸ì œëŠ” í•­ìƒ ë°œìƒí•œë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì´ìŠˆì™€ ë¬¸ì œë¥¼ ì‹ë³„í•˜ê³ , ì–´ë–»ê²Œ í•´ê²° ì „ëžµì„ ê°œë°œí•˜ê³  ì‹¤í–‰í–ˆëŠ”ì§€ì— ëŒ€í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ë¬¸ì œ í•´ê²°ì€ ì§ìž¥ ë‚´ ì—…ë¬´ íš¨ìœ¨ì„±ì„ í–¥ìƒì‹œí‚¨ë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jaeeun_park', 'DDÇÏÀÌÅØ', 'Á÷Àå ³» ÀÌ½´¿Í ¹®Á¦ ÇØ°á Àü·«'
+    , 'Á÷Àå ³» ÀÌ½´¿Í ¹®Á¦´Â Ç×»ó ¹ß»ýÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÀÌ½´¿Í ¹®Á¦¸¦ ½Äº°ÇÏ°í, ¾î¶»°Ô ÇØ°á Àü·«À» °³¹ßÇÏ°í ½ÇÇàÇß´ÂÁö¿¡ ´ëÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '¹®Á¦ ÇØ°áÀº Á÷Àå ³» ¾÷¹« È¿À²¼ºÀ» Çâ»ó½ÃÅ²´Ù.'
     , SYSDATE-4, SYSDATE-4, 108, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'subin_jung', 'SKU', 'ì§ìž¥ì—ì„œì˜ í”„ë¡œíŽ˜ì…”ë„ë¦¬ì¦˜ê³¼ ìœ¤ë¦¬'
-    , 'ì§ìž¥ì—ì„œ í”„ë¡œíŽ˜ì…”ë„ë¦¬ì¦˜ê³¼ ìœ¤ë¦¬ëŠ” í•­ìƒ ì¤‘ìš”í•˜ë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì§ìž¥ ë‚´ì—ì„œ í”„ë¡œíŽ˜ì…”ë„ë¦¬ì¦˜ê³¼ ìœ¤ë¦¬ì  í–‰ë™ì„ ì§€í‚¤ë©°, ì–´ë–»ê²Œ ë‚˜ì˜ ëª¨ë²”ì ì¸ í–‰ë™ì´ íšŒì‚¬ì— ê¸ì •ì ì¸ ì˜í–¥ì„ ë¯¸ì³¤ëŠ”ì§€ì— ëŒ€í•œ ê²½í—˜ì„ ê³µìœ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'í”„ë¡œíŽ˜ì…”ë„ë¦¬ì¦˜ê³¼ ìœ¤ë¦¬ëŠ” ì¡°ì§ì˜ ì‹ ë¢°ë¥¼ êµ¬ì¶•í•œë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'subin_jung', 'SKU', 'Á÷Àå¿¡¼­ÀÇ ÇÁ·ÎÆä¼Å³Î¸®Áò°ú À±¸®'
+    , 'Á÷Àå¿¡¼­ ÇÁ·ÎÆä¼Å³Î¸®Áò°ú À±¸®´Â Ç×»ó Áß¿äÇÏ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô Á÷Àå ³»¿¡¼­ ÇÁ·ÎÆä¼Å³Î¸®Áò°ú À±¸®Àû Çàµ¿À» ÁöÅ°¸ç, ¾î¶»°Ô ³ªÀÇ ¸ð¹üÀûÀÎ Çàµ¿ÀÌ È¸»ç¿¡ ±àÁ¤ÀûÀÎ ¿µÇâÀ» ¹ÌÃÆ´ÂÁö¿¡ ´ëÇÑ °æÇèÀ» °øÀ¯ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    'ÇÁ·ÎÆä¼Å³Î¸®Áò°ú À±¸®´Â Á¶Á÷ÀÇ ½Å·Ú¸¦ ±¸ÃàÇÑ´Ù.'
     , SYSDATE-4, SYSDATE-4, 109, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jiwoo_kim', 'ì‚¼ì„±SKS', 'ì§ìž¥ì—ì„œì˜ ìƒˆë¡œìš´ ë„ì „ê³¼ ëª©í‘œ'
-    , 'ì§ìž¥ì—ì„œëŠ” í•­ìƒ ìƒˆë¡œìš´ ë„ì „ê³¼ ëª©í‘œê°€ ìžˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ì–´ë–»ê²Œ ì´ëŸ¬í•œ ë„ì „ì„ ë°›ì•„ë“¤ì´ê³ , ì–´ë–»ê²Œ ë‚˜ì˜ ëª©í‘œë¥¼ ë‹¬ì„±í•˜ê¸° ìœ„í•´ ë…¸ë ¥í•˜ê³  ê³„íšì„ ì„¸ì› ëŠ”ì§€ì— ëŒ€í•œ ì´ì•¼ê¸°ë¥¼ í•˜ê³ ìž í•œë‹¤.'||CHR(13)||CHR(10)||
-    'ìƒˆë¡œìš´ ë„ì „ì€ ì„±ìž¥ì˜ ê¸°íšŒë¥¼ ì œê³µí•œë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jiwoo_kim', '»ï¼ºSKS', 'Á÷Àå¿¡¼­ÀÇ »õ·Î¿î µµÀü°ú ¸ñÇ¥'
+    , 'Á÷Àå¿¡¼­´Â Ç×»ó »õ·Î¿î µµÀü°ú ¸ñÇ¥°¡ ÀÖ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ¾î¶»°Ô ÀÌ·¯ÇÑ µµÀüÀ» ¹Þ¾ÆµéÀÌ°í, ¾î¶»°Ô ³ªÀÇ ¸ñÇ¥¸¦ ´Þ¼ºÇÏ±â À§ÇØ ³ë·ÂÇÏ°í °èÈ¹À» ¼¼¿ü´ÂÁö¿¡ ´ëÇÑ ÀÌ¾ß±â¸¦ ÇÏ°íÀÚ ÇÑ´Ù.'||CHR(13)||CHR(10)||
+    '»õ·Î¿î µµÀüÀº ¼ºÀåÀÇ ±âÈ¸¸¦ Á¦°øÇÑ´Ù.'
     , SYSDATE-3, SYSDATE-3, 110, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jenny', 'KDí•œêµ­ì¡°ì„ í•´ì–‘', 'í•˜ë£¨ ì¼ê³¼ì˜ ë, ì½ì€ ì±…ì—ì„œ ì–»ì€ ê¹¨ë‹¬ìŒ'
-    , 'ì˜¤ëŠ˜ì€ ë°”ìœ í•˜ë£¨ë¥¼ ë³´ëƒˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ì§‘ì— ëŒì•„ì™€ì„œ ì±…ì„ ì½ë‹¤ ë³´ë©´ ê°‘ìžê¸° ìƒˆë¡œìš´ ê¹¨ë‹¬ìŒì„ ì–»ê²Œ ë©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë§ˆì¹˜ ìž‘ê°€ì™€ ëŒ€í™”í•˜ëŠ” ë“¯í•œ ëŠë‚Œì´ ë“¤ì£ .'||CHR(13)||CHR(10)||
-    'ì±…ì€ í•­ìƒ ìƒˆë¡œìš´ ì„¸ê³„ë¡œ ì•ˆë‚´í•´ì¤ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jenny', 'KDÇÑ±¹Á¶¼±ÇØ¾ç', 'ÇÏ·ç ÀÏ°úÀÇ ³¡, ÀÐÀº Ã¥¿¡¼­ ¾òÀº ±ú´ÞÀ½'
+    , '¿À´ÃÀº ¹Ù»Û ÇÏ·ç¸¦ º¸³Â½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    'Áý¿¡ µ¹¾Æ¿Í¼­ Ã¥À» ÀÐ´Ù º¸¸é °©ÀÚ±â »õ·Î¿î ±ú´ÞÀ½À» ¾ò°Ô µË´Ï´Ù.'||CHR(13)||CHR(10)||
+    '¸¶Ä¡ ÀÛ°¡¿Í ´ëÈ­ÇÏ´Â µíÇÑ ´À³¦ÀÌ µéÁÒ.'||CHR(13)||CHR(10)||
+    'Ã¥Àº Ç×»ó »õ·Î¿î ¼¼°è·Î ¾È³»ÇØÁÝ´Ï´Ù.'
     , SYSDATE-3, SYSDATE-3, 151, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'smilemin', 'í•œí•˜ìƒëª…', 'ì²« ë²ˆì§¸ í•´ì™¸ ì—¬í–‰ì—ì„œ ëŠë‚€ ë¬¸í™”ì˜ ë‹¤ì–‘ì„±'
-    , 'ì²« ë²ˆì§¸ í•´ì™¸ ì—¬í–‰ì„ ë– ë‚˜ë´¤ìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‹¤ë¥¸ ë‚˜ë¼ì—ì„œ ë³´ëŠ” í’ê²½ê³¼ ë§Œë‚˜ëŠ” ì‚¬ëžŒë“¤ì˜ ë¬¸í™”ëŠ” ì •ë§ ë†€ë¼ìš´ ê²½í—˜ì´ì—ˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ì„¸ê³„ëŠ” ë„ˆë¬´ë‚˜ë„ ë‹¤ì–‘í•˜ê³  ì•„ë¦„ë‹¤ì›Œìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'smilemin', 'ÇÑÇÏ»ý¸í', 'Ã¹ ¹øÂ° ÇØ¿Ü ¿©Çà¿¡¼­ ´À³¤ ¹®È­ÀÇ ´Ù¾ç¼º'
+    , 'Ã¹ ¹øÂ° ÇØ¿Ü ¿©ÇàÀ» ¶°³ªºÃ½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '´Ù¸¥ ³ª¶ó¿¡¼­ º¸´Â Ç³°æ°ú ¸¸³ª´Â »ç¶÷µéÀÇ ¹®È­´Â Á¤¸» ³î¶ó¿î °æÇèÀÌ¾ú½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '¼¼°è´Â ³Ê¹«³ªµµ ´Ù¾çÇÏ°í ¾Æ¸§´Ù¿ö¿ä.'
     , SYSDATE-3, SYSDATE-3, 152, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'minjae_park', 'TJì œì¼ì œë‹¹', 'ì¢‹ì•„í•˜ëŠ” ë…¸ëž˜ë¡œ ê°ì •ì„ í‘œí˜„í•˜ëŠ” ìŒì•… ì„ ë¬¼'
-    , 'ì¢‹ì•„í•˜ëŠ” ë…¸ëž˜ë¡œ ê°ì •ì„ í‘œí˜„í•˜ëŠ” ìŒì•… ì„ ë¬¼ì„ ë°›ì•˜ìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ìŒì•…ì€ ë§ˆìŒì„ í‘œí˜„í•˜ê³  ê³µìœ í•˜ëŠ” ê°•ë ¥í•œ ë°©ë²• ì¤‘ í•˜ë‚˜ì—ìš”.'||CHR(13)||CHR(10)||
-    'ì´ ì„ ë¬¼ì€ ì •ë§ë¡œ ë§ˆìŒì— ë“¤ì—ˆìŠµë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'minjae_park', 'TJÁ¦ÀÏÁ¦´ç', 'ÁÁ¾ÆÇÏ´Â ³ë·¡·Î °¨Á¤À» Ç¥ÇöÇÏ´Â À½¾Ç ¼±¹°'
+    , 'ÁÁ¾ÆÇÏ´Â ³ë·¡·Î °¨Á¤À» Ç¥ÇöÇÏ´Â À½¾Ç ¼±¹°À» ¹Þ¾Ò½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    'À½¾ÇÀº ¸¶À½À» Ç¥ÇöÇÏ°í °øÀ¯ÇÏ´Â °­·ÂÇÑ ¹æ¹ý Áß ÇÏ³ª¿¡¿ä.'||CHR(13)||CHR(10)||
+    'ÀÌ ¼±¹°Àº Á¤¸»·Î ¸¶À½¿¡ µé¾ú½À´Ï´Ù.'
     , SYSDATE-3, SYSDATE-3, 153, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'hgd', 'ë§ˆì¹´ì˜¤ë±…í¬', 'ìš”ë¦¬ ëŒ€íšŒì—ì„œì˜ ë„ì „ê³¼ ì„±ìž¥'
-    , 'ìš”ë¦¬ ëŒ€íšŒì— ì°¸ê°€í•´ë³´ì•˜ìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ê²½ìŸì€ ì–¸ì œë‚˜ ë„ì „ê³¼ ì„±ìž¥ì˜ ê¸°íšŒìž…ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ìƒˆë¡œìš´ ë ˆì‹œí”¼ì™€ ê¸°ìˆ ì„ ë°°ìš°ë©´ì„œ ìžì‹ ê°ì„ í‚¤ìš¸ ìˆ˜ ìžˆì—ˆìŠµë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'hgd', '¸¶Ä«¿À¹ðÅ©', '¿ä¸® ´ëÈ¸¿¡¼­ÀÇ µµÀü°ú ¼ºÀå'
+    , '¿ä¸® ´ëÈ¸¿¡ Âü°¡ÇØº¸¾Ò½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '°æÀïÀº ¾ðÁ¦³ª µµÀü°ú ¼ºÀåÀÇ ±âÈ¸ÀÔ´Ï´Ù.'||CHR(13)||CHR(10)||
+    '»õ·Î¿î ·¹½ÃÇÇ¿Í ±â¼úÀ» ¹è¿ì¸é¼­ ÀÚ½Å°¨À» Å°¿ï ¼ö ÀÖ¾ú½À´Ï´Ù.'
     , SYSDATE-3, SYSDATE-3, 154, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'nayeong', 'BMKê¸ˆìœµì§€ì£¼', 'ê°€ìž¥ ê°€ê¹Œìš´ ì‚°ì—ì„œì˜ ìº í•‘ ì—¬í–‰'
-    , 'ê°€ìž¥ ê°€ê¹Œìš´ ì‚°ìœ¼ë¡œ ìº í•‘ ì—¬í–‰ì„ ë– ë‚¬ìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ìžì—° ì†ì—ì„œì˜ ìƒí™œì€ ì •ë§ë¡œ ê°„ë‹¨í•˜ì§€ë§Œ íŠ¹ë³„í•œ ê²½í—˜ì´ì—ˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë°¤í•˜ëŠ˜ì˜ ë³„ê³¼ ëª¨ë‹¥ë¶ˆ ì˜†ì—ì„œì˜ ì´ì•¼ê¸°ëŠ” ìžŠì§€ ëª»í•  ì¶”ì–µì´ì—ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'nayeong', 'BMK±ÝÀ¶ÁöÁÖ', '°¡Àå °¡±î¿î »ê¿¡¼­ÀÇ Ä·ÇÎ ¿©Çà'
+    , '°¡Àå °¡±î¿î »êÀ¸·Î Ä·ÇÎ ¿©ÇàÀ» ¶°³µ½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    'ÀÚ¿¬ ¼Ó¿¡¼­ÀÇ »ýÈ°Àº Á¤¸»·Î °£´ÜÇÏÁö¸¸ Æ¯º°ÇÑ °æÇèÀÌ¾ú½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '¹ãÇÏ´ÃÀÇ º°°ú ¸ð´ÚºÒ ¿·¿¡¼­ÀÇ ÀÌ¾ß±â´Â ÀØÁö ¸øÇÒ Ãß¾ïÀÌ¿¡¿ä.'
     , SYSDATE-3, SYSDATE-3, 155, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'minsu', 'ì „ìš°ê±´ì„¤', 'ìƒˆë¡œìš´ ì§ìž¥ì—ì„œì˜ ì²«ë‚ ê³¼ ì ì‘'
-    , 'ìƒˆë¡œìš´ ì§ìž¥ì—ì„œì˜ ì²«ë‚ ì€ í•­ìƒ ê¸´ìž¥ë˜ì£ .'||CHR(13)||CHR(10)||
-    'ìƒˆë¡œìš´ ë™ë£Œë“¤ì„ ë§Œë‚˜ê³  ì—…ë¬´ í™˜ê²½ì— ì ì‘í•˜ëŠ” ê³¼ì •ì€ ì¡°ê¸ˆ íž˜ë“¤ì§€ë§Œ, ë™ì‹œì— ë¯¸ëž˜ì— ëŒ€í•œ ê¸°ëŒ€ê°ìœ¼ë¡œ ê°€ë“ ì°¨ ìžˆì–´ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'minsu', 'Àü¿ì°Ç¼³', '»õ·Î¿î Á÷Àå¿¡¼­ÀÇ Ã¹³¯°ú ÀûÀÀ'
+    , '»õ·Î¿î Á÷Àå¿¡¼­ÀÇ Ã¹³¯Àº Ç×»ó ±äÀåµÇÁÒ.'||CHR(13)||CHR(10)||
+    '»õ·Î¿î µ¿·áµéÀ» ¸¸³ª°í ¾÷¹« È¯°æ¿¡ ÀûÀÀÇÏ´Â °úÁ¤Àº Á¶±Ý ÈûµéÁö¸¸, µ¿½Ã¿¡ ¹Ì·¡¿¡ ´ëÇÑ ±â´ë°¨À¸·Î °¡µæ Â÷ ÀÖ¾î¿ä.'
     , SYSDATE-1, SYSDATE-1, 156, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jw_choi', 'ë””ì—˜ENC', 'ë°”ë‹¤ì—ì„œì˜ ì„œí•‘ ì—¬í–‰ì—ì„œ ì–»ì€ ìš©ê¸°ì™€ ì¦ê±°ì›€'
-    , 'ë°”ë‹¤ì—ì„œì˜ ì„œí•‘ ì—¬í–‰ì€ ìš©ê¸°ë¥¼ ë‚´ì–´ë˜ì§€ê³  ìžì—°ê³¼ ì¡°í™”ë¥¼ ì´ë£¨ëŠ” ê²½í—˜ì´ì—ˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'íŒŒë„ë¥¼ íƒ€ë©° ì–»ëŠ” ê·¸ ì¦ê±°ì›€ì€ ì´ ì„¸ìƒ ì–´ë–¤ ê²ƒê³¼ë„ ë¹„êµí•  ìˆ˜ ì—†ì—ˆìŠµë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jw_choi', 'µð¿¤ENC', '¹Ù´Ù¿¡¼­ÀÇ ¼­ÇÎ ¿©Çà¿¡¼­ ¾òÀº ¿ë±â¿Í Áñ°Å¿ò'
+    , '¹Ù´Ù¿¡¼­ÀÇ ¼­ÇÎ ¿©ÇàÀº ¿ë±â¸¦ ³»¾î´øÁö°í ÀÚ¿¬°ú Á¶È­¸¦ ÀÌ·ç´Â °æÇèÀÌ¾ú½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    'ÆÄµµ¸¦ Å¸¸ç ¾ò´Â ±× Áñ°Å¿òÀº ÀÌ ¼¼»ó ¾î¶² °Í°úµµ ºñ±³ÇÒ ¼ö ¾ø¾ú½À´Ï´Ù.'
     , SYSDATE-1, SYSDATE, 157, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'hwoo', 'í˜¸ì„ í‹°ì•¤ì”¨', 'ë‚˜ë§Œì˜ ì •ì› ê°€ê¾¸ê¸° í”„ë¡œì íŠ¸'
-    , 'ì •ì› ê°€ê¾¸ê¸° í”„ë¡œì íŠ¸ë¥¼ ì‹œìž‘í–ˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ì‹ë¬¼ì„ í‚¤ìš°ë©´ì„œ ìžì—°ì˜ ì•„ë¦„ë‹¤ì›€ì„ ëŠë¼ê³ , ë…¸ë ¥ì˜ ê²°ê³¼ë¥¼ ë³¼ ë•Œ ë¿Œë“¯í•¨ì„ ëŠë‚ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ì •ì›ì€ ë‚˜ë§Œì˜ ìž‘ì€ ë‚™ì›ì´ì—ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'hwoo', 'È£¼±Æ¼¾Ø¾¾', '³ª¸¸ÀÇ Á¤¿ø °¡²Ù±â ÇÁ·ÎÁ§Æ®'
+    , 'Á¤¿ø °¡²Ù±â ÇÁ·ÎÁ§Æ®¸¦ ½ÃÀÛÇß½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '½Ä¹°À» Å°¿ì¸é¼­ ÀÚ¿¬ÀÇ ¾Æ¸§´Ù¿òÀ» ´À³¢°í, ³ë·ÂÀÇ °á°ú¸¦ º¼ ¶§ »ÑµíÇÔÀ» ´À³§´Ï´Ù.'||CHR(13)||CHR(10)||
+    'Á¤¿øÀº ³ª¸¸ÀÇ ÀÛÀº ³«¿øÀÌ¿¡¿ä.'
     , SYSDATE-1, SYSDATE-1, 158, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'eunju_song', 'SHê°€ìŠ¤', 'ì˜í™” ê°ìƒì„ í†µí•´ ë‹¤ë¥¸ ë¬¸í™”ì™€ ì´í•´'
-    , 'ì˜í™” ê°ìƒì€ ë‹¤ë¥¸ ë¬¸í™”ì™€ ì‚¬ê³  ë°©ì‹ì„ ì´í•´í•˜ëŠ” ë° í° ë„ì›€ì´ ë©ë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ë‹¤ì–‘í•œ ì˜í™”ë¥¼ ë³´ë©° ì„¸ê³„ë¥¼ ë” í­ë„“ê²Œ ë³´ê³  ì‹¶ì–´ì ¸ìš”.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'eunju_song', 'SH°¡½º', '¿µÈ­ °¨»óÀ» ÅëÇØ ´Ù¸¥ ¹®È­¿Í ÀÌÇØ'
+    , '¿µÈ­ °¨»óÀº ´Ù¸¥ ¹®È­¿Í »ç°í ¹æ½ÄÀ» ÀÌÇØÇÏ´Â µ¥ Å« µµ¿òÀÌ µË´Ï´Ù.'||CHR(13)||CHR(10)||
+    '´Ù¾çÇÑ ¿µÈ­¸¦ º¸¸ç ¼¼°è¸¦ ´õ Æø³Ð°Ô º¸°í ½Í¾îÁ®¿ä.'
     , SYSDATE-1, SYSDATE-1, 159, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'cs_park', 'SanSungì—”ì§€ë‹ˆì–´ë§', 'ì¼ìƒ ì† ìž‘ì€ ê¸°ì¨, ëˆˆê½ƒì˜ ì•„ì¹¨'
-    , 'ì˜¤ëŠ˜ ì•„ì¹¨ì— ì°½ë°–ìœ¼ë¡œ ë³´ë‹ˆ ëˆˆì´ ë‚´ë¦¬ê³  ìžˆì—ˆìŠµë‹ˆë‹¤.'||CHR(13)||CHR(10)||
-    'ëˆˆê½ƒì´ ë‚´ë¦¬ëŠ” ì•„ì¹¨ì€ ì–¸ì œë‚˜ ê¸°ë¶„ì´ ì¢‹ì•„ì ¸ìš”.'||CHR(13)||CHR(10)||
-    'ìž‘ì€ ìˆœê°„ì˜ ê¸°ì¨ì´ ì¼ìƒì„ ë¹›ë‚˜ê²Œ ë§Œë“¤ì–´ì¤ë‹ˆë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'cs_park', 'SanSung¿£Áö´Ï¾î¸µ', 'ÀÏ»ó ¼Ó ÀÛÀº ±â»Ý, ´«²ÉÀÇ ¾ÆÄ§'
+    , '¿À´Ã ¾ÆÄ§¿¡ Ã¢¹ÛÀ¸·Î º¸´Ï ´«ÀÌ ³»¸®°í ÀÖ¾ú½À´Ï´Ù.'||CHR(13)||CHR(10)||
+    '´«²ÉÀÌ ³»¸®´Â ¾ÆÄ§Àº ¾ðÁ¦³ª ±âºÐÀÌ ÁÁ¾ÆÁ®¿ä.'||CHR(13)||CHR(10)||
+    'ÀÛÀº ¼ø°£ÀÇ ±â»ÝÀÌ ÀÏ»óÀ» ºû³ª°Ô ¸¸µé¾îÁÝ´Ï´Ù.'
     , SYSDATE-1, SYSDATE-1, 160, 0, 0); 
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
     , BOARD_MODIFY_DATE, PERSONAL_NUMBER, BOARD_LIKE_COUNT, BOARD_VIEWS)
-VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'ì‹¬ì„±ë§¨', 'ì‹¬ì„±ì „ìž', 'ì§ìž¥ì—ì„œì˜ êµí›ˆ: ë°°ìš´ ê²ƒë“¤'
-    , 'ì²« ì§ìž¥ì€ í•­ìƒ íŠ¹ë³„í•˜ë‹¤.'||CHR(13)||CHR(10)||
-    'ë‚˜ëŠ” ëŒ€í•™ì„ ì¡¸ì—…í•˜ê³  ì²« ì§ìž¥ì„ ì‹œìž‘í•œ í›„ì— ì–¼ë§ˆë‚˜ ë§Žì€ ê²ƒì„ ë°°ì› ëŠ”ì§€ ë†€ëžë‹¤.'||CHR(13)||CHR(10)||
-    'ë¬´ì—‡ë³´ë‹¤ë„, ì—…ë¬´ ìœ ê²½í—˜ì´ ë¶€ì¡±í•œ ìƒí™©ì—ì„œ ì–´ë–»ê²Œ ë™ë£Œë“¤ê³¼ í˜‘ë ¥í•˜ê³  ë¬¸ì œë¥¼ í•´ê²°í•˜ëŠ” ëŠ¥ë ¥ì„ í‚¤ì›Œë‚˜ê°”ë‹¤.'||CHR(13)||CHR(10)||
-    'ë˜í•œ, ìƒì‚¬ì™€ì˜ ì›í™œí•œ ì»¤ë®¤ë‹ˆì¼€ì´ì…˜ê³¼ ì—…ë¬´ ê´€ë¦¬ì˜ ì¤‘ìš”ì„±ì„ ê¹¨ë‹¬ì•˜ë‹¤.'||CHR(13)||CHR(10)||
-    'ì´ëŸ¬í•œ êµí›ˆë“¤ì€ ë‚˜ì˜ ì§ìž¥ìƒí™œì„ í’ìš”ë¡­ê²Œ ë§Œë“¤ì–´ì£¼ì—ˆê³ , ì•žìœ¼ë¡œì˜ ê²½ë ¥ì— í° ì˜í–¥ì„ ë¯¸ì¹  ê²ƒì´ë‹¤.'
+VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '½É¼º¸Ç', '½É¼ºÀüÀÚ', 'Á÷Àå¿¡¼­ÀÇ ±³ÈÆ: ¹è¿î °Íµé'
+    , 'Ã¹ Á÷ÀåÀº Ç×»ó Æ¯º°ÇÏ´Ù.'||CHR(13)||CHR(10)||
+    '³ª´Â ´ëÇÐÀ» Á¹¾÷ÇÏ°í Ã¹ Á÷ÀåÀ» ½ÃÀÛÇÑ ÈÄ¿¡ ¾ó¸¶³ª ¸¹Àº °ÍÀ» ¹è¿ü´ÂÁö ³î¶ú´Ù.'||CHR(13)||CHR(10)||
+    '¹«¾ùº¸´Ùµµ, ¾÷¹« À¯°æÇèÀÌ ºÎÁ·ÇÑ »óÈ²¿¡¼­ ¾î¶»°Ô µ¿·áµé°ú Çù·ÂÇÏ°í ¹®Á¦¸¦ ÇØ°áÇÏ´Â ´É·ÂÀ» Å°¿ö³ª°¬´Ù.'||CHR(13)||CHR(10)||
+    '¶ÇÇÑ, »ó»ç¿ÍÀÇ ¿øÈ°ÇÑ Ä¿¹Â´ÏÄÉÀÌ¼Ç°ú ¾÷¹« °ü¸®ÀÇ Áß¿ä¼ºÀ» ±ú´Þ¾Ò´Ù.'||CHR(13)||CHR(10)||
+    'ÀÌ·¯ÇÑ ±³ÈÆµéÀº ³ªÀÇ Á÷Àå»ýÈ°À» Ç³¿ä·Ó°Ô ¸¸µé¾îÁÖ¾ú°í, ¾ÕÀ¸·ÎÀÇ °æ·Â¿¡ Å« ¿µÇâÀ» ¹ÌÄ¥ °ÍÀÌ´Ù.'
     , SYSDATE-1, SYSDATE, 1, 0, 0);
 
 
-COMMIT;
-
-
 UPDATE COMPANY
-SET COMPANY_PREFER = 'ê²½ì˜ì§„-ì›Œë¼ë²¨,40,1ê°œ ì´í•˜,25,ì´ˆëŒ€ì¡¸,20,3ë…„ì°¨ ì´í•˜,15';
+SET COMPANY_PREFER = '°æ¿µÁø-¿ö¶óº§,40,1°³ ÀÌÇÏ,25,ÃÊ´ëÁ¹,20,3³âÂ÷ ÀÌÇÏ,15';
 
 COMMIT;
