@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Sample</title>
+<title>JobHub : 인재 찾기</title>
 <style type="text/css">
 /* 공통 */
 a {

@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>JobHub: Main</title>
+<title>JobHub: Home</title>
 <script type="text/javascript" src="/JobHub/resources/js/Home.js"></script>
 <link rel="stylesheet" href="/JobHub/resources/css/Home.css" type="text/css">
 </head>

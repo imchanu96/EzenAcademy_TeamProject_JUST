@@ -6,7 +6,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>${boardDto.boardTitle} - JobHub</title>
+<%-- <title>${boardDto.boardTitle} - JobHub</title> --%>
+<title>JobHub : 게시글 조회</title>
 	<link href="/JobHub/resources/css/Board.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 	function deleteFnc() {

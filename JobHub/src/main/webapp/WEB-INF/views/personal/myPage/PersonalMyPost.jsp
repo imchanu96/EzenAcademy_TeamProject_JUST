@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>내 글 보기</title>
+<title>JobHub : 내 글 조회</title>
 
 <link rel="stylesheet" href="/JobHub/resources/css/PersonalMyPage.css" type="text/css">
 <link rel="stylesheet" href="/JobHub/resources/css/Board.css" type="text/css">

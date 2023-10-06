@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Review write</title>
+<title>JobHub : 리뷰 작성</title>
 <script type="text/javascript" src="/JobHub/resources/js/ReviewWrite.js"></script>
 <link rel="stylesheet" href="/JobHub/resources/css/ReviewWrite.css" type="text/css">
 <link rel="stylesheet" href="/JobHub/resources/css/ReviewNav.css" type="text/css">
@@ -123,7 +123,7 @@
 				</div>
 				<input id="rAvgResult" type="text" name="rAvg" style="display: none;">
 				<div id="buttonBox">
-					<button type="submit">등록</button>
+					<button type="submit">등록 완료</button>
 					<button type="button">취소</button>
 				</div>
 				<input type="hidden" name="perNo" value="${personalMemberDto.perNo}">

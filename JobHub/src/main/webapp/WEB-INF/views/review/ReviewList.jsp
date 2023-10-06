@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Review list</title>
+<title>JobHub : 리뷰 목록</title>
 <script src="https://kit.fontawesome.com/7021bbabcd.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="/JobHub/resources/js/ReviewList.js"></script>
 <link rel="stylesheet" href="/JobHub/resources/css/ReviewList.css" type="text/css">

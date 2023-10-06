@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>개인 회원가입</title>
+<title>JobHub : 회원가입</title>
 <script type="text/javascript">
    		
 		function submitCheckFnc(event) {

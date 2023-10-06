@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>이력서 보기</title>
+<title>JobHub : 이력서 보기</title>
 <link rel="stylesheet" href="/JobHub/resources/css/PersonalShowResume.css" type="text/css">
 <script type="text/javascript">
 	function updateResumeFnc(perNo) {

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>개인 로그인</title>
+<title>JobHub : 로그인</title>
 
 <script type="text/javascript">
 	

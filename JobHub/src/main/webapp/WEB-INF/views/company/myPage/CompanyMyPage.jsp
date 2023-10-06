@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>기업회원 마이페이지</title>
+<title>JobHub : 마이페이지</title>
 
 <link rel="stylesheet" href="/JobHub/resources/css/CompanyMyPage.css" type="text/css">
 </head>

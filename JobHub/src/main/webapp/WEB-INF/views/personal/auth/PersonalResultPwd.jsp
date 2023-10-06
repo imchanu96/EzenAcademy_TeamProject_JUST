@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>개인회원 - 비밀번호 찾기</title>
+<title>JobHub : 비밀번호 찾기</title>
 <style type="text/css">
 	#container {
 		margin: 0px auto;

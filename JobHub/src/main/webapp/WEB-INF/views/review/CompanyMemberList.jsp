@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>CompanyMemberList.jsp</title>
+<title>JobHub : 리뷰 조회</title>
 <script type="text/javascript" src="/JobHub/resources/js/CompanyMemberList.js"></script>
 <link rel="stylesheet" href="/JobHub/resources/css/CompanyMemberList.css" type="text/css">
 <link rel="stylesheet" href="/JobHub/resources/css/ReviewNav.css" type="text/css">
@@ -61,7 +61,7 @@
 						</div>
 						<div id="companySummary">
 							<div id="companyNameBox">
-								<a id="companyName" href="/JobHub/review/list.do?comNo=${companyMemberList.comNo}">
+								<a id="companyName" href="/JobHub/review/list.do?comNo=${companyMemberList.COMPANY_NUMBER}">
 									${companyMemberList.COMPANY_NAME} 
 								</a>
 							</div>

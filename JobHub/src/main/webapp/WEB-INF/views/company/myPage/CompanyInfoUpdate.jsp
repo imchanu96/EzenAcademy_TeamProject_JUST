@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>회사 주소 변경</title>
+<title>JobHub : 내 정보 수정</title>
 
 <script type="text/javascript">
 	function cancelBtnFnc() {

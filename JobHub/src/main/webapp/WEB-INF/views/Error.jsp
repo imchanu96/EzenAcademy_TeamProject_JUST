@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Error</title>
+<title>JobHub : Error</title>
 </head>
 <body>
 	에러가 발생하였습니다 :(<br>

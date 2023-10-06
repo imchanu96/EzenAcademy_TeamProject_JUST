@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>기업 선호도 변경</title>
+<title>JobHub : 기업 선호도 수정</title>
 <script type="text/javascript" src="/JobHub/resources/js/PersonalMyPage.js"></script>
 <script type="text/javascript">
 

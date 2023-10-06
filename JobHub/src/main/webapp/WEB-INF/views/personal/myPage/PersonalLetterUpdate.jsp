@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>이력서 보기</title>
+<title>JobHub : 자소서 수정</title>
 
 <style type="text/css">
 /* content */

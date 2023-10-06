@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>글쓰기 - JobHub</title>
+<title>JobHub : 게시글 작성</title>
 	<link href="/JobHub/resources/css/Board.css" rel="stylesheet" type="text/css">
 <script>
 	
