@@ -185,7 +185,7 @@
 						<div style="float: left;">
 					        <label for="volume">가중치: </label>
 					        <input type="range" id="volumeKeyword" name="volume"
-					        	onclick="clickRateFnc(this, 'keywordValue');" min="0" max="100" step="5" value="${fn:trim(preferList[1])}">
+					        	onclick="clickRateFnc(this, 'keywordValue');" min="0" max="100" step="5" value="${fn:trim(preferList[1])}"> 
 					    </div>
 						<input type="text" class="preferListRate" id="keywordValue" value="${fn:trim(preferList[1])}"
 								readonly="readonly" onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
@@ -250,17 +250,22 @@
 			</div>
 			<div id="checkBoxModal">
 				<div id="salModal">
-					<div>
+					<div class="keywordTitle">
 						<span style="width: 100px; margin: auto;">키워드</span>
 					</div>
-					<input class="keywordBtn" type="checkbox" value="급여" onclick="addKeywordValueFnc()">
-					<input class="keywordBtn" type="checkbox" value="복지" onclick="addKeywordValueFnc()">
-					<input class="keywordBtn" type="checkbox" value="근무환경" onclick="addKeywordValueFnc()">
-					<input class="keywordBtn" type="checkbox" value="경영진" onclick="addKeywordValueFnc()">
-					<input class="keywordBtn" type="checkbox" value="워라벨" onclick="addKeywordValueFnc()">
+					<input class="keywordBtn" type="checkbox" value="급여" id="salCheckBox" onclick="addKeywordValueFnc()">
+					<label for="salCheckBox" class="keywordLabel">급여</label>
+					<input class="keywordBtn" type="checkbox" value="복지" id="welCheckBox" onclick="addKeywordValueFnc()">
+					<label for="welCheckBox" class="keywordLabel">복지</label>
+					<input class="keywordBtn" type="checkbox" value="근무환경" id="envCheckBox" onclick="addKeywordValueFnc()">
+					<label for="envCheckBox" class="keywordLabel">근무환경</label>
+					<input class="keywordBtn" type="checkbox" value="경영진" id="bossCheckBox" onclick="addKeywordValueFnc()">
+					<label for="bossCheckBox" class="keywordLabel">경영진</label>
+					<input class="keywordBtn" type="checkbox" value="워라벨" id="balCheckBox" onclick="addKeywordValueFnc()">
+					<label for="balCheckBox" class="keywordLabel">워라벨</label>
 				</div>
 				<div id="licenseModal">
-					<div>
+					<div class="keywordTitle">
 						<span style="width: 100px; margin: auto;">자격증 수</span>
 					</div>
 					<input class="licenseBtn" type="button" value="1개 이하" onclick="addLicenseValueFnc(this)">
@@ -268,7 +273,7 @@
 					<input class="licenseBtn" type="button" value="3개 이상" onclick="addLicenseValueFnc(this)">
 				</div>
 				<div id="educationModal">
-					<div>
+					<div class="keywordTitle">
 						<span style="width: 100px; margin: auto;">최종 학력</span>
 					</div>
 					<input class="educationBtn" type="button" value="고졸" onclick="addEducationValueFnc(this)">
@@ -276,14 +281,16 @@
 					<input class="educationBtn" type="button" value="대졸" onclick="addEducationValueFnc(this)">
 				</div>
 				<div id="careerModal">
-					<div>
-						<span style="width: 100px; margin: auto;">최종 학력</span>
+					<div class="keywordTitle">
+						<span style="width: 100px; margin: auto;">총 경력</span>
 					</div>
 					<input class="careerBtn" type="button" value="3년차 이하" onclick="addCareerValueFnc(this)">
 					<input class="careerBtn" type="button" value="3~5년차" onclick="addCareerValueFnc(this)">
 					<input class="careerBtn" type="button" value="5년차 이상" onclick="addCareerValueFnc(this)">
 				</div>
+				<div id="modalCloseBtn">
 				<input type="button" value="확인" onclick="tempCloseFnc(this);">
+				</div>
 			</div>
 			<div id="perferSubmitBtn">
 				<input type="button" value="수정 완료" style="margin: 0 auto;"
