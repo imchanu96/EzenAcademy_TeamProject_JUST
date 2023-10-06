@@ -12,7 +12,7 @@
 <body>
 
 	<div id="navigation">
-		<c:if test="${sessionScope.permission != 5}">
+		<c:if test="${sessionScope.permission != 6}">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
 					<a href="http://localhost:9080/JobHub/review/companyMemberList.do">리뷰 조회</a>
@@ -22,11 +22,11 @@
 				</div>
 			</div>
 		</c:if>
-		<c:if test="${sessionScope.permission == 5}">
+		<c:if test="${sessionScope.permission == 6}">
 			<div id="smallMenuBox">
-				<div id="navComName">
-					${companyMemberDto.comName}
-				</div>
+<!-- 				<div id="navComName"> -->
+<%-- 					${companyMemberDto.comName} --%>
+<!-- 				</div> -->
 				<div class="smallMenuItem">
 					<a href="http://localhost:9080/JobHub/review/list.do?comNo=${companyMemberDto.comNo}">
 						리뷰 조회

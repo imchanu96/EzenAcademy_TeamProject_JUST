@@ -34,7 +34,9 @@
 						<span id="companyType">${companyMemberDto.comIntroduce}</span>
 					</div>
 					<div id="companyHomepageBox">
-						<a id="companyHomepage" href="http://${companyMemberDto.comHomepage}" target="_blank">${companyMemberDto.comHomepage}</a>
+						<a id="companyHomepage" href="http://${companyMemberDto.comHomepage}"
+							target="_blank">${companyMemberDto.comHomepage}
+						</a>
 					</div>
 				</div>
 				<div id="companyDetail">
