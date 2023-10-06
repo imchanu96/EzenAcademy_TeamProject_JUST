@@ -58,7 +58,7 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 		MailHandler sendMail = new MailHandler(javaMailSender);
 		sendMail.setSubject("[JobHub] 이메일 인증 메일입니다."); //메일제목
 		sendMail.setText(
-		        "<h1>JobHub 이메일 인증</h1>" +
+		        "<h1>JobHub 기업 회원 이메일 인증</h1>" +
 				"<br>JobHub에 오신것을 환영합니다!" +
 				"<br>아래 [이메일 인증 확인]을 눌러주세요." +
 				"<br><a href='http://localhost:9080/JobHub/company/registerEmail.do?comInChargeEmail=" 

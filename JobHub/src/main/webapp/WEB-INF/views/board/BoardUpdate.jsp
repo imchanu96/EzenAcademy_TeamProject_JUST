@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>게시글 수정</title>
+<title>JobHub : 게시글 수정</title>
 <link href="/JobHub/resources/css/Board.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript">
 	
@@ -20,10 +20,10 @@
 			var titleObj = document.getElementById("titleInput");
 			var titleErrorMsgObj = document.getElementById("titleErrorMsg")
 			
-			if (titleObj.value == "" || titleObj.value.length < 50) {
+			if (titleObj.value == "" || titleObj.value.length < 25) {
 				titleObj.setAttribute("style", "border: 1px solid #d7dce5");
 				titleErrorMsgObj.setAttribute("style", "display: none")
-			} else if (titleObj.value.length > 20){
+			} else if (titleObj.value.length > 24){
 				titleObj.setAttribute("style", "border: 2px solid red");
 				titleErrorMsgObj.setAttribute("style", "display: block")
 			}
@@ -39,7 +39,7 @@
 			var contentObj = document.getElementById("contentInput");
 			var contentErrorMsgObj = document.getElementById("contentErrorMsg")
 			
-			if (contentObj.value == "" || contentObj.value.length < 1000) {
+			if (contentObj.value == "" || contentObj.value.length < 1001) {
 				contentObj.setAttribute("style", "border: 1px solid #d7dce5");
 				contentErrorMsgObj.setAttribute("style", "display: none")
 			} else {
@@ -84,7 +84,7 @@
 					<input name="boardTitle" id="titleInput" type="text" 
 						value='${boardDto.boardTitle}' onfocus="titleFocusFnc();" onblur="titleBlurFnc();">
 					<div class="errorMsg" id="titleErrorMsg">
-						최대 20자 이내로 입력해주세요.
+						최대 24자 이내로 입력해주세요.
 					</div>
 				</div>
 
@@ -93,7 +93,7 @@
 						onfocus="contentFocusFnc();"
 						onblur="contentBlurFnc();">${boardDto.boardContent}</textarea>
 					<div class="errorMsg" id="contentErrorMsg">
-						최대 200자 이내로 입력해주세요.
+						최대 1000자 이내로 입력해주세요.
 					</div>
 				</div>
 				<div id="buttonBox">

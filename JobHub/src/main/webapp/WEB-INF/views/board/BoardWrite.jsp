@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>글쓰기 - JobHub</title>
+<title>JobHub : 게시글 작성</title>
 	<link href="/JobHub/resources/css/Board.css" rel="stylesheet" type="text/css">
 <script>
 	
@@ -15,21 +15,17 @@
 		
 			titleObj.setAttribute("style", "outline: 1px solid #94b5fc");
 	}
-
+	
 	function titleBlurFnc() {
 		var titleObj = document.getElementById("titleInput");
-		var titleErrorMsgObj = document.getElementById("titleErrorMsg");
+		var titleErrorMsgObj = document.getElementById("titleErrorMsg")
 		
-		if (titleObj.value == "" || titleObj.value.length < 50) {
+		if (titleObj.value == "" || titleObj.value.length < 25) {
 			titleObj.setAttribute("style", "border: 1px solid #d7dce5");
-			titleErrorMsgObj.setAttribute("style", "display: none");
-			
-			return true;
-		} else if (titleObj.value.length > 20){
+			titleErrorMsgObj.setAttribute("style", "display: none")
+		} else if (titleObj.value.length > 24){
 			titleObj.setAttribute("style", "border: 2px solid red");
-			titleErrorMsgObj.setAttribute("style", "display: block");
-			
-			return false;
+			titleErrorMsgObj.setAttribute("style", "display: block")
 		}
 	}
 	
@@ -38,21 +34,27 @@
 		
 			contentObj.setAttribute("style", "outline: 1px solid #94b5fc");
 	}
-	
+
 	function contentBlurFnc() {
 		var contentObj = document.getElementById("contentInput");
-		var contentErrorMsgObj = document.getElementById("contentErrorMsg");
+		var contentErrorMsgObj = document.getElementById("contentErrorMsg")
 		
-		if (contentObj.value == "" || contentObj.value.length < 1000) {
+		if (contentObj.value == "" || contentObj.value.length < 1001) {
 			contentObj.setAttribute("style", "border: 1px solid #d7dce5");
 			contentErrorMsgObj.setAttribute("style", "display: none");
-			
-			return true;
 		} else {
 			contentObj.setAttribute("style", "border: 2px solid red");
 			contentErrorMsgObj.setAttribute("style", "display: block");
-			
-			return false;
+		}
+	}
+	
+	function submitFnc() {
+		
+		if (contentObj.value == "" || titleObj.value == ""){
+			alert("모든 항목을 다 입력해주세요.");
+			event.preventDefault();
+		} else{
+			registerFnc();
 		}
 	}
 	
@@ -76,12 +78,6 @@
 		}
 	}
 	
-	function submitFnc() {
-		
-		if (titleBlurFnc() == true && contentBlurFnc() == true) {
-			registerFnc();
-		} 
-	}
 </script>
 
 </head>
@@ -100,10 +96,10 @@
 				<input type='hidden' name='boardTag' value='${personalMemberDto.perCom}'>
 				<div id="titleInputBox">
 					<input name="boardTitle" id="titleInput" type="text"
-						placeholder="제목을 입력해주세요(50자 이내)"
+						placeholder="제목을 입력해주세요(24자 이내)"
 						onfocus="titleFocusFnc();" onblur="titleBlurFnc();">
 					<div class="errorMsg" id="titleErrorMsg">
-						최대 50자 이내로 입력해주세요.
+						최대 24자 이내로 입력해주세요.
 					</div>
 				</div>
 

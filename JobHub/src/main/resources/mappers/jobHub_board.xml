@@ -20,6 +20,7 @@
 		<result column="PERSONAL_NUMBER" property="perNo" />
 	</resultMap>
 	
+	
 <!-- 	<resultMap type="commentDto" id="commentResultMap"> -->
 <!-- 		<id column="BOARD_COMMENT_NUMBER" property="comNo" /> -->
 <!-- 		<result column="BOARD_COMMENT_CONTENT" property="comContent" /> -->
