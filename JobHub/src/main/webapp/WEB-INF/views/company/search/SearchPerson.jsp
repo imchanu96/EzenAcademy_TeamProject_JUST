@@ -750,37 +750,48 @@ tr td {
 				</div>
 
 			</div>
-			<c:forEach var="personalInfo" items="${personalInfoList}">
-			<c:set var="eduArr" value="${fn:split(personalInfo.perHighestEdu, ',')}"/>
-			<c:set var="eduArrLength" value="${fn:length(eduArr)}"/> 
-					<div id="resultBox">
-						<div id="resultContent">
-							<div style="width: 150px; height: 140px; float: left;">
-								<div id="imgBox">
-									<img alt=""
-										src="https://www.fnnews.com/resource/media/image/2023/08/29/202308291128014614_l.jpg">
+			
+			<c:if test='${personalInfoList == null}'>
+									선호도가 설정되지 않아 없음
+			</c:if>
+			
+			<c:if test='${personalInfoList != null}'>
+				<c:forEach var="personalInfo" items="${personalInfoList}">
+					<c:set var="eduArr" value="${fn:split(personalInfo.perHighestEdu, ',')}"/>
+					<c:set var="eduArrLength" value="${fn:length(eduArr)}"/> 
+					
+						<div id="resultBox">
+							<div id="resultContent">
+								<div style="width: 150px; height: 140px; float: left;">
+									<div id="imgBox">
+										<img alt=""
+											src="https://www.fnnews.com/resource/media/image/2023/08/29/202308291128014614_l.jpg">
+									</div>
+									<div id="pNameBox">${personalInfo.perName}</div>
 								</div>
-								<div id="pNameBox">${personalInfo.perName}</div>
+								<div id="infoBox">
+									<div id="companyBox">현재 "${personalInfo.currentCompany}" 재직중</div>
+									<div id="highTestEduBox">최종 학력 :
+										<span id="HighestEdu">${eduArr[eduArrLength-1]}</span></div>
+									<div id="licenseCountBox">자격증 :
+										${personalInfo.perLicenseCount}개</div>
+								</div>
+								<c:if test='${personalInfo == 0}'>
+									<div id="" style="width: 100px; float: left; margin-right: 50px;">
+									적합도 ${personalInfo.recommendTotalRate}%</div>
+								</c:if>
+								
+								<div id="buttonBox" style="float: left;">
+									<input type="button" value="이력서 보기" class="button" id="resumeBtn"
+										onclick="openResumeFnc('${personalInfo.perNo}', '${personalInfo.perName}');">
+									<input type="button" value="자소서 보기" class="button" id="letterBtn"
+										onclick="openLetterFnc('${personalInfo.perNo}', '${personalInfo.perName}');">
+								</div>
+		
 							</div>
-							<div id="infoBox">
-								<div id="companyBox">현재 "${personalInfo.currentCompany}" 재직중</div>
-								<div id="highTestEduBox">최종 학력 :
-									<span id="HighestEdu">${eduArr[eduArrLength-1]}</span></div>
-								<div id="licenseCountBox">자격증 :
-									${personalInfo.perLicenseCount}개</div>
-							</div>
-							<div id="" style="width: 100px; float: left; margin-right: 50px;">
-								적합도 ${personalInfo.recommendTotalRate}%</div>
-							<div id="buttonBox" style="float: left;">
-								<input type="button" value="이력서 보기" class="button" id="resumeBtn"
-									onclick="openResumeFnc('${personalInfo.perNo}', '${personalInfo.perName}');">
-								<input type="button" value="자소서 보기" class="button" id="letterBtn"
-									onclick="openLetterFnc('${personalInfo.perNo}', '${personalInfo.perName}');">
-							</div>
-	
 						</div>
-					</div>
-			</c:forEach>
+				</c:forEach>
+			</c:if>
 		</div>
 		<!-- end of content -->
 	</div>
