@@ -181,9 +181,8 @@
 							<div class="companyInfoItemTitle">회사 설립일</div>
 
 							<div class="companyInfoItemContent">
-									value="${companyMemberDtoUpdate.comEstDate}">
-									value="<fmt:formatDate value="${sessionScope.companyMemberDto.comEstDate}" 
-									pattern="yyyy-MM-dd"/>">
+							<input type="date" name="comEstDate"
+								value="${companyMemberDtoUpdate.comEstDate}">
 									
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
