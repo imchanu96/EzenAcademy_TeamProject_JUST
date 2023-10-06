@@ -47,7 +47,7 @@
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comInChargeName"
-									placeholder="${companyMemberDtoUpdate.comInChargeName}">
+									value="${companyMemberDtoUpdate.comInChargeName}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
@@ -71,7 +71,7 @@
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comInChargeEmail"
-									placeholder="${companyMemberDtoUpdate.comInChargeEmail}">
+									value="${companyMemberDtoUpdate.comInChargeEmail}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
@@ -95,7 +95,7 @@
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comInChargePhoneNum"
-									placeholder="${companyMemberDtoUpdate.comInChargePhoneNum}">
+									value="${companyMemberDtoUpdate.comInChargePhoneNum}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
@@ -119,7 +119,7 @@
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comName"
-									placeholder="${companyMemberDtoUpdate.comName}">
+									value="${companyMemberDtoUpdate.comName}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
@@ -143,7 +143,7 @@
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comAdd"
-									placeholder="${companyMemberDtoUpdate.comAdd}">
+									value="${companyMemberDtoUpdate.comAdd}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
@@ -167,7 +167,7 @@
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comType"
-									placeholder="${companyMemberDtoUpdate.comType}">
+									value="${companyMemberDtoUpdate.comType}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
@@ -191,7 +191,7 @@
 
 							<div class="companyInfoItemContent">
 								<input type="date" name="comEstDate"
-									placeholder="${companyMemberDtoUpdate.comEstDate}">
+									value="${companyMemberDtoUpdate.comEstDate}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
@@ -215,7 +215,7 @@
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comHomepage"
-									placeholder="${companyMemberDtoUpdate.comHomepage}">
+									value="${companyMemberDtoUpdate.comHomepage}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
@@ -239,7 +239,7 @@
 
 							<div class="companyInfoItemContent">
 								<input type="text" name="comIntroduce"
-									placeholder="${companyMemberDtoUpdate.comIntroduce}">
+									value="${companyMemberDtoUpdate.comIntroduce}">
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>

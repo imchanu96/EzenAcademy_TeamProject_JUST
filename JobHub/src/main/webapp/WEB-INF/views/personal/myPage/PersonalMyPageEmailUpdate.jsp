@@ -48,7 +48,7 @@
 						
 						<div class="personalInfoItemUpdate">
 							<input id="input" type="text" name="perEmail"
-								placeholder="${personalMemberDto.perEmail}">
+								value="${personalMemberDto.perEmail}">
 						</div>
 					
 						<div id="buttonBox">

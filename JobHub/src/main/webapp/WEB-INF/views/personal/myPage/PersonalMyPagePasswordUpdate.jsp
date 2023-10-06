@@ -48,7 +48,7 @@
 						
 						<div class="personalInfoItemUpdate">
 							<input id="input" type="password" name="perPwd"
-								placeholder="${personalMemberDto.perPwd}">
+								value="${personalMemberDto.perPwd}">
 						</div>
 					
 						<div id="buttonBox">

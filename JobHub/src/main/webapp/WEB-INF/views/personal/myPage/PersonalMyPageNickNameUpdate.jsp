@@ -48,7 +48,7 @@
 						</div>
 						<div class="personalInfoItemUpdate">
 							<input id="input" type="text" name="perNickname" onfocus="inputFocusFnc();" onblur="inputBlurFnc();"
-								placeholder="${personalMemberDto.perNickname}">
+								value="${personalMemberDto.perNickname}">
 						</div>
 					
 						<div id="buttonBox">

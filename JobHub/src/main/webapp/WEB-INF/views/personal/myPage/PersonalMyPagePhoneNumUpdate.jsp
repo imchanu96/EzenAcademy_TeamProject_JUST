@@ -48,7 +48,7 @@
 						
 						<div class="personalInfoItemUpdate">
 							<input type="text" name="perPhoneNum"
-								placeholder="${personalMemberDto.perPhoneNum}">
+								value="${personalMemberDto.perPhoneNum}">
 						</div>
 					
 						<div id="buttonBox">
