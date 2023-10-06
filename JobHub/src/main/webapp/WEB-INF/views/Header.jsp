@@ -18,7 +18,6 @@
 		</div>
 			<div id="buttonForm">
 				<div class="logoutButton">
-<<<<<<< HEAD
 					<c:if test="${sessionScope.permission <= 3 
 						or sessionScope.permission == 10}">
 						<input type="button" value="네" onclick="location.href='../personal/logout.do'">
@@ -26,9 +25,6 @@
 					<c:if test="${sessionScope.permission == 6}">
 						<input type="button" value="네" onclick="location.href='../company/logout.do'">
 					</c:if>
-=======
-					<input type="button" value="네" onclick="location.href='./logout.do'">
->>>>>>> branch 'main' of https://github.com/noohij/Ezen_TeamProject_JUST.git
 				</div>
 				<div class="logoutButton">
 					<input type="button" value="아니오" onclick="closeModalFnc();">
