@@ -20,7 +20,7 @@
 	<div id="container">
 
 		<jsp:include page="./PersonalMyPageNav.jsp" />
-		${map}
+<%-- 		${map} --%>
 		<c:if test="${map.get('resumeDto') == null}">
 			<div id="resumeContain">
 				<input type="button" id="button" value="작성"
