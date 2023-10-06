@@ -283,6 +283,7 @@
 			, CAREER_NAME, CAREER_POSITION, CAREER_LOCATION, CAREER_JOB, RESUME_NUMBER
 		FROM CAREER
 		WHERE RESUME_NUMBER = #{resumeNo}
+		ORDER BY CAREER_BEGIN_DATE DESC
 	</select>
 		
 	<select id="personalMemberShowEducation" resultMap="educationResultMap" parameterType="map">
@@ -291,6 +292,7 @@
 			, EDUCATION_GREADUATE, RESUME_NUMBER
 		FROM EDUCATION
 		WHERE RESUME_NUMBER = #{resumeNo}
+		ORDER BY EDUCATION_BEGIN_DATE DESC
 	</select>
 	
 	<select id="personalMemberShowLetter" resultMap="letterResultMap" parameterType="map">
@@ -331,25 +333,34 @@
 	</update>
 	
 	<insert id="personalEducationInsertOne" parameterType="educationDto">
-		INSERT INTO EDUCATION
-		VALUE(EDUCATION_NUMBER, EDUCATION_BEGIN_DATE, EDUCATION_END_DATE, EDUCATION_NAME
-			EDUCATION_MAJOR, EDUCATION_GRADE, EDUCATION_LOCATION, EDUCATION_GREADUATE, RESUME_NUMBER)
-		VALUES(EDUCATION_NUMBER_SEQ.NEXTVAL, #{eduBeginDate}, #{eduEndDate}, #{eduName}
-			, #{eduMajor}, #{eduGrade}, #{eduLocation}, #{eduGreaduate}, #{resumeNo})
+<!-- 		<choose> -->
+<!-- 			<when test=""> -->
+			
+<!-- 			</when> -->
+<!-- 			<otherwise> -->
+				INSERT INTO EDUCATION
+			VALUE(EDUCATION_NUMBER, EDUCATION_BEGIN_DATE, EDUCATION_END_DATE, EDUCATION_NAME
+				,EDUCATION_MAJOR, EDUCATION_GRADE, EDUCATION_LOCATION, EDUCATION_GREADUATE, RESUME_NUMBER)
+			VALUES(EDUCATION_NUMBER_SEQ.NEXTVAL, #{eduBeginDate}, #{eduEndDate}, #{eduName}
+				, #{eduMajor}, #{eduGrade}, #{eduLocation}, #{eduGreaduate}, #{resumeNo})
+<!-- 			</otherwise> -->
+<!-- 		</choose> -->
 	</insert>
 
 	<insert id="personalCareerInsertOne" parameterType="careerDto">
 		INSERT INTO CAREER 
 		<choose>
 			<when test="carEndDate == null">
-				VALUE(CAREER_NUMBER, CAREER_BEGIN_DATE, RESUME_NUMBER)
-				VALUES(CAREER_NUMBER_SEQ.NEXTVAL, #{carBeginDate}, #{resumeNo})
+				VALUE(CAREER_NUMBER, CAREER_BEGIN_DATE, CAREER_NAME, CAREER_POSITION
+					,CAREER_LOCATION, CAREER_JOB, RESUME_NUMBER)
+				VALUES(CAREER_NUMBER_SEQ.NEXTVAL, #{carBeginDate}
+					 ,#{carName}, #{carPosition}, #{carLocation}, #{carJob}, #{resumeNo})
 			</when>
 			<otherwise>
 				VALUE(CAREER_NUMBER, CAREER_BEGIN_DATE, CAREER_END_DATE, CAREER_NAME, CAREER_POSITION
-				,CAREER_LOCATION, CAREER_JOB, RESUME_NUMBER)
+					,CAREER_LOCATION, CAREER_JOB, RESUME_NUMBER)
 				VALUES(CAREER_NUMBER_SEQ.NEXTVAL, #{carBeginDate}, #{carEndDate}
-				, #{carName}, #{carPosition}, #{carLocation}, #{carJob}, #{resumeNo})
+					, #{carName}, #{carPosition}, #{carLocation}, #{carJob}, #{resumeNo})
 			</otherwise>
 		</choose>
 	</insert>

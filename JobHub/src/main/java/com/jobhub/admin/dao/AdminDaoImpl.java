@@ -98,14 +98,15 @@ public class AdminDaoImpl implements AdminDao{
 			keyMap.put("resumeNo", resumeNo);
 			List<CareerDto> careerDtoList 
 				= sqlSession.selectList(personalNamespace + "personalMemberShowCareer", keyMap);
-			System.out.println("careerDtoList 가져옴");
+//			System.out.println("careerDtoList 가져옴");
 			
 			setCareerDto(resumeList.get(i), careerDtoList);
-			
 			
 			List<EducationDto> educationDtoList
 				= sqlSession.selectList(personalNamespace + "personalMemberShowEducation", keyMap);
 			System.out.println("educationDtoList 가져옴");
+			
+			setEducationDto(resumeList.get(i), educationDtoList);
 		}
 		
 		 
@@ -134,6 +135,7 @@ public class AdminDaoImpl implements AdminDao{
 						// TODO Auto-generated catch block
 
 					}
+
 					String careerEndDateDate = careerEndDateArr[i].trim();
 					if (careerEndDateDate != "") {
 						try {
@@ -159,7 +161,55 @@ public class AdminDaoImpl implements AdminDao{
 			
 		}
 	}
-	public void setEducationDto() {
+	public void setEducationDto(ResumeDto resumeDto, List<EducationDto> educationDtoList) {
+		String[] educationBeginDateArr = resumeDto.getResumeEduBeginDate().split(",");
+		String[] educationEndDateArr = resumeDto.getResumeEduEndDate().split(",");
+		String[] educationNameArr = resumeDto.getResumeEduName().split(",");
+		String[] educationMajorArr = resumeDto.getResumeEduMajor().split(",");
+		String[] educationGradeArr = resumeDto.getResumeEduGrade().split(",");
+		String[] educationLocationArr = resumeDto.getResumeEduLoc().split(",");
+		String[] educationGraduateArr = resumeDto.getResumeEduGraduate().split(",");
+		if (educationDtoList.size() == 0) {
+			for (int i = 0; i < educationBeginDateArr.length; i++) {
+				EducationDto educationDto = new EducationDto();
+				
+				educationDto.setResumeNo(resumeDto.getResumeNo());
+				SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+				Date date;
+				String educationBeginDate = educationBeginDateArr[i].trim();
+				
+				try {
+					date = formatter.parse(educationBeginDate);
+					educationDto.setEduBeginDate(date);
+				} catch (ParseException e) {
+					// TODO Auto-generated catch block
+
+				}
+
+				String careerEndDateDate = educationEndDateArr[i].trim();
+				
+				try {
+					date = formatter.parse(careerEndDateDate);
+					educationDto.setEduEndDate(date);
+				} catch (ParseException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+				String educationName = educationNameArr[i].trim();
+				educationDto.setEduName(educationName);
+				String educationMajor = educationMajorArr[i].trim();
+				educationDto.setEduMajor(educationMajor);
+				String educationGrade = educationGradeArr[i].trim();
+				educationDto.setEduGrade(educationGrade);
+				String educationLocation = educationLocationArr[i].trim();
+				educationDto.setEduLocation(educationLocation);
+				String educationGraduate = educationGraduateArr[i].trim();
+				educationDto.setEduGreaduate(educationGraduate);
+//					System.out.println(educationDto);
+				sqlSession.insert(personalNamespace + "personalEducationInsertOne", educationDto);
+			}
+		}
 		
 	}
 
