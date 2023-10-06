@@ -7,79 +7,8 @@
 <head>
 <meta charset="UTF-8">
 <title>JobHub : 게시글 작성</title>
-	<link href="/JobHub/resources/css/Board.css" rel="stylesheet" type="text/css">
-<script>
-	
-	function titleFocusFnc() {
-		var titleObj = document.getElementById("titleInput");
-		
-			titleObj.setAttribute("style", "outline: 1px solid #94b5fc");
-	}
-	
-	function titleBlurFnc() {
-		var titleObj = document.getElementById("titleInput");
-		var titleErrorMsgObj = document.getElementById("titleErrorMsg")
-		
-		if (titleObj.value == "" || titleObj.value.length < 25) {
-			titleObj.setAttribute("style", "border: 1px solid #d7dce5");
-			titleErrorMsgObj.setAttribute("style", "display: none")
-		} else if (titleObj.value.length > 24){
-			titleObj.setAttribute("style", "border: 2px solid red");
-			titleErrorMsgObj.setAttribute("style", "display: block")
-		}
-	}
-	
-	function contentFocusFnc() {
-		var contentObj = document.getElementById("contentInput");
-		
-			contentObj.setAttribute("style", "outline: 1px solid #94b5fc");
-	}
-
-	function contentBlurFnc() {
-		var contentObj = document.getElementById("contentInput");
-		var contentErrorMsgObj = document.getElementById("contentErrorMsg")
-		
-		if (contentObj.value == "" || contentObj.value.length < 1001) {
-			contentObj.setAttribute("style", "border: 1px solid #d7dce5");
-			contentErrorMsgObj.setAttribute("style", "display: none");
-		} else {
-			contentObj.setAttribute("style", "border: 2px solid red");
-			contentErrorMsgObj.setAttribute("style", "display: block");
-		}
-	}
-	
-	function submitFnc() {
-		
-		if(contentObj.value == "" || titleObj.value == ""){
-			alert("모든 항목을 다 입력해주세요.");
-			
-		} else{
-			registerFnc();
-		}
-	}
-	
-	function registerFnc() {
-		var postObj = document.getElementById('addForm');
-	
-		if (confirm("이대로 등록하시겠습니까?") == true){
-			alert("등록 완료되었습니다.");
-			postObj.submit();
-		}else{
-			return;
-		}
-	}
-		
-	function cancleFnc() {
-		if (confirm("정말 취소하시겠습니까?") == true){ 
-			location.href = "./list.do";
-			alert("취소되었습니다.");
-		}else{
-			return;
-		}
-	}
-	
-</script>
-
+<script type="text/javascript" src="/JobHub/resources/js/BoardWrite.js"></script>
+<link href="/JobHub/resources/css/Board.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 

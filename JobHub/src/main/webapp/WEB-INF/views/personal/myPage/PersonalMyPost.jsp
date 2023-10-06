@@ -7,9 +7,8 @@
 <head>
 <meta charset="UTF-8">
 <title>JobHub : 내 글 조회</title>
-
 <link rel="stylesheet" href="/JobHub/resources/css/PersonalMyPage.css" type="text/css">
-<link rel="stylesheet" href="/JobHub/resources/css/Board.css" type="text/css">
+<link href="/JobHub/resources/css/Board.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<jsp:include page="../../Header.jsp"/>
@@ -27,7 +26,7 @@
 					<tr>
 						<th>번호</th>
 						<th>제목</th>
-						<th colspan="2">글쓴이</th>
+						<th>글쓴이</th>
 						<th>작성일</th>
 						<th>조회수</th>
 					</tr>
@@ -42,9 +41,12 @@
 								<tr>
 									<td>${boardDto.boardNo}</td>
 									<td><a href='../board/listOne.do?no=${boardDto.boardNo}'>${boardDto.boardTitle}</a></td>
-									<td>${boardDto.boardWriter}</td>
+									<td id="tdWriter">
+										${boardDto.boardWriter}&nbsp;&nbsp;
+										<span id="spanBTag">${boardDto.boardTag}</span>
+									</td>
 									<!-- 회사명 임시로 bTag에 담음 -->
-									<td>${boardDto.boardTag}</td>
+<%-- 									<td>${boardDto.boardTag}</td> --%>
 									<td>
 	<%-- 									<fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${boardDto.boardCreDate}"/> --%>
 										<fmt:formatDate pattern="yyyy-MM-dd" value="${boardDto.boardCreDate}"/>
@@ -79,7 +81,7 @@
 						
 						<div id="loginSign">
 							<div>
-								<p><a href="../personal/login.do">로그인</a> 후 이용하실 수 있습니다.</p>
+								<p><a href="../personal/login.do">로그인</a> 후 이용해주세요.</p>
 							</div>
 						</div>
 					<!-- 비회원 loginSign -->
@@ -87,16 +89,16 @@
 					</c:if>
 				</table>
 				
-				<jsp:include page="/WEB-INF/views/board/Paging.jsp">
-				<jsp:param value="${pagingMap}" name="pagingMap"/>
-				</jsp:include>
+<%-- 				<jsp:include page="/WEB-INF/views/board/Paging.jsp"> --%>
+<%-- 					<jsp:param value="${pagingMap}" name="pagingMap"/> --%>
+<%-- 				</jsp:include> --%>
 			
 				<form action="./list.do" id="pagingForm" method="post">
 					<input type="hidden" id="curPage" name="curPage" value="${pagingMap.boardPaging.curPage}">
 				</form>
 			</div>
 		</div>
-	</div>		
+	</div>
 	
 	<jsp:include page="/WEB-INF/views/Tail.jsp"/>
 	
