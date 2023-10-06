@@ -29,5 +29,7 @@ public interface CompanyMemberDao {
 
 	public void preferUpdateOne(Map<String, Object> map);
 
+	public int companyUpdateId(CompanyMemberDto companyMemberDto);
 	
+	public int companyUpdatePermission(CompanyMemberDto companyMemberDto);
 }

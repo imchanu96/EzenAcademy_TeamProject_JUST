@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>기업 회원가입</title>
+<title>JobHub : 회원가입</title>
 <link rel="stylesheet" type="text/css" href="/JobHub/resources/css/Join.css">
 </head>
 <body>
@@ -97,7 +97,7 @@
 						onfocus="inChargeEmailFocusFnc();">
 				</div>
 			</div>
-			<input type="submit" id="submitButton" value="가입하기">
+			<input type="submit" id="submitButton" value="이메일인증">
 		</form>
 	</div>
 	

@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>비밀번호 변경</title>
+<title>JobHub : 비밀번호 수정</title>
 <script type="text/javascript" src="/JobHub/resources/js/PersonalMyPage.js"></script>
 <link rel="stylesheet" href="/JobHub/resources/css/PersonalMyPage.css" type="text/css">
 </head>

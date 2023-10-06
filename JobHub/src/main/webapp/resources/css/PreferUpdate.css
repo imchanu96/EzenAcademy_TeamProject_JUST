@@ -79,8 +79,13 @@
 	width: 150px;
 	font-size: 18px;
 }
+#totalRate {
+	float: right;
+	margin-right: 50px;
+	font-size: 16px;
+}
 .weightingPercentage {
-	float: left;
+	float: right;
 	width: 250px;
     font-size: 18px;
 }
@@ -91,7 +96,7 @@
 }
 input[type=button] {
     width: 90px;
-    height: 40px;
+    height: 30px;
     margin: 5px 0px 30px 452px;
     background-color: #4876ef;
     border: none;
@@ -109,6 +114,7 @@ input[type=button] {
 	width: 150px;
 	border: none;
 	margin-left: 5px;
+	border-radius: 10px;
 	height: 30px;
 	background-color: inherit;
 	box-shadow: 0px 1px 4px 0px #ddd;
@@ -127,27 +133,44 @@ input[type=button] {
 	position: absolute;
 	left: 54%;
 	top: 23%;
-	border: 1px solid black;
-	background-color: #f8fafc;
+	background-color: #fff;
+	border-radius: 12px;
+    box-shadow: 0px 1px 4px 0px #ddd;
 }
 #checkBoxModal input[type=button]{
 	clear: both;
 	width: 100px;
 	margin: auto;
 }
-#checkBoxModal div{
+#checkBoxModal > div{
 	width: 450px;
-	margin: 20px auto;
-	border: 1px solid #d7dce5;
+	margin: 35px auto;
 	border-radius: 5px;
 }
-#checkBoxModal div div{
+.salBtn{
+	margin: 10px;
+}
+#perferSubmitBtn {
+	margin: 0px auto;
+	width: 90px;
+	height: 40px;	
+}
+.keywordLabel {
+	font-size: 16px;
+}
+.keywordTitle {
 	width: 150px;
 	margin: auto;
 	text-align: center;
 	background-color: #d7dce5;
 	border-radius: 5px;
-}
-.salBtn{
-	margin: 10px;
+	background-color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+} 
+#modalCloseBtn {
+	width: 100px;
+	height: 40px;
+	text-align: center;
+		
 }

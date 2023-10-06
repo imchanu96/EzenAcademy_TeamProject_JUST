@@ -76,7 +76,6 @@
 	    height: 122px;
 	    margin: 20px;
 	    color: #5c667b;
-	    overflow: auto;
 	}
 	#companyDetail {
 		float: left;
@@ -97,6 +96,9 @@
 	}
 	#companyNameBox {
 		margin-bottom: 10px;
+	    font-size: 22px;
+	    font-weight: bold;
+	    color: #000;
 	}
 	#companyTypeBox, #companyHomepageBox {
 		float: left;
@@ -154,13 +156,13 @@
 	#reviewAverageRate {
 		width: 300px;
 		height: 40px;
-		font-size: 25px;
+		font-size: 22px;
 		line-height: 40px;
 	}
 	#averageBox {
 		float: left;			
 		margin-left: 6px;
-		font-size: 20px;
+		font-size: 16px;
 		font-weight: 600;
 	}
 	.starRateBox {
@@ -180,6 +182,7 @@
 		float: left;
 		width: 100px;
 		text-align: justify;
+		font-size: 16px;
 	}
 	.fas.fa-star {
     	font-size: 13px;
@@ -196,13 +199,15 @@
 		margin-bottom: 20px;
 		width: 610px;
 		height: 30px;
-		font-size: 25px;
+	    font-size: 18px;
+   		font-weight: bold;
 		color: #292e41
 	}
 	.reviewContentBox {
 		float: left;
 		width: 610px;
 		height: 110px;
+	    font-size: 16px;
 		color: #292e41;
 	}
 	.reviewShowMoreBox {

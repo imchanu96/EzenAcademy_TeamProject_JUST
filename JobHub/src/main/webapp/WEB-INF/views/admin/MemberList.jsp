@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>전체 회원 목록</title>
+<title>JobHub : 전체 회원 목록</title>
 
 <script type="text/javascript">
 	function memberPermissionUpdateFnc(perNo, comNo) {

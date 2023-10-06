@@ -6,21 +6,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>${boardDto.boardTitle} - JobHub</title>
-	<link href="/JobHub/resources/css/Board.css" rel="stylesheet" type="text/css">
-<script type="text/javascript">
-	function deleteFnc() {
-		if (confirm("정말 삭제하시겠습니까?") == true){
-			//true는 확인버튼을 눌렀을 때 코드 작성
-			location.href = './delete.do?no=${boardDto.boardNo}';
-			alert("삭제되었습니다.");
-		}else{
-			// false는 취소버튼을 눌렀을 때, 취소됨
-			return;
-		}
-	}
-	
-</script>
+<%-- <title>${boardDto.boardTitle} - JobHub</title> --%>
+<title>JobHub : 게시글 조회</title>
+<script type="text/javascript" src="/JobHub/resources/js/BoardView.js"></script>
+<link href="/JobHub/resources/css/Board.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -35,7 +24,7 @@
 				<div id="viewBox">
 					<c:if test="${boardDto.boardWriter eq personalMemberDto.perNickname}">
 						<button type='submit'>수정</button>
-						<button type="button" onclick='deleteFnc()'>삭제</button>
+						<button type="button" onclick='deleteFnc(${boardDto.boardNo})'>삭제</button>
 					</c:if>
 				</div>
 				<div id="boardView">
@@ -65,42 +54,6 @@
 					</table>
 				</div>
 			</form>
-			
-<!-- 			<div style="width: 910px; border-radius: 10px; border-collapse: collapse; margin: 14px auto 0px auto; font-size: 20px; -->
-<!-- 				background-color: #F7FBFF; padding: 20px; box-shadow: 0px 1px 4px 0px #ddd; table-layout: fixed;"> -->
-<!-- 				<form action="" method="get"> -->
-<%-- 					<input type='hidden' name='comNo' value='${CommentDto.comNo}'> --%>
-<!-- 					<table> -->
-<!-- 						<tr> -->
-<!-- 							<td>댓글</td> -->
-<!-- 						</tr> -->
-<!-- 						<tr> -->
-<%-- 							<td>작성자 ${commentDto.comWriter}</td> --%>
-<%-- 							<td>내용 ${commentDto.comContent}</td> --%>
-<!-- 							<td> -->
-<%-- 								<fmt:formatDate pattern="yyyy-MM-dd" value="${commentDto.comCreDate}"/> --%>
-<!-- 							</td> -->
-<!-- 							<td><a>수정</a></td> -->
-<!-- 							<td><a>삭제</a></td> -->
-<!-- 						</tr> -->
-<!-- 					</table> -->
-<!-- 				</form> -->
-<!-- 				<form action="" method="post"> -->
-<!-- 					<table style="width: 910px; border-radius: 10px; border-collapse: collapse; margin: 14px auto 0px auto; font-size: 20px; -->
-<!-- 						background-color: #fff; padding: 20px; box-shadow: 0px 1px 4px 0px #ddd; table-layout: fixed;"> -->
-<!-- 						<tr> -->
-<%-- 							<td>${personalMemberDto.pNickname}</td> --%>
-<!-- 						</tr> -->
-<!-- 						<tr> -->
-<!-- 							<td> -->
-<!-- 								<input type="text" name="comContent" placeholder="댓글을 남겨보세요" style="width: 740px; padding: 10px; -->
-<!-- 									border-radius: 10px; margin: 10px 15px;"> -->
-<!-- 								<button type="submit">등록</button> -->
-<!-- 							</td> -->
-<!-- 						</tr> -->
-<!-- 					</table> -->
-<!-- 				</form> -->
-<!-- 			</div> -->
 			
 			<div id="listBox">
 				<button type="button" onclick="history.back()">목록으로</button>

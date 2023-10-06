@@ -42,7 +42,7 @@ a:hover {
 	height: 60px;
 	text-align: center;
 	line-height: 60px;
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 600;
 }
 /* message */
@@ -145,7 +145,7 @@ a:hover {
     cursor: pointer;
 }
 
-.button {
+.logoutButton {
 	float: left;
 	margin: 0px 35px;
 }

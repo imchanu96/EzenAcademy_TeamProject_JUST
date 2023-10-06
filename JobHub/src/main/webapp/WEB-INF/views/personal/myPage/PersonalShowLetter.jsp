@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>자소서 보기</title>
+<title>JobHub : 자소서 보기</title>
 
 
 <script type="text/javascript">

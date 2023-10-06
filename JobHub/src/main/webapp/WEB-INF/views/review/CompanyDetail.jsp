@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Company Info</title>
+<title>JobHub : 기업 상세</title>
 <link rel="stylesheet" href="/JobHub/resources/css/CompanyDetail.css" type="text/css">
 <link rel="stylesheet" href="/JobHub/resources/css/ReviewNav.css" type="text/css">
 </head>

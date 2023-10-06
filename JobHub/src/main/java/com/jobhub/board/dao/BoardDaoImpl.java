@@ -30,6 +30,17 @@ public class BoardDaoImpl implements BoardDao{
 	}
 
 	@Override
+	public List<BoardDto> boardSelectList(int start, int end, int perNo) {
+		
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("start", start);
+		map.put("end", end);
+		map.put("perNo", perNo);
+		
+		return sqlSession.selectList(namespace + "boardSelectList", map);
+	}
+	
+	@Override
 	public int boardSelectTotalCount() {
 
 		return (int)sqlSession.selectOne(namespace + "boardSelectTotalCount");

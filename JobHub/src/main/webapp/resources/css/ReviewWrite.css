@@ -146,7 +146,7 @@
 		margin: 20px 350px 0px 350px;
 		width: 400px;
 	}
-	button {
+	#submitButton {
 		width: 90px;
 	    height: 40px;
 	    margin-left: 30px;
@@ -158,4 +158,15 @@
 	    font-weight: bold;
 	    color: #fff;
 	    cursor: pointer;
+	}
+	#goBackBtn {
+		width: 90px;
+	   	height: 40px;
+	   	border: none;
+	   	border-radius: 12px;
+	   	box-shadow: 0px 1px 4px 0px #ddd;
+	   	font-size: 16px;
+		font-weight: bold;
+		background-color: #ff837e;
+		color: #fff;
 	}

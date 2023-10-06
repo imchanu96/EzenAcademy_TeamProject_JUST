@@ -8,6 +8,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript" src="/JobHub/resources/js/ReviewNav.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 </head>
 <body>
 

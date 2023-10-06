@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>기업 로그인</title>
+<title>JobHub : 로그인</title>
 <style type="text/css">
 	a{
 		color:black;

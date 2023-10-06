@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>My page</title>
+<title>JobHub : 마이 페이지</title>
 
 <link rel="stylesheet" href="/JobHub/resources/css/PersonalMyPage.css" type="text/css">
 </head>

@@ -6,20 +6,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>게시판 - JobHub</title>
-	<link href="/JobHub/resources/css/Board.css" rel="stylesheet" type="text/css">
-	
-	<script type="text/javascript">
-	
-	function writeFnc(perNo) {
-		if(perNo != ""){
-			location.href='./add.do';
-		} else if (perNo == ""){
-			location.href='../personal/login.do';
-		}
-	}
-	
-	</script>
+<title>JobHub : 게시판</title>
+<script type="text/javascript" src="/JobHub/resources/js/BoardList.js"></script>
+<link href="/JobHub/resources/css/Board.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -39,7 +28,6 @@
 					<tr>
 						<th>번호</th>
 						<th>제목</th>
-<!-- 						<th colspan="2">글쓴이</th> -->
 						<th>글쓴이</th>
 						<th>작성일</th>
 						<th>조회수</th>
@@ -105,7 +93,7 @@
 				</table>
 				
 				<jsp:include page="/WEB-INF/views/board/Paging.jsp">
-				<jsp:param value="${pagingMap}" name="pagingMap"/>
+					<jsp:param value="${pagingMap}" name="pagingMap"/>
 				</jsp:include>
 			
 				<form action="./list.do" id="pagingForm" method="post">

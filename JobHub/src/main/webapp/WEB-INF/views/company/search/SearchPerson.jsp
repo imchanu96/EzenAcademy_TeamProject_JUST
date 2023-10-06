@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Sample</title>
+<title>JobHub : 인재 찾기</title>
 <style type="text/css">
 /* 공통 */
 a {
@@ -44,10 +44,12 @@ a:hover {
 }
 
 .smallMenuItem {
-	margin-bottom: 20px;
+	margin-bottom: 35px;
+	border-bottom: 2px solid #fff;
+    width: 200px;
+    height: 40px;
    	font-size: 18px;
 }
-
 .smallMenuItem a {
 	color: #475067;
 }
@@ -67,13 +69,14 @@ a:hover {
 }
 
 #titleBox>p {
-	font-size: 24px;
+	font-size: 18px;
+	font-weight: bold;
 	margin: 0px 0px 20px 0px;
 }
 
 #searchBox {
 	width: 880px;
-	height: 300px;
+	height: 260px;
 	margin: 14px auto 0px auto;
 	padding-top: 20px;
 	padding-left: 40px;
@@ -81,11 +84,11 @@ a:hover {
 }
 
 #conditionBox {
-	width: 850px;
-	height: 180px;
-/* 	padding-top: 10px; */
-	background-color: #f7fafe;
-	border-radius: 10px;
+    width: 850px;
+    height: 120px;
+    padding-top: 15px;
+    background-color: #f7fafe;
+    border-radius: 10px;
 }
 
 .condition {
@@ -100,6 +103,7 @@ a:hover {
 	float: left;
 	width: 150px;
 	margin-bottom: 10px;
+    font-size: 16px;
 }
 
 .radioBox {
@@ -115,7 +119,7 @@ label {
 }
 
 #inputBox {
-	width: 588px;
+	width: 630px;
 	height: 40px;
 	line-height: 40px;
 	margin-top: 10px;
@@ -124,25 +128,32 @@ label {
 	float: left;
 }
 
-#inputBox>select {
-	height: 35px;
+#inputBox > select {
+    height: 35px;
+    border: none;
+    box-shadow: 0px 1px 4px 0px #919191;
+    border-radius: 12px;
 }
 
 #textInput {
 	width: 400px;
 	height: 30px;
+	border: none;
+    border-radius: 12px;
+    box-shadow: 0px 1px 4px 0px #919191;
 }
 
 .button {
 	width: 60px;
 	height: 35px;
-	background-color: #bcd1fc;
+	background-color: #4876ef;
 	border: none;
-	border-radius: 6px;
+	border-radius: 12px;
 	box-shadow: 0px 1px 4px 0px #ddd;
 	font-size: 16px;
 	font-weight: bold;
-	color: #475067;
+	color: #fff;
+    margin-left: 10px;
 }
 
 
@@ -202,6 +213,14 @@ label {
 	width: 400px;
 	height: 140px;
 	float: left;
+}
+#noLetterResumeAlert {
+    text-align: center;
+    font-size: 22px;
+    margin: 36px 30px;
+    font-weight: bold;
+    width: 920px;
+    padding: 40px 0px
 }
 
 img {
@@ -539,14 +558,14 @@ tr td {
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="http://www.naver.com">기업 목록</a>
+					<a href="#">인재 찾기</a>
 				</div>
-				<div class="smallMenuItem">
-					<a href="">리뷰 작성</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="">기업 정보</a>
-				</div>
+<!-- 				<div class="smallMenuItem"> -->
+<!-- 					<a href="">리뷰 작성</a> -->
+<!-- 				</div> -->
+<!-- 				<div class="smallMenuItem"> -->
+<!-- 					<a href="">기업 정보</a> -->
+<!-- 				</div> -->
 			</div>
 		</div>
 		<div id="content">
@@ -554,14 +573,12 @@ tr td {
 			<input type="hidden" name="comNo" value="${sessionScope.companyMemberDto.comNo}">
 				<div id="searchBox">
 					<div id="titleBox">
-						<p>인재찾기</p>
+						<p>인재 찾기</p>
 					</div>
 					<div id="conditionBox">
-						<input type="text" value="검색 여부" 
-							style="background-color: transparent; border: none;" readonly="readonly">
 						<div class="condition">
 							<div class="conditionTitleBox">
-								<input type="checkbox" value="체크!" onclick="activeRadioFnc(this, 'talentScore');" checked="checked"> 인재점수
+								<input type="checkbox" value="체크!" onclick="activeRadioFnc(this, 'talentScore');" checked="checked"> 인재 점수
 							</div>
 							<div class="radioBox">
 								<input type="radio" name="talentScore" class="radioBtn" value="60">
@@ -600,7 +617,7 @@ tr td {
 						</div>
 						<div class="condition">
 							<div class="conditionTitleBox">
-								<input type="checkbox" onclick="activeRadioFnc(this, 'licenseScore');" checked="checked"> 자격증
+								<input type="checkbox" onclick="activeRadioFnc(this, 'licenseScore');" checked="checked"> 자격증 갯수
 							</div>
 							<div class="radioBox">
 								<input type="radio" name="licenseScore" class="radioBtn" value="1"> 
@@ -753,7 +770,9 @@ tr td {
 			</div>
 			
 			<c:if test='${personalInfoList == null}'>
-									선호도가 설정되지 않아 없음
+				<div id="noLetterResumeAlert">
+					마이페이지에서 우리 기업이 선호하는 키워드를 설정해주세요.
+				</div>
 			</c:if>
 			
 			<c:if test='${personalInfoList != null}'>

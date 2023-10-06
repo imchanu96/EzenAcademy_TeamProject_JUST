@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8" http-equiv="Refresh" content="5;url=./login.do">
-<title>로그인 실패</title>
+<title>JobHub : 로그인 실패</title>
 
 <script type="text/javascript">
 	function goBackFnc() {

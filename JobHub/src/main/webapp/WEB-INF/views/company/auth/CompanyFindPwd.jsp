@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>기업회원 - 비밀번호 찾기</title>
+<title>JobHub : 비밀번호 찾기</title>
 <style type="text/css">
 	#container {
 		margin: 0px auto;
@@ -55,7 +55,7 @@
 	    height: 38px;
 	    background-color: #4876ef;
 	    border: none;
-	    border-radius: 6px;
+	    border-radius: 12px;
 	    box-shadow: 0px 1px 4px 0px #ddd;
 	    font-size: 16px;
 	    font-weight: bold;
@@ -70,17 +70,17 @@
 	function findPwdFnc() {
 		var pwdSearch = document.getElementById("findPwdBox");
 		
-		if(pwdSearch.cInChargeName.value == "") {
+		if(pwdSearch.comInChargeName.value == "") {
 			alert("이름을 입력해주세요");
 			return false;
 		}
 		
-		if (pwdSearch.cCode.value == "") {
+		if (pwdSearch.comCode.value == "") {
 			alert("아이디를 입력해주세요");
 			return false;
 		}
 		
-		if (pwdSearch.cInChargeEmail.value == "") {
+		if (pwdSearch.comInChargeEmail.value == "") {
 			alert("이메일을 입력해주세요");
 			return false;
 		}
@@ -114,15 +114,15 @@
 				<div>
 					<div id="nameBox" class="inputBox">
 						<p>담당자 이름</p>
-						<input name="cInChargeName" type="text">
+						<input name="comInChargeName" type="text">
 					</div>
 					<div id="idBox" class="inputBox">
 						<p>사업자 등록번호</p>
-						<input name="cCode" type="text" placeholder="'-' 포함 입력">
+						<input name="comCode" type="text" placeholder="'-' 포함 입력">
 					</div>
 					<div id="emailBox" class="inputBox">
 						<p>담당자 이메일 주소</p>
-						<input name="cInChargeEmail" type="text">
+						<input name="comInChargeEmail" type="text">
 						<button type="button" onclick="findPwdFnc();">인증번호 받기</button>
 					</div>
 				</div>

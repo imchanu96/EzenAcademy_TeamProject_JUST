@@ -151,7 +151,7 @@
 				, #{comPwd}, #{comCode}
 				, #{comInChargeName}, #{comInChargeEmail}
 				, #{comInChargePhoneNum}
-				, 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE)
+				, 5, SYSDATE, SYSDATE, SYSDATE, SYSDATE)
 
 	</insert>
 	
@@ -207,4 +207,19 @@
 		 SET COMPANY_PREFER = #{prefer}
 		 WHERE COMPANY_NUMBER = #{comNo}
 	</update>
+	
+	<update id="companyUpdateId" parameterType="companyMemberDto">
+		UPDATE COMPANY
+		SET COMPANY_ID = #{comId}
+		WHERE COMPANY_INCHARGE_EMAIL = #{comInChargeEmail}
+		AND COMPANY_CODE = #{comCode}
+	</update>
+	
+	<update id="companyUpdatePermission" parameterType="companyMemberDto">
+		UPDATE COMPANY
+		SET PERMISSION = 6
+		WHERE COMPANY_INCHARGE_EMAIL = #{comInChargeEmail}
+		AND COMPANY_ID = #{comId}
+	</update>
+	
 </mapper>

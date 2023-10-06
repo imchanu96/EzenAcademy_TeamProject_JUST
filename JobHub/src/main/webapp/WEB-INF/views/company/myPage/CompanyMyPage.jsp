@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>기업회원 마이페이지</title>
+<title>JobHub : 마이페이지</title>
 
 <link rel="stylesheet" href="/JobHub/resources/css/CompanyMyPage.css" type="text/css">
 </head>
@@ -18,7 +18,7 @@
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="">내 프로필</a>
+					<a href="./showCompanyInfo.do?comNo=${sessionScope.companyMemberDto.comNo}">내 프로필</a>
 				</div>
 				<div class="smallMenuItem">
 					<a href="./setPrefer.do?comNo=${sessionScope.companyMemberDto.comNo}">선호도 설정</a>

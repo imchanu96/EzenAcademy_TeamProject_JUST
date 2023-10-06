@@ -13,6 +13,8 @@ public interface BoardService {
 	
 	List<BoardDto> boardSelectList(int start, int end);
 	
+	public List<BoardDto> boardSelectList(int start, int end, int perNo);
+	
 	public int boardSelectTotalCount();
 	
 	public void boardInsertOne(BoardDto boardDto) throws Exception;

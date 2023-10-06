@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>기업회원 - 아이디 찾기</title>
+<title>JobHub : 아이디 찾기</title>
 <style type="text/css">
 	#container {
 		margin: 0px auto;
@@ -61,7 +61,7 @@
 	    height: 38px;
 	    background-color: #4876ef;
 	    border: none;
-	    border-radius: 6px;
+	    border-radius: 12px;
 	    box-shadow: 0px 1px 4px 0px #ddd;
 	    font-size: 16px;
 	    font-weight: bold;
@@ -76,12 +76,12 @@
 	function findIdFnc() {
 		var idSearch = document.getElementById("findIdBox");
 		
-		if(idSearch.cInChargeName.value == "") {
+		if(idSearch.comInChargeName.value == "") {
 			alert("이름을 입력해주세요.");
 			return false;
 		}
 		
-		if (idSearch.cInChargeEmail.value  == "") {
+		if (idSearch.comInChargeEmail.value  == "") {
 			alert("이메일을 입력해주세요.");
 			return false;
 		}
@@ -115,11 +115,11 @@
 				<div>
 					<div id="nameBox" class="inputBox">
 						<p>담당자 이름</p>
-						<input name="cInChargeName" type="text">
+						<input name="comInChargeName" type="text">
 					</div>
 					<div id="emailBox" class="inputBox">
 						<p>담당자 이메일 주소</p>
-						<input name="cInChargeEmail" type="text">
+						<input name="comInChargeEmail" type="text">
 						<button type="button" onclick="findIdFnc();">인증번호 받기</button>
 					</div>
 				</div>

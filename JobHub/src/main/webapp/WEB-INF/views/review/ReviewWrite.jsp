@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Review write</title>
+<title>JobHub : 리뷰 작성</title>
 <script type="text/javascript" src="/JobHub/resources/js/ReviewWrite.js"></script>
 <link rel="stylesheet" href="/JobHub/resources/css/ReviewWrite.css" type="text/css">
 <link rel="stylesheet" href="/JobHub/resources/css/ReviewNav.css" type="text/css">
@@ -21,7 +21,7 @@
 			<div id="reviewingCompany">${personalMemberDto.perCom} 리뷰 작성</div>
 			<form action="./addCtr.do" method='post' onsubmit="onSubmitFnc(event);">
 				<div id="titleInputBox">
-					<input name="rTitle" id="titleInput" type="text"
+					<input name="reviewTitle" id="titleInput" type="text"
 						placeholder="제목을 입력해주세요(20자 이내)"
 						onfocus="titleFocusFnc();" onblur="titleBlurFnc();">
 					<div class="errorMsg" id="titleErrorMsg">
@@ -33,76 +33,76 @@
 						<div class="starInputItem">
 							<span>급여</span>
 						    <fieldset class="rate">
-						         <input type="radio" id="rSal5" name="rSal" value=5>
-						         	<label for="rSal5" title="5점"></label>
-						         <input type="radio" id="rSal4" name="rSal" value=4>
-						         	<label for="rSal4" title="4점"></label>
-						         <input type="radio" id="rSal3" name="rSal" value=3>
-						         	<label for="rSal3" title="3점"></label>
-						         <input type="radio" id="rSal2" name="rSal" value=2>
-						         	<label for="rSal2" title="2점"></label>
-						         <input type="radio" id="rSal1" name="rSal" value=1>
-						         	<label for="rSal1" title="1점"></label>
+						         <input type="radio" id="reviewSal5" name="reviewSal" value=5>
+						         	<label for="reviewSal5" title="5점"></label>
+						         <input type="radio" id="reviewSal4" name="reviewSal" value=4>
+						         	<label for="reviewSal4" title="4점"></label>
+						         <input type="radio" id="reviewSal3" name="reviewSal" value=3>
+						         	<label for="reviewSal3" title="3점"></label>
+						         <input type="radio" id="reviewSal2" name="reviewSal" value=2>
+						         	<label for="reviewSal2" title="2점"></label>
+						         <input type="radio" id="reviewSal1" name="reviewSal" value=1>
+						         	<label for="reviewSal1" title="1점"></label>
 						     </fieldset>
 						</div>
 						<div class="starInputItem">
 							<span>복지</span>
 							<fieldset class="rate">
-						         <input type="radio" id="rWel5" name="rWel" value=5>
-						         	<label for="rWel5" title="5점"></label>
-						         <input type="radio" id="rWel4" name="rWel" value=4>
-						         	<label for="rWel4" title="4점"></label>
-						         <input type="radio" id="rWel3" name="rWel" value=3>
-						         	<label for="rWel3" title="3점"></label>
-						         <input type="radio" id="rWel2" name="rWel" value=2>
-						         	<label for="rWel2" title="2점"></label>
-						         <input type="radio" id="rWel1" name="rWel" value=1>
-						         	<label for="rWel1" title="1점"></label>
+						         <input type="radio" id="reviewWel5" name="reviewWel" value=5>
+						         	<label for="reviewWel5" title="5점"></label>
+						         <input type="radio" id="reviewWel4" name="reviewWel" value=4>
+						         	<label for="reviewWel4" title="4점"></label>
+						         <input type="radio" id="reviewWel3" name="reviewWel" value=3>
+						         	<label for="reviewWel3" title="3점"></label>
+						         <input type="radio" id="reviewWel2" name="reviewWel" value=2>
+						         	<label for="reviewWel2" title="2점"></label>
+						         <input type="radio" id="reviewWel1" name="reviewWel" value=1>
+						         	<label for="reviewWel1" title="1점"></label>
 						     </fieldset>
 						</div>
 						<div class="starInputItem">
 							<span>근무 환경</span>
 							<fieldset class="rate">
-						         <input type="radio" id="rEnv5" name="rEnv" value=5>
-						         	<label for="rEnv5" title="5점"></label>
-						         <input type="radio" id="rEnv4" name="rEnv" value=4>
-						         	<label for="rEnv4" title="4점"></label>
-						         <input type="radio" id="rEnv3" name="rEnv" value=3>
-						         	<label for="rEnv3" title="3점"></label>
-						         <input type="radio" id="rEnv2" name="rEnv" value=2>
-						         	<label for="rEnv2" title="2점"></label>
-						         <input type="radio" id="rEnv1" name="rEnv" value=1>
-						         	<label for="rEnv1" title="1점"></label>
+						         <input type="radio" id="reviewEnv5" name="reviewEnv" value=5>
+						         	<label for="reviewEnv5" title="5점"></label>
+						         <input type="radio" id="reviewEnv4" name="reviewEnv" value=4>
+						         	<label for="reviewEnv4" title="4점"></label>
+						         <input type="radio" id="reviewEnv3" name="reviewEnv" value=3>
+						         	<label for="reviewEnv3" title="3점"></label>
+						         <input type="radio" id="reviewEnv2" name="reviewEnv" value=2>
+						         	<label for="reviewEnv2" title="2점"></label>
+						         <input type="radio" id="reviewEnv1" name="reviewEnv" value=1>
+						         	<label for="reviewEnv1" title="1점"></label>
 						     </fieldset>
 						</div>
 						<div class="starInputItem">
 							<span>경영진</span>
 							<fieldset class="rate">
-						         <input type="radio" id="rBoss5" name="rBoss" value=5>
-						         	<label for="rBoss5" title="5점"></label>
-						         <input type="radio" id="rBoss4" name="rBoss" value=4>
-						         	<label for="rBoss4" title="4점"></label>
-						         <input type="radio" id="rBoss3" name="rBoss" value=3>
-						         	<label for="rBoss3" title="3점"></label>
-						         <input type="radio" id="rBoss2" name="rBoss" value=2>
-						         	<label for="rBoss2" title="2점"></label>
-						         <input type="radio" id="rBoss1" name="rBoss" value=1>
-						         	<label for="rBoss1" title="1점"></label>
+						         <input type="radio" id="reviewBoss5" name="reviewBoss" value=5>
+						         	<label for="reviewBoss5" title="5점"></label>
+						         <input type="radio" id="reviewBoss4" name="reviewBoss" value=4>
+						         	<label for="reviewBoss4" title="4점"></label>
+						         <input type="radio" id="reviewBoss3" name="reviewBoss" value=3>
+						         	<label for="reviewBoss3" title="3점"></label>
+						         <input type="radio" id="reviewBoss2" name="reviewBoss" value=2>
+						         	<label for="reviewBoss2" title="2점"></label>
+						         <input type="radio" id="reviewBoss1" name="reviewBoss" value=1>
+						         	<label for="reviewBoss1" title="1점"></label>
 						     </fieldset>
 						</div>
 						<div class="starInputItem">
 							<span>워라벨</span>
 							<fieldset class="rate">
-						         <input type="radio" id="rBal5" name="rBal" value=5>
-						         	<label for="rBal5" title="5점"></label>
-						         <input type="radio" id="rBal4" name="rBal" value=4>
-						         	<label for="rBal4" title="4점"></label>
-						         <input type="radio" id="rBal3" name="rBal" value=3>
-						         	<label for="rBal3" title="3점"></label>
-						         <input type="radio" id="rBal2" name="rBal" value=2>
-						         	<label for="rBal2" title="2점"></label>
-						         <input type="radio" id="rBal1" name="rBal" value=1>
-						         	<label for="rBal1" title="1점"></label>
+						         <input type="radio" id="reviewBal5" name="reviewBal" value=5>
+						         	<label for="reviewBal5" title="5점"></label>
+						         <input type="radio" id="reviewBal4" name="reviewBal" value=4>
+						         	<label for="reviewBal4" title="4점"></label>
+						         <input type="radio" id="reviewBal3" name="reviewBal" value=3>
+						         	<label for="reviewBal3" title="3점"></label>
+						         <input type="radio" id="reviewBal2" name="reviewBal" value=2>
+						         	<label for="reviewBal2" title="2점"></label>
+						         <input type="radio" id="reviewBal1" name="reviewBal" value=1>
+						         	<label for="reviewBal1" title="1점"></label>
 						     </fieldset>
 						</div>
 						<div class="errorMsg" id="rateErrorMsg">
@@ -113,7 +113,7 @@
 				</div>
 
 				<div id="contentInputBox">
-					<textarea id="contentInput" name="rContent"
+					<textarea id="contentInput" name="reviewContent"
 						placeholder="내용을 입력해주세요."
 						onfocus="contentFocusFnc();"
 						onblur="contentBlurFnc();"></textarea>
@@ -121,10 +121,10 @@
 						최대 200자 이내로 입력해주세요.
 					</div>
 				</div>
-				<input id="rAvgResult" type="text" name="rAvg" style="display: none;">
+				<input id="reviewAvgResult" type="text" name="reviewAvg" style="display: none;">
 				<div id="buttonBox">
-					<button type="submit">등록</button>
-					<button type="button">취소</button>
+					<button type="submit" id="submitButton">등록 완료</button>
+					<button type="button"id="goBackBtn">취소</button>
 				</div>
 				<input type="hidden" name="perNo" value="${personalMemberDto.perNo}">
 				<input type="hidden" name="comNo" value="${comNo}">

@@ -3,7 +3,6 @@ package com.jobhub.personal.dao;
 import java.util.List;
 import java.util.Map;
 
-import com.jobhub.board.dto.BoardDto;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;
@@ -43,10 +42,6 @@ public interface PersonalMemberDao {
 	public LetterDto personalMembershowLetter(int perNo);
 
 	public void PersonalLetterUpdateOne(LetterDto letterDto);
-
-	public List<BoardDto> personalMemberMyPostList(int start, int end);
-	
-	public int personalMemberMyPostListSelectTotalCount();
 	
 	public int personalUpdateTemporarily(PersonalMemberDto personalMemberDto);
 	

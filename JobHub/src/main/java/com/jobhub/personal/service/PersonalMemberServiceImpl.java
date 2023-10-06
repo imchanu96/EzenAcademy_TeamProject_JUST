@@ -1,6 +1,5 @@
 package com.jobhub.personal.service;
 
-import java.util.List;
 import java.util.Map;
 
 import org.slf4j.Logger;
@@ -9,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
-import com.jobhub.board.dto.BoardDto;
 import com.jobhub.mail.MailHandler;
 import com.jobhub.mail.TempKey;
 import com.jobhub.personal.dao.PersonalMemberDao;
@@ -47,7 +45,7 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 		MailHandler sendMail = new MailHandler(javaMailSender);
 		sendMail.setSubject("[JobHub] 이메일 인증 메일입니다."); //메일제목
 		sendMail.setText(
-		        "<h1>JobHub 이메일 인증</h1>" +
+		        "<h1>JobHub 개인 회원 이메일 인증</h1>" +
 				"<br>JobHub에 오신것을 환영합니다!" +
 				"<br>아래 [이메일 인증 확인]을 눌러주세요." +
 				"<br><a href='http://localhost:9080/JobHub/personal/registerEmail.do?perEmail=" 
@@ -130,18 +128,6 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 	public void PersonalLetterUpdateOne(LetterDto letterDto) {
 		// TODO Auto-generated method stub
 		personalMemberDao.PersonalLetterUpdateOne(letterDto);
-	}
-
-	@Override
-	public int personalMemberMyPostListSelectTotalCount() {
-		// TODO Auto-generated method stub
-		return personalMemberDao.personalMemberMyPostListSelectTotalCount();
-	}
-
-	@Override
-	public List<BoardDto> personalMemberMyPostList(int start, int end) {
-		// TODO Auto-generated method stub
-		return personalMemberDao.personalMemberMyPostList(start, end);
 	}
 
 //	@Override
