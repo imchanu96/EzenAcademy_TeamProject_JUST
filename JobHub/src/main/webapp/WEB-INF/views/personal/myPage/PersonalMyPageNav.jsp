@@ -24,9 +24,9 @@
 				<div class="smallMenuItem">
 					<a href="./showLetter.do?perNo=${personalMemberDto.perNo}">자소서 관리</a>
 				</div>
-				<div class="smallMenuItem">
-					<a href="">고객센터</a>
-				</div>
+<!-- 				<div class="smallMenuItem"> -->
+<!-- 					<a href="">고객센터</a> -->
+<!-- 				</div> -->
 			</div>
 		</div>
 

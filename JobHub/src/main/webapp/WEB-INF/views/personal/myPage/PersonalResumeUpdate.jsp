@@ -22,8 +22,8 @@
 		<c:set var="educationDtoList" value='${map.get("educationDtoList")}'/>
 		<div id="resumeContain">
 			
-			<form id = "resumeUpdateForm" action="./resumeUpdateCtr.do" method="post">
-			<input type="button" id="submitBtn" onclick="submitFnc();" value="수정 완료">
+			<form id ="resumeUpdateForm" action="./resumeUpdateCtr.do" method="post">
+			<input type="button" id="submitButton" onclick="submitFnc();" value="수정 완료">
 				<table>
 					<thead>
 						<th>개인 정보</th>
@@ -77,10 +77,10 @@
 						<tr>
 							<th>학력 사항</th>
 							<td colspan="6">
-								<input class="deleteTr" type="button"
-									value="칸삭제" onclick="deleteTrFnc('educationTr');">
-								<input class="addTr" type="button"
-									value="칸추가" onclick="addTrFnc('educationTable', 7);">
+								<input class="deleteTr resumeButton" type="button"
+									value="항목 삭제" onclick="deleteTrFnc('educationTr');">
+								<input class="addTr resumeButton" type="button"
+									value="항목 추가" onclick="addTrFnc('educationTable', 7);">
 							</td>
 						</tr>
 					</thead>
@@ -93,7 +93,22 @@
 						<td>학점(등급)/ 만점</td>
 						<td>졸업 구분</td>
 					</tr>
-	<%-- 				${educationDtoList} --%>
+					<c:if test="${educationDtoList != ''}">
+						<tr class="educationTr">
+							<td class="resumeValue">
+								<input type="date" name="resumeEduBeginDateValue" value="">
+							</td>
+							<td class="resumeValue">
+								<input type="date" name="resumeEduEndDateValue" value="">
+							</td>
+							<td class="resumeValue"><input type="text" name="resumeEduNameValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeEduMajorValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeEduLocValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeEduGradeValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeEduGraduateValue" value=""></td>
+						</tr>
+					</c:if>
+					
 					<c:forEach var="educationDto" items="${educationDtoList}">
 						<tr class="educationTr">
 							<td class="resumeValue">
@@ -119,10 +134,10 @@
 						<tr>
 							<th>경력 사항</th>
 							<td colspan="5">
-								<input class="deleteTr" type="button"
-									value="칸삭제" onclick="deleteTrFnc('careerTr');">
-								<input class="addTr" type="button" 
-									value="칸추가" onclick="addTrFnc('careerTable', 6);">
+								<input class="deleteTr resumeButton" type="button"
+									value="항목 삭제" onclick="deleteTrFnc('careerTr');">
+								<input class="addTr resumeButton" type="button" 
+									value="항목 추가" onclick="addTrFnc('careerTable', 6);">
 							</td>
 						</tr>
 					</thead>
@@ -135,25 +150,39 @@
 						<td>담당업무</td>
 					</tr>
 	<%-- 				${careerDtoList} --%>
-						<c:if test="">
-							<c:forEach var="careerDto" items="${careerDtoList}">
+					<c:if test="${careerDtoList != ''}">
 						
-							<tr class="careerTr">
-								<td class="resumeValue">
-									<input type="date" name="resumeCareerBeginDateValue" value="<fmt:formatDate pattern="yyyy-MM-dd"
-										value="${careerDto.carBeginDate}"/>">
-								</td>
-								<td class="resumeValue">
-									<input type="date" name="resumeCareerEndDateValue" value="<fmt:formatDate pattern="yyyy-MM-dd"
-										value="${careerDto.carEndDate}"/>">
-								</td>
-								<td class="resumeValue"><input type="text" name="resumeCareerNameValue" value="${careerDto.carName}"></td>
-								<td class="resumeValue"><input type="text" name="resumeCareerPosValue" value="${careerDto.carPosition}"></td>
-								<td class="resumeValue"><input type="text" name="resumeCareerLocValue" value="${careerDto.carLocation}"></td>
-								<td class="resumeValue"><input type="text" name="resumeCareerJobValue" value="${careerDto.carJob}"></td>
-							</tr>                      
-							</c:forEach>
-						</c:if>
+						<tr class="careerTr">
+							<td class="resumeValue">
+								<input type="date" name="resumeCareerBeginDateValue" value="">
+							</td>
+							<td class="resumeValue">
+								<input type="date" name="resumeCareerEndDateValue" value="">
+							</td>
+							<td class="resumeValue"><input type="text" name="resumeCareerNameValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeCareerPosValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeCareerLocValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeCareerJobValue" value=""></td>
+						</tr>                      
+					</c:if>
+					<c:forEach var="careerDto" items="${careerDtoList}">
+				
+						<tr class="careerTr">
+							<td class="resumeValue">
+								<input type="date" name="resumeCareerBeginDateValue" value="<fmt:formatDate pattern="yyyy-MM-dd"
+									value="${careerDto.carBeginDate}"/>">
+							</td>
+							<td class="resumeValue">
+								<input type="date" name="resumeCareerEndDateValue" value="<fmt:formatDate pattern="yyyy-MM-dd"
+									value="${careerDto.carEndDate}"/>">
+							</td>
+							<td class="resumeValue"><input type="text" name="resumeCareerNameValue" value="${careerDto.carName}"></td>
+							<td class="resumeValue"><input type="text" name="resumeCareerPosValue" value="${careerDto.carPosition}"></td>
+							<td class="resumeValue"><input type="text" name="resumeCareerLocValue" value="${careerDto.carLocation}"></td>
+							<td class="resumeValue"><input type="text" name="resumeCareerJobValue" value="${careerDto.carJob}"></td>
+						</tr>                      
+					</c:forEach>
+
 				</table>
 	
 				<table id="licenseTable">
@@ -161,10 +190,10 @@
 						<tr>
 							<th>자격증</th>
 							<td colspan="3">
-								<input class="deleteTr" type="button"
-									value="칸삭제" onclick="deleteTrFnc('licenseTr');">
-								<input class="addTr" type="button" 
-									value="칸추가" onclick="addTrFnc('licenseTable', 4);">
+								<input class="deleteTr resumeButton" type="button"
+									value="항목 삭제" onclick="deleteTrFnc('licenseTr');">
+								<input class="addTr resumeButton" type="button" 
+									value="항목 추가" onclick="addTrFnc('licenseTable', 4);">
 							</td>
 						</tr>
 					</thead>
@@ -183,6 +212,14 @@
 					<c:set var="resumeDtoLicenseGradeList" 
 						value="${fn:split(resumeDto.resumeLicenseGrade, ',')}"/>
 	<%-- 					${resumeDto.resumeLicenseDate} --%>
+					<c:if test="${resumeDtoLicenseDateList == null}">
+						<tr class="licenseTr">
+							<td class="resumeValue"><input type="date" name="resumeLicenseDateValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeLicenseNameValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeLicenseInstValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeLicenseGradeValue" value=""></td>
+						</tr>
+					</c:if>
 					<c:forEach var="i" begin="0" end="${fn:length(resumeDtoLicenseNameList)-1}">
 					
 						<tr class="licenseTr">

@@ -23,7 +23,11 @@
 }
 
 .smallMenuItem {
-	margin-bottom: 20px;
+	margin-bottom: 35px;
+	border-bottom: 2px solid #fff;
+    width: 200px;
+    height: 40px;
+   	font-size: 18px;
 }
 
 .smallMenuItem a {

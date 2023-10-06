@@ -28,11 +28,13 @@
 }
 
 #letterContain {
-	border: 1px solid black;
-	width: 1280px;
-	border-radius: 5px;
-	/* 	padding: 30px; */
+	margin: 10px;
+    float: left;
+    width: 980px;
+    font-size: 30px;
+    background-color: #f8fafc;
 }
+
 
 #letterContain table {
 	border: 1px solid black;
@@ -51,61 +53,75 @@ tr td {
 }
 
 .letterValue {
-	border: 1px solid black;
-	border-radius: 5px;
-	width: 750px;
-	height: 300px;
-	font-size: 20px;
-	resize: none;
+    border-radius: 10px;
+    border: none;
+    padding: 20px 30px;
+    margin-left: 110px;
+    margin-bottom: 30px;
+    width: 690px;
+    height: 300px;
+    font-size: 16px;
+    resize: none;
+    font-family: inherit;
+	line-height: 30px;	
+    box-shadow: 0px 1px 4px 0px #ddd;
+}
+.letterItemTitle {
+    margin: 0px 0px 15px 110px;
+    font-size: 23px;
+    font-weight: bold;	
+}
+#letter {
+	padding: 30px 0px;	
+}
+#button {
+	width: 90px;
+    height: 40px;
+    margin-left: 770px;
+    background-color: #4876ef;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 1px 4px 0px #ddd;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
 }
 </style>
 </head>
 <body>
 	<jsp:include page="../../Header.jsp" />
 	<div id="container">
-		<div id="navigation">
-			<div id="smallMenuBox">
-				<div class="smallMenuItem">
-					<a href="">내 프로필</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="">내가 쓴 글</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="./showResume.do?perNo=${personalMemberDto.perNo}">이력서 관리</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="./showLetter.do?perNo=${personalMemberDto.perNo}">자소서 관리</a>
-				</div>
-				<div class="smallMenuItem">
-					<a href="">고객센터</a>
-				</div>
-			</div>
-		</div>
+		
+		<jsp:include page="./PersonalMyPageNav.jsp"/>
+
 		<div id="letterContain">
-			<p>의이력서</p>
 			<div id="letter">
-				<p>OO의 자기소개서</p>
-				<form action="./letterUpdateCtr.do" method="post"">
+				<form action="./letterUpdateCtr.do" method="post">
+					<input type="submit" id="button" value="수정 완료">
 					<div>
-						<p>성장 배경</p>
-						<textarea class="letterValue" name="history">${letterDto.history}</textarea>
+						<div class="letterItemTitle">성장 배경</div>
+						<textarea class="letterValue" name="history">${letterDto.history}
+						</textarea>
 					</div>
 					<div>
-						<p>지원 동기</p>
-						<textarea class="letterValue" name="motivation">${letterDto.motivation}</textarea>
+						<div class="letterItemTitle">지원 동기</div>
+						<textarea class="letterValue" name="motivation">${letterDto.motivation}
+						</textarea>
 					</div>
 					<div>
-						<p>성격의 장단점</p>
-						<textarea class="letterValue" name="character">${letterDto.character}</textarea>
+						<div class="letterItemTitle">성격의 장단점</div>
+						<textarea class="letterValue" name="character">${letterDto.character}
+						</textarea>
 					</div>
 					<div>
-						<p>목표</p>
-						<textarea class="letterValue" name="goal">${letterDto.goal}</textarea>
+						<div class="letterItemTitle">목표</div>
+						<textarea class="letterValue" name="goal">${letterDto.goal}
+						</textarea>
 					</div>
 					<input type="hidden" name="resumeNo" value="${resumeDto.resumeNo}">
 					<input type="hidden" name="perNo" value="${sessionScope.personalMemberDto.perNo}">
-					<input type="submit">
+					
 				</form>
 			</div>
 		</div>

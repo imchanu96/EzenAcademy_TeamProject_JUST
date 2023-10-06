@@ -6,17 +6,6 @@
 	margin: 0px auto;
 }
 
-/* navigation */
-#navigation {
-	/* 	margin: 10px; */
-	float: left;
-	width: 250px;
-	height: 950px;
-	font-size: 25px;
-	text-align: center;
-	background-color: #eff5ff;
-}
-
 #letterContain {
 	margin: 10px;
     float: left;
@@ -66,7 +55,7 @@ tr td {
 #button {
 	width: 90px;
     height: 40px;
-    margin-left: 780px;
+    margin-left: 770px;
     background-color: #4876ef;
     border: none;
     border-radius: 6px;

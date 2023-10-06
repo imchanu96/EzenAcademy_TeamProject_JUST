@@ -71,7 +71,7 @@ public class CompanyMemberController {
 				= companyMemberService.showCompanyInfo(comNo);
 
 
-				model.addAttribute("companyMemberDto", companyMemberDto);
+				session.setAttribute("companyMemberDto", companyMemberDto);
 
 			return "./company/myPage/CompanyMyPage";
 		}
@@ -214,15 +214,15 @@ public class CompanyMemberController {
 
 		try {
 			companyMemberService.companyInfoUpdateOne(companyMemberDto);
-
+			
 			// 담아둔 personalMemberDto의 바뀐 정보를 세션에 다시 덮어쓰기
-			session.setAttribute("companyMemberDto", companyMemberDto);
+//			session.setAttribute("companyMemberDto", companyMemberDto);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
 
-		return "company/myPage/CompanyMyPage";
+		return "redirect:./showCompanyInfo.do?comNo=" +  companyMemberDto.getComNo();
 	}
 
 	@RequestMapping(value = "/company/setPrefer.do", method = RequestMethod.GET)

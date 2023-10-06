@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +9,9 @@
 <title>회사 주소 변경</title>
 
 <script type="text/javascript">
-	function backButton() {
-// 		window.history.back();
-		location.href = "company/myPage/CompanyMyPage";
+	function cancelBtnFnc() {
+		window.history.back();
+// 		location.href = "company/myPage/CompanyMyPage";
 	}
 </script>
 
@@ -56,9 +57,8 @@
 							</div>
 							
 							<div id="backButtonBox">
-							<button id="backBtn" onclick="backButton();">
-									돌아가기
-							</button>
+								<input type="button" id="backBtn" onclick="cancelBtnFnc();" value="돌아가기">
+
 							</div>
 							
 						</form>
@@ -80,9 +80,8 @@
 							</div>
 							
 							<div id="backButtonBox">
-							<button id="backBtn" onclick="backButton();">
-									돌아가기
-							</button>
+								<input type="button" id="backBtn" onclick="cancelBtnFnc();" value="돌아가기">
+
 							</div>
 							
 						</form>
@@ -104,9 +103,7 @@
 							</div>
 							
 							<div id="backButtonBox">
-							<button id="backBtn" onclick="backButton();">
-									돌아가기
-							</button>
+								<input type="button" id="backBtn" onclick="cancelBtnFnc();" value="돌아가기">
 							</div>
 							
 						</form>
@@ -128,9 +125,7 @@
 							</div>
 							
 							<div id="backButtonBox">
-							<button id="backBtn" onclick="backButton();">
-									돌아가기
-							</button>
+								<input type="button" id="backBtn" onclick="cancelBtnFnc();" value="돌아가기">
 							</div>
 							
 						</form>
@@ -152,9 +147,7 @@
 							</div>
 							
 							<div id="backButtonBox">
-							<button id="backBtn" onclick="backButton();">
-									돌아가기
-							</button>
+								<input type="button" id="backBtn" onclick="cancelBtnFnc();" value="돌아가기">
 							</div>
 							
 						</form>
@@ -176,9 +169,7 @@
 							</div>
 							
 							<div id="backButtonBox">
-							<button id="backBtn" onclick="backButton();">
-									돌아가기
-							</button>
+								<input type="button" id="backBtn" onclick="cancelBtnFnc();" value="돌아가기">
 							</div>
 							
 						</form>
@@ -191,7 +182,13 @@
 
 							<div class="companyInfoItemContent">
 								<input type="date" name="comEstDate"
+<<<<<<< HEAD
 									value="${companyMemberDtoUpdate.comEstDate}">
+=======
+									value="<fmt:formatDate value="${sessionScope.companyMemberDto.comEstDate}" 
+									pattern="yyyy-MM-dd"/>">
+									
+>>>>>>> branch 'main' of https://github.com/noohij/Ezen_TeamProject_JUST.git
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>
@@ -200,9 +197,7 @@
 							</div>
 							
 							<div id="backButtonBox">
-							<button id="backBtn" onclick="backButton();">
-									돌아가기
-							</button>
+								<input type="button" id="backBtn" onclick="cancelBtnFnc();" value="돌아가기">
 							</div>
 							
 						</form>
@@ -224,9 +219,7 @@
 							</div>
 							
 							<div id="backButtonBox">
-							<button id="backBtn" onclick="backButton();">
-									돌아가기
-							</button>
+								<input type="button" id="backBtn" onclick="cancelBtnFnc();" value="돌아가기">
 							</div>
 							
 						</form>
@@ -248,9 +241,7 @@
 							</div>
 							
 							<div id="backButtonBox">
-							<button id="backBtn" onclick="backButton();">
-									돌아가기
-							</button>
+								<input type="button" id="backBtn" onclick="cancelBtnFnc();" value="돌아가기">
 							</div>
 							
 						</form>
