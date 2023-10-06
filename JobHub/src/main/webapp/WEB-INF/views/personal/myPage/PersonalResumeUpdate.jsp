@@ -22,8 +22,8 @@
 		<c:set var="educationDtoList" value='${map.get("educationDtoList")}'/>
 		<div id="resumeContain">
 			
-			<form id = "resumeUpdateForm" action="./resumeUpdateCtr.do" method="post">
-			<input type="button" id="submitBtn" onclick="submitFnc();" value="수정 완료">
+			<form id ="resumeUpdateForm" action="./resumeUpdateCtr.do" method="post">
+			<input type="button" id="submitButton" onclick="submitFnc();" value="수정 완료">
 				<table>
 					<thead>
 						<th>개인 정보</th>
@@ -77,10 +77,10 @@
 						<tr>
 							<th>학력 사항</th>
 							<td colspan="6">
-								<input class="deleteTr" type="button"
-									value="칸삭제" onclick="deleteTrFnc('educationTr');">
-								<input class="addTr" type="button"
-									value="칸추가" onclick="addTrFnc('educationTable', 7);">
+								<input class="deleteTr resumeButton" type="button"
+									value="항목 삭제" onclick="deleteTrFnc('educationTr');">
+								<input class="addTr resumeButton" type="button"
+									value="항목 추가" onclick="addTrFnc('educationTable', 7);">
 							</td>
 						</tr>
 					</thead>
@@ -119,10 +119,10 @@
 						<tr>
 							<th>경력 사항</th>
 							<td colspan="5">
-								<input class="deleteTr" type="button"
-									value="칸삭제" onclick="deleteTrFnc('careerTr');">
-								<input class="addTr" type="button" 
-									value="칸추가" onclick="addTrFnc('careerTable', 6);">
+								<input class="deleteTr resumeButton" type="button"
+									value="항목 삭제" onclick="deleteTrFnc('careerTr');">
+								<input class="addTr resumeButton" type="button" 
+									value="항목 추가" onclick="addTrFnc('careerTable', 6);">
 							</td>
 						</tr>
 					</thead>
@@ -161,10 +161,10 @@
 						<tr>
 							<th>자격증</th>
 							<td colspan="3">
-								<input class="deleteTr" type="button"
-									value="칸삭제" onclick="deleteTrFnc('licenseTr');">
-								<input class="addTr" type="button" 
-									value="칸추가" onclick="addTrFnc('licenseTable', 4);">
+								<input class="deleteTr resumeButton" type="button"
+									value="항목 삭제" onclick="deleteTrFnc('licenseTr');">
+								<input class="addTr resumeButton" type="button" 
+									value="항목 추가" onclick="addTrFnc('licenseTable', 4);">
 							</td>
 						</tr>
 					</thead>

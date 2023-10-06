@@ -47,8 +47,9 @@
 							</div>
 						</div>
 						<div id="recommendTotalRateBox">
-							<div id="recommendTotalRateTitle">나와의 매칭률</div>
+							<div id="recommendTotalRateTitle">매칭률&nbsp;&nbsp;</div>
 							<div id="recommendTotalRate">${companyMemberList.RECOMMEND_TOTAL_RATE}</div>
+							<div id="recommendTotalRatePercentage">&nbsp;&nbsp;%</div>
 						</div>
 						
 					</div>	<!-- end of companyInfoBox -->

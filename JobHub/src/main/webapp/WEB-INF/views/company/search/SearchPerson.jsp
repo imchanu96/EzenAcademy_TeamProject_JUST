@@ -45,6 +45,7 @@ a:hover {
 
 .smallMenuItem {
 	margin-bottom: 20px;
+   	font-size: 18px;
 }
 
 .smallMenuItem a {

@@ -52,10 +52,10 @@ input {
 	border-radius: 5px;
 	box-shadow: 0px 1px 4px 0px gray;
 }
-#button {
+#submitButton {
 	width: 90px;
-    height: 40px;
-    margin-left: 780px;
+    height: 35px;
+    margin-left: 825px;
     margin-bottom: 20px;
     background-color: #4876ef;
     border: none;
@@ -66,8 +66,22 @@ input {
     color: #fff;
     cursor: pointer;
 }
-.addTr, .deleteTr{
-	width: 100px;
-	float: right;
-	margin-right: 10px;
+.resumeButton {
+    width: 65px;
+    height: 25px;
+    margin: 3px;
+    background-color: #4876ef;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 1px 4px 0px #ddd;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    float: right;
 }
+/* .addTr, .deleteTr{ */
+/* 	width: 100px; */
+/* 	float: right; */
+/* 	margin-right: 10px; */
+/* } */
