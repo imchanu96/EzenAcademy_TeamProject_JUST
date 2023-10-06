@@ -15,7 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.jobhub.board.dao.BoardDao;
 import com.jobhub.board.dto.BoardDto;
+import com.jobhub.board.service.BoardService;
 import com.jobhub.board.util.Paging;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
@@ -30,6 +32,12 @@ public class PersonalMemberController {
 
 	@Autowired
 	private PersonalMemberService PersonalMemberService;
+	
+	@Autowired
+	BoardService boardService;
+	
+	@Autowired
+	BoardDao boardDao;
 	
 	// 로그인 화면 이동
 	@RequestMapping(value = "/personal/login.do", method = RequestMethod.GET)
@@ -177,28 +185,27 @@ public class PersonalMemberController {
 	
 	@RequestMapping(value = "/personal/personalMyPostList.do",
 									method = {RequestMethod.GET, RequestMethod.POST})
-	public String myPostList(@RequestParam(defaultValue = "1") int curPage
-										, PersonalMemberDto personalMemberDto,Model model) {
+	public String myPostList(@RequestParam(defaultValue = "1") int curPage, HttpSession session, Model model) {
 		log.info("Welcome PersonalMemberMyPost!: {}", curPage);
 		
-		int totalCount 
-					= PersonalMemberService.personalMemberMyPostListSelectTotalCount();
+		int totalCount = boardService.boardSelectTotalCount();
 		
-		Paging myPostPaging = new Paging(totalCount, curPage);
+		Paging boardPaging = new Paging(totalCount, curPage);
 		
-		int start = myPostPaging.getPageBegin();
-		int end = myPostPaging.getPageEnd();
+		int start = boardPaging.getPageBegin();
+		int end = boardPaging.getPageEnd();
 		
-	    List<BoardDto> myPostList 
-	    			= PersonalMemberService.personalMemberMyPostList(start, end);
+		PersonalMemberDto pmd = (PersonalMemberDto)session.getAttribute("personalMemberDto");
+		int perNo = pmd.getPerNo();
+		
+	    List<BoardDto> boardList = boardService.boardSelectList(start, end, perNo);
 
 	    HashMap<String, Object> pagingMap = new HashMap<>(); 
 		pagingMap.put("totalCount", totalCount);
-		pagingMap.put("myPostPaging", myPostPaging);
+		pagingMap.put("boardPaging", boardPaging);
 		
-	    model.addAttribute("myPostList", myPostList);
+	    model.addAttribute("boardList", boardList);
 	    model.addAttribute("pagingMap", pagingMap);
-		
 		
 		return "/personal/myPage/PersonalMyPost";
 	}

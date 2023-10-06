@@ -126,15 +126,21 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 		ResumeDto resumeDto = sqlSession.selectOne(namespace + "personalMemberShowResume", map);
 		resultMap.put("resumeDto", resumeDto);
 
-		map.put("resumeNo", resumeDto.getResumeNo());
+		try {
+			map.put("resumeNo", resumeDto.getResumeNo());
+			
+			List<CareerDto> careerDtoList = sqlSession.selectList(namespace 
+					+ "personalMemberShowCareer", map);
+			
+			List<EducationDto> educationDtoList = sqlSession.selectList(namespace 
+					+ "personalMemberShowEducation", map);
+			resultMap.put("careerDtoList", careerDtoList);
+			resultMap.put("educationDtoList", educationDtoList);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 		
-		List<CareerDto> careerDtoList = sqlSession.selectList(namespace 
-				+ "personalMemberShowCareer", map);
 		
-		List<EducationDto> educationDtoList = sqlSession.selectList(namespace 
-				+ "personalMemberShowEducation", map);
-		resultMap.put("careerDtoList", careerDtoList);
-		resultMap.put("educationDtoList", educationDtoList);
 		
 		return resultMap;
 	}

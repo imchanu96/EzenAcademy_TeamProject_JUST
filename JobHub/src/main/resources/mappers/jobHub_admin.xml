@@ -31,6 +31,31 @@
 			javaType="java.util.Date" />
 	</resultMap>
 	
+	<resultMap type="personalMemberDto" id="personalResultMap">
+		<id column="PERSONAL_NUMBER" property="perNo" />
+		<result column="PERSONAL_NAME" property="perName" />
+		<result column="PERSONAL_ID" property="perId" />
+		<result column="PERSONAL_PASSWORD" property="perPwd" />
+		<result column="PERSONAL_PHONENUMBER" property="perPhoneNum" />
+		<result column="PERSONAL_COMPANY" property="perCom" />
+		<result column="PERSONAL_NICKNAME" property="perNickname" />
+		<result column="PERSONAL_PROFILE" property="perProfile" />
+		<result column="PERSONAL_EMAIL" property="perEmail" />
+		<result column="PERSONAL_HIRE_DATE" property="perHireDate"
+			javaType="java.util.Date" />
+		<result column="PERSONAL_KEYWORD" property="perKeyword" />
+		<result column="PERSONAL_TEMPORARILY" property="perTemporarily" />
+		<result column="PERMISSION" property="perPermission" />
+		<result column="PERSONAL_CREATE_DATE" property="perCreateDate" 
+			javaType="java.util.Date" />
+		<result column="PERSONAL_MODIFY_DATE" property="perModifyDate" 
+			javaType="java.util.Date" />
+		<result column="CONNECTION_TIME" property="perConnectionTime" 
+			javaType="java.util.Date" />
+		<result column="DISCONNECTION_TIME" property="perDisconnectionTime" 
+			javaType="java.util.Date" />
+	</resultMap>
+	
 	<resultMap type="companyMemberDto" id="companyResultMap">
 		<result column="COMPANY_NAME" property="comName" />	
 		<result column="COMPANY_NAME" property="comName" />
@@ -96,4 +121,21 @@
 		 SET PERMISSION	= 0
 		 WHERE COMPANY_NUMBER = #{comNo}
 	</update>
+	
+	<select id="personalMemberList"  parameterType="map" resultMap="personalResultMap">
+		SELECT PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_ID
+        		, PERSONAL_NICKNAME, PERMISSION, PERSONAL_CREATE_DATE
+       		 	, PERSONAL_MODIFY_DATE
+		FROM PERSONAL
+		WHERE PERMISSION = 2
+		OR PERMISSION = 3
+	</select>
+	
+	<select id="companyMemberList"  parameterType="map" resultMap="companyResultMap">
+		SELECT COMPANY_NUMBER, COMPANY_INCHARGE_NAME
+				, COMPANY_CODE, COMPANY_NAME, PERMISSION
+				, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE
+		FROM COMPANY
+		WHERE PERMISSION = 6
+	</select>
 </mapper>

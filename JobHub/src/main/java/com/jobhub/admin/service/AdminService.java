@@ -25,5 +25,9 @@ public interface AdminService {
 
 	public void companyUpdateOne(Map<String, Object> map);
 
+	public void setResume();
+
+	public void setRecommendRate();
+
 	
 }

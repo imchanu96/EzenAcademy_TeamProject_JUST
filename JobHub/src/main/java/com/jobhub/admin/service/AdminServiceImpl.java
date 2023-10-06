@@ -75,6 +75,18 @@ public class AdminServiceImpl implements AdminService{
 		
 	}
 
+	@Override
+	public void setResume() {
+		// TODO Auto-generated method stub
+		adminDao.setResume();
+	}
+
+	@Override
+	public void setRecommendRate() {
+		// TODO Auto-generated method stub
+		adminDao.setRecommendRate();
+	}
+
 
 
 }

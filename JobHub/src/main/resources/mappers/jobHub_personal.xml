@@ -329,7 +329,52 @@
 		    , RESUME_LICENSE_GRADE = #{resumeLicenseGrade}
 		WHERE PERSONAL_NUMBER = #{perNo}
 	</update>
+	
+	<insert id="personalEducationInsertOne" parameterType="educationDto">
+		INSERT INTO EDUCATION
+		VALUE(EDUCATION_NUMBER, EDUCATION_BEGIN_DATE, EDUCATION_END_DATE, EDUCATION_NAME
+			EDUCATION_MAJOR, EDUCATION_GRADE, EDUCATION_LOCATION, EDUCATION_GREADUATE, RESUME_NUMBER)
+		VALUES(EDUCATION_NUMBER_SEQ.NEXTVAL, #{eduBeginDate}, #{eduEndDate}, #{eduName}
+			, #{eduMajor}, #{eduGrade}, #{eduLocation}, #{eduGreaduate}, #{resumeNo})
+	</insert>
 
+	<insert id="personalCareerInsertOne" parameterType="careerDto">
+		INSERT INTO CAREER 
+		<choose>
+			<when test="carEndDate == null">
+				VALUE(CAREER_NUMBER, CAREER_BEGIN_DATE, RESUME_NUMBER)
+				VALUES(CAREER_NUMBER_SEQ.NEXTVAL, #{carBeginDate}, #{resumeNo})
+			</when>
+			<otherwise>
+				VALUE(CAREER_NUMBER, CAREER_BEGIN_DATE, CAREER_END_DATE, CAREER_NAME, CAREER_POSITION
+				,CAREER_LOCATION, CAREER_JOB, RESUME_NUMBER)
+				VALUES(CAREER_NUMBER_SEQ.NEXTVAL, #{carBeginDate}, #{carEndDate}
+				, #{carName}, #{carPosition}, #{carLocation}, #{carJob}, #{resumeNo})
+			</otherwise>
+		</choose>
+	</insert>
+	
+	<update id="personalEducationUpdateOne" parameterType="educationDto">
+		UPDATE EDUCATION
+		SET EDUCATION_BEGIN_DATE = #{eduBeginDate}
+			EDUCATION_END_DATE = #{eduEndDate}
+			EDUCATION_NAME = #{eduName}
+			EDUCATION_MAJOR = #{eduMajor}
+			EDUCATION_GRADE = #{eduGrade}
+			EDUCATION_LOCATION = #{eduLocation}
+			EDUCATION_GREADUATE = #{eduGreaduate}
+	</update>
+
+	<update id="personalCareerUpdateOne" parameterType="careerDto">
+			UPDATE EDUCATION
+			SET CAREER_BEGIN_DATE = #{carBeginDate}
+				CAREER_END_DATE = #{carEndDate}
+				CAREER_NAME = #{carName}
+				CAREER_POSITION = #{carPosition}
+				CAREER_LOCATION = #{carLocation}
+				CAREER_JOB = #{carJob}
+	</update>
+	
 	<update id="PersonalLetterUpdateOne" parameterType="letterDto">
 		UPDATE LETTER
 		SET LETTER_HISTORY = #{history}

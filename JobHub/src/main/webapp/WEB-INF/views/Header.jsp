@@ -17,8 +17,14 @@
 			<p>정말 로그아웃 하시겠습니까?</p>
 		</div>
 			<div id="buttonForm">
-				<div class="button">
-					<input type="button" value="네" onclick="location.href='./logout.do'">
+				<div class="logoutButton">
+					<c:if test="${sessionScope.permission <= 3 
+						or sessionScope.permission == 10}">
+						<input type="button" value="네" onclick="location.href='../personal/logout.do'">
+					</c:if>
+					<c:if test="${sessionScope.permission == 6}">
+						<input type="button" value="네" onclick="location.href='../company/logout.do'">
+					</c:if>
 				</div>
 				<div class="button">
 					<input type="button" value="아니오" onclick="closeModalFnc();">

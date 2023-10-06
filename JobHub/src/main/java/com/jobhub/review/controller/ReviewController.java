@@ -49,7 +49,7 @@ public class ReviewController {
 			int end = companyMemberPaging.getPageEnd();
 			
 			Map<String, Object> map = new HashMap<String, Object>();
-			
+			System.out.println(" start" + start + "end" + end);
 			map.put("start", start);
 			map.put("end", end);
 			map.put("perNo", personalMemberDto.getPerNo());

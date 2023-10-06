@@ -15,7 +15,7 @@ public class CareerDto {
 	private String carPosition;
 	private String carLocation;
 	private String carJob;
-	private String resumeNo;
+	private int resumeNo;
 	
 	public CareerDto() {
 		super();
@@ -23,7 +23,7 @@ public class CareerDto {
 
 	public CareerDto(int carNo, Date carBeginDate, Date carEndDate
 			, String carName, String carPosition,
-			String carLocation, String carJob, String resumeNo) {
+			String carLocation, String carJob, int resumeNo) {
 		super();
 		this.carNo = carNo;
 		this.carBeginDate = carBeginDate;
@@ -91,11 +91,11 @@ public class CareerDto {
 		this.carJob = carJob;
 	}
 
-	public String getResumeNo() {
+	public int getResumeNo() {
 		return resumeNo;
 	}
 
-	public void setResumeNo(String resumeNo) {
+	public void setResumeNo(int resumeNo) {
 		this.resumeNo = resumeNo;
 	}
 

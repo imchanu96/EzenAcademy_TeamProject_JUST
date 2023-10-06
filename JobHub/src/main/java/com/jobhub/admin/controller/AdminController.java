@@ -164,4 +164,38 @@ public class AdminController {
 			return "redirect:/admin/companyMemList.do";
 		}
 		
+		
+		@RequestMapping(value = "/admin/setResume.do", method = RequestMethod.GET)
+		public String setResume(Model model) {
+			
+			log.info("Welcome AdminController setResume.do 이력서 세팅");
+			
+			adminService.setResume();
+			try {
+				
+			} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			}
+			model.addAttribute("myMsg" ,"이력서 세팅 완료");
+			return "redirect:/admin/memberList.do";
+		}
+		
+		@RequestMapping(value = "/admin/setRecommendRate.do", method = RequestMethod.GET)
+		public String setRecommendRate(Model model) {
+			
+			log.info("Welcome AdminController setRecommendRate.do 적합도 계산");
+			
+			
+			adminService.setRecommendRate();
+			try {
+				
+			} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			}
+			model.addAttribute("myMsg", "적합도 계산 완료");
+			return "redirect:/admin/memberList.do";
+		}
+		
 }

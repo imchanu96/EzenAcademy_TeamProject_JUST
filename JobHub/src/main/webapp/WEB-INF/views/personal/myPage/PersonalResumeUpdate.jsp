@@ -230,25 +230,25 @@
 						</tr>
 					</c:forEach>
 				</table>
-				<input type="hidden" id="resumeEduBeginDate" name="resumeEduBeginDate" value="">
-				<input type="hidden" id="resumeEduEndDate" name="resumeEduEndDate" value="">
-				<input type="hidden" id="resumeEduName" name="resumeEduName" value="">
-				<input type="hidden" id="resumeEduMajor" name="resumeEduMajor" value="">
-				<input type="hidden" id="resumeEduLoc" name="resumeEduLoc" value="">
-				<input type="hidden" id="resumeEduGrade" 	name="resumeEduGrade" value="">
-				<input type="hidden" id="resumeEduGraduate" name="resumeEduGraduate" value="">
-				<input type="hidden" id="resumeCareerBeginDate" name="resumeCareerBeginDate" value="">
-				<input type="hidden" id="resumeCareerEndDate" name="resumeCareerEndDate" value="">
-				<input type="hidden" id="resumeCareerName" name="resumeCareerName" value="">
-				<input type="hidden" id="resumeCareerPos"	name="resumeCareerPos" value="">
-				<input type="hidden" id="resumeCareerLoc"	name="resumeCareerLoc" value="">
-				<input type="hidden" id="resumeCareerJob" name="resumeCareerJob" value="">
-				<input type="hidden" id="resumeLicenseDate" name="resumeLicenseDate" value="">
-				<input type="hidden" id="resumeLicenseName" name="resumeLicenseName" value="">
-				<input type="hidden" id="resumeLicenseInst" name="resumeLicenseInst" value="">
-				<input type="hidden" id="resumeLicenseGrade" name="resumeLicenseGrade" value="">
-				<input type="hidden" name="resumeNo" value="${resumeDto.resumeNo}">
-				<input type="hidden" name="perNo" value="${sessionScope.personalMemberDto.perNo}">
+				<input type="text" id="resumeEduBeginDate" name="resumeEduBeginDate" value="">
+				<input type="text" id="resumeEduEndDate" name="resumeEduEndDate" value="">
+				<input type="text" id="resumeEduName" name="resumeEduName" value="">
+				<input type="text" id="resumeEduMajor" name="resumeEduMajor" value="">
+				<input type="text" id="resumeEduLoc" name="resumeEduLoc" value="">
+				<input type="text" id="resumeEduGrade" 	name="resumeEduGrade" value="">
+				<input type="text" id="resumeEduGraduate" name="resumeEduGraduate" value="">
+				<input type="text" id="resumeCareerBeginDate" name="resumeCareerBeginDate" value="">
+				<input type="text" id="resumeCareerEndDate" name="resumeCareerEndDate" value="">
+				<input type="text" id="resumeCareerName" name="resumeCareerName" value="">
+				<input type="text" id="resumeCareerPos"	name="resumeCareerPos" value="">
+				<input type="text" id="resumeCareerLoc"	name="resumeCareerLoc" value="">
+				<input type="text" id="resumeCareerJob" name="resumeCareerJob" value="">
+				<input type="text" id="resumeLicenseDate" name="resumeLicenseDate" value="">
+				<input type="text" id="resumeLicenseName" name="resumeLicenseName" value="">
+				<input type="text" id="resumeLicenseInst" name="resumeLicenseInst" value="">
+				<input type="text" id="resumeLicenseGrade" name="resumeLicenseGrade" value="">
+				<input type="text" name="resumeNo" value="${resumeDto.resumeNo}">
+				<input type="text" name="perNo" value="${sessionScope.personalMemberDto.perNo}">
 			</form>
 		</div>
 	</div>

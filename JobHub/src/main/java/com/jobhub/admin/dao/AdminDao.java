@@ -18,7 +18,11 @@ public interface AdminDao {
 
 	public void companyUpdateOne(Map<String, Object> map);
 
-	List<PersonalMemberDto> memberSelectList();
+	public List<PersonalMemberDto> memberSelectList();
+
+	public void setResume();
+
+	public void setRecommendRate();
 
 	
 
