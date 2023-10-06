@@ -369,7 +369,7 @@ public class PersonalMemberController {
 		
 		try {
 			PersonalMemberService.PersonalresumeUpdateOne(resumeDto);
-
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();

@@ -93,7 +93,22 @@
 						<td>학점(등급)/ 만점</td>
 						<td>졸업 구분</td>
 					</tr>
-	<%-- 				${educationDtoList} --%>
+					<c:if test="${educationDtoList != ''}">
+						<tr class="educationTr">
+							<td class="resumeValue">
+								<input type="date" name="resumeEduBeginDateValue" value="">
+							</td>
+							<td class="resumeValue">
+								<input type="date" name="resumeEduEndDateValue" value="">
+							</td>
+							<td class="resumeValue"><input type="text" name="resumeEduNameValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeEduMajorValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeEduLocValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeEduGradeValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeEduGraduateValue" value=""></td>
+						</tr>
+					</c:if>
+					
 					<c:forEach var="educationDto" items="${educationDtoList}">
 						<tr class="educationTr">
 							<td class="resumeValue">
@@ -135,25 +150,39 @@
 						<td>담당업무</td>
 					</tr>
 	<%-- 				${careerDtoList} --%>
-						<c:if test="">
-							<c:forEach var="careerDto" items="${careerDtoList}">
+					<c:if test="${careerDtoList != ''}">
 						
-							<tr class="careerTr">
-								<td class="resumeValue">
-									<input type="date" name="resumeCareerBeginDateValue" value="<fmt:formatDate pattern="yyyy-MM-dd"
-										value="${careerDto.carBeginDate}"/>">
-								</td>
-								<td class="resumeValue">
-									<input type="date" name="resumeCareerEndDateValue" value="<fmt:formatDate pattern="yyyy-MM-dd"
-										value="${careerDto.carEndDate}"/>">
-								</td>
-								<td class="resumeValue"><input type="text" name="resumeCareerNameValue" value="${careerDto.carName}"></td>
-								<td class="resumeValue"><input type="text" name="resumeCareerPosValue" value="${careerDto.carPosition}"></td>
-								<td class="resumeValue"><input type="text" name="resumeCareerLocValue" value="${careerDto.carLocation}"></td>
-								<td class="resumeValue"><input type="text" name="resumeCareerJobValue" value="${careerDto.carJob}"></td>
-							</tr>                      
-							</c:forEach>
-						</c:if>
+						<tr class="careerTr">
+							<td class="resumeValue">
+								<input type="date" name="resumeCareerBeginDateValue" value="">
+							</td>
+							<td class="resumeValue">
+								<input type="date" name="resumeCareerEndDateValue" value="">
+							</td>
+							<td class="resumeValue"><input type="text" name="resumeCareerNameValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeCareerPosValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeCareerLocValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeCareerJobValue" value=""></td>
+						</tr>                      
+					</c:if>
+					<c:forEach var="careerDto" items="${careerDtoList}">
+				
+						<tr class="careerTr">
+							<td class="resumeValue">
+								<input type="date" name="resumeCareerBeginDateValue" value="<fmt:formatDate pattern="yyyy-MM-dd"
+									value="${careerDto.carBeginDate}"/>">
+							</td>
+							<td class="resumeValue">
+								<input type="date" name="resumeCareerEndDateValue" value="<fmt:formatDate pattern="yyyy-MM-dd"
+									value="${careerDto.carEndDate}"/>">
+							</td>
+							<td class="resumeValue"><input type="text" name="resumeCareerNameValue" value="${careerDto.carName}"></td>
+							<td class="resumeValue"><input type="text" name="resumeCareerPosValue" value="${careerDto.carPosition}"></td>
+							<td class="resumeValue"><input type="text" name="resumeCareerLocValue" value="${careerDto.carLocation}"></td>
+							<td class="resumeValue"><input type="text" name="resumeCareerJobValue" value="${careerDto.carJob}"></td>
+						</tr>                      
+					</c:forEach>
+
 				</table>
 	
 				<table id="licenseTable">
@@ -183,6 +212,14 @@
 					<c:set var="resumeDtoLicenseGradeList" 
 						value="${fn:split(resumeDto.resumeLicenseGrade, ',')}"/>
 	<%-- 					${resumeDto.resumeLicenseDate} --%>
+					<c:if test="${resumeDtoLicenseDateList == null}">
+						<tr class="licenseTr">
+							<td class="resumeValue"><input type="date" name="resumeLicenseDateValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeLicenseNameValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeLicenseInstValue" value=""></td>
+							<td class="resumeValue"><input type="text" name="resumeLicenseGradeValue" value=""></td>
+						</tr>
+					</c:if>
 					<c:forEach var="i" begin="0" end="${fn:length(resumeDtoLicenseNameList)-1}">
 					
 						<tr class="licenseTr">
