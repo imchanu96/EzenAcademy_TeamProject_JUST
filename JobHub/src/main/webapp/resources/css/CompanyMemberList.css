@@ -107,6 +107,11 @@
 	#companyHomepage {
 	
 	}
+	#noLetterResumeAlert{
+		text-align: center;
+		font-size: 22px;
+	    margin-top: 22px;
+	}
 	nav {
 		margin-bottom: 30px;
 	}

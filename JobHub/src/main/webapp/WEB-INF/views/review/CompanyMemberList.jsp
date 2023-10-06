@@ -22,6 +22,36 @@
 		
 		<div id="content">
 			<c:if test="${not empty personalMemberDto}">
+				<c:if test="${companyMemberList == '[]'}">
+					<div id="companyInfoBox">
+<%-- 					${personalMemberDto.perNo} --%>
+<%-- 					${companyMemberList.comNo} --%>
+						<div id="companyLogo">
+<%-- 							<img src="${companyMemberList.COMPANY_LOGO}"> --%>
+						</div>
+						<div id="companySummary">
+							<div id="noLetterResumeAlert">
+								이력서와 자소서를 입력 후 조회해주세요.
+							</div>
+<!-- 							<div id="companyTypeBox"> -->
+<!-- 								<span id="companyType"> -->
+<%-- 									${companyMemberList.COMPANY_TYPE} --%>
+<!-- 								</span> -->
+<!-- 							</div> -->
+<!-- 							<div id="companyHomepageBox"> -->
+<%-- 								<a id="companyHomepage" href="http://${companyMemberList.COMPANY_HOMEPAGE}" target="_blank"> --%>
+<%-- 									${companyMemberList.COMPANY_HOMEPAGE} --%>
+<!-- 								</a> -->
+<!-- 							</div> -->
+						</div>
+						<div id="recommendTotalRateBox">
+<!-- 							<div id="recommendTotalRateTitle">매칭률&nbsp;&nbsp;</div> -->
+<%-- 							<div id="recommendTotalRate">${companyMemberList.RECOMMEND_TOTAL_RATE}</div> --%>
+<!-- 							<div id="recommendTotalRatePercentage">&nbsp;&nbsp;%</div> -->
+						</div>
+						
+					</div>
+				</c:if>
 				<c:forEach var="companyMemberList" items="${companyMemberList}">
 					<div id="companyInfoBox">
 <%-- 					${personalMemberDto.perNo} --%>
@@ -53,17 +83,20 @@
 						</div>
 						
 					</div>	<!-- end of companyInfoBox -->
+					
+					<jsp:include page="/WEB-INF/views/review/CompanyMemberPaging.jsp">
+					<jsp:param value="${pagingMap}" name="pagingMap"/>
+					</jsp:include>
+				
+					<form action="./companyMemberList.do" id="pagingForm" method="post">
+						<input type="hidden" id="curPage" name="curPage"
+							value="${pagingMap.companyMemberPaging.curPage}">
+					</form>
+					
 				</c:forEach>
 				
 			<!-- 페이징 -->
-				<jsp:include page="/WEB-INF/views/review/CompanyMemberPaging.jsp">
-					<jsp:param value="${pagingMap}" name="pagingMap"/>
-				</jsp:include>
 				
-				<form action="./companyMemberList.do" id="pagingForm" method="post">
-					<input type="hidden" id="curPage" name="curPage"
-						value="${pagingMap.companyMemberPaging.curPage}">
-				</form>
 				
 			</c:if>
 				
