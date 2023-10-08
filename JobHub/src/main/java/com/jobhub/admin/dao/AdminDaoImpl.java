@@ -18,6 +18,8 @@ import com.jobhub.personal.dto.CareerDto;
 import com.jobhub.personal.dto.EducationDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;
+import com.jobhub.recommend.dto.RecommendDto;
+import com.jobhub.util.PreferCalculate;
 
 @Repository
 public class AdminDaoImpl implements AdminDao{
@@ -25,6 +27,7 @@ public class AdminDaoImpl implements AdminDao{
 	String namespace = "com.jobhub.admin.";
 	String personalNamespace = "com.jobhub.personal.";
 	String companyNamespace = "com.jobhub.company.";
+	String recommendNamespace = "com.jobhub.recommend.";
 	
 	@Autowired
 	SqlSessionTemplate sqlSession;
@@ -218,6 +221,45 @@ public class AdminDaoImpl implements AdminDao{
 		// TODO Auto-generated method stub
 		List<PersonalMemberDto> personalMemberList = sqlSession.selectList(namespace + "personalMemberList");
 		List<CompanyMemberDto> companyMemberList =sqlSession.selectList(namespace + "companyMemberList");
+		
+		Map<String, Object> checkMap = new HashMap<String, Object>();
+		
+		for (CompanyMemberDto companyMemberDto : companyMemberList) {
+			
+			for (PersonalMemberDto personalMemberDto : personalMemberList) {
+				checkMap.put("comNo", companyMemberDto.getComNo());
+				checkMap.put("perNo", personalMemberDto.getPerNo());
+				
+				ResumeDto resumeDto
+					= sqlSession.selectOne(recommendNamespace + "personalMemberShowResume", checkMap);
+
+				checkMap.put("resumeNo", resumeDto.getResumeNo());
+				
+				List<CareerDto> careerDtoList
+					= sqlSession.selectList(personalNamespace + "personalMemberShowCareer", checkMap);
+		
+				List<EducationDto> educationDtoList
+					= sqlSession.selectList(personalNamespace + "personalMemberShowEducation", checkMap);
+			
+			
+				RecommendDto recommendDto
+				= sqlSession.selectOne(recommendNamespace + "checkRecommed", checkMap);
+			
+				PreferCalculate preferCal = new PreferCalculate(personalMemberDto, resumeDto
+						, companyMemberDto, careerDtoList, educationDtoList);
+//				System.out.println(preferCal);
+				
+				if (recommendDto == null) {
+					System.out.println("insert");
+					RecommendDto insertRecommendDto = preferCal.getRecommendDto();
+					sqlSession.insert(recommendNamespace + "insertRecommendDto", insertRecommendDto);
+				}else if(recommendDto != null){
+					System.out.println("update");
+					RecommendDto updateRecommendDto = preferCal.getRecommendDto();
+					sqlSession.update(recommendNamespace + "updateRecommendDto", updateRecommendDto);
+				}	
+			}
+		}
 	}
 
 

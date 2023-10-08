@@ -1,3 +1,7 @@
+function cancelFnc(){
+	window.history.back();
+}
+
 
 function addTrFnc(trObj, tdNum, tdName){
 	var parentTable = document.getElementById(trObj);

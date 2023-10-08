@@ -345,6 +345,11 @@ public class PersonalMemberController {
 		log.info("Welcome PersonalMemberKeywordUpdateCtr");
 		PersonalMemberDto personalMemberDto
 			= (PersonalMemberDto) session.getAttribute("personalMemberDto");
+		if (perKeyword != null && perKeyword.contains(",")) {
+			perKeyword = perKeyword.replace(",", "-");
+		}
+		
+		System.out.println(perKeyword);
 		personalMemberDto.setPerKeyword(perKeyword);
 		
 		try {
@@ -378,6 +383,41 @@ public class PersonalMemberController {
 		model.addAttribute("map", map);
 		
 		return "personal/myPage/PersonalResumeUpdate";
+	}
+	
+	@RequestMapping(value = "/personal/resumeAddCtr.do", method = RequestMethod.POST)
+	public String PersonalresumeAddCtr(@RequestParam("requestDto") String requestDto 
+			, ResumeDto resumeDto, int perNo, HttpSession session, Model model) 
+					throws JsonParseException, JsonMappingException, IOException {
+		log.info("Welecome PersonalresumeUpdateCtr DTO리스트 : " + requestDto + "\n");
+		// JSON 문자열을 Map으로 변환
+	    ObjectMapper objectMapper = new ObjectMapper();
+	    
+	    objectMapper.writeValueAsBytes(requestDto);
+	    Map<String, Object> dtoMap = objectMapper.readValue(requestDto, Map.class);
+	    
+//	    // Map에서 리스트를 꺼내서 사용
+	    List<EducationDto> educationDtoList = objectMapper.convertValue(dtoMap.get("educationDtoList")
+    			, new TypeReference<List<EducationDto>>() {
+	    });
+	    
+	    List<CareerDto> careerDtoList = objectMapper.convertValue(dtoMap.get("careerDtoList")
+    			, new TypeReference<List<CareerDto>>() {
+	    });
+	    
+	    log.info("careerDtoList 리스트 이다." + careerDtoList + "\n");
+	    log.info("educationDtoList 리스트 이다." + educationDtoList + "\n");
+	       
+		try {
+			PersonalMemberService.personalResumeAddOne(resumeDto
+					, perNo, educationDtoList, careerDtoList);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return "redirect:./showResume.do?perNo=" + perNo;
 	}
 	
 	@RequestMapping(value = "/personal/resumeUpdateCtr.do", method = RequestMethod.POST)

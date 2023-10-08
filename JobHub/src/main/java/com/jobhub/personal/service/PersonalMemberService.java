@@ -33,6 +33,9 @@ public interface PersonalMemberService {
 	
 	public Map<String, Object> personalMemberShowResume(int perNo);
 
+	public void personalResumeAddOne(ResumeDto resumeDtoresumeDto
+			, int perNo, List<EducationDto> educationDtoList, List<CareerDto>careerDtoList);
+	
 	public void personalResumeUpdateOne(ResumeDto resumeDtoresumeDto
 			, int perNo, List<EducationDto> educationDtoList, List<CareerDto>careerDtoList);
 	

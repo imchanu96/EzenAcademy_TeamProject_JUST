@@ -123,14 +123,46 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 
 
 	@Override
+	public void personalResumeAddOne(ResumeDto resumeDto
+			,int perNo, List<EducationDto> educationDtoList, List<CareerDto>careerDtoList) {
+		// TODO Auto-generated method stub
+		System.out.println("이력서 삽입전 : " + resumeDto);
+			personalMemberDao.personalResumeAddOne(resumeDto);
+			Map<String, Object> resumeMap = personalMemberDao.personalMemberShowResume(perNo);
+			System.out.println("이력서 입력후 resumeDto : " + resumeMap);
+		ResumeDto insertResumeDto = (ResumeDto)resumeMap.get("resumeDto");
+		
+		for (int i = 0; i < educationDtoList.size(); i++) {
+			EducationDto educationDto = educationDtoList.get(i);
+			educationDto.setResumeNo(insertResumeDto.getResumeNo());
+				personalMemberDao.personalMemberEducationAddOne(educationDto);
+		}
+		
+		System.out.println("\n 경력 리스트 출력 테스트" + careerDtoList);
+		for (int i = 0; i < careerDtoList.size(); i++) {
+			CareerDto careerDto = careerDtoList.get(i);
+			careerDto.setResumeNo(insertResumeDto.getResumeNo());
+				personalMemberDao.personalMemberCareerAddOne(careerDto);
+		}
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("perNo", perNo);
+		
+		recommendDao.companyRecommendUpdate(map);
+	}
+	
+	@Override
 	public void personalResumeUpdateOne(ResumeDto resumeDto
 			,int perNo, List<EducationDto> educationDtoList, List<CareerDto>careerDtoList) {
 		// TODO Auto-generated method stub
-		if (personalMemberDao.personalMemberShowResume(perNo) == null) {
+		
+		if (resumeDto.getResumeNo() == 0) {
 			personalMemberDao.personalResumeAddOne(resumeDto);
+			resumeDto = (ResumeDto)personalMemberDao.personalMemberShowResume(perNo);
+			System.out.println("이력서 입력후 resumeDto : " + resumeDto);
 		}else {
 			personalMemberDao.personalResumeUpdateOne(resumeDto);
 		}
+		
 		
 		System.out.println("\n 학력 리스트 출력 테스트" + educationDtoList);
 		

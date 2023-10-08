@@ -99,7 +99,7 @@ public class RecommendDaoImpl implements RecommendDao{
 		ResumeDto resumeDto
 			= sqlSession.selectOne(recommendNamespace + "personalMemberShowResume", checkMap);
 		checkMap.put("resumeNo", resumeDto.getResumeNo());
-		System.out.println("이력서 : " + resumeDto);
+//		System.out.println("이력서 : " + resumeDto);
 		
 		List<CareerDto> careerDtoList
 			= sqlSession.selectList(personalNamespace + "personalMemberShowCareer", checkMap);
@@ -108,7 +108,6 @@ public class RecommendDaoImpl implements RecommendDao{
 			= sqlSession.selectList(personalNamespace + "personalMemberShowEducation", checkMap);
 		
 		for (CompanyMemberDto companyMemberDto : companyMemberList) {
-			//여기서 부터 해야됨
 			checkMap.put("comNo", companyMemberDto.getComNo());
 			System.out.println(checkMap.get("comNo"));
 
@@ -117,7 +116,7 @@ public class RecommendDaoImpl implements RecommendDao{
 			
 			PreferCalculate preferCal = new PreferCalculate(personalMemberDto, resumeDto
 					, companyMemberDto, careerDtoList, educationDtoList);
-			System.out.println(preferCal);
+//			System.out.println(preferCal);
 			
 			if (recommendDto == null) {
 				System.out.println("insert");

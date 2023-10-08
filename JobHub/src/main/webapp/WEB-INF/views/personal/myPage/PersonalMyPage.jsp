@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>        
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -77,7 +78,19 @@
 							키워드
 						</div>
 						<div class="personalInfoItemContent">
-							${sessionScope.personalMemberDto.perKeyword}
+							<c:if test="${sessionScope.personalMemberDto.perKeyword != null}">
+								<c:set var="perKeywordList" 
+									value="${fn:split(sessionScope.personalMemberDto.perKeyword, ',')}" />
+								<c:forEach var="i" begin="0" end="${fn:length(perKeywordList)}">
+									${perKeywordList[i]}
+									<c:if test="${i < fn:length(perKeywordList)-1}">
+										,
+									</c:if>
+								</c:forEach>
+							</c:if>
+							<c:if test="${sessionScope.personalMemberDto.perKeyword == null}">
+								선택된 키워드가 없습니다.
+							</c:if>
 						</div>
 						<div class="arrowBox">
 							<a href="<%=request.getContextPath()%>

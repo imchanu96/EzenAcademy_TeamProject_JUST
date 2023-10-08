@@ -6,26 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <title>JobHub : 기업 선호도 수정</title>
-<script type="text/javascript" src="/JobHub/resources/js/PersonalMyPage.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="/JobHub/resources/js/PersonalMyPagepKeywordCheckBoxFnc.js"></script>
 
-	function count_check(obj) {
-		var chkBox = document.getElementsByName("perKeyword");
-		var chkCnt = 0;
-		
-		for(var i = 0; i <chkBox.length; i++) {
-			if(chkBox[i].checked) {
-			chkCnt++;
-			}
-		}
-		if(chkCnt > 2) {
-			alert("2개까지 체크할 수 있습니다.");
-			obj.checked = false;
-			return false;
-		}
-	}
-	
-</script>
 
 <link rel="stylesheet" href="/JobHub/resources/css/PersonalMyPage.css" type="text/css">
 </head>
@@ -54,27 +36,27 @@
 						<div class="personalInfoItemTitleUpdateCheckBox">
 							<label>
 								<input type="checkbox" name="perKeyword" value="연봉"
-								onclick="count_check(this);">
+								onclick="count_checkFnc(this);">
 								<span>연봉</span>
 							</label>
 							<label>
 								<input type="checkbox" name="perKeyword" value="복지"
-								onclick="count_check(this);">
+								onclick="count_checkFnc(this);">
 								<span>복지</span>
 							</label>
 							<label>
 								<input type="checkbox" name="perKeyword" value="근무환경"
-								onclick="count_check(this);">
+								onclick="count_checkFnc(this);">
 								<span>근무환경</span>
 							</label>
 							<label>
 								<input type="checkbox" name="perKeyword" value="경영진"
-								onclick="count_check(this);">
+								onclick="count_checkFnc(this);">
 								<span>경영진</span>
 							</label>
 							<label>
 								<input type="checkbox" name="perKeyword" value="워라벨"
-								onclick="count_check(this);">
+								onclick="count_checkFnc(this);">
 								<span>워라벨</span>
 							</label>
 						</div>
@@ -84,11 +66,7 @@
 							<button type="submit" value="수정완료">수정완료</button>
 						</div>
 						<div id="KeywordBackButtonBox">
-							<button id="backBtn">
-								<a href="./personalMyPageList.do?perNo=${sessionScope.personalMemberDto.perNo}">
-									돌아가기
-								</a>
-							</button>
+							<input type="button" id="backBtn" value="돌아가기" onclick="cancleUpdateFnc();">
 						</div>
 						
 					</form>

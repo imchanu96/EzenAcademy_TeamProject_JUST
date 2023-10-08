@@ -1,8 +1,12 @@
 /**
  * 
  */
+function cancleUpdateFnc(){
+	window.history.back();
+}
 
- function count_check(obj) {
+
+ function count_checkFnc(obj) {
 		var chkBox = document.getElementsByName("perKeyword");
 		var chkCnt = 0;
 		
