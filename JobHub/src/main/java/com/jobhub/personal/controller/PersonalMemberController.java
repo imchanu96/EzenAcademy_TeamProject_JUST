@@ -391,25 +391,21 @@ public class PersonalMemberController {
 	    objectMapper.writeValueAsBytes(requestDto);
 	    Map<String, Object> dtoMap = objectMapper.readValue(requestDto, Map.class);
 	    
-	    
 //	    // Map에서 리스트를 꺼내서 사용
-	    List<EducationDto> educationDtoList 
-	    	= (List<EducationDto>)dtoMap.get("educationDtoList");
+	    List<EducationDto> educationDtoList = objectMapper.convertValue(dtoMap.get("educationDtoList")
+    			, new TypeReference<List<EducationDto>>() {
+	    });
 	    
-	    List<CareerDto> careerDtoList  = objectMapper.convertValue(dtoMap.get("careerDtoList")
+	    List<CareerDto> careerDtoList = objectMapper.convertValue(dtoMap.get("careerDtoList")
     			, new TypeReference<List<CareerDto>>() {
 	    });
 	    
 	    log.info("careerDtoList 리스트 이다." + careerDtoList + "\n");
 	    log.info("educationDtoList 리스트 이다." + educationDtoList + "\n");
-	    
-	    Map<String, Object> map = new HashMap<String, Object>();
-	    map.put("perNo", perNo);
-	    map.put("careerDtoList", careerDtoList);
-	    map.put("educationDtoList", educationDtoList);
 	       
 		try {
-			PersonalMemberService.personalResumeUpdateOne(resumeDto, map);
+			PersonalMemberService.personalResumeUpdateOne(resumeDto
+					, perNo, educationDtoList, careerDtoList);
 			
 		} catch (Exception e) {
 			// TODO: handle exception

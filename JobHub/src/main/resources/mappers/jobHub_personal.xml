@@ -95,7 +95,7 @@
 	<select id="personalIdCheck">
 		SELECT COUNT(PERSONAL_ID)
 		FROM PERSONAL
-		WHERE PERSONAL_ID = #{perId};
+		WHERE PERSONAL_ID = #{perId}
 	</select>
 	
 	<select id="memberSelectList"  parameterType="map" resultMap="personalResultMap">
@@ -409,32 +409,34 @@
 	<update id="personalEducationUpdateOne" parameterType="educationDto">
 		UPDATE EDUCATION
 		SET EDUCATION_BEGIN_DATE = #{eduBeginDate}
-			EDUCATION_END_DATE = #{eduEndDate}
-			EDUCATION_NAME = #{eduName}
-			EDUCATION_MAJOR = #{eduMajor}
-			EDUCATION_GRADE = #{eduGrade}
-			EDUCATION_LOCATION = #{eduLocation}
-			EDUCATION_GREADUATE = #{eduGreaduate}
+			, EDUCATION_END_DATE = #{eduEndDate}
+			, EDUCATION_NAME = #{eduName}
+			, EDUCATION_MAJOR = #{eduMajor}
+			, EDUCATION_GRADE = #{eduGrade}
+			, EDUCATION_LOCATION = #{eduLocation}
+			, EDUCATION_GREADUATE = #{eduGreaduate}
+		WHERE EDUCATION_NUMBER = #{eduNo}
 	</update>
 
 	<update id="personalCareerUpdateOne" parameterType="careerDto">
-			UPDATE EDUCATION
+			UPDATE CAREER
 			<choose>
 				<when test="carEndDate == null">
 					SET CAREER_BEGIN_DATE = #{carBeginDate}
-					CAREER_END_DATE = #{carEndDate}
-					CAREER_NAME = #{carName}
-					CAREER_POSITION = #{carPosition}
-					CAREER_LOCATION = #{carLocation}
-					CAREER_JOB = #{carJob}
+						, CAREER_NAME = #{carName}
+						, CAREER_POSITION = #{carPosition}
+						, CAREER_LOCATION = #{carLocation}
+						, CAREER_JOB = #{carJob}
+					WHERE CAREER_NUMBER = #{carNo}
 				</when>
 				<otherwise>
 					SET CAREER_BEGIN_DATE = #{carBeginDate}
-					CAREER_END_DATE = #{carEndDate}
-					CAREER_NAME = #{carName}
-					CAREER_POSITION = #{carPosition}
-					CAREER_LOCATION = #{carLocation}
-					CAREER_JOB = #{carJob}
+						, CAREER_END_DATE = #{carEndDate}
+						, CAREER_NAME = #{carName}
+						, CAREER_POSITION = #{carPosition}
+						, CAREER_LOCATION = #{carLocation}
+						, CAREER_JOB = #{carJob}
+					WHERE CAREER_NUMBER = #{carNo}
 				</otherwise>
 			</choose>
 	</update>

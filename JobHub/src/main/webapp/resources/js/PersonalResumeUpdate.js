@@ -217,7 +217,7 @@ function settingDtoFnc(){
 			= careerResumeValueList[2].children[0].value;
 		careerDto.carPosition
 			= careerResumeValueList[3].children[0].value;
-		educationDto.carLocation
+		careerDto.carLocation
 			= careerResumeValueList[4].children[0].value;
 		careerDto.carJob
 			= careerResumeValueList[5].children[0].value;
@@ -242,7 +242,7 @@ function settingDtoFnc(){
 	
 	var dtoList = document.getElementById("dtoList");
 	dtoList.value = JSON.stringify(jsonData);
-	alert(dtoList);
+//	alert(dtoList);
 //	dtoList[0] = educationDtoList;
 //	dtoList[1] = careerDtoList;
 //	alert(dtoList);

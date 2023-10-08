@@ -1,5 +1,6 @@
 package com.jobhub.personal.service;
 
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -18,6 +19,7 @@ import com.jobhub.personal.dto.EducationDto;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;
+import com.jobhub.recommend.dao.RecommendDao;
 
 @Service
 public class PersonalMemberServiceImpl implements PersonalMemberService {
@@ -29,6 +31,9 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 
 	@Autowired
 	JavaMailSender javaMailSender;
+	
+	@Autowired
+	public RecommendDao recommendDao;
 	
 	@Override
 	public PersonalMemberDto personalMemberExist(String perId, String perPwd) {
@@ -118,43 +123,40 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 
 
 	@Override
-	public void personalResumeUpdateOne(ResumeDto resumeDto, Map<String, Object> map) {
+	public void personalResumeUpdateOne(ResumeDto resumeDto
+			,int perNo, List<EducationDto> educationDtoList, List<CareerDto>careerDtoList) {
 		// TODO Auto-generated method stub
-		if (personalMemberDao.personalMemberShowResume((int)map.get("perNo")) == null) {
+		if (personalMemberDao.personalMemberShowResume(perNo) == null) {
 			personalMemberDao.personalResumeAddOne(resumeDto);
 		}else {
 			personalMemberDao.personalResumeUpdateOne(resumeDto);
 		}
 		
-
-		List<EducationDto> educationDtoList
-			= (List<EducationDto>) map.get("educationDtoList");
 		System.out.println("\n 학력 리스트 출력 테스트" + educationDtoList);
 		
 			
 		for (int i = 0; i < educationDtoList.size(); i++) {
 			EducationDto educationDto = educationDtoList.get(i);
-			if (educationDto == null) {
+			if (educationDto.getEduNo() == 0) {
 				personalMemberDao.personalMemberEducationAddOne(educationDto);
 			}else {
 				personalMemberDao.personalMemberEducationUpdateOne(educationDto);
 			}
 		}
 		
-
-		List<CareerDto> careerDtoList
-		=  (List<CareerDto>)map.get("careerDtoList");
 		System.out.println("\n 경력 리스트 출력 테스트" + careerDtoList);
 		for (int i = 0; i < careerDtoList.size(); i++) {
 			CareerDto careerDto = careerDtoList.get(i);
-			if (careerDto == null) {
+			if (careerDto.getCarNo() == 0) {
 				personalMemberDao.personalMemberCareerAddOne(careerDto);
 			}else {
 				personalMemberDao.personalMemberCareerUpdateOne(careerDto);
 			}
 		}
-
-
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("perNo", perNo);
+		
+		recommendDao.companyRecommendUpdate(map);
 	}
 
 	@Override

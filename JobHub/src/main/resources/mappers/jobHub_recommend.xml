@@ -100,10 +100,21 @@
 
 	<select id="personalMemberList" resultMap="personalResultMap">
 		SELECT PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_KEYWORD
-		FROM personal
+		FROM PERSONAL
 		WHERE PERMISSION = 3
 	</select>
+	
+	<select id="companyMemberList" resultMap="companyMemberResultMap">
+		SELECT COMPANY_NUMBER, COMPANY_NAME, COMPANY_PREFER
+		FROM COMPANY
+		WHERE PERMISSION = 6
+	</select>
 
+	<select id="personalMemberInfo" parameterType="map" resultMap="personalResultMap">
+		SELECT PERSONAL_NUMBER, PERSONAL_NAME, PERSONAL_KEYWORD
+		FROM PERSONAL
+		WHERE PERSONAL_NUMBER = #{perNo}
+	</select>
 
 	<select id="personalMemberShowResume" resultMap="resumeResultMap" parameterType="map">
 		SELECT RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY, RESUME_PERSONAL_EMAIL

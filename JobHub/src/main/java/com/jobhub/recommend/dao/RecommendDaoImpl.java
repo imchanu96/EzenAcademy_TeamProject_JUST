@@ -28,7 +28,7 @@ public class RecommendDaoImpl implements RecommendDao{
 	SqlSessionTemplate sqlSession;
 
 	@Override
-	public void recommendUpdate(Map<String, Object> map) {
+	public void personalRecommendUpdate(Map<String, Object> map) {
 		// TODO Auto-generated method stub
 		int comNo = (int)map.get("comNo");
 		String prefer = (String) map.get("prefer");
@@ -59,11 +59,62 @@ public class RecommendDaoImpl implements RecommendDao{
 				= sqlSession.selectList(personalNamespace + "personalMemberShowCareer", checkMap);
 
 			List<EducationDto> educationDtoList
-			= sqlSession.selectList(personalNamespace + "personalMemberShowEducation", checkMap);
+				= sqlSession.selectList(personalNamespace + "personalMemberShowEducation", checkMap);
 			
 			
 			RecommendDto recommendDto = sqlSession.selectOne(recommendNamespace + "checkRecommed", checkMap);
 				
+			PreferCalculate preferCal = new PreferCalculate(personalMemberDto, resumeDto
+					, companyMemberDto, careerDtoList, educationDtoList);
+			System.out.println(preferCal);
+			
+			if (recommendDto == null) {
+				System.out.println("insert");
+				RecommendDto insertRecommendDto = preferCal.getRecommendDto();
+				sqlSession.insert(recommendNamespace + "insertRecommendDto", insertRecommendDto);
+			}else if(recommendDto != null){
+				System.out.println("update");
+				RecommendDto updateRecommendDto = preferCal.getRecommendDto();
+				sqlSession.update(recommendNamespace + "updateRecommendDto", updateRecommendDto);
+			}
+			
+		}
+		
+	}
+	
+	@Override
+	public void companyRecommendUpdate(Map<String, Object> map) {
+		// TODO Auto-generated method stub
+		int perNo = (int)map.get("perNo");
+
+		PersonalMemberDto personalMemberDto
+			= sqlSession.selectOne(recommendNamespace + "personalMemberInfo", map);
+		
+		
+		List<CompanyMemberDto> companyMemberList
+		= sqlSession.selectList(recommendNamespace + "companyMemberList");
+		
+		Map<String, Object> checkMap = new HashMap<String, Object>();
+		checkMap.put("perNo", perNo);
+		ResumeDto resumeDto
+			= sqlSession.selectOne(recommendNamespace + "personalMemberShowResume", checkMap);
+		checkMap.put("resumeNo", resumeDto.getResumeNo());
+		System.out.println("이력서 : " + resumeDto);
+		
+		List<CareerDto> careerDtoList
+			= sqlSession.selectList(personalNamespace + "personalMemberShowCareer", checkMap);
+	
+		List<EducationDto> educationDtoList
+			= sqlSession.selectList(personalNamespace + "personalMemberShowEducation", checkMap);
+		
+		for (CompanyMemberDto companyMemberDto : companyMemberList) {
+			//여기서 부터 해야됨
+			checkMap.put("comNo", companyMemberDto.getComNo());
+			System.out.println(checkMap.get("comNo"));
+
+			RecommendDto recommendDto
+				= sqlSession.selectOne(recommendNamespace + "checkRecommed", checkMap);
+			
 			PreferCalculate preferCal = new PreferCalculate(personalMemberDto, resumeDto
 					, companyMemberDto, careerDtoList, educationDtoList);
 			System.out.println(preferCal);

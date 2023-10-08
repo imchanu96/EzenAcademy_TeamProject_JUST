@@ -4,6 +4,8 @@ import java.util.Map;
 
 public interface RecommendDao {
 
-	public void recommendUpdate(Map<String, Object> map);
+	public void personalRecommendUpdate(Map<String, Object> map);
+	
+	public void companyRecommendUpdate(Map<String, Object> map);
 
 }

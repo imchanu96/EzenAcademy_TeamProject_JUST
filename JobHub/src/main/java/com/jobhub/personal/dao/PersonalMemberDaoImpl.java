@@ -212,14 +212,14 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 	@Override
 	public void personalMemberEducationUpdateOne(EducationDto educationDto) {
 		// TODO Auto-generated method stub
-		sqlSession.update(namespace + "personalMemberEducationUpdateOne", educationDto);
+		sqlSession.update(namespace + "personalEducationUpdateOne", educationDto);
 	}
 
 
 	@Override
 	public void personalMemberCareerUpdateOne(CareerDto careerDto) {
 		// TODO Auto-generated method stub
-		sqlSession.update(namespace + "personalMemberCareerUpdateOne", careerDto);
+		sqlSession.update(namespace + "personalCareerUpdateOne", careerDto);
 	}
 
 	@Override

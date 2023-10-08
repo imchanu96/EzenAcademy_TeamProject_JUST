@@ -1,7 +1,10 @@
 package com.jobhub.personal.service;
 
+import java.util.List;
 import java.util.Map;
 
+import com.jobhub.personal.dto.CareerDto;
+import com.jobhub.personal.dto.EducationDto;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;
@@ -30,7 +33,8 @@ public interface PersonalMemberService {
 	
 	public Map<String, Object> personalMemberShowResume(int perNo);
 
-	public void personalResumeUpdateOne(ResumeDto resumeDto, Map<String, Object> map);
+	public void personalResumeUpdateOne(ResumeDto resumeDtoresumeDto
+			, int perNo, List<EducationDto> educationDtoList, List<CareerDto>careerDtoList);
 	
 	public LetterDto personalMembershowLetter(int perNo);
 

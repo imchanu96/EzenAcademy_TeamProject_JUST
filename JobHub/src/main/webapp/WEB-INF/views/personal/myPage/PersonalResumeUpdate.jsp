@@ -130,7 +130,7 @@
 							<td class="resumeValue"><input type="text" name="resumeEduLocValue" value="${educationDto.eduLocation}"></td>
 							<td class="resumeValue"><input type="text" name="resumeEduGradeValue" value="${educationDto.eduGrade}"></td>
 							<td class="resumeValue"><input type="text" name="resumeEduGraduateValue" value="${educationDto.eduGreaduate}"></td>
-							<td class="resumeValue"><input type="hidden" name="resumeEduNoValue" value="${educationDto.eduNo}"></td>
+							<td class="resumeValue"><input type="text" name="resumeEduNoValue" value="${educationDto.eduNo}"></td>
 						</tr>
 						
 					</c:forEach>
@@ -185,7 +185,7 @@
 							<td class="resumeValue"><input type="text" name="resumeCareerPosValue" value="${careerDto.carPosition}"></td>
 							<td class="resumeValue"><input type="text" name="resumeCareerLocValue" value="${careerDto.carLocation}"></td>
 							<td class="resumeValue"><input type="text" name="resumeCareerJobValue" value="${careerDto.carJob}"></td>
-							<td class="resumeValue"><input type="hidden" name="resumeCareerJobValue" value="${careerDto.carNo}"></td>
+							<td class="resumeValue"><input type="text" name="resumeCareerNoValue" value="${careerDto.carNo}"></td>
 							
 						</tr>                      
 					</c:forEach>

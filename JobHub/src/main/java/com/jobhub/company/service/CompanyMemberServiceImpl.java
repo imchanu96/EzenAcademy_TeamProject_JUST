@@ -106,7 +106,7 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 		// TODO Auto-generated method stub
 		
 		companyMemberDao.preferUpdateOne(map);
-		recommendDao.recommendUpdate(map);
+		recommendDao.personalRecommendUpdate(map);
 		
 	}
 
