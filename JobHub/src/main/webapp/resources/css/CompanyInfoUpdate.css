@@ -69,20 +69,22 @@ a:hover {
 	float: left;
 	width: 250px;
 	height: 950px;
-	font-size: 25px;
+	font-size: 22px;
 	text-align: center;
 	background-color: #d7dce5;
 }
 
 #smallMenuBox {
 	margin: 30px auto;
-	width: 200px;
-	height: 500px;
+    width: 180px;
+    height: 500px;
 }
-
 .smallMenuItem {
-	margin-bottom: 20px;
-    font-size: 18px;
+	margin-bottom: 35px;
+	border-bottom: 2px solid #fff;
+	width: 180px;
+	height: 40px;
+	font-size: 18px;
 }
 
 .smallMenuItem a {
@@ -115,7 +117,7 @@ a:hover {
 	padding: 20px;
 	border-radius: 10px;
 	width: 870px;
-    height: 150px;
+    height: 320px;
     margin: 35px;
     color: #5c667b;
     box-shadow: 0px 1px 4px 0px #ddd;
@@ -150,6 +152,13 @@ a:hover {
     height: 30px;
     border-radius: 10px;
     box-shadow: 0px 1px 4px 0px #ddd;
+}
+.companyInfoItemContent > textarea {
+    resize: none;
+    width: 309px;
+    height: 220px;
+    border: none;
+    box-shadow: 0px 1px 4px 0px #a1a1a1;
 }
 
 .companyInfoContentBox {

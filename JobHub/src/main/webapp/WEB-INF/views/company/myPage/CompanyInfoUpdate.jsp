@@ -226,8 +226,7 @@
 							<div class="companyInfoItemTitle">회사 소개</div>
 
 							<div class="companyInfoItemContent">
-								<input type="text" name="comIntroduce"
-									value="${companyMemberDtoUpdate.comIntroduce}">
+								<textarea name="comIntroduce">${companyMemberDtoUpdate.comIntroduce}</textarea>
 							<input type="hidden" name="comNo" 
 								value="${companyMemberDto.comNo}">
 							</div>

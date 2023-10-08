@@ -129,7 +129,7 @@
    
    function tempCloseFnc(myObj) {
       var checkBoxModal = document.getElementById("checkBoxModal");
-       alert(checkBoxModal.style.display);
+//        alert(checkBoxModal.style.display);
        checkBoxModal.style.display = "none";
    }
    
@@ -144,7 +144,7 @@
 </script>
 </head>
 <body>
-   <jsp:include page="../../Header.jsp" />
+   <jsp:include page="../../PreferUpdateHeader.jsp" />
    <div id="container">
       <div id="navigation">
          <div id="smallMenuBox">
