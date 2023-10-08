@@ -44,10 +44,10 @@ public class RecommendDaoImpl implements RecommendDao{
 		
 		for (PersonalMemberDto personalMemberDto : personalMemberList) {
 			checkMap.put("perNo", personalMemberDto.getPerNo());
-			System.out.println(checkMap.get("perNo"));
+//			System.out.println(checkMap.get("perNo"));
 			ResumeDto resumeDto
 				= sqlSession.selectOne(recommendNamespace + "personalMemberShowResume", checkMap);
-			System.out.println(resumeDto);
+//			System.out.println(resumeDto);
 			if (resumeDto != null) {
 				checkMap.put("resumeNo", resumeDto.getResumeNo());
 			}else {
@@ -66,14 +66,14 @@ public class RecommendDaoImpl implements RecommendDao{
 				
 			PreferCalculate preferCal = new PreferCalculate(personalMemberDto, resumeDto
 					, companyMemberDto, careerDtoList, educationDtoList);
-			System.out.println(preferCal);
+//			System.out.println(preferCal);
 			
 			if (recommendDto == null) {
-				System.out.println("insert");
+//				System.out.println("insert");
 				RecommendDto insertRecommendDto = preferCal.getRecommendDto();
 				sqlSession.insert(recommendNamespace + "insertRecommendDto", insertRecommendDto);
 			}else if(recommendDto != null){
-				System.out.println("update");
+//				System.out.println("update");
 				RecommendDto updateRecommendDto = preferCal.getRecommendDto();
 				sqlSession.update(recommendNamespace + "updateRecommendDto", updateRecommendDto);
 			}

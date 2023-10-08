@@ -126,10 +126,10 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 	public void personalResumeAddOne(ResumeDto resumeDto
 			,int perNo, List<EducationDto> educationDtoList, List<CareerDto>careerDtoList) {
 		// TODO Auto-generated method stub
-		System.out.println("이력서 삽입전 : " + resumeDto);
+//		System.out.println("이력서 삽입전 : " + resumeDto);
 			personalMemberDao.personalResumeAddOne(resumeDto);
 			Map<String, Object> resumeMap = personalMemberDao.personalMemberShowResume(perNo);
-			System.out.println("이력서 입력후 resumeDto : " + resumeMap);
+//			System.out.println("이력서 입력후 resumeDto : " + resumeMap);
 		ResumeDto insertResumeDto = (ResumeDto)resumeMap.get("resumeDto");
 		
 		for (int i = 0; i < educationDtoList.size(); i++) {
@@ -138,7 +138,7 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 				personalMemberDao.personalMemberEducationAddOne(educationDto);
 		}
 		
-		System.out.println("\n 경력 리스트 출력 테스트" + careerDtoList);
+//		System.out.println("\n 경력 리스트 출력 테스트" + careerDtoList);
 		for (int i = 0; i < careerDtoList.size(); i++) {
 			CareerDto careerDto = careerDtoList.get(i);
 			careerDto.setResumeNo(insertResumeDto.getResumeNo());
@@ -158,13 +158,13 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 		if (resumeDto.getResumeNo() == 0) {
 			personalMemberDao.personalResumeAddOne(resumeDto);
 			resumeDto = (ResumeDto)personalMemberDao.personalMemberShowResume(perNo);
-			System.out.println("이력서 입력후 resumeDto : " + resumeDto);
+//			System.out.println("이력서 입력후 resumeDto : " + resumeDto);
 		}else {
 			personalMemberDao.personalResumeUpdateOne(resumeDto);
 		}
 		
 		
-		System.out.println("\n 학력 리스트 출력 테스트" + educationDtoList);
+//		System.out.println("\n 학력 리스트 출력 테스트" + educationDtoList);
 		
 			
 		for (int i = 0; i < educationDtoList.size(); i++) {
@@ -176,7 +176,7 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 			}
 		}
 		
-		System.out.println("\n 경력 리스트 출력 테스트" + careerDtoList);
+//		System.out.println("\n 경력 리스트 출력 테스트" + careerDtoList);
 		for (int i = 0; i < careerDtoList.size(); i++) {
 			CareerDto careerDto = careerDtoList.get(i);
 			if (careerDto.getCarNo() == 0) {

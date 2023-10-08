@@ -57,7 +57,7 @@
 	</resultMap>
 	
 	<resultMap type="companyMemberDto" id="companyResultMap">
-		<result column="COMPANY_NAME" property="comName" />	
+		<id column="COMPANY_NUMBER" property="comNo" />
 		<result column="COMPANY_NAME" property="comName" />
 		<result column="COMPANY_ADDRESS" property="comAdd" />
 		<result column="COMPANY_TYPE" property="comType" />
@@ -134,7 +134,7 @@
 	<select id="companyMemberList"  parameterType="map" resultMap="companyResultMap">
 		SELECT COMPANY_NUMBER, COMPANY_INCHARGE_NAME
 				, COMPANY_CODE, COMPANY_NAME, PERMISSION
-				, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE
+				, COMPANY_CREATE_DATE, COMPANY_MODIFY_DATE, COMPANY_PREFER
 		FROM COMPANY
 		WHERE PERMISSION = 6
 	</select>

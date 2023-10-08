@@ -233,31 +233,34 @@ public class AdminDaoImpl implements AdminDao{
 				ResumeDto resumeDto
 					= sqlSession.selectOne(recommendNamespace + "personalMemberShowResume", checkMap);
 
-				checkMap.put("resumeNo", resumeDto.getResumeNo());
-				
-				List<CareerDto> careerDtoList
+				if (resumeDto != null) {
+					
+					checkMap.put("resumeNo", resumeDto.getResumeNo());
+					
+					List<CareerDto> careerDtoList
 					= sqlSession.selectList(personalNamespace + "personalMemberShowCareer", checkMap);
-		
-				List<EducationDto> educationDtoList
+					
+					List<EducationDto> educationDtoList
 					= sqlSession.selectList(personalNamespace + "personalMemberShowEducation", checkMap);
-			
-			
-				RecommendDto recommendDto
-				= sqlSession.selectOne(recommendNamespace + "checkRecommed", checkMap);
-			
-				PreferCalculate preferCal = new PreferCalculate(personalMemberDto, resumeDto
-						, companyMemberDto, careerDtoList, educationDtoList);
+					
+					
+					RecommendDto recommendDto
+					= sqlSession.selectOne(recommendNamespace + "checkRecommed", checkMap);
+					
+					PreferCalculate preferCal = new PreferCalculate(personalMemberDto, resumeDto
+							, companyMemberDto, careerDtoList, educationDtoList);
 //				System.out.println(preferCal);
-				
-				if (recommendDto == null) {
-					System.out.println("insert");
-					RecommendDto insertRecommendDto = preferCal.getRecommendDto();
-					sqlSession.insert(recommendNamespace + "insertRecommendDto", insertRecommendDto);
-				}else if(recommendDto != null){
-					System.out.println("update");
-					RecommendDto updateRecommendDto = preferCal.getRecommendDto();
-					sqlSession.update(recommendNamespace + "updateRecommendDto", updateRecommendDto);
-				}	
+					
+					if (recommendDto == null) {
+//						System.out.println("insert");
+						RecommendDto insertRecommendDto = preferCal.getRecommendDto();
+						sqlSession.insert(recommendNamespace + "insertRecommendDto", insertRecommendDto);
+					}else if(recommendDto != null){
+//						System.out.println("update");
+						RecommendDto updateRecommendDto = preferCal.getRecommendDto();
+						sqlSession.update(recommendNamespace + "updateRecommendDto", updateRecommendDto);
+					}	
+				}
 			}
 		}
 	}

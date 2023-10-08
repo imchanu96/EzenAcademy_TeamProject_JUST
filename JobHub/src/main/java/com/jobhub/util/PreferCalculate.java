@@ -57,7 +57,7 @@ public class PreferCalculate {
 		this.keywordRate = preferArr[1].trim();
 		this.license = preferArr[2].trim();
 		this.licenseRate = preferArr[3].trim();
-		System.out.println("학력" + preferArr[4].trim());
+//		System.out.println("학력" + preferArr[4].trim());
 		this.education = preferArr[4].trim();
 		this.educationRate = preferArr[5].trim();
 		this.career = preferArr[6].trim();
@@ -66,14 +66,14 @@ public class PreferCalculate {
 			System.out.println("preferArr"+i + preferArr[i]);
 		}
 		double keywordScore = getKeywordScore() * (double)Integer.parseInt(getKeywordRate()) / 100;
-		System.out.println("getKeywordScore = " + getKeywordScore());
-		System.out.println("keywordScore" + keywordScore);
+//		System.out.println("getKeywordScore = " + getKeywordScore());
+//		System.out.println("keywordScore" + keywordScore);
 		double licenseScore = getLicenseScore() * (double)Integer.parseInt(getLicenseRate()) / 100;
-		System.out.println("getLicenseScore = " + licenseScore);
+//		System.out.println("getLicenseScore = " + licenseScore);
 		double educationScore = getEducationScore() * (double)Integer.parseInt(getEducationRate()) / 100;
-		System.out.println("getEducationScore = " + educationScore);
+//		System.out.println("getEducationScore = " + educationScore);
 		double careerScore = getCareerScore() * (double)Integer.parseInt(getCareerRate()) / 100;
-		System.out.println("getCareerScore = " + careerScore);
+//		System.out.println("getCareerScore = " + careerScore);
 		
 		this.score = String.valueOf(keywordScore + licenseScore + educationScore + careerScore);
 		this.recommendDto = new RecommendDto(companyMemberDto.getComPrefer(), personalMemberDto.getPerNo()
@@ -138,22 +138,22 @@ public class PreferCalculate {
 			LicenseNum = resumeDto.getResumeLicenseName().length()
 					- resumeDto.getResumeLicenseName().replace(",", "").length()+1;
 		}
-		System.out.println("LicenseNum : " + LicenseNum);
-		System.out.println("회사 요구 자격증 갯수" + getLicense());
+//		System.out.println("LicenseNum : " + LicenseNum);
+//		System.out.println("회사 요구 자격증 갯수" + getLicense());
 		
 		String licenseCondition1 = "1개 이하";
 		String licenseCondition2 = "1~3개";
 		String licenseCondition3 = "3개 이상";
 		
 		if (getLicense().equals(licenseCondition1)) {
-			System.out.println("자격증 1돈다");
+//			System.out.println("자격증 1돈다");
 			licenseMinNo = 0;
 			licenseMaxNo = 1;
 			if (LicenseNum >= licenseMinNo && LicenseNum <= licenseMaxNo) {
 				licenseScore = 100;
 			}
 		}else if (getLicense().equals(licenseCondition2)) {
-			System.out.println("자격증 2돈다");
+//			System.out.println("자격증 2돈다");
 			licenseMinNo = 1;
 			licenseMaxNo = 3;
 			if (LicenseNum >= licenseMinNo && LicenseNum <= licenseMaxNo) {
@@ -162,7 +162,7 @@ public class PreferCalculate {
 				licenseScore = 0;
 			}
 		}else if (getLicense().equals(licenseCondition3)) {
-			System.out.println("자격증 3돈다");
+//			System.out.println("자격증 3돈다");
 			licenseMinNo = 3;
 			if (LicenseNum >= licenseMinNo) {
 				licenseScore = 100;
@@ -180,9 +180,9 @@ public class PreferCalculate {
 	private double getEducationScore() {
 		// 학력 점수 내기
 		double educationScore = 0;
-		System.out.println("회사 요구 학력 : " + getEducation());
+//		System.out.println("회사 요구 학력 : " + getEducation());
 		for (int i = 0; i < educationDtoList.size(); i++) {
-			System.out.println("개인 학력 :" + educationDtoList.get(i).getEduName());
+//			System.out.println("개인 학력 :" + educationDtoList.get(i).getEduName());
 		}
 		int educationCondition = 0;
 		String checkEduName = "";
