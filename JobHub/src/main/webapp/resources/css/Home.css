@@ -8,10 +8,18 @@ body {
 	height: 800px;	
 }
 .seviceDetail {
-	height: 1000px;	
-	border: 1px solid black;
+	height: 900px;	
+/* 	border: 1px solid black; */
+}
+.seviceDetail > .seviceDetailImg {
+	width: 1280px;
+	padding-top: 200px;
+}
+#seviceDetail3 {
+	padding-top: 200px;
 }
 #mentBox {
+	margin-top: 300px;
 	padding-top: 400px;
 	height: 600px;
 	background-color: #eff5ff;

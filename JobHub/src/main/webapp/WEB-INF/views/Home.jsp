@@ -19,13 +19,16 @@
 	</div>
 	
 	<div class="seviceDetail">
-		서비스 캡쳐 화면 1
+<!-- 		서비스 캡쳐 화면 1 -->
+		<img class="seviceDetailImg" src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/43f1105e-38e8-4fcf-8abb-35e5c6210f1a">
 	</div>
 	<div class="seviceDetail">
-		서비스 캡쳐 화면 2
+<!-- 		서비스 캡쳐 화면 2 -->
+		<img class="seviceDetailImg" src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/b8a484dd-baaf-4496-aa5d-e6ff0a523858">
 	</div>
-	<div class="seviceDetail">
-		서비스 캡쳐 화면 3
+	<div class="seviceDetail" id="seviceDetail3">
+<!-- 		서비스 캡쳐 화면 3 -->
+		<img class="seviceDetailImg" src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/8d7f6c7e-b1f6-463c-9763-798f7530764f">
 	</div>
 	
 	
