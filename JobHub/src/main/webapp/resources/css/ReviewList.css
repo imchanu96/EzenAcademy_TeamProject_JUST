@@ -156,13 +156,14 @@
 	#reviewAverageRate {
 		width: 300px;
 		height: 40px;
-		font-size: 22px;
+		font-size: 20px;
+  		font-weight: bold;
 		line-height: 40px;
 	}
 	#averageBox {
 		float: left;			
 		margin-left: 6px;
-		font-size: 16px;
+		font-size: 18px;
 		font-weight: 600;
 	}
 	.starRateBox {

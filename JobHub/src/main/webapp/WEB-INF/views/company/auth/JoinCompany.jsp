@@ -6,6 +6,20 @@
 <meta charset="EUC-KR">
 <title>JobHub : 회원가입</title>
 <link rel="stylesheet" type="text/css" href="/JobHub/resources/css/Join.css">
+<script type="text/javascript">
+
+	function joinSuccess() {
+		var joinBtn = document.getElementById("submitButton");
+		
+		joinBtn.disabled = true;
+		joinBtn.value = '전송중';
+		
+		alert("메일 전송이 완료되었습니다. \n메일 확인 후 인증버튼을 눌러주세요!");
+		
+		joinBtn.form.submit();
+	}
+
+</script>
 </head>
 <body>
 
@@ -99,7 +113,7 @@
 						onfocus="inChargeEmailFocusFnc();">
 				</div>
 			</div>
-			<input type="submit" id="submitButton" value="이메일인증">
+			<input type="submit" id="submitButton" value="이메일인증" onclick="joinSuccess();">
 		</form>
 	</div>
 	
