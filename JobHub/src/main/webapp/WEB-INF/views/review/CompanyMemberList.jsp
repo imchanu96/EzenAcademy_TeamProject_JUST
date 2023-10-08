@@ -84,19 +84,17 @@
 						
 					</div>	<!-- end of companyInfoBox -->
 					
-					<jsp:include page="/WEB-INF/views/review/CompanyMemberPaging.jsp">
-					<jsp:param value="${pagingMap}" name="pagingMap"/>
-					</jsp:include>
-				
-					<form action="./companyMemberList.do" id="pagingForm" method="post">
-						<input type="hidden" id="curPage" name="curPage"
-							value="${pagingMap.companyMemberPaging.curPage}">
-					</form>
-					
 				</c:forEach>
 				
 			<!-- 페이징 -->
-				
+			<jsp:include page="/WEB-INF/views/review/CompanyMemberPaging.jsp">
+				<jsp:param value="${pagingMap}" name="pagingMap"/>
+			</jsp:include>
+		
+			<form action="./companyMemberList.do" id="pagingForm" method="post">
+				<input type="hidden" id="curPage" name="curPage"
+					value="${pagingMap.companyMemberPaging.curPage}">
+			</form>
 				
 			</c:if>
 				
