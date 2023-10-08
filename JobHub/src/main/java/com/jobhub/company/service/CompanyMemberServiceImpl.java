@@ -65,7 +65,7 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 				+ companyMemberDto.getComInChargeEmail() +
 				"&comId=" + companyMemberDto.getComId() +
 				"' target='_blank'>이메일 인증 확인</a>");
-		sendMail.setFrom("mi0park93@gmail.com", "JobHub");
+		sendMail.setFrom("jobhub.just@gmail.com", "JobHub");
 		sendMail.setTo(companyMemberDto.getComInChargeEmail());
 		sendMail.send();
 	}

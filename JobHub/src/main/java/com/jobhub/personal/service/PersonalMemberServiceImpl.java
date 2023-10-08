@@ -52,7 +52,7 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 				+ personalMemberDto.getPerEmail() +
 				"&perTemporarily=" + personalMemberDto.getPerTemporarily() +
 				"' target='_blank'>이메일 인증 확인</a>");
-		sendMail.setFrom("mi0park93@gmail.com", "JobHub");
+		sendMail.setFrom("jobhub.just@gmail.com", "JobHub");
 		sendMail.setTo(personalMemberDto.getPerEmail());
 		sendMail.send();
 	}

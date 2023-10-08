@@ -31,6 +31,7 @@
 					event.preventDefault();
 				}
 			}
+			
 		}
 	   	
 	   	function idFocusFnc() {
@@ -378,11 +379,13 @@
 	<div class="inner">
 
 		<div class="header">
-			<img style="width: 250px;"
-				src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/1aa66c0e-7488-4a56-bc50-f915be889cf8">
+			<a href="http://localhost:9080/JobHub/home.do">
+				<img style="width: 250px;"
+					src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/1aa66c0e-7488-4a56-bc50-f915be889cf8">
+			</a>
 		</div>
 
-		<form action="./addCtr.do" method="post">
+		<form action="./addCtr.do" method="post" id="joinForm">
 			<div id="accountInfo" class="boxList">
 			
 				<div id="idInput" class="infoRow">
@@ -487,7 +490,7 @@
 
 			<div>
 				<input type="submit" value="이메일인증" id="submitButton"
-					onclick="submitCheckFnc(event)">
+					onclick="this.disabled=true; this.value='전송중'; this.form.submit();">
 			</div>
 		</form>
 
