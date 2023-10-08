@@ -1,0 +1,296 @@
+/* 공통 */
+a {
+	text-decoration: none;
+	color: #292e41;
+}
+
+a:hover {
+	color: #2d65f2;
+}
+
+/* content */
+#container {
+	width: 1280px;
+	height: 1000px;
+	margin: 0px auto;
+}
+/* navigation */
+#navigation {
+	margin: 10px;
+	float: left;
+	width: 250px;
+	height: 950px;
+	font-size: 25px;
+	text-align: center;
+	background-color: #eff5ff;
+}
+
+#smallMenuBox {
+	margin: 30px auto;
+	width: 200px;
+	height: 500px;
+}
+
+.smallMenuItem {
+	margin-bottom: 35px;
+	border-bottom: 2px solid #fff;
+    width: 200px;
+    height: 40px;
+   	font-size: 18px;
+}
+.smallMenuItem a {
+	color: #475067;
+}
+/* content */
+#content {
+	margin: 10px;
+	float: left;
+	width: 980px;
+	font-size: 30px;
+	background-color: #f8fafc;
+}
+
+#content>form>div, #content>div {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 1px 4px 0px #ddd;
+}
+
+#titleBox>p {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0px 0px 20px 0px;
+}
+
+#searchBox {
+	width: 880px;
+	height: 260px;
+	margin: 14px auto 0px auto;
+	padding-top: 20px;
+	padding-left: 40px;
+	font-size: 20px;
+}
+
+#conditionBox {
+    width: 850px;
+    height: 120px;
+    padding-top: 15px;
+    background-color: #f7fafe;
+    border-radius: 10px;
+}
+
+.condition {
+	width: 800px;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+
+.conditionTitleBox {
+	float: left;
+	width: 150px;
+	margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.radioBox {
+	float: left;
+	width: 650px;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+label {
+	display: inline-block;
+	width: 150px;
+}
+
+#inputBox {
+	width: 630px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 10px;
+	margin-left: 110px;
+	text-align: center;
+	float: left;
+}
+
+#inputBox > select {
+    height: 35px;
+    border: none;
+    box-shadow: 0px 1px 4px 0px #919191;
+    border-radius: 12px;
+}
+
+#textInput {
+	width: 400px;
+	height: 30px;
+	border: none;
+    border-radius: 12px;
+    box-shadow: 0px 1px 4px 0px #919191;
+}
+
+.button {
+	width: 60px;
+	height: 35px;
+	background-color: #4876ef;
+	border: none;
+	border-radius: 12px;
+	box-shadow: 0px 1px 4px 0px #ddd;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+    margin-left: 10px;
+}
+
+
+.helpButton {
+	width: 30px;
+	height: 30px;
+	margin-top: 8px;
+	padding: 0px 0px 0px 0px;
+	border: none;
+	background-color: inherit;
+	position: relative;
+}
+
+#helpText {
+	border-radius: 5px;
+	background-color: #bcd1fc;
+	display: none;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	margin-left: 10px;
+	width: 200px;
+}
+
+#helpText:after {
+	content: "";
+	border-top: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-right: 10px solid #bcd1fc;
+	border-bottom: 10px solid transparent;
+	position: absolute;
+	top: 14px;
+	left: -20px;
+}
+
+#resultBox {
+	width: 890px;
+	height: 140px;
+	margin: 30px auto;
+	padding-left: 30px;
+	padding-top: 30px;
+	color: #5c667b;
+}
+
+#resultContent {
+	width: 850px;
+	height: 180px;
+}
+
+#imgBox {
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+#infoBox {
+	width: 400px;
+	height: 140px;
+	float: left;
+}
+#noLetterResumeAlert {
+    text-align: center;
+    font-size: 22px;
+    margin: 36px 30px;
+    font-weight: bold;
+    width: 920px;
+    padding: 40px 0px
+}
+
+img {
+	/* 실제 이미지 크기에 따라 조정 필요 */
+	width: 100%;
+	height: 100%;
+}
+
+#pNameBox {
+	width: 150px;
+	height: 20px;
+	font-size: 25px;
+	clear: both;
+}
+
+#companyBox {
+	width: 350px;
+	height: 50px;
+	font-size: 20px;
+}
+
+#buttonBox {
+	width: 150px;
+	height: 140px;
+}
+
+#highTestEduBox {
+	width: 350px;
+	height: 40px;
+	font-size: 20px;
+}
+
+#licenseCountBox {
+	width: 200px;
+	height: 40px;
+	font-size: 20px;
+}
+
+#resumeBtn, #letterBtn {
+	width: 150px;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+#resumeModal, #letterModal {
+	position: fixed;
+	left: 600px;
+	top: 50px;
+	border: 1px solid black;
+	width: 850px;
+	border-radius: 5px;
+	padding: 30px;
+	display: none;
+	overflow-y: auto;
+	height: 80vh;
+	
+}
+
+.closeBtn {
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#resumeModal table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	margin: auto;
+	font-size: 20px;
+}
+
+table {
+	width: 750px;
+}
+
+tr td {
+	border: 1px solid black;
+}
+.letterValue{
+	border: 1px solid black;
+	border-radius: 5px;
+	font-size: 20px;
+}

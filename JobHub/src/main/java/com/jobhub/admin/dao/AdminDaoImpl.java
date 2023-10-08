@@ -236,6 +236,7 @@ public class AdminDaoImpl implements AdminDao{
 				if (resumeDto != null) {
 					
 					checkMap.put("resumeNo", resumeDto.getResumeNo());
+				
 					
 					List<CareerDto> careerDtoList
 					= sqlSession.selectList(personalNamespace + "personalMemberShowCareer", checkMap);
@@ -249,7 +250,7 @@ public class AdminDaoImpl implements AdminDao{
 					
 					PreferCalculate preferCal = new PreferCalculate(personalMemberDto, resumeDto
 							, companyMemberDto, careerDtoList, educationDtoList);
-//				System.out.println(preferCal);
+//					System.out.println(preferCal);
 					
 					if (recommendDto == null) {
 //						System.out.println("insert");

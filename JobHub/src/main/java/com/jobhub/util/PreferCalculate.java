@@ -138,7 +138,7 @@ public class PreferCalculate {
 			LicenseNum = resumeDto.getResumeLicenseName().length()
 					- resumeDto.getResumeLicenseName().replace(",", "").length()+1;
 		}
-//		System.out.println("LicenseNum : " + LicenseNum);
+		System.out.println("LicenseNum : " + LicenseNum);
 //		System.out.println("회사 요구 자격증 갯수" + getLicense());
 		
 		String licenseCondition1 = "1개 이하";
@@ -146,14 +146,15 @@ public class PreferCalculate {
 		String licenseCondition3 = "3개 이상";
 		
 		if (getLicense().equals(licenseCondition1)) {
-//			System.out.println("자격증 1돈다");
+			System.out.println("자격증 1돈다");
 			licenseMinNo = 0;
 			licenseMaxNo = 1;
-			if (LicenseNum >= licenseMinNo && LicenseNum <= licenseMaxNo) {
+			if ((LicenseNum >= licenseMinNo && LicenseNum <= licenseMaxNo) 
+					|| LicenseNum >= licenseMaxNo) {
 				licenseScore = 100;
 			}
 		}else if (getLicense().equals(licenseCondition2)) {
-//			System.out.println("자격증 2돈다");
+			System.out.println("자격증 2돈다");
 			licenseMinNo = 1;
 			licenseMaxNo = 3;
 			if (LicenseNum >= licenseMinNo && LicenseNum <= licenseMaxNo) {
@@ -162,7 +163,7 @@ public class PreferCalculate {
 				licenseScore = 0;
 			}
 		}else if (getLicense().equals(licenseCondition3)) {
-//			System.out.println("자격증 3돈다");
+			System.out.println("자격증 3돈다");
 			licenseMinNo = 3;
 			if (LicenseNum >= licenseMinNo) {
 				licenseScore = 100;

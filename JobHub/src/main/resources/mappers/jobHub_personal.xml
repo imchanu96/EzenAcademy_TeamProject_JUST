@@ -203,36 +203,41 @@
 	</update>
 	
 	<select id="personalInfoList" resultType="map">
-		 SELECT P.PERSONAL_NUMBER AS "perNo", RESUME.RESUME_PERSONAL_NAME AS "perName", P.PERSONAL_COMPANY AS "currentCompany"
-	        , RESUME.RESUME_EDUCATION_NAME AS "perHighestEdu" , RESUME.RESUME_EDUCATION_MAJOR AS "perHighestEduMajor"
-	        , RESUME.RESUME_EDUCATION_GRADE AS "perHighestEduGrade", RESUME.RESUME_CAREER_NAME AS "perCampany"
-	        , RESUME.RESUME_CAREER_BEGIN_DATE AS "perCareerBeginDate"
-	        , RESUME.RESUME_CAREER_END_DATE AS "perCareerEndDate"
-	        , NVL(RESUME.RESUME_LICENSE_NAME , ' ') AS "perLicense"
-	        , NVL(REGEXP_COUNT(RESUME.RESUME_LICENSE_NAME, ',')+1, 0) AS "perLicenseCount" 
-            , P.COMPANY_PREFER AS "comPrefer" , RECOMMEND.RECOMMEND_TOTAL_RATE AS "recommendTotalRate"
-    	FROM (  SELECT P.PERSONAL_NUMBER, P.PERSONAL_COMPANY, C.COMPANY_PREFER
-            FROM PERSONAL P , COMPANY C
-            WHERE C.COMPANY_NUMBER = #{comNo}
-            ) P INNER JOIN RESUME RESUME
-   		ON P.PERSONAL_NUMBER = RESUME.PERSONAL_NUMBER
-        INNER JOIN RECOMMEND RECOMMEND
-        ON RECOMMEND.PERSONAL_NUMBER = P.PERSONAL_NUMBER
-        ORDER BY RECOMMEND.RECOMMEND_TOTAL_RATE DESC
+		 SELECT PER.PERSONAL_NUMBER AS "perNo", RESUME.RESUME_PERSONAL_NAME AS "perName"
+			, PERSONAL.PERSONAL_COMPANY AS "currentCompany" , RESUME.RESUME_EDUCATION_NAME AS "perHighestEdu" 
+			, RESUME.RESUME_EDUCATION_MAJOR AS "perHighestEduMajor" 
+			, RESUME.RESUME_EDUCATION_GRADE AS "perHighestEduGrade", RESUME.RESUME_CAREER_NAME AS "perCampany" 
+			, RESUME.RESUME_CAREER_BEGIN_DATE AS "perCareerBeginDate" , RESUME.RESUME_CAREER_END_DATE AS "perCareerEndDate" 
+			, NVL(RESUME.RESUME_LICENSE_NAME , ' ') AS "perLicense" 
+			, NVL(REGEXP_COUNT(RESUME.RESUME_LICENSE_NAME, ',')+1, 0) AS "perLicenseCount" 
+			, PER.RECOMMEND_PREFER AS "comPrefer" 
+		    , PER.RECOMMEND_TOTAL_RATE AS "recommendTotalRate" 
+		FROM ( 
+			SELECT REC.PERSONAL_NUMBER, REC.RECOMMEND_PREFER, REC.RECOMMEND_TOTAL_RATE FROM RECOMMEND REC
+		    WHERE REC.COMPANY_NUMBER = #{comNo}
+	    ) PER INNER JOIN RESUME RESUME
+			ON PER.PERSONAL_NUMBER = RESUME.PERSONAL_NUMBER
+		    INNER JOIN PERSONAL PERSONAL
+		    ON RESUME.PERSONAL_NUMBER = PERSONAL.PERSONAL_NUMBER
     <where>
-<!--     	<if test="talentScore != null"></if> -->
+    	<if test="talentScore != null">
+	    	<![CDATA[PER.RECOMMEND_TOTAL_RATE >= #{talentScore}]]>
+    	</if>
+    	<if test="educationScore != null or licenseScore != null">
+    		 AND 
+    	 </if>
 <!--     	<if test="careerScore != null"></if> -->
     	<if test="educationScore != null">
     		<choose>
 	    		<when test="educationScore == 1">
-	    			<![CDATA[R.RESUME_EDUCATION_NAME LIKE '%고등학교']]>
+	    			<![CDATA[RESUME.RESUME_EDUCATION_NAME LIKE '%고등학교']]>
 	    		</when>
 	    		<when test="educationScore == 2">
-	    			<![CDATA[R.RESUME_EDUCATION_NAME LIKE '%전문대%'
-    					AND R.RESUME_EDUCATION_NAME NOT LIKE '%대학교%']]>
+	    			<![CDATA[RESUME.RESUME_EDUCATION_NAME LIKE '%전문대%'
+    					AND RESUME.RESUME_EDUCATION_NAME NOT LIKE '%대학교%']]>
 	    		</when>
 	    		<when test="educationScore == 3">
-	    			<![CDATA[R.RESUME_EDUCATION_NAME LIKE '%대학교%']]>
+	    			<![CDATA[RESUME.RESUME_EDUCATION_NAME LIKE '%대학교%']]>
 	    		</when>
     		</choose>
     	</if>
@@ -242,14 +247,14 @@
     	<if test="licenseScore != null">
     		<choose>
 	    		<when test="licenseScore == 1">
-	    			<![CDATA[NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) <= 1]]>
+	    			<![CDATA[NVL(REGEXP_COUNT(RESUME.RESUME_LICENSE_NAME, ',')+1, 0) <= 1]]>
 	    		</when>
 	    		<when test="licenseScore == 2">
-	    			<![CDATA[NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) >= 1
-	    			AND NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) <= 3]]>
+	    			<![CDATA[NVL(REGEXP_COUNT(RESUME.RESUME_LICENSE_NAME, ',')+1, 0) >= 1
+	    			AND NVL(REGEXP_COUNT(RESUME.RESUME_LICENSE_NAME, ',')+1, 0) <= 3]]>
 	    		</when>
 	    		<when test="licenseScore == 3">
-	    			<![CDATA[NVL(REGEXP_COUNT(R.RESUME_LICENSE_NAME, ',')+1, 0) >= 3]]>
+	    			<![CDATA[NVL(REGEXP_COUNT(RESUME.RESUME_LICENSE_NAME, ',')+1, 0) >= 3]]>
 	    		</when>
     		</choose>
     	</if>
@@ -264,6 +269,7 @@
 <!--     			<![CDATA[R.RESUME_EDUCATION_NAME LIKE '%서일%']]> -->
     	</if>
     </where>
+    ORDER BY PER.RECOMMEND_TOTAL_RATE DESC
 	</select>
 	<select id="personalMemberShowResume" resultMap="resumeResultMap" parameterType="map">
 		SELECT RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY, RESUME_PERSONAL_EMAIL
