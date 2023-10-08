@@ -369,6 +369,16 @@
 			}
 		}
 		
+		function joinSuccess() {
+			var joinBtn = document.getElementById("submitButton");
+			
+			joinBtn.disabled = true;
+			joinBtn.value = '전송중';
+			
+			alert("메일 전송이 완료되었습니다. \n메일 확인 후 인증버튼을 눌러주세요!");
+			
+			joinBtn.form.submit();
+		}
    	
 	</script>
 <link rel="stylesheet" type="text/css" href="/JobHub/resources/css/Join.css">
@@ -489,8 +499,7 @@
 			<div id="wrongAuthNumErrorDiv" class="error">인증번호가 일치하지 않습니다.</div>
 
 			<div>
-				<input type="submit" value="이메일인증" id="submitButton"
-					onclick="this.disabled=true; this.value='전송중'; this.form.submit();">
+				<input type="submit" value="이메일인증" id="submitButton" onclick="joinSuccess();">
 			</div>
 		</form>
 
