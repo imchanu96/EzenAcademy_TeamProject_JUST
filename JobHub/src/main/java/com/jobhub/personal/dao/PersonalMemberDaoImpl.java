@@ -143,17 +143,7 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 		
 		return resultMap;
 	}
-
-	@Override
-	public void PersonalresumeUpdateOne(ResumeDto resumeDto) {
-		// TODO Auto-generated method stub
-		EducationDto educationDto = null;
-		CareerDto careerDto = null;
-		
-		sqlSession.update(namespace + "PersonalresumeUpdateOne", resumeDto);
-	}
-
-
+	
 	@Override
 	public LetterDto personalMembershowLetter(int perNo) {
 		// TODO Auto-generated method stub
@@ -162,7 +152,42 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 		
 		return sqlSession.selectOne(namespace + "personalMemberShowLetter", map);
 	}
+	
+	@Override
+	public EducationDto personalMemberCheckEducation(EducationDto educationDto) {
+		// TODO Auto-generated method stub
+		
+		return sqlSession.selectOne(namespace + "personalMemberCheckEducation", educationDto);
+	}
 
+
+	@Override
+	public CareerDto personalMemberCheckCareer(CareerDto careerDto) {
+		// TODO Auto-generated method stub
+		
+		return sqlSession.selectOne(namespace + "personalMemberCheckCareer", careerDto);
+	}
+
+	@Override
+	public void personalResumeAddOne(ResumeDto resumeDto) {
+		// TODO Auto-generated method stub
+		sqlSession.insert(namespace + "personalResumeAddOne", resumeDto);
+	}
+	
+	@Override
+	public void personalResumeUpdateOne(ResumeDto resumeDto) {
+		// TODO Auto-generated method stub
+		
+//		sqlSession.select(namespace + , null);
+		
+		sqlSession.update(namespace + "personalresumeUpdateOne", resumeDto);
+	}
+
+	@Override
+	public void personalLetterAddOne(LetterDto letterDto) {
+		// TODO Auto-generated method stub
+		sqlSession.insert(namespace + "personalLetterAddOne", letterDto);
+	}
 
 	@Override
 	public void PersonalLetterUpdateOne(LetterDto letterDto) {
@@ -170,6 +195,32 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 		sqlSession.update(namespace + "PersonalLetterUpdateOne", letterDto);
 	}
 
+	@Override
+	public void personalMemberEducationAddOne(EducationDto educationDto) {
+		// TODO Auto-generated method stub
+		sqlSession.insert(namespace + "personalEducationInsertOne", educationDto);
+	}
+
+
+	@Override
+	public void personalMemberCareerAddOne(CareerDto careerDto) {
+		// TODO Auto-generated method stub
+		sqlSession.insert(namespace + "personalCareerInsertOne", careerDto);
+	}
+
+
+	@Override
+	public void personalMemberEducationUpdateOne(EducationDto educationDto) {
+		// TODO Auto-generated method stub
+		sqlSession.update(namespace + "personalMemberEducationUpdateOne", educationDto);
+	}
+
+
+	@Override
+	public void personalMemberCareerUpdateOne(CareerDto careerDto) {
+		// TODO Auto-generated method stub
+		sqlSession.update(namespace + "personalMemberCareerUpdateOne", careerDto);
+	}
 
 	@Override
 	public int personalUpdateTemporarily(PersonalMemberDto personalMemberDto) {
@@ -183,6 +234,15 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 		// TODO Auto-generated method stub
 		return sqlSession.update(namespace + "personalUpdatePermission", personalMemberDto);
 	}
+
+
+	
+
+
+	
+
+
+	
 	
 }
 

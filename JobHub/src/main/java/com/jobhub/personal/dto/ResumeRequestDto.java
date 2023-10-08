@@ -2,13 +2,15 @@ package com.jobhub.personal.dto;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+@JsonIgnoreProperties(ignoreUnknown = true) 
 public class ResumeRequestDto {
 
 	
-	CareerDto careerDto;
-	EducationDto educationDto;
-	List<CareerDto> careerDtoList;
-	List<EducationDto> educationDtoList;
+	private CareerDto careerDto;
+	private EducationDto educationDto;
+	private List<CareerDto> careerDtoList;
+	private List<EducationDto> educationDtoList;
 	
 	
 	public CareerDto getCareerDto() {

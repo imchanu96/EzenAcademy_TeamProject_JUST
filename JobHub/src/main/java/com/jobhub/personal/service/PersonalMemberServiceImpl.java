@@ -1,5 +1,7 @@
 package com.jobhub.personal.service;
 
+import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 import org.slf4j.Logger;
@@ -11,6 +13,8 @@ import org.springframework.stereotype.Service;
 import com.jobhub.mail.MailHandler;
 import com.jobhub.mail.TempKey;
 import com.jobhub.personal.dao.PersonalMemberDao;
+import com.jobhub.personal.dto.CareerDto;
+import com.jobhub.personal.dto.EducationDto;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;
@@ -52,7 +56,7 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 				+ personalMemberDto.getPerEmail() +
 				"&perTemporarily=" + personalMemberDto.getPerTemporarily() +
 				"' target='_blank'>이메일 인증 확인</a>");
-		sendMail.setFrom("mi0park93@gmail.com", "JobHub");
+		sendMail.setFrom("jobhub.just@gmail.com", "JobHub");
 		sendMail.setTo(personalMemberDto.getPerEmail());
 		sendMail.send();
 	}
@@ -112,10 +116,45 @@ public class PersonalMemberServiceImpl implements PersonalMemberService {
 		return personalMemberDao.personalMemberShowResume(perNo);
 	}
 
+
 	@Override
-	public void PersonalresumeUpdateOne(ResumeDto resumeDto) {
+	public void personalResumeUpdateOne(ResumeDto resumeDto, Map<String, Object> map) {
 		// TODO Auto-generated method stub
-		personalMemberDao.PersonalresumeUpdateOne(resumeDto);
+		if (personalMemberDao.personalMemberShowResume((int)map.get("perNo")) == null) {
+			personalMemberDao.personalResumeAddOne(resumeDto);
+		}else {
+			personalMemberDao.personalResumeUpdateOne(resumeDto);
+		}
+		
+
+		List<EducationDto> educationDtoList
+			= (List<EducationDto>) map.get("educationDtoList");
+		System.out.println("\n 학력 리스트 출력 테스트" + educationDtoList);
+		
+			
+		for (int i = 0; i < educationDtoList.size(); i++) {
+			EducationDto educationDto = educationDtoList.get(i);
+			if (educationDto == null) {
+				personalMemberDao.personalMemberEducationAddOne(educationDto);
+			}else {
+				personalMemberDao.personalMemberEducationUpdateOne(educationDto);
+			}
+		}
+		
+
+		List<CareerDto> careerDtoList
+		=  (List<CareerDto>)map.get("careerDtoList");
+		System.out.println("\n 경력 리스트 출력 테스트" + careerDtoList);
+		for (int i = 0; i < careerDtoList.size(); i++) {
+			CareerDto careerDto = careerDtoList.get(i);
+			if (careerDto == null) {
+				personalMemberDao.personalMemberCareerAddOne(careerDto);
+			}else {
+				personalMemberDao.personalMemberCareerUpdateOne(careerDto);
+			}
+		}
+
+
 	}
 
 	@Override

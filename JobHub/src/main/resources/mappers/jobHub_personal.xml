@@ -278,6 +278,24 @@
 		WHERE PERSONAL_NUMBER = #{perNo}
 	</select>
 	
+	<select id="personalMemberCheckCareer" parameterType="map" resultMap="careerResultMap">
+		SELECT CAREER_NUMBER, CAREER_BEGIN_DATE, CAREER_END_DATE
+			, CAREER_NAME, CAREER_POSITION, CAREER_LOCATION, CAREER_JOB, RESUME_NUMBER
+		FROM CAREER
+		WHERE CAREER_NUMBER = #{carNo}
+		ORDER BY CAREER_BEGIN_DATE DESC
+	</select>
+		
+	<select id="personalMemberCheckEducation" parameterType="map" resultMap="educationResultMap" >
+		SELECT EDUCATION_NUMBER, EDUCATION_BEGIN_DATE, EDUCATION_END_DATE
+			, EDUCATION_NAME, EDUCATION_MAJOR, EDUCATION_GRADE, EDUCATION_LOCATION
+			, EDUCATION_GREADUATE, RESUME_NUMBER
+		FROM EDUCATION
+		WHERE EDUCATION_NUMBER = #{eduNo}
+		ORDER BY EDUCATION_BEGIN_DATE DESC
+	</select>
+	
+	
 	<select id="personalMemberShowCareer" parameterType="map" resultMap="careerResultMap">
 		SELECT CAREER_NUMBER, CAREER_BEGIN_DATE, CAREER_END_DATE
 			, CAREER_NAME, CAREER_POSITION, CAREER_LOCATION, CAREER_JOB, RESUME_NUMBER
@@ -286,7 +304,7 @@
 		ORDER BY CAREER_BEGIN_DATE DESC
 	</select>
 		
-	<select id="personalMemberShowEducation" resultMap="educationResultMap" parameterType="map">
+	<select id="personalMemberShowEducation" parameterType="map" resultMap="educationResultMap" >
 		SELECT EDUCATION_NUMBER, EDUCATION_BEGIN_DATE, EDUCATION_END_DATE
 			, EDUCATION_NAME, EDUCATION_MAJOR, EDUCATION_GRADE, EDUCATION_LOCATION
 			, EDUCATION_GREADUATE, RESUME_NUMBER
@@ -302,7 +320,36 @@
 	WHERE PERSONAL_NUMBER = #{perNo}
 	</select>
 
-	<update id="PersonalresumeUpdateOne" parameterType="resumeDto">
+	<insert id="personalResumeAddOne" parameterType="resumeDto">
+		INSERT INTO RESUME
+		VALUE(RESUME_NUMBER, RESUME_PERSONAL_NAME, RESUME_PERSONAL_BIRTHDAY
+			, RESUME_PERSONAL_EMAIL, RESUME_PERSONAL_PHONENUMBER
+			, RESUME_PERSONAL_ADDRESS, RESUME_PERSONAL_MARRY
+			, RESUME_PERSONAL_GENDER, RESUME_PERSONAL_MILITARY, RESUME_EDUCATION_BEGIN_DATE
+			, RESUME_EDUCATION_END_DATE, RESUME_EDUCATION_NAME, RESUME_EDUCATION_MAJOR
+			, RESUME_EDUCATION_GRADE, RESUME_EDUCATION_LOCATION, RESUME_EDUCATION_GRADUATE
+			, RESUME_CAREER_BEGIN_DATE, RESUME_CAREER_END_DATE, RESUME_CAREER_NAME
+			, RESUME_CAREER_POSITION, RESUME_CAREER_LOCATION, RESUME_CAREER_JOB
+			, RESUME_LICENSE_DATE, RESUME_LICENSE_NAME, RESUME_LICENSE_INSTITUTION
+			, RESUME_LICENSE_GRADE, PERSONAL_NUMBER)
+		VALUES(RESUME_NUMBER_SEQ.NEXTVAL, #{resumeName}, #{resumeBirthday}, #{resumeEmail}
+			, #{resumePhoneNum}, #{resumeAdd}, #{resumeMarry}, #{resumeGender}
+			, #{resumeMilitary}, #{resumeEduBeginDate}, #{resumeEduEndDate} , #{resumeEduName}
+			, #{resumeEduMajor},#{resumeEduGrade}, #{resumeEduLoc} ,#{resumeEduGraduate}
+			, #{resumeCareerBeginDate}, #{resumeCareerEndDate}, #{resumeCareerName}
+			, #{resumeCareerPos}, #{resumeCareerLoc}, #{resumeCareerJob}
+			, #{resumeLicenseDate}, #{resumeLicenseName}, #{resumeLicenseInst}, #{resumeLicenseGrade}, #{perNo})
+	</insert>
+	
+	<insert id="personalLetterAddOne" parameterType="letterDto">
+		INSERT INTO LETTER
+		VALUE(LETTER_NUMBER, LETTER_HISTORY, LETTER_MOTIVATION
+			, LETTER_CHARACTER, LETTER_GOAL, PERSONAL_NUMBER)
+		VALUES(LETTER_NUMBER_SEQ.NEXTVAL, #{history}, #{motivation}, #{character}
+			, LETTER_GOAL = #{goal}, #{perNo})	
+	</insert>
+	
+	<update id="personalresumeUpdateOne" parameterType="resumeDto">
 		UPDATE RESUME
 		SET RESUME_PERSONAL_NAME = #{resumeName}
 			, RESUME_PERSONAL_BIRTHDAY = #{resumeBirthday}
@@ -333,18 +380,12 @@
 	</update>
 	
 	<insert id="personalEducationInsertOne" parameterType="educationDto">
-<!-- 		<choose> -->
-<!-- 			<when test=""> -->
-			
-<!-- 			</when> -->
-<!-- 			<otherwise> -->
-				INSERT INTO EDUCATION
+			INSERT INTO EDUCATION
 			VALUE(EDUCATION_NUMBER, EDUCATION_BEGIN_DATE, EDUCATION_END_DATE, EDUCATION_NAME
 				,EDUCATION_MAJOR, EDUCATION_GRADE, EDUCATION_LOCATION, EDUCATION_GREADUATE, RESUME_NUMBER)
 			VALUES(EDUCATION_NUMBER_SEQ.NEXTVAL, #{eduBeginDate}, #{eduEndDate}, #{eduName}
 				, #{eduMajor}, #{eduGrade}, #{eduLocation}, #{eduGreaduate}, #{resumeNo})
-<!-- 			</otherwise> -->
-<!-- 		</choose> -->
+
 	</insert>
 
 	<insert id="personalCareerInsertOne" parameterType="careerDto">
@@ -378,12 +419,24 @@
 
 	<update id="personalCareerUpdateOne" parameterType="careerDto">
 			UPDATE EDUCATION
-			SET CAREER_BEGIN_DATE = #{carBeginDate}
-				CAREER_END_DATE = #{carEndDate}
-				CAREER_NAME = #{carName}
-				CAREER_POSITION = #{carPosition}
-				CAREER_LOCATION = #{carLocation}
-				CAREER_JOB = #{carJob}
+			<choose>
+				<when test="carEndDate == null">
+					SET CAREER_BEGIN_DATE = #{carBeginDate}
+					CAREER_END_DATE = #{carEndDate}
+					CAREER_NAME = #{carName}
+					CAREER_POSITION = #{carPosition}
+					CAREER_LOCATION = #{carLocation}
+					CAREER_JOB = #{carJob}
+				</when>
+				<otherwise>
+					SET CAREER_BEGIN_DATE = #{carBeginDate}
+					CAREER_END_DATE = #{carEndDate}
+					CAREER_NAME = #{carName}
+					CAREER_POSITION = #{carPosition}
+					CAREER_LOCATION = #{carLocation}
+					CAREER_JOB = #{carJob}
+				</otherwise>
+			</choose>
 	</update>
 	
 	<update id="PersonalLetterUpdateOne" parameterType="letterDto">

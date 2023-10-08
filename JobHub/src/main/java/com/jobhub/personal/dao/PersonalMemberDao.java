@@ -3,6 +3,8 @@ package com.jobhub.personal.dao;
 import java.util.List;
 import java.util.Map;
 
+import com.jobhub.personal.dto.CareerDto;
+import com.jobhub.personal.dto.EducationDto;
 import com.jobhub.personal.dto.LetterDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.personal.dto.ResumeDto;
@@ -37,14 +39,32 @@ public interface PersonalMemberDao {
 
 	public Map<String, Object> personalMemberShowResume(int perNo);
 
-	public void PersonalresumeUpdateOne(ResumeDto resumeDto);
-
 	public LetterDto personalMembershowLetter(int perNo);
+
+	public EducationDto personalMemberCheckEducation(EducationDto educationDto);
+	
+	public CareerDto personalMemberCheckCareer(CareerDto careerDto);
+
+	public void personalResumeAddOne(ResumeDto resumeDto);
+		
+	public void personalLetterAddOne(LetterDto letterDto);
+	
+	public void personalMemberEducationAddOne(EducationDto educationDto);
+
+	public void personalMemberCareerAddOne(CareerDto careerDto);
+
+	public void personalMemberEducationUpdateOne(EducationDto educationDto);
+
+	public void personalMemberCareerUpdateOne(CareerDto careerDto);
+	
+	public void personalResumeUpdateOne(ResumeDto resumeDto);
 
 	public void PersonalLetterUpdateOne(LetterDto letterDto);
 	
 	public int personalUpdateTemporarily(PersonalMemberDto personalMemberDto);
 	
 	public int personalUpdatePermission(PersonalMemberDto personalMemberDto);
+
+	
 	
 }

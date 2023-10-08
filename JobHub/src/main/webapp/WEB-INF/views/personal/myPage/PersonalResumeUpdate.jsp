@@ -86,7 +86,7 @@
 								<input class="deleteTr resumeButton" type="button"
 									value="항목 삭제" onclick="deleteTrFnc('educationTr');">
 								<input class="addTr resumeButton" type="button"
-									value="항목 추가" onclick="addTrFnc('educationTable', 7);">
+									value="항목 추가" onclick="addTrFnc('educationTable', 8, 'resumeValue');">
 							</td>
 						</tr>
 					</thead>
@@ -144,7 +144,7 @@
 								<input class="deleteTr resumeButton" type="button"
 									value="항목 삭제" onclick="deleteTrFnc('careerTr');">
 								<input class="addTr resumeButton" type="button" 
-									value="항목 추가" onclick="addTrFnc('careerTable', 6);">
+									value="항목 추가" onclick="addTrFnc('careerTable', 7, 'resumeValue');">
 							</td>
 						</tr>
 					</thead>
@@ -200,7 +200,7 @@
 								<input class="deleteTr resumeButton" type="button"
 									value="항목 삭제" onclick="deleteTrFnc('licenseTr');">
 								<input class="addTr resumeButton" type="button" 
-									value="항목 추가" onclick="addTrFnc('licenseTable', 4);">
+									value="항목 추가" onclick="addTrFnc('licenseTable', 4, 'resumeValue');">
 							</td>
 						</tr>
 					</thead>

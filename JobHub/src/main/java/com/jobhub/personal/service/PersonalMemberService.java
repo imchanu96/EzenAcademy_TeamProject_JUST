@@ -30,7 +30,7 @@ public interface PersonalMemberService {
 	
 	public Map<String, Object> personalMemberShowResume(int perNo);
 
-	public void PersonalresumeUpdateOne(ResumeDto resumeDto);
+	public void personalResumeUpdateOne(ResumeDto resumeDto, Map<String, Object> map);
 	
 	public LetterDto personalMembershowLetter(int perNo);
 

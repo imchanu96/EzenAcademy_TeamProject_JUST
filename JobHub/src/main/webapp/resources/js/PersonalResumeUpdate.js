@@ -1,5 +1,5 @@
 
-function addTrFnc(trObj, tdNum){
+function addTrFnc(trObj, tdNum, tdName){
 	var parentTable = document.getElementById(trObj);
 //	alert(parentTable);
 	var parentTr = parentTable.getElementsByTagName("tr");
@@ -11,6 +11,7 @@ function addTrFnc(trObj, tdNum){
 //		alert(getPropertyList[i].value);
 		var newTdObj = document.createElement("td");
 		var newInputObj = document.createElement("input");
+		newTdObj.className = tdName;
 		newInputObj.type = getPropertyList[i].type;
 		newInputObj.name = getPropertyList[i].name;
 		newTdObj.appendChild(newInputObj);
@@ -231,17 +232,16 @@ function settingDtoFnc(){
 //		alert(careerResumeValueList[4].children[0].value);
 //		alert(careerResumeValueList[5].children[0].value);
 //		alert(careerResumeValueList[6].children[0].value);
-		
+//		alert(careerDtoList);
 	}
 //	careerDtoV2.value = careerDtoList;
 	var jsonData = {
-    educationDtoList: educationDtoList,
-    careerDtoList: careerDtoList,
+		educationDtoList: educationDtoList,
+	  	careerDtoList: careerDtoList
 	};
 	
 	var dtoList = document.getElementById("dtoList");
 	dtoList.value = JSON.stringify(jsonData);
-	console.log(dtoList);
 	alert(dtoList);
 //	dtoList[0] = educationDtoList;
 //	dtoList[1] = careerDtoList;

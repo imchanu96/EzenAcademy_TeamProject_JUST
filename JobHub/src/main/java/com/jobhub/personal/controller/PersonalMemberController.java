@@ -1,5 +1,6 @@
 package com.jobhub.personal.controller;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -12,10 +13,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jobhub.board.dao.BoardDao;
 import com.jobhub.board.dto.BoardDto;
 import com.jobhub.board.service.BoardService;
@@ -375,31 +381,41 @@ public class PersonalMemberController {
 	}
 	
 	@RequestMapping(value = "/personal/resumeUpdateCtr.do", method = RequestMethod.POST)
-	public String PersonalresumeUpdateCtr(
-			@ModelAttribute ResumeRequestDto requestDto 
-//			@RequestParam List<List<Object>> dtoList
-//			@RequestParam List<CareerDto> careerDto
-//				, @RequestParam List<EducationDto> educationDto
-			, ResumeDto resumeDto, int perNo, HttpSession session, Model model) {
-		System.out.println("-------------------------------------");
-//		log.info("Welecome PersonalresumeUpdateCtr 이력서 : " + resumeDto);
-//		log.info("Welecome PersonalresumeUpdateCtr 경력 : " + careerDto);
-//		log.info("Welecome PersonalresumeUpdateCtr 학력 : " + educationDto);
-//		log.info("Welecome PersonalresumeUpdateCtr DTO리스트 : " + requestDto);
-		List<CareerDto> careerDtoList = requestDto.getCareerDtoList();
-		List<EducationDto> educationDto = requestDto.getEducationDtoList();
-		System.out.println("careerDtoList 리스트 이다." + careerDtoList);
-		System.out.println("educationDto 리스트 이다." + educationDto);
+	public String PersonalresumeUpdateCtr(@RequestParam("requestDto") String requestDto 
+			, ResumeDto resumeDto, int perNo, HttpSession session, Model model) 
+					throws JsonParseException, JsonMappingException, IOException {
+		log.info("Welecome PersonalresumeUpdateCtr DTO리스트 : " + requestDto + "\n");
+		// JSON 문자열을 Map으로 변환
+	    ObjectMapper objectMapper = new ObjectMapper();
+	    
+	    objectMapper.writeValueAsBytes(requestDto);
+	    Map<String, Object> dtoMap = objectMapper.readValue(requestDto, Map.class);
+	    
+	    
+//	    // Map에서 리스트를 꺼내서 사용
+	    List<EducationDto> educationDtoList 
+	    	= (List<EducationDto>)dtoMap.get("educationDtoList");
+	    
+	    List<CareerDto> careerDtoList  = objectMapper.convertValue(dtoMap.get("careerDtoList")
+    			, new TypeReference<List<CareerDto>>() {
+	    });
+	    
+	    log.info("careerDtoList 리스트 이다." + careerDtoList + "\n");
+	    log.info("educationDtoList 리스트 이다." + educationDtoList + "\n");
+	    
+	    Map<String, Object> map = new HashMap<String, Object>();
+	    map.put("perNo", perNo);
+	    map.put("careerDtoList", careerDtoList);
+	    map.put("educationDtoList", educationDtoList);
+	       
+		try {
+			PersonalMemberService.personalResumeUpdateOne(resumeDto, map);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
 		
-		
-//		try {
-//			PersonalMemberService.PersonalresumeUpdateOne(resumeDto);
-//			
-//		} catch (Exception e) {
-//			// TODO: handle exception
-//			e.printStackTrace();
-//		}
-//		
 		return "redirect:./showResume.do?perNo=" + perNo;
 	}
 	
