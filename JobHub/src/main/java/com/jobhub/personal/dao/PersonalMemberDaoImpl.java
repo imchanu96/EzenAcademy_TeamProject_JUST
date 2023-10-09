@@ -237,9 +237,9 @@ public class PersonalMemberDaoImpl implements PersonalMemberDao {
 
 
 	@Override
-	public int personalSearchSelectTotalCount(int comNo) {
+	public int personalSearchSelectTotalCount(Map<String, Object> map) {
 		// TODO Auto-generated method stub
-		return sqlSession.selectOne(namespace + "personalSearchSelectTotalCount", comNo);
+		return sqlSession.selectOne(namespace + "personalSearchSelectTotalCount", map);
 	}
 
 

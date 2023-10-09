@@ -30,6 +30,6 @@ public interface CompanyMemberService {
 	
 	public int companyUpdatePermission(CompanyMemberDto companyMemberDto);
 
-	public int personalSearchSelectTotalCount(int comNo);
+	public int personalSearchSelectTotalCount(Map<String, Object> map);
 	
 }

@@ -1,13 +1,14 @@
 package com.jobhub.board.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import com.jobhub.board.dto.BoardDto;
 import com.jobhub.board.dto.CommentDto;
 
 public interface BoardDao {
 
-	public List<BoardDto> boardSelectList(int start, int end);
+	public List<BoardDto> boardSelectList(Map<String, Object> map);
 	
 	public List<BoardDto> boardSelectList(int start, int end, int perNo);
 	

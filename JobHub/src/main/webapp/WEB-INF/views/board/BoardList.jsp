@@ -16,10 +16,21 @@
 	
 	<div id="container">
 		<jsp:include page="/WEB-INF/views/board/BoardNavigation.jsp"/>
-	
+<%-- 	${searchText} --%>
 		<div id="content">
 			<c:if test="${not empty personalMemberDto}">
 				<div id="writeBox">
+					
+					<form action="./list.do" id="searchForm" method="post">
+						<select id="search" name="search">
+							<option value="BOARD_TITLE">제목</option>
+							<option value="BOARD_WRITER">글쓴이</option>
+							<option value="BOARD_CONTENT">내용</option>
+						</select>
+						<input type="text" id="searchText" 
+						name="searchText" placeholder="검색 내용" value="${searchText}">
+						<input type="submit" value="검색">
+					</form>
 					<button type="button" onclick="writeFnc(${personalDto.perNo});">글쓰기</button>
 				</div>
 			</c:if>
@@ -91,12 +102,13 @@
 					
 					</c:if>
 				</table>
-				
 				<jsp:include page="/WEB-INF/views/board/Paging.jsp">
 					<jsp:param value="${pagingMap}" name="pagingMap"/>
 				</jsp:include>
 			
 				<form action="./list.do" id="pagingForm" method="post">
+					<input type="hidden" id="search" name="search" value="${search}">
+					<input type="hidden" id="searchText" name="searchText"value="${searchText}">
 					<input type="hidden" id="curPage" name="curPage" value="${pagingMap.boardPaging.curPage}">
 				</form>
 			</div>

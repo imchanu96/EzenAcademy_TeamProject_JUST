@@ -36,7 +36,15 @@
 		        FROM (
 		                SELECT BOARD_NUMBER, BOARD_TITLE, BOARD_WRITER, BOARD_TAG, BOARD_CREATE_DATE, BOARD_VIEWS
 		                FROM BOARD B
-		                <if test="perNo != null">WHERE PERSONAL_NUMBER =#{perNo}</if>
+		                <where>
+		                	<if test="perNo != null">PERSONAL_NUMBER =#{perNo}</if>
+		                	<if test="perNo != null and search != null">
+		                		AND
+		                	</if>
+			                <if test="search != null">
+			                	<![CDATA[${search} LIKE '%${searchText}%']]>
+			                </if>
+		                </where>
 		                ORDER BY BOARD_NUMBER DESC
 		        )
 		)RNR
@@ -46,6 +54,15 @@
 	<select id="boardSelectTotalCount" resultType="java.lang.Integer">
 		SELECT COUNT(*)
 		FROM BOARD
+		<where>
+            <if test="perNo != null">PERSONAL_NUMBER =#{perNo}</if>
+            <if test="perNo != null and search != null">
+            	AND
+            </if>
+            <if test="search != null">
+            	<![CDATA[${search} LIKE '%${searchText}%']]>
+            </if>
+        </where>
 	</select>
 	
 	<insert id="boardInsertOne" parameterType="boardDto">

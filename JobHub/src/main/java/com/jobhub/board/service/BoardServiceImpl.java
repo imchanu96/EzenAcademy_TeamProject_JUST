@@ -27,9 +27,9 @@ public class BoardServiceImpl implements BoardService{
 	public BoardDao boardDao;
 	
 	@Override
-	public List<BoardDto> boardSelectList(int start, int end) {
+	public List<BoardDto> boardSelectList(Map<String, Object> map) {
 		// TODO Auto-generated method stub
-		return boardDao.boardSelectList(start, end);
+		return boardDao.boardSelectList(map);
 	}
 	
 	@Override

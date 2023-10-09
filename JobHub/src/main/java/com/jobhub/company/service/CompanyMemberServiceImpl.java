@@ -123,9 +123,9 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 	}
 
 	@Override
-	public int personalSearchSelectTotalCount(int comNo) {
+	public int personalSearchSelectTotalCount(Map<String, Object> map) {
 		// TODO Auto-generated method stub
-		return personalMemberDao.personalSearchSelectTotalCount(comNo);
+		return personalMemberDao.personalSearchSelectTotalCount(map);
 	}
 
 	

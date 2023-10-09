@@ -11,7 +11,7 @@ public interface BoardService {
 
 	PersonalMemberDto personalMemberExist(String pId, String pPwd);
 	
-	List<BoardDto> boardSelectList(int start, int end);
+	List<BoardDto> boardSelectList(Map<String, Object> map);
 	
 	public List<BoardDto> boardSelectList(int start, int end, int perNo);
 	

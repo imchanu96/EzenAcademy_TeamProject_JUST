@@ -100,7 +100,7 @@
 							<option value="RESUME.RESUME_EDUCATION_NAME">학교명</option>
 							<option value="RESUME.RESUME_LICENSE_NAME">자격증</option>
 						</select>
-						<input type="text" name="searchText" id="textInput">
+						<input type="text" name="searchText" id="textInput" value="${searchText}">
 						<input type="submit" value="검색" class="button">
 					</div>
 					<button type="button" class="helpButton">
@@ -293,6 +293,8 @@
 					<form action="./personalInfoList.do" id="pagingForm" method="post">
 						<input type="hidden" id="curPage" name="curPage"
 							value="${pagingMap.searchPaging.curPage}">
+						<input type="hidden" name="search" id="textInput" value="${search}">
+						<input type="hidden" name="searchText" id="textInput" value="${searchText}">
 					</form>
 			</c:if>
 		</div>

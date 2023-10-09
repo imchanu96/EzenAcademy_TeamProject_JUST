@@ -33,7 +33,8 @@ public class BoardController {
 //	게시판 리스트 조회
 	@RequestMapping(value = "/board/list.do"
 			, method = {RequestMethod.GET, RequestMethod.POST})
-	public String boardList(@RequestParam(defaultValue = "1") int curPage, Model model) {
+	public String boardList(@RequestParam(defaultValue = "1") int curPage
+			,String search, String searchText, Model model) {
 		
 		log.info("Welcome BoardController boardList!: {}", curPage);
 		
@@ -44,7 +45,13 @@ public class BoardController {
 		int start = boardPaging.getPageBegin();
 		int end = boardPaging.getPageEnd();
 		
-	    List<BoardDto> boardList = boardService.boardSelectList(start, end);
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("search", search);
+		map.put("searchText", searchText);
+		map.put("start", start);
+		map.put("end", end);
+		
+	    List<BoardDto> boardList = boardService.boardSelectList(map);
 
 	    HashMap<String, Object> pagingMap = new HashMap<>(); 
 		pagingMap.put("totalCount", totalCount);
@@ -52,6 +59,8 @@ public class BoardController {
 		
 	    model.addAttribute("boardList", boardList);
 	    model.addAttribute("pagingMap", pagingMap);
+	    model.addAttribute("search", search);
+	    model.addAttribute("searchText", searchText);
 
 	    return "board/BoardList";
 	}

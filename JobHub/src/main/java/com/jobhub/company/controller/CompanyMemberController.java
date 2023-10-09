@@ -188,8 +188,16 @@ public class CompanyMemberController {
 				+ careerScore + "학력" + educationScore + "자격증"
 				+ licenseScore + search + searchText);
 
+		Map<String, Object> countMap = new HashMap<String, Object>();
+		countMap.put("comNo", comNo);
+		countMap.put("talentScore", talentScore);
+		countMap.put("careerScore", careerScore);
+		countMap.put("educationScore", educationScore);
+		countMap.put("licenseScore", licenseScore);
+		countMap.put("search", search);
+		countMap.put("searchText", searchText);
 		
-		int totalCount = companyMemberService.personalSearchSelectTotalCount(comNo);
+		int totalCount = companyMemberService.personalSearchSelectTotalCount(countMap);
 		System.out.println("totalCount : " + totalCount);
 		SearchPersonPaging searchPersonPaging = new SearchPersonPaging(totalCount, curPage);
 		
@@ -219,6 +227,8 @@ public class CompanyMemberController {
 		
 		model.addAttribute("personalInfoList", personalInfoList);
 		model.addAttribute("pagingMap", pagingMap);
+		model.addAttribute("search", search);
+		model.addAttribute("searchText", searchText);
 		
 		return "company/search/SearchPerson";
 	}

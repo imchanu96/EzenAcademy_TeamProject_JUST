@@ -20,11 +20,8 @@ public class BoardDaoImpl implements BoardDao{
 	SqlSessionTemplate sqlSession;
 	
 	@Override
-	public List<BoardDto> boardSelectList(int start, int end) {
+	public List<BoardDto> boardSelectList(Map<String, Object> map) {
 		
-		Map<String, Object> map = new HashMap<String, Object>();
-		map.put("start", start);
-		map.put("end", end);
 		
 		return sqlSession.selectList(namespace + "boardSelectList", map);
 	}
