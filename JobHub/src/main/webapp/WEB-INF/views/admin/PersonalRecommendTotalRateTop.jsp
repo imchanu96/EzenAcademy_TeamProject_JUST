@@ -10,7 +10,6 @@
 
 <script type="text/javascript">
 	
-	
 </script>
 <link rel="stylesheet" href="/JobHub/resources/css/AdminMemberList.css" type="text/css">
 </head>
@@ -24,12 +23,14 @@
 	<div id="tableDiv">
 		
 		<p>${myMsg}</p>
-		<select>
-			<option>top5</option>
-			<option>top10</option>
-			<option>전체보기</option>
-		</select>
-		<input type="button" value="확인">
+		<form action="./personalRecommendTotalRateAverageTop.do" method="get">
+			<select id="listNumOption" name="listNumOption">
+				<option value="5">top5</option>
+				<option value="10">top10</option>
+				<option>전체보기</option>
+			</select>
+			<input type="submit" value="확인">
+		</form>
 		<table>
 			<tr>
 				<th style="background-color: #537DC9;">회원 번호</th>
@@ -37,7 +38,7 @@
 				<th style="background-color: #537DC9;">재직중인 회사</th>
 				<th style="background-color: #537DC9;">평균 적합도</th>
 			</tr>
-			<c:forEach var="personalRecommendDto" items="${personalRecommendRateList}">
+			<c:forEach var="personalRecommendDto" items="${personalRecommendRateList}" end="${listNum}">
 			<tr style="height: 35px;">
 				<td>${personalRecommendDto.PERSONAL_NUMBER}</td>
 				<td>${personalRecommendDto.PERSONAL_NAME}</td>

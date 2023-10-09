@@ -25,12 +25,15 @@
 	<div id="tableDiv">
 		
 		<p>${myMsg}</p>
-		<select>
-			<option>top5</option>
-			<option>top10</option>
-			<option>전체보기</option>
-		</select>
-		<input type="button" value="확인">
+		
+		<form action="./companyRecommendTotalRateAverageTop.do" method="get">
+			<select id="listNumOption" name="listNumOption">
+				<option value="5">top5</option>
+				<option value="10">top10</option>
+				<option >전체보기</option>
+			</select>
+			<input type="submit" value="확인">
+		</form>
 		<table>
 			<tr>
 				<th style="background-color: #5A8FA0;">기업 번호</th>
@@ -41,7 +44,7 @@
 				<th style="background-color: #5A8FA0;">기업 경력 선호도</th>
 				<th style="background-color: #5A8FA0;">평균 적합도</th>
 			</tr>
-			<c:forEach var="companyRecommendDto" items="${companyRecommendRateList}">
+			<c:forEach var="companyRecommendDto" items="${companyRecommendRateList}" end="${listNum}">
 				<c:set var="companyPrefer"
 					value="${fn:split(companyRecommendDto.COMPANY_PREFER, ',')}"/>
 				<tr style="height: 35px;">

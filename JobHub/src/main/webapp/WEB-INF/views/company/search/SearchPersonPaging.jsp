@@ -67,9 +67,9 @@
 		<ul>
 		
 		<!-- 화살표 -->
-			<c:if test="${pagingMap.companyMemberPaging.prevBlock ne 1}">
+			<c:if test="${pagingMap.searchPersonPaging.prevBlock ne 1}">
 			<li>
-				<a href="#;" onclick="goPage(${pagingMap.companyMemberPaging.prevBlock});">
+				<a href="#;" onclick="goPage(${pagingMap.searchPersonPaging.prevBlock});">
 					<span>&#60;</span> <!-- < -->
 				</a>
 			</li>
@@ -77,8 +77,8 @@
 			
 		<!-- 숫자 -->
 			<c:forEach var="num"
-				begin="${pagingMap.companyMemberPaging.blockBegin}"
-				end="${pagingMap.companyMemberPaging.blockEnd}">
+				begin="${pagingMap.searchPersonPaging.blockBegin}"
+				end="${pagingMap.searchPersonPaging.blockEnd}">
 				<li>
 					<a href="#;" onclick="goPage(${num});">${num}</a>
 				</li>
@@ -86,9 +86,9 @@
 			
 		<!-- 화살표 -->			
 			<c:if 
-				test="${pagingMap.companyMemberPaging.curBlock < pagingMap.companyMemberPaging.totBlock}">
+				test="${pagingMap.searchPersonPaging.curBlock < pagingMap.searchPersonPaging.totBlock}">
 			<li>
-				<a href="#;" onclick="goPage(${pagingMap.companyMemberPaging.nextBlock});">
+				<a href="#;" onclick="goPage(${pagingMap.searchPersonPaging.nextBlock});">
 					<span>&#62;</span> <!-- > -->
 				</a>
 			</li>

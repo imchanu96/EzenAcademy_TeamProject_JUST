@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="/JobHub/resources/css/ReviewNav.css" type="text/css">
 </head>
 <body>
-
+${pagingMap.get("companyMemberPaging")}
 	<jsp:include page="/WEB-INF/views/Header.jsp"/>
 	
 	<div id="container">

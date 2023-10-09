@@ -174,11 +174,16 @@ public class CompanyMemberController {
 	}
 		
 	@RequestMapping(value = "/company/personalInfoList.do", method = { RequestMethod.GET, RequestMethod.POST })
-	public String memberList(int comNo, @RequestParam(defaultValue = "1") int curPage
+	public String memberList(@RequestParam(defaultValue = "1") int curPage
 			, String talentScore, String careerScore, String educationScore,
-			String licenseScore, String search, String searchText, Model model) {
+			String licenseScore, String search, String searchText
+			, Model model, HttpSession session) {
 		// log4j
 //		log.info("Welcome personalInfoController list!: {}");
+		CompanyMemberDto companyMemberDto = (CompanyMemberDto)session.getAttribute("companyMemberDto");
+//		System.out.println("회원 DTO : " + companyMemberDto);
+		int comNo = companyMemberDto.getComNo();
+		
 		log.info("기업 번호" + comNo + "인재 점수" + talentScore + "경력" 
 				+ careerScore + "학력" + educationScore + "자격증"
 				+ licenseScore + search + searchText);
@@ -188,13 +193,15 @@ public class CompanyMemberController {
 		System.out.println("totalCount : " + totalCount);
 		SearchPersonPaging searchPersonPaging = new SearchPersonPaging(totalCount, curPage);
 		
-		
 		int start = searchPersonPaging.getPageBegin();
 		int end = searchPersonPaging.getPageEnd();
 		
 		
 
 		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("start", start);
+		map.put("end", end);
+
 		map.put("comNo", comNo);
 		map.put("talentScore", talentScore);
 		map.put("careerScore", careerScore);
@@ -205,9 +212,14 @@ public class CompanyMemberController {
 		map.put("searchText", searchText);
 
 		List<PersonalMemberDto> personalInfoList = companyMemberService.personalInfoList(map);
-
+		
+		HashMap<String, Object> pagingMap = new HashMap<>(); 
+		pagingMap.put("totalCount", totalCount);
+		pagingMap.put("searchPersonPaging", searchPersonPaging);
+		
 		model.addAttribute("personalInfoList", personalInfoList);
-
+		model.addAttribute("pagingMap", pagingMap);
+		
 		return "company/search/SearchPerson";
 	}
 

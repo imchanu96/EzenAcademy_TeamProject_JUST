@@ -15,6 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.jobhub.admin.dto.AdminDto;
 import com.jobhub.admin.service.AdminService;
@@ -199,8 +200,8 @@ public class AdminController {
 	}
 	
 	@RequestMapping(value = "/admin/personalRecommendTotalRateAverageTop.do", method = RequestMethod.GET)
-	public String personalRecommendTotalRateAverageTop(Model model) {
-		
+	public String personalRecommendTotalRateAverageTop(String listNumOption, Model model) {
+		log.info("listNumOption" + listNumOption);
 		log.info("Welcome AdminController "
 				+ "personalRecommendTotalRateAverageTop.do 적합도 계산");
 		
@@ -209,12 +210,22 @@ public class AdminController {
 		log.info("personalRecommendRateList 기업 회원 적합도 평균 top : " + personalRecommendRateList);
 		
 //		model.addAttribute("myMsg", "개인 회원 적합도 평균 top");
+		if (listNumOption == null || listNumOption.equals("전체보기")) {
+			int listNum = personalRecommendRateList.size();
+			System.out.println("listNum" + listNum);
+			model.addAttribute("listNum", listNum);
+		}else {
+			int listNum = Integer.parseInt(listNumOption);
+			System.out.println("listNum" + listNum);
+			model.addAttribute("listNum", listNum);
+		}
+		
 		model.addAttribute("personalRecommendRateList", personalRecommendRateList);
 		return "./admin/PersonalRecommendTotalRateTop";
 	}
 	
 	@RequestMapping(value = "/admin/companyRecommendTotalRateAverageTop.do", method = RequestMethod.GET)
-	public String companyRecommendTotalRateAverageTop(Model model) {
+	public String companyRecommendTotalRateAverageTop(String listNumOption, Model model) {
 		
 		log.info("Welcome AdminController "
 				+ "companyRecommendTotalRateAverageTop.do 기업 회원 적합도 평균 top");
@@ -225,6 +236,17 @@ public class AdminController {
 		log.info("companyRecommendRateList 기업 회원 적합도 평균 top : " + companyRecommendRateList);
 		
 //		model.addAttribute("myMsg", "기업 회원 적합도 평균 top");
+		
+		if (listNumOption == null || listNumOption.equals("전체보기")) {
+			int listNum = companyRecommendRateList.size();
+			System.out.println("listNum" + listNum);
+			model.addAttribute("listNum", listNum);
+		}else {
+			int listNum = Integer.parseInt(listNumOption);
+			System.out.println("listNum" + listNum);
+			model.addAttribute("listNum", listNum);
+		}
+		
 		model.addAttribute("companyRecommendRateList", companyRecommendRateList);
 		return "./admin/CompanyRecommendTotalRateTop";
 	}

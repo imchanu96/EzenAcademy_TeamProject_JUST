@@ -17,9 +17,8 @@
 
 </head>
 <body id="body">
-
 	<jsp:include page="/WEB-INF/views/Header.jsp" />
-
+	
 	<div id="container">
 		<div id="navigation">
 			<div id="smallMenuBox">
@@ -36,7 +35,6 @@
 		</div>
 		<div id="content">
 			<form action="./personalInfoList.do" method="post">
-			<input type="hidden" name="comNo" value="${sessionScope.companyMemberDto.comNo}">
 				<div id="searchBox">
 					<div id="titleBox">
 						<p>인재 검색</p>
