@@ -124,7 +124,7 @@
 				<input id="reviewAvgResult" type="text" name="reviewAvg" style="display: none;">
 				<div id="buttonBox">
 					<button type="submit" id="submitButton">등록 완료</button>
-					<button type="button"id="goBackBtn">취소</button>
+					<button type="button" id="goBackBtn" onclick="history.back();">취소</button>
 				</div>
 				<input type="hidden" name="perNo" value="${personalMemberDto.perNo}">
 				<input type="hidden" name="comNo" value="${comNo}">

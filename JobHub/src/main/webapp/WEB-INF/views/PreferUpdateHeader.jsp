@@ -133,7 +133,7 @@
 							</div>
 							<div class="logout">
 								<p onclick="clickLogoutFnc();">
-									로그 아웃
+									로그아웃
 								</p>
 							</div>
 						</div>

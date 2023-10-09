@@ -66,7 +66,8 @@
 	    box-shadow: 0px 1px 4px 0px #ddd;
 	    font-size: 16px;
 	    font-weight: bold;
-	    color: #475067;
+	    color: #fff;
+	    margin-left: 45px;
 	}
 	
 </style>

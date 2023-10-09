@@ -251,20 +251,23 @@
 								<div style="width: 150px; height: 140px; float: left;">
 									<div id="imgBox">
 										<img alt=""
-											src="https://www.fnnews.com/resource/media/image/2023/08/29/202308291128014614_l.jpg">
+											src="/JobHub/resources/img/user.jpg">
 									</div>
 									<div id="pNameBox">${personalInfo.perName}</div>
 								</div>
 								<div id="infoBox">
-									<div id="companyBox">현재 "${personalInfo.currentCompany}" 재직중</div>
+									<div id="companyBox">${personalInfo.currentCompany} 재직 중</div>
 									<div id="highTestEduBox">최종 학력 :
 										<span id="HighestEdu">${eduArr[0]}</span></div>
 									<div id="licenseCountBox">자격증 :
 										${personalInfo.perLicenseCount}개</div>
 								</div>
 								
-								<div id="" style="width: 100px; float: left; margin-right: 50px;">
-								적합도 ${personalInfo.recommendTotalRate}%</div>
+								<div id="scoreBox">
+									<div id="scoreTitle">적합도</div>
+									<div id="scoreNumber">${personalInfo.recommendTotalRate}</div>
+									<div id="percentage">&nbsp;%</div>
+								</div>
 
 								
 								<div id="buttonBox" style="float: left;">

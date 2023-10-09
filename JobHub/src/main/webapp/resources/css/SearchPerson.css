@@ -218,16 +218,19 @@ img {
 }
 
 #pNameBox {
-	width: 150px;
-	height: 20px;
-	font-size: 25px;
-	clear: both;
+    width: 100px;
+    height: 20px;
+    font-size: 21px;
+    font-weight: bold;
+    clear: both;
+    text-align: center;
+    line-height: 35px;
 }
 
 #companyBox {
 	width: 350px;
-	height: 50px;
-	font-size: 20px;
+	height: 40px;
+	font-size: 17px;
 }
 
 #buttonBox {
@@ -238,13 +241,13 @@ img {
 #highTestEduBox {
 	width: 350px;
 	height: 40px;
-	font-size: 20px;
+	font-size: 17px;
 }
 
 #licenseCountBox {
 	width: 200px;
 	height: 40px;
-	font-size: 20px;
+	font-size: 17px;
 }
 
 #resumeBtn, #letterBtn {
@@ -293,4 +296,26 @@ tr td {
 	border: 1px solid black;
 	border-radius: 5px;
 	font-size: 20px;
+}
+#scoreBox {
+	width: 100px;
+	float: left;
+	margin-right: 50px;
+    margin-top: 20px;
+}
+#scoreTitle {
+	font-size: 17px;
+	font-weight: bold;
+}
+#scoreNumber {
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: #4876ef;
+}
+#percentage {
+	float: left;
+	width: 30px;
+	font-size: 17px;
+	line-height: 50px;
 }
