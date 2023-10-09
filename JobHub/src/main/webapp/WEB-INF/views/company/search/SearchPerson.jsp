@@ -97,22 +97,18 @@
 					</div>
 					<div id="inputBox">
 						<select id="search" name="search">
-<<<<<<< HEAD
-							<option value="PER.RECOMMEND_TOTAL_RATE">인재 점수</option>
-=======
-							<option value="인재 점수">매칭률</option>
->>>>>>> branch 'main' of https://github.com/noohij/Ezen_TeamProject_JUST.git
-							<option value="경력">경력</option>
+							<option value="PER.RECOMMEND_TOTAL_RATE">매칭률</option>
+<!-- 							<option value="경력">경력</option> -->
 							<option value="RESUME.RESUME_EDUCATION_NAME">학교명</option>
 							<option value="RESUME.RESUME_LICENSE_NAME">자격증</option>
 						</select>
 						<input type="text" name="searchText" id="textInput">
 						<input type="submit" value="검색" class="button">
 					</div>
-					<button class="helpButton">
+					<button type="button" class="helpButton">
 						<div id="helpText">
-							- 상세 검색 경력(연차 검색) <br> - 최종 학력(특정 교육기관 검색) <br> -
-							자격증(특정 자격증 검색) <br>
+							- 매칭률(특정 퍼센트 검색)<br>- 최종 학력(특정 교육기관 검색)
+							<br>- 자격증(특정 자격증 검색)<br>
 						</div>
 						<img class="helpButton" alt="도움말" onmouseover="helpFnc(this);"
 							src="https://cdn.icon-icons.com/icons2/602/PNG/512/Help_icon-icons.com_55891.png">
@@ -291,12 +287,12 @@
 						</div>
 				</c:forEach>
 			</c:if>
-			<c:if test="${personalInfoList != '[]'}">
+			<c:if test="${personalInfoList != null and personalInfoList != '[]'}">
 					<jsp:include page="/WEB-INF/views/company/search/SearchPersonPaging.jsp">
 						<jsp:param value="${pagingMap}" name="pagingMap"/>
 					</jsp:include>
 				
-					<form action="./companyMemberList.do" id="pagingForm" method="post">
+					<form action="./personalInfoList.do" id="pagingForm" method="post">
 						<input type="hidden" id="curPage" name="curPage"
 							value="${pagingMap.searchPaging.curPage}">
 					</form>

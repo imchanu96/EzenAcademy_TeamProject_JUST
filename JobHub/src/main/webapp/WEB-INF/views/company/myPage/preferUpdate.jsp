@@ -16,21 +16,23 @@
       var preferList = document.getElementsByClassName("preferList");
       var preferListRateList = document.getElementsByClassName("preferListRate");
       var prefer = document.getElementById("prefer");
+      var totalRateNotice = document.getElementById("totalRate");
       var rateSum = 0;
 
-      for (var i = 0; i < preferList.length; i++) {
-         prefer.value += preferList[i].value += ",";
-         
-         prefer.value += preferListRateList[i].value;
-
-         rateSum += Number(preferListRateList[i].value);
-         if (i != preferList.length - 1) {
-            prefer.value += ",";
-         }
-      }
+     
       var warningMsgObj = document.getElementById("warningMsg");
-      if (warningMsgObj.style.display != "block") {
-         formObj.submit();
+      if (totalRateNotice.style.color != "red") {
+    	 for (var i = 0; i < preferList.length; i++) {
+    	        prefer.value += preferList[i].value += ",";
+    	        
+    	        prefer.value += preferListRateList[i].value;
+	   	        
+    	        rateSum += Number(preferListRateList[i].value);
+    	        if (i != preferList.length - 1) {
+    	           prefer.value += ",";
+    	        }
+    	     }
+        formObj.submit();
       }
    }
    
@@ -177,7 +179,7 @@
             <div class="preferItems">
                <div class="preferName">키워드</div>
                <div class="weightingSelected">
-                  <input type="text" class="preferList" value="${fn:trim(preferList[0])}"
+                  <input type="text" class="preferList" value="${fn:trim(preferList[0])}" readonly="readonly"
                         onclick="showCheckBoxModalFnc();" onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
                </div>
                 
@@ -195,13 +197,13 @@
             <div class="preferItems">
                <div class="preferName">자격증</div>
                <div class="weightingSelected">
-                  <input type="text" class="preferList" value="${fn:trim(preferList[2])}"
+                  <input type="text" class="preferList" value="${fn:trim(preferList[2])}" readonly="readonly"
                         onclick="showCheckBoxModalFnc();" onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
                </div>
                <div class="weightingPercentage">
                   <div style="float: left;">
                        <label for="volume">가중치: </label>
-                       <input type="range" id="volumeLicense" name="volume"
+                       <input type="range" id="volumeLicense" name="volume" 
                           onclick="clickRateFnc(this, 'licenseValue');" min="0" max="100" step="5" value="${fn:trim(preferList[3])}">
                    </div>
                   <input type="text" class="preferListRate" id="licenseValue" value="${fn:trim(preferList[3])}"
@@ -212,7 +214,7 @@
             <div class="preferItems">
                <div class="preferName">학력</div>
                <div class="weightingSelected">
-                  <input type="text" class="preferList" value="${fn:trim(preferList[4])}"
+                  <input type="text" class="preferList" value="${fn:trim(preferList[4])}" readonly="readonly"
                         onclick="showCheckBoxModalFnc();" onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
                </div>
                <div class="weightingPercentage">
@@ -229,7 +231,7 @@
             <div class="preferItems">
                <div class="preferName">경력</div>
                <div class="weightingSelected">
-                  <input type="text" class="preferList" value="${fn:trim(preferList[6])}"
+                  <input type="text" class="preferList" value="${fn:trim(preferList[6])}"  readonly="readonly"
                         onclick="showCheckBoxModalFnc();" onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
                </div>
                <div class="weightingPercentage">

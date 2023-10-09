@@ -120,7 +120,13 @@
 					// 퇴사년도
 	        		var careerTdObj = document.createElement("td");
 	        		careerTrObj.appendChild(careerTdObj);
-	        		careerTdObj.textContent = getYmd10(careerDtoList[i].carEndDate);
+	        		
+					careerTdObj.textContent = getYmd10(careerDtoList[i].carEndDate);
+					alert(careerDtoList[i].carEndDate);
+					if(careerDtoList[i].carEndDate == null){
+						careerTdObj.textContent = "재직중";
+					}
+	        		
 					// 회사명
 	        		var careerTdObj = document.createElement("td");
 	        		careerTrObj.appendChild(careerTdObj);
@@ -248,6 +254,17 @@
 	function getYmd10(date) {
     //yyyy-mm-dd 포맷 날짜 생성
     var d = new Date(date);
-    return d.getFullYear() + "-" + ((d.getMonth() + 1) > 9 ? (d.getMonth() + 1).toString() : "0"
-     + (d.getMonth() + 1)) + "-" + (d.getDate() > 9 ? d.getDate().toString() : "0" + d.getDate().toString());
+    
+    var year = d.getFullYear();
+	var month = ('0' + (d.getMonth() + 1)).slice(-2); // 월은 0부터 시작하므로 1을 더하고 두 자리로 포맷합니다.
+	var day = ('0' + d.getDate()).slice(-2); // 일을 두 자리로 포맷합니다.
+    
+    // YYYY-MM-DD 형식으로 날짜를 포맷합니다.
+	var formattedDate = year + '-' + month + '-' + day;	
+    
+    return formattedDate;
+     
+    
+
+	
 }

@@ -13,9 +13,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.company.service.CompanyMemberService;
+import com.jobhub.company.util.SearchPersonPaging;
 import com.jobhub.personal.dto.PersonalMemberDto;
 import com.jobhub.review.util.CompanyMemberPaging;
 
@@ -172,7 +174,8 @@ public class CompanyMemberController {
 	}
 		
 	@RequestMapping(value = "/company/personalInfoList.do", method = { RequestMethod.GET, RequestMethod.POST })
-	public String memberList(int comNo, String talentScore, String careerScore, String educationScore,
+	public String memberList(int comNo, @RequestParam(defaultValue = "1") int curPage
+			, String talentScore, String careerScore, String educationScore,
 			String licenseScore, String search, String searchText, Model model) {
 		// log4j
 //		log.info("Welcome personalInfoController list!: {}");
@@ -181,14 +184,13 @@ public class CompanyMemberController {
 				+ licenseScore + search + searchText);
 
 		
-//		int totalCount = reviewService.companyMemberSelectTotalCount();
-//
-//		CompanyMemberPaging companyMemberPaging = new CompanyMemberPaging(totalCount, curPage);
-//		
-//		PersonalMemberDto personalMemberDto = (PersonalMemberDto)session.getAttribute("personalMemberDto");
-//		
-//		int start = companyMemberPaging.getPageBegin();
-//		int end = companyMemberPaging.getPageEnd();
+		int totalCount = companyMemberService.personalSearchSelectTotalCount(comNo);
+		System.out.println("totalCount : " + totalCount);
+		SearchPersonPaging searchPersonPaging = new SearchPersonPaging(totalCount, curPage);
+		
+		
+		int start = searchPersonPaging.getPageBegin();
+		int end = searchPersonPaging.getPageEnd();
 		
 		
 

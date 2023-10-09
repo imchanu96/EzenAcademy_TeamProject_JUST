@@ -65,6 +65,8 @@ public interface PersonalMemberDao {
 	
 	public int personalUpdatePermission(PersonalMemberDto personalMemberDto);
 
+	public int personalSearchSelectTotalCount(int comNo);
+
 	
 	
 }

@@ -122,6 +122,12 @@ public class CompanyMemberServiceImpl implements CompanyMemberService {
 		return companyMemberDao.companyUpdatePermission(companyMemberDto);
 	}
 
+	@Override
+	public int personalSearchSelectTotalCount(int comNo) {
+		// TODO Auto-generated method stub
+		return personalMemberDao.personalSearchSelectTotalCount(comNo);
+	}
+
 	
 	
 

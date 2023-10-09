@@ -29,5 +29,7 @@ public interface CompanyMemberService {
 	public int companyUpdateId(CompanyMemberDto companyMemberDto);
 	
 	public int companyUpdatePermission(CompanyMemberDto companyMemberDto);
+
+	public int personalSearchSelectTotalCount(int comNo);
 	
 }

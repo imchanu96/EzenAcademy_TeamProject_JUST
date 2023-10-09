@@ -202,6 +202,12 @@
 		WHERE PERSONAL_NUMBER = #{perNo}
 	</update>
 	
+	<select id="personalSearchSelectTotalCount" resultType="java.lang.Integer">
+		SELECT COUNT(*)
+		FROM RECOMMEND
+		WHERE COMPANY_NUMBER = #{perNo}
+	</select>
+	
 	<select id="personalInfoList" resultType="map">
 		 SELECT PER.PERSONAL_NUMBER AS "perNo", RESUME.RESUME_PERSONAL_NAME AS "perName"
 			, PERSONAL.PERSONAL_COMPANY AS "currentCompany" , RESUME.RESUME_EDUCATION_NAME AS "perHighestEdu" 
