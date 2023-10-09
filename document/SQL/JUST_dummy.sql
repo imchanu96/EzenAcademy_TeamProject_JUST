@@ -11,7 +11,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '½É¼ºÀüÀÚ', '¼­¿ï½Ã °­³²±¸ °­³²´ë·Î152', 'Á¦Á
    '½É¼ºÀüÀÚ´Â 2001³â Ã¢¸³ ÀÌ·¡ Á¦Á¶¾÷¿¡ Á¾»çÇÏ°í ÀÖÀ¸¸ç, 2023³â 9¿ù ±âÁØ »ç¿ø¼ö ¾à 6000¸íÀÇ ±â¾÷ÀÔ´Ï´Ù.',
    '6000', '12Á¶ 6000', 'COMPANY_ID', 'simsung', '123-45-67890', null, 'https://i.namu.wiki/i/6B9OxSIKR60ysfEhXHERFFTNu4cPH_7bcCbzL_gpaiFVSw2fz2QL_-p4Cjhrq6oOWNiCarYTMZ5q7vTTHdmvfRmN9JguNQbalGfIXeqIgzNPbbPBaHycYbetsxOHwX-pfxCkTvBsNYdJEYDgdvWZfw.svg', 
    'ÀÌÁ¦¿ë', 'ÀÌ°ÇÈÖ', 'hr@simsung.com', '02-2200-4600',
-   'º¹Áö-¿ö¶óº§', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '°æ¿µÁø-¿ö¶óº§,40,1°³ ÀÌÇÏ,25,ÃÊ´ëÁ¹,20,3³âÂ÷ ÀÌÇÏ,15', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -25,7 +25,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'HNN', '¼­¿ï½Ã ¼­ÃÊ±¸ ¼­ÃÊ´ë·Î52', '¹°·ù¾÷', 
    'ÀúÈñ hnn´Â 1991³â Ã¢¸³ ÇÏ¿´½À´Ï´Ù. ÀÓÁ÷¿ø 450¸í, ¸ÅÃâ¾× 7800¾ï °¡·®ÀÇ È¸»çÀÔ´Ï´Ù.',
    '450', '7800', 'COMPANY_ID', 'hnn', '145-42-15498', null, 'https://i.namu.wiki/i/ghTjUJbtx39FwxK7SIGLvUUyuf4mFhIhd9e6HJVfvex4obXVTuZGlLVaVCyBv7Z4oiFvL0s1q0Oxk_s7qr8CYwGuyu0CvodKpwgXBX3lJOc4xo92k9ktf2aWP-8BVQ3CXlDzHSBgwBL-L44KbnPdtA.svg', 
    '±è¿µÈ£', 'ÀÌÁö¹Î', 'hr@hnn.com', '02-2215-0154',
-   '±Þ¿©-°æ¿µÁø-º¹Áö', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '°æ¿µÁø-º¹Áö,30,1°³ ÀÌÇÏ,20,ÃÊ´ëÁ¹,50,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -39,7 +39,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¿¬´ëÂ÷', '¼­¿ï½Ã ¼­ÃÊ±¸ ¾çÀç´ë·Î 1', 'Á¦Á¶¾÷
    '¿¬´ëÂ÷´Â 1965³â Ã¢¸³ ÀÌ·¡ Á¦Á¶¾÷¿¡ Á¾»çÇÏ°í ÀÖÀ¸¸ç, 2023³â 9¿ù ±âÁØ »ç¿ø¼ö ¾à 6000¸íÀÇ ±â¾÷ÀÔ´Ï´Ù.',
    '6000', '12Á¶ 6000', 'COMPANY_ID', 'ydmotors', '145-11-12332', null, 'https://i.namu.wiki/i/RgF8M5AFaNVNLUXnpKnnOvhVXgPoJSrrMwgJlKotasqbubjOpzQ1pDFM87mP-eqQrXHFeA69IttV8Zh2OYqnzgw-Gs-PiRVapKzJ6awA2xM44-9M6O0kKXJ4i5YGfgtYyomlALYeAD0luAT63iyt5Q.svg', 
    'Á¤ÀÇ¼º', '±èÁø¿µ', 'hr@ydmotors.com', '02-1233-1157',
-   '¿ö¶óº§', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '°æ¿µÁø-º¹Áö,30,1°³ ÀÌÇÏ,20,ÃÊ´ëÁ¹,50,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -53,7 +53,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'GLÈ­ÇÐ', '°æ»ó³²µµ ¼øÃµ½Ã ¿©¿ï´ë·Î12', 'Á¦Á¶
    'ÀúÈñ GLÈ­ÇÐÀº 1946³â Ã¢¸³ÇÑ ±Ùº» ³ÑÄ¡´Â ±â¾÷ÀÔ´Ï´Ù. ´ëÇÑ¹Î±¹ÀÇ ¹ßÀü¿¡ ±â¿©ÇØ¿ÔÀ¸¸ç, ¾ÕÀ¸·Îµµ ¿­½ÉÈ÷ ³ë·ÂÇÏ°Ú½À´Ï´Ù.',
    '24000', '24Á¶ 6000', 'COMPANY_ID', 'glchem', '196-45-06497', null, 'https://i.namu.wiki/i/19EytWPdYDE6tL1977G2Ao2Wf3bBeNItZPYpVo7S3TgoQs8Oz2We5Fz3mdxbxmRZ18-MJdQwhVOipAYFvr36kaSffKBSV03recadaMjVBsbC3DIAy2GpQDPGG-qPmADDQPePPQyd90Vh2PoY99U42g.svg', 
    'ÇÑ½Â¿ì', 'Áø¿µÈñ', 'hr@glchem.com', '054-1647-4545',
-   '±Þ¿©-°æ¿µÁø', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '°æ¿µÁø-±Þ¿©,30,1°³ ÀÌÇÏ,20,ÃÊ´ëÁ¹,50,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -67,7 +67,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'KSÇÏÀÌ´Ï½º', 'ÀÎÃµ±¤¿ª½Ã ¿¬¼ö±¸ Ãµ¿ì´ë·Î33',
    'KSÇÏÀÌ´Ï½ºÀÔ´Ï´Ù. ÀÎÃµ±¤¿ª½Ã¿¡¼­ ´ëÇÑ¹Î±¹ ¼öÃâ¿¡ ¾ÕÀå¼­°í ÀÖ½À´Ï´Ù. ¾ÕÀ¸·Îµµ ´ëÇÑ¹Î±¹À» ´ëÇ¥ÇÏ´Â ±â¾÷À¸·Î¼­ ÃÖ¼±À» ´ÙÇÏ°Ú½À´Ï´Ù.',
    '86400', '260Á¶ 4200', 'COMPANY_ID', 'ksh', '122-44-31160', null, 'https://i.namu.wiki/i/z_GAYlqSX2wllTt0E-mSLg69q_zGsLpVESjMAEvcueTyP7c75kHKIU3yLHQ695nVwRCrm8ttDX_-xkWxIqIbEQ.svg', 
    'ÃÖ¶õÈñ', 'ÀÓ½Ã¿µ', 'hr@ksh.com', '032-277-7560',
-   '¿ö¶óº§-±Ù¹«È¯°æ', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '°æ¿µÁø-±Þ¿©,40,1°³ ÀÌÇÏ,10,°íÁ¹,50,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -81,7 +81,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '±Í¿±ÀºÇà', '¼­¿ïÆ¯º°½Ã Áß±¸ À»Áö·Î 22', '±ÝÀ
    'ÀúÈñ ±Í¿±ÀºÇàÀº ¿ì¸®³ª¶ó¿¡¼­ ¼¼ ¹øÂ°·Î ¼¼¿öÁø ÀºÇàÀÔ´Ï´Ù. °í°´°úÀÇ ¹ÏÀ½À» ÃÖ¿ì¼± °¡Ä¡·Î ÇÕ´Ï´Ù.',
    '16000', '22Á¶ 4570', 'COMPANY_ID', 'gueyeopbank', '111-05-48000', null, 'https://i.namu.wiki/i/AfInloG2xTMUlEORrz5qQSOCu_hvIjOffivGyFcGBdssQ714vWSzlY3nwcK7XpIg0ECRH1dbjXwRHrQr9ydsstD5S2yaZxh9uQIGSoAPtgI_Dpct4BUMT7ahyznUtA9CG92gqmwfZacf_ofjsKaRbA.svg', 
    'ÀÌÁ¦¿ë', 'ÀÌ°ÇÈÖ', 'hr@gueyeopbank.com', '02-2200-4600',
-   'º¹Áö-¿ö¶óº§-±Ù¹«È¯°æ', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '°æ¿µÁø-º¹Áö,20,1°³ ÀÌÇÏ,30,´ëÁ¹,50,3~5³âÂ÷,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -95,7 +95,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'K-OIL', '¼­¿ïÆ¯º°½Ã °­³²±¸ ¿¬¼±·Î 14', 'È­ÇÐ
    'ÄÉÀÌ¿ÀÀÏÀÔ´Ï´Ù. ¼®À¯È­ÇÐ Á¦Ç°À» »ý»êÇÏ°í ÀÖÀ¸¸ç, ÃÖ±Ù Ä£È¯°æ ºÎ¹®¿¡ »ç¾÷ ¿ª·®À» °­È­ÇÏ°í ÀÖ½À´Ï´Ù.',
    '28000', '180Á¶ 4660', 'COMPANY_ID', 'koil', '105-44-75630', null, 'https://i.namu.wiki/i/XgTan32Q_OrcWCysev2dF3vYS8kczol8ZfsVll8G2Q8UkN-cA5Of3V7yQoeOozaBq4sYRnUWMETcmI0TcinLC6v_2kgYgQFi8Nl4DyqHRwrXpHaXTO1vbp3XKhxcvPWMZdnrbFNOz9NCxKyNzEYG4Q.svg', 
    '±è½ÂÀ±', 'ÃÖ³²È£', 'hr@koil.com', '02-2123-1123',
-   '¿ö¶óº§', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '±Ù¹«È¯°æ,50,1~3°³,20,°íÁ¹,30,5³âÂ÷ ÀÌ»ó,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -109,7 +109,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'Å°¾ÆÂ÷', '¼­¿ï½Ã °­³²±¸ ÁÖ¾È´ë·Î 4', 'Á¦Á¶¾÷
    '¼¼°èÀûÀÎ ¸íÂ÷, Å°¾ÆÂ÷! ÀúÈñ Å°¾ÆÂ÷´Â ÈÇ¸¢ÇÑ ÀÎÀçµéÀ» ¸ð½Ã°í ¼¼°è ÃÖ°íÀÇ ÀÏ·ù±â¾÷À¸·Î °Åµì³ª±â À§ÇØ ²÷ÀÓ¾øÀÌ ³ë·ÂÇÒ °ÍÀÔ´Ï´Ù.',
    '22000', '130Á¶ 1300', 'COMPANY_ID', 'kiia', '199-36-25550', null, 'https://i.namu.wiki/i/geaT1hCuAW1_-h3bWFm8-m-Q8yveEXnRNdirfjBYNuJqExGvSMxaaqXAZC7ccX-gC7snDl76gFfzShmNhS8JTjDaIelQOXVPE6cur9u9A0FpIQYFuaOoZ10RplU2sYiCfI4j0YJ_6Wv9pANCKRqNpA.svg', 
    '¾ÈÁöÈ¯', '±è³²¿µ', 'hr@kiia.com', '02-1120-4233',
-   '±Þ¿©-¿ö¶óº§', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '¿ö¶óº§,60,1~3°³,40,ÃÊ´ëÁ¹,0,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -123,7 +123,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '´ë¾ÈÇ×°ø', 'ÀÎÃµ±¤¿ª½Ã ¼­±¸ °øÇ×´ë·Î 22', '¹
    'Ç×°ø»ç ¸¸Á·µµ ¼¼°è 1À§¸¦ ´Þ¼ºÇÑ ´ë¾ÈÇ×°øÀÔ´Ï´Ù. ¾ðÁ¦³ª °í°´ ¿©·¯ºÐµéÀÇ ÆíÀÇ¸¦ À§ÇØ ³ë·ÂÇÏ´Â ´ë¾ÈÇ×°øÀÌ µÇ°Ú½À´Ï´Ù.',
    '16000', '10Á¶ 400', 'COMPANY_ID', 'goreanair', '107-44-44990', null, 'https://i.namu.wiki/i/XmbG_sV38Lrr6vQBAL8WLSNqHjnaKMioEoVud4zTOmpuF6BTu9t4zFxsjeAjjCbTIPiJ19F8YXQI6emsozaf26VgRFG4jJVuU_j3lCfdQhQTk9-4f-q-DhbuCgzQO6K_VrinRGdaUgCjiPp0N4sLoA.svg', 
    'Á¶¿¬¾Æ', '±èÇö¾Æ', 'hr@goreanair.com', '02-1120-4411',
-   '±Þ¿©-º¹Áö-°æ¿µÁø-¿ö¶óº§', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   'º¹Áö,40,3°³ ÀÌ»ó,20,°íÁ¹,40,5³âÂ÷ ÀÌ»ó,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -137,7 +137,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'BK±ÝÀ¶', '¼­¿ï½Ã Áß±¸ À»Áö·Î ÀºÇà´ë·Î 4', '±
    'BK±ÝÀ¶ÀÔ´Ï´Ù. ¼­¿ïÆ¯º°½Ã Áß±¸ À»Áö·Î¿¡ À§Ä¡ÇÏ°í ÀÖ½À´Ï´Ù. ¸ÅÃâ¾× 3Á¶¿øÀ» µ¹ÆÄÇß½À´Ï´Ù. °¨»çÇÕ´Ï´Ù.',
    '8900', '3Á¶ 1000', 'COMPANY_ID', 'bk', '100-06-66904', null, 'https://i.namu.wiki/i/K0R-Jj_XJgC6MrIVn6iGX56mUHvDDTB8s-rnosK0OjeqJVl1XxOpJOEYAGwoC8NGIR2yrwEcbweUOUHzWhqrjw.svg', 
    '¹ÚÁøÀÏ', '½É¿µ¿ø', 'hr@bk.com', '02-2200-4600',
-   'º¹Áö-°æ¿µÁø', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   'º¹Áö-±Ù¹«È¯°æ,25,3°³ ÀÌ»ó,15,ÃÊ´ëÁ¹,60,3~5³âÂ÷,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -151,7 +151,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÄÚÄÚ¾Æ', '°æ±âµµ ¼º³²½Ã ´ë¿ÕÆÇ·á·Î 14', '¼ÒÇ
    'ÄÚÄÚ¾ÆÅåÀ¸·Î ½ÃÀÛÇÏ¿© ´ëÇÑ¹Î±¹ÀÇ ÀÏ»ó °÷°÷¿¡¼­ °í°´ ¿©·¯ºÐµéÀÇ ÆíÀÇ¸¦ ´ã´çÇÏ°í ÀÖ½À´Ï´Ù. ¾ÕÀ¸·Î Çõ½ÅÀ» °ÅµìÇÏ¿© ´õ ÁÁÀº ¼­ºñ½º·Î º¸´äÇÏ°Ú½À´Ï´Ù.',
    '5900', '9150', 'COMPANY_ID', 'kokoa', '122-85-65200', null, 'https://i.namu.wiki/i/BRUiNycPAMLbss5A0eABLajRMbWtcG1ng0DoKb_3u1N52ogTPtqD7LJsMhsejVtLmr08l-Cc2iSxICBDVLO4tpVWiBnpdwdRvQVcYFaJ5Q_cCJR5Nw9M7ejyXivIK5EN56UkF5RB_xoESuFio0Bx6Q.svg',
    '±è¹ü¼ö', '±è¿µÈÆ', 'hr@kokoa.com', '031-1311-1311',
-   'º¹Áö-¿ö¶óº§', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '°æ¿µÁø-¿ö¶óº§,10,1°³ ÀÌÇÏ,5,°íÁ¹,85,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -165,7 +165,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¿¬´ë¸ðºñ½º', '¼­¿ï½Ã ¼ÛÆÄ±¸ ¼ÛÆÄ´ë·Î 76', 'Á
    'ÀúÈñ ¿¬´ë¸ðºñ½º´Â Çõ½ÅÀûÀÎ ±â¼ú·ÂÀ¸·Î ½ÃÀåÀ» ¼±µµÇÏ´Â ±×·ìÀÔ´Ï´Ù. ¾ÕÀ¸·Î ´õ¿í ³ë·ÂÇÏ¿© ¼¼°è ÀÏ·ù±â¾÷À¸·Î °Åµì³ª°Ú½À´Ï´Ù.',
    '4600', '12Á¶ 8000', 'COMPANY_ID', 'yeonmobis', '111-45-00660', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/N7ZQVWWJap3ja3fRubmcOavPgAysTj5ZYpfyxdDaAM-DwxhX8P_tHpEiPO4F2BkKIVpedjdM1gyZB_RDFNw1pw.svg',
    '±è¿µÇÏ', 'ÃÖ¾È¿ø', 'hr@yeonmobis.com', '02-2211-4610',
-   '±Þ¿©-°æ¿µÁø', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   'º¹Áö-¿ö¶óº§,35,1°³ ÀÌÇÏ,10,´ëÁ¹,55,5³âÂ÷ ÀÌ»ó,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -179,7 +179,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '½É¼º¹°»ê', '¼­¿ï½Ã °­³²±¸ °­³²´ë·Î 99', 'Á¦Á
    '¾È³çÇÏ¼¼¿ä, ½É¼º¹°»êÀÔ´Ï´Ù. Ç×»ó ´õ ÁÁÀº Á¦Ç°°ú ¼­ºñ½º·Î °í°´´Ôµé²² º¸´äÇÏ°Ú½À´Ï´Ù. °¨»çÇÕ´Ï´Ù.',
    '164', '200', 'COMPANY_ID', 'simsmul', '188-42-67235', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/b0csdOWXtNxoBp25Y-9h_XoM1KV8YyXnabrLGAjqRwIYH2Y-VCrAyh0xB-JUV9HzcrnybvhmCF3dUq3yKuNkVrMKjk9nmAALfQJrnO4SIl3VW7PjDUHObX23Rf44CxlzkxQfQogjTJvT5gHDS_GKEg.svg',
    '±èÀ¯½Ä', 'Áø¾Æ¸§', 'hr@simsmul.com', '02-2200-4600',
-   'º¹Áö', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '±Þ¿©-±Ù¹«È¯°æ,45,1°³ ÀÌÇÏ,30,°íÁ¹,25,3~5³âÂ÷,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -193,7 +193,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÇÑ½ÅÁöÁÖ', '¼­¿ï½Ã Áß±¸ ¸íµ¿·Î 14', '±ÝÀ¶¾÷'
    '´ëÇÑ¹Î±¹ ´ëÇ¥ ÁöÁÖ, ÇÑ½ÅÁöÁÖÀÔ´Ï´Ù. °í°´´ÔµéÀÇ °ü½É°ú ¼º¿ø¿¡ °¨»çµå¸³´Ï´Ù. ´Ã ¹ßÀüÇÏ´Â ÇÑ½ÅÁöÁÖ°¡ µÇ°Ú½À´Ï´Ù.',
    '3000', '1Á¶ 4000', 'COMPANY_ID', 'hanshin', '166-41-16649', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/INjrpUqnIASiD7v-twAZgMlc6-L9Dp4fc89r7KTkj87cOAbq5R3ivL4FOw9lYa2qQOpHebYCgA4tbgzhBdKOC-VTM4LnTqzf9JlLqc6clD6OaP335JjFZMAGNc4Cu7z1lbJOetkIQCFNWNXP95SMFQ.svg',
    '±èÀ¯³ª', 'ÀÌÇÑÁø', 'hr@hanshin.com', '02-1144-4144',
-   'º¹Áö-±Þ¿©', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '°æ¿µÁø-º¹Áö,10,3°³ ÀÌ»ó,40,ÃÊ´ëÁ¹,50,5³âÂ÷ ÀÌ»ó,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -207,7 +207,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¿¬´ë±Û·Îºñ½º', '¼­¿ï½Ã °­³²±¸ °­³²´ë·Î 14', 
    '¾È³çÇÏ¼¼¿ä, ¿¬´ë±Û·Îºñ½º ÀÔ´Ï´Ù. °í°´´ÔµéÀÇ ¼º¿ø¿¡ ´Ã °¨»çµå¸³´Ï´Ù. ¾ÕÀ¸·Îµµ ´õ ³ªÀº Ç°ÁúÀÇ Á¦Ç°°ú ¼­ºñ½º·Î °í°´´Ôµé²² º¸´äÇÏ°Ú½À´Ï´Ù. °¨»çÇÕ´Ï´Ù.',
    '4410', '7Á¶ 770', 'COMPANY_ID', 'yeonglo', '123-45-67890', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/EjvrrG-NyHzm4Cv-UkVMQ8TAN86vKhvdEkzo966sWSKntupltSIV-CzNO4Z5XTeOvlo8mc47OI-PWDkfRmBfCpE0VkRNQqp43wBQZKxYQhhR9vOx967Vn4erskNQN28kXBfueJjD5aBXL0lfxPH8fA.svg',
    '±è´ë¿¬', 'Àå¿À¶õ', 'hr@yeonglo.com', '02-2211-0060',
-   '±Þ¿©-±Ù¹«È¯°æ', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '¿ö¶óº§,30,1°³ ÀÌÇÏ,60,´ëÁ¹,10,3~5³âÂ÷,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -221,7 +221,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'À¯¸®±ÝÀ¶ÁöÁÖ', '¼­¿ï½Ã Áß±¸ ÀºÇà´ë·Î 11', 'À
    '¾È³çÇÏ¼¼¿ä, À¯¸®±ÝÀ¶ÁöÁÖ ÀÔ´Ï´Ù. °í°´´ÔµéÀÇ ¼º¿ø¿¡ ´Ã °¨»çµå¸³´Ï´Ù. ¾ÕÀ¸·Îµµ ´õ ³ªÀº Ç°ÁúÀÇ Á¦Ç°°ú ¼­ºñ½º·Î °í°´´Ôµé²² º¸´äÇÏ°Ú½À´Ï´Ù. °¨»çÇÕ´Ï´Ù.',
    '950', '9400', 'COMPANY_ID', 'notglass', '199-41-13450', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/qbjPpio7gCDYnu5EIxOoLgvwVSSnqTavFBtGPlTbtW5mC3upn0Dxovwtu99SzGj6NkGj4OSDPd3IaJQ-jaqQ8HpY-HJgU137eOctM-TsWWoLIU4ATpkoJ_FthD_XgLP5QrfUBeKmF0WHoA9Rp9QRzA.svg',
    'ÀÌ´Ü°æ', '¼­ÁöÀº', 'hr@notglass.com', '02-1616-1115',
-   'º¹Áö', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '±Ù¹«È¯°æ-°æ¿µÁø,20,3°³ ÀÌ»ó,30,°íÁ¹,50,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -235,7 +235,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÇÏ³²±ÝÀ¶ÁöÁÖ', '°æ±âµµ ÇÏ³²½Ã ÇÏ³²´ë·Î 12', 
    '¾È³çÇÏ¼¼¿ä, ÇÏ³²±ÝÀ¶ÁöÁÖ ÀÔ´Ï´Ù. °í°´´ÔµéÀÇ ¼º¿ø¿¡ ´Ã °¨»çµå¸³´Ï´Ù. ¾ÕÀ¸·Îµµ ´õ ³ªÀº Ç°ÁúÀÇ Á¦Ç°°ú ¼­ºñ½º·Î °í°´´Ôµé²² º¸´äÇÏ°Ú½À´Ï´Ù. °¨»çÇÕ´Ï´Ù.',
    '1200', '2Á¶ 500', 'COMPANY_ID', 'hanambank', '123-45-67890', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/js8u8g13WYAuOxuUYMqFl0q-f5QZPWWseOPeI_nkiWGNDi3Gv1PiNd6xUyfoihjjamLzpDHbkIt1Fz6i3sU1da9b6XJq1JDBdQsNxOPozytD2CTDpI8hBou-hdf5noJGKDuZknmjQCwzZFHa87nwvA.svg',
    '¼ÛÀÎÇÑ', '±èÈñÁØ', 'hr@hanambank.com', '031-550-7400',
-   '¿ö¶óº§-°æ¿µÁø', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '±Þ¿©,60,1°³ ÀÌÇÏ,20,ÃÊ´ëÁ¹,20,5³âÂ÷ ÀÌ»ó,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -249,7 +249,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '½É¼ºÈ­Àç', '¼­¿ï½Ã ¼ÛÆÄ±¸ ¼ÛÆÄ´ë·Î 2', 'º¸Çè
    '¾È³çÇÏ¼¼¿ä, ½É¼ºÈ­Àç ÀÔ´Ï´Ù. °í°´´ÔµéÀÇ ¼º¿ø¿¡ ´Ã °¨»çµå¸³´Ï´Ù. ¾ÕÀ¸·Îµµ ´õ ³ªÀº Ç°ÁúÀÇ Á¦Ç°°ú ¼­ºñ½º·Î °í°´´Ôµé²² º¸´äÇÏ°Ú½À´Ï´Ù. °¨»çÇÕ´Ï´Ù.',
    '2200', '1Á¶ 4500', 'COMPANY_ID', 'simshwa', '123-45-67890', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/xV_6xvh-e6aj2CP2xh_hvjFcXuQBdv8k01SiqKhltffFRtSVP6O1FmMdJVKy1XDjOZ_SK2unCzrjik4wh6dU2GyxPLmcoljIr77ZeSArZjnAKrKq9xEQ9sm2jQVB4fk1Cr3Bn7Zg94yKt93IHxPv7Q.svg',
    'ÀÓ¼ºÁø', 'ÀÌÁöÇü', 'hr@simshwa.com', '02-6690-7566',
-   '±Þ¿©', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '¿ö¶óº§-º¹Áö,40,3°³ ÀÌ»ó,10,´ëÁ¹,50,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -263,7 +263,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¸ÞÀÌ¹ö', '°æ±âµµ ¼º³²½Ã ¾È¾çÆÇ±³·Î 8', '¼ÒÇÁ
    '¾È³çÇÏ¼¼¿ä, ¿©·¯ºÐÀÇ ÀÌ¿ô ¸ÞÀÌ¹öÀÔ´Ï´Ù. Ã¢¸³ 1³â¸¸¿¡ °¡ÀÔÀÚ ¼ö 700¸¸À» µ¹ÆÄÇÏ¿´½À´Ï´Ù. °í°´´ÔµéÀÇ ¼º¿ø¿¡ °¨»çµå¸³´Ï´Ù.',
    '400', '4400', 'COMPANY_ID', 'maver', '123-45-67890', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/DImz7n4yuxbNlKqkrKOVwBKKNNfU8FCeQ2ITB7VMqlEj_oQyTZ2Q-rhFrssX_Rh7sDUJW440OnD4Qn8vMMi-T1wKxOofcF-bKedMRc0iR_Qn-CA__tv1jwfUJgusPU1boBCdgRhmNQGqvup0ATnHKg.svg',
    'ÀÌÁ¦¿ë', 'ÀÌ°ÇÈÖ', 'hr@maver.com', '031-0055-1900',
-   '±Þ¿©-º¹Áö-¿ö¶óº§-°æ¿µÁø', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   'º¹Áö-±Ù¹«È¯°æ,30,1°³ ÀÌÇÏ,30,°íÁ¹,40,3~5³âÂ÷,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 
 INSERT INTO COMPANY
@@ -277,7 +277,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÇÑ¿Í¿¡µà', '¼­¿ï½Ã ¸¶Æ÷±¸ È«ÀÍ·Î 12', '±³À°¼
    '¾È³çÇÏ¼¼¿ä, ÃÖ±Ù °³¾÷ÇÑ ÇÑ¿Í¿¡µàÀÔ´Ï´Ù. ¾ÕÀ¸·Î ÃÖ°íÀÇ ±³À°¼­ºñ½º¾÷À» Á¦°øÇÏ¿© ´ëÇÑ¹Î±¹ ÃÖ°í·Î °Åµì³¯ °ÍÀ» ¾à¼Óµå¸³´Ï´Ù. °¨»çÇÕ´Ï´Ù.',
    '13', '8', 'COMPANY_ID', 'hanwaedu', '199-49-97440', 'COMPANY_LICENSE', 'https://i.namu.wiki/i/gWfiPenxzHvqedAkOsie9Rv5pu-sHOw_XigQORcE_7DJN-lPw4NFs4zooffGurFgl4VXq08VfQDVsWP2uDWyTynx0vFs0HXCmwjCbFC0w1WMF2wuh1u3WWwhK21bZVOiIU0g8aTHnDVK-53DWDF2NA.webp',
    '±èÀºÁö', 'ÃÖÀ±¾Æ', 'hr@hanwaedu.com', '02-3555-3441',
-   'º¹Áö', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
+   '±Þ¿©-°æ¿µÁø,25,1°³ ÀÌÇÏ,35,ÃÊ´ëÁ¹,40,5³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -288,7 +288,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ºñ¸¶Æ®', '¼­¿ïÆ¯º°½Ã Áß±¸ ¼¼Á¾´ë·Î7±æ 37', 'µµ¼Ò¸Å¾÷', '1993-11-12', 'www.company.bmart.com'
     , '(ÁÖ)ºñ¸¶Æ®´Â ±¹³» ÃÖÃÊÀÇ ÇÒÀÎÁ¡À¸·Î¼­ °í°´ÀÇ Çàº¹ÇÑ ¶óÀÌÇÁ ½ºÅ¸ÀÏ°ú Áö¿ª»çÈ¸ ¹ßÀüÀ» Ãß±¸ÇÏ´Â °¡Ä¡ Ã¢Á¶±â¾÷À» ÁöÇâÇÕ´Ï´Ù'
     , '23,024', '293,324', 'bmart', 'bmart12', '206-86-50913', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/506gc8mgBR-Scr7Kmm400fz8RYMAqBwC06F1dTW-f-FKIAifUMQ_dqALk-9fjwFUI41oga6rOk9Au5PqhQb37mwJQNCXcjm8Y0i_gHE6uG4bUk8G3tli6AgBGT3WxlvrFirz9aLGe1NpnqtkvZM_mg.svg', '°­Èñ¼®'
-    , '±èÈñ¼º', 'kimhs@bmart.com', '02-380-5678', '10%, º¹Áö-30%, 1~3, 30%, °íÁ¹, 30%, ½ÅÀÔ'
+    , '±èÈñ¼º', 'kimhs@bmart.com', '02-380-5678', '¿ö¶óº§,50,1°³ ÀÌÇÏ,40,°íÁ¹,10,3~5³âÂ÷,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -300,7 +300,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'BB¼ÕÇØº¸Çè', '¼­¿ïÆ¯º°½Ã °­³²±¸ Å×Çì¶õ·Î432', '±ÝÀ¶ ¹× º¸Çè¾÷', '1968-11-01', 'www.ibbins.com'
     , '1962´ëÇÑ¹Î±¹ ÃÖÃÊÀÇ ÀÚµ¿Â÷ º¸Çè °ø¿µ»ç·Î Ãâ¹üÇÑ BB¼ÕÇØº¸ÇèÀº ±¹°¡ °æÁ¦¿Í »ê¾÷¹ßÀü¿¡ ±â¿©ÇÏ¸ç ¼ºÀåÇØ ¿Ô½À´Ï´Ù.'
     , '4,597', '228,607', 'bbins', 'bbins12','201-81-45593', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/ty6sLuKdP_OoRjOLMOY123nAJA3JjS3HTB9Z9WAyB174y1H-aYZ4js7Qb3u0EKXqUMun-qSQdcvWUAYaD7sGIBLcdTARPjCnlq5K0rQwD_duxPBA8mW7kSy76AHqJOH_8AK_Y5y74bdRw3UzFeDxWw.svg', 'Á¤Á¾Ç¥'
-    , 'ÀåÁöÈ£', 'jang@ibbins.com', '02-3011-3310', '10%, °æ¿µÁø-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 1³âÀÌ»ó'
+    , 'ÀåÁöÈ£', 'jang@ibbins.com', '02-3011-3310', '°æ¿µÁø-º¹Áö,40,3°³ ÀÌ»ó,10,´ëÁ¹,50,3³âÂ÷ ÀÌÇÏ,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -312,7 +312,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÇÑ´ëÁ¦Ã¶', '°æ±âµµ ¼º³²½Ã ºÐ´ç±¸ ºÐ´ç³»°î·Î 117', 'Á¦Á¶¾÷', '1953-06-10', 'www.handai-steel.com'
     , 'Ã¶, ±× ÀÌ»óÀÇ °¡Ä¡ Ã¢Á¶. ÇÑ´ëÁ¦Ã¶Àº ÃÖ°íÀÇ ±â¼ú°ú Ç°ÁúÀ» ¹ÙÅÁÀ¸·Î °í°´ÀÌ ²Þ²Ù´Â Á¦Ç°À» ¸¸µå´Âµ¥ ÇÊ¿äÇÑ ÃÖÀûÀÇ ¼ÒÀç¸¦ °ø±ÞÇÏ´Â ÆÄÆ®³Ê°¡ µÇ°Ú½À´Ï´Ù.'
     , '11,622', '273,406', 'hansteel', 'hansteel12', '221-81-10385', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/2Na7OGQmFcYu6Ilnk_ULm-4vu-WUXgWPPQi3C_fN1F5o7Ii471NItTeEUUC_ebwrskb_qOhZsCWfzX07y8_KiA.svg', '¾Èµ¿ÀÏ'
-    , 'ÀÌ´ë¿µ', 'lee@handaisteel.com', '031-510-2114', '10%, ±Ù¹«È¯°æ-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 3³âÀÌ»ó'
+    , 'ÀÌ´ë¿µ', 'lee@handaisteel.com', '031-510-2114', '±Ù¹«È¯°æ-º¹Áö,15,1°³ ÀÌÇÏ,25,°íÁ¹,60,5³âÂ÷ ÀÌ»ó,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -324,7 +324,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'KPNG', '´ëÀü±¤¿ª½Ã ´ë´ö±¸ º¢²É±æ 71', 'Á¦Á¶¾÷', '1987-04-01', 'www.kpng.com'
     , 'KPNGÀÇ ÇÙ½É°¡Ä¡´Â ÀÎÀçÁß½É, µµÀüÁ¤½Å, ¼º°úÁöÇâ, »óÈ£Çù·Â, °í°´Áß½Ã, »ó»ýÃß±¸ 6°¡Áö·Î ÀÌ·ç¾îÁ® ÀÖ½À´Ï´Ù.'
     , '4,389', '58,514', 'kpng', 'kpng12','207-85-14660', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/xf7omtfKvQtyaL0phKD5XfDno8RNcHTPWK0k9MUO8tzZm876Bvn6clxGDBRmY_n5xEJKz3S3Qdrm5UokkE7N_3mtiEgxmd237E8u6lXExQ61-FMZXp6ogEC5xZKkl2pSc6vgNs1bsYILWQ6fxuRs-w.svg', '¹éº¹ÀÎ'
-    , '¹ÚÁö¿µ', 'park@kpng.com', '042-939-5099', '10%, º¹Áö-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 2³âÀÌ»ó'
+    , '¹ÚÁö¿µ', 'park@kpng.com', '042-939-5099', '°æ¿µÁø,15,1°³ ÀÌÇÏ,40,ÃÊ´ëÁ¹,45,3~5³âÂ÷,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -336,7 +336,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¿¡½º¾¾¹ÙÀÌ¿À¼¾¼­', '°æ±âµµ ¼ö¿ø½Ã ¿µÅë±¸ ´ö¿µ´ë·Î1556¹ø±æ 16', 'Á¦Á¶¾÷', '2010-12-21', 'www.scbiosensor.co.kr'
     , 'SC ¹ÙÀÌ¿À¼¾¼­´Â ½Å¼ÓÇÏ°í Á¤È®ÇÑ Áúº´ Áø´ÜÀ¸·Î »îÀÇ Áú Çâ»ó¿¡ °øÇåÇÏ°íÀÚ ÇÏ´Â Ã¼¿Ü Áø´Ü Àü¹® ±â¾÷ÀÔ´Ï´Ù.'
     , '611', '29,320', 'scbio', 'scbio12','235-86-13315', '»ç¾÷ÀÚµî·ÏÁõ', 'http://www.sdbiosensor.co.kr/d_html/front/images/logo.png', 'ÀÌÈ¿±Ù, ÇãÅÂ¿µ'
-    , 'ÇÏÇöÁ¤', 'ha@scbiosensor.com', '031-300-0400', '10%, ±Þ¿©-30%, 1~3, 30%, ´ëÁ¹, 30%, 1³âÀÌ»ó'
+    , 'ÇÏÇöÁ¤', 'ha@scbiosensor.com', '031-300-0400', '¿ö¶óº§-±Ù¹«È¯°æ,20,3°³ ÀÌ»ó,30,´ëÁ¹,50,3³âÂ÷ ÀÌÇÏ,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -348,7 +348,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'STÅÚ·¹ÄÞ', '¼­¿ïÆ¯º°½Ã Áß±¸ À»Áö·Î 65', 'Á¤º¸Åë½Å¾÷', '1984-03-29', 'www.sttelecom.com'
     , 'STÅÚ·¹ÄÞÀº ±¸¼º¿øÀÇ Çàº¹À» °æ¿µÈ°µ¿ÀÇ ±Ã±ØÀûÀÎ ¸ñÀûÀ¸·Î Á¤ÀÇÇÏ°í, ÀÚ»çÀÇ ICT ±â¼úÀ» ±â¹ÝÀ¸·Î °í°´°ú ÀÌÇØ°ü°èÀÚ µîÀÇ Çàº¹ ÁõÁø°ú »çÈ¸ÀÇ Áö¼Ó°¡´ÉÇÑ ¹ßÀüÀ» À§ÇØ ³ë·ÂÇÏ°í ÀÖ½À´Ï´Ù.'
     , '5,565', '173,049', 'sttel', 'sttel12','204-81-37225', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/y7te7UlecDtrb0q3dZ_U7tYRGeDL1STcbb8IpnSjGj3xcfCC_Ap8PXUeCs0Cl_-Ds0PNqc-jg-dNJl7Hg9OI4gK9pcNvxhwoJnEzZl9XleDInmcpkgz_THzYItKyiyWrQ-7BkGYdPoJnV7VG7cSvbw.svg', 'À¯¿µ»ó'
-    , '¾ÈÀ¯¼±', 'an@sttelecom.com', '02-011-6000', '10%, ¿ö¶óº§-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 2³âÀÌ»ó'
+    , '¾ÈÀ¯¼±', 'an@sttelecom.com', '02-011-6000', '±Þ¿©,55,1°³ ÀÌÇÏ,25,°íÁ¹,20,5³âÂ÷ ÀÌ»ó,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -360,7 +360,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '½É¼ºSDI', '°æ±âµµ ¿ëÀÎ½Ã ±âÈï±¸ °ø¼¼·Î 150-20', 'Á¦Á¶¾÷', '1970-01-20', 'www.simsungsdi.co.kr'
     , '½É¼ºSDI´Â 2002³âºÎÅÍ Áö¼Ó°¡´É°æ¿µÀ» ÃßÁøÇÏ¸ç, º¯È­ÇÏ´Â Áö¼Ó°¡´É¼º ÀÌ½´¿¡ ´Éµ¿ÀûÀ¸·Î ´ëÀÀÇÏ°í ÀÖ½À´Ï´Ù.'
     , '12,160', '201,240', 'simsdi', 'simsdi12','224-81-31282', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/Au2_3qH9o2dgXuLiDtP90gxrtJ__v6WJkoF-fk-Z2ErvIaq2DeiGKZe55KM_YNLSJ8Ac4os5y_eRna_ihSuQGw.svg', 'ÃÖÀ±È£'
-    , 'Â÷¿¹¸°', 'cha@simsungsdi.com', '031-8006-3100', '10%, ±Þ¿©-30%, 1~3, 30%, ´ëÁ¹, 30%, 3³âÀÌ»ó'
+    , 'Â÷¿¹¸°', 'cha@simsungsdi.com', '031-8006-3100', 'º¹Áö-¿ö¶óº§,35,1°³ ÀÌÇÏ,15,ÃÊ´ëÁ¹,50,3~5³âÂ÷,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -372,7 +372,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'LZÀüÀÚ', '¼­¿ïÆ¯º°½Ã ¿µµîÆ÷±¸ ¿©ÀÇ´ë·Î 128', 'Á¦Á¶¾÷', '2002-04-01', 'www.lge.co.kr'
     , 'LZÀüÀÚ´Â Lifes Good ºê·£µå Ã¶ÇÐÀ» ¹ÙÅÁÀ¸·Î °í°´¿¡°Ô ´õ ³ªÀº »îÀ» Á¦°øÇÏ±â À§ÇØ ÃÖ°íÀÇ, Â÷º°È­µÈ, ¼¼»ó¿¡ ¾ø´ø °æÇèÀ» ¼±»çÇÏ°íÀÚ Ç×»ó ³ë·ÂÇÕ´Ï´Ù.'
     , '34,082', '834,673', 'lge', 'lge12','207-86-14075', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/Mi28LdTLOp5gaZezn9hVb3ejNhVDkwHgquS_8nlVY3XZkZijnnLY7IX9bLOun7Xn4YbFuu3TqdmMUOMhec0bc6zOiYIwQ3kbMc5dqHnLamFNtLnUgMAXAqNV0glqKNoDXV_HT6bsLIfx5BSmiwZO_g.svg', 'Á¶ÁÖ¿Ï, ¹èµÎ¿ë'
-    , 'Á¤´ë¿î', 'jung@lge.com', '02-3777-1114', '10%, ¿ö¶óº§-30%, 1~3, 30%, ´ëÁ¹, 30%, 3³âÀÌ»ó'
+    , 'Á¤´ë¿î', 'jung@lge.com', '02-3777-1114', '¿ö¶óº§-º¹Áö,40,3°³ ÀÌ»ó,10,´ëÁ¹,50,3³âÂ÷ ÀÌÇÏ,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -384,7 +384,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '°í·Á°¡½º°ø»ç', '´ë±¸±¤¿ª½Ã µ¿±¸ Ã·´Ü·Î 120', 'Àü±â, °¡½º, Áõ±â ¹× ¼öµµ»ç¾÷', '1983-08-18', 'www.kogas.or.kr'
     , 'KOGAS´Â Ã»Á¤ ¿¡³ÊÁöÀÎ Ãµ¿¬°¡½ºÀÇ °ø±ÞÀ» ÅëÇÑ ±¹¹Î»ýÈ°ÀÇ ÆíÀÍ ÁõÁø ¹× º¹¸® Çâ»óÀ» À§ÇÏ¿© 1983³â 8¿ù¿¡ ¼³¸³µÇ¾ú½À´Ï´Ù.'
     , '4,163', '517,242', 'kogas', 'kogas12','208-82-09434', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/bl8PQnxJwOi0Y-xtlcrrkCp1YbBRpuD7elKP9PTHcxznTqahvwdbTBg7-_OjgycTm2gj-Z-OL9ztwr3jWxiII_zQVUEj3Kxq7A9cFt6mcAgxoeenC9D2MLyWQTfYD_ECkYQH4BY6QEiXj0iwNreMJg.svg', 'ÃÖ¿¬Çý'
-    , 'Ã¤ÀÎ¾Æ', 'chae@kogas.com', '053-670-0114', '10%, º¹Áö-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, ½ÅÀÔ'
+    , 'Ã¤ÀÎ¾Æ', 'chae@kogas.com', '053-670-0114', '±Ù¹«È¯°æ-º¹Áö,20,1°³ ÀÌÇÏ,30,°íÁ¹,50,5³âÂ÷ ÀÌ»ó,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -396,7 +396,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'KP', '°æ±âµµ ¼º³²½Ã ºÐ´ç±¸ ºÒÁ¤·Î 90', 'Á¤º¸Åë½Å¾÷', '1981-12-10', 'www.corp.kp.com'
     , 'KP´Â AI, BigData, Cloud¸¦ ±â¹ÝÀ¸·Î °í°´ÀÇ »îÀÇ º¯È­¿Í ´Ù¸¥ »ê¾÷ÀÇ Çõ½ÅÀ» ¸®µùÇÏ´Â µðÁöÅÐ ÇÃ·§Æû ±â¾÷(DIGICO)À¸·Î º¯È­ÇÏ°í ¼ºÀåÇÏ°í ÀÖ½À´Ï´Ù.'
     , '20,019', '256,500', 'kp', 'kp12','202-81-42945', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/zywEhZzGccurOVdse57MAoOU8T-OA4vsJ8llAobKBXpa3mDrPUwx2DVXjtUSvfdXf_lFbuvkKijskDeY91ySRPEzEwMjx7vLv55mkjMJufkZ8PlZ3BsobPMy_N4w1CKLW6aKeZL66VYnObgPh1OE8w.svg', '±è¿µ¼·'
-    , '°­¾È³ª', 'kang@kp.com', '031-818-8034', '10%, ±Ù¹«È¯°æ-30%, 1~3, 30%, °íÁ¹, 30%, 1³âÀÌ»ó'
+    , '°­¾È³ª', 'kang@kp.com', '031-818-8034', '°æ¿µÁø,30,1°³ ÀÌÇÏ,10,ÃÊ´ëÁ¹,60,3~5³âÂ÷,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -408,7 +408,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'LZ', '¼­¿ïÆ¯º°½Ã ¿µµîÆ÷±¸ ¿©ÀÇ´ë·Î 128', '±ÝÀ¶ ¹× º¸Çè¾÷', '1947-01-05', 'www.lz.co.kr'
     , 'LZ´Â °æ¿µÀÌ³äÀÎ °í°´À» À§ÇÑ °¡Ä¡Ã¢Á¶¿Í ÀÎ°£Á¸ÁßÀÇ °æ¿µÀ» LZÀÇ Çàµ¿¹æ½ÄÀÎ Á¤µµ°æ¿µÀ¸·Î ½ÇÃµÇÔÀ¸·Î½á LZÀÇ ºñÀüÀÎ ÀÏµîLZ¸¦ ´Þ¼ºÇÏ°íÀÚ ÇÕ´Ï´Ù.'
     , '182', '71,859', 'lz', 'lz12','207-86-14076', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/65KNlTnk_tZxNUeZ8gTey2QILTjlCJmbmfkbKd8zKjVHUHr00bP-dD3WebFarQhjtye2vp7kDYnC-whK_MkcxLfw5NV4kS3mbNoyPKfyXkRL79dP9CJiKauujYdmX_k-droVNUWgwuGx0heBf1iqeQ.svg', '±¸±¤¸ð, ±ÇºÀ¼®'
-    , '±èÁöÈñ', 'hee@lz.com', '02-3777-1115', '10%, °æ¿µÁø-30%, 1~3, 30%, ´ëÁ¹, 30%, 3³âÀÌ»ó'
+    , '±èÁöÈñ', 'hee@lz.com', '02-3777-1115', 'º¹Áö,35,3°³ ÀÌ»ó,15,´ëÁ¹,50,5³âÂ÷ ÀÌ»ó,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -420,7 +420,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'LZÀÌ³ëÅØ', '¼­¿ïÆ¯º°½Ã °­¼­±¸ ¸¶°îÁß¾Ó10·Î 30', 'Á¦Á¶¾÷', '1976-02-24', 'www.lzinnotek.com'
     , 'LZÀÌ³ëÅØÀº 1970³â ¼³¸³µÈ ´ëÇÑ¹Î±¹ ÃÖÃÊÀÇ Á¾ÇÕ ÀüÀÚºÎÇ°±â¾÷À¸·Î, ²÷ÀÓ¾ø´Â ±â¼ú °³¹ß°ú ÇÁ·Î¼¼½º Çõ½ÅÀ» ÅëÇØ ¼¼°è ÀÏ·ù »óÇ°À» ÁýÁß À°¼ºÇÏ¸ç ¿À´Ã³¯ ¼¼°è ½ÃÀåÀ» ¼±µµÇÏ´Â ±Û·Î¹ú ¼ÒÀç¡¤ºÎÇ°±â¾÷À¸·Î ¼ºÀåÇÏ¿´½À´Ï´Ù.'
     , '13,107', '195,894', 'lzinno', 'lzinno12','207-86-14077', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/OyYVWZ788PwDGYhOUDIMisrcb5lzFzWkWQTpNCoIWeiDZ0fHZSPMp7r39-RGDPvyLMtNHVcqNbNriflq2N5VinMOYnJVI8E7yfje_zGAQ0_hJqS0BD3DPwIWO5OPxtENtbUHmgSPLquUA0uT65juTw.svg', 'Á¤Ã¶µ¿'
-    , 'ÀÌÂ÷µ¹', 'lee@lzinnotek.com', '02-3777-1116', '10%, ±Þ¿©-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 2³âÀÌ»ó'
+    , 'ÀÌÂ÷µ¹', 'lee@lzinnotek.com', '02-3777-1116', '±Þ¿©-±Ù¹«È¯°æ,25,1°³ ÀÌÇÏ,35,°íÁ¹,40,3³âÂ÷ ÀÌÇÏ,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -432,7 +432,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '½É¼ºÀü±â', '°æ±âµµ ¼ö¿ø½Ã ¿µÅë±¸ ¸Å¿µ·Î 150', 'Á¦Á¶¾÷', '1973-08-08', 'www.simsungsem.com'
     , '1973³â¿¡ Ã¢¸³µÈ ½É¼ºÀü±â´Â ÇÑ±¹¿¡¼­ »Ó¸¸ ¾Æ´Ï¶ó Àü¼¼°èÀûÀ¸·Î ÇÙ½É ÀüÀÚºÎÇ°À» °³¹ß¡¤»ý»êÇÏ´Â ±â¾÷À¸·Î ¹ßÀüÇØ ¿Ô½À´Ï´Ù.'
     , '11,989', '94,245', 'simsem', 'simsem12','224-81-00979', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/O3095NGJuVmhDxLC26zkqm8RfGAQbhvf5PP18p80_njZpDUDyVozzVRLs4VcrtmHJO1NX-8JrUvR4nE8a8KFPcEDMIc7Q36vykqE5iYGM5OBo9ziQoj8-gls23iNtTwGmrcOuDxiIP0AUTnVOhgSCw.svg', 'Àå´öÇö'
-    , '¹ÚÁöÀ±', 'park@simsungsem.com', '031-210-5114', '10%, ±Þ¿©-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 1³âÀÌ»ó'
+    , '¹ÚÁöÀ±', 'park@simsungsem.com', '031-210-5114', '±Ù¹«È¯°æ-º¹Áö,10,3°³ ÀÌ»ó,40,ÃÊ´ëÁ¹,50,3~5³âÂ÷,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -444,7 +444,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '½É¼º¹ÙÀÌ¿À·ÎÁ÷½º', 'ÀÎÃµ±¤¿ª½Ã ¿¬¼ö±¸ ¼Ûµµ¹ÙÀÌ¿À´ë·Î 300', 'Á¦Á¶¾÷', '2011-04-22', 'www.simsungbiologics.com'
     , '»ý¸íÀ» ÇâÇÑ ÀÇÁö´Â ½É¼º¹ÙÀÌ¿À·ÎÁ÷½ºÀÇ DNA¿¡ ³»ÀçµÈ Á¤Ã¼¼ºÀÌÀÚ ´õ ³ªÀº »îÀ» ÇâÇÑ ¿ì¸®ÀÇ ¾à¼ÓÀÔ´Ï´Ù. ´õ °Ç°­ÇÑ »îÀ» À§ÇØ ¸ØÃßÁö ¾Ê´Â µµÀüÀº ½É¼º¹ÙÀÌ¿À·ÎÁ÷½º¸¸ÀÇ DNA¿¡¼­ ºñ·ÔµË´Ï´Ù.'
     , '4,519', '30,012', 'simbio', 'simbio12','231-86-27632', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/2KzB71XkFo1qgzlsnjEoybJVknWPVXKiwx19A51g63A4--IfC0MXifmjDKS30Hb7oaGLzhG4qYcmygUXO8rQ43g2oP113-dMYOlAABLBdgplCYBeqqOhkPevULzJgd1uKhuaZjFEB_msP4tEpib8zg.svg', 'ÀÓÁ¸Á¾º¸'
-    , '¾çÇöÁÖ', 'yang@simsungbiologics.com', '032-455-3114', '10%, º¹Áö-30%, 1~3, 30%, ´ëÁ¹, 30%, 1³âÀÌ»ó'
+    , '¾çÇöÁÖ', 'yang@simsungbiologics.com', '032-455-3114', '±Þ¿©-°æ¿µÁø,25,1°³ ÀÌÇÏ,35,ÃÊ´ëÁ¹,40,5³âÂ÷ ÀÌÇÏ,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -456,7 +456,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÆÇ¿À¼Ç', '¼­¿ïÆ¯º°½Ã Á¾·Î±¸ Á¾·Î5±æ 7', '¿î¼ö¾÷', '1966-05-28', 'www.panocean.com'
     , '´ëÇÑ¹Î±¹À» ´ëÇ¥ÇÏ´Â ±Û·Î¹ú ÇØ¿î¼±»ç ÆÇ¿À¼ÇÀº ÁÖ·Â»ç¾÷ÀÎ ¹úÅ©¼± ¼­ºñ½º»Ó¸¸ ¾Æ´Ï¶ó ÄÁÅ×ÀÌ³Ê¼±, ÅÊÄ¿¼±, LNG¼±, Áß·®¹°¿î¹Ý¼± µî Á¾ÇÕ ¼±»ç·Î¼­ ¼¼°èÀûÀÎ ¸í¼º°ú ½Å·Ú¸¦ ¾ò°í ÀÖ½À´Ï´Ù.'
     , '1,132', '57,004', 'pan', 'pan12','204-81-19101', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/bDC80v_QeLXFcq_y9R3bIVj6cQVKI3y0xvI1SQZSutVLmzGL_WmHW5xhpftrfiwfL903M2RUG_7rb6rIidW4p-lg9wxS6XpM2VF2rt4YUG35drtxeeXmXWiC9IF313emTedUHOlkvfeFSWyCWFA6-Q.svg', '±èÈ«±¹, ¾ÈÁßÈ£'
-    , 'ÀÌÇýÁö', 'lhj@panocean.com', '02-316-5114', '10%, °æ¿µÁø-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 3³âÀÌ»ó'
+    , 'ÀÌÇýÁö', 'lhj@panocean.com', '02-316-5114', '°æ¿µÁø-±Þ¿©,30,1°³ ÀÌÇÏ,20,ÃÊ´ëÁ¹,50,3³âÂ÷ ÀÌÇÏ,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -468,7 +468,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '°í·Á±ÝÀ¶ÁöÁÖ', '¼­¿ïÆ¯º°½Ã ¿µµîÆ÷±¸ ÀÇ»ç´ç´ë·Î 88', '±ÝÀ¶¾÷', '2003-01-10', 'www.koreainvestment.com'
     , '°í·ÁÅõÀÚ±ÝÀ¶±×·ìÀÇ °æ¿µÀÌ³äÀº ¸ðµÎ »ç¶÷À» ÇâÇÏ°í ÀÖ½À´Ï´Ù. ±ÝÀ¶Àº »ç¶÷°ú »ç¶÷°£ÀÇ ¹«ÇüÀÇ ½Å·Ú¸¦ ¹ÙÅÁÀ¸·Î ÀÌ·ïÁö°í, ¿ì¸®ÀÇ ºñÁî´Ï½ºµµ ½Ã½ºÅÛÀÌ ¾Æ´Ñ »ç¶÷¿¡ ÀÇÇØ ¼ºÆÐ°¡ °áÁ¤µÇ±â ¶§¹®ÀÔ´Ï´Ù.'
     , '55', '250,281', 'koinvest', 'koinvest12','214-87-26478', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/l1BFvV-opSZO0ZwAQGhCn4xUNIplYxzNVym4bb3bvp-DWZxWWMpSrPOdEeyEO7U7XcOfqDRaRzl1_KW-CJTlInskV1cJTZSfE-hekqbCsWARRskS2dWtWooeVsJ2NdZeTXmRS3VTnV9L19cAJZHpOQ.webp', '±è³²±¸'
-    , '°­±â¹é', 'gb@koreainvestment.com', '02-3276-6400', '10%, ¿ö¶óº§-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 3³âÀÌ»ó'
+    , '°­±â¹é', 'gb@koreainvestment.com', '02-3276-6400', '°æ¿µÁø-±Þ¿©,40,1°³ ÀÌÇÏ,10,°íÁ¹,50,3³âÂ÷ ÀÌÇÏ,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -480,7 +480,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'LZÀ¯ÇÃ·¯½º', '¼­¿ïÆ¯º°½Ã ¿ë»ê±¸ ÇÑ°­´ë·Î 32', 'Á¤º¸Åë½Å¾÷', '1996-07-11', 'www.lzuplus.com'
     , 'LZÀ¯ÇÃ·¯½º´Â 1996³â 7¿ù 11ÀÏ ¼³¸³ ÀÌ·¡ ÇöÀç±îÁö °í°´ÀÇ »î¿¡ ÀÇ¹Ì ÀÖ´Â º¯È­¸¦ ¸¸µé±â À§ÇØ ³ë·ÂÇØ ¿Ô½À´Ï´Ù. 5G ¹× IoT ½Ã´ë¿¡µµ °í°´¿¡°Ô ¿©À¯¿Í Çàº¹, ÆíÀÇ¸¦ °¡Á®´Ù ÁÙ »õ·Î¿î »ýÈ° °¡Ä¡¸¦ ¸¸µé¾î ³ª°¡µµ·Ï ÃÖ¼±À» ´ÙÇÏ°Ú½À´Ï´Ù.'
     , '10,626', '139,059', 'lzuplus', 'lzuplus12','220-81-39938', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/6w14alNconcjqrXSUAux1tHS56eRseh8dsu6sYc3iw35VsdtkI06zxfvA5AXwkd_ZJbysy9bjX4R14FIgR1MYw.svg', 'È²Çö½Ä'
-    , '±èÇÏÁø', 'hajin@lzuplus.com', '02-1554-0010', '10%, ±Ù¹«È¯°æ-30%, 1~3, 30%, °íÁ¹, 30%, 3³âÀÌ»ó'
+    , '±èÇÏÁø', 'hajin@lzuplus.com', '02-1554-0010', '°æ¿µÁø-º¹Áö,20,1°³ ÀÌÇÏ,30,´ëÁ¹,50,3~5³âÂ÷,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -492,7 +492,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ÄÚ¸®¾Æ¾Æ¿¬', '¼­¿ïÆ¯º°½Ã °­³²±¸ °­³²´ë·Î 542', 'Á¦Á¶¾÷', '1974-08-01', 'www.koreazinc.co.kr'
     , 'ÄÚ¸®¾Æ¾Æ¿¬Àº Ä£È¯°æ °¡Ä¡ Ãß±¸¿Í µ¶º¸ÀûÀÎ ±â¼ú °æÀï·ÂÀ¸·Î Áö¼Ó°¡´ÉÇÑ ¹Ì·¡¸¦ ¿­¾î°¡°í ÀÖ½À´Ï´Ù. º¸´Ù »ì±â ÁÁÀº »çÈ¸, ´õ Çàº¹ÇÑ ¼¼»óÀ» ¸¸µé¾î °©´Ï´Ù.'
     , '1,830', '112,193', 'kozinc', 'kozinc12','211-81-11260', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/PAvM7vc67plb0OM7Z3hyA95OiWWUJatFwXijg8uvIihgwVPYDI_JdAb-t19JCqPpHR3npb7uA7zBnW9PO4lG6kUgfvWI0MaJV_YY0J2txDUd2uJkMhv31jzmhNa6jFyfp88QUOPx8giOHwItkuNYaA.webp', 'ÃÖÀ±¹ü, ¹Ú±â´ö'
-    , 'ÃÖÀ±±â', 'yun@koreazinc.com', '02-519-3416', '10%, ¿ö¶óº§-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 1³âÀÌ»ó'
+    , 'ÃÖÀ±±â', 'yun@koreazinc.com', '02-519-3416', '±Ù¹«È¯°æ,50,1~3°³,20,°íÁ¹,30,5³âÂ÷ ÀÌ»ó,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -504,7 +504,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '½É¼ºÄ«µå', '¼­¿ïÆ¯º°½Ã Áß±¸ ¼¼Á¾´ë·Î 67', '±ÝÀ¶¾÷', '1983-03-24', 'www.simsungcard.com'
     , '½É¼ºÄ«µåÀÇ º»ÁúÀû °¡Ä¡ÀÎ ½Å·Ú¸¦ ´õ¿í °­È­ÇÏ¿© Ä«µå¾÷¿¡¼­ ÀÏ·ù¸¦ ´Þ¼ºÇÏ°í Ä«µå¾÷À» ³Ñ¾î ½Å·ÚÀÇ ¼¼»óÀ» ¸¸µé°Ú½À´Ï´Ù.'
     , '1,933', '36,416', 'simcard', 'simcard12','202-81-45602', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/jNkZFxheVRJXXa4yB2RxZlGn_lqtIbq-DfTdAEDKoMRO05ClzDDKwL3guWll9IYhJ3t-OA-ERF8-PYCOfGIyTsonBf4IDufxG7kL-qrfdRSN1va08Ks75FG4RXjH1my2I6rdlwkcdTuY42w9oe9ixA.svg', '±è´ëÈ¯'
-    , '¹ÚÂùÈñ', 'chan@simsungcard.com', '02-758-7315', '10%, º¹Áö-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 1³âÀÌ»ó'
+    , '¹ÚÂùÈñ', 'chan@simsungcard.com', '02-758-7315', '¿ö¶óº§,60,1~3°³,40,ÃÊ´ëÁ¹,0,3³âÂ÷ ÀÌÇÏ,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -516,7 +516,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '½É¼º»ý¸í', '¼­¿ïÆ¯º°½Ã ¼­ÃÊ±¸ ¼­ÃÊ´ë·Î74±æ 11', '±ÝÀ¶ ¹× º¸Çè¾÷', '1957-04-04', 'www.simsunglife.com'
     , 'º¸ÇèÀ» ³Ñ¾î, °í°´ÀÇ ¹Ì·¡¸¦ ÁöÅ°´Â ÀÎ»ý±ÝÀ¶ÆÄÆ®³Ê. »ç¶ûÀ» ´õ Å« »ç¶ûÀ¸·Î ¸¸µå´Â ½É¼º»ý¸íÀÌ µÇ°Ú½À´Ï´Ù.'
     , '5,148', '403,309', 'simlife', 'simlife12','204-81-26688', '»ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/6IaPX4UQku15dnFoUyNq9bBYrA9Z9b-CTsn1NUByGafvPD9EWyHssmfYSUJPZtF4ZUqXWd937YtZ6xfs6QXG4RVDzHYWsGiG_XBzrnhyQrReF42DKqesW5vLlfsf2ss78N5cAfDSVBmML0B4zmxbKg.svg', 'Àü¿µ¹¬'
-    , 'ÀÓÁø¿µ', 'lim@simsunglife.com', '02-2259-7552', '10%, ±Ù¹«È¯°æ-30%, 1~3, 30%, ÃÊ´ëÁ¹, 30%, 1³âÀÌ»ó'
+    , 'ÀÓÁø¿µ', 'lim@simsunglife.com', '02-2259-7552', 'º¹Áö,40,3°³ ÀÌ»ó,20,°íÁ¹,40,5³âÂ÷ ÀÌ»ó,0'
     , 6, SYSDATE-1, SYSDATE, SYSDATE-1, SYSDATE);
 
 INSERT INTO COMPANY
@@ -529,7 +529,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '±èÈ£¼®À¯', '¼­¿ïÆ¯º°½Ã Áß±¸ Ã»°èÃµ·Î 100 (¼öÇ¥µ¿)', 'Á¦Á¶¾÷', '1970-12-28'
     , 'https://www.kkpc.com/kor/', 'ÇÕ¼º°í¹« SBR(½ºÆ¼·»ºÎÅ¸µð¿£·¯¹ö),BR(Æú¸®ºÎÅ¸µð¿£·¯¹ö),ÇÕ¼º¼öÁö,BD,¶óÅØ½º Á¦Á¶,µµ¼Ò¸Å'
     , '1,453¸í', '7Á¶ 9,756¾ï ¿ø', '±èÈ£¼®À¯È­ÇÐ±×·ì', 'kimho123', '341-02-54375', '±èÈ£¼®À¯ »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/KK2xHT6ozQgEFLsuNqtyqMwRwaSi0rfi4WIg1ytM9ZR7PsCGxbP-SCvrreuwgoYK6c-tFruUIqbbGnQ1Cqw_UHGK8lstOInKWJ16MRXUvOfezGA4SWE6crMEvi5lAK0BnKIaQs4Hmlw-SAP8ZqMDYw.svg'
-    , '¹éÁ¾ÈÆ', '¹é±ÝÈ£', 'HR@kumho.com', '02-341-2513', '±Þ¿©-¿ö¶óº§', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , '¹éÁ¾ÈÆ', '¹é±ÝÈ£', 'HR@kumho.com', '02-341-2513', 'º¹Áö-±Ù¹«È¯°æ,25,3°³ ÀÌ»ó,15,ÃÊ´ëÁ¹,60,3~5³âÂ÷,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
     
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -541,7 +541,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '»ç´ëÇØ»ó', '¼­¿ï Á¾·Î±¸ ¼¼Á¾´ë·Î 163', '±âÅ¸ °³ÀÎ¼­ºñ½º¾÷', '1955-03-08'
     , 'https://www.hi.co.kr/serviceAction.do', '¿ì¸® Çö´ëÇØ»óÀº 1955³â ±¹³» ÃÖÃÊÀÇ ÇØ»óº¸Çè Àü¾÷È¸»ç·Î Ãâ¹üÇÑ ÀÌ·¡ °í°´¸¸Á·À» ±â¾÷ ÃÖ°íÀÇ °¡Ä¡·Î ¿©±â¸ç "°í°´°ú ÇÔ²² ¼ºÀåÇÏ´Â ÃÖ°íÀÇ º¸ÇèÈ¸»ç" ¸¦ ¸ñÇ¥·Î ÃÖ¼±ÀÇ ³ë·ÂÀ» ´ÙÇÏ°í ÀÖ½À´Ï´Ù.'
     , '4,029¸í', '52Á¶ 8,180¾ï ¿ø', 'Çö´ëÇØ»ó', 'hyundai123', '342-05-21453', '»ç´ëÇØ»ó »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/0ZL3gX6_7xuzHVrlrPx0ds61DJSuyWQygD7S51WNJmwXPN0vW8KiAFskf9NqeO37AykeOKOFZkxn_vjdS5pr9_L9z0opiqcr5d9MsHs_3aphTYCBgsx4_Z_E6NRKJJobcifexJDhV9jIDumYR_1tkw.svg'
-    , 'Á¶¿ëÀÏ/ÀÌ¼ºÀç', 'Á¶´ë»ó', 'HR@hyundai.com', '02-491-2523', '±Ù¹«È¯°æ-°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , 'Á¶¿ëÀÏ/ÀÌ¼ºÀç', 'Á¶´ë»ó', 'HR@hyundai.com', '02-491-2523', '°æ¿µÁø-¿ö¶óº§,10,1°³ ÀÌÇÏ,5,°íÁ¹,85,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
     
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -553,7 +553,7 @@ VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTAB
 VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'DDÇÏÀÌÅØ', '°æ±â ºÎÃµ½Ã ¼öµµ·Î 90', 'Á¦Á¶¾÷', '1953-04-28'
     , 'https://dbhitek.com/kr/default.asp', 'ÁÖ¿ä »ç¾÷³»¿ë : ºñ¸Þ¸ð¸® ¹ÝµµÃ¼ÀÇ ÆÄ¿îµå¸®¿Í ºñ¸Þ¸ð¸® ¹ÝµµÃ¼ÀÇ Á¶¸³ ¹× ÆÇ¸Å ÁÖ¿ä Ãë±ÞÇ°¸ñ : ¹ÝµµÃ¼¿þÀÌÆÛÆÄ¿îµå¸®', '1,940¸í', '1Á¶ 6,753¾ï ¿ø'
     , 'DBÇÏÀÌÅØ', 'dbhitek123', '343-01-57915', 'DDÇÏÀÌÅØ »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/l_cl6Wc1gUYsy8kBFYjANCsNQp3GmGTPHaj6gfNelrhKLW5mGcGAkiSvsYbLkmuJe0wKuGRnpKaasjvtQugVsj9u7-qrDE9cyHmRXKzeo-_B8MmGDYVzmknVGV5bRqX_hFt48zPjrUx2iIhE1t3wCA.webp'
-    , 'ÃÖÃ¢½Ä', 'ÃÖ¹æ½Ä', 'HR@hitek.com', '02-812-4427', '±Þ¿©-º¹Áö', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , 'ÃÖÃ¢½Ä', 'ÃÖ¹æ½Ä', 'HR@hitek.com', '02-812-4427', 'º¹Áö-¿ö¶óº§,35,1°³ ÀÌÇÏ,10,´ëÁ¹,55,5³âÂ÷ ÀÌ»ó,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
     
 
 INSERT INTO COMPANY
@@ -567,7 +567,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'SKU', '¼­¿ïÆ¯º°½Ã Á¾·Î±¸ Á¾·Î 26 (¼­¸°µ¿)', 
     , 'http://www.sk.co.kr/', 'SK´Â SK±×·ìÀÇ ÁöÁÖÈ¸»ç´Ù. ÁöÁÖ ºÎ¹®ÀÎ SKÁÖ½ÄÈ¸»ç È¦µù½º¿Í »ç¾÷ ºÎ¹®ÀÎ SKÁÖ½ÄÈ¸»ç C'||CHR(38)||'C·Î ±¸¼ºµÇ¾î ÀÖ´Ù.'
     , '125,762¸í', '224Á¶ 1,923¾ï¿ø'
     , 'SK', 'sk123*', '344-01-51237', 'SKU »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/NnF2nIZFcEyGWKEETUcKAwQygJyMCWpDYakfaPw_gcIKVLadsoEmHi6u8oLakhIGIvw7d8M5ZJLEXZiAJiadmQ.svg'
-    , 'ÃÖÅÂ¿ø', 'ÃÖÁ¾¼ö', 'HR@sk.com', '02-142-5213', 'º¹Áö-±Þ¿©', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , 'ÃÖÅÂ¿ø', 'ÃÖÁ¾¼ö', 'HR@sk.com', '02-142-5213', '±Þ¿©-±Ù¹«È¯°æ,45,1°³ ÀÌÇÏ,30,°íÁ¹,25,3~5³âÂ÷,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -581,7 +581,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '»ï¼ºSKS', '¼­¿ïÆ¯º°½Ã ¼ÛÆÄ±¸ ¿Ã¸²ÇÈ·Î35±æ 12
     , '11,414¸í', '17Á¶ 2347¾ï¿ø'
     , '»ï¼ºSDS', 'samsung123*', '345-01-42167', '»ï¼ºSKS »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/lrMIrgXgm37bxzqQaEB1DBmbi90mBgeyubkXUhJjjI6aouZDLJUgDzGROuKwk4DmZR48tLKwO7M-aJVVL61b2chxSZDAc-Bx3_qon_oBFBZ2nXnAeFT4KwjJoxyzDcSJXzQ_EeYLrbPRvkXjFPYFXw.webp'
     , 'È²¼º¿ì', 'È²»ó¼ö', 'HR@samsung.com'
-    , '02-751-5312', 'º¹Áö', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , '02-751-5312', '°æ¿µÁø-º¹Áö,10,3°³ ÀÌ»ó,40,ÃÊ´ëÁ¹,50,5³âÂ÷ ÀÌ»ó,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -595,7 +595,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'ULXÀÎÅÍ³»¼Å³Î', '¼­¿ïÆ¯º°½Ã Á¾·Î±¸ »õ¹®¾È·Î 
     , '382¸í', '18Á¶ 7,595¾ï¿ø'
     , 'LXÀÎÅÍ³»¼Å³Î', 'lx123*', '346-27-54316', 'ULXÀÎÅÍ³»¼Å³Î »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/noL1unwbB93hfXLWhujvHbd7fGcNkq1HFky9CT0Qr63IPXrW0NN4Pr2af89h1_clEH-kT_PR-d7cprdgiSq61XCLc1FMH2z8UGXOtswKRNhtzWfDS4mZeLH9cRETHsQBj46kILwijXWSlX0bA5Hd9g.svg'
     , 'À±Ãá¼º', 'À±´ë±Ô', 'HR@ulx.com'
-    , '02-472-5135', '°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , '02-472-5135', '¿ö¶óº§,30,1°³ ÀÌÇÏ,60,´ëÁ¹,10,3~5³âÂ÷,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -608,7 +608,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'TG½ºÆ¿', '¼­¿ïÆ¯º°½Ã Áß±¸ ÅëÀÏ·Î 92 5Ãþ (¼øÈ
     , 'https://www.kg-steel.co.kr/html/index.html', 'ÁÖ¿ä »ç¾÷³»¿ë : Ã¶°­Á¦Ç° Á¦Á¶, ÆÇ¸Å ÁÖ¿ä Ãë±ÞÇ°¸ñ : ³Ã¿¬°­ÆÇ, ¾Æ¿¬µµ°­ÆÇ, ÄÃ·¯°­ÆÇ, ¼®µµ°­ÆÇ, °­°ü, Çü°­, ºÀ°­', '1,136¸í', '3Á¶ 8,197¾ï¿ø'
     , 'KG½ºÆ¿', 'kg123*', '347-54-89721', 'TG½ºÆ¿ »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/rScLfoWj1qZ11SeAU2UnXR7HUcrDtRUL-KGgHn-2bBnXGPdo0Ic8fPr7Zzp_OxO41Fp-DCvPX82GhVUKfKxiDm-aRp7iqCA3EjTv_nQNl8HLIFAAWJ9FSKxII8PlPLVB0tJ2O0GjrcH_Pddt2bg9NA.svg'
     , '¹Ú¼ºÈñ', '¹Úµ¿¼ö', 'HR@kgsteal.com'
-    , '02-543-7812', '±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , '02-543-7812', '±Ù¹«È¯°æ-°æ¿µÁø,20,3°³ ÀÌ»ó,30,°íÁ¹,50,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -621,7 +621,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¼¿¹ÙÀÌ¿ÀÆ®¸®¿Â', 'ÀÎÃµ ¿¬¼ö±¸ ¾ÆÄ«µ¥¹Ì·Î 23'
     , 'https://www.celltrion.com/ko-kr/home/index', 'ÁÖ¿ä »ç¾÷³»¿ë : µ¿¹°¼¼Æ÷ ¹è¾ç±â¼úÀ» ÀÌ¿ëÇÑ ÀÇ¾àÇ°, »ý¹°ÇÐÀû ÀÇ¾àÇ° µîÀÇ Á¦Á¶, ¿¬±¸°³¹ß, ¼öÃâ ¹× ÆÇ¸Å', '2277¸í', '1Á¶9,116¾ï¿ø'
     , '¼¿Æ®¸®¿Â', 'cell123*', '548-75-72541', '¼¿¹ÙÀÌ¿ÀÆ®¸®¿Â »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/LxYgCYRQaGmd5fwX_tudCbioFH3lyCz78b1X_vKvRORd9WGQ-fGhML-RMDRNslTlEoP7chmN82RmpfvgzXrj_xg82kfSM2YkQyc4CzF6GQdydd24aUbw9q_a4Rplnm4bIOHeTRP2kXIGyv-kEvPpnw.svg'
     , '±â¿ì¼º', '±â»ó¼ö', 'HR@cell.com'
-    , '02-742-5612', '±Ù¹«È¯°æ-º¹Áö', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , '02-742-5612', '±Þ¿©,60,1°³ ÀÌÇÏ,20,ÃÊ´ëÁ¹,20,5³âÂ÷ ÀÌ»ó,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -635,7 +635,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'Å°¿öÁõ±Ç', '¼­¿ïÆ¯º°½Ã ¿µµîÆ÷±¸ ¿©ÀÇ³ª·ç·Î4±
     , '890¸í', '8Á¶9,424¾ï¿ø'
     , 'Å°¿òÁõ±Ç', 'kiwoom123*', '549-08-21364', 'Å°¿öÁõ±Ç »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/MQM4p90HhG9pqFfRK2XxtTpmlLec8uwwrNKlqQqRaB72VnrOLvNS_KYMjSiRPstQd4aRudHEkVLZHBHLgTQpC1hTAz84YO3Z5K7wn0EGf1wJU2PPD8VAM6A4XYXxRytO2yPxAbP_cvx0eTDXeMT2Vg.svg'
     , 'È²Çö¼ø', 'È²¼ø´ö', 'HR@kiwoom.com'
-    , '02-753-5432', 'º¹Áö', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , '02-753-5432', '¿ö¶óº§-º¹Áö,40,3°³ ÀÌ»ó,10,´ëÁ¹,50,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -648,7 +648,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '±×·¡ÇÁÆ®', '¼­¿ïÆ¯º°½Ã °­³²±¸ Å×Çì¶õ·Î 231(¿
     , 'https://www.krafton.com/', 'Å©·¡ÇÁÅæÀº Æ¯Á¤ Àå¸£¿¡¼­ °æÀï·Â ÀÖ´Â Á¦ÀÛ ´É·ÂÀ» °®Ãá µ¶¸³½ºÆ©µð¿Àµé·Î ±¸¼ºµÇ¾î ÀÖ½À´Ï´Ù. ', '1,796¸í', '1Á¶ 8,540¾ï¿ø'
     , 'Å©·¡ÇÁÅæ', 'krafton123*', '550-82-64231', '±×·¡ÇÁÆ® »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/JeDWd8hwCo4Kixbdgrn7nGebKYoMlMyeLjv53Sn3ouRFXmZ1oBjr4dhZAKHlwch6_6_ZQGwGf4QcRMFLIgw4sA.svg'
     , '±èÃ¢ÇÑ', '±è¼öÇÑ', 'HR@krafton.com'
-    , '02-652-7852', 'º¹Áö-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , '02-652-7852', 'º¹Áö-±Ù¹«È¯°æ,30,1°³ ÀÌÇÏ,30,°íÁ¹,40,3~5³âÂ÷,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -661,7 +661,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¿¥¾¾¼ÒÇÁÆ®', '°æ±âµµ ¼º³²½Ã ºÐ´ç±¸ ´ë¿ÕÆÇ±³·
     , 'https://kr.ncsoft.com/kr/index.do', 'Áñ°Å¿òÀ¸·Î ¿¬°áµÈ »õ·Î¿î ¼¼»ó, ¿£¾¾¼ÒÇÁÆ® ¼¼»ó ¸ðµÎ°¡ Áñ°Å¿òÀ¸·Î ¿¬°áµÇ´Â »õ·Î¿î ¹Ì·¡, ¾Æ¹«µµ °¡º¸Áö ¸øÇÑ ±× ¼¼»óÀÌ °¨µ¿À¸·Î °¡µæ Âû ¶§±îÁö ¿£¾¾´Â ²÷ÀÓ¾øÀÌ ²Þ²Ù¸ç µµÀüÀ» ¸ØÃßÁö ¾ÊÀ» °Í ÀÔ´Ï´Ù.', '4,506¸í', '2Á¶ 4,161¾ï¿ø'
     , '¿£¾¾¼ÒÇÁÆ®', 'ncsoft123*', '551-64-23164', '¿¥¾¾¼ÒÇÁÆ® »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/leFWi_52YAUIgJC5CobYqOaWT-N5nFD04tmnCSQu8-fFlmekvq4Y-vnGIyxHoxpYrxbA94GFXprJXY_Pkqpg1XVShV1OP8KVkrvFIX9Qlr1y2ICOY7Jo_OT0lNud3wbBb6ec-VK7LniqhIv5mPGrMA.svg'
     , '±èÅÃÁø', '±èÃ¢¼ö', 'HR@ncsoft.com'
-    , '02-852-4621', '°æ¿µÁø-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , '02-852-4621', '±Þ¿©-°æ¿µÁø,25,1°³ ÀÌÇÏ,35,ÃÊ´ëÁ¹,40,5³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -675,7 +675,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'CWÀÌ³ëº£ÀÌ¼Ç', '¼­¿ïÆ¯º°½Ã Á¾·Î±¸ Á¾·Î 26 (¼
 ÁÖ¿ä Ãë±ÞÇ°¸ñ : °æÀ¯, ¹«¿¬ÈÖ¹ßÀ¯, ¿¡Æ¿·», ÇÕ¼º¼öÁö, ¿øÀ¯Á¤Á¦, È­ÇÐÁ¦Ç°', '1576¸í', '46Á¶ 8,429¾ï¿ø'
     , 'SKÀÌ³ëº£ÀÌ¼Ç', 'skin123*', '552-34-86421', 'CWÀÌ³ëº£ÀÌ¼Ç »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/5ZbguDVzlQ6Spf61SYbCdVu38nn59Zq36Z0Vm-lC-eUBpQhzKIVwmbKW-Q1tnaFU_Z37dYtWNWEG0DysBMKSNASt673EuTnEM2zgCzXRLJK9617f4nS0QxSTTCxOSAckpLEA8BVr1tzmMp40vYQWsA.svg'
     , '±èÁØ', '±èµ¿¼ö', 'HR@skinnovation.com'
-    , '02-653-2136', '°æ¿µÁø-º¹Áö', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , '02-653-2136', '¿ö¶óº§,50,1°³ ÀÌÇÏ,40,°íÁ¹,10,3~5³âÂ÷,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -688,7 +688,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'LA', '¼­¿ïÆ¯º°½Ã ¿ë»ê±¸ ÇÑ°­´ë·Î 92(ÇÑ°­·Îµ¿
     , 'https://www.lsholdings.co.kr/ko', 'LSÀü¼±Àº °í°´¿¡°Ô Leading SolutionÀ» Á¦°øÇÏ´Â ±â¾÷, »çÈ¸¿¡ °øÇåÇÏ´Â ±â¾÷, ÀÓÁ÷¿øµéÀÌ ÀÚ½ÅÀÇ ²ÞÀ» ÀÌ·ê ¼ö ÀÖ´Â ±â¾÷À¸·Î ¼ºÀåÇØ ³ª°¡°íÀÚ ÇÕ´Ï´Ù. ', '2,172¸í', '17Á¶ 4,913¾ï¿ø'
     , 'LS', 'ls123*', '553-81-64182', 'LA »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/3LGbAWokRDBSmL-uFGzsgezvetGrCRz_MOfCVo9y0Hvn-TNUmSCyDkNOExjCbgg9nHFYoy8xcUKcYsUCDhQEov1BdJM6G0nI2RpyRq-X41emypK0amY3KIduVfnr-IpMcJeit5o4qQdrvEY-MJPTiw.svg'
     , '±¸º»±Ô', '±¸º´±Ô', 'HR@ls.com'
-    , '02-378-6542', '±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , '02-378-6542', '°æ¿µÁø-º¹Áö,40,3°³ ÀÌ»ó,10,´ëÁ¹,50,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -702,7 +702,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'AS¸®Å×ÀÏ', '¼­¿ïÆ¯º°½Ã °­³²±¸ ³íÇö·Î 508 (¿ª
 ÁÖ¿ä Ãë±ÞÇ°¸ñ : ÁöÁÖÈ¸»ç, ºÎµ¿»êÀÓ´ë', '8,024¸í', '9Á¶ 7,656¾ï¿ø'
     , 'GS', 'gs123*', '554-97-61389', 'AS¸®Å×ÀÏ »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/wfa5HVejy0RH8rrXEwpStv4eINQLdnk7sahLb-qbj6r3WOCILCzKlHFk-oXwMdDDq3adsRpjK9gd_y9_XAxPddgO_V7FeYmY_9AH8a0M-Awy8U6FvsjQ4ku5jTVWXOXc94iMrRZplnXlLtu8OSDZ8w.svg'
     , 'Çã¿¬¼ö/±èÈ£¼º', 'Çã»ó¼ö', 'HR@gsretail.com'
-    , '02-873-8652', '°æ¿µÁø-º¹Áö', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , '02-873-8652', '±Ù¹«È¯°æ-º¹Áö,15,1°³ ÀÌÇÏ,25,°íÁ¹,60,5³âÂ÷ ÀÌ»ó,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -715,7 +715,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'SY½ºÄù¾î', '¼­¿ï Áß±¸ À»Áö·Î 65', '±ÝÀ¶¾÷', 
     , 'https://www.sksquare.com/kor/index.do', '´ëÇÑ¹Î±¹ÀÇ SK »êÇÏ ¹ÝµµÃ¼¡¤Á¤º¸Åë½Å±â¼ú ÅõÀÚ Àü¹®±â¾÷.', '79¸í', '5,911¾ï 8,500¸¸¿ø'
     , 'SK½ºÄù¾î', 'sksquare123*', '555-72-13245', 'SY½ºµµÄí »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/TiiZ3zomqSTjcor5ndS9vcfqDUBygT1F5McHWQQN9nUW9xBCeCnth18ThewIp064eUm0rWkQP6d02HNpnPoWJPWL4ZyLaeA7ypFCK8_jIRehAyEcee_1147hK0F4qv85yqoF2LSKbT7UZjwnK0rzHg.svg'
     , '¹Ú¼ºÇÏ', '¹Úµ¿ÇÏ', 'HR@sksquare.com'
-    , '02-751-3542', 'º¹Áö', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , '02-751-3542', '°æ¿µÁø,15,1°³ ÀÌÇÏ,40,ÃÊ´ëÁ¹,45,3~5³âÂ÷,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -728,7 +728,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¹Ì·¡°ü¸®Áõ±Ç', '¼­¿ïÆ¯º°½Ã Áß±¸ À»Áö·Î5±æ 26
     , 'https://securities.miraeasset.com/', 'À¯°¡Áõ±Ç¸Å¸Å,À¯°¡Áõ±ÇÀ§Å¹¸Å¸Å,À¯°¡Áõ±ÇÀÎ¼ö', '3,488¸í', '19Á¶ 1,612¾ï¿ø'
     , '¹Ì·¡¿¡¼ÂÁõ±Ç', 'mirae123*', '556-88-45602', '¹Ì·¡°ü¸®Áõ±Ç »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/mQccS507mkBBm9LWfA8DVqXorKtZEq2OcBPjmUssMESUY8rmXbz_B_oeJ7l4q1SzG6MGHgva9dsvdc9V3NiIJJ3GS01ixmyU6AK4NTdo0gwxcL7ulOFiVIJDvXJG1E6Y11ajVEllB3z-fOMzam5_2w.svg'
     , 'ÃÖÇö¸¸/ÀÌ¸¸¿­', 'ÀÌµ¿¼ö', 'HR@mirae.com'
-    , '02-846-5422', '±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , '02-846-5422', '¿ö¶óº§-±Ù¹«È¯°æ,20,3°³ ÀÌ»ó,30,´ëÁ¹,50,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -741,7 +741,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '·Ôµ¥Á¤¹ÐºÐ¼®', '¿ï»ê±¤¿ª½Ã ³²±¸ ¿©Ãµ·Î217¹ø±
     , 'https://www.lottefinechem.com/', '¿°¼Ò¡¤¼¿·ê·Î½º°è¿­, ¾Ï¸ð´Ï¾Æ °è¿­, ÀüÀÚÀç·á µî È­ÇÐÁ¦Ç° Á¦Á¶', '943¸í', '2Á¶ 4,638¾ï¿ø'
     , '·Ôµ¥Á¤¹ÐÈ­ÇÐ', 'lotte123*', '557-12-32564', '·Ôµ¥Á¤¹ÐºÐ¼® »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/2L_eBmBEIuycR5MS0tGC-_h-47B6TER-z3P_BnuPTOe9Hkk0k6jVDANAunVw8lqSAW-N79YiyWa3wpq4y5oTIA8sDKKez0AUaBjXt-y4EPXXqexq2-ppWeIi0j2iE04sOQXk1UuCrbAoahEUj7D0aQ.svg'
     , '±è¿ë¼®', '°­¼®È­', 'HR@lotte.com'
-    , '02-846-7891', 'º¹Áö-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , '02-846-7891', '±Þ¿©,55,1°³ ÀÌÇÏ,25,°íÁ¹,20,5³âÂ÷ ÀÌ»ó,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -754,7 +754,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, 'H'||CHR(38)||'J', '¼­¿ï½Ã °­³²±¸ ¾ðÁÖ·Î 541 
     , 'https://www.fnf.co.kr/pages/main/main.php', 'F'||CHR(38)||'F´Â 1992³â ÆÐ¼Ç »ç¾÷¿¡ ÁøÃâÇØ ½Ã´ë°¡ ¿øÇÏ´Â »õ·Î¿î ¶óÀÌÇÁ½ºÅ¸ÀÏ°ú ¹®È­¸¦ ¸¸µé°í ¼¼»óÀ» º¯È­½ÃÄÑ¿Ô½À´Ï´Ù. ', '634¸í', '1Á¶ 8,000¾ï¿ø'
     , 'F'||CHR(38)||'F', 'fnf123*', '558-77-54621', 'H'||CHR(38)||'J »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/S4Tc8MNqyYs1fDNdMXsduXzHB98Shy-z1O1BIQeTqhYbjZyPGHOoB5RyNMzjRd1hgLFwDx5p1W-DccZTGkfeLDd_Z4zX3r_ddLwXe7V0GuaVMat2zJjStMij1_bCu5jIcVWvSyLWhxJo5xp1Eur7yQ.webp'
     , '±èÃ¢¼ö', '±è¿¹Áö', 'HR@fnf.com'
-    , '02-785-2136', '±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , '02-785-2136', 'º¹Áö-¿ö¶óº§,35,1°³ ÀÌÇÏ,15,ÃÊ´ëÁ¹,50,3~5³âÂ÷,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -767,7 +767,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '´ëÇÑÄ®', '¼­¿ïÆ¯º°½Ã Áß±¸ ¼­¼Ò¹®·Î 117 (¼­¼Ò
     , 'https://hanjinkal.co.kr/kr/main/index.do', 'ÁöÁÖ»ç¾÷,°æ¿µÀÚ¹® ¹× ÄÁ¼³ÆÃ/Ç×°ø ¿©°´ ¿î¼Û', '39¸í', '458¾ï 1,423¸¸¿ø'
     , 'ÇÑÁøÄ®', 'hanjinkal123*', '559-91-21354', '´ëÇÑÄ® »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/_urpRwjsFd2B35gg9V57u8jT2Y3HNfkEw7H82kj9XVLy3DMJkTBaDyW4yYLemHNLCGkY1ZNwD4isbmRph0PIfWMUn0baa3w-X5saN8Rnf8xga2-lqYxkguwsb60DTm1CBpwfILfsp-u1-jXKiekStA.svg'
     , 'Á¶¿øÅÂ/·ù°æÇ¥', 'Á¶¼ö°æ', 'HR@hanjinkal.com'
-    , '02-462-6123', '¿ö¶óº§', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , '02-462-6123', '¿ö¶óº§-º¹Áö,40,3°³ ÀÌ»ó,10,´ëÁ¹,50,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 INSERT INTO COMPANY
 VALUE(COMPANY_NUMBER, COMPANY_NAME, COMPANY_ADDRESS, COMPANY_TYPE, COMPANY_ESTABLISH_DATE
@@ -780,7 +780,7 @@ VALUES(COMPANY_NUMBER_SEQ.NEXTVAL, '¹Î±¹Áõ±Ç', '¼­¿ïÆ¯º°½Ã ¼­ÃÊ±¸ ¼­ÃÊ´ë·Î74±æ 1
     , 'https://www.samsungpop.com/', 'À¯°¡Áõ±ÇÀÇ ¸Å¸Å,À§Å¹¸Å¸Å,ÀÎ¼öÁÖ¼±', '2,517¸í', '13Á¶ 4,869¾ï¿ø'
     , '»ï¼ºÁõ±Ç', 'samsungpop123*', '560-57-87213', '¹Î±¹Áõ±Ç »ç¾÷ÀÚµî·ÏÁõ', 'https://i.namu.wiki/i/exlfTZQtPYHhJXtPjijxoYlh24-jJpZ3NWlR37fdngsTXLuQQPsbxVRffQTv5usuAx-MoloQflX9srDGIX2dgc6TeKZ607hG206ik4eKFltc_Fi188U8qW5vSpBHKIEYc07536vZOBw2KQpAv3R_8w.svg'
     , 'Àå¼®ÈÆ', '±è¼®ÈÆ', 'HR@samsumgpop@com'
-    , '02-615-5136', '¿ö¶óº§', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+    , '02-615-5136', '±Ù¹«È¯°æ-º¹Áö,20,1°³ ÀÌÇÏ,30,°íÁ¹,50,5³âÂ÷ ÀÌ»ó,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- KDÇÑ±¹Á¶¼±ÇØ¾ç
 INSERT INTO COMPANY VALUES
@@ -791,7 +791,7 @@ INSERT INTO COMPANY VALUES
 , '5000', '5Á¶ 8700', 'kd_ship', 'kd_pass', '423-45-67118', null
 , 'https://i.namu.wiki/i/nR-f3pg9kCjNrDlAQhtRAF9Qc4zSUa2S2HWZy11R7sm8vn1UsE9qAnlpdqMpzVZc8sh-gsdPy5m-tQuLBhdH6AoLiBinYtKZh-_bzpqqn4p2mspTGJLp2iEiT00m6R-af5WNDr-6e7xMVcygHbj6ig.svg'
 , '±èÁØ¿µ', 'ÀÌ°ÇÈ£', 'gh0903@kds.com', '02-2218-5171'
-, 'º¹Áö-°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '°æ¿µÁø,30,1°³ ÀÌÇÏ,10,ÃÊ´ëÁ¹,60,3~5³âÂ÷,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- WJÄÚ¿þÀÌ
 INSERT INTO COMPANY VALUES
@@ -802,7 +802,7 @@ INSERT INTO COMPANY VALUES
 , '3000', '3Á¶ 7820', 'wj_coway', 'securepass', '487-65-43274', null
 , 'https://i.namu.wiki/i/WlgF775bjz0uwvtzC7wetZyX52_BT2f-9KRyFj73KcEAikJI8NpwOjgNyQ6-DPVkeXqJtMhksa0Hev6m-OHPL_EnCpYkX-1jDZ7dmQtpTJQ750sRoSxkTq-mABqV4awRYDXnljvNBjGepKL7NS995g.svg'
 , 'ÀÌÁø¿í', '¹ÚÁØ¼®', 'junseok33@coway.com', '02-9110-5131'
-, 'º¹Áö-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, 'º¹Áö,35,3°³ ÀÌ»ó,15,´ëÁ¹,50,5³âÂ÷ ÀÌ»ó,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- ±â¾÷¹øÈ£, ±â¾÷¸í, ±â¾÷ÁÖ¼Ò, ±â¾÷ ¾÷Á¾, ±â¾÷ ¼³¸³ÀÏ, ±â¾÷ È¨ÆäÀÌÁö, ±â¾÷ ¼Ò°³, »ç¿ø¼ö, ¸ÅÃâ¾×, ±â¾÷ ¾ÆÀÌµð, ±â¾÷ ºñ¹Ð¹øÈ£, ±â¾÷ »ç¾÷ÀÚµî·Ï¹øÈ£, ±â¾÷ »ç¾÷ÀÚµî·ÏÁõ, È¸»ç ·Î°í, ±â¾÷ ´ëÇ¥ÀÚ¸í, ±â¾÷_´ã´çÀÚ ÀÌ¸§, ±â¾÷_´ã´çÀÚ ÀÌ¸ÞÀÏ, ±â¾÷_´ã´çÀÚ ¿¬¶ôÃ³, ±â¾÷ ¼±È£µµ, ±ÇÇÑ ·¹º§, °èÁ¤ »ý¼ºÀÏ, °èÁ¤ ¼öÁ¤ÀÏ, Á¢¼Ó ½Ã°£, Á¢¼Ó ÇØÁ¦ ½Ã°£
 
@@ -815,7 +815,7 @@ INSERT INTO COMPANY VALUES
 , '2000', '1Á¶ 6500', 'hanhalife_ins', 'hanhalife_pass', '416-23-61801', null
 , 'https://i.namu.wiki/i/9_fsNPTPbPtTl69-9YT7zh3u5MC7VSeMso7gVpSkBCEYsrsEmo9J6H2alLVNeNmEPz_Cgju_zHAxPSuLr4cxJA.svg'
 , '±èÀ±ÇÏ', 'ÀÌ¿¬ÁÖ', 'yeounjoo16@hanhalife.com', '02-3126-7111'
-, 'º¹Áö-±Þ¿©', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '±Þ¿©-±Ù¹«È¯°æ,25,1°³ ÀÌÇÏ,35,°íÁ¹,40,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- ÇÑ´ë°Ç¼³
 INSERT INTO COMPANY VALUES
@@ -826,7 +826,7 @@ INSERT INTO COMPANY VALUES
 , '1000', '4Á¶ 8200', 'handaegun_con', 'handaegun_pass', '477-29-20162', null
 , 'https://i.namu.wiki/i/BBOT3lGYfDrfe3S8DlujM8Pc6_ltIIJit57uQ4sw_I5OzDMZiyYhrHcBYr0E7Rks6-5Um71-KEjn8LQRsfHPAQocqFib1wXqPPJmd1p6mxH7ZxX-bIjAv_6fUOvVM0xvrI2FpV0o3HukqGL5IrFuKQ.svg'
 , 'ÀÌ°ÇÈ£', '¹Ú±Ù¼®', 'pgs0081@handaegun.com', '02-5122-9012'
-, '±Ù¹«È¯°æ-¿ö¶óº§', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '±Ù¹«È¯°æ-º¹Áö,10,3°³ ÀÌ»ó,40,ÃÊ´ëÁ¹,50,3~5³âÂ÷,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- JD±ÝÀ¶ÁöÁÖ
 INSERT INTO COMPANY VALUES
@@ -837,7 +837,7 @@ INSERT INTO COMPANY VALUES
 , '5000', '20Á¶ 1300', 'jd_finance', 'jd_pass', '416-23-89621', null
 , 'https://i.namu.wiki/i/eNfUvzKCUzblCjQ2ZSmgQIpycyg_9LEOLpG_NeFi664tfd7zhyKkaxJOdqORKFg6TEUegNfcC-1E4dcjrVx8VEDhuqtDTDyiiQdkeT_mfHfwMEB9uDhcSR39imaNbtbuUV3xj9VkpGxRMvriC25mFQ.svg'
 , '½ÅÁø¿í', '·ù¼ºÈÆ', 'ryusung@jdgroup.com', '02-6120-3121'
-, '°æ¿µÁø-±Þ¿©', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '°æ¿µÁø-±Þ¿©,30,1°³ ÀÌÇÏ,20,ÃÊ´ëÁ¹,50,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- HNÅõÀÚÁõ±Ç
 INSERT INTO COMPANY VALUES
@@ -848,7 +848,7 @@ INSERT INTO COMPANY VALUES
 , '800', '12Á¶ 3700', 'hn_investment', 'hn_pass', '477-29-60162', null
 , 'https://i.namu.wiki/i/g99LDDzca0yLkXuMjUmJ1gttNXP3ZRROgANMPSNN2LGJNki5Qi2P94cX_y_zDfZTVmukX05JpGOQcw92Q2VYfA.svg'
 , 'Àü½ÂÇå', '¹Ú¹Î±â', 'park58@hninvestment.com', '02-3314-3311'
-, '°æ¿µÁø-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '°æ¿µÁø-±Þ¿©,40,1°³ ÀÌÇÏ,10,°íÁ¹,50,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- KG ETS
 INSERT INTO COMPANY VALUES
@@ -859,7 +859,7 @@ INSERT INTO COMPANY VALUES
 , '3000', '6Á¶ 9400', 'kg_ets', 'kg_pass', '416-23-42621', null
 , 'https://i.namu.wiki/i/jv6LAQ4a9npkUDlZXiCGgWls5Oz17E2t8Rnm98JM4EoucdntNX18jQLnCPJYiPotX3TJLhwP4TwOkk0kGF_A7rfxoL6G0cK_Xb-J6EHoWURgr5W9ooS53Oi9b2k9g8zpwxZ5BT_QpXxB8j6ykpDbaw.svg'
 , '±è±âÈÆ', 'Á¤½ÂÇå', 'jeong77@kgets.com', '02-3488-5110'
-, 'º¹Áö-°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '°æ¿µÁø-º¹Áö,20,1°³ ÀÌÇÏ,30,´ëÁ¹,50,3~5³âÂ÷,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- SanSung¿£Áö´Ï¾î¸µ
 INSERT INTO COMPANY VALUES
@@ -870,7 +870,7 @@ INSERT INTO COMPANY VALUES
 , '1500', '5Á¶ 3300', 'sansung_eng', 'sansung_pass', '416-23-14621', null
 , 'https://i.namu.wiki/i/a7Zsczm_B5KEOTmWQwAWWiE5dOJvqzbdA9FTcIZVFcD1ItXXcDgqo9YoS15kTs05Fn-r6yChFZ58C9NQNhesmQ3qnz6_Imy3Kmpc399ApiQUfzCUKzE2__s8kRQDqCo4ulgIt60w40A9l6IxwXDmQw.svg'
 , '±èÀÎÁ÷', '¼ºÁØÈÄ', 'junhoo@sansungeng.com', '02-3711-6121'
-, 'º¹Áö-°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '±Ù¹«È¯°æ,50,1~3°³,20,°íÁ¹,30,5³âÂ÷ ÀÌ»ó,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- ÇÑÇÏ¿¡¾î·Î½ºÆäÀÌ½º
 INSERT INTO COMPANY VALUES
@@ -881,7 +881,7 @@ INSERT INTO COMPANY VALUES
 , '1200', '29Á¶ 3700', 'hanha_aero', 'hanha_pass', '477-29-30162', null
 , 'https://i.namu.wiki/i/ndJICJ1DRaket-J3So86GXRPeQQNYD8Hl1Rk0jBubNtz2ZyEdoOGEwvLIoilh53z23Fjf8oZny0S65SXPeUjt5d0gBuc278vBjTXLVvFbkQFB0MwwsOopZ3mOyyB7u_QsLsVfqE1JYNdkh_4i-Ic6Q.svg'
 , 'ÀÌÀåÈÆ', '¹Ú¸í¼®', 'park@hanhaaero.com', '02-5568-9012'
-, '¿ö¶óº§-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '¿ö¶óº§,60,1~3°³,40,ÃÊ´ëÁ¹,0,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- BMK±ÝÀ¶ÁöÁÖ
 INSERT INTO COMPANY VALUES
@@ -892,7 +892,7 @@ INSERT INTO COMPANY VALUES
 , '4500', '18Á¶ 7800', 'bmk_finance', 'bmk_pass', '416-23-67621', null
 , 'https://i.namu.wiki/i/Vn_htIQrKttNzjIOEgOH37vh7ZQQ7lRg0QsWNVQ2DYAcs9A9iBCtXwpj2wRetcXId_HUit6vS1r_1iyMxgk1DWamkz76Tzn9v0Y5sxIK64ddgJSJFUVvPV3JTIF1PN1_BqdL7pf01Qr34fvlieBQXw.svg'
 , '¹ÚÇöÁØ', 'ÃÖÁø¼º', 'choi@bmkgroup.com', '02-7890-3661'
-, '°æ¿µÁø-±Þ¿©', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, 'º¹Áö,40,3°³ ÀÌ»ó,20,°íÁ¹,40,5³âÂ÷ ÀÌ»ó,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- È£¼±Æ¼¾Ø¾¾
 INSERT INTO COMPANY VALUES
@@ -903,7 +903,7 @@ INSERT INTO COMPANY VALUES
 , '800', '7500', 'hostea_co', 'hostea_pass', '477-29-00162', null
 , 'https://i.namu.wiki/i/7XFK1Cv7Lq2pG4AA5axqykY8n9easGYddVf-7OmxSZp59DuvwhOFMiq6wFoFF-gJ7zzh-cxf0X7aMOkwVj0MOAv6C0e2WTDdpnGRcAoOmLNhiLsDWT4WR6vZ7DwOHdtKJtRwEQeqkwXeXpCP_cbZqQ.svg'
 , '±èÈÆ', 'ÀÌÀ±¼ö', 'lee@hostea.com', '02-2345-6789'
-, 'º¹Áö-¿ö¶óº§', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, 'º¹Áö-±Ù¹«È¯°æ,25,3°³ ÀÌ»ó,15,ÃÊ´ëÁ¹,60,3~5³âÂ÷,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- º¸½ºÄÚÀÎÅÍ³»¼Å³Î
 INSERT INTO COMPANY VALUES
@@ -914,7 +914,7 @@ INSERT INTO COMPANY VALUES
 , '1200', '1Á¶ 8300', 'bosco_int', 'bosco_pass', '416-23-33621', null
 , 'https://i.namu.wiki/i/feGvJKaLZfEkV-yTlOJDmxo5VEoY6vV8INKXy3Yz5QCLLOiz_Rda9L3Q1IqcPH5S0HAgqmSxinFZYWdmYiZIpTOKot-hXFk7EgDsqqS5jgHzzi1naiXLB2nPx_5OJYvwz_KVsi4pXh4PrQ58YgQt9Q.svg'
 , 'ÀÌº¸Èñ', '±èÀ±', 'ky02@bosco.com', '02-9876-5432'
-, 'º¹Áö-°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '°æ¿µÁø-¿ö¶óº§,10,1°³ ÀÌÇÏ,5,°íÁ¹,85,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- ÇÑÇÏ
 INSERT INTO COMPANY VALUES
@@ -924,7 +924,7 @@ INSERT INTO COMPANY VALUES
 , '2500', '8Á¶ 7700', 'hanha_group', 'hanha_pass', '477-29-90162', null
 , 'https://i.namu.wiki/i/HqWRMUo1ihw34U4um_NZUwOgFM7OkhGS54zyt9JCRzp4_wxW3XjhN8Ap1Yu7y1XF61zyqhofTY-YZHKQisCBbwHiOWb9cN6ezDVZusOZs0_0pOHHG6EcUTYRhiNzx_S47cUoUYQXz4QwFMlBfGkPTA.svg'
 , '±èÇÑÇÏ', '¹Úº´Çå', 'bbh1009@hanha.com', '02-3456-7890'
-, 'º¹Áö-±Þ¿©', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, 'º¹Áö-¿ö¶óº§,35,1°³ ÀÌÇÏ,10,´ëÁ¹,55,5³âÂ÷ ÀÌ»ó,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- ¿¤¾Ø¿¡ÀÌ
 INSERT INTO COMPANY VALUES
@@ -935,7 +935,7 @@ INSERT INTO COMPANY VALUES
 , '1800', '4Á¶ 6800', 'lna_ad', 'lna_pass', '416-23-77621', null
 , 'https://i.namu.wiki/i/77aGZ8nlBblHep4q0ZjYAbuIneNqr3K5H3fEvgTPRQRt60lSqkWKLpZ1ecK51NDwHzI4g6J3_20gRsy2lsHRNo-gO7ZiEJS5qU5k-ruujLlEJNtrqz9Y_2RysXN_SWdCr5kUpYT8n_nyjw_BZkrWiw.webp'
 , '±èÈñ¿ø', 'ÀÌÁ¤ÈÆ', 'wjdgns112@lna.com', '02-5678-9012'
-, '¿ö¶óº§-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '±Þ¿©-±Ù¹«È¯°æ,45,1°³ ÀÌÇÏ,30,°íÁ¹,25,3~5³âÂ÷,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- SH°¡½º
 INSERT INTO COMPANY VALUES
@@ -946,7 +946,7 @@ INSERT INTO COMPANY VALUES
 , '1200', '2Á¶ 5500', 'sh_gas', 'sh_pass', '477-29-40162', null
 , 'https://i.namu.wiki/i/duJLxLWZXoswdZGRI0d-XYcr5GMF-CaFQtA8BEwaN7ZNv851FVsSmnRTqiI02T44YT1kOxNwTmt4vALs0MfqscM_yQS-jff26Zj7mv-gUXhJagOQfccrMjcsZ9HFtzQnGRUDbX-MM7ZTRxWz_o6cTA.svg'
 , 'ÁøÇü±â', '¹Ú¹®Çõ', 'parkmoon0216@shgas.com', '02-7890-1330'
-, 'º¹Áö-°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '°æ¿µÁø-º¹Áö,10,3°³ ÀÌ»ó,40,ÃÊ´ëÁ¹,50,5³âÂ÷ ÀÌ»ó,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- TJÁ¦ÀÏÁ¦´ç
 INSERT INTO COMPANY VALUES
@@ -957,7 +957,7 @@ INSERT INTO COMPANY VALUES
 , '2000', '10Á¶ 8000', 'tjjedang', 'tjjedang_pass', '423-75-61789', null
 , 'https://i.namu.wiki/i/C0NZgdYIJtqfphc_Ps43a6-zU6IZf0lAw25PWsDSvtl5rSHZvsVSUdQP55yBWFXMfUbXC5zZzEuP7PD1inbIHUCTpGb6Jz02f5XyQBNT9f8XB4_WakJXbCe9Na__KheVj4-6kbCzauSv8hE7pFqViA.svg'
 , '±èÀü±Ô', 'ÀÌ½ÅÇü', 'shin0706@tjjedang.com', '02-1520-5611'
-, '¿ö¶óº§-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '¿ö¶óº§,30,1°³ ÀÌÇÏ,60,´ëÁ¹,10,3~5³âÂ÷,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- KRÅ¸ÀÌ¾î¾ØÅ×Å©³î·ÎÁö
 INSERT INTO COMPANY VALUES
@@ -967,7 +967,7 @@ INSERT INTO COMPANY VALUES
 , '1500', '35Á¶ 2100', 'krtntech', 'krtntech_pass', '423-48-16289', null
 , 'https://i.namu.wiki/i/ZkLRPk3W_v0YyoLA3yQ2Z69jIvyEhzyrLO1s01aWrtYSXZJv3k3Oxs0m-9SjdnJHgQj6YIQSjqIjpB2NrBnW2yYn2invRfIBmgffz4kAXREkvL8UB0gbYVDHGgQVMkPH2pq2_M0vLGCGN4kG6nif_Q.svg'
 , '¼º½Â±Ô', '±èÁø¿í', 'Jinwok76@krtntech.com', '02-2712-6711'
-, '¿ö¶óº§-±Ù¹«È¯°æ', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '±Ù¹«È¯°æ-°æ¿µÁø,20,3°³ ÀÌ»ó,30,°íÁ¹,50,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- ¸¶Ä«¿À¹ðÅ©
 INSERT INTO COMPANY VALUES
@@ -977,7 +977,7 @@ INSERT INTO COMPANY VALUES
 , '2500', '8Á¶ 1500', 'macau_bank', 'macau_pass', '477-29-50162', null
 , 'https://i.namu.wiki/i/LS___r8IvwBM0yUOloXjEaQfIU3g4e_BYmuoJGE3wmtaESExYpODN2McY_K9FIiDLPZH2EGsAnmLG7XAi3cdplh41luMmzLZtuj-7Sy5o3_z5-rPdL9zor1mPsKVYIP2nVH5xo84MHFEmU9Hq_XFhA.svg'
 , '±è¼ö¿¬', '¹ÚÁÖ¿¬', 'park@macaubank.com', '02-7526-7801'
-, '±Þ¿©-°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '±Þ¿©,60,1°³ ÀÌÇÏ,20,ÃÊ´ëÁ¹,20,5³âÂ÷ ÀÌ»ó,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 -- Àü¿ì°Ç¼³
 INSERT INTO COMPANY VALUES
@@ -987,7 +987,7 @@ INSERT INTO COMPANY VALUES
 , '1800', '4Á¶ 6500', 'jwon_construction', 'jwon_pass', '416-73-21621', null
 , 'https://i.namu.wiki/i/Qndyz0wMecw0F7_6Uymug1PNMoPE1Ps2AGlJK2wsvmy5QDLeuw4cWpo6fN14eghZOIC9nAeaLjO1fbP3S8yWGVYi3fIxBpRSzjV2tjFmLjbkEe-qbuPFOsiGo4eoQFwbgIYajqg2uZqnmBViYjii4g.svg'
 , '¹Ú°Ç¿ì', 'ÀÌÀÎÇõ', 'leeih@jwonconstruction.com', '02-5678-9012'
-, 'º¹Áö-¿ö¶óº§', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, '¿ö¶óº§-º¹Áö,40,3°³ ÀÌ»ó,10,´ëÁ¹,50,3³âÂ÷ ÀÌÇÏ,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 
 -- µð¿¤ENC
@@ -999,7 +999,7 @@ INSERT INTO COMPANY VALUES
 , '3500', '3Á¶ 5300', 'dl_enc', 'dl_pass', '468-56-52120', null
 , 'https://i.namu.wiki/i/n5I4Z1U_dbjVZuKL-H8_ctqBLw2phL4OoaXKV5_BHABcVnRzOWrC1DZtQ52XkRZ2-Q-ygp-EE8SUzdY7XFLuB1jAEnnt9T-kDRgP7IXHmO7g_1EYCZnt9NuyWHBF8IgLdgupWHYibI_aYreTRfoMpQ.svg'
 , 'ÁøÇö¼ö', 'ÀÌ±âÈÆ', 'leekh@dlenc.com', '02-3116-7210'
-, 'º¹Áö-°æ¿µÁø', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
+, 'º¹Áö-±Ù¹«È¯°æ,30,1°³ ÀÌÇÏ,30,°íÁ¹,40,3~5³âÂ÷,0', 6, SYSDATE, SYSDATE, SYSDATE, SYSDATE);
 
 
 COMMIT;
@@ -4424,7 +4424,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '½É¼º¸Ç', '½É¼ºÀüÀÚ', 'Á÷Àå¿¡¼­ÀÇ ±³ÈÆ: ¹è¿î °Í
     , SYSDATE-1, SYSDATE, 1, 0, 0);
 
 
-UPDATE COMPANY
-SET COMPANY_PREFER = '°æ¿µÁø-¿ö¶óº§,40,1°³ ÀÌÇÏ,25,ÃÊ´ëÁ¹,20,3³âÂ÷ ÀÌÇÏ,15';
+--UPDATE COMPANY
+--SET COMPANY_PREFER = '°æ¿µÁø-¿ö¶óº§,40,1°³ ÀÌÇÏ,25,ÃÊ´ëÁ¹,20,3³âÂ÷ ÀÌÇÏ,15';
 
 COMMIT;

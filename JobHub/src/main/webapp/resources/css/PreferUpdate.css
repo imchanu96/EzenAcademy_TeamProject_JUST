@@ -57,9 +57,9 @@
 }
 #preferItemsBox {
 	background-color: #fff;
-    padding: 20px;
+    padding: 20px 60px;
     border-radius: 10px;
-    width: 870px;
+    width: 790px;
     height: 250px;
     margin: 35px;
     color: #5c667b;
@@ -67,7 +67,7 @@
 }
 .preferItems {
     line-height: 50px;
-    width: 850px;
+    width: 750px;
     height: 50px;
     margin-left: 15px;
     margin-bottom: 14px;
@@ -85,7 +85,7 @@
 	font-size: 16px;
 }
 .weightingPercentage {
-	float: right;
+	float: left;
 	width: 250px;
     font-size: 18px;
 }
@@ -93,6 +93,7 @@
 	float: left;
 	width: 200px;
     font-size: 14px;
+    margin-right: 70px;
 }
 input[type=button] {
     width: 90px;

@@ -167,7 +167,7 @@
             내 선호도
             <span id="warningMsg" style="color:red; margin:auto; display: none;">적합도 합이 100%가 아닙니다.</span>
             <span id="totalRate">
-               총 적합도 : ${fn:trim(preferList[1]) + fn:trim(preferList[3]) + fn:trim(preferList[5]) + fn:trim(preferList[7])}%
+               총 가중치 : ${fn:trim(preferList[1]) + fn:trim(preferList[3]) + fn:trim(preferList[5]) + fn:trim(preferList[7])}%
             </span>
          </div>
 
@@ -190,7 +190,6 @@
                   <input type="text" class="preferListRate" id="keywordValue" value="${fn:trim(preferList[1])}"
                         readonly="readonly" onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
                </div>
-               %
             </div>
             
             <div class="preferItems">
@@ -208,7 +207,6 @@
                   <input type="text" class="preferListRate" id="licenseValue" value="${fn:trim(preferList[3])}"
                         readonly="readonly" onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
                </div>
-               %
             </div>
             
             <div class="preferItems">
@@ -226,7 +224,6 @@
                   <input type="text" class="preferListRate" id="educationValue" value="${fn:trim(preferList[5])}"
                      readonly="readonly" onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
                </div>
-               %
             </div>
             
             <div class="preferItems">
@@ -244,7 +241,6 @@
                   <input type="text" class="preferListRate" id="careerValue" value="${fn:trim(preferList[7])}"
                         readonly="readonly" onfocus="inputFocusFnc();" onblur="inputBlurFnc();">
                </div>
-               %
             </div>
             
          </div>

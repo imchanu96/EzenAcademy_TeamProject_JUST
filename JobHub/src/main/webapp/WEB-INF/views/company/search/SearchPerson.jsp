@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>JobHub : 인재 찾기</title>
+<title>JobHub : 인재 검색</title>
 <script type="text/javascript" src="/JobHub/resources/js/SearchPerson.js"></script>
 <link rel="stylesheet" href="/JobHub/resources/css/SearchPerson.css" type="text/css">
 
@@ -24,7 +24,7 @@
 		<div id="navigation">
 			<div id="smallMenuBox">
 				<div class="smallMenuItem">
-					<a href="#">인재 찾기</a>
+					<a href="#">인재 검색</a>
 				</div>
 <!-- 				<div class="smallMenuItem"> -->
 <!-- 					<a href="">리뷰 작성</a> -->
@@ -39,12 +39,12 @@
 			<input type="hidden" name="comNo" value="${sessionScope.companyMemberDto.comNo}">
 				<div id="searchBox">
 					<div id="titleBox">
-						<p>인재 찾기</p>
+						<p>인재 검색</p>
 					</div>
 					<div id="conditionBox">
 						<div class="condition">
 							<div class="conditionTitleBox">
-								<input type="checkbox" value="체크!" onclick="activeRadioFnc(this, 'talentScore');" checked="checked"> 인재 점수
+								<input type="checkbox" value="체크!" onclick="activeRadioFnc(this, 'talentScore');" checked="checked"> 매칭률
 							</div>
 							<div class="radioBox">
 								<input type="radio" name="talentScore" class="radioBtn" value="60">
@@ -97,7 +97,11 @@
 					</div>
 					<div id="inputBox">
 						<select id="search" name="search">
+<<<<<<< HEAD
 							<option value="PER.RECOMMEND_TOTAL_RATE">인재 점수</option>
+=======
+							<option value="인재 점수">매칭률</option>
+>>>>>>> branch 'main' of https://github.com/noohij/Ezen_TeamProject_JUST.git
 							<option value="경력">경력</option>
 							<option value="RESUME.RESUME_EDUCATION_NAME">학교명</option>
 							<option value="RESUME.RESUME_LICENSE_NAME">자격증</option>
@@ -107,7 +111,7 @@
 					</div>
 					<button class="helpButton">
 						<div id="helpText">
-							- 상세 검색 경력(년차 검색) <br> - 최종 학력(특정 교육기관 검색) <br> -
+							- 상세 검색 경력(연차 검색) <br> - 최종 학력(특정 교육기관 검색) <br> -
 							자격증(특정 자격증 검색) <br>
 						</div>
 						<img class="helpButton" alt="도움말" onmouseover="helpFnc(this);"
@@ -257,20 +261,23 @@
 								<div style="width: 150px; height: 140px; float: left;">
 									<div id="imgBox">
 										<img alt=""
-											src="https://www.fnnews.com/resource/media/image/2023/08/29/202308291128014614_l.jpg">
+											src="/JobHub/resources/img/user.jpg">
 									</div>
 									<div id="pNameBox">${personalInfo.perName}</div>
 								</div>
 								<div id="infoBox">
-									<div id="companyBox">현재 "${personalInfo.currentCompany}" 재직중</div>
+									<div id="companyBox">${personalInfo.currentCompany} 재직 중</div>
 									<div id="highTestEduBox">최종 학력 :
 										<span id="HighestEdu">${eduArr[0]}</span></div>
 									<div id="licenseCountBox">자격증 :
 										${personalInfo.perLicenseCount}개</div>
 								</div>
 								
-								<div id="" style="width: 100px; float: left; margin-right: 50px;">
-								적합도 ${personalInfo.recommendTotalRate}%</div>
+								<div id="scoreBox">
+									<div id="scoreTitle">적합도</div>
+									<div id="scoreNumber">${personalInfo.recommendTotalRate}</div>
+									<div id="percentage">&nbsp;%</div>
+								</div>
 
 								
 								<div id="buttonBox" style="float: left;">

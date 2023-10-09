@@ -53,7 +53,7 @@
 				
 					<div id="IDandPwd_Box">
 						<div class="ID_Box">
-							<input type="text" id="idInput" name="comCode" placeholder="사업자 등록번호 '-' 포함"
+							<input type="text" id="idInput" name="comCode" placeholder="사업자등록번호 ( '-' 포함)"
 								onfocus="idInputFocusFnc();" onblur="idInputBlurFnc();">
 						</div>
 					

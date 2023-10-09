@@ -114,23 +114,19 @@ tr td {
 						onclick="location.href='./showLetter.do?perNo=${personalMemberDto.perNo}';">돌아가기</button>
 					<div>
 						<div class="letterItemTitle">성장 배경</div>
-						<textarea class="letterValue" name="history">${letterDto.history}
-						</textarea>
+						<textarea class="letterValue" name="history">${letterDto.history}</textarea>
 					</div>
 					<div>
 						<div class="letterItemTitle">지원 동기</div>
-						<textarea class="letterValue" name="motivation">${letterDto.motivation}
-						</textarea>
+						<textarea class="letterValue" name="motivation">${letterDto.motivation}</textarea>
 					</div>
 					<div>
 						<div class="letterItemTitle">성격의 장단점</div>
-						<textarea class="letterValue" name="character">${letterDto.character}
-						</textarea>
+						<textarea class="letterValue" name="character">${letterDto.character}</textarea>
 					</div>
 					<div>
 						<div class="letterItemTitle">목표</div>
-						<textarea class="letterValue" name="goal">${letterDto.goal}
-						</textarea>
+						<textarea class="letterValue" name="goal">${letterDto.goal}</textarea>
 					</div>
 					<input type="hidden" name="resumeNo" value="${resumeDto.resumeNo}">
 					<input type="hidden" name="perNo" value="${sessionScope.personalMemberDto.perNo}">
