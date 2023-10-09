@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.company.service.CompanyMemberService;
 import com.jobhub.personal.dto.PersonalMemberDto;
+import com.jobhub.review.util.CompanyMemberPaging;
 
 @Controller
 public class CompanyMemberController {
@@ -179,7 +180,18 @@ public class CompanyMemberController {
 				+ careerScore + "학력" + educationScore + "자격증"
 				+ licenseScore + search + searchText);
 
-//		int totalCount = adminService.memberSelectTotalCount();
+		
+//		int totalCount = reviewService.companyMemberSelectTotalCount();
+//
+//		CompanyMemberPaging companyMemberPaging = new CompanyMemberPaging(totalCount, curPage);
+//		
+//		PersonalMemberDto personalMemberDto = (PersonalMemberDto)session.getAttribute("personalMemberDto");
+//		
+//		int start = companyMemberPaging.getPageBegin();
+//		int end = companyMemberPaging.getPageEnd();
+		
+		
+
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("comNo", comNo);
 		map.put("talentScore", talentScore);

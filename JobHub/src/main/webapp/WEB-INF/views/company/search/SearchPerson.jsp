@@ -97,10 +97,10 @@
 					</div>
 					<div id="inputBox">
 						<select id="search" name="search">
-							<option value="인재 점수">인재 점수</option>
+							<option value="PER.RECOMMEND_TOTAL_RATE">인재 점수</option>
 							<option value="경력">경력</option>
-							<option value="R.RESUME_EDUCATION_NAME">학교명</option>
-							<option value="R.RESUME_LICENSE_NAME">자격증</option>
+							<option value="RESUME.RESUME_EDUCATION_NAME">학교명</option>
+							<option value="RESUME.RESUME_LICENSE_NAME">자격증</option>
 						</select>
 						<input type="text" name="searchText" id="textInput">
 						<input type="submit" value="검색" class="button">
@@ -234,13 +234,19 @@
 				</div>
 
 			</div>
-			
-			<c:if test='${personalInfoList == null}'>
-				<div id="noLetterResumeAlert">
-					마이페이지에서 우리 기업이 선호하는 키워드를 설정해주세요.
-				</div>
+			<c:if test='${companyMemberDto == null}'>
+				<c:if test='${personalInfoList.comPrefer == null}'>
+					<div id="noLetterResumeAlert">
+						마이페이지에서 우리 기업이 선호하는 키워드를 설정해주세요.
+					</div>
+				</c:if>
+				
 			</c:if>
-			
+			<c:if test='${personalInfoList == "[]"}'>
+						<div id="noLetterResumeAlert">
+							검색 결과가 없습니다.
+						</div>
+			</c:if>
 			<c:if test='${personalInfoList != null}'>
 				<c:forEach var="personalInfo" items="${personalInfoList}">
 					<c:set var="eduArr" value="${fn:split(personalInfo.perHighestEdu, ',')}"/>
@@ -278,7 +284,18 @@
 						</div>
 				</c:forEach>
 			</c:if>
+			<c:if test="${personalInfoList != '[]'}">
+					<jsp:include page="/WEB-INF/views/company/search/SearchPersonPaging.jsp">
+						<jsp:param value="${pagingMap}" name="pagingMap"/>
+					</jsp:include>
+				
+					<form action="./companyMemberList.do" id="pagingForm" method="post">
+						<input type="hidden" id="curPage" name="curPage"
+							value="${pagingMap.searchPaging.curPage}">
+					</form>
+			</c:if>
 		</div>
+
 		<!-- end of content -->
 	</div>
 	<jsp:include page="/WEB-INF/views/Tail.jsp" />
