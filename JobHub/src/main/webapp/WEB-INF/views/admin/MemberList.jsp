@@ -44,13 +44,13 @@
 		<form action="memberUpdate.do" method="get">
 		<table>
 			<tr>
-				<th style="width: 10%;">회원 번호</th>
-				<th style="width: 20%;">회원 이름</th>
-				<th style="width: 15%;">회원 아이디</th>
-				<th style="width: 10%;">회원 닉네임</th>
-				<th style="width: 15%;">권한 레벨</th>
-				<th style="width: 15%;">생성 일</th>
-				<th style="width: 15%;">수정 일</th>
+				<th style="width: 10%; background-color: #a1a1a1">회원 번호</th>
+				<th style="width: 20%; background-color: #a1a1a1">회원 이름</th>
+				<th style="width: 15%; background-color: #a1a1a1">회원 아이디</th>
+				<th style="width: 10%; background-color: #a1a1a1">회원 닉네임</th>
+				<th style="width: 15%; background-color: #a1a1a1">권한 레벨</th>
+				<th style="width: 15%; background-color: #a1a1a1">생성 일</th>
+				<th style="width: 15%; background-color: #a1a1a1">수정 일</th>
 			</tr>
 			<c:forEach var="personalDto" items="${personalList}">
 				<tr>

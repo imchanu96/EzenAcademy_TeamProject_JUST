@@ -24,22 +24,23 @@
 	<jsp:include page="./util/SideBar.jsp"></jsp:include>
 	<div id="tableDiv">
 		<form action="companyUpdate.do" method="get">
+		<span style="font-size: 22px; font-weight: bold;">[기업회원 목록]</span>
 		<table>
 			<tr>
-				<th style="width: 10%;">기업회원 번호</th>
-				<th style="width: 20%;">담당자 이름</th>
-				<th style="width: 15%;">회사 코드</th>
-				<th style="width: 10%;">회사명</th>
-				<th style="width: 15%;">권한 레벨</th>
-				<th style="width: 15%;">생성 일</th>
-				<th style="width: 15%;">수정 일</th>
+				<th style="width: 7%; background-color: #5A8FA0;">회원번호</th>
+				<th style="width: 10%; background-color: #5A8FA0;">담당자명</th>
+				<th style="width: 15%; background-color: #5A8FA0;">사업자번호</th>
+				<th style="width: 28%; background-color: #5A8FA0;">기업명</th>
+				<th style="width: 10%; background-color: #5A8FA0;">권한 레벨</th>
+				<th style="width: 15%; background-color: #5A8FA0;">가입일</th>
+				<th style="width: 15%; background-color: #5A8FA0;">최종수정일</th>
 			</tr>
 			<c:forEach var="companyMemberDto" items="${companyMemList}">
 				<tr>
-					<td>${companyMemberDto.comNo}</td>
-					<td>${companyMemberDto.comInChargeName}</td>
-					<td>${companyMemberDto.comCode}</td>
-					<td>${companyMemberDto.comName}</td>
+					<td style="text-align: center;">${companyMemberDto.comNo}</td>
+					<td style="text-align: center;">${companyMemberDto.comInChargeName}</td>
+					<td style="text-align: center;">${companyMemberDto.comCode}</td>
+					<td style="text-align: center;">${companyMemberDto.comName}</td>
 					<td>
 						<c:choose>
 							<c:when test="${companyMemberDto.comPermission == 0}">
@@ -50,12 +51,26 @@
 									</c:when>
 						</c:choose>
 					</td>
-					<td><fmt:formatDate pattern="yyyy-MM-dd" 
-						value="${companyMemberDto.comCreDate}" /></td>
-					<td><fmt:formatDate pattern="yyyy-MM-dd" 
-						value="${companyMemberDto.comModDate}" /></td>
-						<td><div><input type="button" value="삭제"
-							onclick="companyPermissionUpdateFnc(${companyMemberDto.comNo});"></div></td>
+					<td style="text-align: right;"><fmt:formatDate pattern="yyyy-MM-dd" 
+							value="${companyMemberDto.comCreDate}" />
+					</td>
+					<td style="text-align: right;"><fmt:formatDate pattern="yyyy-MM-dd" 
+							value="${companyMemberDto.comModDate}" />
+					</td>
+					<td>
+						<div>
+							<input type="button" value="삭제" style="background-color: #ff837e;
+																    border: none;
+																    border-radius: 12px;
+																    box-shadow: 0px 1px 4px 0px #ddd;
+																    font-size: 16px;
+																    font-weight: bold;
+																    color: #fff;
+																    cursor: pointer;
+																    margin: 5px;"
+								onclick="companyPermissionUpdateFnc(${companyMemberDto.comNo});">
+						</div>
+					</td>
 				</tr>
 			</c:forEach>
 		</table>

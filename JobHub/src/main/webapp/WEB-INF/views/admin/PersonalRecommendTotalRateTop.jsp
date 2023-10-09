@@ -32,13 +32,13 @@
 		<input type="button" value="확인">
 		<table>
 			<tr>
-				<th>회원 번호</th>
-				<th>회원 이름</th>
-				<th>재직중인 회사</th>
-				<th>평균 적합도</th>
+				<th style="background-color: #537DC9;">회원 번호</th>
+				<th style="background-color: #537DC9;">회원 이름</th>
+				<th style="background-color: #537DC9;">재직중인 회사</th>
+				<th style="background-color: #537DC9;">평균 적합도</th>
 			</tr>
 			<c:forEach var="personalRecommendDto" items="${personalRecommendRateList}">
-			<tr>
+			<tr style="height: 35px;">
 				<td>${personalRecommendDto.PERSONAL_NUMBER}</td>
 				<td>${personalRecommendDto.PERSONAL_NAME}</td>
 				<td>${personalRecommendDto.PERSONAL_COMPANY}</td>

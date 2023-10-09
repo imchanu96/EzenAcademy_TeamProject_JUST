@@ -54,6 +54,8 @@ public class ReviewController {
 			map.put("end", end);
 			map.put("perNo", personalMemberDto.getPerNo());
 			
+			System.out.println("personalMemberDto" + personalMemberDto);
+			
 			List<CompanyMemberDto> companyMemberList = reviewService.companyMemberSelectList(map);
 			System.out.println(companyMemberList);
 			HashMap<String, Object> pagingMap = new HashMap<>(); 

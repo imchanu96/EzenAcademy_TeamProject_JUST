@@ -7,14 +7,17 @@
 	table{
 		border: 1px solid black;
 		border-collapse: collapse;
-		font-size: 23px;
+		
 	}
 	th{
-		background: gray;
-		border: 1px solid black;
+/* 		background: #537DC9; */
+		border: 1px solid #d9d9d9;
+		font-size: 20px;
+		font-weight: bold;
+		color: #fff;
 	}
 	td{
-		border: 1px solid black;
-		font-size: 20px;
+		border: 1px solid #d9d9d9;
+		font-size: 18px;
 		
 	}

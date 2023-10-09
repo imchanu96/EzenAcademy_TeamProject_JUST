@@ -33,27 +33,44 @@
 		<input type="button" value="확인">
 		<table>
 			<tr>
-				<th >기업 번호</th>
-				<th >기업명</th>
-				<th >기업 키워드 선호도</th>
-				<th >기업 자격증 선호도</th>
-				<th >기업 학력 선호도</th>
-				<th >기업 경력 선호도</th>
-				<th >평균 적합도</th>
+				<th style="background-color: #5A8FA0;">기업 번호</th>
+				<th style="background-color: #5A8FA0;">기업명</th>
+				<th style="background-color: #5A8FA0;">기업 키워드 선호도</th>
+				<th style="background-color: #5A8FA0;">기업 자격증 선호도</th>
+				<th style="background-color: #5A8FA0;">기업 학력 선호도</th>
+				<th style="background-color: #5A8FA0;">기업 경력 선호도</th>
+				<th style="background-color: #5A8FA0;">평균 적합도</th>
 			</tr>
 			<c:forEach var="companyRecommendDto" items="${companyRecommendRateList}">
-			<c:set var="companyPrefer"
-				value="${fn:split(companyRecommendDto.COMPANY_PREFER, ',')}"/>
-			<tr>
-				<td>${companyRecommendDto.COMPANY_NUMBER}</td>
-				<td>${companyRecommendDto.COMPANY_NAME}</td>
-				<td>${companyPrefer[0]} &nbsp; ${companyPrefer[1]}%</td>
-				<td>${companyPrefer[2]} &nbsp; ${companyPrefer[3]}%</td>
-				<td>${companyPrefer[4]} &nbsp; ${companyPrefer[5]}%</td>
-				<td>${companyPrefer[6]} &nbsp; ${companyPrefer[7]}%</td>
-				<td>${companyRecommendDto.totalRateAvg}%</td>
-				
-			</tr>
+				<c:set var="companyPrefer"
+					value="${fn:split(companyRecommendDto.COMPANY_PREFER, ',')}"/>
+				<tr style="height: 35px;">
+					<td style="text-align: center;">
+						<span style="font-size: 15px;">${companyRecommendDto.COMPANY_NUMBER}</span>
+					</td>
+					<td>
+						<span style="font-size: 15px;">${companyRecommendDto.COMPANY_NAME}</span>
+					</td>
+					<td style="text-align: right;">
+						<span style="font-size: 15px;">${companyPrefer[0]}</span> &nbsp; 
+						<span style="font-weight: bold;">${companyPrefer[1]}%</span>
+					</td>
+					<td style="text-align: right;">
+						<span style="font-size: 15px;">${companyPrefer[2]}</span> &nbsp;
+						<span style="font-weight: bold;">${companyPrefer[3]}%</span>
+					</td>
+					<td style="text-align: right;">
+						<span style="font-size: 15px;">${companyPrefer[4]}</span> &nbsp;
+						<span style="font-weight: bold;">${companyPrefer[5]}%</span>
+					</td>
+					<td style="text-align: right;">
+						<span style="font-size: 15px;">${companyPrefer[6]}</span> &nbsp;
+						<span style="font-weight: bold;">${companyPrefer[7]}%</span>
+					</td>
+					<td style="text-align: right;">
+						<span style="font-weight: bold;">${companyRecommendDto.totalRateAvg}%</span>
+					</td>
+				</tr>
 			</c:forEach>	
 		</table>
 				

@@ -8,29 +8,38 @@
 <title>Insert title here</title>
 <style type="text/css">
 	#sideBarDiv{
-		width: 30%;
-		float:left;
+		width: 220px;
+		height: 700px;
+		float: left;
+		padding-left: 20px;
 	}
 	#sideBar{
 		list-style-type: none;
-		width: 170px;
-		height: 500px;
+		width: 200px;
+		height: 620px;
 		font-size: 30px;
-		text-align: center;
+		text-align: left;
 		padding-left: 0px;
-	}
-	li{
-		border: 1px solid blue;
 		border-radius: 5px;
-		background: aqua;
+		background: #ddd;
+		margin: 20px 0px;
+		font-size: 22px;
+		font-weight: bold;
+		
 	}
 	ol{
-/* 		border: 1px solid black; */
 		padding-left: 0px;
-		font-size: 20px;
+		font-size: 18px;
+		font-weight: normal;
  		display: none; 
+ 		cursor: pointer;
+ 		margin: 15px 0px;
+ 		border-bottom: 1px solid #fff;
 	}
-	
+	#tableDiv {
+		float: left;
+		margin-left: 100px;
+	}
 </style>
 
 <script type="text/javascript">
@@ -82,11 +91,11 @@
 				<ol class="boardMenuClass" style="display: block;">게시판 카테고리</ol>		
 			</li>
 			<li id="statisticsMenu" style="display: block;">통계
-				<ol class="statisticsMenuClass" style="display: block;">통계1</ol>
 				<ol class="statisticsMenuClass" style="display: block;"
-					 onclick="showPersonalTotalRateAverageFnc();">개인회원<br>적합도 TOP</ol>		
+					 onclick="showPersonalTotalRateAverageFnc();">개인회원 적합도 TOP</ol>		
 				<ol class="statisticsMenuClass" style="display: block;"
-					 onclick="showCompanyTotalRateAverageFnc();">기업회원<br>적합도 TOP</ol>
+					 onclick="showCompanyTotalRateAverageFnc();">기업회원 적합도 TOP</ol>
+				 <ol class="statisticsMenuClass" style="display: block;">통계 2</ol>
 			</li>
 			<li id="settingMenu" style="display: block;">환경 설정
 				<ol class="settingMenuClass" style="display: block;">환경 설정1</ol>
