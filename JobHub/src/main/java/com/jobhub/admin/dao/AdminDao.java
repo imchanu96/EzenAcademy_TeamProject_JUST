@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.jobhub.admin.dto.AdminDto;
+import com.jobhub.company.dto.CompanyMemberDto;
 import com.jobhub.personal.dto.PersonalMemberDto;
 
 public interface AdminDao {
@@ -23,6 +24,10 @@ public interface AdminDao {
 	public void setResume();
 
 	public void setRecommendRate();
+
+	List<PersonalMemberDto> personalRecommendTotalRateAverageTop();
+
+	List<CompanyMemberDto> companyRecommendTotalRateAverageTop();
 
 	
 

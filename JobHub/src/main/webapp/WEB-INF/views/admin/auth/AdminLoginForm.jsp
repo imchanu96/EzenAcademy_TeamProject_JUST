@@ -37,7 +37,7 @@
 					<div id="selectButton">
 					<div class="selectButton" style="margin-top: 40px;
 						height: 20px; text-align: center;">
-						<a style="text-decoration:none; font-size: 30px;">개발자 로그인</a>
+						<a style="text-decoration:none; font-size: 30px;">관리자 로그인</a>
 					</div>
 				</div> <!-- selectButton -->
 				<form action="loginCtr.do" method="post">

@@ -29,5 +29,9 @@ public interface AdminService {
 
 	public void setRecommendRate();
 
+	List<PersonalMemberDto> personalRecommendTotalRateAverageTop();
+
+	List<CompanyMemberDto> companyRecommendTotalRateAverageTop();
+
 	
 }

@@ -87,6 +87,18 @@ public class AdminServiceImpl implements AdminService{
 		adminDao.setRecommendRate();
 	}
 
+	@Override
+	public List<PersonalMemberDto> personalRecommendTotalRateAverageTop() {
+		// TODO Auto-generated method stub
+		return adminDao.personalRecommendTotalRateAverageTop();
+	}
+
+	@Override
+	public List<CompanyMemberDto> companyRecommendTotalRateAverageTop() {
+		// TODO Auto-generated method stub
+		return adminDao.companyRecommendTotalRateAverageTop();
+	}
+
 
 
 }

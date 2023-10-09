@@ -267,6 +267,20 @@ public class AdminDaoImpl implements AdminDao{
 	}
 
 
+	@Override
+	public List<PersonalMemberDto> personalRecommendTotalRateAverageTop() {
+		// TODO Auto-generated method stub
+		return sqlSession.selectList(namespace + "personalTotalRateTop");
+	}
+
+
+	@Override
+	public List<CompanyMemberDto> companyRecommendTotalRateAverageTop() {
+		// TODO Auto-generated method stub
+		return sqlSession.selectList(namespace + "companyTotalRateTop");
+	}
+
+
 
 
 }

@@ -61,6 +61,12 @@
 			break;
 		}
 	}
+	function showPersonalTotalRateAverageFnc() {
+		location.href = "./personalRecommendTotalRateAverageTop.do";
+	}
+	function showCompanyTotalRateAverageFnc() {
+		location.href = "./companyRecommendTotalRateAverageTop.do";
+	}
 </script>
 </head>
 <body>
@@ -77,8 +83,10 @@
 			</li>
 			<li id="statisticsMenu" style="display: block;">통계
 				<ol class="statisticsMenuClass" style="display: block;">통계1</ol>
-				<ol class="statisticsMenuClass" style="display: block;">통계2</ol>		
-				<ol class="statisticsMenuClass" style="display: block;">통계3</ol>
+				<ol class="statisticsMenuClass" style="display: block;"
+					 onclick="showPersonalTotalRateAverageFnc();">개인회원<br>적합도 TOP</ol>		
+				<ol class="statisticsMenuClass" style="display: block;"
+					 onclick="showCompanyTotalRateAverageFnc();">기업회원<br>적합도 TOP</ol>
 			</li>
 			<li id="settingMenu" style="display: block;">환경 설정
 				<ol class="settingMenuClass" style="display: block;">환경 설정1</ol>
