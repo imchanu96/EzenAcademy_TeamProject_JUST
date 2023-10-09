@@ -296,6 +296,8 @@ tr td {
 	border: 1px solid black;
 	border-radius: 5px;
 	font-size: 20px;
+	padding: 20px;
+	margin: 20px auto 30px auto;
 }
 #scoreBox {
 	width: 100px;
@@ -318,4 +320,16 @@ tr td {
 	width: 30px;
 	font-size: 17px;
 	line-height: 50px;
+}
+#letterModal > div {
+	font-size: 20px;
+	font-weight: bold;
+}
+#letterModal > div > div {
+	font-size: 18px;
+	font-weight: normal;
+}
+#letterModal > p {
+	font-size: 22px;
+	font-weight: bold;
 }
