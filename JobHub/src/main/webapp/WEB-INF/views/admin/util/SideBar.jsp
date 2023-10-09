@@ -16,10 +16,10 @@
 	#sideBar{
 		list-style-type: none;
 		width: 200px;
-		height: 620px;
 		font-size: 30px;
 		text-align: left;
-		padding-left: 0px;
+/* 		padding-left: 0px; */
+		padding: 30px 0px 30px 0px;
 		border-radius: 5px;
 		background: #ddd;
 		margin: 20px 0px;
@@ -81,27 +81,27 @@
 <body>
 	<div id="sideBarDiv">
 		<ul id="sideBar">
-			<li id="userMenu" style="display: block;">사용자
+			<li id="userMenu" style="display: block;">회원 관리
 				<ol class="userMenuClass" style="display: block;" onclick="lookMemberList('all');">전체 회원</ol>
 				<ol class="userMenuClass" style="display: block;" onclick="lookMemberList('personal');">개인 회원</ol>		
 				<ol class="userMenuClass" style="display: block;" onclick="lookMemberList('company');">기업 회원</ol>
 			</li>
-			<li id="boardMenu" style="display: block;">게시판
-				<ol class="boardMenuClass" style="display: block;">게시판 리스트</ol>
-				<ol class="boardMenuClass" style="display: block;">게시판 카테고리</ol>		
-			</li>
-			<li id="statisticsMenu" style="display: block;">통계
+<!-- 			<li id="boardMenu" style="display: block;">게시판 관리 -->
+<!-- 				<ol class="boardMenuClass" style="display: block;">게시판 리스트</ol> -->
+<!-- 				<ol class="boardMenuClass" style="display: block;">게시판 카테고리</ol>		 -->
+<!-- 			</li> -->
+			<li id="statisticsMenu" style="display: block; margin-top: 30px;">통계
 				<ol class="statisticsMenuClass" style="display: block;"
 					 onclick="showPersonalTotalRateAverageFnc();">개인회원 적합도 TOP</ol>		
 				<ol class="statisticsMenuClass" style="display: block;"
 					 onclick="showCompanyTotalRateAverageFnc();">기업회원 적합도 TOP</ol>
-				 <ol class="statisticsMenuClass" style="display: block;">통계 2</ol>
+<!-- 				 <ol class="statisticsMenuClass" style="display: block;">통계 2</ol> -->
 			</li>
-			<li id="settingMenu" style="display: block;">환경 설정
-				<ol class="settingMenuClass" style="display: block;">환경 설정1</ol>
-				<ol class="settingMenuClass" style="display: block;">환경 설정2</ol>		
-				<ol class="settingMenuClass" style="display: block;">환경 설정3</ol>
-			</li>
+<!-- 			<li id="settingMenu" style="display: block;">환경 설정 -->
+<!-- 				<ol class="settingMenuClass" style="display: block;">환경 설정1</ol> -->
+<!-- 				<ol class="settingMenuClass" style="display: block;">환경 설정2</ol>		 -->
+<!-- 				<ol class="settingMenuClass" style="display: block;">환경 설정3</ol> -->
+<!-- 			</li> -->
 		</ul>
 	</div>
 	

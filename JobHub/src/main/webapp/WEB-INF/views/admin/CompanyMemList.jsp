@@ -27,13 +27,14 @@
 		<span style="font-size: 22px; font-weight: bold;">[기업회원 목록]</span>
 		<table>
 			<tr>
-				<th style="width: 7%; background-color: #5A8FA0;">회원번호</th>
+				<th style="width: 10%; background-color: #5A8FA0;">회원번호</th>
 				<th style="width: 10%; background-color: #5A8FA0;">담당자명</th>
 				<th style="width: 15%; background-color: #5A8FA0;">사업자번호</th>
 				<th style="width: 28%; background-color: #5A8FA0;">기업명</th>
 				<th style="width: 10%; background-color: #5A8FA0;">권한 레벨</th>
-				<th style="width: 15%; background-color: #5A8FA0;">가입일</th>
-				<th style="width: 15%; background-color: #5A8FA0;">최종수정일</th>
+				<th style="width: 10%; background-color: #5A8FA0;">가입일</th>
+				<th style="width: 10%; background-color: #5A8FA0;">최종수정일</th>
+				<th style="width: 3%; background-color: #5A8FA0;">삭제</th>
 			</tr>
 			<c:forEach var="companyMemberDto" items="${companyMemList}">
 				<tr>
@@ -41,13 +42,15 @@
 					<td style="text-align: center;">${companyMemberDto.comInChargeName}</td>
 					<td style="text-align: center;">${companyMemberDto.comCode}</td>
 					<td style="text-align: center;">${companyMemberDto.comName}</td>
-					<td>
+					<td style="text-align: right;">
 						<c:choose>
 							<c:when test="${companyMemberDto.comPermission == 0}">
-								탈퇴 회원
+								탈퇴 회원 
 									</c:when>
-							<c:when test="${companyMemberDto.comPermission == 5}">
+							<c:when test="${companyMemberDto.comPermission == 5
+										|| companyMemberDto.comPermission == 6}">
 								기업 회원
+								${companyMemberDto.comPermission} &nbsp;
 									</c:when>
 						</c:choose>
 					</td>

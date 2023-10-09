@@ -42,44 +42,49 @@
 		</div>
 		<p>${myMsg}</p>
 		<form action="memberUpdate.do" method="get">
+		<span style="font-size: 22px; font-weight: bold;">[전체회원 목록]</span>
 		<table>
 			<tr>
 				<th style="width: 10%; background-color: #a1a1a1">회원 번호</th>
-				<th style="width: 20%; background-color: #a1a1a1">회원 이름</th>
+				<th style="width: 10%; background-color: #a1a1a1">회원 이름</th>
 				<th style="width: 15%; background-color: #a1a1a1">회원 아이디</th>
-				<th style="width: 10%; background-color: #a1a1a1">회원 닉네임</th>
+				<th style="width: 20%; background-color: #a1a1a1">회원 닉네임</th>
 				<th style="width: 15%; background-color: #a1a1a1">권한 레벨</th>
-				<th style="width: 15%; background-color: #a1a1a1">생성 일</th>
-				<th style="width: 15%; background-color: #a1a1a1">수정 일</th>
+				<th style="width: 15%; background-color: #a1a1a1">생성일</th>
+				<th style="width: 15%; background-color: #a1a1a1">수정일</th>
 			</tr>
 			<c:forEach var="personalDto" items="${personalList}">
 				<tr>
-					<td>${personalDto.perNo}</td>
-					<td>${personalDto.perName}</td>
-					<td>${personalDto.perId}</td>
-					<td>${personalDto.perNickname}</td>
-					<td>
+					<td style="text-align: center;">${personalDto.perNo}</td>
+					<td style="text-align: center;">${personalDto.perName}</td>
+					<td style="text-align: center;">${personalDto.perId}</td>
+					<td style="text-align: center;">${personalDto.perNickname}</td>
+					<td style="text-align: center;">
 						<c:choose>
 							<c:when test="${companyMemberDto.comPermission == 0
 								|| personalDto.perPermission == 0}">
-										탈퇴 회원
+										탈퇴 회원 
 									</c:when>
 							<c:when test="${personalDto.perPermission == 1 
 								|| personalDto.perPermission == 2}">
-										개인 회원
+										개인 회원 
 									</c:when>
 							<c:when test="${personalDto.perPermission == 5}">
-										기업 회원
+										기업 회원 
 									</c:when>
 							<c:when test="${personalDto.perPermission == 10}">
-										관리자
+										관리자 
 									</c:when>
 						</c:choose>
 					</td>
-					<td><fmt:formatDate pattern="yyyy-MM-dd" 
-						value="${personalDto.perCreateDate}" /></td>
-					<td><fmt:formatDate pattern="yyyy-MM-dd" 
-						value="${personalDto.perModifyDate}" /></td>
+					<td style="text-align: right;">
+						<fmt:formatDate pattern="yyyy-MM-dd" 
+							value="${personalDto.perCreateDate}" />
+						</td>
+					<td style="text-align: right;">
+						<fmt:formatDate pattern="yyyy-MM-dd" 
+							value="${personalDto.perModifyDate}" />
+					</td>
 <!-- 					<td> -->
 <!-- 						<div> -->
 <%-- 							<c:choose> --%>

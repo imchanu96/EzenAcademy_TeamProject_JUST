@@ -31,9 +31,10 @@
 				<th style="width: 10%; background-color: #537DC9;">이름</th>
 				<th style="width: 15%; background-color: #537DC9;">아이디</th>
 				<th style="width: 20%; background-color: #537DC9;">닉네임</th>
-				<th style="width: 15%; background-color: #537DC9;">권한 레벨</th>
-				<th style="width: 15%; background-color: #537DC9;">생성일</th>
-				<th style="width: 15%; background-color: #537DC9;">수정일</th>
+				<th style="width: 10%; background-color: #537DC9;">권한 레벨</th>
+				<th style="width: 10%; background-color: #537DC9;">가입일</th>
+				<th style="width: 10%; background-color: #537DC9;">최종수정일</th>
+				<th style="width: 3%; background-color: #537DC9;">삭제</th>
 			</tr>
 			<c:forEach var="personalDto" items="${personalList}">
 				<tr>
@@ -41,22 +42,24 @@
 					<td style="text-align: center;">${personalDto.perName}</td>
 					<td style="text-align: center;">${personalDto.perId}</td>
 					<td style="text-align: center;">${personalDto.perNickname}</td>
-					<td style="text-align: right;">${personalDto.perPermission}
+					<td style="text-align: right;">
 						<c:choose>
 							<c:when test="${personalDto.perPermission == 0}">
 										탈퇴 회원
 									</c:when>
 							<c:when test="${personalDto.perPermission == 1 
-											|| personalDto.perPermission == 2}">
-										개인 회원
+											|| personalDto.perPermission == 2
+											|| personalDto.perPermission == 3}">
+										개인 회원 
 									</c:when>
 							<c:when test="${personalDto.perPermission == 5}">
-										기업 회원
+										기업 회원 
 									</c:when>
 							<c:when test="${personalDto.perPermission == 10}">
-										관리자
+										관리자 
 									</c:when>
 						</c:choose>
+						${personalDto.perPermission} &nbsp;
 					</td>
 					<td style="text-align: right;"><fmt:formatDate pattern="yyyy-MM-dd" 
 						value="${personalDto.perCreateDate}" />
