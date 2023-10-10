@@ -41,7 +41,7 @@
 		                	<if test="perNo != null and search != null">
 		                		AND
 		                	</if>
-			                <if test="search != null">
+			                <if test="search != null and searchText != null">
 			                	<![CDATA[${search} LIKE '%${searchText}%']]>
 			                </if>
 		                </where>

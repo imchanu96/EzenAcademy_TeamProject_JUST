@@ -34,8 +34,8 @@ public class BoardController {
 	@RequestMapping(value = "/board/list.do"
 			, method = {RequestMethod.GET, RequestMethod.POST})
 	public String boardList(@RequestParam(defaultValue = "1") int curPage
-			,String search, String searchText, Model model) {
-		
+			,@RequestParam(defaultValue = "BOARD_TITLE") String search, @RequestParam(defaultValue = "") String searchText, Model model) {
+
 		log.info("Welcome BoardController boardList!: {}", curPage);
 		
 		int totalCount = boardService.boardSelectTotalCount();
