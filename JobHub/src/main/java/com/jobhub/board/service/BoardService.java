@@ -15,7 +15,7 @@ public interface BoardService {
 	
 	public List<BoardDto> boardSelectList(int start, int end, int perNo);
 	
-	public int boardSelectTotalCount();
+	public int boardSelectTotalCount(Map<String, Object> map);
 	
 	public void boardInsertOne(BoardDto boardDto) throws Exception;
 	

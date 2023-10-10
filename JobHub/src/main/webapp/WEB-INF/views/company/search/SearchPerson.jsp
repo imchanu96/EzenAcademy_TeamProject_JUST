@@ -109,7 +109,7 @@
 							<br>- 자격증(특정 자격증 검색)<br>
 						</div>
 						<img class="helpButton" alt="도움말" onmouseover="helpFnc(this);"
-							src="https://cdn.icon-icons.com/icons2/602/PNG/512/Help_icon-icons.com_55891.png">
+							src="https://cdn2.icon-icons.com/icons2/602/PNG/512/Help_icon-icons.com_55891.png">
 					</button>
 
 				</div>

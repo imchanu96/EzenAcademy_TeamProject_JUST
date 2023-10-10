@@ -198,8 +198,8 @@ public class PersonalMemberController {
 									method = {RequestMethod.GET, RequestMethod.POST})
 	public String myPostList(@RequestParam(defaultValue = "1") int curPage, HttpSession session, Model model) {
 		log.info("Welcome PersonalMemberMyPost!: {}", curPage);
-		
-		int totalCount = boardService.boardSelectTotalCount();
+		Map<String, Object> map = new HashMap<String, Object>();
+		int totalCount = boardService.boardSelectTotalCount(map);
 		
 		Paging boardPaging = new Paging(totalCount, curPage);
 		

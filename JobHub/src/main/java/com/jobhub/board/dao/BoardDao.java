@@ -12,7 +12,7 @@ public interface BoardDao {
 	
 	public List<BoardDto> boardSelectList(int start, int end, int perNo);
 	
-	public int boardSelectTotalCount();
+	public int boardSelectTotalCount(Map<String, Object> map);
 	
 	public int boardInsertOne(BoardDto boardDto);
 	

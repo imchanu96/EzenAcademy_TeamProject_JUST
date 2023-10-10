@@ -122,7 +122,7 @@
 	        		careerTrObj.appendChild(careerTdObj);
 	        		
 					careerTdObj.textContent = getYmd10(careerDtoList[i].carEndDate);
-					alert(careerDtoList[i].carEndDate);
+//					alert(careerDtoList[i].carEndDate);
 					if(careerDtoList[i].carEndDate == null){
 						careerTdObj.textContent = "재직중";
 					}

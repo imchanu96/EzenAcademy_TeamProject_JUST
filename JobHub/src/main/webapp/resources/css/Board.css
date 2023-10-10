@@ -55,7 +55,7 @@ a:hover { color: #2d65f2;}
 	margin: 10px;
 	float: left;
 	width: 980px;
-	height: 660px;
+	height: 680px;
 	font-size: 30px;
 	background-color: #f8fafc;
 }
@@ -76,12 +76,12 @@ a:hover { color: #2d65f2;}
 }
 		
 #writeBox {
-	margin: 15px 0px 0px 545px;
-	width: 400px;
-	text-align: right;
+    margin: 15px 0px 0px 475px;
+    width: 470px;
+    text-align: right;
 }
 
-button {
+button, #searchBtn {
 	width: 90px;
     height: 40px;
     background-color: #4876ef;
@@ -92,8 +92,20 @@ button {
     font-weight: bold;
     color: #fff;
     cursor: pointer;
+    margin-left: 10px;
 }
-
+#searchText {
+	border: 0px solid;
+	border-radius: 12px;
+	box-shadow: 0px 1px 4px 0px gray;
+	height: 30px;
+}
+#search {
+	border: 0px solid;
+	border-radius: 12px;
+	box-shadow: 0px 1px 4px 0px gray;
+	height: 30px;
+}
 #boardList {
 	width: 910px;
 	border-radius: 10px;
@@ -107,6 +119,11 @@ button {
 
 #boardList th, #boardList td{
 	text-align: center;
+	padding: 10px;
+}
+
+#writer{
+	text-align: left;
 	padding: 10px;
 }
 
@@ -245,4 +262,7 @@ button {
 	margin: 20px 0px 0px 130px;
 	width: 400px;
 	text-align: right;
+}
+form {
+	float: left;
 }

@@ -39,9 +39,9 @@ public class BoardServiceImpl implements BoardService{
 	}
 
 	@Override
-	public int boardSelectTotalCount() {
+	public int boardSelectTotalCount(Map<String, Object> map) {
 		// TODO Auto-generated method stub
-		return boardDao.boardSelectTotalCount();
+		return boardDao.boardSelectTotalCount(map);
 	}
 	
 	@Override

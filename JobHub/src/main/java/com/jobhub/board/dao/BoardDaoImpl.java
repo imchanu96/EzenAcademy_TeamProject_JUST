@@ -38,9 +38,9 @@ public class BoardDaoImpl implements BoardDao{
 	}
 	
 	@Override
-	public int boardSelectTotalCount() {
+	public int boardSelectTotalCount(Map<String, Object> map) {
 
-		return (int)sqlSession.selectOne(namespace + "boardSelectTotalCount");
+		return (int)sqlSession.selectOne(namespace + "boardSelectTotalCount", map);
 	}
 	
 	@Override
