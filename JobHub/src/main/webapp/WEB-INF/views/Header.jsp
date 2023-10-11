@@ -93,7 +93,7 @@
 	<c:if test="${sessionScope.permission == 6}">
 		<div id="headerBox">
 			<div id="headerContent">
-				<a href="http://localhost:9080/JobHub/home.do">
+				<a href="../JobHub/home.do">
 				<img id="logo"
 					 src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/1aa66c0e-7488-4a56-bc50-f915be889cf8">
 				</a>

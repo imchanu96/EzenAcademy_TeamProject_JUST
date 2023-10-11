@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+body {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+
+/* 공통 */
+a {
+  text-decoration: none;
+  color: #292e41;
+}
+
+a:hover { color: #2d65f2;}
+	
+/* content */
+#container {
+	width: 1280px;
+	margin: 0px auto;
+}
+
+/* navigation */
+#navigation {
+	margin: 10px;
+	float: left;
+	width: 250px;
+	height: 660px;
+	font-size: 22px;
+	text-align: center;
+	background-color: #eff5ff;
+}
+
+#smallMenuBox {
+    margin: 30px auto;
+    width: 180px;
+    height: 500px;
+}
+
+.smallMenuItem {
+	margin-bottom: 35px;
+	border-bottom: 2px solid #fff;
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.smallMenuItem a {
+	color: #475067;
+}
+
+/* content */
+#content {
+	margin: 10px;
+	float: left;
+	width: 980px;
+	height: 680px;
+	font-size: 30px;
+	background-color: #f8fafc;
+}
+
+
+/* board list */
+.blur {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+#loginSign {
+	position: fixed;
+	z-index: 1;
+	left: 48%;
+	top: 35%;
+	width: auto;
+}
+		
+#writeBox {
+    margin: 15px 0px 0px 588px;
+    width: 470px;
+    text-align: right;
+}
+
+button, #searchBtn {
+	width: 90px;
+    height: 40px;
+    background-color: #4876ef;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 1px 4px 0px #ddd;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#searchText {
+	border: 0px solid;
+	border-radius: 12px;
+	box-shadow: 0px 1px 4px 0px gray;
+	height: 30px;
+}
+#search {
+	border: 0px solid;
+	border-radius: 12px;
+	box-shadow: 0px 1px 4px 0px gray;
+	height: 30px;
+}
+#boardList {
+	width: 910px;
+	border-radius: 10px;
+	border-collapse: collapse;
+	margin: 80px auto 30px auto;
+	font-size: 18px;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0px 1px 4px 0px #ddd;
+}
+
+#boardList th, #boardList td{
+	text-align: center;
+	padding: 10px;
+}
+
+#writer{
+	text-align: left;
+	padding: 10px;
+}
+
+#boardList tr td:nth-child(n+2):nth-child(-n+3){
+	text-align: left;
+}
+
+#boardList th{
+	border-bottom: 2px solid #cccccc;
+}
+
+#boardList td{
+	border-top: 1px solid #cccccc;
+	font-size: 15px;
+}
+
+#boardList #tdWriter {
+	 font-size: 15px;
+}
+
+#boardList #spanBTag {
+	 font-size: 14px;
+	 color: gray;
+}
+
+
+/*board write*/
+#titleInputBox, #contentInputBox {
+	background-color: #fff;
+	padding: 20px 0px 0px 10px;
+	border-radius: 10px;
+	box-shadow: 0px 1px 4px 0px #ddd;
+}
+
+#titleInputBox {
+	width: 910px;
+	height: 50px;
+	margin: 14px auto 0px auto;
+}
+
+#titleInput {
+	float: left;
+	margin-left: 40px;
+	margin-right: 50px;
+	width: 810px;
+	height: 25px;
+	border: 1px solid #d7dce5;
+	border-radius: 6px;
+}
+
+#contentInputBox {
+	width: 910px;
+	height: 450px;
+	margin: 14px auto 0px auto;
+}
+
+#contentInput {
+	margin-left: 40px;
+	width: 810px;
+	height: 410px;
+	border: 1px solid #d7dce5;
+	border-radius: 6px;
+	resize: none;
+}
+.errorMsg {
+	display: none;
+	color: red;
+	font-size: 14px;
+}
+
+#titleErrorMsg {
+	margin-left: 30px;
+}
+
+#contentErrorMsg {
+	margin-left: 50px;
+}
+
+#buttonBox {
+	float: left;
+	margin: 20px 350px 0px 350px;
+	width: 400px;
+}
+
+
+/*board view*/
+#boardView {
+	width: 910px;
+	border-radius: 10px;
+	border-collapse: collapse;
+	margin: 14px auto 0px auto;
+	font-size: 20px;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0px 1px 4px 0px #ddd;
+	table-layout: fixed;
+}
+
+#boardView #boardTitle {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 820px;
+    height: 55px;
+    line-height: 55px;
+    padding: 0px 22px;
+    margin: 0px;
+   	font-size: 22px;
+   	font-weight: bold;
+}
+#boardView table .boardInfo {
+	font-size: 18px;
+	color: #96a0b5;
+	padding: 0px 20px;
+	text-align: center;
+}
+#boardView > table #boardContent {
+	border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 820px;
+    vertical-align: top;
+    padding: 30px 22px;
+    font-size: 18px;
+}
+
+#boardView th, #boardView td{
+	padding: 20px;
+}
+
+#viewBox {
+	margin: 5px 0px 0px 545px;
+	width: 400px;
+	text-align: right;
+}
+
+#listBox {
+	margin: 20px 0px 0px 130px;
+	width: 400px;
+	text-align: right;
+}
+form {
+	float: left;
+}

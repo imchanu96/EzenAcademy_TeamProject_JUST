@@ -13,7 +13,7 @@ public interface BoardService {
 	
 	List<BoardDto> boardSelectList(Map<String, Object> map);
 	
-	public List<BoardDto> boardSelectList(int start, int end, int perNo);
+//	public List<BoardDto> boardSelectList(int start, int end, int perNo);
 	
 	public int boardSelectTotalCount(Map<String, Object> map);
 	

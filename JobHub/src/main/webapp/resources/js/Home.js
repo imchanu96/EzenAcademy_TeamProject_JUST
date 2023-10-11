@@ -1,7 +1,7 @@
 	function goPersonalLoginFnc() {
-		location.href = "http://localhost:9080/JobHub/personal/login.do";
+		location.href = "../JobHub/personal/login.do";
 	}
 	
 	function goCompanyLoginFnc() {
-		location.href = "http://localhost:9080/JobHub/company/login.do";
+		location.href = "../JobHub/company/login.do";
 	}

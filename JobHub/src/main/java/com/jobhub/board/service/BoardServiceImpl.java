@@ -32,11 +32,11 @@ public class BoardServiceImpl implements BoardService{
 		return boardDao.boardSelectList(map);
 	}
 	
-	@Override
-	public List<BoardDto> boardSelectList(int start, int end, int perNo) {
-		// TODO Auto-generated method stub
-		return boardDao.boardSelectList(start, end, perNo);
-	}
+//	@Override
+//	public List<BoardDto> boardSelectList(int start, int end, int perNo) {
+//		// TODO Auto-generated method stub
+//		return boardDao.boardSelectList(start, end, perNo);
+//	}
 
 	@Override
 	public int boardSelectTotalCount(Map<String, Object> map) {

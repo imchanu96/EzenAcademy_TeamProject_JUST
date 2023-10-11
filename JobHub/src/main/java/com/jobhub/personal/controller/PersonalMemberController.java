@@ -196,27 +196,44 @@ public class PersonalMemberController {
 	
 	@RequestMapping(value = "/personal/personalMyPostList.do",
 									method = {RequestMethod.GET, RequestMethod.POST})
-	public String myPostList(@RequestParam(defaultValue = "1") int curPage, HttpSession session, Model model) {
+	public String myPostList(@RequestParam(defaultValue = "1") int curPage
+			, @RequestParam(defaultValue = "BOARD_TITLE") String search
+			, @RequestParam(defaultValue = "") String searchText
+			, HttpSession session, Model model) {
+		
 		log.info("Welcome PersonalMemberMyPost!: {}", curPage);
-		Map<String, Object> map = new HashMap<String, Object>();
-		int totalCount = boardService.boardSelectTotalCount(map);
 		
-		Paging boardPaging = new Paging(totalCount, curPage);
+		Map<String, Object> searchMap = new HashMap<String, Object>();
+		searchMap.put("search", search);
+		searchMap.put("searchText", searchText);
 		
-		int start = boardPaging.getPageBegin();
-		int end = boardPaging.getPageEnd();
+		int totalCount = boardService.boardSelectTotalCount(searchMap);
+		
+		Paging myPostPaging = new Paging(totalCount, curPage);
+		
+		int start = myPostPaging.getPageBegin();
+		int end = myPostPaging.getPageEnd();
 		
 		PersonalMemberDto pmd = (PersonalMemberDto)session.getAttribute("personalMemberDto");
 		int perNo = pmd.getPerNo();
 		
-	    List<BoardDto> boardList = boardService.boardSelectList(start, end, perNo);
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("search", search);
+		map.put("searchText", searchText);
+		map.put("start", start);
+		map.put("end", end);
+		map.put("perNo", perNo);
+		
+	    List<BoardDto> boardList = boardService.boardSelectList(map);
 
 	    HashMap<String, Object> pagingMap = new HashMap<>(); 
 		pagingMap.put("totalCount", totalCount);
-		pagingMap.put("boardPaging", boardPaging);
+		pagingMap.put("myPostPaging", myPostPaging);
 		
 	    model.addAttribute("boardList", boardList);
 	    model.addAttribute("pagingMap", pagingMap);
+	    model.addAttribute("search", search);
+	    model.addAttribute("searchText", searchText);
 		
 		return "/personal/myPage/PersonalMyPost";
 	}

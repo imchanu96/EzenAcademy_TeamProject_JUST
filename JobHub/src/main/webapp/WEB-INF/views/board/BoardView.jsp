@@ -22,7 +22,7 @@
 			<form action="./update.do" method="get">
 				<input type='hidden' name='no' value='${boardDto.boardNo}'>
 				<div id="viewBox">
-					<c:if test="${boardDto.boardWriter eq personalMemberDto.perNickname}">
+					<c:if test="${boardDto.perNo eq personalMemberDto.perNo}">
 						<button type='submit'>수정</button>
 						<button type="button" onclick='deleteFnc(${boardDto.boardNo})'>삭제</button>
 					</c:if>

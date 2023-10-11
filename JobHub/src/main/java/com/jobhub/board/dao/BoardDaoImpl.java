@@ -1,6 +1,5 @@
 package com.jobhub.board.dao;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -26,16 +25,16 @@ public class BoardDaoImpl implements BoardDao{
 		return sqlSession.selectList(namespace + "boardSelectList", map);
 	}
 
-	@Override
-	public List<BoardDto> boardSelectList(int start, int end, int perNo) {
-		
-		Map<String, Object> map = new HashMap<String, Object>();
-		map.put("start", start);
-		map.put("end", end);
-		map.put("perNo", perNo);
-		
-		return sqlSession.selectList(namespace + "boardSelectList", map);
-	}
+//	@Override
+//	public List<BoardDto> boardSelectList(int start, int end, int perNo) {
+//		
+//		Map<String, Object> map = new HashMap<String, Object>();
+//		map.put("start", start);
+//		map.put("end", end);
+//		map.put("perNo", perNo);
+//		
+//		return sqlSession.selectList(namespace + "boardSelectList", map);
+//	}
 	
 	@Override
 	public int boardSelectTotalCount(Map<String, Object> map) {

@@ -40,7 +40,7 @@
 			<div id="loginColor">
 				
 					<div id="logo">
-						<a class="logo" href="http://localhost:9080/JobHub/home.do">
+						<a class="logo" href="../JobHub/home.do">
 							<img src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/4c2b0015-b325-434b-a879-9004486cd127">
 						</a>
 					</div>

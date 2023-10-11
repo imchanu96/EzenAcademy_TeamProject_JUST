@@ -389,7 +389,7 @@
 	<div class="inner">
 
 		<div class="header">
-			<a href="http://localhost:9080/JobHub/home.do">
+			<a href="../JobHub/home.do">
 				<img style="width: 250px;"
 					src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/1aa66c0e-7488-4a56-bc50-f915be889cf8">
 			</a>

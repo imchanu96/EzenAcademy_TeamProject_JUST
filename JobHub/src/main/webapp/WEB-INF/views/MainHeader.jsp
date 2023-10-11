@@ -21,12 +21,12 @@
 			
 			<div id="mainMenuBox">
 				<div class="mainMenuItem">
-					<a href="http://localhost:9080/JobHub/personal/login.do">
+					<a href="../JobHub/personal/login.do">
 						개인 회원 로그인
 					</a>
 				</div>
 				<div class="mainMenuItem">
-					<a href="http://localhost:9080/JobHub/company/login.do">
+					<a href="../JobHub/company/login.do">
 						기업 회원 로그인
 					</a>
 				</div>
