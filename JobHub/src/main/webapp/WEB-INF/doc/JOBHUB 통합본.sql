@@ -2,12 +2,16 @@
 /* Drop Tables */
 
 DROP TABLE BOARD_COMMENT CASCADE CONSTRAINTS;
+DROP TABLE VOTING CASCADE CONSTRAINTS;
 DROP TABLE BOARD CASCADE CONSTRAINTS;
 DROP TABLE CAREER CASCADE CONSTRAINTS;
+DROP TABLE MESSAGE CASCADE CONSTRAINTS;
 DROP TABLE RECOMMEND CASCADE CONSTRAINTS;
 DROP TABLE REVIEW CASCADE CONSTRAINTS;
 DROP TABLE COMPANY CASCADE CONSTRAINTS;
+DROP TABLE CONNECTION_MANAGEMENT CASCADE CONSTRAINTS;
 DROP TABLE EDUCATION CASCADE CONSTRAINTS;
+DROP TABLE IMAGE CASCADE CONSTRAINTS;
 DROP TABLE LETTER CASCADE CONSTRAINTS;
 DROP TABLE RESUME CASCADE CONSTRAINTS;
 DROP TABLE PERSONAL CASCADE CONSTRAINTS;
@@ -185,6 +189,23 @@ CREATE TABLE COMPANY
 );
 
 
+-- 접속 관련 데이터
+CREATE TABLE CONNECTION_MANAGEMENT
+(
+	-- 접속기록 번호
+	CONNECTION_NUMBER number NOT NULL,
+	-- 접속시간
+	CONNECTION_TIME date,
+	-- 접속 해제 시간
+	DISCONNECTION_TIME date,
+	-- 접속자 번호
+	CONNECTION_USER_NUMBER varchar2(100),
+	-- 접속자 아이디
+	CONNECTION_ID varchar2(20),
+	PRIMARY KEY (CONNECTION_NUMBER)
+);
+
+
 -- 학력
 CREATE TABLE EDUCATION
 (
@@ -210,6 +231,25 @@ CREATE TABLE EDUCATION
 );
 
 
+-- 이미지
+CREATE TABLE IMAGE
+(
+	-- 이미지 번호
+	IMAGE_NUMBER number NOT NULL,
+	-- 게시판 부모 번호
+	IMAGE_PARENT_SEQ number,
+	-- 이미지 파일 기존 이름
+	IMAGE_ORIGINAL_NAME varchar2(260),
+	-- 이미지 파일 저장 이름
+	IMAGE_STORED_NAME varchar2(36),
+	-- 이미지 크기
+	IMAGE_FILE_SIZE number,
+	-- 이미지 생성일
+	IMAGINE_CREATE_DATE date,
+	PRIMARY KEY (IMAGE_NUMBER)
+);
+
+
 -- 자기소개서
 CREATE TABLE LETTER
 (
@@ -226,6 +266,29 @@ CREATE TABLE LETTER
 	-- 회원번호
 	PERSONAL_NUMBER number NOT NULL,
 	PRIMARY KEY (LETTER_NUMBER)
+);
+
+
+-- 메세지
+CREATE TABLE MESSAGE
+(
+	-- 메세지 번호
+	MESSAGE_NUMBER number NOT NULL,
+	-- 메세지 방 번호
+	MESSAGE_ROOM_NUMBER number,
+	-- 메세지 보낸 시간
+	MESSAGE_SEND_TIME date,
+	-- 메세지 읽은 시간
+	MESSAGE_READ_TIME date,
+	-- 메세지 내용
+	MESSAGE_CONTENT varchar2(4000),
+	-- 메세지 읽은 여부
+	MESSAGE_CHECK varchar2(100),
+	-- 회원번호(메세지 보낸or받는 주체)
+	PERSONAL_NUMBER number NOT NULL,
+	-- 기업번호(메세지 보낸or받는 주체)
+	COMPANY_NUMBER number NOT NULL,
+	PRIMARY KEY (MESSAGE_NUMBER)
 );
 
 
@@ -281,10 +344,8 @@ CREATE TABLE RECOMMEND
 	PERSONAL_NUMBER number NOT NULL,
 	-- 기업번호
 	COMPANY_NUMBER number NOT NULL,
-	-- 리뷰 번호
-	REVIEW_NUMBER number NOT NULL,
 	-- 추천 매칭률
-	RECOMMEND_TOTAL_RATE number(3,2),
+	RECOMMEND_TOTAL_RATE number(5,2),
 	-- 추천일
 	RECOMMEND_DATE date,
 	-- 추천 결과(TRUE or FALSE)
@@ -319,11 +380,11 @@ CREATE TABLE RESUME
 	-- 이력서_학력_졸업년도
 	RESUME_EDUCATION_END_DATE varchar2(4000),
 	-- 이력서_학력_학교명
-	RESUME_EDUCATION_NAME varchar2(60),
+	RESUME_EDUCATION_NAME varchar2(4000),
 	-- 이력서_학력_전공
-	RESUME_EDUCATION_MAJOR varchar2(60),
+	RESUME_EDUCATION_MAJOR varchar2(4000),
 	-- 이력서_학력_학점(등급)/만점
-	RESUME_EDUCATION_GRADE varchar2(10),
+	RESUME_EDUCATION_GRADE varchar2(4000),
 	-- 이력서_학력_소재지
 	RESUME_EDUCATION_LOCATION varchar2(4000),
 	-- 이력서_학력_졸업 구분
@@ -343,11 +404,11 @@ CREATE TABLE RESUME
 	-- 이력서_자격증_취득일자
 	RESUME_LICENSE_DATE varchar2(4000),
 	-- 이력서_자격증_자격증명
-	RESUME_LICENSE_NAME varchar2(100),
+	RESUME_LICENSE_NAME varchar2(4000),
 	-- 이력서_자격증_발급기관
-	RESUME_LICENSE_INSTITUTION varchar2(90),
+	RESUME_LICENSE_INSTITUTION varchar2(4000),
 	-- 이력서_자격증_점수/등급
-	RESUME_LICENSE_GRADE varchar2(100),
+	RESUME_LICENSE_GRADE varchar2(4000),
 	-- 회원번호
 	PERSONAL_NUMBER number NOT NULL,
 	PRIMARY KEY (RESUME_NUMBER)
@@ -391,12 +452,39 @@ CREATE TABLE REVIEW
 );
 
 
+-- 투표
+CREATE TABLE VOTING
+(
+	-- 투표 번호
+	VOTING_NUMBER number NOT NULL,
+	-- 투표 항목
+	VOTING_ITEM varchar2(4000),
+	-- 투표 항목_투표수
+	VOTING_ITEM_COUNT varchar2(100),
+	-- 게시판 번호
+	BOARD_NUMBER number NOT NULL,
+	PRIMARY KEY (VOTING_NUMBER)
+);
+
+
 
 /* Create Foreign Keys */
 
 ALTER TABLE BOARD_COMMENT
 	ADD FOREIGN KEY (BOARD_NUMBER)
 	REFERENCES BOARD (BOARD_NUMBER)
+;
+
+
+ALTER TABLE VOTING
+	ADD FOREIGN KEY (BOARD_NUMBER)
+	REFERENCES BOARD (BOARD_NUMBER)
+;
+
+
+ALTER TABLE MESSAGE
+	ADD FOREIGN KEY (COMPANY_NUMBER)
+	REFERENCES COMPANY (COMPANY_NUMBER)
 ;
 
 
@@ -430,6 +518,12 @@ ALTER TABLE LETTER
 ;
 
 
+ALTER TABLE MESSAGE
+	ADD FOREIGN KEY (PERSONAL_NUMBER)
+	REFERENCES PERSONAL (PERSONAL_NUMBER)
+;
+
+
 ALTER TABLE RECOMMEND
 	ADD FOREIGN KEY (PERSONAL_NUMBER)
 	REFERENCES PERSONAL (PERSONAL_NUMBER)
@@ -457,12 +551,6 @@ ALTER TABLE CAREER
 ALTER TABLE EDUCATION
 	ADD FOREIGN KEY (RESUME_NUMBER)
 	REFERENCES RESUME (RESUME_NUMBER)
-;
-
-
-ALTER TABLE RECOMMEND
-	ADD FOREIGN KEY (REVIEW_NUMBER)
-	REFERENCES REVIEW (REVIEW_NUMBER)
 ;
 
 
@@ -524,6 +612,12 @@ COMMENT ON COLUMN COMPANY.COMPANY_CREATE_DATE IS '계정 생성일';
 COMMENT ON COLUMN COMPANY.COMPANY_MODIFY_DATE IS '계정 수정일';
 COMMENT ON COLUMN COMPANY.CONNECTION_TIME IS '접속 시간';
 COMMENT ON COLUMN COMPANY.DISCONNECTION_TIME IS '접속 해제 시간';
+COMMENT ON TABLE CONNECTION_MANAGEMENT IS '접속 관련 데이터';
+COMMENT ON COLUMN CONNECTION_MANAGEMENT.CONNECTION_NUMBER IS '접속기록 번호';
+COMMENT ON COLUMN CONNECTION_MANAGEMENT.CONNECTION_TIME IS '접속시간';
+COMMENT ON COLUMN CONNECTION_MANAGEMENT.DISCONNECTION_TIME IS '접속 해제 시간';
+COMMENT ON COLUMN CONNECTION_MANAGEMENT.CONNECTION_USER_NUMBER IS '접속자 번호';
+COMMENT ON COLUMN CONNECTION_MANAGEMENT.CONNECTION_ID IS '접속자 아이디';
 COMMENT ON TABLE EDUCATION IS '학력';
 COMMENT ON COLUMN EDUCATION.EDUCATION_NUMBER IS '학력 번호';
 COMMENT ON COLUMN EDUCATION.EDUCATION_BEGIN_DATE IS '입학일';
@@ -534,6 +628,13 @@ COMMENT ON COLUMN EDUCATION.EDUCATION_GRADE IS '학점';
 COMMENT ON COLUMN EDUCATION.EDUCATION_LOCATION IS '소재지';
 COMMENT ON COLUMN EDUCATION.EDUCATION_GREADUATE IS '졸업 구분';
 COMMENT ON COLUMN EDUCATION.RESUME_NUMBER IS '이력서 번호';
+COMMENT ON TABLE IMAGE IS '이미지';
+COMMENT ON COLUMN IMAGE.IMAGE_NUMBER IS '이미지 번호';
+COMMENT ON COLUMN IMAGE.IMAGE_PARENT_SEQ IS '게시판 부모 번호';
+COMMENT ON COLUMN IMAGE.IMAGE_ORIGINAL_NAME IS '이미지 파일 기존 이름';
+COMMENT ON COLUMN IMAGE.IMAGE_STORED_NAME IS '이미지 파일 저장 이름';
+COMMENT ON COLUMN IMAGE.IMAGE_FILE_SIZE IS '이미지 크기';
+COMMENT ON COLUMN IMAGE.IMAGINE_CREATE_DATE IS '이미지 생성일';
 COMMENT ON TABLE LETTER IS '자기소개서';
 COMMENT ON COLUMN LETTER.LETTER_NUMBER IS '자소서 번호';
 COMMENT ON COLUMN LETTER.LETTER_HISTORY IS '성장 배경';
@@ -541,6 +642,15 @@ COMMENT ON COLUMN LETTER.LETTER_MOTIVATION IS '지원 동기';
 COMMENT ON COLUMN LETTER.LETTER_CHARACTER IS '성격의 장단점';
 COMMENT ON COLUMN LETTER.LETTER_GOAL IS '입사 후 포부';
 COMMENT ON COLUMN LETTER.PERSONAL_NUMBER IS '회원번호';
+COMMENT ON TABLE MESSAGE IS '메세지';
+COMMENT ON COLUMN MESSAGE.MESSAGE_NUMBER IS '메세지 번호';
+COMMENT ON COLUMN MESSAGE.MESSAGE_ROOM_NUMBER IS '메세지 방 번호';
+COMMENT ON COLUMN MESSAGE.MESSAGE_SEND_TIME IS '메세지 보낸 시간';
+COMMENT ON COLUMN MESSAGE.MESSAGE_READ_TIME IS '메세지 읽은 시간';
+COMMENT ON COLUMN MESSAGE.MESSAGE_CONTENT IS '메세지 내용';
+COMMENT ON COLUMN MESSAGE.MESSAGE_CHECK IS '메세지 읽은 여부';
+COMMENT ON COLUMN MESSAGE.PERSONAL_NUMBER IS '회원번호(메세지 보낸or받는 주체)';
+COMMENT ON COLUMN MESSAGE.COMPANY_NUMBER IS '기업번호(메세지 보낸or받는 주체)';
 COMMENT ON TABLE PERSONAL IS '회원';
 COMMENT ON COLUMN PERSONAL.PERSONAL_NUMBER IS '회원번호';
 COMMENT ON COLUMN PERSONAL.PERSONAL_NAME IS '이름';
@@ -564,7 +674,6 @@ COMMENT ON COLUMN RECOMMEND.RECOMMEND_NUMBER IS '기업 추천 번호';
 COMMENT ON COLUMN RECOMMEND.RECOMMEND_PREFER IS '추천 이유 키워드';
 COMMENT ON COLUMN RECOMMEND.PERSONAL_NUMBER IS '회원번호';
 COMMENT ON COLUMN RECOMMEND.COMPANY_NUMBER IS '기업번호';
-COMMENT ON COLUMN RECOMMEND.REVIEW_NUMBER IS '리뷰 번호';
 COMMENT ON COLUMN RECOMMEND.RECOMMEND_TOTAL_RATE IS '추천 매칭률';
 COMMENT ON COLUMN RECOMMEND.RECOMMEND_DATE IS '추천일';
 COMMENT ON COLUMN RECOMMEND.RECOMMEND_RESULT IS '추천 결과(TRUE or FALSE)';
@@ -612,7 +721,11 @@ COMMENT ON COLUMN REVIEW.REVIEW_CREATE_DATE IS '리뷰 작성일';
 COMMENT ON COLUMN REVIEW.REVIEW_MODIFY_DATE IS '리뷰 수정일';
 COMMENT ON COLUMN REVIEW.PERSONAL_NUMBER IS '회원번호';
 COMMENT ON COLUMN REVIEW.COMPANY_NUMBER IS '기업번호';
-
+COMMENT ON TABLE VOTING IS '투표';
+COMMENT ON COLUMN VOTING.VOTING_NUMBER IS '투표 번호';
+COMMENT ON COLUMN VOTING.VOTING_ITEM IS '투표 항목';
+COMMENT ON COLUMN VOTING.VOTING_ITEM_COUNT IS '투표 항목_투표수';
+COMMENT ON COLUMN VOTING.BOARD_NUMBER IS '게시판 번호';
 
 COMMIT;
 
@@ -3703,7 +3816,13 @@ COMMIT;
 
 
 -- 기업 리뷰
-
+INSERT INTO REVIEW (
+    REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT,
+    REVIEW_SALARY, REVIEW_WELFARE, REVIEW_ENVIRONMENT, REVIEW_BOSS, REVIEW_BALANCE,
+    REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
+    PERSONAL_NUMBER, COMPANY_NUMBER
+) VALUES
+(REVIEW_NUMBER_SEQ.NEXTVAL, '전반적으로 만족하는 회사!!', '급여-복지 등 뭐 하나 걸리는 건 없음. 출퇴근시간도 자유롭고 재택근무도 가능한게 가장 큰 장점 !!', 5, 5, 4, 4, 5, 4.6, SYSDATE, SYSDATE, 1, 1);
 
 INSERT INTO REVIEW (
     REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT,
@@ -4145,14 +4264,6 @@ INSERT INTO REVIEW (
 (REVIEW_NUMBER_SEQ.NEXTVAL, '우리나라의 최고기업 복지나 시설 급여가 빵빵', '장점으로는 밥이맛있습니다 사람들도 좋아요 시설도 좋아요 복지도 좋아요 다만 음... 사내조직문화에 따라 다르겠지만 자기 할것만 하는느낌이 강하게들었습니다. 부서마다 차이가 있겠지만 개인주의가심한느낌..',
 5, 5, 4, 3, 3, 4.0, SYSDATE, SYSDATE, 110, 1);
 
-INSERT INTO REVIEW (
-    REVIEW_NUMBER, REVIEW_TITLE, REVIEW_CONTENT,
-    REVIEW_SALARY, REVIEW_WELFARE, REVIEW_ENVIRONMENT, REVIEW_BOSS, REVIEW_BALANCE,
-    REVIEW_AVERAGE, REVIEW_CREATE_DATE, REVIEW_MODIFY_DATE,
-    PERSONAL_NUMBER, COMPANY_NUMBER
-) VALUES
-(REVIEW_NUMBER_SEQ.NEXTVAL, '전반적으로 만족하는 회사!!', '급여-복지 등 뭐 하나 걸리는 건 없음. 출퇴근시간도 자유롭고 재택근무도 가능한게 가장 큰 장점 !!', 5, 5, 4, 4, 5, 4.6, SYSDATE, SYSDATE, 1, 1);
-
 COMMIT;
 
 
@@ -4165,7 +4276,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'JYP', 'KS하이니스', '직장에서의 리더십 발전과 팀 성과'
     , '직장에서 리더로 성장하는 과정과 어떻게 팀 성과에 기여하는지에 대한 경험을 공유합니다.'||CHR(13)||CHR(10)||
     '리더십은 팀의 동기부여와 성과에 큰 영향을 미칩니다.'
-    , SYSDATE-56, SYSDATE-56, 11, 52, 121);
+    , SYSDATE-56, SYSDATE-56, 11, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4173,7 +4284,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '귀영은행러', '귀엽은행', '직장 내 혁신과 아이디어 구현'
     , '직장 내 혁신은 조직의 경쟁력을 강화합니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 직장 내에서 아이디어를 제안하고 구현하는 과정을 설명하고자 합니다.'
-    , SYSDATE-56, SYSDATE-56, 12, 12, 251);
+    , SYSDATE-56, SYSDATE-56, 12, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4181,7 +4292,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '선아귀에있따', '귀엽은행', '직장 내 업무 프레젠테이션의 중요성'
     , '직장 내 업무 프레젠테이션은 정보 전달과 의사 결정에 영향을 미칩니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 효과적인 업무 프레젠테이션을 준비하고 전달하는 방법을 공유하고자 합니다.'
-    , SYSDATE-56, SYSDATE-56, 13, 10, 1521);
+    , SYSDATE-56, SYSDATE-56, 13, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4189,7 +4300,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '신진뉴진', 'K-OIL', '직장에서의 커뮤니케이션 스킬 개선'
     , '커뮤니케이션 스킬은 직장에서 핵심 역량 중 하나입니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 커뮤니케이션 스킬을 향상시키고, 동료와 원활한 의사 소통을 유지하는 방법을 찾아냈습니다.'
-    , SYSDATE-55, SYSDATE-53, 14, 15, 162);
+    , SYSDATE-55, SYSDATE-53, 14, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4197,7 +4308,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '손정손정', '키아차', '회사에서의 글로벌 업무 경험'
     , '글로벌 업무 경험은 문화적 이해와 국제적 역량을 키우는 데 도움을 줍니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 글로벌 프로젝트와 팀에서의 경험을 통해 성장하였습니다.'
-    , SYSDATE-54, SYSDATE-52, 15, 322, 1520);
+    , SYSDATE-54, SYSDATE-52, 15, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4205,7 +4316,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '희희남남', '키아차', '직장에서의 업무 윤리와 결정'
     , '직장에서의 업무 윤리와 윤리적 결정은 조직의 명예와 신뢰를 지키는 데 중요합니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 윤리적 결정을 내리고 직장 내 업무 윤리를 준수하는 방법에 대해 이야기하고자 합니다.'
-    , SYSDATE-54, SYSDATE-50, 16, 100, 1052);
+    , SYSDATE-54, SYSDATE-50, 16, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4213,7 +4324,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '전세', '대안항공', '직장 내 프로젝트 팀 빌딩'
     , '프로젝트 팀 빌딩은 성공적인 프로젝트의 핵심입니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 팀원들 간의 협력을 촉진하고 프로젝트 팀을 효과적으로 구축하는 데 기여한 경험을 공유하고자 합니다.'
-    , SYSDATE-54, SYSDATE-54, 17, 15, 30);
+    , SYSDATE-54, SYSDATE-54, 17, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4221,7 +4332,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '일상', '대안항공', '직장에서의 업무 자동화와 효율성'
     , '업무 자동화는 업무 효율성을 높이는 데 도움을 줍니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 업무 자동화를 도입하고 어떤 결과를 얻었는지를 설명하고자 합니다.'
-    , SYSDATE-52, SYSDATE-50, 18, 152, 361);
+    , SYSDATE-52, SYSDATE-50, 18, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4229,7 +4340,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '여리리링', 'BK금융', '직장에서의 고객 서비스와 만족도'
     , '고객 서비스는 조직의 명성을 형성합니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 고객 서비스 품질을 향상시키고 고객 만족도를 유지하는 방법을 공유하고자 합니다.'
-    , SYSDATE-52, SYSDATE-52, 19, 52, 1523);
+    , SYSDATE-52, SYSDATE-52, 19, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4237,7 +4348,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '지니지니', 'BK금융', '직장에서의 프로젝트 관리 도구 활용'
     , '프로젝트 관리 도구는 업무 효율성을 향상시키는 데 중요합니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 프로젝트 관리 도구를 활용하여 프로젝트를 효과적으로 관리하였는지에 대해 이야기하고자 합니다.'
-    , SYSDATE-51, SYSDATE-51, 20, 215, 2013);
+    , SYSDATE-51, SYSDATE-51, 20, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4247,7 +4358,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '심성맨', '심성전자', '친구와 함께�
     '나는 이전의 경력을 버리고 다른 분야에서의 시작을 결정했다.'||CHR(13)||CHR(10)||
     '이 결정은 처음에는 불확실했지만, 새로운 도전을 통해 나 자신을 발견하고 발전시킬 수 있었다.'||CHR(13)||CHR(10)||
     '진로 변경은 우리가 언제든지 새로운 길을 탐험할 기회를 제공한다.'
-    , SYSDATE-13, SYSDATE-13, 1, 152, 4212);
+    , SYSDATE-13, SYSDATE-13, 1, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4255,7 +4366,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '쩡쩡', '코코아', '직장 내 고난과 극복'
     , '고난은 성장의 기회가 될 수 있습니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 어려운 상황에서 극복하고 성공을 찾아냈는지를 공유하고자 합니다.'
-    , SYSDATE-51, SYSDATE-51, 21, 152, 1321);
+    , SYSDATE-51, SYSDATE-51, 21, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4263,7 +4374,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '비싼술', '코코아', '직장에서의 업무 완수와 효과적인 계획'
     , '업무 완수와 효과적인 계획은 업무 성과를 높이는 데 필요합니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 업무를 계획하고 효율적으로 완수했는지에 대한 경험을 공유하고자 합니다.'
-    , SYSDATE-50, SYSDATE-50, 22, 10, 123);
+    , SYSDATE-50, SYSDATE-50, 22, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4271,7 +4382,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '이지나지나', '연대모비스', '직장 내 프로모션 전략과 결과'
     , '프로모션은 목표 중 하나일 수 있습니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 프로모션을 위한 전략을 세우고 어떤 결과를 얻었는지를 이야기하고자 합니다.'
-    , SYSDATE-49, SYSDATE-49, 23, 10, 111);
+    , SYSDATE-49, SYSDATE-49, 23, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4279,7 +4390,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '여니', '연대모비스', '직장에서의 업무 변화와 적응'
     , '업무 변화는 항상 있습니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 업무 변화에 대처하고 어떤 적응 전략을 활용했는지를 설명하고자 합니다.'
-    , SYSDATE-49, SYSDATE-49, 24, 1, 2);
+    , SYSDATE-49, SYSDATE-49, 24, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4287,7 +4398,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '강원도', '심성물산', '직장에서의 프로젝트 스케줄 관리"'
     , '프로젝트 스케줄 관리는 프로젝트 성과에 큰 영향을 미칩니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 프로젝트 스케줄을 효과적으로 관리하고 성공을 이끈 경험을 공유하고자 합니다.'
-    , SYSDATE-49, SYSDATE-49, 25, 6, 5);
+    , SYSDATE-49, SYSDATE-49, 25, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4295,7 +4406,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '카파도키아', '심성물산', '직장 내 업무 부하와 스트레스 관리'
     , '직장 내 업무 부하는 스트레스를 초래할 수 있습니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 업무 부하를 관리하고 스트레스를 효과적으로 관리하는 방법을 공유하고자 합니다.'
-    , SYSDATE-46, SYSDATE-46, 26, 10, 100);
+    , SYSDATE-46, SYSDATE-46, 26, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4303,7 +4414,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '오타와', '한신지주', '직장에서의 업무 효율성과 개선'
     , '업무 효율성은 조직의 성과를 향상시킵니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 업무 효율성을 개선하기 위한 노력과 방법을 소개하고자 합니다.'
-    , SYSDATE-46, SYSDATE-46, 27, 42, 523);
+    , SYSDATE-46, SYSDATE-46, 27, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4311,7 +4422,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '티에리앙리', '한신지주', '직장 내 프로젝트 성공과 배운 점'
     , '직장 내 프로젝트 성공은 성장의 기회입니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 프로젝트에서 성과를 얻었고 어떤 교훈을 얻었는지를 공유하고자 합니다.'
-    , SYSDATE-46, SYSDATE-46, 28, 10, 10);
+    , SYSDATE-46, SYSDATE-46, 28, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4319,7 +4430,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '아스널', '연대글로비스', '직장에서의 업무 우선순위 설정'
     , '업무 우선순위 설정은 업무 관리의 핵심입니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 업무 우선순위를 정하고 효과적으로 업무를 관리했는지를 이야기하고자 합니다.'
-    , SYSDATE-45, SYSDATE-45, 29, 623, 1000);
+    , SYSDATE-45, SYSDATE-45, 29, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4327,7 +4438,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '좋았어', '연대글로비스', '직장에서의 프로젝트 실패와 교훈'
     , '프로젝트 실패는 교훈을 제공합니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 프로젝트에서 실패를 경험하고 어떤 교훈을 얻었는지를 공유하고자 합니다.'
-    , SYSDATE-45, SYSDATE-45, 30, 15, 103);
+    , SYSDATE-45, SYSDATE-45, 30, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4335,7 +4446,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '엠지걸', '유리금융지주', '직장에서의 길고 힘들었던 프로젝트 완수'
     , '한 번의 길고 어려웠던 프로젝트는 많은 배움과 도전을 안겨주었습니다.'||CHR(13)||CHR(10)||
     '그 경험을 통해 나는 어떻게 문제를 극복하고 프로젝트를 성공적으로 완수했는지를 공유하고자 합니다.'
-    , SYSDATE-45, SYSDATE-45, 31, 2, 10);
+    , SYSDATE-45, SYSDATE-45, 31, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4343,7 +4454,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '강아인스', '유리금융지주', '직장 내 다양성과 인클루전 노력의 결과'
     , '직장 내에서의 다양성과 인클루전은 조직의 성공과 혁신을 촉진합니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 다양성과 인클루전을 즐기고 노력한 결과를 나타내고자 합니다.'
-    , SYSDATE-45, SYSDATE-45, 32, 152, 1003);
+    , SYSDATE-45, SYSDATE-45, 32, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4351,7 +4462,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '철의장벽', '하남금융지주', '직장에서의 협업과 공동 작업의 중요성'
     , '직장에서의 협업은 성과와 효율성에 큰 영향을 미칩니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 효과적인 협업과 공동 작업을 통해 프로젝트를 성공적으로 이끈 경험을 공유하고자 합니다.'
-    , SYSDATE-45, SYSDATE-45, 33, 135, 1521);
+    , SYSDATE-45, SYSDATE-45, 33, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4359,7 +4470,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '철의장벽투', '하남금융지주', '직장에서의 프로젝트 예산 관리와 경험'
     , '프로젝트 예산 관리는 중요한 스킬입니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 프로젝트 예산을 효과적으로 관리하고 예산 초과를 방지한 경험을 나누고자 합니다.'
-    , SYSDATE-43, SYSDATE-40, 34, 10, 10);
+    , SYSDATE-43, SYSDATE-40, 34, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4367,7 +4478,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '슈바인슈타이거', '심성화재', '직장에서의 업무 리더십과 영향력'
     , '직장에서의 업무 리더십은 조직과 동료들에게 영향력을 미칩니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 업무 리더십을 발휘하고 조직 내에서 영향력을 확장한 경험을 이야기하고자 합니다.'
-    , SYSDATE-41, SYSDATE-40, 35, 0, 75);
+    , SYSDATE-41, SYSDATE-40, 35, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4375,7 +4486,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '베르기', '심성화재', '직장에서의 프로젝트 품질 관리'
     , '프로젝트 품질 관리는 고객 만족도를 높이는 핵심입니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 프로젝트 품질을 유지하고 향상시키는 방법을 공유하고자 합니다.'
-    , SYSDATE-40, SYSDATE-40, 36, 0, 452);
+    , SYSDATE-40, SYSDATE-40, 36, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4383,7 +4494,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '피레스', '메이버', '직장에서의 업무 분석과 개선 전략'
     , '업무 분석과 개선 전략은 업무 프로세스를 향상시키는 데 도움을 줍니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 업무 분석을 수행하고 업무 개선 전략을 실행했는지에 대한 경험을 나누고자 합니다.'
-    , SYSDATE-39, SYSDATE-33, 37, 0, 4221);
+    , SYSDATE-39, SYSDATE-33, 37, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4391,7 +4502,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '파트리크', '메이버', '직장 내 성공을 위한 지속적인 학습'
     , '직장 내 성공은 지속적인 학습과 발전에 의해 달성됩니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 학습을 지속하고 나의 역량을 향상시키며 성공을 추구했는지를 설명하고자 합니다.'
-    , SYSDATE-38, SYSDATE-38, 38, 12, 452);
+    , SYSDATE-38, SYSDATE-38, 38, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4399,7 +4510,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '프레디융베리', '한와에듀', '직장에서의 프로젝트 위험 관리'
     , '프로젝트 위험 관리는 예상치 못한 문제를 예방하는 데 중요합니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 프로젝트 위험을 식별하고 관리하는 전략을 사용했는지에 대한 경험을 공유하고자 합니다.'
-    , SYSDATE-37, SYSDATE-35, 39, 3, 231);
+    , SYSDATE-37, SYSDATE-35, 39, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4415,7 +4526,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '넘버원', '심성전자', '직장에서의 업무 분산과 효율화'
     , '업무 분산과 효율화는 업무 부하를 분산하고 성과를 향상시킵니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 업무를 분산하고 팀의 효율성을 높이는 방법을 공유하고자 합니다.'
-    , SYSDATE-35, SYSDATE-35, 41, 2, 231);
+    , SYSDATE-35, SYSDATE-35, 41, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4423,7 +4534,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '넘버투', '심성전자', '직장 내 기술 역량 개발과 성공'
     , '기술 역량 개발은 직장 내에서의 성장과 성공에 필수적입니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 기술 역량을 향상시키고 나의 직장에서의 성공에 기여한 경험을 나누고자 합니다.'
-    , SYSDATE-35, SYSDATE-35, 42, 0, 332);
+    , SYSDATE-35, SYSDATE-35, 42, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4431,7 +4542,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '넘버쓰리', '심성전자', '직장에서의 업무 블로그 운영'
     , '직장에서의 업무 블로그 운영은 지식 공유와 의사 소통을 촉진합니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 업무 블로그를 운영하고 동료들과 지식을 공유한 경험을 공유하고자 합니다.'
-    , SYSDATE-35, SYSDATE-35, 43, 0, 222);
+    , SYSDATE-35, SYSDATE-35, 43, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4439,7 +4550,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '넘버포', '심성전자', '직장 내 커리어 로드맵과 계획'
     , '커리어 로드맵과 계획은 성공적인 커리어를 구축하는 데 도움을 줍니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 나의 커리어를 계획하고 로드맵을 따라 나아갔는지를 이야기하고자 합니다.'
-    , SYSDATE-35, SYSDATE-35, 44, 0, 57);
+    , SYSDATE-35, SYSDATE-35, 44, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4447,7 +4558,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '넘파', '심성전자', '직장에서의 업무 관계 구축과 네트워킹'
     , '직장 내에서의 관계 구축과 네트워킹은 기회를 창출합니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 동료들과의 관계를 구축하고 네트워크를 확장한 경험을 나누고자 합니다.'
-    , SYSDATE-35, SYSDATE-35, 45, 0, 42);
+    , SYSDATE-35, SYSDATE-35, 45, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4455,7 +4566,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '넘버식스', '심성전자', '직장에서의 프로젝트 스코프 관리'
     , '프로젝트 스코프 관리는 프로젝트의 성패를 좌우합니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 프로젝트 스코프를 관리하고 프로젝트를 성공적으로 완수한 경험을 공유하고자 합니다.'
-    , SYSDATE-35, SYSDATE-35, 46, 2, 3);
+    , SYSDATE-35, SYSDATE-35, 46, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4463,7 +4574,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'numberone', '심성전자', '직장 내 문제 해결과 창의성'
     , '직장 내 문제 해결과 창의성은 조직의 발전을 촉진합니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 문제를 해결하고 창의적인 해결책을 제안한 경험을 이야기하고자 합니다.'
-    , SYSDATE-35, SYSDATE-35, 47, 12, 532);
+    , SYSDATE-35, SYSDATE-35, 47, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4471,7 +4582,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'nummbereins', '심성전자', '직장에서의 업무 환경 개선'
     , '업무 환경 개선은 직원들의 만족도를 높이고 생산성을 향상시킵니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 업무 환경을 개선하고 직원들의 효율성을 높인 경험을 나누고자 합니다.'
-    , SYSDATE-35, SYSDATE-35, 48, 20, 234);
+    , SYSDATE-35, SYSDATE-35, 48, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4479,7 +4590,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'dasende', '심성전자', '직장에서의 업무 성과 평가와 성장'
     , '성과 평가는 개인의 성장과 발전을 촉진합니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 업무 성과를 평가하고 성장을 이루어낸 경험을 공유하고자 합니다.'
-    , SYSDATE-34, SYSDATE-34, 49, 12, 1245);
+    , SYSDATE-34, SYSDATE-34, 49, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4487,7 +4598,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'hatjetztgekommt', '심성전자', '직장 내 이슈 해결과 리더십'
     , '직장 내 이슈 해결은 리더십과 연결됩니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 이슈를 해결하고 동료들을 이끈 리더십을 소개하고자 합니다.'
-    , SYSDATE-34, SYSDATE-34, 50, 10, 100);
+    , SYSDATE-34, SYSDATE-34, 50, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4495,7 +4606,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'kiki', 'LZ', '직장에서의 변화와 변화 관리'
     , '직장에서의 변화는 필연적입니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 변화를 수용하고 관리하며 조직에 긍정적인 영향을 미쳤는지를 이야기하고자 합니다.'
-    , SYSDATE-34, SYSDATE-34, 61, 230, 1234);
+    , SYSDATE-34, SYSDATE-34, 61, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -4711,7 +4822,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'TechWiz', '코리아아연', '직장에서의 변화와 변화 관리'
     , '직장에서의 변화는 필연적입니다.'||CHR(13)||CHR(10)||
     '나는 어떻게 변화를 수용하고 관리하며 조직에 긍정적인 영향을 미쳤는지를 이야기하고자 합니다.'
-    , SYSDATE-25, SYSDATE-25, 88, 50, 500);
+    , SYSDATE-25, SYSDATE-25, 88, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5043,7 +5154,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '유안인', 'K-OIL', '직장 내 리더십 발
     , '리더십은 직장에서 중요한 역할을 한다.'||CHR(13)||CHR(10)||
     '나는 어떻게 내 리더십 스킬을 발휘하고, 팀을 성공으로 이끈 경험을 공유하고자 한다.'||CHR(13)||CHR(10)||
     '직장에서 리더로서 성공하려면 팀원들을 이끄는 데 필요한 스킬과 전략을 개발해야 한다.'
-    , SYSDATE-8, SYSDATE-8, 9, 1, 100);
+    , SYSDATE-8, SYSDATE-8, 9, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5052,7 +5163,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '써누지롱', 'KS하이니스', '회사에서
     , '문제 해결 능력은 회사에서 필수적인 스킬 중 하나이다.'||CHR(13)||CHR(10)||
     '나는 어떻게 회사에서 발생한 문제를 해결하고, 이를 통해 어떻게 나의 능력을 향상시켰는지에 대한 경험을 공유하고자 한다.'||CHR(13)||CHR(10)||
     '문제 해결 능력은 업무 효율성을 향상시키고 업적을 쌓는 데 중요한 역할을 한다.'
-    , SYSDATE-8, SYSDATE-8, 10, 523, 312);
+    , SYSDATE-8, SYSDATE-8, 10, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5061,7 +5172,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '음악고래', '비마트', '회사에서의 �
     , '회사에서 업무를 효율적으로 처리하기 위해서는 시간 관리가 중요하다.'||CHR(13)||CHR(10)||
     '나는 어떻게 시간을 관리하고 업무 우선순위를 정하며, 어떻게 더 생산적으로 일할 수 있는지에 대한 전략을 공유하고자 한다.'||CHR(13)||CHR(10)||
     '시간을 효과적으로 활용하면 업무와 개인 생활의 밸런스를 유지하는 데 도움이 된다.'
-    , SYSDATE-8, SYSDATE-8, 51, 100, 100);
+    , SYSDATE-8, SYSDATE-8, 51, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5070,7 +5181,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '심해탐험가', 'BB손해보험', '직장 �
     , '직장에서 충돌은 피할 수 없는 상황이다.'||CHR(13)||CHR(10)||
     '하지만 나는 어떻게 직장 내 충돌을 건설적으로 해결하고, 동료와의 원만한 관계를 유지하는 방법을 찾아냈다.'||CHR(13)||CHR(10)||
     '충돌 관리와 커뮤니케이션 스킬은 직장 내 성공의 핵심이다.'
-    , SYSDATE-8, SYSDATE-8, 52, 152, 1230);
+    , SYSDATE-8, SYSDATE-8, 52, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5079,7 +5190,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '산악인', '한대제철', '직장에서의 �
     , '직장에서 자기개발은 계속해서 성장하고 발전하는 데 필수적이다.'||CHR(13)||CHR(10)||
     '나는 어떻게 직장에서 스킬을 향상시키기 위해 교육 및 자기 학습을 어떻게 통합했는지에 대한 경험을 공유하고자 한다.'||CHR(13)||CHR(10)||
     '자기개발은 개인과 조직 모두에게 이익을 제공한다.'
-    , SYSDATE-8, SYSDATE-8, 53, 153, 160);
+    , SYSDATE-8, SYSDATE-8, 53, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5097,7 +5208,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '먹방모험가', '에스씨바이오센서', 
     , '직장 내 교육 프로그램은 직원들의 성장을 촉진하는 데 중요하다.'||CHR(13)||CHR(10)||
     '나는 어떻게 회사에서 제공하는 교육 프로그램을 활용하여 어떻게 내 역량을 개발하고 경력을 향상시켰는지에 대한 이야기를 하고자 한다.'||CHR(13)||CHR(10)||
     '교육은 직장에서의 성공에 필수적인 요소 중 하나이다.'
-    , SYSDATE-7, SYSDATE-6, 55, 10, 105);
+    , SYSDATE-7, SYSDATE-6, 55, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5106,7 +5217,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '게임의신', 'ST텔레콤', '직장에서의
     , '직장에서의 스트레스 관리는 건강과 행복을 유지하는 데 중요하다.'||CHR(13)||CHR(10)||
     '나는 어떻게 업무와 개인 생활 간의 밸런스를 유지하고 스트레스를 효과적으로 관리하는 방법을 찾아냈다.'||CHR(13)||CHR(10)||
     '워라밸은 직장 내 만족도와 생산성을 향상시키는 데 도움을 준다.'
-    , SYSDATE-7, SYSDATE-7, 56, 0, 10);
+    , SYSDATE-7, SYSDATE-7, 56, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5115,7 +5226,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '커피콩냄새', '심성SDI', '직장에서�
     , '직장에서의 다양성과 인클루전은 조직의 성공과 혁신을 촉진하는 데 기여한다.'||CHR(13)||CHR(10)||
     '나는 어떻게 회사 내에서 다양성을 즐기고 인클루전을 활성화시키는 노력과 경험을 공유하고자 한다.'||CHR(13)||CHR(10)||
     '다양성은 아이디어의 다양성과 혁신을 촉진한다.'
-    , SYSDATE-7, SYSDATE-7, 57, 0, 421);
+    , SYSDATE-7, SYSDATE-7, 57, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5124,7 +5235,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '심성맨', '심성전자', '직장에서의 �
     , '프로젝트 실패는 성장과 교훈의 기회를 제공한다.'||CHR(13)||CHR(10)||
     '나는 어떻게 회사 내 프로젝트에서 실패하고, 이를 통해 어떻게 내 능력과 접근 방식을 개선했는지에 대한 경험을 공유하고자 한다.'||CHR(13)||CHR(10)||
     '프로젝트 실패는 새로운 시작과 배움의 시작일 수 있다.'
-    , SYSDATE-7, SYSDATE-7, 1, 0, 623);
+    , SYSDATE-7, SYSDATE-7, 1, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5133,7 +5244,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '과학열정', 'LZ전자', '직장 내 프로�
     , '프로모션은 직장에서의 목표 중 하나일 수 있다.'||CHR(13)||CHR(10)||
     '나는 어떻게 나의 직장에서의 프로모션을 위해 어떻게 계획을 세우고 노력했는지에 대한 이야기를 하고자 한다.'||CHR(13)||CHR(10)||
     '프로모션은 개인의 성과와 업적을 인정받는 순간이다.'
-    , SYSDATE-7, SYSDATE-7, 58, 0, 162);
+    , SYSDATE-7, SYSDATE-7, 58, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5142,7 +5253,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '패션스타', '고려가스공사', '회사 �
     , '프로젝트 실패는 성장과 교훈의 기회를 제공한다.'||CHR(13)||CHR(10)||
     '나는 어떻게 회사 내 프로젝트에서 실패하고, 이를 통해 어떻게 내 능력과 접근 방식을 개선했는지에 대한 경험을 공유하고자 한다.'||CHR(13)||CHR(10)||
     '프로젝트 실패는 새로운 시작과 배움의 시작일 수 있다.'
-    , SYSDATE-7, SYSDATE-7, 59, 0, 152);
+    , SYSDATE-7, SYSDATE-7, 59, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5151,7 +5262,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '별이빛나는밤', 'KP', '직장에서의 �
     , '비즈니스 소셜 스킬은 직장에서의 성공에 중요한 역할을 한다.'||CHR(13)||CHR(10)||
     '나는 어떻게 소셜 스킬을 개발하고 비즈니스 네트워킹을 통해 어떻게 새로운 기회를 찾았는지에 대한 경험을 공유하고자 한다.'||CHR(13)||CHR(10)||
     '비즈니스 소셜 스킬은 연결과 기회를 창출한다.'
-    , SYSDATE-6, SYSDATE-6, 60, 0, 210);
+    , SYSDATE-6, SYSDATE-6, 60, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5160,7 +5271,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jihyun_lee', '사대해상', '회사에서의 
     , '성공한 비즈니스 리더들의 스토리와 인터뷰는 영감을 주는 이야기를 제공한다.'||CHR(13)||CHR(10)||
     '나는 어떻게 성공한 사람들의 스토리와 인터뷰를 통해 어떤 인사이트와 영감을 얻었는지에 대한 경험을 공유하고자 한다.'||CHR(13)||CHR(10)||
     '성공 스토리는 우리에게 새로운 아이디어와 자극을 줄 수 있다.'
-    , SYSDATE-6, SYSDATE-6, 101, 0, 100);
+    , SYSDATE-6, SYSDATE-6, 101, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5169,7 +5280,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'hyunwoo_jang', 'DD하이텍', '직장 내 인�
     , '직장 내 인프라는 업무 효율성에 큰 영향을 미친다.'||CHR(13)||CHR(10)||
     '나는 어떻게 회사 내 인프라를 개선하기 위한 제안을 하고, 이를 어떻게 실행으로 옮겼는지에 대한 경험을 공유하고자 한다.'||CHR(13)||CHR(10)||
     '인프라 개선은 직원들의 만족도와 생산성을 향상시킨다.'
-    , SYSDATE-6, SYSDATE-6, 102, 1, 10);
+    , SYSDATE-6, SYSDATE-6, 102, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5178,7 +5289,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'youngseo_choi', 'SKU', '직장 내 프로젝�
     , '직장 내 프로젝트는 성과와 경험을 얻을 수 있는 기회를 제공한다.'||CHR(13)||CHR(10)||
     '나는 어떻게 회사 내 프로젝트에서 성과를 얻었으며, 이를 통해 어떻게 내 역량을 향상시켰는지에 대한 이야기를 하고자 한다.'||CHR(13)||CHR(10)||
     '프로젝트 경험은 직장 내 성장에 큰 영향을 미친다.'
-    , SYSDATE-6, SYSDATE-6, 103, 52, 60);
+    , SYSDATE-6, SYSDATE-6, 103, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5187,7 +5298,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jaeeun_kim', '김호석유', '직장 내 업�
     , '직장 내 업무 프로세스 개선은 업무 효율성을 향상시키는 데 중요하다.'||CHR(13)||CHR(10)||
     '나는 어떻게 회사 내 업무 프로세스를 개선하기 위한 노력과 전략을 공유하고자 한다.'||CHR(13)||CHR(10)||
     '업무 프로세스 개선은 회사의 경쟁력을 향상시키는 데 도움을 준다.'
-    , SYSDATE-5, SYSDATE-4, 104, 5, 10);
+    , SYSDATE-5, SYSDATE-4, 104, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5196,7 +5307,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'dohyun_lee', 'ULX인터내셔널', '직장에�
     , '직장에서 유용한 도구와 소프트웨어는 업무를 보다 효과적으로 수행하는 데 도움을 준다.'||CHR(13)||CHR(10)||
     '나는 어떤 도구와 소프트웨어가 나의 업무 퍼포먼스를 향상시키는 데 어떤 역할을 했는지에 대한 경험을 공유하고자 한다.'||CHR(13)||CHR(10)||
     '유용한 도구와 소프트웨어는 생산성을 높인다.'
-    , SYSDATE-5, SYSDATE-5, 105, 4, 5);
+    , SYSDATE-5, SYSDATE-5, 105, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5205,7 +5316,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jiwon_kim', '김호석유', '직장에서의 �
     , '직장에서 새로운 기술은 항상 도입되고 있다.'||CHR(13)||CHR(10)||
     '나는 어떻게 새로운 기술이 회사에 도입되었을 때 어떻게 적응하고 활용하는 방법을 찾아냈는지에 대한 경험을 공유하고자 한다.'||CHR(13)||CHR(10)||
     '기술 적응은 업무 효율성을 향상시킨다.'
-    , SYSDATE-5, SYSDATE-5, 106, 1, 100);
+    , SYSDATE-5, SYSDATE-5, 106, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5214,7 +5325,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'seoyoon_lee', '사대해상', '직장 내 프�
     , '직장 내 프로젝트 관리는 성공의 핵심이다.'||CHR(13)||CHR(10)||
     '나는 어떻게 프로젝트를 효과적으로 관리하고, 어떤 성공 요인을 고려하여 프로젝트를 성공적으로 완료했는지에 대한 이야기를 하고자 한다.'||CHR(13)||CHR(10)||
     '프로젝트 관리는 업적을 인정받는 데 필수적이다.'
-    , SYSDATE-5, SYSDATE-5, 107, 2, 5);
+    , SYSDATE-5, SYSDATE-5, 107, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5223,7 +5334,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jaeeun_park', 'DD하이텍', '직장 내 이�
     , '직장 내 이슈와 문제는 항상 발생한다.'||CHR(13)||CHR(10)||
     '나는 어떻게 이슈와 문제를 식별하고, 어떻게 해결 전략을 개발하고 실행했는지에 대한 경험을 공유하고자 한다.'||CHR(13)||CHR(10)||
     '문제 해결은 직장 내 업무 효율성을 향상시킨다.'
-    , SYSDATE-4, SYSDATE-4, 108, 2, 10);
+    , SYSDATE-4, SYSDATE-4, 108, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5232,7 +5343,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'subin_jung', 'SKU', '직장에서의 프로페
     , '직장에서 프로페셔널리즘과 윤리는 항상 중요하다.'||CHR(13)||CHR(10)||
     '나는 어떻게 직장 내에서 프로페셔널리즘과 윤리적 행동을 지키며, 어떻게 나의 모범적인 행동이 회사에 긍정적인 영향을 미쳤는지에 대한 경험을 공유하고자 한다.'||CHR(13)||CHR(10)||
     '프로페셔널리즘과 윤리는 조직의 신뢰를 구축한다.'
-    , SYSDATE-4, SYSDATE-4, 109, 1, 10);
+    , SYSDATE-4, SYSDATE-4, 109, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5241,7 +5352,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jiwoo_kim', '삼성SKS', '직장에서의 새�
     , '직장에서는 항상 새로운 도전과 목표가 있다.'||CHR(13)||CHR(10)||
     '나는 어떻게 이러한 도전을 받아들이고, 어떻게 나의 목표를 달성하기 위해 노력하고 계획을 세웠는지에 대한 이야기를 하고자 한다.'||CHR(13)||CHR(10)||
     '새로운 도전은 성장의 기회를 제공한다.'
-    , SYSDATE-3, SYSDATE-3, 110, 1, 5);
+    , SYSDATE-3, SYSDATE-3, 110, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5251,7 +5362,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jenny', 'KD한국조선해양', '하루 일과
     '집에 돌아와서 책을 읽다 보면 갑자기 새로운 깨달음을 얻게 됩니다.'||CHR(13)||CHR(10)||
     '마치 작가와 대화하는 듯한 느낌이 들죠.'||CHR(13)||CHR(10)||
     '책은 항상 새로운 세계로 안내해줍니다.'
-    , SYSDATE-3, SYSDATE-3, 151, 1, 3);
+    , SYSDATE-3, SYSDATE-3, 151, 0, 0);
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5260,7 +5371,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'smilemin', '한하생명', '첫 번째 해외 
     , '첫 번째 해외 여행을 떠나봤습니다.'||CHR(13)||CHR(10)||
     '다른 나라에서 보는 풍경과 만나는 사람들의 문화는 정말 놀라운 경험이었습니다.'||CHR(13)||CHR(10)||
     '세계는 너무나도 다양하고 아름다워요.'
-    , SYSDATE-3, SYSDATE-3, 152, 2, 3);
+    , SYSDATE-3, SYSDATE-3, 152, 0, 0);
        
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5269,7 +5380,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'minjae_park', 'TJ제일제당', '좋아하는 
     , '좋아하는 노래로 감정을 표현하는 음악 선물을 받았습니다.'||CHR(13)||CHR(10)||
     '음악은 마음을 표현하고 공유하는 강력한 방법 중 하나에요.'||CHR(13)||CHR(10)||
     '이 선물은 정말로 마음에 들었습니다.'
-    , SYSDATE-3, SYSDATE-3, 153, 1, 5);
+    , SYSDATE-3, SYSDATE-3, 153, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5278,7 +5389,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'hgd', '마카오뱅크', '요리 대회에서�
     , '요리 대회에 참가해보았습니다.'||CHR(13)||CHR(10)||
     '경쟁은 언제나 도전과 성장의 기회입니다.'||CHR(13)||CHR(10)||
     '새로운 레시피와 기술을 배우면서 자신감을 키울 수 있었습니다.'
-    , SYSDATE-3, SYSDATE-3, 154, 3, 30);
+    , SYSDATE-3, SYSDATE-3, 154, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5287,7 +5398,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'nayeong', 'BMK금융지주', '가장 가까운
     , '가장 가까운 산으로 캠핑 여행을 떠났습니다.'||CHR(13)||CHR(10)||
     '자연 속에서의 생활은 정말로 간단하지만 특별한 경험이었습니다.'||CHR(13)||CHR(10)||
     '밤하늘의 별과 모닥불 옆에서의 이야기는 잊지 못할 추억이에요.'
-    , SYSDATE-3, SYSDATE-3, 155, 1, 253);
+    , SYSDATE-3, SYSDATE-3, 155, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5295,7 +5406,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'minsu', '전우건설', '새로운 직장에서의 첫날과 적응'
     , '새로운 직장에서의 첫날은 항상 긴장되죠.'||CHR(13)||CHR(10)||
     '새로운 동료들을 만나고 업무 환경에 적응하는 과정은 조금 힘들지만, 동시에 미래에 대한 기대감으로 가득 차 있어요.'
-    , SYSDATE-1, SYSDATE-1, 156, 1, 14);
+    , SYSDATE-1, SYSDATE-1, 156, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5303,7 +5414,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'jw_choi', '디엘ENC', '바다에서의 서핑 여행에서 얻은 용기와 즐거움'
     , '바다에서의 서핑 여행은 용기를 내어던지고 자연과 조화를 이루는 경험이었습니다.'||CHR(13)||CHR(10)||
     '파도를 타며 얻는 그 즐거움은 이 세상 어떤 것과도 비교할 수 없었습니다.'
-    , SYSDATE-1, SYSDATE, 157, 0, 32);
+    , SYSDATE-1, SYSDATE, 157, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5312,7 +5423,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'hwoo', '호선티앤씨', '나만의 정원 �
     , '정원 가꾸기 프로젝트를 시작했습니다.'||CHR(13)||CHR(10)||
     '식물을 키우면서 자연의 아름다움을 느끼고, 노력의 결과를 볼 때 뿌듯함을 느낍니다.'||CHR(13)||CHR(10)||
     '정원은 나만의 작은 낙원이에요.'
-    , SYSDATE-1, SYSDATE-1, 158, 1, 3);
+    , SYSDATE-1, SYSDATE-1, 158, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5320,7 +5431,7 @@ VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_C
 VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'eunju_song', 'SH가스', '영화 감상을 통해 다른 문화와 이해'
     , '영화 감상은 다른 문화와 사고 방식을 이해하는 데 큰 도움이 됩니다.'||CHR(13)||CHR(10)||
     '다양한 영화를 보며 세계를 더 폭넓게 보고 싶어져요.'
-    , SYSDATE-1, SYSDATE-1, 159, 2, 4);
+    , SYSDATE-1, SYSDATE-1, 159, 0, 0);
     
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5329,7 +5440,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, 'cs_park', 'SanSung엔지니어링', '일상 �
     , '오늘 아침에 창밖으로 보니 눈이 내리고 있었습니다.'||CHR(13)||CHR(10)||
     '눈꽃이 내리는 아침은 언제나 기분이 좋아져요.'||CHR(13)||CHR(10)||
     '작은 순간의 기쁨이 일상을 빛나게 만들어줍니다.'
-    , SYSDATE-1, SYSDATE-1, 160, 4, 20); 
+    , SYSDATE-1, SYSDATE-1, 160, 0, 0); 
 
 INSERT INTO BOARD
 VALUE(BOARD_NUMBER, BOARD_WRITER, BOARD_TAG, BOARD_TITLE, BOARD_CONTENT, BOARD_CREATE_DATE
@@ -5340,7 +5451,7 @@ VALUES(BOARD_NUMBER_SEQ.NEXTVAL, '심성맨', '심성전자', '직장에서의 �
     '무엇보다도, 업무 유경험이 부족한 상황에서 어떻게 동료들과 협력하고 문제를 해결하는 능력을 키워나갔다.'||CHR(13)||CHR(10)||
     '또한, 상사와의 원활한 커뮤니케이션과 업무 관리의 중요성을 깨달았다.'||CHR(13)||CHR(10)||
     '이러한 교훈들은 나의 직장생활을 풍요롭게 만들어주었고, 앞으로의 경력에 큰 영향을 미칠 것이다.'
-    , SYSDATE-1, SYSDATE, 1, 1, 10);
+    , SYSDATE-1, SYSDATE, 1, 0, 0);
 
 
 --UPDATE COMPANY
@@ -5675,4 +5786,6 @@ UPDATE COMPANY
 SET COMPANY_LOGO = '/JobHub/resources/img/logo/DLE|| CHR(38) ||CCo.svg'
 where company_number = 80;
 
+COMMIT;
+    
 COMMIT;
