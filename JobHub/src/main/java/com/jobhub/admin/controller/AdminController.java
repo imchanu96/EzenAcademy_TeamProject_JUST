@@ -48,13 +48,17 @@ public class AdminController {
 		AdminDto adminDto = adminService.adminExist(id, pwd);
 		String viewUrl = "";
 		
-		if(adminDto != null) {
+		if(adminDto != null && adminDto.getPerPermission() == 10) {
 //				회원이 존재하면 세션에 담는다
 			session.setAttribute("member", adminDto);
 			
+			adminService.setResume();
+			adminService.setRecommendRate();
+			
 			viewUrl = "redirect:/admin/memberList.do";
 		} else {
-			viewUrl = "redirect:/Home";
+			model.addAttribute("myMsg", "관리자가 아닙니다.");
+			viewUrl = "admin/auth/AdminLoginForm";
 		}
 		
 		return viewUrl;
@@ -166,38 +170,6 @@ public class AdminController {
 	}
 	
 	
-	@RequestMapping(value = "/admin/setResume.do", method = RequestMethod.GET)
-	public String setResume(Model model) {
-		
-		log.info("Welcome AdminController setResume.do 이력서 세팅");
-		
-		adminService.setResume();
-		try {
-			
-		} catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
-		}
-		model.addAttribute("myMsg" ,"이력서 세팅 완료");
-		return "redirect:/admin/memberList.do";
-	}
-	
-	@RequestMapping(value = "/admin/setRecommendRate.do", method = RequestMethod.GET)
-	public String setRecommendRate(Model model) {
-		
-		log.info("Welcome AdminController setRecommendRate.do 적합도 계산");
-		
-		
-		adminService.setRecommendRate();
-		try {
-			
-		} catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
-		}
-		model.addAttribute("myMsg", "기업 회원 적합도 평균 top");
-		return "redirect:/admin/memberList.do";
-	}
 	
 	@RequestMapping(value = "/admin/personalRecommendTotalRateAverageTop.do", method = RequestMethod.GET)
 	public String personalRecommendTotalRateAverageTop(String listNumOption, Model model) {

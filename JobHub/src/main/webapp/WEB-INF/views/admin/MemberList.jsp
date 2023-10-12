@@ -19,12 +19,6 @@
 			
 		}
 	}
-	function setResumeFnc(){
-		location.href = "./setResume.do";
-	}
-	function setRecommendRateFnc() {
-		location.href = "./setRecommendRate.do";
-	}
 </script>
 <link rel="stylesheet" href="/JobHub/resources/css/AdminMemberList.css" type="text/css">
 </head>
@@ -36,10 +30,6 @@
 	</div>
 	<jsp:include page="./util/SideBar.jsp"></jsp:include>
 	<div id="tableDiv">
-		<div>
-			<input type="button" value ="개인 회원 이력서 맞추기" onclick="setResumeFnc();">
-			<input type="button" value ="적합도 계산" onclick="setRecommendRateFnc();">
-		</div>
 		<p>${myMsg}</p>
 		<form action="memberUpdate.do" method="get">
 		<span style="font-size: 22px; font-weight: bold;">[전체회원 목록]</span>

@@ -15,16 +15,16 @@
 	<jsp:include page="/WEB-INF/views/MainHeader.jsp"/>
 	
 	<div id="introImgBox">
-		<img src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/fcc71787-e35c-43fb-a18a-ffc7f4637ab7">
+		<img src="/JobHub/resources/img/main_img1.png">
 	</div>
 	
 	<div class="seviceDetail">
 <!-- 		서비스 캡쳐 화면 1 -->
-		<img class="seviceDetailImg" src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/43f1105e-38e8-4fcf-8abb-35e5c6210f1a">
+		<img class="seviceDetailImg" src="/JobHub/resources/img/main_img2.png">
 	</div>
 	<div class="seviceDetail">
 <!-- 		서비스 캡쳐 화면 2 -->
-		<img class="seviceDetailImg" src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/b8a484dd-baaf-4496-aa5d-e6ff0a523858">
+		<img class="seviceDetailImg" src="/JobHub/resources/img/main_img3.png">
 	</div>
 	<div class="seviceDetail" id="seviceDetail3">
 <!-- 		서비스 캡쳐 화면 3 -->
@@ -38,7 +38,7 @@
 		</div>
 		<div id="logoBox">
 			<img id="jobHubLogo"
-				src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/4c2b0015-b325-434b-a879-9004486cd127">
+				src="/JobHub/resources/img/JobHub_logo_v2.png">
 		</div>
 	</div>
 	

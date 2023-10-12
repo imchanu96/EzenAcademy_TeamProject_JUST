@@ -91,7 +91,7 @@
 			<div id="gitHubLink">
 				<a href="https://github.com/noohij/Ezen_TeamProject_JUST" target="_blank">
 					<div id="gitHubimg" style="float: left; width: 55px; height: 55px;">
-						<img id="gitHubLogo" src="https://github.com/noohij/Ezen_TeamProject_JUST/assets/105366274/7f682a54-2367-4fdf-8a05-64314bcd2418">
+						<img id="gitHubLogo" src="/JobHub/resources/img/GitHub_logo.png">
 					</div>
 					<div id="gitHubText">&nbsp;Visit Our GitHub >></div> 
 				</a>
